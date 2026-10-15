@@ -1,0 +1,11 @@
+*.bak
+*.orig
+*.swp
+.vs/
+.vscode/
+Thumbs.db
+.DS_Store
+
+# Local research workspace (prompts, status, scratch helpers)
+/tools/research/
+/data/lore/drafts/

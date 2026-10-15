@@ -1,0 +1,762 @@
+[
+ {
+  "id": 4700,
+  "kind": 0,
+  "zone": 47,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Hinterlands",
+  "body": "The Hinterlands is a wild country of forested hills, high crags and rushing rivers northeast of Tarren Mill, running east to the cliffs above the Forbidding Sea. Long ago it lay at the heart of the Amani empire, and the forest trolls raised great cities here whose ruins still crown the hills. Three troll tribes remain, and they share little but their blood: the Vilebranch, cannibals who serve the blood god Hakkar from their fortress of Jintha'Alor; the Witherbark of Shadra'Alor, who worship a spider god; and the small Revantusk tribe, clinging to the eastern coast. Into this troll country came the Wildhammer dwarves, who left Grim Batol after their war with the Dark Irons, built Aerie Peak and bonded with the gryphons of the crags. The trolls call them squatters on ancestral land. Between the two lie an old Horde base lost to oozes, a lodge of high elves, and a great tree where green dragons guard a door into the Emerald Dream.",
+  "triggers": [
+   [
+    1,
+    47
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/The_Hinterlands (Amani heart, great troll cities, Wildhammer arrival, tribes, Skulk Rock, Seradane)",
+   "quest 2932 description (northeast of Tarren Mill)",
+   "quest 7844 description (three tribes, Vilebranch feed on trolls and humanoids)",
+   "quest 2936 description (Witherbark worship a spider god)",
+   "quest 9470 description (trolls view Wildhammers as squatters)",
+   "page_text 1927-1928 (War of the Three Hammers: Grim Batol uninhabitable, Aerie Peak, gryphons)"
+  ],
+  "notes": "Cataclysm material (Stormfeather Outpost, Hiri'watha Research Station, Revantusk joining the Horde) deliberately absent."
+ },
+ {
+  "id": 4701,
+  "kind": 1,
+  "zone": 47,
+  "sort": 1,
+  "faction": 0,
+  "title": "Aerie Peak",
+  "body": "Aerie Peak is the home of the Wildhammer clan, raised on a crag in the western Hinterlands after the clan found Grim Batol tainted and refused King Bronzebeard's offer of a home within his borders. Unlike their cousins, the Wildhammers built above ground, and at the crest of the town stands the great gryphon aviary kept by Gryphon Master Talonaxe. From here High Thane Falstad Wildhammer rules his people. Wildhammer sentries keep watch beside trained razorbeak gryphons, for the forest trolls raid the aeries without end. A draenei envoy, Ambassador Rualeth, waits here as well, still hoping for an audience with the High Thane.",
+  "triggers": [
+   [
+    1,
+    348
+   ]
+  ],
+  "sources": [
+   "page_text 1927-1928 (Grim Batol uninhabitable, Bronzebeard offer refused, Aerie Peak founded)",
+   "warcraft.wiki.gg/wiki/Aerie_Peak (built above ground, aviary at its crest, Falstad rules from the top)",
+   "quest 1450 description (Gryphon Master Talonaxe inside the Aerie Peak Aviary)",
+   "quest 9470 description (trolls attack the gryphon aeries)",
+   "npc_text 8847 (Rualeth awaiting an audience)",
+   "warcraft.wiki.gg/wiki/Ambassador_Rualeth (draenei)",
+   "zone_areas: area 348 holds Falstad 5635, Talonaxe 5636, Rualeth 17223, Wildhammer Sentry 7865, Trained Razorbeak 2657",
+   "page_text 1931 (took to living above ground on the slopes of Aerie Peak)"
+  ],
+  "notes": "Verified. 'Home within Ironforge' narrowed to within Bronzebeard's borders (page_text 1928). Talonaxe's gossip (npc_text 16393, Falstad off in Ironforge) is Cataclysm text and stays ignored; the 3.3.5 DB spawns Falstad here."
+ },
+ {
+  "id": 4702,
+  "kind": 1,
+  "zone": 47,
+  "sort": 2,
+  "faction": 0,
+  "title": "Wildhammer Keep",
+  "body": "At the far end of the mountain from the aviary stands Wildhammer Keep, home to the town's inn and tavern, where Innkeeper Thulfram bids guests pull up a chair, for there are stories to tell and kegs to empty. A history of the War of the Three Hammers is kept here, recounting how the clan came to these hills. Outsiders get a blunt welcome. Fraggar Thundermantle insists the Wildhammers are no part of the Alliance and judge strangers by deeds alone, asking newcomers for troll necklaces or a hand in clearing the oozes from Skulk Rock. The animal handler Agnar Beastamer works here too, and helps faerie dragon eggs brought from Feralas to hatch.",
+  "triggers": [
+   [
+    1,
+    349
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Aerie_Peak (Wildhammer Keep at the other end of the mountain)",
+   "npc_text 823 (Innkeeper Thulfram)",
+   "gameobject 175739 War of the Three Hammers (page_text 1914-1931)",
+   "quests 2877, 2880 descriptions (Fraggar: we are NOT part of the Alliance)",
+   "quests 3843, 4297, 4298 (Agnar Beastamer, master animal handler, sprite darter egg; quest 3843 is a Feralas quest)",
+   "zone_areas: area 349 holds Thulfram 7744, Truk Wildbeard 4782, Fraggar 7884, Agnar 9660"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 4703,
+  "kind": 1,
+  "zone": 47,
+  "sort": 3,
+  "faction": 0,
+  "title": "Featherbeard's Hovel",
+  "body": "South of Aerie Peak stands the lonely home of Featherbeard, a Wildhammer revered among his people for his skill in training gryphons and for his wisdom, and said to favor closer ties with the Alliance. The hovel is empty now. His journal still lies inside, its latest pages full of worry over Witherbark raids on the gryphon aeries and a rash of stolen eggs, and ending with a hurried note that he meant to go to Shadra'Alor himself. Silvermane wolves prowl the hills around it, among them a rarely seen old wolf called Old Cliff Jumper.",
+  "triggers": [
+   [
+    1,
+    1880
+   ]
+  ],
+  "sources": [
+   "quest 9469 description (Featherbeard revered, gryphon training, wisdom; residence to the south)",
+   "npc_text 8847 (favors closer ties with the Alliance)",
+   "quest 9476 description (journal entries)",
+   "gameobject 181649 Featherbeard's Journal at 49,-2092 (Aerie Peak at 266,-2029)",
+   "zone_areas: area 1880 holds Old Cliff Jumper 8211 (rare, family wolf), Mangy Silvermane"
+  ],
+  "notes": "Faction 0: an area trigger open to both factions. Wolf rare name only, no lore claimed."
+ },
+ {
+  "id": 4704,
+  "kind": 1,
+  "zone": 47,
+  "sort": 4,
+  "faction": 0,
+  "title": "Quel'Danil Lodge",
+  "body": "Quel'Danil Lodge is a high elven outpost in the woods east of Aerie Peak, held by the Highvale elves. It serves as a center of communication for the high elves of the Hinterlands, whose ambassadors seek ties with other races and share what they know of the Witherbark trolls, and the records, notes and reports of that work are kept inside. The Highvale have made friends of the Wildhammers, and the Revantusk hate them for it. Scouts, marksmen, outrunners and rangers guard the grounds, among them a rarely seen elf named Jalinde Summerdrake, and a captured Witherbark troll called Rin'ji has been kept caged within.",
+  "triggers": [
+   [
+    1,
+    350
+   ]
+  ],
+  "sources": [
+   "quest 2995 description (center of communication, ambassadors, knowledge of the Witherbark, documents kept at the lodge)",
+   "quest 7841 description (Wildhammer working with the high elves)",
+   "warcraft.wiki.gg/wiki/Quel'Danil_Lodge (Wildhammer alliance angered the Revantusk)",
+   "quest 2742 description",
+   "zone_areas: area 350 holds Highvale Scout/Marksman/Outrunner/Ranger, Jalinde Summerdrake 8214 (rare), Rin'ji 7780, Rin'ji's Cage, Highvale Records/Notes/Report",
+   "DB: lodge at 263,-2758, east of Aerie Peak 266,-2029"
+  ],
+  "notes": "'Hunting lodge' removed: on the wiki it comes only from the non-canon Warcraft RPG. Rest verified."
+ },
+ {
+  "id": 4705,
+  "kind": 1,
+  "zone": 47,
+  "sort": 5,
+  "faction": 0,
+  "title": "Shindigger's Camp",
+  "body": "East of Aerie Peak, a short walk from the Quel'Danil Lodge, two drinkers share a small camp. Rhapsody Shindigger was once the finest gryphon rider at Aerie Peak until his love of liquor cost him his place, and he now brews his own malt here. Beside him sits Gilveradin Sunchaser, a high elf who owes nothing to the Alliance and holds that drink transcends treaties and borders; it is said he can name any wine, vintage and all, by smell alone. He keeps the original packaging for Hinterlands Honey Ripple, a vintage no longer to be had, whose last bottles lie in crates at the old Horde base near Skulk Rock.",
+  "triggers": [
+   [
+    1,
+    1881
+   ]
+  ],
+  "sources": [
+   "quest 1451 description (Rhapsody, brew camp east of Aerie Peak)",
+   "warcraft.wiki.gg/wiki/Rhapsody_Shindigger (moonshine camp, Rhapsody Malt)",
+   "quest 649 description and reward text (cannot get fine ripple like that anymore; Gilveradin not a part of the Alliance)",
+   "quest 650 description and reward text (names any wine by smell; alcohol transcends treaties and alliances)",
+   "quest 77 description and reward text (packaging, crates near Skulk Rock)",
+   "zone_areas: area 1881 holds Rhapsody 5634 and Gilveradin 7801"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 4706,
+  "kind": 1,
+  "zone": 47,
+  "sort": 6,
+  "faction": 0,
+  "title": "Zun'watha and Hiri'watha",
+  "body": "In the hills south of Aerie Peak and the Quel'Danil Lodge lie the lesser villages of the Witherbark trolls: the ruins of Zun'watha, held by Witherbark scalpers and zealots, and Hiri'watha, home to hideskinners and venombloods. Both keep stores of bottled green venom, in such numbers that the tribe must prize it, and both keep cages for captives; when the gryphon Sharpbeak went missing, the Wildhammers searched these cages first. The Witherbark once stood with the Horde before turning on Thrall, and the Darkspear troll Nimboya of Grom'gol wants a pike laden with Witherbark skulls driven into one of these villages as a warning. A troll called Zul'arek Hatefowler is sometimes seen at either.",
+  "triggers": [
+   [
+    1,
+    352
+   ],
+   [
+    1,
+    1885
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Witherbark_tribe (Hiri'watha village, Zun'watha ruins; Zul'arek associated with Zun'watha)",
+   "quest 2933 description (number of venom bottles in this village)",
+   "quest 2988 description (cages in the two Witherbark villages)",
+   "quest 2932 description (Witherbarks betrayed Thrall; pike at Hiri'watha or Zun'watha)",
+   "zone_areas: area 352 Witherbark Scalper/Zealot, First and Second Witherbark Cage, Venom Bottles, Zul'arek Hatefowler 8219; area 1885 Witherbark Hideskinner/Venomblood, Third Witherbark Cage, Venom Bottle, Zul'arek",
+   "DB: cages at -43,-2470 and -4,-2806, south of Aerie Peak 266,-2029 and the lodge 263,-2758",
+   "creature 2497 Nimboya spawned at Grom'gol, faction template 126 (Darkspear Trolls)"
+  ],
+  "notes": "Darkspear hunters planting pikes was unsupported; reworded to Nimboya's request (quest 2932; Nimboya 2497 faction template 126, Darkspear). Hiri'watha research station (Cataclysm) absent on purpose."
+ },
+ {
+  "id": 4707,
+  "kind": 1,
+  "zone": 47,
+  "sort": 7,
+  "faction": 0,
+  "title": "Bogen's Ledge",
+  "body": "Bogen's Ledge lies west of Shadra'Alor, and in a cave there shelters Witch Doctor Mai'jin, a leader of the Witherbark trolls, with his pet spider Tcha'kaz. The dwarf Featherbeard came to believe that Mai'jin was behind the troll raids on the Wildhammer gryphon aeries and the rash of stolen eggs. Witherbark sadists and vicious owlbeasts roam the slopes outside. At Aerie Peak, the draenei envoy Rualeth has asked for the witch doctor's death, hoping to show the Wildhammers that they do not stand alone against the trolls.",
+  "triggers": [
+   [
+    1,
+    1887
+   ]
+  ],
+  "sources": [
+   "quest 9470 description and reward text (Mai'jin, cave at Bogen's Ledge west of Shadra'Alor, pet spider Tcha'kaz)",
+   "quest 9476 description (Featherbeard suspected Mai'jin)",
+   "zone_areas: area 1887 holds Witch Doctor Mai'jin 17235, Tcha'kaz 17236 (family spider), Witherbark Sadist, Vicious Owlbeast"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 4708,
+  "kind": 1,
+  "zone": 47,
+  "sort": 8,
+  "faction": 0,
+  "title": "Shadra'Alor",
+  "body": "Shadra'Alor is the temple city of the Witherbark trolls, a cluster of three old temples in the southern Hinterlands bearing the name of Shadra, the spider loa whom the tribe worships and from whom it draws its most potent venom. Broodguard spiders nest among the ruins beside Witherbark sadists and callers. Stolen gryphon eggs lie hidden about the temples, and the bones of the dwarf Featherbeard were found upon one of its altars. Not every troll here is Witherbark. An Atal'ai priest, cast out of the Temple of Atal'Hakkar in the Swamp of Sorrows, now lives among them in exile.",
+  "triggers": [
+   [
+    1,
+    353
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Shadra'Alor (main Witherbark settlement, Shadra summoned there)",
+   "warcraft.wiki.gg/wiki/Witherbark_tribe (Shadra a spider loa)",
+   "quest 9475 description (map of Shadra'Alor and its three temples)",
+   "quest 9476 reward text (bones upon the altar)",
+   "quest 2936 description (most potent venom from their god)",
+   "quest 2934 description (spiders near Shadra'Alor)",
+   "quest 1429 and 1446 descriptions (Atal'ai exile with the Witherbark)",
+   "zone_areas: area 353 holds Witherbark Broodguard 2686 (family spider), Sadist, Caller, Gryphon Egg x10, Featherbeard's Remains, Atal'ai Exile 5598"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 4709,
+  "kind": 1,
+  "zone": 47,
+  "sort": 9,
+  "faction": 0,
+  "title": "Valorwind Lake",
+  "body": "Valorwind Lake lies among the hills of the central Hinterlands, its banks roamed by primitive owlbeasts and Silvermane howlers. Its waters hide a curiosity sought from as far away as Gadgetzan: the Violet Tragan, a mushroom found nowhere but beneath the surface of this one small lake. Sprinkle of Gadgetzan swears by it as a secret ingredient that can turn even the most horrid brew into something edible. Those who go looking for it had best be able to hold their breath.",
+  "triggers": [
+   [
+    1,
+    1883
+   ]
+  ],
+  "sources": [
+   "quest 2641 description and request text (Violet Tragan, small lake in the Hinterlands, only found underwater)",
+   "zone_areas: area 1883 holds Violet Tragan x6, Primitive Owlbeast x13, Silvermane Howler x5"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 4710,
+  "kind": 1,
+  "zone": 47,
+  "sort": 10,
+  "faction": 0,
+  "title": "The Altar of Zul",
+  "body": "The Altar of Zul is a troll altar on the western edge of Vilebranch territory, a tribe known for its sacrifices. Soothsayers, scalpers and axe throwers guard its slopes with their wolves, and a berserker called Retherokk is sometimes seen among them. At the top wait two keepers, Qiaga and Morta'gya. Qiaga carries a sacred mallet which, once consecrated at the altar atop Jintha'Alor, becomes a mallet able to call forth the demigod Gahz'rilla in distant Zul'Farrak.",
+  "triggers": [
+   [
+    1,
+    355
+   ]
+  ],
+  "sources": [
+   "quest 2989 description and reward text (western edge of Vilebranch territory, known for performing sacrifices)",
+   "warcraft.wiki.gg/wiki/Altar_of_Zul (Qiaga on top, Morta'gya before the Cataclysm, Sacred Mallet)",
+   "warcraft.wiki.gg/wiki/Jintha'Alor (ritual at the altar at the top of the city made the Mallet of Zul'Farrak, used to summon Gahz'rilla)",
+   "creature_loot_template: Qiaga 7996 drops Sacred Mallet 9241 at 100 percent; gameobject 142180 Jintha'Alor Alter spell focus",
+   "zone_areas: area 355 holds Vilebranch Soothsayer, Axe Thrower, Scalper, Wolf Pup, Retherokk the Berserker 8216, Qiaga 7996, Morta'gya 8636"
+  ],
+  "notes": "Sacrifices at the altar itself softened to the Vilebranch being known for sacrifices (quest 2989 reward text says only that). Rest verified; mallet ritual checked against item 9241 and gameobject 142180 Jintha'Alor Alter."
+ },
+ {
+  "id": 4711,
+  "kind": 1,
+  "zone": 47,
+  "sort": 11,
+  "faction": 0,
+  "title": "Jintha'Alor",
+  "body": "Jintha'Alor, named for an ancient Amani leader, is the second largest forest troll city after Zul'Aman and the capital of the Vilebranch. From its heights Vile Priestess Hexx serves Hakkar the blood god, and vessels of tainted blood scattered through the city fill the tribe with his ferocity and madness. Blood drinkers, soul eaters, shadow hunters and Hexx's Aman'zasi guard hold the upper city, where captives are kept for sacrifice. Near the top lie a refuse pit full of oozes and a wolf den, and in a cave behind the amphitheater at the summit rests an ancient egg said to be able to hold the essence of Hakkar himself.",
+  "triggers": [
+   [
+    1,
+    354
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Jintha'Alor (named after Jintha, second largest forest troll city after Zul'Aman, Vilebranch capital, Hexx follower of Hakkar)",
+   "quest 7850 description (vessels of tainted blood, foul magic of the blood god, ferocity and madness)",
+   "quest 7845 description (Torntusk held atop for sacrifice)",
+   "quest 7849 description (refuse pit of oozes and wolf den near the top)",
+   "quest 4787 description (Ancient Egg in a cave behind the amphitheater; can hold the essence of Hakkar)",
+   "quest 2993 description (Sharpbeak caged high on a cliff at the top)",
+   "zone_areas: area 354 holds Vilebranch Blood Drinker, Shadow Hunter, Aman'zasi Guard, Soul Eater, Berserker, Raiding Wolf, Jade Sludge, Vile Priestess Hexx 7995, Elder Torntusk 14757, Sharpbeak 8023, Vessel of Tainted Blood x28"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 4712,
+  "kind": 1,
+  "zone": 47,
+  "sort": 12,
+  "faction": 0,
+  "title": "Skulk Rock",
+  "body": "Skulk Rock was a Horde base in the Second War, until the Alliance drove the orcs out and it was left to ruin. Crates of their supplies still lie about, some holding bottles of Hinterlands Honey Ripple, a drink that can no longer be had anywhere else. The rock is now overrun with green sludges and jade oozes, said to be led by a master ooze, and a creature called The Reak is sometimes found there. The Wildhammers have plans for the place and reward any who thin the slime. Not far off, at the head of a river, a gnomish homing robot shaped like a chicken crashed from the sky and waits to be found.",
+  "triggers": [
+   [
+    1,
+    351
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Skulk_Rock (Old Horde base, driven out by the Alliance, abandoned, Honey Ripple left behind)",
+   "quest 2877 description (Horde abandoned their positions; Wildhammers have plans for the area)",
+   "quest 77 description (crates at the abandoned Horde base near Skulk Rock; led by some sort of master ooze)",
+   "quest 649 description (you can't get fine ripple like that anymore)",
+   "quest 485 description (OOX-09/HL crashed at the head of the river near Skulk Rock)",
+   "zone_areas: area 351 holds Jade Ooze x32, Green Sludge x19, The Reak 8212 (rare), Horde Supply Crate x6"
+  ],
+  "notes": "The Reak is a rare in the DB with no lore beyond its name; it is not stated to be the master ooze."
+ },
+ {
+  "id": 4713,
+  "kind": 1,
+  "zone": 47,
+  "sort": 13,
+  "faction": 0,
+  "title": "Agol'watha and Shaol'watha",
+  "body": "In the northern and eastern hills stand the old troll temples of Agol'watha and Shaol'watha, the first a relic of the Amani empire. Agol'watha is overrun with green sludges and jade oozes, and stray Horde supply crates lie among its stones. Vilebranch scalpers and soothsayers roam the country around these temples, and the Revantusk name them a depraved lot who feed on other trolls. When Vilebranch raiders made off with the tools of the Revantusk smith, a gift from a gnome who once saved his life, the stolen set was spotted near these two temples.",
+  "triggers": [
+   [
+    1,
+    1884
+   ],
+   [
+    1,
+    1917
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Agol'watha (temple of the late Amani Empire, overrun by sludges)",
+   "quest 7839 description (tools spotted near the Agol'watha and Shaol'watha temples, northeastern region)",
+   "quest 7844 description and log (Vilebranch scalpers and soothsayers near Shaol'watha and Agol'watha; depraved, feeding on other trolls)",
+   "zone_areas: area 1884 holds Green Sludge x15, Jade Ooze x7, Horde Supply Crate x4; area 1917 Slagtree's Lost Tools",
+   "DB: Vilebranch Scalper/Soothsayer groups at 447,-3620 and 220-330,-4100..-4350"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 4714,
+  "kind": 1,
+  "zone": 47,
+  "sort": 14,
+  "faction": 0,
+  "title": "Seradane",
+  "body": "In the northeast of the Hinterlands rises Seradane, one of the four great trees whose portals open into the Emerald Dream. The green dragonflight has made the surrounding forest its home. Verdantine oracles, boughguards and tree warders, the dragonspawn of the flight, patrol the glades in bands, and the drakes Rothos and Dreamtracker keep watch nearby. Something darker has come through the portal as well. Lethon, once among Ysera's most trusted lieutenants and now twisted by nightmare, lurks beneath the boughs and turns on any who approach.",
+  "triggers": [
+   [
+    1,
+    356
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Seradane (northeastern Hinterlands, entrance to the Emerald Dream, Rothos and Dreamtracker, Verdantine patrols in groups of three)",
+   "warcraft.wiki.gg/wiki/The_Hinterlands (one of four Great Trees guarded by Emerald Dragons)",
+   "warcraft.wiki.gg/wiki/Lethon",
+   "zone_areas: area 356 holds Verdantine Boughguard/Oracle/Tree Warder, Lethon 14888, Rothos 5718, Dreamtracker 12496"
+  ],
+  "notes": "The wiki's claim that the tree was planted from Nordrassil to hold back saronite was left out as later lore."
+ },
+ {
+  "id": 4715,
+  "kind": 1,
+  "zone": 47,
+  "sort": 15,
+  "faction": 0,
+  "title": "The Overlook Cliffs",
+  "body": "The Overlook Cliffs form the eastern edge of the Hinterlands, where the land drops sheer to the Forbidding Sea and the great river of the region pours over the edge in a massive waterfall. Saltwater snapjaws crowd the shore below, led by a thieving turtle called Gammerita, and a giant turtle known as Ironback is sometimes seen. Small islands lie offshore, and they keep secrets: a Witherbark troll's hidden tablet, the picnic spot of the Revantusk innkeeper Lard, and, under the water at the foot of the falls, the treasure promised by Cortello's riddle. Storms blow in off this coast, and bottles of port lost overboard from a passing ship litter the shallows.",
+  "triggers": [
+   [
+    1,
+    307
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Overlook_Cliffs (eastern shoreline, river ends in a massive waterfall)",
+   "quest 7816 description (Gammerita leader of the snapjaws, thieving)",
+   "quest 2742 log and creature_text 7780 (secret on an island at the Overlook Cliffs)",
+   "quest 7840 description (island to the north)",
+   "quest 626 (base of the great falls, underneath the water)",
+   "quest 580 description (storm off the Hinterlands, Pupellyverbos Port overboard)",
+   "zone_areas: area 307 holds Saltwater Snapjaw x61, Gammerita 7977, Ironback 8213 (rare, family turtle), Rin'ji's Secret, Cortello's Treasure, Lard's Picnic Basket, Pupellyverbos Port x16"
+  ],
+  "notes": "Gammerita 'old' and 'storms rise quickly' were unsupported; reworded to the storm off the Hinterlands in quest 580. Rest verified."
+ },
+ {
+  "id": 4716,
+  "kind": 1,
+  "zone": 47,
+  "sort": 16,
+  "faction": 0,
+  "title": "Revantusk Village",
+  "body": "On the southeastern coast lies Revantusk Village, home of the Revantusk, smallest and weakest of the region's three troll tribes. Scorned by the other forest trolls for their loyalty to the Horde, the Revantusk never formally rejoined it under Thrall but keep a pact of friendship with it, and wind riders link the village to Horde lands. Primal Torntusk, mate of the village elder, gives the orders, drummers beat out the rhythm of the village and watchers stand guard. Its folk are a mixed lot: an orc smith named Slagtree, a fisherman schooled by the great angler Nat Pagle, and the big-bellied Lard, who keeps the peace and sells fish.",
+  "triggers": [
+   [
+    1,
+    3317
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Revantusk_tribe (southeast coast; attacked by other forest trolls for loyalty to the Horde; declined to rejoin, pact of friendship)",
+   "warcraft.wiki.gg/wiki/The_Hinterlands (weakest tribe)",
+   "quests 7845, 7861 (Primal Torntusk, her mate; by order of Primal Torntusk)",
+   "quest 7839 description (Slagtree a young orc saved by a gnome)",
+   "npc_text 7241 (Katoom, mentor Nat Pagle)",
+   "npc_text 7211 (Lard keep peace, sell fish)",
+   "quest 7840 request text (enormous belly)",
+   "zone_areas: area 3317 holds Revantusk Watcher x23, Revantusk Drummer x3, Gorkas 4314 Wind Rider Master, Troll Drum Sound Object"
+  ],
+  "notes": "Cataclysm events (Revantusk openly joining the Horde, Shaol'watha and Jintha'Alor taken) left out."
+ },
+ {
+  "id": 4717,
+  "kind": 2,
+  "zone": 47,
+  "sort": 1,
+  "faction": 1,
+  "title": "Falstad Wildhammer",
+  "body": "Falstad Wildhammer is High Thane of the Wildhammer clan. After the Second War he led a small flight of gryphon riders patrolling the shores of Lordaeron, and it was Falstad and his riders who carried the mage Rhonin and his companions across the Great Sea to Khaz Modan, losing kinsmen to an ambush on the way. He fought in the final battle at Grim Batol that freed the Dragonqueen Alexstrasza. When Kurdran Wildhammer left for Draenor with the Alliance expedition, Falstad stayed behind at Aerie Peak and succeeded him. He has little patience for idle visitors, with trolls, as he puts it, coming out of the woodwork.",
+  "triggers": [
+   [
+    2,
+    5635
+   ],
+   [
+    5,
+    1449
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Falstad_Wildhammer (patrol flight, Rhonin, ambush, Grim Batol, succeeded Kurdran)",
+   "quest 1449 reward text (trolls coming out of the woodwork)",
+   "quest 1450 description",
+   "DB: Falstad 5635 spawned in area 348, faction 694"
+  ],
+  "notes": "Rhonin crossing credited to Falstad and his riders, as the wiki does. Faction 1: Falstad uses faction template 694 (Wildhammer), hostile to Horde, and quest 1449 is Alliance-only. Council of Three Hammers material left out."
+ },
+ {
+  "id": 4718,
+  "kind": 2,
+  "zone": 47,
+  "sort": 2,
+  "faction": 1,
+  "title": "Gryphon Master Talonaxe",
+  "body": "Gryphon Master Talonaxe keeps the great aviary of Aerie Peak and its riders. He has a soft spot for the Explorers' League, for his father helped the first excavation team that discovered Uldaman, and he once lent his best rider, Rhapsody Shindigger, to the dwarf Brohann Caskbelly for a search from the air, only to let him go afterwards when drink got the better of him. The gryphons are his whole world. When young Sharpbeak, heir of the mighty Swiftwing, vanished, Talonaxe feared that the strength and spirit of the whole gryphon fleet would suffer, and he would not rest until the youngster came home.",
+  "triggers": [
+   [
+    2,
+    5636
+   ]
+  ],
+  "sources": [
+   "quest 1450 reward text (Explorers' League, father and Uldaman, sent Rhapsody with Brohann)",
+   "quest 1451 description (had to let him go)",
+   "quest 2988 description and reward text (Swiftwing's heir, strength and spirit of the fleet)",
+   "quest 2994 reward text"
+  ],
+  "notes": "Faction 1: template 694, hostile to Horde."
+ },
+ {
+  "id": 4719,
+  "kind": 2,
+  "zone": 47,
+  "sort": 3,
+  "faction": 0,
+  "title": "Rhapsody Shindigger",
+  "body": "Rhapsody Shindigger was once the finest gryphon rider of Aerie Peak, so trusted that Gryphon Master Talonaxe lent him to the explorer Brohann Caskbelly for a search from the air over the Swamp of Sorrows. But Rhapsody took to liquor the way a gryphon takes to the sky. He came stumbling back from that flight with a troll relic in his pack and a secret he kept to himself, and before long the aviary let him go. He now keeps a small brew camp east of Aerie Peak beside the high elf Gilveradin Sunchaser, where he makes Rhapsody Malt, hiccups through every conversation, and needs a very stiff drink before he will speak of that swamp at all.",
+  "triggers": [
+   [
+    2,
+    5634
+   ]
+  ],
+  "sources": [
+   "quest 1451 description",
+   "quest 1469 description (keg of stout, fell off, trolls, souvenir)",
+   "quest 1452 description and request text (Rhapsody Malt)",
+   "creature_text 5634",
+   "warcraft.wiki.gg/wiki/Rhapsody_Shindigger",
+   "quest 1469 reward text (he knew about the sinking all along)",
+   "zone_areas: area 1881 holds Rhapsody 5634 and Gilveradin 7801"
+  ],
+  "notes": "Reframed: his fall into the Pool of Tears is told in swamp_of_sorrows 823, so this entry now covers only his decline and his camp. Faction 0: Rhapsody uses template 35, friendly to both."
+ },
+ {
+  "id": 4720,
+  "kind": 2,
+  "zone": 47,
+  "sort": 4,
+  "faction": 2,
+  "title": "Primal and Elder Torntusk",
+  "body": "Elder Torntusk is chieftain of the Revantusk, and Primal Torntusk is his mate. In a bold midnight raid the Vilebranch carried the elder off to Jintha'Alor, where Vile Priestess Hexx made ready to offer him to Hakkar, while Primal sought champions to bring him home, fearing the village could not bear so great a loss. She also strikes at the blood god directly, gathering the dark vessels of tainted blood from Jintha'Alor so their taint can be purged, though she warns that even if Hexx falls another will soon take her place. Freed of his shackles, the elder promised that the Revantusk would remember the deed.",
+  "triggers": [
+   [
+    2,
+    14736
+   ],
+   [
+    2,
+    14757
+   ]
+  ],
+  "sources": [
+   "quest 7845 description (my mate taken in a midnight raid)",
+   "quest 7846 reward text (Revantusk will know your deeds)",
+   "quest 7850 description and reward text",
+   "warcraft.wiki.gg/wiki/Revantusk_tribe (Elder Torntusk the Hinterlands chieftain before Cataclysm)"
+  ],
+  "notes": "'Held the village together' replaced with her own words (quest 7845). Faction 2: both use template 1494, hostile to Alliance. Primal Torntusk's Cataclysm role at Jintha'Alor left out."
+ },
+ {
+  "id": 4721,
+  "kind": 2,
+  "zone": 47,
+  "sort": 5,
+  "faction": 2,
+  "title": "Huntsman Markhor",
+  "body": "Huntsman Markhor is master huntsman of Revantusk Village, sworn to keep the beasts of the wilds in check: Silvermane wolves, savage owlbeasts, and the razorbeak gryphons he believes the Wildhammers train to kill trolls. He holds that Zul'jin will return one day. His grief is his own. His twin brother Malkhor, captain of the village guard, was taken in the same raid as Elder Torntusk and swiftly executed, his remains thrown to the oozes and wolves of Jintha'Alor. Markhor asks only that the bones be recovered, so that Mystic Yayo'jin can prepare them for a proper burial.",
+  "triggers": [
+   [
+    2,
+    14741
+   ]
+  ],
+  "sources": [
+   "npc_text 7242 (Zul'jin shall return; master huntsman)",
+   "quests 7828, 7829, 7830 descriptions",
+   "quest 7849 description and request text",
+   "quest 7862 description (Guard Captain Malkhor)"
+  ],
+  "notes": "Faction 2: template 1494."
+ },
+ {
+  "id": 4722,
+  "kind": 2,
+  "zone": 47,
+  "sort": 6,
+  "faction": 0,
+  "title": "Vile Priestess Hexx",
+  "body": "Vile Priestess Hexx is high priestess of the Vilebranch and a devoted servant of Hakkar the blood god. From the summit of Jintha'Alor she weaves the dark magic that fills her warriors with unnatural ferocity, working it through vessels of tainted blood that drive them toward madness, and her elite Aman'zasi guard stands around her. She held the key to the cage of the stolen gryphon Sharpbeak, and when Elder Torntusk of the Revantusk was dragged to Jintha'Alor, it was Hexx who prepared him for sacrifice. Wildhammers and Revantusk alike want her dead.",
+  "triggers": [
+   [
+    3,
+    7995
+   ]
+  ],
+  "sources": [
+   "quest 2993 description (high priestess, key to the cage)",
+   "quest 7845 description (preparing him for a sacrifice to Hakkar)",
+   "quest 7850 description",
+   "quest 7861 description (Aman'zasi elite guard)",
+   "quest 2994",
+   "warcraft.wiki.gg/wiki/Jintha'Alor (follower of Hakkar)"
+  ],
+  "notes": "Faction 0: a kill open to both, and both factions' quests target her."
+ },
+ {
+  "id": 4723,
+  "kind": 2,
+  "zone": 47,
+  "sort": 7,
+  "faction": 0,
+  "title": "The Atal'ai Exile",
+  "body": "In the shadow of Shadra'Alor lives a troll far from home: a priest of the Atal'ai, servants of the blood god in the Temple of Atal'Hakkar in the Swamp of Sorrows. He once thought the high priest Jammal'an a worthy leader, but when he questioned the prophecy that drives his tribe and wondered whether it was nothing but manipulation, he was branded an infidel and cast out, a sentence his people count worse than death. Now he lives among the Witherbark, who do not care for strangers near their home. He craves revenge on Jammal'an and still hopes to go home one day, though he fears his people are already beyond saving.",
+  "triggers": [
+   [
+    2,
+    5598
+   ],
+   [
+    4,
+    1446
+   ]
+  ],
+  "sources": [
+   "quest 1446 description, request and reward text",
+   "quest 1444 description (labeled an infidel, ousted)",
+   "quest 1429 description (fate worse than death, exiled with the Witherbark)",
+   "DB: Atal'ai Exile 5598 in area 353, template 35",
+   "quest 1446 completion text (hopes of returning to his people)"
+  ],
+  "notes": "Reframed: the content of Jammal'an's prophecy is told in swamp_of_sorrows 823 and is no longer retold; this entry keeps to the exile himself. Faction 0: template 35 friendly to both, quest 1446 AllowableRaces 0."
+ },
+ {
+  "id": 4724,
+  "kind": 2,
+  "zone": 47,
+  "sort": 8,
+  "faction": 2,
+  "title": "Rin'ji",
+  "body": "Rin'ji is a Witherbark troll who lost an axe, was captured by the Highvale elves and now sits caged in the Quel'Danil Lodge. Desperate, Rin'ji begs Horde travelers for rescue, knowing full well they have little love for the Witherbark, and promises a secret in return. Once safely within sight of the road home, the troll keeps the bargain and tells of something hidden on a small island at the Overlook Cliffs: a tablet covered in Witherbark markings. The Undercity scholar Oran Snakewrithe found it interesting indeed, and said the Dark Lady would be very pleased.",
+  "triggers": [
+   [
+    2,
+    7780
+   ],
+   [
+    4,
+    2742
+   ]
+  ],
+  "sources": [
+   "quest 2742 description and log",
+   "creature_text 7780",
+   "quest 2782 description",
+   "quest 8273 reward text (Oran: Dark Lady very pleased)"
+  ],
+  "notes": "Faction 2: Rin'ji uses template 126 (Darkspear), hostile to Alliance, and quest 2742 is Horde-only. The DB calls Rin'ji he (quests 2742 log, 2782); the body simply avoids pronouns."
+ },
+ {
+  "id": 4725,
+  "kind": 2,
+  "zone": 47,
+  "sort": 9,
+  "faction": 0,
+  "title": "Lethon",
+  "body": "Lethon was once among the most trusted lieutenants of Ysera, Aspect of the green dragonflight, until the nightmare spreading through the Emerald Dream warped him. His scales have darkened and he wields the power of shadow. Now he haunts Seradane, turning on all who come near the portal. Lethon claims to sense the shadow in the hearts of those who face him, and he tears it from them as dark shades that return to their master and mend his wounds.",
+  "triggers": [
+   [
+    3,
+    14888
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Lethon (Ysera's trusted lieutenant, warped by the Nightmare, darkened scales, shades that heal him)",
+   "creature_text 14888 (I can sense the SHADOW on your hearts)",
+   "DB: Lethon 14888 spawned at Seradane (753,-4012), area 356"
+  ],
+  "notes": "In the live game the four Nightmare dragons rotated between portals; this DB spawns Lethon at Seradane only."
+ },
+ {
+  "id": 4726,
+  "kind": 3,
+  "zone": 47,
+  "sort": 1,
+  "faction": 1,
+  "title": "Saving Sharpbeak",
+  "body": "Sharpbeak, son of Swiftwing, mightiest gryphon of Aerie Peak, vanished while hunting with his parents, and Gryphon Master Talonaxe feared the worst, for the youngster was destined to lead the next generation. The Witherbark seemed the likely thieves, but their village cages held no gryphon, nor was he found atop the Altar of Zul, which Talonaxe counted a mercy given the Vilebranch habit of sacrifice. Talonaxe then sent a feather from Sharpbeak's nest to Thadius Grimshade, a Wildhammer who had left Aerie Peak long ago in pursuit of darker knowledge and now works in Nethergarde Keep. Grimshade's divination found the gryphon caged high on a cliff atop Jintha'Alor, with the key in the hands of Vile Priestess Hexx. Champions fought their way to the summit and set Sharpbeak free, and his parents, Swiftwing and Keenclaw, brought him home.",
+  "triggers": [
+   [
+    4,
+    2988
+   ]
+  ],
+  "sources": [
+   "quests 2988, 2989, 2990, 2992, 2993, 2994 (descriptions and reward texts)",
+   "warcraft.wiki.gg/wiki/Jintha'Alor (parents Swiftwing and Keenclaw)",
+   "warcraft.wiki.gg/wiki/Sharpbeak (son and heir of Swiftwing and Keenclaw)"
+  ],
+  "notes": "Quest 2994 reward text spells the father Swiftwind; quest 2988 and the wiki Sharpbeak and Jintha'Alor pages use Swiftwing, kept here. Faction 1: AllowableRaces 1101 and Talonaxe is hostile to Horde."
+ },
+ {
+  "id": 4727,
+  "kind": 3,
+  "zone": 47,
+  "sort": 2,
+  "faction": 1,
+  "title": "Featherbeard's Last Flight",
+  "body": "Ambassador Rualeth, a draenei envoy, came to Aerie Peak to win the Wildhammers' friendship for the Alliance, only to find them far warier of outsiders than he had been told. While he waited for an audience with the High Thane, he looked for ways to prove good faith: culling the wolf packs that prey on the gryphons, and calling for the death of Witch Doctor Mai'jin, a Witherbark leader blamed for raids on the aeries. Above all he wanted the backing of Featherbeard, the revered gryphon trainer who favored closer ties. But Featherbeard's hovel stood empty. His journal told of stolen eggs and of his plan to seek them at Shadra'Alor, and there his bones were found upon an altar, a map of the hidden eggs still in his hand. The eggs came home, but Rualeth feared the death would enrage Falstad and delay his audience indefinitely.",
+  "triggers": [
+   [
+    4,
+    9469
+   ],
+   [
+    4,
+    9470
+   ],
+   [
+    4,
+    9471
+   ]
+  ],
+  "sources": [
+   "quests 9469, 9470, 9471, 9475, 9476 (descriptions and reward texts)",
+   "npc_text 8847 (wary of outsiders an understatement; Featherbeard favors closer ties)",
+   "warcraft.wiki.gg/wiki/Featherbeard",
+   "warcraft.wiki.gg/wiki/Ambassador_Rualeth (draenei)"
+  ],
+  "notes": "Faction 1: 9469 is Alliance-only, and 9470/9471 come from Rualeth (template 1638, hostile to Horde)."
+ },
+ {
+  "id": 4728,
+  "kind": 3,
+  "zone": 47,
+  "sort": 3,
+  "faction": 2,
+  "title": "Blood at Jintha'Alor",
+  "body": "The Vilebranch prey on the weaker Revantusk, and their latest raid came at midnight. Elder Torntusk was dragged to the heights of Jintha'Alor to be sacrificed to Hakkar, and Guard Captain Malkhor, taken with him, was executed and his remains fed to the oozes and wolves. Primal Torntusk sought champions. They climbed to the chained elder, slew Hitah'ya the Keeper in a nearby cave for the key to his shackles and sent him home, and gathered Malkhor's bones for his twin, Huntsman Markhor. Primal Torntusk then turned the fight on Hexx herself, gathering the vessels of tainted blood that feed the Vilebranch frenzy and posting a bounty on the priestess and her Aman'zasi guard. Even the empty post of guard captain was offered to whoever could thin the Vilebranch ranks, though applications, she noted, would be reviewed next year.",
+  "triggers": [
+   [
+    4,
+    7845
+   ],
+   [
+    4,
+    7849
+   ],
+   [
+    4,
+    7850
+   ],
+   [
+    4,
+    7861
+   ],
+   [
+    4,
+    7862
+   ]
+  ],
+  "sources": [
+   "quests 7845, 7846, 7847, 7849, 7850, 7861, 7862 (descriptions and reward texts)",
+   "warcraft.wiki.gg/wiki/Vilebranch_tribe (Revantusk chosen as a source of victims)"
+  ],
+  "notes": "Faction 2: all quests AllowableRaces 690."
+ },
+ {
+  "id": 4729,
+  "kind": 3,
+  "zone": 47,
+  "sort": 4,
+  "faction": 2,
+  "title": "Messages to the Wildhammer",
+  "body": "The Revantusk have long feuded with the Wildhammers, and Huntsman Markhor claims the dwarves train their gryphons to slay trolls. When word came that the Wildhammers were forging new alliances, this time with the high elves of the Quel'Danil Lodge, the Revantusk cook Otho Moji'ko decided the dwarves needed a message written in the blood of their friends. First Highvale scouts, outrunners, rangers and marksmen were cut down and left where they fell as a warning. Then the gryphons of the hills were hunted for a long and elegant feather. Lastly Otho wrapped a blood drenched spear in gryphon feathers and had it carried into Aerie Peak itself, to be driven into the ground beside the well at the center of town. He hoped it would send the dwarves packing, or at least make them very, very angry.",
+  "triggers": [
+   [
+    4,
+    7841
+   ]
+  ],
+  "sources": [
+   "quests 7841, 7842, 7843 (descriptions, request and reward texts)",
+   "quest 7830 description (Wildhammer trains gryphon to slay troll)",
+   "warcraft.wiki.gg/wiki/Revantusk_tribe (long-standing feud with the Wildhammer)"
+  ],
+  "notes": "Faction 2: AllowableRaces 690."
+ },
+ {
+  "id": 4730,
+  "kind": 3,
+  "zone": 47,
+  "sort": 5,
+  "faction": 2,
+  "title": "The Spider God",
+  "body": "In the Witherbark villages lie bottles of a vile green venom, hoarded in such numbers that the trolls must prize it. Apothecary Lydon of Tarren Mill, always eager for a new poison, wanted to know its source. The broodguard spiders of Shadra'Alor gave venom, but nothing so potent, so he sent for the counsel of Master Gadrin of Sen'jin Village, a troll who knows the Witherbark well. Gadrin's answer was grim: the Witherbark worship a spider god and draw their strongest venom from her. Her true name lay on a tablet in Zul'Farrak, in a tomb guarded by Theka the Martyr. Once it was read, Gadrin set it into a scroll of summoning, and at the altar of Shadra'Alor the spider god Shadra was called forth and slain. Lydon judged her venom the most potent he had ever handled and sent a sample to the Undercity.",
+  "triggers": [
+   [
+    4,
+    2933
+   ]
+  ],
+  "sources": [
+   "quests 2933, 2934, 2935, 2936, 2937, 2938 (descriptions and reward texts)",
+   "creature_template 2707 Shadra (family spider)"
+  ],
+  "notes": "Faction 2: AllowableRaces 690. Lydon himself is covered by hillsbrad 26715 and is only mentioned here."
+ }
+]

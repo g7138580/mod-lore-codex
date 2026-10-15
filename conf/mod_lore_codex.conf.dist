@@ -1,0 +1,36 @@
+[worldserver]
+
+########################################
+# mod-lore-codex
+#
+# A codex of lore that fills in as characters travel, talk to people, fight and quest. Entries
+# are in the world database (mod_lore_codex_entry, mod_lore_codex_trigger); after changing them,
+# ".codex reload" picks them up without a restart.
+########################################
+
+#
+#    LoreCodex.Enable
+#        Description: Master switch. With 0 nothing is discovered and the addon is told the codex
+#                     isn't available.
+#        Default:     1
+#
+
+LoreCodex.Enable = 1
+
+#
+#    LoreCodex.Backfill
+#        Description: At login, credit entries whose triggers a character already met before the
+#                     codex knew about them: areas it has explored and quests it has taken or
+#                     turned in. Kills and conversations can't be looked up afterwards.
+#        Default:     1
+#
+
+LoreCodex.Backfill = 1
+
+#
+#    LoreCodex.ChatFallback
+#        Description: Announce discoveries in chat for characters not running the LoreCodex addon.
+#        Default:     1
+#
+
+LoreCodex.ChatFallback = 1

@@ -1,0 +1,889 @@
+[
+ {
+  "id": 429800,
+  "kind": 0,
+  "zone": 4298,
+  "sort": 0,
+  "faction": 0,
+  "title": "Plaguelands: The Scarlet Enclave",
+  "body": "In the far southeastern corner of the Plaguelands, beyond the reach of the blight, the Scarlet Crusade built a haven it called the Scarlet Enclave. Its towns were clean and whole: the farms, mine, mill and stables of Havenshire, the walled town of New Avalon with its hold, chapel and town hall, and ships riding at anchor off the coast. Then a necropolis appeared in the sky. Acherus, the Ebon Hold, came to rest above the Enclave, and from it the Lich King loosed his newest weapon, the death knights, under Highlord Darion Mograine. From the plateau of Death's Breach they burned Havenshire, sank the Scarlet fleet at Light's Point and broke New Avalon street by street, while the Crusade's High General resolved to take the faithful to Northrend. When the Enclave lay in ashes, the Lich King turned his knights west against Light's Hope Chapel, and there his hold on them was broken.",
+  "triggers": [
+   [
+    1,
+    4298
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Plaguelands:_The_Scarlet_Enclave (southeastern corner of the Plaguelands, towns pristine and untouched by death, Scarlet holdings)",
+   "quest 12593 description (Scarlet Crusade, Light's Hope)",
+   "quest 12641 description and reward text (forge, town hall, hold, chapel)",
+   "quests 12670, 12701, 12719, 12756, 12779, 12800, 12801 descriptions and reward texts",
+   "page_text 3235 (Unknown Crusader's Diary: a necropolis appears)"
+  ],
+  "notes": "Removed the pronoun for Abbendis (lore/model gender mismatch) and softened the claim that the High General sailed from the Enclave to a resolve to go to Northrend (12756)."
+ },
+ {
+  "id": 429801,
+  "kind": 1,
+  "zone": 4298,
+  "sort": 1,
+  "faction": 0,
+  "title": "Acherus: The Ebon Hold",
+  "body": "Acherus is a necropolis raised as the citadel of the Lich King's death knights, and its masters boast that not even Naxxramas could withstand an assault from it. Its design is credited to Obrahiim the Traveler, who also helped conceive Naxxramas. In the Heart of Acherus on the upper floor, Instructor Razuvious measures freshly raised knights, runeforges glow for the etching of blades, and the unworthy hang in chains to be killed. Below lies the Hall of Command, where Highlord Mograine keeps his command post and the masters of blood, frost and unholy teach. Through its great eye the Lich King sees deep into enemy land. After Light's Hope, the Knights of the Ebon Blade took it for their own.",
+  "triggers": [
+   [
+    1,
+    4342
+   ]
+  ],
+  "sources": [
+   "quest 12625 description (citadel of death, Naxxramas could not withstand it)",
+   "page_text 3163 (Compendium of Fallen Heroes: Obrahiim, mastermind behind the creation of Acherus)",
+   "quests 12593, 12619, 12842, 12848 descriptions (Heart of Acherus, runeforges, unworthy initiates)",
+   "quest 12849 reward text (Hall of Command, schools of blood, frost, unholy)",
+   "quest 12626 (Corvus, garrison floor)",
+   "quest 12636 description (the eye: what the eye sees, the Lich King sees)",
+   "quests 13165, 13166",
+   "warcraft.wiki.gg/wiki/Acherus:_The_Ebon_Hold (Obrahiim, Ebon Blade captured it from Patchwerk)",
+   "quest 12657 description (command post of Acherus on the first floor)",
+   "quests 13165 reward and 13166 description (Heart of Acherus is the second floor)",
+   "creature spawn heights on map 609: Razuvious and the Heart teleporter at z 420, Darion 28444 and the trainers at z 367 to 377"
+  ],
+  "notes": "Fixed: the Hall of Command lies below the Heart of Acherus, not above (13166, spawn heights). Dropped Siegesmith Corvus and the garrison floor: 12625 and 12626 have no quest starter (unused). 4342 is an indoor WMO area of the hold and is in the reachable list."
+ },
+ {
+  "id": 429802,
+  "kind": 1,
+  "zone": 4298,
+  "sort": 2,
+  "faction": 0,
+  "title": "Death's Breach",
+  "body": "Death's Breach is the plateau beneath the floating Ebon Hold, the staging ground for the Scourge's assault on the Enclave. Scourge gryphons carry knights down from Acherus to a camp of tents, roosts and runeforges, where Prince Valanar drives the assault and Salanar the Horseman, Gothik the Harvester and Orithos the Sky Darkener each claim new blood for their tasks. Here too Olrun the Battlecaller sets initiates to duel one another in Death's Challenge, a rite said to be born of the Lich King's victory over Illidan. When Havenshire fell, the plateau became the Scourge's main base, and from a platform above it the Lich King himself watched the last Scarlet armies die.",
+  "triggers": [
+   [
+    1,
+    4356
+   ]
+  ],
+  "sources": [
+   "quest 12670 description (Death's Breach, staging point, Scourge gryphons)",
+   "quests 12679, 12680, 12697 givers at Death's Breach",
+   "quest 12733 description (Death's Challenge, born of the Lich King's victory over Illidan)",
+   "quest 12778 description (Lich King stands watch at Death's Breach)",
+   "warcraft.wiki.gg/wiki/Death's_Breach (staging area, later main ground base, Lich King platform)",
+   "creature spawns grouped by zone_areas.py: Valanar 28377, Gothik 28658, Salanar 28653, Orithos 28647, Olrun 29047, Lich King 29110, Skeletal Gryphon Roost in 4356"
+  ],
+  "notes": "Softened 'where the Scourge first set foot' to staging ground (12670, wiki); gryphons named as in 12670."
+ },
+ {
+  "id": 429803,
+  "kind": 1,
+  "zone": 4298,
+  "sort": 3,
+  "faction": 0,
+  "title": "Havenshire",
+  "body": "Havenshire was the working heart of the Enclave, a farming town of fields, pumpkin patches and a lumber mill north of New Avalon's walls, its people Scarlet peasants and citizens who fed and supplied the Crusade. It was the first place the death knights struck. Prince Valanar wanted the fleeing villagers killed above all, to plant terror, and the Sky Darkeners loosed saronite arrows at anyone running for New Avalon. Geists picked over the dead while Gothik raised the corpses for the Scourge, and Noth the Plaguebringer set a plague cauldron in the farms to rot the land. Before long Havenshire lay in ruins, a thousand corpses waiting for rebirth.",
+  "triggers": [
+   [
+    1,
+    4347
+   ],
+   [
+    1,
+    4348
+   ],
+   [
+    1,
+    4349
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Havenshire (north of New Avalon, constant siege, mill and stables abandoned, citizens fled to New Avalon)",
+   "quest 12678 description (horses, mines, lumber, citizens; kill the fleeing villagers)",
+   "quest 12679 description (Sky Darkeners, saronite arrows, fleeing Havenshire for New Avalon)",
+   "creature_text 28890 (Gothik raising corpses, blasted geists)",
+   "quest 12716 description and npc_text 13395 (Noth, pumpkin patch, plague cauldron)",
+   "quest 12714 reward text (Havenshire is ours, a thousand corpses)",
+   "spawns: Scarlet Peasant, Citizen of Havenshire, Gluttonous Geist, Noth 28919 in 4347 to 4349"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 429804,
+  "kind": 1,
+  "zone": 4298,
+  "sort": 4,
+  "faction": 0,
+  "title": "Havenshire Stables",
+  "body": "The Havenshire Stables held the Crusade's horses, and so they drew the death knights, who wanted mounts of their own. Salanar the Horseman sent initiates to steal a steed from under the guards, then had his dark riders slay and raise the beasts as deathchargers in the Realm of Shadows. The stablemaster, Kitrik, has sent more than one horse thief back to the Lich King in pieces. In the stables lies the diary of an unknown crusader who had come to fear Abbendis was splitting the Crusade to sail north with only the most faithful, leaving the rest to burn. When the necropolis appeared, the author drew a map for swimming all the way round to Tirisfal.",
+  "triggers": [
+   [
+    1,
+    4350
+   ]
+  ],
+  "sources": [
+   "quest 12680 description (stable full of horses, deranged stable master Kitrik)",
+   "quest 12687 description (Realm of Shadows, dark rider, deathcharger)",
+   "creature_text 28683 (Kitrik: how many more of you do I need to send back to the Lich King in pieces)",
+   "page_text 3235 (Unknown Crusader's Diary, gameobject 191653 spawned in 4350)",
+   "spawns: Stable Master Kitrik 28683, Havenshire horses in 4350",
+   "page_text 3236 to 3238 (diary entries 15 and 23, swim map)"
+  ],
+  "notes": "Removed the pronoun for Abbendis; otherwise verified."
+ },
+ {
+  "id": 429805,
+  "kind": 1,
+  "zone": 4298,
+  "sort": 5,
+  "faction": 0,
+  "title": "Havenshire Mine",
+  "body": "Ore from the Havenshire Mine was carted down to the coast and loaded aboard the Scarlet ships. When the Scourge came, the Crusade tried to strip the mine bare and save what it could, and the death knights answered with Gothik the Harvester's gift: a portable plague spreader turned loose among the miners. Some rose as ghouls to follow their killers, others as raging spirits. The panic emptied the tunnels and sent the Crusade scrambling for its ships, and Scourge agents left a mine car near the outhouse so that an unwitting miner would wheel a death knight straight to the docks.",
+  "triggers": [
+   [
+    1,
+    4365
+   ]
+  ],
+  "sources": [
+   "quest 12697 description (strip the Havenshire Mine, load cargo aboard frigates)",
+   "quest 12698 description, completion and reward text (plague spreader, ghouls, enraged spirits, mines no longer safe)",
+   "quest 12701 description (mine car near the outhouse)",
+   "creature_text 28841 (Scarlet Miner: get this down to the ships)",
+   "spawns: Scarlet Miners, Mine Cars, Inconspicuous Mine Car 190767 in 4365"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 429806,
+  "kind": 1,
+  "zone": 4298,
+  "sort": 6,
+  "faction": 0,
+  "title": "Light's Point",
+  "body": "Light's Point is the beach east of Havenshire, east of the tower that shares its name, where the Scarlet fleet lay at anchor. When the Scourge broke Havenshire, the Crusade threw every soldier it had outside New Avalon into a blockade here, guarding the frigates while ore from the mine was loaded aboard. Cannons lined the shore and a thousand defenders stood between the Scourge and the ships. It did not matter. A death knight smuggled aboard in a mine car turned a ship's own cannons on the beach, and in minutes the entire fleet was wiped out, its ruins left burning along the coast.",
+  "triggers": [
+   [
+    1,
+    4354
+   ],
+   [
+    1,
+    4353
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Light's_Point (beach east of Light's Point Tower and Havenshire)",
+   "quest 12697 description (blockade at Light's Point, frigates docked on the coast)",
+   "quest 12700 reward text (a thousand soldiers stand between us and their ships)",
+   "quest 12701 description and reward text (mine car, cannons, entire fleet wiped out in minutes)",
+   "creature_text 28907 (the Scarlet fleet lies in ruin upon the sundered coast)",
+   "spawns: Scarlet Fleet Defender, Scarlet Land Cannon in 4353 and 4354"
+  ],
+  "notes": "'Below the tower' changed to east of the tower, as the wiki places it."
+ },
+ {
+  "id": 429807,
+  "kind": 1,
+  "zone": 4298,
+  "sort": 7,
+  "faction": 0,
+  "title": "Crypt of Remembrance",
+  "body": "The Crypt of Remembrance, an old burial vault, stands at the southern edge of Havenshire just north of New Avalon's wall. Once Havenshire fell, the Scourge took the crypt as its forward base for the assault on New Avalon. Prince Keleseth held court there with Baron Rivendare of Stratholme, crypt guardians kept watch, and a quartermaster named Fineous traded with knights returning from the front. Rivendare, who judged the crusaders a uniquely witless lot, mused that a mere mention of the Light would send them rushing headlong into any fight.",
+  "triggers": [
+   [
+    1,
+    4355
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Crypt_of_Remembrance (southern Havenshire, north of New Avalon's wall, forward base)",
+   "quest 12714 reward text and 12715 description (forward base, Keleseth)",
+   "npc_text 13419 (Rivendare on the Crusaders)",
+   "spawns: Keleseth 28911, Rivendare 28910, Fineous 28943, Crypt Guardian 28937 in 4355"
+  ],
+  "notes": "Rivendare's view reworded to match npc_text 13419. Crypt's builders kept vague; wiki places it south of the farms by New Avalon's wall."
+ },
+ {
+  "id": 429808,
+  "kind": 1,
+  "zone": 4298,
+  "sort": 8,
+  "faction": 0,
+  "title": "New Avalon",
+  "body": "New Avalon was the last bastion of the Scarlet Crusade in the Enclave, a walled town of orchards, an inn, a forge, a great hold, a chapel and a town hall. Its people had been promised safety. When Havenshire's survivors crowded in, High General Abbendis, with High Abbot Landgren alongside, told them only the pure of heart would be allowed to stay, and the inquisitors would turn the rest away. Ghouls hammered at the gates, the dead knights followed, and soon the Scourge ran freely through the streets while the citizens begged to know where the last ships were going. Even its inn and forge were plundered, for Noth the Plaguebringer wanted a cauldron and chains for his plague.",
+  "triggers": [
+   [
+    1,
+    4343
+   ],
+   [
+    1,
+    4345
+   ],
+   [
+    1,
+    4377
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/New_Avalon (subzones)",
+   "quest 12641 description (forge, town hall, hold, chapel)",
+   "quest 12716 description (the inn and the forge near the gate)",
+   "creature_text 28548 (Abbendis: only the pure of heart may remain)",
+   "creature_text 28558 (Landgren)",
+   "warcraft.wiki.gg/wiki/Brigitte_Abbendis (spoke with Landgren to frightened citizens)",
+   "quest 12715 description (attacks upon the gates of the last Scarlet bastion, ghouls)",
+   "creature_text 28941 (we were promised safety, the Scourge are running freely, where are those ships going)"
+  ],
+  "notes": "Abbendis spoke the pure of heart line (28548); Landgren only added a remark (28558), reworded accordingly."
+ },
+ {
+  "id": 429809,
+  "kind": 1,
+  "zone": 4298,
+  "sort": 9,
+  "faction": 0,
+  "title": "New Avalon Town Hall",
+  "body": "The town hall was where New Avalon's officials kept their records and its mayor, Quimby, kept his seat. In the last days a furious crowd besieged it, shouting that they had been promised safety and demanding to know what the Crimson Dawn was and where the ships were bound. Prince Keleseth wanted no official left alive, and he sent a death knight to kill the mayor and seize the town registry. Among its ledgers of births and deaths were the movements of three vessels already sent abroad, bound for Northrend under the words Crimson Dawn.",
+  "triggers": [
+   [
+    1,
+    4346
+   ]
+  ],
+  "sources": [
+   "creature_text 28941 (crowd: Quimby, Crimson Dawn, ships, promised safety)",
+   "quest 12719 description and reward text (assassinate the mayor, registry, three vessels to Northrend, Crimson Dawn)",
+   "spawns: Mayor Quimby 28945, New Avalon Councilman, New Avalon Registry 190947 in 4346"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 429810,
+  "kind": 1,
+  "zone": 4298,
+  "sort": 10,
+  "faction": 0,
+  "title": "Scarlet Hold",
+  "body": "The largest building in New Avalon, Scarlet Hold was the Crusade's keep in the Enclave, home to its commanders and to High Inquisitor Valroth and his acolytes. Its officers kept a schedule of every patrol route here, and its cells held the Crusade's captives. When the death knight Koltira Deathweaver was taken behind the lines, he was dragged here in irons. A rescuer broke in, and the injured Koltira raised an anti-magic barrier while Valroth came down to deal with the intruders himself. The High Inquisitor of New Avalon did not leave the hold alive.",
+  "triggers": [
+   [
+    1,
+    4351
+   ]
+  ],
+  "sources": [
+   "quest 12724 description (largest building in New Avalon, patrol schedule)",
+   "quest 12725 description (Koltira dragged in irons to the Scarlet Hold)",
+   "creature_text 28912 and 29001 (anti-magic barrier, the High Inquisitor comes)",
+   "quest 12727 description (slay the High Inquisitor and his cronies)",
+   "spawns: Scarlet Commander Rodrick 29000, High Inquisitor Valroth 29011, Koltira 28912, Patrol Schedule 191084 in 4351"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 429811,
+  "kind": 1,
+  "zone": 4298,
+  "sort": 11,
+  "faction": 0,
+  "title": "Scarlet Tavern",
+  "body": "The Scarlet Tavern sits at the southern end of New Avalon, tucked behind the two orchards beside the Chapel of the Crimson Flame. Death knights sent behind the lines to hunt a Scarlet courier made it their hideout, and Orbaz Bloodbane and Thassarian ran their part of the war from its common room, Scarlet corpses strewn across the floor. From here they planned the theft of the patrol schedule, the ambush at the overlook and the deception of the High General. Orbaz finally opened a portal from the tavern straight back to Acherus.",
+  "triggers": [
+   [
+    1,
+    4394
+   ]
+  ],
+  "sources": [
+   "quest 12723 description (tavern at the southern end, behind the two orchards, adjacent to the chapel; base of operations)",
+   "quest 12724 description (Scarlet corpses strewn across the floor)",
+   "quests 12754, 12755 (ambush and disguise planned by Orbaz)",
+   "quest 12757 description (portal to Acherus)"
+  ],
+  "notes": "verified; 4394 is an indoor WMO area in the reachable list, Orbaz 28914 and Thassarian 28913 stand in the tavern."
+ },
+ {
+  "id": 429812,
+  "kind": 1,
+  "zone": 4298,
+  "sort": 12,
+  "faction": 0,
+  "title": "Chapel of the Crimson Flame",
+  "body": "The Chapel of the Crimson Flame is the Crusade's church in New Avalon, and in its prison house inquisitors held their captives. The Crusade had been busy: when Knight Commander Plaguefist and his company came to raze the chapel, looking for death knights imprisoned there, they found it full of Argent Dawn prisoners instead, most already dead. The few still breathing were left for a death knight to execute, and the chapel was put to the torch. A cry for vengeance had been answered, and within hours the chapel would be ash.",
+  "triggers": [
+   [
+    1,
+    4352
+   ]
+  ],
+  "sources": [
+   "quest 12738 description and reward text (raze the chapel, any death knights imprisoned)",
+   "quest 12739 description (prison house full of Argent Dawn prisoners, most already dead)",
+   "quest 12751 description (the chapel will be a pile of ashes in a matter of hours)",
+   "quest 12727 description (executing prisoners at the chapel)",
+   "spawns: Torch Toss dummies, Scarlet Inquisitor, Plaguefist 29053 and prisoners 29032, 29061 to 29074 in 4352"
+  ],
+  "notes": "Prison house position 'behind' the chapel unsupported; made general."
+ },
+ {
+  "id": 429813,
+  "kind": 1,
+  "zone": 4298,
+  "sort": 13,
+  "faction": 0,
+  "title": "Scarlet Overlook",
+  "body": "A short way east of the Scarlet Tavern lies the Scarlet Overlook, a wide open stretch of road thick with crusaders and ballistas, above the way down to King's Harbor. A courier from Hearthglen was due to pass here with word for the High General. Orbaz Bloodbane hid a death knight under makeshift cover at the overlook, disguised as a tree. When the curious courier stopped to inspect it, the knight cut him down and took his message and his clothes. The message revealed that the armies of Hearthglen and Tirisfal were marching into a massacre.",
+  "triggers": [
+   [
+    1,
+    4360
+   ]
+  ],
+  "sources": [
+   "quest 12754 description (courier passes the overlook, roads wide open and swarming with Crusaders, makeshift cover, 200 paces east)",
+   "creature_text 29076 (Scarlet Courier: what a strange tree)",
+   "quest 12754 reward text (armies of Hearthglen and Tirisfal marching into a massacre)",
+   "creature_text 28964 (courier from Hearthglen)",
+   "spawns: Scarlet Ballista, crusaders in 4360",
+   "warcraft.wiki.gg/wiki/King's_Harbor (below the Scarlet Overlook)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 429814,
+  "kind": 1,
+  "zone": 4298,
+  "sort": 14,
+  "faction": 0,
+  "title": "King's Harbor",
+  "body": "King's Harbor lies on the bluffs southeast of New Avalon, below the Scarlet Overlook, and its docks belonged to the Crusade. In the Enclave's last hours High General Abbendis stood here with High Abbot Landgren and a company of officers, craftsmen and Scarlet champions, while the people of New Avalon begged for a place on the last ship. A disguised death knight brought the High General the stolen courier's message and carried away the final orders: turn the armies around and make ready to sail for the frozen wastes. The faithful of the Crimson Dawn were bound for Northrend, no longer the Scarlet Crusade but the Scarlet Onslaught.",
+  "triggers": [
+   [
+    1,
+    4359
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/King's_Harbor (bluffs southeast of New Avalon, below the Scarlet Overlook)",
+   "quest 12755 description (Abbendis at King's Harbor)",
+   "quest 12756 description (turn your armies around, prepare your ships, Scarlet Onslaught)",
+   "creature_text 28964 (the High General chooses who may go)",
+   "spawns: Abbendis 29077, Landgren 29078, Captain Shely 28549, Commander Jordan 28556, Scarlet Champion 29080 in 4359",
+   "creature_text 28941 (I want on that last ship)",
+   "spawns: Bishop Street, Blacksmith Goodman, Foreman Kaleiki, Lead Cannonneer Zierhut, Stable Master Mercer, Torturer LeCraft in 4359"
+  ],
+  "notes": "Removed pronouns for Abbendis. Dropped the inferred claim that the last ships were kept here and that the Onslaught sailed from these docks; now only says Abbendis stood at the docks and ordered the armies to prepare ships (12756)."
+ },
+ {
+  "id": 429815,
+  "kind": 1,
+  "zone": 4298,
+  "sort": 15,
+  "faction": 0,
+  "title": "Browman Mill",
+  "body": "Browman Mill stands at the edge of the Enclave, just north of Light's Hope Chapel, reached from Death's Breach through a cave and the sickly Noxious Glade beyond it. With the Scarlet Enclave destroyed, the Lich King made it the staging ground for his last blow. Scourge Commander Thalanor waited at the mill, and there Highlord Darion Mograine gathered the death knights of Acherus and the risen armies for the march on the chapel. Waiting there, Darion said the chapel was where he had once sacrificed everything to free his father, and now he came to destroy it.",
+  "triggers": [
+   [
+    1,
+    4364
+   ],
+   [
+    1,
+    4357
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Browman_Mill (north of Light's Hope Chapel, Scourge staging ground for the Second Battle for Light's Hope Chapel)",
+   "quest 12800 description (Thalanor at the edge of Browman Mill, through the cave into the Noxious Glade)",
+   "quest 12800 reward text",
+   "npc_text 13482 (Darion: here is where I sacrificed everything to free my father)",
+   "spawns: Thalanor 31082, Darion 29173 in 4364"
+  ],
+  "notes": "Clarified that Darion's line (npc_text 13482) refers to the chapel, not the mill. Stephen Browman left out."
+ },
+ {
+  "id": 429816,
+  "kind": 2,
+  "zone": 4298,
+  "sort": 1,
+  "faction": 0,
+  "title": "Highlord Darion Mograine",
+  "body": "Darion Mograine is the son of Alexandros Mograine, the Ashbringer. To free his father's cursed soul he drove the corrupted Ashbringer through his own heart at Light's Hope Chapel, his last memory as a free man, and was raised a death knight in the Lich King's service. Made Highlord of the death knights of Acherus, he commanded the scarlet apocalypse from the Hall of Command. Something of the old Darion lingered: reading of the fleet's destruction, he began to speak of his father and stopped himself. After Light's Hope he freed himself and his knights, founded the Knights of the Ebon Blade and swore to destroy the Lich King.",
+  "triggers": [
+   [
+    2,
+    28444
+   ],
+   [
+    2,
+    31084
+   ]
+  ],
+  "sources": [
+   "quest 13165 description (plunged the Ashbringer into my own heart to free my father's soul, last memory as a free man)",
+   "npc_text 13482",
+   "creature_text 28444 (the scarlet apocalypse has begun)",
+   "quest 12657 description (Hall of Command)",
+   "quest 12706 reward text (since my father wielded...)",
+   "quest 12801 reward text (join me as a Knight of the Ebon Blade, destroy the Lich King)",
+   "warcraft.wiki.gg/wiki/Darion_Mograine (son of Alexandros, raised by Kel'Thuzad, Highlord, founded the Ebon Blade)"
+  ],
+  "notes": "verified. 28444 is the quest giver in Acherus on map 609; 31084 is the Ebon Blade Darion in Acherus over the Eastern Plaguelands (map 0) with gossip; neither is used by Eastern Plaguelands 13933."
+ },
+ {
+  "id": 429817,
+  "kind": 2,
+  "zone": 4298,
+  "sort": 2,
+  "faction": 0,
+  "title": "The Lich King",
+  "body": "The Lich King, once Prince Arthas of Lordaeron, rules the Scourge from the Frozen Throne. In the Enclave he came in person. He greeted each new knight in Acherus, granting immortality and the duty of retribution, and through the eye of Acherus he sensed an old enemy he had thought destroyed long ago. His judgment on the Scarlet Crusade was death to all, and from Death's Breach he taunted the last crusaders that their Light had abandoned them. When the Enclave burned, he set a helm upon each champion's head and sent them against Light's Hope Chapel, knowing what lay beneath it.",
+  "triggers": [
+   [
+    2,
+    25462
+   ],
+   [
+    2,
+    29110
+   ]
+  ],
+  "sources": [
+   "quest 12593 description (immortality, force of retribution)",
+   "quest 12641 reward text (I sense an old enemy, destroyed long ago)",
+   "quest 12657 description (Death. To. All.)",
+   "creature_text 29110 (The Light has abandoned you)",
+   "quest 12779 reward text (helm, Light's Hope Chapel)",
+   "creature_text 29183 group 47 and 29175 group 28 (he sent them in to die, knew what lies beneath the chapel)",
+   "creature_text 28391 (Arthas... my king)"
+  ],
+  "notes": "'Helm of the Scourge' made general (12779 reward text says only a helm)."
+ },
+ {
+  "id": 429818,
+  "kind": 2,
+  "zone": 4298,
+  "sort": 3,
+  "faction": 0,
+  "title": "Instructor Razuvious",
+  "body": "Instructor Razuvious, a master of Naxxramas, oversees the making of new death knights in the Heart of Acherus. He judges each body the necromancers raise: a champion is sent to the Lich King, a failure who wakes with emotion and memory intact is disposed of. He sets each initiate to forge a first runeblade, teaches runeforging, and hands over the key that frees an unworthy prisoner to be killed in cold blood, for only then does the endless hunger ease. His word on desertion is posted in the frontline reports: any death knight who deserts will suffer without end, and he will see to it himself.",
+  "triggers": [
+   [
+    2,
+    28357
+   ]
+  ],
+  "sources": [
+   "creature_text 28357 (measured, retains emotion and memory, dispose of it)",
+   "quests 12619, 12842, 12848 descriptions",
+   "page_text 3169 (Report from the Frontlines: Eastern Kingdoms)",
+   "warcraft.wiki.gg/wiki/Acherus:_The_Ebon_Hold (necromancers under Razuvious judged which bodies were worthy)",
+   "page_text 3239 (ATTENTION: Geists, signed Razuvious)"
+  ],
+  "notes": "Razuvious starts 12619 but the initiate forges the blade from a rack sword; reworded."
+ },
+ {
+  "id": 429819,
+  "kind": 2,
+  "zone": 4298,
+  "sort": 4,
+  "faction": 0,
+  "title": "Prince Valanar",
+  "body": "Prince Valanar is one of the blood princes of the Scourge, and he led the death knights' assault from Death's Breach. A connoisseur of slaughter, he could smell the crusaders on the wind and openly relished the feast to come. It was Valanar who taught the initiates their first lesson in Scourge warfare, terror, ordering that the fleeing villagers of Havenshire die before the soldiers, and Valanar who sent a knight into the mine car that destroyed the Scarlet fleet. He expected a commendation from the Lich King for that victory, and from his stage at the Breach he exhorted the knights to leave no survivors.",
+  "triggers": [
+   [
+    2,
+    28377
+   ],
+   [
+    2,
+    28907
+   ]
+  ],
+  "sources": [
+   "quest 12670 reward text (Valanar sniffs the air, fine cuisine)",
+   "quest 12678 description (first lesson: TERROR, kill the fleeing villagers)",
+   "quest 12701 description and reward text (commendation from the Lich King)",
+   "creature_text 28907 (leave no survivors, speech)",
+   "warcraft.wiki.gg/wiki/Death's_Breach (Valanar led the undead, speech from a new stage)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 429820,
+  "kind": 2,
+  "zone": 4298,
+  "sort": 5,
+  "faction": 0,
+  "title": "Prince Keleseth",
+  "body": "Prince Keleseth calls himself the blood lord, ruler of the southeastern reaches of Northrend, and he came to the Enclave at the Lich King's request, sweetened by a sea of souls to drink. From the Crypt of Remembrance he directed the war on New Avalon, refusing to let mindless ghouls do the work alone: officials had to die to show there was no escape. He had a mayor murdered for the town registry, and from its pages worked out that Scarlet ships were sailing for Northrend. To learn why, he handed out his jeweled persuaders and set his knights to torturing the truth out of the crusaders.",
+  "triggers": [
+   [
+    2,
+    28911
+   ]
+  ],
+  "sources": [
+   "quest 12715 reward text (blood lord, southeastern reaches of Northrend, sea of endless souls)",
+   "quest 12719 description and reward text",
+   "quest 12720 description (persuaders, ornately jeweled box)",
+   "quest 12715 description (my dear brother, Prince Keleseth)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 429821,
+  "kind": 2,
+  "zone": 4298,
+  "sort": 6,
+  "faction": 0,
+  "title": "Koltira Deathweaver",
+  "body": "Koltira Deathweaver was a high elf of Quel'Thalas, slain when the Scourge invaded his homeland by the human death knight Thassarian and raised to serve the Lich King. The two became brothers in death. Sent behind the lines in New Avalon to hunt a Scarlet courier, Koltira was captured, beaten and dragged in irons to the Scarlet Hold. Even rescued he was bitter, calling himself a failure who should have been left to die, since saving the weak defied the brotherhood's covenants. Yet broken ribs and all, he raised an anti-magic barrier to shield his rescuer and stayed behind to draw the Crusade's fire.",
+  "triggers": [
+   [
+    2,
+    28912
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Koltira_Deathweaver (high elf, slain by Thassarian, brothers in death)",
+   "quest 12725 description and reward text",
+   "creature_text 28912 (ribs broken, anti-magic barrier, I'll draw their fire)",
+   "creature_text 28913 (in death we are brothers)"
+  ],
+  "notes": "verified (wiki: died in the Scourge invasion of Quel'Thalas, duel ended in Silvermoon)."
+ },
+ {
+  "id": 429822,
+  "kind": 2,
+  "zone": 4298,
+  "sort": 7,
+  "faction": 0,
+  "title": "Thassarian",
+  "body": "Thassarian was a soldier of Lordaeron who followed Prince Arthas to Northrend, was killed there and raised by Arthas as a death knight. In Quel'Thalas he slew the high elf Koltira Deathweaver, who rose as a death knight in turn, and in undeath the two became brothers. At the Scarlet Tavern in New Avalon, when Orbaz blamed the captured Koltira's weakness and began to hint at his elven blood, Thassarian answered that in life they had been hated enemies, but in death they were brothers, and he broke the Scourge's own code to send help. When Valroth's head came back to him, he promised it to the ghouls.",
+  "triggers": [
+   [
+    2,
+    28913
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Thassarian (Lordaeron soldier, killed in Northrend and raised by Arthas, killed Koltira)",
+   "creature_text 28913 and 28914 (the Thassarian and Orbaz exchange)",
+   "quest 12727 reward text (feed this monster's head to the ghouls)",
+   "quest 12725 reward text (Koltira: Thassarian, you blasted fool)",
+   "warcraft.wiki.gg/wiki/Thassarian (killed in Northrend by the death knight Falric, then raised by Arthas)"
+  ],
+  "notes": "Orbaz only began the blood elf jibe (Not to mention...) and Thassarian finished it; reworded. Head: he says he will feed it to the ghouls and tosses it into the back room; reworded to promised."
+ },
+ {
+  "id": 429823,
+  "kind": 2,
+  "zone": 4298,
+  "sort": 8,
+  "faction": 0,
+  "title": "Orbaz Bloodbane",
+  "body": "Orbaz Bloodbane is a death knight of Acherus who believes only the strong should survive. Sent behind the lines with Thassarian and Koltira, he ran the hunt for the Scarlet courier from the Scarlet Tavern, and the scheme that fooled the High General was his: an ambush at the overlook, a dead man's clothes, a dark disguise. He had no sympathy for comrades who fell into enemy hands, and when Koltira was taken he said weakness had led to his capture, and began to add scorn for the elf's blood. At Light's Hope Chapel, when the holy light fell and the fighting stopped, Orbaz fled.",
+  "triggers": [
+   [
+    2,
+    28914
+   ]
+  ],
+  "sources": [
+   "npc_text 13444 (we are the chosen ones)",
+   "creature_text 28914 (his weakness led to his capture, only the strong should survive)",
+   "creature_text 28913 (What, Orbaz? That he's a blood elf?)",
+   "quests 12754, 12755",
+   "creature_text 29204 group 71 (Orbaz flees)",
+   "warcraft.wiki.gg/wiki/Orbaz_Bloodbane (apathetic to captured comrades, fled at Light's Hope)",
+   "quest 12723 description (Keleseth sent Orbaz, Thassarian and Koltira)",
+   "zone_the_scarlet_enclave.cpp Light of Dawn script (Orbaz flees at the end of the fight, before the Lich King appears)"
+  ],
+  "notes": "Fixed: Keleseth, not Orbaz, sent the three behind the lines (12723). Orbaz's flight timed to the end of the fight per the event script. Icecrown role left out."
+ },
+ {
+  "id": 429824,
+  "kind": 2,
+  "zone": 4298,
+  "sort": 9,
+  "faction": 0,
+  "title": "High General Abbendis",
+  "body": "Brigitte Abbendis is the High General of the Scarlet Crusade, once a paladin of the Silver Hand, who took the rank after a father died shielding the young paladin at Hearthglen. The soldiers say the Light speaks to the High General, who alone chose who would go and who must stay behind. As the Scourge closed on New Avalon, Abbendis told its frightened people that only the pure of heart would remain. At King's Harbor, deceived by a disguised death knight, Abbendis declared the Scarlet lands lost, sent word for the armies of Hearthglen and Tirisfal to make for the frozen wastes, and proclaimed the end of the Crusade and the birth of the Scarlet Onslaught.",
+  "triggers": [
+   [
+    2,
+    29077
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Brigitte_Abbendis (Silver Hand, father died defending Hearthglen shielding her, succeeded him, visions)",
+   "creature_text 28964 (the Light speaks to the High General; she chooses who may go)",
+   "creature_text 28548 (only the pure of heart may remain)",
+   "quest 12755 completion and reward text",
+   "quest 12756 description (Scarlet lands are lost, Scarlet Onslaught)"
+  ],
+  "notes": "Rewritten without pronouns, following Eastern Plaguelands (wiki notes the lore/model gender mismatch). 29077 is talkable only while disguised as the courier (ender 12755, starter 12756); 28548 in New Avalon is hostile and has no gossip, so not used. Faction 0: death knight quests open to both sides."
+ },
+ {
+  "id": 429825,
+  "kind": 2,
+  "zone": 4298,
+  "sort": 10,
+  "faction": 0,
+  "title": "Gothik the Harvester",
+  "body": "Gothik the Harvester, grand necromancer of the Lich King, came from the frozen heart of Naxxramas to feast on souls, and promptly found himself out of them. In Havenshire he raised fallen crusaders into ghouls and gryphons, cursing the geists who chewed the bodies before he could get to them. His gift to the Crusade was a portable plague spreader, which turned the Havenshire miners into ghouls or raging spirits and emptied the mine. Later, in the Noxious Glade, he experimented on captured Scarlet deserters floating in vats of slime, assuring one who asked whether it would hurt that it would, immensely, and would probably knock him out.",
+  "triggers": [
+   [
+    2,
+    28658
+   ]
+  ],
+  "sources": [
+   "quest 12697 description (grand necromancer of the Lich King) and reward text",
+   "quest 12698 description (frozen heart of Naxxramas, all out of souls, plague spreader)",
+   "creature_text 28890 (rise and fly, blasted geists)",
+   "creature_text 29112 and 29193 (Noxious Glade deserters: Will it hurt?)",
+   "spawns: Gothik 29112 and Scarlet Deserter 29193 in 4357",
+   "spawns: Gothik 28890 (the corpse-raising Gothik) in Havenshire 4347"
+  ],
+  "notes": "Fixed: the corpse-raising Gothik 28890 stands in Havenshire, not Death's Breach. Deserter experiments reworded to the vats and his actual answer (29112)."
+ },
+ {
+  "id": 429826,
+  "kind": 2,
+  "zone": 4298,
+  "sort": 11,
+  "faction": 0,
+  "title": "Lord Thorval",
+  "body": "Lord Thorval, master of the school of blood in the Hall of Command, was once a paladin who left his wife and two daughters at home to hunt the Scourge. He came back to find his village burned and his family dead behind a barred door, killed by the Scarlet Crusade on a rumor of plague. Broken by grief and rage, he was overrun by the very Scourge he had hunted, and swore himself to the Lich King as the blows fell. His memoirs, left for new knights troubled by their past, praise the Scourge for purging the feelings that tormented him. Every mortal story, he writes, ends the same way: in death.",
+  "triggers": [
+   [
+    2,
+    28472
+   ]
+  ],
+  "sources": [
+   "page_text 3218 onward (The Memoirs of Lord Thorval, gameobject 191649)",
+   "quest 12849 reward text (Thorval, headmaster of the school of blood, Hall of Command)",
+   "npc_text 13173"
+  ],
+  "notes": "Memoir says the Lich King purged the human sensations (not memories) that tormented him; reworded, and the closing line paraphrased further from page_text 3224."
+ },
+ {
+  "id": 429827,
+  "kind": 3,
+  "zone": 4298,
+  "sort": 1,
+  "faction": 0,
+  "title": "In Service of the Lich King",
+  "body": "Every death knight of Acherus begins the same way: raised by necromancers in the Heart of Acherus and measured by Instructor Razuvious. Those found worthy are sent to the Lich King, who gives them immortality and a purpose, to bring doom to the Scarlet Crusade and to Light's Hope below. Each initiate takes a battle-worn sword from the racks and forges it into a runeblade, learns to etch runes of power upon it, and then is handed a key. Chained nearby are the unworthy, fellow risen who woke with too much of their old selves. One is freed, armed and fought to the death, and the hunger fades. Then the Lich King lends the initiate the eye of Acherus to scout New Avalon, and sends his judgment to Mograine: death to all.",
+  "triggers": [
+   [
+    4,
+    12593
+   ]
+  ],
+  "sources": [
+   "quests 12593, 12619, 12842, 12848, 12636, 12641, 12657 descriptions and reward texts",
+   "creature_text 28357 (retains emotion and memory)",
+   "creature_text 29520 (unworthy initiate: I was a soldier of the Light once)",
+   "warcraft.wiki.gg/wiki/Acherus:_The_Ebon_Hold (necromancers raised bodies Razuvious selected)"
+  ],
+  "notes": "'Dragged from a heap of corpses' unsupported; replaced with the necromancers' raising per the wiki."
+ },
+ {
+  "id": 429828,
+  "kind": 3,
+  "zone": 4298,
+  "sort": 2,
+  "faction": 0,
+  "title": "The Scarlet Harvest",
+  "body": "From Death's Breach the new knights were loosed on Havenshire. Prince Valanar wanted terror first: crusaders slain and left for the death march, and above all the fleeing villagers, because killing them is what breaks the hearts of men. Salanar the Horseman had them steal horses from the stables to be remade as deathchargers, Orithos's Sky Darkeners rained saronite arrows on the roads, and Gothik loosed his plague among the miners. In the chaos the Crusade pulled back to its ships at Light's Point. Valanar seized the moment: a knight hidden in a mine car was carried behind the blockade, turned the ships' cannons on the defenders, and the whole fleet was destroyed in minutes. Darion Mograine, reading the report, could only wonder at it.",
+  "triggers": [
+   [
+    4,
+    12670
+   ]
+  ],
+  "sources": [
+   "quests 12670, 12678, 12679, 12680, 12687, 12697, 12698, 12700, 12701, 12706 descriptions and reward texts"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 429829,
+  "kind": 3,
+  "zone": 4298,
+  "sort": 3,
+  "faction": 0,
+  "title": "The Crimson Dawn",
+  "body": "With New Avalon under siege, Prince Keleseth had the mayor killed and read in the town registry that three Scarlet ships had already sailed for Northrend, beside them the words Crimson Dawn. Prisoners tortured with his persuaders spoke of an awakening, of a Light that speaks to the High General, and of a courier coming from Hearthglen. Orbaz Bloodbane laid the trap: a knight waited in hiding at the Scarlet Overlook, killed the courier, and wearing his clothes and face carried the message to Abbendis in person at King's Harbor. Believing the courier true, the High General gave up the Enclave as lost, sent word for the approaching armies of Hearthglen and Tirisfal to turn for the frozen wastes, and handed over a journal. The Crusade was no more; the Scarlet Onslaught was born. Orbaz laughed at it, and Mograine set his trap for the armies already on the march.",
+  "triggers": [
+   [
+    4,
+    12719
+   ]
+  ],
+  "sources": [
+   "quests 12719, 12720, 12723, 12724, 12754, 12755, 12756, 12757, 12778 descriptions and reward texts",
+   "creature_text 28964 (Crimson Dawn is an awakening, the Light speaks to the High General, courier from Hearthglen)"
+  ],
+  "notes": "Removed pronoun for Abbendis. The armies still arrived and were destroyed (12778, 12779); summarized as Mograine's trap."
+ },
+ {
+  "id": 429830,
+  "kind": 3,
+  "zone": 4298,
+  "sort": 4,
+  "faction": 0,
+  "title": "Brothers in Death",
+  "body": "Orbaz, Thassarian and Koltira were sent behind enemy lines in New Avalon, and breaking through cost them dearly: Koltira Deathweaver was taken and dragged to the Scarlet Hold. Orbaz would have left him, since in the Scourge only the strong survive, and began to sneer at the elf's blood besides. Thassarian, who had killed Koltira in life, would not. A knight was sent to tear the hold apart. Koltira, half broken, cursed the rescue as a breach of the dark brotherhood's covenants, then shielded his rescuer inside an anti-magic barrier while High Inquisitor Valroth and his acolytes came for them. Valroth fell, Koltira stayed behind to draw the Crusade's fire, and Thassarian, handed the inquisitor's head, insisted his brother would find his way out. Koltira's warning that the Crusade was executing prisoners at the chapel set the next blow in motion.",
+  "triggers": [
+   [
+    4,
+    12725
+   ]
+  ],
+  "sources": [
+   "quests 12725, 12727 descriptions and reward texts",
+   "creature_text 28912, 28913, 28914",
+   "quest 12738 description"
+  ],
+  "notes": "Orbaz only began the blood elf jibe; reworded. Koltira's chapel warning came at the start of the breakout (12727 description), not as a last word; reworded."
+ },
+ {
+  "id": 429831,
+  "kind": 3,
+  "zone": 4298,
+  "sort": 5,
+  "faction": 0,
+  "title": "A Special Surprise",
+  "body": "When Knight Commander Plaguefist's company tore apart the prison house at the Chapel of the Crimson Flame, they found it full of captured members of the Argent Dawn. Plaguefist saved one prisoner for each knight to execute, and it was no accident whom they found. The prisoner knew them: a champion of their own people, from their own homeland, now wearing the Scourge's colors. Bleeding and chained, the prisoner begged the knight to remember where they were born and the splendor of life, to fight the Lich King's grip and be a hero again. There was no time. The prisoner asked for a quick end before they were both killed, and the knight gave it. Plaguefist was pleased: the knight was not one of them anymore, he said. They were Scourge, forever.",
+  "triggers": [
+   [
+    4,
+    12739
+   ],
+   [
+    4,
+    12742
+   ],
+   [
+    4,
+    12743
+   ],
+   [
+    4,
+    12744
+   ],
+   [
+    4,
+    12745
+   ],
+   [
+    4,
+    12746
+   ],
+   [
+    4,
+    12747
+   ],
+   [
+    4,
+    12748
+   ],
+   [
+    4,
+    12749
+   ],
+   [
+    4,
+    12750
+   ]
+  ],
+  "sources": [
+   "quests 12739 and race variants 12742 to 12750 (one per race)",
+   "creature_text 29032 (Malar Bravehorn, Mulgore) and 29061 (Ellen Stanbridge, Elwynn)",
+   "quest 12739 reward text (You're Scourge. You're one of us. Forever)"
+  ],
+  "notes": "Plaguefist's closing line reworded closer to the 12739 reward text. Ten race variants (12739, 12742 to 12750) cover every race, so faction 0."
+ },
+ {
+  "id": 429832,
+  "kind": 3,
+  "zone": 4298,
+  "sort": 6,
+  "faction": 0,
+  "title": "The Light of Dawn",
+  "body": "With the Enclave in ashes, the Lich King gave his last command: Light's Hope Chapel must fall. His knights passed through the Noxious Glade to Browman Mill, where Darion Mograine called the Scourge to rise, and thousands of the dead marched on the chapel with the knights of Acherus at their head. The defense of the chapel is told among the tales of the Eastern Plaguelands. For the knights, the battle ended when a holy light broke over the field and the fighting stopped. Orbaz Bloodbane fled. Darion fell to his knees and told his knights they had lost. Then their master came, and admitted he had sent them there to die, their lives worth nothing to him. Darion turned on him, crying betrayal. Afterward he told his knights there would be no atonement for monsters like them, only amends paid in death, and called them to Acherus as Knights of the Ebon Blade, sworn to destroy the Lich King and end the Scourge.",
+  "triggers": [
+   [
+    4,
+    12800
+   ],
+   [
+    4,
+    12801
+   ]
+  ],
+  "sources": [
+   "quests 12800, 12801 descriptions and reward texts",
+   "creature_text 29173 (Darion: hear the call of the Highlord, RISE, betrayal, Ebon Blade vow)",
+   "creature_text 29183 group 47 (I did send them in to die)",
+   "creature_text 29204 group 71 (Orbaz flees)",
+   "eastern_plaguelands.json 13933 (chapel side, not repeated)",
+   "creature_text 29173 groups 26, 43, 68, 69 (we have lost, betrayal, thousands rise, the army marches)",
+   "zone_the_scarlet_enclave.cpp Light of Dawn script (order: fight ends, Orbaz flees, Darion kneels, later the Lich King appears)"
+  ],
+  "notes": "Reordered to the event script: Orbaz fled when the fight ended, before the Lich King appeared; added Darion's surrender. Chapel-side details (Alexandros, the Ashbringer, Tirion, the Argent Crusade) left to Eastern Plaguelands 13933."
+ },
+ {
+  "id": 429833,
+  "kind": 3,
+  "zone": 4298,
+  "sort": 7,
+  "faction": 0,
+  "title": "Taking Back Acherus",
+  "body": "Free of the Lich King, Darion Mograine said the haze had lifted, and he saw as clearly as on the day he drove the Ashbringer into his own heart. If his order was to survive, it needed a home, and its home was still in enemy hands. Each knight was taught to open a death gate and sent back to Acherus, where the first battle of the Knights of the Ebon Blade was already underway. The Hall of Command was secured quickly, but the Lich King had left a parting gift in the Heart of Acherus: the stitched horror Patchwerk and a horde of abominations. Knights fought together to cut them down, the Scourge banners came down, and the Ebon Hold belonged to the Ebon Blade. One last task remained: each knight would carry Tirion Fordring's letter to the leaders of their old people.",
+  "triggers": [
+   [
+    4,
+    13165
+   ],
+   [
+    4,
+    13166
+   ]
+  ],
+  "sources": [
+   "quests 13165, 13166 descriptions and reward texts",
+   "quests 13188 and 13189 (Tirion's letter)",
+   "warcraft.wiki.gg/wiki/Acherus:_The_Ebon_Hold (Patchwerk, Scourge banners replaced with Ebon Blade banners)"
+  ],
+  "notes": "Opening reworded to match 13165. The Alliance return (13188) is told in Stormwind 151916; only mentioned here."
+ },
+ {
+  "id": 429834,
+  "kind": 3,
+  "zone": 4298,
+  "sort": 8,
+  "faction": 2,
+  "title": "Warchief's Blessing",
+  "body": "Death knights who had been heroes of the Horde were sent by Darion Mograine through a portal to Orgrimmar, bearing a letter Tirion Fordring had given on their behalf. The order needed allies if it was to survive. Thrall read the letter and remembered: Tirion was the paladin who had once given up everything to save the orc Eitrigg from execution, and the warchief had known only one other human willing to make such a sacrifice. Blinking back a tear, he spoke Taretha's name. For Tirion and for Eitrigg, he accepted the knights back into the Horde and their order as allies. Blood and honor, he declared.",
+  "triggers": [
+   [
+    4,
+    13189
+   ]
+  ],
+  "sources": [
+   "quest 13189 description and reward text",
+   "eastern_plaguelands.json 13918 (Tirion defended an honorable orc)"
+  ],
+  "notes": "Letter wording and Thrall's tear matched to 13189. Faction 2: 13189 AllowableRaces 690 (Horde). Thrall 4949 stands in Orgrimmar; a later Orgrimmar zone should not reuse QUEST_ACCEPT 13189."
+ }
+]

@@ -1,0 +1,751 @@
+[
+ {
+  "id": 300,
+  "kind": 0,
+  "zone": 3,
+  "sort": 0,
+  "faction": 0,
+  "title": "Badlands",
+  "body": "The Badlands are a cracked desert of dry earth, scattered boulders and winding canyons in the southeast of Khaz Modan, reached by a chasm from Loch Modan to the north and a mountain pass from the Searing Gorge to the west. Coyotes, buzzards and restless rock elementals roam the flats, and little else lives easily here. Treasure draws visitors all the same. In the north lie the ruins of Uldaman, a vault left by the titans, and the prospectors of Ironforge and the Explorers' League who dug at its edges have been slaughtered by Stonevault troggs woken from long slumber and attacked by the Shadowforge clan of Dark Iron dwarves, who hold Angor Fortress. Dustbelcher ogres keep camps scattered across the land, and in Lethlor Ravine in the far east the black dragonflight nests above an ancient prison. At Kargath, the only Horde outpost in Khaz Modan, an expeditionary force sent by the Warchief prepares to carry the war into Blackrock Mountain.",
+  "triggers": [
+   [
+    1,
+    3
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Badlands_(Classic) (cracked desert, access routes, prospectors, Stonevault troggs slaughtered explorers)",
+   "warcraft.wiki.gg/wiki/Kargath (only Horde outpost in Khaz Modan, Expeditionary Force under Thrall)",
+   "quests 719, 726, 762, 782, 793 descriptions and reward texts",
+   "DB spawns: Shadowforge at Angor Fortress (338), Dustbelcher ogres at 341-344, 347, black whelps at Lethlor Ravine (339)",
+   "quest 718 description (dwarves fled the Uldaman excavation site)"
+  ],
+  "notes": "Fact-check: removed an unsupported sequence (troggs then Shadowforge driving the dwarves off); both are now named as attackers per wiki and quests 718, 719."
+ },
+ {
+  "id": 301,
+  "kind": 1,
+  "zone": 3,
+  "sort": 1,
+  "faction": 0,
+  "title": "Kargath",
+  "body": "Kargath, named for the Shattered Hand chieftain Kargath Bladefist, stands in the northwest of the Badlands as the only Horde outpost in all of Khaz Modan. Lying so close to the Alliance-held Loch Modan, it is often cut off from Stonard, and its head scout Neeka Bloodscar sends outrunners who do not always arrive. The outpost is the headquarters of the Kargath Expeditionary Force under Warlord Goretooth, whose posted orders call for the death of Dark Iron dwarves on sight. Beside the warriors work the troll Jarkal Mossmeld, an innkeeper and a wind rider master, and a newly arrived blood elf advisor who finds the place far less civilized than he had hoped.",
+  "triggers": [
+   [
+    1,
+    340
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Kargath (named after Kargath Bladefist, only Horde outpost in Khaz Modan)",
+   "quest 1418 description, 1418 reward text (Neeka, outrunner), 1419 description (coyotes steal food)",
+   "quest 9439 description (Advisor Sarophas, headquarters of the Expeditionary Force, Sunstrider)",
+   "quests 4081, 4082 (KILL ON SIGHT posters by order of Warlord Goretooth)",
+   "quest 2338 reward text (I am a troll of my word)",
+   "DB spawns in area 340: 9077, 6868, 5394, 9356, 2861, 17097, objects 164867, 164868",
+   "warcraft.wiki.gg/wiki/Jarkal_Mossmeld (troll in Kargath, no profession given)"
+  ],
+  "notes": "Northwestern position from world coordinates (-6645,-2151). The posters target Dark Irons in Blackrock Depths; body keeps it general. Fact-check: 'alchemist' for Jarkal dropped (no source calls him one)."
+ },
+ {
+  "id": 302,
+  "kind": 1,
+  "zone": 3,
+  "sort": 2,
+  "faction": 0,
+  "title": "Apocryphan's Rest",
+  "body": "South of Kargath, the bones of an enormous dragon lie half sunk in the hardpan, its ribs arching over the sand like the beams of a fallen hall. Nothing else remains of the creature, and the place belongs now to the scavengers. Giant buzzards circle and settle on the old bones, ridge stalkers and elder coyotes hunt the open ground, and lumbering siege golems sometimes stalk past the remains.",
+  "triggers": [
+   [
+    1,
+    337
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Apocryphan's_Rest (draconic skeleton south of Kargath, flock of hungry buzzards)",
+   "DB spawns in area 337: Giant Buzzard 2831, Ridge Stalker Patriarch 2734, Elder Crag Coyote 2729, Siege Golem 2749",
+   "quest 733 description (stories of siege engines in the Badlands)"
+  ],
+  "notes": "Name origin not given anywhere; not invented. Fact-check: verified."
+ },
+ {
+  "id": 303,
+  "kind": 1,
+  "zone": 3,
+  "sort": 3,
+  "faction": 0,
+  "title": "The Dustbowl",
+  "body": "East of Kargath the ground drops into the Dustbowl, a wide basin of sand where lesser rock elementals tumble about the slopes. Here the gnome scholar Lotwil Veriatus has pitched his camp, choosing the place for its raw materials and its open space, ideal for testing spells that might go wrong. His assistant Lucien Tosselwrench keeps a nervous eye on him, and his mechanical servant Servo rattles off cheerful remarks about the heat. Siege golems trudge past, and a huge carrion bird called Zaricotl circles the basin in search of its next meal.",
+  "triggers": [
+   [
+    1,
+    1878
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Badlands_(Classic) (Lotwil's camp in the Dustbowl)",
+   "quest 710 description and completion text (raw materials, open space)",
+   "quest 4062 description (camp to the east of Kargath)",
+   "creature_text 2920, 2922 (Servo lines about heat)",
+   "DB spawns in area 1878: 2735, 2921, 2920, 2922, 2749, 2931, object Barrel of Sweet Nectar"
+  ],
+  "notes": "Zaricotl described from creature_text 2931 (flaps wings, squawks, eats remains of its victims). Fact-check: verified."
+ },
+ {
+  "id": 304,
+  "kind": 1,
+  "zone": 3,
+  "sort": 4,
+  "faction": 0,
+  "title": "Mirage Flats",
+  "body": "South of the Dustbowl the land opens into the Mirage Flats, a shimmering plain where heat rising from the dry earth and swirling winds play tricks on the eye and make any trail hard to follow. Elder coyotes, ridge huntresses and rock elementals roam the open sand under circling buzzards. Stranger things pass through as well: the giant Anathemus walks these flats, and the old long distance recovery unit called 7:XT is sometimes seen trundling across them.",
+  "triggers": [
+   [
+    1,
+    1879
+   ]
+  ],
+  "sources": [
+   "quest 732 completion text (heat rising from the dry earth and swirling winds make tracking difficult)",
+   "DB spawns in area 1879: 2729, 2732, 92, 2831, Anathemus 2754, 7:XT 14224",
+   "creature_template 2754 (type giant), 14224 subname Long Distance Recovery Unit"
+  ],
+  "notes": "Anathemus is a giant (creature type 5); no further lore claimed. Fact-check: direction corrected to south from spawn coordinates."
+ },
+ {
+  "id": 305,
+  "kind": 1,
+  "zone": 3,
+  "sort": 5,
+  "faction": 0,
+  "title": "Hammertoe's Digsite",
+  "body": "In the north of the Badlands, not far from Uldaman, lies the excavation of the dwarf Hammertoe Grez, who worked with the Explorers' League seeking the origins of his people among the titan ruins. The Shadowforge clan fell on the site without warning and killed nearly everyone there. Their tunnelers and darkweavers still pick through the abandoned camp, and a crumpled map left in the dirt carries a last chalked message from the prospector they dragged away. The few survivors gathered at a small camp just to the south, where Prospector Ryedol plots to recover what was lost.",
+  "triggers": [
+   [
+    1,
+    346
+   ]
+  ],
+  "sources": [
+   "quest 719 description (Shadowforge attack killed nearly everyone, site just north of Ryedol)",
+   "quest 720 description (Crumpled Map: They're taking me to Uldaman)",
+   "quest 723 description (seeking the origins of our people)",
+   "DB spawns in area 346: Shadowforge Tunneler 2739, Shadowforge Darkweaver 2740, object Crumpled Map 2868",
+   "warcraft.wiki.gg/wiki/Hammertoe_Grez"
+  ],
+  "notes": "Fact-check: verified."
+ },
+ {
+  "id": 306,
+  "kind": 1,
+  "zone": 3,
+  "sort": 6,
+  "faction": 0,
+  "title": "Angor Fortress",
+  "body": "Angor Fortress is a Dark Iron stronghold in the northern Badlands, the base from which the Shadowforge clan organizes its digging in Uldaman. Shadowforge warriors and chanters crowd its halls alongside stone golems, and among them dwells Ambassador Infernus, an agent of Ragnaros sent to watch over the hunt for titan artifacts that might be turned against Ironforge. The dwarves have dragged others here too: the goblin Rigglefuzz was once held in the fortress to study power stones from Uldaman, and a blood elf advisor robbed on the road saw his belongings vanish behind its walls.",
+  "triggers": [
+   [
+    1,
+    338
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Angor_Fortress (main site of operations, organize exploration of Uldaman, Infernus agent of Ragnaros)",
+   "quest 762 description (Infernus sent by Ragnaros to mind the Shadowforge seeking artifacts)",
+   "quest 726 reward text (Angor Fortress their base of operations)",
+   "quest 2418 description (Rigglefuzz brought to Angor Fortress to study stones)",
+   "quest 9439 description (Sarophas robbed, Dark Irons disappeared into Angor Fortress)",
+   "DB spawns in area 338: 2743, 2742, 2723, 2744, 2745"
+  ],
+  "notes": "Fact-check: 'commanders answer to Infernus' made general (quest 762 only says he minds the Shadowforge)."
+ },
+ {
+  "id": 307,
+  "kind": 1,
+  "zone": 3,
+  "sort": 7,
+  "faction": 0,
+  "title": "The Maker's Terrace",
+  "body": "Along the northern edge of the Badlands, close beneath the ruins of Uldaman, the vault of the titans, stretches the Maker's Terrace. The ground here is rich in ore and herbs, and the Shadowforge clan has claimed it. Surveyors mark out new diggings while Dark Iron diggers and ruffians guard the work, and a hulking war golem patrols the slopes. Carved stone urns turn up in the earth here, ancient relics that the dwarves of Ironforge fear may have stirred the troggs to fury.",
+  "triggers": [
+   [
+    1,
+    1897
+   ]
+  ],
+  "sources": [
+   "DB spawns in area 1897: Shadowforge Surveyor 4844, Digger 4846, Ruffian 4845, War Golem 2751, Carved Stone Urn 2743, Meeting Stone 178833",
+   "warcraft.wiki.gg/wiki/Badlands_(Classic) (Maker's Terrace rich in minerals and herbs)",
+   "quest 704 description (ancient urns at the dig site outside Uldaman may have incited the troggs)",
+   "warcraft.wiki.gg/wiki/Uldaman (titans, makers)"
+  ],
+  "notes": "Name origin not stated. Proximity to Uldaman from the Meeting Stone and spawns. War Golem 2751 is a Dark Iron faction rare. Fact-check: urns no longer tied to the makers (unsupported). Rich in ore and herbs confirmed: wiki Badlands_(Classic) names the Maker's Terrace."
+ },
+ {
+  "id": 308,
+  "kind": 1,
+  "zone": 3,
+  "sort": 8,
+  "faction": 0,
+  "title": "Valley of Fangs",
+  "body": "The Valley of Fangs is a small valley between two great stone formations in the heart of the Badlands, its floor prowled by coyotes and cougars. A handful of outcasts have made a camp here. The goblin Rigglefuzz keeps the scavengers off with flash bombs and grills buzzard wings over his fire, Jazzrik sells blacksmithing supplies, and the smith Martek the Exiled works a forge far from anyone who might want him dead. They call themselves a bunch of old, washed-up desert dogs, and few visitors give them reason to say otherwise.",
+  "triggers": [
+   [
+    1,
+    1877
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Valley_of_Fangs (small valley between two massive stone formations, camp with Martek, Rigglefuzz, Jazzrik)",
+   "quests 703, 705 descriptions (buzzard wings, flash bombs to scare wildlife)",
+   "npc_text 17151 (Martek gossip: old, washed-up desert dogs)",
+   "quest 1106 reward text (few people who don't want me dead)",
+   "DB spawns in area 1877: 4618, 2817, 9179, 2732, 2727"
+  ],
+  "notes": "Fact-check: 'narrow passage' changed to small valley per wiki."
+ },
+ {
+  "id": 309,
+  "kind": 1,
+  "zone": 3,
+  "sort": 9,
+  "faction": 0,
+  "title": "Camp Kosh",
+  "body": "Camp Kosh is a Dustbelcher ogre camp in the northeast of the Badlands. When the dwarves fled the Uldaman excavation, they left wagons and crates of supplies abandoned along the way, and the ogres of Kosh fell on them like vultures. Among their spoils is a cart that carried the weapons and stores of Sigrun Ironhew's camp, leaving the dwarves there without food. Dustbelcher warriors and mystics guard the loot amid the stench of the camp.",
+  "triggers": [
+   [
+    1,
+    341
+   ]
+  ],
+  "sources": [
+   "quest 718 description (abandoned wagons and crates, ogres from Camp Kosh on them like vultures, took the cart, no food)",
+   "DB spawns in area 341: Dustbelcher Warrior 2906, Mystic 2907, object Excavation Supply Crate 2867",
+   "warcraft.wiki.gg/wiki/Dustbelcher (ogres stole the wagons and supplies)"
+  ],
+  "notes": "Northeast placement from world coordinates (-6278,-3743). Fact-check: verified."
+ },
+ {
+  "id": 310,
+  "kind": 1,
+  "zone": 3,
+  "sort": 10,
+  "faction": 0,
+  "title": "Camp Boff",
+  "body": "Camp Boff is one of the Dustbelcher ogre camps that dot the Badlands, southeast of Kargath, where ogres and brutes keep watch while coyotes and ridge huntresses prowl nearby. The nomadic mercenary band of Boss Tho'grun, which drifts between the ogre camps and is hard to track across the shimmering desert, is said to pass through here at times. Since the band betrayed the Horde, both Horde and Alliance have sent hunters here after the stolen relic it carries.",
+  "triggers": [
+   [
+    1,
+    342
+   ]
+  ],
+  "sources": [
+   "quest 782 description and completion text (Camp Boff southeast of Kargath, Tho'grun betrayed the Horde)",
+   "quest 732 description and completion text (band of wandering ogres sometimes seen near Camp Boff, nomadic)",
+   "warcraft.wiki.gg/wiki/Dustbelcher (nomadic band traveling between the camps)",
+   "DB spawns in area 342: Dustbelcher Ogre 2701, Brute 2715, Feral Crag Coyote 2728"
+  ],
+  "notes": "Fact-check: 'last passed through here after betraying the Horde' and 'orcs and dwarves' were unsupported; the band is now only said to pass through (quests 732, 782), and its pursuers are Horde and Alliance. Tho'grun spawns at Camp Cagg in this DB."
+ },
+ {
+  "id": 311,
+  "kind": 1,
+  "zone": 3,
+  "sort": 11,
+  "faction": 0,
+  "title": "Camp Cagg",
+  "body": "Camp Cagg sits in the southwestern Badlands, among broken hills where greater rock elementals grind across the slopes and the massive elemental Rumbler is said to roam. Dustbelcher maulers, shamans and wyrmhunters make their camp here beside the living stone, and the scholar Lotwil Veriatus has scried the elementals near them for the bracers of rock binding they carry. The camp lies on the circuit of Boss Tho'grun's wandering mercenaries, who drift from one ogre camp to the next.",
+  "triggers": [
+   [
+    1,
+    344
+   ]
+  ],
+  "sources": [
+   "DB spawns in area 344: Dustbelcher Mauler 2717, Shaman 2718, Wyrmhunter 2716, Greater Rock Elemental 2736, Rumbler 2752, Boss Tho'grun 2944",
+   "quest 712 description (greater rock elementals southwest, near some ogres)"
+  ],
+  "notes": "Boss Tho'grun spawns here in this DB. Rumbler is a rare elemental (2752). Fact-check: verified."
+ },
+ {
+  "id": 312,
+  "kind": 1,
+  "zone": 3,
+  "sort": 12,
+  "faction": 0,
+  "title": "Dustbelch Grotto",
+  "body": "Dustbelch Grotto, a cave in the far southwest of the Badlands, is the main home of the Dustbelcher ogres. Ogre lords hold court here among ogre mages, maulers and shamans, and greater rock elementals lumber about the entrance. The ogres who once fought for the Horde are part of it no longer, and those of the grotto go well supplied with scrap metal. Dwarves short of materials eye the metal plates and parts the ogres carry, whispering that the old tales of siege engines in the Badlands may hold some truth.",
+  "triggers": [
+   [
+    1,
+    347
+   ]
+  ],
+  "sources": [
+   "quest 733 description (main ogre camp at Dustbelch Grotto, ogres well equipped with scrap metal, stories of siege engines)",
+   "quest 782 completion text (ogres are part of the Horde no longer)",
+   "warcraft.wiki.gg/wiki/Dustbelcher (mostly found in Dustbelch Grotto)",
+   "DB spawns in area 347: 2719, 2720, 2717, 2718, 2736"
+  ],
+  "notes": "Fact-check: verified."
+ },
+ {
+  "id": 313,
+  "kind": 1,
+  "zone": 3,
+  "sort": 13,
+  "faction": 0,
+  "title": "Agmond's End",
+  "body": "In the south of the Badlands, past Angor Fortress, lay the smallest of the Ironforge excavations, a tiny operation where Prospector Agmond, who had charge of the dwarven digs in these lands, was last known to be working. When word from him stopped coming, searchers found only his broken skeleton, picked clean, and a trail of blood across the rock where he had dragged himself from the west. Beside his hand he had scratched a name into the sandstone: Murdaloc. Stonevault troggs now hold the site, and Agmond's killer Murdaloc lurks among them. Close by, the mad hermit Theldurin the Lost has made his camp.",
+  "triggers": [
+   [
+    1,
+    345
+   ]
+  ],
+  "sources": [
+   "quest 738 description (southernmost dig site, tiny operation past the Angor Fortress)",
+   "quest 738 reward text (skeleton, bones picked clean), quest 739 description (crawled from the west, Murdaloc scrawled)",
+   "warcraft.wiki.gg/wiki/Agmond's_End (troggs infested the site, Theldurin camp nearby)",
+   "DB spawns in area 345: Stonevault Bonesnapper 2893, Shaman 2894, Murdaloc 2945, Theldurin 2785, object Battered Dwarven Skeleton 2875",
+   "quest 739 log text (Slay Agmond's killer, Murdaloc)"
+  ],
+  "notes": "Fact-check: Agmond was in charge of all the Badlands digs (quest 738), not only this one; 'led by that brute' replaced with quest 739's 'Agmond's killer'."
+ },
+ {
+  "id": 314,
+  "kind": 1,
+  "zone": 3,
+  "sort": 14,
+  "faction": 0,
+  "title": "Dustwind Gulch",
+  "body": "Dustwind Gulch is a wind-scoured cut in the eastern Badlands, where rabid coyotes and ridge stalkers hunt and starving buzzards wait for what they leave behind. At its edge a rear passage opens into Uldaman, and Stonevault troggs, roused from long slumber within the ruins, prowl the gulch, their seers and bashers among them. Some carry flakes of indurium, a metal of remarkable resistance to heat that is mined in its true form only deep within Uldaman.",
+  "triggers": [
+   [
+    1,
+    1898
+   ]
+  ],
+  "sources": [
+   "areatrigger 902 Uldaman Exit at -6606,-3762, posarea gives 1898",
+   "DB spawns in area 1898: Stonevault Seer 2892, Basher 6733, Rabid Crag Coyote 2730, Ridge Stalker 2731, Starving Buzzard 2829",
+   "quests 1108, 1137 descriptions (Stonevault troggs carry indurium flakes, true ore deep in Uldaman, heat resistance)",
+   "warcraft.wiki.gg/wiki/Uldaman (troggs woke and slaughtered the explorers)"
+  ],
+  "notes": "Fact-check: 'spilled out through it' inference and 'rare' metal dropped."
+ },
+ {
+  "id": 315,
+  "kind": 1,
+  "zone": 3,
+  "sort": 15,
+  "faction": 0,
+  "title": "Lethlor Ravine",
+  "body": "In the far east of the Badlands a deep ravine cuts through the mountains, and it belongs to the black dragonflight. Scalding whelps swarm its floor and scorched guardian drakes keep watch over it. The ravine holds an older secret: the Seal of the Earth, a prison held shut by runestones set in three pillars of amethyst, opal and diamond. Within it the Dark Iron dwarves of Angor Fortress bound Blacklash and Hematus, twin lieutenants of Deathwing. Near the mouth of the ravine Thorkaf Dragoneye teaches the working of dragon scale, and warns his visitors that their stench will draw every dragon for miles.",
+  "triggers": [
+   [
+    1,
+    339
+   ]
+  ],
+  "sources": [
+   "quest 717 and 793 descriptions (Seal, runestones, Pillars of Amethyst, Opal and Diamond)",
+   "quest 732 reward text (Sign of the Earth created by the Dark Iron dwarves of Angor Fortress to bind two of Deathwing's lieutenants, the twins)",
+   "quest 717 description (black dragons have taken up residence)",
+   "warcraft.wiki.gg/wiki/Lethlor_Ravine (black whelps and drakes)",
+   "DB spawns in area 339: Scalding Whelp 2725, Scorched Guardian 2726, objects 2933, 2842, 2848, 2858",
+   "npc_text 3802 (Thorkaf), quest 5145, Thorkaf 7867 at -6841,-3638"
+  ],
+  "notes": "Thorkaf stands just outside the ravine area (area 3 at the generic level); described as near the mouth. 'Held shut by runestones' from 717. Fact-check: verified."
+ },
+ {
+  "id": 316,
+  "kind": 2,
+  "zone": 3,
+  "sort": 1,
+  "faction": 1,
+  "title": "Hammertoe Grez",
+  "body": "Hammertoe Grez was a dwarven prospector of Ironforge who worked with Historian Karnik to uncover the lost artifacts of Uldaman. He searched the titan ruins for the origins of his people, and for the old magics that give life to golems, hoping to find them before the Dark Iron dwarves could. When the Shadowforge clan overran his digsite they carried him off to Uldaman to wring from him what he knew. Beaten and coughing, he clung to life in the ruins long enough to send his amulet, his life's work, back to Prospector Ryedol before his spirit slipped away.",
+  "triggers": [
+   [
+    2,
+    2909
+   ],
+   [
+    5,
+    721
+   ]
+  ],
+  "sources": [
+   "quest 724 description (Hammertoe and Karnik working together to find the lost artifacts in Uldaman)",
+   "quest 721 description (golem magics, Hammertoe searching to stop them, held to learn what he knows)",
+   "quest 723 description (seeking the origins of our people), 723 reward text (amulet was his life's work)",
+   "quest 722 description and texts",
+   "creature_text 2909 (spirit released with his last breath)",
+   "warcraft.wiki.gg/wiki/Hammertoe_Grez"
+  ],
+  "notes": "Hammertoe stands in the outer Uldaman cave (map 0 at -6065,-3022, which the map files assign to area 923); TALK trigger used. Faction Ironforge 55 so Alliance only. Fact-check: verified."
+ },
+ {
+  "id": 317,
+  "kind": 2,
+  "zone": 3,
+  "sort": 2,
+  "faction": 1,
+  "title": "Prospector Ryedol",
+  "body": "Prospector Ryedol of the Explorers' League worked under Hammertoe Grez at the dig north of his camp and barely escaped with his life when the Shadowforge attacked. Now he waits with a few survivors at a small camp south of the site, mourning his boss and scheming to recover the camp's supplies, above all his lucky pick. He believed Hammertoe dead until a scrawled map proved otherwise, and it was his plea that sent rescuers into Uldaman. When Hammertoe's amulet came back to him instead, he swore that the old prospector's death would not be in vain.",
+  "triggers": [
+   [
+    2,
+    2910
+   ],
+   [
+    4,
+    719
+   ]
+  ],
+  "sources": [
+   "quest 719 description (boss Hammertoe, barely escaped, lucky pick)",
+   "quests 720 reward text, 721 description",
+   "quest 723 reward text (can't let his death be in vain)",
+   "creature_template 2910 subname Explorers' League"
+  ],
+  "notes": "Fact-check: verified."
+ },
+ {
+  "id": 318,
+  "kind": 2,
+  "zone": 3,
+  "sort": 3,
+  "faction": 0,
+  "title": "Ambassador Infernus",
+  "body": "Ambassador Infernus is a creature of living fire, sent by Ragnaros himself to Angor Fortress to keep watch over the Shadowforge clan as it hunts for lost artifacts in Uldaman. The Dark Iron dwarves serve the Firelord, and the ambassador makes sure their discoveries serve him too. Under his eye the Shadowforge have caused heavy losses among the dwarves of Ironforge, and the advisors of King Magni fear what weapons the artifacts might yield. The king's council has ordered him destroyed.",
+  "triggers": [
+   [
+    3,
+    2745
+   ],
+   [
+    4,
+    762
+   ]
+  ],
+  "sources": [
+   "quest 762 description (sent to Angor Fortress by Ragnaros himself to mind the Shadowforge seeking lost artifacts, tremendous casualties)",
+   "quest 762 reward text (in the name of King Bronzebeard)",
+   "creature_template 2745 type 4 (elemental), faction 54",
+   "warcraft.wiki.gg/wiki/Angor_Fortress (agent of Ragnaros)",
+   "warcraft.wiki.gg/wiki/Ambassador_Infernus (fire elemental)"
+  ],
+  "notes": "'creature of living fire' from elemental type and loot (Heart of Fire, Elemental Fire). King's council ordered: Belgrum on the king's authority (quest 726). Fact-check: fire elemental confirmed by wiki."
+ },
+ {
+  "id": 319,
+  "kind": 2,
+  "zone": 3,
+  "sort": 4,
+  "faction": 0,
+  "title": "Lotwil Veriatus",
+  "body": "Lotwil Veriatus is a gnome of Kharanos and a scholar of renown in the elemental sciences, who has set up camp in the Dustbowl to perfect his shackles of elemental binding. With them, he believes, mages will command elementals far mightier than any summoned before, a perfect blend of alchemy, engineering and the arcane. He is brilliant, absent-minded and forever muttering to himself, and his assistant Lucien prefers to watch from behind cover. Years ago Lotwil killed the dwarf Argelmach, who twisted his life's work toward evil ends.",
+  "triggers": [
+   [
+    2,
+    2921
+   ]
+  ],
+  "sources": [
+   "quest 710 description (shackles of elemental binding), 778 description (perfect blend of alchemy, engineering, and the arcane)",
+   "quest 714 description (Kharanos), 712 completion text",
+   "quest 4062 description (scholar of some renown in the field of elemental sciences)",
+   "quest 4063 description (killed Argelmach ten years ago, twisting my life's work)",
+   "quest 777 description (Lucien: over here behind cover), 710 reward text (mumbling)",
+   "warcraft.wiki.gg/wiki/Lotwil_Veriatus (born in Kharanos, absent-minded)",
+   "warcraft.wiki.gg/wiki/Lotwil_Veriatus (gnome, born in Kharanos, killed Argelmach)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 320,
+  "kind": 2,
+  "zone": 3,
+  "sort": 5,
+  "faction": 0,
+  "title": "Theldurin the Lost",
+  "body": "Theldurin the Lost was once a member of the Twilight's Hammer, until he lost his mind and turned against the cult's teachings. Before he fled, he stole the Scroll of Myzrael, the means by which his former brethren hoped to free the imprisoned being they call the Lady. Now he lives in a lonely camp in the southern Badlands, gibbering to himself and fearful of a doom he dares not name, hunting for any lore that might protect the world from the things that sleep below.",
+  "triggers": [
+   [
+    2,
+    2785
+   ]
+  ],
+  "sources": [
+   "quest 687 description (once a member, lost his mind, scorned teachings, stole the scroll, hides in Badlands gibbering and mad)",
+   "quest 709 description (doom approaching, cannot utter their names)",
+   "quest 737 reward text (if THEY are freed)",
+   "quest 692 description (scroll can pull Myzrael to the surface)",
+   "DB spawn 2785 in area 345",
+   "warcraft.wiki.gg/wiki/Theldurin_the_Lost"
+  ],
+  "notes": "Fact-check: verified."
+ },
+ {
+  "id": 321,
+  "kind": 2,
+  "zone": 3,
+  "sort": 6,
+  "faction": 0,
+  "title": "Garek",
+  "body": "Garek is a quiet agent of the Kirin Tor, sent to the Badlands by his master Krasus to end the trouble brewing in Lethlor Ravine. He keeps the exact nature of his task to himself and waits at a lonely camp in the eastern Badlands. In time he reveals his purpose: the twin dragons imprisoned beneath the Seal of the Earth cannot be trusted to stay bound, so rather than risk their release, they must be slain. Only then will the Kirin Tor stop worrying over the prisoners of Lethlor.",
+  "triggers": [
+   [
+    2,
+    2888
+   ]
+  ],
+  "sources": [
+   "quest 732 description (sent by my master Krasus of the Kirin Tor, cannot divulge the nature of my assignment)",
+   "quest 717 description and reward text (cannot ensure they remain imprisoned, Kirin Tor need not worry, Krasus pleased)",
+   "DB spawn 2888 at -6789,-3619"
+  ],
+  "notes": "Garek's quests are Alliance only, but faction 35 means anyone can talk to him; faction 0. Did not identify Krasus as Korialstrasz. Fact-check: 'before anyone else can free them' reworded to match quest 717 completion text."
+ },
+ {
+  "id": 322,
+  "kind": 2,
+  "zone": 3,
+  "sort": 7,
+  "faction": 2,
+  "title": "Warlord Goretooth",
+  "body": "Warlord Goretooth commands the Kargath Expeditionary Force, the army sent by the Warchief to Khaz Modan to strike at the renegade Blackrock orcs and their Dark Iron allies in Blackrock Mountain. From his post at Kargath he issues bounties on the servants of the Dark Iron general Angerforge, whose forces slaughtered the 109th division of the Expeditionary Force, and orders the destruction of the masters of Blackrock Spire. He is a hard commander who tells his soldiers to move on from their losses and focus on the task at hand.",
+  "triggers": [
+   [
+    2,
+    9077
+   ]
+  ],
+  "sources": [
+   "quests 4081, 4082, 4132 descriptions (109th division, Angerforge)",
+   "quest 4903 description (inhabitants of Blackrock Spire must be destroyed)",
+   "quest 3821 description (Goretooth tells Thal'trak to move on and focus on the task at hand)",
+   "warcraft.wiki.gg/wiki/Kargath_Expeditionary_Force (sent by Thrall, Rend Blackhand)",
+   "creature_template 9077 faction 83 (Horde)"
+  ],
+  "notes": "Fact-check: 'Blackrock warlords' generalized (quest 4903 targets an ogre, a troll and Wyrmthalak)."
+ },
+ {
+  "id": 323,
+  "kind": 2,
+  "zone": 3,
+  "sort": 8,
+  "faction": 0,
+  "title": "Martek the Exiled",
+  "body": "Martek the Exiled is a smith who knows more about metal than almost anyone, living in the Valley of Fangs among a few fellow outcasts. Strangers who find him are greeted with suspicion: he assumes they have come about an axe he once forged for the Blackrock chieftain Gath'Ilzogg, or to avenge the honor of a certain Duchess Pamay, and he would rather fight than explain. Fizzle Brassbolts of the Shimmering Flats and his brother are among the few people who do not want him dead. It was Martek who proved how well indurium, a metal of the Badlands, stands up to tremendous heat.",
+  "triggers": [
+   [
+    2,
+    4618
+   ],
+   [
+    4,
+    1106
+   ]
+  ],
+  "sources": [
+   "quest 1106 description (great smith, knows more about metal than anyone), completion text (Gath'Ilzogg axe, Duchess Pamay), reward text (Fizzle and his brother)",
+   "quests 1108, 1137 descriptions, creature_text 4618 (indurium heat test)",
+   "warcraft.wiki.gg/wiki/Martek_the_Exiled (Gath'Ilzogg is a Blackrock leader in Redridge)"
+  ],
+  "notes": "Martek's race not stated. 'Blackrock chieftain' per wiki (Gath'Ilzogg leads the Blackrock in Redridge). Exile reason unknown, left unstated. Fact-check: 'discovered' changed to 'proved' (quest 1108 says the heat resistance was already rumored)."
+ },
+ {
+  "id": 324,
+  "kind": 2,
+  "zone": 3,
+  "sort": 9,
+  "faction": 0,
+  "title": "Blacklash and Hematus",
+  "body": "Blacklash and Hematus are twin black drakes, lieutenants of Deathwing, and allies of the Horde in the Second War, when the orcs fought alongside the Black Dragon. Few dragons fought as ferociously as these two. The Dark Iron dwarves of Angor Fortress forged the Sign of the Earth to bind them, and they were sealed in a prison in Lethlor Ravine, held by three runestones. Now the black dragonflight gathers around their prison, and those who fear their release mean to free them only to see them dead.",
+  "triggers": [
+   [
+    3,
+    2757
+   ],
+   [
+    3,
+    2759
+   ]
+  ],
+  "sources": [
+   "quest 782 description (Horde's alliance with Deathwing during the Second War, two of his lieutenants imprisoned in Lethlor Ravine)",
+   "quest 732 reward text (Sign created by Dark Irons of Angor Fortress to bind two of Deathwing's lieutenants, the twins)",
+   "quest 793 completion text (few dragons fought as ferociously)",
+   "quest 717 description, 782 reward text (free them to their doom)",
+   "smart_scripts 293300 (Seal of the Earth summons 2757 and 2759)"
+  ],
+  "notes": "Fought for the Horde inferred from 782 (depraved allies of old). Drakes: quest texts call them drakes. Fact-check: verified."
+ },
+ {
+  "id": 325,
+  "kind": 2,
+  "zone": 3,
+  "sort": 10,
+  "faction": 0,
+  "title": "Boss Tho'grun",
+  "body": "Boss Tho'grun leads a band of Dustbelcher ogre mercenaries that wanders between the ogre camps of the Badlands. The Horde of Kargath hired him to help obtain the Sign of the Earth, the key to the drake prison in Lethlor Ravine. Once the Sign was in reach, Tho'grun turned on his employers, overwhelmed them and kept it for himself. His treachery has made him a target for Horde and Alliance alike, both of whom want the Sign he carries.",
+  "triggers": [
+   [
+    3,
+    2944
+   ]
+  ],
+  "sources": [
+   "quest 782 description and completion text",
+   "quest 732 description (wandering ogres stole the Sign)",
+   "warcraft.wiki.gg/wiki/Dustbelcher (nomadic band, both factions after him)",
+   "creature_loot 2944 drops Sign of the Earth"
+  ],
+  "notes": "Fact-check: the Alliance pursuer is Garek of the Kirin Tor, not a dwarf; 'orc and dwarf' changed to Horde and Alliance."
+ },
+ {
+  "id": 326,
+  "kind": 3,
+  "zone": 3,
+  "sort": 1,
+  "faction": 1,
+  "title": "Hammertoe and the Shadowforge",
+  "body": "When the Shadowforge clan overran Hammertoe's Digsite, Prospector Ryedol believed his master slain, until a crumpled map turned up in the dirt bearing Hammertoe's chalk scrawl: he was being taken to Uldaman. Ryedol pleaded for someone to reach him before the Dark Irons learned all he knew. Rescuers found the old prospector deep in the ruins, beaten and dying. With his last strength he asked for his amulet, taken by Magregan Deepshadow, for it could lead the Shadowforge to scrolls that would let them build ever more powerful golems. Once the amulet was won back, Hammertoe sent it to Ryedol and breathed his last. Ryedol swore that the death would not be in vain and sent the amulet on to Historian Karnik in Ironforge, who had shared Hammertoe's search and would know what must be done. The blow Ironforge struck in answer belongs to the historian's own tale.",
+  "triggers": [
+   [
+    4,
+    719
+   ],
+   [
+    4,
+    720
+   ]
+  ],
+  "sources": [
+   "quests 719, 720, 721, 722, 723, 724 descriptions and reward texts",
+   "creature_text 2909 (spirit released with his last breath)"
+  ],
+  "notes": "Fact-check: trimmed the Karnik, Belgrum, Infernus and Tablet of Will part, which Ironforge entry 153706 (Historian Karnik) already tells; now ends with a mention. 720 starts from the Crumpled Map object 2868."
+ },
+ {
+  "id": 327,
+  "kind": 3,
+  "zone": 3,
+  "sort": 2,
+  "faction": 0,
+  "title": "The Prisoners of Lethlor",
+  "body": "Two very different hunters came looking for the Sign of the Earth, the key the Dark Irons made to seal Deathwing's twin lieutenants in Lethlor Ravine. At Kargath, Gorn wanted the drakes dead to wipe out the shame of the Horde's old alliance with Deathwing, and had hired Boss Tho'grun's ogres to win the Sign, only to be betrayed. For the Alliance, the Kirin Tor agent Garek, who had heard from the stranded dwarves of Sigrun Ironhew's camp, came on the orders of Krasus, unwilling to trust the prison any longer once black dragons gathered around it and ogres had stolen its key. Whoever took the Sign from Tho'grun carried it into the ravine, drew the runestones from their pillars and broke the Seal. Blacklash and Hematus rose from their prison, and died at the hands of those who had freed them.",
+  "triggers": [
+   [
+    4,
+    782
+   ],
+   [
+    4,
+    732
+   ],
+   [
+    4,
+    718
+   ]
+  ],
+  "sources": [
+   "quests 782, 793 descriptions, completion and reward texts",
+   "quests 718, 732, 717 descriptions and reward texts",
+   "quests 779, 795 texts (Seal broken)"
+  ],
+  "notes": "Alliance entry is via 718 Mirages (Sigrun) then 732 (Garek); Horde via 782. Faction 0 since both sides have an entry. Fact-check: verified."
+ },
+ {
+  "id": 328,
+  "kind": 3,
+  "zone": 3,
+  "sort": 3,
+  "faction": 0,
+  "title": "Lotwil's Shackles",
+  "body": "In the Dustbowl, Lotwil Veriatus set out to build shackles of elemental binding strong enough to master a powerful elemental. He tested his spells on shards of the local rock elementals, then on great slabs and on the very bracers that bind the greater elementals, cooled his work with frost oil and fitted a gyrochronatom. One part remained: cog number five, which his assistant Lucien handed over before taking cover. Lotwil declared a groundbreaking day and summoned his elemental. It broke free at once and ran wild through the camp, and only after it was beaten down could the shackles be recovered. Lotwil sent the creature back to its home plane, and admitted the outcome was not quite what he had expected.",
+  "triggers": [
+   [
+    4,
+    710
+   ],
+   [
+    4,
+    713
+   ]
+  ],
+  "sources": [
+   "quests 710, 711, 712, 713, 714, 734, 777, 778 descriptions and texts",
+   "creature_text 2921 (out of control, run), 2920"
+  ],
+  "notes": "Lucien's side quests 715 and 716 omitted. Fact-check: 'rare' gyrochronatom dropped (unsupported)."
+ },
+ {
+  "id": 329,
+  "kind": 3,
+  "zone": 3,
+  "sort": 4,
+  "faction": 2,
+  "title": "The Rise of the Machines",
+  "body": "Scouts of the Kargath Expeditionary Force met strange machines in the Searing Gorge and traced them back to the Burning Steppes, perhaps to Blackrock Depths itself. Hierophant Theodora Mulvadania studied shards taken from the rock creations there and found initials etched into each: G.L.A., with a rank mark beneath. She sent a sample to Lotwil Veriatus, the elemental scholar camped east of Kargath, and the gnome went pale. The marks belonged to Argelmach, a dwarf Lotwil had killed years before for bending his work to evil. Lotwil asked for the golem lord's head and the cores of his guardians from the depths, but the head proved to be no flesh at all, only a dark iron shadow of Argelmach, and Lotwil feared another would soon take its place.",
+  "triggers": [
+   [
+    4,
+    4061
+   ]
+  ],
+  "sources": [
+   "quests 4061, 4062, 4063 descriptions and reward texts",
+   "creature_template 9079 (Kargath Expeditionary Force, area 340)"
+  ],
+  "notes": "4061 and 4063 are filed under Searing Gorge and Blackrock Depths but start in Kargath and end with Lotwil in the Dustbowl. Horde only (AllowableRaces 690). Fact-check: verified."
+ },
+ {
+  "id": 330,
+  "kind": 3,
+  "zone": 3,
+  "sort": 5,
+  "faction": 0,
+  "title": "The Scroll of Myzrael",
+  "body": "Theldurin the Lost fled the Twilight's Hammer with the Scroll of Myzrael, and the cult wanted it back. Those who tracked him to the Badlands found him babbling that the scroll was gone, torn apart by enraged elementals who now fought over its pieces. Yet if Myzrael was already gathering strength, the scroll would be needed to stop her, so the fragments were won back and Theldurin pieced them together. Then his fears turned deeper. He sent seekers into Uldaman for the Tablet of Ryun'eh, and then, by passing as his old brethren, to obtain a copy of Yagyin's Digest from cultists hidden in Ironforge or the Undercity. Theldurin pored over its truths with great hope, and greater dread of what might rise from below.",
+  "triggers": [
+   [
+    4,
+    692
+   ],
+   [
+    4,
+    709
+   ]
+  ],
+  "sources": [
+   "quests 687, 692, 656 descriptions and texts",
+   "quests 709, 727, 728, 735, 736, 737 descriptions and texts",
+   "creature_text 2785",
+   "warcraft.wiki.gg/wiki/Theldurin_the_Lost"
+  ],
+  "notes": "Did not identify who THEY are (wiki speculates Old Gods or Deathwing). 656 Summoning the Princess (Arathi) mentioned only implicitly. Fact-check: verified."
+ },
+ {
+  "id": 331,
+  "kind": 3,
+  "zone": 3,
+  "sort": 6,
+  "faction": 1,
+  "title": "Agmond's Fate",
+  "body": "Prospector Agmond had charge of the dwarven digs in the Badlands, and for weeks Prospector Ironband in Loch Modan had heard nothing from him. Agmond was last known at the southernmost site, a tiny operation past Angor Fortress. Searchers found Agmond's bones picked clean in the southern desert, and a bloody trail showing he had crawled there from the west. Beside his hand was scratched a single name: Murdaloc. The trogg Murdaloc and the Stonevault bonesnappers around him paid for the deed. Agmond's last report had spoken of ancient urns his diggers unearthed outside Uldaman, and Ironband feared they had roused the troggs just as his own discoveries had in Loch Modan, so the urns were gathered for study in Agmond's memory.",
+  "triggers": [
+   [
+    4,
+    738
+   ]
+  ],
+  "sources": [
+   "quests 707, 738, 739, 704 descriptions and reward texts"
+  ],
+  "notes": "Fact-check: roles corrected, quest 738 says Agmond was in charge of the Badlands sites. Starts with Ironband in Loch Modan (738, reached via 707). Alliance only."
+ }
+]

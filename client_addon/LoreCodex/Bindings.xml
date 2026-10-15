@@ -1,0 +1,5 @@
+<Bindings>
+	<Binding name="LORECODEX_TOGGLE" header="LORECODEX">
+		LoreCodex.Toggle()
+	</Binding>
+</Bindings>

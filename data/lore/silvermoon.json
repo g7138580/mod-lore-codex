@@ -1,0 +1,393 @@
+[
+ {
+  "id": 348700,
+  "kind": 0,
+  "zone": 3487,
+  "sort": 0,
+  "faction": 0,
+  "title": "Silvermoon City",
+  "body": "Silvermoon has been the seat of the elves of Quel'Thalas since Dath'Remar Sunstrider and his exiled Highborne founded it and kindled the Sunwell, thousands of years ago. In the Third War the Scourge, led past the kingdom's defenses by the traitor Dar'Khan Drathir, sacked the city and set it ablaze. The Dead Scar, the road of ash the undead carved, still runs through it, and the western half lies in ruins. The eastern half has been raised again by the magisters under Grand Magister Rommath, its spires shining with arcane power. Here the blood elves keep their markets in the Bazaar and the Royal Exchange, their rogues and warlocks along Murder Row, and the Blood Knights in Farstriders' Square. From Sunfury Spire, Regent Lord Lor'themar Theron rules beside Rommath and Ranger-General Halduron Brightwing. Silvermoon long looked to Prince Kael'thas, but the prince has turned traitor, and guardians who once hailed the Sun King now catch themselves and cry glory to Silvermoon instead.",
+  "triggers": [
+   [
+    1,
+    3487
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Silvermoon_City (founding by Dath'Remar, Dar'Khan, sack, Dead Scar divides the city, western half in ruins, Rommath and the magisters rebuilt the east, districts, Sunfury Spire court)",
+   "warcraft.wiki.gg/wiki/Rommath (led the rebuilding, spires powered by arcane energy)",
+   "creature_text 16222 (Glory to the Sun K-- ah... Silvermoon!)",
+   "npc_text 9315 (Lor'themar gossip: Kael'thas has betrayed us)",
+   "quest 9690 description (Ruins of Silvermoon to the north)",
+   "DB spawns: Lor'themar 16802, Rommath 16800, Halduron 16801 together at map 54,20; Blood Knight HQ NPCs at 89-92,35-39; rogue and warlock trainers at 73-80,45-52"
+  ],
+  "notes": "Verified; last sentence changed from 'rebuilt in the name of Kael'thas' (unsupported) to 'long looked to Kael'thas'."
+ },
+ {
+  "id": 348701,
+  "kind": 1,
+  "zone": 3487,
+  "sort": 1,
+  "faction": 2,
+  "title": "The Shepherd's Gate",
+  "body": "The Shepherd's Gate is the main road into Silvermoon from Eversong Woods. It is not the city's first entrance: the old gate was lost when the Scourge broke into Quel'Thalas, and its remains lie off along the Dead Scar. The new gate was named in honor of Prince Kael'thas, who passed through it into his ruined capital after the invasion, and a statue of the prince overlooks the approach, though his people now count him a traitor. Just outside the walls Skymistress Gloaming keeps the dragonhawks that fly travelers and supplies south to Tranquillien, and just inside, on the Walk of Elders, a gatewatcher in Blood Knight colors has been seen bullying a frightened citizen.",
+  "triggers": [
+   [
+    2,
+    16192
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/The_Shepherd's_Gate (main entry from Eversong, not the original entrance, old entrance remnants down the Dead Scar, named to honor Kael'thas who entered the ruined city through it)",
+   "warcraft.wiki.gg/wiki/Silvermoon_City (gate dominated by a statue of Kael'thas; old main gate destroyed in the Third War)",
+   "quest 9134 description (Skymistress Gloaming just outside the Shepherd's Gate) and quest 9135",
+   "warcraft.wiki.gg/wiki/Gatewatcher_Aendor (Walk of Elders, Blood Knights tabard, harassing a citizen near the entrance)",
+   "npc_text 9577, 9587 (Aendor and Harassed Citizen gossip)",
+   "subzone list: 3704 The Shepherd's Gate, parent 3487",
+   "warcraft.wiki.gg/wiki/Gatewatcher_Aendor checked"
+  ],
+  "notes": "Verified. Kael'thas statue supported by warcraft.wiki.gg/wiki/Silvermoon_City (Shepherd's Gate decorated by a towering statue of Kael'thas); not in the DB since it is part of the city model. Area 3704 is never reported by the server, so the entry unlocks on talking to Skymistress Gloaming (16192) outside the gate; she is Horde only, so faction 2."
+ },
+ {
+  "id": 348702,
+  "kind": 2,
+  "zone": 3487,
+  "sort": 1,
+  "faction": 0,
+  "title": "Lor'themar Theron",
+  "body": "Lor'themar Theron rose through the Farstriders to become ranger lord and second-in-command to Sylvanas Windrunner. When the Scourge overran Quel'Thalas and Sylvanas fell, he led the survivors, and Prince Kael'thas later named him Regent Lord, charged with guarding the land and seeking a cure for his people while the prince was away. Needing allies, he accepted the Forsaken's offer of aid and won the blood elves a place in the Horde as equals. When Kael'thas sided with the Burning Legion, Lor'themar held firm, telling his people that they endured Arthas and will endure this betrayal too. Since then he has stood within the restored Sunwell itself, beside the other leaders of Silvermoon.",
+  "triggers": [
+   [
+    2,
+    16802
+   ],
+   [
+    5,
+    9328
+   ],
+   [
+    5,
+    9811
+   ],
+   [
+    4,
+    24553
+   ],
+   [
+    4,
+    24595
+   ],
+   [
+    4,
+    24594
+   ],
+   [
+    4,
+    24596
+   ],
+   [
+    4,
+    24564
+   ],
+   [
+    4,
+    24598
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Lor'themar_Theron (ranger lord and Sylvanas's second, led after her death, named Regent Lord by Kael'thas, distrust of Kael's methods, Forsaken aid and Horde membership)",
+   "npc_text 9315 (gossip on Kael'thas's betrayal)",
+   "quests 9328, 9811, 9621, 9627",
+   "quests 24553, 24564, 24594 descriptions (Lor'themar and Rommath standing within the Sunwell; the leaders of Silvermoon within)",
+   "warcraft.wiki.gg/wiki/Lor'themar_Theron (seen before the Sunwell during the Quel'Delar quests)",
+   "quest_template 24553, 24595 AllowableRaces 1101 (Alliance), 24564, 24594, 24596, 24598 Horde; all describe Lor'themar and Rommath within the Sunwell",
+   "creature 37764 and 37763 spawned in map 580 (Sunwell Plateau) phase 2048; creature_text 37763, 37764"
+  ],
+  "notes": "Removed 'never trusted the prince's methods' (wiki only shows partial wariness); regent charge reworded per wiki; 'keeps watch over the Sunwell' changed to having stood within it (Quel'Delar quests). Faction 0 confirmed: quests 24553/24595 Alliance, 24564/24594/24596/24598 Horde, all given by Halduron 37527 (faction 35) and all naming Lor'themar within the Sunwell."
+ },
+ {
+  "id": 348703,
+  "kind": 2,
+  "zone": 3487,
+  "sort": 2,
+  "faction": 0,
+  "title": "Grand Magister Rommath",
+  "body": "Grand Magister Rommath leads the magisters of Quel'Thalas. He served with Kael'thas in the Alliance resistance in Lordaeron and was condemned to death with the prince's elves in the dungeons of Dalaran, a betrayal he has never forgiven the Kirin Tor. Sent home from Outland with a message of hope, he taught his people to draw arcane energy from crystals and other sources to ease their hunger for magic, and led the magisters who raised Silvermoon's spires anew. He also conceived the Blood Knights and chose Liadrin as the first. Once the prince's most loyal advocate, he sided with his people when Kael'thas bound himself to Kil'jaeden, and he now stands at Lor'themar's side.",
+  "triggers": [
+   [
+    5,
+    9328
+   ],
+   [
+    5,
+    9811
+   ],
+   [
+    4,
+    24553
+   ],
+   [
+    4,
+    24595
+   ],
+   [
+    4,
+    24594
+   ],
+   [
+    4,
+    24596
+   ],
+   [
+    4,
+    24564
+   ],
+   [
+    4,
+    24598
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Rommath (Kirin Tor bitterness after the Dalaran imprisonment, sent home with a message of hope, siphoning methods, rebuilt Silvermoon and the Magisters, devised the Blood Knights and recruited Liadrin, sided with his people over Kael'thas)",
+   "DB spawn: Rommath 16800 beside Lor'themar at map 54,20",
+   "quests 24564, 24594, 24596, 24598 descriptions (Rommath within the Sunwell)",
+   "warcraft.wiki.gg/wiki/Rommath (part of Kael's company serving the Alliance resistance in Lordaeron; sentenced to death by Garithos in the Dungeons of Dalaran; present at the Quel'Delar cleansing)",
+   "creature 16800 at 9990,-7056 beside Lor'themar 16802 (questender of 9328, 9811)"
+  ],
+  "notes": "'Fought beside Kael in the last days of the Alliance' reworded to served in the Alliance resistance, condemned to death (wiki). Triggers confirmed: stands beside Lor'themar at the 9328/9811 turn-in; Quel'Delar quests both factions. Faction 0."
+ },
+ {
+  "id": 348704,
+  "kind": 2,
+  "zone": 3487,
+  "sort": 3,
+  "faction": 0,
+  "title": "Halduron Brightwing",
+  "body": "Halduron Brightwing commands the Farstriders as Ranger-General, the post Sylvanas Windrunner held before the Scourge came. A veteran of the wars against the Amani, he once captured the troll Zul'jin, who escaped by hacking off his own arm. During the invasion of Quel'Thalas he saved his old friend Lor'themar from the undead, and when Lor'themar became regent, Halduron took up the leadership of the rangers. He helped bring Quel'Thalas into the Horde, though he never approved of the Blood Knights or of the use made of the naaru M'uru. Today he oversees the guards at the Sunwell Plateau, which his people have only lately won back, and no one enters without his leave.",
+  "triggers": [
+   [
+    5,
+    9328
+   ],
+   [
+    5,
+    9811
+   ],
+   [
+    2,
+    37527
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Halduron_Brightwing (Zul'jin capture and escape, saved Lor'themar, became Ranger-General, met Thrall at Thalassian Pass, opposed the Blood Knights and M'uru's mistreatment, oversaw the Sunwell's defenses in Wrath)",
+   "quests 24522, 24562 descriptions and reward text (Halduron inspecting the guards at the Sunwell Plateau; only recently regained control)",
+   "creature 37527 Halduron Brightwing (faction 35) at the Sunwell Plateau entrance; 16801 beside Lor'themar at map 54,20",
+   "warcraft.wiki.gg/wiki/Halduron_Brightwing (quote: never approved of that business with M'uru, or the formation of the Blood Knights; controlled access to the Sunwell Plateau)",
+   "creature_queststarter/questender: 37527 (faction 35) ends 24522 (Alliance) and 24562 (Horde), starts the six purification quests"
+  ],
+  "notes": "'Condemned as wrong' softened to never approved (wiki quote). TALK 37527 confirmed faction 35 questgiver at the Sunwell Plateau, reached by both factions. Faction 0."
+ },
+ {
+  "id": 348705,
+  "kind": 2,
+  "zone": 3487,
+  "sort": 4,
+  "faction": 0,
+  "title": "Lady Liadrin",
+  "body": "Orphaned by Amani trolls and raised in the faith by High Priest Vandellor, Liadrin became a high priestess of Quel'Thalas, then lost her faith when the Scourge laid her homeland waste. Grand Magister Rommath offered her a new path, and she became the first Blood Knight and matriarch of the order, wielding Light wrested from the naaru held beneath the Hall of Blood. When Kael'thas stole the naaru away, she went to Shattrath, where the naaru A'dal told her that M'uru had long known his fate. She renounced the house of Sunstrider and fought with the Shattered Sun Offensive, and with the Sunwell rekindled by M'uru's heart, her faith has returned.",
+  "triggers": [
+   [
+    2,
+    17076
+   ],
+   [
+    4,
+    9721
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Liadrin (Vandellor, lost faith, Rommath's offer, first Blood Knight, A'dal in Shattrath, Shattered Sun Offensive, faith restored after the Sunwell)",
+   "warcraft.wiki.gg/wiki/Blood_Knight (M'uru held beneath the Hall of Blood, stolen by Kael's felblood elves)",
+   "quest 9721 description (Solanar, Lady Liadrin's right hand)",
+   "quest 9684 description and npc_text 12370 (Liadrin seeks a new source of power)",
+   "DB: Lady Liadrin 17076 (faction 35, quest giver) spawned only in Shattrath City",
+   "warcraft.wiki.gg/wiki/Solanar_Bloodwrath (Liadrin went to Shattrath for a new power source after Kael's betrayal)",
+   "creature_questender 17076 ends 10960 (Children's Week, AllowableRaces 0); npcflag 2 so right-click passes through the gossip hello hook"
+  ],
+  "notes": "verified. Childhood (Vandellor, Amani) and faith restored after the Sunwell are on the wiki (Chronicle, All That is Sacred, WotLK section). TALK 17076 faction 35 in Shattrath, questgiver flag, both factions."
+ },
+ {
+  "id": 348706,
+  "kind": 2,
+  "zone": 3487,
+  "sort": 5,
+  "faction": 2,
+  "title": "Knight-Lord Bloodvalor",
+  "body": "Knight-Lord Bloodvalor manages the rank-and-file of the Blood Knights from the Hall of Blood in Farstriders' Square, and it is he who sets the trials every initiate must pass. He has no patience for pleasantries, which he leaves to courtiers. He believes a knight must be ready at every moment: he sent Sangrias Stillblade to strike at an initiate during the First Trial, then had the fallen knight's body carried back to the city so that the very initiate who killed him could restore him to life. He welcomes visitors to the headquarters of the defenders of Quel'Thalas, the faithful servants of Silvermoon, and the true masters of the Light.",
+  "triggers": [
+   [
+    2,
+    17717
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Knight-Lord_Bloodvalor (manages the rank-and-file, first and second trials)",
+   "npc_text 9174 (Bloodvalor gossip)",
+   "quests 9677, 9678 reward text, 9681, 9685",
+   "creature_template 17717 faction 1604 (Silvermoon, hostile to Alliance)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 348707,
+  "kind": 2,
+  "zone": 3487,
+  "sort": 6,
+  "faction": 2,
+  "title": "Magister Astalor Bloodsworn",
+  "body": "Magister Astalor Bloodsworn, once among Prince Kael'thas's closest advisors, helped found the Blood Knights with the support of Grand Magister Rommath. His magisters held the naaru that Kael'thas sent to Silvermoon in the chamber beneath the Hall of Blood and devised a way to claim its Light on their own terms, and he helped Liadrin, the order's first knight, reach its power. Then the prince's felblood elves seized the naaru, leaving the magisters who tended it dazed and drained. Astalor curses Kael'thas and his felbloods, but insists the order will not be destroyed so easily, and teaches initiates to gather the last traces of the naaru's Light still clinging to his stricken magisters.",
+  "triggers": [
+   [
+    2,
+    17718
+   ],
+   [
+    5,
+    9681
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Astalor_Bloodsworn (advisor to Kael'thas, co-founded the order with Rommath's support, helped Liadrin commune with M'uru, kept the naaru bound)",
+   "npc_text 12370 (Astalor gossip)",
+   "quests 9681 reward text, 9684 description",
+   "warcraft.wiki.gg/wiki/Blood_Knight (felblood elves seized M'uru; magisters left dazed)",
+   "DB: Blood Elf Magister 17845 spawns around Astalor at 9844-9857,-7522",
+   "creature_template 17718 faction 1604"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 348708,
+  "kind": 2,
+  "zone": 3487,
+  "sort": 7,
+  "faction": 2,
+  "title": "Lord Solanar Bloodwrath",
+  "body": "Lord Solanar Bloodwrath is Lady Liadrin's right hand, one of the first sin'dorei to take up the Blood Knights' path and a hero in his own right. With the matriarch away, he keeps her post in the Hall of Blood, leaving the training of the rank-and-file to Knight-Lord Bloodvalor while he takes a personal hand in choosing the order's masters, an inner circle of its most dedicated and trusted knights, known to most only by their thalassian chargers. Solanar holds that the Blood Knights wield the Light as other so-called paladins never could, and that those false paladins should be shown their time has come to an end.",
+  "triggers": [
+   [
+    2,
+    25223
+   ],
+   [
+    4,
+    9721
+   ]
+  ],
+  "sources": [
+   "quest 9721 description (Liadrin's right hand, hero in his own right, leaves the rank-and-file to Bloodvalor)",
+   "quest 9722 description (inner circle, thalassian chargers)",
+   "quests 9735, 9737 descriptions and completion text (false paladins)",
+   "warcraft.wiki.gg/wiki/Solanar_Bloodwrath (one of the first Blood Knights, took over Liadrin's post while she was away)",
+   "creature_template 25223 faction 1604"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 348709,
+  "kind": 3,
+  "zone": 3487,
+  "sort": 1,
+  "faction": 2,
+  "title": "The Trials of the Blood Knights",
+  "body": "Initiates who excel in their early training are summoned to Farstriders' Square by Knight-Lord Bloodvalor. The First Trial tests the mind: in a shallow cave on the Isle of Tribulations in the northeastern Ghostlands, the initiate kneels at a brazier and focuses on the visions it brings, until Sangrias Stillblade, sent by Bloodvalor himself, attacks. Stillblade dies, and even that is part of the lesson, for the initiate must later bring him back to life. The Second Trial hides nothing. In a pavilion north of the city, beyond the Ruins of Silvermoon, Master Kelerun Bloodmourn sets four Blood Knight champions against the candidate. Those who prevail still gather the materials for the order's blood-tempered ranseur and claim a Blood Knight insignia inherited from a knight who fell leading an assault on Deatholme. Only then are they raised to adept, and the smith Bemarrin forges their weapon.",
+  "triggers": [
+   [
+    4,
+    9677
+   ],
+   [
+    4,
+    9678
+   ]
+  ],
+  "sources": [
+   "quests 9677, 9678, 9690, 9686, 9691, 9692, 9707, 9710 (descriptions and reward texts)",
+   "creature_queststarter: 16275 Noellene starts 9677; 17717 starts 9678, 9690, 9692; 17807 Kelerun starts 9686; 16669 Bemarrin starts 9710",
+   "quest_template AllowableRaces 512 (blood elf only) on the chain",
+   "quests 9686, 9707 (adept rank granted after the materials are gathered)"
+  ],
+  "notes": "Isle of Tribulations placed in the northeastern Ghostlands per quest 9678; adept rank order fixed (rank is granted after the materials, quest 9707)."
+ },
+ {
+  "id": 348710,
+  "kind": 3,
+  "zone": 3487,
+  "sort": 2,
+  "faction": 2,
+  "title": "The Captive Naaru",
+  "body": "After the First Trial, Knight-Lord Bloodvalor sends initiates below the Hall of Blood to Magister Astalor Bloodsworn to learn the secret at the heart of their order. Its Light was taken from a being of immense power, a naaru given to Silvermoon by Prince Kael'thas, which begrudged the elves its gifts until the magisters found a way to claim them on their own terms. Now Kael'thas has betrayed his people and the order has lost its source of power. The magisters who tended the naaru still hold faint vestiges of its energy, and with an enchanted vessel the initiate draws out what remains, just enough to bring Sangrias Stillblade back to life in an upper room of the city's inn. Astalor promises the knights will fight back, for Lady Liadrin already seeks a new source of power.",
+  "triggers": [
+   [
+    4,
+    9681
+   ]
+  ],
+  "sources": [
+   "quests 9681, 9684, 9685 (descriptions and reward texts)",
+   "npc_text 12370 (Astalor gossip)",
+   "warcraft.wiki.gg/wiki/Blood_Knight (M'uru beneath the Hall of Blood, stolen by Kael's felblood elves)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 348711,
+  "kind": 3,
+  "zone": 3487,
+  "sort": 3,
+  "faction": 2,
+  "title": "The Master's Path",
+  "body": "Blood Knights who rise far enough may be summoned by Lord Solanar Bloodwrath, who offers to sponsor them for the order's inner circle of masters. Candidates must prove their devotion to its tenets. First comes a humble task: supplying cloth, metal, herbs, runes and gold so that Magister Astalor's men can keep the knights stocked with Light energy. Next comes loyalty, shown against a Scourge siege company of engineers and meat wagons massing in the Eastern Plaguelands to strike at the Ghostlands. The last task is a message to every other order of paladins. The candidate steals holy water from the library of Tyr's Hand Abbey, buys rare reagents from Silvermoon's shops, and carries Solanar's mixture to the Alonsus Chapel, where the Order of the Silver Hand was founded, to quench its eternal flame and strip away the Light's protection. The new master rides a thalassian charger.",
+  "triggers": [
+   [
+    4,
+    9721
+   ],
+   [
+    4,
+    9722
+   ]
+  ],
+  "sources": [
+   "quests 9721, 9722, 9723, 9725, 9735, 9736, 9737 (descriptions and reward texts)",
+   "creature_queststarter: 17717 starts 9721; 25223 starts 9722-9737"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 348712,
+  "kind": 3,
+  "zone": 3487,
+  "sort": 4,
+  "faction": 2,
+  "title": "Envoy to the Horde",
+  "body": "When the traitor Dar'Khan Drathir, who opened Quel'Thalas to the Scourge, falls at last in the Ghostlands, his head is carried to Regent Lord Lor'themar Theron in Sunfury Spire. The news is better than it seems. Some in the Horde had doubted the blood elves, asking what use a people could be who could not set their own lands in order. With Dar'Khan dead, Lor'themar sends a letter to Lady Sylvanas Windrunner in the Undercity, already a friend to his people, and from her the news travels on to Thrall in Orgrimmar. The Warchief crushes the letter in his fist and welcomes the elves into the Horde. Back in Silvermoon, Lor'themar reveals that Thrall also hopes the blood elves' ties to Outland can help him reach his own people there, a belief the regent admits is not exactly the truth, though not a lie either.",
+  "triggers": [
+   [
+    4,
+    9621
+   ],
+   [
+    4,
+    9812
+   ]
+  ],
+  "sources": [
+   "quests 9328, 9811 (head of Dar'Khan to Lor'themar)",
+   "quests 9621, 9812 (Envoy to the Horde descriptions and Sylvanas's reward texts)",
+   "quest 9627 description and reward text (Thrall crushes the letter; link with Outland, not exactly the truth)",
+   "creature_queststarter: 16802 starts 9621 and 9812; 4949 Thrall starts 9627"
+  ],
+  "notes": "verified"
+ }
+]
