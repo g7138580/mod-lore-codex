@@ -56,3 +56,7 @@ Everything can be changed under **Interface > AddOns > Lore Codex** (also from t
 | 3 | Creature entry: defeating it |
 | 4 | Quest id: accepting it |
 | 5 | Quest id: turning it in |
+
+## Sources
+
+The lore is written from the game's own 3.3.5 text (quest descriptions, NPC dialogue and in-game books in the AzerothCore world database) and the [Warcraft Wiki](https://warcraft.wiki.gg) for wider history, using only material from before Cataclysm. Entries are original writing, not copied text; each one lists the quests, NPCs and wiki pages behind it in `data/lore/*.json`.
