@@ -13,6 +13,10 @@ An AzerothCore (WotLK 3.3.5a) module that adds a codex of Azeroth's lore which f
 - **Past travels count.** At login, entries for areas a character already explored and quests it already did are credited quietly.
 - **Lore in the database.** Entries and their triggers live in the world database and reload with `.codex reload`.
 
+## Compatibility
+
+Not compatible with mod-individual-progression. The lore follows the 3.3.5 timeline, so it doesn't match the earlier eras that module takes characters through.
+
 ## Installation
 
 1. Place this folder in `azerothcore-wotlk/modules/`.
