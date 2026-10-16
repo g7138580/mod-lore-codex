@@ -1,0 +1,889 @@
+[
+{
+"id": 44000,
+"kind": 0,
+"zone": 440,
+"sort": 0,
+"faction": 0,
+"title": "Tanaris",
+"body": "Tanaris is a sea of shifting sand in the far southeast of Kalimdor, south of Thousand Needles and east of Un'Goro Crater. Trolls ruled this land long ago, and the ruins of their old sites still lie half buried among the dunes. Sand trolls of the Sandfury tribe still hold the walled city of Zul'Farrak in the northwest. The goblins of the Steamwheedle Cartel have made the rest of the desert their business. Their town of Gadgetzan lives on water drawn from beneath the dunes, yet the Wastewander nomads have seized most of its wells, and Southsea pirates prey on the cartel's ships from a cove on the eastern coast. Older and stranger powers lie deeper in. Silithid hives drain the desert pools, Dunemaul ogres camp among the troll ruins, and in the south great giants walk before the sealed gates of Uldum. In the eastern mountains the bronze dragonflight keeps the Caverns of Time, where the paths of history meet.",
+"triggers": [
+[
+1,
+440
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Tanaris (jungle in the Gurubashi empire, Sundering, Farraki become sand trolls, Steamwheedle Cartel centers, bronze flight at the Caverns of Time, Uldum entrance)",
+"warcraft.wiki.gg/wiki/Zul'Farrak (Sandfury city in northwestern Tanaris)",
+"quest 1690 description (Wastewander have seized almost all the water wells)",
+"quests 8366, 2875 (Southsea pirates at Lost Rigger Cove)",
+"quests 992, 82 (silithid drain the water pools)",
+"quest 5863 description (Dunemaul ogres, old troll ruins)",
+"DB: Dune Smasher 5469 (giant, type 5) spawned in areas 989 and 990",
+"warcraft.wiki.gg/wiki/Tanaris (jungle claim rests on a 2018 designer tweet; Farraki naming is later lore: both removed)",
+"quest 3161 (trolls used to occupy this land)",
+"quest 2873 (walled pirate town)"
+],
+"notes": "Fact-check: jungle and Gurubashi territory (2018 designer tweet) and the Farraki origin of the sand trolls are later lore; replaced by troll ruins (3161) and the Sandfury. 'Stone giants' made 'great giants' (Dune Smasher is type giant, nothing says stone). Rest verified."
+},
+{
+"id": 44001,
+"kind": 1,
+"zone": 440,
+"sort": 1,
+"faction": 0,
+"title": "Gadgetzan",
+"body": "Gadgetzan is the chief town of the Steamwheedle Cartel in Kalimdor, a walled goblin settlement among the dunes of northern Tanaris. Like every cartel town it is neutral ground. Anyone with coin is welcome, and the town's bruisers fall hard on whoever starts trouble, asking only whether the culprit really meant to make them hurt someone. Water is the town's lifeblood and its biggest business, managed by the Gadgetzan Water Company, whose officials fret over every well the nomads steal. Around them work alchemists, smiths, engineers and inventors, and the innkeeper sizes up newcomers for the cage matches fought in the town's arena. Flight masters for both the Alliance and the Horde keep their mounts here.",
+"triggers": [
+[
+1,
+976
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Gadgetzan (capital of the Steamwheedle Cartel, neutral, bruisers attack those who fight, water as liquid gold, Thunderdrome arena)",
+"creature_text 9460 (Gadgetzan Bruiser lines)",
+"npc_text 3566 (Innkeeper Fizzgrimble: cage matches)",
+"quests 1690, 992 (Gadgetzan Water Company and the nomads)",
+"DB area 976: Bera Stonehammer 7823 (faction 12), Bulkrek Ragefist 7824 (faction 29), Trenton Lighthammer, Krinkle Goodsteel, Nixx Sprocketspring, Alchemist Pestlezugg"
+],
+"notes": "Fact-check: verified. Bruiser gossip 15532 (still neutral Steamwheedle Cartel) not used: possibly later text. The Rumble Cage (2857) is unreachable, so the arena is mentioned here."
+},
+{
+"id": 44002,
+"kind": 1,
+"zone": 440,
+"sort": 2,
+"faction": 0,
+"title": "Steamwheedle Port",
+"body": "Steamwheedle Port is the cartel's harbor on the northeastern coast of Tanaris, linked by road to Gadgetzan, where ships run to and from Booty Bay. Security Chief Bilgewhizzle keeps the peace on its docks. Stoley tends bar and swears by his Steamwheedle bilge rum, thick as gravel and fiery as lava. A haughty fashion designer procures the latest styles for queens and warchiefs, and along the shore a troll mystic named Yeh'kinya and the dwarf Prospector Ironboot pursue their studies, while the gnome soothsayer Narain Soothfancy keeps house just to the north. South of the port waits Torta, a turtle whose husband Tooga went out to fetch dinner and has not found his way home.",
+"triggers": [
+[
+1,
+977
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Steamwheedle_Port (east coast port, road to Gadgetzan, residents)",
+"quest 2876 (shipments between Steamwheedle Port and Booty Bay)",
+"quests 2872, 2874 (Stoley, bilge rum thick as gravel, burns like lava)",
+"quest 8365 (Haughty Modiste: Kings and Queens, Warchiefs)",
+"quests 3520, 5065 (Yeh'kinya, Ironboot at the port)",
+"DB: Narain Soothfancy 11811 at map 65,19, north of the port",
+"quest 1560 description and creature_text 5955, 6015 (Torta south of the port)"
+],
+"notes": "Fact-check: verified. Port spawns: Stoley, Security Chief Bilgewhizzle, Haughty Modiste, Yeh'kinya, Ironboot in area 977."
+},
+{
+"id": 44003,
+"kind": 1,
+"zone": 440,
+"sort": 3,
+"faction": 0,
+"title": "Noonshade Ruins",
+"body": "On the road between Gadgetzan and Steamwheedle Port lie the Noonshade Ruins, a scatter of ancient troll stonework half buried in the sand. Whoever raised them is long gone. The ruins now shelter Wastewander thieves and bandits, who lie in wait among the stones, and starving blisterpaw hyenas and scorpid hunters prowl the dunes around them. Purple lotus grows among the broken walls for those bold enough to pick it.",
+"triggers": [
+[
+1,
+1937
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Noonshade_Ruins (ancient troll ruins east of Gadgetzan, Wastewander overran them)",
+"DB area 1937: Wastewander Thief x7, Wastewander Bandit x4, Starving Blisterpaw, Scorpid Hunter, Purple Lotus x10",
+"centroid of area 1937 spawns at map 60,24, between Gadgetzan (52,28) and the port (67,22)"
+],
+"notes": "Fact-check: verified. verified against DB spawns"
+},
+{
+"id": 44004,
+"kind": 1,
+"zone": 440,
+"sort": 4,
+"faction": 0,
+"title": "Waterspring Field",
+"body": "Waterspring Field, east of Gadgetzan, is the reason the town can survive at all. The goblins raised water towers here to pump the hidden reserves beneath the desert. The Wastewander nomads took the field for themselves, and their rogues, shadow mages and assassins now guard the towers and the wells the Gadgetzan Water Company counts as its own. Their leader, Caliph Scorpidsting, is found here among them, and the Water Company has posted a price on his head for murdering its workers and seizing its property.",
+"triggers": [
+[
+1,
+985
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Waterspring_Field (water towers pump underground reserves; Wastewanders hijacked them)",
+"quests 1690, 1691 (nomads seized the wells, east of Gadgetzan)",
+"quest 1707 (water pouches are our water anyway)",
+"quest 2781 (Caliph Scorpidsting: murder, theft, seizing property)",
+"DB area 985: Wastewander Shadow Mage, Rogue, Thief, Assassin, Bandit; Caliph Scorpidsting 7847"
+],
+"notes": "Fact-check: verified. verified"
+},
+{
+"id": 44005,
+"kind": 1,
+"zone": 440,
+"sort": 5,
+"faction": 0,
+"title": "Lost Rigger Cove",
+"body": "Ringed by mountains south of Steamwheedle Port lies Lost Rigger Cove, the hideout of the Southsea pirates. Their walled town has docks and a shipyard, and cargo taken from cartel ships lies about it, including the rum shipment Captain Cuergo stole from Stoley. The cartel pays the pirates protection money, yet lately they ignore the bargain. The pirate Andre Firebeard is wanted for crimes against Steamwheedle and Gadgetzan, and a goblin cutthroat named Kregg Keelhaul is sometimes seen in the cove. A treasure map even claims Cuergo buried a chest of gold on a beach further south.",
+"triggers": [
+[
+1,
+1336
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Lost_Rigger_Cove (Southsea hideout, mountains on three sides, shipyard)",
+"quest 2873 (Cuergo stole the rum, walled pirate town to the south)",
+"quest 8366 (protection money disregarded)",
+"quest 2875 (Andre Firebeard wanted)",
+"quest 2882 (Cuergo's Gold map: south of Wheedle)",
+"DB area 1336: Southsea Pirate, Freebooter, Dock Worker, Swashbuckler; Andre Firebeard 7883; Kregg Keelhaul 8203; Stolen Cargo objects; benches and chairs",
+"warcraft.wiki.gg/wiki/Kregg_Keelhaul (rare goblin, Southsea Freebooters)"
+],
+"notes": "Fact-check: 'fortified town' made 'walled town' (2873); 'storerooms' made cargo lying about (Stolen Cargo objects); Andre no longer called captain (2875: the vile pirate); Kregg Keelhaul made a goblin cutthroat seen in the cove (wiki: goblin, Southsea Freebooters; DB faction 16), not one of Andre's crew. Rest verified."
+},
+{
+"id": 44006,
+"kind": 1,
+"zone": 440,
+"sort": 6,
+"faction": 0,
+"title": "Southbreak Shore",
+"body": "South of Lost Rigger Cove the coast opens into Southbreak Shore, a long flat beach washed by the South Seas. Surf gliders, great sea turtles, haul themselves through the shallows, and the beach belongs to giants: coast striders wade along the tide line and a deep dweller lurks in the water beyond. Few travelers linger. On a small island just offshore lives a gnome named Winkey, keeping his own company.",
+"triggers": [
+[
+1,
+1940
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Southbreak_Shore (flat beach south of Lost Rigger Cove, sea giants and turtles once roamed, Winkey on an island)",
+"DB area 1940: Surf Glider 5431 (family 21, turtle) x39, Coast Strider 5466 x10 and Deep Dweller 5467 (type 5 giants), Winkey 7770"
+],
+"notes": "Fact-check: verified. Winkey has no gossip text; nothing more said of him."
+},
+{
+"id": 44007,
+"kind": 1,
+"zone": 440,
+"sort": 7,
+"faction": 0,
+"title": "Caverns of Time",
+"body": "In the mountains of eastern Tanaris a great cavern opens into the realm of Nozdormu, the Timeless One. Here the bronze dragonflight has watched over the flow of time since the world was young, and its guardians bar any who would meddle with it. Before the entrance stands Anachronos, heir of Nozdormu, with his far less welcoming dragonkin companions Tick, Chronalis and Occulus. The Steward of Time greets travelers at the threshold and warns of dangers beyond, then sends them down to the keepers in the depths. Within, tunnels called timeways lead into moments of history that hostile hands are trying to unmake.",
+"triggers": [
+[
+1,
+2300
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Caverns_of_Time (bronze flight guards since the world was young, Nozdormu's home, Anachronos outside with Tick, Chronalis, Occulus)",
+"warcraft.wiki.gg/wiki/Anachronos (heir of Nozdormu)",
+"npc_text 9977 (Steward of Time: beyond this hall lies dangers)",
+"quest 10279 (a brother flies you to the master's lair)",
+"broadcast_text 17657, 17661 (Timeless One, timeways)",
+"DB area 2300: Anachronos 15192, Steward of Time 20142, Tick 8198, Chronalis 8197, Occulus 8196"
+],
+"notes": "Fact-check: 'son' made 'heir' (wiki lead; the infobox parentage draws on later lore). 2300 confirmed: reachable, and the outdoor approach where Anachronos, the Steward of Time, Tick, Chronalis, Occulus and the meeting stone stand (zone_areas); 1941 unreachable. Tick, Chronalis, Occulus are template 1605, hostile to players. Instances not described. Rest verified."
+},
+{
+"id": 44008,
+"kind": 1,
+"zone": 440,
+"sort": 8,
+"faction": 0,
+"title": "Broken Pillar",
+"body": "South of Gadgetzan a few toppled columns mark the Broken Pillar, the remains of a troll site lost to the sands. Its newest resident is Marvon Rivetseeker, a goblin scholar from Ratchet who crashed his zeppelin nearby and decided to begin his research where he landed. From his camp he studies the troll ruins of the desert and the ornaments of Gahz'ridian the old trolls carved in honor of the hydra Gahz'rilla, and he speaks of what he once saw within the Sunken Temple.",
+"triggers": [
+[
+1,
+1938
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Broken_Pillar (troll ruins south of Gadgetzan; Marvon's camp)",
+"npc_text 2038 (home in Ratchet, crashed zeppelin, started research here)",
+"quest 3161 (Gahz'ridian ornaments modeled on Gahz'rilla)",
+"quests 3380, 3445 (studies the troll ruins in Tanaris), 3444 (Sunken Temple)",
+"DB: Marvon Rivetseeker 7771 in area 1938 at map 53,46"
+],
+"notes": "Fact-check: verified. Area centroid map 52,49."
+},
+{
+"id": 44009,
+"kind": 1,
+"zone": 440,
+"sort": 9,
+"faction": 0,
+"title": "Abyssal Sands",
+"body": "The Abyssal Sands are the empty heart of Tanaris, a rolling waste of dunes between Gadgetzan and the southern ruins. Little shade and less water can be found here. Fire rocs and their larger kin circle overhead, glasshide basilisks bask on the dunes, and packs of blisterpaw hyenas and scorpids roam the sand in search of prey. Whirling vortexes of wind drift across the waste, and travelers speak of a great firebird that is sometimes seen soaring above it.",
+"triggers": [
+[
+1,
+1939
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Abyssal_Sands (endless dune sea)",
+"DB area 1939: Fire Roc x31, Roc x9, Glasshide Gazer and Basilisk, Blisterpaw Hyena x39, Scorpid Dunestalker and Tail Lasher, Gusting Vortex 8667 x3, Greater Firebird 8207 (rare, family 7)",
+"centroid of area 1939 at map 46,40"
+],
+"notes": "Fact-check: 'wreathed in flame' dropped (only the name supports fire); kept as a sighting. Rest verified against spawns."
+},
+{
+"id": 44010,
+"kind": 1,
+"zone": 440,
+"sort": 10,
+"faction": 0,
+"title": "Sandsorrow Watch",
+"body": "West of Gadgetzan, Sandfury trolls guard Sandsorrow Watch, an outpost of watch towers standing over a pool of open water, a rare treasure in the desert. Firecallers, hideskinners and axe throwers patrol its sands, and they do not welcome goblin surveyors. When the Gadgetzan Water Company sent a junior surveyor to sample the pool, some crawling horror ambushed the surveyor there, the first warning of the silithid. A troll called Jin'Zallah the Sandbringer is said to walk among them.",
+"triggers": [
+[
+1,
+979
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Sandsorrow_Watch (west of Gadgetzan, held by Sandfury trolls, watch tower, protecting what little water exists)",
+"quest 992 description and reward text (pool near Sandsorrow Watch, in sight of the trolls; ambushed by a creepy-crawly)",
+"DB area 979: Sandfury Firecaller x20, Axe Thrower x10, Hideskinner x6, Jin'Zallah the Sandbringer 8200 (rank 2)",
+"warcraft.wiki.gg/wiki/Jin'Zallah_the_Sandbringer (rare Sandfury sand troll)"
+],
+"notes": "Fact-check: ambush reworded to 992 reward text (a creepy-crawly ambush), 'crawled out of the sand' dropped. Jin'Zallah: rare Sandfury sand troll (wiki), spawned in 979. Rest verified."
+},
+{
+"id": 44011,
+"kind": 1,
+"zone": 440,
+"sort": 11,
+"faction": 0,
+"title": "Zul'Farrak",
+"body": "In the northwest of Tanaris rise the walls of Zul'Farrak, city of the Sandfury trolls, ruthless sand trolls steeped in dark magic who attack anyone who approaches. Warleader Krazzilak prowls before its gates. Legends cling to the place. A hydra god, Gahz'rilla, is said to dwell in a sacred pool within its walls, and the persecutors of the martyr Theka are said to scuttle about his shrine, cursed into scarabs. Many are drawn inside all the same: Sergeant Bly led his band in hunting treasure, the Prophecy of Mosh'aru lies on tablets within, and the smith Trenton Lighthammer of Gadgetzan still remembers with dread the warband that once marched out of it to lay waste to the land.",
+"triggers": [
+[
+1,
+978
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Zul'Farrak (Sandfury, ruthlessness and dark mysticism, attack anyone who approaches, Gahz'rilla in a sacred pool)",
+"quest 3527 (tablets held by Theka and Velratha, persecutors cursed into scarabs)",
+"quest 2768 (Sergeant Bly treasure hunting in Zul'Farrak)",
+"npc_text 1758 (Trenton Lighthammer: a warband from Zul'Farrak laid waste to the land)",
+"DB area 978: Warleader Krazzilak 8199 (rank 2), Sandfury Firecaller, Hideskinner, Axe Thrower, meeting stone"
+],
+"notes": "Fact-check: Gahz'rilla 'sleeps at its heart' made 'dwells in a sacred pool within its walls' (3527). Exterior only; dungeon quests 2768, 2865, 3042, 3527 not used as triggers. Rest verified."
+},
+{
+"id": 44012,
+"kind": 1,
+"zone": 440,
+"sort": 12,
+"faction": 0,
+"title": "The Noxious Lair",
+"body": "On the western edge of Tanaris, above the jungles of Un'Goro Crater, the ground sinks into a broad hollow where pools of water once gathered. They are gone now, drained by the Centipaar silithid who have dug their hive into the sand. Their workers, tunnelers and stingers swarm over the hollow, their eggs lie clustered in the earth, and their sandreavers guard the hive mounds. The Gadgetzan Water Company sent for parts of these bugs, and Alchemist Pestlezugg found them unlike any insect he had ever seen. A great devourer named Soriid is said to hunt among the hives.",
+"triggers": [
+[
+1,
+982
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Noxious_Lair (Centipaar hive, there used to be water, sunken surface, overlooks Un'Goro)",
+"quest 82 description (bugs draining the water pools where the Noxious Lair is)",
+"quests 82, 110 reward texts (Pestlezugg's analysis)",
+"DB area 982: Centipaar Stinger, Wasp, Swarmer, Worker, Tunneler, Sandreaver; Silithid Egg x24; Soriid the Devourer 8204 (rare, silithid)"
+],
+"notes": "Fact-check: verified. Centroid map 34,45 on the Un'Goro side."
+},
+{
+"id": 44013,
+"kind": 1,
+"zone": 440,
+"sort": 13,
+"faction": 0,
+"title": "Dunemaul Compound",
+"body": "Not long ago a large band of nomadic Dunemaul ogres wandered into Tanaris and claimed a stretch of desert south of Gadgetzan, building a compound there. Brutes and enforcers guard it, warlocks and ogre mages practice their crude magic, and smaller bands have spread out to occupy the old troll ruins nearby. In Gadgetzan, Andi Lynn fears the force the ogres could build and wants the compound broken before it grows, beginning with its leader, Gor'marok the Ravager. Two rarely seen ogres, Cyclok the Mad and Omgorn the Lost, prowl the camp as well.",
+"triggers": [
+[
+1,
+983
+]
+],
+"sources": [
+"quest 5863 description (nomadic ogres recently arrived, compound south of Gadgetzan, smaller bands invaded the old troll ruins, Gor'marok the Ravager)",
+"warcraft.wiki.gg/wiki/Dunemaul_Compound (ogre mound of the Dunemaul clan; Gor'marok former leader)",
+"DB area 983: Dunemaul Brute x24, Enforcer x18, Warlock x6, Ogre Mage x3, Gor'marok 12046, Cyclok the Mad 8202, Omgorn the Lost 8201 (both rare)",
+"warcraft.wiki.gg/wiki/Omgorn_the_Lost (rare Dunemaul ogre, a spawn at each ogre camp)"
+],
+"notes": "Fact-check: Cyclok and Omgorn 'dangerous loners' made 'rarely seen ogres' (both rare, ogre faction 45; Omgorn spawns at each ogre camp). 5863 not a trigger. Rest verified."
+},
+{
+"id": 44014,
+"kind": 1,
+"zone": 440,
+"sort": 14,
+"faction": 0,
+"title": "Eastmoon Ruins",
+"body": "West of the Gaping Chasm lie the Eastmoon Ruins, ancient troll stonework slowly swallowed by the dunes. The Dunemaul ogres have spread here from their compound, and their warlocks and ogre mages have made the ruins a camp of their own. Glasshide basilisks and blisterpaw hyenas haunt the edges, purple lotus grows in the shelter of the old walls, and the rarely seen ogre wanderer Omgorn the Lost passes through.",
+"triggers": [
+[
+1,
+984
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Eastmoon_Ruins (ancient troll ruins just west of the Gaping Chasm; Dunemaul ogres took the area)",
+"quest 5863 (smaller ogre bands invaded the old troll ruins)",
+"DB area 984: Dunemaul Warlock x7, Ogre Mage x3, Enforcer, Brute; Glasshide Gazer; Blisterpaw; Purple Lotus x6; Omgorn the Lost 8201"
+],
+"notes": "Fact-check: verified. verified against DB spawns"
+},
+{
+"id": 44015,
+"kind": 1,
+"zone": 440,
+"sort": 15,
+"faction": 0,
+"title": "Southmoon Ruins",
+"body": "North of the Valley of the Watchers stand the Southmoon Ruins, another troll site from the days when trolls held this land. Dunemaul ogres camp among the fallen stones. The ground here is rich in Gahz'ridian, the strange element the old trolls carved into ornaments in honor of their hydra god, and a goblin treasure hunter at the Broken Pillar rewards those who bring him pieces. Searing rocs circle overhead.",
+"triggers": [
+[
+1,
+992
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Southmoon_Ruins (ancient troll ruins north of the Valley of the Watchers, Dunemaul once controlled them)",
+"quest 3161 (Gahz'ridian ornaments, trolls who used to occupy this land)",
+"DB area 992: Gahz'ridian objects x23, Dunemaul Ogre, Enforcer, Brute, Warlock; Searing Roc x7"
+],
+"notes": "Fact-check: 'pays well' made 'rewards' (3161). Rest verified."
+},
+{
+"id": 44016,
+"kind": 1,
+"zone": 440,
+"sort": 16,
+"faction": 0,
+"title": "The Gaping Chasm",
+"body": "Southeast of Gadgetzan the desert splits open into the Gaping Chasm, now a hive of the Hazzali silithid. Wasps, swarmers and stingers boil out of its great mounds, while workers and tunnelers dig ever deeper below. Junior Surveyor Scrimshank of the Gadgetzan Water Company was sent here, and his last report spoke of the same strange bugs. He never came back, and only his surveying gear was found. A ravenous silithid called Haarka is feared in the depths, and near the chasm a gnomish homing robot, OOX-17/TN, once crashed and waited for rescue.",
+"triggers": [
+[
+1,
+981
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/The_Gaping_Chasm (silithid hive in southeastern Tanaris, Hazzali, Scrimshank went missing and died)",
+"quest 10 description and reward text (Scrimshank, Gaping Chasm)",
+"quest 351 description (OOX-17/TN crashed near the Gaping Chasm)",
+"DB area 981: Hazzali Wasp, Swarmer, Worker, Stinger, Tunneler, Sandreaver; Scrimshank's Surveying Gear 144053; Haarka the Ravenous 8205 (rare, silithid)"
+],
+"notes": "Fact-check: 'in the south' made 'southeast of Gadgetzan' (quest 10). OOX chain mentioned only, no triggers. Rest verified."
+},
+{
+"id": 44017,
+"kind": 1,
+"zone": 440,
+"sort": 17,
+"faction": 0,
+"title": "Thistleshrub Valley",
+"body": "In the southwestern corner of Tanaris lies Thistleshrub Valley, a low basin where great cacti grow thick in the heat. Its guardians are living plants: gnarled thistleshrubs and rootshapers that lash out at anything that comes near, and dew collectors that store precious water in special glands. That water has drawn more than one schemer from Gadgetzan. Marin Noggenfogger sought the glands for a drink to quench his thirst, and Tran'rek of Gadgetzan wants a closer look at the valley's cactus, if only someone else will clear the way first.",
+"triggers": [
+[
+1,
+980
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Thistleshrub_Valley (southwestern edge, one of the lowest spots, massive cacti, elementals of living vines attack, RPG section)",
+"quest 2605 (dew collectors store water in glands, cactus garden to the southwest)",
+"quest 3362 description and completion text (gnarled thistleshrubs and rootshapers, Tran'rek wants a closer look at the cactus)",
+"DB area 980: Thistleshrub Dew Collector x14, Rootshaper x11, Gnarled Thistleshrub x8 (type 4 elementals)"
+],
+"notes": "Fact-check: verified. Wiki's valley detail comes from the non-canon RPG; only 'low basin' and 'cacti' are kept. 3362 not used as a trigger."
+},
+{
+"id": 44018,
+"kind": 1,
+"zone": 440,
+"sort": 18,
+"faction": 0,
+"title": "Valley of the Watchers",
+"body": "In the far southwest of Tanaris a valley runs between the mountains to a great sealed gate, the entrance to Uldum. Few believe the place behind it is more than a myth. The gate cannot be forced, and huge giants, the Dune Smashers, walk the valley floor as if keeping watch. Scholars of the Explorers' League and the sages of Thunder Bluff have both sent agents here in hope of opening it, and a pedestal before the gate stirs a titan guardian who demands the Plates of Uldum. Prospector Gunstan of the Explorers' League keeps a lonely camp in the valley.",
+"triggers": [
+[
+1,
+990
+],
+[
+1,
+989
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Valley_of_the_Watchers (southern Tanaris, impenetrable gate into Uldum, Dune Smashers lived here)",
+"quest 2954 (Stone Watcher of Norgannon at the Uldum Pedestal, Plates of Uldum)",
+"ironforge.json 153714 and thunder_bluff.json 163817 (the disc chains; told there)",
+"DB areas 989 and 990: Dune Smasher 5469 x6 (giant), Uldum Pedestal 142343, Prospector Gunstan 5389 (Explorers' League)"
+],
+"notes": "Fact-check: 'stone giants' made 'giants'; Gunstan's camp 'at the mouth' made 'in the valley' (spawn in 990, no text). Disc chains belong to Ironforge and Thunder Bluff and are only pointed to. Uldum shown sealed only. Rest verified."
+},
+{
+"id": 44019,
+"kind": 1,
+"zone": 440,
+"sort": 19,
+"faction": 0,
+"title": "Land's End Beach",
+"body": "Land's End Beach is the southernmost shore of Tanaris, in the far southeast of Kalimdor, where the desert finally runs out into the South Seas. Surf gliders by the dozen crawl through the breakers. A mermaid named Meridith dwells in the waters here, and she still treasures the day she pulled a gnome from the wreck of his flying machine on this very beach. That gnome was Narain Soothfancy, who had hidden a precious book on a small island further south and crashed on the way home. A pirate's treasure map claims that Captain Cuergo buried his gold on this shore, by a mast, a flag and bones.",
+"triggers": [
+[
+1,
+987
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Land's_End_Beach (southernmost point of Tanaris, far southeast of Kalimdor, islands offshore)",
+"quest 8599 description (Meridith rescued the gnome from the crashed flying machine)",
+"quest 8597 description (crashed gyrocopter on Land's End Beach, book hidden on an island to the south)",
+"npc_text 7917 (Meridith: ocean floor is peaceful)",
+"DB area 987: Surf Glider x95, Meridith the Mermaiden 15526, Inconspicuous Landmark 142189 x6 (for quest 2882 Cuergo's Gold)"
+],
+"notes": "Fact-check: 'of all Kalimdor' softened to the far southeast of Kalimdor (wiki); Meridith 'sings' made 'dwells' (nothing in her text has her singing). Rest verified."
+},
+{
+"id": 44020,
+"kind": 2,
+"zone": 440,
+"sort": 1,
+"faction": 0,
+"title": "Senior Surveyor Fizzledowser",
+"body": "Senior Surveyor Fizzledowser of the Gadgetzan Water Company hunts for new sources of water now that the nomads hold the wells, and he will hire any likely stranger as a temporary junior-grade surveyor. He dismissed the first reports of water-drinking bugs as nomad trickery, until his own surveyor was ambushed at Sandsorrow Watch and his top assistant, Scrimshank, vanished in the Gaping Chasm. He mourns Scrimshank as a good goblin. Though he dislikes handing out company information for nothing, he trusts his old friend Pestlezugg, and when the alchemist urged it he copied the silithid report for all to read.",
+"triggers": [
+[
+2,
+7724
+]
+],
+"sources": [
+"quest 992 description and reward text",
+"quest 10 description and reward text (top assistant, a good goblin)",
+"quest 113 reward text (not thrilled about handing out information; known Pestlezugg for years)",
+"creature_template 7724 subname Gadgetzan Water Co., faction 475"
+],
+"notes": "Fact-check: 'hates giving information away' softened (113: not thrilled). Faction 0: 475 Gadgetzan, friendly to both. Rest verified."
+},
+{
+"id": 44021,
+"kind": 2,
+"zone": 440,
+"sort": 2,
+"faction": 0,
+"title": "Chief Engineer Bilgewhizzle",
+"body": "Chief Engineer Bilgewhizzle of the Gadgetzan Water Company is as fierce about profit as he is about justice for the Wastewander nomads who stole his wells. He rewards those who thin the nomads' ranks, pays the company's bounty on their leader Caliph Scorpidsting, and sells off the model 4711-FTZ power sources that once ran the wells, now in surplus thanks to the thieves, reminding buyers that nothing is free in Gadgetzan. He dreams aloud of importing water from the icy springs of Dun Morogh. He also wants back his cherished divino-matic rod, the tool he uses to find new water holes, stolen by a mercenary named Sergeant Bly who led his band into Zul'Farrak.",
+"triggers": [
+[
+2,
+7407
+]
+],
+"sources": [
+"quests 1690, 1691, 2781 (bounties)",
+"quest 243 reward text (4711-FTZ power sources, over abundance because of the nomads, nothing's free in Gadgetzan)",
+"quest 654 completion text (import water from the icy springs of Dun Morogh)",
+"quest 2768 description (divino-matic rod, Sergeant Bly, Zul'Farrak)",
+"warcraft.wiki.gg/wiki/Zul'Farrak (Bly's band of mercenaries)"
+],
+"notes": "Fact-check: verified. Quest 243 chain (Zinge, Horde) is Undercity's and not used. 'Dreams aloud' paraphrases 654: until we can afford to import water. Faction 0: template 475."
+},
+{
+"id": 44022,
+"kind": 2,
+"zone": 440,
+"sort": 3,
+"faction": 0,
+"title": "Marin Noggenfogger",
+"body": "Marin Noggenfogger is a Gadgetzan goblin with a terrible thirst and a nose for profit. Standing in the desert heat, he hit on the idea of drinking the water stored in the glands of the dew collectors of Thistleshrub Valley. It tasted dreadful, so he turned to his friend Sprinkle, an excellent cook who thinks him a little eccentric, and her secret mushroom powder transformed the brew. The result was the Noggenfogger Elixir, a potion he expects to make millions on. Sprinkle insists he owes her a favor for it. Marin laughs that off as one of her jokes.",
+"triggers": [
+[
+2,
+7564
+]
+],
+"sources": [
+"npc_text 1493 (so thirsty standing outside in this heat)",
+"quests 2605, 2606 (Sprinkle an excellent chef; a little eccentric)",
+"quests 2641, 2661, 2662 (Violet Powder; millions; such a kidder)",
+"creature_text 7564"
+],
+"notes": "Fact-check: 'sell by the millions' made 'make millions on' (2662). Not called baron (Cataclysm). Faction 0: 474. Rest verified."
+},
+{
+"id": 44023,
+"kind": 2,
+"zone": 440,
+"sort": 4,
+"faction": 0,
+"title": "Curgle Cranklehop",
+"body": "Curgle Cranklehop is a Gadgetzan inventor with a soft spot for birds. He is helping the druids save the hippogryphs of Feralas, whose numbers are dwindling under the blight of the Gordunni ogres, and to that end he built the Super Egg-O-Matic, a machine that weighs, measures and packs any hippogryph egg brought to it. He collects eggs of every quality, grieving gently over the ones that cannot be saved, and sends crates of them to Erelas Ambersky in Rut'theran Village to hatch. His latest invention, the Super Snapper FX, takes pictures of anything it is aimed at.",
+"triggers": [
+[
+2,
+7763
+]
+],
+"sources": [
+"npc_text 1519 (Super Egg-O-Matic, aiding the druids to save the hippogryphs, Gordunni)",
+"quests 2741 reward text (weighed, measured and packaged), 2747, 2750",
+"quest 3022 (crate to Erelas Ambersky in Rut'theran)",
+"quest 2944 description (Super Snapper FX)",
+"feralas.json 35735 (the Stave of Equinex chain uses the camera; not retold)"
+],
+"notes": "Fact-check: 'ships the best' made 'sends crates of them' (3022 crate of eggs; 2748). 'Soft spot for birds' kept as a gloss. Egg quests not triggers. Faction 0: 35. Rest verified."
+},
+{
+"id": 44024,
+"kind": 2,
+"zone": 440,
+"sort": 5,
+"faction": 0,
+"title": "Marvon Rivetseeker",
+"body": "Marvon Rivetseeker is a goblin scientist from Ratchet and a treasure hunter at heart. He came to Tanaris by zeppelin to study its troll ruins, crashed, and simply began his research where he landed, at the Broken Pillar. He collects the Gahz'ridian ornaments the old trolls carved after the hydra Gahz'rilla, finding them with a detector helmet of his own invention. He once entered the Sunken Temple and barely escaped through its ooze-flooded halls, and he remembers a circular chamber of serpent statues, a trap that nearly killed him, and an altar to Hakkar below. He believes that circle of statues guards a hidden treasure.",
+"triggers": [
+[
+2,
+7771
+]
+],
+"sources": [
+"npc_text 2038",
+"quest 3161 (scientist, treasure hunter, Gahz'ridian, detector)",
+"quests 3444, 3446, 3447 (Sunken Temple memories)",
+"quests 3380, 3445 (left his home in Ratchet to study the troll ruins in Tanaris)",
+"quests 3446, 3447 (circle of statues holds the secret to a greater treasure)"
+],
+"notes": "Fact-check: 'years ago' made 'once' (3444); the treasure belief moved from the altar to the circle of statues (3447). Sunken Temple quests not triggers. Faction 0: 474. Rest verified."
+},
+{
+"id": 44025,
+"kind": 2,
+"zone": 440,
+"sort": 6,
+"faction": 0,
+"title": "Yeh'kinya",
+"body": "Yeh'kinya is an old troll mystic who lives at Steamwheedle Port, claiming that time and drink have dulled his outer senses but not his inner eyes. He speaks of Hakkar the Soulflayer and the troll prophecy of his return, and claims to want only to keep the god's power from those who would abuse it. With that tale he sent heroes across the world to gather the tablets of Mosh'aru, an ancient egg and at last the essence of Hakkar's avatar. The truth was darker. Yeh'kinya served Hakkar all along, and the egg he guarded helped the Soulflayer return to Zul'Gurub.",
+"triggers": [
+[
+2,
+8579
+]
+],
+"sources": [
+"npc_text 2140 (time and drink have dulled my outer senses)",
+"quest 3520 reward text",
+"quests 3527, 4787, 3528",
+"quest 8181 reward text and creature_text 8579 (Blood and souls for Hakkar)",
+"warcraft.wiki.gg/wiki/Yeh'kinya (troll at Steamwheedle Port, worships Hakkar)"
+],
+"notes": "Fact-check: verified. Yeh'kinya's later gossip (2139, re-summoning the avatar) not used. Faction 0: 474."
+},
+{
+"id": 44026,
+"kind": 2,
+"zone": 440,
+"sort": 7,
+"faction": 0,
+"title": "Prospector Ironboot",
+"body": "Prospector Ironboot is an old dwarf scholar who works among the goblins of Steamwheedle Port. Studying the troll legends of Hakkar, he discovered that the prophecy of Mosh'aru was written not on two tablets but on six, and that the troll Yeh'kinya had told only half the tale. Piecing the tablets together, he learned that the egg meant to contain the Soulflayer could instead give him new birth. When his fears came true, Ironboot sent heroes to the Zandalari trolls of Yojamba Isle, who he hoped would know how to defeat the blood god.",
+"triggers": [
+[
+2,
+10460
+]
+],
+"sources": [
+"quests 5065, 4788, 8181, 8182 descriptions and reward texts",
+"quest 8181 reward text (that old dwarf Ironboot, meddling prospector)",
+"DB: Prospector Ironboot 10460 in area 977"
+],
+"notes": "Fact-check: verified. 'Scholar' from 5065 (I have studied long). Faction 0: 474. Molthor and Yojamba Isle belong to Stranglethorn (3312) and are only mentioned."
+},
+{
+"id": 44027,
+"kind": 2,
+"zone": 440,
+"sort": 8,
+"faction": 0,
+"title": "Narain Soothfancy",
+"body": "Narain Soothfancy is a gnome who lives just north of Steamwheedle Port and calls himself a psychic, though his guesses rarely land. A copy of Soothsaying for Dummies sits by his door. He claims a crash on Land's End Beach gave him his super-gnomish powers, and he has a long list of grudges: his ex-best friend forever Stewvul stole his scrying goggles, and his arch-enemy Doctor Weavil once tore his treasured Draconic for Dummies to pieces. Behind the bluster he is a gifted engineer: the blue dragon Azuregos calls him a terrible psychic but an amazing engineer. A mermaid loves him. He insists it could never work.",
+"triggers": [
+[
+2,
+11811
+]
+],
+"sources": [
+"npc_text 7902 (envelope guess; Soothsaying for Dummies book)",
+"quest 8597 (crash gave him super-gnomish psychic powers)",
+"quests 8577, 8620 (Stewvul, Doctor Weavil)",
+"quest 8599 reward text (She's a fish)",
+"warcraft.wiki.gg/wiki/Narain_Soothfancy (lived north of Steamwheedle Port; Azuregos: terrible psychic, amazing engineer)",
+"gameobject 177226 Book Soothsaying for Dummies in area 977",
+"npc_text 7897 (Azuregos: terrible, terrible psychic but an amazing engineer)"
+],
+"notes": "Fact-check: 'prefers not to discuss it' made 'insists it could never work' (8599 reward). Azuregos quote confirmed by npc_text 7897. Faction 0: 35. Rest verified."
+},
+{
+"id": 44028,
+"kind": 2,
+"zone": 440,
+"sort": 9,
+"faction": 0,
+"title": "Anachronos",
+"body": "Anachronos, heir of Nozdormu the Timeless One, keeps watch before the Caverns of Time in his true dragon form, and he has little trust left for the mortal races. A thousand years ago, when the qiraji fell upon the Caverns during the War of the Shifting Sands, he called the dragonflights to battle and, with Fandral Staghelm and the night elves, sealed the insects behind the Scarab Wall. He forged the Scepter of the Shifting Sands as its key. Fandral shattered it in grief, and Anachronos divided the shards among guardian dragons. Now he insists that this time the first strike must be theirs, so the mistakes of the past are not repeated.",
+"triggers": [
+[
+2,
+15192
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Anachronos (heir of Nozdormu; qiraji attacked the Caverns; sealed with Fandral; made the scepter; Fandral shattered it after Valstann's death; shards to Vaelastrasz, Azuregos, Eranikus)",
+"quest 8519 reward text (gathered the shards, charge of the Dragonflights)",
+"quest 8555 reward text (distrust towards your kind)",
+"npc_text 7742 (we must make the first strike; mistakes of the past)",
+"quest 8742 (a thousand years has passed)"
+],
+"notes": "Fact-check: verified. The Scepter chain (8286 on, 8555, 8742, 8743) runs from Silithus to Silithus and is left to Silithus; only TALK is used. True dragon form: display 2719 with combat reach 10 (dragon model) in 3.3.5; the elf form is Cataclysm. Faction 0: 776 (Brood of Nozdormu, neutral)."
+},
+{
+"id": 44029,
+"kind": 2,
+"zone": 440,
+"sort": 10,
+"faction": 0,
+"title": "Andormu",
+"body": "Andormu is a bronze dragon of the Keepers of Time who wears the shape of an elf, at times a grown man and at times a child, both sometimes seen at once. With his sister Nozari he leads the keepers in the Caverns of Time while Nozdormu is away. Small meddlers hardly concern him, such as a greedy wizard nudging the past to better his station. What troubles him now is worse: strange beings seen more and more often across the timeways, trying to alter the course of history itself. The keepers dare not risk themselves, so Andormu welcomes heroes from Azeroth to defend the timeways in their place.",
+"triggers": [
+[
+2,
+20130
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Andormu (bronze dragon, elf visage, adult and child forms at the same time, sister Nozari, co-leader of the Keepers of Time)",
+"creature_text 19932 and 19933 (Andormu and Nozari: greedy wizard, beings tampering with the timeways, master away, heroes due to arrive)",
+"quest 10277",
+"creature_text 19932 groups 1 and 2 (greedy wizard improving his station)"
+],
+"notes": "Fact-check: 'no patience for small meddlers' reworded to his line (19932: not talking about a greedy wizard improving his station). Instance chains not used. Faction 0: 1779. Rest verified."
+},
+{
+"id": 44030,
+"kind": 3,
+"zone": 440,
+"sort": 1,
+"faction": 0,
+"title": "Bugs in the Water",
+"body": "With the nomads holding its wells, the Gadgetzan Water Company went looking for new water, and Senior Surveyor Fizzledowser sent a temporary junior surveyor to sample the pool by Sandsorrow Watch. The surveyor came back with tales of an ambush by some crawling horror. Fizzledowser had dismissed reports of bugs sucking up the desert's water as nomad mischief. He sent for parts from the Centipaar of the Noxious Lair, where water pools once lay, and Alchemist Pestlezugg found them unlike any insect he knew. Then word came that the surveyor Scrimshank had vanished in the Gaping Chasm, where only his gear was found. Pestlezugg's report was grim: the bugs had been turned into nothing but ravagers by a powerful, malign outside force, a threat to all of southern Kalimdor and perhaps the world. Copies went to scholars in Darnassus and Orgrimmar, who gave the creatures a name: silithid.",
+"triggers": [
+[
+4,
+992
+]
+],
+"sources": [
+"quests 992, 82, 10, 110, 113 descriptions and reward texts",
+"quests 32 and 162 reward texts (silithid named by Zilzibin Drumlore and Gracina Spiritmight)"
+],
+"notes": "Fact-check: verified. Darnassus (165710) owns Gracina and 4508; the follow-up March of the Silithid (4493/4494 from the capitals) and Pestlezugg's Un'Goro hunt (4496, 4507) are left to those zones and Un'Goro. 32 and 162 are not used as triggers (they end in Orgrimmar and Darnassus)."
+},
+{
+"id": 44031,
+"kind": 3,
+"zone": 440,
+"sort": 2,
+"faction": 0,
+"title": "Wastewander Justice",
+"body": "The Wastewander nomads have seized almost every well in Tanaris, and without them Gadgetzan's water will soon run dry. Chief Engineer Bilgewhizzle of the Gadgetzan Water Company calls it a matter of justice, goblin style. First the bandits and thieves east of town were to be thinned, then the more dangerous rogues, assassins and shadow mages who guard the stolen wells, until the company could take the fight to them. Meanwhile Spigot Operator Luglunket pays a company care package for every handful of water pouches taken from the nomads, since that water was the company's to begin with. Wanted posters in Gadgetzan and Steamwheedle Port name the nomads' leader, Caliph Scorpidsting, for murdering company workers and stealing its resources and property. His death, the company hopes, will finally push the squatters off Gadgetzan's wells.",
+"triggers": [
+[
+4,
+1690
+],
+[
+4,
+1707
+],
+[
+4,
+2781
+]
+],
+"sources": [
+"quests 1690, 1691 descriptions and reward texts",
+"quest 1707 description and reward text",
+"quest 2781 description and reward text",
+"gameobject_queststarter 142122, 150075 (Wanted Posters in areas 977 and 976) for 2781"
+],
+"notes": "Fact-check: verified. Faction 0: all AllowableRaces 0. 2781 starts from the wanted posters."
+},
+{
+"id": 44032,
+"kind": 3,
+"zone": 440,
+"sort": 3,
+"faction": 0,
+"title": "The Noggenfogger Elixir",
+"body": "Marin Noggenfogger of Gadgetzan was thirsty, as anyone who stands about in the Tanaris heat must be. He had heard of strange creatures to the southwest, the dew collectors of Thistleshrub Valley, which store water in special glands, and he was sure a drink made from them would quench his thirst. The gland's water tasted dreadful. Rather than give up, Marin sent the dew to his friend Sprinkle, an excellent cook, to give it some kick. Sprinkle knew just the thing: the Violet Tragan, a mushroom that grows only underwater in a lake of the Hinterlands, which she had relied on since childhood to survive her sister's cooking. Ground into a violet powder and mixed with the dew, it produced the Noggenfogger Elixir. Marin, delighted, now plans to make millions. Sprinkle reminds him he owes her a favor.",
+"triggers": [
+[
+4,
+2605
+]
+],
+"sources": [
+"quests 2605, 2606, 2641, 2661, 2662 descriptions and reward texts",
+"creature_text 7564 (mixing the elixir)"
+],
+"notes": "Fact-check: verified. Faction 0: AllowableRaces 0. The Hinterlands file does not use 2641."
+},
+{
+"id": 44033,
+"kind": 3,
+"zone": 440,
+"sort": 4,
+"faction": 0,
+"title": "The Southsea Shakedown",
+"body": "The Steamwheedle Cartel pays the Southsea pirates of Lost Rigger Cove to leave its ships alone, but lately the pirates have taken the money and kept raiding. The cartel leaned on Security Chief Bilgewhizzle of Steamwheedle Port to teach them a lesson, and since he cannot leave the docks he deputizes whoever will go. A wanted decree authorizes lethal force against the pirate Andre Firebeard, adding that his head may stand in for him at his hearing. One pirate was found carrying the schedules of shipments between the port and Booty Bay, with notes on which ships promise great loot. The port has its own grievances. Captain Cuergo stole Stoley's last shipment of rum just when Stoley needed it to settle a bet with Sea Wolf MacKinley of Booty Bay, and the Haughty Modiste buys up Southsea hats by the score, to be cleaned, personalized and sold to the elite of Azerothian society.",
+"triggers": [
+[
+4,
+8366
+],
+[
+4,
+2875
+],
+[
+4,
+2873
+],
+[
+4,
+8365
+]
+],
+"sources": [
+"quest 8366 description (protection money, deputize)",
+"quest 2875 description (lethal force, head as proxy)",
+"quest 2876 description and reward text",
+"quests 2872, 2873 descriptions",
+"quest 8365 description and reward text"
+],
+"notes": "Fact-check: verified. 2872 (start, Booty Bay) and 2874 (turn-in, Booty Bay) not used: Stranglethorn may use them. 2876 starts from a dropped item; it is described but not a trigger. Faction 0: all AllowableRaces 0."
+},
+{
+"id": 44034,
+"kind": 3,
+"zone": 440,
+"sort": 5,
+"faction": 0,
+"title": "The Egg of Hakkar",
+"body": "The troll mystic Yeh'kinya of Steamwheedle Port sought the spirits of the vale screechers of Feralas, cousins of an old, old god whose spirits are still linked to him. Once their essence was gathered, he spoke of the troll prophecy that Hakkar the Soulflayer will one day return, and claimed only to want the god's power kept from those who would abuse it. The prophecy of Mosh'aru, he said, told how to contain Hakkar's essence. Its two tablets lay in Zul'Farrak, one with the long-dead martyr Theka, one with the hydromancer Velratha. The tablets spoke of an ancient egg hidden behind the amphitheater atop Jintha'Alor, a relic of the old troll empires. Carried into the Sanctum of the Fallen God within the Sunken Temple, the egg drew in the essence of Hakkar's slain avatar. Yeh'kinya took it, promising to keep it from evil hands.",
+"triggers": [
+[
+4,
+3520
+]
+],
+"sources": [
+"quests 3520, 3527, 4787, 3528 descriptions and reward texts"
+],
+"notes": "Fact-check: verified. Chain starts and ends with Yeh'kinya in Tanaris. 4787 (Hinterlands sort) and 3528 (Sunken Temple sort) are not used by hinterlands.json or swamp_of_sorrows.json. Only 3520 is a trigger. Faction 0."
+},
+{
+"id": 44035,
+"kind": 3,
+"zone": 440,
+"sort": 6,
+"faction": 0,
+"title": "The Lost Tablets of Mosh'aru",
+"body": "After the egg of Hakkar passed into Yeh'kinya's hands, the dwarf Prospector Ironboot of Steamwheedle Port came forward with a warning: the troll had not told the truth. There were six tablets of Mosh'aru, not two. The third and fourth were held by the Mossflayer trolls of the Eastern Plaguelands, the fifth and sixth by the Smolderthorn of Blackrock Spire. Reading them together, Ironboot found the hidden half of the legend. The egg was never meant to contain the Soulflayer. It was meant to bring him back. Confronted, Yeh'kinya only gloated that it was too late, for Hakkar was reborn in the ancient troll city of Zul'Gurub, and thanked his dupes for hastening the Soulflayer's return. Ironboot sent them on to Molthor of the Zandalari on Yojamba Isle, whose trolls might know how to defeat the blood god.",
+"triggers": [
+[
+4,
+5065
+]
+],
+"sources": [
+"quests 5065, 4788, 8181, 8182 descriptions and reward texts",
+"creature_text 8579"
+],
+"notes": "Fact-check: verified. Starts and ends with Ironboot in Tanaris (8182 ends with Molthor; stranglethorn 3312 Yojamba Isle is a place and uses no quest). 5065 requires 3528. Faction 0."
+},
+{
+"id": 44036,
+"kind": 3,
+"zone": 440,
+"sort": 7,
+"faction": 0,
+"title": "The Arcanite Buoy",
+"body": "When a hero brought Narain Soothfancy a ledger from the blue dragon Azuregos, the gnome learned the dragon wanted an arcanite buoy built, and that the plans were written in Draconic, which Narain cannot read. To begin he needed three things. His scrying goggles had been stolen by his ex-best friend forever, Stewvul, who in turn had lost them in the Molten Core. A five hundred pound chicken came from Dirge Quikcleave of Gadgetzan, who turned the carcass of the chimaerok lord of the Isle of Dread into his Kickin' Chimaerok Chops. Volume two of Draconic for Dummies, hidden on an island south of Land's End Beach, had been booknapped; a ransom drop in Winterspring failed, and Narain's arch-enemy Doctor Weavil scattered the book in eight pieces that had to be found and bound again. At last Narain built the buoy, with a warning about Maws, a hundred feet of death waiting in the Bay of Storms.",
+"triggers": [
+[
+5,
+8576
+],
+[
+4,
+8584
+],
+[
+4,
+8597
+]
+],
+"sources": [
+"quest 8575 reward text, 8576 reward text",
+"quests 8577, 8578",
+"quests 8584, 8585, 8586, 8587",
+"quests 8597, 8598, 8606, 8620",
+"quests 8728, 8729 descriptions",
+"feralas.json note: Isle of Dread chimaerok chains left to Tanaris/Silithus",
+"quest_template 8576 QuestType 0 (autocomplete)",
+"QuestHandler.cpp: autocomplete quests go straight to the reward window, no AddQuest"
+],
+"notes": "Fact-check: trigger 8576 changed from accept to turn-in: 8576 is QuestType 0 (autocomplete), which the core rewards at once without adding it to the log, so the accept hook never fires. Chain starts (8576) and ends (8728) with Narain in Tanaris; 8584 to 8587 run through Dirge in Gadgetzan; no Feralas trigger reused (feralas.json only names Lakmaeran in its Isle of Dread place). 8729 and the scepter left to Silithus. Text verified against 8575 to 8729. Faction 0: all AllowableRaces 0."
+},
+{
+"id": 44037,
+"kind": 3,
+"zone": 440,
+"sort": 8,
+"faction": 0,
+"title": "The Keepers of Time",
+"body": "At the threshold of the Caverns of Time the Steward of Time greets travelers he has been expecting and has one of his brothers fly them down to Andormu of the Keepers of Time. A custodian then leads them through the cavern. She explains that the keepers watch over Nozdormu's realm and mend the small disturbances, a rogue mage changing the past to raise his station. The master himself never meddles in mortal affairs and only corrects what others alter, yet he is away now, which means someone is trying to change time on a grand scale. The tunnels around them are timeways, infinite in number, and those open now are trouble spots born of a single disturbance, ranked from least to most catastrophic, though the collapse of any one would end the world. Behind one of them she names a malevolent organization, the Infinite Dragonflight, bent on altering history. There are only two truths here, she says: time is always in flux, and perception does not dictate reality.",
+"triggers": [
+[
+4,
+10279
+],
+[
+4,
+10277
+]
+],
+"sources": [
+"quests 10279, 10277 descriptions and reward texts",
+"broadcast_text 17656-17667 (Custodian of Time tour)",
+"npc_text 9977, 9978 (Steward of Time)"
+],
+"notes": "Fact-check: 'in them' reworded (the custodian names the Infinite Dragonflight at one timeway; Burning Crusade text). 10279 AllowableRaces 1791 covers every playable race, blood elf and draenei included; 10277 requires 10279 (PrevQuestID), so it is a redundant second entry. Instance contents left out. Rest verified."
+}
+]

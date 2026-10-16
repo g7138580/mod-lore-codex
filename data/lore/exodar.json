@@ -1,0 +1,378 @@
+[
+ {
+  "id": 355700,
+  "kind": 0,
+  "zone": 3557,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Exodar",
+  "body": "The Exodar was never meant to be a city. It was a dimensional ship, a satellite of Tempest Keep, the fortress the naaru brought to the Netherstorm of Outland. When Prince Kael'thas and his blood elves seized the keep and captured the naaru M'uru, the naaru O'ros barred them from its own section and hid within the vessel. Prophet Velen led a raid to take it and flee in search of allies on Azeroth, but blood elf saboteurs crippled the ship, and it came down on the western side of Azuremyst Isle, crashing into the flank of a mountain. The draenei made its largest surviving section their capital. Its heart is the round Seat of the Naaru, where O'ros still dwells, and from it branch the Crystal Hall of the shaman, the Vault of Lights where Velen keeps his court, and the busy Trader's Tier. Elekks wait outside the entrance, and from a dock below the western wall ships sail to Auberdine, the nearest town of the Alliance the draenei have joined.",
+  "triggers": [
+   [
+    1,
+    3557
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Exodar (satellite of Tempest Keep, Velen and Nobundo's raid, blood elf sabotage, crash on the western side of Azuremyst, largest section made the capital, central hall with three wings)",
+   "warcraft.wiki.gg/wiki/O'ros (A'dal, M'uru and O'ros brought Tempest Keep to the Netherstorm; Kael'thas captured M'uru; O'ros barred the elves from its section and hid in the satellite; draenei welcomed into the Alliance after meeting the night elves)",
+   "quest 9552 description (the mountain that the Exodar has crashed into)",
+   "warcraft.wiki.gg/wiki/Crystal_Hall, Vault_of_Lights, Trader's_Tier, Seat_of_the_Naaru",
+   "quests 9757 and 9632, 9633 (Valaar's Berth west of the Exodar, boat to Auberdine, the closest Alliance settlement)",
+   "azuremyst.json 352418 (Elune's Blessing sails Auberdine to Valaar's Berth in 3.3.5)",
+   "DB spawns: Torallius 17584, Aalun 20914 and elekks at the entrance in area 3557"
+  ],
+  "notes": "Faction 0: AREA 3557 is reachable by both. The crash survivors' story is left to Azuremyst. The naaru designers of the districts (M'iri, K'yal, E'ira) are not dated on the wiki and are left out, as are all Legion and later events (Rakeesh, O'ros' death, the ship's repair). Fact-check: Nobundo's part in the raid is not clearly pre-Cataclysm canon, so the raid is credited to Velen alone."
+ },
+ {
+  "id": 355701,
+  "kind": 1,
+  "zone": 3557,
+  "sort": 1,
+  "faction": 1,
+  "title": "Seat of the Naaru",
+  "body": "At the center of the Exodar lies the Seat of the Naaru, a great round hall with a shimmer of purple light at its heart. On its lowest level dwells the naaru O'ros. Around the rim open the bank and the auction house, and the city's peacekeepers greet visitors with the blessings of the naaru. Herald Bran'daan cries the latest news from both continents, from the Plaguelands to Feathermoon Stronghold. Off the spiral ramp of the main entrance, Caregiver Breel keeps the inn called the Exobar. Not all of the ship survived: two artificers stand before a district ruined in the crash, and from time to time the great hull still shudders.",
+  "triggers": [
+   [
+    2,
+    20722
+   ],
+   [
+    2,
+    16739
+   ],
+   [
+    2,
+    18350
+   ],
+   [
+    2,
+    16710
+   ],
+   [
+    2,
+    17773
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Seat_of_the_Naaru (round central hall, purple flux, O'ros on the lower levels, bank and auction house, general goods and bags, Exobar)",
+   "warcraft.wiki.gg/wiki/Exodar (inn on a sub-level of the main entrance spiral run by Caregiver Breel; Artificers Andren and Drenin before a district destroyed in the crash)",
+   "npc_text 6957 (Herald Bran'daan: news from both continents); quests 10373 (Plaguelands call to arms) and 7494 (Feathermoon Stronghold)",
+   "npc_text 9051 (Breel: sit and make yourself comfortable); gossip 7777 (Exodar Peacekeeper: Blessings of the Naaru)",
+   "DB spawns: O'ros 17538 at z -296 under the hall; bankers and auctioneers; Artificers 18921, 18924 at -3966,-11768; Camera Shaker 18955 x13 (30-90 second camera shakes) in the city",
+   "DB: bankers Jaela 18350, Kellag 16710, Ossco 17773 (gossip 7808) at -3919,-11545 in the bank off the Seat; warcraft.wiki.gg/wiki/Seat_of_the_Naaru lists them as residents"
+  ],
+  "notes": "TALK on Herald Bran'daan 20722 (-3943,-11652, area 3557, gossip 5782) and Caregiver Breel 16739 (inn on the entrance spiral, gossip 7497). Breel's quest 10520 is used by Darnassus as a quest trigger; TALK 16739 is not. Faction 1: both template 1638 (enemy group Horde). The shuddering hull rests on the Camera Shaker spawns, a game effect; worded softly. Officer Khaluun (event 22, removed in 3.2) and O'ros' Legion death left out. Fact-check: the three bankers added as TALK triggers, since the bank opens off the Seat on the wiki while Breel's inn is on the entrance ramp sub-level (z -106)."
+ },
+ {
+  "id": 355702,
+  "kind": 1,
+  "zone": 3557,
+  "sort": 2,
+  "faction": 1,
+  "title": "The Crystal Hall",
+  "body": "The Crystal Hall forms the northern wing of the Exodar, a quiet place built around a shining pool known as the Light Blessed Waters. It belongs to the shaman. Farseer Nobundo teaches here with Sulaa, Gurrag and Hobahken, who bid their pupils respect the elements of this world and the balance its spirits keep. Seer Skaltesh, guide to the shaman seeking enlightenment, offers even those on other paths a draught of elemental sapta, and with it they glimpse the many elemental spirits that share the hall unseen. Broken miners work a small cavern of crystal off to one side. Enchanters, jewelcrafters and scribes teach their trades nearby.",
+  "triggers": [
+   [
+    2,
+    18985
+   ],
+   [
+    2,
+    17219
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Crystal_Hall (northern wing, Light Blessed Waters, crystal-mining cavern, scrolls in naaru runes, trainers, Seer Skaltesh and Sapta Sight revealing many elementals)",
+   "npc_text 9622 (Skaltesh: guide to the shaman seeking enlightenment, even those who follow different paths); smart_scripts 18985 (casts Create Elemental Sapta)",
+   "npc_text 8785, 8786 (Sulaa: respect the elements, balance of this world's elemental spirits)",
+   "DB spawns: Broken Miner 18892 x12 at about -3697,-11537; Nahogg, Thoth, Farii, Nus, Erett, Sixx 21019 with moths"
+  ],
+  "notes": "TALK on Seer Skaltesh 18985 (gossip 7859) and Sulaa 17219 (gossip 7357); both stand in the hall (map grid 3580/3581, judged by coordinates and the wiki). Sulaa's quest 9462 stays Azuremyst's; only TALK is used. Faction 1: template 1638. The wiki says Broken Miners were replaced only in 10.2.7, so they are period-correct. The E'ira mural is not dated and left out. Fact-check: verified."
+ },
+ {
+  "id": 355703,
+  "kind": 1,
+  "zone": 3557,
+  "sort": 3,
+  "faction": 1,
+  "title": "The Vault of Lights",
+  "body": "The Vault of Lights, the Exodar's western wing, is a house of the Light and of learning; a spiral walkway climbs from it to a second entrance above Valaar's Berth. Paladins train with Jol in the glowing Vindicators' Sanctum; priests gather in the Anchorites' Sanctum and mages in the Hall of the Mystics, where a portal opens onto the Blasted Lands. Holographic emitters run a museum of the Burning Legion, naming each servant of the enemy for passing tour groups, down to the eredar, once the draenei's own noble kinsmen. Prophet Velen keeps to the upper platform under the watch of his guards, the Shield of Velen, and there too volunteers are called to the battlefields of Azeroth and Northrend.",
+  "triggers": [
+   [
+    2,
+    16756
+   ],
+   [
+    2,
+    17513
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Vault_of_Lights (western wing overlooking Valaar's Berth, spiral walkway to a second entrance, holographic museum, Vindicators' Sanctum, Hall of the Mystics, Anchorites' Sanctum, Velen and battlemasters on the upper platform)",
+   "quest 10366 description (Vindicators' Sanctum, a room surrounded by a vibrant glow of light)",
+   "creature_text 18896 Exodar Holographic Emitter (mo'arg, dreadlord, eredar 'once our noble kinsmen' and others); smart_scripts 18903 Audrid leading Torias, Tobin, Curzon and Emony on a waypoint tour",
+   "DB: gameobject 195141 Portal to Blasted Lands at -4038,-11556 (Hall of the Mystics), no game event; Shield of Velen 20674 x5 beside Velen; Arcanist Nazalia 35601 Wintergrasp Battle-Mage; battlemasters 20118-20120, 20382, 30581, 35027",
+   "warcraft.wiki.gg/wiki/Portal_(city) (portals to the Blasted Lands added to all major cities in patch 3.2.0)"
+  ],
+  "notes": "TALK on Caedmos 16756 (priest trainer, gossip 7265, Anchorites' Sanctum) and Harnan 17513 (mage trainer, gossip 7264, Hall of the Mystics). Faction 1: template 1638. The battlemasters stand in the 3.3.5 DB (the wiki notes their removal only in 6.0.2); the Alliance Brigadier General is left out. The K'yal mural and the Legion refuge left out. Fact-check: the wiki has the spiral walkway lead to a second entrance overlooking Valaar's Berth, not the wing itself, so reworded. The battlemasters at -3980,-11359 are Call to Arms event spawns (events 18-21, 53, 54) and only Arcanist Nazalia 35601 is permanent, so battlemasters are no longer named."
+ },
+ {
+  "id": 355704,
+  "kind": 1,
+  "zone": 3557,
+  "sort": 4,
+  "faction": 1,
+  "title": "Trader's Tier",
+  "body": "The Trader's Tier, the southern wing of the Exodar, holds most of the city's craftsmen and merchants. Smiths, engineers, leatherworkers and tailors keep their corners, and vendors sell weapons and armor of every weight. The ship's stores are thin. Dugiru, the cloth quartermaster, warns that the Exodar's once vast supply of textiles has dwindled dangerously low, and asks friends of the draenei for donations. Up the stairs lies the Hunters' Sanctum, where Ganaar passes on what he learned from the furbolgs about caring for beasts. At the top of a ramp, the highest point of the tier, warriors train on the Ring of Arms, where Behomat hands the little salvaged from the wreckage to those most able to use it.",
+  "triggers": [
+   [
+    2,
+    20604
+   ],
+   [
+    2,
+    16734
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Trader's_Tier (southern wing, most trainers and vendors, Hunters' Sanctum up the stairs, Ring of Arms at the top of a ramp, Funaam, Dugiru)",
+   "npc_text 10072 (Dugiru: once vast supply of textiles dwindled dangerously low, donating cloth)",
+   "quest 9675 description and reward text (Ganaar in the Traders Tier, learned much from the furbolgs)",
+   "quest 10350 description and reward text (Warriors' Terrace at the highest point of the Traders Tier; what was scavenged from the wreckage must go to those most able)",
+   "DB gameobjects: signposts Hunters' Sanctum 183866, Ring of Arms 183867, Mining & Smithing, Engineering, Tailoring, Leatherworking & Skinning, Blunt and Bladed Weapons, Plate Armor & Shields"
+  ],
+  "notes": "TALK on Dugiru 20604 (gossip 8132, area 3557 by the map grid) and Funaam 16734 (guild master, gossip 7484). Faction 1: template 1638. Dugiru and Handiir were removed only in 4.0.3a, so they are period-correct. The monk trainer and Ardaan the Solemn are later additions, left out. Fact-check: verified."
+ },
+ {
+  "id": 355705,
+  "kind": 2,
+  "zone": 3557,
+  "sort": 1,
+  "faction": 1,
+  "title": "Prophet Velen",
+  "body": "Prophet Velen leads the draenei. On Argus he ruled the eredar beside Kil'jaeden and Archimonde, and when Sargeras offered them power, a vision showed Velen the price: worlds destroyed and his people turned to demons. He fled with those who would follow, and the Burning Legion has hunted the draenei ever since and found them even on Draenor, where the corrupted orcs slaughtered them. Now he holds court in the Vault of Lights. As his people seek this world's help against the Legion, he reminds them that they must also learn to live peaceably among its peoples. He welcomes the Broken as well, and calls the shamanism they teach critical to the draenei's future.",
+  "triggers": [
+   [
+    2,
+    17468
+   ],
+   [
+    5,
+    9461
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Velen (Triumvirate with Kil'jaeden and Archimonde, Sargeras' offer, vision from the naaru K'ure, flight from Argus, Draenor and the orc genocide, raid on the Exodar)",
+   "npc_text 8953 (Velen: gain the help of this world's peoples against the Legion, learn to live peaceably amongst them)",
+   "quest 9555 description (critical to our future that we learn shamanism from the Broken; they are not evil)",
+   "quest 9461 log text (Velen at the Vault of Lights)"
+  ],
+  "notes": "Faction 1: template 1640 has the Horde as enemy group. 9461 (Tuluun to Velen) is used only as a trigger; Azuremyst's 352434 tells the Call of Fire chain. The Bloodmyst quests he gives or ends (9698, 9699, 9762) are left to Bloodmyst. The Light-infused artifact quest 12776 is from the removed 3.0.2 event and is not used. Elemental Unrest (4.0), Rakeesh and the Argus campaign left out. Fact-check: the wiki's attribution of the vision to K'ure is not clearly pre-Cataclysm, so the vision is left unattributed."
+ },
+ {
+  "id": 355706,
+  "kind": 2,
+  "zone": 3557,
+  "sort": 2,
+  "faction": 1,
+  "title": "O'ros",
+  "body": "O'ros is the naaru who came to Azeroth with the draenei and dwells deep in the Seat of the Naaru. With A'dal and M'uru it brought Tempest Keep to the Netherstorm. When Kael'thas Sunstrider's blood elves took the keep and captured M'uru, O'ros barred them from its own section and hid within the vessel that became the Exodar. The draenei hold it dear enough that one exarch swears by its beardless, geometric head. The blood elves have not forgotten it either: their agents on the isles mean to enslave O'ros, as they did M'uru, and take back the ship.",
+  "triggers": [
+   [
+    2,
+    17538
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/O'ros (came with A'dal and M'uru, stayed with M'uru at Tempest Keep, barred the elves from its section, hid in the satellite that became the Exodar)",
+   "quest 9616 reward text (Menelaous: by the beardless, geometric head of O'ros)",
+   "quest 9753 description (the blood elves seek to enslave O'ros and regain control of the Exodar)",
+   "silvermoon.json 348710 (M'uru held by the blood elves)",
+   "DB spawn: O'ros 17538 at -3902,-11679, z -296, area 3557"
+  ],
+  "notes": "TALK 17538: O'ros has npcflag 2 (quest giver) and no gossip menu; its only quests (10956, 10968) are Children's Week and not used. A click on a quest giver goes through the gossip hello hook, so TALK should fire, but only from the hall's lowest level near the naaru; verify in game. 9753 is a Bloodmyst quest cited only as a source. Faction 1: template 1638. O'ros' Legion death is left out. Fact-check: verified."
+ },
+ {
+  "id": 355707,
+  "kind": 2,
+  "zone": 3557,
+  "sort": 3,
+  "faction": 1,
+  "title": "Farseer Nobundo",
+  "body": "Farseer Nobundo was a vindicator of Draenor until the orcs' fel magic twisted him into one of the Broken and cut him off from the Light. He went on pilgrimage to learn why and waited decades by an oasis for an answer that never came. Then a wind rose that would not stop, and in its voice he learned the truth: the Light had not forsaken the Broken, and the elements offered another path. When he came home, Velen, who had foreseen it, asked him to lead the Broken and teach shamanism to all. Many still despise the Broken or call the shaman's way blasphemy; Nobundo asks his pupils not to judge the flame by its outward appearance, nor him.",
+  "triggers": [
+   [
+    2,
+    17204
+   ],
+   [
+    5,
+    9555
+   ]
+  ],
+  "sources": [
+   "npc_text 9098-9105 (Nobundo's tale: vindicator, fel energies, Broken cut off from the Light, pilgrimage, oasis, decades, the wind, Velen's vision, teaching shamanism to all, prejudice and blasphemy)",
+   "quest 9555 description and reward text (Velen sends the shaman; do not judge the flame for its outward appearance, just as you should not judge mine)",
+   "warcraft.wiki.gg/wiki/Nobundo (Crystal Hall trainer, first draenei shaman)"
+  ],
+  "notes": "Faction 1: template 1638. QUEST_DONE 9555 (Velen to Nobundo, the last step of the draenei Call of Fire); the chain itself stays with Azuremyst 352434. The Unbroken short story details (Larohir, Telredor) are not used; only the in-game gossip. Earthen Ring and later roles left out. Fact-check: verified."
+ },
+ {
+  "id": 355708,
+  "kind": 2,
+  "zone": 3557,
+  "sort": 4,
+  "faction": 1,
+  "title": "Torallius and Aalun",
+  "body": "Outside the Exodar's entrance, the elekk pens belong to Torallius the Pack Handler, a one-eyed breeder of the great beasts the draenei brought from Draenor. He trusts no outsider with his elekks until they prove their friendship to his people. When Exarch Menelaous sends him promising youngsters with orders for the front on Bloodmyst Isle, he asks whether this is the best the Hand of Argus can do and swears the newcomer will never make it, then sends them on anyway. Beside him the riding trainer Aalun offers to teach the riding of the finest beasts anyone has seen, for a price, but not to outsiders the draenei do not hold in the highest esteem.",
+  "triggers": [
+   [
+    2,
+    17584
+   ],
+   [
+    2,
+    20914
+   ],
+   [
+    5,
+    9623
+   ],
+   [
+    5,
+    14082
+   ]
+  ],
+  "sources": [
+   "quest 9623 description, request and reward text (Menelaous' orders, Torallius outside the Exodar tending the elekk, adjusts his eyepatch, best we can offer the Hand of Argus)",
+   "quest 9625 description (you'll never make it as a Hand of Argus)",
+   "npc_text 10239 (Torallius: prove your dedication and friendship to our people); npc_text 10705, 10792 (Aalun: exalted with the draenei; finest beasts, enough gold)",
+   "quest 14082 (Aalun at the entrance to the Exodar)",
+   "warcraft.wiki.gg/wiki/Elekk (native to Draenor, draenei mounts, brought aboard the Exodar); warcraft.wiki.gg/wiki/Torallius_the_Pack_Handler"
+  ],
+  "notes": "Both stand at the entrance in area 3557 (-3972,-11928 and -3980,-11926). 9625 (to Vorkhan on Bloodmyst) is left to Bloodmyst as a trigger. Faction 1: both template 1638; 9623 is Alliance only. Red elekk calves and other elekk lore of uncertain date left out. Fact-check: verified."
+ },
+ {
+  "id": 355709,
+  "kind": 2,
+  "zone": 3557,
+  "sort": 5,
+  "faction": 1,
+  "title": "Huntress Kella Nightbow",
+  "body": "Huntress Kella Nightbow is a night elf who keeps watch near Valaar's Berth, west of the Exodar, and every young draenei hunter is sent to her to learn the taming of beasts. Her method comes from the Stillpine furbolgs, who carve totems in the likeness of an animal that let a hunter bond with such a creature for a time. Her pupils begin with the feisty barbed crawlers of the western coast, move on to the greater timberstriders of the north and finish with a nightstalker. She jokes that the timberstrider did not peck their eyes out, not that she thought it would. Then she sends them to Ganaar in the Trader's Tier.",
+  "triggers": [
+   [
+    2,
+    17614
+   ],
+   [
+    4,
+    9591
+   ]
+  ],
+  "sources": [
+   "quest 9757 description (Kella teaches all eligible hunters to tame beasts; near Valaar's Berth, west of the Exodar)",
+   "quests 9591, 9592, 9593 descriptions and reward texts (Stillpine taming totems, barbed crawlers of the western coast, greater timberstriders in the north, nightstalker, unused winged lizard totem)",
+   "quest 9675 description (Ganaar in the Traders Tier)",
+   "DB spawn: Kella 17614 at -4269,-11484 by the Boat to Auberdine signpost 181986"
+  ],
+  "notes": "Faction 1: template 80 (Darnassus); 9591 is draenei only. She stands in plain Azuremyst (3524) by the map grid, on the slope by Valaar's Berth inside the Exodar's map frame; Azuremyst's Valaar's Berth entry does not use her. 9632 and 9633 (letter to Auberdine) belong to the Bloodmyst chain and are not used. 'Night elf' from her faction and the wiki. Fact-check: verified."
+ },
+ {
+  "id": 355710,
+  "kind": 3,
+  "zone": 3557,
+  "sort": 1,
+  "faction": 1,
+  "title": "The Draenei Call of Water",
+  "body": "When a draenei shaman has grown in wisdom, Farseer Nobundo calls them back to the Crystal Hall to learn the mysteries of water. A powerful water elemental, Aqueous, has asked for help: something is throwing the waters of Bloodmyst Isle out of balance, and Nobundo is not surprised, given the blood elves' unnatural ways. With a potion to help them reach her, the shaman finds Aqueous in a hidden reef beneath the waves off the island's northern shore, where she speaks with them mind to mind. Essences drawn from her tainted sisters in the Foul Pool show the corruption is worse than feared, potent enough to ride the ocean currents across all of Azeroth. Its source is the camp of Tel'athion the Impure, whose demented research seeps filth into the island's water. Water of great purity, poured over his barrels, draws him out to his end. Aqueous keeps back a little of it, sure of the shaman's success, and Nobundo binds its essence into a powerful water totem.",
+  "triggers": [
+   [
+    4,
+    9500
+   ],
+   [
+    4,
+    9502
+   ],
+   [
+    4,
+    10490
+   ],
+   [
+    4,
+    9501
+   ]
+  ],
+  "sources": [
+   "quests 9500, 9502, 10490 (Sulaa, Farseer Javad in Ironforge, Farseer Umbrua in Stormwind send the shaman to Nobundo)",
+   "quest 9501 description and reward text (Aqueous, imbalance on Bloodmyst, blood elves' unnatural predilections, potion, hidden reef off the northern shore, speaking with minds)",
+   "quests 9503, 9504 (Foul Pool essences of her unfortunate sisters, corruption could spread on ocean currents, pure water sample)",
+   "quests 9508, 9509 (Tel'athion the Impure's demented research, destroy the barrels, flask of purest water held back, Nobundo makes the water totem)"
+  ],
+  "notes": "Ownership: the chain starts and ends with Nobundo in the Exodar but plays out on Bloodmyst (Hidden Reef 3596, Foul Pool 3595, Tel'athion's Camp 3603); told here as a story, so Bloodmyst should not retell it or use 9500-9509/10490 but may write those places and Tel'athion as a KILL. The source of the pure water is contradictory in the DB (9504: naga ruins on this island; 9508, 9509: from Ashenvale), so it is left unnamed. Faction 1: 9500, 9501 and 10490 are draenei only; 9502 has no race limit but its giver Farseer Javad 23127 (Ironforge) is template 1638, hostile to the Horde; 10490's giver Farseer Umbrua 20407 (Stormwind) is template 1640. Fact-check: givers and enders verified (Sulaa, Javad, Umbrua to Nobundo; 9501 Nobundo to Aqueous; 9509 Aqueous back to Nobundo), so the chain is the Exodar's. Javad and Umbrua are not used by ironforge.json or stormwind.json."
+ },
+ {
+  "id": 355711,
+  "kind": 3,
+  "zone": 3557,
+  "sort": 2,
+  "faction": 1,
+  "title": "The Draenei Call of Air",
+  "body": "Air is the last of the four elements a draenei shaman comes to know, and Farseer Nobundo calls only those wise enough to go on. He sends them up the Wildwind Path on the northern face of the very mountain the Exodar crashed into. In a cave at its peak lives Velaada, one of his most accomplished pupils, who sees few visitors and heard of this one's coming on the wind. Air seems ethereal, she teaches, yet fills everything: her cave's rocks are mostly air, the oceans are saturated with it, and no fire burns without it, though the other elements had best not hear her say so. True wisdom waits with Susurrus, a lord of the winds, at the northern edge of the precipice. Unlike the other elements, he asks no task, judging that the shaman has done enough to atone for the ship that fell from his skies. He gives a portion of his own being and flies them back down to the city, where Nobundo, grinning at their ruffled hair, shapes it into an air totem.",
+  "triggers": [
+   [
+    4,
+    9551
+   ],
+   [
+    4,
+    9547
+   ],
+   [
+    4,
+    10491
+   ],
+   [
+    4,
+    9552
+   ]
+  ],
+  "sources": [
+   "quests 9551, 9547, 10491 (Sulaa, Farseer Javad, Farseer Umbrua: the last of the elements)",
+   "quest 9552 description and reward text (Wildwind Path on the north facing of the mountain the Exodar crashed into, cave at its peak, Velaada one of Nobundo's most accomplished pupils, whispered on the winds)",
+   "npc_text 8956 (Velaada: so few visitors up here)",
+   "quest 9553 description (air permeates everything, rocks mostly air, oceans saturated, fire cannot be sustained, don't let those elements hear; Susurrus at the northern edge of the precipice)",
+   "quest 9554 description, request and reward text (no further task, atone for the ship falling from my skies, portion of my being, fly you back down, hair looks ruffled, Nobundo grins, whorl into the air totem)",
+   "warcraft.wiki.gg/wiki/Wildwind_Peak (Susurrus, lord of the air elementals in the region)"
+  ],
+  "notes": "Plays out on Wildwind Peak (3580), which Azuremyst skipped; no AREA trigger since the city's halls also map to 3580/3581. 9552 is listed because it has no prerequisite. Faction 1: all draenei only. 14111 (Relic of the Earthen Ring, Ironforge) not used. Fact-check: verified 9551, 9547, 10491 end at Nobundo; 9552 runs to Velaada, 9553 to Susurrus, 9554 back to Nobundo; azuremyst.json has no Wildwind Peak, Velaada or Susurrus entry. 9547 and 9551 are draenei only."
+ },
+ {
+  "id": 355712,
+  "kind": 3,
+  "zone": 3557,
+  "sort": 3,
+  "faction": 1,
+  "title": "Redemption",
+  "body": "At Azure Watch, the paladin Tullas admits that even he at times struggles to follow the path of the Light, and he sends his best pupils to his own teacher, Jol, in the Vindicators' Sanctum, a room of the Vault of Lights wrapped in a vibrant glow. Jol's charge is to set paladins on the way to greater virtue. Her first lesson is a tome of divinity, to be read and understood. Then comes a test of compassion. Several young Stillpine shaman, allies of the draenei, stumbled on a Bristlelimb camp just past the bridge to Bloodmyst Isle and were slaughtered to the last. With a Symbol of Life the paladin raises one of them from death. The furbolg wakes bewildered, as anyone would who returns to the world of the living to find a strange being standing over them. All life is worth saving if it does not oppose us, Jol teaches; only enemies should be laid to rest for good. The power to call back the fallen is the paladin's from then on.",
+  "triggers": [
+   [
+    4,
+    10366
+   ],
+   [
+    4,
+    9598
+   ]
+  ],
+  "sources": [
+   "quest 10366 description and reward text (Tullas: even I struggle; Jol trained me; Vindicators' Sanctum, a room surrounded by a vibrant glow of light)",
+   "quest 9598 description and reward text (putting paladins on the path to greater virtue, tome of divinity, acts of compassion in the wake of the crash)",
+   "quest 9600 description, request and reward text (young Stillpine shaman slaughtered at a Bristlelimb camp after the bridge, Symbol of Life, all life is worth saving if it does not oppose us, bewilderment of the revived)",
+   "DB: Tullas 17483 at Azure Watch (3576); Young Furbolg Shaman 17542 in Bristlelimb Enclave (3600)"
+  ],
+  "notes": "Ownership: starts and ends with Jol in the Exodar; only the middle step is at Bristlelimb Enclave on Bloodmyst (3600), so Bloodmyst should not use 9598/9600/10366. 10366 is the Azure Watch breadcrumb, 9598 the true first step. Faction 1: all draenei only. Fact-check: verified 10366 Tullas (Azure Watch) to Jol 17509 in the Vindicators' Sanctum (-4192,-11472); 9598 and 9600 both start and end at Jol; azuremyst.json does not use Tullas or 10366."
+ }
+]

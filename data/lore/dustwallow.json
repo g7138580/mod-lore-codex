@@ -1,0 +1,1009 @@
+[
+ {
+  "id": 1500,
+  "kind": 0,
+  "zone": 15,
+  "sort": 0,
+  "faction": 0,
+  "title": "Dustwallow Marsh",
+  "body": "Dustwallow Marsh is a fog-bound swamp on the eastern coast of Kalimdor, its western hills dividing it from the Barrens and the sea washing its shores to the north and east. Raptors, spiders, crocolisks and murlocs prowl its reeds, and for ages the marsh belonged to its beasts and to the Stonemaul ogres. Then, after the Third War, Jaina Proudmoore brought the survivors of her expedition to this coast and raised the island city of Theramore, guarded by watchtowers along the road west. The peace has never been easy. Daelin Proudmoore fell at Theramore when his fleet came against the Horde, and some of his loyal marines have since deserted their posts. The Stonemaul ogres, driven from their southern village by black dragonkin, now hold Brackenwall Village for the Horde. Grimtotem tauren have pushed into the north, goblins of the Steamwheedle Cartel trade at Mudsprocket, and in the Wyrmbog to the south Onyxia, daughter of Deathwing, broods in her lair.",
+  "triggers": [
+   [
+    1,
+    15
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Dustwallow_Marsh (geography, founding after the Third War, Stonemaul, black dragonflight, Grimtotem expansion)",
+   "quest 1285 reward text (deserters loyal to Admiral Daelin)",
+   "durotar.json 1408 (the admiral died at Theramore)",
+   "quest 11214 (Steamwheedle outpost Mudsprocket)",
+   "quest 1170 (Onyxia, daughter of Deathwing)",
+   "warcraft.wiki.gg/wiki/Dustwallow_Marsh (Stonemaul already in the marsh, recruited by the Mok'nathal)"
+  ],
+  "notes": "Changed 'little but wild beasts lived here until the Third War': the Stonemaul ogres lived here first. Rest verified; wiki claim that Daelin's death broke the truce for good stays out."
+ },
+ {
+  "id": 1501,
+  "kind": 1,
+  "zone": 15,
+  "sort": 1,
+  "faction": 0,
+  "title": "Theramore Isle",
+  "body": "Theramore stands on a rocky isle off the coast, a walled city of stone founded by the humans, dwarves and high elves who followed Jaina Proudmoore to Kalimdor after the battle of Mount Hyjal. Her mage tower rises at its heart, Foothold Citadel to the east, and the docks reach out into Dustwallow Bay, where Kul Tiras marines come and go on their monthly pay. A cook gathers swamp recipes for his uncle's restaurant in Stormwind, the physicians of Alliance Trauma train their surgeons here, and an engineer means to relight the old lighthouse to the east. Just north of the gates lies the graveyard, where the Hyal family monument stands among the stones.",
+  "triggers": [
+   [
+    1,
+    513
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Theramore_Isle (founded by Jaina's expedition of humans, dwarves and high elves after Hyjal; walls; Jaina's Tower; Foothold Citadel)",
+   "quest 1282 (Foothold Citadel east of Lady Jaina's tower)",
+   "quest 1264 (Kul Tiras marines paid at the start of every month)",
+   "quest 1260 (Morgan Stern gathering recipes for the Blue Recluse)",
+   "quest 6625 (Alliance Trauma at Theramore)",
+   "quest 11191 (Babs Fizzletorque relighting the lighthouse on the island east)",
+   "quest 11152 (Hyal monument, graveyard north of the gates)",
+   "DB spawns: Baldruc 4321 gryphon master, Babs 23892, VanHowzen 12939 in area 513"
+  ],
+  "notes": "Lighthouse 'on its island' made general (quest 11191 says only 'out to the east'). Rest verified."
+ },
+ {
+  "id": 1502,
+  "kind": 1,
+  "zone": 15,
+  "sort": 2,
+  "faction": 0,
+  "title": "Foothold Citadel",
+  "body": "Foothold Citadel is the great stone barracks of Theramore, standing east of Lady Jaina's tower with training grounds at its doors, where guards spar against dummies and drill under their combat masters. Commander Samaul, entirely loyal to his lady, commands her forces from within. On the top floor Captain Garran Vimes runs the city guard and its investigations, Adjutant Tesoran keeps the records of every soldier and every piece of equipment, and Clerk Lendry answers questions about the citizens. The guards here call themselves the finest Alliance soldiers in Kalimdor, sworn to uphold Alliance law so far from home, though the ledgers also list men gone missing, a polite word, Vimes says, for traitors.",
+  "triggers": [
+   [
+    1,
+    514
+   ]
+  ],
+  "sources": [
+   "quest 1282 (large barracks east of Lady Jaina's tower; Vimes on top floor)",
+   "quest 1302 (Clerk Lendry at Foothold Citadel)",
+   "quest 1265 reward and 1264 (Samaul commands Jaina's forces, loyal to Proudmoore)",
+   "quest 1259 (Tesoran keeps personnel and equipment records)",
+   "quest 1285 reward text (missing means traitor)",
+   "npc_text 1793 (Vimes gossip)",
+   "warcraft.wiki.gg/wiki/Theramore_Isle (training grounds at its doors)",
+   "DB spawns: combat dummies 4952, practicing guards 4951, Combat Masters 4924/5090",
+   "WMOAreaTable: area 514 reachable as an indoor area"
+  ],
+  "notes": "verified. Area 514 is the indoor WMO area of the keep model (WMO 139, name set 3, every group mapped to 514; the same model gives Menethil Keep and Westbrook Garrison), so walking inside fires it; no fallback needed."
+ },
+ {
+  "id": 1503,
+  "kind": 1,
+  "zone": 15,
+  "sort": 3,
+  "faction": 0,
+  "title": "Sentry Point",
+  "body": "Sentry Point is the first of Theramore's watchtowers on the road north out of the city, a stone tower and a handful of guards keeping an eye on the marsh and the coast. Captain Wymor commands here, a man who openly sizes up every newcomer. His scouts brought back the strangest report the garrison had heard in years: survivors of a shipwreck walking the Dreadmurk Shore, all of them wearing the red bandanas of the Defias. When Elling Trias's agents came hunting the traitor Hendel during the search for the missing diplomat, this tower was where they looked first.",
+  "triggers": [
+   [
+    1,
+    503
+   ]
+  ],
+  "sources": [
+   "quest 1265 (first tower outside of Theramore)",
+   "quest 11136, 11137 (Wymor at Sentry Point; Defias survivors)",
+   "quest 11136 reward text (assessing your abilities)",
+   "npc_text 11264",
+   "stormwind.json 151911 (Missing King chain, mentioned in one line)"
+  ],
+  "notes": "verified. Hendel is a single pointer line to stormwind.json 151911 (The Missing King), not a retelling."
+ },
+ {
+  "id": 1504,
+  "kind": 1,
+  "zone": 15,
+  "sort": 4,
+  "faction": 0,
+  "title": "Dreadmurk Shore",
+  "body": "The Dreadmurk Shore runs north of Theramore's walls, a coast of mud flats, reeds and offshore islets where Mirefin murlocs keep their camps. Among them lurks Razorspine, a murloc who carries a great sword, and the hulking Mudrock turtles that crawl the sand are hunted by Theramore's cooks for their forked tongues. Lately the shore has new tenants. A ship was wrecked off the coast, and its survivors, wearing Defias red, now camp on the islands under their leader Garn Mathers, sending divers and conjurors to search the sunken wreckage. An SI:7 salvage diver, Renn McGill, works the same waters, determined to reach the cargo first.",
+  "triggers": [
+   [
+    1,
+    518
+   ]
+  ],
+  "sources": [
+   "quest 11136 (Dreadmurk Shore north of Theramore's walls, red bandanas, shipwreck)",
+   "quest 11137 (leader on a large island)",
+   "quest 1203 (Razorspine with a big sword, near the beach)",
+   "quest 1204 (forked Mudrock tongues)",
+   "quest 11138, 11139 (Renn McGill, SI:7 salvage diver; Defias divers)",
+   "DB spawns area 518: Mirefin murlocs, Mudrock Spikeshell, Defias Rummager/Diver/Conjuror, Garn Mathers 23679, Razorspine 23841, Renn McGill 23569"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 1505,
+  "kind": 1,
+  "zone": 15,
+  "sort": 5,
+  "faction": 0,
+  "title": "Alcaz Island",
+  "body": "Alcaz Island lies off the northeastern coast, a lush, tropical isle ruled by the Strashaz naga. Sirens, myrmidons and great hydras guard its shores, and the Tidelord Rrurgaz commands them from behind barred gates. The naga are not alone. The criminal mastermind Doctor Weavil, sworn enemy of the seer Narain Soothfancy, has landed his flying machine here with a band of minions, and fire drakes of the black dragonflight wheel above the island. When Theramore surveyed it from the air it found a rune circle and dragonkin at work, proof that the Defias who wrecked off this coast were serving a far greater master. The bloodkelp the naga gather is sought by those who practice divination.",
+  "triggers": [
+   [
+    1,
+    2079
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Alcaz_Island (naga, Weavil and his flying machine, Rrurgaz)",
+   "DB spawns area 2079: Strashaz naga and hydras, Tidelord Rrurgaz 16072, Doctor Weavil 15552, Flying Machine 15553, Firemane Drake 23969, Portcullis gameobjects",
+   "creature_text 15552 (No hello for your old friend, Narain; greatest criminal mastermind)",
+   "quest 8620 (Weavil, Narain's arch-enemy)",
+   "quest 11142 description and reward text (survey from the air, rune circle, dragonkin)",
+   "quest 8970 (bloodkelp from the Strashaz naga)",
+   "warcraft.wiki.gg/wiki/Alcaz_Island (tropical vegetation like the Echo Isles)",
+   "creature_template_movement 23969 (Firemane Drakes fly)"
+  ],
+  "notes": "'Ringed by reefs' unsupported, removed; 'lush' kept per wiki (tropical vegetation). Bloodkelp line generalized (8970 is given by a ghost who once dabbled in divination). Varian's comic imprisonment still left out."
+ },
+ {
+  "id": 1506,
+  "kind": 1,
+  "zone": 15,
+  "sort": 6,
+  "faction": 0,
+  "title": "Witch Hill",
+  "body": "Witch Hill is a haunted stretch of marsh northwest of Theramore, along the road before it turns west. Pale witch lights drift over the water, and the dead walk here: risen husks and spirits that seem to be every soul who ever lived on this land, not only the last. At its heart stands Swamplight Manor, a lonely house whose owners vanished under mysterious circumstances. Everyone who has settled there since has gone mad, or so Draz'Zilb of Brackenwall says, and its current master, the hermit called Swamp Eye Jarl, shares it with an army of giant marsh frogs. In the shallows grows witchbane, an herb whose smoke, hedge mages claim, can draw evil from its hiding place.",
+  "triggers": [
+   [
+    1,
+    502
+   ],
+   [
+    1,
+    497
+   ]
+  ],
+  "sources": [
+   "quest 11177 (Swamplight Manor in the Witch Hill area, northwest on the road out of Theramore; previous owners disappeared)",
+   "quest 11225 (everyone who settled at Swamplight Manor went mad)",
+   "quest 11180 reward text (spirits amount to everyone who ever lived on this land)",
+   "quest 11181 (witchbane, shallow waters)",
+   "DB spawns: Witch Light 23585 x99, Risen Husk/Spirit, Giant Marsh Frog in 502/497",
+   "creature_queststarter: 11225 from Draz'Zilb 4501"
+  ],
+  "notes": "'the ogres of Brackenwall say' narrowed to Draz'Zilb, the giver of 11225. Rest verified."
+ },
+ {
+  "id": 1507,
+  "kind": 1,
+  "zone": 15,
+  "sort": 7,
+  "faction": 0,
+  "title": "North Point Tower",
+  "body": "North Point Tower is the second outpost on the road north from Theramore, and since the deserters seized Lost Point it has been the most distant of the city's watchtowers. Captain Darill, something of an expert on the Grimtotem tauren, holds it against their raids from Blackhoof Village, while Sergeant Lukas tries to free the patrols they capture and dreams of turning the Bloodfen raptors loose on the tauren camp. The tower holds a prisoner of its own. When a blood elf ship called the Dawn Runner ran aground, Theramore's men seized its cargo and its last surviving crewman, Ithania, and keep both at the top of the tower.",
+  "triggers": [
+   [
+    1,
+    504
+   ]
+  ],
+  "sources": [
+   "quest 11143 (North Point, second outpost on the road; Darill an expert on the Grimtotems)",
+   "npc_text 11245 (most distant outpost since deserters took Lost Point)",
+   "quest 11144 (Blackhoof used to attack the tower)",
+   "quest 11145, 11146 (Lukas, captured patrols, raptors)",
+   "quest 9437 (Dawn Runner, cargo and Ithania held at North Point)",
+   "creature_text 17119 (cargo at the top of the tower)",
+   "DB: Balandar 17095 and Ithania 17119 faction 1604 (blood elf Horde)"
+  ],
+  "notes": "Ithania is the 'last surviving crewman' in 9437, not a first mate; Darill is 'something of an expert', not the best in the garrison. Faction 0 (AREA)."
+ },
+ {
+  "id": 1508,
+  "kind": 1,
+  "zone": 15,
+  "sort": 8,
+  "faction": 0,
+  "title": "Blackhoof Village",
+  "body": "Blackhoof Village is a large new settlement of the Grimtotem clan, raised near Bluefen in the north of the marsh around a windmill. From here the most warlike of the tauren clans raid the road and the towers of Theramore, and they cage the human soldiers they capture. Grimtotem elders keep battle plans that carry orders from Thunder Bluff, and those plans leave no doubt: the clan means to drive the human settlements from the marsh, Theramore included. Its arms are new work from a Thunder Bluff forge, and none of them has yet seen battle, a sign that the Grimtotem keep other camps in the marsh.",
+  "triggers": [
+   [
+    1,
+    512
+   ]
+  ],
+  "sources": [
+   "quest 11201 (large new Grimtotem settlement near Bluefen; orders from Thunder Bluff)",
+   "quest 11144 (most warlike clan; base to attack the tower; battle plan reward text)",
+   "quest 11145 (captives held in cages)",
+   "quest 11147 (windmill in the center)",
+   "quest 11148 and 11200 (armaments never used in battle; Mosarn's make)",
+   "DB spawns area 512: Grimtotem Breaker, Spirit-Shifter, Elder, Theramore Prisoner, Blackhoof Cage, Blackhoof Armaments"
+  ],
+  "notes": "'old' windmill and 'storehouses full' were unsupported; made general. Rest verified."
+ },
+ {
+  "id": 1509,
+  "kind": 1,
+  "zone": 15,
+  "sort": 9,
+  "faction": 0,
+  "title": "Darkmist Cavern",
+  "body": "Darkmist Cavern was once a mine, cut into the hills northwest of Brackenwall Village, but the miners are long gone and the darkmist spiders have taken it for themselves. Silkspinners and recluses web its tunnels, and few outside the marsh would bother them at all, except that their parts are oddly prized. The blacksmith of Brackenwall uses the acid of their venom sacs to clean burned metal, and the hermit at Swamplight Manor insists that the juice of an unpopped darkmist eye is a fine drink, smooth and salty.",
+  "triggers": [
+   [
+    1,
+    499
+   ]
+  ],
+  "sources": [
+   "quest 1322 (spiders have taken over an old mine, the Darkmist Cavern, northwest of the village; acidic venom)",
+   "quest 1206 (Darkmist eye juice, smooth and salty)",
+   "DB spawns area 499: Darkmist Spider, Silkspinner, Recluse"
+  ],
+  "notes": "'finest drink in the swamp' toned to what 1206 says. Blacksmith is Do'gol (1322 giver). Verified."
+ },
+ {
+  "id": 1510,
+  "kind": 1,
+  "zone": 15,
+  "sort": 10,
+  "faction": 0,
+  "title": "Brackenwall Village",
+  "body": "Brackenwall Village is the Horde's stronghold in Dustwallow Marsh, a rough camp of huts in the northwest where the Stonemaul ogres took refuge after black dragonkin burned them out of their southern home. Overlord Mok'Morokk rules it, though not all his ogres are content: the learned Draz'Zilb refuses to call it home, and old Tharg still mourns the wife the dragons killed. Orcs and trolls of the Horde work alongside them. Krog watches the humans for Orgrimmar, the spymaster Nazeer Bloodpike sends agents against Theramore, whose own infiltrators spy on the village from the reeds to the east, and the stranded blood elf Balandar Brightstar finds the ogres good for little but crude jokes and sour ale.",
+  "triggers": [
+   [
+    1,
+    496
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Dustwallow_Marsh (Brackenwall founded by Stonemaul, the Horde's foothold)",
+   "quest 1166, 1168 (old home burned; Tharg's wife killed)",
+   "npc_text 11567 (Draz'Zilb will never call it home)",
+   "npc_text 1818 (Krog)",
+   "quest 1201 (Nazeer; Theramore infiltrators east of Brackenwall)",
+   "quest 9437 (Balandar's complaint)"
+  ],
+  "notes": "verified. Krog's race left to his own entry."
+ },
+ {
+  "id": 1511,
+  "kind": 1,
+  "zone": 15,
+  "sort": 11,
+  "faction": 0,
+  "title": "Shady Rest Inn",
+  "body": "Only a blackened chimney and scattered rubble remain of the Shady Rest Inn, on the road where Dustwallow meets the Barrens. James Hyal built it, one of those who came across the sea with Lady Proudmoore, dreaming of a fine stopping place for travelers, and for a while it prospered. Then Theramore lost control of the marsh roads, and James was too stubborn to retreat behind the city's walls. The inn was burned to the ground, and his wife and son were killed. Investigators from Theramore and Brackenwall have both picked through the ashes, and Inspector Tarem dusts the ruins with a powder that makes hidden clues shine.",
+  "triggers": [
+   [
+    1,
+    403
+   ]
+  ],
+  "sources": [
+   "quest 1282 reward text (opened an inn at the edge of the Barrens; lost control of the roads; too stubborn)",
+   "quest 1302 (James went with Lady Proudmoore across the sea)",
+   "quest 11123 (destruction of the Shady Rest and murder of his family)",
+   "quest 11152 (wife and son)",
+   "quest 11123/11124 reward text (Tarem's reflective powder)",
+   "DB: Inspector Tarem 23567, Black Shield 20992, Reethe's badge 21042, hoofprints 187273 in area 403"
+  ],
+  "notes": "'Died in the fire' changed to 'were killed': the quests speak of murder (11123) and of the woman and pup being killed (1268 reward), not of how. Rest verified."
+ },
+ {
+  "id": 1512,
+  "kind": 1,
+  "zone": 15,
+  "sort": 12,
+  "faction": 0,
+  "title": "Lost Point",
+  "body": "Lost Point is a Theramore watchtower that the garrison could no longer hold, standing southeast of the ruined Shady Rest Inn. Abandoned by its soldiers, it has been taken over by deserters from Theramore's own ranks, men whose loyalty to Admiral Daelin Proudmoore outlived the admiral. Their lieutenant, Balos Jacken, keeps them hidden here and wants nothing more than to be forgotten. They are too few to stand against the ogres of Brackenwall and avoid trouble with them, and they cast out one of their own, a former lieutenant named Paval Reethe, for raiding the ogres' supplies once too often.",
+  "triggers": [
+   [
+    1,
+    506
+   ]
+  ],
+  "sources": [
+   "quest 1286 (abandoned tower at Lost Point, southeast of the inn; Balos Jacken)",
+   "quest 1287 (Reethe thrown out for raiding Brackenwall's supplies; too few to fight)",
+   "quest 1285 reward text (deserters loyal to Admiral Daelin)",
+   "npc_text 11245 (deserters have taken over Lost Point)",
+   "DB spawns area 506: Theramore Deserter 5057, Deserter Lieutenant 23637, Balos Jacken 5089"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 1513,
+  "kind": 1,
+  "zone": 15,
+  "sort": 13,
+  "faction": 0,
+  "title": "Tabetha's Farm",
+  "body": "In the heart of the Quagmire, beside the road south of North Point Tower, stands the small farm of Tabetha, a hermit mage who has trained generations of apprentices here. Her two current students, Morlann and Garion, bicker endlessly over missing reagents, and Garion nurses a wound from the last Grimtotem raid. Both Theramore and Brackenwall send their people to check on her, for she has kept the peace between them as well as anyone. She has new neighbors now, the Grimtotem of Direhorn Post just to the north, and an SI:7 agent, Andello Porter, has taken up quiet watch at the farm.",
+  "triggers": [
+   [
+    1,
+    4049
+   ]
+  ],
+  "sources": [
+   "quest 11212 (deep in the swamp, road beyond North Point turning into the Quagmire; kept the peace)",
+   "quest 11213 (Nazeer sends someone)",
+   "quest 11156 (trained generations of apprentices; Garion wounded)",
+   "quest 11173, npc_text 11309, creature_text 23600/23601 (reagent quarrel)",
+   "quest 11150 (Direhorn to the north)",
+   "quest 11185 (Andello Porter, SI:7 agent at Tabetha's Farm)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 1514,
+  "kind": 1,
+  "zone": 15,
+  "sort": 14,
+  "faction": 0,
+  "title": "Direhorn Post",
+  "body": "Direhorn Post is a Grimtotem war camp just north of Tabetha's Farm, easy to find for the totems its tauren raise to announce themselves. By night its warriors chant of their deeds against everyone who has tried to settle in the marsh, and by day they raid the farm, determined to drive Tabetha and her students out. The camp holds a stranger guest. A Forsaken apothecary named Cylla works among the Grimtotem, and a letter on her from the new masters of Lordaeron pledges aid against their mutual enemy in Kalimdor, a pact that troubles Theramore and the Horde alike.",
+  "triggers": [
+   [
+    1,
+    4046
+   ]
+  ],
+  "sources": [
+   "quest 11150 (just north of my farm; totems announce their presence)",
+   "quest 11156 (chanting about deeds against settlers; drive us from the farm)",
+   "quest 11185 and 11186 (Apothecary Cylla's letter, both factions)",
+   "DB spawns area 4046: Grimtotem Destroyer, Earthbinder, Apothecary Cylla 23881, tents"
+  ],
+  "notes": "'Sealed' and 'arms' dropped: the letter (11185/11186) only says Cylla was sent to aid them. Rest verified."
+ },
+ {
+  "id": 1515,
+  "kind": 1,
+  "zone": 15,
+  "sort": 15,
+  "faction": 0,
+  "title": "Beezil's Wreck",
+  "body": "Beezil's Wreck lies east of Tabetha's Farm near the mountains, where a goblin zeppelin piloted by one Beezil came down in the swamp. It was carrying six months of supplies for the new goblin town at Mudsprocket, and what survived the crash is strewn across the marsh as far as the Quagmire, while the broken hull smolders in a heap of twisted metal and burning fuel. The Steamwheedle Cartel has sent Moxie Steelgrille, a wary goblin slow to trust strangers, to salvage what she can, but acidic oozes have gathered around the wreckage and are slowly digesting the cargo before she can reach it.",
+  "triggers": [
+   [
+    1,
+    501
+   ]
+  ],
+  "sources": [
+   "quest 11172 (crashed to the east of the farm, pilot Beezil, Steamwheedle representative)",
+   "quest 11207 (six months' worth of supplies for Mudsprocket)",
+   "quest 11208 (Mudsprocket southwest, beyond the Stonemaul Ruins)",
+   "npc_text 11403 (twisted metal and burning fuel)",
+   "quest 11174 (oozes corroding the cargo)",
+   "quest 1187 (seaforium booster lost when its zeppelin crashed in Dustwallow)",
+   "DB: Zeppelin Cargo 186450 in areas 501 and 2302",
+   "quest 11172 reward text (How can I be sure that I can trust you?)"
+  ],
+  "notes": "Removed the seaforium booster line: thousand_needles.json 40033 already tells Shreev's lost zeppelin, and no source ties it to Beezil. Rest verified."
+ },
+ {
+  "id": 1516,
+  "kind": 1,
+  "zone": 15,
+  "sort": 16,
+  "faction": 0,
+  "title": "Nat's Landing",
+  "body": "Across Dustwallow Bay to the southwest, in Tidefury Cove, a small island holds the fishing camp of Nat Pagle, one of the most famous fishermen in Azeroth. Nat's Landing is little more than a small dock to fish from, which suits its owner. The cove around it is busy with Muckshell crab-men, and a wrecked ship lies in the water to the southwest, where Nat sends the brave or foolish to test his newest baits. Anglers who have learned all their own masters can teach come from both Orgrimmar and Ironforge, sent by their own trainers, to sit on this jetty and learn from him.",
+  "triggers": [
+   [
+    1,
+    4047
+   ],
+   [
+    1,
+    517
+   ]
+  ],
+  "sources": [
+   "quest 11194 (small fishing camp on a little island in Tidefury Cove, southwest across Dustwallow Bay)",
+   "quest 11209 (wrecked ship to the southwest; bait test)",
+   "quest 6608 (Lumak sends Horde anglers), 6609 (from 5161 in Ironforge)",
+   "quest 6607",
+   "DB spawns area 517: Muckshell Pincer/Scrabbler/Clacker, Lord Angler",
+   "warcraft.wiki.gg/wiki/Nat_Pagle (one of the most famous fishermen in all of Azeroth)",
+   "warcraft.wiki.gg/wiki/Nat's_Landing (small dock from which Nat fishes)"
+  ],
+  "notes": "Empty bottles unsupported (no gameobjects at the camp; the wiki's booze bottles are at Pagle's Pointe in Zul'Gurub), removed. 'Most famous angler in the world' toned to the wiki wording."
+ },
+ {
+  "id": 1517,
+  "kind": 1,
+  "zone": 15,
+  "sort": 17,
+  "faction": 0,
+  "title": "Stonemaul Ruins",
+  "body": "The Stonemaul Ruins were once the home of the Stonemaul ogres, a village in the south of the marsh with the clan's great mound, now called the Den of Flame, cut into the hills nearby. Then the brood of Onyxia descended on it. The dragonkin slew every Stonemaul who did not flee, and the survivors ran north to Brackenwall, leaving behind their dead, their clan banner and even their overlord's grog, snuff and strongbox. Firemane dragonkin and searing whelps now hold the ruins, ogre bones lie where they fell, and the angry spirits of the Stonemaul dead still rise from them, asking where the rest of their people have gone.",
+  "triggers": [
+   [
+    1,
+    508
+   ],
+   [
+    1,
+    509
+   ]
+  ],
+  "sources": [
+   "quest 1170 (Stonemaul Village invaded by the brood of Onyxia)",
+   "quest 11159 (dragonkin killed all Stonemaul who did not flee; spirits)",
+   "quest 11160 (banner kept deep in the ogre mound, now called Den of Flame)",
+   "quest 1166 (grog, snuff and strongbox in the Den of Flame and Stonemaul Ruins)",
+   "creature_text 23786 (Where other Stonemauls?)",
+   "DB spawns: Firemane Scout/Ash Tail, Searing Hatchling/Whelp, Ogre Remains 186332 in 508; Firemane in 509"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 1518,
+  "kind": 1,
+  "zone": 15,
+  "sort": 18,
+  "faction": 0,
+  "title": "Mudsprocket",
+  "body": "Mudsprocket is the Steamwheedle Cartel's newest outpost, a muddy goblin town in the south of the marsh at the end of the road past Tabetha's Farm and the Stonemaul Ruins. It welcomes Theramore and Horde traders alike and needs every contact it can get, for the zeppelin that should have stocked it crashed in the swamp, leaving it short of food, tools and medicine. Drazzit Dripvalve runs the town on a tight budget and has posted a bounty on Goreclaw the Ravenous, a raptor of the Bloodfen Burrow that has killed two of his engineers. Its oddest resident is Brogg, a Stonemaul ogre who lives in the only building big enough for him and plays dice with the goblins.",
+  "triggers": [
+   [
+    1,
+    4010
+   ]
+  ],
+  "sources": [
+   "quest 11214 (Steamwheedle's new outpost; Jaina wants trade contacts)",
+   "quest 11215 (zeppelin crash left them without tools, food, medical supplies)",
+   "quest 11184 (Goreclaw, Bloodfen Burrow, two engineers)",
+   "quest 11184 reward text (budget)",
+   "quest 11208 reward text (dice against the ogre)",
+   "creature_text 23579 (only building that fits Brogg)",
+   "warcraft.wiki.gg/wiki/Dustwallow_Marsh (Mudsprocket added in patch 2.3.0)"
+  ],
+  "notes": "verified. Mudsprocket is a 2.3 addition, in period."
+ },
+ {
+  "id": 1519,
+  "kind": 1,
+  "zone": 15,
+  "sort": 19,
+  "faction": 0,
+  "title": "The Dragonmurk",
+  "body": "The Dragonmurk is the steaming southern fen where the black dragonflight has made its home, and it takes its name from them. Onyxia's brood has spread across it, and her eggs lie hidden among the reeds, each one another whelp to swell the dragonkin's ranks. Firemane flamecallers and scalebanes stalk the mud, a scorchscale drake circles overhead, and the black drake Brimgore prowls the fen, and Overlord Mok'Morokk's lost strongbox lies somewhere in the muck. Not everything here is deadly. Wyrmtail, a coiled herb that seems to pulse when looked at, grows thick in the Dragonmurk, and Mudsprocket uses it to dull pain and close wounds.",
+  "triggers": [
+   [
+    1,
+    510
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Dustwallow_Marsh (black dragonflight gives Dragonmurk and Wyrmbog their names)",
+   "quest 1172 (Onyxia's brood scattered across the Dragonmurk; eggs)",
+   "quest 11217 (wyrmtail, pulsates, abundant in the Dragonmurk and Wyrmbog)",
+   "DB spawns area 510: Egg of Onyxia 20359, Firemane Scalebane/Flamecaller, Scorchscale Drake 23687, Brimgore 4339, Mok'Morokk's Strongbox 19906",
+   "warcraft.wiki.gg/wiki/Brimgore (black drake)",
+   "creature_template_movement 23687 (Scorchscale Drake flies)"
+  ],
+  "notes": "Brimgore is a black drake per the wiki, not a great dragon; 'range overhead' fixed (one flying Scorchscale Drake in 510; Brimgore walks a path). 'Healers' generalized (Gizzix is not named a healer)."
+ },
+ {
+  "id": 1520,
+  "kind": 1,
+  "zone": 15,
+  "sort": 20,
+  "faction": 0,
+  "title": "Wyrmbog",
+  "body": "The Wyrmbog is the deepest corner of the south, a reeking marsh at the foot of the hills where the black dragonflight is strongest. Here, behind a cave mouth shaped like a dragon's jaws, lies the lair of Onyxia, the brood mother of the flight, who fled here when her masquerade at the court of Stormwind was undone. Her eggs are hidden all around the entrance, guarded by firemane flamecallers and scorchscale drakes. In a cave of its own nearby dwells the old drake Emberstrife. Challenges shouted at the lair go unanswered by the dragon herself: when an ogre's banner was planted at the gate, only her servant Smolderwing came, to say that Onyxia answers to no one.",
+  "triggers": [
+   [
+    1,
+    511
+   ]
+  ],
+  "sources": [
+   "quest 1172 (Wyrmbog, her lair, eggs)",
+   "quest 11162 (cave like a dragon's mouth; entrance to Onyxia's Lair)",
+   "creature_text 23789 (Smolderwing: Onyxia answers to no one)",
+   "stormwind.json 151914 (unmasked, fled to the Wyrmbog: one line only)",
+   "quest 6570 (Emberstrife's den in the Wyrmbog)",
+   "DB: Onyxia's Gate 177928, Entrance to Onyxia's Lair 186336 and eggs in area 511"
+  ],
+  "notes": "verified. The Stormwind unmasking stays one clause (stormwind.json 151914); Smolderwing's answer also appears in 1537 in this file."
+ },
+ {
+  "id": 1521,
+  "kind": 2,
+  "zone": 15,
+  "sort": 1,
+  "faction": 1,
+  "title": "Lady Jaina Proudmoore",
+  "body": "Jaina Proudmoore, ruler of Theramore, is the daughter of Admiral Daelin Proudmoore of Kul Tiras and was once the apprentice of Archmage Antonidas of Dalaran. When the Scourge rose, a prophet urged her to lead survivors west across the sea, and in Kalimdor she stood with Thrall and the night elves against Archimonde at Mount Hyjal. Afterward she founded Theramore. When her father came with his fleet to make war on the Horde, she would not fight beside him, and he died at her city. She has worked for peace ever since, even arranging a secret summit between Thrall and King Varian Wrynn, though deserters loyal to her father call her a coward. Her city, she says, must come first.",
+  "triggers": [
+   [
+    2,
+    4968
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Jaina_Proudmoore (Kul Tiras, Antonidas, prophet, Hyjal, founded Theramore, Daelin's assault)",
+   "durotar.json 1408 (the admiral died at Theramore)",
+   "creature_text 4968 (secret summit between Thrall and King Wrynn)",
+   "creature_text 23602 (Jaina's cowardice; Admiral Proudmoore the true hero)",
+   "npc_text 3157 (my city must come first)"
+  ],
+  "notes": "verified. Faction 1: template 1096 hostile to Horde. Nothing from Tides of War or later; the summit is one clause."
+ },
+ {
+  "id": 1522,
+  "kind": 2,
+  "zone": 15,
+  "sort": 2,
+  "faction": 1,
+  "title": "Captain Garran Vimes",
+  "body": "Captain Garran Vimes commands the Theramore guard from the top floor of Foothold Citadel, proud of his soldiers and of the Alliance law they keep so far from home. He reads Orcish better than most, which makes him the man to see when a Horde spy's report turns up in the mud. Most of his days go to the mysteries of the marsh, chief among them the burning of the Shady Rest Inn, which his men have investigated with little luck. He has a soldier's dry wit about the deserters, who accuse Theramore of betraying the Alliance while they betray it themselves, and a soft spot for poor James Hyal, the innkeeper who lost everything.",
+  "triggers": [
+   [
+    2,
+    4944
+   ],
+   [
+    4,
+    1220
+   ]
+  ],
+  "sources": [
+   "quest 1282 (top floor of Foothold Citadel; investigating)",
+   "npc_text 1793",
+   "quest 1220 (knows the orcish language better than most)",
+   "creature_text 4944 (spy report)",
+   "quest 1285 reward text (delicious irony)",
+   "quest 11123, 11152"
+  ],
+  "notes": "'Much frustration' unsupported, removed. Faction 1: template 1077, quest 1220 AllowableRaces 1101."
+ },
+ {
+  "id": 1523,
+  "kind": 2,
+  "zone": 15,
+  "sort": 3,
+  "faction": 1,
+  "title": "Smiling Jim",
+  "body": "The man Theramore calls Smiling Jim stands in the city's inn, grinning and singing the same few lines over and over, a song about a man who served mead and beer from ear to ear and year to year. His real name is James Hyal. He crossed the sea with Lady Proudmoore, a fine cook by his brother's account, and built the Shady Rest Inn at the edge of the Barrens. When it was burned, his wife and son were killed, and James never recovered. The guards pity him and will not speak of it. At the family monument outside the gates, they say, his wife's spirit still waits for him with their little boy.",
+  "triggers": [
+   [
+    2,
+    4895
+   ]
+  ],
+  "sources": [
+   "npc_text 1058 and creature_text 4895 (the song)",
+   "quest 1282 (Guard Byron feels sorry for ol' Jim; James Hyal his real name)",
+   "quest 1302 (brother Vincent: went with Lady Proudmoore; damn fine cook)",
+   "quest 11123 (James never recovered)",
+   "creature_text 23768/23769 (Lynn and Jimmy Hyal at the monument)",
+   "DB: Smiling Jim 4895 in area 513"
+  ],
+  "notes": "'Died in the flames' changed to 'were killed' (see 1511). Faction 1: template 1075."
+ },
+ {
+  "id": 1524,
+  "kind": 2,
+  "zone": 15,
+  "sort": 4,
+  "faction": 2,
+  "title": "Overlord Mok'Morokk",
+  "body": "Mok'Morokk rules the Stonemaul ogres at Brackenwall Village, raised to be their overlord by Rexxar himself. Under Rexxar's eye he showed real strength, but once his patron left, power went to his head. When the black dragonkin burned the clan's old home in the south, he ordered his people to run rather than fight, and he insists that the new village is safe because there are no dragons there. He calls himself a smart ogre and a good leader, but he pines most for his grog, his snuff and his strongbox, all abandoned in the flight. Many of his ogres want revenge and their old home. He would rather stay, and even beaten, he still claims to be boss.",
+  "triggers": [
+   [
+    2,
+    4500
+   ],
+   [
+    4,
+    1166
+   ]
+  ],
+  "sources": [
+   "quest 1166 (Rexxar made me mighty leader; big dragons; grog, snuff, strongbox)",
+   "quest 1171 reward text (strength when Rexxar led; fell to temptations of power)",
+   "quest 1168 (told us to run)",
+   "quest 1170 reward text (no dragons here)",
+   "creature_text 4500 (Me still boss of ogres)"
+  ],
+  "notes": "verified. Faction 2: template 29, quest 1166 AllowableRaces 690."
+ },
+ {
+  "id": 1525,
+  "kind": 2,
+  "zone": 15,
+  "sort": 5,
+  "faction": 2,
+  "title": "Krog",
+  "body": "Krog is an orc of Brackenwall Village and a shrewd agent of Orgrimmar. He boasts that the humans once claimed most of the marsh until the Stonemaul, with Horde help, pushed them back. When the Shady Rest Inn burned, Orgrimmar ordered him to assist the human investigators, and he did, in his way: help them, feed them a tidbit or two, and keep the real findings for the Horde. He has hunters like Kagoro and Ogron to track for him, a set of armor the Earthen Ring gave him in thanks for some past service, and a sense of what the Grimtotem might cost the Horde. Whatever he learns goes straight to the Warchief.",
+  "triggers": [
+   [
+    2,
+    4926
+   ]
+  ],
+  "sources": [
+   "npc_text 1818 (humans claimed much of the marsh; Stonemaul pushed them back)",
+   "quest 11124 (orders from Orgrimmar to assist; save your real findings)",
+   "quest 1268 reward, creature_text 4926 (Kagoro)",
+   "quest 1269 reward (Ogron)",
+   "quest 1276 (Earthen Ring armor by Mosarn)",
+   "quest 11206 reward text (report to the Warchief)",
+   "warcraft.wiki.gg/wiki/Krog (orc)"
+  ],
+  "notes": "Race: orc per the wiki. 'Keeps careful watch on Theramore' softened. Faction 2: template 83 (Orgrimmar). His gossip about a spy in the inn (wiki) is later text and not used."
+ },
+ {
+  "id": 1526,
+  "kind": 2,
+  "zone": 15,
+  "sort": 6,
+  "faction": 0,
+  "title": "Tabetha",
+  "body": "Tabetha keeps a little farm in the heart of the Quagmire and is far more than the old hermit she seems. She is a mage and scryer of some renown, older than she looks, and she has trained apprentices here for generations, Horde mages among them. Young mages of both sides come to her to earn a mage's wand, warlocks sent by Menara Voidrender bring her a tainted infernal orb whose demon she draws out, and she does not forgive theft: when the hydromancer Velratha of Zul'Farrak stole her Tiara of the Deep, she wanted it back badly. Both Theramore and Brackenwall trust her, and she has done more than most to keep the peace between them.",
+  "triggers": [
+   [
+    2,
+    6546
+   ]
+  ],
+  "sources": [
+   "quest 11149 (mage and scryer of renown; seems little more than an old hermit)",
+   "quest 11212 (older than she appears; kept the peace)",
+   "quest 11156 (trained generations of apprentices)",
+   "quest 11203 (trained some of our mages)",
+   "quest 1947, 1948 (mage's wand)",
+   "quest 1799, 4961 (Menara's orb)",
+   "quest 2846 (Tiara of the Deep, Velratha)",
+   "warcraft.wiki.gg/wiki/Tabetha"
+  ],
+  "notes": "'First wands' and 'corrupted orbs' made exact (1947, 1799, 4961). Faction 0: template 35, class quests AllowableRaces 0."
+ },
+ {
+  "id": 1527,
+  "kind": 2,
+  "zone": 15,
+  "sort": 7,
+  "faction": 0,
+  "title": "Brogg",
+  "body": "Brogg is a Stonemaul ogre who fled with Overlord Mok'Morokk when the black dragonkin took the clan's old home, believing they would soon return to fight. The counterattack never came, and when his overlord refused to seek revenge for the friends Brogg had lost, he left Brackenwall for good. The goblins of Mudsprocket let him stay in the only building large enough to hold him, though he sometimes suspects they are laughing at him, and he trades the meat of his hunting trips at their dice table. He has never given up on his people. Brogg means to lay the Stonemaul dead to rest, avenge them, and lead the clan back where it belongs.",
+  "triggers": [
+   [
+    2,
+    23579
+   ]
+  ],
+  "sources": [
+   "quest 11158 (left Brackenwall when the overlord would not take revenge)",
+   "quest 11159 (fled with Mok'Morokk hoping for a counterattack that never came)",
+   "npc_text 11281 (hears the goblins laughing)",
+   "creature_text 23579 (only building that fits Brogg)",
+   "quest 11208 reward text (dice against the ogre for what he killed hunting)",
+   "quest 11162 reward text (never give up his quest to bring Stonemaul back)"
+  ],
+  "notes": "verified. Faction 0: template 35, quests AllowableRaces 0."
+ },
+ {
+  "id": 1528,
+  "kind": 2,
+  "zone": 15,
+  "sort": 8,
+  "faction": 0,
+  "title": "Swamp Eye Jarl",
+  "body": "The hermit called Swamp Eye Jarl lives alone at Swamplight Manor, which he took over after its previous owners vanished. Some say he is not quite right in the head, and he does little to argue. He loves swamp cooking above all things, fried frog legs and stews, and drinks the juice of spider eyes, talking fondly to the ones that stare back. He wants a particular swing blade carried by the murloc Razorspine, for some cutting he will not explain, and he tells visitors to get off his lawn unless they mean to help in the kitchen. A sergeant at the Theramore docks sends people to check on him because he reminds her of her grandfather.",
+  "triggers": [
+   [
+    2,
+    4792
+   ]
+  ],
+  "sources": [
+   "quest 11177 (took over Swamplight Manor; not quite right in the head; reminds me of my grandfather)",
+   "quest 1218 (frog legs, stew)",
+   "quest 1206 reward text (spider eyes)",
+   "quest 1203 (swing blade, Razorspine)",
+   "quest 11177 reward text (get off my lawn)",
+   "creature_text 4792"
+  ],
+  "notes": "verified. Sergeant Amelyn is female (creature_model_info gender 1 for display 4670). Faction 0: template 35; lead-ins exist for both sides (11177, 11225)."
+ },
+ {
+  "id": 1529,
+  "kind": 2,
+  "zone": 15,
+  "sort": 9,
+  "faction": 0,
+  "title": "Nat Pagle",
+  "body": "Nat Pagle is one of the most famous fishermen in Azeroth, though he claims he does not much enjoy fishing, having done it for twenty or thirty years. To him the best part is the slow pace, time to think about past and future, and a fine excuse to drink, heavily. Master anglers of both the Horde and the Alliance are sent to his island camp in Dustwallow when their own teachers have nothing left to give, and Nat tests them with lists of rare fish from far shores. He swears by a lucky measuring tape and his own foul-smelling baits, and he knows the sailors' tales of sea monsters are true, having seen a few himself.",
+  "triggers": [
+   [
+    2,
+    12919
+   ]
+  ],
+  "sources": [
+   "quest 6607 (20 or 30 years; rare fish)",
+   "npc_text 7638 (slow pace, excuse to drink)",
+   "npc_text 7639 (lucky measuring tape)",
+   "quest 6608, 6609 (anglers sent to Nat)",
+   "quest 11209 (it's all true; seen a few with my own eyes; new baits)"
+  ],
+  "notes": "'Most celebrated' toned to the wiki wording. Faction 0: template 35; 6607 AllowableRaces 0, plus 6608 (Horde) and 6609 (Alliance)."
+ },
+ {
+  "id": 1530,
+  "kind": 2,
+  "zone": 15,
+  "sort": 10,
+  "faction": 2,
+  "title": "Emberstrife",
+  "body": "Emberstrife is an ancient drake of the black dragonflight who dwells in a den of his own in the Wyrmbog. He is an old gatekeeper of Nefarian, charged with testing the dragonspawn who would rise to the rank of elite guard to Onyxia. In the name of Deathwing, whom he calls Father, he sets them the Test of Skulls: to slay the drake champions of the lesser flights, Scryer of the blue, Somnus of the green, Chronalis of the bronze and Axtroz of the red. From their skulls he shapes the medallion of a guardian to the brood mother. Champions seeking the Seal of Ascension come instead to break his will and forge it in his flame.",
+  "triggers": [
+   [
+    2,
+    10321
+   ],
+   [
+    5,
+    6570
+   ]
+  ],
+  "sources": [
+   "quest 6570 (ancient drake; old gatekeeper of Nefarian; tests dragonspawn for elite guard to Onyxia)",
+   "quest 6570 reward text (whelps)",
+   "quests 6582-6585 (Scryer, Somnus, Chronalis, Axtroz; our Father)",
+   "quest 6601 (medallion from the skulls; Guardian to the brood mother)",
+   "quest 4743 (break his will to forge the Seal of Ascension)",
+   "creature_text 10321 (will falters)"
+  ],
+  "notes": "Seal of Ascension (4743) is still doable in 3.3.5: Vaelan appears from the Scarshield Infiltrator in Lower Blackrock Spire (instance script), and the seal was removed only in 4.0.3a. Faction 2: TALK only under the Horde illusion (6570 AllowableRaces 690; template 103 hostile). 6570 is not an Orgrimmar trigger (163715 uses only 6566); only his trials are told, not the attunement journey. Dropped the 'mere whelps' line for length."
+ },
+ {
+  "id": 1531,
+  "kind": 3,
+  "zone": 15,
+  "sort": 1,
+  "faction": 1,
+  "title": "Ashes of the Shady Rest",
+  "body": "Captain Vimes had found nothing in the ashes of the Shady Rest Inn, so others went looking. From the rubble came hoofprints in the mud, a blackened iron shield fixed to the chimney and the badge of Lieutenant Paval Reethe. Adjutant Tesoran's books showed Reethe as a Kul Tiran marine listed missing, and the deserters at Lost Point admitted they had cast him out. The shield's strap, said Theramore's smith, was made for a tauren. Inspector Tarem's work pointed to the Grimtotem, and Captain Darill at North Point sent searchers into Blackhoof Village, where battle plans showed the clan meant to drive every human from the marsh. Yet Blackhoof's weapons had never been used. Tabetha knew why: the guilty band camped beside her farm at Direhorn Post. Their tents burned, and at the Hyal grave the spirits of James's wife and son gave thanks.",
+  "triggers": [
+   [
+    4,
+    1282
+   ],
+   [
+    4,
+    11123
+   ],
+   [
+    4,
+    1302
+   ],
+   [
+    4,
+    1252
+   ],
+   [
+    4,
+    1253
+   ],
+   [
+    4,
+    1284
+   ]
+  ],
+  "sources": [
+   "quests 1282, 1302, 1252, 1253, 1284, 1259, 1285, 1286, 1287, 1319, 1320 (Alliance investigation)",
+   "quests 11123, 11143, 11144, 11148, 11149, 11150, 11151, 11152",
+   "creature_text 23768 (Lynn Hyal at the monument)"
+  ],
+  "notes": "verified. Faction 1: all entry quests AllowableRaces 1101."
+ },
+ {
+  "id": 1532,
+  "kind": 3,
+  "zone": 15,
+  "sort": 2,
+  "faction": 2,
+  "title": "The Black Shield",
+  "body": "Orgrimmar wanted to know who burned the Shady Rest Inn, and that the Alliance should never blame the Horde. Krog sent his trackers after the hoofprints and Ogron after a human named Paval Reethe, whose Theramore badge lay in the ashes. Ogron found the deserter hiding on an island, but before Reethe could talk, an arrow from the reeds struck him down. The blackened shield from the chimney fared better. Acid from darkmist spiders cleaned its rim enough to show the name Mosarn, a smith of Thunder Bluff, who admitted that the Grimtotem were his best customers. His arms filled the new Grimtotem camp at Blackhoof Village, but none had seen battle. Tabetha, who has trained Horde mages, pointed to the true culprits at Direhorn Post, and warned that the Horde cannot afford to leave the Grimtotem unchecked forever. Krog carried it all to Thrall.",
+  "triggers": [
+   [
+    4,
+    11124
+   ],
+   [
+    4,
+    1251
+   ],
+   [
+    4,
+    1268
+   ],
+   [
+    4,
+    1269
+   ]
+  ],
+  "sources": [
+   "quests 1251, 1268, 1269, 1273, 1321, 1322, 1323, 1276, 11204 (Horde investigation)",
+   "creature_text 4980, 4983 (Reethe shot by an arrow)",
+   "quests 11124, 11200, 11201, 11203, 11205, 11206",
+   "quest 11206 description and reward text (rein in the Grimtotems; report to the Warchief)"
+  ],
+  "notes": "verified. Faction 2: AllowableRaces 690."
+ },
+ {
+  "id": 1533,
+  "kind": 3,
+  "zone": 15,
+  "sort": 3,
+  "faction": 1,
+  "title": "The Deserters",
+  "body": "Not every soldier who followed the Proudmoores to Kalimdor followed Jaina's peace. Deserters loyal to the late admiral had slipped agents back into Theramore, chatting up guards at every post, praising Admiral Proudmoore as the true hero and Lady Jaina as a coward. Calia Hastings of SI:7 came to end it. The agitators were exposed, and their leaflets, smuggled in aboard a privateer ship at the farthest dock, were seized from the captain's quarters. Calia rewrote them with a little creative editing, and when the altered pages went round the barracks the guards laughed so hard that no deserter could ever again be taken seriously within the walls. Last came their base, a ship moored on an island southeast of the docks. Their leader, Gavis Greyshield, put up a show of a fight, then surrendered and asked only that his men be spared.",
+  "triggers": [
+   [
+    4,
+    11126
+   ]
+  ],
+  "sources": [
+   "quests 11126, 11128, 11133, 11134 (descriptions and reward texts)",
+   "creature_text 23602 (agitator lines)",
+   "creature_text 23566 (creative editing)",
+   "creature_text 23941 (Gavis surrenders; spare my men)",
+   "warcraft.wiki.gg/wiki/Theramore_Isle (Gavis Greyshield, former militia lieutenant, propaganda campaign)"
+  ],
+  "notes": "verified. Faction 1: AllowableRaces 1101."
+ },
+ {
+  "id": 1534,
+  "kind": 3,
+  "zone": 15,
+  "sort": 4,
+  "faction": 1,
+  "title": "Precious Cargo",
+  "body": "With the deserters broken, Theramore's scouts brought stranger news: men in Defias red, survivors of a shipwreck, on the Dreadmurk Shore. Captain Wymor at Sentry Point had the band's leader, Garn Mathers, slain, and his orders spoke of precious cargo in words that hinted at a wealthy patron. The SI:7 diver Renn McGill, with diving gear borrowed from the Defias, had strongboxes raised from the wreck and found among the coins a pair of enchanted manacles. The cargo had been a person. Lady Jaina ordered Alcaz Island surveyed by gryphon, and the rider saw a rune circle and dragonkin. Then Jaina explained. The prisoner had been King Varian Wrynn himself, bound in secret for a summit she had arranged with Thrall, and the Defias had sold themselves to a far greater master to take him. She had been a fool, she admitted, to think them broken with VanCleef's death.",
+  "triggers": [
+   [
+    4,
+    11136
+   ]
+  ],
+  "sources": [
+   "quests 11136, 11137, 11138, 11139, 11140, 11141, 11142 (descriptions and reward texts)",
+   "creature_text 23569 (manacles: the cargo was a person)",
+   "creature_text 4968 (summit, ship never arrived, Onyxia posing at court, king escaped, fool to think them broken)",
+   "stormwind.json 151911 and 151914 (the abduction and Onyxia's unmasking, not retold)"
+  ],
+  "notes": "Ending trimmed to one line on the abduction, with no retelling of Onyxia at court (stormwind.json 151911, 151914). Faction 1: AllowableRaces 1101. Renn's line fixed: the gear was borrowed from the Defias for the diver's helper, not worn by Renn."
+ },
+ {
+  "id": 1535,
+  "kind": 3,
+  "zone": 15,
+  "sort": 5,
+  "faction": 1,
+  "title": "The Beast Beneath the Lighthouse",
+  "body": "The old lighthouse east of Theramore had been dark for some time when the engineer Babs Fizzletorque decided to relight it. Its log called for oil from the young murk threshers under the docks, and in a trunk upstairs she found a book of sailors' tales, Dastardly Denizens of the Deep, good only for a laugh. The fishmonger Dirty Michael Crowe, who collects old books, did not laugh. Sailors still spoke, he said, of Tethyr, a sea creature living right here. Nat Pagle agreed, once he had tested a foul new bait on the visitor who asked. Tethyr was real, he was drawn to bright light, and he was the reason the lighthouse had been shut down. Major Mills would not risk Theramore's shipping. He mounted mortars on the docks, lined up his marksmen and lit the lamp, and when the beast came the defenders brought it down.",
+  "triggers": [
+   [
+    4,
+    11191
+   ]
+  ],
+  "sources": [
+   "quests 11191, 11192, 11193, 11194, 11209, 11210, 11198 (descriptions and reward texts)",
+   "creature_text 23905 (marksmen; we defeated the sea monster)"
+  ],
+  "notes": "'For years' toned to 11191 ('for some time'). Faction 1: AllowableRaces 1101."
+ },
+ {
+  "id": 1536,
+  "kind": 3,
+  "zone": 15,
+  "sort": 6,
+  "faction": 2,
+  "title": "The Brood of Onyxia",
+  "body": "The Stonemaul ogres fled their village in the south when dragons fell upon it, but no one knew whose dragons they were until Draz'Zilb, an ogre mage as learned as he is scornful of his overlord, cast his spells over the hearts and tongues of the whelps. The answer was the brood of Onyxia, daughter of Deathwing, and Draz'Zilb doubted she had come to the marsh merely to besiege a band of ogres. Overlord Mok'Morokk would hear none of it: there were no dragons in Brackenwall. While Tharg, who lost his wife in the attack, sent warriors against the black dragon army for revenge, Draz'Zilb sent others to the Wyrmbog to smash Onyxia's eggs before more could hatch. Then he asked one last service. Mok'Morokk was challenged before his people, beaten, and fled like a frightened child, leaving the clan free to choose a leader who would take them home.",
+  "triggers": [
+   [
+    4,
+    1169
+   ],
+   [
+    4,
+    1168
+   ]
+  ],
+  "sources": [
+   "quests 1169, 1170, 1171, 1172, 1173 (descriptions and reward texts)",
+   "quest 1168 (Tharg's wife; revenge)",
+   "creature_text 4501 (The brood of Onyxia!)",
+   "creature_text 4500 (Me scared! Me run now!)"
+  ],
+  "notes": "verified. Only Onyxia's parentage is named; no overlap with Stormwind or Orgrimmar. Faction 2: AllowableRaces 690."
+ },
+ {
+  "id": 1537,
+  "kind": 3,
+  "zone": 15,
+  "sort": 7,
+  "faction": 0,
+  "title": "Challenge to the Black Flight",
+  "body": "Brogg had waited long enough for his overlord to avenge the Stonemaul, so from Mudsprocket he set about doing it himself. For his ritual he needed magic feathers from the raptors of the Bloodfen Burrow, and then either the clan banner, left deep in the old mound that the dragonkin now call the Den of Flame, or the essences of the dragonkin who had killed his friends. With these he made a totem, and at the Stonemaul Ruins it drew the restless ogre spirits from their bones so that they could be fought and laid to rest. One task remained. Brogg's banner was carried east to the dragon's-mouth cave of the Wyrmbog and planted before Onyxia's lair as his challenge. The brood mother did not come. Her drake Smolderwing answered in her place, and Brogg decided that, like all her flight, she fights only when victory is certain.",
+  "triggers": [
+   [
+    4,
+    11158
+   ]
+  ],
+  "sources": [
+   "quests 11158, 11160, 11161, 11159, 11162 (descriptions and reward texts)",
+   "creature_text 23789 (Smolderwing)",
+   "smart_scripts 23789/2378900 (Smolderwing flies to the Stonemaul Banner)"
+  ],
+  "notes": "verified. Faction 0: all quests AllowableRaces 0, Brogg template 35."
+ },
+ {
+  "id": 1538,
+  "kind": 3,
+  "zone": 15,
+  "sort": 8,
+  "faction": 2,
+  "title": "The Last Report of Marg Nighteye",
+  "body": "The Horde and Theramore keep an uneasy truce in the marsh, and Nazeer Bloodpike, the spymaster of Brackenwall, means to come out on top of it. His hunters cull the Alliance infiltrators who watch the village, and his agents dive beneath the Theramore docks for documents thrown into the sea by a spy caught aboard a ship. One of his best, Marg Nighteye, simply vanished while watching the city. His severed hand turned up in the mud still clutching his report, and soon after his head, its ragged wound a mystery. Kin'weelay of Grom'gol called up Marg's furious spirit, which told the tale: a muckshell crab-man had killed him on his way home with a jeweled pendant stolen from a camp of soldiers on the beach. The pendant was a noble's jewel, far richer than any soldier's, and it went to Zor Lonetree in Orgrimmar to be studied.",
+  "triggers": [
+   [
+    4,
+    1201
+   ],
+   [
+    4,
+    1238
+   ]
+  ],
+  "sources": [
+   "quests 1201, 1202 (uneasy truce; infiltrators; Captain's Documents)",
+   "quests 1238, 1239, 1240, 1261, 1262, 7541 (descriptions and reward texts)",
+   "creature_text 4944 (Vimes on the same spy report, not used)"
+  ],
+  "notes": "verified. Faction 2: AllowableRaces 690."
+ },
+ {
+  "id": 1539,
+  "kind": 3,
+  "zone": 15,
+  "sort": 9,
+  "faction": 0,
+  "title": "The Haunting of Witch Hill",
+  "body": "Mordant Grimsby, an herbalist, came out to Swamplight Manor to visit his old friend Jarl with a housewarming gift, and found him babbling about frogs in an empty cabin while the dead walked outside. Mordant would not leave him to it. The risen husks and spirits of Witch Hill, laid to rest one by one, told him that this was no ordinary haunting: they were every soul who had ever lived on the land, corrupted and killed by the same evil, each learning the truth too late. Mordant remembered that hedge mages use the smoke of witchbane to draw evil out of hiding. A torch bound with the herb was planted at the end of the manor's dock, and from the smoke rose Zelfrax, who claimed the land as his long before mortals came. When he fell, Mordant was almost more surprised than relieved. Jarl's taste in furniture, he admitted, remained beyond saving.",
+  "triggers": [
+   [
+    4,
+    11180
+   ]
+  ],
+  "sources": [
+   "quests 11180, 11181, 11183 (descriptions and reward texts)",
+   "creature_text 23843 (housewarming gift; babbling about frogs)",
+   "creature_text 23864 (Zelfrax)",
+   "warcraft.wiki.gg/wiki/Witch_Hill (haunted by the demon Zelfrax)"
+  ],
+  "notes": "verified. Faction 0: 11180-11183 AllowableRaces 0, Mordant template 35."
+ }
+]

@@ -1,0 +1,702 @@
+[
+{
+"id": 137700,
+"kind": 0,
+"zone": 1377,
+"sort": 0,
+"faction": 0,
+"title": "Silithus",
+"body": "Silithus is a wasteland of sand, wind and stone in the far southwest of Kalimdor, reached on foot only by the northwestern ridge out of Un'Goro Crater. Nearly a thousand years ago the qiraji poured out of their fortress city of Ahn'Qiraj and swept across this desert in the War of the Shifting Sands. The night elves under Fandral Staghelm fought them here and lost Southwind Village, until the dragonflights joined the struggle and the insects were sealed behind the Scarab Wall in the south. Now the silithid hives of Ashi, Zora and Regal swarm again, and the Cenarion Circle has gathered Horde and Alliance volunteers at Cenarion Hold to take the fight to them. The Gates of Ahn'Qiraj have been opened and the war carried inside. Other powers stir as well. Twilight's Hammer cultists camp across the desert, taking their orders from the elemental masters of the Abyssal Council, Horde and Alliance race each other for silithyst, and dwarven explorers keep a camp in the southern hills.",
+"triggers": [
+[
+1,
+1377
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Silithus (only land route through northwestern Un'Goro; Cenarion Hold; silithyst world PvP)",
+"quest 1124 description (west of Un'Goro via the northwestern ridge)",
+"creature_text 15183 (Larksbane's prophecy reading: Staghelm, Rajaxx, Southwind obliterated)",
+"warcraft.wiki.gg/wiki/War_of_the_Shifting_Sands (dragonflights join, Scarab Wall)",
+"quests 8275, 8276, 8507, 8731 (Horde and Alliance volunteers)",
+"npc_text 8214, 8216 (gates open, fighting inside Ahn'Qiraj)",
+"quests 8320, 8331 (Twilight's Hammer camps, Abyssal Council)",
+"quests 9419, 9422 (silithyst)",
+"DB: gameobject 49390-49392 state 0, no game_event_gameobject rows; creature 15499, 15500 permanent"
+],
+"notes": "Fact-check: 'camp across the west and north' made 'across the desert' (camps also lie in the northeast and far southwest). Gates confirmed open in the 3.3.5 server state: doors 180898, 180899, 180904 spawn with state 0 (open), no script and no game_event link; event 22 (AQ War Effort) is a disabled one-minute placeholder; Warden Haro (8214) and Keyl Swiftclaw (8216) are permanent spawns. Valstann retelling (later version) absent. Rest verified."
+},
+{
+"id": 137701,
+"kind": 1,
+"zone": 1377,
+"sort": 1,
+"faction": 0,
+"title": "Valor's Rest",
+"body": "In the far northeast of Silithus, close to the ridge that climbs out of Un'Goro Crater, lies Valor's Rest, a graveyard the Cenarion Circle calls the final resting place of those who fell in these wastes. A few of the Circle's agents keep a quiet camp beside the graves. Their leader, Layo Starstrike, receives those sent by Rabine Saturna of Nighthaven, and he warns every visitor that the past lives on in this desert and must be handled carefully, lest it wake. The tauren Jarund Stoutstrider shares his watch, and Zannok Hidepiercer sells leatherworking supplies to travelers passing through.",
+"triggers": [
+[
+1,
+3077
+]
+],
+"sources": [
+"quest 1124 description and reward text (final resting spot for the fallen of the wastes)",
+"npc_text 6155 (Layo: the past lives in these wastes, we must be careful not to awaken it)",
+"warcraft.wiki.gg/wiki/Valor's_Rest (camp in northern Silithus, Layo the leader, Jarund a tauren, Zannok)",
+"zone_areas 3077: Layo 13220, Jarund 11805, Zannok 12956, spirit healer"
+],
+"notes": "verified. Layo night elf male (display 13149), Jarund tauren male (11799). Old flight point history left out."
+},
+{
+"id": 137702,
+"kind": 1,
+"zone": 1377,
+"sort": 2,
+"faction": 0,
+"title": "Staghelm Point",
+"body": "On a high peak in northeastern Silithus stands Staghelm Point, an old night elven tower looking out over the desert. Its lone keeper is Ralo'shan the Eternal Watcher, a night elf who says it was here, nearly a thousand years ago, that the qiraji began their march of destruction across Kalimdor. She has been slain a hundred times and always wakes again at her post. Some call her cursed, others a herald of a new age, and she herself warns that ancient forces stir and that nightmares now come out of the Dream. A bronze drake of the Brood of Nozdormu circles in the sky nearby, and cultists of the Twilight's Hammer camp close by.",
+"triggers": [
+[
+1,
+3426
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Staghelm_Point (night elven tower on a peak in northeastern Silithus, Ralo'shan, bronze drake circling)",
+"npc_text 7801-7804 (Ralo'shan)",
+"creature 15185 Brood of Nozdormu spawn at -6678,33 z162 near the tower",
+"zone_areas 3426: Twilight Overlord, Master, Flamereaver, Avenger",
+"CreatureDisplayInfo 15308 (night elf female)"
+],
+"notes": "Fact-check: Ralo'shan made female (display 15308 is NightElfFemale). Cultists 'down the road keep watch' made 'camp close by' (Twilight Overlords and Flamereavers stand in 3426 itself). Rest verified; Sargeras's sword (Legion) absent."
+},
+{
+"id": 137703,
+"kind": 1,
+"zone": 1377,
+"sort": 3,
+"faction": 0,
+"title": "Twilight's Run",
+"body": "Twilight's Run is a cave tucked into the northeast corner of Silithus, one of the Twilight's Hammer's bases of operation in the desert. Outside its mouth the cult keeps a camp of overlords, masters and flamereavers, and within the tunnels dwells Vyral the Vile, the local leader of the cult in Silithus, who carries a signet ring. The druids of Cenarion Hold count the horrors of the cave as formidable indeed, and they believe that striking Vyral down would deal the cult a blow from which it would not easily recover.",
+"triggers": [
+[
+1,
+3446
+]
+],
+"sources": [
+"quest 8321 description and reward text",
+"warcraft.wiki.gg/wiki/Staghelm_Point (Twilight's Run down the road, small camp outside its entrance)",
+"creature 15202 Vyral at -6320,16; Twilight Flamereaver 15201 nearby",
+"WMOAreaTable: 3446 is the indoor area of WMO 2938 (cave)",
+"vmaps 001_31_43.vmtile spawn 165997 and Md_Mountaincave_Medium_H.wmo.vmo (root 2938, group 15847)"
+],
+"notes": "Fact-check: 3446 confirmed. WMOAreaTable rows 36440-36443 map WMO 2938 name set 2 (groups 15847-15849) to 3446; the vmap placement 165997 (Md_Mountaincave_Medium_H.wmo, name set 2, root 2938, tile 001_31_43) has world bounds x -6189 to -6389, y -88 to 162, z -12 to 36, containing Vyral (-6320,16, z 6) and the flamereavers inside (z -10). 'Wears as his mark' made 'carries' (8321 only asks for the ring). No KILL fallback needed."
+},
+{
+"id": 137704,
+"kind": 1,
+"zone": 1377,
+"sort": 4,
+"faction": 0,
+"title": "Hive'Ashi",
+"body": "North of Cenarion Hold the sand rises into the mounds of Hive'Ashi, the northern of the three great silithid hives of Silithus. Swarmers, stingers, defenders and sandstalkers boil across its slopes while workers labor below, and the truesilver veins there come coated in ooze. A rare and dangerous silithid called Rex Ashil is sometimes seen among them. Inside, as in each of its sister hives, stands a crystal carved with qiraji glyphs, and the dwarves of the Bronzebeard camp suspect these crystals are tied to the swarms now pouring from the hives. A Cenarion scout, Jalia, lies hidden nearby to watch, certain that greater, darker powers drive the insects.",
+"triggers": [
+[
+1,
+2742
+]
+],
+"sources": [
+"zone_areas 2742: Hive'Ashi Swarmer, Defender, Sandstalker, Worker, Stinger, Rex Ashil 14475 (rank 2), Cenarion Scout Jalia 15611, Hive'Ashi Glyphed Crystal 180454, Ooze Covered Truesilver",
+"quest 8309 description (glyphs on the crystals, increased activity)",
+"npc_text 8065 (Jalia)"
+],
+"notes": "Fact-check: 'in its walls' made 'veins there' (Ooze Covered Truesilver Deposits stand in 2742). Windreaver (event 13) still left out. Rest verified."
+},
+{
+"id": 137705,
+"kind": 1,
+"zone": 1377,
+"sort": 5,
+"faction": 0,
+"title": "Cenarion Hold",
+"body": "Cenarion Hold is the fortress of the Cenarion Circle at the heart of Silithus, raised where an old night elven settlement stood, to guard against what lies sealed in the south. Druids and volunteers of the Horde and Alliance alike gather here under Commander Mar'alith, and the infantry of the hold deal harshly with anyone who spills blood on neutral ground. Captain Vish Kozus keeps watch from the top of the watchtower, Windcaller Proudhorn frets over the supply caravans, and flight masters link it to the rest of Kalimdor. At the inn, Calandrath misses the birds and trees of Auberdine. A bronze drake circles overhead, and Baristolth waits among the tents on a promise a thousand years old.",
+"triggers": [
+[
+1,
+3425
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Cenarion_Hold (Circle took over the ancient night elven settlement, set up after the war to guard C'Thun; leaders Mar'alith and Vish Kozus)",
+"creature_text 15184 (You dare spill blood on neutral ground?)",
+"quest 8283 description (Vish Kozus at the top of the watchtower)",
+"quest 8280 description",
+"quest 8307 description (Calandrath misses Auberdine)",
+"npc_text 7731 (Baristolth's promise)",
+"zone_areas 3425: Cloud Skydancer 15177, Runk Windtamer 15178, Brood of Nozdormu 15185"
+],
+"notes": "verified (wiki: Circle defends the ancient night elven settlement, set up to guard the imprisoned C'Thun). All named NPCs permanent spawns; Hallow's End and Winter Veil objects ignored."
+},
+{
+"id": 137706,
+"kind": 1,
+"zone": 1377,
+"sort": 6,
+"faction": 0,
+"title": "Twilight Base Camp and Twilight Post",
+"body": "West of Cenarion Hold the Twilight's Hammer has pitched two of its camps, Twilight Base Camp and, farther west, Twilight Post. Geolords, avengers and stonecallers of the cult crowd their tents and perform rituals day and night, and the druids suspect those rituals are linked to the pulsing red crystals scattered across the desert. In each camp stand wind stones, lesser, common and greater, through which the cult communes with its elemental masters of the Abyssal Council. Twilight Keepers such as Havunth and Mayna guard chapters of the cult's secret lexicon, and prophets under heavy escort carry new battle orders. Even the cult's cooks draw notice: they hunt sandworms for food, and somehow make the bitter meat taste good.",
+"triggers": [
+[
+1,
+2739
+],
+[
+1,
+3098
+]
+],
+"sources": [
+"quest 8320 description (camps, rituals day and night, pulsing red crystals)",
+"quest 8331 description (wind stones among the camps)",
+"quest 8279 description (Twilight Keepers hold the Lexicon chapters)",
+"quest 8498 description (prophets under heavy escort)",
+"quests 8307, 8317 (sandworm meat, bitter, recipe from the camp west of the Hold)",
+"zone_areas 2739 and 3098: Geolord, Avenger, Stonecaller, Havunth 11804, Prophet 15308, Mayna 15200, wind stones 180529-180564, Sandy Cookbook 180503",
+"creature_loot_template: Havunth drops Lexicon Chapter 3"
+],
+"notes": "verified (Lexicon loot: Havunth chapter 3, Mayna chapter 1)."
+},
+{
+"id": 137707,
+"kind": 1,
+"zone": 1377,
+"sort": 7,
+"faction": 0,
+"title": "The Crystal Vale",
+"body": "In the far northwest corner of Silithus lies the Crystal Vale, a valley rich in thorium and ruled by elementals of earth and air. Desert rumblers lumber across its floor, dust stormers whirl across it, and a fierce elemental named Huricanian is said to roam there. Duke Hydraxis of the Waterlords counts the vale's stormers and rumblers among the foes he would see destroyed. Within the vale lie the remains of the Ravaged Twilight Camp. The cult once thrived there, but now scattered wood, canvas and fragments of clay tablet are all that mark the spot. A lone human, Highlord Demitrian, keeps vigil over the ruin and bids visitors look upon it and know the power the elements hold.",
+"triggers": [
+[
+1,
+2740
+],
+[
+1,
+3100
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Crystal_Vale (far northwestern corner, earth and air elementals, thorium, Ravaged Twilight Camp, Demitrian)",
+"zone_areas 2740 and 3100: Desert Rumbler, Dust Stormer, Huricanian 14478 (rank 4), Twilight Tablet Fragment",
+"quest 8284 description (camp once thrived, elementals, wood and canvas)",
+"quest 6805 (Azshara, Hydraxis: Stormers and Rumblers)",
+"npc_text 6812 (Demitrian)"
+],
+"notes": "verified. Elder Primestone (Lunar Festival) left out; Hydraxis only named (azshara.json 1630 tells his chain)."
+},
+{
+"id": 137708,
+"kind": 1,
+"zone": 1377,
+"sort": 8,
+"faction": 0,
+"title": "Southwind Village",
+"body": "In eastern Silithus lie the ruins of Southwind Village, once the night elves' base of operations in this land. It fell in the War of the Shifting Sands, struck while the night elf army was held at the front and razed, and the silithid have held it ever since. The tortured spirits of fallen druids and sentinels still wander the broken streets, led by the Shade of Ambermoon, and their death wails rouse the hive that has claimed the village tower, around which a mass of wasps endlessly circles. A wary ghost, Aendel Windspear, lingers among the ruins and eyes the living with mistrust. The druids of Nighthaven believe a Reliquary of Purity was left here long ago.",
+"triggers": [
+[
+1,
+2738
+]
+],
+"sources": [
+"quest 1125 description and reward text",
+"quest 1126 description (tower with the mass of wasps)",
+"creature_text 12178/12179 (death wail stirs the hive)",
+"creature_text 15183 (Valstann trapped, Southwind obliterated)",
+"warcraft.wiki.gg/wiki/Southwind_Village (spirits led by the Shade of Ambermoon)",
+"npc_text 7783 (Aendel: the ghostly figure looks at you with mistrust)",
+"quest 5527 description (Reliquary of Purity at Southwind)"
+],
+"notes": "Fact-check: Valstann's trap removed so the entry does not retell darnassus.json 165708; the village's fall kept from creature_text 15183 (small attack on Southwind while the front lines were occupied; village obliterated). Aendel is a female ghost (display 15358). Rest verified."
+},
+{
+"id": 137709,
+"kind": 1,
+"zone": 1377,
+"sort": 9,
+"faction": 0,
+"title": "Bones of Grakkarond",
+"body": "South of Cenarion Hold the bones of a great dragon lie in the open desert, and dredge crushers and stonelash scorpids prowl among them. It seems a forgotten place, yet it matters to the qiraji. Glyphs taken from the hive crystals show an emissary of the qiraji meeting three silithid at the bones of a large dragon, and Geologist Larksbane believes these are the Bones of Grakkarond. A code of calling drawn in the sand here, she reasons, will bring the emissary and its overlords, thinking new messages are ready to be carried.",
+"triggers": [
+[
+1,
+3257
+]
+],
+"sources": [
+"quest 8315 description (glyphs, Bones of Grakkarond south of Cenarion Hold, bones of a large dragon)",
+"zone_areas 3257: Dredge Crusher, Stonelash Pincer, Cyclone Warrior, Desert Rumbler",
+"warcraft.wiki.gg/wiki/Bones_of_Grakkarond (bones of a huge dragon)"
+],
+"notes": "Fact-check: 'half buried' and 'few travelers linger' removed (unsupported). Dragon's bones kept: 8315 ties the large dragon's bones to Grakkarond and the wiki agrees (bronze dragon Grakkarond). Who slew him (wiki: Ossirian) left out as unsourced in game text."
+},
+{
+"id": 137710,
+"kind": 1,
+"zone": 1377,
+"sort": 10,
+"faction": 0,
+"title": "Hive'Zora",
+"body": "Hive'Zora sprawls across western Silithus, its mounds crawling with wasps. Hive sisters, reavers, waywatchers and tunnelers guard the hive, a rare silithid called Zora lurks within, and a Cenarion scout named Azenel watches from a tunnel full of the insects. Outside, Captain Blackanvil's Ironforge Brigade keeps an eye on the hive for the Cenarion Circle, which expects something major here, and Alliance volunteers report to him for field duty. Sergeant Carnes grumbles that his reward for gathering war supplies was a post beside a bug hive with a band of sweaty dwarves. Nearby, Marshal Bluewall commands an Alliance camp racing the Horde for silithyst, gathered from geysers across the desert.",
+"triggers": [
+[
+1,
+2743
+]
+],
+"sources": [
+"zone_areas 2743: Hive'Zora Wasp x85, Hive Sister, Reaver, Waywatcher, Tunneler, Zora 14474, Scout Azenel 15610, Ironforge Brigade 15440-15444, Carnes 15903, Marshal Bluewall 17080, Silithyst Geyser",
+"npc_text 7874 (Janela)",
+"npc_text 8064 (Azenel)",
+"npc_text 8212 (Carnes)",
+"quest 8507 description",
+"quest 9419 description"
+],
+"notes": "Fact-check: 'feared' made 'lurks'. Ironforge Brigade, Carnes, Bluewall permanent spawns. Rest verified."
+},
+{
+"id": 137711,
+"kind": 1,
+"zone": 1377,
+"sort": 11,
+"faction": 0,
+"title": "Hive'Regal",
+"body": "Hive'Regal is the southern hive of Silithus, the haunt of slavemakers, spitfires, ambushers, burrowers and hive lords, with a rare beast called Lapress among them. Somewhere in its depths waits Mistress Natalia Mar'alith, who walked into the hive and did not come back. Outside its mouth the Orgrimmar Legion stands for the Cenarion Circle under Captain Krug Skullsplit, proud to serve Thrall however far from home, who signs the field papers of Horde volunteers in silithid blood. Close by, General Kirika's Horde camp gathers silithyst, determined to keep it from the Alliance. Deep in the hive's tunnels Cenarion Scout Landion creeps close enough to the insects to go unnoticed, though he would not advise anyone to try it.",
+"triggers": [
+[
+1,
+2744
+]
+],
+"sources": [
+"zone_areas 2744: Hive'Regal Slavemaker, Spitfire, Hive Lord, Ambusher, Burrower, Lapress 14473, Krug Skullsplit 15612, Merok, Kirika's camp 17079",
+"warcraft.wiki.gg/wiki/Hive'Regal (southern Silithus, Natalia, Landion)",
+"npc_text 8059 (Krug)",
+"quest 8731 reward text (signed in silithid blood)",
+"quest 9422 description",
+"npc_text 8063 (Landion)",
+"quest 8306 objectives"
+],
+"notes": "Fact-check: Landion moved from 'close by' Kirika's camp into the hive: he and Natalia stand underground (z -72 and -67) among Hive'Regal slavemakers, hive lords and ambushers within 20 to 45 yards, so both are inside the hive although the map grid there reads 1377. Rest verified."
+},
+{
+"id": 137712,
+"kind": 1,
+"zone": 1377,
+"sort": 12,
+"faction": 0,
+"title": "Bronzebeard Encampment",
+"body": "In the southern hills of Silithus, east of the Scarab Wall, the dwarves of Brann Bronzebeard's expedition have made camp. They came to search the hives for lost artifacts, and between the four of them, monkey included, they speak thirty-eight languages, Titan among them. Brann himself has gone missing again. A letter of his, turned up among the silithid of the hives, tells of a great battle between a Titan and an Old God and an ancient tunnel into Ahn'Qiraj that he meant to take. Rutgar Glyphshaper and Frankal Stonebridge stay on with Brann's monkey Glibb, though their pleas to Ironforge for an army go unanswered. In the mountains behind the camp hunts Deathclasp, a giant scorpid.",
+"triggers": [
+[
+1,
+3427
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Bronzebeard_Encampment (southern Silithus, east of the Scarab Wall)",
+"npc_text 7755, 7764, 7761 (artifacts, 38 languages, requests to Ironforge)",
+"npc_text 7736 (Bronzebeard's gone missing again)",
+"quest 8308 (Brann's letter)",
+"creature_loot_template: item 20461 drops from Hive'Ashi, Hive'Zora and Hive'Regal silithid",
+"quests 8282, 8283 (Deathclasp in the southern mountain range behind Bronzebeard's camp)",
+"creature 15172 Glibb <Brann Bronzebeard's Pet Monkey>"
+],
+"notes": "verified. Brann not spawned in 3.3.5 Silithus; only his letter and camp used. 8308 not used as a trigger."
+},
+{
+"id": 137713,
+"kind": 1,
+"zone": 1377,
+"sort": 13,
+"faction": 0,
+"title": "Twilight Outpost",
+"body": "Far in the southwest of Silithus, not far from the Scarab Wall, stands Twilight Outpost, the southernmost of the Twilight's Hammer camps. Geolords, avengers and stonecallers fill it, with Twilight Masters among them, and a prophet under escort carries the cult's battle orders. Twilight Keeper Exeter guards a chapter of the lexicon nearby. Wind stones stand among the tents, lesser, common and greater, ready for those who would speak with the Abyssal Council, and at times a Twilight Lord named Everun is seen walking the camp.",
+"triggers": [
+[
+1,
+3099
+]
+],
+"sources": [
+"zone_areas 3099: Stonecaller, Avenger, Geolord, Twilight Master 11883, Twilight Lord Everun 14479 (rank 4), Twilight Prophet 15308, wind stones 180456, 180461, 180466, 180518",
+"creature 11803 Exeter at -7964,1977 (1377 grid, beside the outpost); loot: Lexicon Chapter 2",
+"quest 8498 description"
+],
+"notes": "Fact-check: 'most remote' made 'southernmost' (map 18,85 against the other camps at 41,42; 26,36; 21,8; 70,25). 'Commanded by' masters made 'among them'; prophet 'comes and goes' made 'under escort' (8498). Rest verified."
+},
+{
+"id": 137714,
+"kind": 1,
+"zone": 1377,
+"sort": 14,
+"faction": 0,
+"title": "The Scarab Wall",
+"body": "In the far southwest of Silithus runs the Scarab Wall, raised at the end of the War of the Shifting Sands, when the night elves and the dragonflights sealed the qiraji and their silithid within Ahn'Qiraj. For a thousand years it has held. Near this sacred barrier lies a single crystalline tear, left as a symbol of the great losses of that war, and those who gaze into it feel a sorrow so heavy they fear they might die of it. Scorpids creep along the foot of the wall, and a rare creature called Setis is known to prowl there.",
+"triggers": [
+[
+1,
+2737
+]
+],
+"sources": [
+"warcraft.wiki.gg/wiki/Scarab_Wall (molded from the sand, bronze dragonflight barrier many times taller)",
+"quest 8305 description and reward text (crystalline tear near the sacred barrier)",
+"zone_areas 2737: Crystalline Tear 180633, Setis 14471, Stonelash Flayer"
+],
+"notes": "Fact-check: construction details (sandstone molded from the desert, bronze barrier many times taller) removed: the wiki cites them to Exploring Azeroth: Kalimdor (2023), a source long after 3.3.5. Sealing kept from the War of the Shifting Sands page and quests 8286 to 8742 (a thousand years). Irana'ethil still not used."
+},
+{
+"id": 137715,
+"kind": 1,
+"zone": 1377,
+"sort": 15,
+"faction": 0,
+"title": "Gates of Ahn'Qiraj",
+"body": "In the Scarab Wall stand the Gates of Ahn'Qiraj, sealed for a thousand years until a champion of the bronze dragonflight came bearing the Scepter of the Shifting Sands. Before them rises the Scarab Dais, where the Scarab Gong looms. Those who would strike it were warned that its ringing would throw the gates wide and let chaos and ruin pour out upon the land. Open they now stand. Beyond lie the ruins of the outer city and the temple where the Twin Emperors once watched their war, and the fighting there goes on day and night. Upon the dais waits Jonathan the Revelator, keeper of the sacred gong, empowered by Nozdormu himself to reward the champion.",
+"triggers": [
+[
+1,
+3478
+],
+[
+1,
+2741
+]
+],
+"sources": [
+"quest 8743 request text (the Scarab Gong, slackened maw)",
+"quest 8745 reward text (Jonathan, keeper of the sacred gong, empowered by the Timeless One)",
+"creature_text 15183 (Twin Emperors watched the war from their temple)",
+"npc_text 8216 (fighting inside Ahn'Qiraj day and night)",
+"warcraft.wiki.gg/wiki/Gates_of_Ahn'Qiraj (gates stayed open, Ruins and Temple beyond)",
+"DB: gate doors 180904/180898/180899 spawn state 0 (open); posarea: 3478 at -8200,1530 west of the door, 2741 at the gong"
+],
+"notes": "Fact-check: gong warning reworded (was too close to 8743's text). Open gates confirmed for 3.3.5 server state (doors state 0, no script, no event; 8214 and 8216 speakers permanent). 3478 confirmed west of the door (posarea -8200,1530) and reachable; 2741 at the gong. 8743 and 8745 autocomplete, not used. Rest verified."
+},
+{
+"id": 137716,
+"kind": 2,
+"zone": 1377,
+"sort": 1,
+"faction": 0,
+"title": "Commander Mar'alith",
+"body": "Commander Mar'alith leads the Cenarion Circle's forces at Cenarion Hold, a night elf warrior bound by duty to his outpost even while his heart is elsewhere. His beloved Natalia went missing after weeks of strange behavior, talking to herself when she thought no one was near and insisting that her research must go on, and he has not been himself since. Those who come to him find him distracted, asking why this has come now, with so much work still to be done. Still the war is his to run. Decoded cult texts, battle orders seized from the Twilight's Hammer and news from Ahn'Qiraj itself all find their way to him, and he rewards those who bring them well.",
+"triggers": [
+[
+2,
+15181
+]
+],
+"sources": [
+"npc_text 7732",
+"quest 8304 description and reward text",
+"npc_text 7733 (Vish Kozus: the Commander has not been himself)",
+"warcraft.wiki.gg/wiki/Commander_Mar'alith (night elf warrior, head of the Circle's forces)",
+"quests 8287, 8498, 8791 (turn-ins)"
+],
+"notes": "verified. Faction 0: template 994 (FactionTemplate 994, Cenarion Circle, no enemy groups). Night elf male, class warrior (display 15315, unit_class 1)."
+},
+{
+"id": 137717,
+"kind": 2,
+"zone": 1377,
+"sort": 2,
+"faction": 0,
+"title": "Baristolth of the Shifting Sands",
+"body": "Baristolth of the Shifting Sands is a night elf who lingers among the tents of Cenarion Hold with his eyes on the desert. A thousand years ago, he says, death had all but claimed him when a great one of the bronze dragonflight breathed once upon his broken body and let the sands of time heal his wounds, then bound him to remain a Watcher for as long as he must. Now the land shudders, the hive stirs and the drakes of the Brood of Nozdormu have returned to the skies, and Baristolth knows a second war is upon them. The time has come to keep a promise he made in that long-ago war.",
+"triggers": [
+[
+2,
+15180
+]
+],
+"sources": [
+"quest 8286 description and reward text",
+"npc_text 7731",
+"creature_text 15180 (the Brood of Nozdormu have returned)",
+"warcraft.wiki.gg/wiki/Baristolth_of_the_Shifting_Sands (night elf, Watcher of the bronze dragonflight)"
+],
+"notes": "verified. Faction 0: template 994. Night elf male (display 15311). Person only; the chain is the Scepter story."
+},
+{
+"id": 137718,
+"kind": 2,
+"zone": 1377,
+"sort": 3,
+"faction": 0,
+"title": "Geologist Larksbane",
+"body": "Geologist Larksbane is a dwarf scholar serving the Cenarion Circle at Cenarion Hold, and she hears what others miss: a humming from the crystals of the desert that grows louder every day, which she believes is driving the silithid mad. Her greatest work was reading a glyphed crystal from the hives, which held a prophecy of C'Thun written by the qiraji prophet Skeram. It told of a Titan and an Old God who fell in battle on this very soil, of the silithid born from the magic of the Well of Eternity, and of the qiraji shaped in the Old God's image to build Ahn'Qiraj for its coming. She went pale reading it.",
+"triggers": [
+[
+2,
+15183
+]
+],
+"sources": [
+"npc_text 7734",
+"creature_text 15183 (prophecy reading, groups 1-7)",
+"quest 8316 reward text (Larksbane turns pale)",
+"warcraft.wiki.gg/wiki/Geologist_Larksbane (female dwarf, Cenarion Circle)"
+],
+"notes": "verified. Faction 0: template 994. Dwarf female (display 15316). Summarises prophecy groups 1 to 5 only; Valstann (groups 15 to 17, cited by darnassus.json) not retold."
+},
+{
+"id": 137719,
+"kind": 2,
+"zone": 1377,
+"sort": 4,
+"faction": 0,
+"title": "Huum and Bor Wildmane",
+"body": "The tauren brothers Huum and Bor Wildmane are druids of the Cenarion Circle at Cenarion Hold who keep watch on an enemy most others overlook. While every eye is on the silithid, they track the Twilight's Hammer. Huum, the elder, hears the spirits of Silithus weeping for the woeful tale the land has to tell, and he directs the strikes against the cult's geolords and leaders. Bor is blunter. He gathers up the cult's coded papers just to keep them out of circulation, sends heroes after the elemental templars, dukes and lords who command the cult, and admits he would do anything to leave his post and wrestle one of those things himself.",
+"triggers": [
+[
+2,
+15270
+],
+[
+2,
+15306
+]
+],
+"sources": [
+"npc_text 7797 (Bor: my big brother and I keep an eye on the Twilight's Hammer crazies)",
+"npc_text 7779 (Huum: the land weeps)",
+"quests 8320, 8321 (Huum)",
+"quests 8318, 8361, 8348, 8352 request text (Bor)",
+"warcraft.wiki.gg/wiki/Huum_Wildmane and Bor_Wildmane (tauren druids, brothers)"
+],
+"notes": "verified. Faction 0: Huum template 994, Bor 635 (both Cenarion Circle, no enemy groups). Both tauren male (displays 15371, 15370)."
+},
+{
+"id": 137720,
+"kind": 2,
+"zone": 1377,
+"sort": 5,
+"faction": 0,
+"title": "Hermit Ortell",
+"body": "Hermit Ortell is a human who once belonged to the Twilight's Hammer and deserted it, and the cult has hunted him like a beast ever since. He hides in a cave in the mountains south of Southwind Village and meets every stranger with suspicion, demanding to know whether they were followed. Yet an enemy of the cult is a friend of his. He knows the code its scribes use and the lexicon that unlocks it, and with the book in hand he reads the cult's secret monthly bulletin, the True Believer, watching for word that the search for him has been called off. Whatever else he learns from it, he is willing to pass on.",
+"triggers": [
+[
+2,
+15194
+]
+],
+"sources": [
+"quest 8285 description and request text",
+"quest 8279 description",
+"quest 8323 description",
+"npc_text 7816",
+"warcraft.wiki.gg/wiki/Hermit_Ortell (human, deserter, Ortell's Hideout)"
+],
+"notes": "Fact-check: 'share with Cenarion Hold' made general (8323 only says he can share it). Human male (display 15326). Faction 0: template 35. Hyjal and other later Ortell roles absent; 3447 still not used."
+},
+{
+"id": 137721,
+"kind": 2,
+"zone": 1377,
+"sort": 6,
+"faction": 0,
+"title": "Highlord Demitrian",
+"body": "Highlord Demitrian, a human, keeps a strange vigil in the ruined Twilight's Hammer camp of the Crystal Vale. He speaks of the Old Gods as the makers of the world, cast down by the Titans, and the lord he serves is Thunderaan, Prince of Air. In the Elemental Sundering, he says, Ragnaros's lieutenants Geddon and Garr betrayed Thunderaan, and the Firelord struck him down with Sulfuras and fed on his essence. What remained was sealed in a talisman of binding, broken in two and given to those lieutenants. Demitrian holds the vessel of his master's rebirth and wants elementium and the Firelord's essence to free him. Those who freed the prince found him an enemy and called Demitrian a liar.",
+"triggers": [
+[
+2,
+14347
+]
+],
+"sources": [
+"npc_text 6812, 6843, 6844, 6867-6870, 6954-6958",
+"quests 7785, 7786 reward text, 7787 description (lying wretch, his betrayal)",
+"warcraft.wiki.gg/wiki/Highlord_Demitrian (human, Ravaged Twilight Camp, Crystal Vale)"
+],
+"notes": "verified (npc_text 6843 to 6958, 7785 to 7787). Human male (display 14395). Faction 0: template 35."
+},
+{
+"id": 137722,
+"kind": 2,
+"zone": 1377,
+"sort": 7,
+"faction": 0,
+"title": "Windcaller Proudhorn",
+"body": "Windcaller Proudhorn, a tauren of the Cenarion Circle, welcomes the volunteers who answer the call raised by the Circle's emissaries in Orgrimmar and Ironforge. The silithid, those emissaries warn, have been left unchecked too long and are preparing to spread, and tremors near hives all across Azeroth betray their swelling numbers. Proudhorn is sure that while Cenarion Hold stands, victory over the silithid is certain, provided the supplies keep coming. To her mind the desert worms threaten the caravans more than the insects do: dredge strikers recently ravaged a whole shipment of morrowgrain, and their larger southern cousins wait to move in. She also gathers the scouts' reports from the three hives.",
+"triggers": [
+[
+2,
+15191
+],
+[
+5,
+8275
+],
+[
+5,
+8276
+]
+],
+"sources": [
+"quests 8275, 8276 description and reward text",
+"creature 15187 Jademoon in Ironforge, 15188 Blackhoof in Orgrimmar",
+"quests 8280, 8281",
+"npc_text 7746",
+"quests 8534, 8738, 8739 (scout reports end with her)",
+"warcraft.wiki.gg/wiki/Windcaller_Proudhorn (female tauren)"
+],
+"notes": "verified. Female tauren (display 15353). Faction 0: template 994; 8275 (Alliance) and 8276 (Horde) both end with her; emissaries 15187 and 15188 permanent spawns, not used by ironforge.json or orgrimmar.json."
+},
+{
+"id": 137723,
+"kind": 3,
+"zone": 1377,
+"sort": 1,
+"faction": 0,
+"title": "The Twilight Mystery",
+"body": "Geologist Larksbane recovered a few fragments of clay tablet from the ravaged Twilight's Hammer camp in the northwest, now overrun by elementals, and sent for the rest. Restored, the tablet held recognizable words but no meaning, for the cult's sects hide their writings in code. Rumor told of a cultist named Ortell who had deserted his sect and lived as a hermit south of Southwind Village. Found, he was suspicious, then eager. To break the code he needed the Twilight Lexicon, whose three chapters the cult keeps apart in the hands of its Twilight Keepers at different camps. With all three gathered he set to work, swapping every third word with one from the second chapter, then wondering aloud whether he had it backwards. The decoded parchment went to Commander Mar'alith, who found in it new light on the cult's presence in Silithus. Ortell hoped it would soon put him beyond the cult's grasp for good.",
+"triggers": [
+[
+4,
+8284
+]
+],
+"sources": [
+"quests 8284, 8285, 8279, 8287 (descriptions, request and reward texts)",
+"creature_loot_template: Lexicon chapters from Twilight Keepers Havunth and Exeter"
+],
+"notes": "verified (8284, 8285, 8279, 8287; Lexicon loot Mayna 1, Exeter 2, Havunth 3). 8284 only entry point, QuestType 2. Faction 0."
+},
+{
+"id": 137724,
+"kind": 3,
+"zone": 1377,
+"sort": 2,
+"faction": 0,
+"title": "Dearest Natalia",
+"body": "Commander Mar'alith's beloved Natalia had vanished, last seen heading for the dwarven camp in the south, and he sent help to question the diggers. Rutgar Glyphshaper told how she had been the first from Cenarion Hold to join their forays into the hives, until in Hive'Regal she pressed her cheek to a glyphed crystal and fell into a trance. The druids woke her, but weeks later she returned demanding they go back. Brann Bronzebeard refused, and Frankal Stonebridge took up the tale: she chanted in a tongue none of them knew to someone who was not there, then attacked, eyes aglow, flaying their minds one by one, until Brann's monkey Glibb drove her off. She fled into the hive and not one insect barred her way. Mar'alith asked that she be found and, if truly mad, dealt with. Deep in Hive'Regal waited the High Priestess of C'Thun, and the grieving commander could only ask what C'Thun was.",
+"triggers": [
+[
+4,
+8304
+]
+],
+"sources": [
+"quests 8304, 8306 (descriptions and reward texts)",
+"npc_text 7755-7761 (Rutgar), 7762-7768 (Frankal)",
+"creature_template 15215 subname High Priestess of C'Thun; creature_text 15215"
+],
+"notes": "verified against 8304, 8306 and npc_text 7755 to 7768. 8304 QuestType 2, no prerequisite. Faction 0."
+},
+{
+"id": 137725,
+"kind": 3,
+"zone": 1377,
+"sort": 3,
+"faction": 0,
+"title": "The Prophecy of C'Thun",
+"body": "Since Natalia's madness the three hives had been spewing out bugs, and Rutgar Glyphshaper suspected the glyphs on their crystals. He wanted rubbings from the crystals of Hive'Ashi, Hive'Zora and Hive'Regal, while Frankal Stonebridge wanted a brain from each hive's silithid for an elixir to help read the tongue of the qiraji. From the rubbings the dwarves recreated the glyphs on a crystal prism, a means for the qiraji and other unknown powers to send messages to the silithid, but they could not unlock it. Geologist Larksbane saw why: the prism's shifting outer layer had to align with the markings within. Its one clue showed an emissary of the qiraji meeting three silithid at the bones of a dragon. Glyphs of calling drawn in the sand at the Bones of Grakkarond brought the overlords and then the emissary, and from it came the key to the crystal. Larksbane said she held twenty thousand years of history in her hands, and what it foretold left her fearing for the future of all.",
+"triggers": [
+[
+4,
+8309
+],
+[
+4,
+8310
+]
+],
+"sources": [
+"quests 8309, 8310, 8314, 8315 (descriptions and reward texts)",
+"quest 8316 reward text"
+],
+"notes": "verified against 8309, 8310, 8314, 8315, 8316. 8309 and 8310 (QuestType 2, exclusive group -8309, both after 8304) are the entry points. No Valstann or prophecy retelling. Faction 0."
+},
+{
+"id": 137726,
+"kind": 3,
+"zone": 1377,
+"sort": 4,
+"faction": 0,
+"title": "The Abyssal Council",
+"body": "The Twilight's Hammer performs rituals day and night in its Silithus camps, and Huum Wildmane first struck at its heads: the Twilight geolords, then Vyral the Vile in the cave of Twilight's Run. The cult did not falter, and the reason soon came clear. An even darker power, the Abyssal Council, commands the Hammer through the arcane wind stones in its camps, and the cultists summon elemental nobles who give them their orders. The night elf craftswoman Aurel Goldleaf devised a gambit. A replica of the cult's medallion of station, made with a brilliant shard and the crests of slain templars, lets a hero in twilight trappings commune through a wind stone as a mid-ranking cultist and lure a duke of the Council into ambush. A ring of lordship, worn by the cult's highest ranks, fools even the lords of the Council through the greater stones. Bor Wildmane rewards every crest, signet and scepter brought back, and warns that the lords call for a true army. They meet such impostors with fury, swearing that this world will fall to darkness.",
+"triggers": [
+[
+4,
+8320
+],
+[
+4,
+8331
+],
+[
+4,
+8361
+]
+],
+"sources": [
+"quests 8320, 8321, 8331, 8332, 8341, 8348, 8349, 8351, 8352, 8361 (descriptions and reward texts)",
+"creature_text 15203-15208, 15220, 15305 (lords and dukes: this world will fall to darkness, Imposter)",
+"warcraft.wiki.gg/wiki/Abyssal_Council (templars, dukes, lords)",
+"quests 9248, 8829 (Aurel's elven words, prays to Elune)",
+"CreatureDisplayInfo 15372 (night elf female)"
+],
+"notes": "Fact-check: 'High Council' (not in game text) made 'the lords of the Council' (8341). Aurel confirmed night elf female (display 15372, NightElfFemale; Darnassian phrases in 9248, prayer to Elune in 8829). 8320, 8331, 8361 QuestType 2, not autocomplete, AllowableRaces 0. Lords' and dukes' lines checked (creature_text 15203 to 15208, 15220, 15305). Faction 0."
+},
+{
+"id": 137727,
+"kind": 3,
+"zone": 1377,
+"sort": 5,
+"faction": 0,
+"title": "The Spirits of Southwind",
+"body": "Layo Starstrike of Valor's Rest believed the Cenarion Circle's work in Silithus should begin at the ruins of Southwind Village, once a night elf base of operations and long since overrun by the hives. Its tortured spirits of druids and sentinels wander the ruins, and freeing them proved his suspicion that the great hive nearby had played a part in the village's ruin, for each death wail roused it, the silithid being keenly sensitive to their surroundings. Layo then asked that the hive be stirred on purpose, from the top of the village tower where the wasps swarm thickest. What came out of it was a box-shaped thing so encrusted in chitin it could barely be recognized, though one exposed corner hinted at a book beneath. If it was a journal from ancient times, it might give the Circle a window into the past. Layo sent it to Umber, the Circle's brilliant if touched archivist in Nighthaven, who promised to crack the shell and share what he found.",
+"triggers": [
+[
+4,
+1125
+]
+],
+"sources": [
+"quests 1125, 1126, 6844 (descriptions and reward texts)",
+"quest 6845 description (Umber will share what he finds)"
+],
+"notes": "Fact-check: Layo's suspicion stated (1125 reward: the hive played a part in the village's demise). 1124 and 6845 still left to Moonglade. Rest verified. Faction 0."
+},
+{
+"id": 137728,
+"kind": 3,
+"zone": 1377,
+"sort": 6,
+"faction": 0,
+"title": "The Scepter of the Shifting Sands",
+"body": "Baristolth of the Shifting Sands had waited a thousand years for a sign. When the hives stirred he sent a seeker into Tanaris to learn whether his master of the bronze flight had risen, and when word came that he had, Baristolth set his trials: the head of Broodlord Lashlayer from the lair of the Lord of Blackrock, then silithid carapace from the hives by the hundred, with deputies sworn to help. At last he gave up the secrets he had kept and sent his chosen on to the bronze dragon. The trail led back to Silithus, to a crystalline tear beside the Scarab Wall whose depths held a memory of the old war. Then came the charge of the dragonflights. Each guardian of a shard of the broken scepter had fallen to tragedy: the red shard was torn from Nefarian, the blue won from the depths of the Bay of Storms, the green recovered with the help of Keeper Remulos. Reforged, the scepter went to the one fated to open the gates and shatter the prophecy of C'Thun.",
+"triggers": [
+[
+4,
+8286
+],
+[
+5,
+8729
+],
+[
+5,
+8742
+]
+],
+"sources": [
+"quests 8286, 8288, 8301, 8302, 8303, 8305, 8519, 8555, 8730, 8729, 8741, 8742 (texts)"
+],
+"notes": "Fact-check: reworked so it does not retell tanaris.json 44028 (Anachronos's own history: the forging, Fandral breaking the scepter, the shards divided) or 44007 (Caverns of Time): Caverns and Fandral's betrayal dropped, Anachronos left unnamed beyond 'the bronze dragon'; Narain and the buoy not retold (only the Bay of Storms). Triggers kept: 8286 (QuestType 2), 8729 and 8742 turn-ins (8742 QuestType 0); none used by tanaris.json (which uses 8576, 8584, 8597) or azshara.json. Green shard chain 8733 to 8736 left to Moonglade. Faction 0."
+}
+]

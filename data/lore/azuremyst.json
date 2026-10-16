@@ -1,0 +1,842 @@
+[
+ {
+  "id": 352400,
+  "kind": 0,
+  "zone": 3524,
+  "sort": 0,
+  "faction": 0,
+  "title": "Azuremyst Isle",
+  "body": "Azuremyst Isle is the southern of the two isles that lie off the northern coast of Kalimdor, a misty country of blue-needled pines, purple blossoms and quiet beaches. In ancient days the night elf empire left it unsettled on purpose, a wild hunting ground, and the ruins of their works still crumble at Wrathscale Point. For centuries its chief inhabitants were the furbolgs of the Stillpine and Bristlelimb tribes. Then the sky caught fire. The Exodar, the dimensional ship the draenei had seized from Tempest Keep, streaked over northern Kalimdor shedding crystals and came down on the western side of the isle, crippled by blood elf saboteurs. The survivors have made the largest piece of its hull their new home. The crash scattered irradiated crystals across the land, poisoning a lake and maddening beasts and wildkin alike. From the outpost of Azure Watch the draenei work to heal the damage, even as naga, Venture Company goblins and agents of Kael'thas Sunstrider prowl the island.",
+  "triggers": [
+   [
+    1,
+    3524
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Azuremyst_Isle (geography, kaldorei hunting ground, ruins, two furbolg tribes, crash, crystal storm)",
+   "warcraft.wiki.gg/wiki/Exodar (Velen's raid on Tempest Keep, infiltrated blood elves sabotaged the vessel, shed crystals over northern Kalimdor, crashed on the western side of Azuremyst)",
+   "quests 9294, 9455, 9456, 9566 (crystal contamination)",
+   "page_text 2919-2920 (Kael'thas letter)",
+   "quests 9506, 9513",
+   "warcraft.wiki.gg/wiki/Ammen_Vale (Sunfury sabotaged the Exodar, Burning Crusade section)"
+  ],
+  "notes": "Verified. Softened 'edge of the night elf empire' to the wiki's 'left unsettled on purpose', and 'only masters' to 'chief inhabitants' (night elves also lived there). Sabotage claim is TBC-tagged on the wiki (Sunfury)."
+ },
+ {
+  "id": 352401,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 1,
+  "faction": 0,
+  "title": "Ammen Vale",
+  "body": "Ammen Vale is a small, hill-sheltered island on the eastern side of Azuremyst, cut off from the rest of the isle by the Crystalbrook River. When the Exodar broke apart, one section of the ship plunged into this valley, and those who woke from long suspension among its wreckage found smoking debris, scattered escape pods and the red glow of irradiated crystals all around them. Many had died. Beside the vale's graveyard a grieving draenei stands over the marker of his beloved Luhanaa, wishing it had been him and swearing vengeance on whoever brought the ship down. A path leads west across the river to Azure Watch, the survivors' road to the rest of their people.",
+  "triggers": [
+   [
+    1,
+    3526
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Ammen_Vale (small island separated by the Crystalbrook, pods, crystals, wreckage)",
+   "warcraft.wiki.gg/wiki/Azuremyst_Isle (eastern side is Ammen Vale, sheltered by hills)",
+   "quest 9279 description and reward text (suspension for weeks, only those in this part of the ship remain)",
+   "quest 9283 (red glow of irradiated power crystals)",
+   "creature_text 17073 Draenei Mourner",
+   "quest 9313 (path west across the Crystalbrook to Azure Watch)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352402,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 2,
+  "faction": 0,
+  "title": "Crash Site",
+  "body": "The Crash Site is the broken section of the Exodar that came to rest in Ammen Vale, and it has become the refuge of everyone who lived through the fall. Inside its central chamber the priest Zalduun tends the wounded, while Proenitus rallies those who can still help and Vindicator Aldar sees to the camp's defense. The healing crystals were nearly drained, and the draenei were forced to refill them with the blood of vale moths, a choice they regret, for needless killing is not their way. Here too Technician Zhanaa labored over a damaged holographic emitter, waiting on spare parts until it flickered to life and carried word of the survivors across the river to Azure Watch.",
+  "triggers": [
+   [
+    1,
+    3527
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Ammen_Vale (Crash Site became the refuge for survivors)",
+   "quest 9409 (Zalduun tending the wounded inside the central chamber)",
+   "quests 9280, 9369 description and reward text (moth blood, indiscriminate killing is not the draenei way)",
+   "quests 9305, 9312, 9313, 9314 (emitter, contact with Dyvuun at Azure Watch)",
+   "quest 9311 reward text (Aldar will deal with the remaining blood elves)"
+  ],
+  "notes": "Verified; 'hunting for spare parts' changed to 'waiting on', since others fetched the parts."
+ },
+ {
+  "id": 352403,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 3,
+  "faction": 0,
+  "title": "Silverline Lake",
+  "body": "South of the Crash Site, Silverline Lake took one of the Exodar's power crystals straight into its waters. The irradiated crystal poisoned the lake, and the plants and animals that drank from it began to change. Mutated root lashers now choke the Ammen Fields to the west, the breeding ground of the vale's lashers, where flowers bloom an unnatural red, and strange volatile creatures have sprung up near the fallen power cores. Botanist Taerix devised a neutralizing agent and had it scattered beside the crystal. It seems to work, though no one knows for how long, and Taerix wishes the crystal could be pulled from the lake entirely.",
+  "triggers": [
+   [
+    1,
+    3528
+   ],
+   [
+    1,
+    3560
+   ]
+  ],
+  "sources": [
+   "quest 9293 description (lake contaminated by a power crystal, mutated lashers in the Ammen Fields to the west)",
+   "quest 9294 description and reward text (lake to the south, neutralizing agent, unsure how long it will last, crystal should be removed)",
+   "quest 9799 (Ammen Fields primary breeding ground of lashers, corrupted red flowers)",
+   "quest 10302 (volatile mutations near the irradiated power cores)",
+   "DB spawns: Irradiated Power Crystal 181433 in area 3528, Mutated Root Lasher and Corrupted Flower in 3560"
+  ],
+  "notes": "Verified; dropped 'and her apprentices' (the agent is Taerix's own work in 9294)."
+ },
+ {
+  "id": 352404,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 4,
+  "faction": 0,
+  "title": "Nestlewood",
+  "body": "The wooded thickets and hills of Nestlewood, south of the Crash Site, are home to the Nestlewood owlkin. Many were twisted by the contamination from the crash and turned violent, while others remain untouched. Rather than wipe out the flock, the draenei carry an inoculating crystal prepared by Botanist Taerix to shield the healthy birds, and put down only those already too far gone. The owlkin had also carried off devices salvaged from the ship, and Technician Zhanaa needed those parts to repair her emitter. The inoculated birds take the crystal in very different ways: some seem overjoyed, some confused, and some plainly did not like what just happened.",
+  "triggers": [
+   [
+    1,
+    3529
+   ],
+   [
+    1,
+    3559
+   ]
+  ],
+  "sources": [
+   "quest 9303 description and reward text (inoculum for unaffected owlkin, the others must be killed, not wiping out the owlkin population)",
+   "quest 9305 (owlkin carried off salvage, Nestlewood Thicket and Hills to the south)",
+   "creature_text 16518 Nestlewood Owlkin emotes",
+   "DB spawns: Mutated Owlkin and Nestlewood Owlkin, Emitter Spare Part in 3529/3559"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352405,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 5,
+  "faction": 0,
+  "title": "Shadow Ridge",
+  "body": "Shadow Ridge rises beyond Silverline Lake on the southwestern edge of Ammen Vale, and it hid an unwelcome secret. Blood elves had followed the draenei to Azeroth, and a party of their scouts camped on the ridge, vowing that no survivor would leave the valley alive. They were led by Surveyor Candress, whose orders, signed with a single letter, told her to survey the extent of the islands and on no account to be caught. The draenei scout Tolaan stumbled upon them and was ambushed and badly wounded. Their discovery shook the survivors, who had believed their scouting of the vale complete.",
+  "triggers": [
+   [
+    1,
+    3530
+   ]
+  ],
+  "sources": [
+   "quest 9309 description (unusual activity on Shadow Ridge, southwest across Silverline Lake, scouting thought thorough)",
+   "quest 9309 reward text (Tolaan ambushed by blood elves)",
+   "creature_text 16521 Blood Elf Scout",
+   "page_text 2906 (Blood Elf Plans, signed S.)",
+   "warcraft.wiki.gg/wiki/Ammen_Vale (Sunfury settled Shadow Ridge, Candress their leader)",
+   "warcraft.wiki.gg/wiki/Ammen_Vale (Sunfury outpost on Shadow Ridge, TBC tag)"
+  ],
+  "notes": "Verified. Wiki (TBC section) calls them Sunfury; left unnamed as the DB never names them."
+ },
+ {
+  "id": 352406,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 6,
+  "faction": 0,
+  "title": "The Sacred Grove",
+  "body": "Nestled in the hills of northwestern Ammen Vale, the Sacred Grove is the home of the Spirit of the Vale. The violent arrival of the draenei threw the elements here out of balance: the enraged spirits of earth turned on the spirits of air, fire and water that came to calm them, and the grove is still a battlefield. The spirit has little love for the newcomers, yet it receives the draenei shaman who seek it, teaching that earth is the foundation on which all other elements rest. Shamanism is only now being relearned among the draenei, and many of their people distrust it, so a balance struck here is a hopeful sign.",
+  "triggers": [
+   [
+    1,
+    3561
+   ]
+  ],
+  "sources": [
+   "quest 9449 description and reward text (grove in the hills to the northwest, imbalance, earth as foundation, bold to seek my wisdom after what your people have done)",
+   "quest 9450 (earth spirits turned on the other elements)",
+   "quest 9451 reward text (balance between the earth of this world and the draenei, those who do not approve of our ways)",
+   "quest 9421 reward text (shamanism only now being relearned, not popular)",
+   "DB spawns: Restless Spirit of Earth, Spirits of Air, Water and Fire, Spirit of the Vale 17087 in 3561"
+  ],
+  "notes": "Verified. Draenei Call of Earth (9449-9451, Spirit of the Vale) shares nothing with durotar.json 1431 (Canaga, Spirit Rock) or mulgore.json."
+ },
+ {
+  "id": 352407,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 7,
+  "faction": 0,
+  "title": "Azure Watch",
+  "body": "Azure Watch is the outpost the Hand of Argus raised in the forest west of the Crystalbrook, within sight of the wrecked Exodar. Exarch Menelaous commands it, and its artificers, healers and trainers serve the many injured draenei who pass through. It was here that the first word from Ammen Vale arrived through a repaired emitter, and here that a mysterious guest, a night elf found unconscious by the river, was carried for healing. A furbolg, Arugoo of the Stillpine, waits in the village beside a carved totem, whose symbols the cryptographer Aurren believes hold the key to speaking with the Stillpine tribe.",
+  "triggers": [
+   [
+    1,
+    3576
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Azure_Watch (Hand of Argus forward outpost, artificers built it)",
+   "npc_text of Exarch Menelaous (gaze upon the Exodar)",
+   "quest 9463 (so many injured draenei passing through Azure Watch, guest found by the Crystalbrook)",
+   "quests 9313, 9314 (word from Zhanaa)",
+   "quest 9538 (Aurren, Totem of Akida at Azure Watch)",
+   "DB spawns: Arugoo 17114, Totem of Akida 17360, Injured Night Elf Priestess 17117 in 3576",
+   "warcraft.wiki.gg/wiki/Azure_Watch (Hand of Argus founded it, artificers built it)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352408,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 8,
+  "faction": 0,
+  "title": "Moongraze Woods",
+  "body": "North of Azure Watch, Moongraze Woods is home to herds of moongraze stags and bucks. Draenei hunters say the stags recall the talbuk their greatest hunters stalked on Draenor, though one draenei youngling out on the hunt grumbles that the two look nothing alike. The woods also hide a darker problem. Nightstalker runts here have been swallowing fragments of the Exodar's crystals, and the infected beasts behave strangely. Exarch Menelaous admits the fault is his people's: reports of crushed crystal in the river to the east were ignored too long. Now he has ordered the infected nightstalkers culled before the contamination spreads any further.",
+  "triggers": [
+   [
+    1,
+    3916
+   ]
+  ],
+  "sources": [
+   "quest 9454 (moongraze stag resembles the talbuk)",
+   "quest 10324 (bucks north of Azure Watch)",
+   "creature_text 17587 (These stags look nothing like talbuks)",
+   "quests 9455, 9456 (crystal in a nightstalker runt, crystal fragments in the river to the east, this is clearly our fault)",
+   "warcraft.wiki.gg/wiki/Exodar (nightstalkers ingested crystals, culled to stop corruption spreading across Moongraze Woods)",
+   "DB spawns: Moongraze Buck, Stag, Infected Nightstalker Runt in 3916 (centre north-east of Azure Watch)"
+  ],
+  "notes": "Verified; the 'look nothing like talbuks' line is spoken by a Draenei Youngling (17587), so 'younger hunters' became a youngling."
+ },
+ {
+  "id": 352409,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 9,
+  "faction": 0,
+  "title": "Emberglade",
+  "body": "On the island's northeast coast lies Emberglade, a sacred place of fire where scorched trees stand above smoldering ground and flaming aspects drift between them. Its guardian is Temper, a fire elemental of great power, who teaches that flame is renewal as well as destruction: it consumes what it burns, then dies, to be reborn another time. The crash of the Exodar unbalanced one of Temper's own kind, Hauteur, who went mad and set himself up as a god among the owlbeasts. Draenei shaman come here to be tested before shaping their first fire totems, and Hauteur, slain and reborn from his ashes, now burns again beside Temper.",
+  "triggers": [
+   [
+    1,
+    3564
+   ]
+  ],
+  "sources": [
+   "quest 9464 (sacred place of fire to the northeast on the coast, burned trees, Temper a fire elemental of great power)",
+   "quest 9465 description and reward text (Hauteur gone insane because of the crash, flame consumes then dies to be reborn)",
+   "quest 9467 reward text (reborn from his ashes)",
+   "creature_text 17220 Hauteur Reborn",
+   "warcraft.wiki.gg/wiki/Emberglade (burnt area, Flaming Aspects)"
+  ],
+  "notes": "Verified. Hauteur Reborn (17220) stands beside Temper in 3564."
+ },
+ {
+  "id": 352410,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 10,
+  "faction": 0,
+  "title": "Stillpine Hold",
+  "body": "Stillpine Hold is the cave home of the Stillpine furbolgs in the north of the isle, ruled by High Chief Stillpine. For centuries the tribe lived at peace with the creatures of the land, until the crystal storm fell from the sky. Then the wildkin, once their allies, went mad and stormed the hold with a beast of legend, the Kurken, at their side. Now the tribe holds only the ground before its own cave. Stillpine the Younger, heir to the tribe's legacy, has set a death trap for the raving wildkin that pour out, the bodies of defenders and wildkin lie where they fell, and deep inside, a blood red crystal from the Exodar dissolves into the cave's water.",
+  "triggers": [
+   [
+    1,
+    3572
+   ]
+  ],
+  "sources": [
+   "quest 9559 reward text (centuries of peace)",
+   "quest 9565 (wildkin, once allies, attacked and took residence)",
+   "quest 9570 (after the crystal storm, the Kurken brought by the invading wildkin)",
+   "quest 9573 (Stillpine the Younger's death trap, none of his defenders could get inside)",
+   "quest 9566 (blood red crystal dissolving into the cave water)",
+   "DB spawns: Stillpine Defender Corpse, Crazed Wildkin Corpse in 3572",
+   "warcraft.wiki.gg/wiki/Stillpine_Hold"
+  ],
+  "notes": "Verified; 'the chief's heir' changed to the quest's 'heir to the Stillpine legacy' (no father and son link in the text)."
+ },
+ {
+  "id": 352411,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 11,
+  "faction": 0,
+  "title": "Menagerie Wreckage",
+  "body": "Along the northeast beaches lie the shattered cages of the Exodar's menagerie, scattered there when the ship came down. Ravagers were carried aboard as specimens, and with their cages broken the insect-like predators have spread into the forest. The Stillpine had never seen such creatures, and when ravagers ambushed two furbolg hunters, the leatherworker Moordo wondered aloud whether they heralded the end of the world. One of the deadliest, a death ravager, was still caged nearby, little armored but resistant to most magic, and draenei warriors were sent to free it from its prison and its pain with a plain blade. Blood elf bandits also lurk among the wreckage.",
+  "triggers": [
+   [
+    1,
+    3578
+   ]
+  ],
+  "sources": [
+   "quest 9582 (menagerie scattered on the northeast beaches, death ravager resistant to magic, killed by a simple blade)",
+   "quest 9560 (two Stillpine hunters ambushed by insect-like beasts never seen before, apocalypse)",
+   "warcraft.wiki.gg/wiki/Menagerie_Wreckage (cages destroyed, ravager specimens escaped into the forest)",
+   "DB spawns: Ravager Specimen x37 and Blood Elf Bandit x4 in 3578"
+  ],
+  "notes": "Verified. The Ravager Cage (181849) stands just outside 3578, hence 'nearby'."
+ },
+ {
+  "id": 352412,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 12,
+  "faction": 0,
+  "title": "Silting Shore",
+  "body": "The Silting Shore on the northwest coast belongs to the Siltfin murlocs. The Stillpine never trusted them, but in these dark days the murlocs have grown bold enough to raid Stillpine Hold and carry off its grain. Their brute Murgurgula is known for humiliating the furbolg Gurf in broad daylight and leaving him with a bare patch where his fur used to be. A darker presence haunts these beaches too. A quel'dorei magewraith, a spirit consumed by its own magic, rises when spells are hurled carelessly along the shore, and draenei mages are sent to face it as a lesson in self-control.",
+  "triggers": [
+   [
+    1,
+    3575
+   ]
+  ],
+  "sources": [
+   "quest 9562 description and request text (tenuous relationship, Siltfin stole food stores, Silting Shore to the west)",
+   "quest 9564 (Gurf's Dignity dropped by Murgurgula 17475)",
+   "quest 9595 (northwest beaches, magewraith consumed by magic, lesson in control)",
+   "creature_text 17612 Quel'dorei Magewraith",
+   "DB spawns: Siltfin murlocs, Murgurgula and a Quel'dorei Magewraith in 3575"
+  ],
+  "notes": "Verified. Quest 9595 ends with Bati in the Exodar; only its Silting Shore side is told here."
+ },
+ {
+  "id": 352413,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 13,
+  "faction": 0,
+  "title": "Bristlelimb Village",
+  "body": "Deep in the western woods, reached by an ancient elven road, stands Bristlelimb Village, home of the Bristlelimb furbolgs. The two furbolg tribes of the isle are at war, and the totems of the Stillpine record terrible deeds done to them by the Bristlelimb. Cages throughout the village hold Stillpine captives, and their captors, from hulking ursa to windcallers, hold the keys. The furbolg language totem that stands here bears the word vark, which means justice, and the freed prisoners hail their rescuer as the hero their prophecy foretold.",
+  "triggers": [
+   [
+    1,
+    3571
+   ]
+  ],
+  "sources": [
+   "quest 9542 (furbolg den due west, ancient elven road)",
+   "quest 9544 (war between Stillpine and Bristlelimb, keys from Bristlelimb furbolgs)",
+   "quest 9542 reward text (Vark means justice)",
+   "creature_text 17375 Stillpine Captive",
+   "DB spawns: Bristlelimb Furbolg, Ursa, Windcaller, Stillpine Captive, Bristlelimb Cage, Totem of Vark in 3571"
+  ],
+  "notes": "Verified; the justice reading is the reader's, not the Stillpine's, so reworded. Keys drop from Bristlelimb Furbolg, Windcaller and Ursa (loot)."
+ },
+ {
+  "id": 352414,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 14,
+  "faction": 0,
+  "title": "Odesyus' Landing",
+  "body": "Odesyus' Landing is an Alliance camp on the southern shore of Azuremyst, set up by Admiral Odesyus of Alliance Naval Command after goblin stowaways forced his two ships into port. Loggers and axemen work the nearby forest while Stormwind marines stand guard. The camp gathers an unlikely company: 'Cookie' McWeaksauce, a reformed pirate whose menu so often comes down to chicken that the admiral dreads asking about dinner; the dwarf Adamant Ironheart of the Explorers' League; the night elf Priestess Kyleen Il'dinare; and a gnome engineer, Spark Overgrind, an envoy of High Tinker Mekkatorque who passes his days collecting shells along the beach.",
+  "triggers": [
+   [
+    1,
+    3573
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Odesyus'_Landing (southern coast, two ships, NPC list)",
+   "quest 9506 (forced to port, goblins in the holds of both ships)",
+   "quest 9512 (reformed pirate, chicken)",
+   "creature_text 17240 and 17246 (dinner banter)",
+   "creature_text 17243 (seashells)",
+   "creature_template subnames 17240, 17242, 17243",
+   "DB spawns: Alliance Axeman, Alliance Logger, Stormwind Marine in 3573"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352415,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 15,
+  "faction": 0,
+  "title": "Geezle's Camp",
+  "body": "East of Odesyus' Landing, Venture Company goblins have pitched a camp of their own under a boss named Geezle. They reached Azuremyst hidden in the holds of the admiral's ships, struck one night while the crew slept below deck, and jumped ship with the fleet's compass and charts. Their orders from Mogul Razdunk were blunt: strip-mine the island of the Exodar's crystal wreckage, then hijack the Alliance ships once the work was done. Saboteurs and gemologists now keep the camp, and the plans found with the stolen gear showed that someone in the admiral's own crew was in league with them.",
+  "triggers": [
+   [
+    1,
+    3577
+   ]
+  ],
+  "sources": [
+   "quest 9506 description and reward text (stowaways, struck at night, navigation gear, thicket east of the landing, Mogul Razdunk's orders)",
+   "quest 9530 (plans document the conspiracy, a traitor among us)",
+   "quest 9531 (Geezle leader of the goblins)",
+   "DB spawns: Venture Co. Saboteur, Gemologist, Nautical Map and Compass in 3577",
+   "warcraft.wiki.gg/wiki/Geezle's_Camp"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352416,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 16,
+  "faction": 0,
+  "title": "Wrathscale Point",
+  "body": "West of Odesyus' Landing lie the remains of an ancient night elf settlement, long abandoned and now overrun by the Wrathscale naga. Myrmidons and sirens prowl among the broken stones, and relics of the old kaldorei lie buried all through the ruins. Tablets carried by the naga revealed their purpose: their warlord, Sriss'tiz, meant to seize the rest of the island by force, with reinforcements on the way from Nazjatar. He kept to a cave on the coast nearby, Tides' Hollow. To Priestess Kyleen Il'dinare these are the lands of her ancestors, and she will not see them tainted.",
+  "triggers": [
+   [
+    1,
+    3570
+   ],
+   [
+    1,
+    3569
+   ]
+  ],
+  "sources": [
+   "quest 9513 (ancient night elf city to the west, in ruin and overrun with naga, ancestral lands)",
+   "quest 9523 and Ancient Relic objects in 3570",
+   "quest 9514 and creature_text 17242 (tablet: Sriss'tiz to take the island by force, reinforcements from Nazjatar)",
+   "quest 9515 (hidden in a cave along the coast to the west)",
+   "warcraft.wiki.gg/wiki/Wrathscale_Point (small night elf ruin, Sriss'tiz executed at Tides' Hollow)"
+  ],
+  "notes": "Verified. Wiki calls it a small ruin, quest 9513 a city; 'settlement' kept as the neutral middle. Sriss'tiz spawns underground (z -34) about 100 yards from the 3569 grid cell, consistent with the wiki placing him in Tides' Hollow and 9515's cave on the west coast; 3569 is in reachable_areas."
+ },
+ {
+  "id": 352417,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 17,
+  "faction": 0,
+  "title": "Silvermyst Isle",
+  "body": "Silvermyst Isle lies a short way off the southwest coast of Azuremyst. For years the night elf fisherman Cowlen lived here with his wife and daughter, at peace with the owlbeasts of the island. When crystal shards from the Exodar fell here, the owlbeasts of Moonwing Den went mad. With murlocs beside them they stormed the beach, razed Cowlen's home and sank his ship, leaving him alone on the docks. Deranged and raving owlbeasts still fill Moonwing Den, and there the mad fire elemental Hauteur commanded them to burn an effigy in his honor and worship him as their god.",
+  "triggers": [
+   [
+    1,
+    3639
+   ],
+   [
+    1,
+    3566
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Silvermyst_Isle (southwest, swim, crystal shards drove the Moonwing wildkin mad)",
+   "quests 9527, 9528 (lived peacefully among the owlbeasts, murlocs and owlkin attacked)",
+   "npc_text of Cowlen (home razed, ship sunk)",
+   "quest 10428 (southeast docks of Silvermyst Isle)",
+   "quest 9467 (Moonwing Den owlbeasts worship Hauteur, burn an effigy)",
+   "DB: Wickerman Effigy 181672 in 3566; Deranged, Raving and Aberrant Owlbeasts in 3639/3566"
+  ],
+  "notes": "Verified; 'close enough to swim to' not in the wiki, softened."
+ },
+ {
+  "id": 352418,
+  "kind": 1,
+  "zone": 3524,
+  "sort": 18,
+  "faction": 0,
+  "title": "Valaar's Berth",
+  "body": "Valaar's Berth is the dock on Azuremyst's western shore, south of the Exodar, where the ship Elune's Blessing comes in from Auberdine on the Darkshore coast. For the draenei it is the door to the rest of Kalimdor and to the allies they hoped to find there. For travelers sailing the other way, it is a first glimpse of the strangers who fell from the sky. Beyond the pier, skittering crawlers pick their way along the sand.",
+  "triggers": [
+   [
+    1,
+    3574
+   ]
+  ],
+  "sources": [
+   "transports table guid 9: Auberdine, Darkshore and Valaar's Berth, Azuremyst Isle (Boat, Alliance, Elune's Blessing)",
+   "warcraft.wiki.gg/wiki/Azuremyst_Isle (Valaar's Berth is the boat dock)",
+   "DB spawn: Skittering Crawler in 3574 at about -4253, -11405 (west coast, south of the Exodar)",
+   "quest 9505 (allies would find us on this island)"
+  ],
+  "notes": "Verified. transports guid 9 (181646) sails Auberdine to Valaar's Berth in 3.3.5; the wiki's Rut'theran route is the Cataclysm change."
+ },
+ {
+  "id": 352419,
+  "kind": 2,
+  "zone": 3524,
+  "sort": 1,
+  "faction": 1,
+  "title": "Exarch Menelaous",
+  "body": "Exarch Menelaous commands Azure Watch, the draenei outpost within sight of the wreck of the Exodar. He has no illusions about the crash. When crystal fragments turned up in the river and then inside sickened beasts, he admitted his people had ignored the warnings and set about correcting the mistake. Every report of trouble on the isle, from blood elf bounties on draenei heads to a gnome traitor serving Kael'thas, crosses his desk on its way to Prophet Velen. Gazing at the broken ship, he speaks of ten lifetimes spent fleeing the madness of the Burning Legion, and swears that here at last the draenei will stop running and make their stand, though he is ready to die for it.",
+  "triggers": [
+   [
+    2,
+    17116
+   ]
+  ],
+  "sources": [
+   "npc_text of Exarch Menelaous 17116 (ten lifetimes fleeing the Legion, no more running, I am ready to die)",
+   "quests 9455, 9456",
+   "quest 9616 reward text (bounty on draenei, Velen will be informed)",
+   "quest 9602 reward text (spy, will notify Velen)",
+   "warcraft.wiki.gg/wiki/Exarch_Menelaous"
+  ],
+  "notes": "Verified; 'nearest' unsupported, changed to 'within sight' (his gossip: gaze upon the Exodar). Faction 1: template 1638 has the Horde as enemy group."
+ },
+ {
+  "id": 352420,
+  "kind": 2,
+  "zone": 3524,
+  "sort": 2,
+  "faction": 1,
+  "title": "Vindicator Aldar",
+  "body": "Vindicator Aldar watches over the survivors at the Crash Site in Ammen Vale. He tells young draenei that the Light offers many paths, and that each of them must choose which to walk on this world or any other. He set the vale's first recovery in motion, sending helpers to inoculate the owlkin around the salvage and scouts up to Shadow Ridge. When plans taken from a blood elf surveyor revealed that the sin'dorei had followed the draenei to Azeroth, his composure broke. He called them evil to the core and fit only to be wiped from existence, then caught himself and apologized, a rare crack in a vindicator's discipline.",
+  "triggers": [
+   [
+    2,
+    16535
+   ]
+  ],
+  "sources": [
+   "npc_text of Vindicator Aldar 16535 (many are the paths of the Light)",
+   "quest 9303 (inoculation)",
+   "quest 9309 (one of my scouts)",
+   "quest 9798 reward text (blood elves followed us, evil to the core, apology)",
+   "quest 9311 completion text"
+  ],
+  "notes": "Verified; 'scouts out to the hills' corrected to Shadow Ridge (quest 9309). Faction 1: template 1638."
+ },
+ {
+  "id": 352421,
+  "kind": 2,
+  "zone": 3524,
+  "sort": 3,
+  "faction": 1,
+  "title": "Admiral Odesyus",
+  "body": "Admiral Odesyus of Alliance Naval Command was at sea with two ships when goblin stowaways struck one night, stole his navigation gear and forced him into port on Azuremyst. Embarrassed, he made camp on the southern shore and soon learned the theft was no prank: the goblins meant to strip the island's crystal wreckage and then seize his fleet. Convinced that only a traitor could have told them of his plans, he stopped trusting his own crew and turned instead to newcomers on the isle, devising an absurd but effective scheme involving a hollowed-out tree. Between crises he trades weary banter with his cook, whose grand promises for dinner always end in chicken.",
+  "triggers": [
+   [
+    2,
+    17240
+   ]
+  ],
+  "sources": [
+   "quest 9506 description and reward text (both ships, navigation gear, off course, I smell a traitor)",
+   "quests 9530, 9531 (none of my crew can be trusted, tree disguise)",
+   "creature_text 17240 and 17246 (dinner banter, it be chicken)",
+   "creature_template 17240 subname Alliance Naval Command"
+  ],
+  "notes": "Verified. Faction 1: template 12 hostile to the Horde."
+ },
+ {
+  "id": 352422,
+  "kind": 2,
+  "zone": 3524,
+  "sort": 4,
+  "faction": 0,
+  "title": "Engineer Spark Overgrind",
+  "body": "Spark Overgrind came to Azuremyst as an envoy of High Tinker Mekkatorque, sailing with Admiral Odesyus and passing his days hunting seashells on the beach. It was a cover. Spark served Prince Kael'thas Sunstrider and, through him, the Burning Legion, and he was the traitor in league with the Venture Company goblins. At a secret meeting he berated their boss Geezle for leaving stolen charts in plain view, and boasted that Velen would soon leave himself open to attack. Unmasked, he taunted that devoted servants of the Legion live quietly within every civilization until called upon, then drew his blade. A letter on his body showed Kael'thas meant him to repair the Exodar and return it to its self-proclaimed owner.",
+  "triggers": [
+   [
+    3,
+    17243
+   ],
+   [
+    5,
+    9531
+   ]
+  ],
+  "sources": [
+   "creature_text 17243 (seashells, meeting with Geezle, Velen left open, the Legion's servants, die by the will of Kael'thas)",
+   "creature_template 17243 subname Envoy of Mekkatorque",
+   "quest 9531 reward text (it was the gnome)",
+   "quest 9537",
+   "page_text 2919-2920 (Kael'thas: MY vessel, only link able to repair the Exodar)",
+   "warcraft.wiki.gg/wiki/Engineer_%22Spark%22_Overgrind",
+   "warcraft.wiki.gg/wiki/Engineer_%22Spark%22_Overgrind (travelling with Odesyus, emissary of Mekkatorque)"
+  ],
+  "notes": "Verified. Faction 0: template 875 has the Horde as enemy group and unit_flags 37376 carry no IMMUNE_TO_PC, so a Horde character can attack him; he has one permanent spawn at Odesyus' Landing (3573), and Azuremyst has no faction phasing in 3.3.5. QUEST_DONE 9531 is Alliance only but is not the only route."
+ },
+ {
+  "id": 352423,
+  "kind": 2,
+  "zone": 3524,
+  "sort": 5,
+  "faction": 1,
+  "title": "Priestess Kyleen Il'dinare",
+  "body": "Priestess Kyleen Il'dinare is a night elf servant of Elune staying at Odesyus' Landing, and she makes no secret of her suspicion of the draenei. Her people, she says, know much of the newcomers' forebears, and in appearance they resemble the eredar far too closely. Still, she senses that fate has pushed them all toward this island for a reason. The ruins to the west were once the lands of her ancestors, and she cannot bear to see them fouled by the Wrathscale naga, whose kind she has seen at their worst. Once their warlord falls, she admits she misjudged the draenei, who show nothing of the taint of Archimonde, and offers them a gift from her people.",
+  "triggers": [
+   [
+    2,
+    17241
+   ]
+  ],
+  "sources": [
+   "npc_text of Priestess Kyleen Il'dinare 17241 (eyes you suspiciously, similarities to the eredar, tenuous path)",
+   "quest 9513 (invisible hand of fate, ancestral lands, Elune be praised)",
+   "quest 9515 description and reward text (I've seen what naga can do, I was wrong to think badly of you, Archimonde, gift from the night elves)",
+   "warcraft.wiki.gg/wiki/Priestess_Kyleen_Il'dinare"
+  ],
+  "notes": "Verified. Faction 1: template 80."
+ },
+ {
+  "id": 352424,
+  "kind": 2,
+  "zone": 3524,
+  "sort": 6,
+  "faction": 1,
+  "title": "Archaeologist Adamant Ironheart",
+  "body": "Adamant Ironheart of the Explorers' League is a dwarf of Ironforge who once served in its elite guard, and he will tell anyone who listens that he was Magni's right-hand man. Retired now, he took up archaeology as a hobby and a fine excuse to see the world. His pappy always said that where there are night elf ruins, night elf relics are sure to be close by, so the ruins at Wrathscale Point thrilled him, and he promises his diggers that Ironforge will hear all about them. He is notably gallant toward Priestess Kyleen, and when she brought him a naga tablet, it was Adamant who read out the warlord's plan of invasion.",
+  "triggers": [
+   [
+    2,
+    17242
+   ]
+  ],
+  "sources": [
+   "npc_text of Adamant Ironheart 17242 (Ironforge elite guard, Magni's right hand man, retired, archaeology hobby)",
+   "quest 9523 description and reward text (pappy, relics, they'll learn about you in Ironforge)",
+   "creature_text 17242 (Anything for you, darling; reads the tablet)",
+   "creature_template 17242 subname Explorers' League"
+  ],
+  "notes": "Verified. Faction 1: template 55."
+ },
+ {
+  "id": 352425,
+  "kind": 2,
+  "zone": 3524,
+  "sort": 7,
+  "faction": 1,
+  "title": "High Chief Stillpine",
+  "body": "High Chief Stillpine rules the Stillpine furbolgs of Azuremyst. His tribe lived in peace with the creatures of the land for centuries, until the omens of Kurz the Revelator warned that the gods would shatter the land and turn friend and foe alike against the Stillpine. Then the crystal storm came, and the maddened wildkin drove his people out of their own hold. His first concern is the root of that corruption, and he sends the Promised One of the prophecy into the cave to find it. Once the hold is saved, he promises the Promised One the tribe's aid whenever it is asked for, and warns that darkness lies ahead for the draenei.",
+  "triggers": [
+   [
+    2,
+    17440
+   ]
+  ],
+  "sources": [
+   "quest 9559 reward text (centuries of peace, Kurz's dark omens, gods would shatter the land, the Promised One)",
+   "quest 9565 (root of the corruption)",
+   "quest 9622 (hold saved, people return to their ancestral home, darkness looms for your people, aid of the Stillpine)",
+   "npc_text of High Chief Stillpine 17440"
+  ],
+  "notes": "Verified; the pledge of aid in 9622 is made to the Promised One, not to the draenei as a whole, so reworded. Faction 1: template 1685 has the Horde as enemy group."
+ },
+ {
+  "id": 352426,
+  "kind": 2,
+  "zone": 3524,
+  "sort": 8,
+  "faction": 1,
+  "title": "Kurz the Revelator",
+  "body": "Kurz the Revelator is the seer of the Stillpine. Several months ago he began to see dark omens of a catastrophe that would end the tribe's long peace, and of a hero not of Stillpine blood who would rise to deliver them. When the crystal storm had passed, a beast of myth called the Kurken came into the village with the invading wildkin and slew many furbolgs who tried to stand against it. Kurz had seen in his visions the one who would bring it down, and he greets the draenei champion as the Promised One. The visions of the Stillpine have since shown something stranger still: the power core of the Exodar, and the naaru O'ros.",
+  "triggers": [
+   [
+    2,
+    17443
+   ]
+  ],
+  "sources": [
+   "quest 9559 reward text (several months ago Kurz began to see dark omens, hero not of Stillpine blood)",
+   "quest 9570 description and reward text (crystal storm, the Kurken, I have seen one defeat the Kurken)",
+   "npc_text of Kurz 17443 (the Promised One has arrived)",
+   "quest 9622 reward text (they saw the power core of the Exodar and O'ros)"
+  ],
+  "notes": "Verified; 'months before the draenei arrived' was an inference, now the quest's 'several months ago'. Vision of the core and O'ros credited to the tribe (9622), not Kurz alone. Faction 1: template 1685."
+ },
+ {
+  "id": 352427,
+  "kind": 2,
+  "zone": 3524,
+  "sort": 9,
+  "faction": 0,
+  "title": "Warlord Sriss'tiz",
+  "body": "Warlord Sriss'tiz led the Wrathscale naga who seized the night elf ruins of Wrathscale Point on Azuremyst's southern coast. Orders carried by his warriors laid out his ambition: to take the rest of the island by force, with more naga coming from Nazjatar to swell his ranks. He kept himself hidden in Tides' Hollow, a cave on the coast west of the landing. Priestess Kyleen Il'dinare, who had seen what naga can do, feared an invasion would be a catastrophe for every being on the isle, and wanted the warlord's reign ended before his reinforcements arrived.",
+  "triggers": [
+   [
+    3,
+    17298
+   ],
+   [
+    4,
+    9515
+   ]
+  ],
+  "sources": [
+   "creature_text 17242 (tablet: Sriss'tiz ordered his naga to take the rest of the island by force, reinforcements from Nazjatar)",
+   "quest 9515 description and reward text",
+   "warcraft.wiki.gg/wiki/Wrathscale_Point (Sriss'tiz executed at Tides' Hollow)"
+  ],
+  "notes": "Verified. Faction 0: template 74 is hostile to all players, single permanent spawn; ACCEPT 9515 is Alliance only but KILL is open to both. Tides' Hollow per wiki and spawn position."
+ },
+ {
+  "id": 352428,
+  "kind": 3,
+  "zone": 3524,
+  "sort": 1,
+  "faction": 1,
+  "title": "Survivors of the Crash",
+  "body": "Weeks after the Exodar fell, the last draenei lying in suspension in Ammen Vale began to wake to a ruined world. Proenitus, unsure why the ship had crashed, knew only that there was little time to save whoever could still be saved. The healing crystals were spent, and the only substitute at hand was the blood of the vale moths, an unhappy necessity for a people who shun needless killing. The vials went to the priest Zalduun, who sent the able out to find the injured by the red glow of crystal radiation and heal them with the gift of the naaru. Rescued survivors stagger up asking what became of the ship, then go to help the others. Meanwhile Botanist Taerix had the volatile creatures born near the fallen cores culled, studied the mutated lashers and brewed an agent to neutralize the crystal poisoning Silverline Lake. Travelers of the Alliance who reach the vale are pressed into the same work.",
+  "triggers": [
+   [
+    4,
+    9279
+   ],
+   [
+    4,
+    9369
+   ]
+  ],
+  "sources": [
+   "quests 9279, 9280, 9369, 9409, 9283 descriptions and reward texts",
+   "creature_text 16483 Draenei Survivor",
+   "quests 10302, 9293, 9294",
+   "quest 9369 AllowableRaces 77 (human, dwarf, night elf, gnome)"
+  ],
+  "notes": "Verified; Taerix asked others to cull the mutations (10302), reworded. Faction 1: 9279 draenei only, 9369 other Alliance races."
+ },
+ {
+  "id": 352429,
+  "kind": 3,
+  "zone": 3524,
+  "sort": 2,
+  "faction": 1,
+  "title": "The Blood Elves of Shadow Ridge",
+  "body": "Even as survivors gathered at the Crash Site, reports of strange activity on Shadow Ridge kept reaching Vindicator Aldar, and one of his scouts, Tolaan, never came back. He was found across Silverline Lake, gravely wounded and barely able to speak: blood elves had ambushed him. A whole party of their scouts held the ridge, determined that no draenei would leave the vale alive. Tolaan urged that their numbers be thinned, then that their leader, Surveyor Candress, be slain, in the hope that the rest would pull back and buy time for the repairs. Candress died refusing to be taken alive, and the orders she carried showed she had been sent to survey the islands in secret. Aldar could not understand how the sin'dorei had followed them so far, and promised to deal with whatever was left of them. Soon after, Technician Zhanaa's emitter came to life, and the survivors learned that their kin at Azure Watch were alive.",
+  "triggers": [
+   [
+    4,
+    9309
+   ],
+   [
+    4,
+    9798
+   ]
+  ],
+  "sources": [
+   "quests 9309, 10303, 9311 descriptions, reward and completion texts",
+   "creature_text 16522 Surveyor Candress",
+   "page_text 2906 (Blood Elf Plans)",
+   "quests 9798, 9312, 9313",
+   "creature_text 17268 and 16551 (Zhanaa and Dyvuun on the emitter)"
+  ],
+  "notes": "Verified. Faction 1: both quests Alliance only."
+ },
+ {
+  "id": 352430,
+  "kind": 3,
+  "zone": 3524,
+  "sort": 3,
+  "faction": 1,
+  "title": "The Sleeping Priestess",
+  "body": "A night elf priestess was found unconscious beside the Crystalbrook and carried to Azure Watch, where Anchorite Fateema tried to save her with an ointment brewed from lasher vines. It was not enough. The alchemist Daedal turned instead to the azure snapdragon, a rare bloom some call a cure for every ill, which grows at the foot of the island's azure pines and is eaten by the root threshers. The remedy roused her, briefly. The priestess sat up, saw who stood around her and cried out against cursed eredar, warning that she had not come alone, before slipping back into her coma. To be taken for the man'ari stung the draenei deeply. Daedal remembered words of the Prophet: on this island their allies would find them, but they would be tested and asked to pay for the sins of their fathers. He sent a messenger south to find her people, and at Odesyus' Landing the admiral recognized her as one of his own crew.",
+  "triggers": [
+   [
+    4,
+    9463
+   ]
+  ],
+  "sources": [
+   "quests 9463, 9473, 9505 descriptions and reward texts",
+   "creature_text 17117 Injured Night Elf Priestess",
+   "creature_text 17214 (Man'ari, we are not eredar)",
+   "creature_text 17215 Daedal",
+   "quest 9505 reward text (Odesyus: one of our crew)"
+  ],
+  "notes": "Verified. Faction 1: 9463 is draenei only."
+ },
+ {
+  "id": 352431,
+  "kind": 3,
+  "zone": 3524,
+  "sort": 4,
+  "faction": 1,
+  "title": "The Traitor of Odesyus' Landing",
+  "body": "Admiral Odesyus first asked for help recovering the compass and charts that Venture Company goblins had stolen from his ships. Rolled inside the map were orders from Mogul Razdunk: strip-mine the island's crystal wreckage, then hijack the Alliance ships. The goblins knew too much, and the admiral concluded that someone in his own crew had sold him out. Trusting no one aboard, he had a disguise made from a hollowed-out tree and a pile of leaves, and sent an outsider to a cove in the west where a naga flag marked a secret meeting. Hidden in plain sight, the spy watched Geezle meet his contact: Spark Overgrind, envoy of Mekkatorque and servant of Kael'thas. Confronted on the beach, the gnome fought to the death. The letter he carried, from Kael'thas himself, told of an eredar agent, still unknown to the draenei, who had revealed the Exodar's location. The admiral sent it to Exarch Menelaous, who took the warning to Velen.",
+  "triggers": [
+   [
+    4,
+    9506
+   ]
+  ],
+  "sources": [
+   "quests 9506, 9530, 9531, 9537, 9602 descriptions and reward texts",
+   "creature_text 17243 and 17318 (the meeting)",
+   "page_text 2919-2920 (Traitor's Communication)",
+   "DB: naga flag object 181694 at Traitor's Cove (posarea 3579)"
+  ],
+  "notes": "Verified. Faction 1: all quests Alliance only."
+ },
+ {
+  "id": 352432,
+  "kind": 3,
+  "zone": 3524,
+  "sort": 5,
+  "faction": 1,
+  "title": "The Promised One",
+  "body": "At Azure Watch, Cryptographer Aurren found that the language of the Stillpine furbolgs was carved into their totems. Following the totems one by one, up a hill, across the Crystalbrook and down to the riverbed, a reader learns the tongue until it reads like their own, until the totems point the way to Bristlelimb Village, where the Bristlelimb keep Stillpine furbolgs in cages. The carvings told of a war between the tribes and a prophecy: a hero not of furbolg blood would rise to save the Stillpine. Freeing the captives marked the hero of that prophecy, and Arugoo sent the Promised One north to High Chief Stillpine. In the hold a blood red Exodar crystal was found poisoning the water, the Kurken was slain, and Chieftain Oomooroo of the maddened wildkin fell, letting the Stillpine raiders charge. With the hold saved, the chief warned the draenei that darkness waited for them too, for his people had seen the Exodar's power core in their visions.",
+  "triggers": [
+   [
+    4,
+    9538
+   ]
+  ],
+  "sources": [
+   "quests 9538, 9539, 9540, 9541, 9542, 9544, 9559, 9565, 9566, 9570, 9573, 9622 descriptions and reward texts",
+   "creature_text 17445 (Stillpine raiders, charge)"
+  ],
+  "notes": "Verified; 'the last totem points' fixed (Vark, the last, stands in the village) and the invented 'first sign' reworded. Faction 1."
+ },
+ {
+  "id": 352433,
+  "kind": 3,
+  "zone": 3524,
+  "sort": 6,
+  "faction": 1,
+  "title": "All That Remains",
+  "body": "In her fevered dreams, the injured night elf priestess at Azure Watch spoke of a fisherman in distress on Silvermyst Isle, and Dulvi asked someone to look into it. The fisherman was Cowlen. His family had lived peacefully among the island's owlbeasts for years, until the beasts stormed the beach with murlocs beside them. Cowlen fought until he was beaten senseless, and woke to blood on the sand, his home razed and his ship sunk. Broken, he begged the stranger who found him to end his life. He wanted no vengeance, only his family's remains for a proper burial. Yet his daughter Magwin had escaped. Lost for weeks and sure that both her parents were dead, she was led home through the thicket, and the two were reunited on the shore. Weeping for joy, Cowlen gave her rescuer a night elf heirloom, a token of friendship, trust and love, and named that stranger family until the end of time.",
+  "triggers": [
+   [
+    4,
+    10428
+   ],
+   [
+    4,
+    9528
+   ]
+  ],
+  "sources": [
+   "quests 10428, 9527, 9528 descriptions, reward and completion texts",
+   "npc_text of Cowlen 17311 (broken man, take my life)",
+   "creature_text 17312 Magwin and 17311 Cowlen",
+   "warcraft.wiki.gg/wiki/Cowlen"
+  ],
+  "notes": "Verified. Faction 1: both quests Alliance only."
+ },
+ {
+  "id": 352434,
+  "kind": 3,
+  "zone": 3524,
+  "sort": 7,
+  "faction": 1,
+  "title": "The Draenei Call of Fire",
+  "body": "When a young draenei shaman is ready to learn the ways of flame, Tuluun of Azure Watch sends them to Emberglade to face Temper, a fire elemental of great power. Temper has a trouble of his own. The crash of the Exodar drove one of his brethren, Hauteur, insane, and the fallen elemental now demands that the owlbeasts of Silvermyst Isle worship him, something no true elemental would ever do. First the shaman must win back a ritual torch from the crazed wildkin in Stillpine Hold, a flame that never goes out, the mark of Hauteur's arrogance. With it the shaman lights Hauteur's effigy at Moonwing Den, and when he answers, destroys him and gathers his ashes. Death is no ending for fire: Hauteur is reborn, burning brighter than before, and part of his ashes goes into the shaman's totem. Yet before it can be made, word comes that the Prophet himself has asked to see the young shaman.",
+  "triggers": [
+   [
+    4,
+    9464
+   ],
+   [
+    4,
+    9462
+   ]
+  ],
+  "sources": [
+   "quests 9462, 9464, 9465, 9467, 9468 descriptions and reward texts",
+   "quest 9461 (Velen asks for the shaman)",
+   "creature_text 17220 Hauteur Reborn"
+  ],
+  "notes": "Verified. Retitled from 'Call of Fire' to keep it apart from the orc and troll Call of Fire chain (2983, 1524, 1527) reserved for the Barrens. 9462 is a real entry point (Sulaa in the Exodar, Farseer Javad in Ironforge, turned in to Tuluun) and is kept; 9461 (from Tuluun, turned in to Velen) stays free. Faction 1: both quests Alliance only."
+ }
+]

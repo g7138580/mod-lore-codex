@@ -2,7 +2,7 @@
 
 An AzerothCore (WotLK 3.3.5a) module that adds a codex of Azeroth's lore which fills in as you play. Walking into a zone or a notable place, talking to someone, defeating someone, or taking and finishing quests unlocks entries. The included `LoreCodex` addon shows a toast for each discovery and a codex window to read them.
 
-> **Work in progress.** The Eastern Kingdoms are covered (30 zones, over 800 entries). Kalimdor, Outland and Northrend are still to come.
+> **Work in progress.** The Eastern Kingdoms and Kalimdor are covered (54 zones, about 1,600 entries). Outland and Northrend are still to come.
 
 ## Features
 

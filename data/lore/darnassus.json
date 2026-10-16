@@ -1,0 +1,551 @@
+[
+ {
+  "id": 165700,
+  "kind": 0,
+  "zone": 1657,
+  "sort": 0,
+  "faction": 0,
+  "title": "Darnassus",
+  "body": "Darnassus is the capital of the night elves, raised in the high boughs of the World Tree Teldrassil off the northern coast of Kalimdor. After the Battle of Mount Hyjal cost the kaldorei their immortality, druids led by Fandral Staghelm grew the tree, and the city took root in its branches as a monument to their people's survival. Unlike the stone cities of men and dwarves, it lies open to the sky. Its halls stand far apart among groves and leafy paths, and a quiet lake at its heart is crossed by graceful bridges. Ancients and Sentinels keep watch, and a portal in the west carries travelers down to Rut'theran Village. High Priestess Tyrande Whisperwind rules from the Temple of the Moon, while Arch Druid Fandral Staghelm leads the druids from the Cenarion Enclave, and the two do not always agree. Malfurion Stormrage has never returned from the Emerald Dream, the tree's growth remains flawed, and a quarrel simmers between Darnassus and the druids of Moonglade.",
+  "triggers": [
+   [
+    1,
+    1657
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Darnassus (founding after the Third War, open to the sky, buildings set apart, central lake and bridges, portal from Rut'theran)",
+   "quest 933 reward text (Malfurion never returned; Fandral convinced the Circle of Ancients)",
+   "quest 935 description (dragons withheld blessing)",
+   "npc_text 3018 (portal in the western section)",
+   "quest 6761 and 6762 (tension with Moonglade)",
+   "quest 8734 description (Malfurion in the Dream)",
+   "DB spawns: Ancient Protector 2041, Ancient of War 3469, Ancient of Lore 3468, Darnassus Sentinel 4262",
+   "warcraft.wiki.gg/wiki/Tyrande_Whisperwind (clashes with Fandral; sole leader of Darnassus with Malfurion gone)"
+  ],
+  "notes": "verified. Off the northern coast follows the Teldrassil entry (northwest of Darkshore). Cataclysm material (Howling Oak, worgen, Malfurion's return) left out."
+ },
+ {
+  "id": 165701,
+  "kind": 1,
+  "zone": 1657,
+  "sort": 1,
+  "faction": 0,
+  "title": "Cenarion Enclave",
+  "body": "In the northern reaches of Darnassus lies the Cenarion Enclave, home of the city's druids. Arch Druid Fandral Staghelm holds court in the great tree at its heart, and his second, Mathrengyl Bearwalker, trains young druids on the level below and answers the callers the Arch Druid would rather not see. Hunters learn their craft here from Jocaste and Dorion, while in a quieter corner the rogue trainers Syurna and Erion Shadewhisper keep to the shadows. Lelanai tends the nightsabers the Sentinel army has long relied upon, offering them only to proven friends of Darnassus. Behind the Arch Druid's tree, Jenal the ditch digger guards heaps of Un'Goro soil, and Rellian Greenspyre walks the pathways deep in thought.",
+  "triggers": [
+   [
+    1,
+    1658
+   ]
+  ],
+  "sources": [
+   "zone_areas: Fandral 3516, Mathrengyl 4217, Jocaste 4146, Dorion 4205, Syurna 4163, Erion 4214, Lelanai 4730, Jenal 9047, Rellian 3517 all in area 1658",
+   "npc_text 3024 (druids in the northern section)",
+   "quest 3781 description (Mathrengyl downstairs)",
+   "quest 6761 description (Mathrengyl as his second)",
+   "npc_text 3942, 5844 (Lelanai: nightsabers, Sentinel army, exalted only)",
+   "quest 3764 description (Jenal behind this tree, piles of dirt)",
+   "quest 922 description (Rellian walks the pathways)"
+  ],
+  "notes": "verified. Area 1658 reachable. 'Deep in thought' is color only."
+ },
+ {
+  "id": 165702,
+  "kind": 1,
+  "zone": 1657,
+  "sort": 2,
+  "faction": 0,
+  "title": "Craftsmen's Terrace",
+  "body": "The Craftsmen's Terrace, in the northeast of Darnassus, gathers the city's artisans: alchemists, enchanters, tailors, leatherworkers, skinners, scribes and cooks, heirs to a millennium of knowledge. Young adventurers keep them busy with constant orders for supplies. Innkeeper Saelienne bids the weary rest beneath her roof and let Elune guide their dreams, and Lysheana charters new guilds. Envoys of the Argent Dawn keep a post here, gathering word of the Twilight's Hammer and the naga who have joined forces in Blackfathom Deeps, once a night elf temple with a powerful moonwell. A small library holds histories of the War of the Ancients, the World Tree and the Emerald Dream, and the Old Gods.",
+  "triggers": [
+   [
+    1,
+    1659
+   ]
+  ],
+  "sources": [
+   "zone_areas area 1659: profession trainers, Innkeeper Saelienne 6735, Lysheana 4161, Dawnwatcher Shaedlass 4786, Argent Guard Manados 4784, Ancient of Lore 3468, books 175727, 175730, 175725",
+   "npc_text 3019, 3040 (northeastern section)",
+   "npc_text 3034 (millennium of knowledge)",
+   "quest 1582 description (craftsmen busy supplying young adventurers)",
+   "npc_text 824 (Saelienne)",
+   "quest 1198 and 1199 descriptions and request text (Twilight's Hammer and naga, BFD a night elf temple with a powerful moonwell)"
+  ],
+  "notes": "verified. Area 1659 reachable. The Argent Dawn BFD quests (1198-1200) belong to Ashenvale and are not used as triggers."
+ },
+ {
+  "id": 165703,
+  "kind": 1,
+  "zone": 1657,
+  "sort": 3,
+  "faction": 0,
+  "title": "Warrior's Terrace",
+  "body": "The Warrior's Terrace spreads inside the city's gate, where an Ancient of War stands guard and Sentinels keep watch beside the training dummies. Arias'ta and Darnath Bladesinger teach the warrior's art, and Elanaria tests the most promising before taking them as pupils. The smith Mathiel works elunite, a metal blessed by Elune herself, and Ilyenia Moonfire teaches the bow, the staff and other weapons. Thyn'tel Bladeweaver, a commander of the Sentinels, keeps her post here. Battlemasters gather volunteers for Warsong Gulch, Arathi Basin, Alterac Valley, the Eye of the Storm, the Strand of the Ancients and the Isle of Conquest, and a battle mage sends others north to the struggle for Wintergrasp in Northrend.",
+  "triggers": [
+   [
+    1,
+    1660
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Darnassus (Warrior's Terrace includes the city gate, forge, training dummies)",
+   "zone_areas area 1660: Ancient of War 3469, training dummies, Arias'ta 4087, Darnath 7315, Elanaria 4088, Mathiel 6142, Ilyenia Moonfire 11866, Thyn'tel 8026, battlemasters, Arcanist Dulial 35599",
+   "quest 1692 reward text (elunite blessed by Elune)",
+   "npc_text 10748, 10757 (Ilyenia teaches bows, staves, more)",
+   "quest 1037 description (Thyn'tel a commander of the Sentinels)"
+  ],
+  "notes": "verified. Ancient of War 3469 spawn at 9917,2227 near the gate. Area 1660 reachable."
+ },
+ {
+  "id": 165704,
+  "kind": 1,
+  "zone": 1657,
+  "sort": 4,
+  "faction": 0,
+  "title": "Tradesmen's Terrace",
+  "body": "South of the Warrior's Terrace lies the Tradesmen's Terrace, the market of Darnassus. Its auctioneers take bids from across the Alliance, and its merchants sell blades, bows, staves, robes, mail and much else, while Talaelar offers the catch of the lake. The fishermen of Teldrassil moved here when attacks made Lake Al'Ameth unsafe, and Astaia teaches the angler's craft by the water. Among these homes lives Treshala Fallowbrook, whose husband went far away into the Barrens. In a locked chest the Sentinels keep the belongings of the priestess Velinde Starsong, who vanished from her post in Ashenvale, and a copy of The Betrayer Ascendant, telling of Illidan's fall, waits for any reader.",
+  "triggers": [
+   [
+    1,
+    1662
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Darnassus (Tradesmen's Terrace south of Warrior's Terrace, auction house)",
+   "zone_areas area 1662: auctioneers, merchants 4171-4240, Talaelar 4221, Astaia 4156, Treshala 4521, Velinde's Locker 19877, book 175759",
+   "npc_text 4333 (fishermen moved to Darnassus after attacks around Lake Al'Ameth)",
+   "quest 1142 (Treshala)",
+   "quest 1037, 1038 (Velinde, chest of her things)"
+  ],
+  "notes": "Treshala line changed: she does not mourn until the pendant is brought, so she is now the wife of a man gone to the Barrens. Rest verified."
+ },
+ {
+  "id": 165705,
+  "kind": 1,
+  "zone": 1657,
+  "sort": 5,
+  "faction": 0,
+  "title": "The Temple Gardens",
+  "body": "West of the Warrior's Terrace, across a causeway, lie the Temple Gardens, where Sentinels stand watch along every path. Firodren Mooncaller teaches herbalism among the flower beds, and Herald Moonstalker cries the latest news from both continents, from calls to arms in the Plaguelands to the frontiers of Kalimdor. Chief Archaeologist Greywhisker of the Explorers' League keeps his post here, and a mage's portal opens onto the Blasted Lands and the road to Outland. Beyond the gardens to the west, a portal carries travelers down to Rut'theran Village. To the south a further causeway leads to the Temple of the Moon, the heart of the night elves' faith.",
+  "triggers": [
+   [
+    1,
+    1661
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Darnassus (Temple Gardens west over a causeway from Warrior's Terrace; Temple of the Moon south over a causeway)",
+   "zone_areas area 1661: Darnassus Sentinel 4262 x16, Firodren 4204, Chardryn 4216, Herald Moonstalker 10878, Greywhisker 2912, Portal to Blasted Lands 195141",
+   "npc_text 6957 (Herald: news from both continents)",
+   "quests 5091, 1047 (Herald's notices)",
+   "npc_text 3039 (herbalism in the Temple Gardens)",
+   "quest 6344 (portal west of the Temple Gardens)"
+  ],
+  "notes": "verified. The wiki places the bank in the Temple Gardens, but the bankers stand in plain zone 1657 by the map grid, so the bank goes in the zone entry's 'heart of the city' wording only. 'Road to Outland' inferred from the Blasted Lands portal (Dark Portal)."
+ },
+ {
+  "id": 165706,
+  "kind": 1,
+  "zone": 1657,
+  "sort": 6,
+  "faction": 1,
+  "title": "Temple of the Moon",
+  "body": "The Temple of the Moon is the seat of the Sisters of Elune and the true center of power in Darnassus. At its heart a statue rises from a moonwell, its holy waters said to purify and cleanse corruption, and even a Highborne exile admits that this pale echo of the Well of Eternity still holds the same purity. Tyrande Whisperwind keeps her quarters on the upper level. Priestesses such as Astarii Starseeker, Jandria and Alathea teach those who follow Elune, while the scholar Gracina Spiritmight studies the threats rising in the south. The temple welcomes allies too: draenei of the Exodar teach mages and paladins within its walls, and an envoy of the Highborne waits here for an audience.",
+  "triggers": [
+   [
+    2,
+    4090
+   ],
+   [
+    2,
+    4091
+   ]
+  ],
+  "sources": [
+   "WMOAreaTable: Temple of the Moon is WMO 1079 group 632 with AreaTable id 1657, so it has no reachable id of its own",
+   "warcraft.wiki.gg/wiki/Temple_of_the_Moon (seat of the Sisterhood of Elune, de facto capital building, statue in a moonwell, Tyrande's quarters)",
+   "quest 2520 description (central fountain's holy waters purify and cleanse)",
+   "creature_text 36479 group 9",
+   "DB spawns near Tyrande: Astarii 4090, Jandria 4091, Priestess Alathea 11401, Gracina 7740, Emissary Valustraa 17105 (mage trainer), Rukua 35281 (paladin trainer), Mordent Evenshade 36479",
+   "quest 4493 description (Gracina, silithid)"
+  ],
+  "notes": "verified. TALK 4090 (upper level beside Tyrande, z 1360) and 4091 (lower floor, z 1331) both stand inside the temple and have trainer gossip menus. Alathea 11401 is a night elf (wiki). Unlocked by TALK on the priest trainers Astarii Starseeker 4090 and Jandria 4091 (gossip menus 4574, 4573), both standing inside the temple. Faction 1: template 80, hostile to the Horde. The statue is left unnamed (Haidene is named only in the 2009 novel). Upper level for Tyrande from the wiki."
+ },
+ {
+  "id": 165707,
+  "kind": 2,
+  "zone": 1657,
+  "sort": 1,
+  "faction": 1,
+  "title": "Tyrande Whisperwind",
+  "body": "Tyrande Whisperwind, High Priestess of Elune, rules Darnassus from the Temple of the Moon. Ten thousand years ago she stood against Queen Azshara in the War of the Ancients, and through the long ages while the druids slept she led the Sentinels in guarding the forests. In the Third War she woke Malfurion from his long slumber, freed Illidan from his prison against Malfurion's wishes, and fought beside humans and orcs at Mount Hyjal against Archimonde. With Malfurion lost in the Emerald Dream, she leads her people alone and often clashes with Fandral Staghelm. She greets seasoned heroes warmly and asks them to share their tales with the young.",
+  "triggers": [
+   [
+    2,
+    7999
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Tyrande_Whisperwind (War of the Ancients, Long Vigil, Third War, freeing Illidan, Hyjal, clashes with Fandral, sole leader with Malfurion gone)",
+   "quest 2972 request and reward text (greeting, asks to share tales; Jer'kai her priestess)",
+   "quest 1081 description (Stonetalon Sentinels send heroes to her)",
+   "quest 8734 description (Malfurion in the Dream)",
+   "warcraft.wiki.gg/wiki/Tyrande_Whisperwind (woke Malfurion; Malfurion forbade freeing Illidan)"
+  ],
+  "notes": "Fixed: Tyrande woke Malfurion, who then roused the druids (wiki); she did not wake the druids herself. Rest verified. Faction 1: template 124; she ends 1081, 2972 so she can be talked to."
+ },
+ {
+  "id": 165708,
+  "kind": 2,
+  "zone": 1657,
+  "sort": 2,
+  "faction": 1,
+  "title": "Arch Druid Fandral Staghelm",
+  "body": "Fandral Staghelm is the Arch Druid of Darnassus. A thousand years ago he led the night elves against the Qiraji in Silithus, who named him Khar'sis, hand of the earth. There the Qiraji used his love for his son Valstann against him: the young warrior was lured into a trap at Southwind Village and executed by General Rajaxx before his father's eyes. When Malfurion vanished after Hyjal, Fandral took the lead of the druids and grew Teldrassil without the dragons' blessing. He bears its flaws as a yoke and fears his work will never be finished. Proud and short of patience, he scorns idle visitors and says it was he, not Moonglade, who led his people out of darkness.",
+  "triggers": [
+   [
+    2,
+    3516
+   ],
+   [
+    5,
+    935
+   ],
+   [
+    5,
+    940
+   ]
+  ],
+  "sources": [
+   "creature_text 15183 (Geologist Larksbane: Khar'sis, Valstann, Southwind, Rajaxx execution)",
+   "page_text 2794-2797 (father and son, Southwind fell, arrogance snuffed out)",
+   "warcraft.wiki.gg/wiki/Fandral_Staghelm (War of the Shifting Sands; archdruid after Malfurion; Teldrassil)",
+   "quest 933 reward text",
+   "quest 935 reward text (yoke)",
+   "quest 940 reward text (work never completed, immortality never restored)",
+   "npc_text 2285 (gossip)",
+   "quest 6761 description (led us out of the darkness, not Moonglade)",
+   "creature_text 15341 group 3 (Rajaxx: one thousand years of injustice)"
+  ],
+  "notes": "Verified. 'A thousand years ago' confirmed by General Rajaxx's own line in the 3.3.5 data. Faction 1: template 80. 935 and 940 are turn-ins only; Teldrassil's Crown of the Earth and Oracle's Messenger use 920, 921 and 937, and this entry does not retell them. Stormrage novel and Cataclysm material absent."
+ },
+ {
+  "id": 165709,
+  "kind": 2,
+  "zone": 1657,
+  "sort": 3,
+  "faction": 1,
+  "title": "Mathrengyl Bearwalker",
+  "body": "Mathrengyl Bearwalker is the Arch Druid's second and chief trainer of the druids in the Cenarion Enclave. He welcomes young druids as brothers and sisters and reminds them that they are the preservers of the balance, as Cenarius taught. When the call for help came from Moonglade, the Arch Druid handed it to him, and Mathrengyl apologized for the slight, admitting that mistrust runs thick between Darnassus and Keeper Remulos while Teldrassil's corruptions go on unabated. Yet he holds that duty to the Cenarion Circle remains. He hands out seeds for the Arch Druid's research and gathers what grows from them, though he confesses that simply standing near the morrowgrain makes him uneasy.",
+  "triggers": [
+   [
+    2,
+    4217
+   ]
+  ],
+  "sources": [
+   "npc_text 4786 (preservers of the balance as Cenarius taught)",
+   "quest 6761 description and reward text",
+   "quest 6762 description",
+   "quest 3781 reward text, 3785 description, 3803 reward text (uncomfortable near morrowgrain)",
+   "DB: Mathrengyl 4217 subname Druid Trainer, gossip menu 1403"
+  ],
+  "notes": "verified. Faction 1: template 80. 'Chief trainer' is general; he is one of three druid trainers. His morrowgrain quests are used as story context only (no triggers)."
+ },
+ {
+  "id": 165710,
+  "kind": 2,
+  "zone": 1657,
+  "sort": 4,
+  "faction": 1,
+  "title": "Gracina Spiritmight",
+  "body": "Gracina Spiritmight is a priestess of the Temple of the Moon, a scholar of creatures unique to Azeroth and an associate of Shandris Feathermoon's Protectorate. Reports of strange insects in Tanaris and Feralas come to her, and she knows them for what they are: the silithid, tools of one of the greatest threats both Horde and Alliance will ever face. She suspected their strength came from Un'Goro Crater, then came to fear a greater presence beyond it. She rails that the Alliance sees no enemy but the Horde, and that leaders in Darnassus cannot agree on the danger. Fandral Staghelm, she says, denies the silithid are the ancient threat she claims, and his ignorance is surpassed only by his arrogance.",
+  "triggers": [
+   [
+    2,
+    7740
+   ],
+   [
+    5,
+    4508
+   ]
+  ],
+  "sources": [
+   "quest 162 description and reward text",
+   "quest 4267 description, request and reward text (priestess, Protectorate, Shandris)",
+   "quest 4493 description",
+   "quest 4510 description (stronger presence elsewhere)",
+   "quest 4508 request and reward text (Alliance, Darnassus leaders, Fandral)"
+  ],
+  "notes": "'Traced' softened to 'suspected' (4493 is a theory). 4508 is QuestSortID 440 (Tanaris) but ends with Gracina in Darnassus; Tanaris must not reuse its turn-in. Rest verified."
+ },
+ {
+  "id": 165711,
+  "kind": 2,
+  "zone": 1657,
+  "sort": 5,
+  "faction": 1,
+  "title": "Rellian Greenspyre",
+  "body": "Rellian Greenspyre is a druid of Darnassus, more often found walking the pathways of the Cenarion Enclave than resting in its halls. He took an early interest in the herbalist Denalan's work at Lake Al'Ameth and had ideas of his own, hoping to raise a healthy timberling from a seed. What he discovered ended that hope, and since then he has spoken of the sickness as a poison that must be cleansed from the new land. His duties have grown grim, yet he has not abandoned his friend: the moment word came that Denalan had found what might be causing the timberlings' tumors, Rellian sent help to the lake without delay.",
+  "triggers": [
+   [
+    2,
+    3517
+   ],
+   [
+    5,
+    922
+   ]
+  ],
+  "sources": [
+   "quest 922 description and reward text",
+   "quest 923 description and reward text",
+   "quest 2498 description"
+  ],
+  "notes": "Reframed to avoid retelling Teldrassil's Tainted Timberlings (14128) and Denalan (14119): the taint passing to seeds, the Wellspring Lake culling and the 'only hope' line are left to them. Faction 1: template 80."
+ },
+ {
+  "id": 165712,
+  "kind": 2,
+  "zone": 1657,
+  "sort": 6,
+  "faction": 1,
+  "title": "Syurna",
+  "body": "Syurna trains rogues in the Cenarion Enclave and has little to say to anyone outside her craft; her order, she says, is darkness and shadows, eternal and invisible. Jannok Breezesong, who trains rogues in Dolanaar, is hopelessly lovestruck with her. His home is full of her portraits, and he showers her with flowers she never wanted. Had she kept every one, she remarks, she could have opened a shop. She finds his couriers more useful than his gifts, and the likeliest of them she puts to work on the quiet business of her order: learning what is sickening the forests of Teldrassil, and who among its strange dwellers might know.",
+  "triggers": [
+   [
+    2,
+    4163
+   ],
+   [
+    5,
+    2241
+   ]
+  ],
+  "sources": [
+   "npc_text 4793, 4794 (gossip)",
+   "quest 2241 description and reward text",
+   "quest 2242 description and reward text",
+   "DB: Jannok Breezesong 3599 spawn 9790,943 = area 186 Dolanaar"
+  ],
+  "notes": "Jannok 3599 stands in Dolanaar (186), not Shadowglen: fixed. 'No words for anyone else' softened (npc_text 4793 refuses non-rogues). Sethir detail cut to a general allusion since teldrassil.json 14125 tells it from 2242. Faction 1."
+ },
+ {
+  "id": 165713,
+  "kind": 2,
+  "zone": 1657,
+  "sort": 7,
+  "faction": 1,
+  "title": "Thyn'tel Bladeweaver",
+  "body": "Thyn'tel Bladeweaver is one of the commanders of the Sentinels, keeping her post on the Warrior's Terrace. She guards the belongings of Velinde Starsong, the priestess who held back the demons of Felwood from Ashenvale until her efforts faltered and she simply vanished. The Sentinels long believed Velinde had her own reasons for leaving and might return at any time, and even after reading the priestess's journal Thyn'tel would not believe she had come to a bad end. The truth, when it came, was bitter: Velinde had died far away in Duskwood, and the Scythe of Elune, a boon from the goddess, had passed out of her servants' hands, news that would grieve the high priestess, once Velinde's good friend.",
+  "triggers": [
+   [
+    2,
+    8026
+   ]
+  ],
+  "sources": [
+   "quest 1037 description and reward text",
+   "quest 1038 description and reward text",
+   "quest 1044 reward text"
+  ],
+  "notes": "verified. Faction 1: template 80. The Scythe of Elune chain (1022 onward) starts and ends in Ashenvale and Duskwood's quests; only the TALK trigger is used, leaving the quests to Ashenvale. Duskwood's 1028 already covers Velinde's death at Roland's Doom."
+ },
+ {
+  "id": 165714,
+  "kind": 2,
+  "zone": 1657,
+  "sort": 8,
+  "faction": 1,
+  "title": "Archmage Mordent Evenshade",
+  "body": "Archmage Mordent Evenshade is an envoy of the Highborne, the night elf sorcerers who have hidden for ages in the ruins of Eldre'Thalas and are now drawn out by a change on the wind. He has come to the Temple of the Moon to seek an accord with Tyrande Whisperwind, and he waits for his audience under the cold eye of Sentinel Stillbough, who reminds him that the kaldorei have not forgotten the War of the Ancients or the minds behind it. Mordent concedes that the lure of power is great and that mistakes were made. Still, he will not leave until he is heard, warning that the kaldorei may soon need the knowledge his people keep.",
+  "triggers": [
+   [
+    2,
+    36479
+   ],
+   [
+    5,
+    14409
+   ]
+  ],
+  "sources": [
+   "creature_text 36479 and 36481 (whole exchange)",
+   "npc_text 14984 (gossip: Highborne returning to light)",
+   "quest 14409 description and reward text (Daros Moonlance, ruins of Eldre'Thalas, change is coming)"
+  ],
+  "notes": "verified. Mordent 36479 is spawned in the temple by the moonwell with gossip 10807 (npc_text 14984: the Highborne are returning to light, not yet accepted); 14409 starts with Daros 36506 in Dalaran (template 80) and ends with Mordent. No readmission is claimed. Faction 1: Mordent and Daros 36506 (in Dalaran) both template 80, hostile to the Horde, though 14409 has AllowableRaces 0. Patch 3.3 content; the Highborne joining night elf society is Cataclysm and left out."
+ },
+ {
+  "id": 165715,
+  "kind": 2,
+  "zone": 1657,
+  "sort": 9,
+  "faction": 1,
+  "title": "Chief Archaeologist Greywhisker",
+  "body": "Chief Archaeologist Greywhisker represents the Explorers' League in Darnassus, keeping his post by the Temple Gardens. He is used to friends in the Alliance dismissing his work as a mere hobby, but he insists that recent finds in Khaz Modan prove a great and powerful force threatens all of Azeroth, from Lordaeron to Kalimdor. His own dig crew in Darkshore has given him cause to worry, falling silent for weeks. When a mysterious fossil from Prospector Remtravel reached him, Greywhisker recalled one like it, shown by an archaeologist named Flagongut at the League's annual conference in Ironforge, who believed it held a power that could somehow be unlocked.",
+  "triggers": [
+   [
+    2,
+    2912
+   ]
+  ],
+  "sources": [
+   "quest 730 description",
+   "quest 741 description and reward text",
+   "quest 942 description",
+   "zone_areas: Greywhisker 2912 in area 1661"
+  ],
+  "notes": "verified. Faction 1: template 55 (Ironforge), hostile to the Horde, although 730 has AllowableRaces 0. The Remtravel chain plays out in Darkshore and is left to it; no quest triggers used."
+ },
+ {
+  "id": 165716,
+  "kind": 2,
+  "zone": 1657,
+  "sort": 10,
+  "faction": 1,
+  "title": "Treshala Fallowbrook",
+  "body": "Treshala Fallowbrook keeps a quiet home on the Tradesmen's Terrace. Her husband, Heralath, went into the thorny warrens of Razorfen Kraul in the Barrens and never came back. Mortally wounded, he sent the dwarf Lonebrow to carry a warning to Falfindel, and with his last strength begged that Treshala's pendant of bonding, stolen by one of his attackers, be found and returned to her with word of his lonely death. Treshala cried out that it was not fair. Yet even as she sent the bearer away to mourn alone, she swore that Heralath's work would not die with him.",
+  "triggers": [
+   [
+    2,
+    4521
+   ],
+   [
+    5,
+    1142
+   ]
+  ],
+  "sources": [
+   "quest 1142 description and reward text",
+   "DB: Heralath Fallowbrook 4510 starts 1142; Treshala 4521 ends it, spawn in area 1662"
+  ],
+  "notes": "verified. Faction 1: template 80; 1142 AllowableRaces 1101. Razorfen Kraul is QuestSortID 1717 and belongs to the Barrens, so only the turn-in is used. Heralath's work is not specified in the text."
+ },
+ {
+  "id": 165717,
+  "kind": 3,
+  "zone": 1657,
+  "sort": 1,
+  "faction": 1,
+  "title": "The Arch Druid's Research",
+  "body": "Innkeepers in Darnassus, Stormwind, Ironforge and the Exodar pass on a quiet request: the Cenarion Circle in Darnassus needs seasoned helpers for a vital project, and none other than Fandral Staghelm is leading it. The Arch Druid explains it once and will not repeat himself, warning that those who think such errands beneath them will not win his favor. The soil of Un'Goro Crater is rumored to hold potent magic, and he means to separate fact from falsehood, twenty loads from each helper, unloaded behind his tree for Jenal the ditch digger, who mutters that conspirators would keep a visionary like him shackled to obscurity. Fed with that soil in evergreen pouches, costly Tharlendris seeds yield a scatter of herbs, and among them is morrowgrain, a mystery Fandral intends to unravel. Mathrengyl Bearwalker sells the seeds, takes in the harvest ten at a time and keeps petitioners away from him. He admits that standing near the herb makes him uneasy, and wonders how Fandral bears so much of it. To what end it is gathered, Fandral does not say.",
+  "triggers": [
+   [
+    4,
+    3763
+   ],
+   [
+    4,
+    3789
+   ],
+   [
+    4,
+    3790
+   ],
+   [
+    4,
+    10520
+   ],
+   [
+    4,
+    3764
+   ]
+  ],
+  "sources": [
+   "quests 3763, 3789, 3790, 10520 (innkeepers 6735, 6740, 5111, 16739)",
+   "quest 3763 reward text",
+   "quest 3764 description, request and reward text",
+   "npc_text 2313 (Jenal)",
+   "quest 3781 description and reward text",
+   "quest 3785 description and reward text",
+   "quest 3803 request and reward text",
+   "quest 3803 reward text (how the Arch Druid tolerates so much morrowgrain)"
+  ],
+  "notes": "Reworded to stand apart from thunder_bluff.json 163818 (Hamuul's Horde chain 3761, 3762, 936, 3784); this is the Alliance counterpart through Fandral, Jenal and Mathrengyl. Entry points confirmed: 3763, 3789, 3790, 10520 (Caregiver Breel, Exodar innkeeper) all reward into 3764, which Fandral gives. Faction 1: AllowableRaces 1101."
+ },
+ {
+  "id": 165718,
+  "kind": 3,
+  "zone": 1657,
+  "sort": 2,
+  "faction": 1,
+  "title": "The New Frontier",
+  "body": "Heralds in Darnassus, Stormwind and Ironforge cry a summons: the Cenarion Circle seeks honorable proxies to explore a forbidden wasteland far west of Tanaris, and all who would answer should see Fandral Staghelm. Those who do are met with scorn. The Arch Druid asks why the welfare of all Teldrassil should wait on the hunt for some bauble, and calls the druids of Moonglade fools who waste his time. He hands the matter to his second, Mathrengyl Bearwalker, with a warning offered as friendly advice: it was he, not the Circle in Moonglade, who led their people out of darkness when all was lost, and Teldrassil gives them new life. To believe otherwise is to swallow propaganda. Mathrengyl apologizes for the welcome. Mistrust runs thick between the Arch Druid and Keeper Remulos, he explains, each suspecting the other of trickery, but the Circle's work must go on. He sends the volunteers to Remulos' majordomo, Rabine Saturna, in Nighthaven, warning that the tensions may yet grow.",
+  "triggers": [
+   [
+    4,
+    1047
+   ],
+   [
+    4,
+    1015
+   ],
+   [
+    4,
+    1019
+   ],
+   [
+    4,
+    6761
+   ]
+  ],
+  "sources": [
+   "quests 1047, 1015, 1019 description and reward text (heralds 10878, 2198, 10877)",
+   "quest 6761 description and reward text",
+   "quest 6762 description and reward text"
+  ],
+  "notes": "verified. Entry points 1047 (Darnassus), 1015 (Stormwind), 1019 (Ironforge), and 6761 which Fandral also offers directly. Faction 1: AllowableRaces 1101. Rabine's welcome and the Silithus expedition (6762 on, 1124) belong to Moonglade and Silithus; 6762 is not used as a trigger."
+ },
+ {
+  "id": 165719,
+  "kind": 3,
+  "zone": 1657,
+  "sort": 3,
+  "faction": 1,
+  "title": "Lady Sathrah",
+  "body": "Sister Aquinne, a novice of the temple, seeks help for a once great creature of the forest, and sends those who answer to Priestess A'moora in the Temple of the Moon. A'moora tells of Lady Sathrah, a spider beloved of Elune. Graceful and pure, she spun silver threads through the moonlight to catch the evening mist, and the silvery dew she gathered had strong healing powers and was kept in the temple. But Sathrah has fallen into madness on the northern borders of Teldrassil near Wellspring Lake, and even her future young are threatened. The priestess regrets what she must ask: Sathrah is beyond hope, and her suffering must be ended. Her silvery spinnerets are brought back and laid at the temple's central fountain as an offering, so that its holy waters may cleanse the corruption that drove her mad, and Elune may let her be reborn in peace. The forest mourns her, A'moora says, but it had to be done.",
+  "triggers": [
+   [
+    4,
+    2519
+   ]
+  ],
+  "sources": [
+   "quest 2519 description",
+   "quest 2518 description, request and reward text",
+   "quest 2520 description and reward text",
+   "DB: Lady Sathrah 7319 spawns at 10980,1366 and 10994,1687 (northern Teldrassil)"
+  ],
+  "notes": "verified. 2519 is the entry (2518 requires it). Faction 1: AllowableRaces 1101. Teldrassil has no Sathrah entry."
+ },
+ {
+  "id": 165720,
+  "kind": 3,
+  "zone": 1657,
+  "sort": 4,
+  "faction": 1,
+  "title": "Elanaria's Trial",
+  "body": "When a young warrior of Teldrassil shows promise, their teachers send them on to Elanaria on the Warrior's Terrace. Before she will teach, she asks for proof of resolve. The satyr Vorlus Vilehoof has found a remote moonwell southeast of the Ban'ethil Barrow Den and splashes in its pure waters, and only his horn will satisfy her. The next lesson is the forging of a warrior's weapon. Long ago a ship broke on the rocks near the Auberdine lighthouse in Darkshore, scattering crates of elunite ore across the seabed, and its captain, the Shade of Elura, cursed herself to guard the cargo for all time. Her defeat grants her a long deserved peace. The ore goes in a case to the smith Mathiel, who counts it an honor to work a metal blessed by Elune, and from it he shapes weapons for the pupil. Later he asks seasoned warriors for wyvern shells from Thousand Needles to lacquer a new kind of mail.",
+  "triggers": [
+   [
+    4,
+    1684
+   ],
+   [
+    4,
+    1683
+   ]
+  ],
+  "sources": [
+   "quest 1684 description and reward text (starters Kyra Windblade 3598, Moon Priestess Amara 2151)",
+   "quest 1683 description and reward text",
+   "quest 1686 description and reward text",
+   "quest 1692 description and reward text",
+   "quest 1693 reward text",
+   "quests 1710, 1711"
+  ],
+  "notes": "'The trainers' changed to 'their teachers' (1684 is also given by Moon Priestess Amara). 1684 starts in Teldrassil but ends with Elanaria, and 1683, 1686, 1692, 1693 all run through Darnassus. Faction 1."
+ }
+]

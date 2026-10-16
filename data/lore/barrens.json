@@ -1,0 +1,1095 @@
+[
+ {
+  "id": 1700,
+  "kind": 0,
+  "zone": 17,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Barrens",
+  "body": "The Barrens is a vast savanna of red earth, yellow grass and thorny scrub in the heart of Kalimdor, stretching from the forests of Ashenvale in the north to the canyons of Thousand Needles in the south, with Durotar across the river to the east and Mulgore beyond the hills to the west. Long ago it was woodland tended by the night elves, until the Burning Legion, war and the Sundering left it scorched and dry. In recent years new oases have formed, fed by some power seeping up from below, and the life they bring is not wholly natural. The Horde holds the Crossroads where the great roads meet, the tauren keep Camp Taurajo, and orc posts watch the borders at Far Watch and Mor'shan. Kolkar centaurs, Razormane and Bristleback quilboar and Witchwing harpies all contest the land. Goblins run the free port of Ratchet while the Venture Company drills in the north, Theramore's soldiers hold Northwatch on the coast, dwarves dig at Bael Modan, and silithid swarm in the Field of Giants.",
+  "triggers": [
+   [
+    1,
+    17
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/The_Barrens (once forests tended by the night elves; Burning Legion, war and the Great Sundering turned it barren; Crossroads largest Horde town; Northwatch Hold, Bael'dun Keep, Ratchet)",
+   "quest 870 description (the Barrens once lush, scorched by war and cataclysm, new oases formed in the past few years)",
+   "quests 840, 842, 6541 (Far Watch Post, Crossroads, Mor'shan watch tower)",
+   "quests 850, 871, 878, 867 (Kolkar, Razormane, Bristleback, Witchwing)",
+   "quests 887, 2458, 891, 843, 868 (Ratchet, Venture Co., Northwatch, Bael Modan, Field of Giants)"
+  ],
+  "notes": "Oases no longer said to well up from caverns (quest 870 says only that new oases formed and a power leaks to the surface). Otherwise verified; no Cataclysm content."
+ },
+ {
+  "id": 1701,
+  "kind": 1,
+  "zone": 17,
+  "sort": 1,
+  "faction": 0,
+  "title": "Far Watch Post",
+  "body": "Far Watch Post is the orc garrison that guards the Barrens end of the bridge over the Southfury River, the first stop on the western road out of Razor Hill. Kargal Battlescar commands it, signing the letters of young conscripts sent over from Durotar and passing them on to the Crossroads, where, he grumbles, the real need lies. Two others keep company with him. Ak'Zeloth, assistant to the warlock Neeru Fireblade of Orgrimmar, keeps a table of flawed power stones close at hand, readied for a task on Dreadmist Peak, and just to the south the veteran Uzzek, a fighter of many battles, drills young warriors in the art of defense.",
+  "triggers": [
+   [
+    1,
+    379
+   ]
+  ],
+  "sources": [
+   "quest 840 description and objectives (western road from Razor Hill, over a bridge, orc outpost, Kargal Battlescar)",
+   "quest 842 description and reward text",
+   "quest 809 description (Far Watch Post on the border, Neeru's assistant Ak'Zeloth)",
+   "quest 924 description (power stones on the table); gameobjects 5619-5621 Flawed Power Stone(s) in area 379",
+   "quest 1505 description (Uzzek, veteran of many battles, south of Far Watch Post)",
+   "quest 1498 description and reward text"
+  ],
+  "notes": "Power stones tied to their real purpose (quest 924) instead of 'a task of his own'. Otherwise verified."
+ },
+ {
+  "id": 1702,
+  "kind": 1,
+  "zone": 17,
+  "sort": 2,
+  "faction": 0,
+  "title": "Dreadmist Peak",
+  "body": "Dreadmist Peak rises from the plains north of the Crossroads, and the safest way to its summit lies up the northern face. Cultists of the Burning Blade have made it their own. Bruisers and acolytes of the cult guard its slopes, and among them, seldom seen, walks Rathorian, a felguard demon. In a cave near the top, the Dreadmist Den, the Demon Seed rests above a demonic altar of fire: an object of power around which the cult rallies, and a tool of the Burning Legion itself. Not every tenant of the peak belongs to the cult. An undead mage, Sarilus Foulborne, keeps to the heights alone.",
+  "triggers": [
+   [
+    1,
+    384
+   ],
+   [
+    1,
+    2138
+   ]
+  ],
+  "sources": [
+   "quest 924 description (Demon Seed rests in a cave on Dreadmist Peak above a demonic altar of fire; safest climb on the northern face; directions)",
+   "quest 809 description (cult rallies around the Demon Seed)",
+   "DB area 384: Burning Blade Bruiser 3379 x21, Burning Blade Acolyte 3380 x15, Rathorian 3470 (rare), Sarilus Foulborne 3986, gameobjects 3524 The Demon Seed and 3525 The Altar of Fire",
+   "warcraft.wiki.gg/wiki/Dreadmist_Peak (Demon Seed in the Dreadmist Den; undead mage Sarilus Foulborne atop the peak)",
+   "DB positions: peak cultists average 401,-2183, north of the Crossroads at -482,-2670",
+   "DB creature_template 3470 Rathorian type 3 demon, rank 4",
+   "warcraft.wiki.gg/wiki/Rathorian (felguard demon atop Dreadmist Peak)"
+  ],
+  "notes": "Rathorian corrected: creature_template 3470 is type 3 (demon), faction 16, rank 4 (rare), not a cultist; wiki calls him a felguard. His leadership is left out (only the current wiki claims it)."
+ },
+ {
+  "id": 1703,
+  "kind": 1,
+  "zone": 17,
+  "sort": 3,
+  "faction": 0,
+  "title": "Grol'dom Farm",
+  "body": "Grol'dom Farm is a small orc homestead north of the Crossroads, on the road that leads toward the night elf forests. It is a family place. Karu cooks roasted plainstrider over the fire and wonders why the pigs were never fed, Trok runs in circles trying to escape a swarm of angry bees, and young Okla begs her father for leave to gather pretty stones for a necklace, with a sharp one saved for her friend Gruk's spear. Her father is Kranal Fiss, and he is more than a farmer. Young shamans of the Horde are sent to his door when they are ready to learn the ways of fire.",
+  "triggers": [
+   [
+    1,
+    1704
+   ]
+  ],
+  "sources": [
+   "creature_text 14872 (Trok and the bees), 14873 (Okla: rocks for a necklace, Papa; friend Gruk's spear), 14874 (Karu: roasted plainstrider, pigs), 5907 (Kranal: Yes you may, Okla)",
+   "quests 1522, 1523, 2983, 2984 (Kranal Fiss lives north of the Crossroads; too far and you reach the night elves' lands)",
+   "DB area 1704: Kranal Fiss 5907, Trok 14872, Okla 14873, Karu 14874, Swarm of bees 14894; Gruk 14850 nearby"
+  ],
+  "notes": "Okla is Kranal Fiss's young daughter per warcraft.wiki.gg/wiki/Okla and creature_text 14873/5907."
+ },
+ {
+  "id": 1704,
+  "kind": 1,
+  "zone": 17,
+  "sort": 4,
+  "faction": 0,
+  "title": "Thorn Hill",
+  "body": "Northeast of the Crossroads, where great thorny vines thrust up out of the earth, the Razormane quilboar have dug their dens. The thorns mark the quilboar wherever they settle, and from Thorn Hill the Razormane strike at the caravans that carry supplies along the road from Durotar, leaving stolen crates of the Crossroads' goods strewn through their camps. Water seekers, thornweavers, geomancers and defenders crowd the hill under the eye of Elder Mystic Razorsnout, and the raider Kreenig Snarlsnout leads the attacks. They have not spared the hermit smith on the hills nearby either: an iron chest stolen from his camp lies among their huts.",
+  "triggers": [
+   [
+    1,
+    1699
+   ]
+  ],
+  "sources": [
+   "quest 871 description (Razormane attacking supply lines from Durotar; dens marked by huge thorny vines)",
+   "quest 872 description (Kreenig Snarlsnout leading the raids)",
+   "quest 5041 description and gameobject 175708 Crossroads' Supply Crates x8 in area 1699",
+   "quest 1503 description (Razormanes stole Thun'grim's iron chest) and gameobject 58369 Stolen Iron Chest in area 1699",
+   "DB area 1699: Razormane Defender, Water Seeker, Geomancer, Thornweaver, Hunter, Mystic; Kreenig Snarlsnout 3438; Elder Mystic Razorsnout 3270"
+  ],
+  "notes": "Position: Thorn Hill spawns around -34..-214, -3300..-3380, northeast/east of the Crossroads (-482,-2670); called east."
+ },
+ {
+  "id": 1705,
+  "kind": 1,
+  "zone": 17,
+  "sort": 5,
+  "faction": 0,
+  "title": "The Crossroads",
+  "body": "The Crossroads is the largest Horde town in the Barrens, a walled outpost raised where the great roads of the Barrens cross. Thork leads its defenses in the Warchief's name, and the shaman Sergra Darkthorn sets newcomers to work. Raids on its caravans keep the garrison busy, and the town is full of tasks: Darsok Swiftdagger wants harpies dead, Gazrog wants back the guards' silver payroll, stolen by raptors of all things, and the troll Korran studies the strange insects of the south for his masters in Orgrimmar. The Forsaken apothecary Helbrim works among the tents, the druid Tonga Runetotem ponders the oases, and the grieving warrior Mankrik watches the horizon from dawn till dusk.",
+  "triggers": [
+   [
+    1,
+    380
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Crossroads (largest Horde town, named for the crossing of two major roads; Sergra Darkthorn leader, Thork leader of defenses)",
+   "npc_text 3559 (Thork leads the defenses in the name of the Warchief)",
+   "quest 842 (Sergra in charge)",
+   "quests 867, 869, 868 (Darsok, Gazrog payroll stolen by raptors, Korran for his masters in Orgrimmar)",
+   "quests 848, 870 (Helbrim, Tonga)",
+   "quest 899 description (Mankrik scours the horizon from sunrise till decline)",
+   "quest 871 (attacks on supply lines from Durotar)"
+  ],
+  "notes": "Road description generalised: quest 842 has the Durotar road meet the north road at a T north of the town, with the crossing of roads inside the Crossroads. Otherwise verified."
+ },
+ {
+  "id": 1706,
+  "kind": 1,
+  "zone": 17,
+  "sort": 6,
+  "faction": 0,
+  "title": "The Dry Hills",
+  "body": "The Dry Hills climb toward the mountains in the northwest of the Barrens, and they belong to the Witchwing harpies. The harpies are not native to these plains: they came down from Stonetalon, far to the northwest, and they have been ravaging the Horde's caravan supplies for a long time. Their flock keeps a strict order. Harpies and roguefeathers make up the lower ranks, windcallers and ambushers fly among them, and the slayers serve as lieutenants, each marked by a ring she carries. Above them all is Serena Bloodfeather, whose raids are revenge for a sister slain by Rexxar, and a harpy called Sister Rathtalon is sometimes seen hunting the hills.",
+  "triggers": [
+   [
+    1,
+    383
+   ]
+  ],
+  "sources": [
+   "quest 867 description (harpies ravaging caravan supplies; Witchwing harpies and roguefeathers in the northwest)",
+   "quest 875 description (only Witchwing Slayers are lieutenants, known by their rings; the harpies' matriarchy)",
+   "quest 876 description (Serena, sister of Bloodfeather slain by Rexxar; attacks are revenge)",
+   "quest 1060 description (harpies come from Stonetalon, far to the northwest)",
+   "DB area 383: Witchwing Slayer, Harpy, Windcaller, Roguefeather, Ambusher, Serena Bloodfeather 3452, Sister Rathtalon 5830 (rare)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 1707,
+  "kind": 1,
+  "zone": 17,
+  "sort": 7,
+  "faction": 0,
+  "title": "The Forgotten Pools",
+  "body": "Northwest of the Crossroads lie the Forgotten Pools, one of the oases that have formed in the Barrens in recent years. Deep beneath their waters is a fissure in the earth, gases bubbling up from it, and the druid Tonga Runetotem believes it may be the very source of the life now stirring in this dry land. That life has its oddities. Laden mushrooms grow by the water, their spores prized by the apothecaries of the Forsaken, and strange deviate fish swim in the pools. Kolkar centaurs, wranglers and stormers, keep camp along the banks, and the Kolkar leader Barak Kodobane has made his camp near the pools.",
+  "triggers": [
+   [
+    1,
+    386
+   ]
+  ],
+  "sources": [
+   "quest 870 description and reward text (Forgotten Pools northwest of the Crossroads; new oases formed within the past few years; fissure with gases bubbling)",
+   "quest 848 description (mushroom near the oases whose spores the apothecaries of Lordaeron find useful)",
+   "quest 850 description (Barak Kodobane camps near the Forgotten Pools)",
+   "DB area 386: Kolkar Wrangler 3272 x14, Kolkar Stormer 3273 x13, gameobject 3640 Laden Mushroom x6, 180658 School of Deviate Fish"
+  ],
+  "notes": "Verified. Barak 3394 spawns at 23.5,-1714.6 in area 17, about 140 yards north of the Forgotten Pools (386); 'near the pools' as quest 850 says."
+ },
+ {
+  "id": 1708,
+  "kind": 1,
+  "zone": 17,
+  "sort": 8,
+  "faction": 0,
+  "title": "The Mor'shan Rampart",
+  "body": "In the far north of the Barrens, where the grass gives way to the forests of Ashenvale, the Horde has raised the Mor'shan Rampart, a fortified wall and watch tower to hold the border against the night elves. Barrens guards keep the gate. Kadrak commands from the tower and leads the Horde's campaign in Ashenvale, sending fresh recruits on to the new outposts at Splintertree and the Zoram Strand and runners with fresh orders to his Warsong scouts. He will not suffer Alliance messengers to cross Horde ground. Just to the south, the goblin tinkerer Wenikee Boltbucket keeps a camp, ready to take apart any machine that catches her eye.",
+  "triggers": [
+   [
+    1,
+    1703
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Mor'shan_Rampart (built to withstand Alliance pushes from Ashenvale; Kadrak former leader)",
+   "quests 6541 and 6542 description and reward text (Kadrak at the watch tower in northern Barrens heads the Ashenvale campaign; Zoram Strand and Splintertree)",
+   "quest 6543 description (Warsong scouts, runner, outrider)",
+   "quest 3514 description and reward text (no Alliance runners through Horde territory)",
+   "quest 3921 description (Wenikee Boltbucket just south of Mor'shan Rampart; clever and inquisitive)",
+   "DB area 1703: Barrens Guard 8016 x8, Kadrak 8582"
+  ],
+  "notes": "Runner clause fixed per quest 6543 (Kadrak sends a runner to carry orders to his scouts). Otherwise verified; Wenikee faction 69 Ratchet."
+ },
+ {
+  "id": 1709,
+  "kind": 1,
+  "zone": 17,
+  "sort": 9,
+  "faction": 0,
+  "title": "The Sludge Fen",
+  "body": "The Sludge Fen is a fouled stretch of the northern Barrens where the Venture Company works its derricks. Drudgers and mercenaries swarm the site under Supervisor Lugwizzle, shredders lumber about, and tool buckets lie everywhere, stocked with the company's nugget slugs. The rivals of Ratchet watch it closely: one goblin spy climbed into a stolen shredder here only to find he had no key. North of the fen stands a Venture Co. tower, southwest of it a small research site guards a device called the samophlange, and to the northeast the company's Boulder Lode Mine is worked by overseers and enforcers, where a miner is rumored to have dug up an emerald the size of a fist.",
+  "triggers": [
+   [
+    1,
+    382
+   ],
+   [
+    1,
+    381
+   ]
+  ],
+  "sources": [
+   "quest 858 description and reward text (Wizzlecrank: shredder, control room at the top of the derrick)",
+   "quest 863 (escort the stolen shredder to Sputtervalve in Ratchet)",
+   "quest 3922 description (nugget slugs in Venture Company tool buckets at the Sludge Fen)",
+   "quest 2458 description (Venture Co. tower north of the Sludge Fen)",
+   "quest 894 description (research facility southwest of the Sludge Fen, samophlange)",
+   "quest 896 description (Boulder Lode mine northeast of the Sludge Fen; emerald the size of your fist)",
+   "DB area 382: Venture Co. Drudger x45, Mercenary x15, Supervisor Lugwizzle 3445, Wizzlecrank's Shredder 3439, Tool Bucket 161752 x11; area 381: Venture Co. Enforcer x22, Overseer x14"
+  ],
+  "notes": "Boulder Lode Mine (381) is folded in here to keep the place count near 20. 'Fouled' is descriptive of the name; no source says the fen is polluted by the company."
+ },
+ {
+  "id": 1710,
+  "kind": 1,
+  "zone": 17,
+  "sort": 10,
+  "faction": 0,
+  "title": "Ratchet",
+  "body": "Ratchet is the goblin port on the eastern coast of the Barrens, founded by Gazlowe with the pay Thrall gave him for building Orgrimmar. It is a town of the Steamwheedle Cartel and open to all who trade in peace, and the boat Maiden's Fancy carries its cargo and passengers across the sea to Booty Bay. Everyone here has a scheme. Wharfmaster Dizzywig keeps the ledgers of every crate, Sputtervalve of the Tinkers' Union runs a shredder program, Mebok Mizzyrix brews smart drinks, Brewmaster Drohn keeps the old recipes of Chen Stormstout, and the high elf Captain Thalo'thas Brightsun leads the Thalo'dan Privateers. A small coven of warlocks makes its home here too.",
+  "triggers": [
+   [
+    1,
+    392
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Ratchet (founded by Gazlowe after Thrall paid him for Orgrimmar; Steamwheedle Cartel neutral haven; Maiden's Fancy to Booty Bay; warlock coven Strahad Farsan, Menara Voidrender, Babagaya Shadowcleft)",
+   "DB transports entry 7 (Booty Bay and Ratchet, The Maiden's Fancy)",
+   "quests 890, 896 (Dizzywig)",
+   "npc_text 519 (Sputtervalve in charge of the Union's shredder development program)",
+   "quest 865 (Mebok's smart drinks)",
+   "quests 819, 821 (Drohn, Chen Stormstout's keg and recipe)",
+   "quest 898 reward text (Thalo'dan Privateers)",
+   "warcraft.wiki.gg/wiki/Thalo'thas_Brightsun (high elf, heads the Thalo'dan Privateers)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 1711,
+  "kind": 1,
+  "zone": 17,
+  "sort": 11,
+  "faction": 0,
+  "title": "The Tidus Stair",
+  "body": "Along the shore south of Ratchet, beyond the mouth of the Southfury, the tauren shaman Islen Waterseer keeps a fishing hut. She is a teacher of water. Young shamans of the Horde are sent to her when their spirits are warmed by fire, and even outsiders come seeking her friendship with the spirits of water: a corrupted moon well's water was once carried to her from Felwood, and she asked the spirits themselves whether the cause was just. Beside her camps Mahren Skyseer, sister of Jorn of Camp Taurajo, who hunts the great beasts of the sea along this coast and takes on any hunter her brother has judged worthy.",
+  "triggers": [
+   [
+    1,
+    401
+   ]
+  ],
+  "sources": [
+   "quests 1528, 1529, 2985 (Islen along the coast south of the Southfury River and Ratchet, at her fishing hut; for shamans warmed by fire)",
+   "quest 5158 description and reward text, creature_text 5901 (Felwood moon well water; Islen asks the spirits)",
+   "quest 874 description and reward text (Mahren, Jorn's sister, hunts the great water beasts along the coast)",
+   "DB area 401: Islen Waterseer 5901, Mahren Skyseer 3388",
+   "warcraft.wiki.gg/wiki/Gazlowe (Ratchet at the mouth of the Southfury River)"
+  ],
+  "notes": "The 'any path' teaching belongs to Jorn (quest 874), replaced with Mahren's own words (874 reward: if you earned Jorn's respect, you have mine). Hut placed beyond the river mouth (1529: south of the Southfury River and Ratchet; Ratchet sits at the mouth per wiki). Otherwise verified."
+ },
+ {
+  "id": 1712,
+  "kind": 1,
+  "zone": 17,
+  "sort": 12,
+  "faction": 0,
+  "title": "The Merchant Coast",
+  "body": "South of Ratchet the shore runs on as the Merchant Coast, and the trade it was named for now has to sail past pirates. The Southsea Freebooters have set up a camp here, almost on Gazlowe's doorstep, and their brigands and cannoneers guard strongboxes full of plunder taken from goblin ships: crates of boots from Booty Bay, a lens for Gazlowe's observatory and other stolen goods lie among their tents. Their captain, Baron Longshore of Gilneas, commands the ship called the Heedless and has a price on his head. Their ship, the Tide Razor, lies along this coast too, with a den aboard where they train their thieves, and makrura and sand sharks haunt the shallows.",
+  "triggers": [
+   [
+    1,
+    391
+   ]
+  ],
+  "sources": [
+   "quest 887 description (Southsea Freebooters camp just south of Ratchet)",
+   "quest 888 description (lens and boots from Drizzlik never arrived) and gameobjects 3767 Drizzlik's Emporium, 3768 Fragile - Do Not Drop in area 391",
+   "quest 895 description (Baron Longshore of Gilneas, captain of the Heedless, wanted for piracy)",
+   "quest 2381 description (Tide Razor, pirate's den where they train thieves, south along the coast)",
+   "DB area 391: Southsea Brigand x24, Cannoneer x19, Baron Longshore 3467, Slimeshell Makrura, Sand Shark, Buccaneer's Strongbox x10",
+   "DB gameobject 123462 The Jewel of the Southsea, posarea 391"
+  ],
+  "notes": "Tide Razor confirmed: its treasure object, gameobject 123462 The Jewel of the Southsea, stands at -1457.6,-3958.5 on the water, area 391. Otherwise verified."
+ },
+ {
+  "id": 1713,
+  "kind": 1,
+  "zone": 17,
+  "sort": 13,
+  "faction": 0,
+  "title": "Fray Island",
+  "body": "Fray Island lies off the Merchant Coast, reached by wading the sand bar shallows, and it is a place where warriors meet to fight one another. Its chief warrior is the human Klannoc Macleod, called the Islander, who welcomes rising fighters of any people. Those who want his teaching must first pass the Affray. At its heart the challenger steps onto a grate before a crowd of cheering spectators, and the goblin announcer Twiggy Flathead calls out challenger after challenger, until at last he sends in Big Will. Only one who beats them all in the time allowed earns Klannoc's respect, and with it the berserker's way.",
+  "triggers": [
+   [
+    1,
+    720
+   ]
+  ],
+  "sources": [
+   "quest 1718 description (Fray Island south of Ratchet, where warriors meet and fight; sand bar shallows along the Merchant Coast; Klannoc chief warrior)",
+   "quest 1719 description and reward text (the Affray, grate, Twiggy Flathead, Big Will, time allowed)",
+   "quest 1791 description (berserker stance learned)",
+   "creature_text 6248 (Twiggy announces the Affray)",
+   "warcraft.wiki.gg/wiki/Fray_Island (Klannoc Macleod human, Twiggy Flathead goblin; training place for warriors of all races)",
+   "DB: creature 6236 subname The Islander; Affray Spectator 6249 x14 in area 720"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 1714,
+  "kind": 1,
+  "zone": 17,
+  "sort": 14,
+  "faction": 0,
+  "title": "Northwatch Hold",
+  "body": "Northwatch Hold is a human fortress on the coast south of Ratchet, built by survivors of the Alliance expedition and held now by marines and preservers of Theramore, blocking the coastal road toward Dustwallow Marsh. Captain Fairmount commands it with her cannoneers Whessan and Smythe, and their guns have sunk so many ships that Captain Brightsun of Ratchet calls them overzealous, trigger happy louts. They hold at least one prisoner: Gilthares Firebough, a deckhand on a moonshine run who was branded a threat to the Alliance. The waters offshore belong to Isha Awak, the Deep Doom, a sea beast the humans on this coast have every reason to fear.",
+  "triggers": [
+   [
+    1,
+    385
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Northwatch_Hold (built by Alliance survivors of the Human Expedition; Theramore forces; blocks coastal approaches to Dustwallow; Captain Fairmount leader; Gilthares prisoner)",
+   "quest 891 description (overzealous humans at Northwatch Hold, Captain Fairmount and her cannoneers)",
+   "quest 898 description (Gilthares, deckhand on a moonshine transport, called a threat to the Alliance)",
+   "quest 873 description (Isha Awak, the Deep Doom; the humans on the coast fear him)",
+   "DB area 385: Theramore Marine x63, Theramore Preserver x14, Captain Fairmount 3393, Cannoneer Whessan 3455, Cannoneer Smythe 3454, Gilthares 3465; Isha Awak 3476 spawn in area 385"
+  ],
+  "notes": "Brightsun's insult matched to quest 891 (the 'zealots' line is Gilthares'). Built by survivors of the Human Expedition per wiki. Verified, no Cataclysm content."
+ },
+ {
+  "id": 1715,
+  "kind": 1,
+  "zone": 17,
+  "sort": 15,
+  "faction": 0,
+  "title": "Lushwater Oasis",
+  "body": "Lushwater Oasis lies south of the Crossroads, one of the green pools that have sprung up across the plains, and beneath it opens the mouth of the Wailing Caverns. The druid Naralex went down into those caverns hoping to dream the Barrens green again, and his dream turned to nightmare. His few faithful disciples keep watch near the entrance, asking travelers to cull the deviate beasts that crawl from below. Above ground the oasis belongs to the Kolkar. Hezrul Bloodmark, leader of all the Kolkar centaurs in the Barrens, commands his people from here and berates them to look fierce, while snapjaw turtles altered by the water lurk at the shore.",
+  "triggers": [
+   [
+    1,
+    387
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Lushwater_Oasis (just south of the Crossroads; contains the entrance to the Wailing Caverns; Kolkar)",
+   "warcraft.wiki.gg/wiki/Wailing_Caverns (Naralex, Disciples of Naralex, nightmare)",
+   "quests 1486, 1487 (Nalpak and Ebru, Disciples of Naralex; deviate creatures; dream turned nightmare)",
+   "quest 852 description (Hezrul leader of the Kolkar in the Barrens, leads from the Lushwater Oasis)",
+   "creature_text 3396 (Look fierce! You are Kolkar)",
+   "quest 880 description (snapjaws at Lushwater and Stagnant Oases)",
+   "DB area 387: Kolkar Wrangler x19, Stormer x19, Hezrul 3396"
+  ],
+  "notes": "Snapjaws not listed in area 387 spawns (filtered as wildlife); quest 880 places them there."
+ },
+ {
+  "id": 1716,
+  "kind": 1,
+  "zone": 17,
+  "sort": 16,
+  "faction": 0,
+  "title": "The Stagnant Oasis",
+  "body": "Southeast of the Crossroads lies the Stagnant Oasis, its waters as still as its name. The Kolkar have pitched a command tent here, and bloodchargers, marauders and pack runners with their hounds guard it, alongside two notorious brutes, Brokespear and Rocklance. The dervish Verog wanders the plains from this camp, and when the centaurs are pressed hard enough they raise an alarm and he comes, calling challengers to his tent to die. Beneath the water lies another bubbling fissure: dead and dried seeds dropped into it sprang to life, a sign that whatever rises from below can make life from nothing. Sunscale raptors nest to the southwest.",
+  "triggers": [
+   [
+    1,
+    388
+   ]
+  ],
+  "sources": [
+   "quest 877 description and reward text (Stagnant Oasis southeast; fissure; dead seeds brought to life from nothing)",
+   "quest 851 description (centaur command tent at the Stagnant Oasis; Verog comes when the alarm is raised)",
+   "creature_text 3395 (I am summoned! Intruders, come to my tent and face your death)",
+   "quest 905 description (scytheclaw nests southwest of the Stagnant Oasis)",
+   "DB area 388: Kolkar Bloodcharger x8, Marauder x6, Pack Runner, Packhound, Brokespear 5838, Rocklance 5841, gameobject 3737 Bubbling Fissure"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 1717,
+  "kind": 1,
+  "zone": 17,
+  "sort": 17,
+  "faction": 0,
+  "title": "Camp Taurajo",
+  "body": "Camp Taurajo is the tauren outpost of the southern Barrens, standing on the road east from Mulgore where young tauren first come down from their homeland. Kirge Sternhorn senses a foul wind blowing from the east, and he sends the newly arrived north to the Crossroads, for the lives of the tauren and the orcs are now intertwined. The hunter Jorn Skyseer guides those who walk his path, Ruga Ragetotem sets warriors a trial among the silithid, and the orc smith Tatternack Steelforge studies the crude weapons of the quilboar for the Warchief. The camp's strangest resident is a prisoner: the caged Razormane Mangletooth, who has information to sell.",
+  "triggers": [
+   [
+    1,
+    378
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Camp_Taurajo (pre-Cataclysm tauren outpost near the pass to Mulgore; Jorn Skyseer, Mangletooth)",
+   "npc_text 15302 (Kirge: a foul wind blows from the East)",
+   "quest 854 description (Kirge sends tauren to the Crossroads; lives with the orcs intertwined); creature_text 3418",
+   "quests 3261, 882 (Jorn Skyseer)",
+   "quests 1823, 1824 (Ruga's trial at the Field of Giants)",
+   "quest 893 description, npc_text 3654 (Tatternack studies weapons for the Warchief)",
+   "quest 878 reward text, npc_text 3656 (Mangletooth caged)"
+  ],
+  "notes": "Foul wind attributed to Kirge alone (npc_text 15302 is his). Otherwise verified; pre-Cataclysm camp intact."
+ },
+ {
+  "id": 1718,
+  "kind": 1,
+  "zone": 17,
+  "sort": 18,
+  "faction": 0,
+  "title": "Agama'gor and Bramblescar",
+  "body": "North of Camp Taurajo, giant thorns burst from the earth at Agama'gor and Bramblescar, and here the Bristleback quilboar keep their camps. To the quilboar such thorns are holy, for they grew where the blood of their boar god Agamaggan fell, and the Bristlebacks dig blood red shards from the ground among them to carry as totems of strength and magic. Hunters and water seekers fill the camps, while thornweavers and geomancers gather at Bramblescar. The Bristlebacks are bitter rivals of the Razormane, and bitter enemies of the Horde: an orc grunt named Dogran was taken captive at Agama'gor after a raid on their huts went wrong.",
+  "triggers": [
+   [
+    1,
+    1700
+   ],
+   [
+    1,
+    1698
+   ]
+  ],
+  "sources": [
+   "npc_text 3658 (Agamaggan fell in the War of the Ancients; thorns grew where his blood touched the ground)",
+   "quest 5052 description and request text (blood red shards dug up by the Bristleback, carried as totems; thorny areas are holy places)",
+   "quest 878 description (Bristleback spiritual leaders to the north of Camp Taurajo; tribes at war)",
+   "quests 1510, 1515 (Dogran hurt leading grunts against a quilboar camp, held in a camp north of Taurajo); Grunt Dogran 5908 spawns in area 1700",
+   "DB area 1700: Bristleback Hunter x51, Water Seeker x22, Geomancer x16, Thornweaver x9; area 1698: Thornweaver x20, Geomancer x18, Water Seeker x10, Hunter x9"
+  ],
+  "notes": "Area 1700 also shows Venture Co. Worker spawns along the Mulgore border (Mulgore's mine); left out on purpose."
+ },
+ {
+  "id": 1719,
+  "kind": 1,
+  "zone": 17,
+  "sort": 19,
+  "faction": 0,
+  "title": "Field of Giants",
+  "body": "South of Camp Taurajo spreads the Field of Giants, where great mounds of earth rise from the grass and something has come that does not belong. Silithid have made their hives here: creepers, swarmers and grubs pour from the mounds, and a huge harvester stalks among them. The insects are new to the Barrens, and those who watch them are uneasy. They show more wit than any beast should, Korran of the Crossroads thinks, and his reports have reached Orgrimmar. Ruga Ragetotem dislikes what they herald, and Jorn Skyseer, holding the harvester's head, fears it may foretell a grim future for his people.",
+  "triggers": [
+   [
+    1,
+    390
+   ]
+  ],
+  "sources": [
+   "quest 868 description (insect creatures to the south in the Field of Giants; intelligence beyond any normal animal; eggs from mounds)",
+   "quest 1145 description (Korran sends word to Belgrom in Orgrimmar)",
+   "quest 1824 description (south of Camp Taurajo; insects new to the Barrens; Ruga dislikes what they herald)",
+   "quest 897 description and reward text (harvester outside the natural order; may herald a grim future)",
+   "DB area 390: Silithid Swarmer x28, Creeper x25, Grub x24, Silithid Mound x13, Silithid Harvester 3253 (rare)",
+   "warcraft.wiki.gg/wiki/Field_of_Giants (northernmost silithid hives)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 1720,
+  "kind": 1,
+  "zone": 17,
+  "sort": 20,
+  "faction": 0,
+  "title": "Blackthorn Ridge",
+  "body": "Blackthorn Ridge lies deep in the south of the Barrens, beyond the Field of Giants, and it is Razormane country. Seers, stalkers, pathfinders and warfrenzied warriors of the tribe crowd its thorny slopes, and their weapons are better made than anyone expected of quilboar. From here the Razormane Nak, Kuz and Lok Orcbane, a caster, a tracker and a warrior who came out of the Kraul, direct the raids that trouble the north, and a brute named Hagg Taurenbane prowls among them. Yet someone lives here by choice: the orc shaman Brine keeps a lonely hut on the ridge, beside a watering hole the quilboar guard like treasure.",
+  "triggers": [
+   [
+    1,
+    1701
+   ]
+  ],
+  "sources": [
+   "quest 893 description and reward text (Razormane to the south beyond the Field of Giants; stalkers, seers, warfrenzy; further along than expected)",
+   "quest 879 description (Nak, Kuz and Lok Orcbane, from the Kraul, far to the south; spell caster, tracker, warrior)",
+   "quests 1530, 1535 (Brine at Blackthorn Ridge, home molested by quilboar; watering hole below the hut; water sacred to the quilboar)",
+   "DB area 1701: Razormane Seer, Stalker, Warfrenzy, Pathfinder; Hagg Taurenbane 5859; Nak 3434, Kuz 3436, Lok Orcbane 3435, Brine 5899 by position"
+  ],
+  "notes": "Verified: Nak 3434, Kuz 3436, Lok Orcbane 3435, Hagg Taurenbane 5859 (Razormane Champion, rare) and Brine 5899 all stand in area 1701. Brine a female orc shaman per wiki and quests 1530, 1536."
+ },
+ {
+  "id": 1721,
+  "kind": 1,
+  "zone": 17,
+  "sort": 21,
+  "faction": 0,
+  "title": "Bael Modan",
+  "body": "South of the Field of Giants, the dwarves of Ironforge have torn open the earth at Bael Modan. Excavators and foremen blast deep holes into the ground with explosives and noisy machines, a flying machine stands over the dig, and the fortress of Bael'dun Keep, built to guard the site, now bristles with riflemen, soldiers and officers under General Twinbraid. The land was not empty. Tauren of the Stonespire tribe once lived here, and many were killed or driven off when the dwarves came. The dig's first great find, a gem called the Tear of the Moons, was locked away as cursed after it drove the dwarf Feegly mad.",
+  "triggers": [
+   [
+    1,
+    359
+   ],
+   [
+    1,
+    2157
+   ]
+  ],
+  "sources": [
+   "quest 843 description and request text (blasts and machines rip apart the hills; tauren lost their lives or were driven off)",
+   "quest 846 request text (the Keep built to defend the dig site, now poised for offensive force); quest 849 (flying machine)",
+   "quest 857 description (Tear of the Moons, first great discovery at Bael Modan; Twinbraid locked it in the Keep and called it cursed)",
+   "creature_text 3421",
+   "warcraft.wiki.gg/wiki/Bael_Modan (Bael'dun Keep beside the Stonespire tauren village; Twinbraid; Feegly driven mad)",
+   "DB area 359: Bael'dun Excavator, Soldier, Rifleman, Officer, Foreman; General Twinbraid 3414; Feegly 3421; gameobject 3644 Bael Modan Flying Machine"
+  ],
+  "notes": "Verified. Stonespire village beside Bael'dun Keep and Feegly driven insane by the Tear both per warcraft.wiki.gg/wiki/Bael_Modan. General Twinbraid 3414 stands in area 359. Mulgore's Bael'dun Digsite only points here."
+ },
+ {
+  "id": 1722,
+  "kind": 1,
+  "zone": 17,
+  "sort": 22,
+  "faction": 0,
+  "title": "The Razorfen",
+  "body": "In the far south of the Barrens, near the edge of the Thousand Needles, rise the Razorfen, the greatest of all the thorn clusters. The quilboar hold that they are the very body of Agamaggan, their boar god, who fell in the War of the Ancients, and that the entrance to the Razorfen Downs is his great maw, which swallows any who are disloyal to him. In Razorfen Kraul the crone Charlga Razorflank musters a foul army, and the tauren Auld Stonespire of Thunder Bluff wants her heart for driving his people from their holy land. At the Downs a night elf watcher has seen something worse: an undead diplomat granting undeath to quilboar who beg for power.",
+  "triggers": [
+   [
+    1,
+    1717
+   ],
+   [
+    1,
+    1316
+   ]
+  ],
+  "sources": [
+   "quest 5052 request text (Agamaggan's body makes up the entirety of the Razorfen, none as holy; the Downs' entrance is his great maw that swallows those not loyal)",
+   "npc_text 3658 (Agamaggan fell in the War of the Ancients)",
+   "quest 1102 description (Charlga Razorflank musters a foul army in Razorfen Kraul; Auld's people driven from the southern Barrens)",
+   "npc_text 5713, quest 6626 description (Myriam Moonsinger: undead diplomat, perhaps Scourge, granting undeath to followers)",
+   "warcraft.wiki.gg/wiki/Agamaggan (Razorfen the holiest thorn cluster)",
+   "DB: area 1316 Myriam Moonsinger 12866, Ambassador Malcin 12865, Death's Head Cultist x15, Razorfen Battleguard x52"
+  ],
+  "notes": "Myriam is a night elf per warcraft.wiki.gg/wiki/Myriam_Moonsinger. Quest 1102 is mentioned but not used as a trigger (Thunder Bluff's Auld Stonespire entry has his TALK)."
+ },
+ {
+  "id": 1723,
+  "kind": 2,
+  "zone": 17,
+  "sort": 1,
+  "faction": 2,
+  "title": "Thork",
+  "body": "Thork is the orc who leads the defenses of the Crossroads in the Warchief's name, and he welcomes newcomers so long as they mind their business. He has plenty to defend against. Razormane raids on the caravans from Durotar starve the town of supplies, and he sets the young to thin the quilboar, kill the raider Kreenig Snarlsnout and recover what was stolen. He was sure another quilboar led the raids, and was struck speechless when Lok Orcbane's skull was laid before him. Thork greets tauren sent from Camp Taurajo as allies and points eager recruits north to the Ashenvale front, but grieving Mankrik he turns away, saying rage clouds his judgment.",
+  "triggers": [
+   [
+    2,
+    3429
+   ],
+   [
+    5,
+    854
+   ]
+  ],
+  "sources": [
+   "npc_text 3559 (Thork leads the defenses in the name of the Warchief; mind your business)",
+   "quests 871, 872, 5041 (Razormane raids on supply lines from Durotar; Kreenig; supplies)",
+   "quest 906 reward text (thought the leader was another quilboar; without words)",
+   "quest 854 description and reward text (Kirge sends tauren to Thork; allies from Thunder Bluff)",
+   "quest 6541 (Thork sends recruits to Kadrak)",
+   "npc_text 3553 (Mankrik: Thork insults me, says my rage makes me hasty and clouds my judgement)"
+  ],
+  "notes": "Verified. 854 (AllowableRaces 32) ends with Thork and is unused by Mulgore. Faction 2: template 29."
+ },
+ {
+  "id": 1724,
+  "kind": 2,
+  "zone": 17,
+  "sort": 2,
+  "faction": 2,
+  "title": "Sergra Darkthorn",
+  "body": "Sergra Darkthorn is the orc shaman in charge of the Crossroads, and she makes it plain that she tolerates no insolence: Thrall himself, she reminds the young, has set the Horde's women on equal footing with its men. Kargal Battlescar of Far Watch grumbles that she will talk a recruit's head in circles, though Thrall is convinced she is something special. To young hunters she is a first guide, sending them after plainstriders, zhevra, prowlers and the great white cat Echeyakee. She teaches that there is more to hunting than killing, and when she sets them to defile the scytheclaw nests, she bids them ponder the lives of the beasts they slaughter.",
+  "triggers": [
+   [
+    2,
+    3338
+   ]
+  ],
+  "sources": [
+   "quest 842 description and reward text (Kargal: Sergra in charge, nasty shaman who talks heads in circles, Thrall convinced she is special; Sergra: Thrall declared the Horde's females equal)",
+   "warcraft.wiki.gg/wiki/Sergra_Darkthorn (orc shaman in charge of the Crossroads)",
+   "quests 860, 844, 845, 903, 881 (her hunts; more to hunting than finding and killing)",
+   "quest 905 reward text (consider the life of the creatures you slaughter)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 1725,
+  "kind": 2,
+  "zone": 17,
+  "sort": 3,
+  "faction": 0,
+  "title": "Gazlowe",
+  "body": "Gazlowe is the goblin who rules Ratchet. A goblin of Undermine and a member of the Steamwheedle Cartel, he served Thrall as chief engineer of Durotar, and with the gold the Warchief paid him for Orgrimmar he founded his own port in the Barrens. He keeps it open to anyone with coin and on good terms with the Horde. Business would be perfect but for the Southsea Freebooters, who raid his ships, camp on his doorstep and have stolen everything from his boots to the lens for his observatory, and he complains that the trade princes' fleets do too little about it. He has put a bounty on the head of their captain, Baron Longshore.",
+  "triggers": [
+   [
+    2,
+    3391
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Gazlowe (from Undermine, Steamwheedle Cartel; Durotar's Chief Engineer for Thrall; founded Ratchet after Orgrimmar was completed; lets the Alliance trade but close Horde ties)",
+   "quest 887 description (Grezzlik and the Trade Fleets; Freebooters camp on his doorstep)",
+   "quest 888 description (observatory lens, boots)",
+   "quest 895 (WANTED poster signed Gazlowe)",
+   "quest 1180 description (he tracks parts for the goblin racers)"
+  ],
+  "notes": "Verified. Faction 0: Gazlowe 3391 template 69 (Ratchet), neutral to both; 887, 888, 895 AllowableRaces 0."
+ },
+ {
+  "id": 1726,
+  "kind": 2,
+  "zone": 17,
+  "sort": 4,
+  "faction": 2,
+  "title": "Mankrik",
+  "body": "Mankrik is an orc warrior who came north to the Crossroads seeking help and found, he says, only cowards who turn their backs on him. He and his wife were fighting the Bristleback quilboar at a small tauren camp when the two were separated. She held three of them off alone, but more came, and when he turned in rage to face them, he was overwhelmed. A tauren druid found him lying on the Gold Road and tended his wounds. Now he stands at the Crossroads from sunrise to sunset scanning the horizon, killing every quilboar he meets and asking for their tusks. The body of his wife was found in the south, slain in battle.",
+  "triggers": [
+   [
+    2,
+    3432
+   ],
+   [
+    4,
+    4921
+   ]
+  ],
+  "sources": [
+   "npc_text 3553 (came from the south seeking help, finds only cowards; Thork dismisses him)",
+   "quest 4921 description (small tauren camp, she held three Bristlebacks alone, druid found him on the Gold Road)",
+   "quest 899 description (stands every day scouring the horizon, kills every pig man)",
+   "npc_text 3557 and creature 10668 Beaten Corpse in area 1156 (female orc warrior who died in battle, probably against quilboar)",
+   "warcraft.wiki.gg/wiki/Mankrik"
+  ],
+  "notes": "Verified. Wife left unnamed: the 3.3.5 corpse 10668 is an unnamed Beaten Corpse; the name Olgra was only given in Cataclysm. Faction 2: template 29, 4921 690."
+ },
+ {
+  "id": 1727,
+  "kind": 2,
+  "zone": 17,
+  "sort": 5,
+  "faction": 2,
+  "title": "Mangletooth",
+  "body": "Mangletooth is a Razormane quilboar held in a cage at Camp Taurajo, and he is sure he will not leave it alive. His own tribe has abandoned him there to rot. Rather than forgive them, he trades in their secrets, offering the Horde the names of the Razormane who lead the raids on the Crossroads in return for blows against the Bristlebacks, the rival tribe he hates. He tells of Agamaggan, whose blood raised the thorns of the Barrens, and he still knows the old quilboar magic: bring him the blood shards the Bristlebacks carry, and he will bless the bearer with the boar god's strength, speed or spirit.",
+  "triggers": [
+   [
+    2,
+    3430
+   ]
+  ],
+  "sources": [
+   "npc_text 3656 (my end is near; Razormane more powerful than the Bristlebacks; information only I know)",
+   "quest 878 reward text (they turn their backs and leave him to rot in a cage)",
+   "quest 879 description and reward text",
+   "npc_text 3658 (Agamaggan's tale)",
+   "npc_text 3670, quests 5052, 889, 5042-5046 (blood shards for Agamaggan's blessings)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 1728,
+  "kind": 2,
+  "zone": 17,
+  "sort": 6,
+  "faction": 2,
+  "title": "Jorn Skyseer",
+  "body": "Jorn Skyseer is the tauren hunter of Camp Taurajo who teaches that, though others call this land barren, it teems with life for one who knows where to look. He takes up the training of young hunters after Sergra Darkthorn, and each beast he sets before them carries its own lesson: the savage Ishamuhale, the thunder lizards, the thunderhawk. To those who bring him tokens of legendary beasts like Lakota'mani the Earthshaker or Washte Pawne, he explains their meaning: Washte Pawne teaches that regret turns to wisdom. When a pupil has learned all he can teach, he sends them on: to his sister Mahren on the coast, to Ashenvale, or to Melor Stonehoof in Thunder Bluff.",
+  "triggers": [
+   [
+    2,
+    3387
+   ],
+   [
+    4,
+    1130
+   ]
+  ],
+  "sources": [
+   "npc_text 1875 (to one who knows where to look this place teems with life)",
+   "quest 3261 (Sergra sends to Jorn)",
+   "quests 882, 907, 913 (Ishamuhale, thunder lizards, thunderhawk)",
+   "quests 883, 885 reward text (Lakota'mani Earthshaker; Washte Pawne, regret turns to wisdom)",
+   "quests 874, 6382, 1130 (Mahren, Ashenvale Hunt, Melor Sends Word)"
+  ],
+  "notes": "Lakota'mani and Washte Pawne are item-started quests (883, 885 have no giver) that end with Jorn, so he no longer 'sets' them. Faction 2: template 83; 1130 AllowableRaces 690, not used by Thunder Bluff (its Hunter's Path uses 1131, 1205)."
+ },
+ {
+  "id": 1729,
+  "kind": 2,
+  "zone": 17,
+  "sort": 7,
+  "faction": 2,
+  "title": "Gann Stonespire",
+  "body": "Gann Stonespire is a tauren who walks the southern Gold Road alone, seeking ways to defend his honor. His tribe once lived on the land the dwarves now tear apart at Bael Modan, and many of his people died or were driven from their birthplace when the excavation came. He tried to reach a peaceful resolution and failed. Now he wants the dwarves driven off by force, the journal of their prospector Khazgorm in his hands, and their own explosives turned against them: from Khazgorm's plans he fashions a charge to blow up the flying machine at the dig, which to him is an insult to the memory of his tribe.",
+  "triggers": [
+   [
+    2,
+    3341
+   ],
+   [
+    4,
+    843
+   ]
+  ],
+  "sources": [
+   "npc_text 942 (I walk this road alone, seeking ways to defend my honor)",
+   "quest 843 description and request text (dwarves of Bael Modan; diplomacy failed; Khazgorm's journal; tauren lost lives or were forced off their ancestral birthplace)",
+   "quest 846 description (explosive from the dwarves' supplies)",
+   "quest 849 description and reward text (flying machine an insult to the memory of my tribe; champion of the lost tribe)",
+   "DB: Gann Stonespire 3341 in area 1157 Southern Gold Road"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 1730,
+  "kind": 2,
+  "zone": 17,
+  "sort": 8,
+  "faction": 2,
+  "title": "Thun'grim Firegaze",
+  "body": "Thun'grim Firegaze is an orc blacksmith of renown who lives as a hermit on a hilltop east of the Crossroads. His eyes have long dried out from staring into the forge's flame, and the Razormane took advantage of it: a few distracted him with snorts while others carried off his iron chest of forged steel bars. Warriors of the Horde seek him out for his weapons, and for those whose deeds have grown famous he will forge a suit of brutal armor, a labor so great that he wrote out the materials on a scroll over many nights with his failing eyes and calls on other smiths of the Horde to help.",
+  "triggers": [
+   [
+    2,
+    5878
+   ]
+  ],
+  "sources": [
+   "quest 1502 description and reward text (hermit atop the hills east of the Crossroads; eyes dried out from the forge's flame)",
+   "quest 1503 description (Razormanes distracted him with snorts and stole an iron chest of forged steel bars)",
+   "quest 1825 description (blacksmith of renown)",
+   "quest 1838 description (suit of armor; help of other smiths of the Horde; scroll written over many nights with near-blind eyes)",
+   "quests 1839-1841 (Ula'elek, Orm Stonehoof, Velora Nitely)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 1731,
+  "kind": 2,
+  "zone": 17,
+  "sort": 9,
+  "faction": 0,
+  "title": "Mebok Mizzyrix",
+  "body": "Mebok Mizzyrix is a goblin of Ratchet who is always one deal away from a fortune. Convinced the raptors of the Barrens are smarter than most, he ground their horns into a smart drink, tasted it and found it terrible. Undaunted, he turned to the wailing essence of the caverns to the west, which he suspects is behind the strange plants and beasts of the land. His other ventures range wider: deepmoss spider eggs from Stonetalon for the omelette craze in Booty Bay, blueleaf tubers sniffed out by trained gophers in Razorfen Kraul, and bogbean leaves from the Dustwallow swamps, fetched by his hired help Stinky Ignatz.",
+  "triggers": [
+   [
+    2,
+    3446
+   ]
+  ],
+  "sources": [
+   "quest 865 description (raptors smarter; smart drinks, fortune)",
+   "creature_text 3446 (Ugh! That's terrible!)",
+   "quest 1491 description (wailing essence may cause the strange plants and animals)",
+   "quest 1069 description (deepmoss eggs for Booty Bay's omelette fad)",
+   "quest 1221 description (blueleaf tubers in Razorfen Kraul, snufflenose gophers)",
+   "quest 1270 description (Stinky hired to find bogbean leaves for Mebok)"
+  ],
+  "notes": "Verified. Faction 0: Mebok 3446 template 69, neutral to both; 865, 1069, 1221, 1491 AllowableRaces 0."
+ },
+ {
+  "id": 1732,
+  "kind": 2,
+  "zone": 17,
+  "sort": 10,
+  "faction": 0,
+  "title": "Serena Bloodfeather",
+  "body": "Serena Bloodfeather leads the Witchwing harpies of the Dry Hills, and her war on the Horde is a blood feud. Years ago the wanderer Rexxar, with the troll Rokhan beside him, killed her sister Bloodfeather, and Serena has answered by sending her flock against the Horde's caravans again and again. Darsok Swiftdagger of the Crossroads means to break her harpies from the bottom up, lieutenants first and the matriarch last, and to set her head on the next caravan he sends out as a warning to the rest. To the witch doctor Jin'Zil of Stonetalon, her death means the last of the Bloodfeathers is gone.",
+  "triggers": [
+   [
+    3,
+    3452
+   ],
+   [
+    4,
+    876
+   ]
+  ],
+  "sources": [
+   "quest 876 description (sister of Bloodfeather slain by Rexxar; attacks are revenge; head on the next caravan)",
+   "quest 1060 reward text (Rokhan went with that crazy mok'nathal to kill her older sister; last of the Bloodfeathers)",
+   "quests 867, 875 (Darsok's plan from the lower chain of command to the top; matriarchy)",
+   "DB: Serena Bloodfeather 3452 faction 514, same as the Witchwing harpies, hostile to both sides"
+  ],
+  "notes": "Verified. Faction 0: Serena 3452 template 514 is hostile to all players, so the KILL trigger reaches the Alliance; 876 is Horde only (690)."
+ },
+ {
+  "id": 1733,
+  "kind": 2,
+  "zone": 17,
+  "sort": 11,
+  "faction": 2,
+  "title": "Grunt Dogran",
+  "body": "Grunt Dogran was proud of his promotion to the Barrens, and his young mate Zankaja hid her worry when he left Orgrimmar. Stationed at Camp Taurajo, he led a few grunts against a Bristleback camp and was badly hurt and taken captive, and his wounds festered while the camp waited for a healing draught from the trolls of Malaka'jin. When help at last reached him, the draught gave him strength enough to hobble, but not to save his leg or his arm. He would not chain Zankaja to an invalid. He chose to seek an end in glorious battle instead, gave up a dirt-caked pendant, and asked that she never be told.",
+  "triggers": [
+   [
+    2,
+    5908
+   ]
+  ],
+  "sources": [
+   "quest 1509 description (Zankaja; promotion; she hid her sadness)",
+   "quest 1510 description and reward text (stationed at Camp Taurajo, led grunts against a quilboar camp, hurt, prisoner; draught from the Malaka'jin trolls)",
+   "quest 1515 description and reward text (held in a quilboar camp north of Taurajo; will lose leg and arm)",
+   "quest 1512 description (will not chain Zankaja to an invalid; glorious battle; dirt-caked pendant; do not tell my mate)",
+   "DB: Grunt Dogran 5908 in area 1700 Agama'gor"
+  ],
+  "notes": "Warlock-only chain (1507-1515) that starts and ends in Orgrimmar; only Dogran himself is used, as a TALK."
+ },
+ {
+  "id": 1734,
+  "kind": 3,
+  "zone": 17,
+  "sort": 1,
+  "faction": 2,
+  "title": "The Demon Seed",
+  "body": "Hunting the Burning Blade through Durotar, the Horde learned from the warlock Neeru Fireblade that the cult rallies around an object of demonic power, the Demon Seed, kept atop Dreadmist Peak in the Barrens. Neeru, who claims to have searched out demonic corruption among the orcs since the last great war, wanted it destroyed, and sent the hero to his assistant Ak'Zeloth at Far Watch Post. Ak'Zeloth found the order strange, but he obeyed. He had prepared power stones to sever the Seed's link to the Legion, flawed things whose strength would burn itself out in time. Carried in haste up the northern face, past the cultists, and set at the altar of fire, a stone did its work. The Seed was destroyed, and Ak'Zeloth felt waves of staggering force pass through the ether, waves he was sure other beings had felt as well. Others, he warned, would wonder why their toy had been broken. Then he paid the hero, with Neeru's thanks.",
+  "triggers": [
+   [
+    4,
+    809
+   ]
+  ],
+  "sources": [
+   "quest 809 description and reward text (Neeru: searched for corruption since the last great war; Demon Seed atop Dreadmist Peak; Ak'Zeloth his assistant; Strange...)",
+   "quest 924 description, objectives and reward text (power stones disrupt the connection to the Legion; the stone's power consumes itself; northern face; waves of power; others will wonder why their toy was broken; payment from Neeru)",
+   "Durotar entry 1428 Hunting the Burning Blade ends with Neeru naming the Demon Seed"
+  ],
+  "notes": "Neeru sends the hero to Ak'Zeloth (809), not word. Opening sentence only refers to Durotar's Hunting the Burning Blade (823); no Durotar quest used. Faction 2: 809 and 924 AllowableRaces 690."
+ },
+ {
+  "id": 1735,
+  "kind": 3,
+  "zone": 17,
+  "sort": 2,
+  "faction": 2,
+  "title": "Kranal Fiss and the Call of Fire",
+  "body": "When a young orc, troll or tauren shaman has learned patience in the ways of earth, the trainers of Razor Hill, Orgrimmar, Bloodhoof Village and Thunder Bluff send them north of the Crossroads to Kranal Fiss at Grol'dom Farm. He sees the burning desire in their eyes and warns them that power and destruction will come easily, but they must still know when to stay their hand. Then he gives them a torch to carry to the keeper of the Shrine of the Dormant Flame in Durotar. The fire sapta asks for fire tar, carried by the Razormane spellcasters of the eastern Barrens, and a reagent pouch taken from the Burning Blade, for a sapta is always made from things bound to its element. Fire is not only chaos and destruction, the keeper teaches, but life and creation, each force giving the other meaning. When the torch comes back lit from the shrine, Kranal sees a spirit that burns brighter than any torch, and presents the novice's first fire totem.",
+  "triggers": [
+   [
+    4,
+    2983
+   ],
+   [
+    4,
+    1522
+   ],
+   [
+    4,
+    2984
+   ],
+   [
+    4,
+    1523
+   ]
+  ],
+  "sources": [
+   "quests 2983, 1522, 2984, 1523 description and reward text (Swart, Searn, Narm, Beram send novices to Kranal north of the Crossroads; patience; know when to stay your hand)",
+   "quest 1524 description (torch to Telf Joolam at the Shrine of the Dormant Flame)",
+   "quest 1525 description and reward text (fire tar from Razormane spellcasters in eastern Barrens; reagent pouch from the Burning Blade; fire is also life and creation)",
+   "quest 1526 (manifestation of fire, glowing ember, brazier)",
+   "quest 1527 reward text (spirit burns brighter than any torch; newest totem)",
+   "DB starters: Swart 3173 (Razor Hill), Searn Firewarder 5892 (Orgrimmar), Narm Skychaser 3066 (Bloodhoof), Beram Skychaser 3032 (Thunder Bluff); ender Kranal Fiss 5907 in area 1704",
+   "quest 1525 request text (saptas always made from ingredients tied to their elements)"
+  ],
+  "notes": "Shrine part cut to a reference (hidden trail, keeper turning visitors away, manifestation and brazier are told in Durotar's 1411 Shrine of the Dormant Flame). Triggers are the four true entry quests (ExclusiveGroup 1522, AllowableRaces 690, AllowableClasses 64). Faction 2."
+ },
+ {
+  "id": 1736,
+  "kind": 3,
+  "zone": 17,
+  "sort": 3,
+  "faction": 2,
+  "title": "Islen Waterseer and the Call of Water",
+  "body": "Shamans of the Horde whose spirits are warmed by fire are sent to Islen Waterseer at her fishing hut south of Ratchet. Her lesson is simple: water means rebirth, but polluted water devastates all it touches. For the sapta she sends them deep into the south to the shaman Brine, who lives alone on Blackthorn Ridge among hostile quilboar. Brine asks for three samples of the purest water: from the pond below her hut, which the quilboar guard as a sacred hoard, from a fresh well in the Forsaken town of Tarren Mill, a holy vestige in an unhallowed sea, and from the fountain at the Ruins of Stardust in Ashenvale. From them she makes a vial of purest water. Islen brews the sapta from it and sends the novice to a plague tainted shrine on the coast of Silverpine, where a corrupt manifestation of water must be defeated and a pure spirit called back. Water is life, the spirit says, and corruption stops life. Islen then gives the novice a water totem.",
+  "triggers": [
+   [
+    4,
+    1528
+   ],
+   [
+    4,
+    1529
+   ],
+   [
+    4,
+    2985
+   ],
+   [
+    4,
+    2986
+   ]
+  ],
+  "sources": [
+   "quests 1528, 1529, 2985, 2986 (sent to Islen, fishing hut south of the Southfury River and Ratchet; spirit warmed by fire)",
+   "quest 1530 description (water means rebirth; polluted water devastates; Brine deep in the south, quilboar)",
+   "quests 1535, 1536, 1534 (pond below the hut, sacred to quilboar; Tarren Mill well, holy vestige in an unhallowed sea; Ruins of Stardust fountain; vial of purest water)",
+   "quest 220 reward text (sapta; shrine in Silverpine)",
+   "quest 63 description (shrine tainted by the plague, corrupt manifestation, brazier)",
+   "quest 96 description and reward text (Water is life, corruption stops life; water totem)"
+  ],
+  "notes": "Verified. Claimed by the Barrens: starts (1528, 1529, 2985, 2986) and ends (96) with Islen 5901 at the Tidus Stair; Silverpine and Ashenvale steps are not told in any finished zone. Title distinct from Exodar's 'The Draenei Call of Water'. Faction 2: 2986 AllowableRaces 0 but its only giver Narm Skychaser 3066 is template 104, hostile to the Alliance; the other three are 690."
+ },
+ {
+  "id": 1737,
+  "kind": 3,
+  "zone": 17,
+  "sort": 4,
+  "faction": 2,
+  "title": "The Oases of the Barrens",
+  "body": "The druids of Thunder Bluff sensed a strange power leaking into the Barrens, and Tonga Runetotem was sent to the Crossroads to find its source. Once lush, the land had been scorched to a husk by war and upheaval, yet in recent years new oases had formed and life was stirring. At the Forgotten Pools a fissure was found bubbling beneath the water. At the Stagnant Oasis dead, dried seeds dropped into another fissure sprang to life. But the snapjaw turtles of the oases bore a taint Tonga had never seen, as if the land dreamed and could not wake, and he named the Wailing Caverns its source. A shell went to Mura Runetotem in Silverpine, and the hero went on to the elder druids of Thunder Bluff, whose dreaming named the culprits: the Druids of the Fang, once part of a noble order that meant to heal the Barrens, now bent on remaking it to match their own twisted dreams. Their four leaders, Cobrahn, Anacondra, Pythas and Serpentis, each held a dream gem deep in the caverns.",
+  "triggers": [
+   [
+    4,
+    886
+   ],
+   [
+    4,
+    870
+   ]
+  ],
+  "sources": [
+   "quest 886 description (druids of Thunder Bluff sense a strange power; Tonga sent to discover the source)",
+   "quest 870 description and reward text (once lush; war and cataclysm; new oases; Forgotten Pools fissure)",
+   "quest 877 reward text (dead seeds; life from nothing)",
+   "quest 880, quest 1489 description (taint never before seen; as if the land dreams and cannot awake; Wailing Caverns the source; Hamuul on Elder Rise)",
+   "quest 3301 description (shell to Mura Runetotem in Silverpine to heal the dying forest)",
+   "quest 1490 description (Hamuul entered the land of dreams; cult of druids once noble; Nara remained)",
+   "quest 914 description and reward text (Druids of the Fang; four leaders and their dream gems)"
+  ],
+  "notes": "Ending reframed so it no longer retells Thunder Bluff's Hamuul (163808) and Nara (163809) entries (Hamuul's dream, Nara staying behind); keeps only the chain's own goal from quest 914. 'Cataclysm' wording from quest 870 changed to avoid confusion with the later event. Triggers 886 and 870 (both 690) unused elsewhere."
+ },
+ {
+  "id": 1738,
+  "kind": 3,
+  "zone": 17,
+  "sort": 5,
+  "faction": 2,
+  "title": "The Kolkar Leaders",
+  "body": "The Kolkar centaurs have long plagued the tauren, but in the Barrens they were disorganized, until new leaders rose to rally them. From his bunkers west of the Crossroads, Regthar Deathgate set out to destroy them one by one, and to pay bounties on every centaur bracer brought in. First fell Barak Kodobane, who camped near the Forgotten Pools. Then Verog the Dervish, who roams the plains, was drawn out by an attack on the command tent at the Stagnant Oasis until the alarm brought him charging in. Last was Hezrul Bloodmark, leader of all the Kolkar in the Barrens, cut down at Lushwater Oasis. The Kolkar answered in fury. A war band came out of Desolace, their homeland, to fall upon Regthar's bunkers from the west, and only when their warlord Krom'zar was slain and his banner taken did the attack break. Regthar promised that Thrall would hear of it, and he began to recruit for a campaign into Desolace itself.",
+  "triggers": [
+   [
+    4,
+    850
+   ],
+   [
+    4,
+    855
+   ]
+  ],
+  "sources": [
+   "quest 850 description and reward text (centaurs plagued the tauren; disorganized until new leaders; Barak near the Forgotten Pools; Regthar west of the Crossroads)",
+   "quest 855 (bracer bounty)",
+   "quest 851 description and creature_text 3395 (Verog wanders; command tent at the Stagnant Oasis; alarm)",
+   "quest 852 description (Hezrul, leader of the Kolkar in the Barrens, at Lushwater)",
+   "quest 4021 description and reward text (contingent from Desolace, from the west, Warlord Krom'zar, banner; Thrall receives word); creature_text 3389",
+   "quests 1361, 1362 (Regthar recruits for Desolace)"
+  ],
+  "notes": "1361 and 1362 lead into Desolace and are only mentioned."
+ },
+ {
+  "id": 1739,
+  "kind": 3,
+  "zone": 17,
+  "sort": 6,
+  "faction": 2,
+  "title": "The Hunt of the Barrens",
+  "body": "Young hunters come to the Crossroads to learn that there is more to the hunt than finding and killing. Sergra Darkthorn starts them on plainstriders and zhevra, then the sly prowlers of the tall grass, and then Echeyakee, Whitemist, king of the savannah cats, called to his lair among the kodo bones with a horn; the tauren say he is both mercy and death. Next she has them leave raptor feathers on the scytheclaw nests, and asks them to ponder the lives they take. Then she sends them to Jorn Skyseer at Camp Taurajo. Jorn sets them on Ishamuhale, Speartooth, the fiercest sunscale raptor, lured to a dead tree with a zhevra carcass, then on thunder lizards and the thunderhawk. A true hunter, Jorn teaches, can stalk prey down any path, even into the sea, and so he sends them to his sister Mahren on the coast, who sets them after Isha Awak, the Deep Doom, lord of the waters off Northwatch.",
+  "triggers": [
+   [
+    4,
+    844
+   ],
+   [
+    4,
+    860
+   ]
+  ],
+  "sources": [
+   "quest 860 reward text (more to hunting than finding and killing)",
+   "quests 844, 845, 903 descriptions",
+   "quest 881 description and reward text (Echeyakee, Whitemist, king of the savannah cats, lair among kodo bones, horn, mercy and death)",
+   "quest 905 description and reward text (feathers on the nests; ponder the life of the scytheclaw)",
+   "quest 3261",
+   "quest 882 description (Ishamuhale, Speartooth; zhevra carcass at the dead tree northwest of Ratchet)",
+   "quests 907, 913",
+   "quests 874, 873 (Mahren; Isha Awak, the Deep Doom, lord of these waters, feared by the humans on the coast; a true hunter stalks prey down any path, even the sea)"
+  ],
+  "notes": "The 'any path, even the sea' teaching moved from Mahren to Jorn (quest 874 is his). 860 is from Thunder Bluff's Melor but unused there. Faction 2."
+ },
+ {
+  "id": 1740,
+  "kind": 3,
+  "zone": 17,
+  "sort": 7,
+  "faction": 2,
+  "title": "Betrayal from Within",
+  "body": "Razormane raids on the caravans from Durotar were starving the Crossroads, and Thork wanted them stopped. His scouts named the raider Kreenig Snarlsnout, and Kreenig died, but he was not the true leader. The truth came from an unlikely mouth. In a cage at Camp Taurajo sat Mangletooth, a Razormane left to rot there by his own tribe. He offered a bargain: weaken the Bristlebacks, the Razormane's rivals, by killing their spiritual leaders, and he would tell who really led the raids. Then he told of Agamaggan, the boar god whose blood raised the thorns, and of the blood shards the Bristlebacks dig from the earth. At last he gave up his own kin. Three Razormane had come out of the Kraul to lead the attacks, the caster Nak, the tracker Kuz and their warrior leader Lok Orcbane, far to the south. When their skulls were brought to him, Mangletooth regretted nothing. Lok's was carried to Thork, who had never imagined who his true foe was.",
+  "triggers": [
+   [
+    4,
+    871
+   ],
+   [
+    4,
+    878
+   ]
+  ],
+  "sources": [
+   "quests 871, 872 (Razormane raids on supply lines; Kreenig)",
+   "quest 878 description and reward text (weaken the Bristlebacks' spiritual leaders; turned their backs, left him in a cage)",
+   "npc_text 3656, 3658",
+   "quest 5052 description (blood shards)",
+   "quest 879 description and reward text (Nak, Kuz and Lok Orcbane from the Kraul; spell caster, tracker, warrior; Mangletooth regrets nothing)",
+   "quest 906 reward text (Thork thought the leader was another quilboar)"
+  ],
+  "notes": "'The raids went on' replaced with what quests 879 and 906 support (Kreenig was not the real leader). Faction 2: 871, 878 AllowableRaces 690."
+ },
+ {
+  "id": 1741,
+  "kind": 3,
+  "zone": 17,
+  "sort": 8,
+  "faction": 0,
+  "title": "The Samophlange",
+  "body": "Sputtervalve of the Tinkers' Union, already in hot water over his shredder program, learned that the Venture Company was experimenting with something called a samophlange at a small research site southwest of the Sludge Fen. No one could say what a samophlange was, which only made him want it more. With a copy of the site's operating manual in hand, the console could be mastered: three valves shut, a key taken from Tinkerer Sniggles, and the samophlange tugged free from a jumble of wires that seemed to serve no purpose. Sputtervalve meant to send it straight to the Union's headquarters in Undermine, but first he had a little look himself, and broke it. For the Horde the device's travels went on. Wenikee Boltbucket, a tinkerer camped south of Mor'shan, added gauges and found its integrity at an all time low. Rilli Greasygob of Orgrimmar, once of the Venture Company, needed the manual hoarded by his old rival Boss Copperplug of the Boulder Lode Mine. If he ever fixes it, he has promised to say what it does.",
+  "triggers": [
+   [
+    4,
+    894
+   ]
+  ],
+  "sources": [
+   "quest 894 description (research facility southwest of the Sludge Fen; what is a samophlange; operating manual)",
+   "npc_text 519 (Sputtervalve in hot water)",
+   "quests 900, 901, 902 (valves, Tinkerer Sniggles' key, wires and tubing; Union headquarters in Undermine; a little look myself)",
+   "creature_text 3442 (Oh, darn...)",
+   "quest 3921 description (I think I might have broken that Samophlange; Wenikee south of Mor'shan Rampart)",
+   "quest 3923 description (integrity at an all-time low; Rilli once of the Venture Company, in Orgrimmar)",
+   "quest 3924 description and reward text (Boss Copperplug, rival, Boulder Lode Mine; if I ever get this thing fixed I'll let you know)"
+  ],
+  "notes": "Manual no longer called stolen (894: a copy he obtained). Faction 0: 894 AllowableRaces 0 from Sputtervalve 3442, template 69 (Ratchet), neutral to both; 3921 onward is Horde only."
+ },
+ {
+  "id": 1742,
+  "kind": 3,
+  "zone": 17,
+  "sort": 9,
+  "faction": 2,
+  "title": "Deep Cover",
+  "body": "For a year the Shattered Hand worked to plant an agent deep inside the Venture Company, and at last word came from him: the goblins were planning something on a grand scale. Shenthul sent a trusted rogue north of the Sludge Fen to the company's tower, with a flare gun and strict instructions. Two flares, then the Shattered Salute, for Taskmaster Fizzule would kill anyone he did not recognize. The tower's crew had already been weakened by poison. The rogue stole the tower key from Foreman Silixiz, cut down drones, patrollers and lookouts, assassinated Grand Foreman Puzik Gallywix and took his head, then picked his lockbox for a cache of Zanzil's altered mixture. Shenthul received both in Orgrimmar and spoke of poor Fizzule, one of the Hand's best, as the price field agents pay.",
+  "triggers": [
+   [
+    4,
+    2458
+   ]
+  ],
+  "sources": [
+   "quest 2458 description, objectives and reward text (one year planting an agent; grand scale; tower north of the Sludge Fen; two flares and the Shattered Salute; Fizzule attacks anyone he does not recognize)",
+   "quest 2478 description, objectives and reward text (the poison has weakened everything in this tower; Silixiz's key; drones, patrollers, lookouts; Gallywix; lockbox, cache of Zanzil's altered mixture; Poor Fizzule, one of our best; the price we pay)",
+   "Orgrimmar entry 163718 The Shattered Hand (earlier part, not retold)"
+  ],
+  "notes": "Verified. Poison stated only as having weakened the tower (2478). Does not retell Orgrimmar's 163718 (Therzok's test, 1859/1963); 2458 follows Shenthul's 2460, not used elsewhere. Faction 2: 690, rogue only."
+ }
+]

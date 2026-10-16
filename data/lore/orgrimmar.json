@@ -1,0 +1,459 @@
+[
+ {
+  "id": 163700,
+  "kind": 0,
+  "zone": 1637,
+  "sort": 0,
+  "faction": 0,
+  "title": "Orgrimmar",
+  "body": "Orgrimmar is the capital of the Horde, carved into a canyon of red stone in the mountains of northern Durotar. Thrall raised it after the battle at Mount Hyjal, when he led his people to this harsh coast, and named it for Orgrim Doomhammer, the friend and mentor who had passed the Horde into his hands. Goblins, tauren and the Darkspear trolls helped to build it. The city is a maze of valleys joined by tunnels and ramps: the Valley of Strength behind the great gate, the Drag and the Cleft of Shadow, the Valley of Honor where warriors and hunters train, the troll quarter of the Valley of Spirits, and the Valley of Wisdom, where the Warchief holds court in Grommash Hold. Orcs and trolls share its streets with tauren, Forsaken and, of late, blood elves. Not every enemy lies outside the walls. Demon cultists gather in Ragefire Chasm, the caverns beneath the city. And when traitors seized the Undercity after the Wrathgate, Orgrimmar shut its shops, took in the Forsaken who fled, and lived under martial law.",
+  "triggers": [
+   [
+    1,
+    1637
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Orgrimmar (founding after Hyjal, named for Orgrim Doomhammer, built with help of goblins, tauren, Darkspear trolls; districts; Ragefire Chasm in the Cleft)",
+   "warcraft.wiki.gg/wiki/Thrall (Doomhammer named him Warchief)",
+   "quest 13257 reward text (martial law, Forsaken refugees)",
+   "creature_text 31431 (shops closed), 31437 (refugees)",
+   "quest 5728 reward text (caverns below Orgrimmar)",
+   "DB spawns: Ambassador Dawnsinger 17098 and blood elf trainers in the city"
+  ],
+  "notes": "verified. Area 1637 is the only reachable AreaTable id for the city (Hall of Legends 2917 unreachable). Martial law matches quest 13257 and the Undercity entries (spell_area 59062, Horde only)."
+ },
+ {
+  "id": 163701,
+  "kind": 1,
+  "zone": 1637,
+  "sort": 1,
+  "faction": 2,
+  "title": "Valley of Strength",
+  "body": "Past the great gate of Orgrimmar lies the Valley of Strength. Here stand the bank, the auction house and the tower where wind riders come and go, and here too is the Broken Tusk, where Innkeeper Gryshka bids weary fighters lay their axes by the fire and tell of their battles, while a drunkard named Gamon holds up the bar. Overlord Runthak keeps order in the valley, and it is here that the head of the slain Nefarian is mounted for all to see. In the dark days after the Wrathgate the valley changed. Shops were shuttered by order of the Warchief, merchants grumbled about lost gold, and Forsaken refugees crowded the approach, begging for help.",
+  "triggers": [
+   [
+    2,
+    6929
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Valley_of_Strength (first area past the main gate; the Broken Tusk inn, bank, auction house; The Skytower listed among Classic shops)",
+   "warcraft.wiki.gg/wiki/Innkeeper_Gryshka (Broken Tusk, Valley of Strength; complained under martial law)",
+   "npc_text 938 (Gryshka gossip)",
+   "quest 1858 description (Gamon, a drunkard at the tavern); DB: Gamon 6466 spawned beside Gryshka",
+   "quest 7491, 7784 (Runthak in the Valley of Strength, heads mounted for all to see)",
+   "creature_text 31431, 31433, 31437 (phase 192: shops closed, Gryshka complains, refugees)",
+   "DB: Doras 3310 wind rider master near the valley"
+  ],
+  "notes": "Skytower name dropped (the wiki lists it only as a removed Classic location, not what it was); dragon heads narrowed to Nefarian, since the Horde Onyxia head quest 7490/7491 no longer starts in 3.3.5 (Onyxia drops item 49643 for quest 24429 instead). Gryshka 6929 at world map 54,68 (Broken Tusk), phase 1, gossip 441. Faction 2: template 29."
+ },
+ {
+  "id": 163702,
+  "kind": 1,
+  "zone": 1637,
+  "sort": 2,
+  "faction": 2,
+  "title": "Valley of Wisdom",
+  "body": "North of the Valley of Strength rises the Valley of Wisdom, the high seat of the city. Grommash Hold stands here, the Warchief's own fortress, and nearby the armor of Mannoroth the Destructor is displayed upon a great trunk. A plaque signed by Thrall names Mannoroth as the demon who first cursed the orcs with bloodlust, and bids the Horde remember how far it has come and how hard it fought to regain its honor. The wisdom of the spirits dwells here too. Shaman trainers of orc, troll and tauren blood teach in the valley, and the elder far seer Zor Lonetree, well schooled in the politics of the Alliance, sends young heroes wherever the land cries out for aid.",
+  "triggers": [
+   [
+    2,
+    4047
+   ],
+   [
+    2,
+    13417
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Valley_of_Wisdom (Grommash Hold, Mannoroth's armor on a tree, connected to the Valley of Strength to the south)",
+   "warcraft.wiki.gg/wiki/Grommash_Hold (Mannoroth's skull and armor on an ancient tree trunk outside the hold)",
+   "gameobject 175658 The Armor of Mannoroth, page_text 1762",
+   "DB spawns: Kardris Dreamseeker 3344 (orc), Sian'tsu 3403 (troll), Sagorne Creststrider 13417 (tauren) shaman trainers beside the hold",
+   "quest 1262 reward/description (Zor schooled in Alliance politics)",
+   "quest 1061 description (the land has cried out)"
+  ],
+  "notes": "verified. Zor Lonetree 4047 (no gossip) starts 1061 (Horde, AllowableRaces 690, level 13 and up) and 7541 and ends 1262, so his quest dialog opens for Horde; Sagorne Creststrider 13417 (gossip 5123) is the second trigger. Both at world map 39,36 to 38, beside the hold. Faction 2: templates 29, 104."
+ },
+ {
+  "id": 163703,
+  "kind": 1,
+  "zone": 1637,
+  "sort": 3,
+  "faction": 2,
+  "title": "Grommash Hold",
+  "body": "Grommash Hold is the fortress of the Warchief, built into the cliffs of the Valley of Wisdom and bearing the name of Grom Hellscream, whose blow slew Mannoroth and freed the orcs from the demon's curse. Guards still call it Thrall's Fortress. Its throne room is thick walled and windowless, and the Kor'kron, the Warchief's elite bodyguard, stand watch at every turn. Old Eitrigg and Vol'jin of the Darkspear counsel Thrall at his side, an ambassador of Silvermoon speaks softly for the blood elves, and a guest named Mokvar, granted sanctuary by Thrall, takes care to bring his host no trouble. When traitors seized the Undercity, it was through portals opened here that the Horde went to take it back.",
+  "triggers": [
+   [
+    2,
+    17098
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Grommash_Hold (built into the cliffside, guards called it Thrall's Fortress, thick walls and no windows)",
+   "warcraft.wiki.gg/wiki/Kor'kron_Guard (Thrall's bodyguards stationed in Grommash Hold)",
+   "warcraft.wiki.gg/wiki/Thrall (Grom's blow killed Mannoroth)",
+   "DB spawns: Thrall 4949, Eitrigg 3144, Vol'jin 10540, Mokvar 16012, Ambassador Dawnsinger 17098, 24 Kor'kron Elite 14304 all inside the hold",
+   "quest 9428 (Dawnsinger keeps her voice low; cement our relationship with the rest of the Horde)",
+   "npc_text 8332 (Mokvar granted sanctuary)",
+   "quest 13266 (portals to Undercity in Grommash Hold)"
+  ],
+  "notes": "Mokvar line reworded to match npc_text 8332. Dawnsinger 17098 at 1915,-4124 inside the hold, phase 1, gossip 7359, template 1604 hostile to Alliance. Kor'kron Elite 14304 (phase 1) spawned through the hold."
+ },
+ {
+  "id": 163704,
+  "kind": 1,
+  "zone": 1637,
+  "sort": 4,
+  "faction": 2,
+  "title": "Cleft of Shadow",
+  "body": "Off the Drag, a crevasse splits the rock of Orgrimmar, open only to a strip of sky, and in its gloom live the city's less savory folk. Warlocks of the Horde train here, insisting that the arcane corrupts only the weak, and the warlock Neeru Fireblade keeps a hut, proclaiming his loyalty to the Warchief. Rogues of the Shattered Hand teach stealth, deception and poison. At the bottom of the cleft opens Ragefire Chasm, the burning caverns beneath the city, where the cult of the Searing Blade hides under the felguard Taragaman the Hungerer and works in secret to lead innocent members of the Horde astray.",
+  "triggers": [
+   [
+    2,
+    5875
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Cleft_of_Shadow (crevasse with an opening to the sky, less savory denizens, rogue and warlock trainers, entrance to Ragefire Chasm, reached from the Drag)",
+   "warcraft.wiki.gg/wiki/Neeru_Fireblade (small hut in the Cleft)",
+   "npc_text 2193 (warlock trainers: the arcane only corrupts those who are weak)",
+   "quest 5761 description (Searing Blade in Ragefire Chasm subverting innocent members of the Horde, felguard Taragaman)",
+   "warcraft.wiki.gg/wiki/The_Shattered_Hand (rogues based in the Cleft, stealth, deception, poison)",
+   "quest 5727 description (Thrall keeps Neeru in place to use him)"
+  ],
+  "notes": "verified. Gan'rul Bloodeye 5875 (gossip 10031, template 83 hostile to Alliance) stands in the Cleft at world map 48,45. Ragefire Chasm itself is a separate instance (map 389) and not used as a trigger."
+ },
+ {
+  "id": 163705,
+  "kind": 1,
+  "zone": 1637,
+  "sort": 5,
+  "faction": 2,
+  "title": "Valley of Honor",
+  "body": "The Valley of Honor, in the northeast of the city, is Orgrimmar's martial quarter. Warriors drill in the Hall of the Brave, where officers of the Horde army muster and battlemasters send fighters to Alterac, Warsong Gulch and other fields of war. Hunters learn to hunt with pride, honor and tradition in their own hall, smiths and miners work the forges, and Ogunaro Wolfrunner keeps kennels of finely bred wolves, offered only to those the orcs count as true friends. Arena organizers gather challengers for the Ring of Valor. Not everything here is war. An orphanage shelters children who lost their parents to the Horde's many conflicts, a quiet reminder of the price of all that glory.",
+  "triggers": [
+   [
+    2,
+    3362
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Valley_of_Honor (military district at about 72,26; Hall of the Brave, Hunter's Hall, battlemasters, smithing, mining, fishing, Ring of Valor)",
+   "warcraft.wiki.gg/wiki/Hall_of_the_Brave (army officers, warrior trainers, battlemasters)",
+   "npc_text 4870 (hunter trainer: pride, honor, and tradition), 3893 and 5841 (Ogunaro wolves, exalted only)",
+   "DB spawns: permanent battlemasters Sawemba 35008 and Karg Skullgore 34955 in the Hall (the 3890 and 14942 spawns are Call to Arms events only); Greela Crankchain 30611 Arena Organizer; War-Hunter Molog 30610",
+   "npc_text 7010 (Orphan Matron Battlewail: orphans of war); warcraft.wiki.gg/wiki/The_Drag (orphanage was in the Valley of Honor before Cataclysm)"
+  ],
+  "notes": "verified; battlemaster source corrected to the permanent 3.3 battlemasters. Ogunaro 3362 at world map 69,12 (Valley of Honor), phase 1, gossip 3161. Orphan Matron (Children's Week, event 10) not used as a trigger; orphans 14499 stand year round. Hall of Legends (2917) left out: unreachable."
+ },
+ {
+  "id": 163706,
+  "kind": 1,
+  "zone": 1637,
+  "sort": 6,
+  "faction": 2,
+  "title": "Valley of Spirits",
+  "body": "The Valley of Spirits, a long and narrow valley in the southwest of the city, reached from the Valley of Strength, has long been the quarter of the Darkspear trolls. Their huts and lodges crowd its slopes. In Darkbriar Lodge troll mages teach the arcane arts, and a portal on its upper floor opens onto the Blasted Lands, far across the sea. The troll priests nearby greet strangers with a warning to respect their ways, or have a curse laid on them and theirs. Snakes of every color are for sale at Xan'tish's stall and staves at Ukra'nor's, and Warcaller Gorlach has the latest news from both continents and beyond for any hero willing to listen.",
+  "triggers": [
+   [
+    2,
+    5994
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Valley_of_Spirits (long narrow valley, long-standing seat of the Darkspear, Darkbriar Lodge, Skyfury Staves)",
+   "warcraft.wiki.gg/wiki/Darkbriar_Lodge (Valley of Spirits, Darkspear, mage trainers, portal to the Blasted Lands on the second floor)",
+   "DB: gameobject 195142 Portal to Blasted Lands at 1472,-4215 inside 1637; mage trainers 5882, 5883, 5885, 7311 nearby",
+   "npc_text 4440 (troll priests' warning: Zayus, Ur'kyo, X'yera)",
+   "DB: Xan'tish 8404 Snake Vendor with snake pets, Ukra'nor 3349 Staff Merchant",
+   "npc_text 6957 (Gorlach: latest news from both continents and points beyond)"
+  ],
+  "notes": "Location made precise from spawn coordinates (Zayus, Darkbriar Lodge portal and vendors at world map 30 to 38, 74 to 87) and the wiki (runs from the Valley of Strength). Zayus 5994 phase 1, gossip 4522, not an event spawn. AQ war effort NPCs (event 22) left out."
+ },
+ {
+  "id": 163707,
+  "kind": 2,
+  "zone": 1637,
+  "sort": 1,
+  "faction": 2,
+  "title": "Thrall",
+  "body": "Thrall, son of Durotan, is Warchief of the Horde. Born a Frostwolf and raised a gladiator slave in Durnholde Keep, he broke free, learned the ways of the shaman and freed the orcs from the internment camps, taking up the Doomhammer from the dying Orgrim. He led them across the sea to found Durotar. From Grommash Hold he preaches a new Horde: no demon spawned army, but a people of wisdom and honor who know when to show compassion even to a foe. He guards a fragile peace with the Alliance, was shaken to learn that a grandmother he never knew lives in Outland, and when Varimathras and Putress seized the Undercity, he swore that justice would be served.",
+  "triggers": [
+   [
+    2,
+    4949
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Thrall (Durotan and Draka, Frostwolf, Durnholde gladiator, internment camps, Doomhammer's warhammer and Warchief title, Kalimdor)",
+   "npc_text 4477 (Thrall gossip: wisdom and honor, quarter and compassion, the new Horde)",
+   "npc_text 5736 (peace with the Alliance)",
+   "quest 10175 reward text (I have a grandmother? She lives?)",
+   "quest 13266 description (Justice must be served)"
+  ],
+  "notes": "verified. TALK 4949 is the phase 1 Thrall (gossip 3664). Phased Thralls 31412 and 32363 left alone; 13189 is Scarlet Enclave's. Faction 2: template 1734."
+ },
+ {
+  "id": 163708,
+  "kind": 2,
+  "zone": 1637,
+  "sort": 2,
+  "faction": 2,
+  "title": "Vol'jin",
+  "body": "Vol'jin, son of Sen'jin, leads the Darkspear trolls. When Thrall's orcs freed his people from their captors on a storm swept isle, where his father was slain, Vol'jin pledged the tribe to the Horde, and the trolls followed the orcs to Kalimdor. Now he stands in the Warchief's chamber as an adviser, greeting each new champion as a sign that the fates smile on the Horde. He has no love for humans. When Admiral Proudmoore's sealed orders came to Orgrimmar, he reminded all who would hear that he had urged Thrall countless times not to trust them. When the Undercity fell to traitors, it was Vol'jin who held the ground outside the ruins until Thrall and Sylvanas arrived.",
+  "triggers": [
+   [
+    2,
+    10540
+   ],
+   [
+    5,
+    831
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Vol'jin (son of Sen'jin, pledged loyalty to repay Thrall's rescue, adviser at Thrall's fortress, held position outside the Ruins of Lordaeron)",
+   "npc_text 8733 (another hero, the fates smile upon us)",
+   "quest 831 reward text (urged the Warchief not to trust the humans)",
+   "quest 13266 description (Vol'jin waiting at the Undercity)",
+   "durotar.json 1404 (Sen'jin slain on the isles where the tribe met Thrall)"
+  ],
+  "notes": "verified. QUEST_DONE 831 shares no trigger with Durotar's Proudmoore's Remnant (784, 830) and the chain is only alluded to. Echo Isles liberation (Cataclysm pre-launch) left out. Faction 2: template 125."
+ },
+ {
+  "id": 163709,
+  "kind": 2,
+  "zone": 1637,
+  "sort": 3,
+  "faction": 2,
+  "title": "Eitrigg",
+  "body": "Eitrigg is an old warrior of the Blackrock clan, a veteran of the First and Second Wars. After the second he followed Rend Blackhand to Blackrock Spire, where both his sons were slain in the wars with the Dark Iron dwarves. Refusing to serve such a power hungry fool, he went to live as a hermit in the woods of Lordaeron near Hearthglen. Captured there by humans, he was saved from execution by Tirion Fordring and by Thrall, whose vision of a Horde free of demons won him back. He became an adviser in the Warchief's throne room. Now Tirion, Highlord of the Argent Crusade, has asked for him, and Eitrigg serves the Crusade at the Argent Stand in Zul'Drak.",
+  "triggers": [
+   [
+    2,
+    3144
+   ]
+  ],
+  "sources": [
+   "npc_text 3574 to 3579 (Eitrigg gossip: Rend, sons slain fighting the Dark Iron, hermit near Hearthglen, rescued by Thrall)",
+   "quest 787 description (captured by humans, rescued by the Warchief, vision of a Horde free of demonic influence)",
+   "warcraft.wiki.gg/wiki/Eitrigg (veteran of the First and Second Wars, Tirion saved him from execution, adviser in Thrall's throne room, Tirion asked Thrall to send him to Northrend, Argent Crusade in Zul'Drak)",
+   "DB: Eitrigg 28244 spawned in Zul'Drak (map 571)",
+   "quest 12584 description and creature_text 28244 (Eitrigg at the Argent Stand, saronite to be taken to Highlord Fordring)",
+   "quest 13189 reward text (Tirion broke Eitrigg out of Stratholme before his execution)"
+  ],
+  "notes": "Northrend line narrowed to what 3.3.5 shows: Eitrigg 28244 at the Argent Stand in Zul'Drak (quest 12584, creature_text), Tirion's request per the wiki. Orgrimmar spawn 3144 (phase 1, gossip 2901) stays the trigger. Faction 2: template 29."
+ },
+ {
+  "id": 163710,
+  "kind": 2,
+  "zone": 1637,
+  "sort": 4,
+  "faction": 2,
+  "title": "Neeru Fireblade",
+  "body": "Neeru Fireblade is the orc warlock of the Cleft of Shadow who claims he volunteered to aid the young Warchief, to prove that not every warlock of the Horde would rule it or destroy it from within. He counsels strangers not to trust too quickly, or distrust, for even friends serve their own ends. Shamans send him cult relics they cannot read, and heroes bring him trophies of the Searing Blade and even Onyxia's head. To a supposed fellow cultist, though, he speaks freely: Thrall is a fool, and the Burning Legion will drain this world and make ash of it. Thrall knows him for the true leader of the Burning Blade, and uses him.",
+  "triggers": [
+   [
+    2,
+    3216
+   ]
+  ],
+  "sources": [
+   "npc_text 4513 (Neeru gossip: volunteered to aid our young leader; trust and distrust)",
+   "npc_text 4533 (private boast: Thrall a fool, Legion will make ash of this world)",
+   "quest 5727 description (Thrall: he is in fact the leader of the Burning Blade; we shall use him)",
+   "quest 829, 832 (relics brought to Neeru; told in Durotar)",
+   "quest 5761 (Taragaman's heart)",
+   "quest 24429 (head of Onyxia delivered to Neeru)",
+   "warcraft.wiki.gg/wiki/Neeru_Fireblade"
+  ],
+  "notes": "verified. Complements Durotar: the collar episode is only alluded to; the Demon Seed (809) is left to the Barrens. 24429 is the live 3.3.5 Onyxia head quest. Faction 2: template 29."
+ },
+ {
+  "id": 163711,
+  "kind": 2,
+  "zone": 1637,
+  "sort": 5,
+  "faction": 2,
+  "title": "Overlord Runthak",
+  "body": "Overlord Runthak stands in the Valley of Strength, the orc who carries out the Warchief's commands without question. It falls to him to proclaim the Horde's great victories to the people of Orgrimmar. When Nefarian fell, he took up the proclamation once made by High Overlord Saurfang before Saurfang went north, crying the dragon's death to the gathered city and mounting the head of the beast for all to see. His hardest hour came after the Wrathgate. With the Undercity lost and war with the Alliance at hand, he faced an angry crowd and shouted it into silence: the shops would stay closed until further notice, and the Warchief was doing all he could to keep them safe.",
+  "triggers": [
+   [
+    2,
+    14392
+   ]
+  ],
+  "sources": [
+   "npc_text 6935, 7176 (Runthak gossip)",
+   "creature_text 14392 (Onyxia and Nefarian proclamations)",
+   "quest 7491, 7784 (Valley of Strength, head mounted for all to see)",
+   "warcraft.wiki.gg/wiki/Overlord_Runthak (replaced Saurfang in announcing Nefarian's death when Saurfang left for Northrend; calmed citizens when the refugees arrived)",
+   "creature_text 31431 (martial law phase lines)"
+  ],
+  "notes": "Onyxia head ceremony removed: quest 7490/7491 cannot start in 3.3.5 (item 18422 no longer drops; Onyxia drops 49643 for 24429, turned in to Neeru). Nefarian part kept (7783/7784 live, item 19002 drops). TALK on phase 1 Runthak 14392 (gossip 6024). Faction 2: template 29."
+ },
+ {
+  "id": 163712,
+  "kind": 2,
+  "zone": 1637,
+  "sort": 6,
+  "faction": 2,
+  "title": "Shenthul",
+  "body": "Shenthul is a jungle troll of high rank in the Shattered Hand, the order of spies, assassins and poisoners whose rogues train in the Cleft of Shadow. The Hand names itself the veil over Kalimdor: its protectors, police, judges, jury and executioners. It counts the Deathstalkers of the Undercity as allies, and its spies have crept into the upper halls of Blackrock Spire. Even Thrall, its fence Jes'rimon claims, admits the Hand is needed. Its loyalty is less certain. Shenthul warns his recruits to stay vigilant against the changes Thrall would bring, since numbers alone will not overcome his rule, and his trainers speak openly of restoring the Horde's glory without the Warchief's timidity.",
+  "triggers": [
+   [
+    2,
+    3401
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Shenthul (jungle troll, rogue trainer, Shattered Hand, Cleft of Shadow)",
+   "warcraft.wiki.gg/wiki/The_Shattered_Hand (spies, assassins, poisons; Jes'rimon a fence; ambivalence toward Thrall)",
+   "npc_text 1124 (the veil which covers Kalimdor)",
+   "npc_text 2822 (Jes'rimon: Thrall acknowledges the Hand is necessary)",
+   "quest 2378 (Deathstalkers' allies in the Shattered Hand)",
+   "npc_text 5733 (Thrall: Shattered Hand spies in upper Blackrock)",
+   "quest 2380 reward text (vigilant against Thrall's changes, numbers alone not enough to overcome his rule)",
+   "npc_text 638 (Gest and Ormok: unhindered by the timidness of the Warchief)"
+  ],
+  "notes": "Deathstalker tie reworded to match quest 2378 (allies). Shenthul 3401 in the Cleft (world map 43,54). Faction 2: template 126 (Darkspear). Gossip 21221 shows a refusal text to non rogues, so he can still be talked to."
+ },
+ {
+  "id": 163713,
+  "kind": 3,
+  "zone": 1637,
+  "sort": 1,
+  "faction": 2,
+  "title": "Hidden Enemies",
+  "body": "Thrall will not tolerate traitors, but neither will he strike too soon and leave the rot to spread. So he turns to a young hero who can go where his agents cannot. The first task is to take an insignia from a Burning Blade lieutenant at Skull Rock. With it the hero calls on Neeru Fireblade in the Cleft of Shadow, whom Thrall knows to be the true leader of the Burning Blade, and Neeru, taking the newcomer for one of his own, speaks of the cult and of the leaders of the Searing Blade he values most. Thrall marks those leaders first. In Ragefire Chasm the satyr Bazzalan and Jergosh the Invoker are slain, and Neeru rages at the loss, blaming Thrall's do-gooders. Still trusting his new lieutenant, he lets slip that his agents in the Barrens and Ashenvale will begin the Shadow Council's newest scheme. Thrall had heard nothing of the Council in Ashenvale. His spies will look into it, and the Warchief will call on his hero again.",
+  "triggers": [
+   [
+    4,
+    5726
+   ]
+  ],
+  "sources": [
+   "quests 5726, 5727, 5728, 5729, 5730 (descriptions, completion and reward texts)",
+   "npc_text 4533 and gossip option 21272 (Neeru's private boast)",
+   "warcraft.wiki.gg/wiki/Neeru_Fireblade (Hidden Enemies summary)"
+  ],
+  "notes": "verified against 5726 to 5730 and Neeru's gossip chain 21272 to 21275. Faction 2: AllowableRaces 690. Skull Rock is only named; Durotar's Skull Rock and Gazz'uz entries are not retold."
+ },
+ {
+  "id": 163714,
+  "kind": 3,
+  "zone": 1637,
+  "sort": 2,
+  "faction": 2,
+  "title": "The False Warchief",
+  "body": "Among documents taken from Blackrock Spire by the Kargath Expeditionary Force lies a claim that stuns Orgrimmar: Rend Blackhand, long thought dead, lives and calls himself Warchief. The news goes first to Eitrigg in Thrall's chamber, for none knows the Blackrock better. He tells how Rend and his brother Maim fled to the Spire after the Second War and fought the Dark Iron dwarves for it, driving them into the lower city only after Maim died and the dragons came, how his own sons fell in that war, and how Nefarian, brood of Deathwing, now rules the Spire with Rend as his servant. Thrall's answer is plain. Whoever goes must find a way through the Halls of Ascension, slay the false Warchief and lay his head before the throne. When it is done, Thrall calls on all Orgrimmar to honor its heroes and bathes the city in his blessing, and the Blackrock are thrown into chaos once more.",
+  "triggers": [
+   [
+    4,
+    4941
+   ]
+  ],
+  "sources": [
+   "quest 4903 (Important Blackrock Documents), 4941 description (Rend lives? thought slain decades ago; seek Eitrigg)",
+   "npc_text 3574 to 3579 (Eitrigg's account)",
+   "quest 4974 description and reward text",
+   "creature_text 4949 (the false Warchief has fallen; be bathed in my power)"
+  ],
+  "notes": "verified. No finished zone tells Rend's story (Badlands' Goretooth covers 4903 only; Burning Steppes, Searing Gorge and Wetlands do not touch Rend). 4941 is accepted from Goretooth 9077 in Kargath. Faction 2: AllowableRaces 690."
+ },
+ {
+  "id": 163715,
+  "kind": 3,
+  "zone": 1637,
+  "sort": 3,
+  "faction": 2,
+  "title": "What the Wind Carries",
+  "body": "After Rend's fall, Thrall shares what the wind carries from the Eastern Kingdoms. The Shattered Hand's spies in Blackrock Spire have learned that Onyxia, brood mother of the black dragonflight, had disguised herself as a noble of Stormwind's court and bent its regent to her will, until she was unmasked and fled to her lair in Dustwallow Marsh. Asked why not let the Alliance fall, Thrall only laughs. The Horde has peace, something its people have not known for ages, and he will not throw that away. But Onyxia cannot live so near the Horde's cities. His champion Rexxar found a way into her lair before leaving for Outland, and left the secret with his companion Rokaro in Shadowprey Village. Rokaro sets the hero on the road: an illusion woven by Myranda the Hag, the trials of the old drake Emberstrife, and at last an amulet that only the blood of General Drakkisath can awaken. With it the way into the lair of the brood mother lies open, and the victory, Rokaro promises, will be remembered for many years.",
+  "triggers": [
+   [
+    4,
+    6566
+   ]
+  ],
+  "sources": [
+   "npc_text 5733 to 5738 (Thrall's account of Onyxia, the peace, the order to destroy her)",
+   "quest 6566, 6567 (Rexxar left for Outland, Rokaro in Shadowprey Village)",
+   "quest 6568 to 6602 (Myranda's illusion, Emberstrife's tests, Drakkisath's blood)",
+   "quest 6602 reward text (Drakefire Amulet opens Onyxia's lair; a victory remembered for many years)",
+   "DB: Rokaro 10182 Champion of the Horde in Shadowprey Village ends 6567; creature_loot_template 10184 drops 49643/49644 only"
+  ],
+  "notes": "Removed QUEST_ACCEPT 7490 and the head ceremony (Thrall's reaction, Runthak's display): in 3.3.5 Onyxia drops item 49643, which starts 24429 to Neeru, and item 18422 (starting 7490) no longer drops. Ending now closes on the Drakefire Amulet (6602). Rokaro confirmed as 6567's ender; the Rexxar grins line in its reward text is a data slip and not used. Not told in any finished zone: Stormwind's Dragons at Court is the Alliance masquerade story; Myranda has her own Western Plaguelands entry and is only named. Faction 2: AllowableRaces 690."
+ },
+ {
+  "id": 163716,
+  "kind": 3,
+  "zone": 1637,
+  "sort": 4,
+  "faction": 2,
+  "title": "The Lord of Blackrock",
+  "body": "Nefarian, son of Deathwing, ruled Blackrock Spire from its heights and kept the false Warchief Rend in his service. When at last the dragon's battle scarred head is carried down from his lair and brought to Orgrimmar, Thrall wishes only that he could have seen the beast's face at the killing blow. Yet he gives a warning with his thanks: the son of Deathwing lies dead, and surely the evil one stirs. He sends the slayer to Overlord Runthak in the Valley of Strength. There, before the gathered city, Runthak cries out that Nefarian is slain, that the blow will surely rouse the Aspects from their malaise, and that Deathwing himself reels in pain and anguish this day. Then the head of the beast is mounted for all to see.",
+  "triggers": [
+   [
+    4,
+    7783
+   ]
+  ],
+  "sources": [
+   "quest 7783 description, completion and reward texts",
+   "quest 7784 reward text (mount the head of the beast for all to see)",
+   "creature_text 14392 group 2",
+   "npc_text 3579 (Nefarian rules the Spire, Rend under his command)"
+  ],
+  "notes": "verified. Distinct from Stormwind's Dragons at Court (Alliance turn in, 7781). 7783 starts from the Horde Head of Nefarian item 19002, which Nefarian 11583 still drops. Faction 2: AllowableRaces 690."
+ },
+ {
+  "id": 163717,
+  "kind": 3,
+  "zone": 1637,
+  "sort": 5,
+  "faction": 2,
+  "title": "Alliance Relations",
+  "body": "Craven Drok shares a truth about the orcs that is far from obvious. They are a proud people, and the war with the humans tried even Thrall's patience, but the Warchief is a diplomat at heart, and in his years among humans he learned much of their ways. Craven sends the curious to Keldran, a student of magic and other mystical arts whose hovel stands near the city's western exit. It begins with appearances, Keldran explains: how the Horde sees itself, how its allies see it and, most of all, how its enemies see it. As the Alliance pushes deeper into Kalimdor, it might wrongly decide that the Horde has made pacts with the Burning Legion, and Thrall cannot allow that. With his blessing Keldran has sent agents to Desolace to root out the Burning Blade and the satyr there. When the work is done, Keldran gives thanks: Thrall desires peace, and a Horde seen to be clean of demons gives the Alliance no cause for needless war.",
+  "triggers": [
+   [
+    4,
+    1431
+   ]
+  ],
+  "sources": [
+   "quest 1431 description and reward text",
+   "quest 1432 description (pacts with the Burning Legion, Ghost Walker Post)",
+   "quests 1433 to 1435 (Burning Blade and satyr in Desolace)",
+   "quest 1436 reward text (Thrall desires peace; appearance acceptable)"
+  ],
+  "notes": "verified. Faction 2: 1431 has AllowableRaces 0, but Craven Drok 5639 is template 83, hostile to the Alliance, and 1433 to 1436 are Horde only. Desolace (1432 to 1435, not a finished zone) is kept to one sentence; Keldran 5640 stands at the city's west side (world map 23,53), matching the quest text."
+ },
+ {
+  "id": 163718,
+  "kind": 3,
+  "zone": 1637,
+  "sort": 6,
+  "faction": 2,
+  "title": "The Shattered Hand",
+  "body": "Young rogues of the Horde who show promise are approached quietly. In Razor Hill, Kaplak passes word that Therzok of the Cleft of Shadow has an offer to make. The offer is a test. The Warchief, Therzok says, is too subtle and too cautious to unleash the might of the Horde, and the Shattered Hand means to win back the pride of the old conquerors, building strength in the shadows and striking where the enemy is exposed. First the recruit must kill Tazan, a troll who trades with the pirates near Ratchet, and bring back his satchel. The satchel is locked and the key is not on the body, so the recruit must find Tazan's assistant Gamon, a drunkard at the tavern in Orgrimmar, and quietly relieve him of it. What lies inside proves the recruit's worth, and Therzok welcomes the newest member of the Shattered Hand.",
+  "triggers": [
+   [
+    4,
+    1859
+   ],
+   [
+    4,
+    1963
+   ]
+  ],
+  "sources": [
+   "quest 1859 description and reward text (Kaplak, Therzok's offer)",
+   "quest 1963 description (Warchief too subtle and cautious; Tazan near Ratchet)",
+   "quest 1858 description and reward text (Gamon the drunkard, newest member of the Shattered Hand)",
+   "DB: Tazan 6494 in the Barrens near Ratchet; Gamon 6466 in the Broken Tusk"
+  ],
+  "notes": "verified. Faction 2: AllowableRaces 690, rogue only (AllowableClasses 8). 1859 is from Kaplak 3170 in Razor Hill; 1963 also listed since undead and blood elf rogues enter by other quests of the same exclusive group (1885, 9532). Durotar uses neither quest; Undercity's 1885 trigger is not reused."
+ }
+]
