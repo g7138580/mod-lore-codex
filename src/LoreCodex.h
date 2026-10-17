@@ -7,9 +7,12 @@
  * from a flight path or while dead. The LoreCodex addon shows a toast for each discovery and
  * the codex window; without the addon a discovery is a line in chat.
  *
- * Entries live in the world database (mod_lore_codex_entry and mod_lore_codex_trigger), so lore
- * can be added or corrected with SQL and ".codex reload". Discoveries are kept per character in
- * the characters database (mod_lore_codex_discovered).
+ * Entries live in the world database (mod_lore_codex_entry, mod_lore_codex_part and
+ * mod_lore_codex_trigger), so lore can be added or corrected with SQL and ".codex reload". An
+ * entry's body is what a character first reads; its parts add to it, each unlocked by its own
+ * triggers (the codex "updates") or shown only in some mod-individual-progression states.
+ * Discoveries are kept per character in the characters database (mod_lore_codex_discovered and
+ * mod_lore_codex_discovered_part).
  */
 
 #ifndef MOD_LORE_CODEX_H
@@ -28,7 +31,7 @@ namespace LoreCodex
     constexpr char const* PREFIX = "LCX";
 
     // Bumped when a message changes shape. The addon refuses the server on a mismatch.
-    constexpr uint32 PROTOCOL_VERSION = 2;
+    constexpr uint32 PROTOCOL_VERSION = 3;
 
     // Leaves room for the prefix and tab inside the client's 255-byte chat message limit.
     constexpr std::size_t MAX_PAYLOAD = 240;
@@ -89,6 +92,9 @@ namespace LoreCodex
     // mod-individual-progression's state (0-18), or 18 when it isn't running or for game masters.
     uint8 ProgressionState(Player* player);
 
+    // Whether a quest is one of mod-individual-progression's hidden progress markers.
+    bool IsProgressionQuest(uint32 questId);
+
     // Answers an addon message (everything after "LCX\t").
     void Dispatch(Player* player, std::string_view message);
 
@@ -117,8 +123,13 @@ namespace LoreCodex
         // it has taken or turned in. Silent; returns how many were added.
         uint32 Backfill(Player* player);
 
-        // Game master tools.
+        // mod-individual-progression moved the character on: credit what it now allows and let the
+        // addon fetch the texts again.
+        void OnProgression(Player* player);
+
+        // Game master tools. Discover(entry) gives the entry and all its parts; part 0 is the entry.
         bool Discover(Player* player, uint32 entryId);
+        bool DiscoverPart(Player* player, uint32 entryId, uint8 part);
         uint32 DiscoverAll(Player* player);
         void Forget(Player* player);
         uint32 KnownCount(Player* player);

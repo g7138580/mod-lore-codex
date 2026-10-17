@@ -2,7 +2,7 @@
 ## Title: Lore Codex
 ## Notes: Companion to the AzerothCore module mod-lore-codex: a codex of Azeroth's lore that fills in as you travel, meet people and quest. /codex
 ## Author: mod-lore-codex
-## Version: 1
+## Version: 2
 ## SavedVariables: LoreCodexDB
 ## SavedVariablesPerCharacter: LoreCodexCharDB
 

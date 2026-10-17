@@ -6,13 +6,19 @@
  * online character's discoveries are kept in memory beside the area it was last seen exploring;
  * new discoveries are written to the characters database as they happen.
  *
+ * An entry is its opening body plus any number of parts. A part with triggers is earned like an
+ * entry is (earning one first also unlocks the entry); a part without triggers always shows with
+ * its entry. Either kind can be limited to a range of mod-individual-progression states, which
+ * only matters for what is shown, never for what is recorded.
+ *
  * Index rows (ID): Z,<zone>,<map>,<zone name> once per zone with entries, then
  * E,<entry>,<kind>,<zone>,<sort>,<faction> per entry. Titles and texts are only sent for
  * entries the character knows (T), so the codex can't be read ahead.
  *
- * Known rows (KD): K,<entry> for each entry the character knows, H,<entry> for each entry it can
- * never unlock: the other faction's, and those whose every trigger is out of its reach (a quest
- * its race or class can't take, someone it can't talk to or can't attack). The addon hides those.
+ * Known rows (KD): K,<entry>,<parts earned> for each entry the character knows, H,<entry> for
+ * each entry it can never unlock: the other faction's, and those whose every trigger is out of
+ * its reach (a quest its race or class can't take, someone it can't talk to or can't attack).
+ * The addon hides those.
  */
 
 #include "LoreCodex.h"
@@ -36,6 +42,15 @@ namespace LoreCodex::Data
 {
     namespace
     {
+        struct Part
+        {
+            uint8 part = 0;
+            uint8 minState = 0;
+            uint8 maxState = 255;
+            bool earned = false; // has triggers of its own; otherwise it always shows with the entry
+            std::string body;
+        };
+
         struct Entry
         {
             uint32 id = 0;
@@ -46,9 +61,11 @@ namespace LoreCodex::Data
             uint8 requiredState = 0;
             std::string title;
             std::string body;
+            std::vector<Part> parts; // in reading order
         };
 
         using TriggerKey = std::pair<uint8, uint32>; // type, value
+        using Target = std::pair<uint32, uint8>;     // entry, part (0 = the entry itself)
 
         // Who can meet a trigger: quests carry their race and class limits, creatures their
         // faction template; areas are open to everyone.
@@ -64,9 +81,9 @@ namespace LoreCodex::Data
         struct Content
         {
             std::map<uint32, Entry> entries;
-            std::map<TriggerKey, std::vector<uint32>> byTrigger;
-            std::map<uint32, std::vector<TriggerKey>> triggersOf;
-            std::map<uint32, std::vector<Need>> needsOf;
+            std::map<TriggerKey, std::vector<Target>> byTrigger;
+            std::map<Target, std::vector<TriggerKey>> triggersOf;
+            std::map<Target, std::vector<Need>> needsOf;
             // An area trigger and every area inside it, for crediting explored areas.
             std::unordered_map<uint32, std::vector<uint32>> areaCovers;
             uint32 stamp = 0;
@@ -81,12 +98,18 @@ namespace LoreCodex::Data
             return sContent;
         }
 
+        uint64 PartKey(uint32 entry, uint8 part)
+        {
+            return (uint64(entry) << 8) | part;
+        }
+
         struct PlayerState
         {
             uint32 lastArea = 0;
             bool addon = false;
             uint32 backfilled = 0;
             std::unordered_set<uint32> known;
+            std::unordered_set<uint64> knownParts;
         };
 
         std::unordered_map<ObjectGuid::LowType, PlayerState> sPlayers;
@@ -117,6 +140,14 @@ namespace LoreCodex::Data
             return Fnv(h, uint32(s.size()));
         }
 
+        Part const* FindPart(Entry const& e, uint8 part)
+        {
+            for (Part const& p : e.parts)
+                if (p.part == part)
+                    return &p;
+            return nullptr;
+        }
+
         bool FactionAllows(Player* player, Entry const& e)
         {
             if (e.faction == FACTION_ALLIANCE)
@@ -137,21 +168,11 @@ namespace LoreCodex::Data
             return (player->GetUInt32Value(PLAYER_EXPLORED_ZONES_1 + offset) & (1u << (area->exploreFlag % 32))) != 0;
         }
 
-        // Whether the character could ever unlock the entry: its faction allows it and at least
-        // one trigger is within its reach.
-        bool Eligible(Player* player, Content const& content, Entry const& e)
+        // Whether at least one of these triggers is within the character's reach.
+        bool Reachable(Player* player, std::vector<Need> const& needs)
         {
-            if (!FactionAllows(player, e))
-                return false;
-            // The Scarlet Enclave is on the Ebon Hold's own map: only death knights ever go there.
-            if (AreaTableEntry const* zone = sAreaTableStore.LookupEntry(e.zone))
-                if (zone->mapid == MAP_EBON_HOLD && player->getClass() != CLASS_DEATH_KNIGHT)
-                    return false;
-            auto needs = content.needsOf.find(e.id);
-            if (needs == content.needsOf.end())
-                return false;
             FactionTemplateEntry const* mine = sFactionTemplateStore.LookupEntry(player->GetFaction());
-            for (Need const& need : needs->second)
+            for (Need const& need : needs)
             {
                 switch (need.type)
                 {
@@ -183,26 +204,66 @@ namespace LoreCodex::Data
             return false;
         }
 
-        void Announce(Player* player, Entry const& e, bool addon)
+        bool TargetReachable(Player* player, Content const& content, Target const& target)
+        {
+            auto needs = content.needsOf.find(target);
+            return needs != content.needsOf.end() && Reachable(player, needs->second);
+        }
+
+        // Whether the character could ever unlock the entry: its faction allows it and at least
+        // one trigger of the entry or of one of its parts is within its reach.
+        bool Eligible(Player* player, Content const& content, Entry const& e)
+        {
+            if (!FactionAllows(player, e))
+                return false;
+            // The Scarlet Enclave is on the Ebon Hold's own map: only death knights ever go there.
+            if (AreaTableEntry const* zone = sAreaTableStore.LookupEntry(e.zone))
+                if (zone->mapid == MAP_EBON_HOLD && player->getClass() != CLASS_DEATH_KNIGHT)
+                    return false;
+            if (TargetReachable(player, content, { e.id, 0 }))
+                return true;
+            for (Part const& p : e.parts)
+                if (p.earned && TargetReachable(player, content, { e.id, p.part }))
+                    return true;
+            return false;
+        }
+
+        uint32 PartsEarned(PlayerState const& st, Entry const& e)
+        {
+            uint32 n = 0;
+            for (Part const& p : e.parts)
+                if (p.earned && st.knownParts.count(PartKey(e.id, p.part)))
+                    ++n;
+            return n;
+        }
+
+        void Announce(Player* player, Entry const& e, bool addon, bool isNew, uint32 parts)
         {
             if (addon)
             {
-                Send(player, "NEW:0:" + std::to_string(e.id) + ":" + std::to_string(e.kind) + ":" + std::to_string(e.zone)
-                    + ":" + Escape(e.title));
+                Send(player, std::string(isNew ? "NEW" : "UPD") + ":0:" + std::to_string(e.id) + ":" + std::to_string(e.kind)
+                    + ":" + std::to_string(e.zone) + ":" + Escape(e.title) + ":" + std::to_string(parts));
                 return;
             }
             if (GetConfig().chatFallback)
-                ChatHandler(player->GetSession()).PSendSysMessage("|cffe6cc80Lore discovered:|r {} ({})", e.title,
-                    KIND_NAMES[e.kind]);
+                ChatHandler(player->GetSession()).PSendSysMessage(isNew ? "|cffe6cc80Lore discovered:|r {} ({})"
+                    : "|cffe6cc80Lore updated:|r {} ({})", e.title, KIND_NAMES[e.kind]);
         }
 
-        // Records the entry for the player; false when it doesn't apply or is already known.
-        bool TryDiscover(Player* player, Content const& content, uint32 id, bool announce, bool force)
+        // Records the entry, or one of its parts (and the entry with it), for the player; false
+        // when it doesn't apply or is already known.
+        bool TryDiscover(Player* player, Content const& content, uint32 id, uint8 part, bool announce, bool force)
         {
             auto itr = content.entries.find(id);
             if (itr == content.entries.end())
                 return false;
             Entry const& e = itr->second;
+            if (part)
+            {
+                Part const* p = FindPart(e, part);
+                if (!p || !p->earned)
+                    return false;
+            }
             if (!force)
             {
                 if (!FactionAllows(player, e))
@@ -212,20 +273,30 @@ namespace LoreCodex::Data
             }
 
             ObjectGuid::LowType guid = player->GetGUID().GetCounter();
-            bool addon = false;
+            bool addon = false, newEntry = false, newPart = false;
+            uint32 parts = 0;
             {
                 std::lock_guard<std::mutex> guard(sPlayersLock);
                 auto st = sPlayers.find(guid);
-                if (st == sPlayers.end() || !st->second.known.insert(id).second)
+                if (st == sPlayers.end())
+                    return false;
+                newEntry = st->second.known.insert(id).second;
+                newPart = part && st->second.knownParts.insert(PartKey(id, part)).second;
+                if (!newEntry && !newPart)
                     return false;
                 addon = st->second.addon;
+                parts = PartsEarned(st->second, e);
             }
 
             uint32 when = announce ? uint32(GameTime::GetGameTime().count()) : 0;
-            CharacterDatabase.Execute("INSERT IGNORE INTO mod_lore_codex_discovered (guid, entry, time) VALUES ({}, {}, {})",
-                guid, id, when);
+            if (newEntry)
+                CharacterDatabase.Execute("INSERT IGNORE INTO mod_lore_codex_discovered (guid, entry, time) VALUES ({}, {}, {})",
+                    guid, id, when);
+            if (newPart)
+                CharacterDatabase.Execute("INSERT IGNORE INTO mod_lore_codex_discovered_part (guid, entry, part, time) "
+                    "VALUES ({}, {}, {}, {})", guid, id, part, when);
             if (announce)
-                Announce(player, e, addon);
+                Announce(player, e, addon, newEntry, parts);
             return true;
         }
 
@@ -234,8 +305,31 @@ namespace LoreCodex::Data
             auto itr = content.byTrigger.find({ uint8(type), value });
             if (itr == content.byTrigger.end())
                 return;
-            for (uint32 id : itr->second)
-                TryDiscover(player, content, id, true, false);
+            for (auto const& [id, part] : itr->second)
+                TryDiscover(player, content, id, part, true, false);
+        }
+
+        // The entry for a known character: its body, each part it has earned and every part that
+        // needs no earning, those limited to other progression states left out. Also says how many
+        // parts were earned and whether more could be.
+        std::string Compose(Player* player, Content const& content, Entry const& e, PlayerState const& st,
+            uint32& earned, bool& more)
+        {
+            uint8 state = ProgressionState(player);
+            std::string text = e.body;
+            earned = 0;
+            more = false;
+            for (Part const& p : e.parts)
+            {
+                bool has = !p.earned || st.knownParts.count(PartKey(e.id, p.part));
+                if (p.earned && has)
+                    ++earned;
+                if (p.earned && !has && TargetReachable(player, content, { e.id, p.part }))
+                    more = true;
+                if (has && state >= p.minState && state <= p.maxState)
+                    text += "\n\n" + p.body;
+            }
+            return text;
         }
     }
 
@@ -267,9 +361,33 @@ namespace LoreCodex::Data
             } while (result->NextRow());
         }
 
+        uint32 parts = 0;
+        if (QueryResult result = WorldDatabase.Query("SELECT Entry, Part, MinState, MaxState, Body FROM mod_lore_codex_part "
+            "ORDER BY Entry, Part"))
+        {
+            do
+            {
+                Field* f = result->Fetch();
+                uint32 entry = f[0].Get<uint32>();
+                Part p;
+                p.part = f[1].Get<uint8>();
+                p.minState = f[2].Get<uint8>();
+                p.maxState = f[3].Get<uint8>();
+                p.body = f[4].Get<std::string>();
+                auto itr = content->entries.find(entry);
+                if (itr == content->entries.end() || !p.part)
+                {
+                    LOG_ERROR("module", "LoreCodex: part {} of entry {} has no entry or is numbered 0, skipped.", p.part, entry);
+                    continue;
+                }
+                itr->second.parts.push_back(std::move(p));
+                ++parts;
+            } while (result->NextRow());
+        }
+
         uint32 triggers = 0;
         std::unordered_set<uint32> areaTriggers;
-        if (QueryResult result = WorldDatabase.Query("SELECT Entry, Type, Value FROM mod_lore_codex_trigger"))
+        if (QueryResult result = WorldDatabase.Query("SELECT Entry, Type, Value, Part FROM mod_lore_codex_trigger"))
         {
             do
             {
@@ -277,8 +395,21 @@ namespace LoreCodex::Data
                 uint32 entry = f[0].Get<uint32>();
                 uint8 type = f[1].Get<uint8>();
                 uint32 value = f[2].Get<uint32>();
+                uint8 part = f[3].Get<uint8>();
 
-                bool valid = content->entries.count(entry) != 0;
+                auto owner = content->entries.find(entry);
+                bool valid = owner != content->entries.end();
+                if (valid && part)
+                {
+                    Part* p = nullptr;
+                    for (Part& candidate : owner->second.parts)
+                        if (candidate.part == part)
+                            p = &candidate;
+                    if (p)
+                        p->earned = true;
+                    else
+                        valid = false;
+                }
                 Need need;
                 need.type = type;
                 switch (type)
@@ -312,13 +443,15 @@ namespace LoreCodex::Data
                 }
                 if (!valid)
                 {
-                    LOG_ERROR("module", "LoreCodex: trigger (entry {}, type {}, value {}) points at nothing, skipped.", entry, type, value);
+                    LOG_ERROR("module", "LoreCodex: trigger (entry {}, part {}, type {}, value {}) points at nothing, skipped.",
+                        entry, part, type, value);
                     continue;
                 }
 
-                content->byTrigger[{ type, value }].push_back(entry);
-                content->triggersOf[entry].push_back({ type, value });
-                content->needsOf[entry].push_back(need);
+                Target target{ entry, part };
+                content->byTrigger[{ type, value }].push_back(target);
+                content->triggersOf[target].push_back({ type, value });
+                content->needsOf[target].push_back(need);
                 if (type == TRIGGER_AREA)
                     areaTriggers.insert(value);
                 ++triggers;
@@ -326,8 +459,13 @@ namespace LoreCodex::Data
         }
 
         for (auto const& [id, e] : content->entries)
-            if (!content->triggersOf.count(id))
+        {
+            bool any = content->triggersOf.count({ id, 0 }) != 0;
+            for (Part const& p : e.parts)
+                any = any || p.earned;
+            if (!any)
                 LOG_WARN("module", "LoreCodex: entry {} ({}) has no triggers; only .codex discover can unlock it.", id, e.title);
+        }
 
         for (uint32 i = 0; i < sAreaTableStore.GetNumRows(); ++i)
         {
@@ -346,10 +484,14 @@ namespace LoreCodex::Data
 
         uint32 h = 2166136261u;
         for (auto const& [id, e] : content->entries)
+        {
             h = Fnv(Fnv(Fnv(Fnv(Fnv(Fnv(Fnv(h, id), e.kind), e.zone), e.sort), e.faction), e.title), e.body);
+            for (Part const& p : e.parts)
+                h = Fnv(Fnv(Fnv(Fnv(Fnv(h, p.part), p.minState), p.maxState), uint32(p.earned)), p.body);
+        }
         content->stamp = h;
 
-        LOG_INFO("module", ">> LoreCodex: loaded {} entries and {} triggers.", content->entries.size(), triggers);
+        LOG_INFO("module", ">> LoreCodex: loaded {} entries, {} parts and {} triggers.", content->entries.size(), parts, triggers);
 
         std::lock_guard<std::mutex> guard(sContentLock);
         sContent = std::move(content);
@@ -368,17 +510,25 @@ namespace LoreCodex::Data
     void OnLogin(Player* player)
     {
         PlayerState state;
-        if (QueryResult result = CharacterDatabase.Query("SELECT entry FROM mod_lore_codex_discovered WHERE guid = {}",
-            player->GetGUID().GetCounter()))
+        ObjectGuid::LowType guid = player->GetGUID().GetCounter();
+        if (QueryResult result = CharacterDatabase.Query("SELECT entry FROM mod_lore_codex_discovered WHERE guid = {}", guid))
         {
             do
                 state.known.insert(result->Fetch()[0].Get<uint32>());
             while (result->NextRow());
         }
+        if (QueryResult result = CharacterDatabase.Query("SELECT entry, part FROM mod_lore_codex_discovered_part WHERE guid = {}", guid))
+        {
+            do
+            {
+                Field* f = result->Fetch();
+                state.knownParts.insert(PartKey(f[0].Get<uint32>(), f[1].Get<uint8>()));
+            } while (result->NextRow());
+        }
 
         {
             std::lock_guard<std::mutex> guard(sPlayersLock);
-            sPlayers[player->GetGUID().GetCounter()] = std::move(state);
+            sPlayers[guid] = std::move(state);
         }
         Backfill(player);
     }
@@ -422,7 +572,7 @@ namespace LoreCodex::Data
 
         std::shared_ptr<Content const> content = Snapshot();
         uint32 added = 0;
-        for (auto const& [id, triggers] : content->triggersOf)
+        for (auto const& [target, triggers] : content->triggersOf)
         {
             bool met = false;
             for (auto const& [type, value] : triggers)
@@ -445,7 +595,7 @@ namespace LoreCodex::Data
                 if (met)
                     break;
             }
-            if (met && TryDiscover(player, *content, id, false, false))
+            if (met && TryDiscover(player, *content, target.first, target.second, false, false))
                 ++added;
         }
 
@@ -459,9 +609,29 @@ namespace LoreCodex::Data
         return added;
     }
 
+    void OnProgression(Player* player)
+    {
+        Backfill(player);
+        if (HasAddon(player))
+            Send(player, "RESET:0");
+    }
+
     bool Discover(Player* player, uint32 entryId)
     {
-        return TryDiscover(player, *Snapshot(), entryId, true, true);
+        std::shared_ptr<Content const> content = Snapshot();
+        auto itr = content->entries.find(entryId);
+        if (itr == content->entries.end())
+            return false;
+        bool any = TryDiscover(player, *content, entryId, 0, true, true);
+        for (Part const& p : itr->second.parts)
+            if (p.earned)
+                any = TryDiscover(player, *content, entryId, p.part, !any, true) || any;
+        return any;
+    }
+
+    bool DiscoverPart(Player* player, uint32 entryId, uint8 part)
+    {
+        return TryDiscover(player, *Snapshot(), entryId, part, true, true);
     }
 
     uint32 DiscoverAll(Player* player)
@@ -469,8 +639,13 @@ namespace LoreCodex::Data
         std::shared_ptr<Content const> content = Snapshot();
         uint32 added = 0;
         for (auto const& [id, e] : content->entries)
-            if (TryDiscover(player, *content, id, false, true))
+        {
+            if (TryDiscover(player, *content, id, 0, false, true))
                 ++added;
+            for (Part const& p : e.parts)
+                if (p.earned)
+                    TryDiscover(player, *content, id, p.part, false, true);
+        }
         if (HasAddon(player))
             Send(player, "RESET:0");
         return added;
@@ -485,10 +660,12 @@ namespace LoreCodex::Data
             if (st != sPlayers.end())
             {
                 st->second.known.clear();
+                st->second.knownParts.clear();
                 st->second.lastArea = 0;
             }
         }
         CharacterDatabase.Execute("DELETE FROM mod_lore_codex_discovered WHERE guid = {}", guid);
+        CharacterDatabase.Execute("DELETE FROM mod_lore_codex_discovered_part WHERE guid = {}", guid);
         if (HasAddon(player))
             Send(player, "RESET:0");
     }
@@ -545,23 +722,28 @@ namespace LoreCodex::Data
 
     void HandleKnown(Player* player, std::string const& req)
     {
-        std::unordered_set<uint32> known;
+        std::shared_ptr<Content const> content = Snapshot();
+        std::vector<std::string> rows;
+        std::size_t count = 0;
         {
             std::lock_guard<std::mutex> guard(sPlayersLock);
             auto st = sPlayers.find(player->GetGUID().GetCounter());
             if (st != sPlayers.end())
-                known = st->second.known;
+            {
+                count = st->second.known.size();
+                for (uint32 id : st->second.known)
+                {
+                    auto itr = content->entries.find(id);
+                    uint32 parts = itr != content->entries.end() ? PartsEarned(st->second, itr->second) : 0;
+                    rows.push_back("K," + std::to_string(id) + "," + std::to_string(parts));
+                }
+                for (auto const& [id, e] : content->entries)
+                    if (!st->second.known.count(id) && !Eligible(player, *content, e))
+                        rows.push_back("H," + std::to_string(id));
+            }
         }
 
-        std::shared_ptr<Content const> content = Snapshot();
-        std::vector<std::string> rows;
-        for (uint32 id : known)
-            rows.push_back("K," + std::to_string(id));
-        for (auto const& [id, e] : content->entries)
-            if (!known.count(id) && !Eligible(player, *content, e))
-                rows.push_back("H," + std::to_string(id));
-
-        Send(player, "KR:" + req + ":" + std::to_string(known.size()));
+        Send(player, "KR:" + req + ":" + std::to_string(count) + ":" + std::to_string(ProgressionState(player)));
         SendRows(player, "KD:" + req, rows);
         Send(player, "KE:" + req);
     }
@@ -577,24 +759,33 @@ namespace LoreCodex::Data
 
         std::shared_ptr<Content const> content = Snapshot();
         auto itr = content->entries.find(id);
-        bool known = false;
-        {
-            std::lock_guard<std::mutex> guard(sPlayersLock);
-            auto st = sPlayers.find(player->GetGUID().GetCounter());
-            known = st != sPlayers.end() && st->second.known.count(id);
-        }
-        if (itr == content->entries.end() || !known)
+        if (itr == content->entries.end())
         {
             SendError(player, req, "none");
             return;
         }
         Entry const& e = itr->second;
 
-        Send(player, "TR:" + req + ":" + std::to_string(id) + ":" + std::to_string(e.kind) + ":" + std::to_string(e.zone)
-            + ":" + Escape(e.title));
+        std::string text;
+        uint32 earned = 0;
+        bool more = false;
+        {
+            std::lock_guard<std::mutex> guard(sPlayersLock);
+            auto st = sPlayers.find(player->GetGUID().GetCounter());
+            if (st == sPlayers.end() || !st->second.known.count(id))
+            {
+                SendError(player, req, "none");
+                return;
+            }
+            text = Compose(player, *content, e, st->second, earned, more);
+        }
 
-        // The body in pieces, never cutting an escape or a UTF-8 character in two.
-        std::string body = Escape(e.body);
+        Send(player, "TR:" + req + ":" + std::to_string(id) + ":" + std::to_string(e.kind) + ":" + std::to_string(e.zone)
+            + ":" + Escape(e.title) + ":" + std::to_string(earned) + ":" + (more ? "1" : "0") + ":"
+            + std::to_string(ProgressionState(player)));
+
+        // The text in pieces, never cutting an escape or a UTF-8 character in two.
+        std::string body = Escape(text);
         std::string const header = "TD:" + req + ":";
         std::size_t const budget = MAX_PAYLOAD - header.size();
         std::size_t pos = 0;

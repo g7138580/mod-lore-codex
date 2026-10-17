@@ -1,13 +1,14 @@
 -- LoreCodex core: saved settings, the server protocol, the entry index and texts, slash commands.
 -- The entries come from the mod-lore-codex server module; titles and texts are only sent for
 -- entries this character has discovered, and are kept across sessions until the server's data
--- stamp changes.
+-- stamp changes. An entry can grow: each part a character earns adds to its text, so a cached
+-- text is only good for the number of parts and the progression state it was fetched with.
 
 LoreCodex = LoreCodex or {}
 local LC = LoreCodex
 
 LC.PREFIX = "LCX"
-LC.PROTOCOL = 2
+LC.PROTOCOL = 3
 
 LC.KIND = { ZONE = 0, PLACE = 1, PERSON = 2, STORY = 3 }
 LC.KIND_NAME = { [0] = "Zone", [1] = "Place", [2] = "Person", [3] = "Story" }
@@ -136,8 +137,8 @@ local function onAddonMessage(message)
 		onHello(fields)
 		finish(req, fields)
 		return
-	elseif code == "NEW" then
-		onDiscovered(splitFields(rest))
+	elseif code == "NEW" or code == "UPD" then
+		onDiscovered(splitFields(rest), code == "UPD")
 		return
 	elseif code == "STAMP" then
 		LC.stamp = rest
@@ -271,14 +272,22 @@ end
 
 LC.known = {}
 LC.hidden = {}
+LC.parts = {}  -- [entry] = parts earned
+LC.state = 0   -- the server's mod-individual-progression state for this character
 
 function LC.RefreshKnown(done)
 	if not LC.serverReady then if done then done() end return end
 	LC.Request("K", nil, function (result)
 		if result then
-			LC.known, LC.hidden = {}, {}
+			LC.known, LC.hidden, LC.parts = {}, {}, {}
+			LC.state = tonumber(result.meta[2]) or 0
 			for _, r in ipairs(result.rows) do
-				if r[1] == "K" then LC.known[r[2]] = true elseif r[1] == "H" then LC.hidden[r[2]] = true end
+				if r[1] == "K" then
+					LC.known[r[2]] = true
+					LC.parts[r[2]] = tonumber(r[3]) or 0
+				elseif r[1] == "H" then
+					LC.hidden[r[2]] = true
+				end
 			end
 			LC.Fire("KNOWN")
 		end
@@ -300,13 +309,28 @@ function LC.IsVisible(id)
 	return LC.known[id] == true or not LC.hidden[id]
 end
 
+-- What was read is kept as the number of parts the entry had then (true from older versions
+-- means none), so an entry that earned a part since shows as updated.
+local function partsRead(id)
+	local r = LoreCodexCharDB.read[id]
+	if r == true then return 0 end
+	return r
+end
+
 function LC.IsRead(id)
-	return LoreCodexCharDB.read[id] == true
+	local r = partsRead(id)
+	return r ~= nil and r >= (LC.parts[id] or 0)
+end
+
+-- Read before, but it has grown since.
+function LC.IsUpdated(id)
+	local r = partsRead(id)
+	return r ~= nil and r < (LC.parts[id] or 0)
 end
 
 function LC.MarkRead(id)
-	if not LoreCodexCharDB.read[id] then
-		LoreCodexCharDB.read[id] = true
+	if not LC.IsRead(id) then
+		LoreCodexCharDB.read[id] = LC.parts[id] or 0
 		LC.Fire("READ", id)
 	end
 end
@@ -332,15 +356,17 @@ function LC.Title(id)
 	return t and t.title
 end
 
--- done(entry) with entry = { title, body }, or nil when the server wouldn't say.
+-- done(entry) with entry = { title, body, parts, more, state }, or nil when the server wouldn't
+-- say. more is true when the character could still earn another part.
 function LC.LoadText(id, done)
 	local t = cache().text[id]
-	if t and t.body then done(t) return end
+	if t and t.body and t.parts == (LC.parts[id] or 0) and t.state == LC.state then done(t) return end
 	if not LC.serverReady then done(nil) return end
 	LC.Request("T", { tostring(id) }, function (result)
 		if not result then done(nil) return end
 		local meta = result.meta
-		t = { title = LC.Unescape(meta[4] or "-"), body = LC.Unescape(table.concat(result.raw)) }
+		t = { title = LC.Unescape(meta[4] or "-"), body = LC.Unescape(table.concat(result.raw)),
+			parts = tonumber(meta[5]) or 0, more = meta[6] == "1", state = tonumber(meta[7]) or 0 }
 		cache().text[id] = t
 		done(t)
 	end)
@@ -372,14 +398,16 @@ onHello = function (fields)
 	end)
 end
 
--- NEW:0:<entry>:<kind>:<zone>:<title>
-onDiscovered = function (fields)
+-- NEW:0:<entry>:<kind>:<zone>:<title>:<parts> and UPD (a known entry earned a part)
+onDiscovered = function (fields, updated)
 	local id, kind, zone = tonumber(fields[1]), tonumber(fields[2]), tonumber(fields[3])
 	if not id then return end
 	LC.known[id] = true
 	LC.hidden[id] = nil
+	LC.parts[id] = tonumber(fields[5]) or 0
 	local t = cache().text[id] or {}
 	t.title = LC.Unescape(fields[4] or "-")
+	t.body = nil
 	cache().text[id] = t
 	-- An entry the index doesn't have yet: the index is from before a reload.
 	if LC.index and not LC.index.entries[id] then
@@ -387,7 +415,7 @@ onDiscovered = function (fields)
 		cache().index = nil
 		LC.LoadIndex(function () LC.Fire("KNOWN") end)
 	end
-	LC.Fire("DISCOVERED", id, kind, zone, t.title)
+	LC.Fire("DISCOVERED", id, kind, zone, t.title, updated)
 	LC.Fire("KNOWN")
 end
 

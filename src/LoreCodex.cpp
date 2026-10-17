@@ -7,13 +7,17 @@
  *
  *   HELLO:<req>:<protocol>  -> HELLO:<req>:<version>:<stamp>:<backfilled>
  *   I:<req>                 -> IR:<req>:<entries>, ID rows, IE    the index (LoreCodexData.cpp)
- *   K:<req>                 -> KR, KD rows (K known, H out of reach), KE   this character's entries
- *   T:<req>:<entry>         -> TR:<req>:<entry>:<title>, TD:<req>:<piece of the body>..., TE
+ *   K:<req>                 -> KR:<req>:<known>:<state>, KD rows (K known, H out of reach), KE
+ *   T:<req>:<entry>         -> TR:<req>:<entry>:<kind>:<zone>:<title>:<parts earned>:<more to earn>:<state>,
+ *                              TD:<req>:<piece of the text>..., TE
+ *
+ * <state> is the mod-individual-progression state the text was put together for.
  *
  * Pushed by the server (request id 0):
- *   NEW:0:<entry>:<kind>:<zone>:<title>   a discovery
- *   STAMP:0:<stamp>                       the entries changed (.codex reload)
- *   RESET:0                               this character's discoveries changed in bulk: fetch K again
+ *   NEW:0:<entry>:<kind>:<zone>:<title>:<parts>   a discovery
+ *   UPD:0:<entry>:<kind>:<zone>:<title>:<parts>   a known entry earned another part
+ *   STAMP:0:<stamp>                               the entries changed (.codex reload)
+ *   RESET:0                                       discoveries or the progression state changed: fetch K again
  */
 
 #include "LoreCodex.h"
@@ -179,6 +183,11 @@ namespace LoreCodex
         return state;
     }
 
+    bool IsProgressionQuest(uint32 questId)
+    {
+        return questId > IP_PROGRESSION_QUEST_BASE && questId <= IP_PROGRESSION_QUEST_BASE + IP_STATE_MAX;
+    }
+
     void Dispatch(Player* player, std::string_view message)
     {
         std::vector<std::string_view> args = Split(message, ':');
@@ -266,6 +275,7 @@ public:
     void OnPlayerDeleteFromDB(CharacterDatabaseTransaction trans, uint32 guid) override
     {
         trans->Append("DELETE FROM mod_lore_codex_discovered WHERE guid = {}", guid);
+        trans->Append("DELETE FROM mod_lore_codex_discovered_part WHERE guid = {}", guid);
     }
 
     // Runs from the game's exploration check, after its own tests: the player moved, is alive
@@ -289,10 +299,15 @@ public:
             Data::OnTrigger(player, TRIGGER_QUEST_ACCEPT, quest->GetQuestId());
     }
 
-    // Fires from RewardQuest: the quest was turned in.
+    // Fires from RewardQuest: the quest was turned in. mod-individual-progression rewards a
+    // hidden quest each time a character moves on to its next state.
     void OnPlayerCompleteQuest(Player* player, Quest const* quest) override
     {
-        if (GetConfig().enabled && quest)
+        if (!GetConfig().enabled || !quest)
+            return;
+        if (GetConfig().progressionEnabled && IsProgressionQuest(quest->GetQuestId()))
+            Data::OnProgression(player);
+        else
             Data::OnTrigger(player, TRIGGER_QUEST_DONE, quest->GetQuestId());
     }
 };
@@ -360,7 +375,7 @@ public:
         Player* target = Target(handler);
         handler->PSendSysMessage("LoreCodex: {} entries loaded. {} knows {}{}.", Data::EntryCount(), target->GetName(),
             Data::KnownCount(target), Data::HasAddon(target) ? " (addon running)" : " (no addon)");
-        handler->SendSysMessage(".codex discover <entry|all>, .codex reset, .codex reload");
+        handler->SendSysMessage(".codex discover <entry [part]|all>, .codex reset, .codex reload");
         return true;
     }
 
@@ -385,7 +400,9 @@ public:
         return true;
     }
 
-    static bool HandleDiscover(ChatHandler* handler, std::string_view what)
+    // ".codex discover <entry>" gives the entry and all its parts, ".codex discover <entry> <part>"
+    // one part (and the entry with it), ".codex discover all" everything.
+    static bool HandleDiscover(ChatHandler* handler, std::string_view what, Optional<uint32> part)
     {
         Player* target = Target(handler);
         if (what == "all")
@@ -394,11 +411,10 @@ public:
             return true;
         }
         uint32 entry = 0;
-        if (!ParseUInt(what, entry) || !Data::Discover(target, entry))
-        {
-            handler->SendSysMessage("LoreCodex: no such entry, or it is already known.");
-            return true;
-        }
+        bool done = ParseUInt(what, entry)
+            && (part ? *part <= 255 && Data::DiscoverPart(target, entry, uint8(*part)) : Data::Discover(target, entry));
+        if (!done)
+            handler->SendSysMessage("LoreCodex: no such entry or part, or it is already known.");
         return true;
     }
 

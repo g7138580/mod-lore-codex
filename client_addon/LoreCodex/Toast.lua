@@ -1,5 +1,6 @@
--- The discovery toast: a small banner near the top of the screen for each new entry. Click it
--- to read the entry, right-click to dismiss. Several discoveries at once queue up.
+-- The discovery toast: a small banner near the top of the screen for each new entry, or for a
+-- known entry that just grew. Click it to read the entry, right-click to dismiss. Several at once
+-- queue up.
 
 local LC = LoreCodex
 
@@ -72,7 +73,7 @@ local function build()
 	end)
 end
 
--- item = { id, kind, zone, title }
+-- item = { id, kind, zone, title, updated }
 function LC.ShowToast(item)
 	if not toast then build() end
 	if toast:IsShown() then
@@ -80,6 +81,7 @@ function LC.ShowToast(item)
 		return
 	end
 	toast.entry = item.id
+	toast.label:SetText(item.updated and "Lore Updated" or "Lore Discovered")
 	toast.icon:SetTexture(LC.KIND_ICON[item.kind] or LC.KIND_ICON[1])
 	toast.title:SetText(item.title or "")
 	local zone = LC.ZoneName(item.zone)
@@ -91,10 +93,10 @@ function LC.ShowToast(item)
 	if LoreCodexDB.options.sound then PlaySound("WriteQuest") end
 end
 
-LC.On("DISCOVERED", function (id, kind, zone, title)
+LC.On("DISCOVERED", function (id, kind, zone, title, updated)
 	if LoreCodexDB.options.toast then
-		LC.ShowToast({ id = id, kind = kind, zone = zone, title = title })
+		LC.ShowToast({ id = id, kind = kind, zone = zone, title = title, updated = updated })
 	else
-		LC.Print("discovered |cffffd200" .. (title or "") .. "|r.")
+		LC.Print((updated and "learned more about |cffffd200" or "discovered |cffffd200") .. (title or "") .. "|r.")
 	end
 end)

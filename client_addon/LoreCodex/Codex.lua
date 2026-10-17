@@ -277,7 +277,7 @@ local function refreshEntries()
 			b.icon:SetVertexColor(1, 1, 1)
 			b.text:SetText(LC.Title(e.id) or "...")
 			b.text:SetTextColor(1, 1, 1)
-			b.right:SetText(LC.IsRead(e.id) and "" or "New")
+			b.right:SetText(LC.IsRead(e.id) and "" or (LC.IsUpdated(e.id) and "Updated" or "New"))
 			b.right:SetTextColor(GOLD[1], GOLD[2], GOLD[3])
 		else
 			b.icon:SetTexture(LOCK)
@@ -334,6 +334,9 @@ local HINTS = {
 	[3] = "Take part in the events of %s to uncover this story.",
 }
 
+-- Under an entry the character could still add to.
+local MORE = "There is more to learn."
+
 local function setBody(text, color)
 	readBody:SetWidth(readScroll:GetWidth() - 4)
 	readBody:SetText(text)
@@ -376,7 +379,7 @@ local function refreshReader()
 			return
 		end
 		readTitle:SetText(t.title)
-		setBody(t.body, PARCHMENT)
+		setBody(t.more and (t.body .. "\n\n|cff8c8c8c" .. MORE .. "|r") or t.body, PARCHMENT)
 		if not LC.IsRead(id) then
 			LC.MarkRead(id)
 			refreshEntries()

@@ -8,14 +8,17 @@ An AzerothCore (WotLK 3.3.5a) module that adds a codex of Azeroth's lore which f
 
 - **Zones, places, people and stories.** Each zone has an overview entry, its notable places, the people who matter there and the storylines that run through it.
 - **Discovery like exploration.** Places unlock the way the game's own exploration does: on foot or on your own mount, never from a flight path or while dead.
+- **No spoilers.** An entry tells only what you have earned. It opens with the situation as you find it, and later parts are added as you get there, usually when you finish the quest that reveals them or defeat a foe. A banner says the entry was updated, and an entry that can still grow says so. Westfall and Orgrimmar are written this way so far; the other zones are being converted.
 - **Locked entries.** Undiscovered entries show as locked placeholders with a hint, and each zone shows how much of it you have found.
 - **Only what you can reach.** Each character sees the entries it can actually unlock: the other faction's, other races' and classes' quests, and the death knight starting zone are left out.
 - **Past travels count.** At login, entries for areas a character already explored and quests it already did are credited quietly.
-- **Lore in the database.** Entries and their triggers live in the world database and reload with `.codex reload`.
+- **Lore in the database.** Entries, their parts and their triggers live in the world database and reload with `.codex reload`.
 
 ## Compatibility
 
-Not compatible with mod-individual-progression. The lore follows the 3.3.5 timeline, so it doesn't match the earlier eras that module takes characters through.
+Not yet compatible with mod-individual-progression. Entries can already carry parts that only show in some of its eras, and the codex follows a character's era when that module is running, but most zones haven't been tagged yet.
+
+The server module and the addon must be the same version: after updating one, update the other.
 
 ## Installation
 
@@ -41,7 +44,8 @@ Everything can be changed under **Interface > AddOns > Lore Codex** (also from t
 | `/codex reset` | Moves the window back to the middle |
 | `/codex refresh` | Fetches the codex data again |
 | `.codex` | GM: entry count and what the selected player knows |
-| `.codex discover <entry\|all>` | GM: discovers an entry, or all of them |
+| `.codex discover <entry\|all>` | GM: discovers an entry and its parts, or everything |
+| `.codex discover <entry> <part>` | GM: discovers one part of an entry |
 | `.codex reset` | GM: clears the selected player's discoveries |
 | `.codex reload` | Admin: reloads entries and triggers |
 
@@ -56,6 +60,8 @@ Everything can be changed under **Interface > AddOns > Lore Codex** (also from t
 | 3 | Creature entry: defeating it |
 | 4 | Quest id: accepting it |
 | 5 | Quest id: turning it in |
+
+A trigger's `Part` says what it unlocks: 0 the entry, or a part from `mod_lore_codex_part`, whose text is added after the entry's own (earning a part also unlocks the entry). A part without triggers always shows with its entry. `MinState` and `MaxState` limit a part to some mod-individual-progression states.
 
 ## Sources
 
