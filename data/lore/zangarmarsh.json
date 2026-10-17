@@ -1,0 +1,1053 @@
+[
+ {
+  "id": 352100,
+  "kind": 0,
+  "zone": 3521,
+  "sort": 0,
+  "faction": 0,
+  "title": "Zangarmarsh",
+  "body": "Zangarmarsh is a vast wetland in western Outland, where mushrooms taller than any tree rise over still pools and glowing fungi light the gloom. Sporebats drift overhead, and the giants that wade through the bogs are themselves made of living fungus. When the druids of the Cenarion Expedition arrived, they expected to find only small pockets of life and instead found a thriving wilderness. Then they noticed that the water was falling. The naga of Lady Vashj have raised steam pumps on the great lakes and are draining them into Coilfang Reservoir beneath Serpent Lake, and the marsh has begun to wither. Others share the land: the draenei of Telredor and the Kurenai of the Orebor Harborage, the Darkspear trolls of Zabra'jin and Swamprat Post, the peaceful sporelings of Sporeggar, savage tribes of Lost Ones, and the Ango'rosh ogres, who are cutting down the mushroom forests of the north.",
+  "triggers": [
+   [
+    1,
+    3521
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Zangarmarsh (giant mushrooms, Vashj drains the marsh into Coilfang Reservoir, factions, Lost One tribes)",
+   "quest 9716 description (expected small pockets of life, thriving ecosystem, water levels going down)",
+   "quest 9718 reward text (pumping stations at all the major lakes)",
+   "quest 9764 description (water redirected into Coilfang Reservoir)",
+   "npc_text 9259 (mushrooms taller than trees)",
+   "quest 9835 (Ango'rosh cleared the Hewn Bog)",
+   "DB spawns: Sporebat, Fungal Giant, Bog Lord"
+  ],
+  "notes": "Zangar Sea naming and the Sporemound Zang left out (later lore). Glowing fungi colours are general description of the zone's look."
+ },
+ {
+  "id": 352101,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 0,
+  "faction": 0,
+  "title": "Cenarion Refuge",
+  "body": "The Cenarion Refuge stands in the east of the marsh, at the end of the road from Hellfire Peninsula, and is the headquarters of the Cenarion Expedition. Its leader, Ysiel Windsinger, keeps watch from a balcony behind the inn, while Warden Hamoot and his wardens guard against the naga, who have attacked the druids since the day they arrived. Two great ancients, Ashyen, an Ancient of Lore, and Keleth, an Ancient of War, stand among the buildings and bless those the Expedition trusts. Lauranna Thar'well catalogues the marsh's plants, the Broken refugee Ikeyen teaches the druids what he knows of the land, and Morthis Whisperwing waits for a worthy apprentice while his two birds, Rook and Corvax, circle overhead.",
+  "triggers": [
+   [
+    1,
+    3565
+   ]
+  ],
+  "sources": [
+   "quest 9912 description (main path west from Cenarion Post leads to the refuge in eastern Zangarmarsh)",
+   "quest 9718 description (balcony near Ysiel)",
+   "warcraft.wiki.gg/wiki/Ysiel_Windsinger (back porch of the inn)",
+   "quest 9728 description (naga attacks since we set foot here)",
+   "creature_template subnames 17900 Ancient of Lore, 17901 Ancient of War; quest 9785",
+   "quest 9802 (Lauranna, cataloguer)",
+   "npc_text 9131 (Ikeyen teaches the druids)",
+   "npc_text 10735 (Morthis, Rook and Corvax)",
+   "DB spawns in area 3565: 17841, 17858, 17900, 17901, 17909, 17956, 22832, 22842, 22843"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352102,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 1,
+  "faction": 0,
+  "title": "Umbrafen Lake and Darkcrest Shore",
+  "body": "Umbrafen Lake lies southwest of the Cenarion Refuge, and it was here that the Expedition first went looking for the cause of the falling water. What it found on Darkcrest Shore was a steam pump worked by the naga, drawing the lake away. Darkcrest slavers and sorceresses guard the works and drive Dreghood Broken as drudges, and the pump's overseer threatens intruders with the wrath of Warlord Kalithresh. The lake itself is home to Umbrafen eels, whose meat is a staple of the draenei at Telredor, and to mire hydras, whose thick scales resist the damp of the marsh.",
+  "triggers": [
+   [
+    1,
+    3655
+   ],
+   [
+    1,
+    3841
+   ]
+  ],
+  "sources": [
+   "quest 9716 description and reward text (Umbrafen Lake southwest of the refuge, steam pump, naga)",
+   "quest 9720 (Umbrafen Lake pump controls)",
+   "DB spawns: area 3841 Darkcrest Slaver 19946, Darkcrest Sorceress 19947, Dreghood Drudge 18122, Steam Pump Overseer 18340, Umbrafen Steam Pump Credit Marker 17998; area 3655 Umbrafen Eel, Mire Hydra",
+   "creature_text 18340 (Warlord Kalithresh will hear of this insolence)",
+   "quest 9780 (Umbrafen eel a staple)",
+   "quest 9774 (hydra scales stand up to dampness)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352103,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 2,
+  "faction": 0,
+  "title": "Umbrafen Village",
+  "body": "South of the Cenarion Refuge lies Umbrafen Village, home of the Umbrafen, a tribe of Lost Ones who took the side of the naga. The Broken who escaped them call the Umbrafen the worst of all the traitor tribes: their oracles, seers and witchdoctors use dark magic to trap and enslave others, and they are especially cruel to slaves who flee. Their leader is Kataru. Those taken here are not easily freed. The druid Kayra Longmane was seized by a band of them while gathering herbs nearby, and Ikeyen of the Refuge still fears that they will come for him.",
+  "triggers": [
+   [
+    1,
+    3641
+   ]
+  ],
+  "sources": [
+   "quest 9747 description (traitor tribes, dark magic, enslave, cruel to escaped slaves, Kataru, south of the refuge)",
+   "quest 9752 description (Kayra abducted while gathering herbs)",
+   "DB spawns in area 3641: Umbrafen Oracle 18077, Seer 18079, Witchdoctor 20115, Kataru 18080, Kayra Longmane 17969"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352104,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 3,
+  "faction": 0,
+  "title": "Funggor Cavern",
+  "body": "Funggor Cavern opens in the far south of the marsh, near the border with Nagrand and south of Umbrafen Village. It is the home of the sporeloks, who have lately been overrun by marsh dredgers and marsh lurkers that have invaded their caves. The Expedition sent watchers to study the cavern, but had to recall them after repeated attacks by the marsh beasts, and Warden Hamoot believes that killing their leader, Lord Klaq, would put an end to it. The Broken Ikeyen hid here after escaping the Umbrafen, only to flee again when the beasts and spore men fought over the cave, leaving behind everything he owned.",
+  "triggers": [
+   [
+    1,
+    3652
+   ]
+  ],
+  "sources": [
+   "quest 10096 description (sporeloks live in Funggor Cavern, marsh beasts invaded, Ikeyen's stories)",
+   "quest 9894 description (watchers recalled from Funggor Cavern to the south, Lord Klaq)",
+   "quest 9788 description and completion text (cave south of Umbrafen near the Nagrand border, marsh beasts and spore men)",
+   "DB spawns in area 3652: Sporelok 18912, Marsh Lurker 18136, Marsh Dredger 18137",
+   "vmaps Md_Mushroomcave09B.wmo (WMO 4822) groups 22270/22271 -> 3652 in WMOAreaTable.dbc; gameobject 182122 Ikeyen's Belongings inside"
+  ],
+  "notes": "Fact-check: Lord Klaq and Ikeyen's Belongings (182122) stand inside the cave WMO (Md_Mushroomcave09B, WMOAreaTable groups 22270/22271 map to 3652), so the grid's 3696 reading is the hill above; Ikeyen's cave is confirmed as Funggor Cavern. Rest verified."
+ },
+ {
+  "id": 352105,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 4,
+  "faction": 0,
+  "title": "Telredor",
+  "body": "Telredor is built atop a giant mushroom in the east of the marsh, its halls lit by cultivated fulgor spores, since little in the swamp will burn. For centuries it was a secluded retreat for draenei priests and pilgrims who seldom saw visitors. When the orcs began attacking the draenei, refugees arrived in growing numbers, and Anchorite Ahuurn and the other priests turned the shrine into a haven to which many owe their lives. Today it is the Alliance's stronghold in the marsh. Vindicator Idaar watches over the land, Noraani and Haalrun, once its only outsiders, help feed the newcomers, and a dwarf of the Explorers' League has come to settle a score with a giant wasp.",
+  "triggers": [
+   [
+    1,
+    3644
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Telredor (built on a giant mushroom, draenei stronghold)",
+   "quest 9777 description (little will burn, fulgor mushrooms for light)",
+   "npc_text 9261 (secluded retreat, refugees, Ahuurn turned it into a safe haven)",
+   "quest 9780 description (Noraani and Haalrun the only outsiders)",
+   "quest 9896 description (Prospector Conall, Blacksting)",
+   "DB spawns in area 3644: 18003, 18004, 18005, 18006, 18295",
+   "zone_npcs map coordinates (Telredor NPCs about 68,49)"
+  ],
+  "notes": "Fact-check: northeast changed to east (Telredor at about 68,49 on the map). Velen and Maraad hiding at Telredor (later novel material) left out."
+ },
+ {
+  "id": 352106,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 5,
+  "faction": 0,
+  "title": "The Dead Mire",
+  "body": "The Dead Mire, northeast of Telredor, was once a lake like the others and a spawning ground for the fungal giants. Its water is gone, and the soil is so dry that the creatures living on it are suffering terribly. The withered giants that remain have been driven mad by the pain and attack anything in their path, and they can no longer spore. Parched hydras and withered bog lords roam the cracked ground, threshalisks lie in the mud playing dead before they charge, and pieces of steam pumps lie scattered about. A troll scout sent from Swamprat Post to explore the mire was found dead beside his spilled inkwell, struck down by a withered giant.",
+  "triggers": [
+   [
+    1,
+    3648
+   ]
+  ],
+  "sources": [
+   "quest 9782 description (land to the northeast of Telredor withering)",
+   "quest 9783 description (soil devoid of moisture, giants driven mad)",
+   "quest 9827 and 9828 reward text (once a lake, spawning ground, cannot spore)",
+   "quest 10355 (parched hydra, withered bog lords)",
+   "creature_text 19706 (Marshrock Threshalisk stops playing dead)",
+   "DB: 43+ Steam Pump Part gameobjects 181871 in area 3648",
+   "quests 9771, 9772 (Scout Jyoba, inkwell, withered giant)",
+   "DB spawns in area 3648: Withered Giant 18124, Withered Bog Lord 19402, Parched Hydra 20324, Scout Jyoba 18035"
+  ],
+  "notes": "Steam pump parts are only gameobject spawns; their origin is not explained, so no cause is claimed."
+ },
+ {
+  "id": 352107,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 6,
+  "faction": 0,
+  "title": "Swamprat Post",
+  "body": "Swamprat Post is the Horde's newest outpost in the marsh, raised by Darkspear trolls just south of the Dead Mire. Shadow Hunter Denjai sent Zurai there with a small band of builders and warriors to give the Horde a presence on the eastern border, after the Alliance began fortifying old draenei ruins, and to tighten the Horde's hold on the roads in and out of the marsh. Marshfang rippers are everywhere, mail armor soon fails in the damp, and the cook answers every complaint of hunger by handing over an axe and pointing at a mushroom. Meanwhile Reavij pines for Magasha, Magasha has eyes only for Zurai, and the witch doctor's charms have done nothing to change that.",
+  "triggers": [
+   [
+    1,
+    3718
+   ]
+  ],
+  "sources": [
+   "quest 10103 description (Alliance militarizing draenei ruins, trolls built a new outpost south of the Dead Mire)",
+   "npc_text 9267 (Zurai, builders and warriors)",
+   "quest 9775 reward text (presence on the eastern border)",
+   "quest 10105 description (control of the roads in and out of the marsh)",
+   "quest 9770 (marshfang rippers)",
+   "quest 9774 (mail armor useless in the swamp)",
+   "quest 9773 (cook hands you an axe)",
+   "quest 9898, npc_text 9268, 9269 (Reavij, Magasha, Zurai, Tor'gash's charms)"
+  ],
+  "notes": "Fact-check: roads line fixed to the roads in and out of the marsh (10105 says the Terokkar presence is the weak part); rusting mail softened to failing (9774). Rest verified."
+ },
+ {
+  "id": 352108,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 7,
+  "faction": 0,
+  "title": "Feralfen Village",
+  "body": "Feralfen Village lies in the south central marsh, home of the Feralfen, said to be the most powerful tribe of Lost Ones in Zangarmarsh and keepers of potent medicine. Their mystics, hunters and druids have turned to the worship of animal spirits, and the idols and totems they carve show a serpent and a bird. The bird is a puzzle, since no birds are native to the marsh, and the draenei of Telredor wonder whether the tribe once met the arakkoa. Just north of the village roams Blacksting, a giant bog wasp that drove off the first Explorers' League party to camp there.",
+  "triggers": [
+   [
+    1,
+    3642
+   ]
+  ],
+  "sources": [
+   "quest 9846 description (most powerful tribe, powerful medicine, mystics, hunters, druids)",
+   "quest 9787 description and reward text (animal spirits, birds, none native, arakkoa)",
+   "quest 9846 reward text (serpent and bird spirit)",
+   "quest 9896 description (Blacksting, camped just north of the Feralfen Village)",
+   "DB spawns in area 3642: Feralfen Hunter 18113, Mystic 18114, Druid 20270, Feralfen Idol 182139, Blacksting 18283"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352109,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 8,
+  "faction": 0,
+  "title": "Boha'mu Ruins",
+  "body": "The Boha'mu Ruins are the remains of a draenei temple southwest of Telredor, one of several shrines once kept by a small order of anchorites and vindicators. Contact with its keepers was lost during the orcs' war on the draenei, and the Feralfen Lost Ones have since made the ruins their own, as if they remember something of their heritage. Their elder, Kuruti, calls it his temple and wants no visitors in it. The tribe's spirits guard it too. When a Darkspear seer tried to summon the Feralfen serpent spirit at the foot of the temple stairs, the spirit came, and it attacked.",
+  "triggers": [
+   [
+    1,
+    3668
+   ]
+  ],
+  "sources": [
+   "quest 9786 description and reward text (Boha'mu temple southwest of Telredor, shrines, lost contact, Feralfen remember their heritage)",
+   "npc_text 9227, 9231 (Kuruti: my temple, leave in peace)",
+   "quest 9847 description and reward text (totem at the foot of the stairs, spirit attacked)",
+   "DB spawn: Elder Kuruti 18197 in area 3668"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352110,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 9,
+  "faction": 0,
+  "title": "The Lagoon and Darkcrest Enclave",
+  "body": "The Lagoon lies in the south central marsh, a broad stretch of water haunted by lagoon eels, mire hydras and lagoon walkers, among them a great one called Marsh Baron Brok. On its shore stands the Darkcrest Enclave, where the naga run another of their steam pumps. Darkcrest taskmasters and sirens keep Dreghood Broken at the work, and the enclave answers to Rajah Haghazed, leader of the Darkcrest naga. The Cenarion Expedition has tied the Darkcrest to many attacks on its people, and a bounty posted at the Refuge warns that the rajah is extremely dangerous.",
+  "triggers": [
+   [
+    1,
+    3659
+   ],
+   [
+    1,
+    3819
+   ]
+  ],
+  "sources": [
+   "quest 9730 description (Rajah Haghazed, leader of the Darkcrest, at the Lagoon in the central southern region, numerous attacks, extremely dangerous)",
+   "quest 9720 (Lagoon pump)",
+   "DB spawns: area 3659 Lagoon Eel 20290, Mire Hydra 18213, Lagoon Walker 20291, Marsh Baron Brok 20292; area 3819 Darkcrest Taskmaster 18086, Siren 18087, Dreghood Drudge 18122, Rajah Haghazed 18046, Lagoon Steam Pump Credit Marker 17999"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352111,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 10,
+  "faction": 0,
+  "title": "Cenarion Watchpost",
+  "body": "The Cenarion Watchpost is a small camp in the southwest of the marsh, west of Quagg Ridge, where Watcher Leesa'oh studies the sporelings and bog lords. She believes that all things in nature are bound in one web, and that anyone who interferes without understanding it will surely cause destruction, so she prefers to watch quietly and take notes. Her fellow druids call her a bit studious. She is never alone: her big cat, Buddy, shares the camp and likes to scratch now and then, though she insists he is only a lovable kitty.",
+  "triggers": [
+   [
+    1,
+    3895
+   ]
+  ],
+  "sources": [
+   "quest 9697 description (western region toward the south, studious, watch out for her cat)",
+   "quest 9911 description (camp to the west of Quagg Ridge)",
+   "npc_text 9128 (interconnected web, observe)",
+   "npc_text 9085 (Buddy)",
+   "DB spawns in area 3895: Watcher Leesa'oh 17831, Buddy 17953"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352112,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 11,
+  "faction": 0,
+  "title": "Quagg Ridge",
+  "body": "Quagg Ridge, east of the Cenarion Watchpost, is the land of the bog lords and fungal giants, towering creatures of living fungus. Many of them are starving. Lately they have been crossing the road to the Spawning Glen to devour the sporelings' spore sacs, and the husked remains of the mushrooms they once ate lie discarded across the ridge. The sporelings have always kept the bog lords at bay with spears and stones, but the giants have grown more aggressive, or more desperate, and no longer fear them.",
+  "triggers": [
+   [
+    1,
+    3646
+   ]
+  ],
+  "sources": [
+   "quest 9702 description (Quagg Ridge to the east, crossing the road, starving)",
+   "quest 9701 reward text (bog lords of Quagg Ridge eating pods)",
+   "quest 9702 reward text (husked mushroom remains)",
+   "quest 9743 description (spears and stones, more aggressive or desperate)",
+   "DB spawns in area 3646: Bog Lord 18127, Fungal Giant 19734, Starving Fungal Giant 18125, Starving Bog Lord 19519, Discarded Nutriment 182256"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352113,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 12,
+  "faction": 0,
+  "title": "The Spawning Glen",
+  "body": "The Spawning Glen, west of the Cenarion Watchpost, is where young sporelings come from. Their spore sacs grow here, starting large and shrinking as the air inside them is spent, until only small, mature sacs remain. It is a fragile nursery, and it is under attack: starving fungal giants and bog lords wander through the glen devouring the sacs. The sporeling Fahssn keeps a desperate watch over them and begs any friendly outsider who passes to save as many as can be saved.",
+  "triggers": [
+   [
+    1,
+    3647
+   ]
+  ],
+  "sources": [
+   "quest 9701 description (Spawning Glen to the west of the watchpost)",
+   "quest 9739 description and reward text (spore sacs, young come from here, fungal giants devouring)",
+   "DB spawns in area 3647: Sporeggar Spawn 18358, Starving Fungal Giant 18125, Starving Bog Lord 19519, Mature Spore Sac 182069",
+   "quest 9739 log (Fahssn at the Spawning Glen)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352114,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 13,
+  "faction": 0,
+  "title": "Sporeggar",
+  "body": "Sporeggar is the village of the sporelings, a small and mostly peaceful people, on the western side of Zangarmarsh between Sporewind Lake and Marshlight Lake. It is grown from tallstalk mushrooms raised from fertile spores, and much of it has had to be regrown after attacks by the bog lords. Glowcap mushrooms serve the sporelings as coin. Their elder, Msshi'fn, welcomes outsiders who prove themselves, though others, like Gshaff, still cannot decide what to make of them. The village has enemies on every side: the bog lords, the marsh walkers of old, the spore giants of the Underbog and the Bloodscale naga to the northeast.",
+  "triggers": [
+   [
+    1,
+    3649
+   ]
+  ],
+  "sources": [
+   "quest 10945 description (west side of Zangarmarsh between the Sporewind and Marshlight lakes)",
+   "quest 9806 description and reward text (tallstalks to rebuild after bog lord attacks)",
+   "quest 9808 description (glowcaps as currency)",
+   "npc_text 9202, 9201",
+   "quest 9719 (marsh walkers the historic danger)",
+   "quest 9717 (war with the spore giants)",
+   "quest 9726 (Bloodscale to the northeast)",
+   "warcraft.wiki.gg/wiki/Sporeggar (mostly peaceful race)"
+  ],
+  "notes": "10945 is a Children's Week quest; used only as a location source, not a trigger."
+ },
+ {
+  "id": 352115,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 14,
+  "faction": 0,
+  "title": "Marshlight Lake and Bloodscale Enclave",
+  "body": "Marshlight Lake, in the west of the marsh, is the haunt of bogstroks, whose hatchlings swarm the shallows, and of a giant among them called Terrorclaw. On its shore the Bloodscale naga keep the Bloodscale Enclave and the Marshlight steam pump, worked by Wrekt slaves under the whips of slavedrivers and enchantresses. One naga taskmaster is said to amuse himself by sending slaves out to the lake's islands just when Terrorclaw is ready to feed. The enclave's naga have also been killing the sporelings of nearby Sporeggar, and they once kept their most prized possession here, the Ark of Ssslith, until a fungal giant carried it off.",
+  "triggers": [
+   [
+    1,
+    3656
+   ],
+   [
+    1,
+    3643
+   ]
+  ],
+  "sources": [
+   "quest 9902 description (taskmaster sends slaves to the islands of Marshlight Lake when Terrorclaw is ready to feed)",
+   "quest 9904 (Terrorclaw, giant bogstrok)",
+   "quest 9729 description and reward text (Marshlight steam pump, Ark of Ssslith, most prized possession)",
+   "quest 9726 (Bloodscale Enclave killing sporelings)",
+   "DB spawns: area 3643 Bloodscale Slavedriver 18089, Enchantress 18088, Wrekt Slave 18123, Marshlight Steam Pump Credit Marker 18002; area 3656 Bogstrok Crusher, Razorclaw, Hatchling, Terrorclaw 20477",
+   "quest 9902 (Marshlight Lake southwest of Orebor)"
+  ],
+  "notes": "Fact-check: northwest changed to west (Terrorclaw at about 22,46; 9902 places the lake southwest of Orebor). Rest verified."
+ },
+ {
+  "id": 352116,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 15,
+  "faction": 0,
+  "title": "Zabra'jin",
+  "body": "Zabra'jin is the Darkspear town in the west of the marsh, overseen by Shadow Hunter Denjai, who commands the trolls' forces in Zangarmarsh. Witch Doctor Tor'gash reads omens in burstcap spores and keeps two pet murlocs, Gargle and Gurgle, while Seer Janidi says he need only ask the spirits. Gambarinka has given up rusting metal tools for the blades of marshfang slicers, Zurjaya is glad of fishing water after the wastes of Hellfire, and a captured gnome repairs gear under a guard who threatens to eat him. Yet the town is hemmed in by ogres cutting their way from the north and Daggerfen assassins on the roads, and a messenger from Garadar has come begging for help.",
+  "triggers": [
+   [
+    1,
+    3645
+   ]
+  ],
+  "sources": [
+   "npc_text 9248 (Denjai, commander of the Darkspear forces)",
+   "quest 9814 (burstcap omens)",
+   "quest 9816 (Gargle and Gurgle)",
+   "npc_text 9250 (Janidi on Tor'gash)",
+   "quest 9842 (Gambarinka's blades)",
+   "quest 9845 (Zurjaya after Hellfire)",
+   "creature_text 19380 (Guard Untula), creature 19383 Captured Gnome <Item Repair>",
+   "quest 9820, 10118 (ogres, Daggerfen)",
+   "quest 9797 description (Messenger Gazgrigg, Garadar must not fall)",
+   "DB spawns in area 3645: 18013, 18014, 18015, 18017, 18018, 18091, 18150, 18151, 19380, 19383"
+  ],
+  "notes": "Fact-check: Janidi's view of Tor'gash reworded to match npc_text 9250 (just ask the spirits). Quest 9797 mentioned only, not a trigger (its giver is a minor messenger; Nagrand does not use it)."
+ },
+ {
+  "id": 352117,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 16,
+  "faction": 0,
+  "title": "Daggerfen Village",
+  "body": "Daggerfen Village lies in the northwest of the marsh, west of the Orebor Harborage. Its people, the Daggerfen, are the most cunning and aggressive of the marsh's Lost One tribes, a whole tribe of assassins who brew a potent poison from a ragveil base. They make no secret of wanting to rule the other Lost Ones, and under Chieftain Mummaki they have killed many scouts and messengers, Kurenai, draenei and troll alike, in a bid to seize the roads. Not everything here is grim: thanks to a mischievous Darkspear witch doctor, a few baby murlocs now splash among the huts.",
+  "triggers": [
+   [
+    1,
+    3640
+   ]
+  ],
+  "sources": [
+   "quest 10118 description (most cunning and aggressive, desire control over other Lost Ones, roads)",
+   "quest 9848 description and reward text (tribe of assassins, poison, ragveil base)",
+   "quests 10116, 10117 (Mummaki, attacks on Orebor and Zabra'jin, west of Orebor, northwest of Zabra'jin)",
+   "quest 9816 (Tor'gash's murloc gift)",
+   "DB spawns in area 3640: Daggerfen Muckdweller 18115, Assassin 18116, Chieftain Mummaki 19174, Baby Murloc 18152, Daggerfen Poison Manual 182184"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352118,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 17,
+  "faction": 0,
+  "title": "Hewn Bog",
+  "body": "The Hewn Bog, in the north of the marsh, has earned its name. Ango'rosh ogres have moved in and are chopping down its giant mushrooms, a cutting operation overseen by the brute Boss Grog'ak, and the felling threatens to cut a path to the walls of Zabra'jin. Ogres and their shamans now swarm where the mushroom forest stood. The harm reaches farther than it seems: the bog lords of Quagg Ridge once came here to feed, and with their food carried off by the ogres, they have turned on the sporelings' spawning grounds instead.",
+  "triggers": [
+   [
+    1,
+    3667
+   ]
+  ],
+  "sources": [
+   "quest 9708 description and reward text (Hewn Bog to the north, ogres moved in, explains everything)",
+   "quest 9820 description (Boss Grog'ak, mushroom-cutting operation north of Zabra'jin)",
+   "quest 9835 description (cleared the Hewn Bog of its towering mushrooms)",
+   "DB spawns in area 3667: Ango'rosh Ogre 18117, Ango'rosh Shaman 18118, Boss Grog'ak 18159"
+  ],
+  "notes": "Fact-check: the felling reaching Zabra'jin made a threat, as in 9820. Rest verified."
+ },
+ {
+  "id": 352119,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 18,
+  "faction": 0,
+  "title": "Ango'rosh Grounds and Stronghold",
+  "body": "Northwest of Zabra'jin, the Ango'rosh ogres hold lands of their own. The Ango'rosh Grounds are an armed camp of brutes, maulers, warlocks and sentries under Captain Krosh and Captain Bo'kar, and plans for an attack on the troll town have been found there. Beyond the camp, a fallen mushroom bridges the water to a small floating island, and in a cave there lies the Ango'rosh Stronghold, stacked with boxes of harvested mushrooms and held by maulers, souleaters, shadowmages and Mal'druk the Soulrender. Its master is Overlord Gorefist, the leader who holds the whole tribe together.",
+  "triggers": [
+   [
+    1,
+    3650
+   ],
+   [
+    1,
+    3651
+   ]
+  ],
+  "sources": [
+   "quest 9822 description and reward text (Ango'rosh Grounds to the northwest, attack plans)",
+   "quests 9823, 9839, 9709 (cave on a small island, fallen mushroom bridge, floating island, boxes of mushrooms)",
+   "quest 9839 description (leader is the centerpiece of the tribe)",
+   "DB spawns: area 3650 Ango'rosh Sentry, Brute, Warlock, Mauler, Captain Krosh 18992, Captain Bo'kar 20442, Attack Plans 182166; area 3651 Mauler, Souleater, Shadowmage, Box of Mushrooms 182050, Overlord Gorefist 18160, Mal'druk the Soulrender 20445"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352120,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 19,
+  "faction": 0,
+  "title": "Orebor Harborage",
+  "body": "In the ruins of an old draenei temple northwest of Serpent Lake, a small band of Broken has made a home. These are the Kurenai, Broken who wish to reunite with their draenei kin, sent from their city of Telaar in Nagrand under Ikuti to strengthen ties with Telredor and keep the roads between them open. They are wary of strangers, for wariness has kept them alive. Puluu senses that the temple once meant something to him and hopes the draenei can help him remember. Maktu, once a slave, makes armor of fenclaw hide, and a human who likes to be called the specialist studies the poisons of the Lost Ones.",
+  "triggers": [
+   [
+    1,
+    3766
+   ]
+  ],
+  "sources": [
+   "quest 9776 description and reward text (ruins of an old temple northwest of Serpent Lake, wariness)",
+   "quest 9835 description (Kurenai, mission from Nagrand, ties to Telredor)",
+   "quest 9833 description (Telaar the Kurenai home city, roads)",
+   "npc_text 9237 (Puluu's memories)",
+   "quests 9834, 9902 reward text (Maktu's armor, once a slave)",
+   "npc_text 9238, quest 9848 (Timothy Daniels the specialist)",
+   "DB spawns in area 3766: 18008, 18009, 18010, 18019",
+   "CreatureDisplayInfo 17422 (HumanMale) for Timothy Daniels"
+  ],
+  "notes": "Fact-check: verified. Timothy Daniels confirmed human (display 17422 HumanMale, faction 12). Maktu was once a slave per Puluu; by whom is not said, so not stated."
+ },
+ {
+  "id": 352121,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 20,
+  "faction": 0,
+  "title": "Serpent Lake and Bloodscale Grounds",
+  "body": "Serpent Lake, in the north, lies at the heart of the naga's design. A hidden network of drains and pumps links the lakes of the region to it, and at its center a giant drain swallows the water of Zangarmarsh. On its eastern shore the Bloodscale naga hold the Bloodscale Grounds and the lake's own steam pump, where overseers, wavecallers and elementals drive Wrekt slaves under the command of the sorceress Rajis Fyashe. The deep water belongs to fenclaw thrashers, swarms of mudfin frenzies and Mragesh, an old and cunning hydra that has dogged many an angler and once nearly made a meal of a Kurenai hunter.",
+  "triggers": [
+   [
+    1,
+    3653
+   ],
+   [
+    1,
+    3818
+   ]
+  ],
+  "sources": [
+   "quest 9731 description and reward text (drains and pumps connect the lakes to Serpent Lake, giant drain in the center, water sink)",
+   "quest 9817 description (Rajis Fyashe, naga sorceress, Serpent Lake in the north)",
+   "quests 9903, 9905 (Mragesh, cunning, dogged anglers, attacked Maktu)",
+   "quest 9845 (fenclaw thrashers)",
+   "DB spawns: area 3818 Bloodscale Overseer 20088, Wavecaller 20089, Bloodscale Elemental 20792, Wrekt Slave 18123, Rajis Fyashe 18044, Serpent Steam Pump Credit Marker 18000; area 3653 Mudfin Frenzy, Fenclaw Thrasher, Mragesh 18286",
+   "creature spawns mapped: Bloodscale Overseer x 59-66, Mudfin Frenzy x 39-60"
+  ],
+  "notes": "Fact-check: 'summoned' dropped from the elementals (unsupported). Bloodscale Grounds on the eastern shore confirmed (overseers at map x 59-66, lake frenzies 39-60). Rest verified."
+ },
+ {
+  "id": 352122,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 21,
+  "faction": 0,
+  "title": "Coilfang Reservoir",
+  "body": "Beneath Serpent Lake lies Coilfang Reservoir, the great pumping station of Lady Vashj, where the water drained from Zangarmarsh is gathered. Its entrance lies under the lake, where stone archways lead to the slave pens, the Underbog and the steam vaults of Warlord Kalithresh, and deeper still lies the Serpentshrine Cavern, where Vashj holds court. Orders bearing her seal have commanded that the Cenarion druids be slain on sight and the draining doubled. At the entrance, Watcher Jhang of the Expedition waits with a twisted ankle for word of four companions who went on inside, and Mortog Steamhead, saved by the Expedition from certain death in the mines, trades with the Expedition's friends.",
+  "triggers": [
+   [
+    1,
+    3905
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Coilfang_Reservoir (beneath Serpent Lake, pumping station, entered underwater, four wings ending with Lady Vashj)",
+   "quest 9764 description (orders: slay druids on sight, double the water redirection)",
+   "quest 9763 description (stone archway, steam vaults, Kalithresh)",
+   "quest 9738 description (four companions in the Slave Pens and Underbog)",
+   "npc_text 9112 (Jhang's twisted ankle)",
+   "npc_text 10936 (Mortog rescued from the mines)",
+   "DB: Watcher Jhang 17884 and Mortog Steamhead 23373 stand in area 3653 by the instance portals",
+   "WMOAreaTable.dbc rows 39182/40930 (WMO 4630 group 21363 -> 3905); vmaps Coilfang_Zangarentrance.wmo spawn on map 530"
+  ],
+  "notes": "Fact-check: walking in fires 3905. The Coilfang_Zangarentrance WMO (root 4630) is placed on map 530 under Serpent Lake; its group 21363 maps to 3905 in WMOAreaTable, and Jhang, Mortog, the meeting stone area and all four instance portals stand on that group's floor with the terrain far above, so the server reports 3905 there (the grid's 3653 is the lake overhead). No TALK fallback needed. Instance quests used as sources only."
+ },
+ {
+  "id": 352123,
+  "kind": 1,
+  "zone": 3521,
+  "sort": 22,
+  "faction": 0,
+  "title": "Twin Spire Ruins",
+  "body": "The Twin Spire Ruins stand near the middle of the marsh, the remains of a holy draenei site whose single broken tower, despite the name, still rises over an old burial ground. Both the Alliance and the Horde contest the surrounding marsh: each side strives to hold the two towers that watch over this part of Zangarmarsh and to raise its battle standard over the burial ground, and control passes back and forth as the fighting ebbs and flows. Around the ruins, mudfin frenzies thrash in the shallows and sporebats drift among the stones.",
+  "triggers": [
+   [
+    1,
+    3720
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Twin_Spire_Ruins (holy draenei site, one ruined central tower, two towers flank the burial ground, battle standard)",
+   "DB spawns in area 3720: Mudfin Frenzy 18212, Sporebat 18128, Spirit Healer 6491"
+  ],
+  "notes": "verified. World PvP objective described neutrally, area trigger only. Archaeology dig site (Cataclysm) and the WoD Zangar Sea lighthouse note not used."
+ },
+ {
+  "id": 352124,
+  "kind": 2,
+  "zone": 3521,
+  "sort": 0,
+  "faction": 0,
+  "title": "Ysiel Windsinger",
+  "body": "Ysiel Windsinger, a night elf druid, leads the Cenarion Expedition from the Cenarion Refuge. The Expedition began as a small venture of the Cenarion Circle, but it has since grown large and largely independent, though she has not forgotten that it cannot exist without the Circle's support. She came to Outland expecting small pockets of life and found a thriving marsh, then watched its waters fall. Her magic can reshape a willing helper into a form suited to scouting the lakes from the air. When she learned that Lady Vashj stood behind the naga, she knew the Expedition's peaceful mission was over and began to prepare for war.",
+  "triggers": [
+   [
+    2,
+    17841
+   ],
+   [
+    5,
+    9912
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Ysiel_Windsinger (night elf druid, leader)",
+   "quest 9912 description (began small under the Circle, now large and autonomous)",
+   "quest 9724 reward text (cannot exist without the Circle's support)",
+   "quest 9716 description",
+   "quest 9718 description (mold your shape for scouting)",
+   "quest 9764 reward text, 9765 description (prepare for war, began as a peaceful venture)",
+   "CreatureDisplayInfo 17275 (NightElfFemale)"
+  ],
+  "notes": "Fact-check: 'under her' the Expedition grew autonomous was unsupported; now just grew (9912). Night elf confirmed (display 17275 NightElfFemale). 9912 is given at Cenarion Post (Hellfire) and turned in to Ysiel; Hellfire neither uses nor tells it."
+ },
+ {
+  "id": 352125,
+  "kind": 2,
+  "zone": 3521,
+  "sort": 1,
+  "faction": 0,
+  "title": "Morthis Whisperwing",
+  "body": "Morthis Whisperwing is a former member of the Druids of the Talon, the old order that taught young druids the mysteries of flight before the druidic orders came together as the Cenarion Circle. The order is no more, but Morthis means to remain one of them to the end of his days, and he has long searched for an apprentice worthy of the secrets of the stormcrow. He is proud and particular, and pollen makes him sneeze, to his great indignity. He envies the freedom of his two birds, Rook and Corvax, and says he will take wing again once one last task is done.",
+  "triggers": [
+   [
+    2,
+    22832
+   ]
+  ],
+  "sources": [
+   "quest 10955 description and reward text (Druids of the Talon, dissolution, apprentice, remain one to the last of my days, secrets of the stormcrow)",
+   "quest 10961 reward text (pollen, sneeze, indignity)",
+   "npc_text 10735 (Rook and Corvax, on wing once more)",
+   "creature_template 22832 subname Druid of the Talon, DB spawn area 3565"
+  ],
+  "notes": "Fact-check: 'one of the last' of the Druids of the Talon unsupported; now a former member (10955). Night elf (display 21106)."
+ },
+ {
+  "id": 352126,
+  "kind": 2,
+  "zone": 3521,
+  "sort": 2,
+  "faction": 0,
+  "title": "Warden Hamoot",
+  "body": "Warden Hamoot is in charge of the Cenarion Expedition's security. Ysiel brought wardens with her because she expected some opposition in Outland, but no one foresaw the strength and numbers of the naga, whose lethal attacks began the moment the Expedition set foot in the marsh. While the druids study plants and lakes, Hamoot deals with the hostiles. He pays out the Expedition's bounties on the leaders of the Bloodscale and the Darkcrest, pays for proof of victories over the naga, and has set his sights on the marsh beasts of Funggor Cavern. He never liked the naga of Azeroth, likes these even less, and sheds no tears for them.",
+  "triggers": [
+   [
+    2,
+    17858
+   ]
+  ],
+  "sources": [
+   "npc_text 9167 (wardens brought along, did not expect such strength or numbers)",
+   "quest 9728 description and reward text (deal with hostiles, naga claws, more vicious than Azerothian ones)",
+   "quests 9730, 9817 (bounties, rewards via Hamoot)",
+   "quest 9894 (Hamoot and Lord Klaq)",
+   "quest 9730 reward text (no tears for dead naga)"
+  ],
+  "notes": "Fact-check: bounties are the Expedition's, claimed through Hamoot (9730, 9817); reworded. Tauren (display 17285)."
+ },
+ {
+  "id": 352127,
+  "kind": 2,
+  "zone": 3521,
+  "sort": 3,
+  "faction": 0,
+  "title": "Ikeyen",
+  "body": "Ikeyen is a Broken who escaped slavery among the Umbrafen Lost Ones and found safety at the Cenarion Refuge. The druids protect him from the naga and the traitor tribes, and in return he teaches them about the plants and animals of the marsh. Old and weakened, he still lives in fear, certain that the Umbrafen would cut his throat if he left the Refuge for even a day. After his escape he hid in a cave south of their village, only to find it fought over by marsh beasts and spore men, and he had to flee again, leaving behind the few things he owned.",
+  "triggers": [
+   [
+    2,
+    17956
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Ikeyen (Broken, captured by the Umbrafen, escaped to the Refuge)",
+   "npc_text 9131",
+   "quest 9747 description and reward text (escaped slaves, slit my throat, old and weakened)",
+   "quest 9788 description",
+   "CreatureDisplayInfo 17767 (BrokenMale)"
+  ],
+  "notes": "verified. Broken confirmed (display 17767 BrokenMale); faction template 1710 friendly to both."
+ },
+ {
+  "id": 352128,
+  "kind": 2,
+  "zone": 3521,
+  "sort": 4,
+  "faction": 1,
+  "title": "Anchorite Ahuurn",
+  "body": "Anchorite Ahuurn leads Telredor. Once a cloistered priest of a quiet retreat, he opened its doors when the orcs fell upon his people and turned the shrine into a haven for refugees, and many draenei owe him their lives. He says Telredor has seen more change in twenty years than in the centuries before, and that the Light has brought him friends he could never have met in his cloister. He hopes to make Telredor a safe home for all who stand with the draenei, and has reached out to the Kurenai at the Orebor Harborage and even to the Lost Ones of the Feralfen, though they refused him.",
+  "triggers": [
+   [
+    2,
+    18003
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Telredor (Ahuurn the leader)",
+   "npc_text 9265 (20 years of change, cloistered priest, the Light brought friends)",
+   "npc_text 9261 (Idaar: Ahuurn transformed the shrine, many owe survival)",
+   "quest 9776 description (safe haven for all allies, Orebor)",
+   "quest 9803 reward text (Feralfen refused)"
+  ],
+  "notes": "Faction 1: Ahuurn uses faction template 1654 (Exodar), hostile to the Horde."
+ },
+ {
+  "id": 352129,
+  "kind": 2,
+  "zone": 3521,
+  "sort": 5,
+  "faction": 1,
+  "title": "Ikuti",
+  "body": "Ikuti leads the Kurenai at the Orebor Harborage, a band of Broken sent from Telaar in Nagrand to strengthen ties with the draenei of Telredor. He greets visitors kindly but admits that wariness has often been all that stood between his people and death, and his trust must be earned. The Kurenai are content to help the Lost Ones who seek them out, yet unlike some draenei they will not go chasing after the rest, though they act quickly against tribes like the Daggerfen. Those who prove themselves to Ikuti are sent on to Telaar with his word, to his friend Nahuud, who counts Ikuti a brother.",
+  "triggers": [
+   [
+    2,
+    18008
+   ],
+   [
+    4,
+    9792
+   ]
+  ],
+  "sources": [
+   "npc_text 9235 (Ikuti of the Kurenai, not your enemies)",
+   "quest 9776 reward text (wariness all that stands between my people and death)",
+   "quest 9835 description (mission from Nagrand, ties to Telredor)",
+   "quest 10115 description and reward text (Kurenai and draenei on the Lost Ones, Daggerfen)",
+   "quest 9792 description and reward text (Nahuud at Telaar, like a brother)"
+  ],
+  "notes": "Faction 1: Ikuti faction template 84 (Alliance), 9792 AllowableRaces 1101. 9792 was left to this zone by Nagrand."
+ },
+ {
+  "id": 352130,
+  "kind": 2,
+  "zone": 3521,
+  "sort": 6,
+  "faction": 2,
+  "title": "Shadow Hunter Denjai",
+  "body": "Shadow Hunter Denjai oversees Zabra'jin and commands the Darkspear forces in Zangarmarsh. He sent a crew east to build Swamprat Post and give the Horde a presence on the eastern border, and he expects regular reports, which some of his trolls find a trial. Denjai has reason to worry. The Ango'rosh ogres are cutting their way toward his walls and have drawn up plans to attack, while Daggerfen assassins pick off his scouts and messengers and threaten to surround the town. He has asked the orcs of Thunderlord Stronghold for aid, but they have ogre troubles of their own.",
+  "triggers": [
+   [
+    2,
+    18013
+   ]
+  ],
+  "sources": [
+   "npc_text 9248 (overseer of the outpost, commander of the Darkspear forces)",
+   "npc_text 9267, quest 9775 (Zurai, reports, eastern border)",
+   "quests 9820, 9822 (ogres, attack plans)",
+   "quest 10118 description (Daggerfen, scouts and messengers, surrounded)",
+   "quest 9795 description and reward text (Thunderlord Stronghold, Nekthar, ogres there too)"
+  ],
+  "notes": "Faction 2: Denjai faction template 126 (Darkspear)."
+ },
+ {
+  "id": 352131,
+  "kind": 2,
+  "zone": 3521,
+  "sort": 7,
+  "faction": 0,
+  "title": "Msshi'fn",
+  "body": "Msshi'fn is the elder of Sporeggar, called the Sporeggar Primus, and it falls to him to see that his people have what they need. He welcomes outsiders who prove their friendship, even though few of their kind ever come to Sporeggar, and he receives with gratitude the rescued spore sacs that carry the next generation of sporelings. Like the rest of his people he deals in glowcap mushrooms, which the sporelings use as coin, and he will teach a trusted friend how to pick them from the ground without ruining them.",
+  "triggers": [
+   [
+    2,
+    17924
+   ]
+  ],
+  "sources": [
+   "creature_template 17924 subname Sporeggar Primus",
+   "quest 9809 reward text (as Sporeggar's elder)",
+   "npc_text 9202 (welcome, proven your worth)",
+   "quest 9919 reward text (protected the next generation)",
+   "quest 9808 description (glowcaps as currency, teach you to pick them)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352132,
+  "kind": 2,
+  "zone": 3521,
+  "sort": 8,
+  "faction": 0,
+  "title": "Fhwoor",
+  "body": "Fhwoor is a fungal giant who lives among the sporelings of Sporeggar, an odd sight given how much grief the other giants of the marsh cause them. The sporelings rescued him from the naga some time ago, and he has stayed with them ever since, helping with whatever needs doing. He speaks simply: he likes the little sporelings, because they saved him, he does not eat them, and he hates the naga. When the Bloodscale began killing sporelings, Fhwoor marched into their village by the Marshlight steam pump and carried off their most prized possession, the Ark of Ssslith.",
+  "triggers": [
+   [
+    2,
+    17877
+   ]
+  ],
+  "sources": [
+   "npc_text 9113 (Fhwoor like little sporelings, they save Fhwoor, not eat them, hate naga)",
+   "quest 9729 description and reward text (saved from the naga, stayed helping, ark, most prized possession)",
+   "creature_text 17877",
+   "quest 9726 (Bloodscale killing sporelings)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352133,
+  "kind": 2,
+  "zone": 3521,
+  "sort": 9,
+  "faction": 0,
+  "title": "Rajis Fyashe",
+  "body": "Rajis Fyashe is a naga sorceress and the leader of the Bloodscale, the naga who guard steam pumps at Serpent Lake and Marshlight Lake and drive Wrekt slaves at the work. Her people have attacked the Expedition's scouts and killed the sporelings of Sporeggar. The Cenarion Expedition has declared a bounty on her, warning that the Bloodscale are extremely dangerous and that their leader must be approached with the greatest caution. She was last sighted at Serpent Lake, among her overseers and wavecallers on the Bloodscale Grounds.",
+  "triggers": [
+   [
+    3,
+    18044
+   ]
+  ],
+  "sources": [
+   "quest 9817 description and reward text (leader of the Bloodscale, naga sorceress, Serpent Lake, extreme caution, attacks on expedition scouts)",
+   "quest 9726 (Bloodscale kill sporelings)",
+   "DB spawns: Rajis Fyashe 18044 in area 3818; Bloodscale in areas 3643 and 3818 beside pump credit markers 18002 and 18000"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352134,
+  "kind": 3,
+  "zone": 3521,
+  "sort": 0,
+  "faction": 0,
+  "title": "Balance Must Be Preserved",
+  "body": "When the Cenarion Expedition began taking measurements in the marsh, it found the water in the lakes falling steadily, a change that threatened every plant and creature in Zangarmarsh. Ysiel Windsinger sent a helper to Umbrafen Lake to find the cause, and the answer was a steam pump on the shore, worked by naga. That explained the naga's open hostility toward the druids, but not how far their work reached. Ysiel reshaped her helper with a stormcrow amulet and sent them winging over every great lake, and the flight revealed pumping stations at all of them. She then handed over seeds carrying the rage of the earth, to be sown on the controls of the pumps at Umbrafen Lake, Serpent Lake, Marshlight Lake and the Lagoon. Vines as thick as an arm and as strong as iron choked the machines. The marsh was saved for now, Ysiel said, but this would not be the last of the naga.",
+  "triggers": [
+   [
+    4,
+    9716
+   ]
+  ],
+  "sources": [
+   "quest 9716 description and reward text",
+   "quest 9718 description and reward text (Stormcrow Amulet, pumping stations at all major lakes)",
+   "quest 9720 description and reward text (Ironvine Seeds, rage of the earth, thick as your arm, strong as iron, saved for now)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352135,
+  "kind": 3,
+  "zone": 3521,
+  "sort": 1,
+  "faction": 0,
+  "title": "The Drain Beneath Serpent Lake",
+  "body": "Schematics taken from the naga showed a hidden network of drains and pumps linking the lakes of the region to Serpent Lake, with a giant drain at its center, and a search of the lake proved them right: the naga had made it a sink for all of Zangarmarsh. Ysiel sent a team of druids to investigate the drain and sent word to the Circle's emissaries at Cenarion Post in Hellfire Peninsula, but the Circle could promise help only when possible, its members tied up in Moonglade and Silithus. The druid team never came back. Watcher Jhang was found hiding at the entrance to Coilfang Reservoir with a twisted ankle, while the others had gone on into the slave pens and the Underbog. Jhang had seen naga pass through an archway into the steam vaults, speaking the name of Warlord Kalithresh. Then orders came to light bearing the seal of Lady Vashj herself, and Ysiel knew the Expedition was at war.",
+  "triggers": [
+   [
+    4,
+    9731
+   ]
+  ],
+  "sources": [
+   "quest 9731 description and reward text (drain schematics, giant drain, water sink, team sent)",
+   "quest 9724 description and reward text (emissaries in Hellfire Peninsula, Amythiel at Cenarion Post)",
+   "quest 9732 description (affairs in Moonglade and Silithus)",
+   "quest 9876 description and reward text (druids did not return, injuries)",
+   "quest 9738 description (four companions in the Slave Pens and Underbog)",
+   "quest 9763 description (archway, Kalithresh)",
+   "quest 9764 description and reward text (Vashj's seal, prepare for war)",
+   "item 24330 Drain Schematics starts 9731, dropped by Bloodscale naga and Steam Pump Overseers"
+  ],
+  "notes": "Fact-check: 'Jhang alone was found' overstated (some companions live, 9738); reworded. 9731 starts from an item drop (QuestType 2, Flags 132, not auto-complete). Instance quests 9738, 9763, 9764 used as sources only."
+ },
+ {
+  "id": 352136,
+  "kind": 3,
+  "zone": 3521,
+  "sort": 2,
+  "faction": 0,
+  "title": "The Bog Lords' Hunger",
+  "body": "At the Cenarion Watchpost, Watcher Leesa'oh set out to learn how the sporelings live alongside the creatures around them, and a survey of the Spawning Glen revealed something alarming: the bog lords of Quagg Ridge were crossing the road to eat the sporelings' spore sacs. The giants were starving. Husked mushroom remains found on the ridge matched a kind Leesa'oh had seen elsewhere, and samples from the Hewn Bog confirmed it: Ango'rosh ogres had moved in and were cutting down the mushrooms the bog lords fed on. Leesa'oh would not hear of wiping out the ogres, who had as much right to the marsh as anyone. Instead she had boxes of harvested mushrooms taken back from the Ango'rosh Stronghold and planted them by her camp, with Buddy the cat looking on, to grow the giants a new garden. It worked, sparing the sporelings from the bog lords, and the bog lords from the Expedition's wrath.",
+  "triggers": [
+   [
+    4,
+    9697
+   ],
+   [
+    4,
+    9701
+   ]
+  ],
+  "sources": [
+   "quest 9697 (Lethyn Moonfire sends help to Leesa'oh)",
+   "quest 9701 description and reward text",
+   "quest 9702 description and reward text",
+   "quest 9708 description and reward text (Hewn Bog, ogres, every bit as much right)",
+   "quest 9709 description and reward text (boxes of mushrooms, Ango'rosh Stronghold, new food supply)",
+   "creature_text 17831 (Buddy, it's working, saved both)"
+  ],
+  "notes": "verified"
+ },
+ {
+  "id": 352137,
+  "kind": 3,
+  "zone": 3521,
+  "sort": 3,
+  "faction": 0,
+  "title": "The Sporelings' Plight",
+  "body": "At the Spawning Glen, the sporeling Fahssn begged passing strangers for help. Fungal giants were devouring the spore sacs from which young sporelings come, and the bog lords no longer feared sporeling spears and stones. Those who saved the sacs and fought off the giants were sent on to Sporeggar with the rescued sacs for the elder Msshi'fn, and were welcomed into the sporelings' homes. Sporeggar had other troubles. Its tallstalks needed regrowing after the bog lord attacks, its old enemies the marsh walkers had to be held off, and the Bloodscale naga to the northeast had begun killing sporelings. Fhwoor, the friendly fungal giant, marched into the naga village by the Marshlight pump and carried off the Ark of Ssslith, in the hope that the naga would take the hint and return to their reservoir. Meanwhile the sporelings wage a war of their own against the spore giants of the Underbog, for, as they say, all is fair in mushrooms and war.",
+  "triggers": [
+   [
+    4,
+    9739
+   ],
+   [
+    4,
+    9743
+   ]
+  ],
+  "sources": [
+   "quests 9739, 9743 descriptions and reward texts (Fahssn, spore sacs, spears and stones)",
+   "quest 9919 (to Msshi'fn, welcomed into homes)",
+   "quest 9806 (tallstalks, bog lord attacks)",
+   "quest 9719 (marsh walkers)",
+   "quest 9726 (Bloodscale to the northeast)",
+   "quest 9729 (Fhwoor, Ark of Ssslith, return to their reservoir)",
+   "quest 9717 description (war with the spore giants, all is fair in mushrooms and war)"
+  ],
+  "notes": "Faction 0: Sporeggar NPCs are neutral (factions 35, 1708, 1709). Underbog quests used as sources only."
+ },
+ {
+  "id": 352138,
+  "kind": 3,
+  "zone": 3521,
+  "sort": 4,
+  "faction": 0,
+  "title": "Spirits of the Feralfen",
+  "body": "Anchorite Ahuurn of Telredor hoped to redeem the Lost Ones, and the Feralfen seemed a promising start, for they had settled in the old draenei temple of Boha'mu as if remembering something of their past. Their idols showed a fixation on birds, though no birds live in the marsh, and Ahuurn guessed they had met the arakkoa and taken them for bird spirits. He brewed a potion to lend his envoy the shape of an arakkoa, and in that guise the envoy greeted Elder Kuruti. The elder saw through it. His people wanted nothing from the draenei who had turned their backs on them, he said, least of all a redemption offered through trickery. At Zabra'jin, Seer Janidi studied the same totems for his own reasons. Scorning the bird, he coveted the serpent spirit's power, but when his totem was planted at the foot of the temple stairs the serpent rose and attacked, loyal to the Feralfen.",
+  "triggers": [
+   [
+    4,
+    9786
+   ],
+   [
+    4,
+    9846
+   ]
+  ],
+  "sources": [
+   "quest 9786 description and reward text",
+   "quest 9787 description and reward text (birds, arakkoa)",
+   "quest 9801 description (potion of arakkoa form)",
+   "quest 9803 description and reward text",
+   "npc_text 9227, 9229 (Kuruti: turned their backs on us, deception, no redemption)",
+   "quests 9846, 9847 descriptions and reward texts (Janidi, serpent spirit, attacked)"
+  ],
+  "notes": "Faction 0: 9786 is Alliance (Ahuurn, faction 1654), 9846 Horde (AllowableRaces 690)."
+ },
+ {
+  "id": 352139,
+  "kind": 3,
+  "zone": 3521,
+  "sort": 5,
+  "faction": 0,
+  "title": "The Withering of the Dead Mire",
+  "body": "At Telredor, Vindicator Idaar noticed that life in the land to the northeast was withering without any clear cause. A soil sample from what came to be called the Dead Mire was nearly dry, and the fungal giants there, maddened by their pain, were beyond saving, so the kindest course was to end their suffering. A withered basidium taken from one of the giants told more. Ruam at Telredor and Reavij at Swamprat Post each recognized it: the Dead Mire had once been a lake and the giants' spawning ground, and with the water gone they could no longer spore. Samples from parched hydras and withered bog lords showed the drought taking its toll on creatures never meant to live dry. The Horde learned the cost firsthand. Scout Jyoba of Swamprat Post went into the mire and never returned, and his body was found beside his spilled ink, his report in the hands of the withered giants that had killed him.",
+  "triggers": [
+   [
+    4,
+    9782
+   ],
+   [
+    4,
+    9827
+   ],
+   [
+    4,
+    9828
+   ],
+   [
+    4,
+    9771
+   ]
+  ],
+  "sources": [
+   "quest 9782 description and reward text",
+   "quest 9783 description and reward text",
+   "quests 9827 and 9828 descriptions and reward texts (withered basidium, once a lake, spawning ground)",
+   "quest 10355 description and reward text",
+   "quests 9771, 9772 (Scout Jyoba, inkwell, report from the withered giants)",
+   "item 24483/24484 Withered Basidium dropped by Withered Giant 18124"
+  ],
+  "notes": "Faction 0: 9782 Alliance (Idaar, Telredor), 9827 AllowableRaces 1101, 9828 690, 9771 Horde (Zurai). 9771 follows 9774 at Swamprat."
+ },
+ {
+  "id": 352140,
+  "kind": 3,
+  "zone": 3521,
+  "sort": 6,
+  "faction": 0,
+  "title": "The Ango'rosh Threat",
+  "body": "The Ango'rosh ogres have long been filtering down from the northern mountains, and now they threaten both sides of the marsh. At Zabra'jin a wanted poster called for the head of Boss Grog'ak, who ran the mushroom cutting north of the town, and Shadow Hunter Denjai suspected its position was no accident. Plans found at the Ango'rosh Grounds proved him right: the ogres were preparing an attack. At the Orebor Harborage, Ikuti watched the same ogres strip the Hewn Bog and creep toward the Kurenai temple. Both sides reached the same answer. The Ango'rosh Stronghold lies in a cave on a small island across a fallen mushroom, and there Overlord Gorefist was slain among his maulers. Ikuti knew a tribe without its leader would fall to fighting over who rules next, while Denjai wondered aloud how long it would be before the brutes found another bloodthirsty chieftain.",
+  "triggers": [
+   [
+    4,
+    9820
+   ],
+   [
+    4,
+    9835
+   ]
+  ],
+  "sources": [
+   "quest 9820 description and reward text (wanted poster, Grog'ak, filtering down from the northern mountains)",
+   "quest 9822 description and reward text",
+   "quest 9823 description and reward text (stronghold, fallen mushroom bridge, another bloodthirsty chieftain)",
+   "quest 9835 description (Hewn Bog cleared, temple)",
+   "quest 9839 description and reward text (infighting to determine who will lead)"
+  ],
+  "notes": "Faction 0: 9820 Horde (AllowableRaces 690, gameobject 182165), 9835 Alliance (AllowableRaces 1101)."
+ },
+ {
+  "id": 352141,
+  "kind": 3,
+  "zone": 3521,
+  "sort": 7,
+  "faction": 0,
+  "title": "The Raven God",
+  "body": "Morthis Whisperwing, once of the Druids of the Talon, accepts a druid as his apprentice in the secrets of the stormcrow. The relics of that training lie with Clintar Dreamwalker, asleep in the barrow dens of Moonglade, so Morthis brews a Ward of Waking from common herbs, moonwell water and the fragile bogblossoms atop the tallest mushrooms. With a fragment of Clintar's spirit as guide the relics are recovered, but in the dens a raven is seen. That sign sends the apprentice to Arthorn Windsong at the Evergrove in Blade's Edge, who studies an arakkoa cult of a raven god. Its scripture, the Book of the Raven, is pieced together from stones buried near Skettis and gives the god's name, Anzu, and the shrines where his followers bound his rivals, from which the apprentice recovers the essences of the eagle, falcon and hawk. Morthis binds the essences into a Southfury moonstone from Azshara, and in the Sethekk Halls the stone lures Anzu out of the Dream to be defeated. Morthis bids his student keep it, lest Anzu return.",
+  "triggers": [
+   [
+    4,
+    10955
+   ]
+  ],
+  "sources": [
+   "quests 10955, 10961, 10964, 10978, 10979 descriptions and reward texts",
+   "quests 10980, 10990, 10991, 10992 (book of the raven, eagle, falcon, hawk essences)",
+   "quest 10993 reward text (Anzu)",
+   "quest 10994 description (Southfury moonstone, Azshara)",
+   "quest 11001 description (Sethekk Halls, lure Anzu from the Emerald Dream)",
+   "quest 11011 description",
+   "creature_text 22832 (Ward of Waking)",
+   "quest 10965 description (fragment of Clintar's spirit guides the search)",
+   "creature_text 22924 (Book of the Raven, Anzu named)",
+   "quest 10988 (raven stones buried near Skettis)"
+  ],
+  "notes": "Fact-check: chain confirmed from the DB: 10955 (QuestType 2, Flags 136, not auto-complete; AllowableClasses 1024, races 0, so both factions' druids) from Loganaar 12042 in Moonglade to Morthis 22832; every later step but the field quests is given and ended by Morthis at the Cenarion Refuge, ending with 11011 (Morthis to Morthis). Fixed: the relics are recovered by the apprentice guided by a fragment of Clintar's spirit (10965), not by Clintar; Ward of Waking ingredients are common herbs, moonwell water and bogblossom (10961, creature_text 22832); the name Anzu comes from the Book of the Raven before the essences (creature_text 22924). Clintar material cut to one clause; moonglade.json's barrow dens entry tells it. Nagrand's Twilight Ridge (Elaira, 10986-10988) not mentioned. Blade's Edge and Terokkar must not reuse 10955 to 11011."
+ }
+]
