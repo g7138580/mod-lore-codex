@@ -240,6 +240,8 @@ end
 local entryHeaders = {}
 local LOCK = "Interface\\LFGFrame\\UI-LFG-ICON-LOCK"
 
+local titleRedrawQueued = false
+
 local function refreshEntries()
 	entryRows:Reset()
 	hideAll(entryHeaders)
@@ -292,8 +294,17 @@ local function refreshEntries()
 		y = y + ENTRY_ROW
 		-- A known entry whose title isn't cached yet (discovered on another computer, or before a
 		-- reload): fetch it and redraw.
-		if known and not LC.Title(e.id) then
-			LC.LoadText(e.id, function (t) if t and frame:IsShown() then refreshEntries() end end)
+		-- A title already on its way isn't asked for again, and the redraws its arrival asks for are
+		-- folded into one per frame.
+		if known and not LC.Title(e.id) and not LC.IsLoadingText(e.id) then
+			LC.LoadText(e.id, function (t)
+				if not t or titleRedrawQueued then return end
+				titleRedrawQueued = true
+				LC.After(0, function ()
+					titleRedrawQueued = false
+					if frame:IsShown() then refreshEntries() end
+				end)
+			end)
 		end
 	end
 	entryScroll.content:SetHeight(math.max(y, 10))

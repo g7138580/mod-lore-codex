@@ -400,6 +400,10 @@ end
 -- missing title each time it redraws, so a text already asked for is not asked for twice.
 local loading = {}
 
+function LC.IsLoadingText(id)
+	return loading[id] ~= nil
+end
+
 function LC.LoadText(id, done)
 	local t = cache().text[id]
 	if t and t.body and t.parts == (LC.parts[id] or 0) and t.state == LC.state then done(t) return end
