@@ -75,8 +75,45 @@ local pending = {}
 -- list answers: R (meta), D (rows), E (end)
 local LISTS = { I = true, K = true, T = true }
 
-local function send(msg)
-	SendAddonMessage(LC.PREFIX, msg, "WHISPER", UnitName("player"))
+-- The server lets each character make a burst of 16 requests and then 4 a second (the index costs
+-- 4, the hello nothing), and refuses the rest as busy. Requests are paced a little under that here,
+-- so a zone full of titles to fetch goes out steadily instead of being refused and retried.
+local BURST, RATE = 14, 3.5
+local tokens, lastRefill = BURST, nil
+local outbox = {}
+
+local function costOf(msg)
+	local cmd = msg:match("^([^:]+)")
+	if cmd == "HELLO" then return 0 end
+	return cmd == "I" and 4 or 1
+end
+
+local function pump()
+	local now = GetTime()
+	if lastRefill then tokens = math.min(BURST, tokens + (now - lastRefill) * RATE) end
+	lastRefill = now
+	while outbox[1] do
+		local item = outbox[1]
+		local cost = costOf(item.msg)
+		if tokens < cost then return false end
+		tokens = tokens - cost
+		table.remove(outbox, 1)
+		-- A request waiting its turn hasn't been asked yet: its timeout starts now.
+		if item.p then item.p.at = now end
+		SendAddonMessage(LC.PREFIX, item.msg, "WHISPER", UnitName("player"))
+	end
+	return true
+end
+
+local pacer = CreateFrame("Frame")
+pacer:Hide()
+pacer:SetScript("OnUpdate", function (self)
+	if pump() then self:Hide() end
+end)
+
+local function send(msg, p)
+	table.insert(outbox, { msg = msg, p = p })
+	if not pump() then pacer:Show() end
 end
 
 -- handler(result, err): result is { rows = {...}, meta = {...}, raw = {...} } for list answers and
@@ -86,8 +123,9 @@ function LC.Request(cmd, fields, handler)
 	local req = tostring(nextReq)
 	local msg = cmd .. ":" .. req
 	if fields and #fields > 0 then msg = msg .. ":" .. table.concat(fields, ":") end
-	pending[req] = { req = req, cmd = cmd, handler = handler, rows = {}, raw = {}, msg = msg, tries = 0, at = GetTime() }
-	send(msg)
+	local p = { req = req, cmd = cmd, handler = handler, rows = {}, raw = {}, msg = msg, tries = 0, at = GetTime() }
+	pending[req] = p
+	send(msg, p)
 	return req
 end
 
@@ -155,7 +193,7 @@ local function onAddonMessage(message)
 	elseif code == "ERR" then
 		if rest == "busy" and p and p.tries < 6 then
 			p.tries = p.tries + 1
-			LC.After(0.25 * p.tries, function () if pending[req] == p then send(p.msg) end end)
+			LC.After(0.25 * p.tries, function () if pending[req] == p then send(p.msg, p) end end)
 			return
 		end
 		finish(req, nil, rest)
@@ -358,17 +396,28 @@ end
 
 -- done(entry) with entry = { title, body, parts, more, state }, or nil when the server wouldn't
 -- say. more is true when the character could still earn another part.
+-- Texts on their way: [entry] = the callbacks waiting for it. The codex list asks again for every
+-- missing title each time it redraws, so a text already asked for is not asked for twice.
+local loading = {}
+
 function LC.LoadText(id, done)
 	local t = cache().text[id]
 	if t and t.body and t.parts == (LC.parts[id] or 0) and t.state == LC.state then done(t) return end
 	if not LC.serverReady then done(nil) return end
+	if loading[id] then table.insert(loading[id], done) return end
+	loading[id] = { done }
 	LC.Request("T", { tostring(id) }, function (result)
-		if not result then done(nil) return end
-		local meta = result.meta
-		t = { title = LC.Unescape(meta[4] or "-"), body = LC.Unescape(table.concat(result.raw)),
-			parts = tonumber(meta[5]) or 0, more = meta[6] == "1", state = tonumber(meta[7]) or 0 }
-		cache().text[id] = t
-		done(t)
+		local waiting = loading[id] or {}
+		loading[id] = nil
+		if result then
+			local meta = result.meta
+			t = { title = LC.Unescape(meta[4] or "-"), body = LC.Unescape(table.concat(result.raw)),
+				parts = tonumber(meta[5]) or 0, more = meta[6] == "1", state = tonumber(meta[7]) or 0 }
+			cache().text[id] = t
+		else
+			t = nil
+		end
+		for _, fn in ipairs(waiting) do fn(t) end
 	end)
 end
 
@@ -447,7 +496,7 @@ events:SetScript("OnEvent", function (self, event, ...)
 		end
 	elseif event == "PLAYER_LOGIN" then
 		LC.Fire("LOGIN")
-		LC.After(3, LC.SayHello)
+		LC.After(1, LC.SayHello)
 		-- Shift-L opens the codex, the first time only and only when nothing else has the key.
 		if not LoreCodexDB.boundKey then
 			LoreCodexDB.boundKey = true
