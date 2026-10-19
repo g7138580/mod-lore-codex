@@ -1,17 +1,517 @@
 [
-{"id": 4100, "kind": 0, "zone": 41, "sort": 0, "faction": 0, "title": "Deadwind Pass", "body": "Between the dark woods of Duskwood and the Swamp of Sorrows lies a stretch of land with no life left in it. Its trees stand as grey, withered husks, its soil is ash, and carrion birds called sky shadows circle above the ravines. Travelers from Darkshire who must carry goods east toward the Blasted Lands take this road, and few do so gladly. At the heart of the pass rises Karazhan, the tower of Medivh, the Last Guardian. When Medivh fell, slain within those walls by Anduin Lothar and the young mage Khadgar, a curse settled over the tower and the country around it, and it has never lifted. Ghosts wander the tower grounds, the ruined village to its south and the old churchyard nearby. In the southern hills, the Deadwind ogres have dug their mounds into the cliffs of the Vice. Outside the tower gate, mages of the Violet Eye keep their long watch on behalf of Dalaran.", "triggers": [[1, 41]], "sources": ["warcraft.wiki.gg/wiki/Deadwind_Pass (devoid of life, withered husks, curse over tower and lands, ogres in the Vice, Violet Eye study the tower)", "warcraft.wiki.gg/wiki/Medivh (slain by Lothar and Khadgar, death cursed the tower and surrounding area)", "quest 1395 description (route from Darkshire east through Deadwind Pass)", "quest 9680 description (the ashes of Deadwind Pass)", "quest 9826 description (Violet Eye agents of the Kirin Tor)", "DB spawns: Sky Shadow 7376, Deadwind ogres in area 2561, ghosts around Karazhan, Alturus and Leryda at the gate"], "notes": "Verified; only the placement of the village and churchyard made general (the churchyard is not sourced as behind the tower)."},
-{"id": 4101, "kind": 1, "zone": 41, "sort": 1, "faction": 0, "title": "Deadman's Crossing", "body": "Deadman's Crossing is the crossroads where the road through the pass divides, one way leading back toward Duskwood, another on to the Swamp of Sorrows, and a third turning south toward Karazhan. The welcome it offers is grim. A hangman's tree stands at the junction with a pair of corpses still hanging from it, and the signposts beside the road bear no distances, only warnings: Turn Back, and Abandon hope, all ye who enter here. Those who keep to the road and press on quickly are seldom troubled. Those who stray from it may not return.", "triggers": [[1, 2697]], "sources": ["warcraft.wiki.gg/wiki/Deadman%27s_Crossing (crossroads to Duskwood, Swamp of Sorrows and Karazhan; hangman's tree with corpses; signs)", "DB gameobjects 177185 and 177186 (sign texts) at -10451,-1721, posarea 2697"], "notes": "verified"},
-{"id": 4102, "kind": 1, "zone": 41, "sort": 2, "faction": 0, "title": "Deadwind Ravine", "body": "Deadwind Ravine is a craggy cleft that cuts through the mountains of the pass, running south toward Karazhan. The western road from Duskwood follows its upper level, so that travelers look down into a gulf of bare stone and dead timber, and at its far end a bridge carries the way on toward the tower. Nothing grows here, and little lives. The sky shadows, the great carrion birds of the pass, wheel above the ravine, watching for whatever falls by the wayside.", "triggers": [[1, 2558]], "sources": ["warcraft.wiki.gg/wiki/Deadwind_Ravine (craggy cleft running south toward Karazhan, western road on the upper level)", "warcraft.wiki.gg/wiki/Sky_Shadow (vulture, carrion bird, uses Rend)", "DB: 9 Sky Shadow 7376 spawns in area 2558", "warcraft.wiki.gg/wiki/Deadwind_Ravine (southern bridge near the tower at the end of the area)"], "notes": "Unsourced hunting and shrieking detail cut; added the southern bridge from the wiki."},
-{"id": 4103, "kind": 1, "zone": 41, "sort": 3, "faction": 0, "title": "Ariden's Camp", "body": "Just north of the main road that runs between Duskwood and the Swamp of Sorrows lies Ariden's Camp, a deserted campsite in the hills of the pass. A campfire still burns there, yet no one is ever found tending it. The camp carries the name of a man called Ariden, but no one passing through Deadwind Pass seems to know who he was, what business brought him to these hills so near Medivh's tower, or where he has gone.", "triggers": [[1, 2560]], "sources": ["warcraft.wiki.gg/wiki/Ariden%27s_Camp (deserted campsite north of the main road between Duskwood and Swamp of Sorrows)", "DB gameobject 176464 Campfire at -10436,-2140, posarea 2560", "DB gameobject_template 176464 (type 8 spell focus 4, campfire display 192: a lit cooking fire); no creatures spawn in area 2560"], "notes": "The camp's campfire object is a lit cooking fire, so the cold fire pit became a fire that still burns untended. Ariden's Dark Rider identity (Legion, Season of Discovery) still left out on purpose."},
-{"id": 4104, "kind": 1, "zone": 41, "sort": 4, "faction": 0, "title": "Sleeping Gorge", "body": "The Sleeping Gorge is a small chasm in the eastern part of Deadwind Pass. One of the paths south toward Karazhan runs along its floor for a stretch before it turns east into the Vice, the ogre country of the southern hills. Like the rest of the pass, the gorge is a lifeless place of bare rock and withered trees, and the only things that stir in it are the sky shadows, circling above in search of carrion.", "triggers": [[1, 2938]], "sources": ["warcraft.wiki.gg/wiki/Sleeping_Gorge (small chasm in eastern Deadwind Pass, a path south to Karazhan runs through it before turning east into the Vice)", "DB: Sky Shadow 7376 spawns in area 2938"], "notes": "Unsourced stillness details (no water, no wind, watching the path) replaced with the pass's sourced lifelessness."},
-{"id": 4105, "kind": 1, "zone": 41, "sort": 5, "faction": 0, "title": "The Vice", "body": "The Vice is the southern hill country of Deadwind Pass, along the road that leads to Karazhan, and it belongs to the Deadwind ogres. Their mounds are dug into the slopes, and their camps are marked by bonfires and great cooking cauldrons. Brutes and ogre mages hold the open ground, while maulers and warlocks keep to the caves farther south. Why the ogres chose to settle in so desolate a place, so close to a cursed tower, no one knows. Ghosts from Karazhan's grounds drift into their territory as well.", "triggers": [[1, 2561]], "sources": ["warcraft.wiki.gg/wiki/The_Vice (southern Deadwind Pass along the road to Karazhan, home of the Deadwind ogres, mounds and camps, no one knows why they settled)", "DB spawns in area 2561: Deadwind Brute 7369, Ogre Mage 7379, Mauler 7371, Warlock 7372; ghosts 12377, 12378, 7370, 12379, 12380", "DB gameobjects 176558, 176560 Bonfire and 176559, 176574 Cauldron in 2561"], "notes": "Verified; dropped 'northern edge' for the ghosts, which the spawns do not pin down. Cave placement of maulers and warlocks is from spawn coordinates (lower, southern positions)."},
-{"id": 4106, "kind": 1, "zone": 41, "sort": 6, "faction": 0, "title": "Grosh'gok Compound", "body": "Grosh'gok Compound is the largest of the ogre mounds in the Vice and the southernmost of its caves, burrowed deep into the hills. It is the chief stronghold of the Deadwind ogres. The clan's hulking maulers and its warlocks, seldom seen on the open slopes where the brutes and ogre mages roam, are found in the caves of the southern Vice. Who leads the clan, and what purpose holds the ogres in the dead lands of the pass, remains unknown to outsiders.", "triggers": [[1, 2937]], "sources": ["warcraft.wiki.gg/wiki/Grosh%27gok_Compound (ogre mound in the Vice, southernmost and largest of the caves)", "warcraft.wiki.gg/wiki/Deadwind_ogre (Grosh'gok Compound is their base, leader unknown)", "DB spawns: Deadwind Warlock 7372 and Mauler 7371 at x -11080..-11162, y -2367..-2487, the southern cave"], "notes": "Indoor area 2937 is reachable but the grid tool cannot see inside it, so the maulers and warlocks are now placed only in the southern caves (spawn coordinates x -11080 to -11162, lower than the outdoor ogres), not explicitly inside the compound. Warlocks' darker powers cut as inference."},
-{"id": 4107, "kind": 1, "zone": 41, "sort": 7, "faction": 0, "title": "Karazhan", "body": "Karazhan rises at the heart of Deadwind Pass, the tower of Medivh, the Last Guardian. The mages of Dalaran say it is more than a building: trace the ley lines of Azeroth and they all converge on a point beneath it, and some call the tower a portal into the nether, a beacon shining into other worlds. It was not always so ominous. The darkness came with Medivh's death. Since then the tower has sealed its doors to the world, its grounds have filled with wailing spectres and the restless dead of its old household, and agents of the Violet Eye wait at the gate for a way back inside.", "triggers": [[1, 2562]], "sources": ["npc_text 9242 (Alturus: ley lines converge below the tower)", "npc_text 10546 (Leryda: Karazhan was not always so ominous, darkening came with Medivh's death)", "quest 9844 description (portal into the nether, beacon into other worlds)", "quest 9829 description (Karazhan sealed itself off)", "quest 9825 description (outside of Karazhan crawling with ghostly beings)", "DB spawns in 2562: Wailing Spectre, Damned Soul, Restless Shade, Unliving Caretaker, Unliving Resident; Alturus, Leryda, Darius at the gatehouse"], "notes": "verified"},
-{"id": 4108, "kind": 1, "zone": 41, "sort": 8, "faction": 0, "title": "Morgan's Plot", "body": "Not far from Karazhan stands Morgan's Plot: a small, decrepit church with its graveyard and crypt. In better days a human village and its church grew up around the tower, and both were abandoned long ago. The dead have not left with the living. Restless shades and wailing spectres drift among the headstones, unliving residents still haunt the old chapel, and a spirit healer keeps silent watch over the graves.", "triggers": [[1, 2563]], "sources": ["warcraft.wiki.gg/wiki/Morgan%27s_Plot (small decrepit church with graveyard and crypt behind Karazhan, Unliving Residents in the chapel, spirit healer)", "warcraft.wiki.gg/wiki/Deadwind_Pass (human village and its church grew around the tower, both abandoned)", "DB spawns in 2563: Restless Shade 7370, Wailing Spectre 12377, Spirit Healer 6491, Gate 177203", "DB: Unliving Resident 12380 spawns beside the chapel pews (gameobject 160866) at -11180,-1855"], "notes": "'Behind Karazhan, down the hill' and the 'iron gate' were unsourced and made general. Burials of Aegwynn, Cook, Moroes and Medivh still left out; Lydia Accoste (Cataclysm) excluded."},
-{"id": 4109, "kind": 1, "zone": 41, "sort": 9, "faction": 0, "title": "The Master's Cellar", "body": "South of Karazhan, beneath the ruins of a small village that may once have housed the tower's servants, lies the Master's Cellar. Its two entrances lead down into a great wine cellar and a second vault whose floor has collapsed into natural caves below. Both are riddled with ghosts: unliving residents and caretakers still linger among the casks, while damned souls and wailing spectres drift through the dark. Somewhere below lie an underground pond and a well, and Archmage Alturus holds that near such hidden water his scrying crystal can read the tower's energies far more clearly.", "triggers": [[1, 2837]], "sources": ["warcraft.wiki.gg/wiki/The_Master%27s_Cellar (pre-Cataclysm: south of Karazhan, beneath village ruins likely home of the servants, wine cellar, collapsed floor into caves, undead types)", "quest 9824 description (underground pond and well in a cellar below, crystal would pick up signals near underground water)", "DB: Underground Well Credit Marker 18161 and Underground Pond Credit Marker 18162, gameobject 182187 Underground Water Source Focus"], "notes": "Last sentence tightened to what quest 9824 says (the crystal reads the tower's energy better near underground water). Nalice and the Blackwyrm Cult (Cataclysm) excluded."},
-{"id": 4110, "kind": 2, "zone": 41, "sort": 1, "faction": 0, "title": "Medivh", "body": "Medivh, son of the Guardian Aegwynn, was the Last Guardian of Tirisfal and master of Karazhan. From before his birth the spirit of the demon lord Sargeras lay hidden within him, and over the years it twisted his mind until he made a pact with the warlock Gul'dan and helped open the Dark Portal for the orcish Horde. His boyhood friend Anduin Lothar and his own apprentice Khadgar stormed the tower and struck him down. His death cast the curse that still hangs over Karazhan and the pass. Yet the Violet Eye speak of it carefully, as what they believe was his death, for tales tell of a prophet who walked Azeroth years later.", "triggers": [[4, 9630], [4, 9645]], "sources": ["warcraft.wiki.gg/wiki/Medivh (son of Aegwynn, Sargeras within him before birth, pact with Gul'dan, opened the Dark Portal, raised alongside Lothar, slain by Lothar and Khadgar, death cursed the tower, returned as the Prophet in Warcraft III)", "npc_text 10546 (Leryda: what we believe was Medivh's death)", "quest 9630 description (Violet Eye seek Medivh's journal)", "quest 9645 The Master's Terrace (Kamsis 16815: Medivh's journal holds his memories)"], "notes": "TALK Leryda (18253) removed so she no longer unlocks two entries; Medivh now unlocks on accepting Medivh's Journal (9630, from Alturus at the gate) or The Master's Terrace (9645). 9630 is shared with story 4114, the usual person and story overlap. 'Opened' softened to 'helped open' the Dark Portal. Garona left out as sources disagree."},
-{"id": 4111, "kind": 2, "zone": 41, "sort": 2, "faction": 0, "title": "Archmage Alturus", "body": "Archmage Alturus is a senior agent of the Violet Eye, a secret sect of Dalaran's Kirin Tor charged long ago with watching over Karazhan and its master, lest Medivh's power run out of control, which in time it did. Now an old man, he keeps his post at the tower gate with Archmage Leryda and his apprentice, Darius, measuring the tower's energies and studying the ghosts that haunt its grounds. Alturus is curious, exacting and impatient with mysteries: The tower holds many secrets, and he intends to lay every one of them bare. He believes every ley line in Azeroth meets beneath the tower.", "triggers": [[2, 17613], [4, 11216]], "sources": ["quest 9826 description (Violet Eye agents of the Kirin Tor watching Karazhan and Medivh, in case things got out of hand)", "quest 9824 description (someone my age)", "quest 9825 description (unknowns bother me; Karazhan has many secrets, determined to uncover all of them)", "npc_text 9242 (ley lines converge beneath the tower)", "quest 11216 description (Tasserel sends adventurers to Alturus)", "warcraft.wiki.gg/wiki/Archmage_Alturus (high-ranking Violet Eye, reports to Cedric, serious and exacting, apprentice Darius)", "DB spawns: Alturus 17613, Leryda 18253, Apprentice Darius 18255 together at the gate"], "notes": "Reworded two lines that sat too close to quest 9826 and 9825 text; dropped unsourced 'young' for Darius. Legion cellar role excluded."},
-{"id": 4112, "kind": 2, "zone": 41, "sort": 3, "faction": 0, "title": "Archmage Leryda", "body": "Archmage Leryda is a high elf mage of the Violet Eye who waits beside Archmage Alturus at the gates of Karazhan. Where her colleague is absorbed in readings and theories, Leryda speaks of the tower's past and of the day it changed: Karazhan, she says, was not always so ominous, and its darkening came only with the death of Medivh, or what the Eye believes was his death. To those who have proven themselves in the Eye's service she grants the Violet Signet, a ring that grows in power as its bearer's loyalty is shown, shaped to whichever path its wearer chooses.", "triggers": [[2, 18253]], "sources": ["warcraft.wiki.gg/wiki/Archmage_Leryda (high elf mage, Violet Eye, waits at the entrance with Alturus and Darius)", "npc_text 10546", "quests 10729-10732 (Path of the Violet Mage, Restorer, Assassin, Protector), 10733, 10738, 10725 descriptions and reward texts (signet grows in power), 11031 (changing paths)", "creature_queststarter: Leryda 18253 starts the signet quests"], "notes": "verified"},
-{"id": 4113, "kind": 3, "zone": 41, "sort": 1, "faction": 0, "title": "The Watchers at the Gate", "body": "After the Dark Portal opened anew, the Violet Eye sent word from the gates of Karazhan seeking capable allies. Archmage Alturus asked them to carry his scrying crystal down to the pond and the well in the cellar below the tower, and to gather the essence of the ghosts that crowd its grounds. The readings alarmed him. Karazhan, which should pour out arcane currents, had become a vast void, silent but for one faint demonic echo. His report went to Archmage Cedric outside Dalaran and from there to Khadgar, Medivh's old apprentice and one of the few who could open the sealed tower. With a key restored at last, the Eye sought the coded log of its slain spy Keanna, whose final entries told of a Burning Legion agent arriving at the top of the tower. That intruder had to be destroyed, and only the keyholder could reach it.", "triggers": [[4, 11216], [4, 9824], [4, 9825]], "sources": ["quests 11216, 9824, 9825, 9826, 9829, 9838, 9840, 9843, 9844, 9860 (descriptions and reward texts)", "quest 9829 description (only Khadgar and Medivh could reopen Karazhan)", "quest_template_addon: 9824 and 9825 lead to 9826; 9838 to 9860 chain", "creature_queststarter: Tasserel 23948 starts 11216; Alturus starts 9824, 9825, 9826"], "notes": "verified; key-gathering in Outland and the Caverns of Time summarized, raid itself not described."},
-{"id": 4114, "kind": 3, "zone": 41, "sort": 2, "faction": 0, "title": "The Bones of Arcanagos", "body": "Long ago the blue dragon Arcanagos came to Karazhan to confront Medivh and was struck down by the tower's master. Burned by Medivh's magic, he fell in the mountains of Deadwind Pass, and only blackened bone remained. The Violet Eye learned more of that battle through Medivh's own journal, recovered from the tower after their agents sent to find it had vanished. The journal keeps more than words: it holds Medivh's memories, and on the Master's Terrace it showed the fight itself. Alturus reasoned that if Medivh had woven his own essence into the spell that slew the dragon, a residue of it might linger in the remains. The search turned to the mountains south of the tower, where a charred fragment of draconic bone, still teeming with energy, was found among the ashes. Yet the residue proved as lifeless as the dragon himself, and to use it Alturus would have to raise Arcanagos from his bones, risking a terror called Nightbane.", "triggers": [[4, 9630], [4, 9680]], "sources": ["quests 9630, 9645, 9680, 9631, 9644 (descriptions and reward texts)", "warcraft.wiki.gg/wiki/Arcanagos (blue dragon, confronted Medivh, burned from within, died in the mountains of Deadwind Pass, returned as Nightbane)", "DB gameobject 181963 Charred Bone Fragment at -11182,-1958", "quest 9631 description (residue devoid of life like Arcanagos), 9644 description (raising the remains risks Nightbane)"], "notes": "Death of Arcanagos phrased to fit both wiki versions (burned from within; fell burning into the mountains). 'Help from beyond the Kirin Tor' was unsourced and replaced with quest 9631's point that the residue is lifeless. Keeps to the Deadwind side; Kalynna, the summoning and the raid are left out."}
+ {
+  "id": 4100,
+  "kind": 0,
+  "zone": 41,
+  "sort": 0,
+  "faction": 0,
+  "title": "Deadwind Pass",
+  "body": "Between the dark woods of Duskwood and the Swamp of Sorrows lies a stretch of land with no life left in it. Its trees stand as grey, withered husks, its soil is ash, and carrion birds called sky shadows circle above the ravines. Travelers from Darkshire who must carry goods east toward the Blasted Lands take this road, and few do so gladly. At the heart of the pass rises Karazhan, the tower of Medivh, the Last Guardian. When Medivh fell, slain within those walls by Anduin Lothar and the young mage Khadgar, a curse settled over the tower and the country around it, and it has never lifted. Ghosts wander the tower grounds, the ruined village to its south and the old churchyard nearby. In the southern hills, the Deadwind ogres have dug their mounds into the cliffs of the Vice.",
+  "triggers": [
+   [
+    1,
+    41
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Deadwind_Pass (devoid of life, withered husks, curse over tower and lands, ogres in the Vice, Violet Eye study the tower)",
+   "warcraft.wiki.gg/wiki/Medivh (slain by Lothar and Khadgar, death cursed the tower and surrounding area)",
+   "quest 1395 description (route from Darkshire east through Deadwind Pass)",
+   "quest 9680 description (the ashes of Deadwind Pass)",
+   "quest 9826 description (Violet Eye agents of the Kirin Tor)",
+   "DB spawns: Sky Shadow 7376, Deadwind ogres in area 2561, ghosts around Karazhan, Alturus and Leryda at the gate"
+  ],
+  "notes": "Check: 'on behalf of Dalaran' restored to part 1 (the Eye's tie to the Kirin Tor is now told openly, as in entry 4111's opening and alterac.json 3620); 'wait for' made 'seek' so it stays true after the key. Converted: the Violet Eye's watch at the gate moved to part 1, minState 8, no triggers (Alturus, Leryda and Darius are Burning Crusade NPCs, npc_ipp_tbc in mod-individual-progression); 'on behalf of Dalaran' left out there, since Alturus tells the Eye's tie to the Kirin Tor in quest 9826 (entry 4111 part 1). Medivh's fall stays in the opening as standing lore (shattrath.json Khadgar and blasted_lands.json tell it openly). Earlier: Verified; only the placement of the village and churchyard made general (the churchyard is not sourced as behind the tower).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "In these days the tower has watchers again. Outside its gate a small band of mages of the Violet Eye keeps a long vigil on behalf of Dalaran, measuring the energies of Karazhan and studying the ghosts that crowd its grounds, while they seek a way back inside.",
+    "minState": 8,
+    "sources": [
+     "quest 9826 description (Violet Eye watching Karazhan)",
+     "quests 9824, 9825 descriptions",
+     "DB spawns: Alturus 17613, Leryda 18253, Darius 18255 at the gate; mod-individual-progression gives all three npc_ipp_tbc (hidden before state 8)",
+     "Faction.dbc 3.3.5 description of the Violet Eye (a secret sect of the Kirin Tor founded to spy on Medivh)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 4101,
+  "kind": 1,
+  "zone": 41,
+  "sort": 1,
+  "faction": 0,
+  "title": "Deadman's Crossing",
+  "body": "Deadman's Crossing is the crossroads where the road through the pass divides, one way leading back toward Duskwood, another on to the Swamp of Sorrows, and a third turning south toward Karazhan. The welcome it offers is grim. A hangman's tree stands at the junction with a pair of corpses still hanging from it, and the signposts beside the road bear no distances, only warnings: Turn Back, and Abandon hope, all ye who enter here. Those who keep to the road and press on quickly are seldom troubled. Those who stray from it may not return.",
+  "triggers": [
+   [
+    1,
+    2697
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Deadman%27s_Crossing (crossroads to Duskwood, Swamp of Sorrows and Karazhan; hangman's tree with corpses; signs)",
+   "DB gameobjects 177185 and 177186 (sign texts) at -10451,-1721, posarea 2697"
+  ],
+  "notes": "Check: ok. Unchanged in the parts conversion: nothing to hide, no later-era text. Earlier: verified"
+ },
+ {
+  "id": 4102,
+  "kind": 1,
+  "zone": 41,
+  "sort": 2,
+  "faction": 0,
+  "title": "Deadwind Ravine",
+  "body": "Deadwind Ravine is a craggy cleft that cuts through the mountains of the pass, running south toward Karazhan. The western road from Duskwood follows its upper level, so that travelers look down into a gulf of bare stone and dead timber, and at its far end a bridge carries the way on toward the tower. Nothing grows here, and little lives. The sky shadows, the great carrion birds of the pass, wheel above the ravine, watching for whatever falls by the wayside.",
+  "triggers": [
+   [
+    1,
+    2558
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Deadwind_Ravine (craggy cleft running south toward Karazhan, western road on the upper level)",
+   "warcraft.wiki.gg/wiki/Sky_Shadow (vulture, carrion bird, uses Rend)",
+   "DB: 9 Sky Shadow 7376 spawns in area 2558",
+   "warcraft.wiki.gg/wiki/Deadwind_Ravine (southern bridge near the tower at the end of the area)"
+  ],
+  "notes": "Check: ok. Unchanged in the parts conversion: nothing to hide, no later-era text. Earlier: Unsourced hunting and shrieking detail cut; added the southern bridge from the wiki."
+ },
+ {
+  "id": 4103,
+  "kind": 1,
+  "zone": 41,
+  "sort": 3,
+  "faction": 0,
+  "title": "Ariden's Camp",
+  "body": "Just north of the main road that runs between Duskwood and the Swamp of Sorrows lies Ariden's Camp, a deserted campsite in the hills of the pass. A campfire still burns there, yet no one is ever found tending it. The camp carries the name of a man called Ariden, but no one passing through Deadwind Pass seems to know who he was, what business brought him to these hills so near Medivh's tower, or where he has gone.",
+  "triggers": [
+   [
+    1,
+    2560
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Ariden%27s_Camp (deserted campsite north of the main road between Duskwood and Swamp of Sorrows)",
+   "DB gameobject 176464 Campfire at -10436,-2140, posarea 2560",
+   "DB gameobject_template 176464 (type 8 spell focus 4, campfire display 192: a lit cooking fire); no creatures spawn in area 2560"
+  ],
+  "notes": "Check: ok. Unchanged in the parts conversion: nothing to hide, no later-era text. Earlier: The camp's campfire object is a lit cooking fire, so the cold fire pit became a fire that still burns untended. Ariden's Dark Rider identity (Legion, Season of Discovery) still left out on purpose."
+ },
+ {
+  "id": 4104,
+  "kind": 1,
+  "zone": 41,
+  "sort": 4,
+  "faction": 0,
+  "title": "Sleeping Gorge",
+  "body": "The Sleeping Gorge is a small chasm in the eastern part of Deadwind Pass. One of the paths south toward Karazhan runs along its floor for a stretch before it turns east into the Vice, the ogre country of the southern hills. Like the rest of the pass, the gorge is a lifeless place of bare rock and withered trees, and the only things that stir in it are the sky shadows, circling above in search of carrion.",
+  "triggers": [
+   [
+    1,
+    2938
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Sleeping_Gorge (small chasm in eastern Deadwind Pass, a path south to Karazhan runs through it before turning east into the Vice)",
+   "DB: Sky Shadow 7376 spawns in area 2938"
+  ],
+  "notes": "Check: ok. Unchanged in the parts conversion: nothing to hide, no later-era text. Earlier: Unsourced stillness details (no water, no wind, watching the path) replaced with the pass's sourced lifelessness."
+ },
+ {
+  "id": 4105,
+  "kind": 1,
+  "zone": 41,
+  "sort": 5,
+  "faction": 0,
+  "title": "The Vice",
+  "body": "The Vice is the southern hill country of Deadwind Pass, along the road that leads to Karazhan, and it belongs to the Deadwind ogres. Their mounds are dug into the slopes, and their camps are marked by bonfires and great cooking cauldrons. Brutes and ogre mages hold the open ground, while maulers and warlocks keep to the caves farther south. Why the ogres chose to settle in so desolate a place, so close to a cursed tower, no one knows. Ghosts from Karazhan's grounds drift into their territory as well.",
+  "triggers": [
+   [
+    1,
+    2561
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/The_Vice (southern Deadwind Pass along the road to Karazhan, home of the Deadwind ogres, mounds and camps, no one knows why they settled)",
+   "DB spawns in area 2561: Deadwind Brute 7369, Ogre Mage 7379, Mauler 7371, Warlock 7372; ghosts 12377, 12378, 7370, 12379, 12380",
+   "DB gameobjects 176558, 176560 Bonfire and 176559, 176574 Cauldron in 2561"
+  ],
+  "notes": "Check: ok. Unchanged in the parts conversion: nothing to hide, no later-era text. Earlier: Verified; dropped 'northern edge' for the ghosts, which the spawns do not pin down. Cave placement of maulers and warlocks is from spawn coordinates (lower, southern positions)."
+ },
+ {
+  "id": 4106,
+  "kind": 1,
+  "zone": 41,
+  "sort": 6,
+  "faction": 0,
+  "title": "Grosh'gok Compound",
+  "body": "Grosh'gok Compound is the largest of the ogre mounds in the Vice and the southernmost of its caves, burrowed deep into the hills. It is the chief stronghold of the Deadwind ogres. The clan's hulking maulers and its warlocks, seldom seen on the open slopes where the brutes and ogre mages roam, are found in the caves of the southern Vice. Who leads the clan, and what purpose holds the ogres in the dead lands of the pass, remains unknown to outsiders.",
+  "triggers": [
+   [
+    1,
+    2937
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Grosh%27gok_Compound (ogre mound in the Vice, southernmost and largest of the caves)",
+   "warcraft.wiki.gg/wiki/Deadwind_ogre (Grosh'gok Compound is their base, leader unknown)",
+   "DB spawns: Deadwind Warlock 7372 and Mauler 7371 at x -11080..-11162, y -2367..-2487, the southern cave"
+  ],
+  "notes": "Check: ok. Unchanged in the parts conversion: nothing to hide, no later-era text. Earlier: Indoor area 2937 is reachable but the grid tool cannot see inside it, so the maulers and warlocks are now placed only in the southern caves (spawn coordinates x -11080 to -11162, lower than the outdoor ogres), not explicitly inside the compound. Warlocks' darker powers cut as inference."
+ },
+ {
+  "id": 4107,
+  "kind": 1,
+  "zone": 41,
+  "sort": 7,
+  "faction": 0,
+  "title": "Karazhan",
+  "body": "Karazhan rises at the heart of Deadwind Pass, the tower of Medivh, the Last Guardian. It was never an ordinary tower. The fabric of the world runs thin around it, and in Medivh's day those who lived within were troubled by vivid visions of times long past and times yet to come. It was not always so ominous, though: the darkness came with Medivh's death, and a curse has lain over the tower and its lands ever since. Its doors are shut against the world, and its grounds have filled with wailing spectres and the restless dead of its old household.",
+  "triggers": [
+   [
+    1,
+    2562
+   ]
+  ],
+  "sources": [
+   "The Last Guardian (Knaak, 2002), via warcraft.wiki.gg/wiki/Karazhan (fabric of reality weakened in the region; visions of past and future in the tower in Medivh's day)",
+   "worldofwarcraft.com via warcraft.wiki.gg/wiki/Karazhan notes (since his death a curse has pervaded the tower and the surrounding lands)",
+   "npc_text 10546 (Leryda: Karazhan was not always so ominous, darkening came with Medivh's death)",
+   "quest 9829 description (Karazhan sealed itself off)",
+   "quest 9825 description (outside of Karazhan crawling with ghostly beings)",
+   "DB spawns in 2562: Wailing Spectre, Damned Soul, Restless Shade, Unliving Caretaker, Unliving Resident (classic creatures)"
+  ],
+  "notes": "Check: the ley lines (only Alturus, npc_text 9242) moved from the opening into part 1 (minState 8), and the portal and beacon line (only quest 9844, accepted late in the chain) moved to story 4113 part 3, since neither has a source a classic character could stand on; the opening now rests on The Last Guardian (thin fabric of reality, visions) and the curse after Medivh's death (worldofwarcraft.com, as in 4100), with 'The mages of Dalaran say' dropped. Part 1 'wait for' made 'have long sought' so it stays true after the key. Converted: the Violet Eye at the gate moved to part 1, minState 8, no triggers, since its agents are Burning Crusade NPCs (npc_ipp_tbc). The ley lines, the beacon and the darkening after Medivh's death stay in the opening: they are lore of the tower true in every era, though voiced by those NPCs. npc_text 9242 and 10546 reread: period text. Earlier: verified",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Now the tower has watchers at its gatehouse. Agents of the Violet Eye keep a camp there, where Archmage Leryda recalls the days before its darkening and Archmage Alturus measures what flows from the tower: trace every ley line in Azeroth, he says, and all of them meet beneath it. They have long sought a way back inside.",
+    "minState": 8,
+    "sources": [
+     "npc_text 9242 (Alturus: ley lines converge below the tower)",
+     "npc_text 10546 (Leryda: not always so ominous)",
+     "quest 9840 description (the Eye needs a way back into the tower)",
+     "DB spawns: Alturus 17613, Leryda 18253, Darius 18255 at the gatehouse (npc_ipp_tbc in mod-individual-progression, seen from state 8)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 4108,
+  "kind": 1,
+  "zone": 41,
+  "sort": 8,
+  "faction": 0,
+  "title": "Morgan's Plot",
+  "body": "Not far from Karazhan stands Morgan's Plot: a small, decrepit church with its graveyard and crypt. In better days a human village and its church grew up around the tower, and both were abandoned long ago. The dead have not left with the living. Restless shades and wailing spectres drift among the headstones, unliving residents still haunt the old chapel, and a spirit healer keeps silent watch over the graves.",
+  "triggers": [
+   [
+    1,
+    2563
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Morgan%27s_Plot (small decrepit church with graveyard and crypt behind Karazhan, Unliving Residents in the chapel, spirit healer)",
+   "warcraft.wiki.gg/wiki/Deadwind_Pass (human village and its church grew around the tower, both abandoned)",
+   "DB spawns in 2563: Restless Shade 7370, Wailing Spectre 12377, Spirit Healer 6491, Gate 177203",
+   "DB: Unliving Resident 12380 spawns beside the chapel pews (gameobject 160866) at -11180,-1855"
+  ],
+  "notes": "Check: ok. Unchanged in the parts conversion: nothing to hide, no later-era text. Earlier: 'Behind Karazhan, down the hill' and the 'iron gate' were unsourced and made general. Burials of Aegwynn, Cook, Moroes and Medivh still left out; Lydia Accoste (Cataclysm) excluded."
+ },
+ {
+  "id": 4109,
+  "kind": 1,
+  "zone": 41,
+  "sort": 9,
+  "faction": 0,
+  "title": "The Master's Cellar",
+  "body": "South of Karazhan, beneath the ruins of a small village that may once have housed the tower's servants, lies the Master's Cellar. Its two entrances lead down into a great wine cellar and a second vault whose floor has collapsed into natural caves below. Both are riddled with ghosts: unliving residents and caretakers still linger among the casks, while damned souls and wailing spectres drift through the dark. Somewhere below lie an underground pond and a well.",
+  "triggers": [
+   [
+    1,
+    2837
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/The_Master%27s_Cellar (pre-Cataclysm: south of Karazhan, beneath village ruins likely home of the servants, wine cellar, collapsed floor into caves, undead types)",
+   "quest 9824 description (underground pond and well in a cellar below, crystal would pick up signals near underground water)",
+   "DB: Underground Well Credit Marker 18161 and Underground Pond Credit Marker 18162, gameobject 182187 Underground Water Source Focus"
+  ],
+  "notes": "Check: ok. Converted: Alturus's claim about his crystal moved to part 1, minState 8, no triggers (Alturus is a Burning Crusade NPC, npc_ipp_tbc). Opening now 77 words. Earlier: Last sentence tightened to what quest 9824 says (the crystal reads the tower's energy better near underground water). Nalice and the Blackwyrm Cult (Cataclysm) excluded.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Archmage Alturus of the Violet Eye, camped at the tower gate above, holds that near such hidden water his scrying crystal could read the tower's energies far more clearly than it can on the surface, though the ghosts below make the cellar no place for a man of his years.",
+    "minState": 8,
+    "sources": [
+     "quest 9824 description (crystal would pick up signals near underground water; hazardous for someone my age)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 4110,
+  "kind": 2,
+  "zone": 41,
+  "sort": 1,
+  "faction": 0,
+  "title": "Medivh",
+  "body": "Medivh, son of the Guardian Aegwynn, was the Last Guardian of Tirisfal and master of Karazhan. From before his birth the spirit of the demon lord Sargeras lay hidden within him, and over the years it twisted his mind until he made a pact with the warlock Gul'dan and helped open the Dark Portal for the orcish Horde. His boyhood friend Anduin Lothar and his own apprentice Khadgar stormed the tower and struck him down. His death cast the curse that still hangs over Karazhan and the pass. Yet the Violet Eye speak of it carefully, as what they believe was his death, for tales tell of a prophet who walked Azeroth years later.",
+  "triggers": [
+   [
+    4,
+    9630
+   ],
+   [
+    4,
+    9645
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Medivh (son of Aegwynn, Sargeras within him before birth, pact with Gul'dan, opened the Dark Portal, raised alongside Lothar, slain by Lothar and Khadgar, death cursed the tower, returned as the Prophet in Warcraft III)",
+   "npc_text 10546 (Leryda: what we believe was Medivh's death)",
+   "quest 9630 description (Violet Eye seek Medivh's journal)",
+   "quest 9645 The Master's Terrace (Kamsis 16815: Medivh's journal holds his memories)"
+  ],
+  "notes": "Check: requiredState 8 kept. Both triggers can only fire from state 8 (Alturus 17613 is npc_ipp_tbc; 9645 is inside Karazhan), so the gate hides nothing a classic character could earn, and his fall stays open to every era in 4100's and 4107's openings; it matches 4111 to 4114 and alterac.json 3620. Converted: body unchanged; his history (possession by Sargeras, the Dark Portal, death at the hands of Lothar and Khadgar) is standing lore, told openly by this zone's own entry 4100, shattrath.json 370307 and blasted_lands.json 400. requiredState 8 added: both triggers are Burning Crusade (9630 from Alturus 17613, npc_ipp_tbc; 9645 inside Karazhan) and the Violet Eye's careful phrasing rests on Leryda's npc_text 10546, so no classic reader could earn it anyway. npc_text 10546 reread: period text. Earlier: TALK Leryda (18253) removed so she no longer unlocks two entries; Medivh now unlocks on accepting Medivh's Journal (9630, from Alturus at the gate) or The Master's Terrace (9645). 9630 is shared with story 4114, the usual person and story overlap. 'Opened' softened to 'helped open' the Dark Portal. Garona left out as sources disagree.",
+  "requiredState": 8
+ },
+ {
+  "id": 4111,
+  "kind": 2,
+  "zone": 41,
+  "sort": 2,
+  "faction": 0,
+  "title": "Archmage Alturus",
+  "body": "Archmage Alturus is a senior agent of the Violet Eye, a secret sect of Dalaran's Kirin Tor charged long ago with keeping watch over Karazhan and its master, Medivh. Now an old man, he keeps his post at the gate of the tower with Archmage Leryda and his apprentice, Darius, measuring the tower's energies and studying the ghosts that haunt its grounds. Alturus is curious, exacting and impatient with mysteries: the tower holds many secrets, and he intends to lay every one of them bare. Beneath it, he believes, every ley line in Azeroth meets, and he seeks capable allies to help him take its measure.",
+  "triggers": [
+   [
+    2,
+    17613
+   ],
+   [
+    4,
+    11216
+   ]
+  ],
+  "sources": [
+   "quest 9826 description (Violet Eye agents of the Kirin Tor watching Karazhan and Medivh, in case things got out of hand)",
+   "quest 9824 description (someone my age)",
+   "quest 9825 description (unknowns bother me; Karazhan has many secrets, determined to uncover all of them)",
+   "npc_text 9242 (ley lines converge beneath the tower)",
+   "quest 11216 description (Tasserel sends adventurers to Alturus)",
+   "warcraft.wiki.gg/wiki/Archmage_Alturus (high-ranking Violet Eye, reports to Cedric, serious and exacting, apprentice Darius)",
+   "DB spawns: Alturus 17613, Leryda 18253, Apprentice Darius 18255 together at the gate",
+   "vanilla_world_level_adjustments.sql in mod-individual-progression (Alturus 17613 npc_ipp_tbc)",
+   "quest_template 9826 (QuestType 2, offered by Alturus after 9824 and 9825, ExclusiveGroup -9824)",
+   "Faction.dbc 3.3.5 description of the Violet Eye (a secret sect of the Kirin Tor founded to spy on Medivh and his activities)"
+  ],
+  "notes": "Check: the Eye's tie to the Kirin Tor moved back into the opening, matching alterac.json 3620 (told on talking to Cedric) and the game's own reputation description; part 1 (QUEST_ACCEPT 9826) keeps what Alturus adds there: the Eye's charge in case things got out of hand, that they did after Medivh was gone (9826's wording, replacing 'lest Medivh's power run out of control'), and the report for Cedric. Converted: requiredState 8 on the entry (Alturus 17613 is npc_ipp_tbc in mod-individual-progression, seen only from state 8, and every line is patch 2.0.1 material; same pattern as alterac.json 3620). The Violet Eye's nature as a Kirin Tor sect set to watch Medivh moved to part 1 on QUEST_ACCEPT 9826, where Alturus tells it (Cedric's 'that old fool' in 9826's completion text shows it was meant to stay secret). Opening adds his search for allies (quest 11216). Earlier: Reworded two lines that sat too close to quest 9826 and 9825 text; dropped unsourced 'young' for Darius. Legion cellar role excluded.",
+  "requiredState": 8,
+  "parts": [
+   {
+    "part": 1,
+    "body": "Alturus has never been one for secrecy. When the tower's readings turn grim, he tells those who have helped him that the Eye was set to watch Karazhan in case matters got out of hand, and admits that they did, very quickly, once Medivh was gone. His findings he entrusts to them, to carry to Archmage Cedric outside Dalaran.",
+    "triggers": [
+     [
+      4,
+      9826
+     ]
+    ],
+    "sources": [
+     "quest 9826 description (never one for secrecy; agents of the Kirin Tor; keep an eye on Karazhan and Medivh in case things got out of hand; take the report to Cedric)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 4112,
+  "kind": 2,
+  "zone": 41,
+  "sort": 3,
+  "faction": 0,
+  "title": "Archmage Leryda",
+  "body": "Archmage Leryda is a high elf mage of the Violet Eye who waits beside Archmage Alturus at the gates of Karazhan. Where her colleague is absorbed in readings and theories, Leryda speaks of the tower's past and of the day it changed: Karazhan, she says, was not always so ominous, and its darkening came only with the death of Medivh, or what the Eye believes was his death. To those who have proven themselves in the Eye's service she grants the Violet Signet, a ring that grows in power as its bearer's loyalty is shown, shaped to whichever path its wearer chooses.",
+  "triggers": [
+   [
+    2,
+    18253
+   ],
+   [
+    5,
+    10729
+   ],
+   [
+    5,
+    10730
+   ],
+   [
+    5,
+    10731
+   ],
+   [
+    5,
+    10732
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Archmage_Leryda (high elf mage, Violet Eye, waits at the entrance with Alturus and Darius)",
+   "npc_text 10546",
+   "quests 10729-10732 (Path of the Violet Mage, Restorer, Assassin, Protector), 10733, 10738, 10725 descriptions and reward texts (signet grows in power), 11031 (changing paths)",
+   "creature_queststarter: Leryda 18253 starts the signet quests",
+   "vanilla_world_level_adjustments.sql in mod-individual-progression (Leryda 18253 npc_ipp_tbc)"
+  ],
+  "notes": "Check: ok. Converted: body unchanged, nothing to hide (the signet is what she offers, not an outcome). requiredState 8 on the entry: Leryda 18253 is npc_ipp_tbc in mod-individual-progression and her text is Burning Crusade material. npc_text 10546 reread: period text. Earlier: verified Fix: DONE 10729, 10730, 10731 and 10732 added (Path of the Violet Mage, Restorer, Assassin and Protector: her first signet quests, one per path, started and ended by her; QuestType 0, so DONE rather than ACCEPT), so the entry backfills when a character reaches state 8; TALK alone does not backfill. Area 2562 not used: Karazhan's grounds are explored in classic, before she stands there.",
+  "requiredState": 8
+ },
+ {
+  "id": 4113,
+  "kind": 3,
+  "zone": 41,
+  "sort": 1,
+  "faction": 0,
+  "title": "The Watchers at the Gate",
+  "body": "After the Dark Portal opened anew, the Violet Eye sent word from the gates of Karazhan seeking capable allies, even to the Lower City of Shattrath. Archmage Alturus wants an imprint of the tower's energy, for a personal project, he says, but his scrying crystal catches nothing at the gate. He asks his helpers to carry it down to the pond and the well in the cellar below the tower, where hidden water should sharpen its readings. He also wants the essence of the ghosts that crowd the tower grounds, for no one knows why they linger, and unknowns trouble him.",
+  "triggers": [
+   [
+    4,
+    11216
+   ],
+   [
+    4,
+    9824
+   ],
+   [
+    4,
+    9825
+   ]
+  ],
+  "sources": [
+   "quests 11216, 9824, 9825, 9826, 9829, 9838, 9840, 9843, 9844, 9860 (descriptions and reward texts)",
+   "quest 9829 description (only Khadgar and Medivh could reopen Karazhan)",
+   "quest_template_addon: 9824 and 9825 lead to 9826; 9838 to 9860 chain",
+   "creature_queststarter: Tasserel 23948 starts 11216; Alturus starts 9824, 9825, 9826",
+   "quest_template_addon: 9838 ends at Alturus 17613; 9844 offered by Alturus after 9843 (QuestType 2)"
+  ],
+  "notes": "Check: quest flow confirmed (9838 from Khadgar, turned in to Alturus, reward text 'a key to this place'; the key is Medivh's own, 9837); the portal and beacon line from 4107 added to part 3, where quest 9844 tells it. 11216 is accepted from Tasserel 23948 in Lower City; no other file uses it (western_plaguelands has TALK 11216, a creature, not this quest). Converted: requiredState 8 on the entry (every quest is patch 2.0.1 or 2.1, Alturus npc_ipp_tbc). Opening is the setup of 9824, 9825 and 11216. Moved: the void readings to part 1 (QUEST_DONE 9824, whose reward text holds them); Cedric, Khadgar and the key to part 2 (QUEST_DONE 9838, the return to Alturus with the key, since 9826's turn-in, 9829 and the Outland steps belong to Alterac and Outland files); Keanna's log and the demonic intruder to part 3 (QUEST_ACCEPT 9844, whose text tells the log's contents). The raid and the fate of the intruder still untold. Earlier: verified; key-gathering in Outland and the Caverns of Time summarized, raid itself not described.",
+  "requiredState": 8,
+  "parts": [
+   {
+    "part": 1,
+    "body": "The readings alarmed him. Karazhan, which should pour out arcane currents of every kind, had become a vast void: no signals, nothing, save for one very faint demonic echo. Alturus judged it bad news, and set down his findings in a report for the Eye's masters.",
+    "triggers": [
+     [
+      5,
+      9824
+     ]
+    ],
+    "sources": [
+     "quest 9824 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "His report went to Archmage Cedric outside Dalaran and from there to Khadgar, Medivh's old apprentice and one of the few who could open the sealed tower. The one sent to deliver it came back to the gate bearing a key to Karazhan, to Alturus's astonishment.",
+    "triggers": [
+     [
+      5,
+      9838
+     ]
+    ],
+    "sources": [
+     "quest 9826 description",
+     "quest 9829 description (only Khadgar and Medivh could reopen Karazhan)",
+     "quest 9838 description and reward text (a key to this place)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "With a way back inside at last, the Eye sought the coded log of Keanna, a spy of theirs slain shortly before the tower shut itself away. Her final entries told of a Burning Legion agent arriving at the top of the tower. To Alturus, Karazhan is a doorway onto the nether and a beacon into other worlds, and in the wrong hands it was unthinkable. That intruder had to be destroyed, and only the keyholder could reach it.",
+    "triggers": [
+     [
+      4,
+      9844
+     ]
+    ],
+    "sources": [
+     "quest 9840 description (Keanna's encoded log, her death confirmed shortly before Karazhan was shut down)",
+     "quest 9844 description",
+     "quest 9844 description (portal into the nether, beacon into other worlds; moved here from entry 4107)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 4114,
+  "kind": 3,
+  "zone": 41,
+  "sort": 2,
+  "faction": 0,
+  "title": "The Bones of Arcanagos",
+  "body": "Tales of Medivh's day tell that the blue dragon Arcanagos once came to Karazhan to confront him and was struck down by the tower's master. As part of its research into the tower, the Violet Eye has long tried to track down Medivh's own journal, and it has sent agent after agent in search of it. None has come back out of the tower; the last of them was a mage named Wravien. Archmage Alturus now turns to those who have proven they can walk into Karazhan and out again, and asks them to find Wravien and learn what became of the journal.",
+  "triggers": [
+   [
+    4,
+    9630
+   ],
+   [
+    4,
+    9680
+   ]
+  ],
+  "sources": [
+   "quests 9630, 9645, 9680, 9631, 9644 (descriptions and reward texts)",
+   "warcraft.wiki.gg/wiki/Arcanagos (blue dragon, confronted Medivh, burned from within, died in the mountains of Deadwind Pass, returned as Nightbane)",
+   "DB gameobject 181963 Charred Bone Fragment at -11182,-1958",
+   "quest 9631 description (residue devoid of life like Arcanagos), 9644 description (raising the remains risks Nightbane)",
+   "The Last Guardian (Knaak, 2002), via warcraft.wiki.gg/wiki/Arcanagos (Arcanagos's attack on Medivh at Karazhan)"
+  ],
+  "notes": "Check: the opening's mention of the dragon's defeat framed as old tales (The Last Guardian, 2002); the burning, the fall and the bones stay in part 1 (QUEST_DONE 9645). Nightbane drop confirmed: Kalynna 17636 in Netherstorm first speaks of raising the dragon (9631 reward text) and of Nightbane (9644 description); 9644 is turned in to Alturus only after the Nightbane kill. Converted: requiredState 8 on the entry (a Burning Crusade chain, Alturus npc_ipp_tbc). The dragon's defeat by Medivh stays in the opening as old legend (the title names his bones); the opening is the setup of 9630. Moved: the journal, its memories and the terrace vision to part 1 (QUEST_DONE 9645, turned in to Alturus); the bone fragment to part 2 (QUEST_DONE 9680); the lifeless residue and the turn to Kalynna to part 3 (QUEST_ACCEPT 9631). Dropped: 'to use it Alturus would have to raise Arcanagos from his bones, risking a terror called Nightbane', since only Kalynna tells it (9631 reward text and 9644, Netherstorm), and 9644's turn-in follows the Nightbane kill, which belongs to a Karazhan instance file. Earlier: Death of Arcanagos phrased to fit both wiki versions (burned from within; fell burning into the mountains). 'Help from beyond the Kirin Tor' was unsourced and replaced with quest 9631's point that the residue is lifeless. Keeps to the Deadwind side; Kalynna, the summoning and the raid are left out.",
+  "requiredState": 8,
+  "parts": [
+   {
+    "part": 1,
+    "body": "The journal was recovered at last, though the agents sent after it had succumbed to the tower's magic. It keeps more than words: it holds Medivh's own memories, and on the Master's Terrace one page showed the battle with Arcanagos itself, the dragon burned by Medivh's magic and falling into the mountains of Deadwind Pass, where only blackened bone remained.",
+    "triggers": [
+     [
+      5,
+      9645
+     ]
+    ],
+    "sources": [
+     "quest 9645 description and reward text (journal is literally Medivh's memories; agents succumbed to Karazhan's magic)",
+     "warcraft.wiki.gg/wiki/Arcanagos (burned from within, died in the mountains of Deadwind Pass)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Alturus reasoned that if Medivh had woven his own essence into the spell that slew the dragon, a residue of it might linger in the remains. The search turned to the mountains south of the tower, and there among the ashes a charred fragment of draconic bone was found, small but still teeming with energy.",
+    "triggers": [
+     [
+      5,
+      9680
+     ]
+    ],
+    "sources": [
+     "quest 9680 description and reward text",
+     "DB gameobject 181963 Charred Bone Fragment at -11182,-1958"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Then Alturus saw what he had overlooked. The residue of Medivh's essence in the bone was as devoid of life as Arcanagos himself. There was a way around it, he said, and he knew just the person to help: Kalynna Lathred, at Area 52 in Netherstorm. What that way would demand lay far beyond the pass.",
+    "triggers": [
+     [
+      4,
+      9631
+     ]
+    ],
+    "sources": [
+     "quest 9631 description (QuestType 2, offered by Alturus 17613 after 9680)"
+    ]
+   }
+  ]
+ }
 ]

@@ -1,38 +1,1777 @@
 [
-{"id": 352500, "kind": 0, "zone": 3525, "sort": 0, "faction": 0, "title": "Bloodmyst Isle", "body": "Bloodmyst Isle is the northern of the two isles off the coast of Kalimdor, a land of forested hills and mountains that the draenei first named Silvergale for its beauty. Long ago it belonged to the night elves of Loreth'Aran, whose riders flew green dragons until the black dragonflight destroyed their city and the Sundering broke the land apart; their ruins still crumble along the eastern shore. When the Exodar fell, shards of its crystals rained across the island and one of its great power cores buried itself in the western mountains. Fluid leaking from it has turned the waters red, and the corruption spreads through trees, bears, moths and water spirits alike, many of them now riddled with crystal. Worse, the blood elves the draenei fought aboard the ship survived the crash. Calling themselves the Sunhawks, they hold the west around the Vector Coil. Nazzivus satyrs, Wrathscale naga and maddened owlkin add to the danger. Against them all stands Blood Watch, the Hand of Argus outpost at the island's heart.", "triggers": [[1, 3525]], "sources": ["warcraft.wiki.gg/wiki/Bloodmyst_Isle (Silvergale, Loreth'Aran, Dragon Wars, Sundering, crystal storm, Sunhawks)", "quest 9694 description (called it Silvergale, blood elves survived the crash)", "quest 9748 reward (water turned red by core fluid)", "quest 9641 description (shards inside bears, ravagers, flutterers, treants)", "quest 10067 description (water spirits turning to crystal)", "quest 9759 description (power core jutting from the mountain)"], "notes": "Satyrs, naga and owlkin from DB spawns and quests 9567, 9666, 9687."},
-{"id": 352501, "kind": 1, "zone": 3525, "sort": 1, "faction": 0, "title": "Kessel's Crossing", "body": "Kessel's Crossing is a draenei camp on the southern edge of Bloodmyst, where the road north from Azuremyst first reaches the isle. It belongs to Kessel, lord of the elekk, and the great beasts graze here under the eye of Vorkhan the herder. The Exodar carried ravagers from Outland as specimens, and Vorkhan fears the survivors, now loose near the coast, will push out the island's own predators. Nearby, Aonar bakes pies from the sand pears of the island's healthier south, sharing them with the elekk, who would steal them anyway. He warns newcomers that when Kessel offered him work caring for the elekk, the job came with a shovel.", "triggers": [[1, 3602]], "sources": ["quest 9625 description (road north to Kessel's Crossing)", "quest 9634 description and request text (ravager specimens, displacing native predators)", "quest 9624 description (sand pears on the uncorrupted part, elekk steal fruit)", "npc_text 9037 (Aonar on Kessel and the shovel)", "npc_text 9041 (Kessel, lord of the elekk)", "zone_areas: Vorkhan 17586, Aonar 17599, Kessel 17649, Elekk 17530 in area 3602"], "notes": "Vorkhan places the ravagers west of the camp; DB hatchling spawns lie along the Beryl Coast east and south of it, so the body only says near the coast."},
-{"id": 352502, "kind": 1, "zone": 3525, "sort": 2, "faction": 0, "title": "The Lost Fold", "body": "South of Blood Watch, across a bridge, the hollow of the Lost Fold holds wreckage the Exodar shed as it fell, and ravagers have made the debris their nest. Their hatchlings swarm here and along the nearby Beryl Coast, the spreading brood of the Outland specimens that survived the crash. For all that, this is one of the less corrupted corners of Bloodmyst. Harbinger Mikolaas had the first of his crystal samples cut from a crystal at this impact site, to serve as a baseline against which the island's more tainted shards could be measured.", "triggers": [[1, 3909], [1, 3583]], "sources": ["quest 9581 description and reward (ravager infested debris south of town across the bridge, less corrupted region, baseline)", "gameobject 181779 Impact Site Crystal stands in area 3909 (posarea)", "zone_areas: Bloodmyst Hatchling 17525 in 3909 and 3583", "quest 9634 description (ravager specimens)"], "notes": "Ravager origin softened (no Bloodmyst source mentions broken cages); Beryl Coast direction made general. Rest verified."},
-{"id": 352503, "kind": 1, "zone": 3525, "sort": 3, "faction": 0, "title": "Bristlelimb Enclave", "body": "The Bristlelimb furbolgs, sworn enemies of the Stillpine of Azuremyst, keep a cluster of camps in the southeast of Bloodmyst. Here they hold Princess Stillpine, daughter of the Stillpine high chief, in a cage, and mean to sacrifice her to their gods. Only High Chief Bristlelimb carries the key, and he shows himself only once enough of his warriors and shaman have fallen, roaring for vengeance. Freed, the princess thanks her rescuer and hurries away to bring the news to her father, and the Stillpine ambassador at Blood Watch offers relics to the stranger their prophecy had already named as their hero. Other Stillpine have been less fortunate in this place.", "triggers": [[1, 3600]], "sources": ["quest 9667 description, objectives and reward", "creature_text 17702 (Face the wrath of Bristlelimb), 17682", "zone_areas: Princess Stillpine 17682, cage 181928, High Chief Bristlelimb 17702, Young Furbolg Shaman 17542 in 3600", "azuremyst.json (Bristlelimb and Stillpine at war)", "smart_scripts 17682 (waypoint then despawn), creature_text 17682"], "notes": "Princess no longer said to go to the ambassador herself (her script walks her off and despawns her; the quest ends with Frasaboo). The last line alludes to the slain young shaman of the Exodar's Redemption chain without retelling it."},
-{"id": 352504, "kind": 1, "zone": 3525, "sort": 4, "faction": 0, "title": "Wrathscale Lair", "body": "Northeast of Kessel's Crossing, on the eastern coast, the Wrathscale naga keep a lair ruled by Lord Xiz. They grew bold enough to creep up on the draenei camp at the crossing under cover of darkness, and Kessel answered in kind: Lord Xiz was slain in his own lair and a draenei banner driven through his body, so that the naga would know fear whenever they saw that standard. Screamers and shorestalkers guard the lair, and Wrathscale marauders and sorceresses range north along the waters of the Crimson Reach toward the ruins of Loreth'Aran.", "triggers": [[1, 3590], [1, 3589]], "sources": ["quest 9666 description and reward", "zone_areas: Lord Xiz 17701 and Wrathscale Shorestalker/Screamer in 3590; Wrathscale Marauder/Sorceress in 3589 and 3591", "DB spawn averages (Wrathscale Lair on the east coast, marauders toward Loreth'Aran)"], "notes": "Crimson Reach folded in; its exact shape is not described in sources."},
-{"id": 352505, "kind": 1, "zone": 3525, "sort": 5, "faction": 0, "title": "Blood Watch", "body": "Blood Watch is the forward base of the Hand of Argus on Bloodmyst, one of two the order runs on the isles. Exarch Admetius leads it with the three vindicators of the Triumvirate, while Harbinger Mikolaas sees to its defenses. The inn is a salvaged pod that Caregiver Topher Loaal is still furnishing with supplies sent from the Exodar, and a copy of Trans-dimensional Ship Repair for Simpletons lies open at a chapter on Vector Coil breaches. A captured Sunhawk agent sits in a makeshift prison. The Stillpine keep an ambassador here, and Anchorite Paetheus, a collector of knowledge from many peoples, has written to the night elves of Auberdine proposing an alliance.", "triggers": [[1, 3584]], "sources": ["quest 9694 description (one of two forward bases)", "npc_text 9022 (Admetius, leader of Blood Watch)", "quest 9603 description, 9604 reward (salvaged pod inn, supplies from Nurguni)", "page_text 2925 (ship repair book open at Vector Coil Breaches)", "zone_areas: Captured Sunhawk Agent 17824, Makeshift Prison 182012, Frasaboo 18803 in 3584", "npc_text 9029 (Paetheus' collection)", "quest 9632 description (letter to Auberdine)", "quests 9605, 9606", "creature_queststarter 9632 (Anchorite Paetheus 17424)"], "notes": "Inn: supplies come partly by hippogryph and the beds by wagon (9604-9606), so made general. Quest 9632 (Paetheus' letter) mentioned but not used as a trigger; 9632/9633 are left for Darkshore."},
-{"id": 352506, "kind": 1, "zone": 3525, "sort": 6, "faction": 0, "title": "Ruins of Loreth'Aran", "body": "On the eastern side of Bloodmyst stand the remnants of Loreth'Aran, a night elf city destroyed in the Dragon Wars and broken apart by the Sundering, its other stones scattered across nearby islands. A pavilion of broken columns sits west of a partly submerged tower, and among these ruins an ancient journal and a buried box long lay hidden. The Wrathscale naga hold the place now. When Harbinger Mikolaas sent a team of draenei cartographers to map it, they never returned: they were found dead among their ransacked packs, pierced by naga weapons, and the crystal holding their survey had been carried off.", "triggers": [[1, 3591]], "sources": ["warcraft.wiki.gg/wiki/Ruins_of_Loreth'Aran", "quest 9550 description (pavilion west of a partially submerged tower, eastern coast)", "quest 9620 description and reward, 9628 description", "zone_areas: Battered Ancient Book 181756, Mound of Dirt 181758, Draenei Cartographer 17600, Wrathscale in 3591"], "notes": "verified"},
-{"id": 352507, "kind": 1, "zone": 3525, "sort": 7, "faction": 0, "title": "The Bloodcursed Reef", "body": "Off the northeast coast lies the Bloodcursed Reef, a spoiled and desecrated stretch of sea where the bloodcurse has sunk ship after ship, among them the Lost Hope of Captain Edward Hanes. Those it took do not rest. The ghosts of drowned voyagers drift along its deeper ledges, and bloodcursed naga patrol above them. South of the reef rises Bloodcurse Isle, where the naga keep a shrine around a statue of their beloved queen, Azshara. Their leader, Atoph the Bloodcursed, rises in fury against anyone who dares defile it.", "triggers": [[1, 3604], [1, 3612]], "sources": ["quest 9672 reward text (bloodcurse sank all these ships, spoiled desecrated water)", "quest 9682 description (voyagers on a deeper ledge, ghosts)", "quest 9683 description", "creature_text 17715 (Who dares defile the statue of our beloved?)", "warcraft.wiki.gg/wiki/Bloodmyst_Isle (Lost Hope sunk on the reef)", "zone_areas: Bloodcursed Naga 17713, Bloodcursed Voyager 17714 in 3604; Statue of Queen Azshara 181964 in 3612"], "notes": "verified"},
-{"id": 352508, "kind": 1, "zone": 3525, "sort": 8, "faction": 0, "title": "Wyrmscar Island", "body": "Wyrmscar Island, off the northeast tip of Bloodmyst, was once part of Loreth'Aran, where night elf riders flew green dragons given by Ysera. The black dragonflight fell on the city as it slept, and the bones of the green dragons who rose to defend it still lie across the island. Their spirits linger as restless whelps and broodlings, unable to pass into the Dream, and the ghost of Prince Toreth keeps watch among them. At Talon Stand on the island's peak burns an ever-burning pyre, and overhead circles the spectral black dragon Razormaw. A rare mushroom called Ysera's tear grows here, and the ghost of a human captain haunts the shore.", "triggers": [[1, 3598], [1, 3599], [1, 3907]], "sources": ["warcraft.wiki.gg/wiki/Wyrmscar_Island", "npc_text 9058, 9059 (Toreth on Ysera and the attack)", "quest 9688 description (whelps are spirits bound to the land)", "quest 9689 description (pyre at the top of the mountain, Razormaw circling)", "quest 9649 description (Ysera's tear)", "zone_areas: Ever-burning Pyre 181988 in 3599; Veridian whelps and Ysera's Tear in 3598 and 3907; Captain Edward Hanes 17712 in 3598"], "notes": "Toreth was prince of the night elves, not of the dragons: reworded. Rest verified."},
-{"id": 352509, "kind": 1, "zone": 3525, "sort": 9, "faction": 0, "title": "Ragefeather Ridge", "body": "Ragefeather Ridge rises north of Blood Watch, across the Crimson Reach from Wyrmscar Island. Its owlkin lived in harmony with the land for thousands of years, but the flock is tranquil no longer: its birds are now infected, contaminated and irradiated, and they have taken to visiting the shores of Wyrmscar to carry off the bones of fallen green dragons, gathering them in their own encampments for some ritual. Prince Toreth calls it sacrilege, for the theft has stirred the restless spirits of Ysera's brood, and he can only wonder what has caused the owlkin such distress.", "triggers": [[1, 3601]], "sources": ["quest 9687 description and reward (to the west across the Crimson Reach; tranquil owlkin stealing bones; a ritual; harmony for thousands of years)", "zone_areas: Infected, Contaminated and Irradiated Wildkin and Dragon Bone 181981 in 3601"], "notes": "Location made relative to Blood Watch (owlkin spawns lie due north of it). Cause of the owlkin's change left as an open question."},
-{"id": 352510, "kind": 1, "zone": 3525, "sort": 10, "faction": 0, "title": "The Bloodwash", "body": "The Bloodwash is a stretch of the northern shore claimed by the Blacksilt murlocs, whose seers, warriors and shorestrikers work its shallows. Hidden inside an old turtle shell on the beach, the gnome Clopper Wizbang watches them in secret, convinced that a single glimpse of him would spoil his data. Just offshore, beneath the waves, lies the Hidden Reef, where more Blacksilt murlocs prowl and watery aspects drift around Aqueous, a powerful elemental of water.", "triggers": [[1, 3906], [1, 3596]], "sources": ["npc_text 9054 (Clopper in a turtle shell)", "quest 10063 description (turtle shell on the northern shore)", "quest 9548 description", "zone_areas: Blacksilt Seer/Warrior/Shorestriker and Clopper 17421 in 3906; Aqueous 17275, Watery Aspect, Blacksilt in 3596", "exodar.json Call of Water (hidden reef off the northern shore, imbalance)"], "notes": "Aqueous' plea (the Exodar's Call of Water premise) cut to keep the Hidden Reef a one-line mention. Rest verified."},
-{"id": 352511, "kind": 1, "zone": 3525, "sort": 11, "faction": 0, "title": "Nazzivian", "body": "Southwest of Blood Watch lies Nazzivian, the stronghold of the Nazzivus satyrs. At its heart stands a grotesque monument whose glyphs speak of the satyrs' origins: the Nazzivus descend from the first twisted soul to bargain with the Burning Legion, and they feed on the corruption the Exodar's crash has spread. Rogues, felsworn and summoners haunt the camp among warped treants and bears, and fel cone fungus sprouts from the soil. The satyrs have summoned a felguard named Tzerak into their midst, and his armor, black metal that seems to drink the light, told the draenei that the satyrs are renewing their bond with the Legion.", "triggers": [[1, 3592]], "sources": ["quest 9567 description (grotesque monument, feeding on corruption, southwest)", "quest 9568 description (descendants of the first twisted creature)", "quest 9594 description and reward (deep black metal absorbing light, felguard, renewing contacts)", "warcraft.wiki.gg/wiki/Nazzivian (monument glyphs, Tzerak summoned)", "creature_text 17528", "zone_areas: Nazzivus Satyr/Rogue/Felsworn/Summoner, Tzerak 17528, Fel Cone Fungus, Corrupted Treant in 3592"], "notes": "verified"},
-{"id": 352512, "kind": 1, "zone": 3525, "sort": 12, "faction": 0, "title": "Axxarien", "body": "North of Blood Watch, Axxarien is the seat of Zevrax, leader of the island's satyrs. His hellcallers, tricksters and shadowstalkers guard the corrupted crystals the satyrs have been gathering, and the draenei fear the creatures will turn the Exodar's power against its owners. Vindicator Aalesia of Blood Watch wanted Zevrax slain and the crystals recovered before the threat could grow. Harbinger Mikolaas sent for a shard of the Axxarien crystal itself, the last and least predictable of the samples he boxed up for study at the Exodar.", "triggers": [[1, 3593]], "sources": ["quest 9569 description and reward (go north to their leader in Axxarien, corrupted crystals)", "quest 9568 description (use the crystals' power against us)", "quest 9585 description and reward", "zone_areas: Axxarien Shadowstalker/Trickster/Hellcaller, Zevrax 17494, Corrupted Crystal 181770/181771 in 3593"], "notes": "verified"},
-{"id": 352513, "kind": 1, "zone": 3525, "sort": 13, "faction": 0, "title": "Bladewood", "body": "Bladewood lies northwest of Blood Watch, and Sunhawk spies swarm through it in such numbers that Vindicator Boros half suspects they are multiplying. It was the first ground the Hand of Argus sent its recruits to clear. The blood elves are at work on the fallen crystals here, altering them and harvesting them for some magical apparatus. A shard cut from one of the altered crystals pulses as it catches the light, unlike the cleaner crystal of the south, and Harbinger Mikolaas found the change worrying enough to note it in his report to the Exodar.", "triggers": [[1, 3585]], "sources": ["quest 9694 description and request text", "quest 9584 description and reward", "zone_areas: Sunhawk Spy 17604 x18 in 3585; Altered Bloodmyst Crystal 181780 in 3585 (posarea)"], "notes": "verified"},
-{"id": 352514, "kind": 1, "zone": 3525, "sort": 14, "faction": 0, "title": "The Cryo-Core", "body": "West of Blood Watch lies the Cryo-Core, a section of the Exodar that held stasis pods like those the survivors of Ammen Vale crawled out of, along with stores of medical supplies. When the draenei learned of it, they hoped to find more of their people alive. They found blood elves instead. Sunhawk reclaimers strip the wreckage of anything of value, and the dead lie where they fell, among them the technician Galaen, whose amulet was torn from him by looters and whose journal recorded the torment of a captured vindicator.", "triggers": [[1, 3588]], "sources": ["quest 9703 description and reward (pod holding area, medical supplies, just blood elves, no survivors)", "quest 9578 description, 9579 description", "page_text 2937 (Galaen's journal)", "zone_areas: Sunhawk Reclaimer, Medical Supplies, Galaen's Corpse 17508, Galaen's Journal 182032 in 3588"], "notes": "verified"},
-{"id": 352515, "kind": 1, "zone": 3525, "sort": 15, "faction": 0, "title": "Amberweb Pass", "body": "Amberweb Pass, in the western wilds, belongs to spiders grown huge and savage from the crystal contamination. An expedition from Blood Watch was ambushed here. The brood's matriarch, Zarakh, fell upon the party with terrible speed, wrapped its members in cocoons and laid her eggs beside them, meaning them as food for her young. Researcher Cornelius cut himself free but refused to leave without his men, while Achelus, the outpost's expeditionary officer, escaped to Blood Watch and found no one there willing to go back. In the end, more than half the team was cut free alive.", "triggers": [[1, 3597]], "sources": ["quest 9669 description and reward", "quest 9670 description and reward", "npc_text 9042, 9045", "zone_areas: Myst Spinner/Leecher, Webbed Creature, Zarakh 17683, Researcher Cornelius 17686 in 3597"], "notes": "Whether Achelus and Cornelius escaped together or separately is not clear; each is said to have escaped."},
-{"id": 352516, "kind": 1, "zone": 3525, "sort": 16, "faction": 0, "title": "Vindicator's Rest", "body": "Vindicator's Rest is a small Hand of Argus outpost on consecrated ground northwest of Blood Watch, set up to keep watch on the Sunhawks around the Vector Coil. It is badly outnumbered. Its scouts found the blood elves' portal at a heavy cost, and Scout Jorli, gravely wounded, waits for a safe road home through the enraged ravagers that prowl beyond the hallowed ground. Mutated tanglers near the Coil have learned to set and hide traps, and Vindicator Corin holds the post patiently, waiting for a champion. Beside her waits Demolitionist Legoso, ready to carry his explosives up the mountain.", "triggers": [[1, 3608]], "sources": ["quest 10064 description (forward base, outnumbered, watch on Vector Coil)", "quest 10065 description (wounded, consecrated ground, ravagers)", "quest 9741 description", "npc_text 9591 (buried too many friends)", "quest 10066 description (tanglers set traps)", "quest 9761 description and request text", "zone_areas: Corin 17986, Legoso 17982, Scouts 17926/17927 in 3608"], "notes": "verified"},
-{"id": 352517, "kind": 1, "zone": 3525, "sort": 17, "faction": 0, "title": "The Foul Pool", "body": "North of Vindicator's Rest lies the Foul Pool, waters poisoned almost beyond recognition. Most creatures touched by the crystals bear strange marks and small shards in their flesh, but the fouled water spirits that dwell here are changing in a way the draenei have never seen: they are turning entirely to crystal. The Hand wants them gone before the Sunhawks learn to use them as a new source of energy. The pool's filth has a nearer source as well. Not far off lies the camp of a blood elf researcher, Tel'athion the Impure, whose barrels fed his work into the island's water.", "triggers": [[1, 3595], [1, 3603]], "sources": ["quest 10067 description and reward", "zone_areas: Fouled Water Spirit 17358 x28 in 3595; Barrel of Filth 181699 in 3603", "warcraft.wiki.gg/wiki/Bloodmyst_Isle (Tel'athion, blood elf researcher contaminating the water)", "exodar.json Call of Water (Tel'athion's camp, not retold)", "creature_template 17359 Tel'athion the Impure (not used as a trigger)"], "notes": "Tel'athion's camp folded in with one line; his chain belongs to the Exodar."},
-{"id": 352518, "kind": 1, "zone": 3525, "sort": 18, "faction": 0, "title": "The Vector Coil", "body": "The Vector Coil is a colossal power core of the Exodar that lodged in the mountains of western Bloodmyst when the ship came down, a great red crystal still jutting from the slope. Fluid leaking from it has stained the island's waters red. The Sunhawks made it their stronghold, and their agents and saboteurs swarm its paths, while at its summit their leader, Sironas, siphons its energy for herself. Far to the northeast, north of Blood Watch, lies the Warp Piston, where the blood elves opened their sun portal to Outland more than once, and where void anomalies still spill from the rifts it left.", "triggers": [[1, 3586], [1, 3587]], "sources": ["quest 9759 description (power core jutting out of the mountainside)", "creature_text 17982 (red crystal, siphoning energy)", "quest 9748 reward", "warcraft.wiki.gg/wiki/Vector_Coil", "quest 9700 description and reward (sun portal site near the Warp Piston, void anomalies)", "zone_areas: Sunhawk Agent/Saboteur, Sironas 17678, Matis 17664 in 3586; Void Anomaly in 3587"], "notes": "Warp Piston fixed: its void anomalies (3587) lie about 1400 yards northeast of the Coil, due north of Blood Watch (quest 9700 searches north from Blood Watch); 'another piece of the wreck' came from the name only, removed. No guardian is named here."},
-{"id": 352519, "kind": 2, "zone": 3525, "sort": 1, "faction": 1, "title": "Exarch Admetius", "body": "Exarch Admetius leads Blood Watch. He asks every recruit what Argus means to them, for many draenei barely remember the world where their people split from the man'ari, and he tastes the word eredar only to call it disgusting. He has no stomach for cruelty: when questioning a Sunhawk prisoner failed, he ruled torture out and cast a spell to make one of his own agents look and sound like a blood elf, so the truth could be coaxed out instead. His plan for the Vector Coil was simple, to blow it up, yet he refused to order any draenei on so deadly a mission. When it was done, he hailed the hero before all of Blood Watch.", "triggers": [[2, 17658]], "sources": ["npc_text 9022", "quest 9693 description", "quest 9756 description", "quest 9753 reward (blow the thing up)", "quest 9761 description (exarch will not order any agent)", "creature_text 17658"], "notes": "verified"},
-{"id": 352520, "kind": 2, "zone": 3525, "sort": 2, "faction": 1, "title": "The Triumvirate of the Hand", "body": "Three vindicators, the Triumvirate of the Hand, command the Hand of Argus from Blood Watch. Boros, the first, teaches that the Hand serves and dies without question, then laughs at his own fervor; he has also learned to purify the crystal shards cut from the island's beasts into useful gems. Kuros, the second, took his seat only recently, succeeding his own master, Vindicator Saruan, after the search for him was abandoned, and he wept when he learned how Saruan had suffered. Aesom, the third, hunts the Sunhawks camp by camp, sworn to search out every hiding place until Sironas is found.", "triggers": [[2, 17684], [2, 17843], [2, 17844]], "sources": ["warcraft.wiki.gg/wiki/Hand_of_Argus (Triumvirate, Boros first, Saruan former second)", "npc_text 9044, 9077, 9117", "quest 9693 reward (Boros laughs)", "quest 9641 description", "quest 9706 reward", "quest 9746 request text"], "notes": "verified; no overlap with exodar.json or azuremyst.json, which mention the Hand of Argus only in passing (Azure Watch, Torallius). Wiki: the Triumvirate commands the Hand, Boros first. Faction 1: template 1698."},
-{"id": 352521, "kind": 2, "zone": 3525, "sort": 3, "faction": 1, "title": "Kessel", "body": "Kessel calls himself lord of the elekk and a disciple of the Hand of Argus, and recruits who would join the order are tested at his camp on the road into Bloodmyst. His tests are hard by design. He lends his own elekk for a desperate ride, with a warning to keep it out of water, and he does not flinch from bloodshed. Yet he takes no pleasure in it. Heavy-handed violence is not the draenei way, he says, but his people learned what reluctance costs when the orcs slaughtered them. To become one of the Hand is a rebirth, and with birth comes pain. Honorable people, he warns, cannot always act honorably.", "triggers": [[2, 17649]], "sources": ["npc_text 9041", "quest 9663 description", "quest 9666 reward", "quest 9668 description", "npc_text 9037 (old man Kessel)"], "notes": "Recruits meet Vorkhan first (9625), so 'meet him first' changed to 'are tested at his camp'. Rest verified. Faction 1: template 1638."},
-{"id": 352522, "kind": 2, "zone": 3525, "sort": 4, "faction": 1, "title": "Sironas", "body": "Sironas leads the Sunhawk blood elves on Bloodmyst, yet she is no elf but an eredar, one of the man'ari the draenei fled long ago. A captured Sunhawk, fooled by a draenei in disguise, let slip that she had lived among the draenei so long she could pass for one of them. Her aims were those of the Sun King: to enslave the naaru O'ros and take back the Exodar. She poisoned the land with fallout from the Vector Coil, held the captured vindicator Saruan for plans of her own, and claimed the power to turn eredar into savage man'ari. When the Coil was finally breached, she was found at its summit, drawing its power into herself.", "triggers": [[3, 17678], [5, 9759]], "sources": ["quest 9759 description (Sironas the eredar)", "npc_text 9137-9141 (captured agent: served under Sironas on Outland, transformation claim, lived among the draenei)", "quest 9753 description", "page_text 2937 (plans for Saruan)", "creature_text 17982 (siphoning energy), 17678", "warcraft.wiki.gg/wiki/Sironas", "gossip_menu_option 7531-7537 (disguised player's lines)", "smart_scripts 17678, 17982"], "notes": "Removed 'he had served under her on Outland': that line is the disguised draenei's lie (gossip option of menu 7531), not the prisoner's. Faction 1 confirmed: Sironas (single spawn in 3586) carries IMMUNE_TO_PC (unit_flags 33600, re-set out of combat) and her SmartAI clears it only on data set by Demolitionist Legoso's escort, which starts only from 9759 (AllowableRaces 1024, draenei only); 9759 is also the QUEST_DONE trigger."},
-{"id": 352523, "kind": 2, "zone": 3525, "sort": 5, "faction": 1, "title": "Matis the Cruel", "body": "Matis the Cruel, herald of Sironas, was the ruthless Sunhawk lieutenant who held Vindicator Saruan. Before the eyes of the captive technician Galaen, bound and weeping, the Sunhawks beat Saruan without mercy while Matis treated such cruelty as nothing out of the ordinary. When Saruan fell senseless, Matis splashed tainted water over him to wake him, then paced in fear of what Sironas would do to him if her prisoner died. Galaen's journal named him. Kuros, Saruan's pupil, wanted Matis brought back alive to face the Triumvirate's justice, and draenei trackers wait for the flare that will mean he has been found. Once taken, he was to be tried at once.", "triggers": [[4, 9711], [5, 9711]], "sources": ["creature_template 17664 (Herald of Sironas)", "page_text 2937", "quest 9706 reward", "quest 9711 description and reward", "creature_text 17843 (Kuros orders trackers, Matis alive)", "creature_text 17664"], "notes": "Journal says 'they' beat Saruan while the lieutenant treated it as normal: reworded; 'name spoken with loathing' was unsupported. Trial from 9711 reward. 9711 (Kuros, flare gun, capture alive) confirmed as the capture quest; triggers ACCEPT and DONE 9711, since Matis is captured rather than slain. Faction 1: 9711 AllowableRaces 1101."},
-{"id": 352524, "kind": 2, "zone": 3525, "sort": 6, "faction": 1, "title": "Harbinger Mikolaas", "body": "Harbinger Mikolaas keeps the defenses of Blood Watch, and his first lesson for newcomers is vigilance: Bloodmyst claims the careless first, then slowly wears down even the most guarded. The leaders at the Exodar load him with other duties too, from mapping the island to gathering crystal samples for study, though it is hardly safe to send researchers out and he cannot spare the soldiers to guard them. He feels each loss. When his cartographers were found dead at Loreth'Aran, he clenched his fists and said too many good men had already fallen. He posts bounties on the beasts that prey on his people, such as the bear Deathclaw, and sends what help he can to the outnumbered Vindicator's Rest.", "triggers": [[2, 17423]], "sources": ["npc_text 9033", "quest 9581 description", "quest 9620 description", "quest 9628 reward", "quest 9646 description", "quest 10064 description"], "notes": "verified"},
-{"id": 352525, "kind": 2, "zone": 3525, "sort": 7, "faction": 1, "title": "Morae", "body": "Morae, the herbalist of Blood Watch, says her days aboard the Exodar already feel a lifetime away, and that soon this island of mutant creatures and endless blood elf agents will be all she remembers. She has made its corruption her study, gathering crystallized bark from corrupted treants, marking Blacksilt murlocs on the southwestern coast with a harmless tagging device, and puzzling over a red crystal pendant worn by a murloc named Cruelfin, who she suspects grew strong on its power. Beneath the work lies a private search. Her husband Galaen, a technician of the Cryo-Core, wore a pendant matching her own, and she would rather hear of his death than never know.", "triggers": [[2, 17434]], "sources": ["npc_text 9034", "quest 9574 description", "quest 9629 description", "quest 9576 reward", "quest 9578 description"], "notes": "verified"},
-{"id": 352526, "kind": 2, "zone": 3525, "sort": 8, "faction": 1, "title": "Prince Toreth", "body": "Ten thousand years ago Prince Toreth was a prince of Loreth'Aran, a dragon rider blessed by Ysera of the Dream. Now he is a ghost on Wyrmscar Island, and he greets the living with scorn: can they not see they stand on sundered earth? He calls himself a cruel reminder of a civilization long gone, anchored to a land he failed to protect. He was the last of his people to die, and with his final breath he swore a blood oath, his blood for this world, becoming the sole keeper of their history. He cannot rest until he knows the story of the dragon riders of Loreth'Aran will not be lost.", "triggers": [[2, 17674]], "sources": ["npc_text 9056, 9057, 9058, 9060 (Toreth gossip chain)", "creature_template 17674 (Dragon Riders of Loreth'Aran)", "warcraft.wiki.gg/wiki/Ruins_of_Loreth'Aran"], "notes": "He calls himself 'prince of this land', not its ruler: reworded. Rest verified. Faction 1: template 80."},
-{"id": 352527, "kind": 2, "zone": 3525, "sort": 9, "faction": 1, "title": "Captain Edward Hanes", "body": "Edward Hanes was captain of the ship Lost Hope, and Admiral Odesyus knew him as a man who died of scurvy twenty years ago. Hanes scoffs at that. By his own account he died on the wild shores of Wyrmscar Island as food for the dragons, and his ghost has lingered there ever since, looking over a land that still bears the scars of its past and wondering whether they will ever heal. Death has not made him idle. He appeared one night in the admiral's tent to plead for help, for the bloodcurse that sank so many ships still holds hundreds of souls captive in the nearby reef.", "triggers": [[2, 17712]], "sources": ["quest 9751 and 9672 descriptions (died of scurvy 20 years ago, appeared in the tent)", "quest 9672 reward (scurvy my foot, food for the dragons)", "npc_text 10352", "quest 9683 reward (hundreds of souls)"], "notes": "He says the bloodcurse sank the ships and that he died ashore as food for the dragons; the body keeps both without joining them."},
-{"id": 352528, "kind": 2, "zone": 3525, "sort": 10, "faction": 1, "title": "Clopper Wizbang", "body": "Clopper Wizbang is, by his own account, the first gnome ever to join the Explorers' League, and he has set up house inside a beached turtle shell on Bloodmyst's northern shore to watch the Blacksilt murlocs unseen. When the murlocs carried off his equipment, he declared it a priceless observation in its own right. He collects their crude idols and knives for a museum in Ironforge, drafts grand reports for the gentlemen there, and offers his helpers credit as co-authors. The dwarf Prospector Nachlan, sent along on the expedition to look after him, grumbles about babysitting and stays in Blood Watch, where, Clopper complains, he mostly drinks.", "triggers": [[2, 17421]], "sources": ["npc_text 9054", "quest 9548 description and reward", "quest 9549 description and reward", "quest 10063 description and reward"], "notes": "verified"},
-{"id": 352529, "kind": 3, "zone": 3525, "sort": 1, "faction": 1, "title": "Trials of the Hand", "body": "Young draenei who hope to join the Hand of Argus are sent north to Kessel's Crossing, mocked on their way by a pack handler sure they will never make it. At the crossing Vorkhan the herder puts them to work culling the ravagers that the Exodar carried as specimens and lost into the wild. Then Kessel takes their measure. Blood elf activity near his camp had doubled in a week, and agents reported that the Sunhawks meant to strike Azuremyst, so he lent his own elekk for a race against time: warn High Chief Stillpine, Exarch Menelaous and Admiral Odesyus, and be back in all haste. Next he sent the recruit to Wrathscale Lair, where naga had dared creep up on the camp by night, to slay Lord Xiz and drive a draenei banner through his body. Those who passed were sent up the road to Blood Watch, where Exarch Admetius asked what Argus meant to them and handed them over to the Triumvirate for the real training.", "triggers": [[4, 9625], [4, 9663]], "sources": ["quest 9625 description and reward", "quest 9634 description", "quest 9663 description and reward (15 minutes)", "quest 9666 description", "quest 9668 description", "quest 9693 description"], "notes": "Broken cages not in Bloodmyst sources: softened. Torallius's taunt only alluded to, as the Exodar tells it. Quest 9663's time limit rendered as in all haste."},
-{"id": 352530, "kind": 3, "zone": 3525, "sort": 2, "faction": 1, "title": "The Sun Gate", "body": "Under Vindicator Boros, the Hand's recruits learned that the blood elves they had fought aboard the Exodar had survived the crash, and that their numbers never seemed to shrink. A missive taken from a Sunhawk was written in Thalassian, and Interrogator Elysia translated it: a declaration from Kael'thas Sunstrider himself, promising his Sunhawks reinforcements from Tempest Keep through a sun portal, the recapture of the Exodar and Velen's punishment. Elysia also warned of a spy among the draenei, and trusting no messenger, she sent the news straight to the Prophet. Velen reasoned that such rifts must leave traces, and at the Warp Piston void anomalies showed the portal had been opened many times. Meanwhile the Cryo-Core yielded no survivors, only blood elves, and the island's red waters were traced to the leaking Vector Coil. The Sunhawks kept their gate on the move, but scouts found it south of the Coil, and Vindicator Aesom had its portal controllers cut down and the gate destroyed, severing their supply line.", "triggers": [[4, 9693], [4, 9741]], "sources": ["quests 9694, 9779, 9696, 9698, 9699, 9700, 9703, 9748, 9746, 9740, 9741 descriptions and rewards", "page_text 2943 (Declaration from the Sun King)"], "notes": "Velen's quests 9698 and 9699 are told here but not used as triggers. 9741 is an independent entry point from Scout Loryi."},
-{"id": 352531, "kind": 3, "zone": 3525, "sort": 3, "faction": 1, "title": "Ending Their World", "body": "With the gate gone, the Hand learned that the Sunhawks answered to Sironas, they meant to enslave O'ros and take back the Exodar, and they were using the fallout of the Vector Coil to poison the land. Exarch Admetius resolved to blow the Coil apart, but no one could get close enough to judge its defenses. So he cast a spell to make one of his agents seem a blood elf, and in that guise the agent drew the boastful Sunhawk prisoner out. Sironas, he let slip, was an eredar who had passed for draenei; he bragged that an abomination made from a captured vindicator of the Triumvirate guarded the Coil; and he gave away its two weak points, at its western and eastern bases. From Vindicator's Rest, Vindicator Corin thinned the Sunhawk lines while Demolitionist Legoso waited for a volunteer. The volunteer and Legoso fought up the mountain together and blew the supports, and Sironas, torn from her siphoning, was slain. Blood Watch hailed its champion, and Velen bestowed the tabard of the Hand's most revered.", "triggers": [[4, 9753]], "sources": ["quests 9753, 9756, 9759, 9760, 9761, 9762 descriptions and rewards", "npc_text 9137-9141 (captured agent dialogue)", "creature_text 17982 (Legoso's escort), 17658"], "notes": "Abomination recast plainly as the prisoner's brag (no such guardian is spawned in this database). Chain is draenei only (AllowableRaces 1024)."},
-{"id": 352532, "kind": 3, "zone": 3525, "sort": 4, "faction": 1, "title": "The Fate of Saruan", "body": "Many families were aboard the Exodar, and few have found one another again. Morae of Blood Watch asked for any trace of her husband Galaen, a technician of the Cryo-Core, which now lies overrun by blood elves west of the outpost. Among the wreckage lay the body of a technician, its clothing torn open by looters, and his spirit lingered long enough to speak: he had survived the crash, only to be killed by the infiltrators, and his last thought was of her. His jeweled amulet was won back from the Sunhawks and brought to Morae, who confessed she had known in her heart. Nearby lay Galaen's journal. Its final pages told of Vindicator Saruan of the Triumvirate, beaten senseless by a cruel lieutenant named Matis, who feared what Sironas would do if her prisoner died. The writing ended in a long line trailing off the page. Vindicator Kuros, Saruan's pupil and successor, wept as he read, and his grief turned to anger at the name of Matis.", "triggers": [[4, 9578]], "sources": ["quest 9578 description", "quest 9579 description and reward", "creature_text 17426 (Galaen's spirit)", "page_text 2937", "quest 9706 description and reward"], "notes": "verified"},
-{"id": 352533, "kind": 3, "zone": 3525, "sort": 5, "faction": 1, "title": "The Bloodcurse", "body": "Admiral Odesyus had a strange visitor one night: the ghost of Edward Hanes, captain of the Lost Hope, dead these twenty years. Shaken, the admiral sent word asking someone to find the captain on Wyrmscar Island. Hanes had a grim tale. When the world was sundered, he said, this land cried loudest of all; thousands of night elves were lost, and in their place rose the naga, loyal to their twisted queen Azshara and bent on destroying all who sailed their sea. The bloodcurse spoiled the waters of the reef and sank ship after ship, and those it claimed could not rest. First the bloodcursed naga were driven from the reef. Then the hopeless ones, ghosts of voyagers taken by the curse, were destroyed so that their souls could find peace. Last, the statue of Azshara on Bloodcurse Isle was burned in effigy, drawing out Atoph the Bloodcursed, leader of the naga, to his death. Hundreds of souls, Hanes said, were grateful.", "triggers": [[4, 9751], [4, 9672], [4, 9674]], "sources": ["quests 9751, 9672, 9674, 9682, 9683 descriptions and rewards", "creature_text 17715"], "notes": "Curse no longer pinned on the naga outright (only implied by 9674). 9751 is offered by Odesyus on Azuremyst; 9672 is the same summons sent by mail to Blood Watch through Messenger Hermesius (9671); 9674 follows either."},
-{"id": 352534, "kind": 3, "zone": 3525, "sort": 6, "faction": 1, "title": "The Dragon Riders of Loreth'Aran", "body": "For ten thousand years the ghost of Prince Toreth has kept watch on Wyrmscar Island. In his lifetime Ysera, Aspect of the Dream, gifted his kingdom with her brood, and his people rode green dragons into battle for centuries, until Ysera's favor roused the ire of Deathwing and the black dragonflight fell on them as they slept. The greens rose to protect their riders, and none were spared. Now the once tranquil owlkin of Ragefeather Ridge have been coming to the island to steal the dragons' bones for some ritual, and the spirits of the brood have grown restless. The bones were recovered, and the whelps and broodlings, bound to the land as Toreth is, were released toward the Dream. Then the bones were laid on the ever-burning pyre atop the island's peak, calling down the spectral Razormaw, a lieutenant of Deathwing whose hatred outlasted death. With the black dragon destroyed, Toreth gave a token of Loreth'Aran in honor of the deed.", "triggers": [[4, 9687]], "sources": ["quests 9687, 9688, 9689 descriptions and rewards", "npc_text 9058, 9059"], "notes": "verified"},
-{"id": 352535, "kind": 3, "zone": 3525, "sort": 7, "faction": 1, "title": "Nolkai's Words", "body": "Among the things Clopper Wizbang passed along was a treasure map a sailor had given him to cover a gambling debt. Drawn with an unsteady hand, it showed a pavilion of broken columns west of a half sunken tower on the eastern coast. There, in the ruins of Loreth'Aran, lay an old journal in an elegant script, its pages buried under the mapmaker's tales of drunken shore leave. Anchorite Paetheus of Blood Watch, whose collection holds tools and knowledge from many cultures, separated the two. The last entry of the journal's first author, Nolkai, told of a desperate end: the enemy nearly upon them, the survivors gathered in a temple to the east for a final stand, and Nolkai's last possessions buried on its grounds in the hope that someone would one day learn what had happened there. The mound was still there. Inside lay a box holding a lantern, a bag that looked almost new, and a band engraved by a lover praying that Elune watch over Nolkai.", "triggers": [[4, 9550]], "sources": ["quests 9549 reward, 9550, 9557, 9561 descriptions and rewards", "item_template 23847 (band inscription), 23852 (bag), item_loot_template 23846", "npc_text 9029"], "notes": "verified. 9550 'A Map to Where?' (QuestSortID 3525, AllowableRaces 1101) starts from item 23837, a reward of Clopper's 9549; it lies numerically inside 9547-9554 but is not a Call of Air quest (those are 9547, 9551-9554 and 10491, shaman only), so it does not overlap the Exodar. Who Nolkai's enemy was is never named."}
+ {
+  "id": 352500,
+  "kind": 0,
+  "zone": 3525,
+  "sort": 0,
+  "faction": 0,
+  "title": "Bloodmyst Isle",
+  "body": "Bloodmyst Isle is the northern of the two isles off the coast of Kalimdor, a land of forested hills and mountains that the draenei first named Silvergale for its beauty. Long ago it belonged to the night elves of Loreth'Aran, whose riders flew green dragons until the black dragonflight destroyed their city and the Sundering broke the land apart; their ruins still crumble along the eastern shore. When the Exodar fell, shards of its crystals rained across the island and one of its great power cores buried itself in the western mountains, and the draenei suspect fluid leaking from it of turning the waters red. The corruption spreads through trees, bears, moths and water spirits alike, many of them now riddled with crystal. Worse, the blood elves the draenei fought aboard the ship survived the crash. Calling themselves the Sunhawks, they hold the west around the Vector Coil. Nazzivus satyrs, Wrathscale naga and maddened owlkin add to the danger. Against them all stands Blood Watch, the Hand of Argus outpost at the island's heart.",
+  "triggers": [
+   [
+    1,
+    3525
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Bloodmyst_Isle (Silvergale, Loreth'Aran, Dragon Wars, Sundering, crystal storm, Sunhawks)",
+   "quest 9694 description (called it Silvergale, blood elves survived the crash)",
+   "quest 9748 reward (water turned red by core fluid)",
+   "quest 9641 description (shards inside bears, ravagers, flutterers, treants)",
+   "quest 10067 description (water spirits turning to crystal)",
+   "quest 9759 description (power core jutting from the mountain)"
+  ],
+  "notes": "Lightly edited, no parts: the red water is now the draenei's suspicion (quest 9748 description), since its confirmation is the turn-in of 9748 (told in The Vector Coil part 2 and The Sun Gate part 3). No era tags: Bloodmyst is draenei home ground in every era and holds no Wrath-era or patch 2.4 text; mod-individual-progression gates nothing here (it lists the zone only as a TBC race starting zone). Before: Satyrs, naga and owlkin from DB spawns and quests 9567, 9666, 9687. Check: no Wrath-era, patch 2.4 or Cataclysm text; mod-individual-progression gates nothing on Bloodmyst."
+ },
+ {
+  "id": 352501,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 1,
+  "faction": 0,
+  "title": "Kessel's Crossing",
+  "body": "Kessel's Crossing is a draenei camp on the southern edge of Bloodmyst, where the road north from Azuremyst first reaches the isle. It belongs to Kessel, lord of the elekk, and the great beasts graze here under the eye of Vorkhan the herder. The Exodar carried ravagers from Outland as specimens, and Vorkhan fears the survivors, now loose near the coast, will push out the island's own predators. Nearby, Aonar bakes pies from the sand pears of the island's healthier south, sharing them with the elekk, who would steal them anyway. He warns newcomers that when Kessel offered him work caring for the elekk, the job came with a shovel.",
+  "triggers": [
+   [
+    1,
+    3602
+   ]
+  ],
+  "sources": [
+   "quest 9625 description (road north to Kessel's Crossing)",
+   "quest 9634 description and request text (ravager specimens, displacing native predators)",
+   "quest 9624 description (sand pears on the uncorrupted part, elekk steal fruit)",
+   "npc_text 9037 (Aonar on Kessel and the shovel)",
+   "npc_text 9041 (Kessel, lord of the elekk)",
+   "zone_areas: Vorkhan 17586, Aonar 17599, Kessel 17649, Elekk 17530 in area 3602"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide, no Wrath-era or patch 2.4 text. Dialogue check: npc_text 9037, 9041 hold nothing from later builds. Before: Vorkhan places the ravagers west of the camp; DB hatchling spawns lie along the Beryl Coast east and south of it, so the body only says near the coast."
+ },
+ {
+  "id": 352502,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 2,
+  "faction": 0,
+  "title": "The Lost Fold",
+  "body": "South of Blood Watch, across a bridge, the hollow of the Lost Fold holds wreckage the Exodar shed as it fell, and ravagers have made the debris their nest. Their hatchlings swarm here and along the nearby Beryl Coast, the spreading brood of the Outland specimens that survived the crash. For all that, this is one of the less corrupted corners of Bloodmyst. Harbinger Mikolaas wants the first of his crystal samples cut from a crystal at this impact site, to serve as a baseline against which the island's more tainted shards can be measured.",
+  "triggers": [
+   [
+    1,
+    3909
+   ],
+   [
+    1,
+    3583
+   ]
+  ],
+  "sources": [
+   "quest 9581 description and reward (ravager infested debris south of town across the bridge, less corrupted region, baseline)",
+   "gameobject 181779 Impact Site Crystal stands in area 3909 (posarea)",
+   "zone_areas: Bloodmyst Hatchling 17525 in 3909 and 3583",
+   "quest 9634 description (ravager specimens)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide, no Wrath-era or patch 2.4 text. Mikolaas's baseline sample is the task as given (quest 9581), not an outcome. Before: Ravager origin softened (no Bloodmyst source mentions broken cages); Beryl Coast direction made general. Rest verified. Check: Mikolaas's sample put in the present (his request, quest 9581)."
+ },
+ {
+  "id": 352503,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 3,
+  "faction": 0,
+  "title": "Bristlelimb Enclave",
+  "body": "The Bristlelimb furbolgs, sworn enemies of the Stillpine of Azuremyst, keep a cluster of camps in the southeast of Bloodmyst. Here they hold Princess Stillpine, daughter of the Stillpine high chief, in a cage, and mean to sacrifice her to their gods. Only High Chief Bristlelimb carries the key, and she says he will show himself, roaring for vengeance, once enough of his furbolgs have fallen. Other Stillpine have been less fortunate in this place.",
+  "triggers": [
+   [
+    1,
+    3600
+   ]
+  ],
+  "sources": [
+   "quest 9667 description, objectives and reward",
+   "creature_text 17702 (Face the wrath of Bristlelimb), 17682",
+   "zone_areas: Princess Stillpine 17682, cage 181928, High Chief Bristlelimb 17702, Young Furbolg Shaman 17542 in 3600",
+   "azuremyst.json (Bristlelimb and Stillpine at war)",
+   "smart_scripts 17682 (waypoint then despawn), creature_text 17682"
+  ],
+  "notes": "Converted: the rescue, the princess's thanks and Frasaboo's relics moved to part 1 (QUEST_DONE 9667, turned in to Frasaboo). KILL 17702 not used: a bystander sees the chief fall but not the rescue's end at Blood Watch. Opening keeps the captive princess and her plea (quest 9667 description). The slain young shaman stay a one-line allusion (the Exodar's Redemption). Before: Princess no longer said to go to the ambassador herself (her script walks her off and despawns her; the quest ends with Frasaboo). The last line alludes to the slain young shaman of the Exodar's Redemption chain without retelling it.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The high chief came for his vengeance and fell, and his key opened the cage. Thanking her rescuer, the princess hurried off to bring the news to her father, and at Blood Watch Stillpine Ambassador Frasaboo, hailing a stranger who had once again proven all that was prophesied, offered relics of the tribe in thanks.",
+    "triggers": [
+     [
+      5,
+      9667
+     ]
+    ],
+    "sources": [
+     "quest 9667 description and reward",
+     "creature_text 17682, 17702",
+     "smart_scripts 17682 (walks off and despawns)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352504,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 4,
+  "faction": 0,
+  "title": "Wrathscale Lair",
+  "body": "Northeast of Kessel's Crossing, on the eastern coast, the Wrathscale naga keep a lair ruled by Lord Xiz. They have grown bold enough to creep up on the draenei camp at the crossing under cover of darkness, and Kessel means to answer in kind: he wants Lord Xiz slain in his own lair and a draenei banner driven through his body, so that the naga will know fear whenever they see that standard. Screamers and shorestalkers guard the lair, and Wrathscale marauders and sorceresses range north along the waters of the Crimson Reach toward the ruins of Loreth'Aran.",
+  "triggers": [
+   [
+    1,
+    3590
+   ],
+   [
+    1,
+    3589
+   ]
+  ],
+  "sources": [
+   "quest 9666 description and reward",
+   "zone_areas: Lord Xiz 17701 and Wrathscale Shorestalker/Screamer in 3590; Wrathscale Marauder/Sorceress in 3589 and 3591",
+   "DB spawn averages (Wrathscale Lair on the east coast, marauders toward Loreth'Aran)"
+  ],
+  "notes": "Converted: Lord Xiz's death and the banner moved to part 1 (QUEST_DONE 9666); the opening keeps Kessel's intent (quest 9666 description). KILL 17701 not used: the banner and Kessel's words are not seen at the fight. Before: Crimson Reach folded in; its exact shape is not described in sources.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Kessel's answer was delivered. Lord Xiz was slain where he stood in his own lair, and the draenei banner was driven through his body, a standard the Wrathscale would learn to fear. Kessel was sorry it had come to that, but heavy-handed violence, he said, is sometimes the only way.",
+    "triggers": [
+     [
+      5,
+      9666
+     ]
+    ],
+    "sources": [
+     "quest 9666 reward"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352505,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 5,
+  "faction": 0,
+  "title": "Blood Watch",
+  "body": "Blood Watch is the forward base of the Hand of Argus on Bloodmyst, one of two the order runs on the isles. Exarch Admetius leads it with the three vindicators of the Triumvirate, while Harbinger Mikolaas sees to its defenses. The inn is a salvaged pod that Caregiver Topher Loaal is struggling to furnish, little better than a glorified tent until supplies come from the Exodar, and a copy of Trans-dimensional Ship Repair for Simpletons lies open at a chapter on Vector Coil breaches. A captured Sunhawk agent sits in a makeshift prison. The Stillpine keep an ambassador here, and Anchorite Paetheus, a collector of knowledge from many peoples, has written to the night elves of Auberdine proposing an alliance.",
+  "triggers": [
+   [
+    1,
+    3584
+   ]
+  ],
+  "sources": [
+   "quest 9694 description (one of two forward bases)",
+   "npc_text 9022 (Admetius, leader of Blood Watch)",
+   "quest 9603 description, 9604 reward (salvaged pod inn, supplies from Nurguni)",
+   "page_text 2925 (ship repair book open at Vector Coil Breaches)",
+   "zone_areas: Captured Sunhawk Agent 17824, Makeshift Prison 182012, Frasaboo 18803 in 3584",
+   "npc_text 9029 (Paetheus' collection)",
+   "quest 9632 description (letter to Auberdine)",
+   "quests 9605, 9606",
+   "creature_queststarter 9632 (Anchorite Paetheus 17424)"
+  ],
+  "notes": "Converted: the inn's supplies arriving moved to part 1 (QUEST_DONE 9606, the end of Topher's errand 9603-9606, which the Exodar left to Bloodmyst; draenei only, the entry stays faction 0 through AREA 3584). Opening keeps the unfinished inn (quest 9603 description). Paetheus's letter is his intent (9632 description), still not used as a trigger (9632/9633 are Darkshore's). Dialogue check: npc_text 9022, 9029 hold nothing from later builds. Before: Inn: supplies come partly by hippogryph and the beds by wagon (9604-9606), so made general. Quest 9632 (Paetheus' letter) mentioned but not used as a trigger; 9632/9633 are left for Darkshore.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "In time the inn got its supplies. Nurguni at the Exodar packed most of Topher's list into a box carried back by hippogryph and sent the beds, too large to fly, by wagon, and the caregiver could at last set up beds and a first aid station for the wounded and for any survivors still to be found.",
+    "triggers": [
+     [
+      5,
+      9606
+     ]
+    ],
+    "sources": [
+     "quest 9603 description",
+     "quest 9604 reward (beds by wagon)",
+     "quest 9606 reward"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352506,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 6,
+  "faction": 0,
+  "title": "Ruins of Loreth'Aran",
+  "body": "On the eastern side of Bloodmyst stand the remnants of Loreth'Aran, a night elf city destroyed in the Dragon Wars and broken apart by the Sundering, its other stones scattered across nearby islands. A pavilion of broken columns sits west of a partly submerged tower. The Wrathscale naga hold the place now, and their marauders and sorceresses prowl among the stones. Harbinger Mikolaas sent a team of draenei cartographers east to map the ruins, and they have not reported back.",
+  "triggers": [
+   [
+    1,
+    3591
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Ruins_of_Loreth'Aran",
+   "quest 9550 description (pavilion west of a partially submerged tower, eastern coast)",
+   "quest 9620 description and reward, 9628 description",
+   "zone_areas: Battered Ancient Book 181756, Mound of Dirt 181758, Draenei Cartographer 17600, Wrathscale in 3591"
+  ],
+  "notes": "Converted: the cartographers' deaths moved to part 1 (QUEST_DONE 9620, whose reward text shows the bodies). The journal and buried box were cut from the opening: finding them is the Nolkai chain's reveal, told in 352535 Nolkai's Words. Opening keeps the missing team (quest 9620 description). Before: verified",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The survey team was found too late. The cartographers lay dead among their ransacked packs and scattered survey equipment, pierced by naga weapons, and the crystal holding their survey data was nowhere to be seen.",
+    "triggers": [
+     [
+      5,
+      9620
+     ]
+    ],
+    "sources": [
+     "quest 9620 reward"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352507,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 7,
+  "faction": 0,
+  "title": "The Bloodcursed Reef",
+  "body": "Off the northeast coast lies the Bloodcursed Reef, a spoiled and desecrated stretch of sea where the bloodcurse has sunk ship after ship, among them the Lost Hope of Captain Edward Hanes. Those it took do not rest. The ghosts of drowned voyagers drift along its deeper ledges, and bloodcursed naga patrol above them. South of the reef rises Bloodcurse Isle, where the naga keep a shrine around a statue of their beloved queen, Azshara. Their leader, Atoph the Bloodcursed, rises in fury against anyone who dares defile it.",
+  "triggers": [
+   [
+    1,
+    3604
+   ],
+   [
+    1,
+    3612
+   ]
+  ],
+  "sources": [
+   "quest 9672 reward text (bloodcurse sank all these ships, spoiled desecrated water)",
+   "quest 9682 description (voyagers on a deeper ledge, ghosts)",
+   "quest 9683 description",
+   "creature_text 17715 (Who dares defile the statue of our beloved?)",
+   "warcraft.wiki.gg/wiki/Bloodmyst_Isle (Lost Hope sunk on the reef)",
+   "zone_areas: Bloodcursed Naga 17713, Bloodcursed Voyager 17714 in 3604; Statue of Queen Azshara 181964 in 3612"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide, no Wrath-era or patch 2.4 text. The bloodcurse sinking the ships is the reef's backstory; Atoph rising when the statue is defiled is what the shrine does (creature_text 17715), not his fate, which stays in The Bloodcurse part 3. Before: verified"
+ },
+ {
+  "id": 352508,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 8,
+  "faction": 0,
+  "title": "Wyrmscar Island",
+  "body": "Wyrmscar Island, off the northeast tip of Bloodmyst, was once part of Loreth'Aran, where night elf riders flew green dragons given by Ysera. The black dragonflight fell on the city as it slept, and the bones of the green dragons who rose to defend it still lie across the island. Their spirits linger as restless whelps and broodlings, unable to pass into the Dream, and the ghost of Prince Toreth keeps watch among them. At Talon Stand on the island's peak burns an ever-burning pyre, and overhead circles the spectral black dragon Razormaw. A rare mushroom called Ysera's tear grows here, and the ghost of a human captain haunts the shore.",
+  "triggers": [
+   [
+    1,
+    3598
+   ],
+   [
+    1,
+    3599
+   ],
+   [
+    1,
+    3907
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Wyrmscar_Island",
+   "npc_text 9058, 9059 (Toreth on Ysera and the attack)",
+   "quest 9688 description (whelps are spirits bound to the land)",
+   "quest 9689 description (pyre at the top of the mountain, Razormaw circling)",
+   "quest 9649 description (Ysera's tear)",
+   "zone_areas: Ever-burning Pyre 181988 in 3599; Veridian whelps and Ysera's Tear in 3598 and 3907; Captain Edward Hanes 17712 in 3598"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide, no Wrath-era or patch 2.4 text. Dialogue check: npc_text 9058, 9059 hold nothing from later builds. Razormaw is seen circling overhead by any visitor; his destruction stays in The Dragon Riders of Loreth'Aran part 3. Before: Toreth was prince of the night elves, not of the dragons: reworded. Rest verified."
+ },
+ {
+  "id": 352509,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 9,
+  "faction": 0,
+  "title": "Ragefeather Ridge",
+  "body": "Ragefeather Ridge rises north of Blood Watch, across the Crimson Reach from Wyrmscar Island. Its owlkin were once a tranquil flock, but no longer: its birds are now infected, contaminated and irradiated, and they have taken to visiting the shores of Wyrmscar to carry off the bones of fallen green dragons, gathering them in their own encampments. Prince Toreth calls it sacrilege, for the theft has stirred the restless spirits of Ysera's brood, and he can only wonder what has caused the owlkin such distress.",
+  "triggers": [
+   [
+    1,
+    3601
+   ]
+  ],
+  "sources": [
+   "quest 9687 description and reward (to the west across the Crimson Reach; tranquil owlkin stealing bones; a ritual; harmony for thousands of years)",
+   "zone_areas: Infected, Contaminated and Irradiated Wildkin and Dragon Bone 181981 in 3601"
+  ],
+  "notes": "Converted: the ritual and Toreth's reaction (quest 9687 reward text) moved to part 1 (QUEST_DONE 9687). Opening keeps the once tranquil flock and the theft (9687 description). Before: Location made relative to Blood Watch (owlkin spawns lie due north of it). Cause of the owlkin's change left as an open question. Check: part 1 reworded so it does not repeat The Dragon Riders of Loreth'Aran part 1 (same trigger).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Once the bones were taken back from the owlkin encampments, it came out that the birds had been hoarding them for a ritual of some kind. To Toreth it was a perversion in creatures that had lived at peace with their land through thousands of years. What drove them to it remains unknown.",
+    "triggers": [
+     [
+      5,
+      9687
+     ]
+    ],
+    "sources": [
+     "quest 9687 reward"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352510,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 10,
+  "faction": 0,
+  "title": "The Bloodwash",
+  "body": "The Bloodwash is a stretch of the northern shore claimed by the Blacksilt murlocs, whose seers, warriors and shorestrikers work its shallows. Hidden inside an old turtle shell on the beach, the gnome Clopper Wizbang watches them in secret, convinced that a single glimpse of him would spoil his data. Just offshore, beneath the waves, lies the Hidden Reef, where more Blacksilt murlocs prowl and watery aspects drift around Aqueous, a powerful elemental of water.",
+  "triggers": [
+   [
+    1,
+    3906
+   ],
+   [
+    1,
+    3596
+   ]
+  ],
+  "sources": [
+   "npc_text 9054 (Clopper in a turtle shell)",
+   "quest 10063 description (turtle shell on the northern shore)",
+   "quest 9548 description",
+   "zone_areas: Blacksilt Seer/Warrior/Shorestriker and Clopper 17421 in 3906; Aqueous 17275, Watery Aspect, Blacksilt in 3596",
+   "exodar.json Call of Water (hidden reef off the northern shore, imbalance)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide, no Wrath-era or patch 2.4 text. Dialogue check: npc_text 9054 holds nothing from later builds. Aqueous is only named (the Exodar's Call of Water is not retold). Before: Aqueous' plea (the Exodar's Call of Water premise) cut to keep the Hidden Reef a one-line mention. Rest verified."
+ },
+ {
+  "id": 352511,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 11,
+  "faction": 0,
+  "title": "Nazzivian",
+  "body": "Southwest of Blood Watch lies Nazzivian, the stronghold of the Nazzivus satyrs. At its heart stands a grotesque monument, its wicked glyphs running beside a procession of humanoid figures as if telling some tale, perhaps of how the satyrs first gave themselves to the Burning Legion. Foul and demonic, the Nazzivus wield dark magic and feed on the corruption the Exodar's crash has spread. Rogues, felsworn and summoners haunt the camp among warped treants and bears, and fel cone fungus sprouts from the soil. The satyrs have summoned a felguard named Tzerak into their midst, and he strides among them scorning them as fools and weaklings.",
+  "triggers": [
+   [
+    1,
+    3592
+   ]
+  ],
+  "sources": [
+   "quest 9567 description (grotesque monument, feeding on corruption, southwest)",
+   "quest 9594 description and reward (deep black metal absorbing light, felguard, renewing contacts)",
+   "warcraft.wiki.gg/wiki/Nazzivian (monument glyphs, Tzerak summoned)",
+   "creature_text 17528",
+   "zone_areas: Nazzivus Satyr/Rogue/Felsworn/Summoner, Tzerak 17528, Fel Cone Fungus, Corrupted Treant in 3592",
+   "item_template 23859 Nazzivus Monument Glyph (wicked characters beside humanoid figures, some kind of narrative)",
+   "warcraft.wiki.gg/wiki/Nazzivian (glyphs revealed how Highborne became satyrs and servants of the Legion)"
+  ],
+  "notes": "Converted: what Tzerak's armor told the draenei moved to part 1 (QUEST_ACCEPT 9594, from the plate he drops, or QUEST_DONE 9594); trimmed to what the accept shows (the Legion mobilizing the satyrs), not the turn-in's felguard and renewed contacts. Opening keeps Tzerak himself: a permanent spawn walking into the camp with his line (smart_scripts 17528, creature_text 17528). The origin glyph line rests on quest 9568 (no giver in this DB) and the wiki, kept as background lore. Before: verified Check: origin line softened: quest 9568 has no giver or ender here and is not a live quest (the wiki has no page for it), and no source says the Nazzivus descend from the first satyr; the monument is now told as the glyph item shows it, with the wiki's reading as a 'perhaps'.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "An armor plate taken from Tzerak settled what his presence meant. Forged of a deep black metal that seems to drink the light, it is armor only the Burning Legion uses, and the Legion's hand here could mean only that it is gathering the island's satyrs against the draenei.",
+    "triggers": [
+     [
+      4,
+      9594
+     ],
+     [
+      5,
+      9594
+     ]
+    ],
+    "sources": [
+     "quest 9594 description and reward",
+     "item 23900 (Tzerak's Armor Plate) starts 9594"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352512,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 12,
+  "faction": 0,
+  "title": "Axxarien",
+  "body": "North of Blood Watch, Axxarien is the seat of Zevrax, leader of the island's satyrs. His hellcallers, tricksters and shadowstalkers guard the corrupted crystals the satyrs have been gathering, and the draenei fear the creatures will turn the Exodar's power against its owners. Vindicator Aalesia of Blood Watch wants Zevrax slain and the crystals recovered before the threat can grow. Harbinger Mikolaas wants a shard of the Axxarien crystal itself, the last of the samples he means to send to the Exodar for study, and the one he is least sure of.",
+  "triggers": [
+   [
+    1,
+    3593
+   ]
+  ],
+  "sources": [
+   "quest 9569 description and reward (go north to their leader in Axxarien, corrupted crystals)",
+   "quest 9568 description (use the crystals' power against us)",
+   "quest 9585 description and reward",
+   "zone_areas: Axxarien Shadowstalker/Trickster/Hellcaller, Zevrax 17494, Corrupted Crystal 181770/181771 in 3593"
+  ],
+  "notes": "Lightly edited, no parts: tenses moved to the present (Aalesia's and Mikolaas's requests, quests 9569 and 9585 descriptions); 'boxed up' cut, since boxing the samples is the 9585 turn-in. Zevrax's death is not told. Before: verified"
+ },
+ {
+  "id": 352513,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 13,
+  "faction": 0,
+  "title": "Bladewood",
+  "body": "Bladewood lies northwest of Blood Watch, and Sunhawk spies swarm through it in such numbers that Vindicator Boros half suspects they are multiplying. It is the first ground the Hand of Argus sends its recruits to clear. The blood elves are at work on the fallen crystals here; reports say they alter and harvest them for some magical apparatus, and Harbinger Mikolaas wants a sample cut from one not yet built into their devices.",
+  "triggers": [
+   [
+    1,
+    3585
+   ]
+  ],
+  "sources": [
+   "quest 9694 description and request text",
+   "quest 9584 description and reward",
+   "zone_areas: Sunhawk Spy 17604 x18 in 3585; Altered Bloodmyst Crystal 181780 in 3585 (posarea)"
+  ],
+  "notes": "Converted: the altered shard's pulsing and Mikolaas's note moved to part 1 (QUEST_DONE 9584). Opening keeps the reports and the task (quest 9584 description) and Boros's suspicion (9694 completion text). Before: verified",
+  "parts": [
+   {
+    "part": 1,
+    "body": "A shard was cut from one of the altered crystals, and it proved much different from the cleaner sample of the south. Held up to the light, it pulsed, and Harbinger Mikolaas found the change worrying enough to note the blood elves' alterations in his report to the Exodar.",
+    "triggers": [
+     [
+      5,
+      9584
+     ]
+    ],
+    "sources": [
+     "quest 9584 reward"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352514,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 14,
+  "faction": 0,
+  "title": "The Cryo-Core",
+  "body": "West of Blood Watch lies the Cryo-Core, a section of the Exodar that held stasis pods like those the survivors of Ammen Vale crawled out of, along with stores of medical supplies. When the draenei learned of it, they hoped to find more of their people alive, and recruits are sent to search the wreck for supplies and survivors. Sunhawk reclaimers strip it of anything of value, and the dead lie where they fell.",
+  "triggers": [
+   [
+    1,
+    3588
+   ]
+  ],
+  "sources": [
+   "quest 9703 description and reward (pod holding area, medical supplies, just blood elves, no survivors)",
+   "quest 9578 description, 9579 description",
+   "page_text 2937 (Galaen's journal)",
+   "zone_areas: Sunhawk Reclaimer, Medical Supplies, Galaen's Corpse 17508, Galaen's Journal 182032 in 3588"
+  ],
+  "notes": "Converted: 'no survivors, just blood elves' moved to part 1 (QUEST_DONE 9703); Galaen's body and spirit to part 2 (QUEST_ACCEPT 9579: the spirit is summoned when it is taken, smart_scripts 17508); his journal to part 3 (QUEST_ACCEPT 9706, the journal item 24237 with page_text 2937). Opening keeps the hope and the search (quest 9703 description). The amulet is left to The Fate of Saruan and Morae. Before: verified Check: parts 2 and 3 reworded so they do not repeat The Fate of Saruan parts 1 and 3 word for word (same triggers); Galaen's survival and murder kept as his spirit tells it (creature_text 17426).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The search found no survivors, only blood elves. The medical supplies were carried back to Blood Watch, but Vindicator Kuros, who had hoped for more, was troubled and needed time to think it through.",
+    "triggers": [
+     [
+      5,
+      9703
+     ]
+    ],
+    "sources": [
+     "quest 9703 reward"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "One of the dead wore the garb of a ship's technician, his clothes ripped open by looters hunting for valuables. When the body was examined, a spirit rose beside it and at first mistook the searcher for Morae: it was Galaen, her husband, who had lived through the crash only for the infiltrators to murder him.",
+    "triggers": [
+     [
+      4,
+      9579
+     ]
+    ],
+    "sources": [
+     "quest 9578 reward",
+     "quest 9579 description",
+     "smart_scripts 17508 (spirit summoned on accepting 9579)",
+     "creature_text 17426"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Galaen's journal lay close by. In its final entries he wrote of Saruan, a vindicator of the Triumvirate, whom the Sunhawks held and beat until he lost his senses, while Galaen, tied and helpless, could only weep. The last words dissolve into a single stroke running down the page.",
+    "triggers": [
+     [
+      4,
+      9706
+     ]
+    ],
+    "sources": [
+     "page_text 2937-2940 (item 24237, given on accepting 9706)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352515,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 15,
+  "faction": 0,
+  "title": "Amberweb Pass",
+  "body": "Amberweb Pass, in the western wilds, belongs to spiders grown huge and savage from the crystal contamination. An expedition from Blood Watch was ambushed here. The brood's matriarch, Zarakh, fell upon the party with terrible speed, wrapped its members in cocoons and laid her eggs beside them, meaning them as food for her young. Researcher Cornelius cut himself free but refuses to leave without his men, while Achelus, the outpost's expeditionary officer, escaped to Blood Watch and wants the spiders and their matriarch destroyed before others share his team's fate.",
+  "triggers": [
+   [
+    1,
+    3597
+   ]
+  ],
+  "sources": [
+   "quest 9669 description and reward",
+   "quest 9670 description and reward",
+   "npc_text 9042, 9045",
+   "zone_areas: Myst Spinner/Leecher, Webbed Creature, Zarakh 17683, Researcher Cornelius 17686 in 3597"
+  ],
+  "notes": "Converted: Zarakh's fall and Achelus's admission moved to part 1 (QUEST_DONE 9669); the rescue of more than half the team to part 2 (QUEST_DONE 9670). The two quests have no prerequisite on each other; each part reads on from the opening alone. KILL 17683 not used (Achelus's words are not seen at the fight). Dialogue check: npc_text 9042, 9045 hold nothing from later builds. Before: Whether Achelus and Cornelius escaped together or separately is not clear; each is said to have escaped.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Zarakh and her spinners and leechers were cut down. Back at Blood Watch, Achelus asked at once whether any survivors had been found, then lowered his voice to admit that no one else there had been willing to take on the mission.",
+    "triggers": [
+     [
+      5,
+      9669
+     ]
+    ],
+    "sources": [
+     "quest 9669 reward"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The cocoons were cut open one by one, and more than half of the expedition was freed alive. Cornelius thanked their rescuer and was sure word of the deed would reach Blood Watch and the exarch.",
+    "triggers": [
+     [
+      5,
+      9670
+     ]
+    ],
+    "sources": [
+     "quest 9670 reward"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352516,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 16,
+  "faction": 0,
+  "title": "Vindicator's Rest",
+  "body": "Vindicator's Rest is a small Hand of Argus outpost on consecrated ground northwest of Blood Watch, set up to keep watch on the Sunhawks around the Vector Coil. It is badly outnumbered. Its scouts went out to reconnoiter the blood elves and paid dearly for it: Scout Jorli, gravely wounded, waits for a safe road home through the enraged ravagers that prowl beyond the hallowed ground, and the outpost has already buried too many friends. Mutated tanglers near the Coil have learned to set and hide traps. Vindicator Corin holds the post patiently, awaiting orders, and beside her stands Demolitionist Legoso.",
+  "triggers": [
+   [
+    1,
+    3608
+   ]
+  ],
+  "sources": [
+   "quest 10064 description (forward base, outnumbered, watch on Vector Coil)",
+   "quest 10065 description (wounded, consecrated ground, ravagers)",
+   "quest 9741 description",
+   "npc_text 9591 (buried too many friends)",
+   "quest 10066 description (tanglers set traps)",
+   "quest 9761 description and request text",
+   "zone_areas: Corin 17986, Legoso 17982, Scouts 17926/17927 in 3608",
+   "npc_text 9143 (Corin awaiting orders)"
+  ],
+  "notes": "Converted: Corin's waiting for a champion and Legoso's mission (quest 9761 description, draenei only) moved to part 1 (QUEST_ACCEPT 9761); the entry stays faction 0 through AREA 3608. The scouts' portal cut from the opening (the sun portal is The Sun Gate's reveal; quests 10065 and 9741 tell it to those who take them). Opening adds Corin's gossip (npc_text 9143, awaiting orders) and keeps Jorli's (npc_text 9591). Dialogue check: npc_text 9123, 9143, 9591 hold nothing from later builds. Before: verified Check: the portal stays out of the opening; Jorli's wound and lying down are what anyone at the outpost sees (10065 description, creature_template_addon 17927).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Corin's true charge is to soften the Sunhawk defenses near the Coil and keep the path clear for a champion. Only the bravest draenei will go with Demolitionist Legoso on his mission to destroy the Vector Coil and slay Sironas, for it is close to suicide, and the exarch will not order any agent of the Hand to take it.",
+    "triggers": [
+     [
+      4,
+      9761
+     ]
+    ],
+    "sources": [
+     "quest 9761 description"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352517,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 17,
+  "faction": 0,
+  "title": "The Foul Pool",
+  "body": "North of Vindicator's Rest lies the Foul Pool, waters poisoned almost beyond recognition. Most creatures touched by the crystals bear strange marks and small shards in their flesh, but the fouled water spirits that dwell here are changing in a way the draenei have never seen: they are turning entirely to crystal. The Hand wants them gone before the Sunhawks learn to use them as a new source of energy. Close by lies a small camp that bears the name of Tel'athion.",
+  "triggers": [
+   [
+    1,
+    3595
+   ],
+   [
+    1,
+    3603
+   ]
+  ],
+  "sources": [
+   "quest 10067 description and reward",
+   "zone_areas: Fouled Water Spirit 17358 x28 in 3595; Barrel of Filth 181699 in 3603",
+   "warcraft.wiki.gg/wiki/Bloodmyst_Isle (Tel'athion, blood elf researcher contaminating the water)",
+   "exodar.json Call of Water (Tel'athion's camp, not retold)",
+   "creature_template 17359 Tel'athion the Impure (not used as a trigger)"
+  ],
+  "notes": "Converted: Tel'athion's barrels as the source of the pool's filth cut from the opening: it is the Exodar's Call of Water reveal (ACCEPT 9508), held back. The camp is named only as its area (3603) shows it. His appearance and death moved to part 1 on KILL 17359 (free for Bloodmyst), told only as a bystander at the fight sees it: the barrels doused, his two lines (creature_text 17359), his death; no claim that his work fouls the water. Tel'athion has no spawn of his own (summoned during the Exodar's chain). Before: Tel'athion's camp folded in with one line; his chain belongs to the Exodar. Check: part 1: his second line threatens 'you two' only after he has slain the meddlesome shaman, so the vow is now to slay the shaman first (both lines are says, heard by anyone at the fight). Barrels of Filth splash visibly when used (smart_scripts 181699); nothing says his work fouls the water.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The camp's master shows himself only when disturbed. When water was poured over his barrels, a blood elf, Tel'athion the Impure, came running and raging that his life's work had been ruined, swore to slay the meddlesome shaman who had done it before he dealt with anyone else, and fell fighting in his own camp.",
+    "triggers": [
+     [
+      3,
+      17359
+     ]
+    ],
+    "sources": [
+     "creature_text 17359",
+     "smart_scripts 17359 (summoned, attacks), 181699 (Barrel of Filth splash)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352518,
+  "kind": 1,
+  "zone": 3525,
+  "sort": 18,
+  "faction": 0,
+  "title": "The Vector Coil",
+  "body": "The Vector Coil is a colossal power core of the Exodar that lodged in the mountains of western Bloodmyst when the ship came down, a great red crystal still jutting from the slope. The draenei suspect it of leaking volatile fluids into the island's water. The Sunhawks have made it their stronghold, and their agents and saboteurs swarm its paths. Far to the northeast, north of Blood Watch, lies the Warp Piston, where strange void anomalies drift.",
+  "triggers": [
+   [
+    1,
+    3586
+   ],
+   [
+    1,
+    3587
+   ]
+  ],
+  "sources": [
+   "quest 9759 description (power core jutting out of the mountainside)",
+   "creature_text 17982 (red crystal, siphoning energy)",
+   "quest 9748 reward",
+   "warcraft.wiki.gg/wiki/Vector_Coil",
+   "quest 9700 description and reward (sun portal site near the Warp Piston, void anomalies)",
+   "zone_areas: Sunhawk Agent/Saboteur, Sironas 17678, Matis 17664 in 3586; Void Anomaly in 3587"
+  ],
+  "notes": "Converted: the sun portal at the Warp Piston moved to part 1 (QUEST_DONE 9700); the leaking core fluid confirmed to part 2 (QUEST_DONE 9748; the opening keeps it as the draenei's suspicion, 9748 description); Sironas at the summit to part 3 (QUEST_DONE 9759 or KILL 17678), told as anyone at the fight sees it (Legoso's shouts, her line). Sironas is immune to players until Legoso's escort frees her, so the KILL needs the draenei-only chain nearby. Before: Warp Piston fixed: its void anomalies (3587) lie about 1400 yards northeast of the Coil, due north of Blood Watch (quest 9700 searches north from Blood Watch); 'another piece of the wreck' came from the name only, removed. No guardian is named here. Check: part 3 reads as a bystander sees it: Legoso's says and Sironas's yell are heard by anyone near, and she is immune to players until his escort's charges free her (smart_scripts 17678), so KILL 17678 needs that escort nearby.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The void anomalies at the Warp Piston have a cause. Velen reasoned that rifts opened between this island and Outland would leave such traces, and there were so many of them that the blood elves must have opened their sun portal there many times.",
+    "triggers": [
+     [
+      5,
+      9700
+     ]
+    ],
+    "sources": [
+     "quest 9700 description and reward"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "A sample that Vindicator Aesom had taken where the rivers of Bloodmyst drain into the sea bore out the suspicion: the island's water has turned red from core fluid leaking out of the Vector Coil.",
+    "triggers": [
+     [
+      5,
+      9748
+     ]
+    ],
+    "sources": [
+     "quest 9748 description and reward"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "At the summit, Sironas hung in the Coil's beams, siphoning its energy into herself. Explosives set at its supports broke the beams that held her; she came out of them fighting, telling her enemies to pray to their gods, and was slain.",
+    "triggers": [
+     [
+      5,
+      9759
+     ],
+     [
+      3,
+      17678
+     ]
+    ],
+    "sources": [
+     "creature_text 17982 (Legoso's escort), 17678",
+     "smart_scripts 17678 (channeling, freed on data set)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352519,
+  "kind": 2,
+  "zone": 3525,
+  "sort": 1,
+  "faction": 1,
+  "title": "Exarch Admetius",
+  "body": "Exarch Admetius leads Blood Watch. He asks every recruit what Argus means to them, for many draenei barely remember the world where their people split from the man'ari, the twisted demonic reflections of themselves that were Sargeras's 'gift'. The word eredar once held meaning; he tastes it now only to call it disgusting. He had a feeling the recruits who come up from Kessel's Crossing would make it this far, and he is willing to teach those who would go further, sending them on to Vindicator Boros to begin their training.",
+  "triggers": [
+   [
+    2,
+    17658
+   ]
+  ],
+  "sources": [
+   "npc_text 9022",
+   "quest 9693 description",
+   "quest 9756 description",
+   "quest 9753 reward (blow the thing up)",
+   "quest 9761 description (exarch will not order any agent)",
+   "creature_text 17658"
+  ],
+  "notes": "Converted: the disguise and the plan to blow up the Coil moved to part 1 (QUEST_ACCEPT 9756, which needs 9753 turned in, so its reward line is seen); his refusal to lay the mission on one recruit to part 2 (QUEST_ACCEPT 9760, his own words; Corin's 'will not order any agent' line stays in Vindicator's Rest part 1); the hero hailed to part 3 (QUEST_DONE 9759). All draenei only; the entry stays faction 1. Opening adds quest 9668 reward and the 9693 description in full. The Outland charge (9759 reward) is his exhortation, not gated: draenei home ground in every era. Dialogue check: npc_text 9022 holds nothing from later builds. Before: verified Check: part 1 reworded so it does not repeat Ending Their World part 1 (same trigger). Part 3 checked: smart_scripts 1765800 summons Velen, Menelaous, Odesyus, the Stillpine, Kessel and others on the 9759 turn-in.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "His answer to the Vector Coil is blunt: he wants the thing blown up. What he lacks is any measure of its defenses, for none of his people has come near enough to see them. The Sunhawk prisoner has resisted every interrogation and Admetius will not hear of torture, so he lays a spell on one of his own, giving them the look and speech of a blood elf, to win the captive's trust.",
+    "triggers": [
+     [
+      4,
+      9756
+     ]
+    ],
+    "sources": [
+     "quest 9753 reward",
+     "quest 9756 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Still, he would not lay so deadly a burden on a single recruit. He sends them instead to Vindicator Corin at Vindicator's Rest, to help clear the way for whoever takes on the task of destroying the Coil and slaying Sironas.",
+    "triggers": [
+     [
+      4,
+      9760
+     ]
+    ],
+    "sources": [
+     "quest 9760 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "When it was done, Admetius gathered friends from both isles, from the Stillpine and Admiral Odesyus to the Prophet himself, and hailed the hero before all of Blood Watch as savior of Azuremyst and Bloodmyst and champion of the draenei. Then he spoke of those left behind on Draenor, and charged the hero to find a way back to Outland and bring them home to Azeroth.",
+    "triggers": [
+     [
+      5,
+      9759
+     ]
+    ],
+    "sources": [
+     "creature_text 17658",
+     "smart_scripts 17658, 1765800 (on 9759 finished: says the line, summons the isles' figures)",
+     "quest 9759 reward"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352520,
+  "kind": 2,
+  "zone": 3525,
+  "sort": 2,
+  "faction": 1,
+  "title": "The Triumvirate of the Hand",
+  "body": "Three vindicators, the Triumvirate of the Hand, command the Hand of Argus from Blood Watch. Boros, the first, teaches that the Hand serves and dies without question, then laughs at his own fervor; he has also learned to purify the crystal shards cut from the island's beasts into useful gems. Kuros, the second, sends recruits into the wreckage of the ship in search of survivors and supplies. Aesom, the third, hunts the Sunhawks camp by camp, sworn to search out every hiding place until Sironas is found.",
+  "triggers": [
+   [
+    2,
+    17684
+   ],
+   [
+    2,
+    17843
+   ],
+   [
+    2,
+    17844
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Hand_of_Argus (Triumvirate, Boros first, Saruan former second)",
+   "npc_text 9044, 9077, 9117",
+   "quest 9693 reward (Boros laughs)",
+   "quest 9641 description",
+   "quest 9706 reward",
+   "quest 9746 request text",
+   "quest 9703 description"
+  ],
+  "notes": "Converted: Kuros succeeding Saruan and his grief moved to part 1 (QUEST_DONE 9706, where he tells it). Opening gives Kuros his task instead (quest 9703 description). Dialogue check: npc_text 9044, 9077, 9117 hold nothing from later builds. Before: verified; no overlap with exodar.json or azuremyst.json, which mention the Hand of Argus only in passing (Azure Watch, Torallius). Wiki: the Triumvirate commands the Hand, Boros first. Faction 1: template 1698. Check: part 1 reworded so it does not repeat The Fate of Saruan part 4 (same trigger).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Kuros's seat is a new one. He took it only once the Hand stopped looking for his master, Vindicator Saruan, who had been his teacher and mentor besides. When Galaen's journal told him how Saruan had suffered at Sunhawk hands, he went pale and wept, and then his face twisted in fury at a single name: Matis.",
+    "triggers": [
+     [
+      5,
+      9706
+     ]
+    ],
+    "sources": [
+     "quest 9706 reward",
+     "page_text 2937-2940"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352521,
+  "kind": 2,
+  "zone": 3525,
+  "sort": 3,
+  "faction": 1,
+  "title": "Kessel",
+  "body": "Kessel calls himself lord of the elekk and a disciple of the Hand of Argus, and recruits who would join the order are tested at his camp on the road into Bloodmyst. His tests are hard by design. He lends his own elekk for a desperate ride, with a warning to keep it out of water, and he does not flinch from bloodshed. Yet he takes no pleasure in it. Heavy-handed violence is not the draenei way, he says, but his people learned what reluctance costs when the orcs slaughtered them. To become one of the Hand is a rebirth, and with birth comes pain. Honorable people, he warns, cannot always act honorably.",
+  "triggers": [
+   [
+    2,
+    17649
+   ]
+  ],
+  "sources": [
+   "npc_text 9041",
+   "quest 9663 description",
+   "quest 9666 reward",
+   "quest 9668 description",
+   "npc_text 9037 (old man Kessel)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide, no Wrath-era or patch 2.4 text. His sayings (quest 9666 reward, 9668 description) are his manner, not outcomes; Lord Xiz's death is not in the body. Dialogue check: npc_text 9037, 9041 hold nothing from later builds. Before: Recruits meet Vorkhan first (9625), so 'meet him first' changed to 'are tested at his camp'. Rest verified. Faction 1: template 1638."
+ },
+ {
+  "id": 352522,
+  "kind": 2,
+  "zone": 3525,
+  "sort": 4,
+  "faction": 1,
+  "title": "Sironas",
+  "body": "Sironas leads the Sunhawk blood elves on Bloodmyst. Her followers hold the west of the island around the Vector Coil, where agents and saboteurs swarm the mountain paths and her herald, Matis the Cruel, rides the slopes below. She keeps to the summit of the Coil, held fast in the beams of its great crystal and drawing its power into herself, beyond the reach of any blade while the beams hold. Those who come against her she meets with scorn, bidding them pray to their gods, for they are about to meet them, and she fights with fire and a curse of blood.",
+  "triggers": [
+   [
+    3,
+    17678
+   ],
+   [
+    5,
+    9759
+   ]
+  ],
+  "sources": [
+   "quest 9759 description (Sironas the eredar)",
+   "npc_text 9137-9141 (captured agent: served under Sironas on Outland, transformation claim, lived among the draenei)",
+   "quest 9753 description",
+   "page_text 2937 (plans for Saruan)",
+   "creature_text 17982 (siphoning energy), 17678",
+   "warcraft.wiki.gg/wiki/Sironas",
+   "gossip_menu_option 7531-7537 (disguised player's lines)",
+   "smart_scripts 17678, 17982",
+   "quest 9746 completion text (until Sironas is found)",
+   "creature_template 17664 (Herald of Sironas)",
+   "smart_scripts 17678 (Immolate, Curse of Blood)",
+   "creature_template 17678 unit_flags (immune to players while channeling)",
+   "creature 63387 (Matis's waypoint spawn on the Coil's slopes, below Sironas 63402)"
+  ],
+  "notes": "Converted: the opening told her plan, her identity and her end; it now holds what anyone at the KILL 17678 sees or the Hand says openly (her command, Aesom's vow from quest 9746 completion text, her herald 17664's subname, her line and spells). Her plan moved to part 1 (QUEST_ACCEPT 9753, which the Exodar left to Bloodmyst); the eredar reveal and the prisoner's boasts to part 2 (QUEST_DONE 9756, the disguised interrogation); her end to part 3 (KILL 17678 or QUEST_DONE 9759), as a bystander at the fight sees it. The journal's 'plans for Saruan' is left to The Fate of Saruan part 3. Faction 1 as before (immune to players until Legoso's draenei-only escort). Before: Removed 'he had served under her on Outland': that line is the disguised draenei's lie (gossip option of menu 7531), not the prisoner's. Faction 1 confirmed: Sironas (single spawn in 3586) carries IMMUNE_TO_PC (unit_flags 33600, re-set out of combat) and her SmartAI clears it only on data set by Demolitionist Legoso's escort, which starts only from 9759 (AllowableRaces 1024, draenei only); 9759 is also the QUEST_DONE trigger. Check: opening trimmed to what a bystander at KILL 17678 sees: her leadership (Legoso's last line), her followers on the paths, Matis's subname on his spawn below the summit, her channeling and immunity in the beams (Legoso's lines, unit_flags), her yell and spells. Aesom's vow dropped here (a bystander does not hear it; the Triumvirate entry keeps it). Part 1 reworded away from Ending Their World's opening (9753 description); part 3 reworded so it adds Legoso's charges and does not repeat The Vector Coil part 3.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "In time the Hand pieced together her purpose. She means nothing less than the destruction of the draenei; beyond that, she would bind the naaru O'ros and win the Exodar back for the blood elves, and meanwhile she lets the poisoned runoff of the Vector Coil twist the land in her favor.",
+    "triggers": [
+     [
+      4,
+      9753
+     ]
+    ],
+    "sources": [
+     "quest 9753 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "A captured Sunhawk, fooled by a draenei in disguise, let slip far more. Sironas is no elf but an eredar, one of the man'ari the draenei fled long ago, and she had lived among the draenei so long that she could pass for one of them. She claims that certain eredar can turn others of their race into savage man'ari, and the prisoner boasted that a captured vindicator had been made into a monstrous guardian of the Coil at her command.",
+    "triggers": [
+     [
+      5,
+      9756
+     ]
+    ],
+    "sources": [
+     "npc_text 9137-9141 (captured agent, under the disguise of 9756)",
+     "gossip_menu_option 7531-7537"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Demolitionist Legoso fought his way up the mountain with those who guarded him, brought down the first support under the crystal, then set his charges at the support on her side. When they went off, the beams broke and she came down fighting, but she was slain, and Legoso could hardly believe it was over: the blood elves had lost their leader.",
+    "triggers": [
+     [
+      3,
+      17678
+     ],
+     [
+      5,
+      9759
+     ]
+    ],
+    "sources": [
+     "creature_text 17982 (siphoning energy), 17678",
+     "smart_scripts 17678, 17982",
+     "quest 9759 description (Sironas the eredar)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352523,
+  "kind": 2,
+  "zone": 3525,
+  "sort": 5,
+  "faction": 1,
+  "title": "Matis the Cruel",
+  "body": "Matis the Cruel, herald of Sironas, is the ruthless Sunhawk lieutenant who held Vindicator Saruan. Before the eyes of the captive technician Galaen, bound and weeping, the Sunhawks beat Saruan without mercy while Matis treated such cruelty as nothing out of the ordinary. When Saruan fell senseless, Matis splashed tainted water over him to wake him, then paced in fear of what Sironas would do to him if her prisoner died. Galaen's journal named him. Kuros, Saruan's pupil, wants Matis brought back alive to face the Triumvirate's justice, and draenei trackers wait for the flare that will mean he has been found.",
+  "triggers": [
+   [
+    4,
+    9711
+   ],
+   [
+    5,
+    9711
+   ]
+  ],
+  "sources": [
+   "creature_template 17664 (Herald of Sironas)",
+   "page_text 2937",
+   "quest 9706 reward",
+   "quest 9711 description and reward",
+   "creature_text 17843 (Kuros orders trackers, Matis alive)",
+   "creature_text 17664"
+  ],
+  "notes": "Converted: his capture and trial moved to part 1 (QUEST_DONE 9711). The opening unlocks no earlier than QUEST_ACCEPT 9711, which needs 9706, so the journal's account is earned. Entry triggers unchanged. Before: Journal says 'they' beat Saruan while the lieutenant treated it as normal: reworded; 'name spoken with loathing' was unsupported. Trial from 9711 reward. 9711 (Kuros, flare gun, capture alive) confirmed as the capture quest; triggers ACCEPT and DONE 9711, since Matis is captured rather than slain. Faction 1: 9711 AllowableRaces 1101.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Matis was found, and swore he would never be taken alive, but he fought until he fell senseless and the trackers came to the flare. The Triumvirate decided to try him at once, an arch-criminal brought to justice; of the three vindicators' tasks, only Aesom's remained.",
+    "triggers": [
+     [
+      5,
+      9711
+     ]
+    ],
+    "sources": [
+     "quest 9711 reward",
+     "creature_text 17664",
+     "creature_text 17843"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352524,
+  "kind": 2,
+  "zone": 3525,
+  "sort": 6,
+  "faction": 1,
+  "title": "Harbinger Mikolaas",
+  "body": "Harbinger Mikolaas keeps the defenses of Blood Watch, and his first lesson for newcomers is vigilance: Bloodmyst claims the careless first, then slowly wears down even the most guarded. The leaders at the Exodar load him with other duties too, from mapping the island to gathering crystal samples for study, though it is hardly safe to send researchers out and he cannot spare the soldiers to guard them. He posts bounties on the beasts that prey on his people, such as the bear Deathclaw, which killed a survey team on the northwest coast, and sends what help he can to the outnumbered Vindicator's Rest.",
+  "triggers": [
+   [
+    2,
+    17423
+   ]
+  ],
+  "sources": [
+   "npc_text 9033",
+   "quest 9581 description",
+   "quest 9620 description",
+   "quest 9628 reward",
+   "quest 9646 description",
+   "quest 10064 description"
+  ],
+  "notes": "Converted: his reaction to the cartographers' deaths moved to part 1 (QUEST_DONE 9628). Opening adds the Deathclaw bounty's survey team (quest 9646 description). Dialogue check: npc_text 9033 holds nothing from later builds. Before: verified",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Not every team came back. When the survey crew he had sent to the ruins of Loreth'Aran was found dead and its data crystal won back from the naga, Mikolaas fell silent for a long moment. They were good men who knew the danger, he said; then his fists clenched. Too many good men had been lost already, and their mission had only just begun.",
+    "triggers": [
+     [
+      5,
+      9628
+     ]
+    ],
+    "sources": [
+     "quest 9628 reward"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352525,
+  "kind": 2,
+  "zone": 3525,
+  "sort": 7,
+  "faction": 1,
+  "title": "Morae",
+  "body": "Morae, the herbalist of Blood Watch, says her days aboard the Exodar already feel a lifetime away, and that soon this island of mutant creatures and endless blood elf agents will be all she remembers. She has made its corruption her study, gathering crystallized bark from corrupted treants and marking Blacksilt murlocs on the southwestern coast with a harmless tagging device. Beneath the work lies a private search. Her husband Galaen, a technician of the Cryo-Core, wore a pendant matching her own, a gift from her sister, and she would rather hear of his death than never know.",
+  "triggers": [
+   [
+    2,
+    17434
+   ]
+  ],
+  "sources": [
+   "npc_text 9034",
+   "quest 9574 description",
+   "quest 9629 description",
+   "quest 9576 reward",
+   "quest 9578 description"
+  ],
+  "notes": "Converted: Cruelfin's pendant moved to part 1 (QUEST_DONE 9576, the pendant starts the quest and her reading of it is its reward); Galaen's fate to part 2 (QUEST_DONE 9579). Dialogue check: npc_text 9034 holds nothing from later builds. Before: verified Check: part 2 reworded so it does not repeat The Fate of Saruan part 2 (same trigger).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "A red crystal pendant taken from Cruelfin, a murloc of the coast, puzzled her, for she had never seen murlocs wear any adornment. Knowing how the shards corrupt, she suspects he believed it gave him power over his fellows, and that he quickly outgrew them in strength.",
+    "triggers": [
+     [
+      5,
+      9576
+     ]
+    ],
+    "sources": [
+     "quest 9576 description and reward"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Word came back from the Cryo-Core with his jeweled amulet: Galaen was dead. Some part of her had already known, Morae said, though she had refused to accept it. It was not the news she had hoped for, but she was deeply grateful that he had been found.",
+    "triggers": [
+     [
+      5,
+      9579
+     ]
+    ],
+    "sources": [
+     "quest 9579 reward"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352526,
+  "kind": 2,
+  "zone": 3525,
+  "sort": 8,
+  "faction": 1,
+  "title": "Prince Toreth",
+  "body": "Ten thousand years ago Prince Toreth was a prince of Loreth'Aran, a dragon rider blessed by Ysera of the Dream. Now he is a ghost on Wyrmscar Island, and he greets the living with scorn: can they not see they stand on sundered earth? He calls himself a cruel reminder of a civilization long gone, anchored to a land he failed to protect. He was the last of his people to die, and with his final breath he swore a blood oath, his blood for this world, becoming the sole keeper of their history. He cannot rest until he knows the story of the dragon riders of Loreth'Aran will not be lost.",
+  "triggers": [
+   [
+    2,
+    17674
+   ]
+  ],
+  "sources": [
+   "npc_text 9056, 9057, 9058, 9060 (Toreth gossip chain)",
+   "creature_template 17674 (Dragon Riders of Loreth'Aran)",
+   "warcraft.wiki.gg/wiki/Ruins_of_Loreth'Aran"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide, no Wrath-era or patch 2.4 text. His tale is his own gossip chain (npc_text 9056-9060), backstory told on meeting him; Razormaw's end is told in The Dragon Riders of Loreth'Aran. Dialogue check: npc_text 9056-9060 hold nothing from later builds. Before: He calls himself 'prince of this land', not its ruler: reworded. Rest verified. Faction 1: template 80."
+ },
+ {
+  "id": 352527,
+  "kind": 2,
+  "zone": 3525,
+  "sort": 9,
+  "faction": 1,
+  "title": "Captain Edward Hanes",
+  "body": "Edward Hanes was captain of the ship Lost Hope, and Admiral Odesyus knew him as a man who died of scurvy twenty years ago. Now his ghost lingers on the wild shores of Wyrmscar Island, looking over a land that still bears the scars of its past and wondering whether they will ever heal. Death has not made him idle. He appeared one night in the admiral's tent with a tale that made the admiral's heart tremble, and a mission he needs someone to take on.",
+  "triggers": [
+   [
+    2,
+    17712
+   ]
+  ],
+  "sources": [
+   "quest 9751 and 9672 descriptions (died of scurvy 20 years ago, appeared in the tent)",
+   "quest 9672 reward (scurvy my foot, food for the dragons)",
+   "npc_text 10352",
+   "quest 9683 reward (hundreds of souls)"
+  ],
+  "notes": "Converted: his own account of his death and the bloodcurse moved to part 1 (QUEST_DONE 9751 or 9672, where he tells it; plain gossip shows only npc_text 10352); the curse's end to part 2 (QUEST_DONE 9683). Dialogue check: npc_text 10352 holds nothing from later builds. Before: He says the bloodcurse sank the ships and that he died ashore as food for the dragons; the body keeps both without joining them. Check: part 2 reworded away from The Bloodcurse part 3 (same trigger).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Scurvy, Hanes scoffs: he died on these shores as food for the dragons, and has lingered here these twenty years. His tale is of the bloodcurse that sank all the ships on the nearby reef and spoiled its waters, and of the poor souls still trapped there, whom he means to help.",
+    "triggers": [
+     [
+      5,
+      9751
+     ],
+     [
+      5,
+      9672
+     ]
+    ],
+    "sources": [
+     "quest 9751 and 9672 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "With Atoph the Bloodcursed slain, the curse was ended. The hundreds of souls it had held, the ghost captain said, were grateful for all that had been done, and he made an offering of his own to the one who had freed them.",
+    "triggers": [
+     [
+      5,
+      9683
+     ]
+    ],
+    "sources": [
+     "quest 9683 reward"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352528,
+  "kind": 2,
+  "zone": 3525,
+  "sort": 10,
+  "faction": 1,
+  "title": "Clopper Wizbang",
+  "body": "Clopper Wizbang is, by his own account, the first gnome ever to join the Explorers' League, and he has set up house inside a beached turtle shell on Bloodmyst's northern shore to watch the Blacksilt murlocs unseen, sure that one glimpse of him would contaminate his data. While he was out foraging, the murlocs found his camp and carried off a crate of his equipment. He means to bring home their crude idols and knives as well, for the gentlemen of Ironforge. The dwarf Prospector Nachlan, sent along on the expedition to look after him, grumbles about babysitting and stays in Blood Watch, where, Clopper complains, he mostly drinks.",
+  "triggers": [
+   [
+    2,
+    17421
+   ]
+  ],
+  "sources": [
+   "npc_text 9054",
+   "quest 9548 description and reward",
+   "quest 9549 description and reward",
+   "quest 10063 description and reward"
+  ],
+  "notes": "Converted: the theft turned observation moved to part 1 (QUEST_DONE 9548); the museum, co-authorship and the sailor's map to part 2 (QUEST_DONE 9549, whose reward item starts Nolkai's Words). Opening keeps the theft and his plans (9548, 9549 descriptions) and Nachlan (10063). Dialogue check: npc_text 9054 holds nothing from later builds. Before: verified",
+  "parts": [
+   {
+    "part": 1,
+    "body": "When his equipment came back, Clopper declared the theft a priceless observation in its own right, worth more than weeks of watching: faced with the products of a superior culture, the Blacksilt had shown no curiosity at all. The gentlemen in Ironforge, he was sure, would love it.",
+    "triggers": [
+     [
+      5,
+      9548
+     ]
+    ],
+    "sources": [
+     "quest 9548 reward"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The idols and knives were bound for a display in the museum at Ironforge, and he asked how to spell his helper's name, to list it in his report as co-author. He also handed over a 'treasure map' a sailor had given him to cover a gambling debt; mythology, he said, is not his field.",
+    "triggers": [
+     [
+      5,
+      9549
+     ]
+    ],
+    "sources": [
+     "quest 9549 reward"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352529,
+  "kind": 3,
+  "zone": 3525,
+  "sort": 1,
+  "faction": 1,
+  "title": "Trials of the Hand",
+  "body": "Young draenei who hope to join the Hand of Argus are sent north to Kessel's Crossing, mocked on their way by a pack handler sure they will never make it. At the crossing Vorkhan the herder puts them to work culling the ravagers that the Exodar carried as specimens and lost into the wild, before the alien predators can crowd out the native hunters. Then Kessel, lord of the elekk and disciple of the Hand, takes their measure, for to become a soldier of the Hand a recruit must pass many tests, and his are hard by design.",
+  "triggers": [
+   [
+    4,
+    9625
+   ],
+   [
+    4,
+    9663
+   ]
+  ],
+  "sources": [
+   "quest 9625 description and reward",
+   "quest 9634 description",
+   "quest 9663 description and reward (15 minutes)",
+   "quest 9666 description",
+   "quest 9668 description",
+   "quest 9693 description"
+  ],
+  "notes": "Converted: the Kessel Run moved to part 1 (QUEST_ACCEPT 9663, also kept as an entry trigger); the Lord Xiz task to part 2 (QUEST_ACCEPT 9666, which needs 9663 turned in, so its reward line is seen); Xiz's death and Kessel's words to part 3 (QUEST_DONE 9666); the road to Blood Watch to part 4 (QUEST_DONE 9668). Admetius's Argus question is left to the next chain (The Sun Gate opens on ACCEPT 9693). Opening keeps 9625 and 9634. 9625 ends with Vorkhan, left to Bloodmyst by the Exodar. All Alliance. Before: Broken cages not in Bloodmyst sources: softened. Torallius's taunt only alluded to, as the Exodar tells it. Quest 9663's time limit rendered as in all haste. Check: opening, part 1 and part 3 reworded so they do not repeat Kessel's Crossing and Kessel's opening word for word.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The first test is a race against time. Blood elf activity near the camp has doubled in a week, and agents report that the Sunhawks mean to strike Azuremyst, so Kessel hands over his own elekk, with strict orders that it must not get wet, to carry warnings to High Chief Stillpine, Exarch Menelaous and Admiral Odesyus and be back in all haste.",
+    "triggers": [
+     [
+      4,
+      9663
+     ]
+    ],
+    "sources": [
+     "quest 9663 description (15 minutes)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The ride was passed with flying colors. Next Kessel sent the recruit to Wrathscale Lair, where naga had dared creep up on his camp by night, to slay Lord Xiz where he stood and drive a draenei banner through his corpse, so the naga would know fear at the sight of that standard.",
+    "triggers": [
+     [
+      4,
+      9666
+     ]
+    ],
+    "sources": [
+     "quest 9663 reward",
+     "quest 9666 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "It was done, and Kessel did not pretend to relish it. Such force sits ill with his people, he said, yet the orcs had taught them at a terrible price what hesitation costs, and joining the Hand means being born anew, which is never painless.",
+    "triggers": [
+     [
+      5,
+      9666
+     ]
+    ],
+    "sources": [
+     "quest 9666 reward"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Those who passed were sent up the road to Blood Watch with a last warning, that honorable people cannot always act honorably. There Exarch Admetius, who had a feeling they would make it this far, offered to teach whoever was willing to go further.",
+    "triggers": [
+     [
+      5,
+      9668
+     ]
+    ],
+    "sources": [
+     "quest 9668 description and reward"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352530,
+  "kind": 3,
+  "zone": 3525,
+  "sort": 2,
+  "faction": 1,
+  "title": "The Sun Gate",
+  "body": "Vindicator Boros, first of the Triumvirate, greets the Hand's recruits by asking whether they are ready to spill blood for the Light, for Velen, for Argus, then laughs and promises to slow down. Under him they learn that the blood elves they fought aboard the Exodar survived the crash, and that their numbers never seem to shrink; Boros only half jokes that they must be multiplying. Their first task is to thin the Sunhawk spies of Bladewood. Then agents behind the Sunhawk lines report soldiers poring over an unusual document, and Boros sends the recruit to take a copy by whatever force it needs.",
+  "triggers": [
+   [
+    4,
+    9693
+   ],
+   [
+    4,
+    9741
+   ]
+  ],
+  "sources": [
+   "quests 9694, 9779, 9696, 9698, 9699, 9700, 9703, 9748, 9746, 9740, 9741 descriptions and rewards",
+   "page_text 2943 (Declaration from the Sun King)"
+  ],
+  "notes": "Converted: the opening keeps Boros's lessons and the document (quests 9694, 9779 descriptions, 9694 completion and reward). The translation, the portal and the spy moved to part 1 (QUEST_ACCEPT 9698, which needs 9696 turned in; the translated missive 24323 carries page_text 2943); the Warp Piston to part 2 (QUEST_DONE 9700); the Cryo-Core and the red water to part 3 (QUEST_DONE 9748, which needs 9703); the scouts' find to part 4 (QUEST_ACCEPT 9741, the second entry point, from Scout Loryi); the gate destroyed to part 5 (QUEST_DONE 9740). 9698 and 9699 were left to Bloodmyst by the Exodar. Kael'thas's letter here is the Sunhawk missive, not Azuremyst's traitor letter (9537/9602). All Alliance (AllowableRaces 1101). Before: Velen's quests 9698 and 9699 are told here but not used as triggers. 9741 is an independent entry point from Scout Loryi. Check: part 4: Jorli's wound no longer asserted from Loryi's stage direction (she points at him; he lies on the ground; the wound itself is Vindicator's Rest's, from 10065), and the part now names the sun gate itself, since 9741 has no prerequisite and can be read without part 1. Opening line on Boros reworded away from Bladewood.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The missive was in Thalassian, and Interrogator Elysia translated it: a declaration from Kael'thas Sunstrider himself, promising his Sunhawks reinforcements from Tempest Keep through a sun portal, the recapture of the Exodar and Velen's punishment. A portal to Outland would explain their endless numbers. Elysia warned too of a spy among the draenei at the Exodar, and trusting no messenger, she sent the news straight to the Prophet.",
+    "triggers": [
+     [
+      4,
+      9698
+     ]
+    ],
+    "sources": [
+     "quest 9696 reward",
+     "quest 9698 description",
+     "page_text 2943 (item 24323, given on accepting 9698)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Velen reasoned that such rifts must leave traces, and sent the recruit to look for them. Near the Warp Piston the recruit found void anomalies in such numbers that the portal must have been opened there many times.",
+    "triggers": [
+     [
+      5,
+      9700
+     ]
+    ],
+    "sources": [
+     "quest 9699 description",
+     "quest 9700 description and reward"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Meanwhile the new crash site proved to be the Cryo-Core, and it held no survivors, only blood elves. Then Vindicator Aesom had the water sampled where the island's rivers drain into the sea, and traced its red stain to fluid leaking from the Vector Coil.",
+    "triggers": [
+     [
+      5,
+      9748
+     ]
+    ],
+    "sources": [
+     "quest 9703 description and reward",
+     "quest 9748 description and reward"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "At Vindicator's Rest waited the scouts Aesom had sent to search for the blood elves' sun gate. They had found it, Scout Loryi said, and she pointed at her companion Jorli, stretched on the ground beside her. Whatever the elves bring through the portal spills void energy, and void critters swarm near it, growing into void anomalies if left alone.",
+    "triggers": [
+     [
+      4,
+      9741
+     ]
+    ],
+    "sources": [
+     "quest 9741 description and completion text",
+     "quest 10065 description",
+     "creature_template_addon 17927 (Jorli lies on the ground, bytes1 3)"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "The Sunhawks keep their gate on the move, ready to shift it at a moment's notice, but it is held steady by portal controllers. Aesom's scouts found its latest site south of the Vector Coil; the controllers were cut down, the gate destroyed, and the Sunhawks' supply line cut.",
+    "triggers": [
+     [
+      5,
+      9740
+     ]
+    ],
+    "sources": [
+     "quest 9740 description and reward"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352531,
+  "kind": 3,
+  "zone": 3525,
+  "sort": 3,
+  "faction": 1,
+  "title": "Ending Their World",
+  "body": "The Hand of Argus has learned much of its enemies. The Sunhawks are led by a being called Sironas and plot to destroy the draenei; in the end they mean to enslave the naaru O'ros and take back control of the Exodar. The sun gate is gone, and with it their supply line, but they still use the contaminant of the Vector Coil to poison the land, turning the mutagenic fallout to their advantage. Exarch Admetius has devised a plan to end the threat, and Vindicator Aesom sends the recruit to hear it.",
+  "triggers": [
+   [
+    4,
+    9753
+   ]
+  ],
+  "sources": [
+   "quests 9753, 9756, 9759, 9760, 9761, 9762 descriptions and rewards",
+   "npc_text 9137-9141 (captured agent dialogue)",
+   "creature_text 17982 (Legoso's escort), 17658"
+  ],
+  "notes": "Converted: the opening is ACCEPT 9753's description (the Exodar dropped this plan as Bloodmyst's reveal). The plan and the disguise moved to part 1 (QUEST_ACCEPT 9756, which needs 9753 turned in); the prisoner's revelations to part 2 (QUEST_DONE 9756); Legoso's mission to part 3 (QUEST_ACCEPT 9759 or 9761, trimmed to what both descriptions say; Corin's role is in Vindicator's Rest part 1); the Coil's fall and Sironas's death to part 4 (QUEST_DONE 9759); Velen's gifts to part 5 (QUEST_DONE 9762; auto-complete, so no accept trigger; left to Bloodmyst by the Exodar). The abomination stays the prisoner's brag (no such guardian is spawned). Chain is draenei only (AllowableRaces 1024). Before: Abomination recast plainly as the prisoner's brag (no such guardian is spawned in this database). Chain is draenei only (AllowableRaces 1024). Check: part 4's last sentence reworded away from Exarch Admetius part 3; smart_scripts 1765800 verified.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The plan is simple: blow up the Vector Coil. No one has gotten close enough to judge its defenses, and the captured Sunhawk will not talk; torture is out of the question. So Admetius casts a spell to make the recruit look and sound like a blood elf, a disguise that will fail outside Blood Watch, and sends them to coax the truth from the prisoner.",
+    "triggers": [
+     [
+      4,
+      9756
+     ]
+    ],
+    "sources": [
+     "quest 9753 reward",
+     "quest 9756 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The boastful prisoner talked. Sironas, he let slip, was an eredar who had lived among the draenei long enough to pass as one of them; an abomination made from a captured vindicator of the Triumvirate guarded the Coil; and the Coil had two weak points, at the bases of its western and eastern sides. Only then did he wonder how a fellow captive could know any of it.",
+    "triggers": [
+     [
+      5,
+      9756
+     ]
+    ],
+    "sources": [
+     "npc_text 9137-9141",
+     "gossip_menu_option 7531-7537"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Below the Coil, at Vindicator's Rest, Demolitionist Legoso waits to fight his way up the mountain through an army of Sunhawks and rig the core for demolition. The mission is so deadly that no one is made to take it; only a volunteer may go with him.",
+    "triggers": [
+     [
+      4,
+      9759
+     ],
+     [
+      4,
+      9761
+     ]
+    ],
+    "sources": [
+     "quest 9759 description",
+     "quest 9761 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The volunteer and Legoso fought up the mountain together and blew the first support beneath the great red crystal. Higher up they found Sironas siphoning energy out of the Coil itself; when the second support blew, she broke free and was slain. Back at Blood Watch, draenei, Stillpine and Alliance friends alike turned out to hail the champion.",
+    "triggers": [
+     [
+      5,
+      9759
+     ]
+    ],
+    "sources": [
+     "creature_text 17982, 17678, 17658",
+     "smart_scripts 1765800"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "Velen himself spoke to the hero afterward. These islands will be home to thousands, he said, most of whom will stay all their lives, but that is not the hero's path: there are greater deeds ahead. He gave them the tabard worn only by the Hand's most revered and the signet ring of its wisest sages.",
+    "triggers": [
+     [
+      5,
+      9762
+     ]
+    ],
+    "sources": [
+     "quest 9762 reward"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352532,
+  "kind": 3,
+  "zone": 3525,
+  "sort": 4,
+  "faction": 1,
+  "title": "The Fate of Saruan",
+  "body": "Many families were aboard the Exodar, and few have found one another again. Morae, the herbalist of Blood Watch, is still searching for her husband Galaen, who worked as a technician in the Cryo-Core. That section of the ship now lies in wreckage west of the outpost, crawling with blood elves. Even word that he is dead, she says, would be better than not knowing. Her sister gave the couple matching pendants, so if Galaen is found, he will be wearing the twin of hers. Since the crash, her life aboard the ship has come to seem a lifetime past.",
+  "triggers": [
+   [
+    4,
+    9578
+   ]
+  ],
+  "sources": [
+   "quest 9578 description",
+   "quest 9579 description and reward",
+   "creature_text 17426 (Galaen's spirit)",
+   "page_text 2937",
+   "quest 9706 description and reward",
+   "npc_text 9034"
+  ],
+  "notes": "Converted: the opening keeps Morae's request (quest 9578 description) and her gossip (npc_text 9034). The body and spirit moved to part 1 (QUEST_ACCEPT 9579: the spirit is summoned when it is taken); the amulet and Morae's grief to part 2 (QUEST_DONE 9579); the journal to part 3 (QUEST_ACCEPT 9706, which needs only 9578); Kuros to part 4 (QUEST_DONE 9706). Dialogue check: npc_text 9034 holds nothing from later builds. Before: verified Check: opening reworded so it does not repeat Morae's opening; part 3 reworded away from Matis the Cruel's opening (page_text 2939: flesh flayed from his bones).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Among the wreckage lay the body of a technician, its clothing torn open by looters and the pendant gone. His spirit lingered long enough to speak: he had survived the crash, only to be killed by the infiltrators, and his last thought was of Morae. The blood elves, it seemed, had his jeweled amulet.",
+    "triggers": [
+     [
+      4,
+      9579
+     ]
+    ],
+    "sources": [
+     "quest 9578 reward",
+     "quest 9579 description",
+     "creature_text 17426",
+     "smart_scripts 17508"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The amulet was won back from the Sunhawks and brought to Morae, who confessed she had known on some level but would not let herself believe it, and thanked the one who had found him.",
+    "triggers": [
+     [
+      5,
+      9579
+     ]
+    ],
+    "sources": [
+     "quest 9579 reward"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Nearby lay Galaen's journal. Its final pages told of Vindicator Saruan of the Triumvirate, beaten senseless by the Sunhawks while a cruel lieutenant named Matis looked on as if it were nothing. Matis feared for his own skin, Galaen wrote: Sironas, who had plans for Saruan, would flay him if the prisoner died. The writing ended in a long line trailing off the page.",
+    "triggers": [
+     [
+      4,
+      9706
+     ]
+    ],
+    "sources": [
+     "page_text 2937-2940 (item 24237)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Vindicator Kuros wept as he read it. Saruan had been his master, teacher and mentor, and Kuros had taken his place among the Triumvirate only after the search for him was given up. His grief turned to anger at the name of Matis.",
+    "triggers": [
+     [
+      5,
+      9706
+     ]
+    ],
+    "sources": [
+     "quest 9706 reward"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352533,
+  "kind": 3,
+  "zone": 3525,
+  "sort": 5,
+  "faction": 1,
+  "title": "The Bloodcurse",
+  "body": "Admiral Odesyus has had a strange visitor. One night an apparition stood in his tent: Edward Hanes, once captain of the Lost Hope, a man the admiral knew had been dead of scurvy for two decades. What the ghost told him left Odesyus shaken, and it came with a task. With a trembling hand the admiral asks a friend to seek out the captain on Wyrmscar Island, northeast of Blood Watch, sending word in person on Azuremyst or by letter through the messenger at Blood Watch.",
+  "triggers": [
+   [
+    4,
+    9751
+   ],
+   [
+    4,
+    9672
+   ],
+   [
+    4,
+    9674
+   ]
+  ],
+  "sources": [
+   "quests 9751, 9672, 9674, 9682, 9683 descriptions and rewards",
+   "creature_text 17715"
+  ],
+  "notes": "Converted: the opening keeps the summons (quests 9751, 9672 descriptions; 9671 for the messenger). Hanes's tale moved to part 1 (QUEST_DONE 9751 or 9672; ACCEPT 9674, the third entry trigger, needs one of them, since both name 9674 as NextQuestID); the naga history and the first two tasks to part 2 (QUEST_DONE 9682, which needs 9674); Atoph's death to part 3 (QUEST_DONE 9683). KILL 17715 not used: the souls' gratitude is not seen at the fight. Entry triggers unchanged. Before: Curse no longer pinned on the naga outright (only implied by 9674). 9751 is offered by Odesyus on Azuremyst; 9672 is the same summons sent by mail to Blood Watch through Messenger Hermesius (9671); 9674 follows either. Check: opening reworded so it does not repeat Captain Edward Hanes's opening. ACCEPT 9674 confirmed: 9672 and 9751 both carry NextQuestID 9674, which adds each to 9674's prerequisites (ObjectMgr), and either one rewarded satisfies it (ExclusiveGroup 9672 is one-from-all; Player::SatisfyQuestPreviousQuest).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Hanes had a grim tale. He died on these shores, he scoffed, not of scurvy but as food for the dragons. Off the island lies the Bloodcursed Reef, its water spoiled and desecrated; the bloodcurse sank every ship there, and the souls it claimed are trapped in the reef still.",
+    "triggers": [
+     [
+      5,
+      9751
+     ],
+     [
+      5,
+      9672
+     ]
+    ],
+    "sources": [
+     "quest 9751 and 9672 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "When the world was sundered, Hanes said, this land cried loudest; thousands of night elves faded away, and in their place rose the naga, loyal to their twisted queen Azshara and bent on destroying all who sailed their sea. The bloodcursed naga were driven from the reef, and then the hopeless ones, ghosts of voyagers taken by the curse, were destroyed so that their souls could rest.",
+    "triggers": [
+     [
+      5,
+      9682
+     ]
+    ],
+    "sources": [
+     "quest 9674 description",
+     "quest 9682 description and reward"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Last, the statue of Azshara on Bloodcurse Isle was burned in effigy, drawing out Atoph the Bloodcursed, leader of the naga, to his death. Hundreds of souls, Hanes said, were grateful.",
+    "triggers": [
+     [
+      5,
+      9683
+     ]
+    ],
+    "sources": [
+     "quest 9683 description and reward",
+     "creature_text 17715"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352534,
+  "kind": 3,
+  "zone": 3525,
+  "sort": 6,
+  "faction": 1,
+  "title": "The Dragon Riders of Loreth'Aran",
+  "body": "For ten thousand years the ghost of Prince Toreth has kept watch on Wyrmscar Island. In his lifetime Ysera, Aspect of the Dream, gifted his kingdom with her brood, and his people rode green dragons into battle for centuries, until Ysera's favor roused the ire of Deathwing and the black dragonflight fell on them as they slept. The greens rose to protect their riders, and none were spared. Now the once tranquil owlkin of Ragefeather Ridge, across the Crimson Reach, have been coming to the island to steal the dragons' bones, and the spirits of the brood have grown restless at the sacrilege.",
+  "triggers": [
+   [
+    4,
+    9687
+   ]
+  ],
+  "sources": [
+   "quests 9687, 9688, 9689 descriptions and rewards",
+   "npc_text 9058, 9059"
+  ],
+  "notes": "Converted: the owlkin ritual moved to part 1 (QUEST_DONE 9687); the whelps released to part 2 (QUEST_DONE 9688); Razormaw to part 3 (QUEST_DONE 9689). Opening keeps Toreth's history (npc_text 9058, 9059) and the theft (9687 description). Dialogue check: npc_text 9058, 9059 hold nothing from later builds. Before: verified",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The bones were recovered from the owlkin camps, and with them came word of some ritual. Toreth was appalled that a flock which had lived in harmony with the land for thousands of years could do such a thing.",
+    "triggers": [
+     [
+      5,
+      9687
+     ]
+    ],
+    "sources": [
+     "quest 9687 reward"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The whelps and broodlings of the island are agitated spirits, bound to the land as Toreth is and unable to rise to their rest in the Dream. Their ethereal forms were destroyed so they could be released, a reprehensible task, Toreth said, but one that had to be done.",
+    "triggers": [
+     [
+      5,
+      9688
+     ]
+    ],
+    "sources": [
+     "quest 9688 description and reward"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Then the bones were laid on the ever-burning pyre atop the island's peak, calling down the spectral Razormaw, a lieutenant of Deathwing whose hatred outlasted death. With the black dragon destroyed, Toreth gave a token of Loreth'Aran in honor of the deed.",
+    "triggers": [
+     [
+      5,
+      9689
+     ]
+    ],
+    "sources": [
+     "quest 9689 description and reward"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352535,
+  "kind": 3,
+  "zone": 3525,
+  "sort": 7,
+  "faction": 1,
+  "title": "Nolkai's Words",
+  "body": "Clopper Wizbang has no use for treasure maps, so he passed one along, a sailor's payment on a gambling debt. Crudely drawn with an unsteady hand, it tells nothing of its maker, but its wavering lines mark a little pavilion of broken columns lying west of a tower half sunk in the sea, somewhere along the island's eastern coast. Whatever lies there was important enough for the mapmaker to record. Anchorite Paetheus of Blood Watch, whose collection holds tools and knowledge from many cultures, may be the one to ask about anything it turns up.",
+  "triggers": [
+   [
+    4,
+    9550
+   ]
+  ],
+  "sources": [
+   "quests 9549 reward, 9550, 9557, 9561 descriptions and rewards",
+   "item_template 23847 (band inscription), 23852 (bag), item_loot_template 23846",
+   "npc_text 9029"
+  ],
+  "notes": "Converted: the journal found moved to part 1 (QUEST_DONE 9550); Paetheus's translation to part 2 (QUEST_ACCEPT 9561, which needs 9557 turned in); the buried box to part 3 (QUEST_DONE 9561). Opening keeps the map (quest 9549 reward, 9550 description) and adds Paetheus's collection (npc_text 9029) as a pointer. Dialogue check: npc_text 9029 holds nothing from later builds. Before: verified. 9550 'A Map to Where?' (QuestSortID 3525, AllowableRaces 1101) starts from item 23837, a reward of Clopper's 9549; it lies numerically inside 9547-9554 but is not a Call of Air quest (those are 9547, 9551-9554 and 10491, shaman only), so it does not overlap the Exodar. Who Nolkai's enemy was is never named. Check: opening reworded so it does not repeat Clopper Wizbang part 2 and Ruins of Loreth'Aran.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "There, in the ruins of Loreth'Aran, lay an old journal in an elegant script, its pages buried under the mapmaker's own tales of drunken shore leave. Only someone with an experienced eye could separate the two.",
+    "triggers": [
+     [
+      5,
+      9550
+     ]
+    ],
+    "sources": [
+     "quest 9550 reward",
+     "quest 9557 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Paetheus did. The last entry of the journal's first author, Nolkai, told of a desperate end: the enemy nearly upon them, the survivors gathered in a temple to the east for a final stand, and Nolkai's last possessions buried on its grounds in the hope that someone would one day learn what had happened there.",
+    "triggers": [
+     [
+      4,
+      9561
+     ]
+    ],
+    "sources": [
+     "quest 9557 reward",
+     "quest 9561 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The mound was still there under the grass. Inside lay a box holding a lantern, a bag that looked almost new, and a band engraved by a lover praying that Elune watch over Nolkai.",
+    "triggers": [
+     [
+      5,
+      9561
+     ]
+    ],
+    "sources": [
+     "quest 9561 reward",
+     "item_template 23847 (band inscription), 23852 (bag), item_loot_template 23846"
+    ]
+   }
+  ]
+ }
 ]

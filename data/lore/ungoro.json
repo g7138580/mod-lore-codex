@@ -1,27 +1,1358 @@
 [
-{"id": 49000, "kind": 0, "zone": 490, "sort": 0, "faction": 0, "title": "Un'Goro Crater", "body": "Un'Goro Crater is a vast sunken jungle in southern Kalimdor, ringed by cliffs, with the deserts of Tanaris to the east and the wastes of Silithus beyond its northwestern ridge. Steam rises from its pools, and at its heart the volcano of Fire Plume Ridge still smolders. Visitors say that entering it is like stepping into another world. The crater seems untouched by outside hands, and its creatures are nobler, mightier kin of beasts known elsewhere: devilsaurs and stegodons crash through the trees, ravasaurs hunt the marshes, pterrordax wheel overhead and great apes rule the northeast. Even the plants fight back, for the bloodpetals walk and lash at travelers. Stranger things lie hidden. Colored power crystals glitter across the basin, crystal pylons of legend stand in remote corners, and on the northern bluffs stand a stone terrace and a waygate tied to the titans. In the south the Gorishi silithid have dug a hive, and scholars wonder whether the silithid draw their strength from here. Most visitors shelter at Marshal's Refuge, a camp of stranded explorers in the north.", "triggers": [[1, 490]], "sources": ["quest 4294 description (lush, untainted by outside hands, explorers just discovering its secrets)", "quest 4289 description (nobler versions of creatures, cries of the Earth Mother)", "quest 4287 reward text (like a completely different world)", "quest 1124 description (Silithus west of Un'Goro via the northwestern ridge)", "quest 4493 reward text (Un'Goro west of Gadgetzan; Gracina's theory)", "quest 4502 description (volcanic activity in the middle of the crater)", "quests 4141, 4145 (bloodpetals)", "quest 3881 description", "zone_areas: devilsaur, stegodon, ravasaur, pterrordax, gorilla, Gorishi spawns; power crystal objects; Shaper's Terrace 4382 and Waygate 4381", "warcraft.wiki.gg/wiki/Un'Goro_Crater", "warcraft.wiki.gg/wiki/Shaper's_Terrace (WotLK northern terrace, titan-related, builder not stated)"], "notes": "Fact-check: 'northern caves' made 'rule the northeast' (Fungal Rock and U'cha's cave lie in the northeast); the terrace no longer said to be built by the titans (wiki: titan-related, builder not stated). Freya, Uldum and Nablya stay out."},
-{"id": 49001, "kind": 1, "zone": 490, "sort": 1, "faction": 0, "title": "Marshal's Refuge", "body": "Marshal's Refuge is a camp on high ground at the northern edge of the crater, where Marshal Expeditions fled when the beasts overran its base camps. It has become a home for the lost and stranded, where some arrive with a purpose and others by accident. A gnome with no memory lingers among the tents, two travelers who refuse to speak to each other trade pranks, and a castaway named Shizzle, too frightened of gryphons to fly home, builds a flying machine. J.D. Collie studies crystals in a nearby cave, the kodo Dadanga hopes for a snack of bloodpetal sprouts, and Gadgetzan bruisers guard the interests of Gadgetzan. Words written on a stone warn simply: beware of pterrordax.", "triggers": [[1, 541]], "sources": ["zone_areas area 541: Williden 9270, Hol'anyee 9271, Spark 9272, Petra Grossen 9273, Dadanga 9274, Linken 8737, Larion 9118, Muigin 9119, Spraggle 9997, Shizzle 9998, Quixxil 10977, Gryfe 10583, Gadgetzan Bruiser 9460, Beware of Pterrordax 174682", "quest 3884 description (sought higher ground once their base camps were overrun)", "npc_text 3546 (Spraggle: some come here with a purpose, others by accident)", "quest 4503 description (Shizzle)", "quest 3941 description (J.D. in the cave)", "npc_text 3793, quest 5150 (Dadanga and bloodpetal sprouts)", "npc_text 9774 (Gadgetzan Bruiser)", "quest 4501 completion text", "warcraft.wiki.gg/wiki/Marshal_Expeditions (Dadanga a kodo)", "warcraft.wiki.gg/wiki/Dadanga (kodo)"], "notes": "Fact-check: Linken 'lingers' (he does not wander); Shizzle's trade 'tinker' made 'castaway' (unsupported); bruisers guard Gadgetzan interests per npc_text 9774 ('cartel' unsupported). Dadanga a kodo per wiki."},
-{"id": 49002, "kind": 1, "zone": 490, "sort": 2, "faction": 0, "title": "Lakkari Tar Pits", "body": "Just south of Marshal's Refuge lie the Lakkari Tar Pits, black pools of sticky tar. Creatures of living tar drag themselves out of the muck, from creepers and lurkers to hulking tar lords, while bloodpetal flayers root along the banks and pterrordax circle above. Tran'rek, a schemer in Gadgetzan, wants the tar these beasts carry rather than ordinary pitch, sure that the chlorophyll in their skin makes it uncommonly sticky. Near the pits stands the Northern Crystal Pylon, one of the three great pylons the crater's few residents whisper about. Here too the engineer Karna Remtravel waits near the refuge, hoping for news of her lost mechanical ape.", "triggers": [[1, 538]], "sources": ["zone_areas area 538: Tar Beast, Tar Creeper, Tar Lurker, Tar Lord, Bloodpetal Flayer, Thresher, Pterrordax; Northern Crystal Pylon 164955; Karna Remtravel 9618", "quest 4504 description and reward text (tar from the beasts, chlorophyll in their skin, super sticky)", "quest 4285 description (northern pylon fairly close)", "npc_text 2810 (pylons a source of legend)", "quest 4243 description", "warcraft.wiki.gg/wiki/Lakkari_Tar_Pits (just south of Marshal's Refuge)", "warcraft.wiki.gg/wiki/Karna_Remtravel (at the entrance to Marshal's Refuge)"], "notes": "Fact-check: 'stickier than any glue' toned to 'uncommonly sticky' (4504). Rest verified; Karna stands in area 538 by the refuge entrance."},
-{"id": 49003, "kind": 1, "zone": 490, "sort": 3, "faction": 0, "title": "Fungal Rock", "body": "East of Marshal's Refuge, Fungal Rock is the lair of the great apes of Un'Goro, where gorillas, stompers and thunderers roam the slopes. The tauren hunter Torwa Pathfinder counts their pelts a fair test of strength, but the greater test waits in a cave at the edge of their land, home of the huge red ape he calls U'cha, in his eyes one of the Earth Mother's greatest sons, with arms as thick as tree trunks. Here the engineer Karna Remtravel lost her mechanical ape, A-Me 01, after an alpha male rushed up to greet it. The apes seem to have accepted the dented machine: one sleepy thunderer has been seen curling up beside her to snore.", "triggers": [[1, 542]], "sources": ["quest 4243 description (Fungal Rock, the apes' lair, just east of here; alpha male)", "quest 4289 description (great apes to the north)", "quest 4301 description and completion text (U'cha, cave, huge and red, teeth the size of daggers, arms as thick as tree trunks)", "creature_text 6516 (thunderer lies down and cuddles up next to A-Me 01)", "quest 4243 reward text (two dents)", "zone_areas area 542: Un'Goro Stomper, Gorilla, Thunderer; posarea: U'cha 9622, Uhk'loc 6585 and A-Me 01 9623 stand at the edge of 542 in area 490"], "notes": "Fact-check: verified. U'cha 9622 and A-Me 01 9623 stand in area 490 just outside the 542 boundary, beside the 542 thunderers, so 'at the edge of their land' holds."},
-{"id": 49004, "kind": 1, "zone": 490, "sort": 4, "faction": 0, "title": "Fire Plume Ridge", "body": "Fire Plume Ridge is the smoldering volcano at the heart of the crater, south of Marshal's Refuge. Living blazes and scorching elementals walk its burned slopes, and the lava lake at its summit is said to be hot enough to fuse thorium and bone. The inventor Krakle had its hot spots measured with a thermometer of his own design, and the readings tied the volcano to the warmth of the Golakka springs. On the ridge dwells Blazerunner, a powerful fire elemental who guards the Golden Flame in a cave there behind an aura no one has broken; many who tried were thrown from the rocky paths. The explorer Ringo wandered here too, and the heat soon left him fainting.", "triggers": [[1, 537]], "sources": ["zone_areas area 537: Living Blaze 6521, Scorching Elemental 6520, Krakle's Thermometer 10541 hot spots, Blazerunner 9376, Ringo 9999", "quests 5801/5802 description (lava lake up top hot enough to fuse thorium and bone)", "quest 974 description and reward text", "quest 3962 description and log text (Golden Flame in the cave)", "quest 4005 reward text (charred center, aura, pushed from the rocky paths)", "quest 4492 description (volcano south of the refuge)", "quest 4491 description", "quest 4502 description"], "notes": "Fact-check: Krakle did not take the readings himself (974: he is scared of the elementals); reworded. Rest verified."},
-{"id": 49005, "kind": 1, "zone": 490, "sort": 5, "faction": 0, "title": "Golakka Hot Springs", "body": "In the west of the crater, steaming pools and geysers make up the Golakka Hot Springs. The inventor Krakle camps on their shore, puzzling over where the heat comes from. He suspects Fire Plume Ridge, though he is too scared of its fire elementals to take the readings himself, and he points the curious to his friend Donova Snowden, who stays by hot springs in Winterspring with no volcano anywhere near them. Pterrordax, diemetradons and stegodons come down to the water, and the Western Crystal Pylon stands nearby. A cheerful woman named Simone strolls these shores with her growling pet Precious, but hunters sent by an ancient of Felwood learn she is an agent of the Burning Legion in disguise.", "triggers": [[1, 543]], "sources": ["quest 974 description and completion text", "quest 980 description (Winterspring springs with no volcano, Donova Snowden)", "zone_areas area 543: Krakle 10302, Frenzied Pterrordax, Elder Diemetradon, Plated Stegodon, Western Crystal Pylon 164956, Simone the Inconspicuous 14527, Precious 14528", "npc_text 7041, 7042 (Simone, Precious)", "quest 7636 description (Vartrus: demonic corrupters, agents of the Burning Legion)", "creature_template 14533 Simone the Seductress, 14538 Precious the Devourer; 14528 is type demon", "warcraft.wiki.gg/wiki/Golakka_Hot_Springs (western Un'Goro)", "quest 7636 log text and completion text (Simone the Seductress, disguises)", "warcraft.wiki.gg/wiki/Simone_the_Inconspicuous"], "notes": "Fact-check: Donova 'stays by' the Winterspring springs (980), 'studies' unsupported. Simone as a Legion agent verified: 7636 names Simone the Seductress among the Legion's demonic corrupters and warns of their disguises; 14533/14538 are demons; wiki confirms she was removed only in 4.0.3a. 7636 used as context only."},
-{"id": 49006, "kind": 1, "zone": 490, "sort": 6, "faction": 0, "title": "Terror Run", "body": "Terror Run, in the southwest of the crater, earned its name honestly. Herds of stegodons, plated, spiked and thunderstomping, crash among the trees, elder diemetradons bask nearby and frenzied pterrordax wheel overhead, while a great beast called Gruff roams among them. Marshal Expeditions came here to dig for the bones of long-dead stegodons and diemetradons, only to find plenty of living ones as well, and their reluctant chief digger declared the name fantastic, and did not mean it as praise. Dinosaur bones still lie scattered across the ground, and some of the research equipment the expedition left behind when it fled can still be found here. Gorishi reavers and workers stray up from the hive to the east.", "triggers": [[1, 539]], "sources": ["quest 3882 description (Terror Run, FANTASTIC name, dead and live stegodons and diemetradons)", "quest 3881 description (supplies left behind)", "zone_areas area 539: Stegodon, Plated, Spiked, Thunderstomp Stegodon, Elder Diemetradon, Frenzied Pterrordax, Gruff 6583 (rank 2), Dinosaur Bone 161527 x14, Research Equipment 161521, Gorishi Reaver, Worker", "warcraft.wiki.gg/wiki/Terror_Run (southwestern Un'Goro, just west of the Slithering Scar)", "warcraft.wiki.gg/wiki/Gruff (rare stegodon, Terror Run)"], "notes": "Fact-check: 'far more plentiful' made 'plenty of living ones as well' (3882). Gruff is a rare stegodon per wiki; kept as 'a great beast' (DB: beast, rank 2, spawn in 539)."},
-{"id": 49007, "kind": 1, "zone": 490, "sort": 7, "faction": 0, "title": "The Slithering Scar", "body": "The Slithering Scar is a great silithid hive gouged into the south of the crater, the home of the insects called the Gorishi. Workers, wasps, stingers, tunnelers and reavers swarm through its tunnels, and the ore in its walls comes smeared with ooze. Deep inside lie larval hatcheries hung with dangling spawn, and a brood mother called Clutchmother Zavas prowls the hive. Hol'anyee Marshal finds the Gorishi entirely alien to the ecology of Un'Goro and wants to know why they are here at all. Alchemist Pestlezugg of Gadgetzan believes a crystal in the hatcheries attunes the whole hive, and suspects that the silithid answer to some malign intelligence beyond it.", "triggers": [[1, 540]], "sources": ["zone_areas area 540: Gorishi Reaver, Worker, Wasp, Tunneler, Stinger, Gorishi Egg, Clutchmother Zavas 6582 (rank 4), Ooze Covered Truesilver Deposit", "quest 3883 description (alien to the ecology, larval hatcheries, hanging larval spawns)", "quest 4507 description and completion text (crystal, hive-wide attunement device, malign intelligence)", "quest 13903 description (Slithering Scar in the south)", "warcraft.wiki.gg/wiki/The_Slithering_Scar (Gorishi hive)"], "notes": "Fact-check: Zavas no longer placed 'among the eggs' (only her spawn point and name support her); rest verified."},
-{"id": 49008, "kind": 1, "zone": 490, "sort": 8, "faction": 0, "title": "The Marshlands", "body": "The Marshlands spread across the southeast of the crater, close to where the road from Tanaris comes down into the jungle. Hunters and runners stalk the reeds, venomhide ravasaurs carry poison in their blood, spit and skin, and their nests lie scattered across the fen under the eye of a fearsome matriarch. Above them all is Lar'korwi, the dominant male whose name means sharp claw. At the southeastern edge of the marsh the trainer Mor'vek raises venomhide hatchlings for riders patient enough to earn one. The Eastern Crystal Pylon stands in these wetlands, and on the shore of a small pond lies a wrecked raft, the first clue to the story of a gnome who lost his memory.", "triggers": [[1, 1942]], "sources": ["zone_areas area 1942: Ravasaur, Ravasaur Hunter, Runner, Venomhide Ravasaur, Ravasaur Matriarch 6581 (rank 4), Venomhide Egg, Ravasaur Matriarch's Nest, Mor'vek 11701, Eastern Crystal Pylon 164957, A Wrecked Raft 161505, A Small Pack 161504, Un'Goro Flat Rock 169217, Fresh Threshadon Carcass 166863", "quest 9063 description (road from Tanaris enters the crater)", "quest 13850 description (poison blood, spit, skin)", "quest 4291 description (dominant male)", "npc_text 2835 (sharp claw)", "quest 3844 description (wrecked raft by a small pond)", "warcraft.wiki.gg/wiki/The_Marshlands (southeast, often the first area encountered)"], "notes": "Fact-check: Mor'vek is at the southeastern edge of the marsh (13887), not 'the far side'. Garl Stormclaw and Ithis Moonwarden (Cataclysm) stay out."},
-{"id": 49009, "kind": 1, "zone": 490, "sort": 9, "faction": 0, "title": "The Shaper's Terrace", "body": "High on the bluffs above Marshal's Refuge lies the Shaper's Terrace, a great expanse of stonework tied to the titans. Beside it stands a titan waygate that joins Un'Goro to Sholazar Basin, far away in Northrend. On the terrace looms the Etymidian, a stone colossus made by the titans, silent and inert, with an empty rune-shaped slot in its chest. It is not alone. Death's Hand acolytes of the Cult of the Damned have taken the terrace, and their leader, High Cultist Herenn, keeps to the overlook nearby. He knows the colossus is the one being that could stand against the armies of the Scourge, and he is determined that it never reach Northrend.", "triggers": [[1, 4382], [1, 4381]], "sources": ["zone_areas area 4382: Death's Hand Acolyte 28602 x10, The Etymidian 28092; area 4381 Waygate", "quest 12546 description (one of the most destructive forces ever created by the titans)", "quest 12548 description (Waygate activated for the first time in seven centuries)", "quest 12561 description (Sholazar, the cradle of life)", "quest 12547 description (rune-shaped slot, Omega Rune inside the Shaper's Terrace)", "creature_text 28601 (High Cultist Herenn)", "warcraft.wiki.gg/wiki/Shaper's_Terrace (added in 3.0.2, on the bluffs above Marshal's Refuge, Cult of the Damned, Herenn holds the Omega Rune)", "quest 12547 description (inactive colossus, empty rune-shaped slot, nearby overlook)", "creature_text 28601 (Herenn)"], "notes": "Fact-check: rewritten to what 3.3.5 shows in Un'Goro (terrace, waygate, the inert Etymidian with its empty rune slot from 12547, the Death's Hand acolytes and Herenn's yell). Dropped the Sholazar chain details (waygate waking after seven centuries, 12548; Freya's 'most destructive force', 12546) and 'cradle of life' (12561 means Sholazar). 'Vast work of the titans' softened: the wiki does not name the builder. Both areas confirmed in 3.3.5 (added 3.0.2) and reachable; acolytes and Etymidian spawned in 4382. 12546-12548, 12561, 12797 unused."},
-{"id": 49010, "kind": 2, "zone": 490, "sort": 1, "faction": 0, "title": "Linken", "body": "Linken is a gnome who turned up in Un'Goro with no idea how he got there. He remembers traveling, and a raft, and little else. The refugees find him friendly and a little strange: unlike most gnomes he shows no interest in gadgets, and he sometimes greets people with a demand for payment before catching himself. Asked how he came to the crater, he can only say that it is a secret to everybody. In truth he is a warrior on the last step of a long journey, come to defeat the fire elemental Blazerunner and take the Golden Flame back to his homeland. Whoever restores his memory and his sword earns the title he bestows: hero of Un'Goro Crater.", "triggers": [[2, 8737]], "sources": ["npc_text 2633 (not sure how I got here, a raft)", "npc_text 2634 (Pay me and I'll talk)", "npc_text 2635 (hero of Ungoro Crater)", "quest 3908 description (it's a secret to everybody)", "quest 3961 description (not interested in experiments or gadgets like most gnomes; a true warrior at heart)", "quest 3962 description and reward text (journey, last step, Golden Flame returned to my homeland)", "warcraft.wiki.gg/wiki/Linken (gnome warrior, raft crash)"], "notes": "Fact-check: verified."},
-{"id": 49011, "kind": 2, "zone": 490, "sort": 2, "faction": 0, "title": "J.D. Collie", "body": "J.D. Collie is a gnome who has made a cave at Marshal's Refuge her home, though she cannot say how she came to the crater. She spends her days on the colored power crystals that lie all over Un'Goro, certain they hold a power everyone else ignores. Her experiments rarely go to plan. Many end in a yelp of pain and a promise that the last thirteen tries were only practice, and now and then she wonders aloud whether she should go back downstream. She admits she will believe almost anything she is told, including tales of great crystal pylons in the wilds. She was kind to Linken when he first stumbled in, and remembers what he mumbled.", "triggers": [[2, 9117]], "sources": ["npc_text 2817 (cave is my home now, can't say how I got here, studies crystals)", "creature_text 9117 (OW, last 13 tries were just practice, go back downstream)", "quest 4284 description", "quest 4285 description (call me gullible, I'll usually believe anything)", "quest 3941 description (J.D. was very kind to me when I first arrived)", "quest 3942 description", "warcraft.wiki.gg/wiki/J.D._Collie (female gnome)", "creature_template_model 9117 display 8478, creature_model_info Gender 1"], "notes": "Fact-check: 'most' experiments made 'many'. Gnome per 3941; female per display 8478 (Gender 1). Indoor cave (posarea area 0), TALK kept."},
-{"id": 49012, "kind": 2, "zone": 490, "sort": 3, "faction": 0, "title": "Williden and Hol'anyee Marshal", "body": "Williden Marshal and his sister Hol'anyee lead Marshal Expeditions, a troupe of scientists and explorers aligned with no faction who travel Azeroth in search of its wild and untamed majesty. Williden is the leader, still able to welcome a stranger warmly in the middle of disaster. Hol'anyee is the chief scientist and biologist, who holds that a setback is no reason for research to stop. Un'Goro was meant to be their greatest venture, and it has become their worst. They underestimated the savagery of the crater, lost their camps and most of what they brought, and now wait out their troubles at the refuge, while their chief digger offers his gold teeth to anyone who will carry him away.", "triggers": [[2, 9270], [2, 9271]], "sources": ["npc_text 3096 (Williden: my sister, our companions, scientists and explorers)", "npc_text 3095 (Hol'anyee: chief scientist and biologist, my brother)", "quest 3881 description (non-aligned expedition troupe, latest and greatest endeavor, underestimated the savagery)", "quest 3883 description (setback does not stop research)", "quest 3884 reward text (lost like almost everything else)", "npc_text 3094 (Spark: gold teeth)", "warcraft.wiki.gg/wiki/Marshal_Expeditions"], "notes": "Fact-check: verified."},
-{"id": 49013, "kind": 2, "zone": 490, "sort": 4, "faction": 0, "title": "Torwa Pathfinder", "body": "Torwa Pathfinder is a tauren hunter who camps where the road from Tanaris enters the crater. To him Un'Goro cries of the Earth Mother: its creatures seem nobler versions of the beasts of his homeland, and he thanks the spirits of every one that falls. He measures others not by race or calling but by the testing of spirit and mind against nature, and he respects any who can stand against the crater's great beasts. The ravasaur Lar'korwi killed his brother not far from his camp. Torwa has also sought druids for a gentler purpose, a toxin of bloodcap, Gorishi stings and Un'Goro soil to calm the devilsaurs, since killing one only lets another take its territory.", "triggers": [[2, 9619]], "sources": ["npc_text 2816 (race and profession mean nothing, testing of spirit and mind)", "quest 4289 description and reward text (cries of the Earth Mother, nobler versions, thank the spirits)", "quest 9063 description (requested the help of a druid; road from Tanaris)", "quests 9052, 9051, 9053 (bloodcap, Gorishi stings, Un'Goro soil; pacify the devilsaurs; another moves into its territory)", "quest 4290 description (brother killed not far from this spot)", "warcraft.wiki.gg/wiki/Torwa_Pathfinder (tauren hunter)"], "notes": "Fact-check: verified. Druid chain 9063, 9051-9053 told without triggers; no finished zone uses or tells it."},
-{"id": 49014, "kind": 2, "zone": 490, "sort": 5, "faction": 0, "title": "Karna Remtravel", "body": "Karna Remtravel is a dwarf engineer camped near Marshal's Refuge who finds the crater simply amazing, though not quite as amazing as the things she can build. Like her uncle Remtravel, who loves old places, she dreams of discovering new things from lost cultures. To study the apes up close she built a mechanical ape, A-Me 01, with scrying gems for eyes so that Karna could see all she saw. A-Me reached Fungal Rock before the link failed, the last image an alpha male rushing up to say hello. When she was found, A-Me was dented and her mithril casing burnt out, but a new casing brought her back, and she picked her way home murmuring that A-Me is good.", "triggers": [[2, 9618], [2, 9623]], "sources": ["npc_text 2734 (amazing, engineering, uncle Remtravel loves old stuff, lost cultures)", "quest 4243 description and reward text", "quest 4244 description and reward text (mithril casing burnt out)", "creature_text 9623 (A-Me good, home)", "quest 4245 reward text", "npc_text 2735", "warcraft.wiki.gg/wiki/Karna_Remtravel (dwarf, female, uncle Remtravel)", "creature_template_model 9618 display 8831, creature_model_info Gender 1", "warcraft.wiki.gg/wiki/Karna_Remtravel"], "notes": "Fact-check: A-Me leads the way home in the escort (creature_text 9623), so 'followed' made 'picked her way'. Dwarf female per wiki; female confirmed by display 8831 (Gender 1). 'Her uncle Remtravel' only, so darkshore.json's Prospector Remtravel is not retold."},
-{"id": 49015, "kind": 2, "zone": 490, "sort": 6, "faction": 0, "title": "Spraggle Frock and Ringo", "body": "Spraggle Frock greets newcomers to Marshal's Refuge with the thought that some arrive with a purpose and some by accident, but everyone there has a story. Hers is one of fright. She never worried about the crater's beasts until she found the words 'beware of pterrordax' written on a large stone, and now she will not leave the refuge until someone thins their numbers. Her friend Ringo is bolder, or less careful. He went to explore the volcano to the south and stayed far too long, until the heat left him faint on the slopes of Fire Plume Ridge. Spraggle sent her canteen with whoever would look for him, for a splash of water brings him round.", "triggers": [[2, 9997], [2, 9999]], "sources": ["npc_text 3546 (Spraggle gossip)", "quest 4501 completion and reward text", "quest 4492 description", "quest 4491 description", "creature_text 9999 and 9997", "warcraft.wiki.gg/wiki/Spraggle_Frock (female)", "warcraft.wiki.gg/wiki/Spraggle_Frock (female goblin)"], "notes": "Fact-check: verified. Spraggle female per display 11389 (Gender 1) and wiki (goblin; race left unstated). Ringo male (display 9340)."},
-{"id": 49016, "kind": 2, "zone": 490, "sort": 7, "faction": 2, "title": "Mor'vek", "body": "Mor'vek is a ravasaur trainer who keeps a camp in the southeast of the Marshlands and raises the venomhide ravasaurs of Un'Goro as mounts. It is not a trade for the impatient. Venomhides are poison through and through, in blood, spit and skin, and anyone who climbs onto one unprepared falls off dead within hours. Mor'vek sells a hatchling only to one who has built up a tolerance by being splashed with their poisoned blood again and again, and who can then find the rare light-shelled eggs in the marsh nests, which grow fewer with every clutch. The hatchling must be hand-fed until it sheds its baby teeth. Few have that dedication, he says, but the venomhides are worth it.", "triggers": [[2, 11701]], "sources": ["quest 13850 description and reward text", "quest 13887 description and reward text (lighter colored shells; fewer with each clutch)", "quest 13906 description and reward text (baby teeth, few have the dedication)", "npc_text 14474", "quests 13889, 13903, 13904, 13905 (hatchling feeding)", "creature_template 11701 subname Ravasaur Trainers, faction 126", "factiontemplate_dbc 126"], "notes": "Fact-check: Mor'vek's tolerance comes from poisoned blood (13850), not venom. Faction 2 confirmed: template 126 has EnemyGroup 2 (hostile to the Alliance), 13850 AllowableRaces 690."},
-{"id": 49017, "kind": 2, "zone": 490, "sort": 8, "faction": 0, "title": "Blazerunner", "body": "Blazerunner is the fire elemental who dwells on Fire Plume Ridge in the charred center of the crater. To Eridan Bluewind of the Emerald Circle he is evil in its purest form. He guards the Golden Flame, an artifact of vast power kept in a cave there, and with it he has raised an aura that no one has been able to penetrate. The residents of Marshal's Refuge keep their distance, for many who tried to face him were pushed from the rocky paths to the ground below. Only a totem shaped by the summoned elemental Aquementas can strip that protection away, and it was to face Blazerunner that the gnome Linken made his long journey.", "triggers": [[3, 9376]], "sources": ["quest 4084 description (evil of the purest form, aura none can dispel)", "quest 4005 description and reward text (charred center, aura, pushed from the rocky paths; totem to fight Blazerunner)", "quest 3962 description and completion text (guards the Golden Flame, aura created using it)", "quest 3961 description", "DB: 9376 faction 91, rank 1, area 537", "factiontemplate_dbc 91"], "notes": "Fact-check: 'his strength comes from the Golden Flame' overstated; 3962 says only that he guards it and made his aura with it. Faction 0: template 91 EnemyGroup 1, hostile and killable for both."},
-{"id": 49018, "kind": 3, "zone": 490, "sort": 1, "faction": 0, "title": "It's a Secret to Everybody", "body": "On the shore of a small pond in the Marshlands lies a wrecked raft, though the pond seems far too small to have carried it. In the water lies a sodden pack, and its contents lead to Marshal's Refuge and to Linken, a gnome who finds them familiar, kind of. One memory stirs: his sword was to be strengthened. He sends it to Donova Snowden at the hot springs of Winterspring, who tempers it and learns with alarm that Linken has lost his memory. Finishing the blade needs help from one the living cannot see. Gregan Brewspewer of Feralas brews a Videre Elixir from evoroot, and whoever drinks it at the graveyard outside Gadgetzan walks in spirit due north to the ghost Gaeriyan, who waits in a rocky crevice of the mountains. He tells of a gravestone that slides aside to reveal a hollow shaped for the sword. Laid there, the blade is transformed in a flash of light. Linken is delighted to have it back, though he still cannot remember why he needed it.", "triggers": [[4, 3844]], "sources": ["quests 3844, 3845, 3908, 3909, 4041, 3912, 3913, 3914 (descriptions, request and reward texts)", "feralas.json 35714 (Miblon guards the evoroot) and 35713 (Gregan, no triggers)"], "notes": "Fact-check: Gaeriyan waits in a rocky crevice of the mountains due north (3912), not 'rocky hills'. Gregan's 4041 told without a trigger; feralas.json only mentions him."},
-{"id": 49019, "kind": 3, "zone": 490, "sort": 2, "faction": 0, "title": "The Golden Flame", "body": "Still unable to recall why he came, Linken sends a helper to J.D. Collie in her cave, hoping he let something slip when he first arrived. He did: he had mumbled of making a totem and of a druid named Eridan Bluewind in Felwood. Eridan does not know him, but she knows what he sought. In the heart of Un'Goro, the fire elemental Blazerunner hides behind an aura none can dispel. For silvery claws and the heart of an irontree, she gives over the Book of Aquor, to be read from a circle of stones on the eastern point of Lost Rigger Cove in Tanaris. The elemental Aquementas is not pleased to be woken, but within the circle it forges the Silver Totem of Aquementas. The totem brings back the last of Linken's memory. This was to be the final step of his journey, yet he declares that the hero now is the one who helped him, and warns that it is dangerous to go alone. With Blazerunner fallen, the Golden Flame goes home to Linken's land to be guarded.", "triggers": [[4, 3941]], "sources": ["quests 3941, 3942, 4084, 4005, 3961, 3962 (descriptions, completion and reward texts)", "felwood.json 36119 (Eridan Bluewind, Un'Goro quests mentioned without triggers)"], "notes": "Fact-check: verified. Felwood's Eridan entry (36119) is not retold; this tells only the Linken chain."},
-{"id": 49020, "kind": 3, "zone": 490, "sort": 3, "faction": 0, "title": "Marshal Expeditions", "body": "Marshal Expeditions came to Un'Goro on what was meant to be its greatest venture and met disaster after disaster. The crater's beasts overran its base camps in the southwest and the northeast, and the troupe fled for higher ground, leaving behind its food, its research equipment and even Williden Marshal's journal, later found mangled in the wilds. At the refuge, the expedition clings to its purpose. Williden needs the crate of foodstuffs and some of the equipment recovered if anyone is to survive. His sister Hol'anyee wants a scraping from the walls of the Gorishi hatcheries, to learn why the silithid are in the crater at all. Spark Nilminer, the reluctant chief digger, is meant to bring back bones of long-dead stegodons and diemetradons from Terror Run. Privately he admits that bones from living ones will do just as well, and asks that no one mention it. Meanwhile the kodo Dadanga waits hopefully for a meal of bloodpetal sprouts.", "triggers": [[4, 3881], [4, 3882], [4, 3883], [4, 3884]], "sources": ["quests 3881, 3882, 3883, 3884 (descriptions, completion and reward texts)", "quest 5150 texts, npc_text 3793 (Dadanga)", "npc_text 3094"], "notes": "Fact-check: verified."},
-{"id": 49021, "kind": 3, "zone": 490, "sort": 4, "faction": 0, "title": "Crystals of Power", "body": "Power crystals of red, blue, yellow and green lie all over the crater, and most people ignore them. J.D. Collie does not. Certain they hold power, she experiments endlessly in her cave at Marshal's Refuge and sends out collectors when her supply runs low. She has also heard rumors of mysterious pylons standing in the wilds, large and lined with crystals inside, and she is sure the stories are true. Searchers find all three: the northern pylon by the tar pits, the eastern in the Marshlands and the western near the Golakka springs. To the crater's few residents they are a mystery and a source of legend. From what is learned, J.D. works out how each pylon fuses two colors into one charm. One heals, one steadies the spirit, one hardens the body against blows, one weakens a foe's defenses, one bursts in a stunning blast and one raises a shield that strikes back at attackers. She sets it all down in a manual for those who would use them.", "triggers": [[4, 4284]], "sources": ["quests 4284, 4285, 4287, 4288, 4321 (descriptions and reward texts)", "quests 4381-4386 completion texts", "npc_text 2810, 2834, 2836, 2837, 2933", "zone_areas: pylons 164955 (538), 164957 (1942), 164956 (543)"], "notes": "Fact-check: verified. 4285, 4287, 4288 need 4284 (PrevQuestID), so 4284 is the only entry."},
-{"id": 49022, "kind": 3, "zone": 490, "sort": 5, "faction": 0, "title": "Torwa's Trials", "body": "Torwa Pathfinder grants his respect only to those who prove themselves against the crater's greatest beasts. The first test lies north among the great apes, whose pelts will clothe his tribe; after it he speaks of U'cha, a huge red ape in their cave and one of the Earth Mother's greatest sons. The hardest test is Lar'korwi, dominant male of the ravasaurs, whose name means sharp claw. Long ago Torwa's brother took meat from one of its kills. The beast followed him for days, and when he fled the crater it killed him not far from Torwa's camp. To draw Lar'korwi out, a hunter must repeat the offense, stealing meat from its freshest kill, an oddly placed threshadon, and then the scent glands of its mates from beside their eggs. Laid together on a trail in the hills, among the bones of massive creatures, the two lures bring the beast into the open. Its head earns Torwa's highest praise.", "triggers": [[4, 4289], [4, 4290]], "sources": ["quests 4289, 4301, 4290, 4291, 4292 (descriptions, completion and reward texts)", "npc_text 2835 (taurahe, sharp claw)"], "notes": "Fact-check: verified. 4289 and 4290 have no prerequisites, both entry points."},
-{"id": 49023, "kind": 3, "zone": 490, "sort": 6, "faction": 0, "title": "The Gorishi Hive Queen", "body": "Gracina Spiritmight in Darnassus and Zilzibin Drumlore in Orgrimmar came to the same suspicion: the silithid draw their strength from Un'Goro Crater. Alchemist Pestlezugg of Gadgetzan, who had already studied the bugs of Tanaris, thought it worth finding out. His research told him the silithid are like bees, and that killing a hive's queen should throw the rest into disarray. He brewed a lure from Un'Goro soil and an undamaged scent gland taken from the Gorishi of the Slithering Scar. Inside the hatcheries waits a crystal the insects seem to use to attune the whole hive, and the lure set upon it brings the Gorishi Hive Queen out among her guards. Pestlezugg wanted her brain, for he had come to believe the silithid answer to a malign intelligence. Even in victory he was uneasy, warning that so clean an end could not be the full extent of their presence. Word of the hunt went back to the scholars who had first sent for help.", "triggers": [[4, 4496]], "sources": ["quests 4493, 4494 descriptions and reward texts (Gracina, Zilzibin)", "quest 4496 description, completion and reward text", "quest 4507 description, completion and reward text", "quests 4510, 4511 descriptions (assumption wrong, far stronger presence)", "tanaris.json 44030 (Pestlezugg's earlier study)"], "notes": "Fact-check: closing line about a stronger presence elsewhere (4510/4511) dropped, as darnassus.json's Gracina entry tells it; now ends with the word of the hunt going back to the scholars (4508/4509 turn-ins, unused). 4496 has no prerequisite (4493/4494 only lead to it), so it opens to both sides. 4508 unused."},
-{"id": 49024, "kind": 3, "zone": 490, "sort": 7, "faction": 0, "title": "The Bloodpetal Feud", "body": "Larion and Muigin set out together and ended up lost in Un'Goro, and each blames the other. Larion says he knew the way until Muigin insisted on a shortcut; Muigin says he warned Larion they were going the wrong way. Now they camp a few steps apart at Marshal's Refuge, neither willing to speak first. Muigin has turned to mischief. Convinced the bloodpetals have a scrap of intelligence, he sent one to his friend Gregan Brewspewer, an herbalist who left Ironforge for the quiet of the Feralas wilds, and on Gregan's advice he tamed the sprouts with Atal'ai haze from the sunken temple in the Swamp of Sorrows. The pests now plague Larion night and day. Larion fights back. His friend Marvon Rivetseeker of Ratchet was away among the troll ruins of Tanaris, but Marvon's apprentice had built a bug zapper that runs on the same haze. Muigin admits he knows the way home, but he will not leave until Larion says he was right.", "triggers": [[4, 4141], [4, 4145]], "sources": ["quests 4141, 4142, 4143, 4144 (Muigin, Alliance) and 4145, 4147, 4146, 4148 (Larion, Horde): descriptions, completion and reward texts", "quest 4502 description (Liv, apprentice to Marvon)", "npc_text 6741 (Larion: pests night and day)", "creature_text 9119"], "notes": "Fact-check: verified. 4141 AllowableRaces 1101 (Muigin, template 210 hostile to the Horde) and 4145 AllowableRaces 690 (Larion, template 106 hostile to the Alliance): one entry per side, faction 0."}
+  {
+    "id": 49000,
+    "kind": 0,
+    "zone": 490,
+    "sort": 0,
+    "faction": 0,
+    "title": "Un'Goro Crater",
+    "body": "Un'Goro Crater is a vast sunken jungle in southern Kalimdor, ringed by cliffs, with the deserts of Tanaris to the east and the wastes of Silithus beyond its northwestern ridge. Steam rises from its pools, and at its heart the volcano of Fire Plume Ridge still smolders. Visitors say that entering it is like stepping into another world. The crater seems untouched by outside hands, and its creatures are nobler, mightier kin of beasts known elsewhere: devilsaurs and stegodons crash through the trees, ravasaurs hunt the marshes, pterrordax wheel overhead and great apes rule the northeast. Even the plants fight back, for the bloodpetals walk and lash at travelers. Stranger things lie hidden. Colored power crystals glitter across the basin, and crystal pylons of legend stand in remote corners. In the south the Gorishi silithid have dug a hive, and scholars wonder whether the silithid draw their strength from here. Most visitors shelter at Marshal's Refuge, a camp of stranded explorers in the north.",
+    "triggers": [
+      [
+        1,
+        490
+      ]
+    ],
+    "sources": [
+      "quest 4294 description (lush, untainted by outside hands, explorers just discovering its secrets)",
+      "quest 4289 description (nobler versions of creatures, cries of the Earth Mother)",
+      "quest 4287 reward text (like a completely different world)",
+      "quest 1124 description (Silithus west of Un'Goro via the northwestern ridge)",
+      "quest 4493 reward text (Un'Goro west of Gadgetzan; Gracina's theory)",
+      "quest 4502 description (volcanic activity in the middle of the crater)",
+      "quests 4141, 4145 (bloodpetals)",
+      "quest 3881 description",
+      "zone_areas: devilsaur, stegodon, ravasaur, pterrordax, gorilla, Gorishi spawns; power crystal objects; Shaper's Terrace 4382 and Waygate 4381",
+      "warcraft.wiki.gg/wiki/Un'Goro_Crater",
+      "warcraft.wiki.gg/wiki/Shaper's_Terrace (WotLK northern terrace, titan-related, builder not stated)"
+    ],
+    "notes": "Converted: the Shaper's Terrace and the waygate (patch 3.0.2) moved from the opening to part 1, minState 13, no triggers; mod-individual-progression hides the terrace's Death's Hand acolytes (28602, npc_ipp_wotlk) before Wrath and does not otherwise phase zone 490. Rest unchanged. Earlier: Fact-check: 'northern caves' made 'rule the northeast' (Fungal Rock and U'cha's cave lie in the northeast); the terrace no longer said to be built by the titans (wiki: titan-related, builder not stated). Freya, Uldum and Nablya stay out.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "On the northern bluffs above Marshal's Refuge stand a great stone terrace and a waygate, both tied to the titans. The waygate joins the crater to Sholazar Basin in far Northrend, and cultists of the Scourge now hold the terrace and the silent stone colossus that stands upon it.",
+        "minState": 13,
+        "sources": [
+          "zone_areas: Shaper's Terrace 4382 (Death's Hand Acolyte 28602, The Etymidian 28092) and Waygate 4381",
+          "quest 12547 description",
+          "warcraft.wiki.gg/wiki/Shaper's_Terrace (added in 3.0.2)",
+          "mod-individual-progression ipp_aware_npcs.sql (28602 npc_ipp_wotlk)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49001,
+    "kind": 1,
+    "zone": 490,
+    "sort": 1,
+    "faction": 0,
+    "title": "Marshal's Refuge",
+    "body": "Marshal's Refuge is a camp on high ground at the northern edge of the crater, where Marshal Expeditions fled when the beasts overran its base camps. It has become a home for the lost and stranded, where some arrive with a purpose and others by accident. A gnome with no memory lingers among the tents, two travelers who refuse to speak to each other sulk amid scurrying bloodpetal pests, and a castaway named Shizzle, too frightened of gryphons to fly home, builds a flying machine. J.D. Collie studies crystals in a nearby cave, the kodo Dadanga hopes for a snack of bloodpetal sprouts, and Gadgetzan bruisers guard the town's interests. Words written on a stone warn simply: beware of pterrordax.",
+    "triggers": [
+      [
+        1,
+        541
+      ]
+    ],
+    "sources": [
+      "zone_areas area 541: Williden 9270, Hol'anyee 9271, Spark 9272, Petra Grossen 9273, Dadanga 9274, Linken 8737, Larion 9118, Muigin 9119, Spraggle 9997, Shizzle 9998, Quixxil 10977, Gryfe 10583, Gadgetzan Bruiser 9460, Beware of Pterrordax 174682",
+      "quest 3884 description (sought higher ground once their base camps were overrun)",
+      "npc_text 3546 (Spraggle: some come here with a purpose, others by accident)",
+      "quest 4503 description (Shizzle)",
+      "quest 3941 description (J.D. in the cave)",
+      "npc_text 3793, quest 5150 (Dadanga and bloodpetal sprouts)",
+      "npc_text 9774 (Gadgetzan Bruiser)",
+      "quest 4501 completion text",
+      "warcraft.wiki.gg/wiki/Marshal_Expeditions (Dadanga a kodo)",
+      "warcraft.wiki.gg/wiki/Dadanga (kodo)",
+      "zone_areas area 541: Bloodpetal Pest 9157 x4"
+    ],
+    "notes": "Converted (no parts): 'trade pranks' made the visible quarrel and the pests in camp, since who sends the pests and the zapper that answers them are the Bloodpetal Feud's parts (49024). Earlier: Fact-check: Linken 'lingers' (he does not wander); Shizzle's trade 'tinker' made 'castaway' (unsupported); bruisers guard Gadgetzan interests per npc_text 9774 ('cartel' unsupported). Dadanga a kodo per wiki."
+  },
+  {
+    "id": 49002,
+    "kind": 1,
+    "zone": 490,
+    "sort": 2,
+    "faction": 0,
+    "title": "Lakkari Tar Pits",
+    "body": "Just south of Marshal's Refuge lie the Lakkari Tar Pits, black pools of sticky tar. Creatures of living tar drag themselves out of the muck, from creepers and lurkers to hulking tar lords, while bloodpetal flayers root along the banks and pterrordax circle above. Tran'rek, a schemer in Gadgetzan, wants the tar these beasts carry rather than ordinary pitch, sure that the chlorophyll in their skin makes it uncommonly sticky. Near the pits stands the Northern Crystal Pylon, one of the three great pylons the crater's few residents whisper about. Here too, close to the refuge, the dwarf engineer Karna Remtravel has pitched her camp to marvel at the crater's wonders.",
+    "triggers": [
+      [
+        1,
+        538
+      ]
+    ],
+    "sources": [
+      "zone_areas area 538: Tar Beast, Tar Creeper, Tar Lurker, Tar Lord, Bloodpetal Flayer, Thresher, Pterrordax; Northern Crystal Pylon 164955; Karna Remtravel 9618",
+      "quest 4504 description and reward text (tar from the beasts, chlorophyll in their skin, super sticky)",
+      "quest 4285 description (northern pylon fairly close)",
+      "npc_text 2810 (pylons a source of legend)",
+      "quest 4243 description",
+      "warcraft.wiki.gg/wiki/Lakkari_Tar_Pits (just south of Marshal's Refuge)",
+      "warcraft.wiki.gg/wiki/Karna_Remtravel (at the entrance to Marshal's Refuge)",
+      "npc_text 2734 (Karna: wonderful things here)"
+    ],
+    "notes": "Converted (no parts): Karna's line no longer says she is still waiting for news of A-Me 01, which stops being true once her chain ends (49014 parts). Earlier: Fact-check: 'stickier than any glue' toned to 'uncommonly sticky' (4504). Rest verified; Karna stands in area 538 by the refuge entrance."
+  },
+  {
+    "id": 49003,
+    "kind": 1,
+    "zone": 490,
+    "sort": 3,
+    "faction": 0,
+    "title": "Fungal Rock",
+    "body": "East of Marshal's Refuge, Fungal Rock is the lair of the great apes of Un'Goro, where gorillas, stompers and thunderers roam the slopes. The tauren hunter Torwa Pathfinder counts their pelts a fair test of strength, but the greater test waits in a cave at the edge of their land, home of the huge red ape he calls U'cha, in his eyes one of the Earth Mother's greatest sons, with arms as thick as tree trunks. Here the engineer Karna Remtravel lost her mechanical ape, A-Me 01, after an alpha male rushed up to greet it. The apes seem to have accepted the machine: one big thunderer keeps her company, never straying from her side.",
+    "triggers": [
+      [
+        1,
+        542
+      ]
+    ],
+    "sources": [
+      "quest 4243 description (Fungal Rock, the apes' lair, just east of here; alpha male)",
+      "quest 4289 description (great apes to the north)",
+      "quest 4301 description and completion text (U'cha, cave, huge and red, teeth the size of daggers, arms as thick as tree trunks)",
+      "creature_text 6516 (thunderer lies down and cuddles up next to A-Me 01)",
+      "quest 4243 reward text (two dents)",
+      "zone_areas area 542: Un'Goro Stomper, Gorilla, Thunderer; posarea: U'cha 9622, Uhk'loc 6585 and A-Me 01 9623 stand at the edge of 542 in area 490",
+      "creature 24081 (thunderer 6516, stationary, 3.5 yards from A-Me 01 guid 24268)"
+    ],
+    "notes": "Converted (no parts): 'dented' dropped (the dents are what 4243's turn-in finds, told in 49014 part 1). A-Me 01 and the snoring thunderer stand in plain sight. Earlier: Fact-check: verified. U'cha 9622 and A-Me 01 9623 stand in area 490 just outside the 542 boundary, beside the 542 thunderers, so 'at the edge of their land' holds. Check: the snoring thunderer made 'keeps her company': its emotes (creature_text 6516) are said only by mod-individual-progression's zone_ungoro.sql script on guid -24081, which the core lacks, so without the module it just stands beside A-Me. The line is now true with and without the module."
+  },
+  {
+    "id": 49004,
+    "kind": 1,
+    "zone": 490,
+    "sort": 4,
+    "faction": 0,
+    "title": "Fire Plume Ridge",
+    "body": "Fire Plume Ridge is the smoldering volcano at the heart of the crater, south of Marshal's Refuge. Living blazes and scorching elementals walk its burned slopes, and the lava lake at its summit is said to be hot enough to fuse thorium and bone. The inventor Krakle, camped by the Golakka springs, suspects that the volcano warms his pools and wants its hot spots measured. On the ridge dwells Blazerunner, a powerful fire elemental wrapped in an aura that the refuge's residents say none has penetrated; many who tried to face him were pushed from the rocky paths. The explorer Ringo went to explore these slopes too, and his friend Spraggle fears he has stayed too long.",
+    "triggers": [
+      [
+        1,
+        537
+      ]
+    ],
+    "sources": [
+      "zone_areas area 537: Living Blaze 6521, Scorching Elemental 6520, Krakle's Thermometer 10541 hot spots, Blazerunner 9376, Ringo 9999",
+      "quests 5801/5802 description (lava lake up top hot enough to fuse thorium and bone)",
+      "quest 974 description and reward text",
+      "quest 3962 description and log text (Golden Flame in the cave)",
+      "quest 4005 reward text (charred center, aura, pushed from the rocky paths)",
+      "quest 4492 description (volcano south of the refuge)",
+      "quest 4491 description",
+      "quest 4502 description"
+    ],
+    "notes": "Converted: Krakle's readings tying the volcano to the springs (974 turn-in) dropped from the opening; 49005 part 1 tells them. Ringo's fainting (found on 4492, 4491) dropped: the opening now has only Spraggle's worry (4492 description); 49015 tells the rest. The Golden Flame in the cave moved to part 1 on QUEST_ACCEPT 3962, where Linken reveals it. Earlier: Fact-check: Krakle did not take the readings himself (974: he is scared of the elementals); reworded. Rest verified.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "The ridge keeps a treasure in one of its caves. There lies the Golden Flame, an artifact of power more vast than anything Linken has known, and dangerous in the hands of one with an evil heart. Blazerunner guards it, and it was with the Flame that he raised the aura that makes him all but invincible.",
+        "triggers": [
+          [
+            4,
+            3962
+          ]
+        ],
+        "sources": [
+          "quest 3962 description, log text and completion text"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49005,
+    "kind": 1,
+    "zone": 490,
+    "sort": 5,
+    "faction": 0,
+    "title": "Golakka Hot Springs",
+    "body": "In the west of the crater, steaming pools and geysers make up the Golakka Hot Springs. The inventor Krakle camps on their shore, puzzling over where the heat comes from. Seeing how close the pools lie to Fire Plume Ridge, he suspects the volcano, though he is too scared of its fire elementals to take the readings himself and has built a thermometer for braver souls to carry. Pterrordax, diemetradons and stegodons come down to the water, and the Western Crystal Pylon stands nearby. A cheerful woman named Simone strolls these shores with her growling pet Precious, delighting in the beauty all around and urging everyone she meets to enjoy what life has to give.",
+    "triggers": [
+      [
+        1,
+        543
+      ]
+    ],
+    "sources": [
+      "quest 974 description and completion text",
+      "quest 980 description (Winterspring springs with no volcano, Donova Snowden)",
+      "zone_areas area 543: Krakle 10302, Frenzied Pterrordax, Elder Diemetradon, Plated Stegodon, Western Crystal Pylon 164956, Simone the Inconspicuous 14527, Precious 14528",
+      "npc_text 7041, 7042 (Simone, Precious)",
+      "creature_template 14533 Simone the Seductress, 14538 Precious the Devourer; 14528 is type demon",
+      "warcraft.wiki.gg/wiki/Golakka_Hot_Springs (western Un'Goro)",
+      "warcraft.wiki.gg/wiki/Simone_the_Inconspicuous",
+      "quest 7636 (context only: hunter-only, turned in to Vartrus in Felwood, its four demons stand in four zones)"
+    ],
+    "notes": "Converted: Krakle's result and his pointer to Donova (974 turn-in, 980) moved to part 1 on QUEST_DONE 974. Simone's true form moved to part 2 on KILL 14533 and 14538 (her and Precious's demon forms), told only as a bystander at the fight sees it: the two change into demons. The Burning Legion link and the ancient of Felwood (7636 texts) dropped, since a bystander does not learn them and 7636 is hunter-only, turned in in Felwood and shared by four demons in four zones (Artorius in Winterspring), so it is not used as a trigger here. Earlier: Fact-check: Donova 'stays by' the Winterspring springs (980), 'studies' unsupported. Simone as a Legion agent verified: 7636 names Simone the Seductress among the Legion's demonic corrupters and warns of their disguises; 14533/14538 are demons; wiki confirms she was removed only in 4.0.3a. 7636 used as context only. Check: part 2 now also tells what a bystander sees of the challenge (her laugh) and that she and Precious vanish from an unfair fight (core script), matching Draco'dar's KILL-only part; the Legion link stays out (only quest 7636 tells it; Winterspring's Artorius entry owns ACCEPT 7636).",
+    "parts": [
+      {
+        "part": 1,
+        "body": "Krakle's thermometer settled the question, or nearly. Its readings showed a clear link between the heat of the volcano and the warmth of the springs, though he means to check his equations. One puzzle leads to another: he points the curious to his friend Donova Snowden, who stays by hot springs in Winterspring with no volcano anywhere near them.",
+        "triggers": [
+          [
+            5,
+            974
+          ]
+        ],
+        "sources": [
+          "quest 974 reward text",
+          "quest 980 description (offered on the 974 turn-in)"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "Simone is not what she seems. When someone who has seen through her disguise challenges her, she laughs at the foolish request and accepts. Then the smiling stroller becomes Simone the Seductress, a demon, and her little Precious turns into Precious the Devourer, a demon beast at her side. She will have the duel on her own terms: if others pile in, the pair simply vanish.",
+        "triggers": [
+          [
+            3,
+            14533
+          ],
+          [
+            3,
+            14538
+          ]
+        ],
+        "sources": [
+          "gossip_menu_option 5868 (I am not fooled by your disguise, temptress)",
+          "creature_template 14533 Simone the Seductress and 14538 Precious the Devourer (type 3 demon, faction 90)",
+          "broadcast_text 9759, 9760 (laughs at your foolish request; As you wish)",
+          "npc_stave_of_ancients.cpp npc_simone (reveal after the challenge; unfair fight: both despawn)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49006,
+    "kind": 1,
+    "zone": 490,
+    "sort": 6,
+    "faction": 0,
+    "title": "Terror Run",
+    "body": "Terror Run, in the southwest of the crater, earned its name honestly. Herds of stegodons, plated, spiked and thunderstomping, crash among the trees, elder diemetradons bask nearby and frenzied pterrordax wheel overhead, while a great beast called Gruff roams among them. Marshal Expeditions came here to dig for the bones of long-dead stegodons and diemetradons, only to find plenty of living ones as well, and their reluctant chief digger declared the name fantastic, and did not mean it as praise. Dinosaur bones still lie scattered across the ground, and some of the research equipment the expedition left behind when it fled can still be found here. Gorishi reavers and workers stray up from the hive to the east.",
+    "triggers": [
+      [
+        1,
+        539
+      ]
+    ],
+    "sources": [
+      "quest 3882 description (Terror Run, FANTASTIC name, dead and live stegodons and diemetradons)",
+      "quest 3881 description (supplies left behind)",
+      "zone_areas area 539: Stegodon, Plated, Spiked, Thunderstomp Stegodon, Elder Diemetradon, Frenzied Pterrordax, Gruff 6583 (rank 2), Dinosaur Bone 161527 x14, Research Equipment 161521, Gorishi Reaver, Worker",
+      "warcraft.wiki.gg/wiki/Terror_Run (southwestern Un'Goro, just west of the Slithering Scar)",
+      "warcraft.wiki.gg/wiki/Gruff (rare stegodon, Terror Run)"
+    ],
+    "notes": "Unchanged in conversion: nothing to hide. Earlier: Fact-check: 'far more plentiful' made 'plenty of living ones as well' (3882). Gruff is a rare stegodon per wiki; kept as 'a great beast' (DB: beast, rank 2, spawn in 539)."
+  },
+  {
+    "id": 49007,
+    "kind": 1,
+    "zone": 490,
+    "sort": 7,
+    "faction": 0,
+    "title": "The Slithering Scar",
+    "body": "The Slithering Scar is a great silithid hive gouged into the south of the crater, the home of the insects called the Gorishi. Workers, wasps, stingers, tunnelers and reavers swarm through its tunnels, and the ore in its walls comes smeared with ooze. Deep inside lie larval hatcheries hung with dangling spawn, and a brood mother called Clutchmother Zavas prowls the hive. Hol'anyee Marshal finds the Gorishi entirely alien to the ecology of Un'Goro and wants to know why they are here at all.",
+    "triggers": [
+      [
+        1,
+        540
+      ]
+    ],
+    "sources": [
+      "zone_areas area 540: Gorishi Reaver, Worker, Wasp, Tunneler, Stinger, Gorishi Egg, Clutchmother Zavas 6582 (rank 4), Ooze Covered Truesilver Deposit",
+      "quest 3883 description (alien to the ecology, larval hatcheries, hanging larval spawns)",
+      "quest 4507 description and completion text (crystal, hive-wide attunement device, malign intelligence)",
+      "quest 13903 description (Slithering Scar in the south)",
+      "warcraft.wiki.gg/wiki/The_Slithering_Scar (Gorishi hive)"
+    ],
+    "notes": "Converted: Pestlezugg's view of the crystal moved to part 1 on QUEST_ACCEPT 4507, where he tells it; his belief in a malign intelligence (4507 request text) is left to 49023 part 2. Earlier: Fact-check: Zavas no longer placed 'among the eggs' (only her spawn point and name support her); rest verified.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "The hive has a heart of sorts. Alchemist Pestlezugg of Gadgetzan believes that a crystal in the hatcheries serves the Gorishi as a hive-wide attunement device, and that a lure set upon it will rouse the hive's queen from hiding, though never without her guards.",
+        "triggers": [
+          [
+            4,
+            4507
+          ]
+        ],
+        "sources": [
+          "quest 4507 description",
+          "gameobject 174792 Gorishi Silithid Crystal, 174793 Gorishi Hive Hatchery"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49008,
+    "kind": 1,
+    "zone": 490,
+    "sort": 8,
+    "faction": 0,
+    "title": "The Marshlands",
+    "body": "The Marshlands spread across the southeast of the crater, close to where the road from Tanaris comes down into the jungle. Hunters and runners stalk the reeds, venomhide ravasaurs carry a potent poison, and their nests lie scattered across the fen under the eye of a fearsome matriarch. Above them all is Lar'korwi, the dominant male whose name means sharp claw. At the southeastern edge of the marsh the ravasaur trainer Mor'vek keeps a lonely camp. The Eastern Crystal Pylon stands in these wetlands, and on the shore of a small pond lies a wrecked raft, though it is hard to see how so little water could ever have carried it.",
+    "triggers": [
+      [
+        1,
+        1942
+      ]
+    ],
+    "sources": [
+      "zone_areas area 1942: Ravasaur, Ravasaur Hunter, Runner, Venomhide Ravasaur, Ravasaur Matriarch 6581 (rank 4), Venomhide Egg, Ravasaur Matriarch's Nest, Mor'vek 11701, Eastern Crystal Pylon 164957, A Wrecked Raft 161505, A Small Pack 161504, Un'Goro Flat Rock 169217, Fresh Threshadon Carcass 166863",
+      "quest 9063 description (road from Tanaris enters the crater)",
+      "quest 13850 description (poison blood, spit, skin)",
+      "quest 4291 description (dominant male)",
+      "npc_text 2835 (sharp claw)",
+      "quest 3844 description (wrecked raft by a small pond)",
+      "warcraft.wiki.gg/wiki/The_Marshlands (southeast, often the first area encountered)",
+      "quest 3844 description (pond too small)"
+    ],
+    "notes": "Converted: the raft no longer named as the amnesiac gnome's (that is what 3845 reveals; 49018 tells it). Mor'vek's venomhide hatchlings (quests 13850-13906, patch 3.2.0, not gated by mod-individual-progression) moved to part 1, minState 13, no triggers; the opening keeps Mor'vek as the ravasaur trainer he is in every era, and the venomhides' poison is no longer said to be in blood, spit and skin (13850, 3.2.0 text; part 1 of 49016 tells it). Earlier: Fact-check: Mor'vek is at the southeastern edge of the marsh (13887), not 'the far side'. Garl Stormclaw and Ithis Moonwarden (Cataclysm) stay out. Check: part 1 reworded so it no longer repeats 49016 part 2 (fewer with every clutch, a 13887 turn-in line). Mor'vek: vanilla NPC removed in 2.0.1 and returned in 3.2.0 (warcraft.wiki.gg/wiki/Mor'vek); not gated by mod-individual-progression (only a vanilla stat update), so the opening keeps him as a trainer. The raft line reworded so it no longer repeats 49018's opening word for word.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "Mor'vek now trains venomhides as mounts. Their eggs lie in the ravasaur nests of the marsh, and he will sell one of the young beasts only to a rider patient enough to grow used to its poison first.",
+        "minState": 13,
+        "sources": [
+          "quests 13850, 13887, 13906 (patch 3.2.0) descriptions and reward texts",
+          "zone_areas area 1942: Venomhide Egg 195022, Young Venomhide Ravasaur 34158"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49009,
+    "kind": 1,
+    "zone": 490,
+    "sort": 9,
+    "faction": 0,
+    "requiredState": 13,
+    "title": "The Shaper's Terrace",
+    "body": "High on the bluffs above Marshal's Refuge lies the Shaper's Terrace, a great expanse of stonework tied to the titans. Beside it stands a titan waygate that joins Un'Goro to Sholazar Basin, far away in Northrend. On the terrace looms the Etymidian, a stone colossus made by the titans, silent and inert, with an empty rune-shaped slot in its chest. It is not alone. Death's Hand acolytes of the Cult of the Damned have taken the terrace, and their leader, High Cultist Herenn, keeps to the overlook nearby.",
+    "triggers": [
+      [
+        1,
+        4382
+      ],
+      [
+        1,
+        4381
+      ]
+    ],
+    "sources": [
+      "zone_areas area 4382: Death's Hand Acolyte 28602 x10, The Etymidian 28092; area 4381 Waygate",
+      "quest 12546 description (one of the most destructive forces ever created by the titans)",
+      "quest 12548 description (Waygate activated for the first time in seven centuries)",
+      "quest 12561 description (Sholazar, the cradle of life)",
+      "quest 12547 description (rune-shaped slot, Omega Rune inside the Shaper's Terrace)",
+      "creature_text 28601 (High Cultist Herenn)",
+      "warcraft.wiki.gg/wiki/Shaper's_Terrace (added in 3.0.2, on the bluffs above Marshal's Refuge, Cult of the Damned, Herenn holds the Omega Rune)",
+      "quest 12547 description (inactive colossus, empty rune-shaped slot, nearby overlook)",
+      "creature_text 28601 (Herenn)"
+    ],
+    "notes": "Converted: entry requiredState 13 (the terrace, waygate and Etymidian quests came in patch 3.0.2; mod-individual-progression hides the acolytes 28602 before Wrath, npc_ipp_wotlk; the area triggers 4382 and 4381 let backfill unlock it on reaching 13). Herenn's reason for holding the colossus (his in-combat yell, creature_text 28601) moved to part 1 on KILL 28601 and QUEST_DONE 12547 (12547 needs the Omega Rune he drops); the Etymidian waking moved to part 2 on QUEST_DONE 12547. What follows in Sholazar (12548, 12797, 12546) is left to a Sholazar file. Earlier: Fact-check: rewritten to what 3.3.5 shows in Un'Goro (terrace, waygate, the inert Etymidian with its empty rune slot from 12547, the Death's Hand acolytes and Herenn's yell). Dropped the Sholazar chain details (waygate waking after seven centuries, 12548; Freya's 'most destructive force', 12546) and 'cradle of life' (12561 means Sholazar). 'Vast work of the titans' softened: the wiki does not name the builder. Both areas confirmed in 3.3.5 (added 3.0.2) and reachable; acolytes and Etymidian spawned in 4382. 12546-12548, 12561, 12797 unused.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "Herenn does not give up the overlook quietly. As he fights he curses those who come for him as fools: they have found the only being that could stand up to the armies of the Scourge, and he swears they will never bring the Etymidian back to Northrend.",
+        "triggers": [
+          [
+            3,
+            28601
+          ],
+          [
+            5,
+            12547
+          ]
+        ],
+        "minState": 13,
+        "sources": [
+          "creature_text 28601 (in combat)",
+          "smart_scripts 28601",
+          "creature_loot_template 28601: Omega Rune 38708 (needed for 12547)"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "With the Omega Rune set into the empty slot, the colossus stirs at last and speaks: Omega Rune deployed, activation successful. Whatever it was woken for lies beyond the waygate, in the far north.",
+        "triggers": [
+          [
+            5,
+            12547
+          ]
+        ],
+        "minState": 13,
+        "sources": [
+          "quest 12547 description",
+          "creature_text 28092 (on 12547 reward)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49010,
+    "kind": 2,
+    "zone": 490,
+    "sort": 1,
+    "faction": 0,
+    "title": "Linken",
+    "body": "Linken is a gnome who turned up in Un'Goro with no idea how he got there. He remembers traveling, and a raft, and little else. The refugees find him friendly and a little strange: unlike most gnomes he shows no interest in gadgets or experiments, and he sometimes greets people with a demand for payment before catching himself. Asked how he came to the crater, he can only say that it is a secret to everybody. All he is sure of is that he came here for something important.",
+    "triggers": [
+      [
+        2,
+        8737
+      ]
+    ],
+    "sources": [
+      "npc_text 2633 (not sure how I got here, a raft)",
+      "npc_text 2634 (Pay me and I'll talk)",
+      "quest 3908 description (it's a secret to everybody)",
+      "quest 3961 description (not interested in experiments or gadgets like most gnomes; a true warrior at heart)",
+      "quest 3962 description and reward text (journey, last step, Golden Flame returned to my homeland)",
+      "warcraft.wiki.gg/wiki/Linken (gnome warrior, raft crash)",
+      "quest 3941 description (I know I came here for something important)"
+    ],
+    "notes": "Converted: his true purpose (Blazerunner, the Golden Flame, last step of a journey) moved to part 1 on QUEST_ACCEPT 3962, where he remembers; the Flame sent home to part 2 on QUEST_DONE 3962. The 'hero of Ungoro Crater' line (npc_text 2635) dropped: no gossip menu uses that text in this database (menu 1961 holds 2633 and 2634 only); part 1 keeps 3962's 'you are the hero'. Earlier: Fact-check: verified. Check: part 1 reworded to avoid repeating 49019 part 4 and 49004/49017 (all on ACCEPT 3962). npc_text 2635 confirmed unused: menu 1961 holds 2633 and 2634 only, Linken has no script, no condition or module change adds it.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "At last his memory returns. Linken came to Un'Goro to fight the fire elemental Blazerunner, keeper of the Golden Flame, and that fight was to end a long journey. Yet he says he is no longer the hero. The hero is whoever brought his memory back, who must now finish what he began, and he warns that it is no task to attempt alone.",
+        "triggers": [
+          [
+            4,
+            3962
+          ]
+        ],
+        "sources": [
+          "quest 3962 description",
+          "quest 3961 description (a true warrior at heart)"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "With Blazerunner beaten, Linken sends the Golden Flame back to his homeland, where it will be protected and never again used for evil. He is deeply grateful to the one who did it, for without that help, he says, he would still have no idea who he is.",
+        "triggers": [
+          [
+            5,
+            3962
+          ]
+        ],
+        "sources": [
+          "quest 3962 reward text"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49011,
+    "kind": 2,
+    "zone": 490,
+    "sort": 2,
+    "faction": 0,
+    "title": "J.D. Collie",
+    "body": "J.D. Collie is a gnome who has made a cave at Marshal's Refuge her home, though she cannot say how she came to the crater. She spends her days on the colored power crystals that lie all over Un'Goro, certain they hold a power everyone else ignores. Her experiments rarely go to plan. Many end in a yelp of pain and a promise that the last thirteen tries were only practice, and now and then she wonders aloud whether she should go back downstream. She admits she will believe almost anything she is told, including tales of great crystal pylons in the wilds. Linken remembers that she was kind to him when he first stumbled in.",
+    "triggers": [
+      [
+        2,
+        9117
+      ]
+    ],
+    "sources": [
+      "npc_text 2817 (cave is my home now, can't say how I got here, studies crystals)",
+      "creature_text 9117 (OW, last 13 tries were just practice, go back downstream)",
+      "quest 4284 description",
+      "quest 4285 description (call me gullible, I'll usually believe anything)",
+      "quest 3941 description (J.D. was very kind to me when I first arrived)",
+      "quest 3942 description",
+      "warcraft.wiki.gg/wiki/J.D._Collie (female gnome)",
+      "creature_template_model 9117 display 8478, creature_model_info Gender 1"
+    ],
+    "notes": "Converted: 'remembers what he mumbled' dropped (what Linken mumbled is the 3942 reveal, 49019 part 1); her success with the pylons added as part 1 on QUEST_DONE 4321. npc_text 2817, 2833 and creature_text 9117 reread: classic. Earlier: Fact-check: 'most' experiments made 'many'. Gnome per 3941; female per display 8478 (Gender 1). Indoor cave (posarea area 0), TALK kept.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "Her persistence pays off in the end. Once all three pylons have been found, J.D. works through her calculations and declares that she has finally figured it out. She sets down how the crystals and the pylons work in a manual, and gladly answers any question about them.",
+        "triggers": [
+          [
+            5,
+            4321
+          ]
+        ],
+        "sources": [
+          "quest 4321 description and reward text",
+          "creature_text 9117 group 2 (I have finally figured it out)",
+          "npc_text 2833 (gossip after 4321)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49012,
+    "kind": 2,
+    "zone": 490,
+    "sort": 3,
+    "faction": 0,
+    "title": "Williden and Hol'anyee Marshal",
+    "body": "Williden Marshal and his sister Hol'anyee lead Marshal Expeditions, a troupe of scientists and explorers aligned with no faction who travel Azeroth in search of its wild and untamed majesty. Williden is the leader, still able to welcome a stranger warmly in the middle of disaster. Hol'anyee is the chief scientist and biologist, who holds that a setback is no reason for research to stop. Un'Goro was meant to be their greatest venture, and it has become their worst. They underestimated the savagery of the crater, lost their camps and most of what they brought, and now wait out their troubles at the refuge, while their chief digger offers his gold teeth to anyone who will carry him away.",
+    "triggers": [
+      [
+        2,
+        9270
+      ],
+      [
+        2,
+        9271
+      ]
+    ],
+    "sources": [
+      "npc_text 3096 (Williden: my sister, our companions, scientists and explorers)",
+      "npc_text 3095 (Hol'anyee: chief scientist and biologist, my brother)",
+      "quest 3881 description (non-aligned expedition troupe, latest and greatest endeavor, underestimated the savagery)",
+      "quest 3883 description (setback does not stop research)",
+      "quest 3884 reward text (lost like almost everything else)",
+      "npc_text 3094 (Spark: gold teeth)",
+      "warcraft.wiki.gg/wiki/Marshal_Expeditions"
+    ],
+    "notes": "Unchanged in conversion: nothing to hide (the camps lost and the stranding are what they tell on meeting). npc_text 3094-3096 reread: classic. Earlier: Fact-check: verified."
+  },
+  {
+    "id": 49013,
+    "kind": 2,
+    "zone": 490,
+    "sort": 4,
+    "faction": 0,
+    "title": "Torwa Pathfinder",
+    "body": "Torwa Pathfinder is a tauren hunter who camps where the road from Tanaris enters the crater. To him Un'Goro cries of the Earth Mother: its creatures seem nobler versions of the beasts of his homeland, and he thanks the spirits of every one that falls. He measures others not by race or calling but by the testing of spirit and mind against nature, and he respects any who can stand against the crater's great beasts. The ravasaur Lar'korwi killed his brother not far from his camp. Torwa has also sought druids for a gentler purpose, a toxin of bloodcap, Gorishi stings and Un'Goro soil to calm the devilsaurs, since killing one only lets another take its territory.",
+    "triggers": [
+      [
+        2,
+        9619
+      ]
+    ],
+    "sources": [
+      "npc_text 2816 (race and profession mean nothing, testing of spirit and mind)",
+      "quest 4289 description and reward text (cries of the Earth Mother, nobler versions, thank the spirits)",
+      "quest 9063 description (requested the help of a druid; road from Tanaris)",
+      "quests 9052, 9051, 9053 (bloodcap, Gorishi stings, Un'Goro soil; pacify the devilsaurs; another moves into its territory)",
+      "quest 4290 description (brother killed not far from this spot)",
+      "warcraft.wiki.gg/wiki/Torwa_Pathfinder (tauren hunter)"
+    ],
+    "notes": "Unchanged in conversion: his brother's death is backstory he tells on offering 4290, and the druid toxin is told only as its purpose, not its outcome. npc_text 2816 reread: classic. Earlier: Fact-check: verified. Druid chain 9063, 9051-9053 told without triggers; no finished zone uses or tells it."
+  },
+  {
+    "id": 49014,
+    "kind": 2,
+    "zone": 490,
+    "sort": 5,
+    "faction": 0,
+    "title": "Karna Remtravel",
+    "body": "Karna Remtravel is a dwarf engineer camped near Marshal's Refuge who finds the crater simply amazing, though not quite as amazing as the things she can build. Like her uncle Remtravel, who loves old places, she dreams of discovering new things from lost cultures. To study the apes up close she built a mechanical ape, A-Me 01, with scrying gems for eyes so that Karna could see all she saw. A-Me reached Fungal Rock before the link failed, the last image an alpha male rushing up to say hello.",
+    "triggers": [
+      [
+        2,
+        9618
+      ],
+      [
+        2,
+        9623
+      ]
+    ],
+    "sources": [
+      "npc_text 2734 (amazing, engineering, uncle Remtravel loves old stuff, lost cultures)",
+      "quest 4243 description and reward text",
+      "quest 4244 description and reward text (mithril casing burnt out)",
+      "creature_text 9623 (A-Me good, home)",
+      "quest 4245 reward text",
+      "npc_text 2735",
+      "warcraft.wiki.gg/wiki/Karna_Remtravel (dwarf, female, uncle Remtravel)",
+      "creature_template_model 9618 display 8831, creature_model_info Gender 1",
+      "warcraft.wiki.gg/wiki/Karna_Remtravel"
+    ],
+    "notes": "Converted: finding A-Me dented and dead (4243 turn-in, 4244) moved to part 1 on QUEST_ACCEPT 4244; her repair and walk home to part 2 on QUEST_DONE 4245. npc_text 2734, 2735 reread: classic. Earlier: Fact-check: A-Me leads the way home in the escort (creature_text 9623), so 'followed' made 'picked her way'. Dwarf female per wiki; female confirmed by display 8831 (Gender 1). 'Her uncle Remtravel' only, so darkshore.json's Prospector Remtravel is not retold.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "A-Me 01 stands at the edge of the apes' land, two huge dents in her shoulder and head and no power running through her. A panel on her back slides open on plain instructions: replace the mithril casing, then turn her off and on again.",
+        "triggers": [
+          [
+            4,
+            4244
+          ]
+        ],
+        "sources": [
+          "quest 4243 reward text",
+          "quest 4244 description"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "The old mithril casing had burnt out. With a new one in place and the switch flipped off and on, A-Me woke and picked her way home, murmuring that A-Me is good, and Karna welcomed her back, promising to see to all those dents.",
+        "triggers": [
+          [
+            5,
+            4245
+          ]
+        ],
+        "sources": [
+          "quest 4244 reward text",
+          "creature_text 9623",
+          "quest 4245 reward text"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49015,
+    "kind": 2,
+    "zone": 490,
+    "sort": 6,
+    "faction": 0,
+    "title": "Spraggle Frock and Ringo",
+    "body": "Spraggle Frock greets newcomers to Marshal's Refuge with the thought that some arrive with a purpose and some by accident, but everyone there has a story. Hers is one of fright. She never worried about the crater's beasts until she found the words 'beware of pterrordax' written on a large stone, and now she will not leave the refuge until someone thins their numbers. Her friend Ringo is bolder, or less careful. He set out to explore the volcano to the south and has been gone far too long, and Spraggle offers her canteen to anyone who will look for him, sure that he will need it.",
+    "triggers": [
+      [
+        2,
+        9997
+      ],
+      [
+        2,
+        9999
+      ]
+    ],
+    "sources": [
+      "npc_text 3546 (Spraggle gossip)",
+      "quest 4501 completion and reward text",
+      "quest 4492 description",
+      "quest 4491 description",
+      "creature_text 9999 and 9997",
+      "warcraft.wiki.gg/wiki/Spraggle_Frock (female)",
+      "warcraft.wiki.gg/wiki/Spraggle_Frock (female goblin)"
+    ],
+    "notes": "Converted: Ringo's fainting and the canteen's use (found on 4492, told in 4491) moved to part 2 on QUEST_ACCEPT 4491; his return to part 3 on QUEST_DONE 4491; Spraggle's relief over the pterrordax added as part 1 on QUEST_DONE 4501. npc_text 3546 and creature_text 9997, 9999 reread: classic. Earlier: Fact-check: verified. Spraggle female per display 11389 (Gender 1) and wiki (goblin; race left unstated). Ringo male (display 9340).",
+    "parts": [
+      {
+        "part": 1,
+        "body": "Spraggle's fear eases a little once the frenzied pterrordax are thinned. She is still absolutely terrified of the beasts, she admits, but with fewer of them about she might feel safe enough to venture out of Marshal's Refuge at last.",
+        "triggers": [
+          [
+            5,
+            4501
+          ]
+        ],
+        "sources": [
+          "quest 4501 reward text"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "Ringo is found on the slopes of Fire Plume Ridge, overcome by the heat and sure he is suffering from heat exhaustion. He thinks he can follow a guide back to the refuge, though he may faint again on the way, and a splash of water from Spraggle's canteen should bring him round.",
+        "triggers": [
+          [
+            4,
+            4491
+          ]
+        ],
+        "sources": [
+          "quest 4492 reward text",
+          "quest 4491 description",
+          "creature_text 9999"
+        ]
+      },
+      {
+        "part": 3,
+        "body": "Ringo made it back, soaked and unsteady but alive, and greeted Spraggle as one who had not expected to see her again. She has him home not in the best of shape, but in one piece, and is glad of whoever brought him.",
+        "triggers": [
+          [
+            5,
+            4491
+          ]
+        ],
+        "sources": [
+          "quest 4491 reward text",
+          "creature_text 9999 group 3, 9997 group 0"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49016,
+    "kind": 2,
+    "zone": 490,
+    "sort": 7,
+    "faction": 2,
+    "title": "Mor'vek",
+    "body": "Mor'vek is a ravasaur trainer who keeps a lonely camp at the southeastern edge of the Marshlands, not far from where the road from Tanaris enters the crater. Around him hunt the ravasaurs of Un'Goro, kin of the raptors of the Barrens, clever and volatile beasts said to keep a code of their own. Among them are the venomhides, whose bite carries a potent poison.",
+    "triggers": [
+      [
+        2,
+        11701
+      ]
+    ],
+    "sources": [
+      "npc_text 14474",
+      "npc_text 2835 (Torwa: ravasaurs related to the raptors of the Barrens, intelligent, volatile, a code of conduct)",
+      "creature_template 6508 Venomhide Ravasaur (Venomhide Poison 14792)",
+      "DB: Mor'vek 11701 at map 71.2,73.7, Torwa 9619 at 71.6,75.9",
+      "creature_template 11701 subname Ravasaur Trainers, faction 126",
+      "factiontemplate_dbc 126",
+      "creature_model_info display 11667 Gender 0",
+      "quest 13850 description and reward text",
+      "quest 13887 description and reward text (lighter colored shells; fewer with each clutch)",
+      "quest 13906 description and reward text (baby teeth, few have the dedication)"
+    ],
+    "notes": "Converted: the venomhide mount training (quests 13850, 13887, 13906, patch 3.2.0; mod-individual-progression does not gate them, and they are open from level 48) moved to parts 1-3 with minState 13 on QUEST_ACCEPT 13850, QUEST_DONE 13887 and QUEST_DONE 13906. Mor'vek (11701) and his title are older, so the opening keeps him as a ravasaur trainer among the venomhides, true in every era; his gossip (npc_text 14474, dedication) shows in every state and is kept. Earlier: Fact-check: Mor'vek's tolerance comes from poisoned blood (13850), not venom. Faction 2 confirmed: template 126 has EnemyGroup 2 (hostile to the Alliance), 13850 AllowableRaces 690. Check: his gossip line (npc_text 14474, menu 10438, patch 3.2.0) moved out of the opening into new part 1, minState 13, no triggers, so classic and Burning Crusade readers do not see 3.2.0 text; old parts 1-3 renumbered 2-4. Mor'vek is a vanilla NPC (wiki: removed 2.0.1, returned 3.2.0) and the module does not gate him, 13850-13906 or the venomhides.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "Mor'vek now sells venomhides as mounts to those who can earn one, and he warns every visitor that it takes a great deal of dedication to train and ride such a beast.",
+        "minState": 13,
+        "sources": [
+          "npc_text 14474 (gossip menu 10438, patch 3.2.0)",
+          "warcraft.wiki.gg/wiki/Mor'vek (returned in 3.2.0)"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "It is not a trade for the impatient. The beasts are poison through and through, in blood, spit and skin, and anyone who climbs onto one unprepared falls off dead within hours. He sells only to one who has built up a tolerance by being splashed with their poisoned blood again and again.",
+        "triggers": [
+          [
+            4,
+            13850
+          ]
+        ],
+        "minState": 13,
+        "sources": [
+          "quest 13850 description and reward text"
+        ]
+      },
+      {
+        "part": 3,
+        "body": "A tolerance is only the start. The rider must find the rare light-shelled eggs in the marsh nests, which grow fewer with every clutch, and raise the hatchling under Mor'vek's guidance, for venomhides are vicious and must be trained from the moment they hatch.",
+        "triggers": [
+          [
+            5,
+            13887
+          ]
+        ],
+        "minState": 13,
+        "sources": [
+          "quest 13887 description and reward text"
+        ]
+      },
+      {
+        "part": 4,
+        "body": "The hatchling must be hand-fed until it has shed all its baby teeth. Then Mor'vek fits the saddle and trains it to answer a whistle. Few have the dedication to hand-feed and raise a venomhide, he says, but they are well worth the effort.",
+        "triggers": [
+          [
+            5,
+            13906
+          ]
+        ],
+        "minState": 13,
+        "sources": [
+          "quest 13906 description and reward text",
+          "quests 13889, 13903, 13904, 13905, 13914-13917 (hatchling feeding)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49017,
+    "kind": 2,
+    "zone": 490,
+    "sort": 8,
+    "faction": 0,
+    "title": "Blazerunner",
+    "body": "Blazerunner is a great fire elemental who dwells on Fire Plume Ridge, the smoldering volcano in the charred center of Un'Goro Crater. Living blazes and scorching elementals walk the burned slopes around him, but he is far stronger than any of them, wrapped in a fiery aura of his own, and those who close with him on the rocky paths of the ridge are met with bursts of searing flame.",
+    "triggers": [
+      [
+        3,
+        9376
+      ]
+    ],
+    "sources": [
+      "zone_areas area 537: Living Blaze, Scorching Elemental, Blazerunner 9376",
+      "smart_scripts 9376 (Blazerunner's Aura on reset, Blast Wave within 10 yards)",
+      "quest 4084 description (evil of the purest form, aura none can dispel)",
+      "quest 4005 description and reward text (charred center, aura, pushed from the rocky paths; totem to fight Blazerunner)",
+      "quest 3962 description and completion text (guards the Golden Flame, aura created using it)",
+      "quest 3961 description",
+      "DB: 9376 faction 91, rank 1, area 537",
+      "factiontemplate_dbc 91"
+    ],
+    "notes": "Converted: the opening is now only what a bystander at the KILL 9376 trigger sees (a fire elemental on the ridge, his aura, his blasts of flame). Eridan's verdict moved to part 1 on QUEST_ACCEPT 4084; the totem and the refuge's caution to part 2 on QUEST_DONE 4005; the Golden Flame and Linken's journey to part 3 on QUEST_ACCEPT 3962. Earlier: Fact-check: 'his strength comes from the Golden Flame' overstated; 3962 says only that he guards it and made his aura with it. Faction 0: template 91 EnemyGroup 1, hostile and killable for both. Check: 'burns fiercer' softened to 'far stronger' (elite, 'a strong elemental' in 4005); Blast Wave holds with and without the module (core: within 10 yards; module zone_ungoro.sql: in combat). Parts 1-3 reworded so they no longer repeat 49019 parts 2-3 (ACCEPT 4084, DONE 4005), 49004's opening and 49004/49010 part 1 (ACCEPT 3962) word for word.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "The druid Eridan Bluewind of the Emerald Circle names Blazerunner the purest evil. No one can dispel the aura that shields him, she warns, unless they hold power enough for the task, and she can teach how such power is gained.",
+        "triggers": [
+          [
+            4,
+            4084
+          ]
+        ],
+        "sources": [
+          "quest 4084 description"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "That power is the Silver Totem of Aquementas, forged by the summoned elemental Aquementas from claws and an irontree's heart gathered in Felwood, and made to fight Blazerunner. J.D. Collie admits that everyone at the refuge gives him a wide berth: his aura has never been broken, and many who challenged him were thrown down from the ridge's paths.",
+        "triggers": [
+          [
+            5,
+            4005
+          ]
+        ],
+        "sources": [
+          "quest 4005 description and reward text",
+          "quest 3962 completion text (only the Silver Totem of Aquementas can remove it)",
+          "smart_scripts 9376 (spellhit 14247 removes aura 13913)"
+        ]
+      },
+      {
+        "part": 3,
+        "body": "Blazerunner is more than a wild flame. In a cave on the ridge he keeps the Golden Flame, a relic of immense power, and it was by its power that he made the aura around him. The gnome Linken's long journey was meant to end in a fight with him.",
+        "triggers": [
+          [
+            4,
+            3962
+          ]
+        ],
+        "sources": [
+          "quest 3962 description and completion text",
+          "quest 3961 description"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49018,
+    "kind": 3,
+    "zone": 490,
+    "sort": 1,
+    "faction": 0,
+    "title": "It's a Secret to Everybody",
+    "body": "On the shore of a small pond in the Marshlands lies a wrecked raft. The pond seems far too small to have carried it, though a look at the trees around it suggests the water has not always stood at the same level. Whoever rode the raft is nowhere to be seen, and a little exploring in and around the water may turn up a clue to who it was. A few stray travelers have gathered at Marshal's Refuge to the north, and one of them may know more.",
+    "triggers": [
+      [
+        4,
+        3844
+      ]
+    ],
+    "sources": [
+      "quests 3844, 3845, 3908, 3909, 4041, 3912, 3913, 3914 (descriptions, request and reward texts)",
+      "feralas.json 35714 (Miblon guards the evoroot) and 35713 (Gregan, no triggers)"
+    ],
+    "notes": "Converted: the opening is the raft and the pond (3844). Parts on the steps where each is revealed: 1 the pack, Linken and the sword (QUEST_ACCEPT 3908, which follows the 3845 turn-in); 2 Donova and Gregan (QUEST_ACCEPT 3909); 3 the elixir and Gaeriyan (QUEST_ACCEPT 3912, which needs the elixir from 4041); 4 the gravestone and the flash of light (QUEST_ACCEPT 3914); 5 Linken's delight (QUEST_DONE 3914). Gregan's 4041 is auto-complete and told without a trigger. Earlier: Fact-check: Gaeriyan waits in a rocky crevice of the mountains due north (3912), not 'rocky hills'. Gregan's 4041 told without a trigger; feralas.json only mentions him.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "At the bottom of the pond lies a water-logged pack, and its contents lead to Linken at Marshal's Refuge, a gnome who finds them familiar, kind of. One memory stirs: his sword was meant to be strengthened, though he cannot say why. He sends it to Donova Snowden, who can temper it by the hot springs of Winterspring.",
+        "triggers": [
+          [
+            4,
+            3908
+          ]
+        ],
+        "sources": [
+          "quest 3844 reward text",
+          "quest 3845 description and reward text",
+          "quest 3908 description"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "Donova tempers the blade, and learns with alarm that Linken has lost his memory, for he is not usually one to forget things. The sword is still not complete. One being can finish it, but speaking with him will be difficult: it needs a Videre Elixir, and only Gregan Brewspewer, camped in the wilds of Feralas, knows how to make one.",
+        "triggers": [
+          [
+            4,
+            3909
+          ]
+        ],
+        "sources": [
+          "quest 3908 completion and reward text",
+          "quest 3909 description"
+        ]
+      },
+      {
+        "part": 3,
+        "body": "Gregan brews the elixir from evoroot. Whoever drinks it in the graveyard outside Gadgetzan passes into another form, able to speak with one the living would not normally even see, and walks due north to the mountains, where Gaeriyan waits in one of the rocky crevices.",
+        "triggers": [
+          [
+            4,
+            3912
+          ]
+        ],
+        "sources": [
+          "quest 4041 completion text (evoroot)",
+          "quest 3909 reward text",
+          "quest 3912 description",
+          "feralas.json 35714 (Miblon guards the evoroot)"
+        ]
+      },
+      {
+        "part": 4,
+        "body": "Gaeriyan, who has had no visitor in a long time, tells of a gravestone in the graveyard unlike the others. Pushed firmly, it slides aside to reveal a small hollow that fits Linken's sword perfectly, and when the blade is laid there it is transformed in a strong flash of light.",
+        "triggers": [
+          [
+            4,
+            3914
+          ]
+        ],
+        "sources": [
+          "quest 3912 reward text",
+          "quest 3913 description and reward text",
+          "quest 3914 description"
+        ]
+      },
+      {
+        "part": 5,
+        "body": "Linken is delighted to have his sword back, finished at last, and he half remembers the one who brought it. Yet he still cannot remember why he needed it, and pays his helper for the work all the same.",
+        "triggers": [
+          [
+            5,
+            3914
+          ]
+        ],
+        "sources": [
+          "quest 3914 completion and reward text"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49019,
+    "kind": 3,
+    "zone": 490,
+    "sort": 2,
+    "faction": 0,
+    "title": "The Golden Flame",
+    "body": "Linken has his sword back, but not his memory. He knows he came to Un'Goro for something important, and he wonders whether he let it slip when he first arrived, disoriented, at Marshal's Refuge. The gnome J.D. Collie was very kind to him then, so he sends a helper to ask her in her cave at the refuge, with a warning to be careful: she is always messing with those crazy glowing crystals, and no one is quite sure what she is up to in there.",
+    "triggers": [
+      [
+        4,
+        3941
+      ]
+    ],
+    "sources": [
+      "quests 3941, 3942, 4084, 4005, 3961, 3962 (descriptions, completion and reward texts)",
+      "felwood.json 36119 (Eridan Bluewind, Un'Goro quests mentioned without triggers)"
+    ],
+    "notes": "Converted: the opening is Linken's request (3941). Parts: 1 J.D.'s memory of the mumbling (QUEST_ACCEPT 3942); 2 Eridan and Blazerunner (QUEST_ACCEPT 4084); 3 the Book of Aquor and the totem (QUEST_DONE 4005); 4 Linken remembers (QUEST_ACCEPT 3962, which follows 3961); 5 Blazerunner falls and the Flame goes home (QUEST_DONE 3962). 4084 and 4005 are given in Felwood but filed under Un'Goro (QuestSortID 490); felwood.json leaves them to Un'Goro. Earlier: Fact-check: verified. Felwood's Eridan entry (36119) is not retold; this tells only the Linken chain. Check: part 5's closing reworded so it no longer repeats 49010 part 2 (both DONE 3962).",
+    "parts": [
+      {
+        "part": 1,
+        "body": "J.D. remembers. Linken mumbled all kinds of strange things when he first arrived, likely after a hard bump on the head, but one stuck with her: he was making some sort of totem, and had to speak with someone named Eridan Bluewind in Felwood.",
+        "triggers": [
+          [
+            4,
+            3942
+          ]
+        ],
+        "sources": [
+          "quest 3942 description"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "Eridan does not know Linken, but she knows what he sought. In the heart of Un'Goro dwells an elemental called Blazerunner, evil of the purest form, behind an aura none can dispel save those with the power to do so. That power she can teach, in return for silvery claws and the heart of an irontree from the creatures of Felwood.",
+        "triggers": [
+          [
+            4,
+            4084
+          ]
+        ],
+        "sources": [
+          "quest 4084 description"
+        ]
+      },
+      {
+        "part": 3,
+        "body": "For the claws and the heart, Eridan gives over the Book of Aquor, to be read from a circle of stones on the eastern point of Lost Rigger Cove in Tanaris. The elemental Aquementas is not pleased to be woken, but within the circle it forges the Silver Totem of Aquementas, and J.D. knows at once the elemental it was made to fight.",
+        "triggers": [
+          [
+            5,
+            4005
+          ]
+        ],
+        "sources": [
+          "quest 4084 reward text",
+          "quest 4005 description, log text and reward text"
+        ]
+      },
+      {
+        "part": 4,
+        "body": "All this time, J.D. realizes, Linken came to rid them of Blazerunner. The totem brings back the last of his memory. This was to be the final step of his journey, yet he declares that the hero now is the one who helped him. Blazerunner guards the Golden Flame, a power vaster than any Linken has known, and it is dangerous to go alone.",
+        "triggers": [
+          [
+            4,
+            3962
+          ]
+        ],
+        "sources": [
+          "quest 3961 description",
+          "quest 3962 description"
+        ]
+      },
+      {
+        "part": 5,
+        "body": "With the totem, Blazerunner's aura is stripped away and the elemental falls. The Golden Flame is taken from its cave, and Linken sends it home to his homeland to be guarded, never again to be used for evil, and he thanks his helper warmly for giving him back his past.",
+        "triggers": [
+          [
+            5,
+            3962
+          ]
+        ],
+        "sources": [
+          "quest 3962 log text, completion text and reward text"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49020,
+    "kind": 3,
+    "zone": 490,
+    "sort": 3,
+    "faction": 0,
+    "title": "Marshal Expeditions",
+    "body": "Marshal Expeditions came to Un'Goro on what was meant to be its greatest venture and met disaster after disaster. The crater's beasts overran its base camps in the southwest and the northeast, and the troupe fled for higher ground, leaving behind its food, its research equipment and even Williden Marshal's journal, later found mangled in the wilds. At the refuge, the expedition clings on. Williden needs the crate of foodstuffs and some of the equipment back if anyone is to survive. His sister Hol'anyee wants a scraping from the walls of the Gorishi hatcheries, to learn why the silithid are in the crater at all. Spark Nilminer, the reluctant chief digger, is meant to bring back bones of long-dead stegodons and diemetradons from Terror Run, though privately he admits that bones from living ones will do.",
+    "triggers": [
+      [
+        4,
+        3881
+      ],
+      [
+        4,
+        3882
+      ],
+      [
+        4,
+        3883
+      ],
+      [
+        4,
+        3884
+      ]
+    ],
+    "sources": [
+      "quests 3881, 3882, 3883, 3884 (descriptions, completion and reward texts)",
+      "npc_text 3094"
+    ],
+    "notes": "Converted: the opening is the stranded expedition's three needs (3881-3884 descriptions); Dadanga's line dropped to fit the 140-word story opening (49001 keeps her). Parts on each turn-in: 1 supplies back (QUEST_DONE 3881), 2 Spark's bones (QUEST_DONE 3882), 3 Hol'anyee's sample (QUEST_DONE 3883). 3884 (journal returned) adds nothing beyond the opening. Earlier: Fact-check: verified.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "The crate of foodstuffs and the research equipment came back, and with them the expedition's hopes. Williden declares that the troupe has been saved, and its lives with it, and that they might now hold out in the crater for a while. Whoever brought the supplies home has a friend in Marshal Expeditions.",
+        "triggers": [
+          [
+            5,
+            3881
+          ]
+        ],
+        "sources": [
+          "quest 3881 reward text"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "Spark got his bones, and with them gave a loud, pointed speech of thanks for digging them all out of the ground without hurting the native beasts in any way. Whether that is true he does not want to know, and he hands over a little something to keep the matter quiet.",
+        "triggers": [
+          [
+            5,
+            3882
+          ]
+        ],
+        "sources": [
+          "quest 3882 completion and reward text"
+        ]
+      },
+      {
+        "part": 3,
+        "body": "Hol'anyee has her sample of the hive wall, and the expedition's research goes on. Stranded as she is in the middle of a savage land, she can give little in return, but she insists that none of the work done here would have been possible without the help she was given.",
+        "triggers": [
+          [
+            5,
+            3883
+          ]
+        ],
+        "sources": [
+          "quest 3883 reward text"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49021,
+    "kind": 3,
+    "zone": 490,
+    "sort": 4,
+    "faction": 0,
+    "title": "Crystals of Power",
+    "body": "Power crystals of red, blue, yellow and green lie all over the crater, and most people ignore them. J.D. Collie does not. Certain they hold power, she experiments endlessly in her cave at Marshal's Refuge, so far without success, and sends out collectors when her supply runs low. She has also heard rumors of mysterious pylons standing in the wilds, large and lined with crystals inside, one somewhere in the north, one in the east and one in the west. Call her gullible, she says, but she is sure the stories are true, and that the pylons have something to do with the crystals.",
+    "triggers": [
+      [
+        4,
+        4284
+      ]
+    ],
+    "sources": [
+      "quests 4284, 4285, 4287, 4288, 4321 (descriptions and reward texts)",
+      "quests 4381-4386 completion texts",
+      "npc_text 2810, 2834, 2836, 2837, 2933",
+      "zone_areas: pylons 164955 (538), 164957 (1942), 164956 (543)"
+    ],
+    "notes": "Converted: the opening is J.D.'s search and the rumors (4284 to 4288 descriptions). Parts: 1 the three pylons found (QUEST_ACCEPT 4321, which needs 4285, 4287 and 4288 done: their NextQuestID 4321 with ExclusiveGroup -4285); 2 the charms and the manual (QUEST_DONE 4321). npc_text 2810, 2834-2837, 2933 reread: classic. Earlier: Fact-check: verified. 4285, 4287, 4288 need 4284 (PrevQuestID), so 4284 is the only entry.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "The stories are true. Searchers find all three: the northern pylon close to the tar pits, the eastern in the Marshlands and the western near the Golakka springs. To the crater's few residents they are a mystery and a source of legend, with much speculation about their purpose, and J.D. sets to work on her calculations.",
+        "triggers": [
+          [
+            4,
+            4321
+          ]
+        ],
+        "sources": [
+          "quests 4285, 4287, 4288 reward texts",
+          "quest 4321 description (needs all three pylon quests)",
+          "npc_text 2810",
+          "zone_areas: pylons 164955 (538), 164957 (1942), 164956 (543)"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "From what is learned, J.D. works out how each pylon fuses two colors of crystal into one charm. One heals, one steadies the spirit, one hardens the body against blows, one weakens a foe's defenses, one bursts in a stunning blast and one raises a shield that strikes back at attackers. She sets it all down in a manual for those who would use them.",
+        "triggers": [
+          [
+            5,
+            4321
+          ]
+        ],
+        "sources": [
+          "quest 4321 reward text",
+          "npc_text 2834, 2836, 2837, 2933",
+          "quests 4381-4386"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49022,
+    "kind": 3,
+    "zone": 490,
+    "sort": 5,
+    "faction": 0,
+    "title": "Torwa's Trials",
+    "body": "Torwa Pathfinder grants his respect only to those who prove themselves against the crater's greatest beasts. The first test lies north among the great apes, whose pelts will clothe his tribe. The hardest is Lar'korwi, dominant male of the ravasaurs, whose name means sharp claw. Long ago Torwa's brother took meat from one of its kills. The beast followed him for days, destroying everything he touched, and when he fled the crater it killed him not far from Torwa's camp. To provoke Lar'korwi, a hunter must repeat the offense and steal meat from its freshest kill.",
+    "triggers": [
+      [
+        4,
+        4289
+      ],
+      [
+        4,
+        4290
+      ]
+    ],
+    "sources": [
+      "quests 4289, 4301, 4290, 4291, 4292 (descriptions, completion and reward texts)",
+      "npc_text 2835 (taurahe, sharp claw)"
+    ],
+    "notes": "Converted: the opening is the two entry points (4289 apes, 4290 Lar'korwi's backstory). Parts on the turn-ins: 1 the apes and U'cha's introduction (QUEST_DONE 4289), 2 U'cha (QUEST_DONE 4301), 3 the threshadon and the glands (QUEST_DONE 4290), 4 Lar'korwi drawn out and his head (QUEST_DONE 4292). Earlier: Fact-check: verified. 4289 and 4290 have no prerequisites, both entry points.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "The apes fall, and Torwa gives praise to the Earth Mother and thanks their spirits, though he calls the challenge small beside Lar'korwi. He has seen another test among the gorillas to the north: a huge ape in their cave that he calls U'cha, one of the Earth Mother's greatest sons.",
+        "triggers": [
+          [
+            5,
+            4289
+          ]
+        ],
+        "sources": [
+          "quest 4289 reward text",
+          "quest 4301 description"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "U'cha was magnificent, huge and red, with teeth the size of daggers and arms as thick as tree trunks, a creature Torwa's people might go generations without seeing. Whoever bests him earns Torwa's word that the name of great hunter is deserved.",
+        "triggers": [
+          [
+            5,
+            4301
+          ]
+        ],
+        "sources": [
+          "quest 4301 description, completion and reward text"
+        ]
+      },
+      {
+        "part": 3,
+        "body": "The freshest kill turns out to be a threshadon, an odd find in this part of the crater, and Torwa keeps the meat for the confrontation to come. His final plan needs the scent glands of Lar'korwi's mates, taken where they guard their eggs west of his camp.",
+        "triggers": [
+          [
+            5,
+            4290
+          ]
+        ],
+        "sources": [
+          "quest 4290 reward text",
+          "quest 4291 description (offered on the 4290 turn-in)"
+        ]
+      },
+      {
+        "part": 4,
+        "body": "Laid together on a small trail into the mountains, among the bones of massive creatures, the meat and the glands draw Lar'korwi into the open. His head brings Torwa's highest praise: only the greatest of his ancestors, he says, could have done so much.",
+        "triggers": [
+          [
+            5,
+            4292
+          ]
+        ],
+        "sources": [
+          "quest 4292 description and reward text"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49023,
+    "kind": 3,
+    "zone": 490,
+    "sort": 6,
+    "faction": 0,
+    "title": "The Gorishi Hive Queen",
+    "body": "Scholars in Darnassus and Orgrimmar suspect that the silithid draw their strength from Un'Goro Crater, and Alchemist Pestlezugg of Gadgetzan, who has already studied the bugs of Tanaris, thinks the idea worth testing. His research tells him the silithid are like bees: destroy a hive's queen, and the rest should be thrown into disarray. To bring the queen out he means to brew a lure, and for that he needs samples of the native Un'Goro soil and a scent gland taken undamaged from the Gorishi of the Slithering Scar, which is easier said than done.",
+    "triggers": [
+      [
+        4,
+        4496
+      ]
+    ],
+    "sources": [
+      "quests 4493, 4494 descriptions and reward texts (Gracina, Zilzibin; Pestlezugg: perhaps it is)",
+      "quest 4496 description, completion and reward text",
+      "tanaris.json 44030 (Pestlezugg's earlier study)"
+    ],
+    "notes": "Converted: the opening is the plan (4496 description and request text); the lure and the crystal moved to part 1 on QUEST_ACCEPT 4507; the queen's death, the malign intelligence and Pestlezugg's unease to part 2 on QUEST_DONE 4507. The closing line about word going back to the scholars dropped: it rests on 4508/4509, whose turn-ins Darnassus (DONE 4508) and Orgrimmar own. The scholars' theory is kept to one clause, since darnassus.json 165710 part 2 tells Gracina's theory on ACCEPT 4493; tanaris.json 44030 parts tell the earlier analysis (DONE 82, 110) and are not repeated. Earlier: Fact-check: closing line about a stronger presence elsewhere (4510/4511) dropped, as darnassus.json's Gracina entry tells it; now ends with the word of the hunt going back to the scholars (4508/4509 turn-ins, unused). 4496 has no prerequisite (4493/4494 only lead to it), so it opens to both sides. 4508 unused.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "With his special additions the lure is ready. Somewhere in the hive's hatcheries, Pestlezugg believes, lies a crystal the silithid use as a hive-wide attunement device. The lure set upon it should roust out the Gorishi Hive Queen, though she will be protected by guards, and he wants her brain brought back for study, however icky that sounds.",
+        "triggers": [
+          [
+            4,
+            4507
+          ]
+        ],
+        "sources": [
+          "quest 4496 reward text",
+          "quest 4507 description"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "The Gorishi Hive Queen falls, and her brain reaches Gadgetzan. Pestlezugg had come to believe that the silithid might be controlled by a malign intelligence, and he shudders to think what could command creatures so insidious. Even in victory he is uneasy: so clean a resolution, he warns, cannot be the full extent of their presence.",
+        "triggers": [
+          [
+            5,
+            4507
+          ]
+        ],
+        "sources": [
+          "quest 4507 completion and reward text",
+          "creature_loot_template 10041: Gorishi Queen Brain 11835"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49024,
+    "kind": 3,
+    "zone": 490,
+    "sort": 7,
+    "faction": 0,
+    "title": "The Bloodpetal Feud",
+    "body": "Larion and Muigin set out together and ended up lost in Un'Goro, and each blames the other. Larion says he knew the way until Muigin insisted on a shortcut; Muigin says he warned Larion they were going the wrong way. Now they camp a few steps apart at Marshal's Refuge, neither willing to speak first. Muigin has turned to mischief, sure that the wild bloodpetals of the crater could be trained to obey commands, if only he had samples to study. Larion, meanwhile, is plagued by plant pests night and day, and blames Muigin for every one of them.",
+    "triggers": [
+      [
+        4,
+        4141
+      ],
+      [
+        4,
+        4145
+      ]
+    ],
+    "sources": [
+      "quests 4141, 4142, 4143, 4144 (Muigin, Alliance) and 4145, 4147, 4146, 4148 (Larion, Horde): descriptions, completion and reward texts",
+      "quest 4502 description (Liv, apprentice to Marvon)",
+      "npc_text 6741 (Larion: pests night and day)",
+      "creature_text 9119"
+    ],
+    "notes": "Converted: the opening is the quarrel and the pests, true for both sides (4141, 4145 descriptions; pests 9157 visible in camp; npc_text 6741). Alliance parts: 1 Gregan's haze (QUEST_ACCEPT 4143, from Gregan), 2 Muigin's tamed sprouts and his confession (QUEST_DONE 4144, auto-complete). Horde parts: 3 Marvon away and Liv's zapper (QUEST_ACCEPT 4146, from Liv), 4 the zapper calibrated (QUEST_DONE 4148, auto-complete). Earlier: Fact-check: verified. 4141 AllowableRaces 1101 (Muigin, template 210 hostile to the Horde) and 4145 AllowableRaces 690 (Larion, template 106 hostile to the Alliance): one entry per side, faction 0. Check: part 3 no longer says 'the same' haze, since a Horde reader has not seen part 1. Triggers confirmed: 4143 (Gregan, QuestType 2) and 4146 (Liv, QuestType 2, QuestSortID 1417) are not auto-complete; 4144 and 4148 are QuestType 0, DONE only. Part 2 no longer has the sprouts running off and Muigin laughing: those are creature_text 9119 lines that nothing says (Muigin has no AI or script in the core or the module); it now rests on 4144's completion and reward text.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "Muigin found that the plants seem to have some small intelligence and sent one to his friend Gregan Brewspewer, an herbalist who left Ironforge for the quiet of the Feralas wilds and gets more visitors there than he ever did in the city. Gregan has never seen such plants, but he knows what will control them: Atal'ai haze from the sunken temple of Atal'Hakkar in the Swamp of Sorrows.",
+        "triggers": [
+          [
+            4,
+            4143
+          ]
+        ],
+        "sources": [
+          "quest 4142 description and completion text",
+          "quest 4143 description"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "Muigin admits he is vengeful. The haze goes into a heap of bloodpetal sprouts, plants not yet fully grown, and Muigin is sure the result will get Larion's attention. He even confesses that he knows the way home, but he will not leave until Larion admits that Muigin was right.",
+        "triggers": [
+          [
+            5,
+            4144
+          ]
+        ],
+        "sources": [
+          "quest 4144 completion and reward text"
+        ]
+      },
+      {
+        "part": 3,
+        "body": "Larion spied on Muigin and caught him growing the pests, and he means to fight back rather than talk. His friend Marvon Rivetseeker of Ratchet is away studying the troll ruins of Tanaris, but Marvon's apprentice Liv Rizzlefix has built a short range bug zapper, fueled by Atal'ai haze from the sunken temple of Atal'Hakkar.",
+        "triggers": [
+          [
+            4,
+            4146
+          ]
+        ],
+        "sources": [
+          "quest 4147 description and reward text",
+          "quest 4146 description",
+          "quest 4502 description (Liv, apprentice to Marvon)"
+        ]
+      },
+      {
+        "part": 4,
+        "body": "Calibrated with a bloodpetal sprout, the zapper is ready for Muigin's little friends. Larion insists the prank does not bother him at all, though he grumbles that if Muigin were not so stubborn, the two of them could already be on their way home.",
+        "triggers": [
+          [
+            5,
+            4148
+          ]
+        ],
+        "sources": [
+          "quest 4148 completion and reward text"
+        ]
+      }
+    ]
+  }
 ]

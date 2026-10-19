@@ -1,1105 +1,2376 @@
 [
-{
-"id": 352000,
-"kind": 0,
-"zone": 3520,
-"sort": 0,
-"faction": 0,
-"title": "Shadowmoon Valley",
-"body": "Shadowmoon Valley lies in the far southeast of Outland, a land of ash, black rock and rivers of green fel lava under a dim and smoky sky. The orcs of the Shadowmoon clan once honored their ancestors here, and at its eastern edge the draenei raised the Temple of Karabor, one of their holiest sites. Both were lost to the Horde. Gul'dan's warriors took Karabor and the Shadow Council made it their seat, and the warlock raised the volcano at the valley's center in a ritual that severed the orcs from the elements of Draenor. The temple, now called the Black Temple, is the throne of Illidan Stormrage, and his servants, fel orcs and naga, Broken and blood elves, hold the valley in his name. The Burning Legion bombards it from Legion Hold. Against them stand the Wildhammer dwarves, the Horde's Kor'kron, and the Aldor and Scryers of Shattrath, while the Netherwing drakes struggle against the Dragonmaw orcs who enslave them.",
-"triggers": [
-[
-1,
-3520
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Shadowmoon_Valley (clan named after the valley, ancestor worship, Temple of Karabor as spiritual capital, Hand of Gul'dan raised to sever the link to the elements, Black Temple as Shadow Council base, Illidan's headquarters, settlements)",
-"quest 10642 description (ancestral grounds of the Shadowmoon orcs)",
-"quest 10635 description (Gul'dan's Horde defeated the draenei of Karabor)",
-"npc_text 10250 (Torlok: Gul'dan severed the tie between orcs and spirits)",
-"quest 10568 description (Gul'dan raised the volcano)",
-"creature_template subnames 'Servant of Illidan' on Ashtongue, Coilskar, Shadowmoon fel orcs; Eclipsion blood elves",
-"quests 10562, 10595 (infernals from Legion Hold)",
-"warcraft.wiki.gg/wiki/Black_Temple (sacred draenei site; no coastal setting in BC)"
-],
-"notes": "Fact-check: 'near the coast' removed (Karabor's harbor is Rise of the Horde and WoD imagery, not BC Outland); Karabor called one of the draenei's holiest sites (wiki Black_Temple). No K'ara, Dark Star or WoD material. Otherwise verified."
-},
-{
-"id": 352001,
-"kind": 1,
-"zone": 3520,
-"sort": 1,
-"faction": 0,
-"title": "Wildhammer Stronghold",
-"body": "Wildhammer Stronghold stands in the southwest of the valley, the fortress of Kurdran Wildhammer, thane of the Wildhammer in Outland, and his gryphon riders. It is a hard place to hold. Infernals fall on its walls from Legion Hold to the northwest, Illidan's minions press from the other side, and Wing Commander Nuainn's riders have fought so long without relief that they are ragged with exhaustion. The ground itself is restless: the stronghold was built over the ancestral grounds of the Shadowmoon orcs, and the spirits of the old clan, dormant for nearly twenty years, now wander its courtyards. Zorus the Judicator studies them, while the gnome Gnomus, an inventor turned gourmand, dreams only of food that never cools.",
-"triggers": [
-[
-1,
-3745
-]
-],
-"sources": [
-"npc_text 10349 (Nuainn: the Legion on one side and Illidan's minions on the other)",
-"quest 10562 description (Legion Hold to the northwest, men ragged and exhausted)",
-"quest 10642 description (ancestral grounds, spirits dormant nearly twenty years)",
-"quest 10643 (Shadowmoon harbingers infesting the stronghold)",
-"quests 10661, 10672 (Gnomus, food that cooks itself and stays hot; inventor of the arcano-scorps)",
-"npc_text 9805 (Kurdran holds audiences in the stronghold)",
-"zone_areas: Kurdran 21330, Nuainn 21357, Zorus 21774, Gnomus 21777 stand in area 3745"
-],
-"notes": "verified"
-},
-{
-"id": 352002,
-"kind": 1,
-"zone": 3520,
-"sort": 2,
-"faction": 0,
-"title": "Shadowmoon Village",
-"body": "Shadowmoon Village is the Horde's outpost in the northwest of the valley, held by Overlord Or'barokh and the elite Kor'kron guard. Like the dwarves to the south it lives under the Legion's guns: infernals from Legion Hold to the southwest rain on its walls, and Blood Guard Gulmok drafts every able fighter onto the line. The village is haunted as well. Chief Apothecary Hildagard has crafted goggles that reveal the ghosts of Shadowmoon zealots drifting among the buildings, and what she learns from them leaves her badly shaken. Nearby, the blood elf Researcher Tiorus studies the heat-proof diemetradons of the lava flows with probes built by his former partner, the gnome Gnomus, who resents it.",
-"triggers": [
-[
-1,
-3744
-]
-],
-"sources": [
-"quest 10595 description (Legion Hold to the southwest, the elite Kor'kron guard, every able-bodied fighter drafted)",
-"quests 10624, 10625 (Spectrecles, Shadowmoon Zealots in the village, Hildagard's shock at Gorefiend's name)",
-"quests 10660, 10672 (Tiorus, diemetradons, arcano control units crafted by Gnomus)",
-"quest 10678 description (Gnomus: Tiorus continued their research using MY inventions)",
-"zone_areas: Or'barokh 21769, Gulmok 21359, Hildagard 21772, Tiorus 21770, Kor'kron Defender, Shadowmoon Zealot 21788 in area 3744"
-],
-"notes": "Fact-check: Gnomus 'has not forgiven him' softened to 'resents it' (quest 10678). Otherwise verified."
-},
-{
-"id": 352003,
-"kind": 1,
-"zone": 3520,
-"sort": 3,
-"faction": 0,
-"title": "Legion Hold",
-"body": "Legion Hold is the Burning Legion's fortress in western Shadowmoon, the source of the infernals that pound both the Wildhammer and the Horde outposts. Warbringer Razuun directs its war in the name of Doom Lord Kazzak, and his order to the hold's commander was plain: destroy the orcish and dwarven strongholds with all haste. Terrormasters and Shadow Council warlocks guard the stockpiled infernals, and the pit lords Makazradon and Morgroron bear glaives forged to slay demons. Beside the hold, the Fetid Pool festers around the wreckage of a fallen fel reaver. A teleporter in the hold leads to Invasion Point: Cataclysm, high in the northern mountains, where the Legion masses still more infernals under the guard of fel reaver sentinels.",
-"triggers": [
-[
-1,
-3743
-],
-[
-1,
-3940
-],
-[
-1,
-3943
-]
-],
-"sources": [
-"creature_text 21502 (Image of Warbringer Razuun: Kazzak will be pleased, destroy the orcish and dwarven strongholds) and 21633 (Deathbringer Jovaan)",
-"quest 10563 description (the Legion stocks its infernals at the hold)",
-"quest 10626 description (Makazradon and Morgroron equipped with anti-demon weapons)",
-"quests 10564, 10572 (fel reaver power core and wreckage at the Fetid Pool)",
-"quests 10589, 10604 (Invasion Point: Cataclysm, infernal staging area in the northern mountains, reached by a teleporter at Legion Hold)",
-"zone_areas: Terrormaster 21314, Shadow Council Warlock 21302, Morgroron 21500, Makazradon 21501 in 3743; Mutant Horror in 3940; Fel Reaver Sentinel 21949 in 3943"
-],
-"notes": "verified"
-},
-{
-"id": 352004,
-"kind": 1,
-"zone": 3520,
-"sort": 4,
-"faction": 0,
-"title": "The Deathforge",
-"body": "The Deathforge is a Shadow Council foundry dug into the rock between the two outposts, where infernals are made as fast as the Legion can hurl them. Mo'arg smiths work the forges, and in a summoning chamber below ground the warlocks call up the corrupted elementals that become the burning hearts of the infernals. Two scouting parties watch from the heights, the dwarves of Deathforge Tower and the orcs of Slag Watch, under strict orders to observe and not to fight. Each lost one of its own inside: the Wildhammer Flanis Swiftwing, who volunteered to spy, and the orc Kagrosh, who wanted to be a hero. Neither came back, and their bodies lie where the forge's keepers left them.",
-"triggers": [
-[
-1,
-3748
-],
-[
-1,
-3936
-],
-[
-1,
-3937
-]
-],
-"sources": [
-"quests 10573, 10599 (Shadow Council producing infernals in the Deathforge; Deathforge Tower northwest of Wildhammer, Slag Watch southeast of the village)",
-"quests 10585, 10602 (summoning chamber below ground, elementals that form the core of the infernals; mo'arg smiths and tinkerers)",
-"quests 10582, 10600 (orders to observe, not engage)",
-"quests 10583, 10601; npc_text 10427 and 10446 (Flanis's and Kagrosh's corpses)"
-],
-"notes": "Fact-check: Flanis volunteered and Kagrosh went in to be a hero (10583, 10601), not both 'sent'; bodies 'left' rather than both 'tossed' (npc_text 10427, 10446). Otherwise verified."
-},
-{
-"id": 352005,
-"kind": 1,
-"zone": 3520,
-"sort": 5,
-"faction": 0,
-"title": "Illidari Point",
-"body": "Illidari Point lies in the southwest, between Legion Hold and Wildhammer Stronghold. It is the proving ground for Illidan's demons, those who abandoned the Burning Legion to serve the Betrayer, and satyrs, shadowstalkers and succubi gather there under his lieutenant Lothros. Succubi led by Painmistress Gabrissa work their rituals around a rune ringed by hovering crystals, and hidden in the ether at the back of the point lurks a creature called Veneratus the Many. Here Ar'tor, the youngest son of Oronok Torn-heart, came hunting a piece of the Cipher of Damnation. He was found dead, his body held in the air above the rune by beams from the demonic crystals.",
-"triggers": [
-[
-1,
-3752
-]
-],
-"sources": [
-"quest 10527 description (location; proving grounds for demons that left the Legion to join the Betrayer)",
-"quest 10668 description (Lothros, Illidan's lieutenant at Illidari Point)",
-"quests 10528, 10540 (crystals, succubi rituals, Gabrissa, Veneratus hidden in the ether)",
-"quest 10527 reward text, npc_text 10323 (Ar'tor's body suspended)",
-"zone_areas: Illidari Satyr, Shadowstalker, Painmistress Gabrissa 21309 in 3752; Lothros 21928 position in 3752"
-],
-"notes": "verified"
-},
-{
-"id": 352006,
-"kind": 1,
-"zone": 3520,
-"sort": 6,
-"faction": 0,
-"title": "Sketh'lon and the Magma Fields",
-"body": "The Sketh'lon arakkoa once camped in western Shadowmoon. When the Horde massed under Gul'dan they planned to strike at him first, and the warlock answered with a spell that destroyed their camps and twisted their spirits. Their ruins remain: the Sketh'lon Wreckage northwest of the Deathforge, and the Sketh'lon Base Camp to the south, east of Wildhammer Stronghold. Their ghosts linger as the Dark Conclave, and they prey on the orc peons sent to cut wood among the ruins, draining their lives to feed their magic. Between the two outposts the road crosses the Magma Fields, where lava flows through cracks in the ground and felfire diemetradons bask in the heat.",
-"triggers": [
-[
-1,
-3933
-],
-[
-1,
-3932
-],
-[
-1,
-3949
-]
-],
-"sources": [
-"quest 10777 description (arakkoa sought to strike against Gul'dan, his spell destroyed their camps and twisted their spirits)",
-"quests 10569, 10760, 10780 (locations; spirits prey on peon work groups, draining their life)",
-"quests 10759, 10761 (road through the Magma Fields between the outposts)",
-"quest 10660 (felfire diemetradons where lava flows through the cracks)",
-"zone_areas: Dark Conclave Hawkeye 21386 in 3933, Scorncrow 21385 in 3932, Felfire Diemetradon in 3949"
-],
-"notes": "Fact-check: 'between the two camps' changed to 'between the two outposts' (10759, 10761). Otherwise verified."
-},
-{
-"id": 352007,
-"kind": 1,
-"zone": 3520,
-"sort": 7,
-"faction": 0,
-"title": "The Hand of Gul'dan",
-"body": "The Hand of Gul'dan is the great volcano at the center of the valley, raised by the warlock Gul'dan in the ritual that tore the orcs away from the elements. Fel lava still pours down its sides, and its lava long ago buried the draenei village of Baa'ri. On its flanks the Fel Pits seethe with enraged spirits of fire and earth, and the Ashtongue Corruptors Eykenen and Uylaru, once shaman who now defile the elements they revered, tend corrupt totems among them. The Scalding Pools lie near the summit. Spectral riders, the Ghostriders of Karabor, circle the mountain on the roads around its base, and the fel beast Uvuros, wanted dead by both outposts, prowls its slopes.",
-"triggers": [
-[
-1,
-3746
-],
-[
-1,
-3747
-],
-[
-1,
-3947
-]
-],
-"sources": [
-"quest 10568 description (Gul'dan raised the volcano, Baa'ri buried under lava)",
-"warcraft.wiki.gg/wiki/Shadowmoon_Valley (Hand of Gul'dan raised to sever the orcs' link to the elements)",
-"quests 10574, 10458 (Eykenen and Uylaru at the Fel Pits; enraged fire and earth spirits)",
-"quest 10679 (Scalding Pools near the top of the Hand)",
-"quest 10636 description (Ghostriders of Karabor ride the roads encircling the Hand)",
-"quests 10647, 10648 (Uvuros last seen at the Hand of Gul'dan)"
-],
-"notes": "Fact-check: Baa'ri buried by the volcano's lava (10568), wording fixed; corruptors 'tormenting further' unsupported, now tend corrupt totems (Corrupt Fire and Earth Totem spawns in 3747). Otherwise verified."
-},
-{
-"id": 352008,
-"kind": 1,
-"zone": 3520,
-"sort": 8,
-"faction": 0,
-"title": "The Altar of Damnation",
-"body": "On the western outskirts of the Hand of Gul'dan stands the Altar of Damnation, where Gul'dan spoke the words that shattered this land. The moment has left its mark. A memory of the warlock still stands at the altar among the kneeling spirits of the damned, and beside him linger remnants of his hate, greed, malice, pride and corruption. Earthmender Torlok and Earthmender Gorboto of the Earthen Ring keep watch there, seeking to commune with the tortured elements. Gul'dan was not content to destroy the draenei, Torlok says: he razed Draenor itself and siphoned off its energies for his war, and all that is left here are the remnants of his madness.",
-"triggers": [
-[
-1,
-3928
-]
-],
-"sources": [
-"quest 10451 log text (Altar of Damnation on the western outskirts of the Hand of Gul'dan)",
-"quest 10588 description (the memory of Gul'dan stands at the altar)",
-"npc_text 10315 (Oronok: spirits of the damned kneeling in prayer)",
-"creature_template 22094, 22437, 22438, 22439, 22440 (Remnants of Hate, Malice, Greed, Corruption, Pride, Aspect of Gul'dan)",
-"creature_text 17008 (Gul'dan's vision lines)",
-"npc_text 10250 (Torlok)",
-"zone_areas: Torlok 21024, Gorboto 21026, Gul'dan 17008 in 3928"
-],
-"notes": "verified"
-},
-{
-"id": 352009,
-"kind": 1,
-"zone": 3520,
-"sort": 9,
-"faction": 0,
-"title": "Coilskar Point",
-"body": "Coilskar Point and the cistern to its east are the lair of the Coilskar naga, servants of Illidan, who have seized the only clean water left in Shadowmoon Valley. They foul it for their own ends, and the agitated pools around their villages howl with the anguish of enraged water spirits. The earthmender Wilda came seeking the source of the spirits' distress and was taken prisoner, held in a watery cell beside other captive spirits. Lady Shav'rar commands at the point, and Coilskar sorceresses guard the cistern. It was here, too, that the naga hid one fragment of the Cipher of Damnation in their chests, a secret Grom'tor, eldest son of Oronok, beat out of a Coilskar commander.",
-"triggers": [
-[
-1,
-3750
-],
-[
-1,
-3749
-]
-],
-"sources": [
-"quest 10480 description (naga took control of the only clean water supply; agitated water pockets, enraged water spirits)",
-"quest 10451 description and creature_text 21027 (Wilda's capture, watery prison, other prisoners)",
-"quests 10521, 10522; creature_text 21291, 21295 (Grom'tor interrogates the Coilskar Commander; fragment in a chest at Coilskar Point or Cistern)",
-"zone_areas: Lady Shav'rar 20684, Coilskar Commander 21295 in 3750"
-],
-"notes": "Fact-check: sorceresses spawn mainly in Coilskar Cistern (zone_areas), wording adjusted. Otherwise verified."
-},
-{
-"id": 352010,
-"kind": 1,
-"zone": 3520,
-"sort": 10,
-"faction": 0,
-"title": "Oronok's Farm",
-"body": "High on the Shattered Shelf above Coilskar Cistern, a weathered orc keeps a campfire and a herd of trained felboars. He calls himself Oronok Torn-heart, hermit and farmer, and his boars root tubers out of the hard earth of the Shattered Plains below. The plains are not kind to farmers: ravenous flayers from a nest to the northeast prey on his animals, and a flayer matriarch guards their eggs. Oronok invites travelers to warm themselves by his fire and warns them of the beasts of the shelf. Few guess that the farmer's life is a disguise, or that this quiet old orc once stood at Gul'dan's side.",
-"triggers": [
-[
-1,
-3927
-],
-[
-1,
-3926
-]
-],
-"sources": [
-"quest 10513 log text (Shattered Shelf, north of Coilskar Cistern)",
-"quest 10514 description (felboars dig tubers on the Shattered Plains, flayers from a nest to the northeast)",
-"quest 10515 (flayer eggs)",
-"npc_text 10280 (sit by my fire, beware the ravenous beasts of the shattered shelf)",
-"quest 10519 description; npc_text 10315 (the farmer is a masquerade; lieutenant of Gul'dan)",
-"zone_areas: Oronok 21183 in 3927; Ravenous Flayer, Domesticated Felboar in 3926"
-],
-"notes": "verified"
-},
-{
-"id": 352011,
-"kind": 1,
-"zone": 3520,
-"sort": 11,
-"faction": 0,
-"title": "Ruins of Baa'ri",
-"body": "Baa'ri was a draenei village, rich in relics of religious importance, until the Hand of Gul'dan rose and buried it under lava with its people. Now Illidan has set the Ashtongue Broken to dig it out. Scores of Ashtongue workers labor in the ruins under Illidari overseers and Akama's lieutenant, Oronu the Elder, and handlers drive elekk demolishers through the rubble. Among the treasures they seek are the Tablets of Baa'ri, said to hold the secrets of the Temple of Karabor, and the fragments of a Medallion of Karabor, which once let the highest draenei priests pass freely into the temple. The Aldor and the Scryers both send agents to reach them first.",
-"triggers": [
-[
-1,
-3753
-]
-],
-"sources": [
-"quests 10568, 10683 descriptions (village buried with its inhabitants and artifacts; Ashtongue ordered by Illidan to excavate; tablets)",
-"quests 10571, 10684 (Medallion of Karabor, Oronu the Elder as Akama's lieutenant at Baa'ri)",
-"zone_areas: 94 Ashtongue Workers, Illidari Overseer 21808, Ashtongue Handler 21803, Elekk Demolisher 21802 in 3753"
-],
-"notes": "verified"
-},
-{
-"id": 352012,
-"kind": 1,
-"zone": 3520,
-"sort": 12,
-"faction": 0,
-"title": "The Warden's Cage",
-"body": "South of the Ruins of Baa'ri, the Warden's Cage is a prison run by Akama and his Ashtongue Deathsworn, whispered among his enemies to be a torture chamber. Its most important captive is Maiev Shadowsong, the Warden who pursued Illidan to Outland, now held in a cell she swears will not keep her. A satyr named Zandras watches the prison from above its walls on Illidan's behalf, and the demon Vagath has orders from Illidan to keep a close eye on the Warden. What the watchers do not see lies beyond the halls, through a passage hidden by stagnant water: a secret chamber where Akama takes counsel with the few he trusts.",
-"triggers": [
-[
-1,
-3821
-]
-],
-"sources": [
-"quests 10575, 10686 (location south of Baa'ri; rumored torture chamber run by Akama and the Deathsworn)",
-"creature_text 21699 (Maiev: this cell won't hold me for long)",
-"quest 10622 description (Zandras watches from above the prison walls on Illidan's behalf)",
-"creature_text 21768 (Vagath: specific orders to keep a close watch on the Warden)",
-"quest 10628 description (hidden passage behind stagnant water)",
-"zone_areas: Akama 21700, Maiev 21699, Ashtongue Deathsworn 21701 in 3821"
-],
-"notes": "verified"
-},
-{
-"id": 352013,
-"kind": 1,
-"zone": 3520,
-"sort": 13,
-"faction": 0,
-"title": "Altar of Sha'tar",
-"body": "The Altar of Sha'tar is the Aldor's outpost in Shadowmoon, standing northwest of the Black Temple. From here the draenei priesthood carries its war against Illidan and the Legion to their very doorstep. Exarch Onaala, who trained as an anchorite in days when female exarchs were all but unheard of, leads the outpost, holding that courage and conviction count for more than anything else. Anchorite Ceyla studies the secrets of Karabor, Vindicator Aluumen sends fighters against the Ashtongue at Baa'ri and the fel orcs on the holy Ata'mal Terrace, and Harbinger Saronen gathers the insignias of the Legion's officers. The Dragonmaw would gladly see the altar burned, for it blocks their way to Coilskar.",
-"triggers": [
-[
-1,
-3754
-]
-],
-"sources": [
-"quest 11099 description (Aldor outpost northwest of the Black Temple; destroying it would reopen Dragonmaw lines to Coilskar)",
-"broadcast_text 19493 (Onaala: female exarchs unheard of; courage and conviction)",
-"quests 10568 (Ceyla, secrets of Karabor), 10619 and 10816 (Aluumen), 10826 (Saronen, Marks of Sargeras)",
-"zone_areas: Onaala 21860, Ceyla 21402, Aluumen 21822, Saronen 22214 in 3754"
-],
-"notes": "verified"
-},
-{
-"id": 352014,
-"kind": 1,
-"zone": 3520,
-"sort": 14,
-"faction": 0,
-"title": "Ruins of Karabor",
-"body": "The Ruins of Karabor lie before the walls of the Black Temple, and Illidan has turned them into a training ground for demon hunters. Sunfury blood elves, soldiers of Prince Kael'thas, arrive in numbers to learn his art, dressing and fighting like Illidan himself, while Sunfury warlocks summon and bind demons for the initiates to battle. Their master is Varedis, the one blood elf of Kael's first five to survive Illidan's trials, and with him serve the three night elf demon hunters who trained him, Alandien, Theras and Netharel. One prisoner is too dangerous even for these lessons: the pit lord Azaloth, held banished in the ruins and seething at his captors.",
-"triggers": [
-[
-1,
-3756
-]
-],
-"sources": [
-"quests 10587, 10687 (influx of Sunfury recruits, attire and fighting style like Illidan's)",
-"quests 10637, 10688 (warlocks summon and subdue demons; Azaloth too strong, kept banished)",
-"npc_text 10492-10495 (Altruis: Kael's five warriors, Varedis the one who succeeded, the three masters)",
-"quests 10651, 10692 (Alandien, Theras, Netharel)",
-"creature_text 21506 (Azaloth)",
-"zone_areas: Demon Hunter Supplicant/Initiate, Sunfury Warlock, Varedis 21178, Azaloth 21506 in 3756"
-],
-"notes": "Fact-check: recruits 'sent by Kael'thas' unsupported, now 'soldiers of Kael'thas' (Sunfury). Otherwise verified."
-},
-{
-"id": 352015,
-"kind": 1,
-"zone": 3520,
-"sort": 15,
-"faction": 0,
-"title": "Ata'mal Terrace",
-"body": "The Ata'mal Terrace beside the Black Temple was once one of the draenei's holiest sites, where ata'mal crystals were used in their spiritual ceremonies. Now the fel orcs of the Shadowmoon clan, Illidan's most feared army, hold it. Slayers, chosen and darkweavers crowd its tiers alongside shadowsworn drakonid, and they have dug special ore from the sacred ground to forge corrupted arms. The orcs keep a secret: an ata'mal crystal called the Heart of Fury, clouded in dark magic to hide it from the Sha'tar. Shadowlord Deathwail circles above the terrace, out of reach, and swears its power belongs to Illidan.",
-"triggers": [
-[
-1,
-3757
-]
-],
-"sources": [
-"quest 10816 description (holy site, ata'mal crystals in spiritual ceremonies, Illidan's most feared army)",
-"quest 10707 description (Heart of Fury guarded by fel orcs, clouded from the Sha'tar; Deathwail circles beyond reach)",
-"creature_text 22006 (Deathwail: its power belongs to Illidan)",
-"quest 11544 description (fel orcs dug special ore from the terrace and made corrupted weapons; text only, quest belongs to Quel'Danas and is not a trigger)",
-"zone_areas: Shadowmoon Slayer/Chosen/Darkweaver, Shadowsworn Drakonid 22072 in 3757"
-],
-"notes": "verified"
-},
-{
-"id": 352016,
-"kind": 1,
-"zone": 3520,
-"sort": 16,
-"faction": 0,
-"title": "The Black Temple",
-"body": "The Black Temple was once the Temple of Karabor, the great sanctuary of the draenei. Gul'dan's Horde took it, the Shadow Council made it their seat, and the warlock kept his private quarters inside. Later the pit lord Magtheridon ruled from it, until Illidan Stormrage drove him out with the help of Akama's Broken and claimed the temple as his throne. The ghosts of the clerics of Karabor, murdered by Teron Gorefiend after the city fell, still roam before its walls. Now the naaru Xi'ri gathers Aldor and Scryer soldiers on the approach to the temple, and before its walls stalks Doomwalker, the fel reaver Kil'jaeden sent against its gates.",
-"triggers": [
-[
-1,
-3840
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Black_Temple (draenei Temple of Karabor, Shadow Council seat, Magtheridon ousted by Illidan)",
-"warcraft.wiki.gg/wiki/Akama (helped destroy Magtheridon's defenses at the Black Temple, Warcraft III)",
-"npc_text 10314 (cipher kept in Gul'dan's private quarters inside Karabor)",
-"quest 10635 description (clerics of Karabor murdered by Gorefiend, roam in front of the Black Temple)",
-"creature_text 22862, 22864 and spawns of Lightsworn Vindicator/Seasoned Magister near Xi'ri 18528",
-"warcraft.wiki.gg/wiki/Doomwalker (sent by Kil'jaeden to assault the gates)",
-"posarea: 3840 covers the temple grounds south of Doomwalker's spawn (-3563, 234)",
-"warcraft.wiki.gg/wiki/Akama (Frozen Throne: helped Illidan, Kael and Vashj against Magtheridon)",
-"posarea grid around x -3400 to -3900, y 0 to 800 on map 530; areatrigger 4598 Black Temple entrance at (-3672, 318)"
-],
-"notes": "Fact-check: Doomwalker spawns west of area 3840, not north of the temple, and Xi'ri stands well west of the gates; both reworded. Area 3840 is reachable (reachable_areas) and covers the outdoor temple structure and grounds on map 530 east of the instance portal (posarea grid); the portal trigger (-3672, 318) itself lies in 3756. Akama's help against Magtheridon confirmed (wiki Akama, Frozen Throne)."
-},
-{
-"id": 352017,
-"kind": 1,
-"zone": 3520,
-"sort": 17,
-"faction": 0,
-"title": "Netherwing Fields",
-"body": "East of the Hand of Gul'dan, fields of enormous blue crystals jut from the earth, and nether drakes wheel above them. These are the Netherwing, a young flight born of black dragon eggs that were steeped in raw nether energy. They are frightened now, too afraid of the Dragonmaw to come down even to feed, and some fall dead from exhaustion; Mordenai, himself one of the flight, does what he can to save them. Rocknail flayers, the drakes' natural prey, swarm among the crystals. Past the fields, Netherwing Pass leads on to the Altar of Shadows, a lonely shrine where an ancient Shadowmoon spirit was long kept prisoner under the eye of Karsius the Ancient Watcher.",
-"triggers": [
-[
-1,
-3758
-],
-[
-1,
-3945
-],
-[
-1,
-3944
-]
-],
-"sources": [
-"quest 10481 description (fields of gigantic blue crystals)",
-"warcraft.wiki.gg/wiki/Netherwing (spawned from eggs of Deathwing's black dragonflight infused with nether energies)",
-"quest 10804 description (drakes won't come down to feed, fall dead from exhaustion; Rocknail flayers their natural prey)",
-"quest 10870 reward text (Mordenai: my mother is free, my brothers and sisters are saved)",
-"quest 10633 description (Altar of Shadows across the fields and through Netherwing Pass)",
-"quest 10639 description and creature_text 21877 (the altar was the spirit's prison, Karsius)"
-],
-"notes": "verified"
-},
-{
-"id": 352018,
-"kind": 1,
-"zone": 3520,
-"sort": 18,
-"faction": 0,
-"title": "Sanctum of the Stars",
-"body": "The Sanctum of the Stars is the Scryers' outpost in Shadowmoon, standing at the foot of the Netherwing Fields. For these blood elves the war runs on two fronts: against Illidan, and against the Sunfury of Prince Kael'thas, whose ranks keep swelling with pilgrims from Quel'Thalas. Battlemage Vyara warns that the Scryers must outrecruit Kael or, once recruits run short, outkill him. Arcanist Thelis and Larissa Sunstrike pursue Illidan's secrets, and Varen the Reclaimer leads strikes on the Ashtongue and on the Ata'mal fel orcs, who once fell on the sanctum in a savage attack. The Dragonmaw covet the site, since it cuts their lines to Eclipse Point and Illidari Point.",
-"triggers": [
-[
-1,
-3938
-]
-],
-"sources": [
-"quest 11094 description (Scryer outpost at the foot of the Netherwing Fields; lines to Eclipse Point and Illidari Point)",
-"quest 10824 description; broadcast_text 19901 (Vyara: outrecruiting Kael'thas, pilgrims from Quel'Thalas; the fight against Kael'thas and Illidan)",
-"quests 10683 (Thelis), 10687 (Larissa), 10807 and 10817 (Varen; the sanctum suffered an attack by the Ata'mal Shadowmoon orcs)",
-"zone_areas: Thelis 21955, Larissa 21954, Varen 21953, Vyara 22211 in 3938"
-],
-"notes": "verified"
-},
-{
-"id": 352019,
-"kind": 1,
-"zone": 3520,
-"sort": 19,
-"faction": 0,
-"title": "Eclipse Point",
-"body": "Eclipse Point is a terraced ruin in the south of the valley, held by the Eclipsion, blood elves in Illidan's service under Grand Commander Ruusk. Its dragonhawks see through disguises. The elves guard their charges closely: the Rod of Lianthe lies locked in a strongbox in a pavilion on the top tier, and they kept watch over a third of the Cipher of Damnation, moving it from place to place on Illidan's written orders. Each day an envoy comes from the Black Temple with those orders, and from the shadows of the bridge to the north, Borak, son of Oronok, has watched the elves for weeks, waiting for a moment when the envoy's bodyguard is gone.",
-"triggers": [
-[
-1,
-3822
-]
-],
-"sources": [
-"quest 10778 description (Rod of Lianthe in a pavilion on the top tier of the ruins)",
-"quest 10577 description (disguise; Ruusk; dragonhawks see through the disguise)",
-"quest 10546 reward text and quest 10570 reward text (the third part hidden by the blood elves, kept moving by Illidan's directive; daily envoy from the Black Temple; weeks of watching)",
-"creature_text 21409 (Envoy Icarius)",
-"zone_areas: Grand Commander Ruusk 20563, Eclipsion Dragonhawk in 3822",
-"quest 10547 log text (the bridge north of Eclipse Point)"
-],
-"notes": "Fact-check: dragonhawks see through Borak's disguise, not 'any'; Borak watched the elves for weeks and the envoy for a week (10546). Bridge north of Eclipse Point confirmed (10547). Otherwise verified."
-},
-{
-"id": 352020,
-"kind": 1,
-"zone": 3520,
-"sort": 20,
-"faction": 0,
-"title": "The Path of Conquest",
-"body": "The Path of Conquest lies just east of Eclipse Point, and there Illidan's Eclipsion armies muster soldiers, cavaliers and spellbinders for a great advance. At its southern end, by a stationary caravan, Chancellor Bloodleaf sought to win Corok the Mighty and the giants of Shadowmoon to Illidan's side, reminding them that Illidan's enemies are destroyed. The crazed colossi of the Eclipsion Fields to the west are the children of Behemothon, King of the Colossi, who will not forgive an attack on them. Also at the path's southern end stands Crimson Watch, held by the Crimson Sigil, Illidan's elite, where Marcus Auralion, High General of the Sha'tar, was shut inside a crystal prison after Val'zareq the Conqueror captured him.",
-"triggers": [
-[
-1,
-3929
-],
-[
-1,
-3930
-],
-[
-1,
-3950
-]
-],
-"sources": [
-"quests 10750, 10772 (Eclipsion armies forming at the Path of Conquest, adjacent to Eclipse Point)",
-"quests 10765, 10774 (meeting of a giant and a blood elf chancellor at the southern end near a stationary caravan)",
-"creature_text 22012, 22011 (Bloodleaf and Corok)",
-"creature_text 22054 (Behemothon: you have attacked my children, the pact is broken)",
-"quests 10769, 10776 (Eclipsion Fields, crazed colossi)",
-"quests 10793, 10815 descriptions and 10793 reward text (Crimson Watch at the southern end, Crimson Sigil, Val'zareq captured the high general, crystalline prison)",
-"zone_areas: Corok 22011, Bloodleaf 22012, Val'zareq 21979 in 3929; Crazed Colossus in 3930; Marcus Auralion 22073 in 3950",
-"DB spawns: Ruusk (-4585, 1670), Val'zareq (-4328, 1386), Bloodleaf (-4497, 1307), Auralion (-4617, 1399)"
-],
-"notes": "Fact-check: the Path runs east of Eclipse Point (spawns of Bloodleaf, Val'zareq, Ruusk), not south of it; Crimson Watch at its southern end confirmed. The Battle of the Crimson Watch quest (10781) is left to Shattrath."
-},
-{
-"id": 352021,
-"kind": 1,
-"zone": 3520,
-"sort": 21,
-"faction": 0,
-"title": "Dragonmaw Fortress",
-"body": "Dragonmaw Fortress rises on the eastern edge of the Netherwing Fields, the stronghold of the Dragonmaw orcs who serve Illidan. Here the clan does to the nether drakes what it once did to the red dragons of Azeroth: wranglers and subjugators capture them and torture them until they bend, and many broken drakes now carry Dragonmaw drake-riders into battle. Atop the fortress, bound in chains that sap her strength, Karynaku, mate of Neltharaku and mother of the flight, is held prisoner. Her jailer is the clan's chieftain, the ancient orc Zuluhed the Whacked, who hides in her thoughts and waits for her to break.",
-"triggers": [
-[
-1,
-3939
-]
-],
-"sources": [
-"quest 10836 description (fortress on the eastern edge of the Netherwing Fields; some drakes corrupted by the Dragonmaw)",
-"npc_text 10614, 10615, 10616 (torture of captured drakes, Zuluhed and the capture of Alexstrasza, Karynaku held atop the fortress)",
-"warcraft.wiki.gg/wiki/Zuluhed_the_Whacked (Dragonmaw enslaved the red dragonflight in the Second War)",
-"quests 10858 reward text and 10866 description (chains sap her power; Zuluhed hides in her thoughts)",
-"zone_areas: Dragonmaw Wrangler, Subjugator, Drake-Rider, Enslaved Netherwing Drake, Karynaku 22112 in 3939"
-],
-"notes": "verified"
-},
-{
-"id": 352022,
-"kind": 1,
-"zone": 3520,
-"sort": 22,
-"faction": 0,
-"title": "Netherwing Ledge",
-"body": "Netherwing Ledge was once part of the Shadowmoon mainland; now it floats in the sky off the valley's broken southeastern shelf. It was the Netherwing's sanctuary until the Dragonmaw took it. At Dragonmaw Base Camp, Overlord Mor'ghor drives peons and Murkblood Broken to strip the island of its crystals, ore and netherdust pollen to supply Illidan's armies, and transporters carry the haul to the fortress along the Dragonmaw Skyway. Above the ledge the drake Vhel'kur, spawn of Deathwing, flies an endless circle around the island that was his home and is now his grave, still seething at his defeat by Teron Gorefiend.",
-"triggers": [
-[
-1,
-3759
-],
-[
-1,
-3966
-],
-[
-1,
-3967
-]
-],
-"sources": [
-"quest 10634 description (once part of the mainland, now a floating island; Vhel'kur, spawn of Deathwing, defeated by Gorefiend)",
-"quest 10837 description (island off the broken shelf to the southeast)",
-"quest 11013 description (Netherwing sanctuary now home to the Dragonmaw)",
-"quests 11015-11018 (crystals, hides, pollen, ore), 11035 (Skyway transporters to Dragonmaw Fortress)",
-"npc_text 10944 (Murkblood overseer: stripping the island to supply Illidan's armies)",
-"zone_areas: Dragonmaw Peon, Murkblood Miner in 3759; Mor'ghor 23139 in 3966; Dragonmaw Transporter in 3967"
-],
-"notes": "verified"
-},
-{
-"id": 352023,
-"kind": 1,
-"zone": 3520,
-"sort": 23,
-"faction": 0,
-"title": "Netherwing Mines",
-"body": "The Netherwing Mines bore deep into Netherwing Ledge, where the Dragonmaw set Murkblood Broken to dig. The work stopped when a miner's pick struck a crystal formation that turned out to be part of a sleeping nether dragon, Toranaku. The dragon woke in fury and slaughtered the workers, the creatures of the depths rose with it, and a band of miners cut off from the exit soon sank into madness. The Dragonmaw call it a grim discovery. The Murkblood know better. Offered peace and protection by the Netherwing, they helped Toranaku rouse the creatures of the mine, at great cost, hoping to make the mine unlivable and drive the orcs from the island.",
-"triggers": [
-[
-1,
-3965
-]
-],
-"sources": [
-"quest 11075 description (miner struck a crystal formation attached to a sleeping nether dragon; workers annihilated)",
-"quests 11077, 11083 (creatures riled up; crazed Murkblood cut off from the exit)",
-"npc_text 10941-10946 (Murkblood overseer: the Netherwing offered peace and protection, the Murkblood helped rouse Toranaku to force the Dragonmaw off the island)",
-"zone_areas: Toranaku 23164 in 3759 near the mines; Mistress of the Mines 23149",
-"npc_text 10943 (assisted Toranaku in rousing the creatures of this mine)"
-],
-"notes": "Fact-check: 'blame bad luck' unsupported, replaced with the Dragonmaw's own 'grim discovery' (11075); the Murkblood helped Toranaku rouse the mine's creatures, they did not rouse Toranaku (npc_text 10943)."
-},
-{
-"id": 352024,
-"kind": 2,
-"zone": 3520,
-"sort": 1,
-"faction": 1,
-"title": "Kurdran Wildhammer",
-"body": "Kurdran Wildhammer is the thane of the Wildhammer dwarves in Outland. In the Second War he fought the Horde on the back of his gryphon, Sky'ree, and was credited with slaying nine dragons. When the Alliance expedition crossed the Dark Portal he led its gryphon riders, and when Ner'zhul's portals began to tear Draenor apart he chose to stay behind with his comrades so that the Portal could be sealed. Azeroth mourned him as dead for twenty years. He and Sky'ree survived, and now he holds Wildhammer Stronghold against the Legion's siege, receiving visitors inside while his keeper tends the faithful gryphon who would die for him.",
-"triggers": [
-[
-2,
-21330
-],
-[
-5,
-10744
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Kurdran_Wildhammer (Second War, Sky'ree, nine dragons, Gryphon Rider Division, stayed to ensure the Portal was sealed, presumed dead twenty years, Thane of Wildhammer Stronghold)",
-"npc_text 9805 (Eli Thunderstrike on Sky'ree and Kurdran's audiences)",
-"quest 10744 reward text"
-],
-"notes": "Verified. Faction 1: Kurdran (1732) and quest 10744 (Alliance only)."
-},
-{
-"id": 352025,
-"kind": 2,
-"zone": 3520,
-"sort": 2,
-"faction": 2,
-"title": "Overlord Or'barokh",
-"body": "Overlord Or'barokh commands Shadowmoon Village for the Horde, with the elite Kor'kron guard at his back. Caught between the Legion's infernals and Illidan's armies, he has no men to spare and says so bluntly: when a shaman came pleading for soldiers, he asked whether the shaman had no eyes for the demons at the door and advised a prayer to the gods instead, for the Horde could not help. What he does have are recruits, and every newcomer is a grunt to him. His wind riders brought word of the Eclipsion armies mustering on the Path of Conquest, and it was his plan, with a potion brewed by Researcher Tiorus, that turned the giants of Shadowmoon against Illidan's elves.",
-"triggers": [
-[
-2,
-21769
-],
-[
-5,
-10745
-]
-],
-"sources": [
-"quest 10595 description (elite Kor'kron guard)",
-"creature_text 21769 (What is it that you want from me, shaman? ... I do not have the soldiers to spare ... Pray to your gods)",
-"quests 10702, 10769 (grunt work; Tiorus's concoction, Eclipsion Fields)",
-"quest 10750 description (word from his wind riders)",
-"quest 10745 reward text"
-],
-"notes": "Verified. Faction 2: Or'barokh (1734) and quest 10745 (Horde only). The shaman he refuses is not named in the text (probably an Earthen Ring earthmender; Splinthoof stands in the village)."
-},
-{
-"id": 352026,
-"kind": 2,
-"zone": 3520,
-"sort": 3,
-"faction": 0,
-"title": "Earthmender Torlok",
-"body": "Earthmender Torlok of the Earthen Ring keeps vigil at the Altar of Damnation, trying to make amends to the elements of Shadowmoon. He is an orc, and he does not hide that it was his own people who wounded them: here, he says, Gul'dan severed the tie between the orcs and the spirits, and not content with the ruin of the draenei, razed Draenor itself for power. The spirits he finds are enraged and unwilling to speak, so he gathers their souls in a totem until they can be heard. When at last they answer, they name a firelord unearthed by Gul'dan's ritual, and Torlok, with no idea where to turn, sends for an old hermit he once met.",
-"triggers": [
-[
-2,
-21024
-]
-],
-"sources": [
-"npc_text 10250 (Gul'dan severed the tie; razed Draenor)",
-"creature_text 21024 (It was my people that did this to you; Cyrukh; the fire lord)",
-"quests 10458, 10680 (the spirits are enraged and unwilling to commune with the Earthen Ring; totem of spirits)",
-"quest 10513 description (Torlok turns to Oronok, a long shot)"
-],
-"notes": "Fact-check: Cyrukh was unearthed by Gul'dan's ritual (creature_text 21024), not 'still buried'. Otherwise verified."
-},
-{
-"id": 352027,
-"kind": 2,
-"zone": 3520,
-"sort": 4,
-"faction": 0,
-"title": "Oronok Torn-heart",
-"body": "Oronok Torn-heart lives as a hermit farmer above Coilskar Cistern, and admits that he has been a lot of things. One of them was a lieutenant of Gul'dan. A shaman who had abandoned the elements for shadow magic, he stood beside the warlock at the Altar of Damnation when the land was shattered, and like every orc on Draenor he felt the cut, a loss too deep for words. Sick at heart, he gathered his boys and fled to the hills. It has taken him twenty years to reach the elements again. When he learned what Illidan had done with Gul'dan's words, he sent his three sons, Grom'tor the warrior, Ar'tor the hunter and Borak the scholar, to recover them.",
-"triggers": [
-[
-2,
-21183
-]
-],
-"sources": [
-"quest 10514 description (I've been a lot of things)",
-"npc_text 10315, 10316, 10317, 10318 (lieutenant of Gul'dan, abandoned shamanism for shadow magic, felt the cut, fled with his boys, twenty years, sent his sons)",
-"quests 10521, 10527, 10546 (the three sons)",
-"warcraft.wiki.gg/wiki/Oronok_Torn-heart"
-],
-"notes": "verified"
-},
-{
-"id": 352028,
-"kind": 2,
-"zone": 3520,
-"sort": 5,
-"faction": 0,
-"title": "Akama",
-"body": "Akama leads the Ashtongue, the most feared tribe of the Broken, and to many of his own people he is a traitor and Illidan's lapdog. He lets them think so. He joined Illidan, he says, because visions foretold that his race would otherwise be destroyed, and he has waited ever since for further signs: Velen's exodus, the opening of the Dark Portal, the coming of heroes from Azeroth. The brutes he sends to Baa'ri were chosen to keep up the mask he shows Illidan, but his Deathsworn know his true mind. Illidan holds Akama's very soul prisoner within the Black Temple, so the Broken leader plots in secret in the Warden's Cage, guarding Maiev Shadowsong and biding his time.",
-"triggers": [
-[
-2,
-21700
-]
-],
-"sources": [
-"npc_text 10447 (known as a traitor, Illidan's lapdog)",
-"quest 10619 description (Ashtongue feared among all Broken)",
-"quest 10628 reward text (visions, Velen's exodus, the Dark Portal, your arrival)",
-"quest 10622 description (Baa'ri Ashtongue hand-picked to maintain the facade; Deathsworn know his intentions)",
-"quest 10948 description (his soul held prisoner inside the Black Temple)",
-"creature_text 21700 (keeping the secret, Maiev)"
-],
-"notes": "Verified. Akama faction 1820, talkable by both. Chronicle-era backstory (exarch, Zangarmarsh) left out."
-},
-{
-"id": 352029,
-"kind": 2,
-"zone": 3520,
-"sort": 6,
-"faction": 0,
-"title": "Maiev Shadowsong",
-"body": "Maiev Shadowsong is the Warden who held Illidan captive for ten thousand years and hunted him all the way to Outland after he escaped. Now she is the prisoner, locked in a cell in the Warden's Cage under the watch of Akama and his Deathsworn. Akama insists that they want the same thing and that she must wait, for he has spent years preparing and cannot tip his hand too soon. Maiev will have none of it. She is no pawn in his game, she tells him, and when she unleashes her wrath on Illidan it will have nothing to do with his foolish scheme. If Illidan is to die, it will be by her hand.",
-"triggers": [
-[
-5,
-10628
-]
-],
-"sources": [
-"creature_text 21699 (release me; if Illidan is to die it shall be by my hand; not a pawn in your game; cell won't hold me)",
-"creature_text 21700 (In due time, Maiev; years preparing)",
-"warcraft.wiki.gg/wiki/Akama (Akama became Maiev's jailer)",
-"Warcraft III: The Frozen Throne (Maiev as Illidan's jailer for ten thousand years, pursued him to Outland)",
-"warcraft.wiki.gg/wiki/Maiev_Shadowsong (guarded Illidan ten thousand years; pursued him to Outland; held in the Warden's Cage)"
-],
-"notes": "Verified. Ten thousand years as Illidan's jailer and pursuit to Outland per wiki Maiev_Shadowsong (Frozen Throne). Maiev 21699 has npcflag 0 and cannot be talked to or killed; QUEST_DONE 10628 (Akama, in the hidden chamber beside her cell) is how one meets her. No Legion-era Maiev material."
-},
-{
-"id": 352030,
-"kind": 2,
-"zone": 3520,
-"sort": 7,
-"faction": 0,
-"title": "Neltharaku",
-"body": "Neltharaku is the patron of the Netherwing, a nether dragon who flies high above the Netherwing Fields, where his young dare not land for fear of the Dragonmaw. He is a father in grief. The orcs have taken many of his children to Dragonmaw Fortress and tortured them until they gave in, and his mate Karynaku is chained atop its walls; every attempt he has made to free her has failed. Neltharaku feels powerless against them. It was Illidan, he says, who found the Dragonmaw their leader, Zuluhed, the orc held responsible for the capture of the Dragon Aspect Alexstrasza. If such an orc could take an Aspect, how could the young Netherwing resist him?",
-"triggers": [
-[
-2,
-21657
-]
-],
-"sources": [
-"quest 10811 description (patron soars high above)",
-"npc_text 10614, 10615, 10616 (Neltharaku's tale: torture at the fortress, refusal to land, Illidan delivered Zuluhed, Alexstrasza, Karynaku and failed rescues)",
-"quest 10858 description (without my mate the brood may die out)"
-],
-"notes": "Fact-check: the refusal to land belongs to his young (npc_text 10614), not to Neltharaku. Zuluhed capturing Alexstrasza kept as his words (wiki credits Nekros under Zuluhed's command). Faction template 7 is neutral to both."
-},
-{
-"id": 352031,
-"kind": 2,
-"zone": 3520,
-"sort": 8,
-"faction": 0,
-"title": "Overlord Mor'ghor",
-"body": "Overlord Mor'ghor rules the Dragonmaw Base Camp on Netherwing Ledge, a coarse and boastful fel orc who serves Illidan and drives his workers to strip the island bare. He was once a chief lieutenant of the Dragonmaw at Grim Batol on Azeroth, a past the black dragonflight has not forgotten. Recruits who arrive with service papers start as peons, and the few who survive rise in rank under his eye. He sends his captains against the Legion on the Twilight Ridge and his commanders against the Aldor and the Scryers. He also keeps dealings of his own: the Netherwing eggs his orcs collect are sought by Lady Sinestra, who speaks for a black dragon master Mor'ghor had believed dead.",
-"triggers": [
-[
-2,
-23139
-],
-[
-5,
-11013
-]
-],
-"sources": [
-"quest 11013 description and reward text (service papers, peon)",
-"creature_text 23284 (Lady Sinestra: chief lieutenant at Grim Batol; the Netherwing eggs; my master) and 23139 (The master? He lives?)",
-"quests 11086, 11094, 11099 (Twilight Ridge, sacking the Scryer and Aldor outposts)",
-"npc_text 10944 (the Dragonmaw strip the island and supply Illidan's armies)",
-"warcraft.wiki.gg/wiki/Overlord_Mor'ghor (BC section)"
-],
-"notes": "Verified. Mor'ghor (faction 1863) may only be friendly once the Netherwing disguise is earned; QUEST_DONE 11013 covers that. Cataclysm Twilight Highlands Mor'ghor not used."
-},
-{
-"id": 352032,
-"kind": 2,
-"zone": 3520,
-"sort": 9,
-"faction": 0,
-"title": "Illidari Lord Balthas",
-"body": "Illidari Lord Balthas is an eredar in Illidan's service who stands among the Dragonmaw at their base camp on Netherwing Ledge. His brother, Reth'hedron the Subduer, chose the other side and now lords over the Twilight Ridge in Nagrand for the Burning Legion. With the Sha'tar bringing war to the gates of the Black Temple, Balthas admits that the Illidari cannot spare the strength to slay an eredar of his brother's power. He has a colder answer instead: a soul cannon attuned to his own blood, which is also Reth'hedron's, to drive his brother back through the Twilight Portal. Reth'hedron will return, Balthas warns, but the Legion's war is weakened for now.",
-"triggers": [
-[
-2,
-23427
-],
-[
-4,
-11089
-]
-],
-"sources": [
-"quest 11089 description (Reth'hedron lords over the Twilight Ridge; no resources to slay him with the war the Sha'tar brought to the Black Temple; banish him through the portal)",
-"quest 11090 description and reward text (soul cannon attuned to his blood, my brother; he will be back)",
-"data/lore/nagrand.json 351820 (Reth'hedron is an eredar; Twilight Ridge place told there)",
-"warcraft.wiki.gg/wiki/Illidari_Lord_Balthas (Man'ari eredar, brother Reth'hedron)"
-],
-"notes": "Verified. Balthas is an eredar per wiki Illidari_Lord_Balthas (Man'ari eredar); 11089 needs Netherwing Friendly, open to both factions. Faction template 62 is only friendly with the Netherwing disguise; the ACCEPT trigger covers that."
-},
-{
-"id": 352033,
-"kind": 2,
-"zone": 3520,
-"sort": 10,
-"faction": 0,
-"title": "Doomwalker",
-"body": "Doomwalker is a fel reaver unlike any other, a towering war engine of the Burning Legion that Kil'jaeden sent to assault the gates of the Black Temple. The tales say it was infused with the captured souls of martyred draenei, which set it apart from the lesser reavers of Outland. It prowls the approaches before the temple and greets intruders in a cold, mechanical voice, warning them to proceed no farther or be eliminated. When it strikes, it speaks of tectonic disruption and the ground trembles, and over each fallen foe it pronounces the same verdict: threat level zero, directive accomplished.",
-"triggers": [
-[
-3,
-17711
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Doomwalker (fel reaver sent by Kil'jaeden to assault the gates of the Black Temple, built with captured draenei souls)",
-"creature_text 17711 (Do not proceed; tectonic disruption; threat level zero; directive accomplished)",
-"DB spawn 84633 at (-3563, 234), area 3520 north of the Black Temple grounds",
-"warcraft.wiki.gg/wiki/Doomwalker (infused with the captured souls of martyred draenei)"
-],
-"notes": "Fact-check: 'built with' souls changed to 'infused with' (wiki); Hellfire comparison and 'north of the temple' removed (spawn lies west of area 3840). Kil'jaeden as sender is wiki-only (BC raid lore). World raid boss, not in game_event_creature; faction 90 hostile to both."
-},
-{
-"id": 352034,
-"kind": 3,
-"zone": 3520,
-"sort": 1,
-"faction": 0,
-"title": "The Legion's Bombardment",
-"body": "Infernals fall on Wildhammer Stronghold and Shadowmoon Village day and night, flung from Legion Hold, and the defenders of both outposts are close to breaking. Wing Commander Nuainn and Blood Guard Gulmok each send a volunteer into the hold in disguise to listen at the Legion's communication device. The news is grim: Warbringer Razuun, speaking for Doom Lord Kazzak, orders the attacks increased and promises infernals enough from the Deathforge. A bomb built from a dead fel reaver's power core destroys the stockpile in the hold. Scouts at Deathforge Tower and Slag Watch then guide the assault on the forge itself, where the summoning ritual is broken and Razuun is slain. His orders point to the true staging ground, Invasion Point: Cataclysm, reached by a teleporter. There Plexi, for the Alliance, and Nakansi, for the Horde, rig a captured fel reaver to smash the Legion's own infernals, and word of the broken siege goes back to Kurdran and Or'barokh.",
-"triggers": [
-[
-4,
-10562
-],
-[
-4,
-10595
-]
-],
-"sources": [
-"quests 10562-10589, 10766, 10606, 10612, 10744 (Alliance chain)",
-"quests 10595-10604, 10767, 10611, 10613, 10745 (Horde chain)",
-"creature_text 21502, 21633 (Razuun and Jovaan at the communication device)"
-],
-"notes": "Verified. Faction 0: 10562 Alliance only (1101), 10595 Horde only (690), one per side. Lead-ins 11044 and 11048 (filed under Nagrand, unused there) not used."
-},
-{
-"id": 352035,
-"kind": 3,
-"zone": 3520,
-"sort": 2,
-"faction": 0,
-"title": "The Cipher of Damnation",
-"body": "At the Altar of Damnation the Earthen Ring sets out to heal Shadowmoon's tortured elements. With a totem of spirits, Earthmender Torlok gathers the souls of enraged fire, earth, water and air, and when the spirits finally speak they name Cyrukh the Firelord, an elemental lord unearthed by Gul'dan's ritual. Only the ritual's own words can call him forth. Torlok sends for the hermit Oronok Torn-heart, who confesses that he was Gul'dan's lieutenant: Illidan found those words, the Cipher of Damnation, in the Black Temple and split them among his servants. Oronok's sons go after the pieces. Grom'tor beats one hiding place out of a Coilskar naga. Ar'tor is found dead at Illidari Point, yet his spirit wins back his family bow and the second piece from Veneratus the Many. Borak baits Illidan's envoy with bloodthistle, delivers false orders into Eclipse Point, and ambushes Ruul the Darkener for the third. Read whole at the altar, the cipher calls Cyrukh, and the firelord falls.",
-"triggers": [
-[
-4,
-10680
-],
-[
-4,
-10681
-],
-[
-4,
-10458
-]
-],
-"sources": [
-"quests 10680/10681 (breadcrumbs to Torlok), 10458, 10480, 10481 and creature_text 21024 (spirits name Cyrukh, an elemental lord unearthed)",
-"quests 10513-10519, npc_text 10313-10318 (Oronok's story)",
-"quests 10521-10523 (Grom'tor), 10527-10541 (Ar'tor, Lohn'goron, Veneratus), 10546-10579 (Borak, bloodthistle, Icarius, Ruusk, Ruul)",
-"quest 10588 (reading the cipher at the Altar of Damnation, Cyrukh)"
-],
-"notes": "Verified. 10680 Alliance and 10681 Horde breadcrumbs plus 10458 (Torlok, both) as entry points. Torlok's closing hint (another knows the cipher) left out. Wilda's escort 10451 is mentioned under Coilskar Point only."
-},
-{
-"id": 352036,
-"kind": 3,
-"zone": 3520,
-"sort": 3,
-"faction": 0,
-"title": "The Return of Teron Gorefiend",
-"body": "The ghosts of Shadowmoon have grown restless. Zorus the Judicator at Wildhammer Stronghold and Chief Apothecary Hildagard at Shadowmoon Village craft goggles from ever-burning ash that let their wearers see the dead, and the spirits cleared from both outposts whisper one name: Teron Gorefiend, Gul'dan's warlock, whose soul was bound into a slain knight's body to make the first death knight of the Horde. The trail leads to an ancient Shadowmoon spirit at the Altar of Shadows, who claims Gorefiend took his own life after the Second War and offers to divine his fate if his relics are found. His armor lies with Vhel'kur over Netherwing Ledge, his cloak with the ghosts of the clerics he murdered at Karabor, his truncheon with the Ghostriders who rose from his slain death knights. Once all three are gathered, the spirit drops its mask. It is Gorefiend himself, imprisoned at the altar, and he seizes his helper's body to slay his jailer, Karsius, and walks free once more.",
-"triggers": [
-[
-4,
-10642
-],
-[
-4,
-10624
-]
-],
-"sources": [
-"quests 10642, 10643, 10644, 10645 (Alliance, Zorus) and 10624, 10625, 10633, 10639 (Horde, Hildagard)",
-"quest 10625 reward text (Gorefiend slain by Doomhammer, soul placed in a slain knight of Stormwind, first death knight)",
-"quests 10633, 10634, 10635, 10636 (the spirit's account, Vhel'kur, clerics of Karabor, Ghostriders)",
-"quest 10639 description; creature_text 21797, 21872, 21877 (possession, Karsius, Gorefiend has returned)"
-],
-"notes": "Verified. Faction 0: 10642 Alliance only, 10624 Horde only. The spirit's claim of suicide is presented as the spirit's tale (the wiki says Turalyon slew him)."
-},
-{
-"id": 352037,
-"kind": 3,
-"zone": 3520,
-"sort": 4,
-"faction": 0,
-"title": "The Medallion of Karabor",
-"body": "The Aldor at the Altar of Sha'tar and the Scryers at the Sanctum of the Stars both learn that the Ashtongue are digging in the Ruins of Baa'ri, and both send agents to seize the Tablets of Baa'ri first. The tablets speak of a Medallion of Karabor, which once let the highest draenei priests enter the temple freely. Orders taken from Oronu the Elder reveal that four fragments of it went to the Ashtongue Corruptors, and once those are won, the trail leads to Akama himself in the Warden's Cage. There his second, Sanoru, admits that Akama has been watching. After the satyr spy Zandras is slain, the visitor is led through a hidden passage to Akama, who confesses that he serves Illidan only in appearance and that the fragments were replicas: he holds the true medallion, still missing its last piece. That search leads into the Arcatraz, onto the Ata'mal Terrace for the Heart of Fury, and at last to A'dal in Shattrath.",
-"triggers": [
-[
-4,
-10568
-],
-[
-4,
-10683
-],
-[
-4,
-10622
-]
-],
-"sources": [
-"quests 10568, 10571, 10574, 10575 (Aldor) and 10683, 10684, 10685, 10686 (Scryers)",
-"quests 10622, 10628 (Sanoru, Zandras, Akama)",
-"quests 10705, 10706, 10707, 10708 (replicas, Udalo in the Arcatraz, Heart of Fury, A'dal)",
-"creature_text 21700 (Heart of Fury, take it to A'dal)"
-],
-"notes": "Verified. Aldor/Scryer split: entry points 10568 (Aldor, Ceyla) and 10683 (Scryers, Thelis), plus 10622 (Sanoru, neutral, after both converge). The Black Temple attunement (10944-10985, via A'dal and Xi'ri) is left to Shattrath and only hinted."
-},
-{
-"id": 352038,
-"kind": 3,
-"zone": 3520,
-"sort": 5,
-"faction": 0,
-"title": "Illidan's Pupil",
-"body": "Aldor and Scryer scouts alike report Sunfury recruits streaming into the Ruins of Karabor, dressed and fighting like Illidan himself. Glaives taken from the initiates confirm the fear: Illidan is training blood elf demon hunters. While the pit lord Azaloth, loosed on his captors, keeps the grounds in chaos, Exarch Onaala and Larissa Sunstrike send their agent to Nagrand to seek Altruis the Sufferer, a demon hunter who bears Illidan no allegiance. Altruis tells the tale of Varedis. Of five warriors Kael'thas sent to Illidan, three died in training and one went mad; Varedis alone survived and soon surpassed the three masters set to teach him. He had stolen into the Shadow Council and learned by heart the Book of Fel Names, said to hold the true name of every demon. After proving themselves to Altruis, the agents take the book from the Shadow Labyrinth, and when Varedis takes his demon form at Karabor it is burned before him, stripping his power as he and his masters fall.",
-"triggers": [
-[
-4,
-10587
-],
-[
-4,
-10687
-]
-],
-"sources": [
-"quests 10587, 10637, 10640, 10650, 10651 (Aldor) and 10687, 10688, 10689, 10691, 10692 (Scryers)",
-"npc_text 10492-10497 (Altruis's account of Varedis)",
-"quests 10641, 10646, 10649, 10668, 10669 (Altruis's trials and the Book of Fel Names)"
-],
-"notes": "Fact-check: Altruis 'owes Illidan nothing' contradicted his respect for Illidan (10668), now 'bears no allegiance' (10640). Aldor and Scryer split confirmed: 10587 needs Aldor Friendly (932), 10687 Scryers Friendly (934). Nagrand quests 10640, 10689, 10646 not used as triggers; Nagrand's Altruis person (351828) is not retold."
-},
-{
-"id": 352039,
-"kind": 3,
-"zone": 3520,
-"sort": 6,
-"faction": 0,
-"title": "The Plight of the Netherwing",
-"body": "Mordenai finds the nether drakes over the Netherwing Fields starving, too frightened to land, and asks for help feeding them flayer carcasses. That kindness reaches their patron, Neltharaku, who tells of Dragonmaw Fortress, where the Dragonmaw torture captured drakes into obedience, and of his mate Karynaku, chained atop its walls. To buy him time, the orcs in the fortress are cut down while he devises a remedy. From nethervine crystals gathered on Netherwing Ledge he makes charms filled with his own essence, which break the riders' hold over their enslaved drakes and set them free to turn on their captors. Then comes the climb to the top of the fortress. Karynaku, weakened by her chains, calls Zuluhed the Whacked to her with a false promise to obey, and when the old chieftain appears he is slain for his key. Freed at last, she carries her rescuer back to Mordenai, who names the stranger kin to the Netherwing Dragonflight.",
-"triggers": [
-[
-4,
-10804
-]
-],
-"sources": [
-"quests 10804, 10811, 10814, 10836, 10837, 10854, 10858, 10866, 10870/10871",
-"npc_text 10614-10616 (Neltharaku's tale)",
-"creature_text 11980 (Zuluhed)"
-],
-"notes": "Verified. Single neutral entry point. 10872 (an unused copy of Zuluhed the Whacked) ignored."
-},
-{
-"id": 352040,
-"kind": 3,
-"zone": 3520,
-"sort": 7,
-"faction": 0,
-"title": "Among the Dragonmaw",
-"body": "Sworn by blood oath to the Netherwing, an ally is cloaked by the flight's magic as a fel orc and sent to Netherwing Ledge with service papers for Overlord Mor'ghor, who laughs and makes the newcomer a peon. Daily labor for Taskmaster Varkule covers the true work, done for Yarzill the Merc, a Netherwing agent in disguise: poisoning peon camps, ambushing transporters on the Dragonmaw Skyway, and hunting stolen Netherwing eggs. The infiltrator rises to overseer, captain and commander. Ordered to sack the Aldor or Scryer outpost, the commander warns them instead, and their defenders spring a trap on the Dragonmaw raiders while Mor'ghor is shown medals as proof of victory. At last Mor'ghor names his finest orc the first highlord of the Dragonmaw, and Illidan himself comes to the ledge to see this hero. He sees through the disguise at once and declares the whole operation compromised. Yarzill snatches the highlord to safety, and the Netherwing's thanks wait with Barthamus in Shattrath.",
-"triggers": [
-[
-5,
-11012
-],
-[
-4,
-11013
-]
-],
-"sources": [
-"quests 11012, 11013, 11014, 11019, 11020, 11035, 11049, 11053, 11084, 11092, 11094/11099, 11095/11100, 11097/11101, 11107, 11108",
-"creature_text 23139, 22083, 23141 (Mor'ghor, Illidan, Yarzill at the highlord ceremony)",
-"quest 11019 reward text (Yarzill's eyes flicker blue: we are here with you)"
-],
-"notes": "Verified. 11012 Blood Oath is QuestType 0 (auto-complete), so it gets QUEST_DONE; 11013 is the first accepted quest. Neutral entry; the Aldor/Scryer turn (11094/11099) is told as shared history. Barthamus (Shattrath) is only mentioned."
-},
-{
-"id": 352041,
-"kind": 3,
-"zone": 3520,
-"sort": 8,
-"faction": 0,
-"title": "The Dark Conclave",
-"body": "Journal pages taken from the arakkoa ghosts of the Sketh'lon Wreckage, by Gryphonrider Kieran's agents for the Alliance or Sergeant Kargrul's for the Horde, speak of a spell gone awry and of a deserter. The deserter is Parshah, a haunted arakkoa waiting by the road through the Magma Fields. He tells how his people, seeing the Horde mass under Gul'dan, prepared to strike him first, and how the warlock answered with magic that destroyed their camps and twisted their spirits. Worse, Gul'dan's power fed on the arakkoa's own spell, and the ghosts of the Dark Conclave now seek to summon an ancient evil in the lava pits south of their base camp. Parshah builds a staff to stop them from Asghar's war totem, the Rod of Lianthe taken from Eclipse Point and Sketh'lon feathers, its headpiece charged with the echoes of Gul'dan at the Altar of Damnation. With it the ritual is broken, and Parshah at last believes he was right to desert.",
-"triggers": [
-[
-4,
-10569
-],
-[
-4,
-10760
-]
-],
-"sources": [
-"quests 10569, 10759 (Alliance) and 10760, 10761 (Horde)",
-"quests 10777, 10778, 10780, 10782, 10808 (Parshah's staff and the ritual)",
-"npc_text 10556 (Parshah's gaze)"
-],
-"notes": "Verified. Faction 0: 10569 Alliance only, 10760 Horde only."
-},
-{
-"id": 352042,
-"kind": 3,
-"zone": 3520,
-"sort": 9,
-"faction": 0,
-"title": "The Illidari-Bane Blade",
-"body": "Shards of a strange metal turn up among the mo'arg of Legion Hold, etched with glowing runes. Ordinn Thunderfist at Wildhammer Stronghold and Grokom Deatheye at Shadowmoon Village know the work: a rare ore enchanted to destroy demons, a secret weapon the Legion means to use against Illidan's forces. More of the metal is taken from the glaives of the pit lords Makazradon and Morgroron, but forging it is beyond either smith. Both send the ingots to David Wayne, a blacksmith who came to Draenor with the Sons of Lothar and later left the expedition to live alone in Terokkar Forest; even Grokom admits it pains him to send Horde business to a human. Wayne needs rare things: an overcharged manacell from the Mechanar, the Lexicon Demonica from the Shadow Labyrinth, underworld loam from the Steamvault and the Tear of the Earthmother from the Shattered Halls. The finished sword is quenched in the Scalding Pools of the Hand of Gul'dan, a blade to cut down Illidari and Legion demons alike.",
-"triggers": [
-[
-4,
-10621
-],
-[
-4,
-10623
-]
-],
-"sources": [
-"quests 10621, 10626, 10662 (Alliance) and 10623, 10627, 10663 (Horde)",
-"quests 10664, 10665, 10666, 10667, 10670, 10676, 10679 (David Wayne's materials, quenching at the Scalding Pools)",
-"npc_text 10500 (David Wayne and the Sons of Lothar)"
-],
-"notes": "Verified. Faction 0: 10621 Alliance only, 10623 Horde only (both start from an item). All the chain's quests are filed under Shadowmoon, so it is told here; Terokkar may write David Wayne (21465, Wayne's Refuge) as a TALK person but should not reuse these quests."
-}
+ {
+  "id": 352000,
+  "kind": 0,
+  "zone": 3520,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Shadowmoon Valley",
+  "body": "Shadowmoon Valley lies in the far southeast of Outland, a land of ash, black rock and rivers of green fel lava under a dim and smoky sky. The orcs of the Shadowmoon clan once honored their ancestors here, and at its eastern edge the draenei raised the Temple of Karabor, one of their holiest sites. Both were lost to the Horde. Gul'dan's warriors took Karabor and the Shadow Council made it their seat, and the warlock raised the volcano at the valley's center in a ritual that severed the orcs from the elements of Draenor. The temple, now called the Black Temple, became the throne of Illidan Stormrage, and his servants, fel orcs and naga, Broken and blood elves, hold the valley in his name. The Burning Legion bombards it from Legion Hold. Against them stand the Wildhammer dwarves, the Horde's Kor'kron, and the Aldor and Scryers of Shattrath, while the Netherwing drakes struggle against the Dragonmaw orcs who enslave them.",
+  "triggers": [
+   [
+    1,
+    3520
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Shadowmoon_Valley (clan named after the valley, ancestor worship, Temple of Karabor as spiritual capital, Hand of Gul'dan raised to sever the link to the elements, Black Temple as Shadow Council base, Illidan's headquarters, settlements)",
+   "quest 10642 description (ancestral grounds of the Shadowmoon orcs)",
+   "quest 10635 description (Gul'dan's Horde defeated the draenei of Karabor)",
+   "npc_text 10250 (Torlok: Gul'dan severed the tie between orcs and spirits)",
+   "quest 10568 description (Gul'dan raised the volcano)",
+   "creature_template subnames 'Servant of Illidan' on Ashtongue, Coilskar, Shadowmoon fel orcs; Eclipsion blood elves",
+   "quests 10562, 10595 (infernals from Legion Hold)",
+   "warcraft.wiki.gg/wiki/Black_Temple (sacred draenei site; no coastal setting in BC)"
+  ],
+  "notes": "Converted: requiredState 8 on the entry (Outland). Nothing to hide; 'is the throne of Illidan' made 'became the throne', so the opening holds once Illidan has fallen (state 12 with mod-individual-progression, and at 18 without it); his fall is told in The Black Temple 352016 part 1. The Netherwing (patch 2.1) is not gated by the module and needs no tag. Before: Fact-check: 'near the coast' removed (Karabor's harbor is Rise of the Horde and WoD imagery, not BC Outland); Karabor called one of the draenei's holiest sites (wiki Black_Temple). No K'ara, Dark Star or WoD material. Otherwise verified."
+ },
+ {
+  "id": 352001,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 1,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Wildhammer Stronghold",
+  "body": "Wildhammer Stronghold stands in the southwest of the valley, the fortress of Kurdran Wildhammer, thane of the Wildhammer in Outland, and his gryphon riders. It is a hard place to hold. Infernals fall on its walls from Legion Hold to the northwest, Illidan's minions press from the other side, and Wing Commander Nuainn's riders have fought so long without relief that they are ragged with exhaustion. The ground itself is restless: the stronghold was built over the ancestral grounds of the Shadowmoon orcs, and the spirits of the old clan, dormant for nearly twenty years, now wander its courtyards. Zorus the Judicator studies them, while the gnome Gnomus, an inventor turned gourmand, dreams only of food that never cools.",
+  "triggers": [
+   [
+    1,
+    3745
+   ]
+  ],
+  "sources": [
+   "npc_text 10349 (Nuainn: the Legion on one side and Illidan's minions on the other)",
+   "quest 10562 description (Legion Hold to the northwest, men ragged and exhausted)",
+   "quest 10642 description (ancestral grounds, spirits dormant nearly twenty years)",
+   "quest 10643 (Shadowmoon harbingers infesting the stronghold)",
+   "quests 10661, 10672 (Gnomus, food that cooks itself and stays hot; inventor of the arcano-scorps)",
+   "npc_text 9805 (Kurdran holds audiences in the stronghold)",
+   "zone_areas: Kurdran 21330, Nuainn 21357, Zorus 21774, Gnomus 21777 stand in area 3745"
+  ],
+  "notes": "Converted: body unchanged (nothing to hide: the stirring of the spirits is the premise of 10642, not an outcome); requiredState 8 on the entry. npc_text 10349, 9805 reread: period text. Before: verified"
+ },
+ {
+  "id": 352002,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 2,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Shadowmoon Village",
+  "body": "Shadowmoon Village is the Horde's outpost in the northwest of the valley, held by Overlord Or'barokh and the elite Kor'kron guard. Like the dwarves to the south it lives under the Legion's guns: infernals from Legion Hold to the southwest rain on its walls, and Blood Guard Gulmok drafts every able fighter onto the line. The village is haunted as well. Chief Apothecary Hildagard warns that the land is full of ghosts, and she can craft goggles that reveal the spirits of Shadowmoon zealots drifting among the buildings. Nearby, the blood elf Researcher Tiorus studies the heat-proof diemetradons of the lava flows with probes built by his former partner, the gnome Gnomus, who resents it.",
+  "triggers": [
+   [
+    1,
+    3744
+   ]
+  ],
+  "sources": [
+   "quest 10595 description (Legion Hold to the southwest, the elite Kor'kron guard, every able-bodied fighter drafted)",
+   "quests 10624, 10625 (Spectrecles, Shadowmoon Zealots in the village, Hildagard's shock at Gorefiend's name)",
+   "quests 10660, 10672 (Tiorus, diemetradons, arcano control units crafted by Gnomus)",
+   "quest 10678 description (Gnomus: Tiorus continued their research using MY inventions)",
+   "zone_areas: Or'barokh 21769, Gulmok 21359, Hildagard 21772, Tiorus 21770, Kor'kron Defender, Shadowmoon Zealot 21788 in area 3744",
+   "quest 10624 description (the land is haunted; would you like to see them)"
+  ],
+  "notes": "Converted: 'what she learns from them leaves her badly shaken' dropped (Hildagard's shock at Gorefiend's name is the 10625 turn-in, told in The Return of Teron Gorefiend 352036 part 1); she now only warns and offers the goggles (10624). requiredState 8. Before: Fact-check: Gnomus 'has not forgiven him' softened to 'resents it' (quest 10678). Otherwise verified."
+ },
+ {
+  "id": 352003,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 3,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Legion Hold",
+  "body": "Legion Hold is the Burning Legion's fortress in western Shadowmoon, the source of the infernals that pound both the Wildhammer and the Horde outposts, for the Legion stocks and prepares its infernals there. Terrormasters and Shadow Council warlocks guard the stockpile, and the pit lords Makazradon and Morgroron stalk its grounds. Beside the hold, the Fetid Pool festers around the wreckage of a fallen fel reaver. High in the northern mountains lies Invasion Point: Cataclysm, where fel reaver sentinels stand guard over still more infernals.",
+  "triggers": [
+   [
+    1,
+    3743
+   ],
+   [
+    1,
+    3940
+   ],
+   [
+    1,
+    3943
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Spies who crept into the hold in disguise and listened at its communication device learned who directs this war. An image of Warbringer Razuun, speaking in the name of Doom Lord Kazzak, ordered the hold's commander to step up the attacks and destroy the orcish and dwarven strongholds with all haste, and promised all the infernals he needed from the Deathforge.",
+    "triggers": [
+     [
+      5,
+      10563
+     ],
+     [
+      5,
+      10596
+     ]
+    ],
+    "sources": [
+     "creature_text 21502, 21633 (Razuun and Jovaan at the communication device)",
+     "quests 10563, 10596 reward texts"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Razuun's own orders, taken when he fell at the Deathforge, gave away the Legion's true staging ground. The great store of infernals waits at Invasion Point: Cataclysm, and the only way to reach it is a teleporter inside Legion Hold, worked by control devices that certain of the hold's demons carry.",
+    "triggers": [
+     [
+      4,
+      10589
+     ],
+     [
+      4,
+      10604
+     ]
+    ],
+    "sources": [
+     "quests 10589, 10604 descriptions"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The hold's mo'arg work a strange metal, a rare ore etched with glowing runes and enchanted to destroy demons: a secret weapon the Legion means to turn against Illidan's forces. Makazradon and Morgroron already bear glaives forged from it.",
+    "triggers": [
+     [
+      4,
+      10626
+     ],
+     [
+      4,
+      10627
+     ]
+    ],
+    "sources": [
+     "quests 10621, 10623 reward texts",
+     "quests 10626, 10627 descriptions"
+    ]
+   }
+  ],
+  "sources": [
+   "creature_text 21502 (Image of Warbringer Razuun: Kazzak will be pleased, destroy the orcish and dwarven strongholds) and 21633 (Deathbringer Jovaan)",
+   "quest 10563 description (the Legion stocks its infernals at the hold)",
+   "quest 10626 description (Makazradon and Morgroron equipped with anti-demon weapons)",
+   "quests 10564, 10572 (fel reaver power core and wreckage at the Fetid Pool)",
+   "quests 10589, 10604 (Invasion Point: Cataclysm, infernal staging area in the northern mountains, reached by a teleporter at Legion Hold)",
+   "zone_areas: Terrormaster 21314, Shadow Council Warlock 21302, Morgroron 21500, Makazradon 21501 in 3743; Mutant Horror in 3940; Fel Reaver Sentinel 21949 in 3943"
+  ],
+  "notes": "Converted: Razuun's overheard order moved to part 1 (DONE 10563 Alliance, 10596 Horde); the teleporter to Invasion Point to part 2 (ACCEPT 10589, 10604, whose descriptions give Razuun's orders); the pit lords' anti-demon glaives to part 3 (ACCEPT 10626, 10627, after the smiths read the shard). The opening keeps what anyone walking in sees, including Invasion Point as a place. creature_text 21502, 21633 reread: period text. requiredState 8. Before: verified"
+ },
+ {
+  "id": 352004,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 4,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Deathforge",
+  "body": "The Deathforge is a Shadow Council foundry dug into the rock between the two outposts, where infernals are made as fast as the Legion can hurl them. Mo'arg smiths and tinkerers work the forges, and the scouts reckon that somewhere below ground the warlocks keep a summoning chamber, calling up the corrupted elementals that become the hearts of the infernals. Two scouting parties watch from the heights, the dwarves of Deathforge Tower and the orcs of Slag Watch, under strict orders to observe and not to fight. Each sent one of its own inside, the Wildhammer Flanis Swiftwing, who volunteered to spy, and the orc Kagrosh, who wanted to be a hero, and neither has been heard from since.",
+  "triggers": [
+   [
+    1,
+    3748
+   ],
+   [
+    1,
+    3936
+   ],
+   [
+    1,
+    3937
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Flanis never came out. He was discovered and slain in the midst of his spy mission, and the forge's attendants left his corpse in the open, perhaps as a warning to other interlopers. Stormer Ewan Wildwing doubts that Flanis ever understood how heavily the forge was guarded until it was too late.",
+    "triggers": [
+     [
+      5,
+      10583
+     ]
+    ],
+    "sources": [
+     "quest 10583 reward text",
+     "npc_text 10427 (Flanis's corpse)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Kagrosh never came out either. The Shadow Council caught him, just as Scout Zagran expected, for subtlety was never Kagrosh's strength, and his body was shoved aside to keep it off the walkway. Zagran calls him a fool, and hopes only that his pack was worth the search.",
+    "triggers": [
+     [
+      5,
+      10601
+     ]
+    ],
+    "sources": [
+     "quests 10601 description and reward text",
+     "npc_text 10446 (Kagrosh's corpse)"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10573, 10599 (Shadow Council producing infernals in the Deathforge; Deathforge Tower northwest of Wildhammer, Slag Watch southeast of the village)",
+   "quests 10585, 10602 (summoning chamber below ground, elementals that form the core of the infernals; mo'arg smiths and tinkerers)",
+   "quests 10582, 10600 (orders to observe, not engage)",
+   "quests 10583, 10601; npc_text 10427 and 10446 (Flanis's and Kagrosh's corpses)"
+  ],
+  "notes": "Converted: the deaths of Flanis and Kagrosh moved out of the opening, which now says only that neither has been heard from (10583, 10601 descriptions); Flanis's fate is part 1 (DONE 10583, Alliance), Kagrosh's part 2 (DONE 10601, Horde), separate so neither side reads the other's turn-in; each reads on from the opening alone. The summoning chamber is framed as the scouts' reckoning (10585, 10602 descriptions). npc_text 10427, 10446 reread: period text. requiredState 8. Before: Fact-check: Flanis volunteered and Kagrosh went in to be a hero (10583, 10601), not both 'sent'; bodies 'left' rather than both 'tossed' (npc_text 10427, 10446). Otherwise verified."
+ },
+ {
+  "id": 352005,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 5,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Illidari Point",
+  "body": "Illidari Point lies in the southwest, between Legion Hold and Wildhammer Stronghold. It is the proving ground for Illidan's demons, those who abandoned the Burning Legion to serve the Betrayer, and satyrs, shadowstalkers and succubi gather there under his lieutenant Lothros. Succubi led by Painmistress Gabrissa work their rituals around a rune ringed by hovering demonic crystals, and the beams that pour from those crystals hold the body of an orc suspended in the air above it.",
+  "triggers": [
+   [
+    1,
+    3752
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The dead orc is Ar'tor, the youngest son of Oronok Torn-heart, a gifted hunter and tracker who came here hunting a piece of the Cipher of Damnation. No one can say how long he has been dead. The demonic magic that holds his body in the air takes from him even in death.",
+    "triggers": [
+     [
+      5,
+      10527
+     ]
+    ],
+    "sources": [
+     "quest 10527 description and reward text",
+     "npc_text 10323"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Ar'tor's spirit did not depart. With his family bow back in his hand, he named the keeper of the piece he had come for: Veneratus the Many, a vile creature hidden in the ether at the back of the point, whom the hunter's own spirit could call out of hiding.",
+    "triggers": [
+     [
+      4,
+      10540
+     ]
+    ],
+    "sources": [
+     "quests 10537, 10540 descriptions"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10527 description (location; proving grounds for demons that left the Legion to join the Betrayer)",
+   "quest 10668 description (Lothros, Illidan's lieutenant at Illidari Point)",
+   "quests 10528, 10540 (crystals, succubi rituals, Gabrissa, Veneratus hidden in the ether)",
+   "quest 10527 reward text, npc_text 10323 (Ar'tor's body suspended)",
+   "zone_areas: Illidari Satyr, Shadowstalker, Painmistress Gabrissa 21309 in 3752; Lothros 21928 position in 3752"
+  ],
+  "notes": "Converted: Ar'tor's identity and death moved to part 1 (DONE 10527, at his body); Veneratus hidden in the ether (10540's description, from Ar'tor's spirit) to part 2 (ACCEPT 10540). The opening keeps the suspended body as anyone passing sees it. npc_text 10323 reread: period text. requiredState 8. Before: verified"
+ },
+ {
+  "id": 352006,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 6,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Sketh'lon and the Magma Fields",
+  "body": "The Sketh'lon arakkoa once camped in western Shadowmoon, and their ruins remain: the Sketh'lon Wreckage northwest of the Deathforge, and the Sketh'lon Base Camp to the south, east of Wildhammer Stronghold. Their ghosts linger as the Dark Conclave, wielding powers no one knew they possessed, and they prey on the orc peons sent to cut wood among the ruins, draining their lives to feed their magic. The peons are sure the place is cursed. Between the two outposts the road crosses the Magma Fields, where lava flows through cracks in the ground and felfire diemetradons bask in the heat.",
+  "triggers": [
+   [
+    1,
+    3933
+   ],
+   [
+    1,
+    3932
+   ],
+   [
+    1,
+    3949
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The arakkoa died in the days when the Horde massed under Gul'dan. Seeing the threat, they planned to strike at him first, but Gul'dan learned of their intentions and answered with a mighty spell that destroyed their camps and twisted the spirits of those who dwelt there.",
+    "triggers": [
+     [
+      4,
+      10777
+     ]
+    ],
+    "sources": [
+     "quest 10777 description (Parshah)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10777 description (arakkoa sought to strike against Gul'dan, his spell destroyed their camps and twisted their spirits)",
+   "quests 10569, 10760, 10780 (locations; spirits prey on peon work groups, draining their life)",
+   "quests 10759, 10761 (road through the Magma Fields between the outposts)",
+   "quest 10660 (felfire diemetradons where lava flows through the cracks)",
+   "zone_areas: Dark Conclave Hawkeye 21386 in 3933, Scorncrow 21385 in 3932, Felfire Diemetradon in 3949",
+   "quest 10569 description (powers we never thought they possessed)",
+   "quest 10760 description (the peons are convinced it is cursed)"
+  ],
+  "notes": "Converted: how the arakkoa were destroyed (Parshah's account, 10777) moved to part 1 (ACCEPT 10777, Parshah is neutral). npc_text 10556 not used. requiredState 8. Before: Fact-check: 'between the two camps' changed to 'between the two outposts' (10759, 10761). Otherwise verified."
+ },
+ {
+  "id": 352007,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 7,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Hand of Gul'dan",
+  "body": "The Hand of Gul'dan is the great volcano at the center of the valley, raised by the warlock Gul'dan in the ritual that tore the orcs away from the elements. Fel lava still pours down its sides, and its lava long ago buried the draenei village of Baa'ri. On its flanks the Fel Pits seethe with enraged spirits of fire and earth, and the Ashtongue Corruptors Eykenen and Uylaru, once shaman who now defile the elements they revered, tend corrupt totems among them. The Scalding Pools lie near the summit. Spectral riders, the Ghostriders of Karabor, circle the mountain on the roads around its base, and the fel beast Uvuros, wanted dead by both outposts, prowls its slopes.",
+  "triggers": [
+   [
+    1,
+    3746
+   ],
+   [
+    1,
+    3747
+   ],
+   [
+    1,
+    3947
+   ]
+  ],
+  "sources": [
+   "quest 10568 description (Gul'dan raised the volcano, Baa'ri buried under lava)",
+   "warcraft.wiki.gg/wiki/Shadowmoon_Valley (Hand of Gul'dan raised to sever the orcs' link to the elements)",
+   "quests 10574, 10458 (Eykenen and Uylaru at the Fel Pits; enraged fire and earth spirits)",
+   "quest 10679 (Scalding Pools near the top of the Hand)",
+   "quest 10636 description (Ghostriders of Karabor ride the roads encircling the Hand)",
+   "quests 10647, 10648 (Uvuros last seen at the Hand of Gul'dan)"
+  ],
+  "notes": "Converted: body unchanged (nothing to hide; the volcano's raising is history, the corruptors and Ghostriders are what quest givers describe); requiredState 8. Before: Fact-check: Baa'ri buried by the volcano's lava (10568), wording fixed; corruptors 'tormenting further' unsupported, now tend corrupt totems (Corrupt Fire and Earth Totem spawns in 3747). Otherwise verified."
+ },
+ {
+  "id": 352008,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 8,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Altar of Damnation",
+  "body": "On the western outskirts of the Hand of Gul'dan stands the Altar of Damnation, where Gul'dan spoke the words that shattered this land. The moment has left its mark. A memory of the warlock still stands at the altar among the kneeling spirits of the damned, and beside him linger remnants of his hate, greed, malice, pride and corruption. Earthmender Torlok and Earthmender Gorboto of the Earthen Ring keep watch there, seeking to commune with the tortured elements. Gul'dan was not content to destroy the draenei, Torlok says: he razed Draenor itself and siphoned off its energies for his war, and all that is left here are the remnants of his madness.",
+  "triggers": [
+   [
+    1,
+    3928
+   ]
+  ],
+  "sources": [
+   "quest 10451 log text (Altar of Damnation on the western outskirts of the Hand of Gul'dan)",
+   "quest 10588 description (the memory of Gul'dan stands at the altar)",
+   "npc_text 10315 (Oronok: spirits of the damned kneeling in prayer)",
+   "creature_template 22094, 22437, 22438, 22439, 22440 (Remnants of Hate, Malice, Greed, Corruption, Pride, Aspect of Gul'dan)",
+   "creature_text 17008 (Gul'dan's vision lines)",
+   "npc_text 10250 (Torlok)",
+   "zone_areas: Torlok 21024, Gorboto 21026, Gul'dan 17008 in 3928"
+  ],
+  "notes": "Converted: body unchanged (nothing to hide; the cipher is not named here); requiredState 8. npc_text 10250, 10315 and creature_text 17008 reread: period text. Before: verified"
+ },
+ {
+  "id": 352009,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 9,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Coilskar Point",
+  "body": "Coilskar Point and the cistern to its east are the lair of the Coilskar naga, servants of Illidan, who have seized the only clean water left in Shadowmoon Valley. They foul it for their own ends, and the agitated pools around their villages howl with the anguish of enraged water spirits. The earthmender Wilda came seeking the source of the spirits' distress and was taken prisoner, held in a watery cell beside other captive spirits. Lady Shav'rar commands at the point, and Coilskar sorceresses guard the cistern.",
+  "triggers": [
+   [
+    1,
+    3750
+   ],
+   [
+    1,
+    3749
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The naga hide more than water. Grom'tor, eldest son of Oronok Torn-heart, beat the truth out of a Coilskar commander after five others had told him nothing: a fragment of the Cipher of Damnation lies in one of the naga chests at Coilskar Point or the cistern, and the naga carry the keys.",
+    "triggers": [
+     [
+      5,
+      10521
+     ],
+     [
+      4,
+      10522
+     ]
+    ],
+    "sources": [
+     "quest 10521 reward text",
+     "quest 10522 description",
+     "creature_text 21291, 21295 (the interrogation)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10480 description (naga took control of the only clean water supply; agitated water pockets, enraged water spirits)",
+   "quest 10451 description and creature_text 21027 (Wilda's capture, watery prison, other prisoners)",
+   "quests 10521, 10522; creature_text 21291, 21295 (Grom'tor interrogates the Coilskar Commander; fragment in a chest at Coilskar Point or Cistern)",
+   "zone_areas: Lady Shav'rar 20684, Coilskar Commander 21295 in 3750"
+  ],
+  "notes": "Converted: the cipher fragment hidden in the naga chests moved to part 1 (DONE 10521, ACCEPT 10522, where Grom'tor's interrogation reveals it). Wilda's capture stays (it is the premise of 10451; her rescue is not told). creature_text 21027, 21291, 21295 reread: period text. requiredState 8. Before: Fact-check: sorceresses spawn mainly in Coilskar Cistern (zone_areas), wording adjusted. Otherwise verified."
+ },
+ {
+  "id": 352010,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 10,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Oronok's Farm",
+  "body": "High on the Shattered Shelf above Coilskar Cistern, a weathered orc keeps a campfire and a herd of trained felboars. He calls himself Oronok Torn-heart, hermit and farmer, and his boars root tubers out of the hard earth of the Shattered Plains below. The plains are not kind to farmers: ravenous flayers from a nest to the northeast prey on his animals, and a flayer matriarch guards their eggs. Oronok invites travelers to warm themselves by his fire and warns them of the beasts of the shelf.",
+  "triggers": [
+   [
+    1,
+    3927
+   ],
+   [
+    1,
+    3926
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The farmer's life is a masquerade, a test for those who come asking questions, and Oronok is no more a farmer than they are. Long ago he stood at Gul'dan's side as one of the warlock's lieutenants, and he was at the Altar of Damnation on the day the land was shattered.",
+    "triggers": [
+     [
+      5,
+      10519
+     ]
+    ],
+    "sources": [
+     "quest 10519 description",
+     "npc_text 10315"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10513 log text (Shattered Shelf, north of Coilskar Cistern)",
+   "quest 10514 description (felboars dig tubers on the Shattered Plains, flayers from a nest to the northeast)",
+   "quest 10515 (flayer eggs)",
+   "npc_text 10280 (sit by my fire, beware the ravenous beasts of the shattered shelf)",
+   "quest 10519 description; npc_text 10315 (the farmer is a masquerade; lieutenant of Gul'dan)",
+   "zone_areas: Oronok 21183 in 3927; Ravenous Flayer, Domesticated Felboar in 3926"
+  ],
+  "notes": "Converted: 'few guess that the farmer's life is a disguise, or that he once stood at Gul'dan's side' moved to part 1 (DONE 10519, his confession). npc_text 10280, 10315 reread: period text. requiredState 8. Before: verified"
+ },
+ {
+  "id": 352011,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 11,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Ruins of Baa'ri",
+  "body": "Baa'ri was a draenei village, rich in relics of religious importance, until the Hand of Gul'dan rose and buried it under lava with its people. Now Illidan has set the Ashtongue Broken to dig it out. Scores of Ashtongue workers labor in the ruins under Illidari overseers and Akama's lieutenant, Oronu the Elder, who receives written orders from his master daily, and handlers drive elekk demolishers through the rubble. Among the treasures buried here are the Tablets of Baa'ri, said to hold the secrets of the Temple of Karabor, and the Aldor and the Scryers both send agents to reach them first.",
+  "triggers": [
+   [
+    1,
+    3753
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The tablets told of another treasure kept at Baa'ri: a Medallion of Karabor. Only the highest-ranking draenei priests were granted such medallions, for they opened the way into the Temple of Karabor, and both orders want to know whether the Ashtongue have dug it up yet.",
+    "triggers": [
+     [
+      5,
+      10568
+     ],
+     [
+      5,
+      10683
+     ]
+    ],
+    "sources": [
+     "quests 10571, 10684 descriptions (according to the tablets)"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10568, 10683 descriptions (village buried with its inhabitants and artifacts; Ashtongue ordered by Illidan to excavate; tablets)",
+   "quests 10571, 10684 (Medallion of Karabor, Oronu the Elder as Akama's lieutenant at Baa'ri)",
+   "zone_areas: 94 Ashtongue Workers, Illidari Overseer 21808, Ashtongue Handler 21803, Elekk Demolisher 21802 in 3753"
+  ],
+  "notes": "Converted: the Medallion of Karabor, which the tablets reveal, moved to part 1 (DONE 10568 Aldor, DONE 10683 Scryers). requiredState 8. Before: verified"
+ },
+ {
+  "id": 352012,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 12,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Warden's Cage",
+  "body": "South of the Ruins of Baa'ri, the Warden's Cage is a prison held by Akama and his Ashtongue Deathsworn, said to be the vilest and most brutal of the tribe. Among their enemies it is whispered to be a torture chamber, and the Aldor and the Scryers alike call Akama both evil and cunning. His second in command here is a Broken named Sanoru. Above the prison walls a satyr named Zandras keeps watch over everything that happens below.",
+  "triggers": [
+   [
+    1,
+    3821
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The satyr is Illidan's spy, and the Deathsworn suffer him only until they can be rid of him. Those who prove they are not with Illidan are shown what he cannot see: beyond the halls, an underground passage hidden by stagnant water leads to a secret chamber, Akama's hideout, and none who enter may speak of it.",
+    "triggers": [
+     [
+      4,
+      10628
+     ]
+    ],
+    "sources": [
+     "quest 10622 description (Zandras watches on Illidan's behalf)",
+     "quest 10628 description (hidden passage, speak to no one)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The cage holds a prisoner worthy of its name. In the hidden chamber Akama keeps Maiev Shadowsong, the Warden who pursued Illidan to Outland, locked in a cell she swears will not hold her for long. The demon Vagath comes on Illidan's orders to keep a close watch on her, and Akama assures him the prisoner will not escape.",
+    "triggers": [
+     [
+      5,
+      10628
+     ]
+    ],
+    "sources": [
+     "creature_text 21699 (Maiev: this cell won't hold me for long)",
+     "creature_text 21768 (Vagath)",
+     "creature_text 21700 (tell the Master his prisoner will not escape)"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10575, 10686 (location south of Baa'ri; rumored torture chamber run by Akama and the Deathsworn)",
+   "creature_text 21699 (Maiev: this cell won't hold me for long)",
+   "quest 10622 description (Zandras watches from above the prison walls on Illidan's behalf)",
+   "creature_text 21768 (Vagath: specific orders to keep a close watch on the Warden)",
+   "quest 10628 description (hidden passage behind stagnant water)",
+   "zone_areas: Akama 21700, Maiev 21699, Ashtongue Deathsworn 21701 in 3821",
+   "quests 10575, 10686 descriptions (Deathsworn the vilest and most brutal; Akama evil and cunning; Sanoru)"
+  ],
+  "notes": "Converted: Zandras as Illidan's spy and the hidden chamber moved to part 1 (ACCEPT 10628, after 10622's description and Sanoru's directions); Maiev's captivity and Vagath to part 2 (DONE 10628, in the chamber, where she and Akama stand: both spawn in 3821 beyond the passage). The opening keeps what the Aldor and Scryer chains say before arrival and the satyr anyone sees on the walls. creature_text 21699, 21700, 21768 reread: period text. requiredState 8. Before: verified"
+ },
+ {
+  "id": 352013,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 13,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Altar of Sha'tar",
+  "body": "The Altar of Sha'tar is the Aldor's outpost in Shadowmoon, standing northwest of the Black Temple. From here the draenei priesthood carries its war against Illidan and the Legion to their very doorstep. Exarch Onaala, who trained as an anchorite in days when female exarchs were all but unheard of, leads the outpost, holding that courage and conviction count for more than anything else. Anchorite Ceyla studies the secrets of Karabor, Vindicator Aluumen sends fighters against the Ashtongue at Baa'ri and the fel orcs on the holy Ata'mal Terrace, and Harbinger Saronen gathers the insignias of the Legion's officers.",
+  "triggers": [
+   [
+    1,
+    3754
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Dragonmaw would gladly see the altar burned, for it stands across their lines to Coilskar, and Overlord Mor'ghor has ordered a battalion of his Skybreakers to sack it. The order reached Anchorite Ceyla by way of the very commander sent to carry it out, and the Aldor mean to turn the attack to their own advantage.",
+    "triggers": [
+     [
+      5,
+      11099
+     ]
+    ],
+    "sources": [
+     "quest 11099 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11099 description (Aldor outpost northwest of the Black Temple; destroying it would reopen Dragonmaw lines to Coilskar)",
+   "broadcast_text 19493 (Onaala: female exarchs unheard of; courage and conviction)",
+   "quests 10568 (Ceyla, secrets of Karabor), 10619 and 10816 (Aluumen), 10826 (Saronen, Marks of Sargeras)",
+   "zone_areas: Onaala 21860, Ceyla 21402, Aluumen 21822, Saronen 22214 in 3754"
+  ],
+  "notes": "Converted: the Dragonmaw's plan to sack the altar (known only to their commanders) moved to part 1 (DONE 11099, the Aldor-side commander's warning). broadcast_text 19493 reread: period text. The module's reputation condition on the flight master changes nothing told here. requiredState 8. Before: verified"
+ },
+ {
+  "id": 352014,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 14,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Ruins of Karabor",
+  "body": "The Ruins of Karabor lie before the walls of the Black Temple, and Illidan has turned them into a training ground for demon hunters. Sunfury blood elves, soldiers of Prince Kael'thas, arrive in numbers to learn the art, dressing and fighting like Illidan himself, while Sunfury warlocks summon and bind demons for the initiates to battle. The grounds are run by the blood elf Varedis, with three night elf demon hunters, Alandien, Theras and Netharel, at his side. One prisoner is too dangerous even for these lessons: the pit lord Azaloth, held banished in the ruins and seething at his captors.",
+  "triggers": [
+   [
+    1,
+    3756
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Varedis is no ordinary pupil. He was one of five warriors Kael'thas sent to train under Illidan, the first blood elves ever allowed to become demon hunters. Three died in the trials and one went mad; Varedis alone survived, and within a year he surpassed the three masters set to teach him. Then he stole into the Shadow Council and committed to memory the Book of Fel Names, said to hold the true name of every demon.",
+    "triggers": [
+     [
+      5,
+      10646
+     ]
+    ],
+    "sources": [
+     "npc_text 10492, 10493, 10494, 10495 (Altruis's tale, quest 10646)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The training grounds have lost their masters. Agents of the Aldor and the Scryers burned the Book of Fel Names before Varedis as he took his demon form, stripping him of his power, and he fell at Karabor with Alandien, Theras and Netharel.",
+    "triggers": [
+     [
+      5,
+      10651
+     ],
+     [
+      5,
+      10692
+     ]
+    ],
+    "sources": [
+     "quests 10651, 10692 descriptions and reward texts"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10587, 10687 (influx of Sunfury recruits, attire and fighting style like Illidan's)",
+   "quests 10637, 10688 (warlocks summon and subdue demons; Azaloth too strong, kept banished)",
+   "npc_text 10492-10495 (Altruis: Kael's five warriors, Varedis the one who succeeded, the three masters)",
+   "quests 10651, 10692 (Alandien, Theras, Netharel)",
+   "creature_text 21506 (Azaloth)",
+   "zone_areas: Demon Hunter Supplicant/Initiate, Sunfury Warlock, Varedis 21178, Azaloth 21506 in 3756"
+  ],
+  "notes": "Converted: Varedis's history (Altruis's tale) moved to part 1 (DONE 10646, Nagrand-filed but left to Shadowmoon with the Varedis chain); his defeat is part 2 (DONE 10651 Aldor, 10692 Scryers). The opening names Varedis and the three masters, who stand in the ruins. npc_text 10492-10495 reread: period text. requiredState 8. Before: Fact-check: recruits 'sent by Kael'thas' unsupported, now 'soldiers of Kael'thas' (Sunfury). Otherwise verified."
+ },
+ {
+  "id": 352015,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 15,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Ata'mal Terrace",
+  "body": "The Ata'mal Terrace beside the Black Temple was once one of the draenei's holiest sites, where ata'mal crystals were used in their spiritual ceremonies. Now the fel orcs of the Shadowmoon clan, Illidan's most feared army, hold it. Slayers, chosen and darkweavers crowd its tiers alongside shadowsworn drakonid, and Shadowlord Deathwail circles high above the terrace, out of reach. The Aldor once had reason to believe an ata'mal crystal was hidden somewhere nearby, but their scrying has revealed nothing.",
+  "triggers": [
+   [
+    1,
+    3757
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The scrying failed for a reason. The fel orcs guard an ata'mal crystal called the Heart of Fury at the top of the terrace, clouded in dark magic to hide it from the Sha'tar, and it can be reached only once Deathwail and his warlocks are slain. Deathwail swears that its power belongs to Illidan.",
+    "triggers": [
+     [
+      4,
+      10707
+     ]
+    ],
+    "sources": [
+     "quest 10707 description (Akama)",
+     "creature_text 22006 (Deathwail)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The fel orcs have dug a special ore out of the sacred ground and forged it into corrupted weapons and armor, which their slayers, chosen and darkweavers carry. Since the Shattered Sun Offensive took up its war on the Isle of Quel'Danas, its smiths have wanted those armaments for their forges.",
+    "minState": 12,
+    "sources": [
+     "quest 11544 description (Ata'mal Armaments, patch 2.4; Quel'Danas quest, text only, not a trigger)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10816 description (holy site, ata'mal crystals in spiritual ceremonies, Illidan's most feared army)",
+   "quest 10707 description (Heart of Fury guarded by fel orcs, clouded from the Sha'tar; Deathwail circles beyond reach)",
+   "creature_text 22006 (Deathwail: its power belongs to Illidan)",
+   "quest 11544 description (fel orcs dug special ore from the terrace and made corrupted weapons; text only, quest belongs to Quel'Danas and is not a trigger)",
+   "zone_areas: Shadowmoon Slayer/Chosen/Darkweaver, Shadowsworn Drakonid 22072 in 3757",
+   "quest 10816 description (the Aldor believed a crystal was hidden nearby, scrying revealed nothing)"
+  ],
+  "notes": "Check: part 2 kept at minState 12 with no trigger; it tells the terrace's ore and armaments and only points at the Offensive's smiths, while quel_danas 408015 part 1 (ACCEPT 11544) tells Hauthaa's alloy and anvil: no shared trigger, no retelling. Converted: the Heart of Fury moved to part 1 (ACCEPT 10707, Akama's description); the opening keeps the Aldor's unproven belief (10816). The ore and corrupted armaments line rests only on 11544, a patch 2.4 Shattered Sun daily, so it is part 2 with minState 12 and no trigger (Quel'Danas opens at 12 under the module; quel_danas 408015 part 1 tells Hauthaa's use of them). creature_text 22006 reread: period text. requiredState 8. Before: verified"
+ },
+ {
+  "id": 352016,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 16,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Black Temple",
+  "body": "The Black Temple was once the Temple of Karabor, the great sanctuary of the draenei. Gul'dan's Horde took it, the Shadow Council made it their seat, and the warlock kept his private quarters inside. Later the pit lord Magtheridon ruled from it, until Illidan Stormrage drove him out with the help of Akama's Broken and claimed the temple as his throne. The ghosts of the clerics of Karabor, murdered by Teron Gorefiend after the city fell, still roam before its walls. Now the naaru Xi'ri gathers Aldor and Scryer soldiers on the approach to the temple, and before its walls stalks Doomwalker, the fel reaver Kil'jaeden sent against its gates, said to be infused with the souls of martyred draenei.",
+  "triggers": [
+   [
+    1,
+    3840
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In time the temple no longer shielded its master. Champions from Shattrath fought their way through its halls to the summit, and Illidan Stormrage was struck down in the seat he had taken from Magtheridon. Word spread across Outland that the Betrayer was dead.",
+    "minState": 12,
+    "sources": [
+     "mod-individual-progression src/IndividualProgression.cpp (killing Illidan 22917, or achievement 697, sets PROGRESSION_TBC_TIER_4, state 12)",
+     "warcraft.wiki.gg/wiki/Illidan_Stormrage (Burning Crusade: defeated in the Black Temple)"
+    ]
+   }
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Black_Temple (draenei Temple of Karabor, Shadow Council seat, Magtheridon ousted by Illidan)",
+   "warcraft.wiki.gg/wiki/Akama (helped destroy Magtheridon's defenses at the Black Temple, Warcraft III)",
+   "npc_text 10314 (cipher kept in Gul'dan's private quarters inside Karabor)",
+   "quest 10635 description (clerics of Karabor murdered by Gorefiend, roam in front of the Black Temple)",
+   "creature_text 22862, 22864 and spawns of Lightsworn Vindicator/Seasoned Magister near Xi'ri 18528",
+   "warcraft.wiki.gg/wiki/Doomwalker (sent by Kil'jaeden to assault the gates)",
+   "posarea: 3840 covers the temple grounds south of Doomwalker's spawn (-3563, 234)",
+   "warcraft.wiki.gg/wiki/Akama (Frozen Throne: helped Illidan, Kael and Vashj against Magtheridon)",
+   "posarea grid around x -3400 to -3900, y 0 to 800 on map 530; areatrigger 4598 Black Temple entrance at (-3672, 318)"
+  ],
+  "notes": "Check: the martyred draenei souls moved here from Doomwalker 352033 (framed as said of it; wiki Doomwalker, Burning Crusade game guide). Part 1 confirmed: mod-individual-progression sets state 12 (PROGRESSION_TBC_TIER_4) on the Illidan kill; it tells neither the raid nor Akama's and Maiev's part. Converted: body unchanged (it already says Illidan claimed the temple, which holds after his fall). Part 1 tells Illidan's fall: minState 12, the state mod-individual-progression sets on the Illidan kill, no trigger (no raid boss kill used), as netherstorm 352315 part 2 tells Kael'thas's fall at 10. It does not describe the raid or Akama's and Maiev's part in it (the attunement 10944-10985 is Shattrath's). The module bars the instance until state 10 but does not gate Xi'ri or Doomwalker, so the opening needs no tag. creature_text 22862, 22864 reread: period text. requiredState 8. Before: Fact-check: Doomwalker spawns west of area 3840, not north of the temple, and Xi'ri stands well west of the gates; both reworded. Area 3840 is reachable (reachable_areas) and covers the outdoor temple structure and grounds on map 530 east of the instance portal (posarea grid); the portal trigger (-3672, 318) itself lies in 3756. Akama's help against Magtheridon confirmed (wiki Akama, Frozen Throne)."
+ },
+ {
+  "id": 352017,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 17,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Netherwing Fields",
+  "body": "East of the Hand of Gul'dan, fields of enormous blue crystals jut from the earth, and nether drakes wheel above them. These are the Netherwing, a young flight born of black dragon eggs that were steeped in raw nether energy. They are frightened now, too afraid of the Dragonmaw to come down even to feed, and some fall dead from exhaustion; Mordenai, who keeps watch over the fields, does what he can to save them. Rocknail flayers, the drakes' natural prey, swarm among the crystals. Past the fields, Netherwing Pass leads on to the Altar of Shadows, a lonely shrine where the spirit of an ancient Shadowmoon orc is said to reside.",
+  "triggers": [
+   [
+    1,
+    3758
+   ],
+   [
+    1,
+    3945
+   ],
+   [
+    1,
+    3944
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The ancient spirit is no harmless ghost. It is Teron Gorefiend, and the Altar of Shadows is his prison, kept by Karsius the Ancient Watcher. With his armor, cloak and truncheon restored, Gorefiend needs only a living body to carry him past his jailers and break his bonds.",
+    "triggers": [
+     [
+      4,
+      10639
+     ],
+     [
+      4,
+      10645
+     ]
+    ],
+    "sources": [
+     "quests 10639, 10645 log and description texts",
+     "creature_text 21877 (Karsius)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Mordenai is more than a friend to the drakes: he is one of them. When Karynaku was freed from Dragonmaw Fortress, he rejoiced that his mother was free and his brothers and sisters saved, and welcomed her rescuer as kin.",
+    "triggers": [
+     [
+      5,
+      10870
+     ]
+    ],
+    "sources": [
+     "quest 10870 reward text (my mother is free, my brothers and sisters are saved)",
+     "creature_template 22113 (Mordenai, type dragonkin)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10481 description (fields of gigantic blue crystals)",
+   "warcraft.wiki.gg/wiki/Netherwing (spawned from eggs of Deathwing's black dragonflight infused with nether energies)",
+   "quest 10804 description (drakes won't come down to feed, fall dead from exhaustion; Rocknail flayers their natural prey)",
+   "quest 10870 reward text (Mordenai: my mother is free, my brothers and sisters are saved)",
+   "quest 10633 description (Altar of Shadows across the fields and through Netherwing Pass)",
+   "quest 10639 description and creature_text 21877 (the altar was the spirit's prison, Karsius)",
+   "quest 10633 description (an ancient orc spirit resides at the Altar of Shadows)"
+  ],
+  "notes": "Check: Mordenai (22113) shows as a blood elf male (display 20813, BloodElfMale model) though typed dragonkin, so his kinship is a reveal; part 2 stays on DONE 10870 (his reward text). Converted: the altar as the spirit's prison and Karsius (who is summoned only during the quest) moved to part 1 (ACCEPT 10639 Horde, 10645 Alliance), naming Gorefiend as their logs do; Mordenai being one of the flight (revealed on the 10870 turn-in) moved to part 2 (DONE 10870). requiredState 8. Before: verified"
+ },
+ {
+  "id": 352018,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 18,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Sanctum of the Stars",
+  "body": "The Sanctum of the Stars is the Scryers' outpost in Shadowmoon, standing at the foot of the Netherwing Fields. For these blood elves the war runs on two fronts: against Illidan, and against the Sunfury of Prince Kael'thas, whose ranks keep swelling with pilgrims from Quel'Thalas. Battlemage Vyara warns that the Scryers must outrecruit Kael or, once recruits run short, outkill him. Arcanist Thelis and Larissa Sunstrike pursue Illidan's secrets, and Varen the Reclaimer leads strikes on the Ashtongue and on the Ata'mal fel orcs, who once fell on the sanctum in a savage attack.",
+  "triggers": [
+   [
+    1,
+    3938
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Dragonmaw covet the site, for it cuts their lines to Eclipse Point and Illidari Point, and Overlord Mor'ghor has ordered a battalion of his Skybreakers to sack it. The order reached Arcanist Thelis by way of the very commander sent to carry it out, and the Scryers mean to turn the attack to their own advantage.",
+    "triggers": [
+     [
+      5,
+      11094
+     ]
+    ],
+    "sources": [
+     "quest 11094 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11094 description (Scryer outpost at the foot of the Netherwing Fields; lines to Eclipse Point and Illidari Point)",
+   "quest 10824 description; broadcast_text 19901 (Vyara: outrecruiting Kael'thas, pilgrims from Quel'Thalas; the fight against Kael'thas and Illidan)",
+   "quests 10683 (Thelis), 10687 (Larissa), 10807 and 10817 (Varen; the sanctum suffered an attack by the Ata'mal Shadowmoon orcs)",
+   "zone_areas: Thelis 21955, Larissa 21954, Varen 21953, Vyara 22211 in 3938"
+  ],
+  "notes": "Converted: the Dragonmaw's plan to sack the sanctum moved to part 1 (DONE 11094, the Scryer-side commander's warning). broadcast_text 19901 reread: period text. requiredState 8. Before: verified"
+ },
+ {
+  "id": 352019,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 19,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Eclipse Point",
+  "body": "Eclipse Point is a terraced ruin in the south of the valley, held by the Eclipsion, blood elves in Illidan's service under Grand Commander Ruusk, and a bridge to its north looks out over the road up to it. The elves guard their charges closely. The Rod of Lianthe lies locked in a strongbox in a pavilion on the top tier, heavily guarded, and their dragonhawks see through disguises that fool the elves themselves. The Scryers prize the Sunfury signets worn by its high-ranking officers, allies of both Kael'thas and Illidan.",
+  "triggers": [
+   [
+    1,
+    3822
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "From the shadows of the bridge, Borak, son of Oronok, has watched the elves for weeks. They hide a third of the Cipher of Damnation, and all he has learned is that Illidan sends an envoy from the Black Temple once a day, an envoy whose bodyguard never leaves his side.",
+    "triggers": [
+     [
+      5,
+      10546
+     ]
+    ],
+    "sources": [
+     "quest 10546 description and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The envoy carried Illidan's own directives for the cipher fragment. The elves keep it moving from place to place, and the missive taken from the envoy named where it was to be hidden next, though not where it rested then.",
+    "triggers": [
+     [
+      5,
+      10570
+     ]
+    ],
+    "sources": [
+     "quest 10570 reward text",
+     "creature_text 21409 (Envoy Icarius)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10778 description (Rod of Lianthe in a pavilion on the top tier of the ruins)",
+   "quest 10577 description (disguise; Ruusk; dragonhawks see through the disguise)",
+   "quest 10546 reward text and quest 10570 reward text (the third part hidden by the blood elves, kept moving by Illidan's directive; daily envoy from the Black Temple; weeks of watching)",
+   "creature_text 21409 (Envoy Icarius)",
+   "zone_areas: Grand Commander Ruusk 20563, Eclipsion Dragonhawk in 3822",
+   "quest 10547 log text (the bridge north of Eclipse Point)",
+   "quest 10824 description (Sunfury signets at Eclipse Point)",
+   "quest 10778 description (heavily guarded)"
+  ],
+  "notes": "Converted: the cipher fragment, the daily envoy and Borak's watch moved to part 1 (DONE 10546); the fragment kept moving on Illidan's orders to part 2 (DONE 10570). Added the Scryers' signets (10824) to keep the opening in range. creature_text 21409 reread: period text. requiredState 8. Before: Fact-check: dragonhawks see through Borak's disguise, not 'any'; Borak watched the elves for weeks and the envoy for a week (10546). Bridge north of Eclipse Point confirmed (10547). Otherwise verified."
+ },
+ {
+  "id": 352020,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 20,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Path of Conquest",
+  "body": "The Path of Conquest lies just east of Eclipse Point, and there Illidan's Eclipsion armies muster soldiers, cavaliers and spellbinders for a great advance. At its southern end, by a stationary caravan, Chancellor Bloodleaf seeks to win Corok the Mighty and the giants of Shadowmoon to Illidan's side, reminding them that Illidan's enemies are destroyed. To the west the crazed colossi of the Eclipsion Fields wander. Also at the path's southern end stands Crimson Watch, held by soldiers of the Crimson Sigil, where Marcus Auralion, High General of the Sha'tar, floats inside a crystal prison.",
+  "triggers": [
+   [
+    1,
+    3929
+   ],
+   [
+    1,
+    3930
+   ],
+   [
+    1,
+    3950
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The courtship of the giants failed. Struck by attackers who looked like Illidan's own elves, the crazed colossi proved to be the children of Behemothon, King of the Colossi, who swore that the pact was broken and that giant would never side with elf.",
+    "triggers": [
+     [
+      5,
+      10769
+     ],
+     [
+      5,
+      10776
+     ]
+    ],
+    "sources": [
+     "creature_text 22054 (Behemothon)",
+     "quests 10769, 10776"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "A journal taken from Val'zareq the Conqueror, who paraded along the path, told how he captured the high general himself. Auralion knows his jailers: the Crimson Sigil are Illidan's elite, at the top of the chain of command for every Illidari force outside the Black Temple, speaking directly with the Betrayer and carrying out his orders without question.",
+    "triggers": [
+     [
+      5,
+      10793
+     ]
+    ],
+    "sources": [
+     "quest 10793 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10750, 10772 (Eclipsion armies forming at the Path of Conquest, adjacent to Eclipse Point)",
+   "quests 10765, 10774 (meeting of a giant and a blood elf chancellor at the southern end near a stationary caravan)",
+   "creature_text 22012, 22011 (Bloodleaf and Corok)",
+   "creature_text 22054 (Behemothon: you have attacked my children, the pact is broken)",
+   "quests 10769, 10776 (Eclipsion Fields, crazed colossi)",
+   "quests 10793, 10815 descriptions and 10793 reward text (Crimson Watch at the southern end, Crimson Sigil, Val'zareq captured the high general, crystalline prison)",
+   "zone_areas: Corok 22011, Bloodleaf 22012, Val'zareq 21979 in 3929; Crazed Colossus in 3930; Marcus Auralion 22073 in 3950",
+   "DB spawns: Ruusk (-4585, 1670), Val'zareq (-4328, 1386), Bloodleaf (-4497, 1307), Auralion (-4617, 1399)"
+  ],
+  "notes": "Converted: Behemothon's breaking of the pact (the outcome of the disguise quests) moved to part 1 (DONE 10769 Horde, 10776 Alliance); who captured Auralion and what the Crimson Sigil are moved to part 2 (DONE 10793; the journal drops from Val'zareq, and 10781 stays with Shattrath). The opening keeps Bloodleaf's meeting, which any passer sees, and Auralion's title, which he bears openly. creature_text 22011, 22012, 22054 reread: period text. requiredState 8. Before: Fact-check: the Path runs east of Eclipse Point (spawns of Bloodleaf, Val'zareq, Ruusk), not south of it; Crimson Watch at its southern end confirmed. The Battle of the Crimson Watch quest (10781) is left to Shattrath."
+ },
+ {
+  "id": 352021,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 21,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Dragonmaw Fortress",
+  "body": "Dragonmaw Fortress rises on the eastern edge of the Netherwing Fields, the stronghold of the Dragonmaw orcs who serve Illidan. Here the clan does to the nether drakes what it once did to the red dragons of Azeroth: wranglers and subjugators capture them and torture them until they bend, and many broken drakes now carry Dragonmaw drake-riders into battle. Atop the fortress, bound in chains, Karynaku, mate of Neltharaku and mother of the flight, is held prisoner. Her jailer is the clan's chieftain, the ancient orc Zuluhed the Whacked.",
+  "triggers": [
+   [
+    1,
+    3939
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Karynaku is free. Her chains sapped her strength, and Zuluhed hid in her thoughts waiting for her to break, so she called him to her with a false promise to obey. When the old chieftain came, he was slain for the key to her bonds.",
+    "triggers": [
+     [
+      5,
+      10866
+     ]
+    ],
+    "sources": [
+     "quest 10858 reward text (the chains sap my power)",
+     "quest 10866 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10836 description (fortress on the eastern edge of the Netherwing Fields; some drakes corrupted by the Dragonmaw)",
+   "npc_text 10614, 10615, 10616 (torture of captured drakes, Zuluhed and the capture of Alexstrasza, Karynaku held atop the fortress)",
+   "warcraft.wiki.gg/wiki/Zuluhed_the_Whacked (Dragonmaw enslaved the red dragonflight in the Second War)",
+   "quests 10858 reward text and 10866 description (chains sap her power; Zuluhed hides in her thoughts)",
+   "zone_areas: Dragonmaw Wrangler, Subjugator, Drake-Rider, Enslaved Netherwing Drake, Karynaku 22112 in 3939"
+  ],
+  "notes": "Converted: the chains sapping her power and Zuluhed hiding in her thoughts (what Karynaku tells on 10858/10866) moved with her freeing into part 1 (DONE 10866). npc_text 10614-10616 reread: period text. requiredState 8. Before: verified"
+ },
+ {
+  "id": 352022,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 22,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Netherwing Ledge",
+  "body": "Netherwing Ledge was once part of the Shadowmoon mainland; now it floats in the sky off the valley's broken southeastern shelf. It was the Netherwing's sanctuary until the Dragonmaw took it. At Dragonmaw Base Camp, Overlord Mor'ghor drives peons and Murkblood Broken to strip the island of its crystals, ore and netherdust pollen to supply Illidan's armies, and transporters carry the haul to the fortress along the Dragonmaw Skyway. Above the ledge the drake Vhel'kur, spawn of Deathwing, flies an endless circle around the island that was his home and is now his grave, still seething at his defeat by Teron Gorefiend.",
+  "triggers": [
+   [
+    1,
+    3759
+   ],
+   [
+    1,
+    3966
+   ],
+   [
+    1,
+    3967
+   ]
+  ],
+  "sources": [
+   "quest 10634 description (once part of the mainland, now a floating island; Vhel'kur, spawn of Deathwing, defeated by Gorefiend)",
+   "quest 10837 description (island off the broken shelf to the southeast)",
+   "quest 11013 description (Netherwing sanctuary now home to the Dragonmaw)",
+   "quests 11015-11018 (crystals, hides, pollen, ore), 11035 (Skyway transporters to Dragonmaw Fortress)",
+   "npc_text 10944 (Murkblood overseer: stripping the island to supply Illidan's armies)",
+   "zone_areas: Dragonmaw Peon, Murkblood Miner in 3759; Mor'ghor 23139 in 3966; Dragonmaw Transporter in 3967"
+  ],
+  "notes": "Check: Vhel'kur's old defeat by Gorefiend is history (10634's premise), not the relic or the chain's twist; no relic is placed with any keeper. Converted: body unchanged (nothing to hide; Vhel'kur's defeat by Gorefiend is old history, not the chain's outcome); requiredState 8. npc_text 10944 reread: period text. Before: verified"
+ },
+ {
+  "id": 352023,
+  "kind": 1,
+  "zone": 3520,
+  "sort": 23,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Netherwing Mines",
+  "body": "The Netherwing Mines bore deep into Netherwing Ledge, where the Dragonmaw set Murkblood Broken to dig. The work stopped when a miner's pick struck a crystal formation that turned out to be part of a sleeping nether dragon, Toranaku. The dragon woke in fury and slaughtered the workers, the creatures of the depths rose with it, and a band of miners cut off from the exit soon sank into madness. The Dragonmaw call it a grim discovery, and the surviving miners would rather die than dig any deeper.",
+  "triggers": [
+   [
+    1,
+    3965
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "It was no accident. The Netherwing offered the Murkblood peace and protection, something the Broken had never truly known, and in return the Murkblood helped Toranaku rouse the creatures of the mine, at great cost, hoping to make it unlivable and drive the Dragonmaw off the island. Their overseer told the secret only to the one he knew to be the Netherwing's ally.",
+    "triggers": [
+     [
+      5,
+      11082
+     ]
+    ],
+    "sources": [
+     "npc_text 10941, 10942, 10943, 10946 (Murkblood overseer)",
+     "quest 11082"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11075 description (miner struck a crystal formation attached to a sleeping nether dragon; workers annihilated)",
+   "quests 11077, 11083 (creatures riled up; crazed Murkblood cut off from the exit)",
+   "npc_text 10941-10946 (Murkblood overseer: the Netherwing offered peace and protection, the Murkblood helped rouse Toranaku to force the Dragonmaw off the island)",
+   "zone_areas: Toranaku 23164 in 3759 near the mines; Mistress of the Mines 23149",
+   "npc_text 10943 (assisted Toranaku in rousing the creatures of this mine)",
+   "quest 11075 reward text (the miners choose death rather than mine deeper)"
+  ],
+  "notes": "Converted: the Murkblood's part in rousing the mine (the overseer's confession) moved to part 1 (DONE 11082); the opening keeps the Dragonmaw's own account. npc_text 10941-10946 reread: period text. requiredState 8. Before: Fact-check: 'blame bad luck' unsupported, replaced with the Dragonmaw's own 'grim discovery' (11075); the Murkblood helped Toranaku rouse the mine's creatures, they did not rouse Toranaku (npc_text 10943)."
+ },
+ {
+  "id": 352024,
+  "kind": 2,
+  "zone": 3520,
+  "sort": 1,
+  "faction": 1,
+  "requiredState": 8,
+  "title": "Kurdran Wildhammer",
+  "body": "Kurdran Wildhammer is the thane of the Wildhammer dwarves in Outland. In the Second War he fought the Horde on the back of his gryphon, Sky'ree, and was credited with slaying nine dragons. When the Alliance expedition crossed the Dark Portal he led its gryphon riders, and when Ner'zhul's portals began to tear Draenor apart he chose to stay behind with his comrades so that the Portal could be sealed. Azeroth mourned him as dead for twenty years. He and Sky'ree survived, and now he holds Wildhammer Stronghold against the Legion's siege, receiving visitors inside while his keeper tends the faithful gryphon who would die for him.",
+  "triggers": [
+   [
+    2,
+    21330
+   ],
+   [
+    5,
+    10744
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Kurdran_Wildhammer (Second War, Sky'ree, nine dragons, Gryphon Rider Division, stayed to ensure the Portal was sealed, presumed dead twenty years, Thane of Wildhammer Stronghold)",
+   "npc_text 9805 (Eli Thunderstrike on Sky'ree and Kurdran's audiences)",
+   "quest 10744 reward text"
+  ],
+  "notes": "Converted: body unchanged (nothing to hide; his survival is plain to anyone who meets him); requiredState 8; has DONE 10744. npc_text 9805 reread: period text. Before: Verified. Faction 1: Kurdran (1732) and quest 10744 (Alliance only)."
+ },
+ {
+  "id": 352025,
+  "kind": 2,
+  "zone": 3520,
+  "sort": 2,
+  "faction": 2,
+  "requiredState": 8,
+  "title": "Overlord Or'barokh",
+  "body": "Overlord Or'barokh commands Shadowmoon Village for the Horde, with the elite Kor'kron guard at his back. Caught between the Legion's infernals and Illidan's armies, he has no men to spare and says so bluntly: when a shaman came pleading for soldiers, he asked whether the shaman had no eyes for the demons at the door and advised a prayer to the gods instead, for the Horde could not help. What he does have are recruits, and every newcomer is a grunt to him. His wind riders bring him word of the valley, lately of Eclipsion armies mustering on the Path of Conquest.",
+  "triggers": [
+   [
+    2,
+    21769
+   ],
+   [
+    5,
+    10745
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "It was Or'barokh's plan that broke the Eclipsion advance. A concoction brewed by Researcher Tiorus, poured over a stolen tabard, let a grunt pass as one of Illidan's elves and strike the colossi of the Eclipsion Fields, and the giants of Shadowmoon turned against the elves who had courted them.",
+    "triggers": [
+     [
+      5,
+      10769
+     ]
+    ],
+    "sources": [
+     "quest 10769 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10595 description (elite Kor'kron guard)",
+   "creature_text 21769 (What is it that you want from me, shaman? ... I do not have the soldiers to spare ... Pray to your gods)",
+   "quests 10702, 10769 (grunt work; Tiorus's concoction, Eclipsion Fields)",
+   "quest 10750 description (word from his wind riders)",
+   "quest 10745 reward text"
+  ],
+  "notes": "Converted: his plan turning the giants against the Eclipsion (the outcome of 10769) moved to part 1 (DONE 10769, Horde). creature_text 21769 reread: period text. requiredState 8; has DONE 10745. Before: Verified. Faction 2: Or'barokh (1734) and quest 10745 (Horde only). The shaman he refuses is not named in the text (probably an Earthen Ring earthmender; Splinthoof stands in the village)."
+ },
+ {
+  "id": 352026,
+  "kind": 2,
+  "zone": 3520,
+  "sort": 3,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Earthmender Torlok",
+  "body": "Earthmender Torlok of the Earthen Ring keeps vigil at the Altar of Damnation, trying to make amends to the elements of Shadowmoon. He is an orc, and he does not hide that it was his own people who wounded them: here, he says, Gul'dan severed the tie between the orcs and the spirits, and not content with the ruin of the draenei, razed Draenor itself for power. The spirits he finds are enraged and unwilling to speak, so he gathers their souls in a totem until they can be heard.",
+  "triggers": [
+   [
+    2,
+    21024
+   ],
+   [
+    4,
+    10458
+   ],
+   [
+    5,
+    10680
+   ],
+   [
+    5,
+    10681
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "When at last the spirits answered, they named Cyrukh the Firelord, an elemental lord unearthed by Gul'dan's ritual, and Torlok cursed the warlock for a damned fool. Without the words to call the firelord forth, and with no idea where to seek them, he sent for an old hermit he had once met.",
+    "triggers": [
+     [
+      5,
+      10481
+     ]
+    ],
+    "sources": [
+     "creature_text 21024 (the communion)",
+     "quest 10513 description"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 10250 (Gul'dan severed the tie; razed Draenor)",
+   "creature_text 21024 (It was my people that did this to you; Cyrukh; the fire lord)",
+   "quests 10458, 10680 (the spirits are enraged and unwilling to commune with the Earthen Ring; totem of spirits)",
+   "quest 10513 description (Torlok turns to Oronok, a long shot)"
+  ],
+  "notes": "Converted: the spirits naming Cyrukh and the turn to the hermit moved to part 1 (DONE 10481, after which the communion plays). requiredState 8: added ACCEPT 10458 and DONE 10680 (Alliance), 10681 (Horde) as quest triggers for backfill. npc_text 10250 and creature_text 21024 reread: period text. Before: Fact-check: Cyrukh was unearthed by Gul'dan's ritual (creature_text 21024), not 'still buried'. Otherwise verified."
+ },
+ {
+  "id": 352027,
+  "kind": 2,
+  "zone": 3520,
+  "sort": 4,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Oronok Torn-heart",
+  "body": "Oronok Torn-heart lives as a hermit farmer on the Shattered Shelf above Coilskar Cistern, where his trained felboars dig tubers from the hard earth of the plains below. He invites travelers to sit by his fire, and admits that he has been a lot of things, though what he once was matters less to him than what he is now: a farmer. Flayers from a nest to the northeast prey on his animals, and he shows them no mercy. To strangers who come asking after words of damnation he says he has never heard of them, and advises them to let the dead rest.",
+  "triggers": [
+   [
+    2,
+    21183
+   ],
+   [
+    5,
+    10513
+   ],
+   [
+    4,
+    10514
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Oronok was once a lieutenant of Gul'dan, a shaman who had abandoned the elements for shadow magic, and he stood beside the warlock at the Altar of Damnation when the land was shattered. Like every orc on Draenor he felt the cut. Sick at heart, he gathered his boys and fled to the hills, and it has taken him twenty years to reach the elements again. When he learned what Illidan had done with Gul'dan's words, he sent his three sons, Grom'tor the warrior, Ar'tor the hunter and Borak the scholar, to recover them.",
+    "triggers": [
+     [
+      5,
+      10519
+     ]
+    ],
+    "sources": [
+     "npc_text 10315, 10316, 10317, 10318",
+     "quests 10521, 10527, 10546"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Not every son came home. Ar'tor's spirit sent back his bow and the second piece of the cipher with a last message: that he died free, that the hunting grounds are glorious, and that he waits there for his father. Oronok shed a single tear, then promised that a song of honor would be written for the one who brought the news.",
+    "triggers": [
+     [
+      5,
+      10541
+     ]
+    ],
+    "sources": [
+     "quest 10541 description, completion and reward texts"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10514 description (I've been a lot of things)",
+   "npc_text 10315, 10316, 10317, 10318 (lieutenant of Gul'dan, abandoned shamanism for shadow magic, felt the cut, fled with his boys, twenty years, sent his sons)",
+   "quests 10521, 10527, 10546 (the three sons)",
+   "warcraft.wiki.gg/wiki/Oronok_Torn-heart",
+   "quest 10513 reward text (words of damnation, never heard of them, let the dead rest)",
+   "quest 10515 (no mercy for the flayers)"
+  ],
+  "notes": "Converted: the whole confession (lieutenant of Gul'dan, the cut, his flight, his sons) moved from the opening to part 1 (DONE 10519); Ar'tor's last message to part 2 (DONE 10541). The opening is what a visitor hears before the story (10280, 10513, 10514). requiredState 8: added DONE 10513 and ACCEPT 10514 as quest triggers. npc_text 10280, 10315-10318 reread: period text. Before: verified"
+ },
+ {
+  "id": 352028,
+  "kind": 2,
+  "zone": 3520,
+  "sort": 5,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Akama",
+  "body": "Akama leads the Ashtongue, the most feared tribe of the Broken, whose most vicious warriors he picks by hand. At Illidan's command his people dig in the Ruins of Baa'ri under his lieutenant Oronu, who receives written orders from him daily, and his Ashtongue Deathsworn hold the Warden's Cage, a prison rumored to be a torture chamber. To the Aldor and the Scryers he is evil and cunning, and the draenei mourn what became of one once so wise and beloved. To many of his own people he is a traitor and Illidan's lapdog, and Akama says it is best that they go on thinking so, for now.",
+  "triggers": [
+   [
+    2,
+    21700
+   ],
+   [
+    5,
+    10628
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Akama serves Illidan only in appearance. He joined the Betrayer because visions foretold that his race would otherwise be destroyed, and he has waited ever since for further signs: Velen's exodus, the opening of the Dark Portal, the coming of heroes from Azeroth. The brutes at Baa'ri were chosen to keep up the mask he shows Illidan, only his Deathsworn know his true mind, and in a hidden chamber of the Warden's Cage he guards Maiev Shadowsong and bides his time.",
+    "triggers": [
+     [
+      5,
+      10628
+     ]
+    ],
+    "sources": [
+     "quest 10628 reward text",
+     "quest 10622 description",
+     "creature_text 21700"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "When the Heart of Fury came into his hands, Akama felt the same power he had seen Velen wield long ago. With it, he said, he and his Deathsworn could destroy Illidan and rule Outland in his place. But that was not the vision he had been granted, nor how his people would be freed, and he asked that the crystal be taken to A'dal.",
+    "triggers": [
+     [
+      5,
+      10707
+     ]
+    ],
+    "sources": [
+     "creature_text 21700 (Heart of Fury lines)",
+     "quest 10707 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 10447 (known as a traitor, Illidan's lapdog)",
+   "quest 10619 description (Ashtongue feared among all Broken)",
+   "quest 10628 reward text (visions, Velen's exodus, the Dark Portal, your arrival)",
+   "quest 10622 description (Baa'ri Ashtongue hand-picked to maintain the facade; Deathsworn know his intentions)",
+   "quest 10948 description (his soul held prisoner inside the Black Temple)",
+   "creature_text 21700 (keeping the secret, Maiev)",
+   "quests 10619, 10807 descriptions (handpicked by Akama)",
+   "quest 10571 description and reward text (daily orders; one as wise and beloved as he)",
+   "quests 10575, 10686 descriptions (evil and cunning)"
+  ],
+  "notes": "Converted: his double game (visions, the facade at Baa'ri, the Deathsworn, Maiev) moved to part 1 (DONE 10628); his temptation by the Heart of Fury to part 2 (DONE 10707). 'Illidan holds his soul in the Black Temple' dropped: it is the attunement's reveal (10948), told by shattrath.json 370321. The opening keeps his gossip (npc_text 10447) and what the Aldor and Scryer chains say of him. requiredState 8: added DONE 10628 as a quest trigger. npc_text 10447 and creature_text 21700 reread: period text. Before: Verified. Akama faction 1820, talkable by both. Chronicle-era backstory (exarch, Zangarmarsh) left out."
+ },
+ {
+  "id": 352029,
+  "kind": 2,
+  "zone": 3520,
+  "sort": 6,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Maiev Shadowsong",
+  "body": "Maiev Shadowsong is the Warden who held Illidan captive for ten thousand years and hunted him all the way to Outland after he escaped. Now she is the prisoner, locked in a cell in the Warden's Cage under the watch of Akama and his Deathsworn. Akama insists that they want the same thing and that she must wait, for he has spent years preparing and cannot tip his hand too soon. Maiev will have none of it. She is no pawn in his game, she tells him, and when she unleashes her wrath on Illidan it will have nothing to do with his foolish scheme. If Illidan is to die, it will be by her hand.",
+  "triggers": [
+   [
+    5,
+    10628
+   ]
+  ],
+  "sources": [
+   "creature_text 21699 (release me; if Illidan is to die it shall be by my hand; not a pawn in your game; cell won't hold me)",
+   "creature_text 21700 (In due time, Maiev; years preparing)",
+   "warcraft.wiki.gg/wiki/Akama (Akama became Maiev's jailer)",
+   "Warcraft III: The Frozen Throne (Maiev as Illidan's jailer for ten thousand years, pursued him to Outland)",
+   "warcraft.wiki.gg/wiki/Maiev_Shadowsong (guarded Illidan ten thousand years; pursued him to Outland; held in the Warden's Cage)"
+  ],
+  "notes": "Converted: body unchanged (unlocked only by DONE 10628, where her exchange with Akama plays); requiredState 8. creature_text 21699, 21700 reread: period text. Before: Verified. Ten thousand years as Illidan's jailer and pursuit to Outland per wiki Maiev_Shadowsong (Frozen Throne). Maiev 21699 has npcflag 0 and cannot be talked to or killed; QUEST_DONE 10628 (Akama, in the hidden chamber beside her cell) is how one meets her. No Legion-era Maiev material."
+ },
+ {
+  "id": 352030,
+  "kind": 2,
+  "zone": 3520,
+  "sort": 7,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Neltharaku",
+  "body": "Neltharaku is the patron of the Netherwing, a nether dragon who flies high above the Netherwing Fields, where his young dare not land for fear of the Dragonmaw. He is a father in grief. The orcs have taken many of his children to Dragonmaw Fortress and tortured them until they gave in, and his mate Karynaku is chained atop its walls; every attempt he has made to free her has failed. Neltharaku feels powerless against them. It was Illidan, he says, who found the Dragonmaw their leader, Zuluhed, the orc held responsible for the capture of the Dragon Aspect Alexstrasza. If such an orc could take an Aspect, how could the young Netherwing resist him?",
+  "triggers": [
+   [
+    2,
+    21657
+   ],
+   [
+    5,
+    10811
+   ],
+   [
+    4,
+    10814
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Neltharaku found a way to fight back after all. Nethervine crystals charged with his own essence broke the riders' hold over his enslaved children and turned them on their captors, and at last Zuluhed the Whacked was slain and Karynaku freed from her chains atop the fortress.",
+    "triggers": [
+     [
+      5,
+      10866
+     ]
+    ],
+    "sources": [
+     "quests 10837, 10854 descriptions and reward texts",
+     "quest 10866 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10811 description (patron soars high above)",
+   "npc_text 10614, 10615, 10616 (Neltharaku's tale: torture at the fortress, refusal to land, Illidan delivered Zuluhed, Alexstrasza, Karynaku and failed rescues)",
+   "quest 10858 description (without my mate the brood may die out)"
+  ],
+  "notes": "Converted: body unchanged (his tale is the premise of the chain); part 1 (DONE 10866) tells the drakes freed and Karynaku released, so his arc reads on. requiredState 8: added DONE 10811 and ACCEPT 10814 as quest triggers. npc_text 10613-10616 reread: period text. Before: Fact-check: the refusal to land belongs to his young (npc_text 10614), not to Neltharaku. Zuluhed capturing Alexstrasza kept as his words (wiki credits Nekros under Zuluhed's command). Faction template 7 is neutral to both."
+ },
+ {
+  "id": 352031,
+  "kind": 2,
+  "zone": 3520,
+  "sort": 8,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Overlord Mor'ghor",
+  "body": "Overlord Mor'ghor rules the Dragonmaw Base Camp on Netherwing Ledge, a coarse and boastful fel orc who serves Illidan and drives his workers to strip the island bare. He was once a chief lieutenant of the Dragonmaw at Grim Batol on Azeroth, a past the black dragonflight has not forgotten. Recruits who arrive with service papers start as peons, and the few who survive rise in rank under his eye. He sends his captains against the Legion on the Twilight Ridge and his commanders against the Aldor and the Scryers. He also keeps dealings of his own: the Netherwing eggs his orcs collect are sought by Lady Sinestra, who speaks for a black dragon master Mor'ghor had believed dead.",
+  "triggers": [
+   [
+    2,
+    23139
+   ],
+   [
+    5,
+    11013
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Mor'ghor's pride betrayed him. He named his finest orc the first highlord of the Dragonmaw, and Illidan himself came to the ledge to see this hero. The master saw through the disguise at once, called Mor'ghor an incompetent buffoon who had been deceived, and declared the whole operation compromised. Mor'ghor was ordered to deliver the impostor's carcass within the hour.",
+    "triggers": [
+     [
+      4,
+      11108
+     ]
+    ],
+    "sources": [
+     "creature_text 23139, 22083 (the highlord ceremony, scripted on accepting 11108)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11013 description and reward text (service papers, peon)",
+   "creature_text 23284 (Lady Sinestra: chief lieutenant at Grim Batol; the Netherwing eggs; my master) and 23139 (The master? He lives?)",
+   "quests 11086, 11094, 11099 (Twilight Ridge, sacking the Scryer and Aldor outposts)",
+   "npc_text 10944 (the Dragonmaw strip the island and supply Illidan's armies)",
+   "warcraft.wiki.gg/wiki/Overlord_Mor'ghor (BC section)"
+  ],
+  "notes": "Check: ceremony confirmed on accept (smart_scripts 23139 event 19 on quest 11108, action list 2313900: Illidan 23467 summoned, Yarzill's dragon form 23468 carries the highlord off); DONE 11108 stays with Shattrath's Barthamus (shattrath.json 370315). Part 1 'pride undid him' made 'betrayed him' (Mor'ghor's own fate is never shown). Sinestra's scene confirmed open-world: Time Watcher 23283 spawns her every 2 hours (OOC timer 7200000, no game_event), say-type lines heard by anyone at the base camp; it names Grim Batol only as Mor'ghor's Second War past and nothing from Cataclysm. Converted: body unchanged (Sinestra's visit is a periodic scene at the base camp, seen by anyone there, not a quest reveal). Part 1 tells the highlord ceremony on ACCEPT 11108 (Mor'ghor's script runs on that accept; DONE 11108 belongs to Shattrath's Barthamus). requiredState 8; has DONE 11013. creature_text 23139, 23284, 22083 reread: period text. Before: Verified. Mor'ghor (faction 1863) may only be friendly once the Netherwing disguise is earned; QUEST_DONE 11013 covers that. Cataclysm Twilight Highlands Mor'ghor not used."
+ },
+ {
+  "id": 352032,
+  "kind": 2,
+  "zone": 3520,
+  "sort": 9,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Illidari Lord Balthas",
+  "body": "Illidari Lord Balthas is an eredar in Illidan's service who stands among the Dragonmaw at their base camp on Netherwing Ledge. His brother, Reth'hedron the Subduer, chose the other side and now lords over the Twilight Ridge in Nagrand for the Burning Legion. With the Sha'tar bringing war to the gates of the Black Temple, Balthas admits that the Illidari cannot spare the strength to slay an eredar of such power. He has a better plan: to subdue Reth'hedron and banish him back through the Twilight Portal with a soul cannon built for the task.",
+  "triggers": [
+   [
+    2,
+    23427
+   ],
+   [
+    4,
+    11089
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The soul cannon was attuned to Balthas's own blood, the same blood that flows in Reth'hedron's veins, and fired from the air it drove the Subduer from the ridge. Balthas warns that his brother will be back, but for now the Legion's war against Illidan is weakened.",
+    "triggers": [
+     [
+      5,
+      11090
+     ]
+    ],
+    "sources": [
+     "quest 11090 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11089 description (Reth'hedron lords over the Twilight Ridge; no resources to slay him with the war the Sha'tar brought to the Black Temple; banish him through the portal)",
+   "quest 11090 description and reward text (soul cannon attuned to his blood, my brother; he will be back)",
+   "data/lore/nagrand.json 351820 (Reth'hedron is an eredar; Twilight Ridge place told there)",
+   "warcraft.wiki.gg/wiki/Illidari_Lord_Balthas (Man'ari eredar, brother Reth'hedron)"
+  ],
+  "notes": "Converted: the cannon attuned to his blood and Reth'hedron driven off moved to part 1 (DONE 11090; nagrand.json does not use 11090). requiredState 8; has ACCEPT 11089. Before: Verified. Balthas is an eredar per wiki Illidari_Lord_Balthas (Man'ari eredar); 11089 needs Netherwing Friendly, open to both factions. Faction template 62 is only friendly with the Netherwing disguise; the ACCEPT trigger covers that."
+ },
+ {
+  "id": 352033,
+  "kind": 2,
+  "zone": 3520,
+  "sort": 10,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Doomwalker",
+  "body": "Doomwalker is a fel reaver unlike any other, a towering war engine of the Burning Legion, mightier than the lesser reavers that roam Outland. It prowls the approaches west of the Black Temple, between the Ruins of Karabor and the Ata'mal Terrace, and greets intruders in a cold, mechanical voice, warning them to proceed no farther or be eliminated. When it strikes, it speaks of tectonic disruption and the ground trembles, and over each fallen foe it pronounces the same verdict: threat level zero, directive accomplished.",
+  "triggers": [
+   [
+    3,
+    17711
+   ],
+   [
+    1,
+    3840
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Doomwalker (fel reaver sent by Kil'jaeden to assault the gates of the Black Temple, built with captured draenei souls)",
+   "creature_text 17711 (Do not proceed; tectonic disruption; threat level zero; directive accomplished)",
+   "DB spawn 84633 at (-3563, 234), area 3520 north of the Black Temple grounds",
+   "warcraft.wiki.gg/wiki/Doomwalker (infused with the captured souls of martyred draenei)"
+  ],
+  "notes": "Check: the opening is unlocked by KILL 17711 (kill credit reaches every group member in range) and by AREA 3840, so it now tells only what a visitor or a bystander at the fight sees and hears (its size, its patrol west of the temple between the Ruins of Karabor and the Ata'mal Terrace, creature_text 17711). Kil'jaeden as its sender and the martyred draenei souls (wiki, citing the Burning Crusade game guide; no Shadowmoon database text) moved out: the Black Temple 352016 opening keeps both as what is said of it. AREA 3840 kept as the backfill trigger: its patrol (waypoints 846330) ends about 20 yards from the area's western edge, and the area is reached from the west across that patrol. Converted: body unchanged (it tells what anyone at the fight sees and hears, creature_text 17711, plus its story as tales tell it; nothing a quest reveals). requiredState 8: added AREA 3840 (The Black Temple grounds), since its patrol path runs within about 25 yards of the area's edge (posarea on its 7 waypoints and the grid around them). creature_text 17711 reread: period text. Before: Fact-check: 'built with' souls changed to 'infused with' (wiki); Hellfire comparison and 'north of the temple' removed (spawn lies west of area 3840). Kil'jaeden as sender is wiki-only (BC raid lore). World raid boss, not in game_event_creature; faction 90 hostile to both."
+ },
+ {
+  "id": 352034,
+  "kind": 3,
+  "zone": 3520,
+  "sort": 1,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Legion's Bombardment",
+  "body": "Infernals fall on Wildhammer Stronghold and Shadowmoon Village day and night, flung from Legion Hold, and the defenders of both outposts are close to breaking. Wing Commander Nuainn's riders are ragged and exhausted, and Blood Guard Gulmok drafts every able fighter onto the line, for even the Kor'kron cannot hold forever. Holding out is not enough. The hold is nigh impregnable and neither outpost can spare the forces for an assault, so each sends a volunteer into Legion Hold in disguise, to overhear the Legion's commanders and learn their plans.",
+  "triggers": [
+   [
+    4,
+    10562
+   ],
+   [
+    4,
+    10595
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The news from the hold is grim. Listening at its communication device, the spies heard an image of Warbringer Razuun, speaking for Doom Lord Kazzak, order the attacks stepped up to destroy the orcish and dwarven strongholds, and promise infernals enough from the Deathforge to do it.",
+    "triggers": [
+     [
+      5,
+      10563
+     ],
+     [
+      5,
+      10596
+     ]
+    ],
+    "sources": [
+     "quests 10563, 10596 reward texts",
+     "creature_text 21502, 21633"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "A bomb built from a dead fel reaver's power core destroyed the stockpile in the hold. Scouts at Deathforge Tower and Slag Watch then guided the assault on the forge itself, where the summoning ritual was broken and Razuun was slain. His orders pointed to the true staging ground, Invasion Point: Cataclysm, high in the mountains and reached only by a teleporter in Legion Hold.",
+    "triggers": [
+     [
+      5,
+      10586
+     ],
+     [
+      5,
+      10603
+     ]
+    ],
+    "sources": [
+     "quests 10564-10586 (Alliance), 10598-10603 (Horde)",
+     "quests 10589, 10604 descriptions"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "At the invasion point, Plexi for the Alliance and Nakansi for the Horde rigged a captured fel reaver sentinel to answer a control console, and turned the Legion's own war engine on its infernals. The back of the Legion's advance was broken, and word of the victory went back to Kurdran Wildhammer and Overlord Or'barokh.",
+    "triggers": [
+     [
+      5,
+      10612
+     ],
+     [
+      5,
+      10613
+     ]
+    ],
+    "sources": [
+     "quests 10606, 10612 (Alliance), 10611, 10613 (Horde) and their reward texts",
+     "quests 10744, 10745"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10562-10589, 10766, 10606, 10612, 10744 (Alliance chain)",
+   "quests 10595-10604, 10767, 10611, 10613, 10745 (Horde chain)",
+   "creature_text 21502, 21633 (Razuun and Jovaan at the communication device)"
+  ],
+  "notes": "Check: part 3 names both engineers and both leaders as parallel deeds (same deed, only names differ: the Hellfire precedent), as the opening names both commanders; the Moonglade split is kept for parts whose content differs (Deathforge 352004 parts 1 and 2). Converted: opening is the siege and the decision to spy on the hold (ACCEPT 10562 Alliance, 10595 Horde). Parts: 1 Razuun's overheard orders (DONE 10563, 10596), 2 the bomb, the Deathforge and Razuun's fall with the orders naming Invasion Point (DONE 10586, 10603), 3 the captured fel reaver and the broken siege (DONE 10612, 10613). Each side's engineer is named, as each side's commander is in the opening. requiredState 8. Before: Verified. Faction 0: 10562 Alliance only (1101), 10595 Horde only (690), one per side. Lead-ins 11044 and 11048 (filed under Nagrand, unused there) not used."
+ },
+ {
+  "id": 352035,
+  "kind": 3,
+  "zone": 3520,
+  "sort": 2,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Cipher of Damnation",
+  "body": "Shadowmoon's elements are in torment. Here Gul'dan's ritual severed the orcs from the spirits of Draenor, and the spirits of the valley remain so tortured that they refuse to commune with the Earthen Ring. At the Altar of Damnation, on the western outskirts of the Hand of Gul'dan, Earthmender Torlok sets out to make amends. With a totem of spirits he gathers the souls of enraged fire and earth, then of water from the naga's fouled pools at Coilskar, then of air from the crystal fields of the Netherwing, until the spirits of every element can be heard together.",
+  "triggers": [
+   [
+    4,
+    10680
+   ],
+   [
+    4,
+    10681
+   ],
+   [
+    4,
+    10458
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "When the spirits finally spoke, they named Cyrukh the Firelord, an elemental lord unearthed by Gul'dan's ritual. Only the ritual's own words could call him forth to be destroyed, and with no idea where to find them, Torlok sent for an old hermit he had once met, Oronok Torn-heart.",
+    "triggers": [
+     [
+      5,
+      10481
+     ]
+    ],
+    "sources": [
+     "creature_text 21024",
+     "quest 10513 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The hermit was no farmer. Oronok confessed that he had stood beside Gul'dan as his lieutenant when the land was shattered. The words have a name, the Cipher of Damnation: kept for twenty years in Gul'dan's quarters inside Karabor, they were found by Illidan when he took the Black Temple and split among his servants. Oronok's three sons have gone after the pieces.",
+    "triggers": [
+     [
+      5,
+      10519
+     ]
+    ],
+    "sources": [
+     "quest 10519",
+     "npc_text 10313-10318"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Grom'tor, the eldest, a warrior with his mother's temper, beat the hiding place of one piece out of a Coilskar naga commander. It lay in a naga chest at Coilskar, and the first fragment of the cipher went home to his father in a lockbox.",
+    "triggers": [
+     [
+      5,
+      10523
+     ]
+    ],
+    "sources": [
+     "quests 10521, 10522, 10523"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Ar'tor, the youngest, was found dead at Illidari Point, held in the air by demonic crystals. Freed, his spirit would not rest until his task was done: he won back his family bow, Lohn'goron, and with it took the second fragment from Veneratus the Many before he passed on to the hunting grounds.",
+    "triggers": [
+     [
+      5,
+      10541
+     ]
+    ],
+    "sources": [
+     "quests 10527, 10528, 10537, 10540, 10541"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "Borak, the scholar turned silent assassin, baited Illidan's envoy with bloodthistle to part him from his bodyguard, then sent an agent disguised as one of the elves into Eclipse Point with false orders for Grand Commander Ruusk. The fragment was set on the move toward Zuluhed, and Borak ambushed its bearer, Ruul the Darkener, to take the third.",
+    "triggers": [
+     [
+      5,
+      10579
+     ]
+    ],
+    "sources": [
+     "quests 10546, 10547, 10550, 10570, 10576, 10577, 10578, 10579"
+    ]
+   },
+   {
+    "part": 6,
+    "body": "Made whole and read aloud at the Altar of Damnation, where the memory of Gul'dan stands, the cipher called up the memories imprinted on the land, and then Cyrukh himself. The firelord was destroyed, and the elements had what they asked for.",
+    "triggers": [
+     [
+      5,
+      10588
+     ]
+    ],
+    "sources": [
+     "quest 10588 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10680/10681 (breadcrumbs to Torlok), 10458, 10480, 10481 and creature_text 21024 (spirits name Cyrukh, an elemental lord unearthed)",
+   "quests 10513-10519, npc_text 10313-10318 (Oronok's story)",
+   "quests 10521-10523 (Grom'tor), 10527-10541 (Ar'tor, Lohn'goron, Veneratus), 10546-10579 (Borak, bloodthistle, Icarius, Ruusk, Ruul)",
+   "quest 10588 (reading the cipher at the Altar of Damnation, Cyrukh)"
+  ],
+  "notes": "Converted: opening is Torlok's task (ACCEPT 10680 Alliance, 10681 Horde, 10458 both). Parts: 1 the spirits name Cyrukh (DONE 10481), 2 Oronok's confession and the cipher (DONE 10519), 3 Grom'tor's fragment (DONE 10523), 4 Ar'tor's (DONE 10541), 5 Borak's (DONE 10579), 6 Cyrukh summoned and destroyed (DONE 10588). Parts 3 to 5 can be earned in any order and each reads on from part 2. Torlok's closing hint (another knows the cipher) still left out. requiredState 8. Before: Verified. 10680 Alliance and 10681 Horde breadcrumbs plus 10458 (Torlok, both) as entry points. Torlok's closing hint (another knows the cipher) left out. Wilda's escort 10451 is mentioned under Coilskar Point only."
+ },
+ {
+  "id": 352036,
+  "kind": 3,
+  "zone": 3520,
+  "sort": 3,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Return of Teron Gorefiend",
+  "body": "The ghosts of Shadowmoon have grown restless. At Wildhammer Stronghold, Zorus the Judicator warns that the dwarves built upon the ancestral grounds of the Shadowmoon orcs, whose spirits lay dormant for nearly twenty years until something stirred them. At Shadowmoon Village, Chief Apothecary Hildagard says the whole land is haunted. Each crafts goggles from the ever-burning ash of the fel lava pools, letting their wearer see the dead, and sends the wearer to destroy the spirits that wander the outpost.",
+  "triggers": [
+   [
+    4,
+    10642
+   ],
+   [
+    4,
+    10624
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The spirits cleared from the outposts whispered one name: Teron Gorefiend. He was a warlock of Gul'dan, and when he was slain, Gul'dan placed his soul inside the body of a slain knight of Stormwind, making the first death knight of the Horde. He has long been thought dead, and even the Forsaken tremble at his legend.",
+    "triggers": [
+     [
+      5,
+      10643
+     ],
+     [
+      5,
+      10625
+     ]
+    ],
+    "sources": [
+     "quest 10643 reward text (Alliance)",
+     "quest 10625 reward text (Horde)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The trail led to an ancient Shadowmoon spirit at the Altar of Shadows, beyond the Netherwing Fields. After the Second War, the spirit said, Gorefiend returned to Draenor with his death knights and, unable to bear what he had become, took his own life. If Gorefiend walks again, the spirit offered to divine it, once his armor, cloak and truncheon were found.",
+    "triggers": [
+     [
+      5,
+      10644
+     ],
+     [
+      5,
+      10633
+     ]
+    ],
+    "sources": [
+     "quests 10633, 10644 reward texts",
+     "quests 10634, 10635, 10636 titles"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "With the relics restored, the spirit dropped its mask. The tale had been a lie: the Altar of Shadows was a prison, and the spirit was Teron Gorefiend himself. He seized his helper's body to strike down his jailers, beginning with Karsius the Ancient Watcher.",
+    "triggers": [
+     [
+      4,
+      10639
+     ],
+     [
+      4,
+      10645
+     ]
+    ],
+    "sources": [
+     "quests 10639, 10645 log and description texts",
+     "creature_text 21797, 21872"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Karsius fell, the bonds broke, and Teron Gorefiend walked free, crying that death incarnate had been released upon the world once more. Back at the outpost the mistake met only fury, and helmets of ever-burning ash were handed out so that the ghosts of Shadowmoon, Gorefiend among them, could be seen and destroyed.",
+    "triggers": [
+     [
+      5,
+      10639
+     ],
+     [
+      5,
+      10645
+     ]
+    ],
+    "sources": [
+     "quests 10639, 10645 reward texts",
+     "creature_text 21797, 21877"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10642, 10643, 10644, 10645 (Alliance, Zorus) and 10624, 10625, 10633, 10639 (Horde, Hildagard)",
+   "quest 10625 reward text (Gorefiend slain by Doomhammer, soul placed in a slain knight of Stormwind, first death knight)",
+   "quests 10633, 10634, 10635, 10636 (the spirit's account, Vhel'kur, clerics of Karabor, Ghostriders)",
+   "quest 10639 description; creature_text 21797, 21872, 21877 (possession, Karsius, Gorefiend has returned)"
+  ],
+  "notes": "Converted: opening is the haunting and the goggles (ACCEPT 10642 Alliance, 10624 Horde). Parts: 1 the name Gorefiend (DONE 10643, 10625), 2 the spirit's tale (DONE 10644, 10633), 3 the spirit unmasked (ACCEPT 10639, 10645), 4 Gorefiend free (DONE 10639, 10645). The relics' keepers (Vhel'kur, the clerics, the Ghostriders) are left to the place entries, since each divination quest reveals only its own. creature_text 21797, 21872, 21877 reread: period text. requiredState 8. Before: Verified. Faction 0: 10642 Alliance only, 10624 Horde only. The spirit's claim of suicide is presented as the spirit's tale (the wiki says Turalyon slew him)."
+ },
+ {
+  "id": 352037,
+  "kind": 3,
+  "zone": 3520,
+  "sort": 4,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Medallion of Karabor",
+  "body": "The Aldor at the Altar of Sha'tar and the Scryers at the Sanctum of the Stars both learn that the Ashtongue are digging in the Ruins of Baa'ri on Illidan's orders, and both send agents to seize the Tablets of Baa'ri before the Broken can. Baa'ri was buried with its people and its holy relics when Gul'dan raised the volcano, and the tablets are rumored to hold the secrets of the Temple of Karabor, the place now known as the Black Temple. Whatever they reveal could aid the fight against Illidan.",
+  "triggers": [
+   [
+    4,
+    10568
+   ],
+   [
+    4,
+    10683
+   ],
+   [
+    4,
+    10622
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The tablets spoke of a Medallion of Karabor kept at Baa'ri. Only the highest-ranking draenei priests were granted such medallions, for they opened the way into the Temple of Karabor. Orders in Akama's own hand, carried to his lieutenant Oronu the Elder, would show whether the Ashtongue had found it.",
+    "triggers": [
+     [
+      5,
+      10568
+     ],
+     [
+      5,
+      10683
+     ]
+    ],
+    "sources": [
+     "quests 10571, 10684 descriptions"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Akama's orders revealed that four fragments of the medallion had been unearthed and given to the Ashtongue Corruptors, Broken shaman who now defile the elements. Won from them, the four make only half the medallion. Akama must hold the rest, and the trail leads to his prison, the Warden's Cage.",
+    "triggers": [
+     [
+      5,
+      10574
+     ],
+     [
+      5,
+      10685
+     ]
+    ],
+    "sources": [
+     "quests 10574, 10575, 10685, 10686 descriptions"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "At the cage Akama's second, Sanoru, was waiting: Akama has followed the visitor's progress closely. The Ashtongue slain at Baa'ri, Sanoru admits, were brutes hand-picked to keep up a facade for Illidan, and only the Deathsworn know Akama's true intentions. First, the visitor must prove they are not with Illidan by slaying Zandras, the satyr who spies on the prison for him.",
+    "triggers": [
+     [
+      4,
+      10622
+     ]
+    ],
+    "sources": [
+     "quests 10575, 10686 reward texts",
+     "quest 10622 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Through a passage hidden by stagnant water, Akama waited in a secret chamber. He confessed that he serves Illidan only in appearance, bound to him by visions that foretold his race's destruction otherwise, and that he has waited years for the signs to come to pass, the latest of them the arrival of heroes from Azeroth.",
+    "triggers": [
+     [
+      5,
+      10628
+     ]
+    ],
+    "sources": [
+     "quest 10628 description and reward text"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "The fragments were replicas. Akama holds the true Medallion of Karabor, kept secret from Illidan, but it lacks a final piece. The Ashtongue seer Udalo, held in the Arcatraz, sent word in dreams that he had found it, and died there before he could say more, leaving one word scrawled beneath him: Ata'mal.",
+    "triggers": [
+     [
+      5,
+      10706
+     ]
+    ],
+    "sources": [
+     "quest 10705 description (Akama; Tempest Keep quest, text only)",
+     "quest 10706 description and reward text"
+    ]
+   },
+   {
+    "part": 6,
+    "body": "The word pointed to the Heart of Fury, an ata'mal crystal the fel orcs hid atop the Ata'mal Terrace. Taken from Shadowlord Deathwail, it carried the power Akama had once seen Velen wield, and he was tempted to keep it. Instead he asked that it be taken somewhere safe, to A'dal in Shattrath.",
+    "triggers": [
+     [
+      5,
+      10707
+     ]
+    ],
+    "sources": [
+     "quest 10707 description",
+     "creature_text 21700 (Heart of Fury lines)"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10568, 10571, 10574, 10575 (Aldor) and 10683, 10684, 10685, 10686 (Scryers)",
+   "quests 10622, 10628 (Sanoru, Zandras, Akama)",
+   "quests 10705, 10706, 10707, 10708 (replicas, Udalo in the Arcatraz, Heart of Fury, A'dal)",
+   "creature_text 21700 (Heart of Fury, take it to A'dal)"
+  ],
+  "notes": "Converted: opening is the race for the tablets (ACCEPT 10568 Aldor, 10683 Scryers, 10622 neutral after both converge). Parts: 1 the medallion (DONE 10568, 10683), 2 the corruptors' fragments (DONE 10574, 10685), 3 Sanoru and the facade (ACCEPT 10622), 4 Akama's confession (DONE 10628), 5 the replicas and Udalo (DONE 10706; 10705 is filed under Tempest Keep and not used), 6 the Heart of Fury (DONE 10707). The medallion's delivery to A'dal (10708) and the attunement stay with Shattrath. requiredState 8. Before: Verified. Aldor/Scryer split: entry points 10568 (Aldor, Ceyla) and 10683 (Scryers, Thelis), plus 10622 (Sanoru, neutral, after both converge). The Black Temple attunement (10944-10985, via A'dal and Xi'ri) is left to Shattrath and only hinted."
+ },
+ {
+  "id": 352038,
+  "kind": 3,
+  "zone": 3520,
+  "sort": 5,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Illidan's Pupil",
+  "body": "Aldor and Scryer scouts alike report a massive influx of Sunfury blood elf recruits heading to the Ruins of Karabor, before the walls of the Black Temple. In itself that would be a plain military threat, but the scouts describe the recruits' attire and fighting style as suspiciously close to Illidan's own. Exarch Onaala of the Aldor and Larissa Sunstrike of the Scryers will not raise the alarm without good reason, so each sends an agent into the ruins to bring back the recruits' weapons and settle whether the fear is founded.",
+  "triggers": [
+   [
+    4,
+    10587
+   ],
+   [
+    4,
+    10687
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The glaives taken from the initiates are authentic. Illidan is training blood elf demon hunters at Karabor, whose power will be turned on the Aldor and the Scryers as often as on any demon. To buy time, Onaala and Larissa mean to loose upon his captors the pit lord Azaloth, kept banished because he proved too strong for the lessons.",
+    "triggers": [
+     [
+      5,
+      10587
+     ],
+     [
+      5,
+      10687
+     ]
+    ],
+    "sources": [
+     "quests 10587, 10687 reward texts",
+     "quests 10637, 10688 descriptions"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "With Azaloth loose, the orders sent their agents to western Nagrand after a rumor: a demon hunter named Altruis, one of the rare few of his kind who owe Illidan no allegiance, is said to live out there. He might be willing to explain what is being taught at Karabor.",
+    "triggers": [
+     [
+      4,
+      10640
+     ],
+     [
+      4,
+      10689
+     ]
+    ],
+    "sources": [
+     "quests 10640, 10689 descriptions (Nagrand-filed, left to Shadowmoon)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Once convinced, Altruis told the tale of Varedis. Of five warriors Kael'thas sent to train under Illidan, three died and one went mad; Varedis alone survived and within a year surpassed the three masters set to teach him. He had stolen into the Shadow Council and learned by heart the Book of Fel Names, said to hold the true name of every demon, and now he runs Karabor at Illidan's request.",
+    "triggers": [
+     [
+      5,
+      10646
+     ]
+    ],
+    "sources": [
+     "npc_text 10492-10495 (Altruis's tale)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The book itself was taken from the Shadow Labyrinth. Altruis, tempted by its power, sent it back with a warning: burn it in Varedis's presence once he takes his demon form. At Karabor the book was burned before him, stripping his power, and Varedis fell with Alandien, Theras and Netharel.",
+    "triggers": [
+     [
+      5,
+      10651
+     ],
+     [
+      5,
+      10692
+     ]
+    ],
+    "sources": [
+     "quests 10650, 10691 descriptions",
+     "quests 10651, 10692"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10587, 10637, 10640, 10650, 10651 (Aldor) and 10687, 10688, 10689, 10691, 10692 (Scryers)",
+   "npc_text 10492-10497 (Altruis's account of Varedis)",
+   "quests 10641, 10646, 10649, 10668, 10669 (Altruis's trials and the Book of Fel Names)"
+  ],
+  "notes": "Check: part 1 'turned on the Sha'tar' made 'on the Aldor and the Scryers' (10637, 10688: 'used against us'). 10649 and 10705 are used by no file (nagrand.json uses none of 10640, 10646, 10649, 10689). Converted: opening is the scouts' report (ACCEPT 10587 Aldor, 10687 Scryers). Parts: 1 the glaives and the Azaloth plan (DONE 10587, 10687), 2 the search for Altruis (ACCEPT 10640, 10689), 3 Altruis's tale (DONE 10646), 4 the book and Varedis's fall (DONE 10651, 10692). 10640, 10689 and 10646 are filed under Nagrand, whose file leaves the Varedis chain to Shadowmoon; 10649 (Shadow Labyrinth) is not used. npc_text 10492-10497 reread: period text. requiredState 8. Before: Fact-check: Altruis 'owes Illidan nothing' contradicted his respect for Illidan (10668), now 'bears no allegiance' (10640). Aldor and Scryer split confirmed: 10587 needs Aldor Friendly (932), 10687 Scryers Friendly (934). Nagrand quests 10640, 10689, 10646 not used as triggers; Nagrand's Altruis person (351828) is not retold."
+ },
+ {
+  "id": 352039,
+  "kind": 3,
+  "zone": 3520,
+  "sort": 6,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Plight of the Netherwing",
+  "body": "Over the Netherwing Fields the nether drakes are starving. Something has them so frightened that they will not come down even to feed, and some fall from the sky, dead from exhaustion before they reach the ground. Mordenai, who watches over them, begs for help: kill the Rocknail flayers among the crystals, the drakes' natural prey, and lay the carcasses out in the field, then stand very still, for a drake will come down to eat as long as no one makes an aggressive move.",
+  "triggers": [
+   [
+    4,
+    10804
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "That kindness reached the flight's patron, Neltharaku, who soars high above. He told of Dragonmaw Fortress, where the Dragonmaw torture captured drakes into obedience; of Zuluhed, the orc Illidan gave them as leader, who once captured the Aspect Alexstrasza; and of his own mate Karynaku, chained atop the fortress after every attempt to free her had failed.",
+    "triggers": [
+     [
+      5,
+      10814
+     ]
+    ],
+    "sources": [
+     "npc_text 10614, 10615, 10616 (Neltharaku's tale, quest 10814)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "To buy him time, the orcs in the fortress were cut down while Neltharaku devised a remedy. From nethervine crystals gathered on Netherwing Ledge he made charms filled with his own essence, which break the riders' hold over their enslaved drakes and set them free to turn on their captors.",
+    "triggers": [
+     [
+      5,
+      10854
+     ]
+    ],
+    "sources": [
+     "quests 10836, 10837, 10854"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Then came the climb to the top of the fortress. Karynaku, weakened by her chains, called Zuluhed the Whacked to her with a false promise to obey, and when the old chieftain appeared he was slain for his key. She was free at last.",
+    "triggers": [
+     [
+      5,
+      10866
+     ]
+    ],
+    "sources": [
+     "quests 10858, 10866",
+     "creature_text 11980 (Zuluhed)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Karynaku carried her rescuer back to Mordenai, who rejoiced that his mother was free and his brothers and sisters saved. He named the stranger kin to the Netherwing Dragonflight, to be welcomed with open arms whenever the flight calls again.",
+    "triggers": [
+     [
+      5,
+      10870
+     ]
+    ],
+    "sources": [
+     "quest 10870 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10804, 10811, 10814, 10836, 10837, 10854, 10858, 10866, 10870/10871",
+   "npc_text 10614-10616 (Neltharaku's tale)",
+   "creature_text 11980 (Zuluhed)"
+  ],
+  "notes": "Converted: opening is Mordenai's plea (ACCEPT 10804). Parts: 1 Neltharaku's tale (DONE 10814), 2 the charms and the freed drakes (DONE 10854), 3 Zuluhed slain and Karynaku freed (DONE 10866), 4 Mordenai's kinship (DONE 10870). No KILL trigger on Zuluhed. 10871 and 10872 are unused copies. creature_text 11980 reread: period text. requiredState 8. Before: Verified. Single neutral entry point. 10872 (an unused copy of Zuluhed the Whacked) ignored."
+ },
+ {
+  "id": 352040,
+  "kind": 3,
+  "zone": 3520,
+  "sort": 7,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Among the Dragonmaw",
+  "body": "Sworn by blood oath to help the Netherwing retake their lands and see their bloodline born anew, an ally is sent into the heart of the enemy. Netherwing Ledge, once the flight's sanctuary, is now home to the Dragonmaw, but the flight's magic there is still strong enough to cloak a stranger as a fel orc of Illidan Stormrage. Carrying service papers prepared by the Netherwing, the newcomer flies to Dragonmaw Base Camp to present them to Overlord Mor'ghor and begin a new life in the ranks of the clan.",
+  "triggers": [
+   [
+    5,
+    11012
+   ],
+   [
+    4,
+    11013
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Mor'ghor laughed at the papers and made the newcomer a peon. Daily labor for Taskmaster Varkule covers the true work, done for Yarzill the Merc, whose eyes flicker blue when no one is watching: he is a Netherwing agent in disguise. Under his direction the peon poisons peon camps, ambushes transporters on the Dragonmaw Skyway and hunts the stolen Netherwing eggs.",
+    "triggers": [
+     [
+      5,
+      11019
+     ]
+    ],
+    "sources": [
+     "quest 11013 reward text",
+     "quest 11019 reward text",
+     "quests 11020, 11035, 11049"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The infiltrator rose through the ranks, from peon to overseer, from overseer to captain, and at last to commander, a promotion Illidan himself asked for, making the newcomer the first Dragonmaw ever to hold that rank outside the Black Temple.",
+    "triggers": [
+     [
+      5,
+      11092
+     ]
+    ],
+    "sources": [
+     "quests 11053, 11084 reward texts",
+     "quest 11092 reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Ordered to sack the Scryer or the Aldor outpost, the commander warned them instead. Their defenders sprang a trap on the Dragonmaw raiders, and Mor'ghor, shown medals as proof of victory, laughed with delight and ordered such a raid every day.",
+    "triggers": [
+     [
+      5,
+      11097
+     ],
+     [
+      5,
+      11101
+     ]
+    ],
+    "sources": [
+     "quests 11094-11097 (Scryers), 11099-11101 (Aldor)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "At last Mor'ghor named his finest orc the first highlord of the Dragonmaw, and Illidan himself came to the ledge to see this hero. He saw through the disguise at once and declared the whole operation compromised. Yarzill snatched the highlord to safety on his back, and word of what came next waits with Barthamus in Shattrath's Lower City.",
+    "triggers": [
+     [
+      4,
+      11108
+     ]
+    ],
+    "sources": [
+     "quest 11107 reward text",
+     "quest 11108 log text",
+     "creature_text 23139, 22083, 23141 (scripted on accepting 11108)"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 11012, 11013, 11014, 11019, 11020, 11035, 11049, 11053, 11084, 11092, 11094/11099, 11095/11100, 11097/11101, 11107, 11108",
+   "creature_text 23139, 22083, 23141 (Mor'ghor, Illidan, Yarzill at the highlord ceremony)",
+   "quest 11019 reward text (Yarzill's eyes flicker blue: we are here with you)"
+  ],
+  "notes": "Converted: opening is the oath and the mission (DONE 11012, auto-complete; ACCEPT 11013). Parts: 1 peon and Yarzill (DONE 11019, auto-complete, so DONE is right), 2 the promotions (DONE 11092), 3 the trap (DONE 11097 Scryers, 11101 Aldor), 4 the highlord ceremony (ACCEPT 11108: Mor'ghor's script runs on that accept; DONE 11108 is Shattrath's Barthamus trigger). Barthamus is only pointed at. creature_text 23139, 22083, 23141 reread: period text. requiredState 8. Before: Verified. 11012 Blood Oath is QuestType 0 (auto-complete), so it gets QUEST_DONE; 11013 is the first accepted quest. Neutral entry; the Aldor/Scryer turn (11094/11099) is told as shared history. Barthamus (Shattrath) is only mentioned."
+ },
+ {
+  "id": 352041,
+  "kind": 3,
+  "zone": 3520,
+  "sort": 8,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Dark Conclave",
+  "body": "The ghosts of the Sketh'lon arakkoa are stirring in their ruined camp northwest of the Deathforge. Gryphonrider Kieran's scouts report that the spirits wield powers no one knew they had and seem to be organizing, and at Shadowmoon Village Sergeant Kargrul hears that they prey on the peons sent to cut wood among the ruins, draining their lives to fuel their magic. Both send agents into the Sketh'lon Wreckage to take whatever writings the ghosts carry and learn what drives the Dark Conclave.",
+  "triggers": [
+   [
+    4,
+    10569
+   ],
+   [
+    4,
+    10760
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The journal pages taken from the ghosts are mostly unintelligible, but they speak of an elaborate ritual prepared up to the moment the arakkoa died, of a spell gone awry, and of a deserter. The best lead is to find him: a haunted arakkoa named Parshah, waiting by the road through the Magma Fields.",
+    "triggers": [
+     [
+      5,
+      10569
+     ],
+     [
+      5,
+      10760
+     ]
+    ],
+    "sources": [
+     "quests 10569, 10760 reward texts",
+     "quests 10759, 10761"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Parshah is the deserter. He tells how his people, seeing the Horde mass under Gul'dan, prepared to strike him first, and how the warlock answered with a spell that destroyed their camps and twisted their spirits. The Dark Conclave must be stopped before it unleashes a greater evil, and he means to build a staff to do it, beginning with the war totem carried by Asghar.",
+    "triggers": [
+     [
+      4,
+      10777
+     ]
+    ],
+    "sources": [
+     "quests 10759, 10761 reward texts",
+     "quest 10777 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Gul'dan's magic fed on the spell the arakkoa were preparing and forged a sinister force that engulfed their spirits. Parshah built his staff from Asghar's totem, the Rod of Lianthe taken from Eclipse Point and Sketh'lon feathers, its headpiece charged with the echoes of Gul'dan at the Altar of Damnation. The ghosts mean to summon an ancient evil in the lava pits south of their base camp.",
+    "triggers": [
+     [
+      4,
+      10808
+     ]
+    ],
+    "sources": [
+     "quests 10778, 10780, 10782",
+     "quest 10808 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "With the staff the ritual was broken, and the Dark Conclave threatens no more. Parshah had sought a way to stop them for years and often felt guilty for abandoning his kin; now he knows he made the right choice, for without his wavering conscience he might have become a shade among them.",
+    "triggers": [
+     [
+      5,
+      10808
+     ]
+    ],
+    "sources": [
+     "quest 10808 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10569, 10759 (Alliance) and 10760, 10761 (Horde)",
+   "quests 10777, 10778, 10780, 10782, 10808 (Parshah's staff and the ritual)",
+   "npc_text 10556 (Parshah's gaze)"
+  ],
+  "notes": "Converted: opening is the scouts' reports (ACCEPT 10569 Alliance, 10760 Horde). Parts: 1 the journal and the deserter (DONE 10569, 10760), 2 Parshah's account (ACCEPT 10777), 3 the staff and the ritual's aim (ACCEPT 10808), 4 the ritual broken (DONE 10808). npc_text 10556 reread: period text. requiredState 8. Before: Verified. Faction 0: 10569 Alliance only, 10760 Horde only."
+ },
+ {
+  "id": 352042,
+  "kind": 3,
+  "zone": 3520,
+  "sort": 9,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Illidari-Bane Blade",
+  "body": "Shards of a strange metal turn up among the mo'arg of Legion Hold, who seem to be working with fragments of it everywhere. The pieces look like parts of a larger weapon, sharp and etched with runes that glow with a menacing light, and their purpose is far from clear. Whoever finds one soon carries it to a weaponsmith of the outposts, Ordinn Thunderfist at Wildhammer Stronghold or Grokom Deatheye at Shadowmoon Village, for only a smith's eye can say what the Legion is making.",
+  "triggers": [
+   [
+    4,
+    10621
+   ],
+   [
+    4,
+    10623
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Both smiths know the work. The metal is a rare ore enchanted to destroy demons, a secret weapon the Legion means to turn against Illidan's forces. The two pit lords of Legion Hold, Makazradon and Morgroron, already bear glaives made from it, and with their weapons captured there would be metal enough for a blade.",
+    "triggers": [
+     [
+      5,
+      10621
+     ],
+     [
+      5,
+      10623
+     ]
+    ],
+    "sources": [
+     "quests 10621, 10623 reward texts",
+     "quests 10626, 10627 descriptions"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Forging the metal proved beyond both smiths. They sent the ingots to David Wayne, a blacksmith who came to Draenor with the Sons of Lothar and later left the expedition to live alone in Terokkar Forest; even Grokom admitted it pained him to send Horde business to a human. Wayne agreed to try, though most of the magic was gone, and warned that he would need some exotic resources.",
+    "triggers": [
+     [
+      5,
+      10662
+     ],
+     [
+      5,
+      10663
+     ]
+    ],
+    "sources": [
+     "quests 10662, 10663 descriptions and reward texts"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Wayne needed rare things: an overcharged manacell from the Mechanar, the Lexicon Demonica from the Shadow Labyrinth, underworld loam from the Steamvault and the Tear of the Earthmother from the Shattered Halls. With them he forged the sword, and it was quenched in the Scalding Pools of the Hand of Gul'dan, a blade to cut down Illidari and Legion demons alike.",
+    "triggers": [
+     [
+      5,
+      10679
+     ]
+    ],
+    "sources": [
+     "quests 10664-10670, 10676, 10679"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10621, 10626, 10662 (Alliance) and 10623, 10627, 10663 (Horde)",
+   "quests 10664, 10665, 10666, 10667, 10670, 10676, 10679 (David Wayne's materials, quenching at the Scalding Pools)",
+   "npc_text 10500 (David Wayne and the Sons of Lothar)"
+  ],
+  "notes": "Converted: opening is the shard and the walk to a smith (ACCEPT 10621 Alliance, 10623 Horde, both item-started). Parts: 1 the smiths' verdict and the pit lords' glaives (DONE 10621, 10623), 2 David Wayne (DONE 10662, 10663, turned in at Wayne; terokkar.json uses only TALK 21465), 3 the materials and the quenching (DONE 10679). npc_text 10500 reread: period text. requiredState 8. Before: Verified. Faction 0: 10621 Alliance only, 10623 Horde only (both start from an item). All the chain's quests are filed under Shadowmoon, so it is told here; Terokkar may write David Wayne (21465, Wayne's Refuge) as a TALK person but should not reuse these quests."
+ }
 ]

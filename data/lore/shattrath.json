@@ -1,25 +1,999 @@
 [
-{"id": 370300, "kind": 0, "zone": 3703, "sort": 0, "faction": 0, "title": "Shattrath City", "body": "Shattrath, whose name means dwelling of light, was once the capital of the draenei on this world. When the Burning Legion turned the orcs against them, the fiercest battle of that war was fought here, and the city fell. For years it lay in ruin and darkness, until the naaru called the Sha'tar came to Outland to fight the demons and were drawn to these ruins, where a small remnant of the draenei priesthood still held its rites. Those priests, the Aldor, regained their strength, and rebuilding began. Later a host of blood elves sent by Kael'thas marched on the city and instead knelt before the naaru A'dal, becoming the Scryers. Today it rises in northwestern Terokkar Forest, perhaps the one place in Outland with any semblance of safety. A'dal holds the Terrace of Light at its heart, the two rival orders keep their own heights above it, and refugees of every race crowd the Lower City. Portals link it to the capitals of Azeroth, and from here the Sha'tar make war on the Legion and its allies.", "triggers": [[1, 3703]], "sources": ["creature_text 19685 (Khadgar's Servant tour: dwelling of light, fiercest battle, ruins and darkness, Sha'tar, Aldor, Scryers)", "quest 10210 description (one place in Outland with any semblance of safety)", "warcraft.wiki.gg/wiki/Shattrath_City (draenei capital, Terrace of Light, Aldor Rise, Scryer's Tier, Lower City)", "DB gameobjects 183317-183327, 187056 (Shattrath portals)"], "notes": "Verified. The tour (creature_text 19685 group 8) says Illidan's armies attacked but the regiment was sent by Kael'thas, Illidan's ally; the game's version is kept. No Warlords of Draenor material (Goria, Leafshadow, the 6.0 siege) and no Legion material."},
-{"id": 370301, "kind": 1, "zone": 3703, "sort": 1, "faction": 0, "title": "Terrace of Light", "body": "The Terrace of Light is the heart of Shattrath and the seat of the Sha'tar. In the chamber at its center floats A'dal, leader of the naaru, with Khadgar close at hand, and around the hall stand portals to the capitals of the Alliance and the Horde. Grand Anchorite Almonen preaches here that the Light dwells within each of us as a gift, and General Tiras'alan studies an image of the Sunwell's defenses beneath the naaru. Spymistress Mehlisah Highcrown speaks for the Lower City, urging that Auchindoun be cleared of the Shadow Council. The Aldor and the Scryers each keep a bank on the terrace's rim.", "triggers": [[2, 25167], [2, 18893]], "sources": ["DB spawns: A'dal 18481 (-1864,5430), Khadgar 18166, Almonen 19216, Tiras'alan 25167, Mehlisah 18893, portals 183317-183327 and 187056 around the chamber", "creature_text 19216 (Almonen's sermon)", "quest 11550 description (representation of the Sunwell's defenses below A'dal)", "npc_text 9615 (Mehlisah)", "npc_text 10379 (two banks on the rim of the central hub)", "warcraft.wiki.gg/wiki/Shattrath_City (Terrace of Light, seat of the Sha'tar)", "game_event_gameobject: Quel'Danas portal 187056 only in Sun's Reach phase event 105", "quests 10091, 10095 objectives (Mehlisah at the Terrace of Light)"], "notes": "Fact-check: dropped the Quel'Danas portal (spawned only in Sun's Reach phase event 105, and told by quel_danas.json). Tiras'alan (11550: the object before me and below A'dal) and Mehlisah (10091, 10095: at the Terrace of Light) confirmed on the terrace, both with gossip, templates 1956 and 1818 neutral to all. Area 3897 unreachable, so TALK kept."},
-{"id": 370302, "kind": 1, "zone": 3703, "sort": 2, "faction": 0, "title": "Lower City", "body": "The Lower City is the lowest ring of Shattrath and the home of its refugees. As one of the only safe havens in Outland, the city draws them from every war, past and present: Broken and Lost Ones, sporelings and Mag'har, high elves, dwarves, orcs and human peasants, and arakkoa outcasts who turned from Skettis. Every spare building now houses them; the rogue Lonika Stillblade has even closed her academy. Khadgar warns newcomers to watch for pickpockets. It is a busy market too: Griftah swears by his miraculous amulets, the arakkoa alchemist Lorokeem keeps his strange equipment in the northwest, and battle-mages, one for the Alliance and one for the Horde, send soldiers north to the war for Wintergrasp.", "triggers": [[1, 3899]], "sources": ["creature_text 19685 groups 4 (droves of refugees from all wars)", "zone_areas: Broken, Lost One, Sporeling, Mag'har, High Elf, Dwarf, Orc and Peasant Refugees, Skettis Outcast, Redeemed Avian in 3899/3703", "npc_text 10686 (Lonika Stillblade)", "creature_text 18166 group 1 (pickpockets in the Lower City)", "creature_text 19227 (Griftah)", "npc_text 10696 (Lorokeem, northwest of the lower city)", "npc_text 10388 (battlemasters on the stairwells)", "creature 35596, 35597 Wintergrasp Battle-Mages (gossip 14775 on)", "warcraft.wiki.gg/wiki/Lower_City", "creature 35596 Arcanist Iramhir (template 2027, Silver Covenant, Alliance) and 35597 Magistrix Aldessia (template 2123, Sunreavers, Horde), gossip 10666 and 10662 on Wintergrasp, no game_event"], "notes": "Fact-check: the battlemasters (20269 to 20384, 30586, 30587, 35022, 35026) spawn only with Call to Arms events 19 to 21, 53 and 54, so the line now names only the permanent Wintergrasp battle-mages, one per faction. No Dalaran portal in the DB."},
-{"id": 370303, "kind": 1, "zone": 3703, "sort": 3, "faction": 0, "title": "World's End Tavern", "body": "At the eastern edge of the Lower City stands the World's End Tavern, where Shaarubo tends the bar and the barmaid Kylene cooks enough to fill the ogre Grok. Its regulars are a strange lot. The mo'arg Sal'salabim drinks away his sorrows, Raliq the Drunk bellows at all comers, and the socialite Haris Pilton holds court with her pet while an ex-socialite lingers close by. Lonika Stillblade waits here for a new home for her rogue academy, and a stranger named Zephyr, who can carry visitors to the Caverns of Time, muses that even time feels different in this broken world. Just outside, Wind Trader Lathrai admits the tavern offers nothing to his kind, though its patrons buy his wares.", "triggers": [[2, 19186], [2, 22442]], "sources": ["npc_text 10394 (tavern in the easternmost portion of the lower city)", "npc_text 11230, 11231 (Kylene, cooking for Grok)", "quest 10004 (Sal'salabim at the bar, drinking away his sorrows)", "npc_text 9440, creature_text 18585 (Raliq)", "creature_template subnames 18756 Socialite, 18762 Haris Pilton's Pet, 19719 Ex-Socialite", "npc_text 9417 (Lathrai)", "quests 11354, 11364 (Zhareem and Mah'duun bounties)", "npc_text 12507 and gossip 9205 (Zephyr, Caverns of Time)", "DB spawns around -1740..-1770, 5130..5200 (all posarea 3703)", "quests 9979, 10112 (Lathrai outside, near the World's End Tavern)", "npc_text 10686 (Lonika, academy closed for now)", "DB spawns: Lonika 22442 and Zephyr 25967 on the tavern floor (z -37) beside Shaarubo; Lathrai, Zhareem and Mah'duun at street level (z -40), 35 to 40 yards off"], "notes": "Fact-check: quest 9979 places Lathrai outside the tavern, so TALK 18484 was replaced by Lonika Stillblade 22442 (gossip 8541, template 1818), who stands inside beside the bartender; Lathrai is now described as just outside. The bounty brokers (Zhareem, Mah'duun) also stand outside and were dropped. Kylene confirmed inside (gossip 8784, template 1818). BlizzCon concert spawns (event 47) left out."},
-{"id": 370304, "kind": 1, "zone": 3703, "sort": 4, "faction": 0, "title": "Aldor Rise", "body": "Aldor Rise is the highest tier of Shattrath and the home of the Aldor, the draenei priesthood that kept its rites among the ruins until the naaru came. On its western side stands the Shrine of Unending Light, their most holy temple, where the Light is said to burn strongly enough to cleanse even the foulest fel taint, and where High Priestess Ishanah receives those who join the order. Adyen the Lightwarden keeps watch over the priesthood, vindicators guard the paths, and anchorites and neophytes train among the dwellings. An inn on the southern side offers rest. As a holy site the rise welcomes only the initiated, and those who side with the Scryers find no friends here.", "triggers": [[1, 3896]], "sources": ["warcraft.wiki.gg/wiki/Shattrath_City (Aldor Rise uppermost, shrine west, inn south)", "creature_text 19685 groups 6, 16 (priesthood in ruins; most holy temple; only the initiated)", "quest 10420 description (holiest places, fel taint cleansed)", "quest 10554 (Ishanah in the Shrine of Unending Light)", "zone_areas 3896: Ishanah, Adyen, Aldor Vindicator, Anchorite, Neophyte, Minalei", "quests 10551, 10552 reward texts"], "notes": "verified against spawns"},
-{"id": 370305, "kind": 1, "zone": 3703, "sort": 5, "faction": 0, "title": "Scryer's Tier", "body": "Scryer's Tier is the raised platform where the Scryers make their home, the blood elves who abandoned Kael'thas for the naaru. Arcane guardians and arcanists watch over its walks, and only those initiated with the Scryers are welcome. In the Seer's Library on its southwestern side sits their leader, Voren'thal the Seer, who means the library to make a seer out of everyone, and beside him Loremaster Skosiris tends a collection he claims outshines even the grand libraries of Silvermoon. An inn on the eastern side, enchanters, merchants and a fence serve the order's members. The Aldor take little joy in sharing the city with them, for many priests died at the hands of these very magisters.", "triggers": [[1, 3898]], "sources": ["creature_text 19685 groups 13, 15 (dwelling on the platform above, only the initiated; priests slain by the same magisters)", "warcraft.wiki.gg/wiki/Shattrath_City (Seer's Library southwest, inn east)", "npc_text 10178 (Voren'thal)", "npc_text 14365 (Loremaster Skosiris)", "zone_areas 3898: Scryer Arcanist, Scryer Arcane Guardian, Innkeeper Haelthol, Lisrythe Bloodwatch <Fence>, enchanters"], "notes": "Verified. Skosiris (33642) is a Wrath-era inscription trainer actually spawned in the 3.3.5 DB."},
-{"id": 370306, "kind": 2, "zone": 3703, "sort": 1, "faction": 0, "title": "A'dal", "body": "A'dal is the leader of the Sha'tar, the naaru who reclaimed Shattrath, and he rules the city from the Terrace of Light. He speaks without words: those who approach feel a soothing light and hear slow chimes in their minds, and with them comes the assurance that they are safe. Khadgar warns visitors not to trouble him with petty questions, for his will alone keeps the city's enemies from crushing it. Each day he chooses which rival order joins Xi'ri in Shadowmoon Valley, and the armies take his blessing before they march. When a champion returned from Crimson Watch with word of the Crimson Sigil, Illidan's elite, A'dal foresaw the day their master would answer for his crimes.", "triggers": [[2, 18481], [5, 10781]], "sources": ["npc_text 9800", "quest 10210 reward text", "creature_text 18166 group 0", "creature_text 19685 groups 17-19 (Xi'ri, A'dal's daily decision and blessing)", "quest 10781 description and reward text", "quest 10793 reward text (Crimson Sigil, Illidan's elite)", "warcraft.wiki.gg/wiki/A'dal"], "notes": "Verified. 10781 was left to Shattrath by shadowmoon.json. Faction 0: template 1741 Sha'tar is friendly to both. Legion-era A'dal not used."},
-{"id": 370307, "kind": 2, "zone": 3703, "sort": 2, "faction": 0, "title": "Khadgar", "body": "Khadgar was apprentice to Medivh, the Last Guardian, and it was he who learned that his master had been possessed by Sargeras and had opened the Dark Portal; though he honored Medivh, he slew him. After fighting beside Anduin Lothar, he went into Draenor with Turalyon, Alleria, Danath and Kurdran as the Sons of Lothar, and as that world tore apart they shattered the portal behind them. Trapped in Outland, he sensed the Burning Legion closing in, reached into the Great Dark Beyond, and found A'dal and his naaru. He says he convinced them to come. Now he stands by A'dal, swearing he has learned more from A'dal in five months than in all his years among Dalaran's libraries.", "triggers": [[2, 18166]], "sources": ["npc_text 9876-9881 (Khadgar's gossip chain)", "npc_text 9243", "quest 10211 description", "warcraft.wiki.gg/wiki/Khadgar (pre-Cataclysm)"], "notes": "Khadgar's claim to have brought the naaru is his own (the wiki says Khadgar and Velen each sought them). His Karazhan quests (9829-9838) and the Violet Eye story belong to deadwind_pass.json and are not used or retold. Faction 0: template 35. Fact-check: last line matched to npc_text 9243 (from A'dal, libraries of Dalaran). The claim to have brought the naaru stays framed as his own words (npc_text 9881)."},
-{"id": 370308, "kind": 2, "zone": 3703, "sort": 3, "faction": 0, "title": "High Priestess Ishanah", "body": "Ishanah is the High Priestess of the Aldor, the draenei priests who serve the Sha'tar, and she receives new allies in the Shrine of Unending Light. It was the Aldor who named the naaru Sha'tar, born from light. Her people were charged with guarding the holy sites of this land, and she grieves that so many altars now lie ruined or defiled. Turning refugees away, she says, would be hypocrisy. Of the Scryers she is blunter: she does not like them or their leader's wild claims of visions of redemption, but it is not for her to question the wisdom of the naaru, and in such times allies must be taken where they are found.", "triggers": [[2, 18538], [5, 10554]], "sources": ["npc_text 9457, 9458, 9459 (gossip)", "quest 10554 (Khadgar sends Aldor allies to her in the Shrine of Unending Light)", "quest 10021 description (holy sites and altars)"], "notes": "Verified. 10554 is the Aldor side (PrevQuestID 10551 Allegiance to the Aldor, needs Aldor Friendly), started by Khadgar, ended by Ishanah. Ishanah's netherstorm.json role (10409) is not retold. TALK 18538: template 1743 takes its reaction from Aldor reputation and the core refuses gossip at Unfriendly or worse. Base Aldor standing is Neutral for all races but draenei (Friendly) and blood elves (Hostile), so before choosing she can be talked to by everyone except blood elves; after choosing Scryers (Aldor -3850 by spillover) she cannot. Voren'thal (370309) is the Scryer counterpart. Faction 0."},
-{"id": 370309, "kind": 2, "zone": 3703, "sort": 4, "faction": 0, "title": "Voren'thal the Seer", "body": "Voren'thal the Seer was once a close advisor to Prince Kael'thas, until visions warned him that the prince's path would lead the blood elves to ruin. When Kael sent a regiment to lay waste to Shattrath, Voren'thal was its leader. On the bridge before the Terrace of Light his soldiers laid down their arms, and he strode in to kneel before A'dal, declaring that he had seen the naaru in a vision and that his race's only hope lay with him. Many of Kael's finest scholars and magisters followed him. Now he keeps the Seer's Library on Scryer's Tier, where truth is brought to light, while his alchemists brew elixirs to sharpen his often clouded visions.", "triggers": [[2, 18530], [5, 10553]], "sources": ["quest 10024 description (close advisor, visions)", "creature_text 19685 groups 8-12 (the defection)", "npc_text 10178", "quest 10553"], "notes": "Verified. 10553 is the Scryer side (PrevQuestID 10552 Allegiance to the Scryers, needs Scryers Friendly), started by Khadgar, ended by Voren'thal. His Socrethar finale (10507) is told by netherstorm.json and not retold. TALK 18530: template 1744 follows Scryer reputation; before choosing everyone but draenei (base Hostile) can talk to him, after choosing Aldor no one can. Ishanah (370308) is the Aldor counterpart. Faction 0."},
-{"id": 370310, "kind": 2, "zone": 3703, "sort": 5, "faction": 0, "title": "Adyen the Lightwarden", "body": "Adyen the Lightwarden is the sword of the Aldor. He describes his duty plainly: first to protect the priesthood at all costs, and second to destroy the enemies of the Light wherever they hide. From Aldor Rise he asks those who would prove themselves to bring him the insignias of the Burning Legion and the Shadow Council, from the lesser marks of Kil'jaeden carried in the Bone Wastes, Nagrand and Blade's Edge to the marks of Sargeras worn by the Legion's officers in Netherstorm and Shadowmoon Valley. He reminds them what the Aldor are, keepers of the Light and servants of the naaru, and what stands against them. When the Sunwell called, he sent all the soldiers he could spare.", "triggers": [[2, 18537]], "sources": ["npc_text 10051", "quests 10325, 10653 descriptions and reward texts", "quest 11481 (via quel_danas.json 408018)"], "notes": "Verified. Socrethar lines (creature_text 18537) not used. 11481 belongs to quel_danas.json and is only mentioned. TALK 18537: template 1743, same reach as Ishanah (everyone but blood elves before choosing, Aldor after). Magistrix Fyalenn (370311) is the Scryer counterpart. Faction 0."},
-{"id": 370311, "kind": 2, "zone": 3703, "sort": 6, "faction": 0, "title": "Magistrix Fyalenn", "body": "Magistrix Fyalenn of the Scryers has no regrets: leaving Kael'thas, she says, was the best thing any of them ever did, for his followers are too blind or too frightened to see where he is leading them. The prince sees the Scryers as a threat to his hold over other blood elves and has tried to crush them time and again, and few sin'dorei fresh from Silvermoon are willing to keep the company Kael now keeps. Scryers and Kael's armies attack each other on sight. To Fyalenn the only proof of loyalty is fighting, and she asks for the signets of the Firewing and the higher-ranking Sunfury taken from Kael's soldiers across Outland.", "triggers": [[2, 18531]], "sources": ["npc_text 10153", "quests 10412, 10656 descriptions and reward texts"], "notes": "Verified. Stands on Scryer's Tier (posarea 3898). TALK 18531: template 1744, same reach as Voren'thal (everyone but draenei before choosing, Scryers after). Adyen (370310) is the Aldor counterpart. Faction 0."},
-{"id": 370312, "kind": 2, "zone": 3703, "sort": 7, "faction": 0, "title": "Sha'nir", "body": "Sha'nir is an Aldor healer who tends the injured refugees laid out in the city's infirmary. More arrive every day, some so badly hurt it is a wonder they made it. She cares nothing for the politics of the city and takes help from Aldor or Scryer alike; she is so short of hands, she says, that she would not turn away an ogre who knew how to apply a tourniquet. Poison wounds trouble her most, for her antivenom runs low. Beside her rests Zahlia, blinded by a blow to the head, whom Sha'nir hopes to cure with the blood of an ancient basilisk she has known of since she was a youngling.", "triggers": [[2, 18597]], "sources": ["npc_text 9451", "quest 10017 description", "quest 10020 description and completion text", "DB spawns: Sha'nir 18597 (-1606,5292), Zahlia 18652, Injured Refugee 18600 around it", "script_waypoint 19685 points 17 to 19 and zone_shattrath_city.cpp npc_kservant (tour stop at Sha'nir)"], "notes": "Verified. The infirmary is supported: Khadgar's Servant halts at waypoints 17 to 19 (-1607, 5294), beside Sha'nir, while saying the ruined temple on this very spot is now an infirmary for injured refugees (creature_text 19685 groups 5 to 7, script npc_kservant). Faction 0: template 35. 10017 is used by story 370317, not here."},
-{"id": 370313, "kind": 2, "zone": 3703, "sort": 8, "faction": 0, "title": "Rilak the Redeemed", "body": "Rilak the Redeemed leads the arakkoa who have made a home in the northern Lower City. He speaks of his race without pride: too often, he admits, the arakkoa have turned dark magic to wicked ends, and it was through A'dal that he learned of the Light and of redemption. Skettis marks such outcasts for death, so Rilak watches Terokk's city closely and shares what he knows with those who would strike at it, and frontier garrisons plagued by arakkoa raids send envoys to him. He grieves for Skywing, one of the redeemed, who went to Veil Shalas to preach the Light and was cursed for it, and he long took the tales of Terokk's return for legend.", "triggers": [[2, 22292], [5, 11024]], "sources": ["quest 10847 description (dark magic, A'dal, Light and redemption)", "quests 10862, 10863 (envoys from Stonebreaker Hold and the Allerian Stronghold; northern Lower City)", "quest 10917 description (outcasts marked for death by Skettis)", "quest 10898 reward text (Skywing)", "quest 11028 description (Terokk's return believed mere legend)", "quest 11024 (ends with Rilak)"], "notes": "Fact-check: rewritten so it no longer retells terokkar.json 351939 (Rilak's answer to the angry garrisons) or 351944 (the almanac and Terokk's return); both are now only pointed at. Faction 0: template 1818."},
-{"id": 370314, "kind": 2, "zone": 3703, "sort": 9, "faction": 0, "title": "Yuula", "body": "Yuula is the recruitment officer of the Sha'tari Skyguard, and she does her recruiting in Shattrath itself. The Skyguard is sworn to protect the city from the dangers that loom above it, near and far. Her first concern is close to home: the Gordunni ogres of the Barrier Hills to the north, a threat that Shattrath's soldiers on the ground have struggled to reach, and the riders of the Skyguard are the ones who can. Those who help contain them earn a hearty welcome as an ace and hear of the Skyguard's greater war beyond the Skethyl Mountains.", "triggers": [[2, 23449], [4, 11096]], "sources": ["quest 11096 description and reward text (sworn to protect Shattrath, Gordunni of the Barrier Hills, ground units, ace)", "quest 11098 description (beyond the Skethyl Mountains; via terokkar.json 351943)", "creature_template 23449 subname Recruitment Officer, faction 1856; display 21514 gender 1 in creature_model_info"], "notes": "Fact-check: dropped the can-fly, can-fight framing and the hand-off to the Skettis camp, which terokkar.json 351943 tells. Female confirmed by display 21514 (creature_model_info gender 1). 11098 belongs to terokkar.json and is only mentioned. Faction 0: Skyguard base reputation neutral for all."},
-{"id": 370315, "kind": 2, "zone": 3703, "sort": 10, "faction": 0, "title": "Barthamus", "body": "Barthamus is a Netherwing drake who waits in the Lower City with six of his kin, Jorus, Malfas, Onyxien, Suraku, Voranaku and Zoya. He calls himself the first of his flight, the abandoned child of a monster. To the ally who rose to highlord among the Dragonmaw in the Netherwing's service, he owes everything, for that one hero shattered the Dragonmaw's hold and brought back secrets enough to occupy his brethren for ten lifetimes. In thanks each of his kin offers to bond with the hero and fly them across Outland, though only one may be chosen, and that choice cannot be undone.", "triggers": [[2, 23433], [5, 11108]], "sources": ["quest 11108 description and reward text", "quests 11109-11114 reward texts", "DB spawns: Barthamus and the six drakes in the Lower City (zone_areas 3899)", "shadowmoon.json 352040 (Among the Dragonmaw, which ends with Barthamus)"], "notes": "Left to Shattrath by shadowmoon.json. 11109-11114 are auto-complete and not used. Faction 0: template 35. Fact-check: Dragonmaw recap shortened to a pointer (shadowmoon.json 352040). Spawn not event gated; questgiver hello fires TALK."},
-{"id": 370316, "kind": 3, "zone": 3703, "sort": 1, "faction": 0, "title": "City of Light", "body": "Newcomers to Shattrath soon hear its story. A haggard war veteran sends them to see A'dal, and Khadgar, too busy to guide them himself, summons a servant to lead the way. Shattrath, the servant explains, was the capital of the draenei and fell in the fiercest battle of the orcs' war against them. It lay dark until the Sha'tar came and found a remnant of the priesthood, the Aldor, keeping their rites in a ruined temple, which now serves as an infirmary. The Aldor grew strong and rebuilding began. Then Kael'thas sent a regiment of blood elves to destroy the city. On the bridge they laid down their arms, and their leader Voren'thal knelt before A'dal. The defectors became the Scryers, though the Aldor, whose priests those same magisters had slain, have never warmed to them. Since then Xi'ri has carried the war to Illidan's doorstep, and the orders still vie to join him. To serve the Sha'tar, the servant warns, a newcomer must choose between them, and winning one side's favor costs the other's.", "triggers": [[4, 10210], [4, 10211]], "sources": ["quest 10210 description", "quest 10211 description and texts", "creature_text 19685 (the whole tour)", "creature_text 18166 group 1", "quests 10551, 10552"], "notes": "Verified against the whole tour (creature_text 19685, script npc_kservant): Kael'thas sent the regiment, Voren'thal knelt, Xi'ri in Shadowmoon, the choice of orders. Entry points 10210 (Haggard War Veteran) and 10211 (Khadgar), both QuestType 2 with no reputation or race limits. 10551 and 10552 are QuestType 0 and not triggers."},
-{"id": 370317, "kind": 3, "zone": 3703, "sort": 2, "faction": 0, "title": "The Aldor's Charge", "body": "Those who would stand with the Aldor find the priesthood's work everywhere. In the city, the healer Sha'nir needs venom sacs from the dreadfang spiders of the southeast to make antidotes for refugees who survived the road only to die of their wounds. Outside the walls, High Priestess Ishanah sends her allies east to an arakkoa outpost deliberately built atop three of the Aldor's sacred altars, carrying a blessed vial to cleanse each one, for the Aldor are keepers of the Light and cannot forsake their charge even now. In the Shrine of Unending Light she turns fel armaments taken from demons to dust. From Adyen the Lightwarden comes the war itself: the insignias of Kil'jaeden and of Sargeras, stripped from the Legion and the Shadow Council across Outland, each mark a measure of the order's trust. The Aldor's reach goes further still, to the anchorites under Exarch Orelis watching Kael'thas in Netherstorm.", "triggers": [[4, 10017], [4, 10325], [4, 10021]], "sources": ["quests 10017, 10019 descriptions and reward texts", "quest 10021 description and reward text", "quests 10420, 10421", "quests 10325, 10653", "quest 11038 description"], "notes": "Fact-check: the entry quests do carry reputation limits. 10017 needs Aldor below Neutral (RequiredMaxRep 932 at 0; it is the repeatable catch-up quest, so blood elves before choosing and Scryer-aligned characters take it), 10325 needs Aldor Neutral to Honored (everyone else before choosing, and Aldor), 10021 needs Aldor Friendly. Together every character can begin the story at some point. The Scryer counterpart is 370318. Netherstorm's Orelis chain is only mentioned."},
-{"id": 370318, "kind": 3, "zone": 3703, "sort": 3, "faction": 0, "title": "The Seer's Visions", "body": "The Scryers serve the naaru by seeing what others cannot. Voren'thal's visions are vague and unfocused, so his alchemists brew an elixir to sharpen them, and Arcanist Adyria, whose ethereal supplier has failed her, sends any willing helper after the eyes of dampscale basilisks in the rocky lands of Terokkar; those visions, she says, may one day decide the fate of their race. The order's war is fought in the open as well. Magistrix Fyalenn demands the signets of Kael's Firewing soldiers and of his higher-ranking Sunfury as proof of loyalty, since the prince's armies and the Scryers strike at each other on sight. Voren'thal himself seeks arcane tomes, most often carried by Kael's blood elves, and condenses each one's power into a single rune with a clear mind. His spies reach far, too: Spymaster Thalodien's team in Netherstorm has found something of great importance and asked for reinforcements.", "triggers": [[4, 10024], [4, 10412], [4, 10416]], "sources": ["quests 10024, 10025 descriptions and reward texts", "quests 10412, 10656", "quests 10416, 10419", "quest 11039 description"], "notes": "Fact-check: 10024 needs Scryers below Neutral (draenei before choosing and Aldor-aligned characters), 10412 needs Scryers Neutral to Honored, 10416 needs Scryers Neutral or better; together every character can begin it. 'Kael's own magisters' changed to Kael's blood elves (10416). Aldor counterpart 370317. Thalodien's chain belongs to netherstorm.json and is only mentioned."},
-{"id": 370319, "kind": 3, "zone": 3703, "sort": 4, "faction": 0, "title": "Lives in the Lower City", "body": "Not every tale in Shattrath is one of war. In the Lower City, a boy named Seth, far from his home in Lakeshire, watches the Aldor rebuild the walls and decides they work far faster than old Foreman Oslow ever did; he misses fishing for eels at a lake to the northeast, but his mother says it is too dangerous now. Nearby the arakkoa outcast Vekax cannot set foot outside the walls, for Skettis has marked him for death, so he pays in treasure for the feathers of its servants as proof that the outcasts will not take their punishment lying down. And the fishmonger Oloraak frets over his friend Isfar, who escaped the Sethekk Halls once and has gone back alone to free his sister, ignoring every plea to stay safe in the city.", "triggers": [[4, 10037], [4, 10917], [4, 10180]], "sources": ["npc_text 9486 (Seth)", "quest 10037 description and reward text", "quests 10917, 10918", "quest 10180 description and reward text"], "notes": "Verified. All three open to both factions (QuestType 2). Isfar is terokkar.json's person (351930); only Oloraak's worry is told. Seth's mother is not named in the DB, so Zahlia is not linked to him."},
-{"id": 370320, "kind": 3, "zone": 3703, "sort": 5, "faction": 0, "title": "The Trials of the Naaru", "body": "When the ata'mal crystal reached A'dal from Nexus-Prince Haramad, the naaru knew it at once: Spirit's Song, left by Velen with his people before his ill-fated mission to the Exodar. Perhaps the Prophet foresaw that it would be lost and returned this way. Haramad had hidden a message inside it, how to make the key to Tempest Keep's Arcatraz from two shards held in the Botanica and the Mechanar. A'dal forged them into one, and soon needed it, for Kael's warden had failed and Harbinger Skyriss, a servant of the Old Gods, was breaking free. Khadgar brought graver news: Kael'thas had learned of the Cipher of Damnation, and should he use it, what little is left of this world might collapse. Tempest Keep is a naaru creation, A'dal answered, and its way had always been theirs to open, but only the proven may enter. He set four trials: mercy, saving prisoners from Kargath's executioner; strength, against Warlord Kalithresh and Murmur; tenacity, rescuing the hapless gnome Millhouse Manastorm; and last, the death of Magtheridon.", "triggers": [[4, 10280], [4, 10883]], "sources": ["quest 10280 description and reward text", "quests 10704, 10882 descriptions and reward texts", "quest 10883 description and reward text", "quests 10884, 10885, 10886, 10888, 13430"], "notes": "Verified. Left to Shattrath by netherstorm.json (Haramad's 10280 hand-off, 10704, Trial of the Naaru). Entry points 10280 (QuestType 2, Flags 128, from Haramad) and 10883 (Khadgar, after the Cipher of Damnation, shadowmoon.json's story). Dungeons named only in passing."},
-{"id": 370321, "kind": 3, "zone": 3703, "sort": 6, "faction": 0, "title": "Akama's Promise", "body": "With the Medallion of Karabor whole at last, Akama would not keep it, fearing that years so near to evil had weakened him. He sent it to A'dal as his promise to its bearer that he would stand beside them when Illidan was faced, and as the medallion vanished into the naaru's light, its bearer glimpsed Akama and Maiev fighting their way out of the Warden's Cage with a shadowy ally beside them. The plan was nearly lost. Seer Olum, freed from naga torturers, warned that Illidan had learned of him, and Olum gave his life to keep the secret. To lull the Betrayer, Akama's ally, cloaked as an Ashtongue, slew Kael's phoenix Al'ar at Illidan's command, then went into the past at the Caverns of Time for the phylactery of Rage Winterchill. With it Akama could reclaim his own soul, long held hostage in the Black Temple. A'dal showed the rest: Xi'ri's army of Aldor and Scryers storming the temple's approach to cover Akama and Maiev, and the medallion returned, empowered, as the key to the temple.", "triggers": [[4, 10708], [4, 10944]], "sources": ["quests 10708, 10944, 10946, 10947, 10948, 10949, 10985 descriptions and reward texts"], "notes": "Left to Shattrath by shadowmoon.json (10944-10985 with A'dal and Xi'ri, and 10708). 10708 starts with Akama in Shadowmoon (QuestType 2, Flags 136); 10944 starts with Seer Olum (Flags 128). The Black Temple raid quests (10957-10959) are not used. Olum's freeing is left without naming the instance. Fact-check: Akama's promise made to the bearer, not to the naaru (10708)."},
-{"id": 370322, "kind": 3, "zone": 3703, "sort": 7, "faction": 0, "title": "The Offensive in Outland", "body": "While the Shattered Sun Offensive fights on Quel'Danas, its officers in Shattrath keep the war fed from Outland. Emissary Mordin collects nether residue, found by herbalists, miners and skinners across Outland, for oils that colleagues in Stormwind make to harden the troops' blades and armor; no contribution, he says, is too small. Lord Torvos has learned that Kael'thas means to draw strength away from the Sunwell by ordering the Sunfury of Netherstorm to strike the Offensive's Outland operations, and he wants their attack plans seized. Harbinger Haronem, under orders to investigate anything that might help, grudgingly sends volunteers to the Spirit Fields of Nagrand with goggles to take readings of strange distortions, all at the insistence of the gnome Whirligig Wafflefry, who is busy hawking gadgets derived from the Offensive's military inventions.", "triggers": [[4, 11875], [4, 11877], [4, 11880]], "sources": ["quests 11875, 11877, 11880 descriptions and reward texts", "creature_text 25885, 19475", "quel_danas.json 408002, 408019 (portal told there)"], "notes": "Fact-check: Mordin, Torvos and Haronem stand 110 to 140 yards from A'dal at the outer hub, so 'on the Terrace of Light' became 'in Shattrath'. Nasuun line removed: he spawns only in Sun's Reach phase event 103, and the portal is told by quel_danas.json 408002 and 408019. 11875 and 11877 need 11550 done (PrevQuestID); all three QuestType 2, open to both factions."}
+ {
+  "id": 370300,
+  "kind": 0,
+  "zone": 3703,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Shattrath City",
+  "body": "Shattrath, whose name means dwelling of light, was once the capital of the draenei on this world. When the Burning Legion turned the orcs against them, the fiercest battle of that war was fought here, and the city fell. For years it lay in ruin and darkness, until the naaru called the Sha'tar came to Outland to fight the demons and were drawn to these ruins, where a small remnant of the draenei priesthood still held its rites. Those priests, the Aldor, regained their strength, and rebuilding began. Later a host of blood elves sent by Kael'thas marched on the city and instead knelt before the naaru A'dal, becoming the Scryers. Today it rises in northwestern Terokkar Forest, perhaps the one place in Outland with any semblance of safety. A'dal holds the Terrace of Light at its heart, the two rival orders keep their own heights above it, and refugees of every race crowd the Lower City. Portals link it to the capitals of Azeroth, and from here the Sha'tar make war on the Legion and its allies.",
+  "triggers": [
+   [
+    1,
+    3703
+   ]
+  ],
+  "sources": [
+   "creature_text 19685 (Khadgar's Servant tour: dwelling of light, fiercest battle, ruins and darkness, Sha'tar, Aldor, Scryers)",
+   "quest 10210 description (one place in Outland with any semblance of safety)",
+   "warcraft.wiki.gg/wiki/Shattrath_City (draenei capital, Terrace of Light, Aldor Rise, Scryer's Tier, Lower City)",
+   "DB gameobjects 183317-183327, 187056 (Shattrath portals)"
+  ],
+  "notes": "Converted: body unchanged (the city's history is its premise, told to every newcomer by Khadgar's Servant; no outcomes). requiredState 8, as for all of Outland. creature_text 19685 reread: period text. Before: Verified. The tour (creature_text 19685 group 8) says Illidan's armies attacked but the regiment was sent by Kael'thas, Illidan's ally; the game's version is kept. No Warlords of Draenor material (Goria, Leafshadow, the 6.0 siege) and no Legion material."
+ },
+ {
+  "id": 370301,
+  "kind": 1,
+  "zone": 3703,
+  "sort": 1,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Terrace of Light",
+  "body": "The Terrace of Light is the heart of Shattrath and the seat of the Sha'tar. In the chamber at its center floats A'dal, leader of the naaru, with Khadgar close at hand, and around the hall stand portals to the capitals of the Alliance and the Horde. Grand Anchorite Almonen preaches here that the Light dwells within each of us as a gift, given freely to all, and that those who heed it grow in its power. Spymistress Mehlisah Highcrown speaks for the Lower City, urging that Auchindoun be cleared of the Shadow Council before a worse disaster than the Bone Wastes befalls them. The Aldor and the Scryers each keep a bank on the terrace's rim.",
+  "triggers": [
+   [
+    2,
+    25167
+   ],
+   [
+    2,
+    18893
+   ],
+   [
+    1,
+    3703
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "minState": 12,
+    "body": "In these days the terrace also serves the Shattered Sun Offensive. Beneath A'dal stands an image of the Sunwell's defenses, and General Tiras'alan of the Offensive studies it closely, sending those willing to fight on to the Isle of Quel'Danas, north of Quel'Thalas.",
+    "sources": [
+     "quest 11550 description (the object below A'dal is a representation of the Sunwell's defenses; report to the Isle of Quel'Danas, north of Quel'Thalas)",
+     "creature 25167 General Tiras'alan (template 1956, Shattered Sun Offensive) beside A'dal",
+     "mod-individual-progression ipp_aware_npcs.sql (phaseMask 65536 for 17076, 19475, 24932, 25134-25155, 25167, 25885, 27666) and IndividualProgression.cpp checkIPPhasing (AREA_SHATTRATH_CITY gets that phase once PROGRESSION_TBC_TIER_4, state 12, is passed)",
+     "mod-individual-progression ipp_aware_npcs.sql: Sunwell Plateau model 187345 uses gobject_ipp_tbc_t4 (seen from state 12)"
+    ]
+   }
+  ],
+  "sources": [
+   "DB spawns: A'dal 18481 (-1864,5430), Khadgar 18166, Almonen 19216, Tiras'alan 25167, Mehlisah 18893, portals 183317-183327 and 187056 around the chamber",
+   "creature_text 19216 (Almonen's sermon)",
+   "quest 11550 description (representation of the Sunwell's defenses below A'dal)",
+   "npc_text 9615 (Mehlisah)",
+   "npc_text 10379 (two banks on the rim of the central hub)",
+   "warcraft.wiki.gg/wiki/Shattrath_City (Terrace of Light, seat of the Sha'tar)",
+   "game_event_gameobject: Quel'Danas portal 187056 only in Sun's Reach phase event 105",
+   "quests 10091, 10095 objectives (Mehlisah at the Terrace of Light)",
+   "creature_text 19216 groups 3 to 10 (Almonen: the Light within each of us, a gift given freely; its power grows in those who heed it)",
+   "npc_text 9615 (Mehlisah: a cataclysm greater than the creation of the Bone Wastes; period text, lowercase)",
+   "posarea 530 -1864 5430 (A'dal, Khadgar, Tiras'alan and the portals stand in area 3703: the terrace floor reports as Shattrath City, 3897 is unreachable)"
+  ],
+  "notes": "Converted: General Tiras'alan and the Sunwell image moved to part 1 with minState 12 (mod-individual-progression phases Tiras'alan 25167 into Shattrath from state 12 and shows the Sunwell model 187345 from state 12; patch 2.4), no triggers. Opening keeps Almonen and Mehlisah, lightly filled out from their own texts (creature_text 19216, npc_text 9615, both period text). Added AREA 3703: the terrace's own area 3897 is not reachable and its floor reports as 3703 (posarea), so the entry needs this for backfill under requiredState 8. TALK 25167 kept as the entry's own trigger. requiredState 8. Before: Fact-check: dropped the Quel'Danas portal (spawned only in Sun's Reach phase event 105, and told by quel_danas.json). Tiras'alan (11550: the object before me and below A'dal) and Mehlisah (10091, 10095: at the Terrace of Light) confirmed on the terrace, both with gossip, templates 1956 and 1818 neutral to all. Area 3897 unreachable, so TALK kept."
+ },
+ {
+  "id": 370302,
+  "kind": 1,
+  "zone": 3703,
+  "sort": 2,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Lower City",
+  "body": "The Lower City is the lowest ring of Shattrath and the home of its refugees. As one of the only safe havens in Outland, the city draws them from every war, past and present: Broken and Lost Ones, sporelings and Mag'har, high elves, dwarves, orcs and human peasants, and arakkoa outcasts who turned from Skettis. Every spare building now houses them; the rogue Lonika Stillblade has even closed her academy. Khadgar warns newcomers to watch for pickpockets. It is a busy market too: Griftah swears by his miraculous amulets, and the arakkoa alchemist Lorokeem keeps his strange equipment in the northwest.",
+  "triggers": [
+   [
+    1,
+    3899
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "minState": 13,
+    "body": "Since the war against the Lich King began, the Lower City has sent soldiers to Northrend as well. Two battle-mages keep their posts here, Arcanist Iramhir of the Silver Covenant for the Alliance and Magistrix Aldessia of the Sunreavers for the Horde, and each sends fighters north to the war for Wintergrasp.",
+    "sources": [
+     "creature 35596 Arcanist Iramhir (template 2027, The Silver Covenant) and 35597 Magistrix Aldessia (template 2123, The Sunreavers), gossip 10666 and 10662 on Wintergrasp, no game_event",
+     "warcraft.wiki.gg/wiki/Arcanist_Iramhir (Patch 3.2.0: added, Lower City of Shattrath); Wintergrasp, the Silver Covenant and the Sunreavers are Wrath of the Lich King content; not gated by mod-individual-progression, so tagged by patch"
+    ]
+   }
+  ],
+  "sources": [
+   "creature_text 19685 groups 4 (droves of refugees from all wars)",
+   "zone_areas: Broken, Lost One, Sporeling, Mag'har, High Elf, Dwarf, Orc and Peasant Refugees, Skettis Outcast, Redeemed Avian in 3899/3703",
+   "npc_text 10686 (Lonika Stillblade)",
+   "creature_text 18166 group 1 (pickpockets in the Lower City)",
+   "creature_text 19227 (Griftah)",
+   "npc_text 10696 (Lorokeem, northwest of the lower city)",
+   "npc_text 10388 (battlemasters on the stairwells)",
+   "creature 35596, 35597 Wintergrasp Battle-Mages (gossip 14775 on)",
+   "warcraft.wiki.gg/wiki/Lower_City",
+   "creature 35596 Arcanist Iramhir (template 2027, Silver Covenant, Alliance) and 35597 Magistrix Aldessia (template 2123, Sunreavers, Horde), gossip 10666 and 10662 on Wintergrasp, no game_event"
+  ],
+  "notes": "Converted: the Wintergrasp battle-mages (Wrath of the Lich King) moved to part 1 with minState 13, no triggers; nothing else to hide. requiredState 8. Before: Fact-check: the battlemasters (20269 to 20384, 30586, 30587, 35022, 35026) spawn only with Call to Arms events 19 to 21, 53 and 54, so the line now names only the permanent Wintergrasp battle-mages, one per faction. No Dalaran portal in the DB. Check: battle-mage patch confirmed as 3.2.0 (wiki), Wintergrasp 3.0.2; minState 13 kept."
+ },
+ {
+  "id": 370303,
+  "kind": 1,
+  "zone": 3703,
+  "sort": 3,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "World's End Tavern",
+  "body": "At the eastern edge of the Lower City stands the World's End Tavern, where Shaarubo tends the bar and the barmaid Kylene cooks enough to fill the ogre Grok. Its regulars are a strange lot. The mo'arg Sal'salabim drinks away his sorrows, Raliq the Drunk bellows at all comers, and the socialite Haris Pilton holds court with her pet while an ex-socialite lingers close by. Lonika Stillblade waits here for a new home for her rogue academy. Just outside, Wind Trader Lathrai admits the tavern offers nothing to his kind, though its patrons buy his wares.",
+  "triggers": [
+   [
+    2,
+    19186
+   ],
+   [
+    2,
+    22442
+   ],
+   [
+    1,
+    3899
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "minState": 12,
+    "body": "Of late a stranger named Zephyr has joined the regulars, a representative of the Keepers of Time who will carry those his order trusts to the Caverns of Time. This world, he muses, has been damaged in ways beyond what eyes can see, and even the passage of time feels different here.",
+    "sources": [
+     "npc_text 12507 and gossip 9205 (Zephyr)",
+     "creature 25967 Zephyr, template 1779 (Keepers of Time)",
+     "warcraft.wiki.gg/wiki/Zephyr (added in patch 2.4.0: a representative of the Keepers of Time spotted at the World's End Tavern); not gated by mod-individual-progression, so tagged by patch",
+     "conditions 15/9205: the teleport option shows only at Revered or better with the Keepers of Time",
+     "mod-individual-progression: 25967 only gets a damage modifier (tbc_creatures.sql), no phase or spawn gate"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 10394 (tavern in the easternmost portion of the lower city)",
+   "npc_text 11230, 11231 (Kylene, cooking for Grok)",
+   "quest 10004 (Sal'salabim at the bar, drinking away his sorrows)",
+   "npc_text 9440, creature_text 18585 (Raliq)",
+   "creature_template subnames 18756 Socialite, 18762 Haris Pilton's Pet, 19719 Ex-Socialite",
+   "npc_text 9417 (Lathrai)",
+   "quests 11354, 11364 (Zhareem and Mah'duun bounties)",
+   "npc_text 12507 and gossip 9205 (Zephyr, Caverns of Time)",
+   "DB spawns around -1740..-1770, 5130..5200 (all posarea 3703)",
+   "quests 9979, 10112 (Lathrai outside, near the World's End Tavern)",
+   "npc_text 10686 (Lonika, academy closed for now)",
+   "DB spawns: Lonika 22442 and Zephyr 25967 on the tavern floor (z -37) beside Shaarubo; Lathrai, Zhareem and Mah'duun at street level (z -40), 35 to 40 yards off",
+   "posarea 530: the tavern floor reports as 3703, ringed by Lower City 3899 on every approach (-1800 5150, -1700 5200, -1780 5220)"
+  ],
+  "notes": "Converted: Zephyr (patch 2.4.0, not gated by the module) moved to part 1 with minState 12, no triggers; nothing else to hide. Added AREA 3899 (Lower City) for backfill: the tavern floor itself reports as the city's 3703, and every way to it on foot crosses the Lower City. requiredState 8. Before: Fact-check: quest 9979 places Lathrai outside the tavern, so TALK 18484 was replaced by Lonika Stillblade 22442 (gossip 8541, template 1818), who stands inside beside the bartender; Lathrai is now described as just outside. The bounty brokers (Zhareem, Mah'duun) also stand outside and were dropped. Kylene confirmed inside (gossip 8784, template 1818). BlizzCon concert spawns (event 47) left out. Check: Zephyr confirmed patch 2.4.0 and not gated by the module (only a stat tweak), so minState 12 by patch; 'can carry visitors' narrowed to those his order trusts (gossip option needs Revered with the Keepers of Time)."
+ },
+ {
+  "id": 370304,
+  "kind": 1,
+  "zone": 3703,
+  "sort": 4,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Aldor Rise",
+  "body": "Aldor Rise is the highest tier of Shattrath and the home of the Aldor, the draenei priesthood that kept its rites among the ruins until the naaru came. On its western side stands the Shrine of Unending Light, their most holy temple, where the Light is said to burn strongly enough to cleanse even the foulest fel taint, and where High Priestess Ishanah receives those who join the order. Adyen the Lightwarden keeps watch over the priesthood, vindicators guard the paths, and anchorites and neophytes train among the dwellings. An inn on the southern side offers rest. As a holy site the rise welcomes only the initiated, and those who side with the Scryers find no friends here.",
+  "triggers": [
+   [
+    1,
+    3896
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Shattrath_City (Aldor Rise uppermost, shrine west, inn south)",
+   "creature_text 19685 groups 6, 16 (priesthood in ruins; most holy temple; only the initiated)",
+   "quest 10420 description (holiest places, fel taint cleansed)",
+   "quest 10554 (Ishanah in the Shrine of Unending Light)",
+   "zone_areas 3896: Ishanah, Adyen, Aldor Vindicator, Anchorite, Neophyte, Minalei",
+   "quests 10551, 10552 reward texts"
+  ],
+  "notes": "Converted: unchanged (nothing to hide). requiredState 8. Before: verified against spawns"
+ },
+ {
+  "id": 370305,
+  "kind": 1,
+  "zone": 3703,
+  "sort": 5,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Scryer's Tier",
+  "body": "Scryer's Tier is the raised platform where the Scryers make their home, the blood elves who abandoned Kael'thas for the naaru. Arcane guardians and arcanists watch over its walks, and only those initiated with the Scryers are welcome. In the Seer's Library on its southwestern side sits their leader, Voren'thal the Seer, who means the library to make a seer out of everyone. An inn on the eastern side, enchanters, merchants and a fence serve the order's members. The Aldor take little joy in sharing the city with them, for many priests died at the hands of these very magisters.",
+  "triggers": [
+   [
+    1,
+    3898
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "minState": 13,
+    "body": "In these days the Seer's Library has a keeper of its own. Beside Voren'thal, Loremaster Skosiris tends what he calls perhaps the greatest depository of lore in all of Outland, and he claims that even the grand libraries of Silvermoon City pale beside it.",
+    "sources": [
+     "npc_text 14365 (Loremaster Skosiris)",
+     "creature 33642 Loremaster Skosiris on Scryer's Tier (zone_areas 3898); warcraft.wiki.gg/wiki/Loremaster_Skosiris (Patch 3.1.0: added); not gated by mod-individual-progression, so tagged by patch"
+    ]
+   }
+  ],
+  "sources": [
+   "creature_text 19685 groups 13, 15 (dwelling on the platform above, only the initiated; priests slain by the same magisters)",
+   "warcraft.wiki.gg/wiki/Shattrath_City (Seer's Library southwest, inn east)",
+   "npc_text 10178 (Voren'thal)",
+   "npc_text 14365 (Loremaster Skosiris)",
+   "zone_areas 3898: Scryer Arcanist, Scryer Arcane Guardian, Innkeeper Haelthol, Lisrythe Bloodwatch <Fence>, enchanters"
+  ],
+  "notes": "Converted: Loremaster Skosiris (a Wrath-era addition) moved to part 1 with minState 13, no triggers; nothing else to hide. requiredState 8. Before: Verified. Skosiris (33642) is a Wrath-era inscription trainer actually spawned in the 3.3.5 DB. Check: Skosiris confirmed patch 3.1.0 (wiki); minState 13 kept."
+ },
+ {
+  "id": 370306,
+  "kind": 2,
+  "zone": 3703,
+  "sort": 1,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "A'dal",
+  "body": "A'dal is the leader of the Sha'tar, the naaru who reclaimed Shattrath, and he rules the city from the Terrace of Light. He speaks without words: those who approach feel a soothing light and hear slow chimes in their minds, and with them comes the assurance that they are safe. Khadgar warns visitors not to trouble him with petty questions, for his will alone keeps the city's enemies from crushing it. Each day he chooses which rival order joins Xi'ri in Shadowmoon Valley, and the armies take his blessing before they march.",
+  "triggers": [
+   [
+    2,
+    18481
+   ],
+   [
+    5,
+    10781
+   ],
+   [
+    5,
+    10210
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "triggers": [
+     [
+      5,
+      10781
+     ]
+    ],
+    "body": "When a champion survived the battle at Crimson Watch and brought A'dal word of the Crimson Sigil, Illidan's elite, the naaru promised that the Sigil would be investigated, for it threatens all life on Draenor. He foresaw a day when its dark master would have to answer for his crimes, and wondered whether the one before him would be the one to bring him to justice.",
+    "sources": [
+     "quest 10781 description and reward text",
+     "quest 10793 reward text (Crimson Sigil, Illidan's elite)"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 9800",
+   "quest 10210 reward text",
+   "creature_text 18166 group 0",
+   "creature_text 19685 groups 17-19 (Xi'ri, A'dal's daily decision and blessing)",
+   "quest 10781 description and reward text",
+   "quest 10793 reward text (Crimson Sigil, Illidan's elite)",
+   "warcraft.wiki.gg/wiki/A'dal"
+  ],
+  "notes": "Converted: the Crimson Watch report and A'dal's foresight moved to part 1 (DONE 10781, left to Shattrath by shadowmoon.json; QuestType 2). Added DONE 10210 (the Haggard War Veteran's quest, turned in to A'dal) as a quest trigger any character reaches; DONE 10781 stays as the entry's own trigger. requiredState 8. Before: Verified. 10781 was left to Shattrath by shadowmoon.json. Faction 0: template 1741 Sha'tar is friendly to both. Legion-era A'dal not used."
+ },
+ {
+  "id": 370307,
+  "kind": 2,
+  "zone": 3703,
+  "sort": 2,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Khadgar",
+  "body": "Khadgar was apprentice to Medivh, the Last Guardian, and it was he who learned that his master had been possessed by Sargeras and had opened the Dark Portal; though he honored Medivh, he slew him. After fighting beside Anduin Lothar, he went into Draenor with Turalyon, Alleria, Danath and Kurdran as the Sons of Lothar, and as that world tore apart they shattered the portal behind them. Trapped in Outland, he sensed the Burning Legion closing in, reached into the Great Dark Beyond, and found A'dal and his naaru. He says he convinced them to come. Now he stands by A'dal, swearing he has learned more from A'dal in five months than in all his years among Dalaran's libraries.",
+  "triggers": [
+   [
+    2,
+    18166
+   ],
+   [
+    4,
+    10211
+   ]
+  ],
+  "sources": [
+   "npc_text 9876-9881 (Khadgar's gossip chain)",
+   "npc_text 9243",
+   "quest 10211 description",
+   "warcraft.wiki.gg/wiki/Khadgar (pre-Cataclysm)"
+  ],
+  "notes": "Converted: body unchanged (his history is his own gossip, npc_text 9876-9881, reread: period text). Added ACCEPT 10211 (City of Light, from Khadgar; QuestType 2, open to all) as a quest trigger for backfill. requiredState 8. Before: Khadgar's claim to have brought the naaru is his own (the wiki says Khadgar and Velen each sought them). His Karazhan quests (9829-9838) and the Violet Eye story belong to deadwind_pass.json and are not used or retold. Faction 0: template 35. Fact-check: last line matched to npc_text 9243 (from A'dal, libraries of Dalaran). The claim to have brought the naaru stays framed as his own words (npc_text 9881)."
+ },
+ {
+  "id": 370308,
+  "kind": 2,
+  "zone": 3703,
+  "sort": 3,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "High Priestess Ishanah",
+  "body": "Ishanah is the High Priestess of the Aldor, the draenei priests who serve the Sha'tar, and she receives new allies in the Shrine of Unending Light. It was the Aldor who named the naaru Sha'tar, born from light. Her people were charged with guarding the holy sites of this land, and she grieves that so many altars now lie ruined or defiled. Turning refugees away, she says, would be hypocrisy. Of the Scryers she is blunter: she does not like them or their leader's wild claims of visions of redemption, but it is not for her to question the wisdom of the naaru, and in such times allies must be taken where they are found.",
+  "triggers": [
+   [
+    2,
+    18538
+   ],
+   [
+    5,
+    10554
+   ],
+   [
+    1,
+    3896
+   ]
+  ],
+  "sources": [
+   "npc_text 9457, 9458, 9459 (gossip)",
+   "quest 10554 (Khadgar sends Aldor allies to her in the Shrine of Unending Light)",
+   "quest 10021 description (holy sites and altars)"
+  ],
+  "notes": "Converted: body unchanged (nothing to hide; npc_text 9457-9459 reread: period text). Added AREA 3896 (Aldor Rise, where Ishanah stands in the Shrine of Unending Light; reachable) so a character who chose the Scryers, or a blood elf who starts Hostile with the Aldor, can still unlock her: the area itself has no reputation gate, though the rise's Aldor Vindicators (template 1777, Aldor reputation) turn hostile to characters Hostile or worse with the Aldor. requiredState 8. Before: Verified. 10554 is the Aldor side (PrevQuestID 10551 Allegiance to the Aldor, needs Aldor Friendly), started by Khadgar, ended by Ishanah. Ishanah's netherstorm.json role (10409) is not retold. TALK 18538: template 1743 takes its reaction from Aldor reputation and the core refuses gossip at Unfriendly or worse. Base Aldor standing is Neutral for all races but draenei (Friendly) and blood elves (Hostile), so before choosing she can be talked to by everyone except blood elves; after choosing Scryers (Aldor -3850 by spillover) she cannot. Voren'thal (370309) is the Scryer counterpart. Faction 0."
+ },
+ {
+  "id": 370309,
+  "kind": 2,
+  "zone": 3703,
+  "sort": 4,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Voren'thal the Seer",
+  "body": "Voren'thal the Seer was once a close advisor to Prince Kael'thas, until visions warned him that the prince's path would lead the blood elves to ruin. When Kael sent a regiment to lay waste to Shattrath, Voren'thal was its leader. On the bridge before the Terrace of Light his soldiers laid down their arms, and he strode in to kneel before A'dal, declaring that he had seen the naaru in a vision and that his race's only hope lay with him. Many of Kael's finest scholars and magisters followed him. Now he keeps the Seer's Library on Scryer's Tier, where truth is brought to light, while his alchemists brew elixirs to sharpen his often clouded visions.",
+  "triggers": [
+   [
+    2,
+    18530
+   ],
+   [
+    5,
+    10553
+   ],
+   [
+    1,
+    3898
+   ]
+  ],
+  "sources": [
+   "quest 10024 description (close advisor, visions)",
+   "creature_text 19685 groups 8-12 (the defection)",
+   "npc_text 10178",
+   "quest 10553"
+  ],
+  "notes": "Converted: body unchanged (nothing to hide; the defection is the city's history, told on the tour; npc_text 10178 reread: period text). Added AREA 3898 (Scryer's Tier, where he sits in the Seer's Library; reachable) so an Aldor character, or a draenei who starts Hostile with the Scryers, can still unlock him: no reputation gate on the area, though the Scryer Arcane Guardians (template 1746, Scryers reputation) turn hostile to characters Hostile or worse with the Scryers. requiredState 8. Before: Verified. 10553 is the Scryer side (PrevQuestID 10552 Allegiance to the Scryers, needs Scryers Friendly), started by Khadgar, ended by Voren'thal. His Socrethar finale (10507) is told by netherstorm.json and not retold. TALK 18530: template 1744 follows Scryer reputation; before choosing everyone but draenei (base Hostile) can talk to him, after choosing Aldor no one can. Ishanah (370308) is the Aldor counterpart. Faction 0."
+ },
+ {
+  "id": 370310,
+  "kind": 2,
+  "zone": 3703,
+  "sort": 5,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Adyen the Lightwarden",
+  "body": "Adyen the Lightwarden is the sword of the Aldor. He describes his duty plainly: first to protect the priesthood at all costs, and second to destroy the enemies of the Light wherever they hide. From Aldor Rise he asks those who would prove themselves to bring him the insignias of the Burning Legion and the Shadow Council, from the lesser marks of Kil'jaeden carried in the Bone Wastes, Nagrand and Blade's Edge to the marks of Sargeras worn by the Legion's officers in Netherstorm and Shadowmoon Valley. He reminds them what the Aldor are, keepers of the Light and servants of the naaru, and what stands against them.",
+  "triggers": [
+   [
+    2,
+    18537
+   ],
+   [
+    1,
+    3896
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "minState": 12,
+    "body": "In time a new summons reached the Aldor Rise: a crisis at the Sunwell Plateau, on the Isle of Quel'Danas in Azeroth. His forces were already spread thin, but the Lightwarden sent every soldier he could spare to answer it, and wished he could send more.",
+    "sources": [
+     "quest 11481 description (via quel_danas.json 408018; not used as a trigger here)",
+     "Isle of Quel'Danas and the Shattered Sun Offensive: patch 2.4, state 12 under mod-individual-progression (the isle opens once Illidan falls)"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 10051",
+   "quests 10325, 10653 descriptions and reward texts",
+   "quest 11481 (via quel_danas.json 408018)"
+  ],
+  "notes": "Converted: the Sunwell summons (11481, patch 2.4) moved to part 1 with minState 12 and no triggers, since 11481 belongs to quel_danas.json 408018; it stays a brief mention. Added AREA 3896 (Aldor Rise, where Adyen stands; reachable by any character, no reputation gate on the area, though the Aldor Vindicators turn hostile to characters Hostile or worse with the Aldor): it fixes the old known limit (Scryers and blood elves could never talk to him) and gives backfill. requiredState 8. npc_text 10051 reread: period text. Before: Verified. Socrethar lines (creature_text 18537) not used. 11481 belongs to quel_danas.json and is only mentioned. TALK 18537: template 1743, same reach as Ishanah (everyone but blood elves before choosing, Aldor after). Magistrix Fyalenn (370311) is the Scryer counterpart. Faction 0."
+ },
+ {
+  "id": 370311,
+  "kind": 2,
+  "zone": 3703,
+  "sort": 6,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Magistrix Fyalenn",
+  "body": "Magistrix Fyalenn of the Scryers has no regrets: leaving Kael'thas, she says, was the best thing any of them ever did, for his followers are too blind or too frightened to see where he is leading them. The prince sees the Scryers as a threat to his hold over other blood elves and has tried to crush them time and again, and few sin'dorei fresh from Silvermoon are willing to keep the company Kael now keeps. Scryers and Kael's armies attack each other on sight. To Fyalenn the only proof of loyalty is fighting, and she asks for the signets of the Firewing and the higher-ranking Sunfury taken from Kael's soldiers across Outland.",
+  "triggers": [
+   [
+    2,
+    18531
+   ],
+   [
+    1,
+    3898
+   ]
+  ],
+  "sources": [
+   "npc_text 10153",
+   "quests 10412, 10656 descriptions and reward texts"
+  ],
+  "notes": "Converted: body unchanged (nothing to hide; npc_text 10153 reread: period text). Added AREA 3898 (Scryer's Tier, where Fyalenn stands; reachable by any character, no reputation gate on the area, though the Scryer Arcane Guardians turn hostile to characters Hostile or worse with the Scryers): it fixes the old known limit (Aldor and draenei could never talk to her) and gives backfill. requiredState 8. Before: Verified. Stands on Scryer's Tier (posarea 3898). TALK 18531: template 1744, same reach as Voren'thal (everyone but draenei before choosing, Scryers after). Adyen (370310) is the Aldor counterpart. Faction 0."
+ },
+ {
+  "id": 370312,
+  "kind": 2,
+  "zone": 3703,
+  "sort": 7,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Sha'nir",
+  "body": "Sha'nir is an Aldor healer who tends the injured refugees laid out in the city's infirmary. More arrive every day, some so badly hurt it is a wonder they made it. She cares nothing for the politics of the city and takes help from Aldor or Scryer alike; she is so short of hands, she says, that she would not turn away an ogre who knew how to apply a tourniquet. Poison wounds trouble her most, for her antivenom runs low. Beside her rests Zahlia, blinded by a blow to the head, whom Sha'nir hopes to cure with the blood of an ancient basilisk she has known of since she was a youngling.",
+  "triggers": [
+   [
+    2,
+    18597
+   ],
+   [
+    4,
+    10017
+   ],
+   [
+    4,
+    10020
+   ]
+  ],
+  "sources": [
+   "npc_text 9451",
+   "quest 10017 description",
+   "quest 10020 description and completion text",
+   "DB spawns: Sha'nir 18597 (-1606,5292), Zahlia 18652, Injured Refugee 18600 around it",
+   "script_waypoint 19685 points 17 to 19 and zone_shattrath_city.cpp npc_kservant (tour stop at Sha'nir)",
+   "quests 10017 (needs Aldor below Neutral) and 10020 (needs Aldor Friendly), both from Sha'nir, QuestType 2"
+  ],
+  "notes": "Converted: body unchanged (Zahlia's cure stays a hope; the 10020 reward text does not say she was healed). Added ACCEPT 10017 and ACCEPT 10020 (both from Sha'nir) as quest triggers for backfill; 10017 is also the Aldor's Charge entry point. npc_text 9451 reread: period text. requiredState 8. Before: Verified. The infirmary is supported: Khadgar's Servant halts at waypoints 17 to 19 (-1607, 5294), beside Sha'nir, while saying the ruined temple on this very spot is now an infirmary for injured refugees (creature_text 19685 groups 5 to 7, script npc_kservant). Faction 0: template 35. 10017 is used by story 370317, not here."
+ },
+ {
+  "id": 370313,
+  "kind": 2,
+  "zone": 3703,
+  "sort": 8,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Rilak the Redeemed",
+  "body": "Rilak the Redeemed leads the arakkoa who have made a home in the northern Lower City. He speaks of his race without pride: too often, he admits, the arakkoa have turned dark magic to wicked ends, and it was through A'dal that he learned of the Light and of redemption. Skettis marks outcasts such as his for death, so Rilak watches Terokk's city closely and shares what he knows with those who would strike at it, and frontier garrisons plagued by arakkoa raids send envoys to him.",
+  "triggers": [
+   [
+    2,
+    22292
+   ],
+   [
+    5,
+    11024
+   ]
+  ],
+  "sources": [
+   "quest 10847 description (dark magic, A'dal, Light and redemption)",
+   "quests 10862, 10863 (envoys from Stonebreaker Hold and the Allerian Stronghold; northern Lower City)",
+   "quest 10917 description (outcasts marked for death by Skettis)",
+   "quest 11024 (ends with Rilak)"
+  ],
+  "notes": "Converted: dropped Skywing's curse (the 10898 reward, told by terokkar.json 351921) and Rilak's old disbelief in Terokk's return (11028, terokkar.json 351944), both of which showed on the TALK trigger; replaced with his foreboding from 10847's opening lines, kept vague. 10847, 10862, 10863 are Terokkar's and serve only as sources. DONE 11024 (Shattrath's) is the quest trigger. requiredState 8. Before: Fact-check: rewritten so it no longer retells terokkar.json 351939 (Rilak's answer to the angry garrisons) or 351944 (the almanac and Terokk's return); both are now only pointed at. Faction 0: template 1818. Check: dropped the foreboding taken from 10847's opening lines (a fate shrouded in evil on the cliffs of Skettis), since it foreshadows Terokkar's reveals (351939 parts, 351944 Terokk's return)."
+ },
+ {
+  "id": 370314,
+  "kind": 2,
+  "zone": 3703,
+  "sort": 9,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Yuula",
+  "body": "Yuula is the recruitment officer of the Sha'tari Skyguard, and she does her recruiting in Shattrath itself. The Skyguard is sworn to protect the city from the dangers that loom above it, near and far. Her first concern is close to home: the Gordunni ogres of the Barrier Hills to the north, a threat that Shattrath's soldiers on the ground have struggled to reach, and the riders of the Skyguard are the ones who can. Those who help contain them earn a hearty welcome as an ace and hear of the Skyguard's greater war beyond the Skethyl Mountains.",
+  "triggers": [
+   [
+    2,
+    23449
+   ],
+   [
+    4,
+    11096
+   ]
+  ],
+  "sources": [
+   "quest 11096 description and reward text (sworn to protect Shattrath, Gordunni of the Barrier Hills, ground units, ace)",
+   "quest 11098 description (beyond the Skethyl Mountains; via terokkar.json 351943)",
+   "creature_template 23449 subname Recruitment Officer, faction 1856; display 21514 gender 1 in creature_model_info"
+  ],
+  "notes": "Converted: unchanged (nothing to hide; ACCEPT 11096 is the quest trigger). Skyguard is patch 2.1, no tag beyond 8. requiredState 8. Before: Fact-check: dropped the can-fly, can-fight framing and the hand-off to the Skettis camp, which terokkar.json 351943 tells. Female confirmed by display 21514 (creature_model_info gender 1). 11098 belongs to terokkar.json and is only mentioned. Faction 0: Skyguard base reputation neutral for all."
+ },
+ {
+  "id": 370315,
+  "kind": 2,
+  "zone": 3703,
+  "sort": 10,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Barthamus",
+  "body": "Barthamus is a nether drake of the Netherwing who waits in the Lower City with six of his kin, Jorus, Malfas, Onyxien, Suraku, Voranaku and Zoya. Far from Shadowmoon Valley, where the Dragonmaw clan holds his flight's old sanctuary and rides its captured young, the seven keep to a quiet corner among the refugees. They have little to say to passing strangers. They seem to be waiting for someone in particular, though they do not say who.",
+  "triggers": [
+   [
+    2,
+    23433
+   ],
+   [
+    5,
+    11108
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "triggers": [
+     [
+      5,
+      11108
+     ]
+    ],
+    "body": "Barthamus calls himself the first of his flight, the abandoned child of a monster. To the highlord who survived meeting Illidan and came back to him, he owes everything: that one hero shattered the Dragonmaw's hold and brought back secrets enough to occupy his brethren for ten lifetimes. In thanks each of his kin offers to bond with the hero and fly them across Outland, though only one may be chosen, and that choice cannot be undone.",
+    "sources": [
+     "quest 11108 description, objectives and reward text",
+     "quests 11109-11114 reward texts"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11108 description and reward text",
+   "quests 11109-11114 reward texts",
+   "DB spawns: Barthamus and the six drakes in the Lower City (zone_areas 3899)",
+   "shadowmoon.json 352040 (Among the Dragonmaw, which ends with Barthamus)",
+   "quest 11108 objectives (seek out Barthamus in the Lower City should you survive)",
+   "shadowmoon.json 352022, 352040 (Netherwing Ledge the flight's sanctuary, held by the Dragonmaw)"
+  ],
+  "notes": "Converted: the highlord's deed, Barthamus's thanks and the drakes' bond moved to part 1 (DONE 11108; Shadowmoon keeps ACCEPT 11108 for the ceremony). The opening, which shows on TALK to anyone (template 35), now gives only who the drakes are and that they wait for someone. requiredState 8. Before: Left to Shattrath by shadowmoon.json. 11109-11114 are auto-complete and not used. Faction 0: template 35. Fact-check: Dragonmaw recap shortened to a pointer (shadowmoon.json 352040). Spawn not event gated; questgiver hello fires TALK."
+ },
+ {
+  "id": 370316,
+  "kind": 3,
+  "zone": 3703,
+  "sort": 1,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "City of Light",
+  "body": "Newcomers to Shattrath soon hear its story. A haggard war veteran calls the city perhaps the one place in Outland with any semblance of safety, since the naaru called the Sha'tar drove the demons away, and he sends strangers to see A'dal on the Terrace of Light. Khadgar, beside the naaru, warns them not to burden A'dal with petty questions and, too busy discussing strategy to guide them himself, summons a servant to lead the way. Shattrath, the servant explains, was the capital of the draenei and fell in the fiercest battle of the orcs' war against them. It lay dark until the Sha'tar came and found a remnant of the priesthood, the Aldor, keeping their rites in a ruined temple, which now serves as an infirmary.",
+  "triggers": [
+   [
+    4,
+    10210
+   ],
+   [
+    4,
+    10211
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "triggers": [
+     [
+      5,
+      10211
+     ]
+    ],
+    "body": "The Aldor grew strong and rebuilding began. Then Kael'thas sent a regiment of blood elves to destroy the city. On the bridge they laid down their arms, and their leader Voren'thal knelt before A'dal. The defectors became the Scryers, though the Aldor, whose priests those same magisters had slain, have never warmed to them. Xi'ri has since carried the war to Illidan's doorstep, and the orders vie to join him. To serve the Sha'tar, the servant warns, a newcomer must choose between them.",
+    "sources": [
+     "creature_text 19685 groups 7 to 20 (the second half of the tour)",
+     "quest 10211 reward text (turned in to Khadgar once the tour is over)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10210 description",
+   "quest 10211 description and texts",
+   "creature_text 19685 (the whole tour)",
+   "creature_text 18166 group 1",
+   "quests 10551, 10552",
+   "quest 10210 description (the Sha'tar drove the demons away; see A'dal inside the Terrace of Light)"
+  ],
+  "notes": "Converted: nothing here is a spoiler, but the story was over the 140-word opening limit, so the second half of the servant's tour (the Scryers' defection, Xi'ri, the choice of orders) moved to part 1 (DONE 10211, turned in to Khadgar when the tour ends). The opening keeps the arrival and the tour's first stops. requiredState 8. Before: Verified against the whole tour (creature_text 19685, script npc_kservant): Kael'thas sent the regiment, Voren'thal knelt, Xi'ri in Shadowmoon, the choice of orders. Entry points 10210 (Haggard War Veteran) and 10211 (Khadgar), both QuestType 2 with no reputation or race limits. 10551 and 10552 are QuestType 0 and not triggers."
+ },
+ {
+  "id": 370317,
+  "kind": 3,
+  "zone": 3703,
+  "sort": 2,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Aldor's Charge",
+  "body": "Those who would stand with the Aldor find the priesthood's work everywhere. In the city, the healer Sha'nir needs venom sacs from the dreadfang spiders of the southeast to make antidotes for refugees who survived the road only to die of their wounds. Outside the walls, High Priestess Ishanah sends her allies east to an arakkoa outpost deliberately built atop three of the Aldor's sacred altars, carrying a blessed vial to cleanse each one, for the Aldor are keepers of the Light. She asks too for fel armaments taken from demons, to show the power of her temple. From Adyen the Lightwarden comes the war itself: the insignias of Kil'jaeden and of Sargeras, stripped from the Legion and the Shadow Council across Outland. The Aldor's reach goes further still, to the anchorites under Exarch Orelis watching Kael'thas in Netherstorm.",
+  "triggers": [
+   [
+    4,
+    10017
+   ],
+   [
+    4,
+    10325
+   ],
+   [
+    4,
+    10021
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "triggers": [
+     [
+      5,
+      10420
+     ]
+    ],
+    "body": "Brought into the Shrine of Unending Light, one of the holiest places in all of Outland, a fel armament does not last long. Ishanah bids its bearer watch as the foul materials disintegrate and the metal turns to dust, until the fel is gone from this world and only the pure residue of the Light remains.",
+    "sources": [
+     "quest 10420 description and reward text",
+     "quest 10421 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10017, 10019 descriptions and reward texts",
+   "quest 10021 description and reward text",
+   "quests 10420, 10421",
+   "quests 10325, 10653",
+   "quest 11038 description"
+  ],
+  "notes": "Converted: the story was over the 140-word opening limit, so the cleansing of the fel armaments moved to part 1 (DONE 10420, needs Aldor Neutral or better); the opening keeps Ishanah's request. 'Each mark a measure of the order's trust' and 'cannot forsake their charge even now' trimmed for length. requiredState 8. Before: Fact-check: the entry quests do carry reputation limits. 10017 needs Aldor below Neutral (RequiredMaxRep 932 at 0; it is the repeatable catch-up quest, so blood elves before choosing and Scryer-aligned characters take it), 10325 needs Aldor Neutral to Honored (everyone else before choosing, and Aldor), 10021 needs Aldor Friendly. Together every character can begin the story at some point. The Scryer counterpart is 370318. Netherstorm's Orelis chain is only mentioned."
+ },
+ {
+  "id": 370318,
+  "kind": 3,
+  "zone": 3703,
+  "sort": 3,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Seer's Visions",
+  "body": "The Scryers serve the naaru by seeing what others cannot. Voren'thal's visions are vague and unfocused, so his alchemists brew an elixir to sharpen them, and Arcanist Adyria, whose ethereal supplier has failed her, sends any willing helper after the eyes of dampscale basilisks in the rocky lands of Terokkar; those visions, she says, may one day decide the fate of their race. The order's war is fought in the open as well. Magistrix Fyalenn demands the signets of Kael's Firewing soldiers and of his higher-ranking Sunfury as proof of loyalty, since the prince's armies and the Scryers strike at each other on sight. Voren'thal himself seeks arcane tomes, most often carried by Kael's blood elves, for the power within them. His spies reach far, too: Spymaster Thalodien's team in Netherstorm has found something of great importance.",
+  "triggers": [
+   [
+    4,
+    10024
+   ],
+   [
+    4,
+    10412
+   ],
+   [
+    4,
+    10416
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "triggers": [
+     [
+      5,
+      10416
+     ]
+    ],
+    "body": "An arcane tome is no ordinary book on arcane matters: there is power in it. Brought to the Seer's Library, a tome is condensed by Voren'thal, the whole of its raw power drawn into a single arcane rune. The power is tremendous, he says, yet one with a clear mind condenses it easily.",
+    "sources": [
+     "quest 10416 description and reward text",
+     "quest 10419 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10024, 10025 descriptions and reward texts",
+   "quests 10412, 10656",
+   "quests 10416, 10419",
+   "quest 11039 description"
+  ],
+  "notes": "Converted: the story was over the 140-word opening limit, so what Voren'thal does with the tomes moved to part 1 (DONE 10416, needs Scryers Neutral or better); the opening keeps his request. Thalodien's call for reinforcements shortened. requiredState 8. Before: Fact-check: 10024 needs Scryers below Neutral (draenei before choosing and Aldor-aligned characters), 10412 needs Scryers Neutral to Honored, 10416 needs Scryers Neutral or better; together every character can begin it. 'Kael's own magisters' changed to Kael's blood elves (10416). Aldor counterpart 370317. Thalodien's chain belongs to netherstorm.json and is only mentioned."
+ },
+ {
+  "id": 370319,
+  "kind": 3,
+  "zone": 3703,
+  "sort": 4,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Lives in the Lower City",
+  "body": "Not every tale in Shattrath is one of war. In the Lower City, a boy named Seth, far from his home in Lakeshire, watches the Aldor rebuild the walls and decides they work far faster than old Foreman Oslow ever did; he misses fishing for eels at a lake to the northeast, but his mother says it is too dangerous now. Nearby the arakkoa outcast Vekax cannot set foot outside the walls, for Skettis has marked him for death, so he pays in treasure for the feathers of its servants as proof that the outcasts will not take their punishment lying down. And the fishmonger Oloraak frets over his friend Isfar, who escaped the Sethekk Halls once and has gone back alone to free his sister, ignoring every plea to stay safe in the city.",
+  "triggers": [
+   [
+    4,
+    10037
+   ],
+   [
+    4,
+    10917
+   ],
+   [
+    4,
+    10180
+   ]
+  ],
+  "sources": [
+   "npc_text 9486 (Seth)",
+   "quest 10037 description and reward text",
+   "quests 10917, 10918",
+   "quest 10180 description and reward text"
+  ],
+  "notes": "Converted: unchanged (nothing to hide; Oloraak's worry is ACCEPT 10180, Isfar stays with terokkar.json on DONE 10180). npc_text 9486 reread: period text. requiredState 8. Before: Verified. All three open to both factions (QuestType 2). Isfar is terokkar.json's person (351930); only Oloraak's worry is told. Seth's mother is not named in the DB, so Zahlia is not linked to him."
+ },
+ {
+  "id": 370320,
+  "kind": 3,
+  "zone": 3703,
+  "sort": 5,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Trials of the Naaru",
+  "body": "Tempest Keep, the fortress where Prince Kael'thas holds court in Netherstorm, has drawn the eye of A'dal. Its satellites, the Mechanar, the Botanica, the Arcatraz and the Eye, ring the prince's seat, and from the Terrace of Light the naaru means in time to send champions against them and to bring the prince to account. Those who serve the Sha'tar find their way into his plans by more than one road. Khadgar, for one, sends those who have proven capable of great feats before the naaru, for A'dal seeks adventurers willing to undergo trials, and those who prove their strength will be granted his favor.",
+  "triggers": [
+   [
+    4,
+    10280
+   ],
+   [
+    4,
+    10883
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "triggers": [
+     [
+      4,
+      10280
+     ]
+    ],
+    "body": "One road began at the Stormspire. Nexus-Prince Haramad, an ethereal of his word, gave the ata'mal crystal to the one whose heroics had recovered it, to be handed to the naaru, and lent his own teleporter so that it could be carried straight to A'dal on the Terrace of Light.",
+    "sources": [
+     "quest 10280 description (from Haramad 20084)"
+    ]
+   },
+   {
+    "part": 2,
+    "triggers": [
+     [
+      5,
+      10280
+     ]
+    ],
+    "body": "A'dal knew the crystal at once: Spirit's Song, the ata'mal crystal Prophet Velen left with his people for safekeeping before his ill-fated mission to the Exodar. Odd, the naaru mused, that Velen had not foreseen it falling to the Legion, even for a short time. Or perhaps he had, and left it there so that it would be recovered and brought here.",
+    "sources": [
+     "quest 10280 description and reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "triggers": [
+     [
+      4,
+      10704
+     ]
+    ],
+    "body": "Haramad had hidden a message inside the crystal, vital to the campaign against Tempest Keep. The key to its Arcatraz satellite lies in two shards, one held by the ancient Warp Splinter in the Botanica, the other by Pathaleon the Calculator in the Mechanar, and A'dal would join them into one.",
+    "sources": [
+     "quest 10704 description (offered at once after 10280: RewardNextQuest)"
+    ]
+   },
+   {
+    "part": 4,
+    "triggers": [
+     [
+      4,
+      10882
+     ]
+    ],
+    "body": "A'dal forged the key, and soon there was need of it. A discordant note crept into the naaru's voice: Kael'thas had chosen his warden poorly, and the beings the naaru once locked away in the Arcatraz were breaking free. One of them, Harbinger Skyriss, a servant of the Old Gods, sought to bring about his masters' conquest of every world.",
+    "sources": [
+     "quest 10704 reward text",
+     "quest 10882 description (PrevQuestID 10704)"
+    ]
+   },
+   {
+    "part": 5,
+    "triggers": [
+     [
+      4,
+      10883
+     ]
+    ],
+    "body": "Khadgar's news concerned the prince himself. The discovery of the Cipher of Damnation had shown that Kael'thas was involved, and should Kael use the cipher, Khadgar warned, what little is left of this world might collapse. A'dal is convinced that the prince must be stopped.",
+    "sources": [
+     "quest 10883 description (from Khadgar, PrevQuestID 10588)"
+    ]
+   },
+   {
+    "part": 6,
+    "triggers": [
+     [
+      5,
+      10883
+     ]
+    ],
+    "body": "Tempest Keep is a naaru creation, A'dal answered, and the way into it has always been theirs to grant. They go now because they must, for Kael'thas cannot be allowed to utter the words of damnation, but only a fool would enter unproven. Four trials he set, and three came first: mercy, saving three prisoners from execution at the hands of Kargath Bladefist in the Shattered Halls; strength, against Warlord Kalithresh and Murmur; and tenacity, rescuing the hapless gnome Millhouse Manastorm from the Arcatraz.",
+    "sources": [
+     "quest 10883 reward text",
+     "quests 10884, 10885, 10886 descriptions (offered by A'dal once 10883 is done; each begins 'Four trials you must pass')"
+    ]
+   },
+   {
+    "part": 7,
+    "triggers": [
+     [
+      4,
+      10888
+     ],
+     [
+      4,
+      13430
+     ]
+    ],
+    "body": "Those who passed the first three trials learned the last. Only one obstacle remained: an army had to be gathered and led deep inside Hellfire Citadel, to fight its way to the heart of Magtheridon's lair and destroy the foul corrupter.",
+    "sources": [
+     "quests 10888 and 13430 descriptions (identical text)",
+     "quest_template_addon: 10884-10886 NextQuestID 13430; mod-individual-progression dungeon_attunements.sql restores 10888 (A'dal starts it, NextQuestID 10888) and removes 13430's starter and ender"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10280 description and reward text",
+   "quests 10704, 10882 descriptions and reward texts",
+   "quest 10883 description and reward text",
+   "quests 10884, 10885, 10886, 10888, 13430",
+   "netherstorm.json 352315 (from Shattrath, A'dal sends champions against the satellites and the prince)"
+  ],
+  "notes": "Check: the opening no longer tells the Haramad road (the crystal recovered and handed over for A'dal is Netherstorm's 352339 part 4 and 352328 part 2 reveal, on DONE 10276), which a reader on the Khadgar road (ACCEPT 10883) had not earned; it moved to a new part 1 on ACCEPT 10280 (PrevQuestID 10276), and the opening now gives Tempest Keep and its satellites and Khadgar's call. The Magtheridon trial moved out of the DONE 10883 part into its own part 7 on ACCEPT 10888 and ACCEPT 13430: the three trials are offered at the 10883 turn-in, but the last is offered only after all three (NextQuestID). 13430 is the 3.x copy of 10888 with the same text; without mod-individual-progression A'dal gives 13430 (10888 disabled), with it the module restores 10888 and deletes 13430's starter in every state, so both triggers are listed and neither needs an era tag. Earlier conversion: Converted: opening is the two roads to A'dal (ACCEPT 10280 from Haramad, ACCEPT 10883 from Khadgar). Moved: Spirit's Song to part 1 (DONE 10280), Haramad's message and the shards to part 2 (ACCEPT 10704), the forged key and Skyriss breaking free to part 3 (ACCEPT 10882, PrevQuestID 10704), Kael'thas and the Cipher to part 4 (ACCEPT 10883, so a 10280-only reader does not learn Shadowmoon's cipher news), A'dal's answer and the four trials to part 5 (DONE 10883; the three trial quests are offered at that turn-in, and 13430 is the starter-bearing Magtheridon trial). Part 4 is written to read on from the opening alone for a 10883-only reader. No KILL triggers (raid and dungeon bosses are not triggers). requiredState 8. Before: Verified. Left to Shattrath by netherstorm.json (Haramad's 10280 hand-off, 10704, Trial of the Naaru). Entry points 10280 (QuestType 2, Flags 128, from Haramad) and 10883 (Khadgar, after the Cipher of Damnation, shadowmoon.json's story). Dungeons named only in passing."
+ },
+ {
+  "id": 370321,
+  "kind": 3,
+  "zone": 3703,
+  "sort": 6,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Akama's Promise",
+  "body": "With the Medallion of Karabor whole at last, Akama will not keep it. Years spent so close to evil itself, he fears, have weakened him, and he no longer trusts himself with an artifact of such power. He sets the ata'mal crystal into the medallion and hands it to the one who recovered it, to carry to the one being he knows can be trusted with it, A'dal in Shattrath City. The gift is also his promise: when the time comes to face Illidan, Akama will stand on its bearer's side. Until then he and his Deathsworn keep up the mask they show the Betrayer, with Maiev Shadowsong hidden among them in the Warden's Cage.",
+  "triggers": [
+   [
+    4,
+    10708
+   ],
+   [
+    4,
+    10944
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "triggers": [
+     [
+      5,
+      10708
+     ]
+    ],
+    "body": "Given to A'dal, the medallion vanished into the naaru's being in a flash of light, and its bearer was shown a glimpse of a moment, perhaps one yet to come: Akama and Maiev coming out of the Warden's Cage and fighting their way toward the temple, aided by a third figure shrouded in shadow. Looking closer, the bearer saw that the figure was themselves.",
+    "sources": [
+     "quest 10708 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "triggers": [
+     [
+      4,
+      10944
+     ]
+    ],
+    "body": "The plan was nearly undone. Seer Olum, freed from naga who had learned he worked against Illidan, had told his torturers nothing, for Akama himself taught him to master pain. But Illidan had asked for Olum to be brought before him, and the Betrayer would have seen into his soul's deepest secrets. Akama had to be warned.",
+    "sources": [
+     "quest 10944 description (from Seer Olum)"
+    ]
+   },
+   {
+    "part": 3,
+    "triggers": [
+     [
+      4,
+      10946
+     ]
+    ],
+    "body": "Olum gave his life to keep the secret, a sacrifice Akama says he would never have asked of him. To lull Illidan back into a false sense of security, Akama would do the Betrayer's bidding for now: wearing a magical cowl that made them seem one of his Ashtongue, his ally was to slay Kael's phoenix, Al'ar, in Tempest Keep.",
+    "sources": [
+     "quest 10946 description"
+    ]
+   },
+   {
+    "part": 4,
+    "triggers": [
+     [
+      4,
+      10947
+     ]
+    ],
+    "body": "With Al'ar slain, Illidan's attention turned to Kael'thas, and Akama made his move. A vision had shown him the phylactery of the lich Rage Winterchill, whose power was lost when the lich fell in the Battle of Mount Hyjal. Legend spoke of a place guarded by bronze dragons, where past and present meet: in the Caverns of Time the phylactery could still be won.",
+    "sources": [
+     "quest 10947 description (offered at once after 10946: RewardNextQuest)"
+    ]
+   },
+   {
+    "part": 5,
+    "triggers": [
+     [
+      4,
+      10948
+     ]
+    ],
+    "body": "With the phylactery in hand, Akama told why he had hidden his intentions so long instead of siding openly with the naaru. His very soul is held prisoner inside the Black Temple, and Illidan could destroy him at any moment. The phylactery's power over souls will let him reclaim it, and now he will lead Maiev and his Deathsworn to Illidan's doorstep, if A'dal will strike with them.",
+    "sources": [
+     "quest 10947 reward text",
+     "quest 10948 description"
+    ]
+   },
+   {
+    "part": 6,
+    "triggers": [
+     [
+      5,
+      10985
+     ]
+    ],
+    "body": "A'dal answered with an image: a naaru outside the Black Temple, fighting beside draenei vindicators and blood elf magisters. Xi'ri's army of Aldor and Scryers pushed Illidan's forces back to cover Akama and Maiev as they entered the temple, and the medallion returned to its bearer, its power augmented by the naaru's magic, as the key to the Black Temple.",
+    "sources": [
+     "quest 10949 description",
+     "quest 10985 description, objectives and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10708, 10944, 10946, 10947, 10948, 10949, 10985 descriptions and reward texts"
+  ],
+  "notes": "Converted: opening is Akama's promise (10708 description; Maiev and the mask are shadowmoon.json's 10628 reveal, done before 10708). Moved: the vision to part 1 (DONE 10708), Olum's warning to part 2 (ACCEPT 10944, also an entry trigger), Olum's death and the Al'ar ruse to part 3 (ACCEPT 10946), the phylactery to part 4 (ACCEPT 10947), Akama's hostage soul to part 5 (ACCEPT 10948, its reveal), the assault and the empowered medallion to part 6 (DONE 10985). None of the 10944-10985 quests is auto-complete (QuestType 2, no 0x10000 flag). Al'ar and Winterchill are raid bosses and not triggers. The Black Temple raid quests (10957-10959) not used. requiredState 8. Before: Left to Shattrath by shadowmoon.json (10944-10985 with A'dal and Xi'ri, and 10708). 10708 starts with Akama in Shadowmoon (QuestType 2, Flags 136); 10944 starts with Seer Olum (Flags 128). The Black Temple raid quests (10957-10959) are not used. Olum's freeing is left without naming the instance. Fact-check: Akama's promise made to the bearer, not to the naaru (10708)."
+ },
+ {
+  "id": 370322,
+  "kind": 3,
+  "zone": 3703,
+  "sort": 7,
+  "faction": 0,
+  "requiredState": 12,
+  "title": "The Offensive in Outland",
+  "body": "While the Shattered Sun Offensive fights on Quel'Danas, its officers in Shattrath keep the war fed from Outland. Emissary Mordin collects nether residue, found by herbalists, miners and skinners across Outland, for oils that colleagues in Stormwind make to harden the troops' blades and armor; no contribution, he says, is too small. Lord Torvos learned that Kael'thas had ordered the Sunfury of Netherstorm to strike the Offensive's Outland operations, to draw its strength away from the Sunwell, and he wants their attack plans seized. Harbinger Haronem, under orders to investigate anything that might help, grudgingly sends volunteers to the Spirit Fields of Nagrand with goggles to take readings of strange distortions, all at the insistence of the gnome Whirligig Wafflefry, who is busy hawking gadgets derived from the Offensive's military inventions.",
+  "triggers": [
+   [
+    4,
+    11875
+   ],
+   [
+    4,
+    11877
+   ],
+   [
+    4,
+    11880
+   ]
+  ],
+  "sources": [
+   "quests 11875, 11877, 11880 descriptions and reward texts",
+   "creature_text 25885, 19475",
+   "quel_danas.json 408002, 408019 (portal told there)",
+   "mod-individual-progression ipp_aware_npcs.sql (phaseMask 65536 for 17076, 19475, 24932, 25134-25155, 25167, 25885, 27666) and IndividualProgression.cpp checkIPPhasing (AREA_SHATTRATH_CITY gets that phase once PROGRESSION_TBC_TIER_4, state 12, is passed)",
+   "quest_template_addon: 11875 and 11877 PrevQuestID 11550 (given by General Tiras'alan 25167, phased from state 12); 11880 given by Harbinger Haronem 19475 (phased from state 12)",
+   "quest 11877 description (Kael'thas' minions ordered the Sunfury of Netherstorm to attack the Offensive's Outland operations to draw troops from the Sunwell); quest starters 19202 (11875), 25140 (11877), 19475 (11880)"
+  ],
+  "notes": "Check: requiredState 12 confirmed (Haronem 19475 and Torvos 25140 are phased in by the module from state 12, and Mordin's 11875 needs 11550 from Tiras'alan 25167, phased from 12); ACCEPT 11875, 11877 and 11880 are its quest triggers for backfill. Torvos's line recast in the past tense (Kael'thas had ordered) so it stays true at 13 and later, when the Sunwell fight is over but 11877 is still offered. Earlier conversion: Converted: body unchanged (nothing to hide; creature_text 25885 and 19475 reread: period text). requiredState 12 instead of 8: every entry point is patch 2.4 Shattered Sun Offensive content that mod-individual-progression opens at state 12 (Haronem and Wafflefry phased in from 12; Mordin's and Torvos's quests need 11550 from Tiras'alan, phased from 12), matching quel_danas.json. Exarch Nasuun (24932) and ACCEPT 11514 stay with quel_danas.json. Before: Fact-check: Mordin, Torvos and Haronem stand 110 to 140 yards from A'dal at the outer hub, so 'on the Terrace of Light' became 'in Shattrath'. Nasuun line removed: he spawns only in Sun's Reach phase event 103, and the portal is told by quel_danas.json 408002 and 408019. 11875 and 11877 need 11550 done (PrevQuestID); all three QuestType 2, open to both factions."
+ }
 ]

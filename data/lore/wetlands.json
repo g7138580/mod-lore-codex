@@ -22,7 +22,7 @@
    "quest 633 description (remaining bridge)",
    "warcraft.wiki.gg/wiki/Thandol_Span (one of the two bridges all but destroyed)"
   ],
-  "notes": "verified"
+  "notes": "Unchanged in the parts conversion: nothing to hide. verified No Wrath-era text (the Northspear is tagged in 1101)."
  },
  {
   "id": 1101,
@@ -31,7 +31,7 @@
   "sort": 1,
   "faction": 0,
   "title": "Menethil Harbor",
-  "body": "Menethil Harbor sits on the western shore of the Wetlands, the Alliance's only stronghold in this dreary region. Orgrim Doomhammer first chose these waters as the place to build the Horde's invasion fleet; after the Second War the site was rebuilt as an Alliance port under Grand Admiral Daelin Proudmoore and named in honor of King Terenas Menethil II. Its stone keep, where Captain Stoutfist keeps his war room, watches over a town of merchants, tanners and sailors, and the Deepwater Tavern is never short of a pint or a tale. Ships sail from its docks to Theramore across the sea and north to Valgarde in Northrend, and the crocolisk hides cured here are shipped to ports around the world.",
+  "body": "Menethil Harbor sits on the western shore of the Wetlands, the Alliance's only stronghold in this dreary region. Orgrim Doomhammer first chose these waters as the place to build the Horde's invasion fleet; after the Second War the site was rebuilt as an Alliance port under Grand Admiral Daelin Proudmoore and named in honor of King Terenas Menethil II. Its stone keep, where Captain Stoutfist keeps his war room, watches over a town of merchants, tanners and sailors, and the Deepwater Tavern is never short of a pint or a tale. Ships sail from its docks across the sea to Theramore, and the crocolisk hides cured here are shipped to ports around the world.",
   "triggers": [
    [
     1,
@@ -47,7 +47,18 @@
    "transports table: Lady Mehley to Theramore, Northspear to Valgarde",
    "npc_text 823 (Innkeeper Helbrek: stories to tell and kegs to empty)"
   ],
-  "notes": "Did not use Captain Stoutfist's gossip (npc_text 16047, flooded town and Dark Iron traitors in the keep): that is Cataclysm text left in the DB."
+  "notes": "Converted: the Wrath-era boat to Valgarde moved out of the opening into part 1 (minState 13, no trigger), so classic and Burning Crusade characters see only the Theramore ship. npc_text 823 (Helbrek) reread: period text. Did not use Captain Stoutfist's gossip (npc_text 16047, flooded town and Dark Iron traitors in the keep): that is Cataclysm text left in the DB.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Since the Alliance took its war to the Lich King, the docks have served a second route. The Northspear now sails from Menethil for Valgarde, the Alliance port on the Howling Fjord in Northrend, and the harbor that once watched the Horde build its fleet sends Alliance soldiers north to the new front.",
+    "minState": 13,
+    "sources": [
+     "transports table: Northspear (181688), Menethil Harbor to Valgarde, Howling Fjord",
+     "warcraft.wiki.gg/wiki/Valgarde (Alliance port in the Howling Fjord)"
+    ]
+   }
+  ]
  },
  {
   "id": 1102,
@@ -56,7 +67,7 @@
   "sort": 2,
   "faction": 0,
   "title": "Menethil Bay",
-  "body": "South of the harbor, the shallows of Menethil Bay hide the wreck of the Flying Osprey, an elven destroyer that sailed with the Kul Tiras Third Fleet for protection while carrying a cargo of Lightforge Iron, a metal prized because weapons forged from it strike with holy truth. The dragons that sank the fleet did not spare her either. Her waterlogged chest has since been clawed open by murlocs, and the Bluegill raiders who prowl the bay carry off the precious ingots they found inside. Crocolisks bask along the muddy shore, and stranglekelp and iron coral grow thick beneath the water.",
+  "body": "South of the harbor, the shallows of Menethil Bay hide the wreck of the Flying Osprey, an elven destroyer that sailed with the Kul Tiras Third Fleet for protection while carrying a cargo of Lightforge Iron, a metal prized because weapons forged from it strike with holy truth. The dragons that sank the fleet did not spare her either. Her waterlogged chest still lies in the shallows beside the wreck, and Bluegill raiders prowl the water all around it. Crocolisks bask along the muddy shore, and stranglekelp and iron coral grow thick beneath the water.",
   "triggers": [
    [
     1,
@@ -69,7 +80,7 @@
    "quests 324, 526 (murloc raiders near the wreck carry the ingots)",
    "zone_areas: Waterlogged Chest 2734, Bluegill Raider x11, Wetlands Crocolisks, Stranglekelp and Iron Coral in area 299"
   ],
-  "notes": "Placed the Osprey in Menethil Bay because its Waterlogged Chest (gameobject 2734) stands in area 299 and quest 321 puts the wreck south of the harbor."
+  "notes": "Converted: dropped that murlocs clawed the chest open and carry off the ingots. That is the reveal of the Lightforge Iron turn-in (quest 321 reward text), part of the Lightforge thread 270, 321, 324, 526, 322 that is sorted under Duskwood (QuestSortID 10) and told by duskwood.json's Sven's Revenge, so it gets no part or trigger here. The murlocs stay as raiders prowling the wreck. No parts. Placed the Osprey in Menethil Bay because its Waterlogged Chest (gameobject 2734) stands in area 299 and quest 321 puts the wreck south of the harbor."
  },
  {
   "id": 1103,
@@ -91,7 +102,7 @@
    "quest 471 description and request text (giant crocs north up the coast; apprentice left with one leg)",
    "zone_areas: Stranglekelp, Giant Clam, Bluegill murlocs and Giant Wetlands Crocolisk in area 298"
   ],
-  "notes": "verified"
+  "notes": "Unchanged in the parts conversion: nothing to hide. verified"
  },
  {
   "id": 1104,
@@ -100,7 +111,7 @@
   "sort": 4,
   "faction": 0,
   "title": "Bluegill Marsh",
-  "body": "North of Menethil Harbor, Bluegill Marsh is a muddy stretch of coast where murlocs have crawled up out of the deep water to build their hovels. The Bluegill tribe harasses fishers and merchants along the road, and the boldest of them, a murloc called Gobbler, harries merchants on the coast road before slipping back to the safety of the huts by the river inlet. When the merchant ship Blind Princess was raided, much of her cargo was dragged overboard and scattered through these hovels, among it a valuable silver statuette of Terenas Menethil, shown as a young, long-haired paladin with his hammer raised.",
+  "body": "North of Menethil Harbor, Bluegill Marsh is a muddy stretch of coast where murlocs have crawled up out of the deep water to build their hovels. The Bluegill tribe harasses fishers and merchants along the road, and the boldest of them, a murloc called Gobbler, harries merchants on the coast road before slipping back to the safety of the huts by the river inlet. When the merchant ship Blind Princess was raided, much of her cargo was dragged overboard and scattered through these hovels, among it a very valuable statuette of Terenas Menethil that Karl Boran of the harbor wants recovered.",
   "triggers": [
    [
     1,
@@ -113,7 +124,24 @@
    "quest 286 description (silvery figurine of a young long-haired paladin with hammer upraised)",
    "DB: Gobbler 1259 spawn in area 1022; Bluegill murlocs, Battered Footlockers, Half-buried Barrel and Damaged Crate in area 1022"
   ],
-  "notes": "Gobbler now harries merchants (quest 279) rather than ambushing travellers in general. Otherwise verified."
+  "notes": "Converted: where the statuette was found and what it looks like (quest 286 description) moved to part 1 (QUEST_DONE 286, turn-in to Karl Boran). The opening keeps the raid and the lost cargo, the premise of quest 281. Gobbler now harries merchants (quest 279) rather than ambushing travellers in general. Otherwise verified.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The statuette was not in the first hovels searched, nor in the next. It turned up at last in the north of the marsh, in a barrel half buried in the mud and grass and still packed in fine straw: a silvery figurine of a young, long-haired paladin with his hammer upraised. Karl Boran saw it returned, to the great relief of the Blind Princess's captain.",
+    "triggers": [
+     [
+      5,
+      286
+     ]
+    ],
+    "sources": [
+     "quests 284, 285 descriptions (no trace in the first hovels)",
+     "quest 286 description and reward text (half-buried barrel, silvery figurine, captain relieved)",
+     "gameobject_queststarter 259 (Half-buried Barrel starts 286)"
+    ]
+   }
+  ]
  },
  {
   "id": 1105,
@@ -122,7 +150,7 @@
   "sort": 5,
   "faction": 0,
   "title": "The Lost Fleet",
-  "body": "Off the northern coast lie the wrecks of the Kul Tiras Third Fleet, sent to the bottom during the Second War when red dragons ridden by Dragonmaw orcs fell upon it with fire. The fleet does not rest. A cursed treasure locked in the strongbox of the Intrepid, a corrupted Eye of Paleth, binds the souls of the drowned crew to the rotting hulls, and cursed sailors and marines still shamble across the broken decks hungry for the living. Captain Halyndor, whom his surviving first mate blames for leading them all to their doom, walks the Intrepid still with the strongbox key.",
+  "body": "Off the northern coast lie the wrecks of the Kul Tiras Third Fleet, sent to the bottom during the Second War when red dragons ridden by Dragonmaw orcs fell upon it with fire. The fleet does not rest. Its lone survivor swears that something terrible was hidden aboard one of the ships, locked in the strongbox of the Intrepid, and that its eerie power binds the souls of the drowned crew to the rotting hulls. Cursed sailors and marines still shamble across the broken decks hungry for the living, and Captain Halyndor, whom his surviving first mate blames for leading them all to their doom, walks the Intrepid still with the strongbox key.",
   "triggers": [
    [
     1,
@@ -140,7 +168,28 @@
    "warcraft.wiki.gg/wiki/The_Lost_Fleet (Third Fleet, Intrepid, Second War)",
    "DB: Captain Halyndor 1160, Cursed Sailor/Marine and Intrepid's Locked Strongbox in area 1039"
   ],
-  "notes": "verified"
+  "notes": "Converted: what the treasure is (the Cursed Eye of Paleth, revealed when the strongbox is opened) moved to part 1 (QUEST_ACCEPT 292, offered by the strongbox, and QUEST_DONE 290). The opening frames the curse as the survivor's claim. creature_text 1239, 1157, 1158 reread: period text. verified",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The rusted key taken from Captain Halyndor fit the lock of the Intrepid's strongbox. Inside lay the treasure the first mate had spoken of, the thing he blamed for holding the dead to their ships: a blackened orb pulsing with an eerie light, a Cursed Eye of Paleth.",
+    "triggers": [
+     [
+      4,
+      292
+     ],
+     [
+      5,
+      290
+     ]
+    ],
+    "sources": [
+     "quest 290 reward text (the rusted key fits)",
+     "quest 292 description (blackened orb, Cursed Eye of Paleth)",
+     "gameobject 112948 Intrepid's Locked Strongbox (ends 290, starts 292)"
+    ]
+   }
+  ]
  },
  {
   "id": 1106,
@@ -149,7 +198,7 @@
   "sort": 6,
   "faction": 0,
   "title": "Saltspray Glen",
-  "body": "Saltspray Glen lies in the far northwest of the Wetlands, between Bluegill Marsh and the open waters of Baradin Bay. It takes its name from the sea: when a strong wind blows in off the bay, the waves fling salt water far across the grass. Raptors hunt its slopes and crocolisks wallow in its streams, but its most troubling inhabitants are the fen creepers, risen bog creatures that the Greenwarden counts among the fevered blisters on his land, and the larger fen lords that walk with them.",
+  "body": "Saltspray Glen lies in the far northwest of the Wetlands, between Bluegill Marsh and the open waters of Baradin Bay. It takes its name from the sea: when a strong wind blows in off the bay, the waves fling salt water far across the grass. Raptors hunt its slopes and crocolisks wallow in its streams, but its most troubling inhabitants are the fen creepers, bog creatures risen out of the marsh like fevered blisters on the land, and the larger fen lords that walk with them.",
   "triggers": [
    [
     1,
@@ -162,7 +211,7 @@
    "zone_areas: Highland Lashtail/Scytheclaw/Razormaw, Wetlands Crocolisk, Fen Creeper and Fen Lord in area 1023",
    "warcraft.wiki.gg/wiki/Saltspray_Glen (bordered by Bluegill Marsh to the south, Baradin Bay to the north and west)"
   ],
-  "notes": "Reworded so only the fen creepers are tied to Rethiel's blisters (quest 275); fen lords are only named as present."
+  "notes": "Converted: dropped the Greenwarden's name from the fen creeper line, since who and what the Greenwarden is (a guardian, not the monster the harbor talks of) is the reveal of quest 463 (see 1112 part 1). No parts. Reworded so only the fen creepers are tied to Rethiel's blisters (quest 275); fen lords are only named as present."
  },
  {
   "id": 1107,
@@ -184,7 +233,7 @@
    "creature_template subnames 2679 Special Goods Dealer, 2682 Engineering Supplies",
    "creature_template 2679 faction 55, 2682 faction 875 (Alliance factions)"
   ],
-  "notes": "Dropped the unsupported claim that the Dun Modr road crosses the marsh; the merchants (factions 55 and 875) serve the Alliance, not anyone passing. Terl Arakor still left out (Cataclysm gossip)."
+  "notes": "Unchanged in the parts conversion: nothing to hide. Dropped the unsupported claim that the Dun Modr road crosses the marsh; the merchants (factions 55 and 875) serve the Alliance, not anyone passing. Terl Arakor still left out (Cataclysm gossip)."
  },
  {
   "id": 1108,
@@ -205,7 +254,7 @@
    "quest 470 description (Sida's weekly visit, bag swallowed by an ooze)",
    "zone_areas: Black Ooze, Crimson Ooze, Monstrous Ooze in area 309"
   ],
-  "notes": "verified"
+  "notes": "Unchanged in the parts conversion: nothing to hide. verified"
  },
  {
   "id": 1109,
@@ -228,7 +277,7 @@
    "quest 634 description (awaiting the reserves of Ironforge)",
    "zone_areas: Longbraid 1071, Motley 1074, Rhag 1075, Roggo 1072, Ashlan 1073 and Dark Iron Dwarf/Tunneler/Saboteur/Demolitionist in area 205"
   ],
-  "notes": "verified"
+  "notes": "Unchanged in the parts conversion: nothing to hide. verified The fall of the town and Longbraid's camp stay: they are the state of the place as anyone arriving sees it."
  },
  {
   "id": 1110,
@@ -237,7 +286,7 @@
   "sort": 10,
   "faction": 0,
   "title": "Thandol Span",
-  "body": "The Thandol Span was raised by the dwarves of Ironforge after the War of the Three Hammers, two arches joining Khaz Modan to the lands of Lordaeron so that trade and kinship with the Wildhammers of Aerie Peak might endure. Now it lies half in ruin. In an attack planned by Kam Deepfury and Balgaras the Foul, the Dark Irons blew apart the west bridge and killed many of its defenders, among them Longbraid's brother and a soldier named Sully Balloo, whom King Magni has ordered honored with a memorial. The dwarves cling to the remaining bridge, their main northern supply line. Near it wanders Comar Villard, a grieving man still searching for some sign of his lost wife.",
+  "body": "The Thandol Span was raised by the dwarves of Ironforge after the War of the Three Hammers, two arches joining Khaz Modan to the lands of Lordaeron so that trade and kinship with the Wildhammers of Aerie Peak might endure. Now it lies half in ruin. When the Dark Irons struck, a tremendous explosion tore apart the west bridge and many of its defenders died, Longbraid's own brother among them. The dwarves cling to the remaining bridge, their main supply line to the north, and an old scout sent to see whether it could be secured has sent back no word. Near it wanders Comar Villard, a grieving man still searching for some sign of his lost wife.",
   "triggers": [
    [
     1,
@@ -249,11 +298,26 @@
    "quest 304 description (West Bridge destroyed, Longbraid's brother)",
    "quest 633 description (Kam Deepfury mastermind, remaining bridge, major supply line to the north)",
    "quest 378 description (Deepfury conspirator)",
-   "quest 689 description (King's memorial for Sully Balloo, died in the Thandol Span tragedy)",
    "quest 1476 description (Comar Villard wandering the Wetlands for a sign of his wife)",
-   "DB: Comar Villard 5683 and Ebenezer Rustlocke's Corpse 2652 in area 881"
+   "DB: Comar Villard 5683 and Ebenezer Rustlocke's Corpse 2652 in area 881",
+   "quest 631 description (explosion, Rustlocke sent to scout, no word)"
   ],
-  "notes": "Attack credited to Kam Deepfury and Balgaras (Thandol Span wiki) instead of unspecified saboteurs. Otherwise verified."
+  "notes": "Converted: removed Sully Balloo and King Magni's memorial (Ironforge's A King's Tribute, quests 637, 686, 689, 700, staged in ironforge.json 153710) and dropped the quest 689 source. Who planned the attack (Kam Deepfury, revealed by Rustlocke's parchment) and the saving of the last bridge moved to part 1 (QUEST_DONE 633). Balgaras is no longer named as co-planner here; the Deepfury plot is told in 1129. The missing scout (quest 631 premise) is framed as no word yet, which stays true. Arathi keeps only its end of the bridge (arathi.json 4515). Comar Villard kept as wandering: the Horde warlock quest 1476 that ends him is not referenced.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Dark Irons were not finished with the Span. Kam Deepfury, the mastermind of the first attack, had arranged for a cache of explosives to be hidden just across the bridge in the Arathi Highlands, ready to bring down the last arch. The cache was found and destroyed in time, and the remaining bridge still carries the dwarves' road north.",
+    "triggers": [
+     [
+      5,
+      633
+     ]
+    ],
+    "sources": [
+     "quest 633 description and reward text (Deepfury the mastermind, cache across the Span, remaining bridge saved)"
+    ]
+   }
+  ]
  },
  {
   "id": 1111,
@@ -274,7 +338,7 @@
    "quest 304 request text (he has been evading us)",
    "zone_areas: Balgaras the Foul 1364, Dark Iron Dwarf/Tunneler/Saboteur/Demolitionist, Highland raptors, oozes and Crimson/Flamesnorting/Lost Whelps in area 1016"
   ],
-  "notes": "verified"
+  "notes": "Unchanged in the parts conversion: nothing to hide. verified Balgaras's death is told in 1122 part 1 and 1128 part 2."
  },
  {
   "id": 1112,
@@ -283,7 +347,7 @@
   "sort": 12,
   "faction": 0,
   "title": "The Green Belt",
-  "body": "The Green Belt is the marshy lowland east of the road where it forks toward Dun Modr, a tangle of fen and reed thick with crocolisks, oozes and young red whelps. Here, among the crocs, dwells the creature the folk of Menethil call the Greenwarden, a great bog beast who answers to the name Rethiel. An old sailor in the harbor warns that it is a monster that will bite a traveller in half, but those who seek it out find a guardian grieving for a land that weeps from festering wounds.",
+  "body": "The Green Belt is the marshy lowland east of the road where it forks toward Dun Modr, a tangle of fen and reed thick with crocolisks, oozes and young red whelps. Somewhere among the crocs, and worse, dwells the creature the folk of Menethil Harbor call the Greenwarden. An old sailor in the harbor thinks anyone who goes looking for it is a fool bent on dying: the beast, he says, will bite a traveller in half, so there is no sense in bringing any gold along.",
   "triggers": [
    [
     1,
@@ -296,7 +360,27 @@
    "warcraft.wiki.gg/wiki/Rethiel_the_Greenwarden (bog beast)",
    "zone_areas: Rethiel 1244, Young Wetlands Crocolisk, oozes and red whelps in area 1025"
   ],
-  "notes": "The warning comes from one sailor (Fitzsimmons starts quest 463), not sailors in general. Greenwarden's Grove (Cataclysm name) not used."
+  "notes": "Converted: who the Greenwarden really is (Rethiel, a grieving guardian rather than the monster of the sailor's warning) moved to part 1 (TALK 1244, QUEST_DONE 463, the turn-in where he names himself); the opening keeps the warning as the sailor's claim. The warning comes from one sailor (Fitzsimmons starts quest 463), not sailors in general. Greenwarden's Grove (Cataclysm name) not used.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Those who seek the Greenwarden out find no man-eater but a great bog beast who says he has many names and answers to only a few, Rethiel among them. He listens to the roots and ferns of the marsh, and he grieves for a land that weeps from festering wounds.",
+    "triggers": [
+     [
+      2,
+      1244
+     ],
+     [
+      5,
+      463
+     ]
+    ],
+    "sources": [
+     "quest 463 reward text (many names, answers to Rethiel, lands weep from festered wounds)",
+     "warcraft.wiki.gg/wiki/Rethiel_the_Greenwarden (bog beast)"
+    ]
+   }
+  ]
  },
  {
   "id": 1113,
@@ -305,7 +389,7 @@
   "sort": 13,
   "faction": 0,
   "title": "Whelgar's Excavation Site",
-  "body": "East of Menethil Harbor, the Explorers' League dug into the marsh under Prospector Whelgar, with soldiers sent by Longbraid to watch over them. The dig turned up rare artifacts, great bones and the Goaz Stone, a tablet in Titan script whose broken text spoke of a divine plan and a doomed prophecy. Then the mottled raptors came. The pack overran the site and killed many of the dwarves, and only Whelgar, Merrin Rockweaver and Ormer Ironbraid, who held off the beasts while the others fled, escaped to a ridge above the dig. There they remain trapped, while fragments of the stone lie scattered among the ruined diggings below.",
+  "body": "East of Menethil Harbor, the Explorers' League dug into the marsh under Prospector Whelgar, with soldiers sent by Longbraid to watch over them. The dig turned up rare artifacts, great bones and the Goaz Stone, an ancient tablet whose broken text spoke of a divine plan and a doomed prophecy. Then the mottled raptors came. The pack overran the site, and the few who escaped, Whelgar among them, are trapped on a ridge above the ruined diggings, with one stout dwarf standing guard over them against the beasts. Fragments of the stone lie scattered among the artifacts and loose soil below.",
   "triggers": [
    [
     1,
@@ -322,7 +406,7 @@
    "zone_areas: Whelgar 1077, Merrin 1076, Ormer 1078, Ancient Relic and Loose Soil objects in area 118",
    "page_text 93-94 (Merrin's Letter: battalion from Longbraid's regiment, only 3 survived)"
   ],
-  "notes": "verified"
+  "notes": "Converted: the opening no longer names Merrin as a survivor or counts the dead, since whether Merrin lives is the question of Tarrel's quest 305 (told in 1131 part 1), and no longer calls the Goaz Stone Titan script, which Whelgar only reads once it is whole (quest 299 reward, 1125 part 1). The raptors overrunning the site and the survivors on the ridge stay: they are in plain sight there. No parts. verified"
  },
  {
   "id": 1114,
@@ -331,7 +415,7 @@
   "sort": 14,
   "faction": 0,
   "title": "Angerfang Encampment",
-  "body": "In the hills east of Whelgar's Excavation lies the Angerfang Encampment, stronghold of the Dragonmaw orcs in the Wetlands. When their red dragon slaves broke free at the end of the Second War, the clan was all but destroyed, and the few survivors fled Grim Batol into these mountains. Here they have slowly regained their strength under Chieftain Nek'rosh. Raiders, swamprunners, bonewarders and shadowwarders crowd the camp beneath its war banners, and Nek'rosh has had catapults built here, meant to lay siege to Menethil Harbor itself.",
+  "body": "In the hills east of Whelgar's Excavation lies the Angerfang Encampment, stronghold of the Dragonmaw orcs in the Wetlands. When their red dragon slaves broke free at the end of the Second War, the clan was all but destroyed, and the few survivors fled Grim Batol into these mountains. Here they have slowly regained their strength under Chieftain Nek'rosh. Raiders, swamprunners, bonewarders and shadowwarders crowd the camp beneath its war banners, and great wooden catapults stand among the tents.",
   "triggers": [
    [
     1,
@@ -344,7 +428,26 @@
    "warcraft.wiki.gg/wiki/Nek'rosh (based at the Angerfang Encampment)",
    "zone_areas: Chieftain Nek'rosh 2091, Dragonmaw Raider/Swamprunner/Bonewarder/Shadowwarder/Centurion, Dragonmaw Catapult 1609 in area 1036"
   ],
-  "notes": "verified"
+  "notes": "Converted: what the catapults are for (Nek'rosh's siege plan, discovered after the war banner raid) moved to part 1 (QUEST_DONE 464, QUEST_ACCEPT 465). The catapults themselves stay in the opening: they stand in the camp (Dragonmaw Catapult 1609). verified",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The catapults are no idle work. Menethil's defenders learned that Nek'rosh means to turn them on the harbor and lay siege to it, while the fighting his warriors keep up in Dun Algaz leaves the town effectively blocked from reinforcements.",
+    "triggers": [
+     [
+      5,
+      464
+     ],
+     [
+      4,
+      465
+     ]
+    ],
+    "sources": [
+     "quest 465 description (catapults to lay siege to Menethil, blocked from reinforcements)"
+    ]
+   }
+  ]
  },
  {
   "id": 1115,
@@ -370,7 +473,7 @@
    "quest 6585 description (the Red Flight now guards Grim Batol, their lieutenant Axtroz)",
    "zone_areas: Axtroz 12899, Scalebane Royal Guard, Wyrmkin Firebrand, Red Scalebane, Red Dragonspawn in area 1038"
   ],
-  "notes": "Fixed the order of events: Khardros founded the Wildhammer kingdom there, Modgud cursed it during the Dark Iron assault and was slain by Khardros (Grim Batol wiki). Dragons tearing it apart is from the in-game book (page_text 2021). Twilight's Hammer, Sinestra and the Cataclysm dungeon left out."
+  "notes": "Unchanged in the parts conversion: nothing to hide. Fixed the order of events: Khardros founded the Wildhammer kingdom there, Modgud cursed it during the Dark Iron assault and was slain by Khardros (Grim Batol wiki). Dragons tearing it apart is from the in-game book (page_text 2021). Twilight's Hammer, Sinestra and the Cataclysm dungeon left out. page_text 2019-2021 reread: in-game book, period text. The ancient outcomes (Modgud, the Demon Soul) are history, not a storyline the zone reveals."
  },
  {
   "id": 1116,
@@ -379,7 +482,7 @@
   "sort": 16,
   "faction": 0,
   "title": "Mosshide Fen",
-  "body": "Mosshide Fen lies in the south of the Wetlands, not far from the dwarven gate at Algaz, and it is the home ground of the Mosshide gnolls. For many years the Mosshides lived in these marshes peacefully enough, but their numbers have swollen. Their feet trample the fen's bushes and flowers, and their axes take more wood than the land can spare to feed their fires, so that even the Greenwarden has turned against them. Gnolls, mongrels and fenrunners roam the pools with their mistweavers, sharing the fen with young crocolisks and black slimes.",
+  "body": "Mosshide Fen lies in the south of the Wetlands, not far from the dwarven gate at Algaz, and it is the home ground of the Mosshide gnolls. For many years the Mosshides lived in these marshes peacefully enough, but their numbers have swollen. Their feet trample the fen's bushes and flowers, and their axes take more wood than the land can spare to feed their fires, until the gnolls are no longer in balance with the land. Gnolls, mongrels and fenrunners roam the pools with their mistweavers, sharing the fen with young crocolisks and black slimes.",
   "triggers": [
    [
     1,
@@ -391,7 +494,7 @@
    "quest 277 description",
    "zone_areas: Mosshide Gnoll/Mongrel/Fenrunner/Mistweaver, Young Wetlands Crocolisk, Black Slime in area 1020"
   ],
-  "notes": "verified"
+  "notes": "Converted: dropped that the Greenwarden has turned against the gnolls, since who the Greenwarden is comes with quest 463 (1112 part 1); replaced with quest 276's no longer in balance with the land. No parts. verified"
  },
  {
   "id": 1117,
@@ -413,7 +516,7 @@
    "zone_areas: Leech Stalker 1111 x22 in area 1021; Leech Widow 1112 spawn at -3780,-2344 (area 11, just outside)",
    "creature_template 1111/1112 family 3 (spider)"
   ],
-  "notes": "Incendicite hope narrowed to Pilot Stonegear (quest 466) rather than the dwarves of Dun Morogh in general."
+  "notes": "Unchanged in the parts conversion: nothing to hide. Incendicite hope narrowed to Pilot Stonegear (quest 466) rather than the dwarves of Dun Morogh in general."
  },
  {
   "id": 1118,
@@ -422,7 +525,7 @@
   "sort": 18,
   "faction": 0,
   "title": "The Northern Algaz Road",
-  "body": "North of the dwarven gate, the pass of Dun Algaz winds down out of the mountains into the Wetlands, and its road runs on to the fork where travellers turn west for Menethil Harbor. This northern stretch is Dragonmaw ground now. Orc scouts and grunts who usually keep to their hills have come down in force to hold the road, roaring for the Dragonmaw at any who pass, and their warlord Ma'ruk Wyrmscale waits near the Wetlands end. Only a few Ironforge mountaineers patrol the southern approach. While the orcs hold the pass, no relief can reach Menethil by land, and why the clan surged into Algaz remains a mystery even to the harbor's defenders.",
+  "body": "North of the dwarven gate, the pass of Dun Algaz winds down out of the mountains into the Wetlands, and its road runs on to the fork where travellers turn west for Menethil Harbor. This northern stretch is Dragonmaw ground now. Orc scouts and grunts who usually keep to their hills have come down in force to hold the road, roaring for the Dragonmaw at any who pass, and their warlord Ma'ruk Wyrmscale waits near the Wetlands end. Only a few Ironforge mountaineers patrol the southern approach. While the orcs hold the pass, no relief can reach Menethil by land, and at first no one at the harbor could say what drove the clan into Algaz.",
   "triggers": [
    [
     1,
@@ -431,11 +534,30 @@
   ],
   "sources": [
    "quest 455 description and reward text (Menethil is through Dun Algaz, north along the road, then west at the fork; Dragonmaws normally hide in the hills; their surge into Algaz a mystery to Valstag Ironjaw)",
-   "quest 465 description (fighting in Dun Algaz blocks reinforcements to Menethil)",
+   "quest 465 description (fighting in Dun Algaz blocks reinforcements to Menethil; used in part 1)",
    "creature_text 2102/2103 (For the Dragonmaw!)",
    "zone_areas: Dragonmaw Scout x17, Grunt x16, Ma'ruk Wyrmscale 2090 <Dragonmaw Warlord> at -4207,-2377 (north end), patrolling Mountaineers Grugelm, Dokkin, Thar, Rharen near the southern end in area 836"
   ],
-  "notes": "Rewritten and retitled to cover the Wetlands side of the pass so it does not repeat Loch Modan's Dun Algaz entry (3807): dropped the Rockgar volunteers and Loch Modan cut-off angle, and the mountaineers' camp (they are non-interactive patrollers)."
+  "notes": "Converted: the opening said the surge into Algaz remains a mystery, which the siege plan answers; it now says no one could say at first, and the plan moved to part 1 (QUEST_DONE 464, QUEST_ACCEPT 465). creature_text 2102/2103 reread: battle cries only. Rewritten and retitled to cover the Wetlands side of the pass so it does not repeat Loch Modan's Dun Algaz entry (3807): dropped the Rockgar volunteers and Loch Modan cut-off angle, and the mountaineers' camp (they are non-interactive patrollers).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "A likely answer came when Captain Stoutfist's men uncovered more of the Dragonmaw's plans. Chieftain Nek'rosh has built catapults to lay siege to Menethil Harbor, and with the fighting in Dun Algaz the town is effectively cut off from any reinforcements that might save it.",
+    "triggers": [
+     [
+      5,
+      464
+     ],
+     [
+      4,
+      465
+     ]
+    ],
+    "sources": [
+     "quest 465 description (catapults, siege of Menethil, fighting in Dun Algaz blocks reinforcements)"
+    ]
+   }
+  ]
  },
  {
   "id": 1119,
@@ -444,7 +566,7 @@
   "sort": 1,
   "faction": 1,
   "title": "Captain Stoutfist",
-  "body": "Captain Stoutfist commands the defense of Menethil Harbor from the war room inside its keep, and his position is an uneasy one. The Dragonmaw orcs have pushed into Dun Algaz, cutting the town off from reinforcements, and his men have learned that Chieftain Nek'rosh is building catapults to lay siege to the harbor itself. With no soldiers to spare, Stoutfist calls upon any capable volunteer, sending them to seize the war banners of the Angerfang camp, burn the catapults and bring back Nek'rosh's head. He knows the clan's history well and does not underestimate it: without their dragons the Dragonmaw are not the threat they once were, but they remain fierce foes.",
+  "body": "Captain Stoutfist commands the defense of Menethil Harbor from the war room inside its keep, and his position is an uneasy one. The Dragonmaw orcs are showing their strength well beyond their hills: they have pushed into Dun Algaz, threatening to cut the harbor off from Loch Modan, and their encampment northeast of town has grown strong again. With no soldiers to spare, Stoutfist calls upon any capable volunteer, first sending them to attack the Angerfang camp and bring back its war banners as proof. He knows the clan's history well, from its days as master of the red dragons to its near destruction when they turned on it.",
   "triggers": [
    [
     2,
@@ -460,7 +582,36 @@
    "quests 464, 465, 474 (descriptions and reward texts)",
    "creature_template 2104 faction 55 (Ironforge)"
   ],
-  "notes": "His gossip text (npc_text 16047, wounded, town under the ocean, Dark Iron traitors in the keep) is Cataclysm and was ignored. Faction 1: Ironforge faction NPC and Alliance-only quest."
+  "notes": "Converted: the catapult plan and his orders to burn them and kill Nek'rosh moved to part 1 (QUEST_DONE 464, where the plan is discovered and quest 465 offered); Nek'rosh's death and the harbor made safe to part 2 (QUEST_DONE 474). The opening ends on the war banner raid (quest 464). His gossip text (npc_text 16047, wounded, town under the ocean, Dark Iron traitors in the keep) is Cataclysm and was ignored. Faction 1: Ironforge faction NPC and Alliance-only quest.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The banners were taken, and Stoutfist judged the Dragonmaw no longer the threat they were with dragons, though still fierce opponents. Then his men uncovered their chieftain's gambit: Nek'rosh had built catapults to besiege Menethil, while the fighting in Dun Algaz kept reinforcements away. Stoutfist sent the volunteers back with tinder to burn the engines, and with orders to cut the beast down at its neck.",
+    "triggers": [
+     [
+      5,
+      464
+     ]
+    ],
+    "sources": [
+     "quest 464 reward text",
+     "quest 465 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "With the catapults burned and Nek'rosh slain, Stoutfist declared Menethil Harbor safe. He called it a telling blow to the Dragonmaw clan, one from which they may never recover, and saw that the kingdom of Ironforge rewarded those who had served it so well.",
+    "triggers": [
+     [
+      5,
+      474
+     ]
+    ],
+    "sources": [
+     "quest 474 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 1120,
@@ -469,7 +620,7 @@
   "sort": 2,
   "faction": 1,
   "title": "Longbraid the Grim",
-  "body": "Longbraid the Grim led the dwarven regiment that guarded Dun Modr and the Thandol Span. When the Dark Irons struck, his own brother died as the west bridge over the Span was destroyed, and before the regiment could regroup Dun Modr was overrun. Longbraid sounded the retreat and sent the wounded Harlo Barnaby to safety on the only surviving horse. Now he holds a camp outside the fallen town with what remains of his soldiers, hunting the warlock Balgaras and waiting on reserves from Ironforge. When his officers sent to the Alliance at Refuge Pointe for aid, the reply came back that Stromgarde had fallen and could spare no one: Longbraid is on his own.",
+  "body": "Longbraid the Grim led the dwarven regiment that guarded Dun Modr and the Thandol Span. When the Dark Irons struck, his own brother died as the west bridge over the Span was destroyed, and before the regiment could regroup Dun Modr was overrun. Longbraid sounded the retreat and sent the wounded Harlo Barnaby to safety on the only surviving horse. Now he holds a camp outside the fallen town with what remains of his soldiers, a shadow of the great regiment they once were. He means to see the warlock Balgaras, who has long evaded his hunters, slain, and he waits on reserves from Ironforge that have yet to arrive.",
   "triggers": [
    [
     2,
@@ -488,7 +639,35 @@
    "warcraft.wiki.gg/wiki/Longbraid_the_Grim",
    "creature_template 1071 faction 55"
   ],
-  "notes": "Minor wording: Rhag sends a messenger to Refuge Pointe (quest 634). Faction 1: Ironforge-faction NPC; quest 472 is open to all races but its giver Harlo Barnaby (2097) is faction 55, hostile to Horde."
+  "notes": "Converted: Balgaras's death moved to part 1 (QUEST_DONE 304, his own quest); the refused plea to Refuge Pointe to part 2 (QUEST_DONE 634). The reserves are framed as yet to arrive, which stays true. Minor wording: Rhag sends a messenger to Refuge Pointe (quest 634). Faction 1: Ironforge-faction NPC; quest 472 is open to all races but its giver Harlo Barnaby (2097) is faction 55, hostile to Horde.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "When the ear of Balgaras the Foul was brought to him, Longbraid allowed that the warlock's death could not bring back the innocent dwarves who had died by his hand, though it would ease the minds of those who survived. The leaderless invaders should be easy enough to manage, he said, and must be wiped out before a new leader is sent.",
+    "triggers": [
+     [
+      5,
+      304
+     ]
+    ],
+    "sources": [
+     "quest 304 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Hoping for help from any quarter, his officers sent a plea north to the Alliance at Refuge Pointe. Captain Nials offered her condolences and nothing more: Stromgarde itself had fallen, and her soldiers were sworn to retake it first. The reply came back to Longbraid that he was on his own.",
+    "triggers": [
+     [
+      5,
+      634
+     ]
+    ],
+    "sources": [
+     "quest 634 description and reward text (Rhag sends the plea; Nials: he is on his own)"
+    ]
+   }
+  ]
  },
  {
   "id": 1121,
@@ -514,7 +693,26 @@
    "warcraft.wiki.gg/wiki/Nek'rosh (Nek'rosh Skullcrusher, son of Nekros Skullcrusher, Angerfang, usually guarded by five orcs)",
    "page_text 2019 (Nekros held Alexstrasza in Grim Batol)"
   ],
-  "notes": "Softened the claim that Nek'rosh personally sent the Dragonmaw into Algaz. Faction 0: KILL is reachable by Horde (faction template 62 is hostile to all players); the QUEST_ACCEPT trigger is Alliance only."
+  "notes": "Converted: added part 1 for his death (KILL 2091, QUEST_DONE 474). The opening already told no outcome; the catapults stay there since QUEST_ACCEPT 465, an entry trigger, is where they are revealed. page_text 2019 reread: in-game book, period text. Softened the claim that Nek'rosh personally sent the Dragonmaw into Algaz. Faction 0: KILL is reachable by Horde (faction template 62 is hostile to all players); the QUEST_ACCEPT trigger is Alliance only.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Nek'rosh fell at last in the Angerfang Encampment, his vow of revenge on the red dragons unfulfilled. In Menethil Harbor his death was hailed as a telling blow to the Dragonmaw clan, one from which it may never recover, and with his catapults burned the harbor was safe.",
+    "triggers": [
+     [
+      3,
+      2091
+     ],
+     [
+      5,
+      474
+     ]
+    ],
+    "sources": [
+     "quest 474 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 1122,
@@ -523,7 +721,7 @@
   "sort": 4,
   "faction": 0,
   "title": "Balgaras the Foul",
-  "body": "Balgaras the Foul is the Dark Iron warlock who leads his clan's invasion of the Wetlands. With Kam Deepfury he planned the attack on the Thandol Span, and under his command Dun Modr was taken. He calls himself a servant of Ragnaros, proclaims that the Dark Irons will reclaim their rightful lands, and promises to leave his foes nothing but ash and dust. To the dwarves of Ironforge he is a coward who sends his soldiers to do his bidding while he hides in his camp on Direforge Hill, and they hope his death would leave the remaining invaders easy to deal with.",
+  "body": "Balgaras the Foul is the Dark Iron warlock who leads his clan's invasion of the Wetlands, the campaign that tore apart the Thandol Span and took Dun Modr. He counts himself among the minions of Ragnaros, proclaims that the Dark Irons will reclaim their rightful lands, and promises to leave his foes nothing but ash and dust. To the dwarves of Ironforge he is a coward who sends his soldiers to do his bidding while he hides in his camp on Direforge Hill, and he has evaded their hunters for a long time.",
   "triggers": [
    [
     3,
@@ -537,10 +735,29 @@
   "sources": [
    "creature_text 1364 (minions of Ragnaros, reclaim their rightful lands, ash and dust)",
    "quest 304 description and reward text",
-   "warcraft.wiki.gg/wiki/Thandol_Span (Kam Deepfury and Balgaras planned the attack)",
-   "warcraft.wiki.gg/wiki/Dun_Modr (Dark Irons led by Balgaras)"
+   "warcraft.wiki.gg/wiki/Dun_Modr (Dark Irons led by Balgaras)",
+   "quest 304 request text (he has been evading us)"
   ],
-  "notes": "Faction 0: Dark Iron faction 54 is hostile to both sides, so the KILL trigger works for Horde."
+  "notes": "Converted: his death and what it means for the invaders moved to part 1 (KILL 1364, QUEST_DONE 304). Dropped that he planned the Span attack with Kam Deepfury: Deepfury's role is the reveal of Rustlocke's parchment (quest 633, told in 1110 and 1129) and of quest 378 (1128), and no 3.3.5 text ties Balgaras to the planning. creature_text 1364 reread: battle cries only. Faction 0: Dark Iron faction 54 is hostile to both sides, so the KILL trigger works for Horde.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Balgaras was run down on Direforge Hill at last and slain, and his ear carried to Longbraid as proof. His death could not undo the many needless deaths he had caused, but with their leader gone the remaining Dark Irons of the Wetlands looked easy prey, if they could be wiped out before a new leader was sent.",
+    "triggers": [
+     [
+      3,
+      1364
+     ],
+     [
+      5,
+      304
+     ]
+    ],
+    "sources": [
+     "quest 304 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 1123,
@@ -549,7 +766,7 @@
   "sort": 5,
   "faction": 1,
   "title": "Rethiel the Greenwarden",
-  "body": "Rethiel is a great bog beast of the Green Belt, known in Menethil Harbor as the Greenwarden and called a monster by an old sailor there. He says he has many names but answers to only a few. To Rethiel the Wetlands are a living thing, wounded and weeping: fen creepers have risen as fevered blisters on the land, and the Mosshide gnolls, once in balance, now trample the fens and burn living wood. He asks those the roots and ferns speak well of to heal these wounds, and casts the gnolls' flints into the sea. His faith in the peoples of the Alliance has been tested before, but he allows that it may yet be restored.",
+  "body": "Rethiel is a great bog beast of the Green Belt, known in Menethil Harbor as the Greenwarden and called a monster by an old sailor there. He says he has many names but answers to only a few. To Rethiel the Wetlands are a living thing, wounded and weeping: fen creepers have risen as fevered blisters on the land, and the Mosshide gnolls, once in balance, now trample the fens and burn living wood. He asks those the roots and ferns speak well of to heal these wounds, and to begin by thinning the gnolls.",
   "triggers": [
    [
     2,
@@ -566,7 +783,35 @@
    "warcraft.wiki.gg/wiki/Rethiel_the_Greenwarden (bog beast, formerly Stormwind-affiliated)",
    "creature_template 1244 faction 12 (Stormwind)"
   ],
-  "notes": "Monster talk comes from one sailor (Fitzsimmons, quest 463). Peoples of the Alliance generalizes quest 276's 'your people, $R'. Faction 1: Stormwind faction, hostile to Horde."
+  "notes": "Converted: his tested faith moved to part 1 (QUEST_DONE 276) and the flints cast into the sea to part 2 (QUEST_DONE 277). Monster talk comes from one sailor (Fitzsimmons, quest 463). Peoples of the Alliance generalizes quest 276's 'your people, $R'. Faction 1: Stormwind faction, hostile to Horde.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Once the Mosshides' numbers were reduced, Rethiel admitted that his faith in the peoples of the Alliance has been sorely taxed in the past. It may yet be restored, he allows, by those who tend to the health of the Wetlands.",
+    "triggers": [
+     [
+      5,
+      276
+     ]
+    ],
+    "sources": [
+     "quest 276 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "He wanted the gnolls' crude flints taken too, the tools they use to make fire. Once they were in his hands he vowed to smash them and cast them into the sea, so that they could never again be used to burn living wood.",
+    "triggers": [
+     [
+      5,
+      277
+     ]
+    ],
+    "sources": [
+     "quest 277 description and reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 1124,
@@ -588,7 +833,7 @@
    "quest 292 request text (Glorin calls him that drunk Fitzsimmons)",
    "creature_template 1239 faction 12"
   ],
-  "notes": "Faction 1: Stormwind-faction NPC. His Cataclysm-era death by drink is not mentioned."
+  "notes": "Unchanged in the parts conversion: nothing to hide. Faction 1: Stormwind-faction NPC. His Cataclysm-era death by drink is not mentioned. creature_text 1239 reread: period text. His belief in a cursed treasure is framed as his tale; what it is comes in 1105 and 1130."
  },
  {
   "id": 1125,
@@ -597,7 +842,7 @@
   "sort": 7,
   "faction": 1,
   "title": "Prospector Whelgar",
-  "body": "Prospector Whelgar of the Explorers' League led the dig that bears his name, east of Menethil Harbor. Just before mottled raptors overran the site he unearthed the Goaz Stone, a tablet in Titan script, and he has since been trapped on a ridge above the ruined dig with Merrin Rockweaver and their protector Ormer Ironbraid, too old, he admits, to brave the beasts below. Once the four lost fragments of the stone were recovered, his translation turned up words about the Old Gods, chained beneath the land, which he believes is the beginning of something epic. He also keeps a fossil that Archaeologist Flagongut is eager to study.",
+  "body": "Prospector Whelgar of the Explorers' League led the dig that bears his name, east of Menethil Harbor. Just before mottled raptors overran the site he unearthed the Goaz Stone, a large tablet whose translated text breaks off in four places, speaking of a divine plan and a doomed prophecy. Now he is trapped on a ridge above the ruined dig with Merrin Rockweaver and their protector Ormer Ironbraid, too old, he admits, to brave the beasts below, and he fears time is running out. He also keeps a fossil that Archaeologist Flagongut is eager to study.",
   "triggers": [
    [
     2,
@@ -615,7 +860,22 @@
    "creature_text 1077 (I figured Flagongut would send someone for that fossil)",
    "creature_template 1077 subname Explorers' League, faction 55"
   ],
-  "notes": "Faction 1: Ironforge-faction NPC, Alliance-only quest."
+  "notes": "Converted: the completed translation (Titan script, Old Gods chained beneath the land) moved to part 1 (QUEST_DONE 299). creature_text 1077 reread: period text. Faction 1: Ironforge-faction NPC, Alliance-only quest.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Once the four lost fragments, Ados, Modr, Golm and Neru, were dug out of the ruined site, the Goaz Stone was whole again and Whelgar returned to his delicate translation of its Titan script. The first new words he made out spoke of Old Gods, chained beneath the land. This, he says, is the beginning of something epic.",
+    "triggers": [
+     [
+      5,
+      299
+     ]
+    ],
+    "sources": [
+     "quest 299 description and reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 1126,
@@ -624,7 +884,7 @@
   "sort": 8,
   "faction": 1,
   "title": "Mikhail",
-  "body": "Mikhail tends bar in Menethil Harbor, having left Stormwind a few years ago and settled here to retire. He still keeps friends in the capital, among them Elling Trias, and a visitor who comes in Elling's name finds his hospitality multiplied tenfold. It was in the tavern where he works that the rogue Tapoke 'Slim' Jahn was caught and confessed that he had sold out to the Defias, helping slip their agent aboard the King of Stormwind's ship while it lay in the harbor, bound for Theramore. Mikhail confesses, though never where Elling might hear, that he misses the excitement of his old underground work.",
+  "body": "Mikhail tends bar in Menethil Harbor, having left Stormwind a few years ago and settled here to retire. He greets every guest with talk of ale and mutton, but he still keeps friends in the capital, among them Elling Trias, and a visitor who comes in Elling's name finds his hospitality multiplied tenfold, so long as the name is spoken quietly: such business is not for the whole tavern to hear. Old habits die hard. He admits, though never where Elling might hear, that he misses the excitement of his old underground work.",
   "triggers": [
    [
     2,
@@ -637,11 +897,26 @@
   ],
   "sources": [
    "quest 1248 description and reward text",
-   "quest 1249 description and reward text",
-   "quest 1250 description and reward text",
-   "creature_template 4963 faction 12; 4962 Tapoke Jahn spawned in area 150"
+   "quest 1249 description and reward text (misses the underground excitement, never tell Elling)",
+   "creature_template 4963 faction 12; gossip 1100 / npc_text 1713 (period text, not used)"
   ],
-  "notes": "He is the bartender, not the owner (Innkeeper Helbrek keeps the Deepwater Tavern), so 'his tavern' became 'the tavern where he works'. Faction 1: Stormwind faction and Alliance-only quests."
+  "notes": "Converted: removed Tapoke Jahn's capture and confession and the king's abduction (stormwind.json 151911 The Missing King tells them, part 3 on QUEST_ACCEPT 1250; 151903 Varian part 1). Mikhail keeps TALK 4963 and QUEST_DONE 1248, as stormwind.json agreed; part 1 (QUEST_DONE 1248) tells only his promise to watch for Slim and the stranger by the door, the premise of 1249, without saying who he is. No 1249 or 1250 trigger used. Check: the line that he misses his old underground work (quest 1249 reward text) is kept in the opening as a trait of the man; it says nothing of who the eavesdropper was, Slim's confession or the king. He is the bartender, not the owner (Innkeeper Helbrek keeps the Deepwater Tavern). Faction 1: Stormwind faction and Alliance-only quests.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Trias's message asked after a man called Slim. The name meant nothing to Mikhail, but he promised to keep his eyes open, and he was quick to notice a gentleman by the tavern's exit listening to the conversation a little too intently.",
+    "triggers": [
+     [
+      5,
+      1248
+     ]
+    ],
+    "sources": [
+     "quest 1248 reward text",
+     "quest 1249 description (offered on the 1248 turn-in)"
+    ]
+   }
+  ]
  },
  {
   "id": 1127,
@@ -650,7 +925,7 @@
   "sort": 1,
   "faction": 1,
   "title": "The Dragonmaw Threat",
-  "body": "Word reached Loch Modan that the Dragonmaw orcs, who usually keep to their hills, had surged into Dun Algaz in force. If they held the pass, Loch Modan would be cut off from Menethil Harbor, so the mountaineers called for volunteers to break through. Those who reached Menethil found the orcs rising across the Wetlands. In the keep, Captain Stoutfist told the clan's story: broken when their red dragons turned on them after the Second War, the survivors fled Grim Batol for the eastern hills and, under Nek'rosh, son of Nekros, had grown strong again. Stoutfist sent fighters to seize the war banners of the Angerfang Encampment, and their raid uncovered Nek'rosh's plan: catapults to besiege Menethil while the fighting in Algaz held back any relief. The catapults were put to the torch and Nek'rosh was slain, a blow from which the clan may never recover.",
+  "body": "Word reached Loch Modan that the Dragonmaw orcs, who usually keep to their hills, had surged into Dun Algaz in force. If they held the pass, Loch Modan would be cut off from Menethil Harbor, so the mountaineers called for volunteers to break through. Those who reached Menethil found the orcs rising across the Wetlands, and no one at the harbor could say what had driven them into Algaz. In the keep, Captain Stoutfist told the clan's story: broken when their red dragons turned on them after the Second War, the survivors fled Grim Batol for the eastern mountains and have grown strong again in an encampment northeast of town. Stoutfist wants that camp attacked and its war banners brought back as proof.",
   "triggers": [
    [
     4,
@@ -668,7 +943,37 @@
   "sources": [
    "quests 468, 455, 473, 464, 465, 474 (descriptions and reward texts)"
   ],
-  "notes": "Chain 468 > 455 > 473 > 464 > 465 > 474; 473 has no prerequisite so it is also an entry point."
+  "notes": "Converted: the opening is the setup of 468, 455, 473 and 464; Nek'rosh's lineage and the catapult plan moved to part 1 (QUEST_DONE 464); the burned catapults and his death to part 2 (QUEST_DONE 474). Chain 468 > 455 > 473 > 464 > 465 > 474; 473 has no prerequisite so it is also an entry point.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The raid on the Angerfang Encampment told Stoutfist much. The clan answers to Nek'rosh, son of the warlock Nekros, whose hold over the dragons failed and cost him his life, and the son has sworn revenge on the dragons who slew his father. Worse, Stoutfist's men uncovered Nek'rosh's gambit: catapults built to besiege Menethil, while the fighting in Algaz kept any reinforcements away.",
+    "triggers": [
+     [
+      5,
+      464
+     ]
+    ],
+    "sources": [
+     "quest 464 reward text",
+     "quest 465 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The catapults were put to the torch one by one, and Nek'rosh himself was slain in his camp. Stoutfist called it a telling blow from which the Dragonmaw may never recover, and with the siege engines gone, Menethil Harbor was safe.",
+    "triggers": [
+     [
+      5,
+      474
+     ]
+    ],
+    "sources": [
+     "quest 465 completion and reward text",
+     "quest 474 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 1128,
@@ -677,7 +982,7 @@
   "sort": 2,
   "faction": 1,
   "title": "The Fall of Dun Modr",
-  "body": "In Menethil Harbor a soldier named Harlo Barnaby woke with an axe wound in his back and terrible news: Dun Modr had fallen. The Dark Iron dwarves had struck the Thandol Span and then overrun the town before its regiment could regroup, and Harlo had been sent away on the only surviving horse. Searchers found his commander, Longbraid the Grim, alive outside the town with what remained of his soldiers. There Motley Garmason calls for pressure on the Dark Iron encampment while Roggo Harlbarrow tries in vain to reach the reserves, and Longbraid wants the cowardly warlock Balgaras the Foul slain in his camp on Direforge Hill. Vengeance reaches further still. Kam Deepfury, who plotted the attack on the Span, is held in the Stormwind Stockade for political reasons, and Motley will not let human bureaucracy stand between him and justice for Longbraid's brother.",
+  "body": "War rages at home and abroad for the dwarves of Ironforge. While their soldiers give their lives for the Alliance in distant lands, the Dark Iron dwarves have struck in the Wetlands. In Menethil Harbor a soldier named Harlo Barnaby woke with an axe wound in his back and terrible news: Dun Modr had fallen. The Dark Irons had ambushed the defenders of the Thandol Span and fallen on the town before its regiment could regroup, killing most of it. As Longbraid the Grim sounded the retreat horn, Harlo was struck down, and he remembers nothing more. He still hopes his commander lives, somewhere near the fallen town.",
   "triggers": [
    [
     4,
@@ -695,7 +1000,75 @@
   "sources": [
    "quests 472, 303, 304, 378 (descriptions, request and reward texts)"
   ],
-  "notes": "Faction 1: 472 is open to all races but Harlo Barnaby (2097) is faction 55; 303 and 304 are Alliance only."
+  "notes": "Converted: the opening is Harlo's news (quest 472). Part 1 Longbraid found alive and his officers' tasks (QUEST_DONE 472, QUEST_ACCEPT 303 and 304 for those who reach the camp first); part 2 Balgaras slain (QUEST_DONE 304, KILL 1364); part 3 Deepfury's guilt and Motley's demand (QUEST_ACCEPT 378); part 4 Deepfury dead (QUEST_DONE 378). Quest 378 is sorted under the Stockade (QuestSortID 717) but given and turned in by Motley in Dun Modr; no other file uses it, and it is reserved for this file (ACCEPT and DONE 378). Kam Deepfury (kill) left free for any future Stockade file. Faction 1: 472 is open to all races but Harlo Barnaby (2097) is faction 55; 303 and 304 are Alliance only.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Longbraid was alive, holding a camp outside Dun Modr with what remained of his soldiers, a shadow of the great regiment they had been. Harlo, he explained, had been sent away on the only surviving steed. Now Motley Garmason calls for pressure on the Dark Iron encampment while Roggo Harlbarrow struggles to reach the reserves, and Longbraid wants the cowardly warlock Balgaras the Foul slain in his camp on Direforge Hill.",
+    "triggers": [
+     [
+      5,
+      472
+     ],
+     [
+      4,
+      303
+     ],
+     [
+      4,
+      304
+     ]
+    ],
+    "sources": [
+     "quest 472 reward text",
+     "quest 303 description and request text",
+     "quest 304 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Balgaras was slain at last and his ear laid before Longbraid. It could not bring back the dwarves who had died by his hand, but it gave the survivors some peace of mind, and Longbraid resolved to finish the leaderless Dark Irons before a new leader could be sent to them.",
+    "triggers": [
+     [
+      5,
+      304
+     ],
+     [
+      3,
+      1364
+     ]
+    ],
+    "sources": [
+     "quest 304 reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Vengeance reached further still. Roggo gathered proof that Kam Deepfury was a conspirator in the attack on the Span, and that it was by his planning that Longbraid lost his brother. Deepfury is held in the Stormwind Stockade for political reasons, and Motley, bound by honor to stay at Longbraid's side, will not let human bureaucracy stand between a Dark Iron and justice.",
+    "triggers": [
+     [
+      4,
+      378
+     ]
+    ],
+    "sources": [
+     "quest 378 description and request text"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Kam Deepfury died in the Stockade, and Motley took grim satisfaction in hearing that the Dark Iron had met the death he dealt to others. The families of the Span's victims could know he had been punished, and Longbraid's brother was avenged.",
+    "triggers": [
+     [
+      5,
+      378
+     ]
+    ],
+    "sources": [
+     "quest 378 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 1129,
@@ -704,7 +1077,7 @@
   "sort": 3,
   "faction": 1,
   "title": "The Thandol Span",
-  "body": "After the explosion that tore through the Thandol Span, Longbraid sent Ol' Ebenezer Rustlocke to scout the eastern bridge and see if it could be secured. Days passed with no word, and with Dun Modr under siege the dwarves had no one to spare to look for him. He was found dead near the Span, cut down in a Dark Iron ambush, a parchment clutched in his fist. It revealed that Kam Deepfury, the mastermind of the first attack, had arranged for a cache of explosives to be hidden across the Span in the Arathi Highlands, ready to bring down the last bridge and sever the dwarves' main supply line to the north. The cache was destroyed in time. Rhag Garmason then begged the Alliance at Refuge Pointe for soldiers, but Captain Nials could spare none: Stromgarde itself had fallen, and her people were sworn to retake it first.",
+  "body": "A tremendous explosion roared through the hills when the Dark Irons struck the Thandol Span, and good soldiers died defending it. The west bridge lies in ruins, and the remaining one is now the dwarves' only crossing to the north. Longbraid has sworn revenge, but with Dun Modr under siege and no reinforcements in sight, his regiment is stretched thin. Days ago he sent Ol' Ebenezer Rustlocke to scout the eastern bridge and see whether it could be secured, and no word has come back. Rhag Garmason has no one to spare for a search, and asks a willing stranger to look for the old dwarf.",
   "triggers": [
    [
     4,
@@ -714,7 +1087,64 @@
   "sources": [
    "quests 631, 632, 633, 634 (descriptions and reward texts)"
   ],
-  "notes": "verified Nials is female (wiki, Arathi quest text): pronoun fixed."
+  "notes": "Converted: the opening is Rhag's request (quest 631). Part 1 Rustlocke found dead (QUEST_DONE 631, at his corpse); part 2 the parchment and Deepfury's cache (QUEST_DONE 632, turn-in to Rhag); part 3 the bridge saved and the plea sent (QUEST_DONE 633); part 4 Nials refuses (QUEST_DONE 634, turned in at Refuge Pointe; arathi.json uses only TALK 2700 for her). Sully Balloo is not mentioned (Ironforge's chain). verified Nials is female (wiki, Arathi quest text): pronoun fixed.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Rustlocke was found near the Span, dead. The name engraved on the small dwarven helmet left no doubt, and every sign pointed to a Dark Iron ambush. Clutched in his fist was a parchment, which had to go back to Rhag Garmason.",
+    "triggers": [
+     [
+      5,
+      631
+     ]
+    ],
+    "sources": [
+     "quest 631 reward text",
+     "quest 632 description",
+     "gameobject 2652 Ebenezer Rustlocke's Corpse (ends 631, starts 632)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The parchment was grave news. Kam Deepfury, the mastermind behind the first attack, had arranged for a cache of explosives to be stashed just across the Span in the Arathi Highlands. If those explosives reached the bridge, the dwarves' major supply line to the north would be severed, and Rhag would not let Rustlocke die in vain.",
+    "triggers": [
+     [
+      5,
+      632
+     ]
+    ],
+    "sources": [
+     "quest 633 description (offered on the 632 turn-in)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The cache was destroyed in time and the remaining bridge was saved, a great service to King Magni and the people of Khaz Modan. Still the regiment could not hold out forever, so Rhag sent to the Alliance camp at Refuge Pointe in the north, asking Captain Nials for soldiers to help retake Dun Modr and the Span.",
+    "triggers": [
+     [
+      5,
+      633
+     ]
+    ],
+    "sources": [
+     "quest 633 reward text",
+     "quest 634 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Captain Nials could spare none. She grieved for Longbraid's soldiers, but Stromgarde itself had fallen, and honor and duty held her people in the highlands until the king's banner flew over their city again. She would send word to Longbraid that he was on his own.",
+    "triggers": [
+     [
+      5,
+      634
+     ]
+    ],
+    "sources": [
+     "quest 634 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 1130,
@@ -723,7 +1153,7 @@
   "sort": 4,
   "faction": 1,
   "title": "The Doomed Fleet",
-  "body": "The Third Fleet of Kul Tiras met its end off the Wetlands coast, burned and sunk by red dragons ridden by Dragonmaw orcs. Its lone survivor, First Mate Fitzsimmons, will tell the tale to anyone who buys him a drink: his drowned brothers still walk the wrecks, bound by a terrible thing hidden aboard the Intrepid. Freeing them means cutting down the cursed crew, taking the strongbox key from Captain Halyndor and opening the chest, where a blackened orb lies waiting, a Cursed Eye of Paleth. The dwarven priest Glorin Steelbrow cannot cleanse it, for the Eyes were crafted by human priests, and it must go to Archbishop Benedictus in Stormwind, who sees that it has witnessed a terrible tragedy. The same fleet once sheltered the elven ship Flying Osprey, and her lost Lightforge Iron still draws those seeking holy weapons to the bay.",
+  "body": "The Third Fleet of Kul Tiras met its end off the Wetlands coast, burned and sunk by red dragons ridden by Dragonmaw orcs. Its lone survivor, First Mate Fitzsimmons of the Wave Mistress, will tell the tale to anyone who buys him a drink: his drowned brothers still walk the wrecks, bound by a terrible thing hidden aboard the Intrepid. Freeing them means cutting down the cursed crew, taking the strongbox key from Captain Halyndor, who still walks his ship, and bringing whatever lies inside to the dwarven priest Glorin Steelbrow in town. The same fleet once sheltered the elven ship Flying Osprey, and her lost Lightforge Iron still draws those seeking holy weapons to the bay.",
   "triggers": [
    [
     4,
@@ -736,9 +1166,40 @@
   ],
   "sources": [
    "quests 288, 289, 290, 292, 293 (descriptions and reward texts)",
-   "quests 270, 321, 324, 526 (Lightforge Iron thread)"
+   "quest 270 The Doomed Fleet description (Third Fleet sunk off the Wetlands, Lightforge Iron aboard one ship, sent to Glorin Steelbrow)",
+   "quest 321 (Flying Osprey and its Lightforge Iron, mentioned only)"
   ],
-  "notes": "Two entry points: 288 (Fitzsimmons) and 270 (Bishop Farthing, which leads to Glorin's 321)."
+  "notes": "Converted: the opening is Fitzsimmons' tale (288 to 290). Part 1 the Eye found and Glorin's verdict (QUEST_DONE 292); part 2 Benedictus cleanses it (QUEST_DONE 293). Kept the original QUEST_ACCEPT 270 trigger (Bishop Farthing's The Doomed Fleet, ends at Glorin in Menethil): neither duskwood.json nor the Duskwood draft uses 270 (the draft leaves it to this file and tells the Lightforge iron on QUEST_DONE 325), and its description is this entry's premise (the Third Fleet sunk off the Wetlands with Lightforge Iron aboard); 288 remains the in-zone entry point. The Flying Osprey stays as a mention; the rest of the Lightforge thread (321, 324, 526, 322, 325) belongs to Duskwood. The opening no longer names the treasure, the Eye of Paleth, which is revealed when the strongbox opens.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Inside the strongbox lay a blackened orb pulsing with an eerie light, a Cursed Eye of Paleth. Glorin had never heard that the Third Fleet carried such an Eye, and said it was no wonder Fitzsimmons was so spooked. He could not lift the curse himself, for the Eyes were crafted by human priests, so it had to go to Archbishop Benedictus in Stormwind.",
+    "triggers": [
+     [
+      5,
+      292
+     ]
+    ],
+    "sources": [
+     "quest 292 description and reward text",
+     "quest 293 description (offered on the 292 turn-in)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Benedictus saw at once that this Eye had witnessed a terrible tragedy. The Eyes were made to shine bright, he explained, and their powers grow dangerous when tainted, so he cleansed the orb himself, drawing out the taint that Fitzsimmons had blamed for binding his brothers to their ships.",
+    "triggers": [
+     [
+      5,
+      293
+     ]
+    ],
+    "sources": [
+     "quest 293 reward text",
+     "quest 290 description (it must be retrieved and cleansed to free them)"
+    ]
+   }
+  ]
  },
  {
   "id": 1131,
@@ -747,7 +1208,7 @@
   "sort": 5,
   "faction": 1,
   "title": "The Whelgar Excavation",
-  "body": "Tarrel Rockweaver of Menethil Harbor had a letter every week from his wife Merrin, who was digging with the Explorers' League east of town, until two weeks passed in silence and a scout was sent to find her. Merrin's news was grim. The team had begun uncovering great bones, the bones drew raptors, and the beasts overran the dig, killing many. Only Merrin, Prospector Whelgar and Ormer Ironbraid survived, trapped on a ridge above the site. Ormer swore vengeance on the raptors and on Sarltooth, the great beast he believes led them, while Whelgar sought the missing fragments of the Goaz Stone, whose Titan text speaks of Old Gods chained beneath the land. In Menethil, Archaeologist Flagongut had troubles of his own: raptors on the road had swallowed the Stone of Relu, the relic he needed to unlock the secrets of the fossil now in Whelgar's keeping.",
+  "body": "Tarrel Rockweaver of Menethil Harbor had a letter every week from his wife Merrin, who was digging with the Explorers' League east of town under Prospector Whelgar. Then nearly two weeks passed in silence. Longbraid had promised to send a scout if no word came, and Tarrel is sure something is wrong. In Menethil, Archaeologist Flagongut has troubles of his own. Whelgar holds a fossil the archaeologist means to study, and on the road to meet him Flagongut was set upon by raptors and lost the Stone of Relu, the relic he believes is the key to the fossil's mystery. One of the mottled beasts swallowed it.",
   "triggers": [
    [
     4,
@@ -772,7 +1233,72 @@
    "quest 299 description and reward text",
    "quests 942, 943 (descriptions)"
   ],
-  "notes": "Replaced the 942 trigger (accepted in Darkshore) with 943, the in-zone Flagongut quest accepted in Menethil. Faction 1: 943 is open to all races but Flagongut (2911) is faction 55."
+  "notes": "Converted: the opening is the setup of 305 (Tarrel) and 943 (Flagongut). Part 1 the dig's fate and the survivors (QUEST_DONE 305, with QUEST_ACCEPT 294 and 299 for those who reach the ridge without Tarrel); part 2 Ormer's revenge and Sarltooth (QUEST_DONE 296); part 3 the Old Gods (QUEST_DONE 299); part 4 the Stone of Relu returned (QUEST_DONE 943). page_text 93-94 reread: period text. Replaced the 942 trigger (accepted in Darkshore) with 943, the in-zone Flagongut quest accepted in Menethil. Faction 1: 943 is open to all races but Flagongut (2911) is faction 55.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Merrin was found alive, with grim news. The team had begun uncovering great bones when mottled raptors overwhelmed the dig, and nearly everyone perished, the soldiers from Longbraid's regiment among them. Only Merrin, Whelgar and the laborer Ormer Ironbraid survived, Ormer shielding the others as they ran. Now they are trapped on a ridge above the ruins, while Whelgar frets over the scattered fragments of the Goaz Stone, a tablet that speaks of a divine plan and a doomed prophecy.",
+    "triggers": [
+     [
+      5,
+      305
+     ],
+     [
+      4,
+      294
+     ],
+     [
+      4,
+      299
+     ]
+    ],
+    "sources": [
+     "quest 306 description",
+     "page_text 93-94 (Merrin's letter: Longbraid's battalion, nearly everyone perished, 3 survived, Ormer a laborer)",
+     "quest 294 description",
+     "quest 299 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Ormer swore vengeance for his fallen brethren, and the raptors of the dig paid dearly for it. Their leader, he reckoned, was Sarltooth, bigger and more menacing than the rest, and when its talon was brought to him he declared the memory of the fallen redeemed, and the beasts warned off King Magni's subjects for good.",
+    "triggers": [
+     [
+      5,
+      296
+     ]
+    ],
+    "sources": [
+     "quests 294, 295, 296 (descriptions, request and reward texts)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "With the four fragments recovered from the ruined dig, the Goaz Stone was whole once more. Whelgar went back to his delicate translation of its Titan script and soon made out new words: Old Gods, chained beneath the land. The beginning, he believes, of something epic.",
+    "triggers": [
+     [
+      5,
+      299
+     ]
+    ],
+    "sources": [
+     "quest 299 reward text"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The Stone of Relu was taken back from the raptor that had swallowed it and carried to Flagongut, together with the fossil from Whelgar's keeping. With the relic in hand, the archaeologist set to work deciphering the powers of the fossils, his own and Remtravel's from Darkshore alike.",
+    "triggers": [
+     [
+      5,
+      943
+     ]
+    ],
+    "sources": [
+     "quest 943 description, request and reward texts"
+    ]
+   }
+  ]
  },
  {
   "id": 1132,
@@ -781,7 +1307,7 @@
   "sort": 6,
   "faction": 1,
   "title": "The Greenwarden's Charge",
-  "body": "Ask about the Greenwarden in Menethil Harbor and an old sailor will call you a fool: the beast lurks among the crocs east of the Dun Modr road, they say, and bites travellers in half. Those who go anyway find Rethiel, a guardian of the fens who listens to the roots and ferns. The Wetlands, he says, weep from festering wounds. The Mosshide gnolls, peaceful for many years, have multiplied until they trample the marsh and cut down living trees for their fires, so he asks that their numbers be thinned and their crude flints taken, to be smashed and cast into the sea. Then the fevered fen creepers must be put down, so they can settle back into the marshes and the land's fever can break. For this Rethiel grants a boon, and some of his strained faith in the peoples who share his land returns.",
+  "body": "Ask about the Greenwarden in Menethil Harbor and an old sailor will call you a fool: the beast lurks among the crocs in the marsh east of the Dun Modr road, he says, and bites travellers in half, so there is no sense in bringing any gold. Yet something is plainly amiss in the Wetlands. The Mosshide gnolls, peaceful for many years, have multiplied until they trample the fen's bushes and flowers and cut down its trees to feed their fires, and fevered fen creepers have risen to shamble through the waterways.",
   "triggers": [
    [
     4,
@@ -795,6 +1321,54 @@
   "sources": [
    "quests 463, 276, 277, 275 (descriptions and reward texts)"
   ],
-  "notes": "The warning comes from one sailor (Fitzsimmons starts 463). Chain 463 (optional intro) > 276 > 277 > 275; 276 has no prerequisite."
+  "notes": "Converted: the opening is the sailor's warning and the land's trouble, so it works for both entry points (463, 276). Part 1 meeting Rethiel and his charge (QUEST_DONE 463, QUEST_ACCEPT 276); part 2 his faith, the flints and the fen creepers (QUEST_DONE 277); part 3 the boon (QUEST_DONE 275). The warning comes from one sailor (Fitzsimmons starts 463). Chain 463 (optional intro) > 276 > 277 > 275; 276 has no prerequisite.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Those who go anyway find Rethiel, a guardian of the fens who listens to the roots and ferns. The Wetlands, he says, weep from festering wounds. The Mosshides are no longer in balance with the land, and if the Wetlands are to survive, their numbers must be reduced.",
+    "triggers": [
+     [
+      5,
+      463
+     ],
+     [
+      4,
+      276
+     ]
+    ],
+    "sources": [
+     "quest 463 reward text",
+     "quest 276 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "With the gnolls thinned, Rethiel allowed that his faith in the peoples who share his land, sorely taxed in the past, might yet be restored. He had their crude flints taken as well, to be smashed and cast into the sea so they could never again burn living wood. Then he turned to the fen creepers, diseased blisters on the land that must be put down so they can settle back into the marshes and the fever can break.",
+    "triggers": [
+     [
+      5,
+      277
+     ]
+    ],
+    "sources": [
+     "quest 276 reward text",
+     "quest 277 description and reward text",
+     "quest 275 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The fen creepers were put down and allowed to settle back into the marshes, and Rethiel declared the land soothed by the effort. For this he granted a boon to the one who had tended to the Wetlands' wounds.",
+    "triggers": [
+     [
+      5,
+      275
+     ]
+    ],
+    "sources": [
+     "quest 275 description and reward text"
+    ]
+   }
+  ]
  }
 ]

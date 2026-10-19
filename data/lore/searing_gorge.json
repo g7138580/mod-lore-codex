@@ -1,29 +1,1047 @@
 [
-{"id": 5100, "kind": 0, "zone": 51, "sort": 0, "faction": 0, "title": "Searing Gorge", "body": "The Searing Gorge was born in fire. During the War of the Three Hammers, Sorcerer-Thane Thaurissan of the Dark Iron clan called upon powers sleeping beneath the world and summoned Ragnaros the Firelord. Blackrock Mountain erupted, the Dark Iron capital was thrown down in ruin and the land around it was scorched black, leaving the Burning Steppes to the south and this ravaged valley to the north. Today the gorge is a place of ash, lava and ruthless industry. From Shadowforge City beneath the mountain the Dark Iron dwarves came looking for ore, dug the vast excavation called the Cauldron and filled it with slaves, golems and taskmasters. Fire elementals and lava spiders roam its slopes, and the Twilight's Hammer keeps a camp in the northwestern hills. Watching all of it from the cliffs of Thorium Point are the Thorium Brotherhood, Dark Iron smiths who broke with their own kin. To the northeast, the locked gates of Stonewrought Pass shut the gorge away from Loch Modan.", "triggers": [[1, 51]], "sources": ["warcraft.wiki.gg/wiki/Searing_Gorge (history: Thaurissan, Ragnaros, eruption, Cauldron, Thorium Brotherhood left the Dark Iron clan, Stonewrought Pass locked pre-Cataclysm)", "npc_text 1834-1838 (Pebblebitty: gate locked, beasts of the gorge)", "quest 3452 description (Twilight's Hammer encampment in the northwest mountains)", "DB spawns by subzone (zone_areas.py)"], "notes": "Eruption wording made to match the wiki (Blackrock Mountain erupted, capital reduced to rubble); Stonewrought Pass direction north to northeast."},
-{"id": 5101, "kind": 1, "zone": 51, "sort": 1, "faction": 0, "title": "Thorium Point", "body": "Thorium Point clings to the cliffs in the north of the gorge, a guarded outpost looking straight down into the Cauldron. It is the stronghold of the Thorium Brotherhood, Dark Iron smiths who left their clan and now keep a close eye on everything their former kin do below. Brotherhood lookouts stand watch over the camp, and a wanted board posts bounties against the Dark Iron crews and the thieves who rob the camp. Gryphon and wind rider handlers both keep their mounts here, for the Brotherhood welcomes Alliance and Horde alike, and travelers of either banner come to trade with the master craftsmen of the Point.", "triggers": [[1, 1446]], "sources": ["warcraft.wiki.gg/wiki/Thorium_Point (overlooks the Cauldron, Thorium Brotherhood base)", "warcraft.wiki.gg/wiki/Searing_Gorge (Brotherhood watches the Dark Irons closely)", "gameobject 179827 Wanted/Missing/Lost & Found; quests 7701, 7728, 7729", "DB spawns in area 1446: Thorium Brotherhood Lookouts 14622, Lanie Reed 2941, Grisha 3305", "npc_text 7121 (Burninate sends agents on to Lokhtos Darkbargainer)", "warcraft.wiki.gg/wiki/Thorium_Brotherhood (skilled craftsmen, base on cliffs over the Cauldron in the far north)"], "notes": "Lokhtos referral removed here (kept in the Burninate entry, its source) to avoid repetition."},
-{"id": 5102, "kind": 1, "zone": 51, "sort": 2, "faction": 0, "title": "The Cauldron", "body": "At the heart of the gorge lies the Cauldron, an enormous pit the Dark Iron dwarves carved out of the blackened valley floor in their hunger for ore. Scaffolds and cart lines cling to its walls, and heavy war golems lumber along its ramps. Slave workers toil without rest under the whips of Dark Iron slavers and taskmasters, so broken by the labor and the heat that they turn on anyone who interferes, would-be rescuers included. Four sentry towers guard the rim, and fire and magma elementals drift through the crevices below. Even here there is trade: the cutthroat dealers of the Undermarket have set up shop in the Cauldron under the protection of their Dark Iron partners.", "triggers": [[1, 246]], "sources": ["warcraft.wiki.gg/wiki/The_Cauldron (excavation, Slave Workers driven mad, attack liberators, elementals)", "warcraft.wiki.gg/wiki/Searing_Gorge (mining, enslaved captives)", "quest 3463 description (four sentry towers)", "quest 3385 description (Undermarket base in the Cauldron, ties with the Dark Irons)", "DB spawns in area 246: Slave Worker, Dark Iron Slaver, Taskmaster, Steamsmith, Heavy War Golem, Scaffold Cars, Magma and Blazing Elementals"], "notes": "verified"},
-{"id": 5103, "kind": 1, "zone": 51, "sort": 3, "faction": 0, "title": "The Slag Pit", "body": "The Slag Pit is the mine beneath the Cauldron, a maze of hot tunnels rich in ore. Its Dark Iron crew answers to Overseer Maltorius, once of the Thorium Brotherhood, and sleeps in quarters deep inside. Pools of lava in the lower tunnels are home to ravenous incendosaurs. In one hidden chamber stands the altar of Suntara, where captured archaeologists from Ironforge, their minds bent by the stones' power, labor without rest on something called Obsidion. The Dark Irons guard the pit fiercely against anyone who would meddle with their work.", "triggers": [[1, 1443]], "sources": ["warcraft.wiki.gg/wiki/Slag_Pit (underground mine in the Cauldron, hostile Dark Irons, incendosaurs)", "quests 7701, 7702, 7722, 7727 (Maltorius, sleeping quarters, lava pools)", "quest 3368 description (excavation team taken to the Cauldron, working on Obsidion)", "quest 3372 description, gameobject 148498 Altar of Suntara", "DB spawns: Incendosaur 9318, Enslaved Archaeologist 8402, Overseer Maltorius 14621, Obsidion 8400"], "notes": "'Richest ore of the gorge' softened to 'rich in ore' (wiki: mining site rich in ores). Slag Pit (1443) is an indoor WMO area in reachable_areas."},
-{"id": 5104, "kind": 1, "zone": 51, "sort": 4, "faction": 0, "title": "Firewatch Ridge", "body": "The mountains of the northwestern gorge belong to the Twilight's Hammer. Their encampment on Firewatch Ridge is held by fire guards, geomancers and dark shamans, while idolaters carry the cult's relics and symbols of Ragnaros, and Highlord Mastrogonde walks among them. The cult keeps a grim warning on the ridge: a cage holding the spirit of a night elf who once served it, put to death as a blasphemer when he turned back to Elune. Greater lava spiders hunt the slopes around the camp, and lava crabs and fire beetles crawl among the rocks.", "triggers": [[1, 1442]], "sources": ["quest 3452 description (Twilight's Hammer encampment in the northwest mountains, symbols of Ragnaros)", "quest 3372 description (Twilight's Hammer guard a relic in the northwest hills)", "quest 11952 description (Firewatch Ridge bastion of Twilight activity, ice stones, Tidehunter)", "npc_text 1922 (Zamael caged as a warning)", "DB spawns in area 1442: Twilight Fire Guard, Geomancer, Dark Shaman, Idolater, Highlord Mastrogonde, Greater Lava Spider", "DB spawns in area 1442: Lava Crab, Fire Beetle", "warcraft.wiki.gg/wiki/Firewatch_Ridge (checked; Dark Iron description not used)"], "notes": "Midsummer ice stones line removed (quest 11952 and the Ice Stones are seasonal festival content, excluded like the other seasonal spawns). Twilight's Hammer kept: the 3.3.5 spawns in 1442 are all Twilight (the wiki's Dark Iron camp reflects a later state)."},
-{"id": 5105, "kind": 1, "zone": 51, "sort": 5, "faction": 0, "title": "Grimesilt Dig Site", "body": "The Grimesilt Dig Site was once worked by the dwarves of Ironforge, but the Dark Iron dwarves have since taken it, and their geologists now work the ground under the watch of watchmen and tempered war golems. It was here that Dorius Stonetender stumbled upon the Suntara stones, a find that ended in slavery for his excavation team. Not every dwarf fared so badly. When a crew member named Locheed hid from the geologists in an outhouse, they simply locked the door behind him and kept the key, and from inside he still begs passersby for help, and for some silk cloth.", "triggers": [[1, 247]], "sources": ["warcraft.wiki.gg/wiki/Grimesilt_Dig_Site (Ironforge dig site taken by Dark Irons, Dorius, Locheed)", "creature_text 8421 group 2 (Suntara stones found at the Grimesilt Digsite)", "quest 3368 description", "quests 4449 and 4451 (descriptions and reward texts)", "DB spawns in area 247: Dark Iron Geologist, Watchman, Tempered War Golem, Wooden Outhouse 173265, Dorius 8284"], "notes": "Wiki says only 'once used by Ironforge dwarves' (not who opened it); creature_text says Dorius stumbled on the stones; Locheed hid in the outhouse (quest 4449), was not chased in, and the wiki calls him a crew member, not a worker."},
-{"id": 5106, "kind": 1, "zone": 51, "sort": 6, "faction": 0, "title": "Dustfire Valley", "body": "Dustfire Valley is a windswept cut through the northeastern gorge, running north toward Stonewrought Pass and the road to Loch Modan beyond. The Dark Irons hold it as they hold most of the gorge: their geologists search the valley for ore, guarded by tempered war golems, while glassweb spiders spin among the rocks. With the gates of the pass kept locked, the valley leads nowhere for most travelers.", "triggers": [[1, 1959]], "sources": ["warcraft.wiki.gg/wiki/Dustfire_Valley (windswept, runs north to Stonewrought Pass, gates locked pre-Shattering)", "warcraft.wiki.gg/wiki/Stonewrought_Pass (pass at the northern end of Dustfire Valley)", "DB spawns in area 1959: Dark Iron Geologist, Tempered War Golem, Glassweb Spider, Door 150137"], "notes": "verified. Dark Iron Kidnappers here are a Winter Veil seasonal event and are left out."},
-{"id": 5107, "kind": 1, "zone": 51, "sort": 7, "faction": 0, "title": "Stonewrought Pass", "body": "Stonewrought Pass is a dwarven tunnel joining the Searing Gorge to Loch Modan, the work of Franclorn Forgewright, the architect whose stonewrought method of building also raised the great dam of Loch Modan. For years both ends have been sealed with locked gates. On the Loch Modan side a mountaineer keeps the key and turns nearly every traveler away, so most who reach the gorge come by the long road through the Badlands or down from Blackrock Mountain instead.", "triggers": [[1, 2838]], "sources": ["warcraft.wiki.gg/wiki/Stonewrought_Pass (tunnel to Loch Modan, locked gates, Pebblebitty, designed by Franclorn Forgewright)", "quest 3801 description (Franclorn responsible for the stonewrought method)", "npc_text 1833-1838 (Pebblebitty)", "quests 3181, 3182, 3201", "warcraft.wiki.gg/wiki/Searing_Gorge (pass locked for years; gorge reached through Blackrock Spire or the Badlands trail)"], "notes": "Pebblebitty and Margol detail trimmed (told in The Key to the Gorge and in Loch Modan's Valley of Kings); added the other routes into the gorge (wiki)."},
-{"id": 5108, "kind": 1, "zone": 51, "sort": 8, "faction": 0, "title": "Tanner Camp", "body": "In the southeast of the gorge stands Tanner Camp, the lonely tent of Sarah Tanner, a master of elemental leatherworking who teaches the craft to those willing to open their minds to the greater powers of substance. Her choice of home is a dangerous one: glassweb spiders hunt the surrounding rocks, the great spider Rekk'tilac roams nearby, and a long passage behind her tent leads toward the lair of Margol the Rager.", "triggers": [[1, 1958]], "sources": ["warcraft.wiki.gg/wiki/Tanner_Camp (Sarah Tanner, passage behind her tent to Margol)", "quest 5144 description (Elemental Leatherworking)", "DB spawns in area 1958: Sarah Tanner 7868, Glassweb Spider, Rekk'tilac 8277"], "notes": "verified"},
-{"id": 5109, "kind": 1, "zone": 51, "sort": 9, "faction": 0, "title": "The Sea of Cinders", "body": "South of the Cauldron the gorge opens into the Sea of Cinders, a broad flat waste scorched by fire and scoured by hot wind. Ash and embers still rise from the smoldering ground and hang in the air, and little lives here that is not made of flame or used to it: searing lava spiders, magma elementals and fire beetles. Dark Iron lookouts keep watch over the plain, which stretches to the foot of Blackrock Mountain.", "triggers": [[1, 1444]], "sources": ["warcraft.wiki.gg/wiki/Sea_of_Cinders (flat southern area north of Blackrock Mountain, ash and embers, uninhabitable)", "DB spawns in area 1444: Searing Lava Spider, Magma Elemental, Fire Beetle, Dark Iron Lookout"], "notes": "verified"},
-{"id": 5110, "kind": 1, "zone": 51, "sort": 10, "faction": 0, "title": "Blackchar Cave", "body": "In the southwestern corner of the gorge, close under Blackrock Mountain, lies Blackchar Cave, a mysterious cavern that has been sealed shut. What lies within is unknown. The ground before it is anything but quiet: Anvilrage taskmasters and enforcers from the Dark Iron city patrol nearby, lava spiders and fire beetles creep among the rocks, and the fire lord Overmaster Pyron burns at the approach to the Blackrock quarry.", "triggers": [[1, 1957]], "sources": ["warcraft.wiki.gg/wiki/Blackchar_Cave (sealed, mysterious, southwestern gorge near Blackrock Mountain, face shape on the map)", "DB spawns in area 1957: Anvilrage Taskmaster 24818, Anvilrage Enforcer 24819, Overmaster Pyron 9026", "quest 4262 description (Pyron guards the entrance at the Blackrock Quarry)"], "notes": "verified. Lunar Festival Elder Ironband stands here seasonally; not mentioned."},
-{"id": 5111, "kind": 1, "zone": 51, "sort": 11, "faction": 0, "title": "Blackrock Mountain", "body": "The southwestern road of the gorge climbs to Blackrock Mountain, the volcano that rose when Thaurissan's summoning brought Ragnaros into the world. Within it lie Shadowforge City, capital of the Dark Iron dwarves, and above it the fortress of Blackrock Spire, raised by Dark Iron hands under the Firelord's will. On the gorge side, quarry slaves cut stone under the eyes of Anvilrage taskmasters and enforcers, and a hulking foe known as the Behemoth roams the approach. Deep within, the Firelord himself holds sway.", "triggers": [[1, 1445]], "sources": ["warcraft.wiki.gg/wiki/Searing_Gorge (Blackrock Mountain eruption, Shadowforge City)", "npc_text 2316-2317 (Franclorn: Thaurissan under Ragnaros built Blackrock Spire)", "DB spawns in area 1445: Quarry Slave 8917, Anvilrage Taskmaster 24818, Anvilrage Enforcer 24819; The Behemoth 8924 nearby"], "notes": "verified. Behemoth stands at -7405,-894 which posarea reports as 51, right at the edge of 1445. Dungeons are left to the Blackrock Mountain entries."},
-{"id": 5112, "kind": 2, "zone": 51, "sort": 1, "faction": 0, "title": "Kalaran Windblade", "body": "Kalaran Windblade keeps a lonely camp on the slopes between Thorium Point and the Cauldron, with no company but his lumbering squire, Maltrake. He tells of a father slain by the filth of the Cauldron and of Stormwind magistrates who would not even admit this corner of the world exists, and he swears that riches beyond imagining await anyone who helps him take his revenge. When he works his craft he chants in a tongue no one recognizes, and the effort drops him to one knee. His grief is a mask. Behind the face of a wronged man hides a drake of the black dragonflight, loyal to Blackrock.", "triggers": [[2, 8479], [4, 3441]], "sources": ["npc_text 1953-1955 (Kalaran's tale)", "creature_text 8480 (Kalaran the Deceiver: legion of Blackrock, plan worked)", "smart_scripts 8479 and 8509 (Kalaran the Deceiver 8480 summoned after Set Them Ablaze!)", "warcraft.wiki.gg/wiki/Kalaran_Windblade (black drake, false story about his father)", "creature_text 8479 (chants in an unknown tongue, falls to one knee exhausted)"], "notes": "Reveal confirmed (smart_scripts 8509/8479: Kalaran despawns and Kalaran the Deceiver 8480 is summoned when Set Them Ablaze is turned in; creature_text 8480; wiki: drake of the black dragonflight). Person entry trimmed to who he seems to be plus a one-line reveal; the plot and its outcome are left to Divine Retribution."},
-{"id": 5113, "kind": 2, "zone": 51, "sort": 2, "faction": 0, "title": "Overseer Oilfist", "body": "Overseer Oilfist leads the Thorium Brotherhood from Thorium Point. Under his hand the Brotherhood smiths and trades in the shadow of the Dark Iron works below, buying rare materials from far corners of the world when they promise better armor. He does not forgive desertion. When Maltorius left the Brotherhood to command the Dark Iron crew of the Slag Pit, it was by Oilfist's own order that a bounty was posted for the traitor's head.", "triggers": [[2, 14625]], "sources": ["warcraft.wiki.gg/wiki/Thorium_Brotherhood (Oilfist leads the Brotherhood)", "quest 7701 description (by order of Overseer Oilfist)", "quest 8858 description and reward text (Oilfist buys colossus chitin for armor)"], "notes": "Removed 'mines', which came from his Cataclysm-era gossip (npc_text 17268, gossip menu 12293), confirmed not used; wiki gives no mining for the Brotherhood."},
-{"id": 5114, "kind": 2, "zone": 51, "sort": 3, "faction": 0, "title": "Master Smith Burninate", "body": "Master Smith Burninate is the forge master of Thorium Point, a gruff dwarf who sells a little food and drink on the side. His great worry is fiery flux, the Brotherhood's prized smithing reagent. When Maltorius deserted, he took the secret recipe with him, and Burninate wants it back from the Slag Pit, and hopes the traitor's teeth get kicked in along the way. With the plans recovered, he is eager to rebuild the Brotherhood's dwindling supply, and he is the one who sends trusted friends on to Lokhtos Darkbargainer in Blackrock Depths.", "triggers": [[2, 14624], [4, 7722]], "sources": ["npc_text 7115, 7121 (Burninate gossip)", "quest 7722 description and reward text", "quests 7736, 8241, 8242 completion texts (dwindling fiery flux supply)"], "notes": "verified"},
-{"id": 5115, "kind": 2, "zone": 51, "sort": 4, "faction": 0, "title": "Lookout Captain Lolo Longstriker", "body": "The captain of the Thorium Point lookouts is, by his own cheerful admission, as blind as a bat and seldom sober. Lolo Longstriker insists that drink keeps his remaining senses sharp, and claims his sense for drink has never been better. It is he who pays the bounty on Overseer Maltorius, and he greets the traitor's severed head with slurred delight, remarking that the old face looks better without the rest of him attached.", "triggers": [[2, 14634], [5, 7701]], "sources": ["npc_text 7094 (Lolo gossip)", "quest 7701 description and reward text"], "notes": "verified"},
-{"id": 5116, "kind": 2, "zone": 51, "sort": 5, "faction": 0, "title": "Hansel Heavyhands", "body": "Hansel Heavyhands is the Brotherhood's enforcer, the dwarf they call in when Lolo would rather not spill his ale. He would gladly deal out the pain himself, he says, were it not for his swollen fingers, his bunions and a cold he blames on the frigid climate of the Searing Gorge. Instead he hands the work to others: smashing the heavy war golems around the Cauldron, culling the greater lava spiders, and clearing the incendosaurs from the lava pools of the Slag Pit so the Brotherhood can explore below.", "triggers": [[2, 14627], [4, 7723]], "sources": ["npc_text 7117 (Hansel gossip)", "quests 7723, 7724, 7727 (descriptions and reward texts)"], "notes": "verified"},
-{"id": 5117, "kind": 2, "zone": 51, "sort": 6, "faction": 0, "title": "Overseer Maltorius", "body": "Maltorius was once an agent of the Thorium Brotherhood. He went over to the Dark Irons and was rewarded with command of the Slag Pit crew in the Cauldron, a promotion the Brotherhood suspects he bought with their secret recipe for fiery flux. He now rules the mine from deep within its tunnels. At Thorium Point his name is spoken with contempt, and a bounty on his head hangs on the camp's wanted board.", "triggers": [[3, 14621], [4, 7701]], "sources": ["quest 7701 description (rogue Thorium Brotherhood agent, newly hired commander of the Slag Pit crew)", "quest 7722 description (left the clan with the fiery flux recipe)", "DB spawn: Overseer Maltorius 14621 in the Slag Pit"], "notes": "verified"},
-{"id": 5118, "kind": 2, "zone": 51, "sort": 7, "faction": 1, "title": "Dorius Stonetender", "body": "Dorius Stonetender, brother of Curator Thorius of the Hall of Explorers, led an Ironforge excavation at the Grimesilt Dig Site. There he stumbled upon the Suntara stones, and the power of Ragnaros surged through him. The Firelord gave him a purpose and a new name, Lathoric the Black, acolyte of fire. Feigning a mortal wound and a death on the road, he played on his brother's grief to draw rescuers into the gorge. He means his creation Obsidion to destroy the Blackrock orcs of the Spire and unite the Dark Irons with their brethren in the fiery depths below.", "triggers": [[2, 8284], [4, 3367], [3, 8391]], "sources": ["quests 3367, 3368, 3566 (descriptions and reward texts)", "creature_text 8284 (escort), 8421 (Lathoric's confession)", "smart_scripts 8417, 8391 (Lathoric spawned on accepting Release Them)", "warcraft.wiki.gg/wiki/Lathoric_the_Black (Lathoric is Dorius, brother of Thorius)"], "notes": "Reframed to the man and his motive; the rescue plot is told in The Suntara Stones. Faction 1 confirmed: smart_scripts 8284 keep him in a death state with immune flags until quest 3367 (AllowableRaces 1101) is accepted, and Lathoric 8391 is only summoned on accepting 3566 (Alliance)."},
-{"id": 5119, "kind": 2, "zone": 51, "sort": 8, "faction": 0, "title": "Zamael Lunthistle", "body": "In a cage on Firewatch Ridge lingers the spirit of Zamael Lunthistle. As a young night elf in Darkshore he fell in with the Twilight's Hammer and abandoned his faith in Elune, until a vision from the goddess woke him. In repentance he began a prayer etched on a tablet of pure gold, but the cult found it, branded him a blasphemer and put him to death. Bound to the world and caged as a warning to traitors, he asks only that his unfinished prayer be carried to the Temple of the Moon.", "triggers": [[2, 8436]], "sources": ["npc_text 1920-1922 (Zamael's tale)", "quests 3377, 3378 (descriptions and reward texts)"], "notes": "verified. Faction 0 confirmed: faction template 534 (Alliance Generic, no reputation, no enemy group) leaves him neutral to the Horde, so his gossip tale can be heard by both; his quests are Alliance only."},
-{"id": 5120, "kind": 2, "zone": 51, "sort": 9, "faction": 0, "title": "Margol the Rager", "body": "Margol the Rager is a monstrous beast that haunts the southeastern corner of the gorge, called the bane of every archaeologist who ever set foot in the Searing Gorge. Mountaineer Pebblebitty, keeper of the gate at Stonewrought Pass, has faced her and lost the head of an axe in her gigantic horn, in an encounter Curator Thorius will only call 'the incident' and suspects Pebblebitty would rather have finished herself. Pebblebitty names Margol as the test for anyone who wants a key to the pass.", "triggers": [[3, 5833]], "sources": ["quest 3181 description (axe head of Mountaineer Pebblebitty in the horn)", "quest 3182 reward text (bane of every archaeologist)", "quest 3201 description (the incident)", "npc_text 1838 (southeasternmost corner, lady almost as tough as me)"], "notes": "'Incident she prefers not to discuss' reworded: the 'incident' comes from Thorius (quest 3201), who thinks Pebblebitty wanted to kill the beast herself."},
-{"id": 5121, "kind": 2, "zone": 51, "sort": 10, "faction": 0, "title": "Overmaster Pyron", "body": "Overmaster Pyron is a lord of fire who guards the quarry at the foot of Blackrock Mountain, a foul spirit the Dark Iron dwarves summoned into the world. The mages Jalinda Sprig sent from Morgan's Vigil came back burned or worse, and the elders heeded by Thunderheart of Kargath felt his presence as a disturbance among the elements. Pyron cannot be ended so easily. As he falls he swears that Lord Incendius will raise him again from the ashes, a sign that he serves a far greater power within the mountain.", "triggers": [[3, 9026], [4, 3906], [4, 4262]], "sources": ["quest 3906 description (Dark Irons summoned a foul spirit, lord of fire at the quarry)", "quest 4262 description and reward text", "creature_text 9026 (I will be reborn, Incendius shall raise me)", "quests 3907, 4263"], "notes": "verified"},
-{"id": 5122, "kind": 3, "zone": 51, "sort": 1, "faction": 0, "title": "Divine Retribution", "body": "Kalaran Windblade asks for help avenging his father on the Dark Irons of the Cauldron, and his plan is bold: set the four sentry towers ablaze and blind the Dark Iron defenses before an assault. For that he needs a torch of flawless flame, made from the hearts of fire elementals and golem oil, a shaft reforged from the thorium daggers of Cauldron taskmasters and slavers, and a casing drawn from a Twilight's Hammer symbol of Ragnaros. Once the towers burn, Squire Maltrake calls the sight glorious, and his master casts off his disguise. Kalaran is a black drake, and the fires were meant to open the way for the legion of Blackrock to invade the gorge. Mockingly he lets his helpers live to see the chaos to come, leaving them a chest of trinkets and a molt of his flight that his kin in the Burning Steppes will know how to use, before he takes wing.", "triggers": [[4, 3441]], "sources": ["quests 3441-3463, 3481 (descriptions and reward texts)", "npc_text 1953-1955", "creature_text 8480, 8509 (the reveal)", "gameobject 149502 Hoard of the Black Dragonflight", "quest 4022 (molt shown to Cyrus Therepentous)", "smart_scripts 8509, 8479 (Kalaran the Deceiver 8480 summoned on turning in 3463)"], "notes": "Opening retelling of his father's tale shortened (it lives in the Kalaran entry); reveal confirmed by smart_scripts 8509/8479 and creature_text 8480."},
-{"id": 5123, "kind": 3, "zone": 51, "sort": 2, "faction": 1, "title": "The Suntara Stones", "body": "At the Grimesilt Dig Site lies Dorius Stonetender, badly wounded and desperate to reach Ironforge. On the run for the gate he is shot down, and the letter he drops finds its way to his brother Thorius: the Dark Irons hold the Suntara stones, their leader Lathoric the Black uses them to enslave the excavation team, and the captives toil in the Cauldron on something called Obsidion. Vowing to honor the dying wish, Thorius sends rescuers into the Slag Pit. There a dying archaeologist begs them to free his comrades by taking a relic from the Twilight's Hammer in the northwest hills and placing it on the altar of Suntara. It is a trap. The relic was the last stone Lathoric needed, and Lathoric is Dorius himself, alive and mocking, who calls Obsidion to rise. When the head of Lathoric is laid before Thorius, the curator's grief turns to fury, and to fear of how far the will of Ragnaros reaches.", "triggers": [[4, 3367]], "sources": ["quests 3367, 3368, 3371, 3372, 3566 (descriptions and reward texts)", "creature_text 8284, 8421", "warcraft.wiki.gg/wiki/Lathoric_the_Black"], "notes": "Obsidion's purpose moved to the Dorius entry to avoid the two repeating each other. Alliance only (AllowableRaces 1101)."},
-{"id": 5124, "kind": 3, "zone": 51, "sort": 3, "faction": 1, "title": "The Key to the Gorge", "body": "Mountaineer Pebblebitty will not open the gate at Stonewrought Pass. The gorge is full of beasts that have killed good dwarves, she says, and if she lets one traveler in she will have to let in everyone. Pressed, she admits there is a back road through the Badlands near Kargath, and offers a key to anyone who returns with proof of heroics, pointing to Margol the Rager in the far southeast of the gorge. Margol's gigantic horn once carried Pebblebitty's own broken axe head, but it shatters when pulled free, and without it she calls the horn a fake. Only when Curator Thorius in Ironforge recognizes the horn of the bane of every archaeologist, claims it for his museum and signs a proof of deed does Pebblebitty grudgingly hand over the key, warning that whatever happens next is the bearer's own fault.", "triggers": [[4, 3181]], "sources": ["npc_text 1833-1839 (Pebblebitty)", "quests 3181, 3182, 3201 (descriptions and reward texts)"], "notes": "Fixed: the axe head shatters when dislodged (quest 3181), so the horn reaches Pebblebitty without it, which is why she calls it a fake (reward text 3181, quest 3182). Alliance only (AllowableRaces 1101). Removed in Cataclysm, present in 3.3.5."},
-{"id": 5125, "kind": 3, "zone": 51, "sort": 4, "faction": 0, "title": "The Brotherhood and the Slag Pit", "body": "The Thorium Brotherhood has a quarrel with the Slag Pit, and it is personal. Overseer Maltorius, one of their own, deserted to take command of the Dark Iron crew there, and the Brotherhood believes he paid for the post with their recipe for fiery flux. Thorium Point answers with every weapon it has. Master Smith Burninate wants the stolen plans back, the wanted board offers a bounty on Maltorius's head, and Taskmaster Scrange pays to cull the Dark Iron taskmasters and slavers and to recover a spyglass and smithing tuyere stolen from the camp. Evonice Sootsmoker has a subtler idea: steal the crew's pillows, since sleepless dwarves will go home to the Depths to rest. Hansel Heavyhands, meanwhile, wants golems, lava spiders and incendosaurs cleared so Brotherhood teams can explore the pit. With the plans recovered, the Brotherhood can set about rebuilding its dwindling stock of fiery flux.", "triggers": [[4, 7722], [4, 7701], [4, 7702], [4, 7728], [4, 7729], [4, 7723], [4, 7724], [4, 7727]], "sources": ["quests 7701, 7702, 7722, 7723, 7724, 7727, 7728, 7729 (descriptions and reward texts)", "quests 7736, 8241, 8242"], "notes": "verified"},
-{"id": 5126, "kind": 3, "zone": 51, "sort": 5, "faction": 0, "title": "The Undermarket", "body": "Nilith Lokrav, a tailor who prizes the shadow silk of the gorge's spiders, works in the south of the gorge with Raze, the hulking guardian who smashes on command. First she wants the shadowsilk poachers who slaughter spiders without thought for the future put down. Then she names a greater enemy. The Undermarket, a ring of cutthroat traders who will sell or move anything for a price, has opened a base in the Cauldron under Trade Master Kovic, who keeps close ties with the Dark Iron dwarves. Kovic and his minion Clunk must die. News of the Trade Master's death is welcome as far away as Gadgetzan, where Vizzklick celebrates the end of years of shady deals and undercut honest merchants.", "triggers": [[4, 3379]], "sources": ["quests 3379, 3385, 3402 (descriptions and reward texts)", "creature_text 8439, 8441 (Raze and the staff)", "DB spawns: Nilith Lokrav 8439 and Raze 8441 in the south of the gorge, Kovic 8444 and Clunk 8447 in area 246"], "notes": "verified. Tailoring profession chain (skill 197), open to both factions."}
+ {
+  "id": 5100,
+  "kind": 0,
+  "zone": 51,
+  "sort": 0,
+  "faction": 0,
+  "title": "Searing Gorge",
+  "body": "The Searing Gorge was born in fire. During the War of the Three Hammers, Sorcerer-Thane Thaurissan of the Dark Iron clan called upon powers sleeping beneath the world and summoned Ragnaros the Firelord. Blackrock Mountain erupted, the Dark Iron capital was thrown down in ruin and the land around it was scorched black, leaving the Burning Steppes to the south and this ravaged valley to the north. Today the gorge is a place of ash, lava and ruthless industry. From Shadowforge City beneath the mountain the Dark Iron dwarves came looking for ore, dug the vast excavation called the Cauldron and filled it with slaves, golems and taskmasters. Fire elementals and lava spiders roam its slopes, and the Twilight's Hammer keeps a camp in the northwestern hills. Watching all of it from the cliffs of Thorium Point are the Thorium Brotherhood, Dark Iron smiths who broke with their own kin. To the northeast, the locked gates of Stonewrought Pass shut the gorge away from Loch Modan.",
+  "triggers": [
+   [
+    1,
+    51
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Searing_Gorge (history: Thaurissan, Ragnaros, eruption, Cauldron, Thorium Brotherhood left the Dark Iron clan, Stonewrought Pass locked pre-Cataclysm)",
+   "npc_text 1834-1838 (Pebblebitty: gate locked, beasts of the gorge)",
+   "quest 3452 description (Twilight's Hammer encampment in the northwest mountains)",
+   "DB spawns by subzone (zone_areas.py)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Thaurissan's summoning of Ragnaros kept as shared history (told openly in burning_steppes.json 4600 and Franclorn's npc_text 2316); the opening does not say Ragnaros still dwells in the mountain, which the Blackrock Depths chains (3907, 4263) reveal. Earlier: Eruption wording made to match the wiki (Blackrock Mountain erupted, capital reduced to rubble); Stonewrought Pass direction north to northeast. Check: the summoning of Ragnaros kept as shared history, as burning_steppes.json 4600 and 4607 and badlands.json 318 tell it; ironforge.json 153711 attributes the unknown cause to Archesonus himself (npc_text 2237 'We do not know'), a character's view, so the two do not clash."
+ },
+ {
+  "id": 5101,
+  "kind": 1,
+  "zone": 51,
+  "sort": 1,
+  "faction": 0,
+  "title": "Thorium Point",
+  "body": "Thorium Point clings to the cliffs in the north of the gorge, a guarded outpost looking straight down into the Cauldron. It is the stronghold of the Thorium Brotherhood, Dark Iron smiths who left their clan and now keep a close eye on everything their former kin do below. Brotherhood lookouts stand watch over the camp, and a wanted board posts bounties against the Dark Iron crews and the thieves who rob the camp. Gryphon and wind rider handlers both keep their mounts here, for the Brotherhood welcomes Alliance and Horde alike, and travelers of either banner come to trade with the master craftsmen of the Point.",
+  "triggers": [
+   [
+    1,
+    1446
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Thorium_Point (overlooks the Cauldron, Thorium Brotherhood base)",
+   "warcraft.wiki.gg/wiki/Searing_Gorge (Brotherhood watches the Dark Irons closely)",
+   "gameobject 179827 Wanted/Missing/Lost & Found; quests 7701, 7728, 7729",
+   "DB spawns in area 1446: Thorium Brotherhood Lookouts 14622, Lanie Reed 2941, Grisha 3305",
+   "npc_text 7121 (Burninate sends agents on to Lokhtos Darkbargainer)",
+   "warcraft.wiki.gg/wiki/Thorium_Brotherhood (skilled craftsmen, base on cliffs over the Cauldron in the far north)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Lokhtos referral removed here (kept in the Burninate entry, its source) to avoid repetition."
+ },
+ {
+  "id": 5102,
+  "kind": 1,
+  "zone": 51,
+  "sort": 2,
+  "faction": 0,
+  "title": "The Cauldron",
+  "body": "At the heart of the gorge lies the Cauldron, an enormous pit the Dark Iron dwarves carved out of the blackened valley floor in their hunger for ore. Scaffolds and cart lines cling to its walls, and heavy war golems lumber along its ramps. Slave workers toil without rest under the whips of Dark Iron slavers and taskmasters, so broken by the labor and the heat that they turn on anyone who interferes, would-be rescuers included. Four sentry towers guard the rim, and fire and magma elementals drift through the crevices below. Even here there is trade: the cutthroat dealers of the Undermarket have set up shop in the Cauldron under the protection of their Dark Iron partners.",
+  "triggers": [
+   [
+    1,
+    246
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/The_Cauldron (excavation, Slave Workers driven mad, attack liberators, elementals)",
+   "warcraft.wiki.gg/wiki/Searing_Gorge (mining, enslaved captives)",
+   "quest 3463 description (four sentry towers)",
+   "quest 3385 description (Undermarket base in the Cauldron, ties with the Dark Irons)",
+   "DB spawns in area 246: Slave Worker, Dark Iron Slaver, Taskmaster, Steamsmith, Heavy War Golem, Scaffold Cars, Magma and Blazing Elementals"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. verified"
+ },
+ {
+  "id": 5103,
+  "kind": 1,
+  "zone": 51,
+  "sort": 3,
+  "faction": 0,
+  "title": "The Slag Pit",
+  "body": "The Slag Pit is the mine beneath the Cauldron, a maze of hot tunnels rich in ore. Its Dark Iron crew answers to Overseer Maltorius, once of the Thorium Brotherhood, and sleeps in quarters deep inside. Pools of lava in the lower tunnels are home to ravenous incendosaurs. In one hidden chamber stands the altar of Suntara, where enslaved archaeologists labor without rest around a silent, hulking form called Obsidion. The Dark Irons guard the pit fiercely against anyone who would meddle with their work.",
+  "triggers": [
+   [
+    1,
+    1443
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Slag_Pit (underground mine in the Cauldron, hostile Dark Irons, incendosaurs)",
+   "quests 7701, 7702, 7722, 7727 (Maltorius, sleeping quarters, lava pools)",
+   "quest 3368 description (excavation team taken to the Cauldron, working on Obsidion)",
+   "quest 3372 description, gameobject 148498 Altar of Suntara",
+   "DB spawns: Incendosaur 9318, Enslaved Archaeologist 8402, Overseer Maltorius 14621, Obsidion 8400",
+   "DB spawns: Obsidion 8400 and Enslaved Archaeologists 8402 around the Altar of Suntara 148498 (-6478,-1243)"
+  ],
+  "notes": "Converted: who the slaves are and the stones' hold on them (from Dorius's letter, quest 3368, and 3372) moved from the opening to part 1 (QUEST_DONE 3371, turned in to the Dying Archaeologist in the pit, who then explains the altar). The opening keeps what anyone sees there: enslaved archaeologists, the altar and Obsidion (creature type elemental, so 'form', not golem). Part 1 is Alliance only (AllowableRaces 1101) on a faction 0 place. Earlier: 'Richest ore of the gorge' softened to 'rich in ore' (wiki: mining site rich in ores). Slag Pit (1443) is an indoor WMO area in reachable_areas.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The captives are the excavation team of Dorius Stonetender, taken from the Grimesilt Dig Site. The power of the Suntara stones has bent their minds to the building of Obsidion, and it drives them on even after their bodies give out. One of them, dying, gasps that the altar of Suntara is the key to their release.",
+    "triggers": [
+     [
+      5,
+      3371
+     ]
+    ],
+    "sources": [
+     "quest 3368 description (team enslaved by the stones, taken to the Cauldron, working on Obsidion)",
+     "quest 3372 description (even after their bodies give out the power of the Suntara forces them; the altar is the key), offered on the turn-in of 3371 by the Dying Archaeologist 8417 in the Slag Pit"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5104,
+  "kind": 1,
+  "zone": 51,
+  "sort": 4,
+  "faction": 0,
+  "title": "Firewatch Ridge",
+  "body": "The mountains of the northwestern gorge belong to the Twilight's Hammer. Their encampment on Firewatch Ridge is held by fire guards, geomancers and dark shamans, while idolaters carry the cult's relics and symbols of Ragnaros, and Highlord Mastrogonde walks among them. The cult keeps a grim warning on the ridge: a cage holding the spirit of a night elf who once served it, put to death as a blasphemer when he turned back to Elune. Greater lava spiders hunt the slopes around the camp, and lava crabs and fire beetles crawl among the rocks.",
+  "triggers": [
+   [
+    1,
+    1442
+   ]
+  ],
+  "sources": [
+   "quest 3452 description (Twilight's Hammer encampment in the northwest mountains, symbols of Ragnaros)",
+   "quest 3372 description (Twilight's Hammer guard a relic in the northwest hills)",
+   "quest 11952 description (Firewatch Ridge bastion of Twilight activity, ice stones, Tidehunter)",
+   "npc_text 1922 (Zamael caged as a warning)",
+   "DB spawns in area 1442: Twilight Fire Guard, Geomancer, Dark Shaman, Idolater, Highlord Mastrogonde, Greater Lava Spider",
+   "DB spawns in area 1442: Lava Crab, Fire Beetle",
+   "warcraft.wiki.gg/wiki/Firewatch_Ridge (checked; Dark Iron description not used)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Midsummer ice stones line removed (quest 11952 and the Ice Stones are seasonal festival content, excluded like the other seasonal spawns). Twilight's Hammer kept: the 3.3.5 spawns in 1442 are all Twilight (the wiki's Dark Iron camp reflects a later state)."
+ },
+ {
+  "id": 5105,
+  "kind": 1,
+  "zone": 51,
+  "sort": 5,
+  "faction": 0,
+  "title": "Grimesilt Dig Site",
+  "body": "The Grimesilt Dig Site was once worked by the dwarves of Ironforge, but the Dark Iron dwarves have since taken it, and their geologists now work the ground under the watch of watchmen and tempered war golems. Of the last Ironforge excavation to dig here, only its leader, Dorius Stonetender, remains, stretched out on the ground among the diggings, and of his team there is no sign. Another dwarf's luck is merely embarrassing. When a crew member named Locheed hid from the geologists in an outhouse, they simply locked the door behind him and kept the key, and from inside he still begs passersby for help, and for some silk cloth.",
+  "triggers": [
+   [
+    1,
+    247
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Grimesilt_Dig_Site (Ironforge dig site taken by Dark Irons, Dorius, Locheed)",
+   "creature_text 8421 group 2 (Suntara stones found at the Grimesilt Digsite)",
+   "quest 3368 description",
+   "quests 4449 and 4451 (descriptions and reward texts)",
+   "DB spawns in area 247: Dark Iron Geologist, Watchman, Tempered War Golem, Wooden Outhouse 173265, Dorius 8284"
+  ],
+  "notes": "Converted: the Suntara find, which Dorius confesses only as Lathoric (creature_text 8421, spoken when Lathoric appears on accepting 3566), moved from the opening to part 1 (QUEST_ACCEPT 3566; Alliance only part on a faction 0 place). The opening no longer says the find ended in slavery for the team (that is Dorius's letter, quest 3368); it keeps only what is seen: Dorius lying at the site (death state until 3367 is accepted, smart_scripts 8284) and no team. Earlier: Wiki says only 'once used by Ironforge dwarves' (not who opened it); creature_text says Dorius stumbled on the stones; Locheed hid in the outhouse (quest 4449), was not chased in, and the wiki calls him a crew member, not a worker. Check: part 1 reworded so it no longer repeats the Dorius part 2 wording (same trigger, ACCEPT 3566); opening 'lying sprawled' varied from the Dorius opening.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "This is where Dorius's fall began. Unmasked as Lathoric the Black, he would boast that it was at this dig site that he came upon the Suntara stones and felt the power of Ragnaros flood into him. The find that seemed to doom his excavation team was, for him, a rebirth.",
+    "triggers": [
+     [
+      4,
+      3566
+     ]
+    ],
+    "sources": [
+     "creature_text 8421 group 2 (stumbled upon the Suntara stones at the Grimesilt Digsite, the power of Ragnaros surged through my being)",
+     "creature_text 8421 group 4 (reborn as an acolyte of fire, Lathoric the Black)",
+     "smart_scripts 8417 (Lathoric 8391 summoned on accepting 3566), 8391 and script 839101 (Dorius 8421 spawned and speaks)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5106,
+  "kind": 1,
+  "zone": 51,
+  "sort": 6,
+  "faction": 0,
+  "title": "Dustfire Valley",
+  "body": "Dustfire Valley is a windswept cut through the northeastern gorge, running north toward Stonewrought Pass and the road to Loch Modan beyond. The Dark Irons hold it as they hold most of the gorge: their geologists search the valley for ore, guarded by tempered war golems, while glassweb spiders spin among the rocks. With the gates of the pass kept locked, the valley leads nowhere for most travelers.",
+  "triggers": [
+   [
+    1,
+    1959
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Dustfire_Valley (windswept, runs north to Stonewrought Pass, gates locked pre-Shattering)",
+   "warcraft.wiki.gg/wiki/Stonewrought_Pass (pass at the northern end of Dustfire Valley)",
+   "DB spawns in area 1959: Dark Iron Geologist, Tempered War Golem, Glassweb Spider, Door 150137"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. verified. Dark Iron Kidnappers here are a Winter Veil seasonal event and are left out."
+ },
+ {
+  "id": 5107,
+  "kind": 1,
+  "zone": 51,
+  "sort": 7,
+  "faction": 0,
+  "title": "Stonewrought Pass",
+  "body": "Stonewrought Pass is a dwarven tunnel joining the Searing Gorge to Loch Modan, the work of Franclorn Forgewright, the architect whose stonewrought method of building also raised the great dam of Loch Modan. For years both ends have been sealed with locked gates. On the Loch Modan side a mountaineer keeps the key and turns nearly every traveler away, so most who reach the gorge come by the long road through the Badlands or down from Blackrock Mountain instead.",
+  "triggers": [
+   [
+    1,
+    2838
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Stonewrought_Pass (tunnel to Loch Modan, locked gates, Pebblebitty, designed by Franclorn Forgewright)",
+   "quest 3801 description (Franclorn responsible for the stonewrought method)",
+   "npc_text 1833-1838 (Pebblebitty)",
+   "quests 3181, 3182, 3201",
+   "warcraft.wiki.gg/wiki/Searing_Gorge (pass locked for years; gorge reached through Blackrock Spire or the Badlands trail)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Pebblebitty and Margol detail trimmed (told in The Key to the Gorge and in Loch Modan's Valley of Kings); added the other routes into the gorge (wiki)."
+ },
+ {
+  "id": 5108,
+  "kind": 1,
+  "zone": 51,
+  "sort": 8,
+  "faction": 0,
+  "title": "Tanner Camp",
+  "body": "In the southeast of the gorge stands Tanner Camp, the lonely tent of Sarah Tanner, a master of elemental leatherworking who teaches the craft to those willing to open their minds to the greater powers of substance. Her choice of home is a dangerous one: glassweb spiders hunt the surrounding rocks, the great spider Rekk'tilac roams nearby, and a long passage behind her tent leads toward the lair of Margol the Rager.",
+  "triggers": [
+   [
+    1,
+    1958
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Tanner_Camp (Sarah Tanner, passage behind her tent to Margol)",
+   "quest 5144 description (Elemental Leatherworking)",
+   "DB spawns in area 1958: Sarah Tanner 7868, Glassweb Spider, Rekk'tilac 8277"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. verified"
+ },
+ {
+  "id": 5109,
+  "kind": 1,
+  "zone": 51,
+  "sort": 9,
+  "faction": 0,
+  "title": "The Sea of Cinders",
+  "body": "South of the Cauldron the gorge opens into the Sea of Cinders, a broad flat waste scorched by fire and scoured by hot wind. Ash and embers still rise from the smoldering ground and hang in the air, and little lives here that is not made of flame or used to it: searing lava spiders, magma elementals and fire beetles. Dark Iron lookouts keep watch over the plain, which stretches to the foot of Blackrock Mountain.",
+  "triggers": [
+   [
+    1,
+    1444
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Sea_of_Cinders (flat southern area north of Blackrock Mountain, ash and embers, uninhabitable)",
+   "DB spawns in area 1444: Searing Lava Spider, Magma Elemental, Fire Beetle, Dark Iron Lookout"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. verified"
+ },
+ {
+  "id": 5110,
+  "kind": 1,
+  "zone": 51,
+  "sort": 10,
+  "faction": 0,
+  "title": "Blackchar Cave",
+  "body": "In the southwestern corner of the gorge, close under Blackrock Mountain, lies Blackchar Cave, a mysterious cavern that has been sealed shut. What lies within is unknown. The ground before it is anything but quiet: Anvilrage guards from the Dark Iron city patrol nearby, lava spiders and fire beetles creep among the rocks, and the fire lord Overmaster Pyron burns at the approach to the Blackrock quarry.",
+  "triggers": [
+   [
+    1,
+    1957
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Blackchar_Cave (sealed, mysterious, southwestern gorge near Blackrock Mountain, face shape on the map)",
+   "DB spawns in area 1957: Anvilrage Taskmaster 24818, Anvilrage Enforcer 24819, Overmaster Pyron 9026",
+   "quest 4262 description (Pyron guards the entrance at the Blackrock Quarry)",
+   "mod-individual-progression data/sql/world/base/zone_searing_gorge.sql (replaces Anvilrage Taskmaster 24818 and Enforcer 24819, added in 2.3, with the original Anvilrage Overseer 8889 and Warden 8890)"
+  ],
+  "notes": "Converted for eras: 'Anvilrage taskmasters and enforcers' made 'Anvilrage guards', since mod-individual-progression swaps those 2.3 creatures back to the original Anvilrage Overseers and Wardens (in every state), so either name would be wrong on one setup. Nothing to hide. Earlier: verified. Lunar Festival Elder Ironband stands here seasonally; not mentioned. Check: 'Anvilrage guards' true on both setups (24818/24819 in the base DB, 8889/8890 with the module)."
+ },
+ {
+  "id": 5111,
+  "kind": 1,
+  "zone": 51,
+  "sort": 11,
+  "faction": 0,
+  "title": "Blackrock Mountain",
+  "body": "The southwestern road of the gorge climbs to Blackrock Mountain, the volcano that rose when Thaurissan's summoning brought Ragnaros into the world. Within it lie Shadowforge City, capital of the Dark Iron dwarves, and above it the fortress of Blackrock Spire, raised by Dark Iron hands under the Firelord's will and now held by the orcs of the Blackrock clan. On the gorge side, quarry slaves cut stone under the eyes of Anvilrage guards, and a hulking foe known as the Behemoth roams the approach.",
+  "triggers": [
+   [
+    1,
+    1445
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Searing_Gorge (Blackrock Mountain eruption, Shadowforge City)",
+   "npc_text 2316-2317 (Franclorn: Thaurissan under Ragnaros built Blackrock Spire)",
+   "DB spawns in area 1445: Quarry Slave 8917, Anvilrage Taskmaster 24818, Anvilrage Enforcer 24819; The Behemoth 8924 nearby",
+   "mod-individual-progression zone_searing_gorge.sql (Anvilrage Taskmaster 24818 and Enforcer 24819 replaced by Overseer 8889 and Warden 8890)",
+   "burning_steppes.json 4600 and 4610, creature_text 8421 group 3 (Blackrock orcs of Blackrock Spire)"
+  ],
+  "notes": "Converted: 'Deep within, the Firelord himself holds sway' dropped, since Ragnaros's presence in the depths is the revelation of the Blackrock Depths chains (Thunderheart 3907 reward text, Jalinda Sprig 4263), which belong to Blackrock Mountain, not this zone; the summoning and the Spire raised under his will stay as history (Franclorn npc_text 2316). 'Anvilrage taskmasters and enforcers' made 'Anvilrage guards' (mod-individual-progression restores the pre-2.3 Overseers and Wardens in every state). Earlier: verified. Behemoth stands at -7405,-894 which posarea reports as 51, right at the edge of 1445. Dungeons are left to the Blackrock Mountain entries. Check: the converter's closing line ('Few who venture deeper can say what burns at the mountain's heart') removed as a hint at what the Blackrock Depths chains reveal; replaced by the Blackrock orcs now holding the Spire, told openly in burning_steppes.json and Lathoric's speech. 'Shadowforge City' kept: wiki Searing Gorge and Shadowforge City pages, and classic BRD objects (Shadowforge Gate 170559, Shadowforge Key 11000, The Shadowforge Lock 161460); the only DB line naming the city (broadcast_text 42044, Moira) is Cataclysm text and is not relied on."
+ },
+ {
+  "id": 5112,
+  "kind": 2,
+  "zone": 51,
+  "sort": 1,
+  "faction": 0,
+  "title": "Kalaran Windblade",
+  "body": "Kalaran Windblade keeps a lonely camp on the slopes between Thorium Point and the Cauldron, with no company but his lumbering squire, Maltrake, who says he lives only to serve his master. Kalaran tells of a father slain by the filth of the Cauldron and of Stormwind magistrates who would not even admit this corner of the world exists, and he swears that riches beyond imagining await anyone who helps him take his revenge. When he works his craft he chants in a tongue no one recognizes, and the effort drops him to one knee.",
+  "triggers": [
+   [
+    2,
+    8479
+   ],
+   [
+    4,
+    3441
+   ]
+  ],
+  "sources": [
+   "npc_text 1953-1955 (Kalaran's tale)",
+   "creature_text 8479 (chants in an unknown tongue, falls to one knee exhausted)",
+   "npc_text 2279 (Maltrake: I live only to serve the master)",
+   "warcraft.wiki.gg/wiki/Kalaran_Windblade"
+  ],
+  "notes": "Converted: the reveal (black drake of Blackrock, the father's tale a lure) moved from the opening to part 1 (QUEST_DONE 3463, whose turn-in to Squire Maltrake runs the script that replaces him with Kalaran the Deceiver). Dialogue reread: npc_text 1953-1955, 2279 and creature_text 8479, 8480, 8509 (broadcast 4429-4468) are all classic text; nothing later. Earlier: Reveal confirmed (smart_scripts 8509/8479, creature_text 8480, wiki). The plot itself is told in Divine Retribution. Check: part 1 reworded so it does not repeat Divine Retribution part 1 (same trigger, DONE 3463); the two agree.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "His grief was a mask. When the towers of the Cauldron burned, the wronged man was gone and a drake of the black dragonflight stood in his place, a servant of the legion of Blackrock. The murdered father was only bait: no mortal, the drake mocked, would have lent a hand had Blackrock simply asked.",
+    "triggers": [
+     [
+      5,
+      3463
+     ]
+    ],
+    "sources": [
+     "smart_scripts 8509 (Squire Maltrake: on quest 3463 rewarded, set data) and 8479 (Kalaran despawns, Kalaran the Deceiver 8480 summoned)",
+     "creature_text 8480 groups 0, 2, 4 (my plan worked; you would not have helped the legion of Blackrock had we just asked)",
+     "creature_template 8480 type 2 (dragonkin)",
+     "warcraft.wiki.gg/wiki/Kalaran_Windblade (black drake)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5113,
+  "kind": 2,
+  "zone": 51,
+  "sort": 2,
+  "faction": 0,
+  "title": "Overseer Oilfist",
+  "body": "Overseer Oilfist leads the Thorium Brotherhood from Thorium Point. Under his hand the Brotherhood smiths and trades in the shadow of the Dark Iron works below, a company of dwarves who chose to leave the protection and comfort of the Depths to explore the world, or to exploit it, as one of them lets slip. His people are an odd lot, from a blind and tipsy lookout captain to an enforcer laid low by swollen fingers. Oilfist himself does not forgive desertion. When Maltorius left the Brotherhood to command the Dark Iron crew of the Slag Pit, it was by Oilfist's own order that a bounty was posted for the traitor's head.",
+  "triggers": [
+   [
+    2,
+    14625
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Thorium_Brotherhood (Oilfist leads the Brotherhood)",
+   "quest 7701 description (by order of Overseer Oilfist)",
+   "npc_text 7095 (Evonice: left the protection and comfort of the Depths to exploit, er, explore the world)",
+   "npc_text 7094 (Lolo blind and drunk), 7117 and quest 7723 (Hansel's fat fingers)"
+  ],
+  "notes": "Converted for eras: the chitin purchase rests on quest 8858, an Ahn'Qiraj war quest whose giver mod-individual-progression shows only in state 4 (and which the base 3.3.5 DB does not spawn), so it moved from the opening to part 1 (QUEST_DONE 8858, turned in to Oilfist; minState 4). The opening is filled out with the Brotherhood's own account of leaving the Depths (npc_text 7095) and its odd company (7094, 7117). His only gossip (npc_text 17268, menu 12293) is Cataclysm text and stays unused. Earlier: 'mines' removed for the same reason. Check: Eazel 15799 has no spawn in the base DB and the module's npc_ipp_aqwar shows him only from state 4 until state 5 is passed, so without the module (state 18) the part never unlocks and stays hidden. minState 4 kept; no maxState, since the part is past tense and stays true after the war.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "When researchers in Silithus began taking samples from the great colossi of the desert, Oilfist paid handsomely for the chitin of the Colossus of Regal, sure that the Brotherhood could devise incredibly powerful armor from it.",
+    "triggers": [
+     [
+      5,
+      8858
+     ]
+    ],
+    "minState": 4,
+    "sources": [
+     "quest 8858 description (Thorium Point, Oilfist paying big) and reward text (incredibly powerful armor from this chitin)",
+     "creature_questender 14625 quest 8858",
+     "mod-individual-progression aq_gate_quest.sql (8858 requires the Colossus of Regal quest, after the gong) and aq_war.sql, IndividualProgressionAwareness.cpp npc_ipp_aqwar (Colossus Researcher Eazel 15799, giver of 8858, visible only in state 4)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5114,
+  "kind": 2,
+  "zone": 51,
+  "sort": 3,
+  "faction": 0,
+  "title": "Master Smith Burninate",
+  "body": "Master Smith Burninate is the forge master of Thorium Point, a gruff dwarf who sells a little food and drink on the side. His great worry is fiery flux, the Brotherhood's prized smithing reagent. When Maltorius deserted, he took the secret recipe with him, something more valuable than a pristine arcane crystal, and Burninate would bet anything it paid for the traitor's new promotion among the Dark Irons. He wants the plans back, and is sure they lie somewhere near Maltorius, deep inside the Slag Pit.",
+  "triggers": [
+   [
+    2,
+    14624
+   ],
+   [
+    4,
+    7722
+   ]
+  ],
+  "sources": [
+   "npc_text 7115, 7121 (Burninate gossip)",
+   "quest 7722 description and reward text",
+   "quests 7736, 8241, 8242 completion texts (dwindling fiery flux supply)"
+  ],
+  "notes": "Converted: the recovery of the plans and what follows (7722 reward text, the flux supply quests offered afterwards, the Lokhtos referral) moved from the opening to part 1 (QUEST_DONE 7722). The opening adds the 7722 description (more valuable than a pristine arcane crystal, part of the deal in his promotion). Dialogue reread: npc_text 7115, 7121 are classic text. Earlier: verified. Check: the Lokhtos referral kept as Brotherhood background (Burninate's own gossip 7121); it reveals nothing of the Blackrock Depths storylines.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "With the plans recovered, Burninate hoped the traitor's teeth had been kicked in too, and got down to business: rebuilding the Brotherhood's dwindling supply of fiery flux from incendosaur scales, coal and whatever else its friends will bring. Those who prove themselves trusted friends of the Brotherhood he sends on to Lokhtos Darkbargainer at the Grim Guzzler in Blackrock Depths.",
+    "triggers": [
+     [
+      5,
+      7722
+     ]
+    ],
+    "sources": [
+     "quest 7722 reward text (kicked his teeth in, now we can get down to business)",
+     "quests 7736, 8241, 8242 completion texts (dwindling fiery flux supply; incendosaur scales, coal)",
+     "npc_text 7121 (Lokhtos referral; conditions show it at honored or revered with the Thorium Brotherhood)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5115,
+  "kind": 2,
+  "zone": 51,
+  "sort": 4,
+  "faction": 0,
+  "title": "Lookout Captain Lolo Longstriker",
+  "body": "The captain of the Thorium Point lookouts is, by his own cheerful admission, as blind as a bat and seldom sober. Lolo Longstriker insists that drink keeps his remaining senses sharp, since everyone knows a dwarf who loses one sense gains in the others, and claims his sense for drink has never been better. It is he who pays the bounty on Overseer Maltorius, posted by Oilfist's order, though those who come to collect may find him too busy hiccuping to notice them.",
+  "triggers": [
+   [
+    2,
+    14634
+   ],
+   [
+    5,
+    7701
+   ]
+  ],
+  "sources": [
+   "npc_text 7094 (Lolo gossip)",
+   "quest 7701 description (see Lolo for the reward) and completion text (can't ya shee I'm bushy, hic)",
+   "quest 7701 reward text"
+  ],
+  "notes": "Converted: Maltorius's death and Lolo's greeting of the head (7701 reward text) moved from the opening to part 1 (QUEST_DONE 7701, also an entry trigger, so a reader who unlocks by the turn-in sees both). The opening adds his 7701 completion text (too busy, hiccups). Dialogue reread: npc_text 7094 is classic text. Earlier: verified.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "When the traitor's severed head was finally set before him, Lolo greeted it with slurred delight. He never thought he would see that ugly mug again, he declared, and the old face looked better without the rest of him attached.",
+    "triggers": [
+     [
+      5,
+      7701
+     ]
+    ],
+    "sources": [
+     "quest 7701 reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5116,
+  "kind": 2,
+  "zone": 51,
+  "sort": 5,
+  "faction": 0,
+  "title": "Hansel Heavyhands",
+  "body": "Hansel Heavyhands is the Brotherhood's enforcer, the dwarf they call in when Lolo would rather not spill his ale. He would gladly deal out the pain himself, he says, were it not for his swollen fingers, his bunions and a cold he blames on the frigid climate of the Searing Gorge. Instead he hands the work to others: smashing the heavy war golems around the Cauldron, culling the greater lava spiders, and clearing the incendosaurs from the lava pools of the Slag Pit so the Brotherhood can explore below.",
+  "triggers": [
+   [
+    2,
+    14627
+   ],
+   [
+    4,
+    7723
+   ]
+  ],
+  "sources": [
+   "npc_text 7117 (Hansel gossip)",
+   "quests 7723, 7724, 7727 (descriptions and reward texts)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. verified"
+ },
+ {
+  "id": 5117,
+  "kind": 2,
+  "zone": 51,
+  "sort": 6,
+  "faction": 0,
+  "title": "Overseer Maltorius",
+  "body": "Maltorius was once an agent of the Thorium Brotherhood. He went over to the Dark Irons and was rewarded with command of the Slag Pit crew in the Cauldron, a promotion the Brotherhood suspects he bought with their secret recipe for fiery flux. He now rules the mine from deep within its tunnels. At Thorium Point his name is spoken with contempt, and a bounty on his head hangs on the camp's wanted board.",
+  "triggers": [
+   [
+    3,
+    14621
+   ],
+   [
+    4,
+    7701
+   ]
+  ],
+  "sources": [
+   "quest 7701 description (rogue Thorium Brotherhood agent, newly hired commander of the Slag Pit crew)",
+   "quest 7722 description (left the clan with the fiery flux recipe)",
+   "DB spawn: Overseer Maltorius 14621 in the Slag Pit"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. His desertion and the bounty are the premise of 7701 and 7722; his death is told in the Lolo Longstriker part (QUEST_DONE 7701). Earlier: verified."
+ },
+ {
+  "id": 5118,
+  "kind": 2,
+  "zone": 51,
+  "sort": 7,
+  "faction": 1,
+  "title": "Dorius Stonetender",
+  "body": "Dorius Stonetender, brother of Curator Thorius of the Hall of Explorers, led an Ironforge excavation at the Grimesilt Dig Site. Now he lies sprawled among the diggings, groaning that he is bleeding inside and must get back to Ironforge. He makes a trying companion on the road, forever stopping to catch his breath and swearing he must quit smoking, yet quick with his fists when the Dark Irons close in. His one worry, he says, is his team: if anything ever happened to him, they would be stuck in the Cauldron's mine forever.",
+  "triggers": [
+   [
+    2,
+    8284
+   ],
+   [
+    4,
+    3367
+   ],
+   [
+    3,
+    8391
+   ]
+  ],
+  "sources": [
+   "quest 3367 description (badly injured, bleeding internally, must get back to Ironforge)",
+   "creature_text 8284 groups 0-4, 8, 9 (escort lines: the Cauldron, the team stuck in the mine, quit smoking, fists)",
+   "quest 3368 description (letter to his brother)",
+   "quests 3566 (description and reward text)",
+   "creature_text 8421 (Lathoric's confession)",
+   "smart_scripts 8284, 8417, 8391",
+   "warcraft.wiki.gg/wiki/Lathoric_the_Black (Lathoric is Dorius, brother of Thorius)"
+  ],
+  "notes": "Converted: the opening is now Dorius as met, lying at the dig site and on the escort (3367 description, creature_text 8284). His apparent death and the letter moved to part 1 (QUEST_DONE 3367, where the letter drops; ACCEPT 3368, whose text is the letter); the Lathoric reveal, the ruse and Obsidion's purpose to part 2 (ACCEPT 3566, which summons Lathoric and runs the confession; KILL 8391, an entry trigger). Earlier: Faction 1 confirmed (smart_scripts 8284, AllowableRaces 1101). Check: part 1 reworded so it does not repeat The Suntara Stones part 1 word for word (same triggers).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "He never reached safety. Short of the gate a Dark Iron marksman brought him down, and the dwarf was gone in a cloud of dust, leaving only a singed letter for his brother. Written as a dead man's last words, it told that the Dark Irons held the Suntara stones and that their leader, Lathoric the Black, was using them to enslave the excavation team.",
+    "triggers": [
+     [
+      5,
+      3367
+     ],
+     [
+      4,
+      3368
+     ]
+    ],
+    "sources": [
+     "smart_scripts 8284 and action list 828405 (Dark Iron Marksman summoned, Man Down, letter object 175704 summoned, quest explored)",
+     "creature_text 8284 groups 5, 7 (He got me; disappears in a cloud of dust)",
+     "quest 3367 reward text (letter dropped by Dorius when he was shot)",
+     "quest 3368 description (the letter)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Dorius never died. At the Grimesilt Dig Site he had stumbled upon the Suntara stones, and the power of Ragnaros surged through him. The Firelord gave him a purpose and a new name, Lathoric the Black, acolyte of fire. His wound and his death were a ruse to play on his brother's grief and draw in rescuers. He means his creation Obsidion to destroy the Blackrock orcs of the Spire and unite the Dark Irons with their brethren in the fiery depths below.",
+    "triggers": [
+     [
+      4,
+      3566
+     ],
+     [
+      3,
+      8391
+     ]
+    ],
+    "sources": [
+     "creature_text 8421 groups 0-4, 6 (Lathoric's confession)",
+     "smart_scripts 8417 (Lathoric 8391 spawned on accepting 3566), 8391 and 839101",
+     "warcraft.wiki.gg/wiki/Lathoric_the_Black (Lathoric is Dorius)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5119,
+  "kind": 2,
+  "zone": 51,
+  "sort": 8,
+  "faction": 0,
+  "title": "Zamael Lunthistle",
+  "body": "In a cage on Firewatch Ridge lingers the spirit of Zamael Lunthistle. As a young night elf in Darkshore he fell in with the Twilight's Hammer and abandoned his faith in Elune, until a vision from the goddess woke him. In repentance he began a prayer etched on a tablet of pure gold, but the cult found it, branded him a blasphemer and put him to death. Bound to the world and caged as a warning to traitors, he asks only that his unfinished prayer be carried to the Temple of the Moon.",
+  "triggers": [
+   [
+    2,
+    8436
+   ]
+  ],
+  "sources": [
+   "npc_text 1920-1922 (Zamael's tale)",
+   "quests 3377, 3378 (descriptions and reward texts)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. His tale and death are what he tells on meeting (gossip 1285-1287, npc_text 1920-1922, classic text); the prayer's delivery (3378) is not told. Earlier: verified. Faction 0 confirmed: faction template 534 (Alliance Generic, no reputation, no enemy group) leaves him neutral to the Horde, so his gossip tale can be heard by both; his quests are Alliance only. Check: his tale (npc_text 1921, 1922) sits behind the gossip option of menu 1285, which conditions show only while quest 3377 (Hear Zamael tell his tale) is in the log, so Alliance hear it at the first meeting; it is backstory he tells himself, not an outcome, and Firewatch Ridge tells the same to everyone. Horde can still talk to him (template 534, neutral), so faction 0 stands."
+ },
+ {
+  "id": 5120,
+  "kind": 2,
+  "zone": 51,
+  "sort": 9,
+  "faction": 0,
+  "title": "Margol the Rager",
+  "body": "Margol the Rager is a monstrous beast that haunts the southeasternmost corner of the gorge, at the end of a long passage behind Sarah Tanner's camp. Mountaineer Pebblebitty, keeper of the gate at Stonewrought Pass, has faced her and calls her a lady almost as tough as herself, and she names Margol as the test for anyone who wants a key to the pass. Lodged in the beast's gigantic horn, among its scratches and cracks, is the proof of that old meeting: the broken head of an axe etched with Pebblebitty's name.",
+  "triggers": [
+   [
+    3,
+    5833
+   ]
+  ],
+  "sources": [
+   "quest 3181 description (scratches and cracks, axe head of Mountaineer Pebblebitty lodged in the horn)",
+   "npc_text 1838 (southeasternmost corner, a lady almost as tough as me, proof of heroics for a key)",
+   "warcraft.wiki.gg/wiki/Tanner_Camp (passage behind her tent to Margol)",
+   "quest 3182 reward text, quest 3201 description"
+  ],
+  "notes": "Converted: Thorius's verdict on the horn (3182 reward text) and his remark on the 'incident' (3201 description, offered at that turn-in) moved from the opening to part 1 (QUEST_DONE 3182; Alliance only part on a faction 0 entry). The opening keeps Pebblebitty's own words (npc_text 1838) and the axe head seen on the horn (3181 description, read on looting the horn after the kill, the entry trigger); passage behind Tanner Camp from the wiki, as in 5108. Pebblebitty's npc_text 1833-1839 reread: classic text. Earlier: verified. Check: part 1 reworded so it does not repeat The Key to the Gorge part 2 (same trigger, DONE 3182); the 'incident' stays here, the museum and the proof of deed there. No Horde route: the horn chain 3181, 3182, 3201 is Alliance only and no other quest involves Margol, so this stays an Alliance only part on a faction 0 entry.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Curator Thorius of Ironforge knew Margol's horn for what it was and hailed the beast as the bane of every archaeologist who ever dug in the Searing Gorge. Of Pebblebitty's old meeting with Margol he would say only that there had been 'the incident', and that the mountaineer had long wanted to kill the beast herself.",
+    "triggers": [
+     [
+      5,
+      3182
+     ]
+    ],
+    "sources": [
+     "quest 3182 reward text (bane of every archaeologist)",
+     "quest 3201 description (jealous, the 'incident'), offered by Thorius 8256 on the turn-in of 3182"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5121,
+  "kind": 2,
+  "zone": 51,
+  "sort": 10,
+  "faction": 0,
+  "title": "Overmaster Pyron",
+  "body": "Overmaster Pyron is a lord of fire who guards the quarry at the foot of Blackrock Mountain, a foul spirit the Dark Iron dwarves summoned into the world. The mages Jalinda Sprig sent from Morgan's Vigil came back burned or worse, and the elders heeded by Thunderheart of Kargath felt his presence as a disturbance among the elements, a disharmony of flame that threatens the land with endless drought. Both want him ended: the elders to heal the disharmony, Jalinda so that her expedition can make its way into Blackrock Depths.",
+  "triggers": [
+   [
+    3,
+    9026
+   ],
+   [
+    4,
+    3906
+   ],
+   [
+    4,
+    4262
+   ]
+  ],
+  "sources": [
+   "quest 3906 description (Dark Irons summoned a foul spirit, eternal drought, lord of fire at the quarry)",
+   "quest 4262 description (mages came back crispy or worse; expedition crew to get into Blackrock Depths; Pyron guards the entrance at the Blackrock Quarry)",
+   "creature_text 9026",
+   "quests 3907, 4263"
+  ],
+  "notes": "Converted: his death cry naming Incendius (creature_text 9026, said on death) moved from the opening to part 1 (KILL 9026, also an entry trigger). Incendius's own master is left unnamed: that is the Blackrock Depths revelation (3907, 4263), not this zone's. The opening adds why Jalinda and Thunderheart want him gone (3906 eternal drought, 4262 the way into the Depths). Entry triggers ACCEPT 3906 and 4262 kept as they were: both are filed under Blackrock Mountain (QuestSortID 25) and their givers stand in Kargath and Morgan's Vigil. Earlier: verified. Check: ACCEPT 3906 and 4262 are used by no other file (badlands.json and burning_steppes.json do not name Pyron).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Pyron does not fall quietly. As he dies he swears that he will be reborn, for Lord Incendius shall raise him from the ashes, a sign that the fire lord of the quarry is only the servant of a greater power deeper within the mountain.",
+    "triggers": [
+     [
+      3,
+      9026
+     ]
+    ],
+    "sources": [
+     "creature_text 9026 (I will be reborn, Incendius shall raise me), smart_scripts 9026 (said on death)",
+     "quest 3906 reward text (Pyron's destruction merely lifted a veil, a more insidious source within Blackrock)",
+     "quest 4263 description (Incendius continues to raise Pyron)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5122,
+  "kind": 3,
+  "zone": 51,
+  "sort": 1,
+  "faction": 0,
+  "title": "Divine Retribution",
+  "body": "Kalaran Windblade asks for help avenging his father, slain by the filth of the Cauldron, since the magistrates of Stormwind will do nothing. His plan is bold: set the four sentry towers ablaze and blind the Dark Iron defenses before an offensive. For that he needs a torch of flawless flame, made from the hearts of fire elementals and golem oil, a shaft reforged from the thorium daggers of Cauldron taskmasters and slavers, and a casing drawn from a Twilight's Hammer symbol of Ragnaros. Once the torch is made, his squire Maltrake will explain how it is to be used.",
+  "triggers": [
+   [
+    4,
+    3441
+   ]
+  ],
+  "sources": [
+   "npc_text 1954 (father slain, Stormwind magistrate)",
+   "quests 3441, 3442, 3443, 3452, 3462 descriptions",
+   "quest 3463 reward text",
+   "creature_text 8480, 8509 (the reveal)",
+   "gameobject 149502 Hoard of the Black Dragonflight",
+   "quest 4022 (molt shown to Cyrus Therepentous, Burning Steppes)",
+   "smart_scripts 8509, 8479"
+  ],
+  "notes": "Converted: the burning towers, the reveal, the trinkets and the molt moved from the opening to part 1 (QUEST_DONE 3463, the turn-in to Squire Maltrake that starts the scene). The opening is the plan and the three parts of the torch (3442, 3443, 3452) up to Maltrake (3462). Cyrus and the molt's use are left to burning_steppes.json 4618 (ACCEPT 4022 is its trigger). Dialogue reread: npc_text 1953-1955 and creature_text 8479, 8480, 8509 are classic text.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "When the four towers burn, Squire Maltrake calls the sight glorious, and his master agrees, for it all went exactly as he planned. Kalaran casts off his disguise. He is a black drake, and the fires were set to open the gorge to the legion of Blackrock. Mockingly he lets his helpers live to see the chaos to come, leaves them a chest of trinkets and a molt of his flight that his kin in the Burning Steppes will know how to use, and takes wing.",
+    "triggers": [
+     [
+      5,
+      3463
+     ]
+    ],
+    "sources": [
+     "quest 3463 reward text (It is glorious!)",
+     "creature_text 8480, 8509 (the reveal)",
+     "smart_scripts 8509, 8479 (Kalaran the Deceiver 8480 summoned on turning in 3463)",
+     "gameobject 149502 Hoard of the Black Dragonflight (quest 3481)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5123,
+  "kind": 3,
+  "zone": 51,
+  "sort": 2,
+  "faction": 1,
+  "title": "The Suntara Stones",
+  "body": "At the Grimesilt Dig Site lies Dorius Stonetender, leader of an Ironforge excavation, groaning that he is badly hurt, bleeding inside, and must get back to Ironforge. Help him up and he sets off for the gate at Stonewrought Pass, though he must stop again and again to catch his breath. On the way he points out the Cauldron and begs that it be remembered: if anything ever happened to him, he says, his team would be stuck in that mine forever. The Dark Irons do not mean to let him go easily.",
+  "triggers": [
+   [
+    4,
+    3367
+   ]
+  ],
+  "sources": [
+   "quests 3367, 3368, 3371, 3372, 3566 (descriptions and reward texts)",
+   "creature_text 8284, 8391, 8421",
+   "smart_scripts 8284, 8417, 8391",
+   "warcraft.wiki.gg/wiki/Lathoric_the_Black"
+  ],
+  "notes": "Converted: the opening is the setup of quest 3367 (Dorius found and helped toward the gate, creature_text 8284 on the escort). Parts follow the chain: 1 the ambush and the letter (QUEST_DONE 3367, ACCEPT 3368), 2 Thorius's vow and the dying archaeologist's plea (QUEST_DONE 3371; Thorius's vow at DONE 3368 always precedes it), 3 the trap and the Lathoric reveal (ACCEPT 3566, which summons Lathoric and Dorius), 4 Thorius's reaction (QUEST_DONE 3566). 'the gate at Stonewrought Pass' from the escort ending at the gate (creature_text 8284 group 4), its waypoint path 82840 ending at -6388,-1983 in Dustfire Valley beside the pass door 150137. Obsidion's purpose stays in the Dorius entry. Alliance only (AllowableRaces 1101). Check: old part 2 split so each piece is told where it happens: Thorius's vow and the order to search the Slag Pit to part 2 (QUEST_DONE 3368, whose reward text is the vow and which offers 3371), the dying archaeologist's plea to part 3 (QUEST_DONE 3371); old parts 3 and 4 renumbered 4 and 5.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Within sight of the gate a Dark Iron marksman shoots him down, and Dorius vanishes in a cloud of dust, leaving a singed letter for his brother, Curator Thorius. It says the Suntara stones are real and in Dark Iron hands, that their leader Lathoric the Black uses them to enslave the excavation team, and that the captives toil in the Cauldron on something called Obsidion. Help them, it begs: it is the final wish of a dead man.",
+    "triggers": [
+     [
+      5,
+      3367
+     ],
+     [
+      4,
+      3368
+     ]
+    ],
+    "sources": [
+     "smart_scripts 828404, 828405 (Dark Iron Marksman summoned, Dorius falls, letter 175704 summoned)",
+     "creature_text 8284 groups 5-7",
+     "quest 3367 reward text",
+     "quest 3368 description (the letter)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Thorius sobbed over the letter, then wiped his face dry and vowed in the name of the Light that his brother would have his wish. With an empty hole where his heart had been, he sent rescuers back to the gorge to free Dorius's men from the sweltering mine the Dark Irons call the Slag Pit, and to see the murderers brought to justice.",
+    "triggers": [
+     [
+      5,
+      3368
+     ]
+    ],
+    "sources": [
+     "quest 3368 completion and reward texts (Thorius sobs, wipes his face, vows in the name of the Light)",
+     "quest 3371 description (empty hole where my heart used to be; free his men; Slag Pit; perpetrators brought to justice), offered by Thorius 8256 on the turn-in of 3368 (RewardNextQuest)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Deep in the pit, one of the enslaved archaeologists lies dying. Forget me, he pleads, help the others. The power of the Suntara will not let them rest even once their bodies fail, and only the altar of Suntara can release them: a relic held by the Twilight's Hammer in the hills to the northwest must be laid upon it.",
+    "triggers": [
+     [
+      5,
+      3371
+     ]
+    ],
+    "sources": [
+     "quest 3371 reward text (forget about me, help the others)",
+     "quest 3372 description, offered by the Dying Archaeologist 8417 on the turn-in of 3371"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "It was a trap. The relic was the last Suntara stone Lathoric needed, and the dying archaeologist can only beg forgiveness as Dorius himself appears, alive and mocking. Playing on his brother's grief, he says, was all it took to bring rescuers to fetch it. Then Lathoric the Black, as Dorius is now named, calls Obsidion to rise and serve its master.",
+    "triggers": [
+     [
+      4,
+      3566
+     ]
+    ],
+    "sources": [
+     "quest 3566 description (it was all a trap)",
+     "creature_text 8421 (Bravo! You thought I was dead?; played upon my brother; last Suntara stone)",
+     "creature_text 8391 (Obsidion, rise and serve your master)",
+     "smart_scripts 8417 (Lathoric spawned on accepting 3566)"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "When the head of Lathoric and the heart of Obsidion are laid before Thorius, the curator turns white. His own brother had set it all up, betraying him and all of Ironforge. Grief gives way to fury, and then to fear: if so noble a dwarf could be turned so easily to the will of Ragnaros, the influence of the Old Gods is still strong in these lands, and no one is safe.",
+    "triggers": [
+     [
+      5,
+      3566
+     ]
+    ],
+    "sources": [
+     "quest 3566 log description and reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5124,
+  "kind": 3,
+  "zone": 51,
+  "sort": 3,
+  "faction": 1,
+  "title": "The Key to the Gorge",
+  "body": "Mountaineer Pebblebitty will not open the gate at Stonewrought Pass. The gorge is full of beasts that have killed good dwarves, she says, and if she lets one traveler in she will have to let in everyone. Pressed, she admits there is a back road the orcs paved through the Badlands near Kargath, and offers a key to anyone who returns with proof of heroics, pointing to Margol the Rager in the far southeast of the gorge. Margol's gigantic horn once carried Pebblebitty's own broken axe head, but it shatters into a million pieces when pulled free.",
+  "triggers": [
+   [
+    4,
+    3181
+   ]
+  ],
+  "sources": [
+   "npc_text 1833-1839 (Pebblebitty)",
+   "quests 3181, 3182, 3201 (descriptions and reward texts)"
+  ],
+  "notes": "Converted: the opening is the premise up to quest 3181 (the entry trigger, offered by the horn itself, whose text has the axe head shattering). Parts: 1 Pebblebitty calls it a fake and sends it to Thorius (QUEST_DONE 3181), 2 Thorius validates it and signs the proof of deed (QUEST_DONE 3182), 3 the key is handed over (QUEST_DONE 3201). 3182 and 3201 are filed under Loch Modan and Ironforge but used by no other file. Back road paved by the orcs from npc_text 1835. Pebblebitty's npc_text reread: classic text. Alliance only (AllowableRaces 1101). Removed in Cataclysm, present in 3.3.5. Check: part 2 reworded so it does not repeat the Margol part 1 wording (same trigger, DONE 3182).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Without the axe head, Pebblebitty calls the horn an obvious fake. She has been face to face with Margol, she insists, and the real horn is eight times larger; this one surely came off some stormsnout in the Barrens. If Curator Thorius in Ironforge will vouch for it, she says, a proof of deed will earn the key.",
+    "triggers": [
+     [
+      5,
+      3181
+     ]
+    ],
+    "sources": [
+     "quest 3181 reward text",
+     "quest 3182 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Ironforge, Curator Thorius could hardly believe his eyes: this was the horn of Margol the Rager, scourge of every archaeologist who ever worked the gorge, and might he keep it for the museum? After such a contribution a proof of deed was no trouble. As he filled out the large document, he confided that Pebblebitty was only jealous.",
+    "triggers": [
+     [
+      5,
+      3182
+     ]
+    ],
+    "sources": [
+     "quest 3182 reward text",
+     "quest 3201 description (offered by Thorius on the turn-in of 3182)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Pebblebitty could not argue with the curator's signature. A deal is a deal, she grumbled, though she could not see how someone so weak had overcome Margol, and she handed over the key to the Searing Gorge with a warning: whatever happens beyond the gate is the bearer's own fault.",
+    "triggers": [
+     [
+      5,
+      3201
+     ]
+    ],
+    "sources": [
+     "quest 3201 reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5125,
+  "kind": 3,
+  "zone": 51,
+  "sort": 4,
+  "faction": 0,
+  "title": "The Brotherhood and the Slag Pit",
+  "body": "The Thorium Brotherhood has a quarrel with the Slag Pit, and it is personal. Overseer Maltorius, one of their own, deserted to take command of the Dark Iron crew there, and the Brotherhood believes he paid for the post with their recipe for fiery flux. Thorium Point answers with every weapon it has. Master Smith Burninate wants the stolen plans back, the wanted board offers a bounty on Maltorius's head, and Taskmaster Scrange pays to cull the Dark Iron taskmasters and slavers and to recover a spyglass and smithing tuyere stolen from the camp. Evonice Sootsmoker has a subtler idea: steal the crew's pillows, for a Dark Iron cannot sleep without one. Hansel Heavyhands wants golems, lava spiders and incendosaurs cleared so Brotherhood teams can explore the pit.",
+  "triggers": [
+   [
+    4,
+    7722
+   ],
+   [
+    4,
+    7701
+   ],
+   [
+    4,
+    7702
+   ],
+   [
+    4,
+    7728
+   ],
+   [
+    4,
+    7729
+   ],
+   [
+    4,
+    7723
+   ],
+   [
+    4,
+    7724
+   ],
+   [
+    4,
+    7727
+   ]
+  ],
+  "sources": [
+   "quests 7701, 7702, 7722, 7723, 7724, 7727, 7728, 7729 (descriptions and reward texts)",
+   "quests 7736, 8241, 8242"
+  ],
+  "notes": "Converted: the recovered plans and the flux supply moved from the opening to part 1 (QUEST_DONE 7722). The pillow raid's result (sleepless Dark Irons going home to the Depths, 7702 reward text) moved to part 2 (QUEST_DONE 7702); the opening now gives only Evonice's reasoning (7702 description). The two parts are independent turn-ins, so each reads on from the opening alone. Maltorius's death is told in the Lolo Longstriker entry. Dialogue reread: Brotherhood npc_text 7094, 7095, 7115, 7117, 7120, 7121 are classic; Oilfist's 17268 (Cataclysm) unused. Check: part 1 reworded so it does not repeat the Burninate part 1 wording (same trigger, DONE 7722).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "With the stolen plans back at Thorium Point, the recipe for fiery flux belongs to the Brotherhood again, and the quarrel can give way to the forge. Stocks of flux are running low, so Burninate now takes incendosaur scales, coal and other goods from the Brotherhood's friends to make more.",
+    "triggers": [
+     [
+      5,
+      7722
+     ]
+    ],
+    "sources": [
+     "quest 7722 reward text",
+     "quests 7736, 8241, 8242 completion texts"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Evonice's scheme worked, or so she says. With their pillows gone, the sleepy Dark Irons of the Slag Pit began heading back to their homes in the Depths for rest, and the work of the pit slowed. Crazy goggles or not, she reminds anyone who doubts her, she is the smart one.",
+    "triggers": [
+     [
+      5,
+      7702
+     ]
+    ],
+    "sources": [
+     "quest 7702 reward text and completion text (the crazy goggles, I'm the smart one)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 5126,
+  "kind": 3,
+  "zone": 51,
+  "sort": 5,
+  "faction": 0,
+  "title": "The Undermarket",
+  "body": "Nilith Lokrav is a tailor who prizes the shadow silk spun by the spiders of the gorge, a cloth highly sought after by the artisans of her trade. She works in the south of the gorge with Raze, the hulking guardian who smashes on command. Lately a band of shadowsilk poachers has encroached on these lands, slaying spiders by the score without a thought for the future, and Nilith wants them found and ended, beginning in the north. Raze is eager to help: use the staff of command near a poacher, and he will make them rue the day they came to poach here.",
+  "triggers": [
+   [
+    4,
+    3379
+   ]
+  ],
+  "sources": [
+   "quests 3379, 3385, 3402 (descriptions and reward texts)",
+   "creature_text 8439, 8441 (Raze and the staff)",
+   "DB spawns: Nilith Lokrav 8439 and Raze 8441 in the south of the gorge, Kovic 8444 and Clunk 8447 in area 246"
+  ],
+  "notes": "Converted: the opening is the setup of quest 3379 (the poachers). The Undermarket and the order to kill Kovic moved to part 1 (QUEST_ACCEPT 3385, offered when 3379 is turned in); Kovic's death to part 2 (QUEST_DONE 3385); Vizzklick's reaction to part 3 (QUEST_DONE 3402, turned in to Vizzklick 6568 in Gadgetzan; filed under Tailoring, used by no other file). The Undermarket's base in the Cauldron stays in the Cauldron entry as something anyone sees there. Earlier: verified. Tailoring profession chain (skill 197), open to both factions.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The poachers were only the beginning. Nilith names a greater enemy: the Undermarket, cutthroat traders who will sell, move or do just about anything for the right price. They have set up a base in the Cauldron under Trade Master Kovic, who keeps close ties with the Dark Iron dwarves, and Nilith wants Kovic and his minion Clunk slain to send a message to their leadership.",
+    "triggers": [
+     [
+      4,
+      3385
+     ]
+    ],
+    "sources": [
+     "quest 3385 description (offered by Nilith on the turn-in of 3379)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Kovic and Clunk fell in the Cauldron, a decisive blow that Nilith expects will make the Undermarket's leaders think twice before sending more cronies into the gorge. The trader's satchel held nothing of use to her, but the news itself she sends on to Vizzklick in Gadgetzan, sure he will be glad to hear it.",
+    "triggers": [
+     [
+      5,
+      3385
+     ]
+    ],
+    "sources": [
+     "quest 3385 reward text",
+     "quest 3402 description (offered on the turn-in of 3385)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Vizzklick could hardly believe it, and called it a glorious day. For years, he says, Kovic ran shady trades for the Undermarket, undercutting honest, hard working traders all over the world, and whoever ended him has earned a fine reward.",
+    "triggers": [
+     [
+      5,
+      3402
+     ]
+    ],
+    "sources": [
+     "quest 3402 reward text"
+    ]
+   }
+  ]
+ }
 ]

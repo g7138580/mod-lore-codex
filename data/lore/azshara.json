@@ -1,715 +1,1190 @@
 [
- {
-  "id": 1600,
-  "kind": 0,
-  "zone": 16,
-  "sort": 0,
-  "faction": 0,
-  "title": "Azshara",
-  "body": "Azshara lies on the northeastern shore of Kalimdor, a land of autumn-colored forests running from the Ashenvale border to high cliffs above the Great Sea. It shares its name with Queen Azshara, and long ago it belonged to the Highborne, the night elf nobility who loved arcane magic above all else. Their cities and temples lie broken along the coast. When the Great Sundering tore the world apart, most of the city of Eldarath fell into the Bay of Storms, and the restless spirits of the Highborne still wander what remains. Now Spitelash naga sift the ruins for relics, satyrs camp in the western and northern hills, and followers of the blue dragon Malygos guard the shores of Lake Mennar. Timbermaw furbolgs hold the mountain villages, cliff giants grind through the stone of the land, and blood elves dig for treasure in the north. Only two small camps fly the colors of the great factions: the night elves' Talrendis Point and the Horde's Valormok.",
-  "triggers": [
-   [
-    1,
-    16
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Azshara (autumn-colored flora, cliffs and beaches; ghosts, satyrs, naga)",
-   "warcraft.wiki.gg/wiki/Ruins_of_Eldarath (Sundering dropped most of the city into the Bay of Storms)",
-   "npc_text 4954, 4955, 4958 (Loh'atu: Queen Azshara, cursed Highborne, followers of Malygos)",
-   "quest 3602 description (cliff giants consume rock and buildings)",
-   "quest 3505 (blood elf workers in the north)",
-   "zone_areas.py spawns per subzone"
-  ],
-  "notes": "verified. Naming: only the non-canon RPG says survivors named the land for the queen, so 'shares its name' is kept. No goblin Azshara."
- },
- {
-  "id": 1601,
-  "kind": 1,
-  "zone": 16,
-  "sort": 1,
-  "faction": 0,
-  "title": "Talrendis Point",
-  "body": "Talrendis Point is a small night elf camp at the western edge of Azshara, where the road from Ashenvale crosses into these haunted woods. Sentinels keep watch over it, the hippogryph master Jarrodenus tends his mounts, and the bowyer Brinna Valanaar offers bows to passing travelers. Its most unusual guest is Loh'atu, a tauren who has sworn to the Earthmother to aid the elves against the satyrs that infest this land. From here he sends the willing northeast, to lay the Highborne spirits of the Shadowsong Shrine to rest and to break the satyrs of the Haldarr clan.",
-  "triggers": [
-   [
-    1,
-    3137
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Talrendis_Point (pre-Cataclysm: small night elf camp on the Ashenvale border, Jarrodenus, Brinna, Loh'atu, Azshara Sentinel)",
-   "zone_areas.py: 11276 Azshara Sentinel x2, 11548, 12577, 14301 in area 3137",
-   "quests 5535, 5536 descriptions (northeast of here)"
-  ],
-  "notes": "Fact-check: Loh'atu's oath narrowed to the satyrs (5536); rest verified."
- },
- {
-  "id": 1602,
-  "kind": 1,
-  "zone": 16,
-  "sort": 2,
-  "faction": 0,
-  "title": "Shadowsong Shrine",
-  "body": "On a ruin-covered hill in western Azshara stands the Shadowsong Shrine, its broken stones haunted by the dead of the Highborne. Apparitions and lichlings drift among the ruins and fall upon anyone who comes near, their craving for arcane magic undimmed by death. At times the ghost of Varo'then walks among them, once captain of Queen Azshara's guard, who served her and the Burning Legion in the War of the Ancients and fell in the final battle at the Well of Eternity. The shrine shares its name with the Shadowsong family of the night elves, though no tale records the link. The Sentinels and their tauren ally Loh'atu would see these spirits set free.",
-  "triggers": [
-   [
-    1,
-    1235
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Shadowsong_Shrine (ruin-covered hill, highborne ghosts, link to the Shadowsong name unknown)",
-   "warcraft.wiki.gg/wiki/Varo'then (captain of Azshara's guard, slain by Malfurion; ghost at Shadowsong Shrine in Classic)",
-   "zone_areas.py: 6116, 6117, 6118 (rare) in area 1235",
-   "quest 5535 description and request text",
-   "warcraft.wiki.gg/wiki/Varo'then (died in the final battle at the Well; killer not named)"
-  ],
-  "notes": "Fact-check: Malfurion as Varo'then's killer is only implied on the wiki; now 'fell in the final battle at the Well of Eternity'. Varo'then's Ghost is a rare spawn, hence 'at times'. Rest verified."
- },
- {
-  "id": 1603,
-  "kind": 1,
-  "zone": 16,
-  "sort": 3,
-  "faction": 0,
-  "title": "Haldarr Encampment",
-  "body": "Northeast of the Shadowsong Shrine, the Haldarr satyrs have made their camp among old ruins on the western edge of Azshara. Satyrs, tricksters and felsworn crowd its ground. To the tauren Loh'atu they are a disfigured and evil aspect of the night elves, a blight upon sacred lands that Cenarius himself once walked, and he has sworn to help the elves purge them. He will not presume to speak for the night elves on every atrocity these demonic creatures have committed, but he knows enough to want them gone. Just to the north lies the Horde camp of Valormok.",
-  "triggers": [
-   [
-    1,
-    1236
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Haldarr_Encampment (pre-Cataclysm: Haldarr satyrs, ruins, northeast of Shadowsong Shrine, southwest of Valormok)",
-   "quest 5536 description",
-   "zone_areas.py: 6125, 6126, 6127 in area 1236",
-   "quest 3504 description (Valormok north of the Haldarr Encampment)"
-  ],
-  "notes": "verified. Scourge Invasion necropolis spawns are event-only and left out; Sentinel Keldara Sunblade (8397, Alliance-only, no quests) left out."
- },
- {
-  "id": 1604,
-  "kind": 1,
-  "zone": 16,
-  "sort": 4,
-  "faction": 0,
-  "title": "Valormok",
-  "body": "Valormok is a small Horde outpost set against the mountains of western Azshara, north of the Haldarr Encampment. It was once a dozen warriors strong, but the blood elf Magus Rimtori, whom Belgrom Rockmaul of Orgrimmar foolishly trusted, has killed them, and every party sent against her since has failed to return. Ag'tor Bloodfist commands what is left and burns for vengeance. Beside him waits Jediga, an orc sent here as a punishment, who has turned exile into a trade in Highborne relics. The wind rider master Kroum keeps the camp linked to the rest of the Horde, and a provisioner and a weaponsmith serve the few who remain.",
-  "triggers": [
-   [
-    1,
-    1237
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Valormok (pre-Cataclysm: small Horde outpost, massacre by Rimtori, Ag'tor, Jediga)",
-   "quest 3504 description, request and reward text (a dozen warriors strong, all dead; none returned)",
-   "quest 3517 description (Belgrom's punishment)",
-   "zone_areas.py: 8576, 8587, 8610, 3621 (Food & Drink), 10361 (Weaponsmith) in area 1237"
-  ],
-  "notes": "verified against 3504 and 3517. Ag'tor's gossip (npc_text 14690) and Haggrum's (15021) are Cataclysm text; nothing from them is used."
- },
- {
-  "id": 1605,
-  "kind": 1,
-  "zone": 16,
-  "sort": 5,
-  "faction": 0,
-  "title": "Ruins of Eldarath",
-  "body": "Eldarath was once a prosperous Highborne city and a strong fortress in central Azshara. The Great Sundering threw most of it into the Bay of Storms, and what remains clings to the cliffs above the water. Today the Spitelash naga claim the ruins. Warriors, screamers, sirens and serpent guards prowl the broken courts, Lady Sesspira among them, searching for the powerful artifacts the Highborne left behind. Among the rubble lie tablets named for four Highborne wizards, and the cursed spirits of the old city still linger there.",
-  "triggers": [
-   [
-    1,
-    1221
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Ruins_of_Eldarath (prosperous city and fortress, Sundering, battle with the Legion, naga, tablets and runes)",
-   "npc_text 4955 (Loh'atu: Highborne city, cursed, Spitelash search the ruins for artifacts)",
-   "quest 3517 description (four tablets named after Highborne wizards)",
-   "zone_areas.py: 6190, 6193, 6194, 6195, 6649 (rare), 7864, tablets 148513 to 148516 in area 1221",
-   "warcraft.wiki.gg/wiki/Ruins_of_Eldarath (War of the Ancients battle cited to Huln's War, a Legion-era comic)"
-  ],
-  "notes": "Fact-check: removed the War of the Ancients battle at Eldarath (the wiki cites the Legion-era Huln's War comic). Rest verified."
- },
- {
-  "id": 1606,
-  "kind": 1,
-  "zone": 16,
-  "sort": 6,
-  "faction": 0,
-  "title": "Temple of Zin-Malor",
-  "body": "Amid the Ruins of Eldarath rises the Temple of Zin-Malor, the stronghold from which Warlord Krellian rules the Spitelash who hold the ruins. Serpent guards, sirens and myrmidons ring the old temple, and General Fangferror prowls among them. Krellian keeps himself hidden behind his guards and covets a prismatic shell of strange and chaotic power, a prize whose magic Archmage Xylem has sensed from his tower through scrying. Around the naga, lingering ghosts of the Highborne still drift through halls their people built, and sacred Highborne writings lie among the stones.",
-  "triggers": [
-   [
-    1,
-    1223
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Ruins_of_Eldarath (Krellian controls the ruins from the Temple of Zin-Malor)",
-   "warcraft.wiki.gg/wiki/Spitelash (Krellian leads the occupation)",
-   "quests 9362 and 9364 descriptions (hiding behind his guards, prismatic shell he covets, chaotic aura)",
-   "zone_areas.py: 8408, 6650 (rare), 6194, 6195, 6196, 7864, gameobject 176356 Sacred Highborne Writings in area 1223"
-  ],
-  "notes": "verified (9362, 9364, spawns). The RPG claim that it was Elune's temple is non-canon and left out."
- },
- {
-  "id": 1607,
-  "kind": 1,
-  "zone": 16,
-  "sort": 7,
-  "faction": 0,
-  "title": "Bear's Head",
-  "body": "Along the southeastern edge of the Azshara mountains lie the villages of Bear's Head, outposts of the Timbermaw furbolgs whose larger dens stand farther north at Ursolan. Warriors, pathfinders and totemics guard the huts, and like most of their kin in this land they meet outsiders with hostility. High on a cliff above them stands the tower of Archmage Xylem. No path climbs to it: visitors must find his surly servant Sanath Lim-yo, camped below the cliffs north of the fork where the main road meets the Ruins of Eldarath, and be sent up by his spell.",
-  "triggers": [
-   [
-    1,
-    1224
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Bear's_Head (Timbermaw villages, outposts of Ursolan; Xylem's tower on a cliff)",
-   "npc_text 4957 (most furbolgs here hostile)",
-   "quest 8250 description (teleport by Sanath, fork in the road, head north to the cliffs)",
-   "zone_areas.py: 6184, 6185, 6186, 8379 and tower NPCs in area 1224"
-  ],
-  "notes": "verified (8250, npc_text 4957, spawns; Sanath stands just outside 1224)."
- },
- {
-  "id": 1608,
-  "kind": 1,
-  "zone": 16,
-  "sort": 8,
-  "faction": 0,
-  "title": "Ursolan",
-  "body": "Ursolan is the heart of the Timbermaw settlements of northern Azshara, which run south through the hills to Bear's Head. Ursa warriors, den watchers and shamans fill its dens, Gatekeeper Rageroar watches the furbolg lands between, and Thunderhead hippogryphs wheel overhead. What has become of these furbolgs is uncertain. The tauren Loh'atu wonders whether the plague of Felwood has touched them or whether they simply defend a once peaceful people. Their shamans keep odd treasures too: thieves who could not open a sealed blue bag belonging to Lord Ravenholdt sold it to a Timbermaw shaman as a holy relic.",
-  "triggers": [
-   [
-    1,
-    1225
-   ],
-   [
-    1,
-    1216
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Ursolan (named for Ursol, extensive Timbermaw settlement running south through the Hold to Bear's Head)",
-   "npc_text 4957 (Loh'atu on the furbolgs)",
-   "quest 8234 description (bag sold to a Timbermaw shaman as a holy relic)",
-   "zone_areas.py: 6187, 6188, 6189, 6378 in 1225; 6651 Gatekeeper Rageroar (rare) in 1216"
-  ],
-  "notes": "Fact-check: dropped the Ursol naming claim (wiki, unsourced). Area 1216 is Azshara's own Timbermaw Hold area, not Felwood's 1769. Rest verified."
- },
- {
-  "id": 1609,
-  "kind": 1,
-  "zone": 16,
-  "sort": 9,
-  "faction": 0,
-  "title": "Lake Mennar",
-  "body": "Lake Mennar lies among the hills of southern Azshara, and its shores belong to the blue dragonflight. Followers of Malygos stand guard on every side: blue dragonspawn, scalebanes, mageweavers and magelords. Where the blue dragons gather, those who know the land say, arcane magic is never far, and many suspect the dragonkin are protecting something the Highborne left behind. Those who slip past the guardians find the lake itself calm and safe. Farther east, the great blue Azuregos keeps his own watch over the treasures of this coast.",
-  "triggers": [
-   [
-    1,
-    1234
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Lake_Mennar (blue dragonflight, dragonspawn around, the lake itself free from danger)",
-   "npc_text 4958 (followers of Malygos, arcane magic, protecting something the Highborne left behind)",
-   "zone_areas.py: 193, 6129, 6130, 6131 in area 1234",
-   "creature 6109 at 2622,-5977 (east of the lake's dragonspawn at about 2600,-5400)"
-  ],
-  "notes": "verified."
- },
- {
-  "id": 1610,
-  "kind": 1,
-  "zone": 16,
-  "sort": 10,
-  "faction": 0,
-  "title": "The Ruined Reaches",
-  "body": "Along the southern coast of Azshara, the Ruined Reaches hold the wreck of the Horizon Scout. The ship lay off the coast in search of a safe anchorage when naga struck, barely an hour after sundown, and sent her to the bottom. Captain Vanessa Beltis and the survivors of her crew now shelter by the shore with the ship's passengers, their cargo strewn about them, and the naga have already returned once for whatever they failed to find. Scouts watch the mouth of the valley for the next attack. Nearby, the gnome couple Blimo and Jubie Gadgetspring keep a house on the beach and sell trade and engineering supplies.",
-  "triggers": [
-   [
-    1,
-    1256
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Horizon_Scout (wreck in the Ruined Reaches, crew and passengers)",
-   "quest 3382 description and reward text",
-   "npc_text 2293 (Beltis gossip: ship at the bottom of the sea, cargo and passengers strewn)",
-   "zone_areas.py: 8378, 8380, 8381, 8382, 8386 to 8389, 8394, 8478, 12957, 8678 in area 1256",
-   "warcraft.wiki.gg/wiki/Blimo_Gadgetspring and Jubie_Gadgetspring (gnomes, husband and wife, house on the beach)"
-  ],
-  "notes": "Fact-check: the Gadgetsprings are gnomes and a married couple with a house on the beach (wiki), not goblins; 'southern peninsula' made 'southern coast' (wiki). Rest verified."
- },
- {
-  "id": 1611,
-  "kind": 1,
-  "zone": 16,
-  "sort": 11,
-  "faction": 0,
-  "title": "Ravencrest Monument",
-  "body": "At the tip of Azshara's southern point, on cliffs above the Great Sea, stand the shattered remains of a colossal night elf statue. Only its legs still rise from the rock; the rest lies broken across the headland or lost beneath the waves. The monument bears the Ravencrest name, though whom it honored is no longer known. The Spitelash have made it one of their strongholds, and naga battlemasters and enchantresses hold it against all comers. The headland cannot be reached from the sea, only from inland across a bridge.",
-  "triggers": [
-   [
-    1,
-    1232
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Ravencrest_Monument (colossus, only legs stand, Spitelash, reached by a bridge; subject unconfirmed)",
-   "warcraft.wiki.gg/wiki/Spitelash (Ravencrest Monument among their bases)",
-   "zone_areas.py: 7885, 7886 in area 1232"
-  ],
-  "notes": "verified. Statue subject left open (Kur'talos is fan speculation). Lunar Festival elder excluded."
- },
- {
-  "id": 1612,
-  "kind": 1,
-  "zone": 16,
-  "sort": 12,
-  "faction": 0,
-  "title": "Southridge Beach",
-  "body": "Southridge Beach runs along the southern shore of the Bay of Storms, east of the Ruins of Eldarath. It is Spitelash country: myrmidons and sirens walk the sand, and a naga called Caravan Master Tset moves among them. The naga have learned to recognize the enchanted coral of these waters, rare even here, and have stripped so much of it from the bay that little remains. Makrinni razorclaws and coralshell lurkers crawl along the tide line, and wreckage drifts in on the surf.",
-  "triggers": [
-   [
-    1,
-    1231
-   ]
-  ],
-  "sources": [
-   "quest 8252 description (ruins and beaches overrun with spitelash, enchanted coral, little left in the bay)",
-   "warcraft.wiki.gg/wiki/Spitelash (Southridge Beach a base; Caravan Master Tset)",
-   "zone_areas.py: 6195, 6196, 8409, 6350, 6352, gameobject 180751 Floating Wreckage in area 1231",
-   "posarea: 1231 spans about 2780 to 3625 x, -5460 to -6745 y"
-  ],
-  "notes": "verified (8252; wiki: south edge of the bay; spawns)."
- },
- {
-  "id": 1613,
-  "kind": 1,
-  "zone": 16,
-  "sort": 13,
-  "faction": 0,
-  "title": "Bay of Storms",
-  "body": "The Bay of Storms is the great inlet of eastern Azshara, where much of old Eldarath lies drowned. Storm Bay murlocs, great wavethrashers and coralshell lurkers haunt its shallows, and mammoth sharks cruise deeper water. Its islands hold strange residents. On one, the demon hunter Loramus Thalipedes keeps watch with three felhounds at his side. On another, to the southeast, Duke Hydraxis of the Waterlords holds court among his honor guard. In the north lies Hetaera's Clutch, lair of a hydra who calls herself ruler of these waters and preys on the children of the sea giant Arkkoroc, whose sons and servants roam the bay in turn.",
-  "triggers": [
-   [
-    1,
-    1227
-   ],
-   [
-    1,
-    1222
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Bay_of_Storms (pre-Cataclysm locations incl. Hetaera's Clutch)",
-   "warcraft.wiki.gg/wiki/Storm_Bay_Oracle (murloc)",
-   "quest 3510 description (Hetaera, false ruler of the oceans, kills Arkkoroc's children)",
-   "zone_areas.py: 7783, 8756 to 8758, 13278, 13322, 6349, 6351, 6352, 12125 in 1227; 6140, 6143, 6144 in 1222",
-   "posarea: Loramus 3098,-6361 and Hydraxis 2849,-7297 both read 1227"
-  ],
-  "notes": "verified (positions: Hetaera 3827,-6154 north of Loramus 3098,-6361; Hydraxis 2850,-7297 to his southeast). Bilgewater Harbor is Cataclysm and absent."
- },
- {
-  "id": 1614,
-  "kind": 1,
-  "zone": 16,
-  "sort": 14,
-  "faction": 0,
-  "title": "Temple of Arkkoran",
-  "body": "On the northeastern shore of the Bay of Storms rises the Temple of Arkkoran, its weathered stones lapped by the surf. Now it is the seat of Lord Arkkoroc, a sea giant whom even the demon hunter Loramus calls a lesser deity. He dwells at the very top of the temple, while the Arkkoran broods of makrura and murlocs, clackers, pincers, muckdwellers and oracles, swarm its lower levels and attack outsiders on sight. Those who come seeking his wisdom must find a way through them, for his minions will stop at nothing to destroy an intruder.",
-  "triggers": [
-   [
-    1,
-    1226
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Temple_of_Arkkoran (former temple of Elune on the northeastern shores, Arkkoroc on the top level, makrura and murlocs attack on sight)",
-   "quest 3509 description (lesser deity, his minions will stop at nothing)",
-   "warcraft.wiki.gg/wiki/Arkkoran_Oracle (murloc)",
-   "zone_areas.py: 6134, 6135 to 6138 in area 1226",
-   "warcraft.wiki.gg/wiki/Temple_of_Arkkoran (Elune claim has no citation)"
-  ],
-  "notes": "Fact-check: removed 'former temple of Elune' (no citation on the wiki; the RPG ties Elune's temple to Zin-Malor instead). Rest verified."
- },
- {
-  "id": 1615,
-  "kind": 1,
-  "zone": 16,
-  "sort": 15,
-  "faction": 0,
-  "title": "The Shattered Strand",
-  "body": "The Shattered Strand runs along the northern side of the Bay of Storms, a remote shore of surf and broken rock. Spitelash myrmidons and sirens hunt along it, makrinni scrabblers and Arkkoran makrura pick through the shallows, and wavethrashers, powerful amphibious beasts found nowhere but Azshara, haul themselves up onto the sand. On the cliffs above lives the furbolg Ogtinc, who left his tribe to serve the Cenarion Circle. A cave on the strand bears the name of Scalebeard, a great turtle that seldom shows itself to travelers.",
-  "triggers": [
-   [
-    1,
-    1228
-   ],
-   [
-    1,
-    3140
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/The_Shattered_Strand (north side of the Bay of Storms, remote; hydras, sea giants, makrura, murlocs)",
-   "quest 8231 description (wavethrasher lives only in Azshara)",
-   "zone_areas.py: 6195, 6196, 6370, 6135, 6136, 6348, 8405, 13896 (rare elite, turtle family) in area 1228",
-   "AreaTable 3140 Scalebeard's Cave (reachable)"
-  ],
-  "notes": "verified. Scalebeard (turtle family) spawns in 1228; cave 3140 is a reachable indoor area."
- },
- {
-  "id": 1616,
-  "kind": 1,
-  "zone": 16,
-  "sort": 16,
-  "faction": 0,
-  "title": "Thalassian Base Camp",
-  "body": "In the hills of northern Azshara, the blood elves of Magus Rimtori have pitched the Thalassian Base Camp. Her reclaimers and surveyors comb the land for Highborne treasures and have found a way to grind the magic items they take into a glittering dust unlike anything a common disenchanting yields. Magister Hawkhelm keeps the camp while Rimtori ranges abroad with her bodyguards. On the ridge, arcane crystals stand about a circle beside an ancient Kaldorei tome of summoning, a hint that the expedition seeks more than relics. The elves keep faith with no partner for long, as the Horde and a certain goblin scout have learned.",
-  "triggers": [
-   [
-    1,
-    1220
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Thalassian_Base_Camp (pre-Cataclysm: Rimtori's expedition, Hawkhelm, glittering dust, tome of summoning)",
-   "quest 8251 description (glittering dust)",
-   "quests 3505 and 3506 (tome, crystals and circle)",
-   "quest 3601 description (Kim'jael betrayed)",
-   "zone_areas.py: 6198, 6199, 6647 (rare), 150140 Arcane Focusing Crystal, 151286 Kaldorei Tome of Summoning in area 1220"
-  ],
-  "notes": "verified."
- },
- {
-  "id": 1617,
-  "kind": 1,
-  "zone": 16,
-  "sort": 17,
-  "faction": 0,
-  "title": "Legash Encampment",
-  "body": "The Legash Encampment sprawls across the northern heights of Azshara, north of the Thalassian Base Camp and east of Ursolan. It belongs to the Legashi satyrs, rogues and hellcallers among them, and a satyr called Master Feardred stalks its ground. Thunderhead hippogryphs and mosshoof coursers graze the slopes nearby, untroubled by their demonic neighbors. On a hill at the camp's edge a goblin merchant hides from the blood elves who hired him and then tried to kill him; they named him Kim'jael, little rat, and he has not forgiven them.",
-  "triggers": [
-   [
-    1,
-    1219
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Legash_Encampment (Legashi satyr, north of the base camp, east of Ursolan)",
-   "warcraft.wiki.gg/wiki/Kim'jael (hill by the Legash Encampment)",
-   "quest 3601 description",
-   "zone_areas.py: 6200, 6201, 6202, 6652 (rare), 6378, 8761, 8420 in area 1219"
-  ],
-  "notes": "verified (wiki: Ursolan to the west, base camp to the south; Kim'jael on a hill by the camp)."
- },
- {
-  "id": 1618,
-  "kind": 1,
-  "zone": 16,
-  "sort": 18,
-  "faction": 0,
-  "title": "Bitter Reaches",
-  "body": "The Bitter Reaches form the wild northeast of Azshara, a high country thick with Thunderhead hippogryphs, mistwing chimaerae and oozes. Along its northern edge the cliff giants have pushed out most other life, and among them walks Monnos the Elder, a giant of fearsome strength. Few travelers come here. Farther east, on the coast beyond the reaches, the Tower of Eldara looks out over a surf where wavethrashers, makrinni and Storm Bay murlocs crawl among the rocks.",
-  "triggers": [
-   [
-    1,
-    2497
-   ],
-   [
-    1,
-    1229
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Bitter_Reaches (northeast Azshara; hippogryphs, oozes, chimaerae; giants on the northern edge)",
-   "zone_areas.py: 6379, 6380, 8764, 8766, 6146 to 6148, 6646 (rare elite) in 2497; 6348, 6370, 6371 in 1229",
-   "posarea: 1229 spawns around 4050 to 4360 x, -7700 to -7950 y (east coast)"
-  ],
-  "notes": "verified. Tower of Eldara folded in; Elemental Invasion event spawns left out."
- },
- {
-  "id": 1619,
-  "kind": 2,
-  "zone": 16,
-  "sort": 1,
-  "faction": 0,
-  "title": "Azuregos",
-  "body": "Azuregos is a blue dragon of Malygos's flight, trusted to guard some of its most precious things. He keeps to the hills of southern Azshara, where a thriving Highborne civilization once stood, and wants only to study these magic-rich shores and what the Sundering left behind. He declares this place under his protection and its arcane mysteries inviolate, and the fate of the curious, he says, is simply the price of curiosity. So many orcs and humans come at him with sharp sticks that a visitor may well be speaking to his spirit instead. Charged with a shard of the Scepter of the Shifting Sands, he kept it five hundred years, then handed it to a very special minnow.",
-  "triggers": [
-   [
-    3,
-    6109
-   ],
-   [
-    2,
-    15481
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Azuregos (pre-Cataclysm: Malygos trusted him with precious artifacts; studies Azshara)",
-   "creature_text 6109 (this place is under my protection, mysteries of the arcane inviolate; such is the price of curiosity)",
-   "npc_text 7886, 7887, 7888, 7889 (spirit gossip: savages with sharp sticks, ghostly spirit, Highborne civilization, five hundred years, the minnow)"
-  ],
-  "notes": "verified. Faction 0: 6109 and 15481 use template 7, attackable and talkable by both. Tanaris tells the ledger and buoy; only the minnow lead-in is kept here."
- },
- {
-  "id": 1620,
-  "kind": 2,
-  "zone": 16,
-  "sort": 2,
-  "faction": 0,
-  "title": "Duke Hydraxis",
-  "body": "Duke Hydraxis leads the Hydraxian Waterlords, elementals of water who serve Neptulon and hold that their strength lies in their purity. From an island in the Bay of Storms, ringed by his honor guard, he wages war on the lesser elements of air and earth and above all on fire, whose lords hold the Molten Core beneath Blackrock Mountain. Hydraxis does not pretend to understand mortal notions of gratitude, yet he will strike bargains with those who prove useful. To his most trusted allies he gives vials of aqual quintessence, able to quench the fiery runes on the floor of the Molten Core, conduits that feed the Firelords' power.",
-  "triggers": [
-   [
-    2,
-    13278
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Duke_Hydraxis (leader of the Waterlords, servant of Neptulon, island in Azshara)",
-   "npc_text 6108, 6158 (deal with mortals; runes as conduits, aqual quintessence)",
-   "quest 6804 description and reward (aspect of Neptulon; our strength lies in our purity)",
-   "quest 6805 (war with the lesser elements)",
-   "quest 7486 description (notions of gratitude)",
-   "zone_areas.py: 13278, 13322 in 1227"
-  ],
-  "notes": "verified (npc_text 6108, 6158; quests 6804, 6805, 6822, 7486). No finished zone uses Hydraxis or 6804 to 7486."
- },
- {
-  "id": 1621,
-  "kind": 2,
-  "zone": 16,
-  "sort": 3,
-  "faction": 0,
-  "title": "Loramus Thalipedes",
-  "body": "Loramus Thalipedes is a night elf demon hunter who dwells on a small island in the Bay of Storms, guarded by three great felhounds, Raytaf, Shahiar and Zaman. He sees what others cannot, and calls mortals sighted but sightless, a gift and a curse alike. His knowledge of demons runs deep, above all of Razelikh the Defiler, once the most feared of Lord Kazzak's lieutenants and now master of the Blasted Lands. Loramus laughs at those who would face the demon lord and calls their courage foolhardy, yet he helps them all the same, if only to see one of Razelikh's minions fall.",
-  "triggers": [
-   [
-    2,
-    7783
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Loramus_Thalipedes (pre-Cataclysm: night elf demon hunter, island in Azshara, three felhound guardians)",
-   "npc_text 1796 (sighted but sightless)",
-   "npc_text 1813, 1817 (Razelikh, Kazzak's lieutenant; Loramus laughs)",
-   "quest 3508 description (foolhardy; to see one of Razelikh's minions fall)",
-   "zone_areas.py: 8756, 8757, 8758 Loramus's Guardian"
-  ],
-  "notes": "Fact-check: 'pities mortals' made 'calls mortals' (npc_text 1796). Rest verified. Blasted Lands tells the Razelikh chain."
- },
- {
-  "id": 1622,
-  "kind": 2,
-  "zone": 16,
-  "sort": 4,
-  "faction": 0,
-  "title": "Lord Arkkoroc",
-  "body": "Lord Arkkoroc is a sea giant who dwells atop the Temple of Arkkoran, and the demon hunter Loramus names him a lesser deity. He speaks of himself as the one, and grants his wisdom only to those who first serve him. His great grievance is Hetaera, a hydra who calls herself ruler of the oceans and preys on his children. To Arkkoroc she is a false god and nothing more, and he wants all three of her heads. Those who bring them he judges worthy of his wisdom, and from such grisly trophies his giant fists can wring a temper fit for weapons against demons.",
-  "triggers": [
-   [
-    2,
-    6134
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Lord_Arkkoroc (sea giant, Temple of Arkkoran, lesser deity, Hetaera killed his sons)",
-   "quests 3509, 3510, 3511 (the one; false god; all of her heads; finally one worthy; draining the heads for a temper)"
-  ],
-  "notes": "Fact-check: 'slain many of his children' made 'preys on his children' (3510). Faction 0 (template 35)."
- },
- {
-  "id": 1623,
-  "kind": 2,
-  "zone": 16,
-  "sort": 5,
-  "faction": 0,
-  "title": "Archmage Xylem",
-  "body": "Archmage Xylem is a human mage who lives in a tower high on the cliffs of Azshara, reachable only by a spell cast by his servant Sanath Lim-yo, who sneers at every visitor and is civil to no one but his master. Xylem watches over the land for reasons of his own and studies its Highborne relics with a hunger that unsettles those who deal with him; the orc Jediga trusts him less than anyone she knows. He is generous to those who please him, but he has not forgiven the blood elves who killed one of his apprentices, nor the green drake Morphaz, who swallowed another apprentice whole along with a rare arcane shard.",
-  "triggers": [
-   [
-    2,
-    8379
-   ],
-   [
-    2,
-    8395
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Archmage_Xylem (human archmage, tower in the mountains of northern Azshara, Sanath)",
-   "quests 8250, 3503, 3421 reward (teleport by Sanath; rude to everyone save the master)",
-   "quest 3381 reward text (very generous to those that please him)",
-   "npc_text 4956 (keeps watch over the land for some unknown reason)",
-   "quest 3561 description (Jediga trusts him least)",
-   "quests 8251, 8253 descriptions (apprentice killed by blood elves; Morphaz ambush and shard)"
-  ],
-  "notes": "verified. 3503 is auto-complete, so Sanath is a TALK trigger, not an accept."
- },
- {
-  "id": 1624,
-  "kind": 2,
-  "zone": 16,
-  "sort": 6,
-  "faction": 2,
-  "title": "Jediga",
-  "body": "Jediga is an orc of Orgrimmar sent to Valormok as a punishment by Belgrom Rockmaul, and she has made the most of it. Before she left she learned what valuables lay forgotten in Azshara, and now she sends helpers into the Ruins of Eldarath for four tablets named after Highborne wizards. Each has a buyer: Magatha Grimtotem of Thunder Bluff, who hopes the lore of the alchemist Beth'Amara may help the Forsaken; Jes'rimon, a fence in Orgrimmar's Drag who has eyes for Jediga herself; Andron Gant of the Undercity, too fond of drink, buying for mages who study Markri's summonings; and Archmage Xylem, the buyer she trusts least. Those who carry her tablets earn a fair share of the profits.",
-  "triggers": [
-   [
-    2,
-    8587
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Jediga (sent by Belgrom as punishment)",
-   "quest 3517 description (Belgrom's punishment; research before leaving; four tablets)",
-   "quests 3518, 3541, 3542, 3561 descriptions and rewards",
-   "quests 3563, 3564 rewards (Jes'rimon's advances; Andron overpaid, drunk again)",
-   "factiontemplate 125 (Orgrimmar, hostile to Alliance)"
-  ],
-  "notes": "Fact-check: Andron 'rarely sober' made 'too fond of drink' (3564); Xylem 'the buyer she fears most' made 'trusts least' (3561). Faction 2 confirmed: template 125 is hostile to the Alliance. Thunder Bluff only mentions the trade; Undercity does not."
- },
- {
-  "id": 1625,
-  "kind": 2,
-  "zone": 16,
-  "sort": 7,
-  "faction": 0,
-  "title": "Kim'jael",
-  "body": "Kim'jael is a goblin merchant camped on a hill near the Legash Encampment, nursing a grudge. Magus Rimtori's blood elves hired him to help scout Azshara for lost treasure, and at the word treasure he signed on, only for his employers to turn on him and try to kill him. Worse, they gave him a name: Kim'jael, which in their tongue means something like little rat. The elves still hold his compass, his scope, his stuffed chicken and his Wizzlegoober. Kim'jael wants them back, and wants to learn why Rimtori was after a rune the naga of Eldarath now hold, so that he can pay the big bullies back in kind.",
-  "triggers": [
-   [
-    2,
-    8420
-   ],
-   [
-    4,
-    3601
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Kim'jael (goblin, nickname means little rat, hired by Rimtori)",
-   "quest 3601 description and objectives",
-   "quest 5534 description and reward",
-   "warcraft.wiki.gg/wiki/Kim'jael (hill southeast of Legash, northwest of the base camp)"
-  ],
-  "notes": "verified. Faction 0: template 120 friendly to both; 3601 AllowableRaces 0, QuestType 2."
- },
- {
-  "id": 1626,
-  "kind": 2,
-  "zone": 16,
-  "sort": 8,
-  "faction": 0,
-  "title": "Loh'atu",
-  "body": "Loh'atu is a tauren who stands with the night elves at Talrendis Point, on the border of Ashenvale. He has sworn an oath to the Earthmother to aid the elves in purging the satyrs, and he hunts those of the Haldarr clan. He has also promised the Sentinels to free the Highborne spirits from their mortal bonds wherever he finds them, for he believes their hunger for the arcane is a harbinger of the Burning Legion. To those who help him he shares what he knows: of Queen Azshara and her ruinous love of magic, of the cursed Highborne, of the human mage in the northern tower, and of the furbolgs grown hostile.",
-  "triggers": [
-   [
-    2,
-    11548
-   ]
-  ],
-  "sources": [
-   "quests 5535, 5536 descriptions, request and reward texts",
-   "npc_text 4953 to 4958 (his gossip on Azshara, Eldarath, the mage tower, the furbolgs, the blue dragons)",
-   "zone_areas.py: 11548 in area 3137",
-   "warcraft.wiki.gg/wiki/Loh'atu (tauren, friendly to both factions)"
-  ],
-  "notes": "Fact-check: oath to the Earthmother narrowed to the satyrs (5536). Tauren per wiki. Faction 0 (template 35)."
- },
- {
-  "id": 1627,
-  "kind": 2,
-  "zone": 16,
-  "sort": 9,
-  "faction": 0,
-  "title": "Ogtinc",
-  "body": "Ogtinc is a furbolg hunter who left his tribe to aid the Cenarion Circle, and he lives atop the cliffs northeast of the Ruins of Eldarath. He no longer hunts for himself; fate, he says, has made him a teacher. Seasoned hunters come to him to build a charm of trophies: perfect courser antlers, wavethrasher scales, and at last the tooth of the green drake Morphaz. For the Circle he gathers a salve to heal Felwood, from the glands of mosshoof coursers, which wisely left that sickened forest long ago, the ichor of Eldarath's undead and the blood of Morphaz himself. Every courser slain grieves him, for the beasts are sacred to the Circle.",
-  "triggers": [
-   [
-    2,
-    8405
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Ogtinc",
-   "quests 8151, 8153, 8231, 8232 (hunter's charm)",
-   "quests 8254, 8255, 8256, 8257 (salve for Felwood; coursers left Felwood; sacred to the Circle)"
-  ],
-  "notes": "verified. TALK used because his quests are class-limited; Felwood uses none of them."
- },
- {
-  "id": 1628,
-  "kind": 3,
-  "zone": 16,
-  "sort": 1,
-  "faction": 2,
-  "title": "Betrayed",
-  "body": "Belgrom Rockmaul of Orgrimmar admits his folly: he trusted a blood elf. Magus Rimtori promised him riches and powerful relics from Azshara if he would lend her warriors for protection, and then she slew them all. At Valormok, Ag'tor Bloodfist tells the rest. His camp was a dozen strong and all are dead; Rimtori played Belgrom like a lute, he says, and seduced him besides. Vengeance begins on the bluffs of the northern peninsula among her reclaimers and surveyors. In her camp lies an ancient Kaldorei Tome of Summoning whose diagram matches a circle of crystals on the ground, one bound to Rimtori herself and the others to something far more sinister. Shattering her crystal draws her out. Her head returns to Orgrimmar in a burlap sack, and Belgrom spits on it.",
-  "triggers": [
-   [
-    4,
-    3504
-   ]
-  ],
-  "sources": [
-   "quests 3504, 3505, 3506, 3507 descriptions, request and reward texts",
-   "warcraft.wiki.gg/wiki/Magus_Rimtori",
-   "warcraft.wiki.gg/wiki/Valormok",
-   "factiontemplate_dbc 29, 1074 (enemy group Alliance)"
-  ],
-  "notes": "verified against 3504 to 3507. Faction 2: Belgrom (4485, template 29) and Ag'tor (template 1074) are hostile to the Alliance. Orgrimmar does not tell this chain."
- },
- {
-  "id": 1629,
-  "kind": 3,
-  "zone": 16,
-  "sort": 2,
-  "faction": 0,
-  "title": "The Name of the Beast",
-  "body": "Those who hunt Razelikh the Defiler come at last to Loramus Thalipedes, who first makes them hear how the demon lord rose and then performs a ritual of enlightenment to learn how his wards may be broken. Only a weapon forged bearing Razelikh's true name can harm him and those under his command. That name is known to Lord Arkkoroc of the Temple of Arkkoran, and he names a price: the three heads of the hydra Hetaera, who slays his children. When they lie before him he crushes the blood from them into a temper and speaks the name, Rakh'likh. Last, the weapons need azsharite, a hard and malleable crystal the cliff giants of southern Azshara leave behind after devouring the stone and ruins of the land. Loramus's felhounds sniff out the hidden deposits, and the tempered crystal is sent to Galvan the Ancient in Stranglethorn Vale for forging.",
-  "triggers": [
-   [
-    4,
-    3141
-   ]
-  ],
-  "sources": [
-   "quests 3141, 3508, 3509, 3510, 3511, 3602, 3621 descriptions and rewards",
-   "npc_text 1813 to 1817 (his tale)",
-   "creature_text 7783 (felhound tracker, peninsula of cliff giants)"
-  ],
-  "notes": "verified against 3141, 3508 to 3511, 3602, 3621. Stops at the hand-off to Galvan; Blasted Lands 421 tells the wider campaign. 3141 is QuestType 2, so the accept fires. Faction 0."
- },
- {
-  "id": 1630,
-  "kind": 3,
-  "zone": 16,
-  "sort": 3,
-  "faction": 0,
-  "title": "The Waterlords' War",
-  "body": "Duke Hydraxis offers mortals a place in the Waterlords' war, but only those who show conviction. His first test sends them to the Crystal Vale in Silithus, where servants of air and earth guard items of power for reasons he does not grasp; he wants their stormers and rumblers destroyed. Then come greater foes. High in Blackrock Spire the orcs hold a captive servant of fire, the Pyroguard Emberseer, and Hydraxis asks for its eye. Next he sends his allies into the Molten Core itself, a stronghold of fire that nothing short of an army can enter, and bids them wage a long campaign until they earn the Waterlords' honor. The last task is the hardest: the hands of four captains of the Molten Core, Lucifron, Sulfuron, Gehennas and Shazzrah. For that feat a coffer in the surf beneath his island holds a hero's reward.",
-  "triggers": [
-   [
-    4,
-    6805
-   ]
-  ],
-  "sources": [
-   "quests 6805, 6821, 6822, 6823, 6824, 7486 descriptions and rewards"
-  ],
-  "notes": "verified against 6805, 6821 to 6824, 7486. Faction 0 (AllowableRaces 0, Hydraxis template 35)."
- }
+  {
+    "id": 1600,
+    "kind": 0,
+    "zone": 16,
+    "sort": 0,
+    "faction": 0,
+    "title": "Azshara",
+    "body": "Azshara lies on the northeastern shore of Kalimdor, a land of autumn-colored forests running from the Ashenvale border to high cliffs above the Great Sea. It shares its name with Queen Azshara, and long ago it belonged to the Highborne, the night elf nobility who loved arcane magic above all else. Their cities and temples lie broken along the coast. When the Great Sundering tore the world apart, most of the city of Eldarath fell into the Bay of Storms, and the restless spirits of the Highborne still wander what remains. Now Spitelash naga sift the ruins for relics, satyrs camp in the western and northern hills, and followers of the blue dragon Malygos guard the shores of Lake Mennar. Timbermaw furbolgs hold the mountain villages, cliff giants grind through the stone of the land, and blood elves dig for treasure in the north. Only two small camps fly the colors of the great factions: the night elves' Talrendis Point and the Horde's Valormok.",
+    "triggers": [
+      [
+        1,
+        16
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Azshara (autumn-colored flora, cliffs and beaches; ghosts, satyrs, naga)",
+      "warcraft.wiki.gg/wiki/Ruins_of_Eldarath (Sundering dropped most of the city into the Bay of Storms)",
+      "npc_text 4954, 4955, 4958 (Loh'atu: Queen Azshara, cursed Highborne, followers of Malygos)",
+      "quest 3602 description (cliff giants consume rock and buildings)",
+      "quest 3505 (blood elf workers in the north)",
+      "zone_areas.py spawns per subzone"
+    ],
+    "notes": "Check: era part 1 added (minState 6, maxState 6, no triggers) for the Scourge Invasion that mod-individual-progression phases into Azshara at state 6 only (checkIPPhasing: AQ passed, before Naxx40): two necropolises (si_gameobjects 181154, posarea over 1236 and 1231) with their shards and Scourge in 16, 1228, 1231 and 1236, following winterspring.json 61800. The module phase is the Scourge Invasion, not the Ahn'Qiraj war: aq_war.sql and aq_war_effort.sql have no spawns in Azshara's rectangle. The places with spawns carry no separate era part, as in Winterspring. Earlier: unchanged in the parts conversion: nothing to hide. verified. Naming: only the non-canon RPG says survivors named the land for the queen, so 'shares its name' is kept. No goblin Azshara.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "For a time the Scourge reaches even this haunted coast. Necropolises hang in the sky above the Haldarr Encampment in the west and above Southridge Beach by the Bay of Storms, and around the necrotic shards beneath them skeletal shocktroopers, ghoul berserkers and spectral soldiers spread across the hills and the shore while the cultists who serve them labor in their shadow.",
+        "minState": 6,
+        "maxState": 6,
+        "sources": [
+          "mod-individual-progression si_gameobjects.sql (necropolis 181154 at 3299,-4301, posarea 1236 Haldarr Encampment, and 3544,-5610, posarea 1231 Southridge Beach; circles 181227 beside them; ScriptName gobject_ipp_si, visible only from state 6 until state 7)",
+          "mod-individual-progression si_creatures.sql (necrotic shards, cultist engineers, ghoul berserkers, skeletal shocktroopers, spectral soldiers and rares in 16, 1228, 1231 and 1236 by posarea; phaseMask IPP phase)",
+          "mod-individual-progression IndividualProgression.cpp checkIPPhasing (AREA_AZSHARA, HALDARR_ENCAMPMENT, THE_SHATTERED_STRAND, SOUTHRIDGE_BEACH: IPP_PHASE from PROGRESSION_AQ until NAXX40, state 6 only)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1601,
+    "kind": 1,
+    "zone": 16,
+    "sort": 1,
+    "faction": 0,
+    "title": "Talrendis Point",
+    "body": "Talrendis Point is a small night elf camp at the western edge of Azshara, where the road from Ashenvale crosses into these haunted woods. Sentinels keep watch over it, the hippogryph master Jarrodenus tends his mounts, and the bowyer Brinna Valanaar offers bows to passing travelers. Its most unusual guest is Loh'atu, a tauren who has sworn to the Earthmother to aid the elves against the satyrs that infest this land. From here he sends the willing northeast, to lay the Highborne spirits of the Shadowsong Shrine to rest and to break the satyrs of the Haldarr clan.",
+    "triggers": [
+      [
+        1,
+        3137
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Talrendis_Point (pre-Cataclysm: small night elf camp on the Ashenvale border, Jarrodenus, Brinna, Loh'atu, Azshara Sentinel)",
+      "zone_areas.py: 11276 Azshara Sentinel x2, 11548, 12577, 14301 in area 3137",
+      "quests 5535, 5536 descriptions (northeast of here)"
+    ],
+    "notes": "Unchanged in the parts conversion: nothing to hide. Fact-check: Loh'atu's oath narrowed to the satyrs (5536); rest verified."
+  },
+  {
+    "id": 1602,
+    "kind": 1,
+    "zone": 16,
+    "sort": 2,
+    "faction": 0,
+    "title": "Shadowsong Shrine",
+    "body": "On a ruin-covered hill in western Azshara stands the Shadowsong Shrine, its broken stones haunted by the dead of the Highborne. Apparitions and lichlings drift among the ruins and fall upon anyone who comes near, their craving for arcane magic undimmed by death. At times the ghost of Varo'then walks among them, once captain of Queen Azshara's guard, who served her and the Burning Legion in the War of the Ancients and fell in the final battle at the Well of Eternity. The shrine shares its name with the Shadowsong family of the night elves, though no tale records the link. The Sentinels and their tauren ally Loh'atu would see these spirits set free.",
+    "triggers": [
+      [
+        1,
+        1235
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Shadowsong_Shrine (ruin-covered hill, highborne ghosts, link to the Shadowsong name unknown)",
+      "warcraft.wiki.gg/wiki/Varo'then (captain of Azshara's guard, slain by Malfurion; ghost at Shadowsong Shrine in Classic)",
+      "zone_areas.py: 6116, 6117, 6118 (rare) in area 1235",
+      "quest 5535 description and request text",
+      "warcraft.wiki.gg/wiki/Varo'then (died in the final battle at the Well; killer not named)"
+    ],
+    "notes": "Unchanged in the parts conversion: nothing to hide. Fact-check: Malfurion as Varo'then's killer is only implied on the wiki; now 'fell in the final battle at the Well of Eternity'. Varo'then's Ghost is a rare spawn, hence 'at times'. Rest verified."
+  },
+  {
+    "id": 1603,
+    "kind": 1,
+    "zone": 16,
+    "sort": 3,
+    "faction": 0,
+    "title": "Haldarr Encampment",
+    "body": "Northeast of the Shadowsong Shrine, the Haldarr satyrs have made their camp among old ruins on the western edge of Azshara. Satyrs, tricksters and felsworn crowd its ground. To the tauren Loh'atu they are a disfigured and evil aspect of the night elves, a blight upon sacred lands that Cenarius himself once walked, and he has sworn to help the elves purge them. He will not presume to speak for the night elves on every atrocity these demonic creatures have committed, but he knows enough to want them gone. Just to the north lies the Horde camp of Valormok.",
+    "triggers": [
+      [
+        1,
+        1236
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Haldarr_Encampment (pre-Cataclysm: Haldarr satyrs, ruins, northeast of Shadowsong Shrine, southwest of Valormok)",
+      "quest 5536 description",
+      "zone_areas.py: 6125, 6126, 6127 in area 1236",
+      "quest 3504 description (Valormok north of the Haldarr Encampment)"
+    ],
+    "notes": "Unchanged in the parts conversion: nothing to hide. verified. Scourge Invasion spawns (state 6 with mod-individual-progression) are told in 1600 part 1; Sentinel Keldara Sunblade (8397, Alliance-only, no quests) left out."
+  },
+  {
+    "id": 1604,
+    "kind": 1,
+    "zone": 16,
+    "sort": 4,
+    "faction": 0,
+    "title": "Valormok",
+    "body": "Valormok is a small Horde outpost set against the mountains of western Azshara, north of the Haldarr Encampment. It was once a dozen warriors strong, but the blood elf Magus Rimtori, whom Belgrom Rockmaul of Orgrimmar foolishly trusted, has killed them, and every party sent against her since has failed to return. Ag'tor Bloodfist commands what is left and burns for vengeance. Beside him waits Jediga, an orc sent here as a punishment, who has turned exile into a trade in Highborne relics. The wind rider master Kroum keeps the camp linked to the rest of the Horde, and a provisioner and a weaponsmith serve the few who remain.",
+    "triggers": [
+      [
+        1,
+        1237
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Valormok (pre-Cataclysm: small Horde outpost, massacre by Rimtori, Ag'tor, Jediga)",
+      "quest 3504 description, request and reward text (a dozen warriors strong, all dead; none returned)",
+      "quest 3517 description (Belgrom's punishment)",
+      "zone_areas.py: 8576, 8587, 8610, 3621 (Food & Drink), 10361 (Weaponsmith) in area 1237"
+    ],
+    "notes": "Check: the massacre and the failed parties kept in the opening as premise: they are the camp's situation as Belgrom gives it when 3504 is offered and as Ag'tor confirms on arrival, not the outcome of anything a character does; Rimtori's fate stays in 1628 part 3. Unchanged in the parts conversion: nothing to hide. The massacre of the camp and the failed parties are the premise Belgrom and Ag'tor give at the start of Betrayed (3504 description, completion and reward), not an outcome, so they stay; Rimtori's fate is told in 1628. Earlier: verified against 3504 and 3517. Ag'tor's gossip (npc_text 14690) and Haggrum's (15021) are Cataclysm text; nothing from them is used."
+  },
+  {
+    "id": 1605,
+    "kind": 1,
+    "zone": 16,
+    "sort": 5,
+    "faction": 0,
+    "title": "Ruins of Eldarath",
+    "body": "Eldarath was once a prosperous Highborne city and a strong fortress in central Azshara. The Great Sundering threw most of it into the Bay of Storms, and what remains clings to the cliffs above the water. Today the Spitelash naga claim the ruins. Warriors, screamers, sirens and serpent guards prowl the broken courts, Lady Sesspira among them, searching for the powerful artifacts the Highborne left behind. Among the rubble lie tablets named for four Highborne wizards, and the cursed spirits of the old city still linger there.",
+    "triggers": [
+      [
+        1,
+        1221
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Ruins_of_Eldarath (prosperous city and fortress, Sundering, battle with the Legion, naga, tablets and runes)",
+      "npc_text 4955 (Loh'atu: Highborne city, cursed, Spitelash search the ruins for artifacts)",
+      "quest 3517 description (four tablets named after Highborne wizards)",
+      "zone_areas.py: 6190, 6193, 6194, 6195, 6649 (rare), 7864, tablets 148513 to 148516 in area 1221",
+      "warcraft.wiki.gg/wiki/Ruins_of_Eldarath (War of the Ancients battle cited to Huln's War, a Legion-era comic)"
+    ],
+    "notes": "Unchanged in the parts conversion: nothing to hide. Fact-check: removed the War of the Ancients battle at Eldarath (the wiki cites the Legion-era Huln's War comic). Rest verified."
+  },
+  {
+    "id": 1606,
+    "kind": 1,
+    "zone": 16,
+    "sort": 6,
+    "faction": 0,
+    "title": "Temple of Zin-Malor",
+    "body": "Amid the Ruins of Eldarath rises the Temple of Zin-Malor, the stronghold from which Warlord Krellian rules the Spitelash who hold the ruins. Serpent guards, sirens and myrmidons ring the old temple, and General Fangferror prowls among them. Krellian keeps himself hidden behind his guards and covets a prismatic shell of strange and chaotic power, a prize whose magic Archmage Xylem has sensed from his tower through scrying. Around the naga, lingering ghosts of the Highborne still drift through halls their people built, and sacred Highborne writings lie among the stones.",
+    "triggers": [
+      [
+        1,
+        1223
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Ruins_of_Eldarath (Krellian controls the ruins from the Temple of Zin-Malor)",
+      "warcraft.wiki.gg/wiki/Spitelash (Krellian leads the occupation)",
+      "quests 9362 and 9364 descriptions (hiding behind his guards, prismatic shell he covets, chaotic aura)",
+      "zone_areas.py: 8408, 6650 (rare), 6194, 6195, 6196, 7864, gameobject 176356 Sacred Highborne Writings in area 1223"
+    ],
+    "notes": "Check: 9362 and 9364 were added in patch 1.11.0 (warcraft.wiki.gg Quest:Warlord_Krellian), classic content in a classic zone; mod-individual-progression does not gate them (only zone_azshara.sql smart scripts touch the Spitelash), so no era tag. Unchanged in the parts conversion: nothing to hide. verified (9362, 9364, spawns). The RPG claim that it was Elune's temple is non-canon and left out."
+  },
+  {
+    "id": 1607,
+    "kind": 1,
+    "zone": 16,
+    "sort": 7,
+    "faction": 0,
+    "title": "Bear's Head",
+    "body": "Along the southeastern edge of the Azshara mountains lie the villages of Bear's Head, outposts of the Timbermaw furbolgs whose larger dens stand farther north at Ursolan. Warriors, pathfinders and totemics guard the huts, and like most of their kin in this land they meet outsiders with hostility. High on a cliff above them stands the tower of Archmage Xylem. No path climbs to it: visitors must find his surly servant Sanath Lim-yo, camped below the cliffs north of the fork where the main road meets the Ruins of Eldarath, and be sent up by his spell.",
+    "triggers": [
+      [
+        1,
+        1224
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Bear's_Head (Timbermaw villages, outposts of Ursolan; Xylem's tower on a cliff)",
+      "npc_text 4957 (most furbolgs here hostile)",
+      "quest 8250 description (teleport by Sanath, fork in the road, head north to the cliffs)",
+      "zone_areas.py: 6184, 6185, 6186, 8379 and tower NPCs in area 1224"
+    ],
+    "notes": "Unchanged in the parts conversion: nothing to hide. verified (8250, npc_text 4957, spawns; Sanath stands just outside 1224)."
+  },
+  {
+    "id": 1608,
+    "kind": 1,
+    "zone": 16,
+    "sort": 8,
+    "faction": 0,
+    "title": "Ursolan",
+    "body": "Ursolan is the heart of the Timbermaw settlements of northern Azshara, which run south through the hills to Bear's Head. Ursa warriors, den watchers and shamans fill its dens, Gatekeeper Rageroar watches the furbolg lands between, and Thunderhead hippogryphs wheel overhead. What has become of these furbolgs is uncertain. The tauren Loh'atu wonders whether the plague of Felwood has touched them or whether they simply defend a once peaceful people. Their shamans keep odd treasures too: thieves who could not open a sealed blue bag belonging to Lord Ravenholdt sold it to a Timbermaw shaman as a holy relic.",
+    "triggers": [
+      [
+        1,
+        1225
+      ],
+      [
+        1,
+        1216
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Ursolan (named for Ursol, extensive Timbermaw settlement running south through the Hold to Bear's Head)",
+      "npc_text 4957 (Loh'atu on the furbolgs)",
+      "quest 8234 description (bag sold to a Timbermaw shaman as a holy relic)",
+      "zone_areas.py: 6187, 6188, 6189, 6378 in 1225; 6651 Gatekeeper Rageroar (rare) in 1216"
+    ],
+    "notes": "Unchanged in the parts conversion: nothing to hide. Fact-check: dropped the Ursol naming claim (wiki, unsourced). Area 1216 is Azshara's own Timbermaw Hold area, not Felwood's 1769. Rest verified."
+  },
+  {
+    "id": 1609,
+    "kind": 1,
+    "zone": 16,
+    "sort": 9,
+    "faction": 0,
+    "title": "Lake Mennar",
+    "body": "Lake Mennar lies among the hills of southern Azshara, and its shores belong to the blue dragonflight. Followers of Malygos stand guard on every side: blue dragonspawn, scalebanes, mageweavers and magelords. Where the blue dragons gather, those who know the land say, arcane magic is never far, and many suspect the dragonkin are protecting something the Highborne left behind. Those who slip past the guardians find the lake itself calm and safe. Farther east, the great blue Azuregos keeps his own watch over the treasures of this coast.",
+    "triggers": [
+      [
+        1,
+        1234
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Lake_Mennar (blue dragonflight, dragonspawn around, the lake itself free from danger)",
+      "npc_text 4958 (followers of Malygos, arcane magic, protecting something the Highborne left behind)",
+      "zone_areas.py: 193, 6129, 6130, 6131 in area 1234",
+      "creature 6109 at 2622,-5977 (east of the lake's dragonspawn at about 2600,-5400)"
+    ],
+    "notes": "Unchanged in the parts conversion: nothing to hide. verified."
+  },
+  {
+    "id": 1610,
+    "kind": 1,
+    "zone": 16,
+    "sort": 10,
+    "faction": 0,
+    "title": "The Ruined Reaches",
+    "body": "Along the southern coast of Azshara, the Ruined Reaches hold the wreck of the Horizon Scout. The ship lay off the coast in search of a safe anchorage when naga struck, barely an hour after sundown, and sent her to the bottom. Captain Vanessa Beltis and the survivors of her crew now shelter by the shore with the ship's passengers, their cargo strewn about them, and the naga have already returned once for whatever they failed to find. Scouts watch the mouth of the valley for the next attack. Nearby, the gnome couple Blimo and Jubie Gadgetspring keep a house on the beach and sell trade and engineering supplies.",
+    "triggers": [
+      [
+        1,
+        1256
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Horizon_Scout (wreck in the Ruined Reaches, crew and passengers)",
+      "quest 3382 description and reward text",
+      "npc_text 2293 (Beltis gossip: ship at the bottom of the sea, cargo and passengers strewn)",
+      "zone_areas.py: 8378, 8380, 8381, 8382, 8386 to 8389, 8394, 8478, 12957, 8678 in area 1256",
+      "warcraft.wiki.gg/wiki/Blimo_Gadgetspring and Jubie_Gadgetspring (gnomes, husband and wife, house on the beach)"
+    ],
+    "notes": "Unchanged in the parts conversion: nothing to hide. Fact-check: the Gadgetsprings are gnomes and a married couple with a house on the beach (wiki), not goblins; 'southern peninsula' made 'southern coast' (wiki). Rest verified."
+  },
+  {
+    "id": 1611,
+    "kind": 1,
+    "zone": 16,
+    "sort": 11,
+    "faction": 0,
+    "title": "Ravencrest Monument",
+    "body": "At the tip of Azshara's southern point, on cliffs above the Great Sea, stand the shattered remains of a colossal night elf statue. Only its legs still rise from the rock; the rest lies broken across the headland or lost beneath the waves. The monument bears the Ravencrest name, though whom it honored is no longer known. The Spitelash have made it one of their strongholds, and naga battlemasters and enchantresses hold it against all comers. The headland cannot be reached from the sea, only from inland across a bridge.",
+    "triggers": [
+      [
+        1,
+        1232
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Ravencrest_Monument (colossus, only legs stand, Spitelash, reached by a bridge; subject unconfirmed)",
+      "warcraft.wiki.gg/wiki/Spitelash (Ravencrest Monument among their bases)",
+      "zone_areas.py: 7885, 7886 in area 1232"
+    ],
+    "notes": "Unchanged in the parts conversion: nothing to hide. verified. Statue subject left open (Kur'talos is fan speculation). Lunar Festival elder excluded."
+  },
+  {
+    "id": 1612,
+    "kind": 1,
+    "zone": 16,
+    "sort": 12,
+    "faction": 0,
+    "title": "Southridge Beach",
+    "body": "Southridge Beach runs along the southern shore of the Bay of Storms, east of the Ruins of Eldarath. It is Spitelash country: myrmidons and sirens walk the sand, and a naga called Caravan Master Tset moves among them. The naga have learned to recognize the enchanted coral of these waters, rare even here, and have stripped so much of it from the bay that little remains. Makrinni razorclaws and coralshell lurkers crawl along the tide line, and wreckage drifts in on the surf.",
+    "triggers": [
+      [
+        1,
+        1231
+      ]
+    ],
+    "sources": [
+      "quest 8252 description (ruins and beaches overrun with spitelash, enchanted coral, little left in the bay)",
+      "warcraft.wiki.gg/wiki/Spitelash (Southridge Beach a base; Caravan Master Tset)",
+      "zone_areas.py: 6195, 6196, 8409, 6350, 6352, gameobject 180751 Floating Wreckage in area 1231",
+      "posarea: 1231 spans about 2780 to 3625 x, -5460 to -6745 y"
+    ],
+    "notes": "Unchanged in the parts conversion: nothing to hide. verified (8252; wiki: south edge of the bay; spawns)."
+  },
+  {
+    "id": 1613,
+    "kind": 1,
+    "zone": 16,
+    "sort": 13,
+    "faction": 0,
+    "title": "Bay of Storms",
+    "body": "The Bay of Storms is the great inlet of eastern Azshara, where much of old Eldarath lies drowned. Storm Bay murlocs, great wavethrashers and coralshell lurkers haunt its shallows, and mammoth sharks cruise deeper water. Its islands hold strange residents. On one, the demon hunter Loramus Thalipedes keeps watch with three felhounds at his side. On another, to the southeast, Duke Hydraxis of the Waterlords holds court among his honor guard. In the north lies Hetaera's Clutch, lair of a hydra who calls herself ruler of these waters and preys on the children of the sea giant Arkkoroc, whose sons and servants roam the bay in turn.",
+    "triggers": [
+      [
+        1,
+        1227
+      ],
+      [
+        1,
+        1222
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Bay_of_Storms (pre-Cataclysm locations incl. Hetaera's Clutch)",
+      "warcraft.wiki.gg/wiki/Storm_Bay_Oracle (murloc)",
+      "quest 3510 description (Hetaera, false ruler of the oceans, kills Arkkoroc's children)",
+      "zone_areas.py: 7783, 8756 to 8758, 13278, 13322, 6349, 6351, 6352, 12125 in 1227; 6140, 6143, 6144 in 1222",
+      "posarea: Loramus 3098,-6361 and Hydraxis 2849,-7297 both read 1227"
+    ],
+    "notes": "Check: Hetaera preying on Arkkoroc's children kept as premise (Arkkoroc's grievance in the 3510 offer, the bay's situation, not a reveal or outcome); her death is in no opening. Unchanged in the parts conversion: nothing to hide. verified (positions: Hetaera 3827,-6154 north of Loramus 3098,-6361; Hydraxis 2850,-7297 to his southeast). Bilgewater Harbor is Cataclysm and absent."
+  },
+  {
+    "id": 1614,
+    "kind": 1,
+    "zone": 16,
+    "sort": 14,
+    "faction": 0,
+    "title": "Temple of Arkkoran",
+    "body": "On the northeastern shore of the Bay of Storms rises the Temple of Arkkoran, its weathered stones lapped by the surf. Now it is the seat of Lord Arkkoroc, a sea giant some name a lesser deity. He dwells at the very top of the temple, while the Arkkoran broods of makrura and murlocs, clackers, pincers, muckdwellers and oracles, swarm its lower levels and attack outsiders on sight. Those who come seeking his wisdom must find a way through them, for his minions will stop at nothing to destroy an intruder.",
+    "triggers": [
+      [
+        1,
+        1226
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Temple_of_Arkkoran (former temple of Elune on the northeastern shores, Arkkoroc on the top level, makrura and murlocs attack on sight)",
+      "quest 3509 description (lesser deity, his minions will stop at nothing)",
+      "warcraft.wiki.gg/wiki/Arkkoran_Oracle (murloc)",
+      "zone_areas.py: 6134, 6135 to 6138 in area 1226",
+      "warcraft.wiki.gg/wiki/Temple_of_Arkkoran (Elune claim has no citation)"
+    ],
+    "notes": "Converted: no parts. Loramus's name dropped from the lesser deity line: it is his word in 3509, part of the Name of the Beast chain (1629), and a visitor to the temple has not heard it. Earlier: Fact-check: removed 'former temple of Elune' (no citation on the wiki; the RPG ties Elune's temple to Zin-Malor instead). Rest verified."
+  },
+  {
+    "id": 1615,
+    "kind": 1,
+    "zone": 16,
+    "sort": 15,
+    "faction": 0,
+    "title": "The Shattered Strand",
+    "body": "The Shattered Strand runs along the northern side of the Bay of Storms, a remote shore of surf and broken rock. Spitelash myrmidons and sirens hunt along it, makrinni scrabblers and Arkkoran makrura pick through the shallows, and wavethrashers, powerful amphibious beasts found nowhere but Azshara, haul themselves up onto the sand. On the cliffs above lives the furbolg Ogtinc, who left his tribe to serve the Cenarion Circle. A cave on the strand bears the name of Scalebeard, a great turtle that seldom shows itself to travelers.",
+    "triggers": [
+      [
+        1,
+        1228
+      ],
+      [
+        1,
+        3140
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/The_Shattered_Strand (north side of the Bay of Storms, remote; hydras, sea giants, makrura, murlocs)",
+      "quest 8231 description (wavethrasher lives only in Azshara)",
+      "zone_areas.py: 6195, 6196, 6370, 6135, 6136, 6348, 8405, 13896 (rare elite, turtle family) in area 1228",
+      "AreaTable 3140 Scalebeard's Cave (reachable)"
+    ],
+    "notes": "Unchanged in the parts conversion: nothing to hide. verified. Scalebeard (turtle family) spawns in 1228; cave 3140 is a reachable indoor area."
+  },
+  {
+    "id": 1616,
+    "kind": 1,
+    "zone": 16,
+    "sort": 16,
+    "faction": 0,
+    "title": "Thalassian Base Camp",
+    "body": "In the hills of northern Azshara, the blood elves of Magus Rimtori have pitched the Thalassian Base Camp. Her reclaimers and surveyors comb the land for Highborne treasures and have found a way to grind the magic items they take into a glittering dust unlike anything a common disenchanting yields. Magister Hawkhelm keeps the camp while Rimtori ranges abroad with her bodyguards. On the ridge, arcane crystals stand about a circle beside an ancient Kaldorei tome of summoning, a hint that the expedition seeks more than relics. The elves keep faith with no partner for long, as the Horde and a certain goblin scout have learned.",
+    "triggers": [
+      [
+        1,
+        1220
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Thalassian_Base_Camp (pre-Cataclysm: Rimtori's expedition, Hawkhelm, glittering dust, tome of summoning)",
+      "quest 8251 description (glittering dust)",
+      "quests 3505 and 3506 (tome, crystals and circle)",
+      "quest 3601 description (Kim'jael betrayed)",
+      "zone_areas.py: 6198, 6199, 6647 (rare), 150140 Arcane Focusing Crystal, 151286 Kaldorei Tome of Summoning in area 1220"
+    ],
+    "notes": "Unchanged in the parts conversion: nothing to hide. verified."
+  },
+  {
+    "id": 1617,
+    "kind": 1,
+    "zone": 16,
+    "sort": 17,
+    "faction": 0,
+    "title": "Legash Encampment",
+    "body": "The Legash Encampment sprawls across the northern heights of Azshara, north of the Thalassian Base Camp and east of Ursolan. It belongs to the Legashi satyrs, rogues and hellcallers among them, and a satyr called Master Feardred stalks its ground. Thunderhead hippogryphs and mosshoof coursers graze the slopes nearby, untroubled by their demonic neighbors. On a hill at the camp's edge a goblin merchant hides from the blood elves who hired him and then tried to kill him; they named him Kim'jael, little rat, and he has not forgiven them.",
+    "triggers": [
+      [
+        1,
+        1219
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Legash_Encampment (Legashi satyr, north of the base camp, east of Ursolan)",
+      "warcraft.wiki.gg/wiki/Kim'jael (hill by the Legash Encampment)",
+      "quest 3601 description",
+      "zone_areas.py: 6200, 6201, 6202, 6652 (rare), 6378, 8761, 8420 in area 1219"
+    ],
+    "notes": "Unchanged in the parts conversion: nothing to hide. verified (wiki: Ursolan to the west, base camp to the south; Kim'jael on a hill by the camp)."
+  },
+  {
+    "id": 1618,
+    "kind": 1,
+    "zone": 16,
+    "sort": 18,
+    "faction": 0,
+    "title": "Bitter Reaches",
+    "body": "The Bitter Reaches form the wild northeast of Azshara, a high country thick with Thunderhead hippogryphs, mistwing chimaerae and oozes. Along its northern edge the cliff giants have pushed out most other life, and among them walks Monnos the Elder, a giant of fearsome strength. Few travelers come here. Farther east, on the coast beyond the reaches, the Tower of Eldara looks out over a surf where wavethrashers, makrinni and Storm Bay murlocs crawl among the rocks.",
+    "triggers": [
+      [
+        1,
+        2497
+      ],
+      [
+        1,
+        1229
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Bitter_Reaches (northeast Azshara; hippogryphs, oozes, chimaerae; giants on the northern edge)",
+      "zone_areas.py: 6379, 6380, 8764, 8766, 6146 to 6148, 6646 (rare elite) in 2497; 6348, 6370, 6371 in 1229",
+      "posarea: 1229 spawns around 4050 to 4360 x, -7700 to -7950 y (east coast)"
+    ],
+    "notes": "Unchanged in the parts conversion: nothing to hide. verified. Tower of Eldara folded in; Elemental Invasion event spawns left out."
+  },
+  {
+    "id": 1619,
+    "kind": 2,
+    "zone": 16,
+    "sort": 1,
+    "faction": 0,
+    "title": "Azuregos",
+    "body": "Azuregos is a great blue dragon who keeps to the hills of southern Azshara, east of Lake Mennar, whose shores the dragonspawn of the blue flight guard. He suffers no intruders. To any who come near he declares this place under his protection and the mysteries of the arcane inviolate. He calls the little ones to face him and drags them to his side with his magic, and what befalls those who do, he says, is simply the price of curiosity.",
+    "triggers": [
+      [
+        3,
+        6109
+      ],
+      [
+        2,
+        15481
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Azuregos (pre-Cataclysm: Malygos trusted him with precious artifacts; studies Azshara)",
+      "creature_text 6109 (this place is under my protection, mysteries of the arcane inviolate; such is the price of curiosity)",
+      "npc_text 7886, 7887, 7888, 7889 (spirit gossip: savages with sharp sticks, ghostly spirit, Highborne civilization, five hundred years, the minnow)",
+      "creature_text 6109 group 0 (Come, little ones. Face me!)",
+      "creature 6109 at 2622,-5977 and 15481 at 2651,-6098 (east of the Lake Mennar dragonspawn)",
+      "boss_azuregos.cpp (SAY_AGGRO group 1 on engage, SAY_TELEPORT group 0 with Arcane Vacuum every 30 seconds, SAY_KILL group 2 on killing a player)"
+    ],
+    "notes": "Check: the opening is unlocked by KILL 6109, so it now holds only what a bystander at the fight sees and hears: a great blue dragon east of the lake and his three yells (aggro, the Arcane Vacuum pull, a kill). 'Of Malygos's flight' dropped from the opening; the spirit's default line (npc_text 7881) moved to a new part 1 on TALK 15481, since the spirit stands about 125 yards away and someone at the fight never hears it; the tale is now part 2 (QUEST_ACCEPT 8575). The spirit is a permanent spawn, not one that appears after his death. Earlier: Converted: the spirit's tale (shard from Malygos, his wish to study the shores, the sharp sticks and the ghost, five hundred years, the minnow) moved to part 1 on QUEST_ACCEPT 8575: that gossip shows only after 8555 is rewarded, and its last option hands over the ledger that starts 8575. The opening keeps what a bystander at the fight hears (his yells) and the spirit's default line. Added the buoy and ledger lead-in without the Narain quote or Maws, which Tanaris (44027 part 1, 44036) and Silithus tell. 8575 follows the Ahn'Qiraj chain, so no era tag (as in Tanaris). Earlier: verified. Faction 0: 6109 and 15481 use template 7, attackable and talkable by both.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "Not far from where he keeps watch lingers a spirit in his very likeness, a ghostly blue dragon called the Spirit of Azuregos. To most who come to it, it says only that its watch is eternal, and it offers them nothing more.",
+        "triggers": [
+          [
+            2,
+            15481
+          ]
+        ],
+        "sources": [
+          "npc_text 7881 (default gossip of menu 21276, shown while 8555 has never been taken: conditions 14/21276)",
+          "creature 15481 at 2651,-6098, a permanent spawn about 125 yards from Azuregos at 2622,-5977 (no game event)"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "To those who seek the scepter shard in his flight's keeping, the spirit tells a story. Malygos charged him with guarding it, though all he wants is to study these magic-rich shores where Highborne once thrived, and so many orcs and humans come at him with sharp sticks that a visitor may well be speaking to his ghost. After five hundred years of trouble he gave the shard to a very special minnow of his own making. Only an arcanite buoy will draw it out, and he sends the plans in a ledger to an old acquaintance in Tanaris.",
+        "triggers": [
+          [
+            4,
+            8575
+          ]
+        ],
+        "sources": [
+          "npc_text 7885 to 7889, 7891, 7892, 7894 to 7897 (spirit's gossip chain, shown only with 8555 rewarded and 8575 not taken: conditions on gossip menu 21276)",
+          "smart_scripts 15481 (last gossip option gives the Magical Ledger, item 20949, which starts 8575)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1620,
+    "kind": 2,
+    "zone": 16,
+    "sort": 2,
+    "faction": 0,
+    "title": "Duke Hydraxis",
+    "body": "Duke Hydraxis leads the Hydraxian Waterlords, elementals of water who serve Neptulon and hold that their strength lies in their purity. From an island in the Bay of Storms, ringed by his honor guard, he wages war on the lesser elements of air and earth and above all on fire, whose lords hold the Molten Core beneath Blackrock Mountain. Mortals, in his eyes, are not elementals and cannot understand the Waterlords' struggle, but he is willing to strike a bargain that serves both, and he has use for allies who prove their worth.",
+    "triggers": [
+      [
+        2,
+        13278
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Duke_Hydraxis (leader of the Waterlords, servant of Neptulon, island in Azshara)",
+      "npc_text 6108, 6158 (deal with mortals; runes as conduits, aqual quintessence)",
+      "quest 6804 description and reward (aspect of Neptulon; our strength lies in our purity)",
+      "quest 6805 (war with the lesser elements)",
+      "quest 7486 description (notions of gratitude)",
+      "zone_areas.py: 13278, 13322 in 1227",
+      "npc_text 6108 (not an elemental, cannot understand our struggle; a deal to benefit us both)"
+    ],
+    "notes": "Check: the gratitude line left part 1, which now rests on QUEST_DONE 6824 alone (the quintessence option opens on that turn-in; ACCEPT 7486 dropped as it always follows it); the gratitude is told in 1630 part 5 on ACCEPT 7486. 'He tells visitors' made 'in his eyes': in this DB gossip menu 5065 has five unconditioned texts and the last (8542) always shows, so 6108 and 6158 are classic text the server does not display; they are kept as lore, not as dialogue a visitor hears. Module: base AC already requires 6804 and 6805 for 6821 but gives 6804 no starter, so without mod-individual-progression the chain stops at 6805 and part 1 is never earned; with it the text holds. Earlier: Converted: the aqual quintessence and the gratitude line moved to part 1 (QUEST_DONE 6824, QUEST_ACCEPT 7486), since the quintessence gossip needs 6824 rewarded and 7486 is offered only after it. The opening keeps his first gossip (6108) and the premise of his first quests. mod-individual-progression rewrites the quest relations of 6804 to 7486 in every state (dungeon_molten_core.sql); the text names no quest order, and the quintessence condition is the same with and without the module. Earlier: verified (npc_text 6108, 6158; quests 6804, 6805, 6822, 7486).",
+    "parts": [
+      {
+        "part": 1,
+        "body": "To those who have carried his war into the Molten Core and brought back the hands of its captains, Hydraxis gives vials of aqual quintessence. The fiery runes etched on the floor of the Core are conduits to the realm of fire, an affront to the Waterlords and a source of the Firelords' power, and a vial poured on one puts its flame out.",
+        "triggers": [
+          [
+            5,
+            6824
+          ]
+        ],
+        "sources": [
+          "npc_text 6158 (runes as conduits, aqual quintessence)",
+          "conditions 15/5065: the quintessence gossip option needs Honored and 6824 rewarded (Honored is already needed for 6823)",
+          "gossip_menu_option 5065 0 (a vial of aqual quintessence to extinguish a rune of the Firelords)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1621,
+    "kind": 2,
+    "zone": 16,
+    "sort": 3,
+    "faction": 0,
+    "title": "Loramus Thalipedes",
+    "body": "Loramus Thalipedes is a night elf demon hunter who dwells on a small island in the Bay of Storms, guarded by three great felhounds, Raytaf, Shahiar and Zaman. He sees what others cannot. He asks visitors whether they see it too, and knowing they do not, he calls mortals sighted but sightless, a gift and a curse alike. His knowledge of demons and their ways runs deep.",
+    "triggers": [
+      [
+        2,
+        7783
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Loramus_Thalipedes (pre-Cataclysm: night elf demon hunter, island in Azshara, three felhound guardians)",
+      "npc_text 1796 (sighted but sightless)",
+      "npc_text 1813, 1817 (Razelikh, Kazzak's lieutenant; Loramus laughs)",
+      "quest 3508 description (foolhardy; to see one of Razelikh's minions fall)",
+      "zone_areas.py: 8756, 8757, 8758 Loramus's Guardian"
+    ],
+    "notes": "Check: 'see them too' made 'see it too' (no antecedent). Converted: Razelikh moved out of the opening. Loramus's place in the hunt is Blasted Lands' reveal (421 part 3 on ACCEPT 2744) and his account of Razelikh's rise is told there (410 part 1 on DONE 2744), so the opening keeps only his default gossip (1796), the island and the felhounds. Part 1 (QUEST_DONE 3141, QUEST_ACCEPT 3508) tells his scorn and his help without retelling the account or giving the true name. Earlier: Fact-check: 'pities mortals' made 'calls mortals' (npc_text 1796). Blasted Lands tells the Razelikh chain.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "Those who come to him from the Blasted Lands, set on facing Razelikh the Defiler, must first hear his tale of the demon lord, and he will not be interrupted. Then he laughs at them. Their courage is foolhardy, he says, the admirable habit of mortals who rush into battles they have little hope of winning, yet he helps them all the same, if only to see one of Razelikh's minions fall.",
+        "triggers": [
+          [
+            5,
+            3141
+          ],
+          [
+            4,
+            3508
+          ]
+        ],
+        "sources": [
+          "quest 3141 description and completion text (listen to my tale; do not interrupt me)",
+          "npc_text 1817 (Loramus laughs)",
+          "quest 3508 description (foolhardy; to see one of Razelikh's minions fall)",
+          "gossip 11487 options: Blasted Lands word on 2744, the story on 3141"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1622,
+    "kind": 2,
+    "zone": 16,
+    "sort": 4,
+    "faction": 0,
+    "title": "Lord Arkkoroc",
+    "body": "Lord Arkkoroc is a sea giant who dwells at the very top of the Temple of Arkkoran, a being some name a lesser deity. He speaks of himself as the one, and he grants his wisdom only to those who first serve him. His great grievance is Hetaera, a hydra who calls herself ruler of the oceans and kills his children. To Arkkoroc she is a false god and nothing more, and he wants every one of her three heads.",
+    "triggers": [
+      [
+        2,
+        6134
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Lord_Arkkoroc (sea giant, Temple of Arkkoran, lesser deity, Hetaera killed his sons)",
+      "quests 3509, 3510, 3511 (the one; false god; all of her heads; finally one worthy; draining the heads for a temper)"
+    ],
+    "notes": "Check: Hetaera's preying on his children and his wish for her heads kept as premise (his grievance as he states it in the 3510 offer); the judgment, the temper and the name stay in parts. Converted: the judgment and the temper moved to part 1 (QUEST_DONE 3510, QUEST_ACCEPT 3511); the name itself is left to 1629 part 4. The lesser deity line no longer names Loramus (his word in 3509). Earlier: Fact-check: 'slain many of his children' made 'preys on his children' (3510). Faction 0 (template 35).",
+    "parts": [
+      {
+        "part": 1,
+        "body": "When Hetaera's three heads lay before him, Arkkoroc at last judged a mortal worthy of his wisdom. He squeezed the heads between his giant fists, draining their blood into a temper fit for forging weapons against demons, and gave up the true name of the demon lord his visitor hunted.",
+        "triggers": [
+          [
+            5,
+            3510
+          ],
+          [
+            4,
+            3511
+          ]
+        ],
+        "sources": [
+          "quest 3510 reward text (finally, one worthy)",
+          "quest 3511 description (temper drained from the heads; the name)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1623,
+    "kind": 2,
+    "zone": 16,
+    "sort": 5,
+    "faction": 0,
+    "title": "Archmage Xylem",
+    "body": "Archmage Xylem is a human mage who lives in a tower high on the cliffs of Azshara, reachable only by a spell cast by his servant Sanath Lim-yo, who camps below, sneers at every visitor and is civil to no one but his master. Xylem watches over the land for reasons of his own and gathers its rare arcane materials for his research. He does not take kindly to fools, but he is generous to those who please him. He has not forgiven the blood elves who killed an apprentice he sent to trade with them.",
+    "triggers": [
+      [
+        2,
+        8379
+      ],
+      [
+        2,
+        8395
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Archmage_Xylem (human archmage, tower in the mountains of northern Azshara, Sanath)",
+      "quests 8250, 3503, 3421 reward (teleport by Sanath; rude to everyone save the master)",
+      "quest 3381 reward text (very generous to those that please him)",
+      "npc_text 4956 (keeps watch over the land for some unknown reason)",
+      "quest 3561 description (Jediga trusts him least)",
+      "quests 8251, 8253 descriptions (apprentice killed by blood elves; Morphaz ambush and shard)",
+      "quest 3381 reward text (my master does not take kindly to imbeciles)",
+      "quest 8252 description (vital to my research)"
+    ],
+    "notes": "Converted: Jediga's distrust (3561, offered only after 3517) moved to part 1 on QUEST_ACCEPT 3561; Morphaz and the shard (8253, the third quest he gives) to part 2 on QUEST_ACCEPT 8253. The blood elves' killing of his apprentice stays: it is the premise of 8251, his first quest. 'Studies Highborne relics with a hunger' made 'gathers rare arcane materials for his research' (8251, 8252). Earlier: verified. 3503 is auto-complete, so Sanath is a TALK trigger, not an accept.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "Jediga of Valormok, who sells him a Highborne tablet, trusts him far less than anyone else she deals with. He is human, she says, but acts like no human she has known, and he exudes such power that she dares not ask what he plans to do with it.",
+        "triggers": [
+          [
+            4,
+            3561
+          ]
+        ],
+        "sources": [
+          "quest 3561 description"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "An older grudge runs deeper. Years ago the green drake Morphaz overwhelmed Xylem in a bold ambush and swallowed one of his apprentices whole, along with an arcane shard of unsurpassed size and quality. The drake dwells deep in the sunken Temple of Atal'Hakkar, and Xylem wants that shard back from its ageless stomach.",
+        "triggers": [
+          [
+            4,
+            8253
+          ]
+        ],
+        "sources": [
+          "quest 8253 description"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1624,
+    "kind": 2,
+    "zone": 16,
+    "sort": 6,
+    "faction": 2,
+    "title": "Jediga",
+    "body": "Jediga is an orc of Orgrimmar sent to Valormok as a punishment by Belgrom Rockmaul, and she has made the most of it. Before she left she did her research, and she knows how many valuables lie forgotten in Azshara. Now she wants helpers to gather four tablets from the Ruins of Eldarath to the east, each named after a Highborne wizard. She has buyers lined up and promises a fair cut of the profits, though only once she has proof that each tablet has reached its buyer.",
+    "triggers": [
+      [
+        2,
+        8587
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Jediga (sent by Belgrom as punishment)",
+      "quest 3517 description (Belgrom's punishment; research before leaving; four tablets)",
+      "quests 3518, 3541, 3542, 3561 descriptions and rewards",
+      "quests 3563, 3564 rewards (Jes'rimon's advances; Andron overpaid, drunk again)",
+      "factiontemplate 125 (Orgrimmar, hostile to Alliance)"
+    ],
+    "notes": "Check: part 1 confirmed: 3518, 3541, 3542 and 3561 all have PrevQuestID 3517, Jediga (8587) as starter and no other requirement, so all four stand in her quest list at once on the 3517 turn-in. Converted: the buyers (named only in the delivery quests offered on the 3517 turn-in) moved to part 1 (QUEST_DONE 3517); Jes'rimon's interest in her to part 2 (QUEST_DONE 3541); Andron's drinking to part 3 (QUEST_DONE 3542). The overpayment (3564 reward) is not kept, so part 3 needs no 3564 trigger. Earlier: Fact-check: Andron 'rarely sober' made 'too fond of drink' (3564); Xylem 'the buyer she fears most' made 'trusts least' (3561). Faction 2: template 125 is hostile to the Alliance.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "Each tablet has its buyer. The Tablet of Beth'Amara goes to Magatha Grimtotem of Thunder Bluff, who hopes tauren ways can lead the Forsaken back to being human. The Tablet of Jin'yael goes to Jes'rimon, a fence hidden high in Orgrimmar's Drag. The Tablet of Markri, a Highborne adept at summoning elementals, goes to Andron Gant of the Undercity for mages who study such spells. The last goes to Archmage Xylem, whom she trusts least of all.",
+        "triggers": [
+          [
+            5,
+            3517
+          ]
+        ],
+        "sources": [
+          "quests 3518, 3541, 3542, 3561 descriptions (all four offered by Jediga on the 3517 turn-in)"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "Jes'rimon has his eye on more than tablets. Jediga, he says, is a fine woman, and deadly too, and the note he sends back bids her hurry home to Orgrimmar so that he can take good care of her.",
+        "triggers": [
+          [
+            5,
+            3541
+          ]
+        ],
+        "sources": [
+          "quest 3541 reward text",
+          "quest 3563 description (offered by Jes'rimon on the 3541 turn-in)"
+        ]
+      },
+      {
+        "part": 3,
+        "body": "Andron Gant, found near the Apothecarium in the Undercity, is plainly drunk when the Tablet of Markri reaches him. Between hiccups he hands over some coin and promises the tablet will fetch a shiny gold or two from the right people.",
+        "triggers": [
+          [
+            5,
+            3542
+          ]
+        ],
+        "sources": [
+          "quest 3542 completion and reward text"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1625,
+    "kind": 2,
+    "zone": 16,
+    "sort": 7,
+    "faction": 0,
+    "title": "Kim'jael",
+    "body": "Kim'jael is a goblin merchant camped on a hill near the Legash Encampment, nursing a grudge. The blood elves of the Thalassian Base Camp hired him to help scout Azshara for lost treasure, and at the word treasure, and the pay, he signed on at once, only for his employers to turn on him and try to kill him. Worse, they gave him a name: Kim'jael, which in their tongue means something like little rat. They still hold his compass, his scope, his stuffed chicken and his Wizzlegoober, and he wants them back.",
+    "triggers": [
+      [
+        2,
+        8420
+      ],
+      [
+        4,
+        3601
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Kim'jael (goblin, nickname means little rat, hired by Rimtori)",
+      "quest 3601 description and objectives",
+      "quest 5534 description and reward",
+      "warcraft.wiki.gg/wiki/Kim'jael (hill southeast of Legash, northwest of the base camp)"
+    ],
+    "notes": "Converted: the rune moved to part 1 (QUEST_DONE 3601, QUEST_ACCEPT 5534) and Rimtori as his employer, with his plan to learn what the rune is for, to part 2 (QUEST_DONE 5534, the only text that names her). The opening is the 3601 premise. Earlier: verified. Faction 0: template 120 friendly to both; 3601 AllowableRaces 0, QuestType 2.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "With his things returned, Kim'jael paid as he had promised, then grumbled about the price of explosives when pressed for more. Real money, he says, goes to employees who prove their worth: he wants the rune the blood elves were looking for, which the naga of the Ruins of Eldarath now hold.",
+        "triggers": [
+          [
+            5,
+            3601
+          ],
+          [
+            4,
+            5534
+          ]
+        ],
+        "sources": [
+          "quest 3601 reward text",
+          "quest 5534 description (offered by Kim'jael after 3601)"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "With the rune in hand, Kim'jael named the one who had hired him: Magus Rimtori. He means to find out what the rune is for and why she wanted it, and to teach the big bullies who the real rats are.",
+        "triggers": [
+          [
+            5,
+            5534
+          ]
+        ],
+        "sources": [
+          "quest 5534 reward text"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1626,
+    "kind": 2,
+    "zone": 16,
+    "sort": 8,
+    "faction": 0,
+    "title": "Loh'atu",
+    "body": "Loh'atu is a tauren who stands with the night elves at Talrendis Point, on the border of Ashenvale. He has sworn an oath to the Earthmother to aid the elves in purging the satyrs, and he hunts those of the Haldarr clan. He has also promised the Sentinels to free the Highborne spirits from their mortal bonds wherever he finds them, for he believes their hunger for the arcane is a harbinger of the Burning Legion. To those who help him he shares what he knows: of Queen Azshara and her ruinous love of magic, of the cursed Highborne, of the human mage in the northern tower, and of the furbolgs grown hostile.",
+    "triggers": [
+      [
+        2,
+        11548
+      ]
+    ],
+    "sources": [
+      "quests 5535, 5536 descriptions, request and reward texts",
+      "npc_text 4953 to 4958 (his gossip on Azshara, Eldarath, the mage tower, the furbolgs, the blue dragons)",
+      "zone_areas.py: 11548 in area 3137",
+      "warcraft.wiki.gg/wiki/Loh'atu (tauren, friendly to both factions)"
+    ],
+    "notes": "Unchanged in the parts conversion: nothing to hide. Fact-check: oath to the Earthmother narrowed to the satyrs (5536). Tauren per wiki. Faction 0 (template 35)."
+  },
+  {
+    "id": 1627,
+    "kind": 2,
+    "zone": 16,
+    "sort": 9,
+    "faction": 0,
+    "title": "Ogtinc",
+    "body": "Ogtinc is a furbolg hunter who left his tribe to aid the Cenarion Circle, and he lives atop the cliffs northeast of the Ruins of Eldarath. He no longer hunts for himself; fate, he says, has made him a teacher. Seasoned hunters come to him to build a charm of trophies from fallen prey, a reminder of their trials. For the Circle he gathers a salve to heal Felwood, beginning with the glands of the mosshoof coursers, beasts that resisted the forest's corruption and wisely left it long ago. Every courser slain grieves him, for they are sacred to the Circle.",
+    "triggers": [
+      [
+        2,
+        8405
+      ]
+    ],
+    "sources": [
+      "warcraft.wiki.gg/wiki/Ogtinc",
+      "quests 8151, 8153, 8231, 8232 (hunter's charm)",
+      "quests 8254, 8255, 8256, 8257 (salve for Felwood; coursers left Felwood; sacred to the Circle)"
+    ],
+    "notes": "Converted: the ends of his two chains moved to parts: the charm's later trophies and Morphaz's tooth to part 1 (QUEST_ACCEPT 8232), the ichor and Morphaz's blood to part 2 (QUEST_ACCEPT 8257). The opening keeps the premises of his first quests (8151 reward, 8255 description and reward). Earlier: verified. TALK used because his quests are class-limited; Felwood uses none of them.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "The charm's trophies grow harder to win: perfect courser antlers, the reflective scales of the wavethrashers, and at last the tooth of the green drake Morphaz, who dwells deep in the Temple of Atal'Hakkar in the Swamp of Sorrows. No hunter should face that drake alone, and the tooth stands for the power a hunter finds in the company of others.",
+        "triggers": [
+          [
+            4,
+            8232
+          ]
+        ],
+        "sources": [
+          "quests 8153, 8231 descriptions",
+          "quest 8232 description"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "The salve follows a simple formula, one part poison and two parts cure. The poison is the ichor of undeath that gathers in the lingering Highborne of Eldarath. The second cure is the blood of Morphaz, immune to every poison and disease, a fact many druids died to learn, and it is carried to Greta Mosshoof in Felwood.",
+        "triggers": [
+          [
+            4,
+            8257
+          ]
+        ],
+        "sources": [
+          "quest 8256 description",
+          "quest 8257 description"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1628,
+    "kind": 3,
+    "zone": 16,
+    "sort": 1,
+    "faction": 2,
+    "title": "Betrayed",
+    "body": "In Orgrimmar, Belgrom Rockmaul admits a grave mistake: he trusted a blood elf. The mage Magus Rimtori promised him that Azshara held great riches and powerful relics, and that he would be rewarded if only he lent her warriors for protection. Then she killed them all. Belgrom calls her a betraying, thieving woman and burns for vengeance, but he cannot afford to send any more of his own. Instead he sends outsiders to Ag'tor Bloodfist at Valormok, the small Horde camp north of the Haldarr Encampment in Azshara, who will tell them the rest.",
+    "triggers": [
+      [
+        4,
+        3504
+      ]
+    ],
+    "sources": [
+      "quests 3504, 3505, 3506, 3507 descriptions, request and reward texts",
+      "warcraft.wiki.gg/wiki/Magus_Rimtori",
+      "warcraft.wiki.gg/wiki/Valormok",
+      "factiontemplate_dbc 29, 1074 (enemy group Alliance)"
+    ],
+    "notes": "Converted: the opening is Belgrom's 3504 premise. Parts follow the chain: 1 Ag'tor's account and the first strike (QUEST_DONE 3504, QUEST_ACCEPT 3505), 2 the tome and the crystals (QUEST_DONE 3505, QUEST_ACCEPT 3506; both at the tome, gameobject 151286), 3 Rimtori's death (QUEST_DONE 3506, QUEST_ACCEPT 3507), 4 Belgrom and the head (QUEST_DONE 3507). No KILL 8578 trigger, so a group member at the fight learns nothing early. Earlier: verified against 3504 to 3507. Faction 2: Belgrom (4485, template 29) and Ag'tor (template 1074) are hostile to the Alliance. Orgrimmar does not tell this chain; Feralas 35728 only names Belgrom's horn bounty.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "Ag'tor tells it plainly. His camp was a dozen warriors strong and all of them are dead; Rimtori played Belgrom like a lute, he says, and seduced him besides. Everything Valormok sent against her has failed to return. Vengeance begins on the southern bluffs of the northern peninsula, among her reclaimers and surveyors. Rimtori herself roams Azshara with her bodyguards, so her camp must be found, and in it something that will draw her into a fight.",
+        "triggers": [
+          [
+            5,
+            3504
+          ],
+          [
+            4,
+            3505
+          ]
+        ],
+        "sources": [
+          "quest 3504 completion and reward text",
+          "quest 3505 description"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "In her camp lies an ancient Kaldorei Tome of Summoning, and a diagram on a marked page matches the circle of crystals on the ground around it. One crystal, the book reveals, is tied to Rimtori herself; the others are tied to something far more sinister. Destroying hers may be just the way to provoke her.",
+        "triggers": [
+          [
+            5,
+            3505
+          ],
+          [
+            4,
+            3506
+          ]
+        ],
+        "sources": [
+          "quest 3505 completion and reward text",
+          "quest 3506 description"
+        ]
+      },
+      {
+        "part": 3,
+        "body": "Shattering her crystal drew Rimtori out, and she fell. At Valormok, Ag'tor roared his delight: at last the spirits of dozens of Horde warriors could be at peace, and her head was bound for Belgrom in Orgrimmar, who would want to see it for himself.",
+        "triggers": [
+          [
+            5,
+            3506
+          ],
+          [
+            4,
+            3507
+          ]
+        ],
+        "sources": [
+          "quest 3506 reward text",
+          "quest 3507 description"
+        ]
+      },
+      {
+        "part": 4,
+        "body": "Her head reached Orgrimmar in a burlap sack. Belgrom laughed over it and spat on her remains, mocking the foolish blood elf who had dared betray him, and swore he would give a kingdom to the one who brought it, were it only in his power.",
+        "triggers": [
+          [
+            5,
+            3507
+          ]
+        ],
+        "sources": [
+          "quest 3507 reward text"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1629,
+    "kind": 3,
+    "zone": 16,
+    "sort": 2,
+    "faction": 0,
+    "title": "The Name of the Beast",
+    "body": "Those who would bring down Razelikh the Defiler learn in the Blasted Lands that his chief servants cannot be harmed by any common means, and the trail leads across the sea to Azshara, to the demon hunter Loramus Thalipedes on his island in the Bay of Storms. Before he offers any help, Loramus demands that they listen to his tale from beginning to end and do not interrupt him. Only once they have heard him out will he turn to the question that matters: how the wards upon the Defiler and those who serve him might be broken.",
+    "triggers": [
+      [
+        4,
+        3141
+      ]
+    ],
+    "sources": [
+      "quests 3141, 3508, 3509, 3510, 3511, 3602, 3621 descriptions and rewards",
+      "npc_text 1813 to 1817 (his tale)",
+      "creature_text 7783 (felhound tracker, peninsula of cliff giants)"
+    ],
+    "notes": "Check: parts 1 and 2 merged into part 1 (QUEST_DONE 3508, QUEST_ACCEPT 3509): the old part 1 (scorn and ritual, on QUEST_DONE 3141 and QUEST_ACCEPT 3508) mostly repeated 1621 part 1 and the opening, and 3508 is a short wait for the ritual. Now 5 parts: 1 the ritual and Arkkoroc, 2 Hetaera, 3 the temper and Rakh'likh, 4 azsharite, 5 Galvan. Earlier: Converted: the opening is the 3141 premise (every trigger comes after Blasted Lands' 2744, so the servants' wards are already known). Parts follow the chain: 1 his scorn and the ritual (QUEST_DONE 3141, QUEST_ACCEPT 3508), 2 the true name and Arkkoroc (QUEST_DONE 3508, QUEST_ACCEPT 3509), 3 Hetaera (QUEST_DONE 3509, QUEST_ACCEPT 3510), 4 the temper and Rakh'likh (QUEST_DONE 3510, QUEST_ACCEPT 3511), 5 azsharite (QUEST_DONE 3511, QUEST_ACCEPT 3602), 6 Galvan (QUEST_DONE 3602, QUEST_ACCEPT 3621). No Blasted Lands trigger used; Loramus's account of Razelikh is left to blasted_lands 410 part 1. No KILL 6140 trigger. Earlier: verified against 3141, 3508 to 3511, 3602, 3621. Stops at the hand-off to Galvan; Blasted Lands 421 tells the wider campaign. 3141 is QuestType 2, so the accept fires. Faction 0.",
+    "parts": [
+      {
+        "part": 1,
+        "body": "His tale told, Loramus calls such hunters foolhardy, yet he helps them, if only to see one of Razelikh's minions fall. Breaking the ward over the Defiler's servants takes rare artifacts, and his ritual of enlightenment shows the way: only a weapon forged bearing the demon lord's true name can harm him and all under his command. That name is known to Lord Arkkoroc, a lesser deity of the Temple of Arkkoran whose minions will stop at nothing to destroy an intruder, and the knowledge will come at a price.",
+        "triggers": [
+          [
+            5,
+            3508
+          ],
+          [
+            4,
+            3509
+          ]
+        ],
+        "sources": [
+          "quest 3508 description and reward text",
+          "quest 3509 description"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "Arkkoroc laughed at the thought of a demon lord, but the one would help only those who first helped the one. His price is Hetaera, the hydra of the clutch who calls herself ruler of these oceans and kills his children. He calls her a false god and wants all three of her heads.",
+        "triggers": [
+          [
+            5,
+            3509
+          ],
+          [
+            4,
+            3510
+          ]
+        ],
+        "sources": [
+          "quest 3509 reward text",
+          "quest 3510 description"
+        ]
+      },
+      {
+        "part": 3,
+        "body": "When the three heads lay before him, Arkkoroc judged his visitor worthy at last. He squeezed them between his gigantic fists, draining their blood into a temper for the weapons, and spoke the demon's true name: Rakh'likh. Name and temper both went back to Loramus.",
+        "triggers": [
+          [
+            5,
+            3510
+          ],
+          [
+            4,
+            3511
+          ]
+        ],
+        "sources": [
+          "quest 3510 reward text",
+          "quest 3511 description (offered on the 3510 turn-in)"
+        ]
+      },
+      {
+        "part": 4,
+        "body": "The temper would lend the forging the vitriol it needed, Loramus said, and one step remained: azsharite. The ancient cliff giants of southern Azshara devour the rock and ruins of the land, and what they leave behind is a crystal both malleable and immensely strong. The giants are savage, but Loramus's felhounds can sniff out the hidden deposits.",
+        "triggers": [
+          [
+            5,
+            3511
+          ],
+          [
+            4,
+            3602
+          ]
+        ],
+        "sources": [
+          "quest 3511 reward text",
+          "quest 3602 description",
+          "creature_text 7783 (felhound tracker, peninsula of cliff giants)"
+        ]
+      },
+      {
+        "part": 5,
+        "body": "With the azsharite gathered, Loramus prepared the components for forging. Only a smith able to harness fel energy could finish the work: Galvan the Ancient, leader of the Mithril Order, whose camp stands in Stranglethorn Vale between Zul'Gurub and the Mosh'Ogg ogre mound.",
+        "triggers": [
+          [
+            5,
+            3602
+          ],
+          [
+            4,
+            3621
+          ]
+        ],
+        "sources": [
+          "quest 3602 reward text",
+          "quest 3621 description"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1630,
+    "kind": 3,
+    "zone": 16,
+    "sort": 3,
+    "faction": 0,
+    "title": "The Waterlords' War",
+    "body": "Duke Hydraxis offers mortals a place in the Waterlords' war on the lesser elements, but only to those who show their conviction. He sends them far to the south, to the Crystal Vale in the desert of Silithus, where servants of air and earth guard items of power from mortal hands for reasons he does not grasp. He wants their stormers and rumblers destroyed and their efforts foiled. The Waterlords, he warns, have no regard for cowards, but those who prove their bravery may yet be given tasks befitting a valued ally.",
+    "triggers": [
+      [
+        4,
+        6805
+      ]
+    ],
+    "sources": [
+      "quests 6805, 6821, 6822, 6823, 6824, 7486 descriptions and rewards"
+    ],
+    "notes": "Check: instance outcomes (the Emberseer's eye, the Core faced, the captains' hands) appear only in parts 2, 3 and 5, each on the accept of the quest Hydraxis offers after the turn-in that shows them; no opening holds one and no trigger is a kill. Converted: the opening is the 6805 premise. Parts follow the chain on each next quest's accept, whose description is where each task is revealed: 1 the Emberseer (QUEST_ACCEPT 6821), 2 the Molten Core (QUEST_ACCEPT 6822), 3 the long campaign (QUEST_ACCEPT 6823), 4 the four captains (QUEST_ACCEPT 6824), 5 the reward (QUEST_ACCEPT 7486). Instance outcomes are told only as Hydraxis receives them at the turn-ins, with no kill triggers. mod-individual-progression rewrites these quests' starters and prerequisites in every state and gives 6804 its starter; base AC already makes 6821 need 6804 and 6805 but has no 6804 starter, so without the module only the opening (6805) can be earned. The opening no longer calls Silithus his first test. Earlier: verified against 6805, 6821 to 6824, 7486. Faction 0 (AllowableRaces 0, Hydraxis template 35).",
+    "parts": [
+      {
+        "part": 1,
+        "body": "Bravery proven, the next foe is far greater. High in Blackrock Spire the orcs hold a captive servant of fire, the Pyroguard Emberseer. Hydraxis wants its captors slain, then the Emberseer itself, and its eye brought back to show him the worth of his ally.",
+        "triggers": [
+          [
+            4,
+            6821
+          ]
+        ],
+        "sources": [
+          "quest 6805 reward text",
+          "quest 6821 description"
+        ]
+      },
+      {
+        "part": 2,
+        "body": "The eye won his respect for strength and cunning alike, and a real test followed. At the bottom of Blackrock Depths a passage leads to the Molten Core, a stronghold of the most powerful servants of fire in this world, which nothing short of an army can hope to enter and survive. There his allies must face its beings and return.",
+        "triggers": [
+          [
+            4,
+            6822
+          ]
+        ],
+        "sources": [
+          "quest 6821 reward text",
+          "quest 6822 description"
+        ]
+      },
+      {
+        "part": 3,
+        "body": "Those who returned from the Core astonished him: so small a creature, he said, had done what most of its kind would think impossible. Then he asked for a long campaign, defeat after defeat heaped upon the servants of air, earth and fire, until the Waterlords honor the one who wages it.",
+        "triggers": [
+          [
+            4,
+            6823
+          ]
+        ],
+        "sources": [
+          "quest 6822 reward text",
+          "quest 6823 description"
+        ]
+      },
+      {
+        "part": 4,
+        "body": "The last mission was one the Waterlords were loath to give, for they feared losing so useful an agent: the hands of four captains of the Molten Core, Lucifron, Sulfuron, Gehennas and Shazzrah. Such a blow to the Firelords, Hydraxis judged, was worth the risk.",
+        "triggers": [
+          [
+            4,
+            6824
+          ]
+        ],
+        "sources": [
+          "quest 6823 reward text",
+          "quest 6824 description"
+        ]
+      },
+      {
+        "part": 5,
+        "body": "The hands were brought, and word of the feat sent waves through the Waterlords. Hydraxis confessed that he did not understand mortal notions of gratitude, yet here a reward seemed warranted, and he sent his champion to a coffer hidden under the surf at the southern base of his island.",
+        "triggers": [
+          [
+            4,
+            7486
+          ]
+        ],
+        "sources": [
+          "quest 6824 reward text",
+          "quest 7486 description"
+        ]
+      }
+    ]
+  }
 ]

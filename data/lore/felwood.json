@@ -21,7 +21,7 @@
    "npc_text 3874 (Eridan)",
    "warcraft.wiki.gg/wiki/Bloodvenom_Post (high cliffs overlooking Darkshore)"
   ],
-  "notes": "Verifier: verified (Archimonde ordered the corruption to weaken the night elves, Tichondrius used the skull, Illidan took it and killed him, per wiki). Cataclysm cleansing, Whisperwind Grove and Wildheart Point left out."
+  "notes": "Unchanged in the parts conversion: nothing to hide. Zone history (the Third War, the Skull of Gul'dan, Illidan and Tichondrius) is backstory, not an outcome of this zone's quests; the Shadow Council, the Timbermaw and the Emerald Circle are premises. No Burning Crusade or Wrath text; mod-individual-progression adds no Ahn'Qiraj or Scourge Invasion spawns in Felwood (aq_war.sql and si_*.sql spawns all fall outside the zone by posarea), so no era part. npc_text 3874 reread: classic. Earlier: Verifier: verified (Archimonde ordered the corruption to weaken the night elves, Tichondrius used the skull, Illidan took it and killed him, per wiki). Cataclysm cleansing, Whisperwind Grove and Wildheart Point left out."
  },
  {
   "id": 36101,
@@ -42,7 +42,7 @@
    "zone_areas.py: Arathandris Silversky 9528, Felpaw Wolf, Angerclaw Bear, Ironbeak Owl, Death Howl 14339 in area 2478",
    "npc_text 2844, 2845 (Arathandris gossip; she speaks Darnassian)"
   ],
-  "notes": "Verifier: verified. Archaeology dig site (Cataclysm) left out. Death Howl type beast, family wolf; one of its three spawns stands in 2478, the others in southern Felwood."
+  "notes": "Unchanged in the parts conversion: nothing to hide. npc_text 2844, 2845 reread: classic. Earlier: Verifier: verified. Archaeology dig site (Cataclysm) left out. Death Howl type beast, family wolf; one of its three spawns stands in 2478, the others in southern Felwood."
  },
  {
   "id": 36102,
@@ -51,7 +51,7 @@
   "sort": 2,
   "faction": 0,
   "title": "Emerald Sanctuary",
-  "body": "Hidden among the trees of southern Felwood, the Emerald Sanctuary is the camp of the Emerald Circle, a largely independent branch of the Cenarion Circle sworn to undo the corruption of this land. Its druids are friendly to all who come in peace. The tauren Greta Mosshoof directs the war on the Shadow Council, Eridan Bluewind strikes at the Jadefire satyrs, and Taronn Redfeather hunts in vain for a single pure source of water in the forest. Jessir Moonbow, come from Darnassus with her wolf Della, waits here for friends long overdue from Jaedenar. Nearby on the road stands Grazle, a Timbermaw furbolg seeking allies for his tribe.",
+  "body": "Hidden among the trees of southern Felwood, the Emerald Sanctuary is the camp of the Emerald Circle, a largely independent branch of the Cenarion Circle sworn to undo the corruption of this land. Its druids are friendly to all who come in peace. The tauren Greta Mosshoof directs the war on the Shadow Council, Eridan Bluewind strikes at the Jadefire satyrs, and Taronn Redfeather searches for even a single pure source of water in the forest. Jessir Moonbow, come from Darnassus with her wolf Della, waits here for friends long overdue from Jaedenar. Nearby on the road stands Grazle, a Timbermaw furbolg seeking allies for his tribe.",
   "triggers": [
    [
     1,
@@ -68,7 +68,22 @@
    "creature_template 11024 (type beast, display 1030 DireWolf)",
    "warcraft.wiki.gg/wiki/Della (wolf)"
   ],
-  "notes": "Verifier: Della is a wolf (display 1030 DireWolf, type beast; wiki); 'envoy' for Grazle dropped as unsupported. Greta is a tauren per the wiki and her Earthmother prayers. Della's species not stated."
+  "notes": "Converted: Taronn's failed search ('in vain', 5156 reward text) moved to part 1 on QUEST_DONE 5156 (races 0); the opening says only that he searches. npc_text 3864 reread: classic. Earlier: Verifier: Della is a wolf (display 1030 DireWolf, type beast; wiki); 'envoy' for Grazle dropped as unsupported. Greta is a tauren per the wiki and her Earthmother prayers. Della's species not stated.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Word from Shatter Scar Vale ends Taronn's hopes. The craters there still hold the corrupt, fetid water that gathered in them years ago, and his search for even one pure source in Felwood has failed. Healing the land would have been far easier with it, so now he means to save what forest creatures he can and destroy those grown too corrupt to spare.",
+    "triggers": [
+     [
+      5,
+      5156
+     ]
+    ],
+    "sources": [
+     "quest 5156 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 36103,
@@ -77,7 +92,7 @@
   "sort": 3,
   "faction": 0,
   "title": "Deadwood Village",
-  "body": "Southwest of the Emerald Sanctuary, toward the Ashenvale border, lies Deadwood Village, the chief camp of the Deadwood furbolgs. Like most of their race they fell to the fel, which poisons their minds and turns them against all others. Deadwood warriors, pathfinders and gardeners fill its huts, and the Timbermaw ask their allies to drive this camp back first. The village answers to Overlord Ror, a great befouled furbolg, and the savage Ragepaw prowls nearby. Ror has claimed at least one hero: an orc warrior who roamed Felwood fighting the Shadow Council went after him at a druid's request, and neither was ever seen again.",
+  "body": "Southwest of the Emerald Sanctuary, toward the Ashenvale border, lies Deadwood Village, the chief camp of the Deadwood furbolgs. Like most of their race they fell to the fel, which poisons their minds and turns them against all others. Deadwood warriors, pathfinders and gardeners fill its huts, and the Timbermaw ask their allies to drive this camp back first. The village answers to Overlord Ror, a great befouled furbolg, and the savage Ragepaw prowls nearby. Ror is blamed for the loss of at least one hero: an orc warrior who roamed Felwood fighting the Shadow Council went after him at a druid's request, and neither was heard from again.",
   "triggers": [
    [
     1,
@@ -91,7 +106,7 @@
    "quest 6162 description (Ror near the Ashenvale border, husband and druid never heard from again)",
    "warcraft.wiki.gg/wiki/Deadwood_tribe (Deadwood Village their capital)"
   ],
-  "notes": "Verifier: the village (avg 3650,-1115) lies south-southwest of the Sanctuary (3985,-1303), so 'west' made 'southwest'; Ror's victim made an orc warrior who roamed Felwood (6162: our clan, traveled Felwood). posarea: Ror at 3519,-1131 is in 1761."
+  "notes": "Converted (no parts): 'Ror has claimed' softened to 'is blamed for', since the warrior's death is confirmed only in the 6162 reward text (told in 36126 part 1); the rest is the 6162 premise. Earlier: Verifier: the village (avg 3650,-1115) lies south-southwest of the Sanctuary (3985,-1303), so 'west' made 'southwest'; Ror's victim made an orc warrior who roamed Felwood (6162: our clan, traveled Felwood). posarea: Ror at 3519,-1131 is in 1761."
  },
  {
   "id": 36104,
@@ -100,7 +115,7 @@
   "sort": 4,
   "faction": 0,
   "title": "Ruins of Constellas",
-  "body": "Northwest of the Emerald Sanctuary stand the Ruins of Constellas, once one of the many night elf settlements near Mount Hyjal. Its moonwell, long a symbol of renewal for the kaldorei, has been fouled with fel energy, and the Jadefire satyrs who hold the ruins use its waters to bring forth more of their kind. Their leader here is the cruel Xavathras, who tends the corrupted well on behalf of Xavaric and spreads the sickness to every creature he can. Felsworn, shadowstalkers and rogues haunt the broken walls, cursed oozes seep among the stones, and the Forsaken of Bloodvenom Post have taken an interest in the well's water.",
+  "body": "Northwest of the Emerald Sanctuary stand the Ruins of Constellas, once one of the many night elf settlements near Mount Hyjal. Its moonwell, long a symbol of renewal for the kaldorei, has been fouled with fel energy, and the Jadefire satyrs who hold the ruins use its waters to bring forth more of their kind. Their leader here is the cruel Xavathras, who spreads the sickness to every creature he can. Felsworn, shadowstalkers and rogues haunt the broken walls, cursed oozes seep among the stones, and the Forsaken of Bloodvenom Post have taken an interest in the well's water.",
   "triggers": [
    [
     1,
@@ -114,7 +129,26 @@
    "quest 4505 description (moonwell once a symbol of renewal, now used to bring forth more satyrs)",
    "zone_areas.py area 2481: Xavathras 9454, Jadefire Felsworn, Shadowstalker, Rogue, Cursed Ooze"
   ],
-  "notes": "Verifier: verified. Cataclysm regrowth, Emerald Bearkin and Arcanist Delaris left out."
+  "notes": "Converted: Xavathras tending the well for Xavaric (the 4906 reveal) moved to part 1 on QUEST_DONE 4421 and QUEST_ACCEPT 4906 (Alliance only; Horde visitors keep the opening). Earlier: Verifier: verified. Cataclysm regrowth, Emerald Bearkin and Arcanist Delaris left out.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The well serves a larger plan. Xavathras and his minions have been cultivating the corrupted moonwell so that its spoils can be passed north to another satyr, Xavaric, master of the Jadefire encampment at Jadefire Run.",
+    "triggers": [
+     [
+      5,
+      4421
+     ],
+     [
+      4,
+      4906
+     ]
+    ],
+    "sources": [
+     "quest 4906 description (offered on the 4421 turn-in)"
+    ]
+   }
+  ]
  },
  {
   "id": 36105,
@@ -123,7 +157,7 @@
   "sort": 5,
   "faction": 0,
   "title": "Jadefire Glen",
-  "body": "In the south of Felwood, west of the Emerald Sanctuary, a wooded hollow called Jadefire Glen is one of the homes of the Jadefire satyrs, the tribe that has made the corruption of Felwood its feast. Satyrs and felsworn crowd the glade, and among them, seldom seen, walks Alshirr Banebreath. Even here a corrupted whipper root clings to life, waiting for a druid's salve to make it whole.",
+  "body": "In the south of Felwood, west of the Emerald Sanctuary, a wooded hollow called Jadefire Glen is one of the homes of the Jadefire satyrs, the tribe that has made the corruption of Felwood its feast. Satyrs and felsworn crowd the glade, and among them, seldom seen, walks Alshirr Banebreath. Even here a corrupted whipper root clings to life, sickly and slime coated, in desperate need of care if it is ever to be made whole.",
   "triggers": [
    [
     1,
@@ -137,7 +171,7 @@
    "quest 4117 completion text",
    "warcraft.wiki.gg/wiki/Alshirr_Banebreath (rare satyr at Jadefire Glen)"
   ],
-  "notes": "Verifier: 'dangerous' dropped: Alshirr is a rare (rank 4), not elite, and the wiki gives no such description; 'seldom seen' used instead. Location: Alshirr at map 40,85 and Sanctuary at 51,81. 'dangerous' reflects its rare spawn status (rank 4)."
+  "notes": "Converted (no parts): 'waiting for a druid's salve' replaced, since the salve cure is told only on the 4101/4102 turn-ins (36132 part 1); the plant is described as its own 4117 completion text shows it. Earlier: Verifier: 'dangerous' dropped: Alshirr is a rare (rank 4), not elite, and the wiki gives no such description; 'seldom seen' used instead. Location: Alshirr at map 40,85 and Sanctuary at 51,81. 'dangerous' reflects its rare spawn status (rank 4)."
  },
  {
   "id": 36106,
@@ -158,7 +192,7 @@
    "zone_areas.py area 1997: Bloodvenom Post Brave, Brakkar wind rider master, Bale, Altsoba Ragetotem, Winna 9996, Trull 10306, Dreka'Sur 9620",
    "quests 4505, 4506, 4521, 6162"
   ],
-  "notes": "Verifier: Trull's line aligned with 4521 (Winterspring lies beyond Timbermaw, northeast; wildkin guard secrets of the night elves). Pre-Cataclysm post confirmed by 3.3.5 spawns. Winna's Cataclysm slime experiments that destroy the post left out. Trull's Wild Guardians chain (4521, 4741, 4721, 4883) is left to Winterspring and not used as a trigger."
+  "notes": "Unchanged in the parts conversion: nothing to hide. Winna, Trull and Dreka'Sur appear only by their premises (4505, 4521, 6162 descriptions); the Wild Guardians reveal stays Winterspring's. Earlier: Verifier: Trull's line aligned with 4521 (Winterspring lies beyond Timbermaw, northeast; wildkin guard secrets of the night elves). Pre-Cataclysm post confirmed by 3.3.5 spawns. Winna's Cataclysm slime experiments that destroy the post left out. Trull's Wild Guardians chain (4521, 4741, 4721, 4883) is left to Winterspring and not used as a trigger."
  },
  {
   "id": 36107,
@@ -167,7 +201,7 @@
   "sort": 7,
   "faction": 0,
   "title": "Bloodvenom Falls",
-  "body": "Through the heart of Felwood runs the Bloodvenom River, its water thick with the forest's poison, and at Bloodvenom Falls it spills into fouled pools where tainted oozes breed. The largest of them, a hulking mass called the Ongar, lurks below the falls. The riverbanks belong to the Shadow Council: its warlocks, darkweavers and enforcers walk them openly, and the tunnels of their fortress run beneath. The taint does not stay in Felwood. In Darkshore, Thundris Windweaver of Auberdine traces the fouling of the Cliffspring River east to this forest.",
+  "body": "Through the heart of Felwood runs the Bloodvenom River, its water thick with the forest's poison, and at Bloodvenom Falls it spills into fouled pools where tainted oozes breed. The largest of them, a hulking mass called the Ongar, lurks below the falls. The riverbanks belong to the Shadow Council: its warlocks, darkweavers and enforcers walk them openly, and the tunnels of their fortress run beneath.",
   "triggers": [
    [
     1,
@@ -183,7 +217,7 @@
    "posarea: Shadow Lord Fel'dan and Ulathek (Shadow Hold, underground) stand over grid areas 1764 and 1765",
    "darkshore.json Cliffspring River entry (Thundris traces the taint east to Felwood)"
   ],
-  "notes": "Verifier: 'the elders of Auberdine' narrowed to Thundris Windweaver, the one figure darkshore.json names. River and falls combined in one entry. Darkshore's storyline only mentioned, no trigger shared."
+  "notes": "Converted (no parts): dropped the closing lines that Thundris traces the Cliffspring River's taint to Felwood: darkshore.json reveals that only on QUEST_DONE 4762 (14803, 14816, 14828 parts), and Felwood may not use a Darkshore quest as a trigger, so the line would have spoiled Darkshore's story. Earlier: Verifier: 'the elders of Auberdine' narrowed to Thundris Windweaver, the one figure darkshore.json names. River and falls combined in one entry. Darkshore's storyline only mentioned, no trigger shared."
  },
  {
   "id": 36108,
@@ -206,7 +240,7 @@
    "quest 5157 description (Moon Well in the center of Jaedenar, Shadow Hold, braziers)",
    "zone_areas.py area 1763: Jaedenar Cultist, Adept, Guardian, Hound, Warlock, Darkweaver, Legionnaire"
   ],
-  "notes": "Verifier: verified."
+  "notes": "Unchanged in the parts conversion: nothing to hide. npc_text 3864 reread: classic. The braziers and the moonwell are 5157's premise, not an outcome. Earlier: Verifier: verified."
  },
  {
   "id": 36109,
@@ -215,7 +249,7 @@
   "sort": 9,
   "faction": 0,
   "title": "Shadow Hold",
-  "body": "Beneath Jaedenar lies Shadow Hold, the Shadow Council's chief fortress, and a single path winds down through it with no other way in. Four braziers of protection, called Pain, Malice, Hatred and Suffering, keep its depths hidden from scrying eyes. The cult keeps prisoners caged and torturers at hand. The warlock Ulathek has his own quarters here and boasts that he holds counsel with dreadlords, and in his chamber the dreadlord Lord Banehollow keeps court with his attendant Ur'dan. In the deepest halls Shadow Lord Fel'dan, the mortal who leads the cult below, makes pacts with the Legion, attended by the succubi Moora and Salia.",
+  "body": "Beneath Jaedenar lies Shadow Hold, the Shadow Council's chief fortress, and a single path winds down through it with no other way in. Four braziers of protection, called Pain, Malice, Hatred and Suffering, keep its depths hidden from scrying eyes. The cult keeps prisoners caged and torturers at hand. The warlock Ulathek has his own quarters here and boasts that he holds counsel with dreadlords, and in his chamber the dreadlord Lord Banehollow keeps court with his attendant Ur'dan. In the deepest halls waits one called Shadow Lord Fel'dan, attended by the succubi Moora and Salia.",
   "triggers": [
    [
     1,
@@ -232,7 +266,22 @@
    "WMOAreaTable.dbc rows 31165-31185 (WMO 3093 -> 1770)",
    "vmaps 001_*.vmtile: Barrowdens_C.wmo uid 167780; floor ray casts of spawn positions"
   ],
-  "notes": "Verifier: verified; WMOAreaTable.dbc and vmap placement checked: Barrowdens_C.wmo (root 3093, nameset 1, uid 167780) sits under Jaedenar at 4896,-391; every vmap group of it (16630-16648, 16724-16729) maps to 1770 in WMOAreaTable, and ray casts from Banehollow, Ur'dan, Ulathek, Fel'dan, Moora, Salia, Rakaiah, Arko'narin, Trey's remains and 73 spawns in all hit its floor below the terrain, resolving to 1770 under Map::GetAreaId. Area trigger kept. Shadow Hold is a WMO area; DB areaId used for placement since the grid tool cannot see it. Ulathek called a warlock: he threatens to trap a soul in a shard for his imp (creature_text 14523), type humanoid."
+  "notes": "Converted: Fel'dan as the mortal leader making pacts with the Legion (5242 description, offered after the 5165 turn-in) moved to part 1 on QUEST_ACCEPT 5242; the opening keeps his name and his succubi, which a visitor sees. npc_text 7038 and creature_text 14523 reread: classic. Earlier: Verifier: verified; WMOAreaTable.dbc and vmap placement checked: Barrowdens_C.wmo (root 3093, nameset 1, uid 167780) sits under Jaedenar at 4896,-391; every vmap group of it (16630-16648, 16724-16729) maps to 1770 in WMOAreaTable, and ray casts from Banehollow, Ur'dan, Ulathek, Fel'dan, Moora, Salia, Rakaiah, Arko'narin, Trey's remains and 73 spawns in all hit its floor below the terrain, resolving to 1770 under Map::GetAreaId. Area trigger kept. Shadow Hold is a WMO area; DB areaId used for placement since the grid tool cannot see it. Ulathek called a warlock: he threatens to trap a soul in a shard for his imp (creature_text 14523), type humanoid.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Greta Mosshoof's scrying, won when the four braziers were doused, names the head of the serpent. Shadow Lord Fel'dan is the mortal in power below, the one making pacts with the Burning Legion, and the straight path down through the Hold is the only way to reach him.",
+    "triggers": [
+     [
+      4,
+      5242
+     ]
+    ],
+    "sources": [
+     "quest 5242 description"
+    ]
+   }
+  ]
  },
  {
   "id": 36110,
@@ -255,7 +304,7 @@
    "WMOAreaTable.dbc rows 31152-31164 (WMO 1290 -> 1771)",
    "vmaps: Corruptbarrowdensoneroom.wmo uid 169047; floor ray casts of spawn positions"
   ],
-  "notes": "Verifier: verified; WMOAreaTable.dbc and vmap placement checked: Corruptbarrowdensoneroom.wmo (root 1290, nameset 1, uid 169047) at 4855,-609, all twelve groups (4559-4570) map to 1771; 20 spawns ray cast inside resolve to 1771. Inside stand only Jaedenar Cultists 7112, Adepts 7115, Guardians 7113 and Hounds 7125 (no warlocks, contrary to the wiki stub), so hounds added and 'tunnels' made 'chambers' (a one-room den). Area trigger kept. Reachable per reachable_areas.json. The wiki says warlocks, the DB shows cultists, adepts and guardians; the body follows the DB."
+  "notes": "Unchanged in the parts conversion: nothing to hide. Earlier: Verifier: verified; WMOAreaTable.dbc and vmap placement checked: Corruptbarrowdensoneroom.wmo (root 1290, nameset 1, uid 169047) at 4855,-609, all twelve groups (4559-4570) map to 1771; 20 spawns ray cast inside resolve to 1771. Inside stand only Jaedenar Cultists 7112, Adepts 7115, Guardians 7113 and Hounds 7125 (no warlocks, contrary to the wiki stub), so hounds added and 'tunnels' made 'chambers' (a one-room den). Area trigger kept. Reachable per reachable_areas.json. The wiki says warlocks, the DB shows cultists, adepts and guardians; the body follows the DB."
  },
  {
   "id": 36111,
@@ -277,7 +326,7 @@
    "zone_areas.py area 1766: Entropic Beast, Entropic Horror, Infernal Sentry, Immolatus 7137 (rare elite), Niby 14469, Impsy 14470, Kroshius 14467",
    "quest 7603 (Kroshius lies in a heap in the vale)"
   ],
-  "notes": "Verifier: verified."
+  "notes": "Unchanged in the parts conversion: nothing to hide. Kroshius is seen as a heap of remains (7603 description); his reanimation is a warlock quest event, not told. Earlier: Verifier: verified."
  },
  {
   "id": 36112,
@@ -286,7 +335,7 @@
   "sort": 12,
   "faction": 0,
   "title": "Jadefire Run",
-  "body": "In the north of Felwood the Jadefire satyrs keep their second great encampment at Jadefire Run. Its master is the cruel Xavaric, to whom Xavathras sends the spoils of the corrupted moonwell at Constellas. Hellcallers and tricksters crowd the camp, feeding on the corruption of the forest's creatures. Xavaric carries a simple wooden flute that is far from simple: it was carved from an ancient protector, and the tortured spirit of that ancient remains bound within it.",
+  "body": "In the north of Felwood the Jadefire satyrs keep their second great encampment at Jadefire Run, ruled by the cruel Xavaric. Hellcallers and tricksters crowd the camp, feeding on the corruption of the forest's native creatures, and the beasts that roam its edges, Felpaw scavengers, Angerclaw maulers and Ironbeak hunters, carry that corruption plainly. Even the plants are sick: corrupted windblossoms, a night dragon and a whipper root struggle for life among the satyrs.",
   "triggers": [
    [
     1,
@@ -297,9 +346,47 @@
    "quest 4906 description (second encampment to the north, Xavaric, hellcallers, betrayers, tricksters)",
    "quest 939 and 4441 descriptions (flute carved from an ancient protector, spirit bound and tortured)",
    "zone_areas.py area 2618: Xavaric 10648, Jadefire Trickster, Hellcaller",
-   "item 11668 Flute of Xavaric drops from Xavaric at 100 percent"
+   "item 11668 Flute of Xavaric drops from Xavaric at 100 percent",
+   "zone_areas.py area 2618: Felpaw Scavenger, Angerclaw Mauler, Ironbeak Hunter; Corrupted Windblossom 174601, 174602, Night Dragon 174608, Whipper Root 174606"
   ],
-  "notes": "Verifier: Jadefire Betrayer 7108 has no spawn in the 3.3.5 database, so betrayers dropped from the camp. Jadefire Betrayers are named in 4906 though not seen in the 2618 grid count."
+  "notes": "Converted: Xavathras sending the moonwell's spoils to Xavaric (4906 description) moved to part 1 on QUEST_DONE 4421 and QUEST_ACCEPT 4906; the flute carved from an ancient (4441 description, offered on the 939 turn-in) to part 2 on QUEST_DONE 939 and QUEST_ACCEPT 4441 (both Alliance only). The opening was filled out with what stands in area 2618 (zone_areas.py: the beasts and corrupted plants). Earlier: Verifier: Jadefire Betrayer 7108 has no spawn in the 3.3.5 database, so betrayers dropped from the camp. Jadefire Betrayers are named in 4906 though not seen in the 2618 grid count.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Xavaric is more than one satyr chief among many. The Jadefire at the Ruins of Constellas were only part of a larger plan, cultivating the corrupted moonwell there so that its spoils could be delivered to him here.",
+    "triggers": [
+     [
+      5,
+      4421
+     ],
+     [
+      4,
+      4906
+     ]
+    ],
+    "sources": [
+     "quest 4906 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Xavaric's simple wooden flute is far from simple. It was carved from an ancient protector, one of the treants that long guarded the night elves, and through fel magic the tortured spirit of that ancient remains bound within it, never released.",
+    "triggers": [
+     [
+      5,
+      939
+     ],
+     [
+      4,
+      4441
+     ]
+    ],
+    "sources": [
+     "quest 939 reward text",
+     "quest 4441 description"
+    ]
+   }
+  ]
  },
  {
   "id": 36113,
@@ -308,7 +395,7 @@
   "sort": 13,
   "faction": 0,
   "title": "Irontree Woods",
-  "body": "Irontree Woods spreads across northern Felwood, once a peaceful glade and now as corrupted as the rest of the forest. Crazed treants, the irontree stompers and wanderers, roam alongside warpwood elementals, toxic horrors and maddened grizzlies and owls. Many corrupted treants once dwelt in the ruins at the southern edge of the woods, and their spirits may linger there still. Older presences remain as well. Vartrus, Stoma and Hastat, ancients who protected this forest and whose bodies were destroyed when the Legion marched upon Hyjal, still keep watch in spirit, offering their secrets only to those who prove worthy.",
+  "body": "Irontree Woods spreads across northern Felwood, once a peaceful glade and now as corrupted as the rest of the forest. Crazed treants, the irontree stompers and wanderers, roam alongside warpwood elementals, toxic horrors and maddened grizzlies and owls. At the southern edge of the woods lie ruins where many corrupted treants once dwelt. Older presences are said to linger too. Vartrus, Stoma and Hastat, ancients who protected this forest and whose bodies were destroyed when the Legion marched upon Hyjal, are said to keep watch in spirit still, sharing their secrets only with those who prove worthy.",
   "triggers": [
    [
     1,
@@ -321,7 +408,7 @@
    "quest 4442 reward text (ruins in southern Irontree Woods, corrupted treants, spirits)",
    "quest 7633 reward text (ancients, physical forms destroyed when Archimonde marched upon Hyjal, spirits intact)"
   ],
-  "notes": "Verifier: verified; 7633's '10,000 years ago' still left out, the wording 'when the Legion marched upon Hyjal' stays neutral. Hunter quests 7632-7636 used only as context, not triggers. '10,000 years ago' from 7633 left out as it clashes with the Third War dating of Hyjal. Ironwood Digsite (Cataclysm archaeology) left out."
+  "notes": "Converted (no parts): 'their spirits may linger there still' dropped from the ruins line, since it is Eridan's hint on the 4442 turn-in (told in 36131 part 3). The ancients reworded as 'said to keep watch': mod-individual-progression (zone_felwood.sql) deletes the spawns of Vartrus, Stoma and Hastat (14524-14526) and respawns them in its IPP phase, which checkIPPhasing grants in area 1767 only to hunters on or past The Ancient Leaf (7632), in every state; without the module they stand in plain sight, so the text must hold either way. Earlier: Verifier: verified; 7633's '10,000 years ago' still left out, the wording 'when the Legion marched upon Hyjal' stays neutral. Hunter quests 7632-7636 used only as context, not triggers. '10,000 years ago' from 7633 left out as it clashes with the Third War dating of Hyjal. Ironwood Digsite (Cataclysm archaeology) left out."
  },
  {
   "id": 36114,
@@ -343,7 +430,7 @@
    "WMOAreaTable.dbc rows 31186-31195 (WMO 1552 -> 1768)",
    "vmaps: Md_Mushroomcave05.wmo uid 184143; floor ray casts of spawn positions"
   ],
-  "notes": "Verifier: verified; WMOAreaTable.dbc and vmap placement checked: Md_Mushroomcave05.wmo (root 1552, nameset 2, uid 184143) at 6462,-1564, all nine groups (7399-7407) map to 1768; Dessecus and 20 warpwood spawns ray cast inside resolve to 1768. Area trigger kept. WMO area; DB areaId used. Dessecus' nature beyond 'elemental' unknown."
+  "notes": "Unchanged in the parts conversion: nothing to hide. Its premise is the 4101/4102 description. Earlier: Verifier: verified; WMOAreaTable.dbc and vmap placement checked: Md_Mushroomcave05.wmo (root 1552, nameset 2, uid 184143) at 6462,-1564, all nine groups (7399-7407) map to 1768; Dessecus and 20 warpwood spawns ray cast inside resolve to 1768. Area trigger kept. WMO area; DB areaId used. Dessecus' nature beyond 'elemental' unknown."
  },
  {
   "id": 36115,
@@ -368,7 +455,7 @@
    "warcraft.wiki.gg/wiki/Golhine_the_Hooded",
    "warcraft.wiki.gg/wiki/Talonbranch_Glade (pre-Cataclysm: small post with a moonwell)"
   ],
-  "notes": "Verifier: Golhine is a male night elf (display 10738 NightElfMale; wiki); body still needs no pronoun. Gilnean worgen camp (Cataclysm) left out. Golhine's gender unknown, so no pronoun."
+  "notes": "Unchanged in the parts conversion: nothing to hide. npc_text 4783, 4784 (Golhine) reread: classic. Earlier: Verifier: Golhine is a male night elf (display 10738 NightElfMale; wiki); body still needs no pronoun. Gilnean worgen camp (Cataclysm) left out. Golhine's gender unknown, so no pronoun."
  },
  {
   "id": 36116,
@@ -390,7 +477,7 @@
    "quest 5084 reward text (cauldron), 5087 description (runners carry shipments to Winterfall Village)",
    "quest 8470 description (ritual totem, palpable sense of despair); item 20741 drops from Den Watcher, Avenger, Shaman"
   ],
-  "notes": "Verifier: the grieving is Nafien's alone (8461); totems drop from den watchers, avengers and shamans alike, so not only shamans. Donova Snowden's Winterfall firewater chain (5082-5128) is left to Winterspring; mentioned only."
+  "notes": "Unchanged in the parts conversion: nothing to hide. The Winterfall runners and the cauldron are seen in the camp (5087 premise); Donova's chain stays Winterspring's. Earlier: Verifier: the grieving is Nafien's alone (8461); totems drop from den watchers, avengers and shamans alike, so not only shamans. Donova Snowden's Winterfall firewater chain (5082-5128) is left to Winterspring; mentioned only."
  },
  {
   "id": 36117,
@@ -415,7 +502,7 @@
    "DB creature.areaId 1769: Gorn One Eye 11555, Meilosh 11557, Kernda 11558; posarea Nafien 15395 in 1769",
    "WMOAreaTable.dbc rows 31196-31239, 46734 (WMO 2256 -> 1769)"
   ],
-  "notes": "Verifier: Hold lies due north (Nafien 64.8,8.1). verifier: WMOAreaTable.dbc and vmap placement checked: Md_Timbermawhold.wmo (root 2256, uid 189492), all 35 vmap groups map to 1769, including the parts under Moonglade and Winterspring grid; Gorn, Kernda, Meilosh and the warders resolve to 1769. Ownership: 1769 is Felwood's; Winterspring must not reuse quests 8481, 8484, 8485 or Gorn 11555. AreaTable 1769 belongs to Felwood (zones/felwood.txt). Kernda's study of totems rests on 8470 and 8471 (Deadwood and Winterfall ritual totems, 'through study and ritual')."
+  "notes": "Unchanged in the parts conversion: nothing to hide. Kernda's study of totems is her role (8470, 8471 rewards), not an outcome. Earlier: Verifier: Hold lies due north (Nafien 64.8,8.1). verifier: WMOAreaTable.dbc and vmap placement checked: Md_Timbermawhold.wmo (root 2256, uid 189492), all 35 vmap groups map to 1769, including the parts under Moonglade and Winterspring grid; Gorn, Kernda, Meilosh and the warders resolve to 1769. Ownership: 1769 is Felwood's; Winterspring must not reuse quests 8481, 8484, 8485 or Gorn 11555. AreaTable 1769 belongs to Felwood (zones/felwood.txt). Kernda's study of totems rests on 8470 and 8471 (Deadwood and Winterfall ritual totems, 'through study and ritual')."
  },
  {
   "id": 36118,
@@ -437,7 +524,7 @@
    "quests 5157, 5158, 5165 texts (scrying, Islen an old friend, Earthmother)",
    "warcraft.wiki.gg/wiki/Greta_Mosshoof (tauren druid)"
   ],
-  "notes": "Verifier: verified (tauren female by display 10253). Has gossip menu 3074. Her chain is told in the story entry; this entry keeps to her character."
+  "notes": "Unchanged in the parts conversion: nothing to hide. npc_text 3807 reread: classic. Her scrying plan and Islen are her character; the chain's outcomes are in 36128 parts. Earlier: Verifier: verified (tauren female by display 10253). Has gossip menu 3074. Her chain is told in the story entry; this entry keeps to her character."
  },
  {
   "id": 36119,
@@ -446,7 +533,7 @@
   "sort": 2,
   "faction": 0,
   "title": "Eridan Bluewind",
-  "body": "Eridan Bluewind is a night elf druid of the Emerald Circle who works from the Emerald Sanctuary. She notes the bitter truth that Felwood is named for the very thing that corrupted it, yet she still believes the corruption can one day be erased. Her chief enemies are the Jadefire satyrs, who spread their disease to every creature they touch, and she senses something larger than the satyrs at work in the forest. She can feel the suffering of ancients bound by fel magic, and with water blessed in the Temple of the Moon she has broken such a bond. Seekers of Un'Goro Crater's mysteries find their way to her as well.",
+  "body": "Eridan Bluewind is a night elf druid of the Emerald Circle who works from the Emerald Sanctuary. She notes the bitter truth that Felwood is named for the very thing that corrupted it, yet she still believes the corruption can one day be erased. Her chief enemies are the Jadefire satyrs, who spread their disease to every creature they meet, and she means to defend a land that was once her people's. Seekers of Un'Goro Crater's mysteries find their way to her as well.",
   "triggers": [
    [
     2,
@@ -460,7 +547,54 @@
    "quests 4005, 4084 (Un'Goro quests she starts, QuestSortID 490)",
    "warcraft.wiki.gg/wiki/Eridan_Bluewind (night elf druid, female, Emerald Sanctuary before 4.0.3a)"
   ],
-  "notes": "Verifier: verified. Gossip menu 3142. The Linken/Un'Goro quests belong to Un'Goro and are not triggers."
+  "notes": "Converted: her sense of something larger than the satyrs (4421 reward) moved to part 1 on QUEST_DONE 4421; feeling the bound ancient (939 reward, 4441 description) to part 2 on QUEST_DONE 939 and QUEST_ACCEPT 4441; breaking the bond (4442) to part 3 on QUEST_DONE 4442. Parts are Alliance only (quests races 1101); the entry stays faction 0 (TALK 9116, template 35). Opening adds 'a land that was once her people's' from the 4421 description. npc_text 3874 and creature_text 9116 reread: classic. Earlier: Verifier: verified. Gossip menu 3142. The Linken/Un'Goro quests belong to Un'Goro and are not triggers.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Even with Xavathras slain, Eridan is not at ease. She senses something much larger than the satyrs at work in Felwood, and warns that ridding the forest of one cruel satyr is only the first step in a long labor of repair.",
+    "triggers": [
+     [
+      5,
+      4421
+     ]
+    ],
+    "sources": [
+     "quest 4421 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "She is sensitive to more than satyrs. Holding the flute taken from Xavaric is almost unbearable to her, for in it she feels the suffering of ancient ones: a protector's spirit, bound and tortured by fel magic and never released.",
+    "triggers": [
+     [
+      5,
+      939
+     ],
+     [
+      4,
+      4441
+     ]
+    ],
+    "sources": [
+     "quest 939 reward text",
+     "quest 4441 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "With blessed water from the Temple of the Moon and a prayer that Elune guide her hands and heart, Eridan banishes the evil aura from the flute and breaks the link between it and the ancient spirit bound within.",
+    "triggers": [
+     [
+      5,
+      4442
+     ]
+    ],
+    "sources": [
+     "quest 4442 description and reward text",
+     "creature_text 9116 (on 4442 taken)"
+    ]
+   }
+  ]
  },
  {
   "id": 36120,
@@ -469,7 +603,7 @@
   "sort": 3,
   "faction": 0,
   "title": "Lord Banehollow",
-  "body": "Lord Banehollow is a dreadlord and the master of Jaedenar, the seat of the Shadow Council on Azeroth. From his chamber in Shadow Hold he receives few visitors, and only those cloaked in the cult's own brand of evil, for though his patience spans millennia he grants a mortal no more than an instant. He has a rival in Lord Hel'nurath, whose domain is Xoroth, the world of the famed dreadsteeds. Banehollow's servant Ulathek grovels before him while secretly spying for that rival, and Banehollow knows it, and longs to feast on the traitor's heart. His attendant Ur'dan keeps a store of Xorothian stardust, which Banehollow parts with only for a price.",
+  "body": "Lord Banehollow is a dreadlord of the Burning Legion, one of the nathrezim, and he keeps a chamber of his own within Shadow Hold, the Shadow Council's fortress beneath Jaedenar. His attendant Ur'dan waits close at hand, and the warlocks, darkweavers and legionnaires of the Hold keep the halls around him. To any mortal who reaches his chamber uninvited he is a deadly foe, a demon lord who meets intrusion with his dark magic rather than with words.",
   "triggers": [
    [
     3,
@@ -483,9 +617,48 @@
   "sources": [
    "warcraft.wiki.gg/wiki/Lord_Banehollow (dreadlord, leader of Jaedenar, rival Hel'nurath, Ulathek a spy, Ur'dan attendant)",
    "quests 7623 (Shadowy Potions, reward text on patience), 7624 (Ulathek plots with Hel'nurath on Xoroth, heart), 7625 (Xoroth domain of Hel'nurath, stardust from Ur'dan at a price)",
-   "FactionTemplate.dbc 1434 (hostile to all players)"
+   "FactionTemplate.dbc 1434 (hostile to all players)",
+   "gameobject 175724 Sargeras and the Betrayal, page_text 1776 (the Nathrezim, also known as dreadlords); quest 13251 description (dreadlords known racially as the Nathrezim)"
   ],
-  "notes": "Verifier: 'burning world' replaced by 7625's own words (Hel'nurath's domain, famed dreadsteeds); 'guards him' for Ur'dan unsupported, dropped. Faction 0 confirmed: template 1434 (faction 869) has hostile mask 1 (all players), no friend mask, so both factions can kill him; TALK works only for warlocks of either side via the Shadowy Potions (7623 races 595 span both factions). Faction 1434 is hostile to all players, so the TALK trigger works only for warlocks with the Shadowy Potions; KILL keeps the entry open to everyone (rank 1 elite). Faction 0. Burning Steppes' Altar of Storms tells Mor'zul's dreadsteed rite; 7623-7625 are not used as triggers. 'burning world' of Xoroth matches Burning Steppes' 'burning Plains of Xoroth'."
+  "notes": "Check: 'nathrezim' kept: the in-game book Sargeras and the Betrayal (page_text 1776) and quest 13251 name the dreadlords' race in 3.3.5 text. Guards confirmed in both setups: Ur'dan 15 yards away, Jaedenar Legionnaires 58 to 75, Warlocks about 100, Darkweavers about 120 (mod-individual-progression changes only his and their SmartAI, no spawns); 'dark magic' holds either way (Shadow Shock and Curse of Thorns in both scripts). Converted for group kill credit: the opening (KILL 9516, TALK 9516) now tells only what a bystander at the fight sees: a dreadlord in his chamber in Shadow Hold with Ur'dan beside him, hostile to all (template 1434); the nearby guards named are the spawns within 150 yards (Jaedenar Legionnaire, Warlock, Darkweaver). His spells are not named, since mod-individual-progression replaces his SmartAI in zone_felwood.sql. The warlock chain moved to parts: his rank, patience and Ulathek's treachery to part 1 (QUEST_DONE 7623, turned in to him in Shadow Hold, and QUEST_ACCEPT 7624, offered by RewardNextQuest); the heart and the stardust to part 2 (QUEST_DONE 7624, QUEST_ACCEPT 7625). 7623-7625 are warlock-only (QuestSortID -61) and start or end with Banehollow; QUEST_ACCEPT 7623 and QUEST_DONE 7625 (Gorzeeki, Burning Steppes) are not used. Earlier: Verifier: 'burning world' replaced by 7625's own words (Hel'nurath's domain, famed dreadsteeds); 'guards him' for Ur'dan unsupported, dropped. Faction 0 confirmed: template 1434 (faction 869) has hostile mask 1 (all players), no friend mask, so both factions can kill him; TALK works only for warlocks of either side via the Shadowy Potions (7623 races 595 span both factions). Faction 1434 is hostile to all players, so the TALK trigger works only for warlocks with the Shadowy Potions; KILL keeps the entry open to everyone (rank 1 elite). Faction 0. Burning Steppes' Altar of Storms tells Mor'zul's dreadsteed rite; 7623-7625 are not used as triggers. 'burning world' of Xoroth matches Burning Steppes' 'burning Plains of Xoroth'.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Those who come cloaked in the Shadow Council's own brand of evil may speak with him, for he is the dreadlord of Jaedenar, the cult's seat. His patience, he says, spans the millennia, yet he grants a mortal no more than an instant of it. Favor is earned in blood: his groveling servant Ulathek is a spy for his rival, Lord Hel'nurath of Xoroth, who means to usurp his power, and Banehollow wants the traitor's heart.",
+    "triggers": [
+     [
+      5,
+      7623
+     ],
+     [
+      4,
+      7624
+     ]
+    ],
+    "sources": [
+     "quest 7623 description and reward text",
+     "quest 7624 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The heart pleases him. After a week of rotting, he says, it will make a succulent treat, and perhaps he will send for Ulathek's head to set before him as he eats. His patience grows, marginally. To one who would open a portal to Xoroth, Hel'nurath's domain and home of the famed dreadsteeds, he allows a store of Xorothian stardust from Ur'dan, if the price is paid.",
+    "triggers": [
+     [
+      5,
+      7624
+     ],
+     [
+      4,
+      7625
+     ]
+    ],
+    "sources": [
+     "quest 7624 completion and reward text",
+     "quest 7625 description"
+    ]
+   }
+  ]
  },
  {
   "id": 36121,
@@ -494,7 +667,7 @@
   "sort": 4,
   "faction": 0,
   "title": "Niby the Almighty",
-  "body": "Niby the Almighty is a gnome warlock camped in Shatter Scar Vale with his imp Impsy, and he demands that visitors bow before his power. Stormwind threw him out, and he has sworn revenge by calling down an infernal destroyer of his own. To a fellow warlock who brings him the burning core of the fallen infernal Kroshius, he will teach the secret of summoning such a servant. His own grand conjurations go less well: the mighty destroyer he calls from the sky turns out to be a chicken, though Niby promises Stormwind death by chicken all the same. Impsy rolls on the floor laughing and tells his master, often, that he is an idiot.",
+  "body": "Niby the Almighty is a gnome warlock camped in Shatter Scar Vale with his imp Impsy, and he commands every visitor to bow in his presence, certain they can feel the power he holds over them. His ambitions run to infernals. Nearby lie the burned out remains of one called Kroshius, and to a fellow warlock who rekindles that corpse, destroys it and brings back the infernal core from its burning remains, Niby will teach the secret of summoning an infernal servant. Impsy, for his part, privately considers his master daft.",
   "triggers": [
    [
     2,
@@ -513,7 +686,24 @@
    "smart_scripts 1446900 (Call Infernal Destroyer after 7603)",
    "warcraft.wiki.gg/wiki/Niby_the_Almighty (gnome warlock)"
   ],
-  "notes": "Verifier: verified. Both NPCs friendly (faction 35) and talkable; the warlock quests are class-limited so no quest triggers. El Pollo Grande's later rampage to Gadgetzan (wiki) left out."
+  "notes": "Converted: the chicken conjuration moved to part 1 on QUEST_DONE 7603 (smart_scripts 1446900 runs on that turn-in; 7603 is warlock only, races 0, so both factions' warlocks earn it). The opening keeps his gossip (npc_text 7001), the 7601 offer and Impsy's view of him (7602 completion text). Creature and npc texts reread: classic. Check: the Stormwind grudge ('cone heads', 'kick me out') dropped from part 1: it is creature_text 14469 group 3, which no script says (1446900 says Niby 0, 1, 2 and Impsy 0, 1); the vengeance and 'Death to Stormwind' of group 2 stay. Earlier: Verifier: verified. Both NPCs friendly (faction 35) and talkable; the warlock quests are class-limited so no quest triggers. El Pollo Grande's later rampage to Gadgetzan (wiki) left out.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Once the core is his, Niby orders everyone to stand well back, for his greatest conjuration needs a wide berth. He bids the world bow down before his infernal destroyer, and from the sky falls a chicken. Impsy rolls on the floor laughing and tells his master he is an idiot. Niby silences his servant, undaunted: vengeance will be his, and Stormwind will meet death by chicken.",
+    "triggers": [
+     [
+      5,
+      7603
+     ]
+    ],
+    "sources": [
+     "smart_scripts 1446900 (run on 7603 rewarded: Niby groups 0, 1, 2 and Impsy groups 0, 1)",
+     "creature_text 14469 groups 0-2, 14470 groups 0-1",
+     "quest 7603 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 36122,
@@ -522,7 +712,7 @@
   "sort": 5,
   "faction": 0,
   "title": "Arko'narin",
-  "body": "Arko'narin is a night elf who came to Jaedenar with her longtime friend Trey Lightforge, a human Knight of the Silver Hand, to learn what the Shadow Council was planning. The cult caught them unprepared, took their equipment and locked her in a cage in Shadow Hold, while Trey was dragged deeper below. Cold and hungry, she could hear his screams rising from the depths, sounds she called inhuman. Even fearing he was already dead, she swore that the cultists would pay. Freed at last, she would not leave without his sword Lightforge, and she carried it to Darnassus to warn her superiors, too urgent even to stop for healing.",
+  "body": "Arko'narin is a night elf held captive by the Shadow Council, locked in a cage within Shadow Hold beneath Jaedenar. Cold and hungry, she begs anyone who comes near to help her escape, certain that one of her captors carries the key. She did not come alone. Her friend Trey was taken with her, and she fears he is already dead, unable to bear the thought of what the cultists may have done to him. She still believes there is time to save herself, though she is sure that before long they will sacrifice her to whatever demons they worship.",
   "triggers": [
    [
     2,
@@ -537,7 +727,41 @@
    "creature_template_model 11020/11141 (human male displays)",
    "warcraft.wiki.gg/wiki/Trey_Lightforge (human male paladin)"
   ],
-  "notes": "Verifier: Trey is a human male (remains 11020 and spirit 11141 use human male displays 10425, 10641; wiki). Arko'narin still not called a warden. Faction 0 confirmed: template 250 friendly to all players. Captured Arko'narin 11016 has gossip 3129. The escape is told in the story entry; this keeps to her and her friendship. 'warden' (wiki) not used."
+  "notes": "Check: gossip 3129 shows 3865 by default, 4113 once 5202 is rewarded (condition 14/3129/4113) and 4114 once 5203 is rewarded; the cage opens only on ACCEPT 5203 (smart_scripts 11016 sets gameobject 176306), so part 1 now opens 'With the key in her hands' rather than 'Freed from the cage'. Converted: the opening is now her plea from the cage (npc_text 3865, 5202 completion text), seen before she is freed; her account of the capture (npc_text 4113, shown once the key is used) and Lightforge moved to part 1 on QUEST_DONE 5202 and QUEST_ACCEPT 5203; the escape, Trey's spirit and Darnassus to part 2 on QUEST_DONE 5203. 'Human' dropped for Trey: only his displays show it. npc_text 3865, 4113 reread: classic. Earlier: Verifier: Trey is a human male (remains 11020 and spirit 11141 use human male displays 10425, 10641; wiki). Arko'narin still not called a warden. Faction 0 confirmed: template 250 friendly to all players. Captured Arko'narin 11016 has gossip 3129. The escape is told in the story entry; this keeps to her and her friendship. 'warden' (wiki) not used.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "With the key in her hands, she tells her story. She and her longtime friend Trey Lightforge came to Jaedenar to investigate the Shadow Council, but the cult caught them unprepared, took all their equipment and dragged Trey deeper into the Hold. She can still hear his screams from below, inhuman, and swears the cultists will pay. She will not leave without his sword, Lightforge, and she must warn her superiors.",
+    "triggers": [
+     [
+      5,
+      5202
+     ],
+     [
+      4,
+      5203
+     ]
+    ],
+    "sources": [
+     "npc_text 4113",
+     "quest 5203 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Arko'narin wins her way out, though the escape costs her the sight of Trey's tormented spirit turned against her. She carries Lightforge on to Darnassus, too urgent even to stop for the druids' healing. She does not show it, but her friend Jessir Moonbow knows that losing one of her closest friends, a Knight of the Silver Hand, is tearing her up inside.",
+    "triggers": [
+     [
+      5,
+      5203
+     ]
+    ],
+    "sources": [
+     "quest 5203 reward text",
+     "smart_scripts 11016 (Spirit of Trey Lightforge 11141 summoned)"
+    ]
+   }
+  ]
  },
  {
   "id": 36123,
@@ -546,7 +770,7 @@
   "sort": 6,
   "faction": 1,
   "title": "Arei",
-  "body": "Arei is the spirit of one of Felwood's ancient protectors, bound to the land's suffering even after death. Arei remembers a peaceful and serene forest before the Legion came with its infernals, destruction and chaos, and the Skull of Gul'dan, which spared nothing. Trapped by the corruption, the spirit cannot rest, and asks only to be led out of the cursed forest toward Ashenvale. The way is hard: maddened creatures attack, and Arei grieves at having to fight its own kind. As Ashenvale draws near, its true strength returns and the forest's grip falls away. At peace at last, Arei sends its guide to the druid Kayneth Stillwind in Forest Song.",
+  "body": "Arei is the spirit of one of Felwood's ancient protectors, bound to the land's suffering even after death. Arei remembers a peaceful and serene forest before the Legion came with its infernals, destruction and chaos, and the Skull of Gul'dan, which ensured that nothing was spared: all fell to the corruption. Trapped by it still, the spirit cannot rest, and asks only to be led through the cursed forest toward home, where it may finally be at peace. Once free, Arei bids its guide seek out the druid Kayneth Stillwind in Forest Song, in eastern Ashenvale.",
   "triggers": [
    [
     4,
@@ -564,7 +788,24 @@
    "smart_scripts 9598 (escort), event_scripts 3839 (Arei summoned at 5998.7,-1208, posarea 1767)",
    "ashenvale.json Kayneth notes (4261 left to Felwood)"
   ],
-  "notes": "Verifier: faction 1 confirmed: Arei 9598 has no standing spawn (summoned only by event 3839), 939/4441/4442/4261 are AllowableRaces 1101, and template 79 is hostile to the Horde. Faction 1: 4261 AllowableRaces 1101 and Arei is summoned only by the Alliance flute chain (4442). Arei is not a standing spawn. Arei Transformed 9599 not used. Kayneth's TALK trigger stays with Ashenvale."
+  "notes": "Converted: the escort and Arei's release (creature_text 9598 lines during the escort, 4261 reward text) moved to part 1 on QUEST_DONE 4261; the opening is the 4261 description and its gossip (npc_text 2726). creature_text 9598 and npc_text 2726, 2809 reread: classic. Earlier: Verifier: faction 1 confirmed: Arei 9598 has no standing spawn (summoned only by event 3839), 939/4441/4442/4261 are AllowableRaces 1101, and template 79 is hostile to the Horde. Faction 1: 4261 AllowableRaces 1101 and Arei is summoned only by the Alliance flute chain (4442). Arei is not a standing spawn. Arei Transformed 9599 not used. Kayneth's TALK trigger stays with Ashenvale.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The way out is hard. Maddened creatures fall upon the spirit, and Arei grieves that it must fight its own kind, urging that the fel touched beasts be put out of their misery. As Ashenvale draws near, Arei's form changes: the true strength of its spirit returns and the cursed grasp of the forest leaves it, and at last it is at peace. Kayneth, hearing of it, holds that Felwood may one day be reclaimed, for every kind deed helps.",
+    "triggers": [
+     [
+      5,
+      4261
+     ]
+    ],
+    "sources": [
+     "creature_text 9598 groups 1-7",
+     "npc_text 2809",
+     "quest 4261 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 36124,
@@ -586,7 +827,7 @@
    "quest 8466 completion and reward text",
    "warcraft.wiki.gg/wiki/Grazle (male)"
   ],
-  "notes": "Verifier: verified. Gossip 3622. His quests 8460 and 8466 are the story's."
+  "notes": "Unchanged in the parts conversion: nothing to hide. npc_text 4393 reread: classic. Earlier: Verifier: verified. Gossip 3622. His quests 8460 and 8466 are the story's."
  },
  {
   "id": 36125,
@@ -595,7 +836,7 @@
   "sort": 8,
   "faction": 0,
   "title": "Gorn One Eye",
-  "body": "Gorn One Eye keeps a trader's stall deep in Timbermaw Hold and trusts very few outsiders, waving off newcomers who have won over only a handful of his kin. Through the help of trusted friends, the Timbermaw found a way to draw out the root of the Winterfall tribe's madness: the demon Xandivious, which dominates them and can be lured out at the mouth of High Chief Winterfall's cave. Once it falls and its essence is brought to Gorn, he hails its slayer as a hero of the furbolgs, for the Winterfall at last have a chance to survive. Gorn then sends an offering of peace to the Alliance and the Horde, whose leaders once tried to reach the Timbermaw.",
+  "body": "Gorn One Eye keeps a trader's stall deep within Timbermaw Hold, dealing with the few outsiders his tribe has come to trust. He is warier than most of his kin. To a stranger who has won over only a handful of the Timbermaw he has little to say: he sees them, they may be on their way, and it will take more than the trust of a few to prove anything to him. Yet in time it is Gorn who brings the tribe's gravest task to those who have earned its trust.",
   "triggers": [
    [
     2,
@@ -612,7 +853,69 @@
    "quests 8484, 8485 (offering of peace to Magni and Thrall, who had tried to make contact)",
    "warcraft.wiki.gg/wiki/Gorn_One_Eye (general goods vendor)"
   ],
-  "notes": "Verifier: Xandivious is summoned at the cave mouth (8481), not said to rule from the cave; reworded. Faction 0 confirmed (8481 races 0; template 414 Timbermaw rep, open to both). Winterspring must not reuse 8481, 8484, 8485 or Gorn 11555. 8481 starts and ends with Gorn in Timbermaw Hold (QuestSortID 1769) though the fight is in Winterspring; Winterspring should not reuse 8481/8484/8485 or 11555. Gorn's gossip needs Timbermaw reputation; both factions can earn it. 'partially sighted' from the wiki not used."
+  "notes": "Converted: the opening is his gossip (npc_text 4399) and his role as the giver of 8481; the demon behind the Winterfall moved to part 1 (QUEST_ACCEPT 8481), Xandivious's fall to part 2 (QUEST_DONE 8481), the offering of peace to part 3 (QUEST_ACCEPT 8484 or 8485, offered by Gorn) and its reception to part 4 (QUEST_DONE 8484 at Magni, 8485 at Thrall). Parts 3 and 4 name no leader, since each faction's quest names only its own. Check: 'the Timbermaw do not forget their allies' (Nafien's 8461 completion text) dropped from the opening, since a visitor who reaches Gorn through Winterspring need not have heard it. Ownership unchanged: 8481, 8484, 8485 and Gorn 11555 are Felwood's. npc_text 4399 reread: classic. Earlier: Verifier: Xandivious is summoned at the cave mouth (8481), not said to rule from the cave; reworded. Faction 0 confirmed (8481 races 0; template 414 Timbermaw rep, open to both). Winterspring must not reuse 8481, 8484, 8485 or Gorn 11555. 8481 starts and ends with Gorn in Timbermaw Hold (QuestSortID 1769) though the fight is in Winterspring; Winterspring should not reuse 8481/8484/8485 or 11555. Gorn's gossip needs Timbermaw reputation; both factions can earn it. 'partially sighted' from the wiki not used.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "That task is the root of all evil for the Winterfall. Thanks to the tribe's friends, the Timbermaw have found a way to draw out the demon that dominates their corrupted kin: a torch planted at the mouth of High Chief Winterfall's cave will force it to show itself, and only the essence of the fallen demon can begin the Winterfall's long healing, and the salvation of Timbermaw Hold.",
+    "triggers": [
+     [
+      4,
+      8481
+     ]
+    ],
+    "sources": [
+     "quest 8481 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "When the essence of the demon Xandivious is brought to him, Gorn's gruffness gives way. The safety of Timbermaw Hold is assured for years to come, he declares, and its slayer is a hero among the furbolgs. The healing will be slow and the conflict will go on, but the Winterfall have something they never had before: a chance at survival.",
+    "triggers": [
+     [
+      5,
+      8481
+     ]
+    ],
+    "sources": [
+     "quest 8481 reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Gorn then looks beyond his own kind. Deeds such as these go beyond the tale of a simple hero, he says, and if the hero speaks for a people, the Timbermaw would make peace with them. He sends an offering of peace to the leader of the hero's people, who in times past tried to make contact with his tribe.",
+    "triggers": [
+     [
+      4,
+      8484
+     ],
+     [
+      4,
+      8485
+     ]
+    ],
+    "sources": [
+     "quests 8484, 8485 descriptions"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The offering is received as a most fortuitous turn of events. A lasting peace with the Timbermaw would give the hero's people a real advantage in Kalimdor, and word of it goes out at once to the other leaders, with more diplomats to follow.",
+    "triggers": [
+     [
+      5,
+      8484
+     ],
+     [
+      5,
+      8485
+     ]
+    ],
+    "sources": [
+     "quests 8484, 8485 reward texts (Magni Bronzebeard, Thrall)"
+    ]
+   }
+  ]
  },
  {
   "id": 36126,
@@ -621,7 +924,7 @@
   "sort": 9,
   "faction": 2,
   "title": "Dreka'Sur",
-  "body": "Dreka'Sur is an orc of Bloodvenom Post whose husband traveled Felwood for the honor of their clan, battling the Shadow Council and the forest's other abominations. He cheated death many times. His last letter told her that a druid had asked his help against a great befouled furbolg called Overlord Ror, and after that neither warrior nor druid was heard from again. Left a widow and unable to rest, Dreka'Sur wants Ror's clawed hand, caring nothing whether the beast is corrupt or merely savage. When the claw is brought to her, she takes comfort that her husband died in battle, as he would have wanted, and that his killer has paid.",
+  "body": "Dreka'Sur is an orc of Bloodvenom Post whose husband traveled Felwood for the honor of their clan, battling the Shadow Council and the forest's other abominations. He cheated death many times. His last letter told her that a druid had asked his help against a great befouled furbolg called Overlord Ror, and after that neither warrior nor druid was heard from again. Left a widow and unable to rest, Dreka'Sur wants Ror's clawed hand, caring nothing whether the beast is corrupt or merely savage from living in so dismal a forest, so long as it pays for its crimes against her family.",
   "triggers": [
    [
     2,
@@ -636,7 +939,22 @@
    "quest 6162 description, completion and reward text",
    "warcraft.wiki.gg/wiki/Dreka'Sur (female orc, Bloodvenom Post)"
   ],
-  "notes": "Verifier: faction 2 confirmed: template 1074 friendly to Horde, hostile to Alliance; 6162 races 690. Female orc by display 8890. Faction 2: template 1074 (enemy group Alliance), 6162 AllowableRaces 690. No gossip menu; quest dialog opens."
+  "notes": "Converted: the claw's delivery and her comfort (6162 reward text) moved to part 1 on QUEST_DONE 6162; the opening keeps the 6162 description and completion text. Earlier: Verifier: faction 2 confirmed: template 1074 friendly to Horde, hostile to Alliance; 6162 races 690. Female orc by display 8890. Faction 2: template 1074 (enemy group Alliance), 6162 AllowableRaces 690. No gossip menu; quest dialog opens.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "When Ror's claw is brought to her, Dreka'Sur counts it an honor kept. Her husband died in battle, she says, and he would have been proud of that, but she could not rest until the creature that left her to live her life alone had paid for what it had done.",
+    "triggers": [
+     [
+      5,
+      6162
+     ]
+    ],
+    "sources": [
+     "quest 6162 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 36127,
@@ -645,7 +963,7 @@
   "sort": 10,
   "faction": 2,
   "title": "Winna Hazzard",
-  "body": "Winna Hazzard is a Forsaken at Bloodvenom Post who admits that some call her exceptionally cruel, though she insists she only wants the Horde to gain every advantage over the Alliance. Her newest interest is the corrupted moonwell at the Ruins of Constellas, once a symbol of renewal for the night elves and now a font that breeds satyrs. She poured a sample of its water over her own kitten, laughing as it doubled in size and grew stronger, then had the cat carried to the well itself to see what more the corruption could do. She is certain the Forsaken will find uses for that water against their enemies.",
+  "body": "Winna Hazzard is a Forsaken at Bloodvenom Post who admits that some call her exceptionally cruel, though she insists she only wants the Horde to gain every advantage over the Alliance, in any way possible. Her newest interest is the corrupted moonwell at the Ruins of Constellas, south of the post, once a symbol of renewal for the night elves and now a font that brings forth more satyrs. She has an idea for its water, and wants a sample brought to her for the sake of her little feline friend, the kitten that keeps her company.",
   "triggers": [
    [
     2,
@@ -659,9 +977,44 @@
   "sources": [
    "quests 4505, 4506 texts",
    "creature_text 9996 (pours the water on the cat, perfect)",
-   "warcraft.wiki.gg/wiki/Winna_Hazzard (Forsaken)"
+   "warcraft.wiki.gg/wiki/Winna_Hazzard (Forsaken)",
+   "creature 10658 Winna's Kitten beside her"
   ],
-  "notes": "Verifier: faction 2 confirmed: template 68 friendly to Horde, hostile to Alliance; 4505 races 690. Female Forsaken by display 9343. Faction 2: template 68 (Undercity, enemy group Alliance), 4505 AllowableRaces 690. Cataclysm slime experiments left out. 6605 (A Strange One) ends with her but starts in Winterspring; not used."
+  "notes": "Converted: the kitten's growth and the trip to the well (4506 description) moved to part 1 on QUEST_DONE 4505 and QUEST_ACCEPT 4506; the corrupted saber and her plans (4506 reward) to part 2 on QUEST_DONE 4506. 'Laughing' dropped: creature_text 9996 has no script that says it. Check: the transformation is traced: item 12565 casts 15647 Summon Common Kitten (9937) at the moonwell (spell focus 644); its actionlist 993700 says 'jumps into the moonwell, and goes underwater', updates its template to Corrupted Saber 10042, which emotes 'follows $n obediently' and follows the player back, where gossip 55002 gives the 4506 credit. Earlier: Verifier: faction 2 confirmed: template 68 friendly to Horde, hostile to Alliance; 4505 races 690. Female Forsaken by display 9343. Faction 2: template 68 (Undercity, enemy group Alliance), 4505 AllowableRaces 690. Cataclysm slime experiments left out. 6605 (A Strange One) ends with her but starts in Winterspring; not used.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The sample works as she hoped. A little of the water made her kitten double in size and grow stronger, somehow, and Winna wants the cat carried to the moonwell itself and released there, promising with a chuckle that the results will please. Such cats, she thinks, may prove useful.",
+    "triggers": [
+     [
+      5,
+      4505
+     ],
+     [
+      4,
+      4506
+     ]
+    ],
+    "sources": [
+     "quest 4506 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "What comes back from the moonwell is no kitten but a corrupted saber, following its keeper obediently. Winna is delighted: the Forsaken, she says, will resort to any means necessary to crush the Alliance, and the corrupted water will surely prove useful in their future efforts.",
+    "triggers": [
+     [
+      5,
+      4506
+     ]
+    ],
+    "sources": [
+     "quest 4506 reward text",
+     "creature_template 10042 Corrupted Saber, creature_text 10042 (follows obediently)",
+     "spell 15647, smart_scripts 9937 and actionlist 993700 (kitten turned into 10042 at the moonwell)"
+    ]
+   }
+  ]
  },
  {
   "id": 36128,
@@ -670,7 +1023,7 @@
   "sort": 1,
   "faction": 0,
   "title": "The Shadow Council in Jaedenar",
-  "body": "Greta Mosshoof trusts no one against the Shadow Council until they have shed the cult's blood, so her allies first descend on Jaedenar to thin its hounds, guards, adepts and cultists. Her plan is patient. Braziers in Shadow Hold shield the cult from her scrying, and only purified water can douse them, so a canteen is filled at the corrupt moonwell in the heart of Jaedenar and carried to the Barrens shore south of Ratchet. There Greta's old friend, the shaman Islen Waterseer, wins the blessing of the water spirits and sends the water back with a warning that the Shadow Council is not to be trifled with. With the cleansed water the four braziers are put out, and before the warlocks can restore their wards Greta sees into the depths. The head of the serpent is Shadow Lord Fel'dan, the mortal making pacts with the Legion. The only way to him is the straight path down, and there he and his two succubi die. Without him, Greta hopes, the cult will turn on itself.",
+  "body": "Greta Mosshoof of the Emerald Circle will not trust anyone against the Shadow Council until they have proven themselves its enemy, for the cult is responsible for many evils in Felwood and far beyond it. Its seat is Jaedenar, along a path to the west, where it plots with the Burning Legion. So her would-be allies first descend into one of the corrupted barrow dens there to slay its hounds, guards, adepts and cultists. She knows that shedding blood as proof of honor disgusts some, but it serves two ends: it weakens the foe, and it builds a respect between allies that will make them stronger in the times to come.",
   "triggers": [
    [
     4,
@@ -680,7 +1033,102 @@
   "sources": [
    "quests 5155, 5157, 5158, 5159, 5165, 5242 descriptions, completion and reward texts"
   ],
-  "notes": "Verifier: Islen's step condensed to one clause; barrens.json Tidus Stair gives her side, no trigger shared (5158/5159 unused). Faction 0 confirmed (all quests races 0, Greta template 35). 5155 is the only entry point (5157 requires it). The Barrens' Tidus Stair entry mentions the water being carried to Islen; no shared triggers (5158/5159 unused). Taronn's 5156 is told in Shatter Scar Vale."
+  "notes": "Converted: the opening is the 5155 premise and completion text; parts follow the chain: 1 the braziers and the canteen (QUEST_DONE 5155, QUEST_ACCEPT 5157, RewardNextQuest), 2 Islen (QUEST_DONE 5157, QUEST_ACCEPT 5158, both at Greta), 3 the spirits' blessing and warning (QUEST_DONE 5159 at Greta, QUEST_ACCEPT 5165), 4 the braziers doused (QUEST_DONE 5165), 5 Fel'dan named (QUEST_ACCEPT 5242), 6 his fall (QUEST_DONE 5242). QUEST_DONE 5158 and QUEST_ACCEPT 5159 (at Islen in the Barrens) are not used; all six quests are QuestSortID 361 and races 0. Earlier: Verifier: Islen's step condensed to one clause; barrens.json Tidus Stair gives her side, no trigger shared (5158/5159 unused). Faction 0 confirmed (all quests races 0, Greta template 35). 5155 is the only entry point (5157 requires it). The Barrens' Tidus Stair entry mentions the water being carried to Islen; no shared triggers (5158/5159 unused). Taronn's 5156 is told in Shatter Scar Vale.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "With the cult's numbers thinned, Greta reveals her plan. Shadow Hold, the fortress deep within Jaedenar, is guarded by protective spells bound to braziers, and while they burn her scrying cannot reach inside to learn who leads the Council. Purified water could douse them, so a canteen is carried to the Moon Well at the center of Jaedenar and filled with its corrupt water.",
+    "triggers": [
+     [
+      5,
+      5155
+     ],
+     [
+      4,
+      5157
+     ]
+    ],
+    "sources": [
+     "quest 5155 reward text",
+     "quest 5157 description and completion text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Purifying it will take travel. Greta sends the water to the Barrens, to a small camp on the shore south of Ratchet, where her old friend, the shaman Islen Waterseer, keeps a strong bond with the spirits of water. A cause so noble, Greta trusts, should persuade both Islen and the spirits to help.",
+    "triggers": [
+     [
+      5,
+      5157
+     ],
+     [
+      4,
+      5158
+     ]
+    ],
+    "sources": [
+     "quest 5157 reward text",
+     "quest 5158 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The spirits judge the cause just, and Islen sends the purified water back with her regards and a warning: the Shadow Council is not a force to be trifled with, and Greta is tackling something greater than many know. Greta takes heart from the blessing, and the water is carried into Shadow Hold to douse the four braziers of protection.",
+    "triggers": [
+     [
+      5,
+      5159
+     ],
+     [
+      4,
+      5165
+     ]
+    ],
+    "sources": [
+     "quest 5159 description and reward text",
+     "quest 5165 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "As the last brazier's flame dies, Greta's spells pierce the Hold, and before the Council's warlocks can restore their wards she learns enough, she hopes, to strike. Going into a dragon's lair without knowledge is a fool's errand, she says, and the Shadow Council is far worse than any dragon.",
+    "triggers": [
+     [
+      5,
+      5165
+     ]
+    ],
+    "sources": [
+     "quest 5165 completion and reward text"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "What she learned points to one man. There is no other way into Shadow Hold than the straight path down, and at its bottom waits Shadow Lord Fel'dan, the mortal in power below, the head of the serpent and the one making pacts with the Legion. He and his two succubus servants must die.",
+    "triggers": [
+     [
+      4,
+      5242
+     ]
+    ],
+    "sources": [
+     "quest 5242 description"
+    ]
+   },
+   {
+    "part": 6,
+    "body": "Fel'dan falls with his succubi, Moora and Salia, and his head is carried back to the Emerald Sanctuary. Greta praises the Earthmother: with such a blow to its hierarchy the Council will be hard pressed to regain its old power, and without Fel'dan she hopes it will lose focus and turn to infighting, the moment to strike its demons hardest.",
+    "triggers": [
+     [
+      5,
+      5242
+     ]
+    ],
+    "sources": [
+     "quest 5242 completion and reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 36129,
@@ -689,7 +1137,7 @@
   "sort": 2,
   "faction": 0,
   "title": "The Prisoner of Shadow Hold",
-  "body": "Jessir Moonbow came from Darnassus to meet two friends at the Emerald Circle's camp, but they were days late. They had gone into Jaedenar to learn whether the Shadow Council was regaining its power. A strange key of red bone, carried by the cult's servants, leads to the answer: a cage within Shadow Hold, where the night elf Arko'narin is held. Freed, she will not flee without Lightforge, the sword of her friend Trey, a Knight of the Silver Hand. She recovers it with her gear and fights her way out past the cult's legionnaires, and then Trey himself appears, his tormented spirit turned against her. After the escape she hurries on to Darnassus, and Jessir, knowing how the loss will haunt her friend, asks one thing more: that Trey's torturer, the succubus Rakaiah, be slain and his remains carried back to the Sanctuary, so the paladin may be given proper respect.",
+  "body": "Jessir Moonbow came from Darnassus to meet two friends at the Emerald Circle's camp near the Ashenvale border, but they are days late. They had gone into Jaedenar to learn whether the Shadow Council, which claims credit for much of the orcish race's suffering, is regaining its power. Among the cult's servants, meanwhile, some carry a strange key, small and red and made of some kind of bone, heavy in the hand yet very fragile. Why a member of the Shadow Council would carry such a thing is a mystery, and somewhere in Jaedenar there must be something it unlocks.",
   "triggers": [
    [
     4,
@@ -703,7 +1151,77 @@
    "item 13140 Blood Red Key drops from Jaedenar warlocks, darkweavers, enforcers, legionnaires, Ulathek and Ur'dan",
    "gameobject 176225 Arko'niran's Chest; Rakaiah 9518 near the Remains of Trey Lightforge 11020"
   ],
-  "notes": "Verifier: the cage stands near the top of Shadow Hold (Arko'narin at z 319; 5203 speaks of the path to the top), so 'deep in' made 'within'. Faction 0 confirmed (5202 races 0, Arko'narin template 250 and Jessir 35 friendly to all). 5202 (item-started) is the only entry point. Jessir is not given a person entry; her TALK 11019 is left unused."
+  "notes": "Check: part 1 no longer says she is freed on DONE 5202 (the cage opens on ACCEPT 5203). Converted: the opening is Jessir's premise (npc_text 3864) and the key (5202 description); parts: 1 the cage and Lightforge (QUEST_DONE 5202, QUEST_ACCEPT 5203), 2 the escape, Trey's spirit and Jessir's request (QUEST_DONE 5203, QUEST_ACCEPT 5204, RewardNextQuest), 3 Rakaiah and the remains (QUEST_DONE 5204 at the Remains of Trey Lightforge, QUEST_ACCEPT 5385, item-started), 4 the remains returned (QUEST_DONE 5385). KILL 9518 not used. npc_text 3864, 3865, 4113 reread: classic. Earlier: Verifier: the cage stands near the top of Shadow Hold (Arko'narin at z 319; 5203 speaks of the path to the top), so 'deep in' made 'within'. Faction 0 confirmed (5202 races 0, Arko'narin template 250 and Jessir 35 friendly to all). 5202 (item-started) is the only entry point. Jessir is not given a person entry; her TALK 11019 is left unused.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The key fits a cage within Shadow Hold, and in it is the night elf Arko'narin, one of Jessir's missing friends. Even once the cage is open she will not simply flee: first she must recover the sword Lightforge, which belonged to her companion Trey, along with her own gear, and escape the Hold to warn her superiors of what is happening there.",
+    "triggers": [
+     [
+      5,
+      5202
+     ],
+     [
+      4,
+      5203
+     ]
+    ],
+    "sources": [
+     "quest 5202 completion and reward text",
+     "quest 5203 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The escape is hard won. Arko'narin finds her gear among candles laid out for some dark ritual and fights her way out past the cult's legionnaires, and then Trey himself appears, his tormented spirit turned against her. She hurries on to Darnassus with Lightforge, and Jessir, knowing how the loss of this Knight of the Silver Hand will haunt her friend, asks for his torturer, the succubus Rakaiah, to be slain and his remains found.",
+    "triggers": [
+     [
+      5,
+      5203
+     ],
+     [
+      4,
+      5204
+     ]
+    ],
+    "sources": [
+     "smart_scripts 11016 and creature_text 11016, 11141",
+     "quest 5203 reward text",
+     "quest 5204 description and log"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Rakaiah is slain, and near her lie the remains of Trey Lightforge, beyond doubt the Knight of the Silver Hand who came into Jaedenar with Arko'narin. They are gathered with care, and there is comfort in knowing that at least his spirit has been released from the pain forced upon it.",
+    "triggers": [
+     [
+      5,
+      5204
+     ],
+     [
+      4,
+      5385
+     ]
+    ],
+    "sources": [
+     "quest 5204 completion and reward text",
+     "quest 5385 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Carried back to Jessir on the border of Felwood and Ashenvale, the remains can at last be given proper respect. Jessir gives thanks to Elune, certain that Arko'narin will be glad her rescuer not only saved her but also slew the creature who tortured one of her best friends.",
+    "triggers": [
+     [
+      5,
+      5385
+     ]
+    ],
+    "sources": [
+     "quest 5385 description and reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 36130,
@@ -712,7 +1230,7 @@
   "sort": 3,
   "faction": 1,
   "title": "The Jadefire Satyrs",
-  "body": "Eridan Bluewind of the Emerald Circle has watched the Jadefire satyrs spread their disease through Felwood's creatures, and she means to defend a land that was once her people's. The first blow falls on the Ruins of Constellas, where the cruel Xavathras commands felsworn, shadowstalkers and rogues. His death is only a beginning. Eridan senses something larger behind the satyrs, and the truth soon follows: Xavathras had been cultivating the corrupted moonwell to pass its spoils to another, Xavaric, whose camp lies to the north. There hellcallers and tricksters feed upon the corruption of the forest's native beasts. Eridan sends her champion north to cut down Xavaric and his followers and end the suffering they cause, knowing that even then it will take long labor to repair the damage done.",
+  "body": "Few seek adventure in Felwood, where the corruption is widespread and indiscriminate. Eridan Bluewind of the Emerald Circle means to heal the land, but some wish it to fester, and chief among them are the Jadefire satyrs at the Ruins of Constellas, northwest of the Sanctuary. Led by a particularly cruel satyr named Xavathras, with felsworn, shadowstalkers and rogues at his command, they spread their disease to every creature they meet. Eridan means to defend a land that was once her people's, and the first blow must fall on Xavathras and his minions.",
   "triggers": [
    [
     4,
@@ -722,7 +1240,41 @@
   "sources": [
    "quests 4421, 4906 descriptions and reward texts"
   ],
-  "notes": "Verifier: betrayers dropped (Jadefire Betrayer 7108 has no spawn). Faction 1: 4421 and 4906 AllowableRaces 1101. 4906 requires 4421."
+  "notes": "Converted: the opening is the 4421 premise; Xavathras's fall and the reveal of Xavaric and the moonwell moved to part 1 (QUEST_DONE 4421, QUEST_ACCEPT 4906); Xavaric's fall to part 2 (QUEST_DONE 4906). 'Betrayers' still left out (no Jadefire Betrayer 7108 spawn). Earlier: Verifier: betrayers dropped (Jadefire Betrayer 7108 has no spawn). Faction 1: 4421 and 4906 AllowableRaces 1101. 4906 requires 4421.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Xavathras's death is only the first step in a long process of repair, and Eridan senses something larger than the satyrs at work. Part of the truth soon follows: Xavathras and his minions served a larger plan, cultivating the corrupted moonwell at Constellas to provide its spoils to Xavaric, whose camp lies to the north, where hellcallers and tricksters feed upon the corruption of the forest's native creatures.",
+    "triggers": [
+     [
+      5,
+      4421
+     ],
+     [
+      4,
+      4906
+     ]
+    ],
+    "sources": [
+     "quest 4421 reward text",
+     "quest 4906 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In the north Xavaric falls among his hellcallers and tricksters, and his camp's torment of Felwood's creatures is ended. Eridan gives thanks and asks that Elune protect and guide her champion on the path ahead, knowing that the long labor of healing the forest has only begun.",
+    "triggers": [
+     [
+      5,
+      4906
+     ]
+    ],
+    "sources": [
+     "quest 4906 completion and reward text",
+     "quest 4421 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 36131,
@@ -731,7 +1283,7 @@
   "sort": 4,
   "faction": 1,
   "title": "The Flute of Xavaric",
-  "body": "Among Xavaric's belongings is a simple wooden flute whose carved spirals seem to move beneath the fingers, and whoever holds it feels a sudden dread. Eridan Bluewind can hardly bear to touch it. The flute, she explains, was carved from an ancient protector, one of the treants that long guarded the night elves, and through fel magic the satyrs have bound its spirit to suffer without release; the felbind other satyrs carry is surely part of the binding. Blessed water is drawn from the Temple of the Moon in Darnassus, and praying for Elune to guide her hands, Eridan breaks the link between flute and spirit. She believes the flute may now call the spirits of ancients if played in a sacred place, perhaps the ruins at the southern edge of Irontree Woods, where many corrupted treants once lived. Played there, it brings forth the spirit Arei, who begs to be led home.",
+  "body": "Among the spoils of Xavaric, master of the Jadefire satyrs in northern Felwood, is a simple wooden flute. Its knotted wood feels solid, yet the spirals and patterns on its surface seem to spin and move as it is turned in the hand, and whoever holds it is seized by a sudden dread. Perhaps the mind is only playing tricks. Other satyrs may carry clues to what it is, and the felbind they bear seems worth gathering, so the flute is taken south to the druid Eridan Bluewind of the Emerald Sanctuary.",
   "triggers": [
    [
     4,
@@ -743,7 +1295,75 @@
    "creature_text 9116 (Eridan's purification lines)",
    "event_scripts 3839 (Arei summoned in Irontree Woods)"
   ],
-  "notes": "Verifier: verified. Faction 1: 939 AllowableRaces 1101; item 11668 starts it. The Arei escort (4261) is told in Arei's person entry."
+  "notes": "Check: Eridan's call to banish the evil aura (creature_text 9116, said on ACCEPT 4442) moved out of part 2, which DONE 4441 alone also unlocks, into part 3 (DONE 4442). Converted: the opening is the 939 premise (item-started from Xavaric's flute); Eridan's reading of the flute moved to part 1 (QUEST_DONE 939, QUEST_ACCEPT 4441, RewardNextQuest), the purification to part 2 (QUEST_DONE 4441, QUEST_ACCEPT 4442), the broken link and the ruins to part 3 (QUEST_DONE 4442), Arei's summoning to part 4 (QUEST_ACCEPT 4261, whose giver Arei appears only when the flute is played). The escort itself is told in 36123. creature_text 9116 reread: classic. Earlier: Verifier: verified. Faction 1: 939 AllowableRaces 1101; item 11668 starts it. The Arei escort (4261) is told in Arei's person entry.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Eridan can hardly bear to hold it. She senses the suffering of ancient ones: the flute was carved from an ancient protector, one of the treants that long guarded the night elves, and through fel magic the satyrs have bound its spirit to suffer without release. The felbind is surely part of it. To purify the flute she needs blessed water from the Temple of the Moon in Darnassus.",
+    "triggers": [
+     [
+      5,
+      939
+     ],
+     [
+      4,
+      4441
+     ]
+    ],
+    "sources": [
+     "quest 939 reward text",
+     "quest 4441 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The blessed water is brought from Darnassus, and Eridan prays that it will release the ancient's spirit and let it rest. With the water of Elune she begins the purification, asking that Elune guide her hands and heart.",
+    "triggers": [
+     [
+      5,
+      4441
+     ],
+     [
+      4,
+      4442
+     ]
+    ],
+    "sources": [
+     "quest 4441 completion and reward text",
+     "quest 4442 description",
+     "creature_text 9116"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "As she prays, Eridan feels the presence of evil leaving the flute, and the link between flute and spirit is broken. She believes the flute may now summon the spirits of ancients if played in a sacred place, perhaps the ruins in the southern part of Irontree Woods, where many corrupted treants once lived and where they may linger still, even in spirit form.",
+    "triggers": [
+     [
+      5,
+      4442
+     ]
+    ],
+    "sources": [
+     "quest 4442 reward text",
+     "creature_text 9116 groups 0, 1 (smart_scripts 911600, run on 4442 taken)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Played among those ruins, the flute brings forth Arei, the spirit of an ancient protector still trapped by Felwood's corruption, who begs to be led out of the cursed forest so that it may finally rest.",
+    "triggers": [
+     [
+      4,
+      4261
+     ]
+    ],
+    "sources": [
+     "event_scripts 3839 (Arei summoned in 1767)",
+     "quest 4261 description",
+     "creature_text 9598 group 0"
+    ]
+   }
+  ]
  },
  {
   "id": 36132,
@@ -752,7 +1372,7 @@
   "sort": 5,
   "faction": 0,
   "title": "Cleansing Felwood",
-  "body": "Two druids of the Emerald Circle, the night elf Arathandris Silversky southeast of the Emerald Sanctuary and the tauren Maybess Riverbreeze to its west, know how to cleanse the forest's plants, but they guard that knowledge closely, for in the wrong hands it would spell disaster for Felwood. Trust is won in the Irontree Cavern, where warpwood elementals lost beyond saving are slain for the sap called blood amber. It may seem strange, Arathandris admits, but saving countless lives must justify the means. Then the druids share their craft. With a Cenarion beacon, one can see the corrupted soul shards that tainted beasts leave behind, and from such things the druids make Cenarion plant salve. Spread on the sick plants of Felwood, the salve works quickly: sickly songflowers, windblossoms, night dragons and slime-coated whipper roots shed their corruption and bloom healthy again.",
+  "body": "Two druids of the Emerald Circle, the night elf Arathandris Silversky southeast of the Emerald Sanctuary and the tauren Maybess Riverbreeze to its west, know how to cleanse the forest's sick plants, but they guard that knowledge closely, for in the wrong hands it would spell disaster for all of Felwood. Plants give life to the forest, and even they suffer the taint. Trust must be won first in the Irontree Cavern to the north, where warpwood elementals lost beyond any hope of cleansing are slain for the sap called blood amber, which the druids study in the hope of saving other life.",
   "triggers": [
    [
     4,
@@ -771,7 +1391,155 @@
    "quests 996, 2523, 4117, 4119 texts (corrupted windblossom, songflower, whipper root, night dragon)",
    "creature positions: Arathandris 3805,-1472 (Morlos'Aran, southeast of the Sanctuary), Maybess 3947,-1046 (west of it)"
   ],
-  "notes": "Verifier: positions corrected: Arathandris 3805,-1472 is southeast of Greta 3986,-1303, Maybess 3947,-1046 is west; 'rotting' songflowers made 'sickly' (2523 speaks of odor, not rot). Faction 0 confirmed: 4101 (Arathandris, races 1101) and 4102 (Maybess, races 690), both druids template 35. 4101 Alliance and 4102 Horde entry points, so faction 0. Cleansed plants are gameobjects 164881-164884 and kin; their gifts are not described to avoid mechanics."
+  "notes": "Check: part 2 reworded to tell what any one of its 29 triggers reveals (one plant cleansed); all 29 are QuestType 0, races 0, gameobject-started, their 28 spawned plants all in Felwood by posarea, and no other zone file uses them. The salve (item 11516) is soulbound and comes only from the 4101/4102 follow-ups, so part 1 is always earned first. Converted: the opening keeps the 4101/4102 premise; the druids' trust and the beacon and salve (4101/4102 reward, npc_text 2848/2849, 4103/5882 completion text) moved to part 1 on QUEST_DONE 4101 and 4102 (Alliance and Horde); the cleansed plants to part 2 on QUEST_DONE of every corrupted plant quest (auto-complete gameobject quests, QuestType 0, races 0). Era: Cleansing Felwood is patch 1.8 content, which mod-individual-progression does not gate (its only Felwood change is zone_felwood.sql: SmartAI, the Irontree ancients' phase and a waypoint path), so no tag. npc_text 2842-2849 and creature_text 9528, 9529 reread: classic. Earlier: Verifier: positions corrected: Arathandris 3805,-1472 is southeast of Greta 3986,-1303, Maybess 3947,-1046 is west; 'rotting' songflowers made 'sickly' (2523 speaks of odor, not rot). Faction 0 confirmed: 4101 (Arathandris, races 1101) and 4102 (Maybess, races 690), both druids template 35. 4101 Alliance and 4102 Horde entry points, so faction 0. Cleansed plants are gameobjects 164881-164884 and kin; their gifts are not described to avoid mechanics.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "With the blood amber delivered, trust is given. It may seem odd that killing the elementals proved anything, the druid admits, but saving countless lives must justify the means. Then the craft is shared. A Cenarion beacon lets its bearer see the corruption the naked eye misses, and the corrupted soul shards that tainted beasts leave behind, and from such shards the druids grind the reagent for Cenarion plant salve.",
+    "triggers": [
+     [
+      5,
+      4101
+     ],
+     [
+      5,
+      4102
+     ]
+    ],
+    "sources": [
+     "quests 4101, 4102 reward text",
+     "npc_text 2848, 2849 (beacon)",
+     "creature_text 9528, 9529",
+     "quests 4103, 5882 completion text (soul shards, salve)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Spread on one of Felwood's sick plants, whether songflower, windblossom, night dragon or slime coated whipper root, the Cenarion plant salve works at once. The plant sheds its corrupted form and blossoms vibrant and healthy again, one small patch of the old forest given back its life.",
+    "triggers": [
+     [
+      5,
+      996
+     ],
+     [
+      5,
+      998
+     ],
+     [
+      5,
+      1514
+     ],
+     [
+      5,
+      2523
+     ],
+     [
+      5,
+      3363
+     ],
+     [
+      5,
+      4113
+     ],
+     [
+      5,
+      4114
+     ],
+     [
+      5,
+      4115
+     ],
+     [
+      5,
+      4116
+     ],
+     [
+      5,
+      4117
+     ],
+     [
+      5,
+      4118
+     ],
+     [
+      5,
+      4119
+     ],
+     [
+      5,
+      4221
+     ],
+     [
+      5,
+      4222
+     ],
+     [
+      5,
+      4343
+     ],
+     [
+      5,
+      4401
+     ],
+     [
+      5,
+      4403
+     ],
+     [
+      5,
+      4443
+     ],
+     [
+      5,
+      4444
+     ],
+     [
+      5,
+      4445
+     ],
+     [
+      5,
+      4446
+     ],
+     [
+      5,
+      4447
+     ],
+     [
+      5,
+      4448
+     ],
+     [
+      5,
+      4461
+     ],
+     [
+      5,
+      4462
+     ],
+     [
+      5,
+      4464
+     ],
+     [
+      5,
+      4465
+     ],
+     [
+      5,
+      4466
+     ],
+     [
+      5,
+      4467
+     ]
+    ],
+    "sources": [
+     "quests 996, 2523, 4117, 4119 completion and reward texts",
+     "gameobject_queststarter: 29 Corrupted Songflower, Windblossom, Whipper Root and Night Dragon quests, QuestSortID 361, QuestType 0"
+    ]
+   }
+  ]
  },
  {
   "id": 36133,
@@ -780,7 +1548,7 @@
   "sort": 6,
   "faction": 0,
   "title": "Timbermaw Ally",
-  "body": "Grazle of the Timbermaw knows that outsiders kill furbolgs without asking whether they are friend or foe, so his tribe trusts very few. To earn a place among its allies one must drive back the corrupted Deadwood, starting with the warriors, pathfinders and gardeners of the village southwest of the Sanctuary. Grazle then sends the proven north along the road to Nafien, who guards the gate of Timbermaw Hold. Nafien welcomes them but warns that his kin answer strangers with open hostility. He asks that the Deadwood camp to his southwest be broken, though he begs to be spared the details: the Deadwood are not evil by nature, only poisoned by the fel, and it grieves him to fight his own brethren. Victory, he says, is a hollow word. Trust grows slowly, through Deadwood feathers and ritual totems carried to the hold, until the Timbermaw at last welcome their friend within. Beyond lies Winterspring, where the Winterfall tribe has fallen to the same corruption.",
+  "body": "Grazle of the Timbermaw knows that outsiders kill furbolgs without asking whether they are friend or foe, so his tribe, the only one of its race to escape the corruption, trusts very few. To earn a place among its allies one must drive back the corrupted Deadwood, starting with the warriors, pathfinders and gardeners of the village southwest of the Sanctuary. At the far end of the road, Nafien, who guards the gate of Timbermaw Hold, asks the same of the Deadwood camp to his southwest, though he begs to be spared the details: the Deadwood are not evil by nature, only poisoned by the fel, and it grieves him to fight his own brethren.",
   "triggers": [
    [
     4,
@@ -798,6 +1566,82 @@
    "quest 8465 reward (Winterfall under the same corruptive sway)",
    "npc_text 8123 (Nafien)"
   ],
-  "notes": "Verifier: village direction made southwest (see Deadwood Village). Faction 0 confirmed: 8460 and 8461 races 0, Grazle and Nafien template 35. Entry points: 8460 (Grazle) and 8461 (Nafien, no prerequisite). Salfa's Winterfall quests (8464, 8469) and 8465 are left to Winterspring. 6131/6221/6241 are old duplicates and unused."
+  "notes": "Check: part 4 no longer names both feather takers, since each of its triggers (8466 Grazle, 8467 Nafien) shows only one. Converted: the opening is the 8460 and 8461 premises; parts: 1 Grazle's thanks and the road to Nafien (QUEST_DONE 8460, QUEST_ACCEPT 8462), 2 Nafien's welcome and warning (QUEST_DONE 8462), 3 the Felpaw camp broken (QUEST_DONE 8461), 4 the feathers (QUEST_DONE 8466, 8467, auto-complete repeatables), 5 the Deadwood totem (QUEST_DONE 8470). Dropped 'Beyond lies Winterspring, where the Winterfall have fallen to the same corruption': that is Salfa's 8465 reward, left to Winterspring with 8464, 8465 and 8469. npc_text 8123 reread: classic. Earlier: Verifier: village direction made southwest (see Deadwood Village). Faction 0 confirmed: 8460 and 8461 races 0, Grazle and Nafien template 35. Entry points: 8460 (Grazle) and 8461 (Nafien, no prerequisite). Salfa's Winterfall quests (8464, 8469) and 8465 are left to Winterspring. 6131/6221/6241 are old duplicates and unused.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Grazle takes the help as a sign of growing friendship, for the Timbermaw suffer much from the events of the past, and he sends the proven north along the road to Nafien. The guard may look a feral and unsavory beast, Grazle warns, but he is not to be feared: he only seeks aid against the malign forces that threaten their home.",
+    "triggers": [
+     [
+      5,
+      8460
+     ],
+     [
+      4,
+      8462
+     ]
+    ],
+    "sources": [
+     "quest 8460 reward text",
+     "quest 8462 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Nafien has heard word on the wind of outsiders seeking the Timbermaw's friendship, and he welcomes them, but warns that his tribe reacts poorly to strangers. In these trying times they trust only those who fight the corruption alongside them and prove it, and any who have not will be met with open hostility within the Hold.",
+    "triggers": [
+     [
+      5,
+      8462
+     ]
+    ],
+    "sources": [
+     "quest 8462 reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "When the camp is broken, Nafien senses the victory without needing to hear of it. Victory, he says, is a hollow word for what had to be done. Still, the deed proves its doer worthy, and though it may take time before the Timbermaw welcome them without hostility, perseverance will wear down suspicion, so long as no weapon is ever raised against the tribe.",
+    "triggers": [
+     [
+      5,
+      8461
+     ]
+    ],
+    "sources": [
+     "quest 8461 reward text"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Trust grows slowly. The suspicious brethren of the tribe still need convincing, and the distinctive headdresses some Deadwood wear give proof of every blow struck against them: each set of feathers brought in makes the bearer's deeds known among the Timbermaw.",
+    "triggers": [
+     [
+      5,
+      8466
+     ],
+     [
+      5,
+      8467
+     ]
+    ],
+    "sources": [
+     "quests 8466, 8467 completion and reward text"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "Inside the Hold, Kernda takes a Deadwood ritual totem thick with the stench of decay. Whatever foulness has turned the Deadwood against their kin, Kernda says, is surely present in it, and through study and ritual the Timbermaw hope to uncover what pollutes the minds of their brethren.",
+    "triggers": [
+     [
+      5,
+      8470
+     ]
+    ],
+    "sources": [
+     "quest 8470 reward text"
+    ]
+   }
+  ]
  }
 ]

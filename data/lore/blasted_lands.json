@@ -6,7 +6,7 @@
   "sort": 0,
   "faction": 0,
   "title": "Blasted Lands",
-  "body": "The Blasted Lands were once the southern half of the Black Morass, a dark fen of marsh and mire. It was here that Medivh and the warlocks of the Shadow Council opened the Dark Portal, and the orcish Horde poured through into Azeroth. The energies of the gate dried and warped the land into a red and barren waste where lightning flickers without end and even the beasts have grown unnaturally strong. At the close of the Second War the broken Horde made its last stand at the foot of the portal, and afterwards the Kirin Tor raised Nethergarde Keep in the northern hills to keep watch. Twenty years of silence ended when demons burst through the gate, and now the armies of the Alliance and the Horde march through the wastes and on into Outland. Yet the demons never truly left. The dreadlord Razelikh rules the wastes through his Shadowsworn cult and the Dreadmaul ogres, and the Burning Legion's soldiers still gather in the Tainted Scar.",
+  "body": "The Blasted Lands were once the southern half of the Black Morass, a dark fen of marsh and mire. It was here that Medivh and the warlocks of the Shadow Council opened the Dark Portal, and the orcish Horde poured through into Azeroth. The energies of the gate dried and warped the land into a red and barren waste where lightning flickers without end and even the beasts have grown unnaturally strong. At the close of the Second War the broken Horde made its last stand at the foot of the portal, and afterwards the Kirin Tor raised Nethergarde Keep in the northern hills to keep watch over the gate. The demons never truly left. The dreadlord Razelikh rules the wastes through his Shadowsworn cult and the Dreadmaul ogres, and the Burning Legion's soldiers gather in the Tainted Scar.",
   "triggers": [
    [
     1,
@@ -21,7 +21,49 @@
    "npc_text 8770 (demons surged from the portal)",
    "quest 10119 description (20 years silent)"
   ],
-  "notes": "verified; 'march past the keep' generalised. Cataclysm material (Surwich, Okril'lon, Tainted Forest, Sunveil Excursion) and the Iron Horde left out."
+  "notes": "Converted: the portal's reopening and the march into Outland moved out of the opening into era parts with no triggers: 1 the silent gate (maxState 6), 2 the Scourge invasion necropolises (state 6 only, from mod-individual-progression), 3 the demon invasion at the portal (state 7 only, the module's Into the Breach phase), 4 the Legion driven back and the armies marching to Outland (minState 8). Before: verified; Cataclysm material (Surwich, Okril'lon, Tainted Forest, Sunveil Excursion) and the Iron Horde left out. Check: Scourge spawns confirmed: si_gameobjects.sql necropolises 181223 (area 4) and 181374 (area 2517), circles in 4, 1437, 1440, 2517; si_creatures.sql shards, shocktroopers, ghouls, soldiers and cultist engineers in 4, 1437, 1439, 1440, 2517, none in 72 or 73; checkIPPhasing gives those areas IPP_PHASE at state 6 only. State 7: zone_blasted_lands.sql 'Into the Breach' spawns (invading felguards, voidwalkers, infernals, fel stalkers, anguishers, dreadknights, portal hounds, Argent protectors, guardians, bowmen and hunters, Nethergarde advisors, Watcher Theronus, Lord Marshal Raynor, Melgromm Highmountain, Agent Proudwell) are all IPPPHASE_II, applied in area 72 at state 7 only; turning in 10259 raises the state to 8. Read at 0-5, 6, 7, 8-12 and 13+/18: each reads as one account.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Dark Portal itself stands dark and silent. For twenty years no army has passed through it, and it looms over the southern wastes as a monument to wars half forgotten, watched day and night by the riftwatchers and analysts of Nethergarde.",
+    "maxState": 6,
+    "sources": [
+     "quest 10119 description (for 20 years a silent monument)",
+     "DB spawns: Nethergarde Analyst 6001, Nethergarde Riftwatcher 6002"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "A new shadow has fallen over the wastes. Necropolises of the Scourge hang in the red sky above the heart of the Blasted Lands, and around the necrotic shards beneath them skeletal shocktroopers, ghoul berserkers and spectral soldiers spread across the land while the cultists who serve them labor in their shadow.",
+    "minState": 6,
+    "maxState": 6,
+    "sources": [
+     "mod-individual-progression si_gameobjects.sql (Necropolis 181223 and 181374, circles 181227 over areas 4, 1437, 1440, 2517)",
+     "mod-individual-progression si_creatures.sql (Skeletal Shocktrooper, Ghoul Berserker, Spectral Soldier, Cultist Engineer, Necrotic Shard in areas 4, 1437, 1439, 1440, 2517; phased IPPPHASE)",
+     "mod-individual-progression IndividualProgression.cpp checkIPPhasing (Blasted Lands areas phased from state 6 until state 7)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Now the Dark Portal has woken. Demons pour through it in an endless tide, felguards, voidwalkers, infernals and dreadknights with their hounds, and at its foot the Argent Dawn fights a desperate battle beside the mages of Nethergarde and champions of the Alliance and the Horde. If the line breaks, the Argent Dawn warns, there will be no end to the demons' fire.",
+    "minState": 7,
+    "maxState": 7,
+    "sources": [
+     "mod-individual-progression zone_blasted_lands.sql (state 7 phase at the Dark Portal: Invading Felguard 19284, Invading Voidwalker 19287, Invading Infernal 19285, Dreadknight 19288, Portal Hound 19311, Argent Protector 19320, Nethergarde Advisor 19566, Lord Marshal Raynor 19385, Melgromm Highmountain 18969, Agent Proudwell 19942)",
+     "quest 10259 Into the Breach description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Twenty years of silence ended when the Burning Legion forced demons through the Dark Portal. Nethergarde and the Argent Dawn held them at bay until the armies of Azeroth arrived and drove them back through the gate. Now the Alliance and the Horde march through the wastes and on into Outland, where a savage war rages on the far side.",
+    "minState": 8,
+    "sources": [
+     "npc_text 8770 (Relthorn)",
+     "npc_text 9969 (Dar'toon)",
+     "quests 10119, 9407 descriptions"
+    ]
+   }
+  ]
  },
  {
   "id": 401,
@@ -46,7 +88,20 @@
    "quest 2783 description (we fight the wrong enemy)",
    "quest 1423 reward text (so many supplies are lost between Darkshire and the keep)"
   ],
-  "notes": "Analysts and riftwatchers now only watch the gate (their study of the land was unsourced); 'seldom arrive whole' softened per quest 1423. Ardalan only mentioned (his 2783 belongs to Swamp of Sorrows' Thrall's Grasp)."
+  "notes": "Converted: opening unchanged (Khadgar's command is Second War history). Added part 1 (minState 8, no triggers): the keep's part in holding the portal, Relthorn's camp and Romus's force. Before: analysts and riftwatchers only watch the gate; Ardalan only mentioned (his 2783 belongs to Swamp of Sorrows' Thrall's Grasp). Check: Field Commander Romus and the heavily armed force dropped from part 1: the only source for his departure from Nethergarde is quest 10046, which has no giver in 3.3.5 (Romus 16830 stands only at Honor Hold on map 530, and hellfire.json 348303 already tells that he brought troops from Nethergarde); the part now rests on Relthorn's 10119 and npc_text 8770.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Since the gate woke again, Nethergarde has turned to face it. The keep's defenders held the foot of the portal beside the Argent Dawn when demons surged through, and Watch Commander Relthorn Netherwane now keeps a camp there, sending every soldier he can through the gate to aid the Alliance's troops in the savage war on the far side.",
+    "minState": 8,
+    "sources": [
+     "npc_text 8770 (We of Nethergarde and the Argent Dawn held at bay a wave of demons)",
+     "DB spawn 16841 Relthorn at the Dark Portal; mod-individual-progression ipp_aware_npcs.sql gives him npc_ipp_tbc (seen from state 8)",
+     "quest 10119 description (help our troops on the other side of the gate)",
+     "warcraft.wiki.gg/wiki/Watch_Commander_Relthorn_Netherwane (Nethergarde)"
+    ]
+   }
+  ]
  },
  {
   "id": 402,
@@ -67,7 +122,7 @@
    "DB spawns: Nethergarde Miner 5996, Foreman 5998, Engineer 5997 in area 1457 and in underground tunnels (negative z) under the hills toward the swamp; Mithril Deposit 150079 and Truesilver Deposit 150081 in area 1457",
    "factiontemplate 1575 (Nethergarde miners hostile to Horde)"
   ],
-  "notes": "Tunnels 'toward the swamp' generalised to deep beneath the hills (miner spawns at negative z do run north under areas 8 and 75, but no text says so); 'soldiers as much as laborers' removed as unsupported. Cataclysm Nethergarde Mines and Supply Camps split left out."
+  "notes": "Unchanged in the parts conversion: nothing to hide. Tunnels 'toward the swamp' generalised to deep beneath the hills (miner spawns at negative z do run north under areas 8 and 75, but no text says so); 'soldiers as much as laborers' removed as unsupported. Cataclysm Nethergarde Mines and Supply Camps split left out."
  },
  {
   "id": 403,
@@ -76,7 +131,7 @@
   "sort": 3,
   "faction": 0,
   "title": "Dreadmaul Hold",
-  "body": "In the northwest corner of the Blasted Lands squats Dreadmaul Hold, once an orc settlement until the Dreadmaul ogres drove the orcs out after the Second War and gave it their own name. Behind its barracks and smithy, ogres, ogre mages and brutes answer to Grol the Destroyer, who serves Razelikh the Defiler in return for a life without end. Near his seat stand stones of binding, each holding souls of the Horde soldiers whom the Defiler handed to Grol as servants. Starving snickerfang hyenas lurk at the edges of the camp, and a rarely seen ogre called Mojo the Twisted walks among the brutes.",
+  "body": "In the northwest corner of the Blasted Lands squats Dreadmaul Hold, once an orc settlement until the Dreadmaul ogres drove the orcs out after the Second War and gave it their own name. Behind its barracks and smithy, ogres, ogre mages and brutes answer to Grol the Destroyer, who serves Razelikh the Defiler. Near his seat stands a stone of binding, where servants the Defiler granted to Grol are held in bondage. Starving snickerfang hyenas lurk at the edges of the camp, and a rarely seen ogre called Mojo the Twisted walks among the brutes.",
   "triggers": [
    [
     1,
@@ -88,7 +143,7 @@
    "quests 2681, 2744 (Servants of Grol, triad granted unending life in the Blasted Lands)",
    "DB spawns in area 1437: Dreadmaul Ogre 5974, Ogre Mage 5975, Brute 5976, Grol the Destroyer 7665, Servant of Grol 7669, Stone of Binding 141857, Starving Snickerfang 5984, Mojo the Twisted 8296 (rare)"
   ],
-  "notes": "verified. The Bloodmages' camp also reads area 1437 but is covered by their person entry. Cataclysm Horde conquest left out."
+  "notes": "Converted: the bound servants are no longer named as souls of Horde soldiers (that is the revelation of Swamp of Sorrows' Thrall's Grasp chain, 2801), and Grol's unending life is dropped (revealed by quest 2744; told in 411 and 421 part 3). No parts. Before: verified. The Bloodmages' camp also reads area 1437 but is covered by their person entry. Cataclysm Horde conquest left out."
  },
  {
   "id": 404,
@@ -97,7 +152,7 @@
   "sort": 4,
   "faction": 0,
   "title": "Altar of Storms",
-  "body": "On the western edge of the wastes stands the Altar of Storms, one of the few such altars left in Azeroth, raised here by Lady Sevine, one of the three masters of the Shadowsworn. Her followers keep it: enforcers, warlocks and dreadweavers who have given themselves over to the demon lord Razelikh. Sevine holds court beside the altar, and a stone of binding nearby imprisons souls of the Horde regiment Thrall's Grasp, torn from their bodies by the Defiler and given to her as servants.",
+  "body": "On the western edge of the wastes stands the Altar of Storms, one of the few such altars left in Azeroth, raised here by Lady Sevine, one of the three masters of the Shadowsworn. Her followers keep it: enforcers, warlocks and dreadweavers who have given themselves over to the demon lord Razelikh. Sevine holds court beside the altar, and a stone of binding nearby holds the servants the Defiler granted to her.",
   "triggers": [
    [
     1,
@@ -110,7 +165,7 @@
    "DB spawns in area 1441: Shadowsworn Enforcer 6007, Warlock 6008, Dreadweaver 6009, Lady Sevine 7667, Servant of Sevine 7671, Stone of Binding 141859",
    "quest 2681 objectives (Servants of Sevine)"
   ],
-  "notes": "verified; describes only the Blasted Lands altar (Sevine, Shadowsworn, stone of binding). Nothing borrowed from Burning Steppes' 4611 Altar of Storms (area 255: Blackrock warlocks, Mor'zul, Gorzeeki). Veiled Hand (Legion) left out."
+  "notes": "Converted: the stone's prisoners are no longer named as souls of Thrall's Grasp (Swamp of Sorrows' revelation, 2801); the regiment's fate is told in 410, 411 and 406 part 1. No parts. Before: verified; nothing borrowed from Burning Steppes' Altar of Storms (area 255). Veiled Hand (Legion) left out."
  },
  {
   "id": 405,
@@ -119,7 +174,7 @@
   "sort": 5,
   "faction": 0,
   "title": "Rise of the Defiler",
-  "body": "The craggy peaks at the heart of the Blasted Lands belong to Razelikh the Defiler. His lair sits on the highest summit, reachable only by runes of teleportation, and a spirit called the Deathly Usher, bound eternally to this cursed world, waits below to send up any who would face him. There, at the Altar of the Defiler, the demon lord can be called forth by one who carries his amulet. Nearby, in a crater, lives Kum'isha the Collector, one of the Lost Ones, who gathers draenethyst in the hope of opening a road back to the world he lost.",
+  "body": "The craggy peaks at the heart of the Blasted Lands belong to Razelikh the Defiler. His lair sits on the highest summit, reachable only by runes of teleportation, and a spirit called the Deathly Usher, bound eternally to this cursed world, waits below and asks what those who come before him desire. At the summit stands the Altar of the Defiler. Nearby, in a crater, lives Kum'isha the Collector, one of the Lost Ones, who gathers draenethyst in the hope of opening a road back to the world he lost.",
   "triggers": [
    [
     1,
@@ -135,7 +190,7 @@
    "quest 2521 description",
    "warcraft.wiki.gg/wiki/Kum%27isha_the_Collector (Lost One)"
   ],
-  "notes": "Kum'isha now called one of the Lost Ones (wiki race). Scourge Invasion necropolis spawns left out."
+  "notes": "Converted: the amulet as the key that calls Razelikh at his altar dropped from the opening (Kirith reveals it, 2743; told in 410, 412 part 2 and 421). The Usher no longer sends up any who would face the Defiler, only asks their desire (npc_text 2213). No parts. Before: Kum'isha called one of the Lost Ones (wiki race). Scourge Invasion necropolis spawns left out here; the zone entry 400 carries them as a state 6 part."
  },
  {
   "id": 406,
@@ -144,7 +199,7 @@
   "sort": 6,
   "faction": 0,
   "title": "The Serpent's Coil",
-  "body": "The Serpent's Coil is a winding cave system in the eastern Blasted Lands, its mouth ringed by the burnt-out shells of orcish buildings left from the Second War. Shadowsworn cultists, thugs and adepts guard it for Archmage Allistarj, the master of this labyrinth. In these halls Allistarj tortured the captured commander of Thrall's Grasp and his lieutenant Kirith, and the screams of his experiments rang through the caves. Kirith never left. What he became still prowls the back cave, and a stone of binding nearby holds more souls of the fallen regiment. Redstone basilisks hunt among the ruins.",
+  "body": "The Serpent's Coil is a winding cave system in the eastern Blasted Lands, its mouth ringed by the burnt-out shells of orcish buildings left from the Second War. Shadowsworn cultists, thugs and adepts guard it for Archmage Allistarj, the master of this labyrinth and one of the Defiler's three chief servants. A great fel beast prowls the back cave, and a stone of binding nearby holds the servants the Defiler granted to Allistarj. Redstone basilisks hunt among the ruins.",
   "triggers": [
    [
     1,
@@ -157,7 +212,24 @@
    "quest 2721 description (tortured by Allistarj, screams through the halls of the cave)",
    "DB spawns in area 1440: Shadowsworn Cultist 6004, Thug 6005, Adept 6006, Archmage Allistarj 7666, Servant of Allistarj 7670, Stone of Binding 141858, Redstone Basilisk 5990"
   ],
-  "notes": "verified. Kirith the Damned's spawn (-11254,-3562) reads area 4 on the map grid, just beyond Allistarj (area 1440); the wiki puts him in the Serpent's Coil back cave, which the body follows. Kasim Sharim and the Iron Horde left out."
+  "notes": "Converted: the torture of the commander and Kirith, Kirith's fate and the stone's souls of Thrall's Grasp moved to part 1 (QUEST_DONE 2721, turned in to the Spirit of Kirith; 2721 requires the Swamp chain's 2681, so the regiment's fate is already known). The opening names Kirith the Damned only as the beast seen there. Before: Kirith the Damned's spawn reads area 4 just beyond Allistarj (area 1440); the wiki puts him in the back cave. Kasim Sharim and the Iron Horde left out. Check: the beast is no longer named Kirith the Damned in the opening: with Swamp of Sorrows' Fallen Hero naming his lost lieutenant Kirith, the name alone gave away part 1 (what became of him, revealed at QUEST_DONE 2721).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Coil hides a darker story. Here Allistarj imprisoned the captured commander of Thrall's Grasp and his lieutenant Kirith, and the screams of his experiments rang through the halls. Kirith never left. The fel beast in the back cave is what Allistarj made of him, and the servants bound to the stone nearby are souls of the same fallen regiment.",
+    "triggers": [
+     [
+      5,
+      2721
+     ]
+    ],
+    "sources": [
+     "quest 2721 description (tortured by Allistarj, screams through the halls of the cave)",
+     "quest 2721 reward text (Spirit of Kirith)",
+     "quest 2681 objectives (Servants of Allistarj)"
+    ]
+   }
+  ]
  },
  {
   "id": 407,
@@ -166,7 +238,7 @@
   "sort": 7,
   "faction": 0,
   "title": "Dreadmaul Post",
-  "body": "Dreadmaul Post is an ogre mound of the Dreadmaul clan, raised in the wastes nearer the Dark Portal, through which the ogres first came from Draenor and close to which they have stayed ever since. Dreadmaul maulers and warlocks hold it, and felbeasts prowl the ground around it. Here too stands a stone of binding where Grol keeps souls taken from Thrall's Grasp. Now and then a rarely seen ogre known as Magronos the Unyielding walks among them.",
+  "body": "Dreadmaul Post is an ogre mound of the Dreadmaul clan, raised in the wastes nearer the Dark Portal, through which the ogres first came from Draenor and close to which they have stayed ever since. Dreadmaul maulers and warlocks hold it, and felbeasts prowl the ground around it. Here too stands a stone of binding where Grol keeps more of the servants the Defiler granted him. Now and then a rarely seen ogre known as Magronos the Unyielding walks among them.",
   "triggers": [
    [
     1,
@@ -177,7 +249,7 @@
    "warcraft.wiki.gg/wiki/Dreadmaul_Post (ogre mound of the Dreadmaul clan; Dreadmaul remained close to the Dark Portal after coming from Draenor)",
    "DB spawns in area 1439: Dreadmaul Mauler 5977, Dreadmaul Warlock 5978, Felbeast 8675, Servant of Grol 7669, Stone of Binding 141857, Magronos the Unyielding 8297 (rare)"
   ],
-  "notes": "Magronos 'massive brute' and 'stubborn' removed (flavour); felbeasts no longer called the Defiler's host (unsourced)."
+  "notes": "Converted: the stone's servants no longer named as souls of Thrall's Grasp (Swamp of Sorrows' revelation, 2801). No parts. Before: Magronos flavour removed; felbeasts no longer called the Defiler's host."
  },
  {
   "id": 408,
@@ -186,7 +258,7 @@
   "sort": 8,
   "faction": 0,
   "title": "The Dark Portal",
-  "body": "The Dark Portal looms over the southern Blasted Lands, the colossal gate through which the orcish Horde first came to Azeroth. Shattered at the end of the Second War, it woke once more for a short while and then stood silent for twenty years, until the Burning Legion forced demons through it. Nethergarde and the Argent Dawn held them at bay until the kingdoms of Azeroth arrived and drove them back to Outland. The camps at its foot are calm now, and Alliance and Horde commanders send every soldier they can up the steps and through the gate. Felguard sentries and felhounds still roam the approaches, and stones of binding there hold souls of Thrall's Grasp.",
+  "body": "The Dark Portal looms over the southern Blasted Lands, the colossal gate through which the orcish Horde first came to Azeroth. Shattered at the end of the Second War, it woke once more for a short while, when the Alliance marched through it into Draenor, and then fell silent. Felguard sentries and felhounds roam its approaches, and among them stands a stone of binding where servants of Razelikh are held.",
   "triggers": [
    [
     1,
@@ -199,9 +271,43 @@
    "npc_text 9969 (Dar'toon)",
    "quests 10119, 9407",
    "DB spawns in area 72: Felguard Sentry 6011, Felhound 6010, Servant of Razelikh 7668, Stone of Binding 141812, Relthorn 16841, Dar'toon 19254",
-   "gameobject 21582 Beyond the Dark Portal (portal woke again months after Nethergarde was finished, later destroyed from Draenor)"
+   "gameobject 21582 Beyond the Dark Portal (portal woke again months after Nethergarde was finished, later destroyed from Draenor)",
+   "quest 10119 description"
   ],
-  "notes": "'Destroyed at the end of the Second War and silent for twenty years' corrected to show the brief reopening before the twenty years of silence. Stair of Destiny, Iron Horde and the red portal left out."
+  "notes": "Converted: the reopening and the armies marching through moved out of the opening into era parts with no triggers: 1 the silent gate (maxState 6), 2 the battle at the portal (state 7 only, the module's Into the Breach phase), 3 the Legion driven back and the camps at its foot (minState 8). The stone's servants no longer named as souls of Thrall's Grasp (Swamp of Sorrows' revelation). The Scourge invasion has no spawns in area 72, so it is told in the zone entry instead. Before: brief reopening before the twenty years of silence kept. Stair of Destiny, Iron Horde and the red portal left out. Check: state 7 part matches the module's IPPPHASE_II spawns in area 72; parts read coherently at 0-6, 7 and 8+ (and at 18 without the module).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Twenty years have passed since then, and the gate stands dark, a silent monument to a time long since forgotten. Only the demons on its approaches and the watchers of Nethergarde, who never take their eyes from it, keep it company.",
+    "maxState": 6,
+    "sources": [
+     "quest 10119 description (for 20 years a silent monument, a eulogy to a time long since forgotten)",
+     "DB spawns: Nethergarde Riftwatcher 6002"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Now the gate has woken. Battle rages without pause at its foot as demons pour through in an endless tide, and the Argent Dawn, with the mages of Nethergarde and champions of the Alliance and the Horde, fights a desperate fight to stem it. The Argent Dawn's agent calls on every hero to enter the breach and lend aid.",
+    "minState": 7,
+    "maxState": 7,
+    "sources": [
+     "mod-individual-progression zone_blasted_lands.sql (state 7 phase in area 72: invading demons, Argent Protectors and Guardians, Nethergarde Advisors, Watcher Theronus, Lord Marshal Raynor, Melgromm Highmountain)",
+     "mod-individual-progression IndividualProgression.cpp checkIPPhasing (AREA_THE_DARK_PORTAL: IPP_PHASE_II at state 7)",
+     "quest 10259 Into the Breach description (Agent Proudwell 19942, The Argent Dawn)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Twenty years of silence ended when the Burning Legion forced demons through the gate. Nethergarde and the Argent Dawn held them at bay until the kingdoms of Azeroth arrived and drove them back to Outland. The camps at its foot are calm now, and Watch Commander Relthorn Netherwane and Warlord Dar'toon send every soldier they can up the steps and through the gate.",
+    "minState": 8,
+    "sources": [
+     "npc_text 8770 (Relthorn: battle, Nethergarde and the Argent Dawn, camp now calm)",
+     "npc_text 9969 (Dar'toon)",
+     "quests 10119, 9407",
+     "DB spawns 16841, 19254 in area 72 (npc_ipp_tbc under mod-individual-progression)"
+    ]
+   }
+  ]
  },
  {
   "id": 409,
@@ -210,7 +316,7 @@
   "sort": 9,
   "faction": 0,
   "title": "The Tainted Scar",
-  "body": "In the southwest of the Blasted Lands lies the Tainted Scar, where the portal's energies left the soil the color of blood. It is the Burning Legion's stronghold on this side of the gate, where felguard elites, manahounds, dreadlords and doomguard commanders gather in strength. After the Legion's defeat at Mount Hyjal, Lord Kazzak led its remnants here, and from the Scar he sent Razelikh to bring the wastes to heel. When the Dark Portal opened once more, Kazzak passed through into Outland. At an altar on the northern edge the aged warlock Daio the Decrepit lives among the demons, teaching others to bind them.",
+  "body": "In the southwest of the Blasted Lands lies the Tainted Scar, where the portal's energies left the soil the color of blood. It is the Burning Legion's stronghold on this side of the gate, where felguard elites, manahounds, dreadlords and doomguard commanders gather in strength. After the Legion's defeat at Mount Hyjal, Lord Kazzak led its remnants here, and from the Scar he sent Razelikh to bring the wastes to heel. At an altar on the northern edge the aged warlock Daio the Decrepit lives among the demons, teaching others to bind them.",
   "triggers": [
    [
     1,
@@ -223,7 +329,29 @@
    "DB spawns in area 73: Felguard Elite 8717, Manahound 8718, Doomguard Commander 12396, Dreadlord 8716, Daio the Decrepit 14463",
    "quests 7581-7583"
   ],
-  "notes": "verified (southwest confirmed by spawn positions, Daio on the northern edge). Lord Kazzak has no spawn on map 0, consistent with his departure. Highlord Kruul and the Cataclysm Tainted Forest left out."
+  "notes": "Converted: Kazzak's passage into Outland moved to part 2 (minState 8, no triggers); added part 1 (maxState 7) with Kazzak still in the Scar, since mod-individual-progression spawns Lord Kazzak there. The module spawns him with phaseMask 1 and no state check, so with the module he also stands in the Scar at state 8 and later; the text follows the lore. Before: southwest confirmed by spawn positions, Daio on the northern edge. Highlord Kruul and the Cataclysm Tainted Forest left out. Check: part 2 rewritten so it no longer says Kazzak is gone from the Scar. mod-individual-progression boss_lord_kazzak.sql spawns Lord Kazzak 12397 (guid 156950, area 73) with default phaseMask 1, no npc_ipp_* script, no conditions and no state check in boss_lord_kazzak.cpp, and checkIPPhasing has no case for area 73, so with the module he stands in the Scar at every state; without it there is no 12397 spawn on map 0. Part 1 (maxState 7) keeps him holding the Scar, true only with the module; part 2 (minState 8) now only says his command reaches into Outland and his host still holds the Scar, true whether or not he is seen there.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Kazzak himself still holds the Scar. The towering demon lord commands the Legion's host on this side of the gate, nursing the sting of defeat at the close of the Third War and swearing that the shadow of the Legion will yet fall over this world.",
+    "maxState": 7,
+    "sources": [
+     "mod-individual-progression boss_lord_kazzak.sql (Lord Kazzak 12397 spawned at -12226.8,-2433.57, area 73 by posarea.py; scale 2.2; creature_text 12397 group 0)",
+     "warcraft.wiki.gg/wiki/Tainted_Scar (Kazzak in the Scar until the portal reopened)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Kazzak's reach no longer ends at the Scar. Since the Dark Portal opened once more, the Burning Legion in Outland has answered to him as Doom Lord Kazzak, and his lieutenants drive its war against the armies of Azeroth on the far side of the gate. Here the host he gathered still holds the blood-red soil.",
+    "minState": 8,
+    "sources": [
+     "quests 10123, 10142 descriptions (Doom Lord Kazzak commands the Burning Legion in Outland, his lieutenants command its troops)",
+     "DB: Doom Lord Kazzak 18728 spawned on map 530",
+     "warcraft.wiki.gg/wiki/Tainted_Scar (Kazzak entered Outland when the portal reopened)",
+     "hellfire.json 348326 Doom Lord Kazzak"
+    ]
+   }
+  ]
  },
  {
   "id": 410,
@@ -232,7 +360,7 @@
   "sort": 1,
   "faction": 0,
   "title": "Razelikh the Defiler",
-  "body": "Razelikh the Defiler is a dreadlord whose true name is Rakh'likh, once the most feared of Lord Kazzak's lieutenants. Sent to secure the Blasted Lands after the Legion's retreat, he forged the Shadowsworn from scattered sects of the Shadow Council and the Dreadmaul ogres, and granted his three chief servants near-limitless power in exchange for eternal service. It was Razelikh who tore the souls from the soldiers of Thrall's Grasp and bound them to stones. He keeps to the heights of the Rise of the Defiler and appears only when summoned at his altar with his own amulet, calling Ilifar, Keeper of Souls, to fight at his side.",
+  "body": "Razelikh the Defiler is the dreadlord who rules the Blasted Lands. When the Legion's host was driven back into the Tainted Scar, Lord Kazzak sent him out to bring the wastes to heel, and the Shadowsworn cult and the Dreadmaul ogres now do his bidding through his three chief servants. His lair crowns the highest summit of the Rise of the Defiler, and he shows himself only when called at the altar there. Then he roars for Ilifar, Keeper of Souls, to face his challengers as his champion, and calls the flames of chaos down upon them.",
   "triggers": [
    [
     3,
@@ -246,11 +374,67 @@
   "sources": [
    "warcraft.wiki.gg/wiki/Razelikh_the_Defiler (dreadlord, true name Rakh'likh, Kazzak's most fearsome lieutenant, tasked with securing the land, united the Shadow Council)",
    "warcraft.wiki.gg/wiki/Shadowsworn (formed by uniting Shadow Council sects with the Dreadmaul)",
-   "quests 2681, 2744, 3628 (descriptions)",
-   "creature_text 7664 (Ilifar, your master calls; Face my champion)",
-   "creature_template 7734 Ilifar <Keeper of Souls>"
+   "creature_text 7664 (Ilifar, your master calls; Let the flames of chaos engulf you; Face my champion, mortals)",
+   "creature_template 7734 Ilifar <Keeper of Souls>",
+   "quest 3628 description (lair atop the highest mountain, Altar of the Defiler)",
+   "npc_text 1813, 1814 (Loramus Thalipedes, gossip while on quest 3141)",
+   "quests 2681, 2743, 2744, 3511, 3627, 3628 (descriptions and titles)"
   ],
-  "notes": "verified. Loramus trapping Razelikh's soul (Cataclysm) and the Fel Hammer (Legion) left out."
+  "notes": "Converted: opening unchanged (both entry triggers come after the whole chain). Added part 1 with his death (KILL 7664 or QUEST_DONE 3628). Before: verified. Loramus trapping Razelikh's soul (Cataclysm) and the Fel Hammer (Legion) left out. Fix: the opening held Swamp of Sorrows' soul-binding reveal (QUEST_DONE 2801), the triad's bargain and the amulet (2743, 2744), Loramus' account of the Shadow Council sects (npc_text 1813, on 3141) and the true name Rakh'likh (3511, 3628), all early for a group member without the chain who shares the KILL 7664. The opening now keeps what such a character sees (his yells, Ilifar, the summit altar) and what other openings already tell (400 and 409: dreadlord, sent by Kazzak, Shadowsworn and Dreadmaul). New parts: 1 Loramus' story, the bargain and the amulet (QUEST_DONE 2744), 2 the true name (QUEST_DONE 3627, QUEST_ACCEPT 3628); the death is now part 3, without 'the amulet his own servants had worn'. Entry triggers unchanged.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The demon hunter Loramus Thalipedes told the rest. In the age of war Razelikh was the most feared of Kazzak's lieutenants, and in the Blasted Lands he united the scattered sects of the Shadow Council with the brutish Dreadmaul. It was the ruin of Thrall's Grasp that sealed the bargain. The regiment's stolen souls became immortal servants for the three leaders, who took near-limitless power in exchange for eternal service, and the amulet he made for them, worn in three pieces, is the only key that calls him down.",
+    "triggers": [
+     [
+      5,
+      2744
+     ]
+    ],
+    "sources": [
+     "npc_text 1813, 1814 (Loramus gossip, shown while on quest 3141, offered on turning in 2744)",
+     "quest 2744 description",
+     "quest 2743 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "One thing more was needed: the name of the beast. It came from Lord Arkkoroc in Azshara. The Defiler's true name is Rakh'likh, and once the shattered amulet was whole again, the last charge given to his hunters named him by it.",
+    "triggers": [
+     [
+      5,
+      3627
+     ],
+     [
+      4,
+      3628
+     ]
+    ],
+    "sources": [
+     "quest 3508 reward text (The name of the beast must be found)",
+     "quest 3511 description (Rakh'likh)",
+     "quest 3628 title (You Are Rakh'likh, Demon), offered on turning in 3627"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Razelikh fell at last on his summit, called down to his altar, with Ilifar fighting at his side. Even as he died the Defiler promised his slayers an eternity of anguish and torture, and swore that vengeance would be his.",
+    "triggers": [
+     [
+      3,
+      7664
+     ],
+     [
+      5,
+      3628
+     ]
+    ],
+    "sources": [
+     "creature_text 7664 group 3 (on death)",
+     "quest 3628 description and reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 411,
@@ -259,7 +443,7 @@
   "sort": 2,
   "faction": 0,
   "title": "Allistarj, Sevine and Grol",
-  "body": "Three servants rule the Blasted Lands in Razelikh's name: Archmage Allistarj of the Serpent's Coil, Lady Sevine, who raised the Altar of Storms, and Grol the Destroyer, master of the Dreadmaul ogres. Each pledged eternal service to the dreadlord and received in return a third of an amulet of his making, the very key needed to summon him. The pieces are bound to their owners' lifeforce, so that within the Blasted Lands none of the three can be slain by ordinary means. Each was also given souls of Thrall's Grasp as servants, and it was Allistarj who tortured the regiment's captured commander and his lieutenant Kirith.",
+  "body": "Three servants rule the Blasted Lands in Razelikh's name. Archmage Allistarj is master of the Serpent's Coil, where Shadowsworn cultists, thugs and adepts guard his labyrinth. Lady Sevine, a warlock of the Shadowsworn, raised the Altar of Storms on the western edge of the wastes, and her enforcers and dreadweavers keep it. Grol the Destroyer, lord of the Dreadmaul ogres, holds Dreadmaul Hold. Beside each of them stands a stone of binding that holds servants the Defiler granted them, and between them they keep the wastes for the dreadlord while he waits on his summit.",
   "triggers": [
    [
     3,
@@ -275,16 +459,63 @@
    ]
   ],
   "sources": [
+   "npc_text 1454 (Allistarj of the Shadowsworn, Sevine warlock of the Shadowsworn, Grol lord of the Dreadmaul)",
+   "quest 2681 objectives (Servants of Allistarj, Sevine, Grol)",
+   "quest 2721 description (tortured by Allistarj)",
    "quest 2743 description (each underling wears a third of the amulet)",
    "quest 2744 description (immortal within the Blasted Lands, nearly unlimited power)",
-   "quest 2681 objectives",
-   "quest 2721 description (tortured by Allistarj)",
+   "npc_text 1815, 1816 (Loramus, gossip while on quest 3141)",
    "quest 3627 objectives",
    "warcraft.wiki.gg/wiki/Shadowsworn",
    "warcraft.wiki.gg/wiki/Altar_of_Storms_(Blasted_Lands)",
    "warcraft.wiki.gg/wiki/Dreadmaul_Hold"
   ],
-  "notes": "verified. Grol killing Loramus is Cataclysm and left out."
+  "notes": "Unchanged in the parts conversion: the only triggers are the kills, and the three cannot be killed without the fel weapons of the chain (SmartAI HP invincibility until Fel Curse), so nothing in the opening comes early. verified. Grol killing Loramus is Cataclysm and left out. Fix: the parts conversion kept the opening on the grounds that the three cannot die without the chain's fel weapons, but the module credits a KILL to every group member in reward range, so a member without the chain who joins the kill read the amulet (2743), the deathlessness (2744), the souls of Thrall's Grasp (Swamp of Sorrows 2801) and the torture of the commander and Kirith (2721). The opening now tells only what the Place openings 403, 404 and 406 and npc_text 1454 already show; those reveals moved to parts 1 (QUEST_ACCEPT 2721), 2 (QUEST_ACCEPT 2743) and 3 (QUEST_DONE 2744, with Loramus' npc_text 1815). Entry triggers unchanged.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The servants at their stones had been men of Thrall's Grasp, whose souls Razelikh tore out and shared among his lieutenants, three to each. It was Allistarj, too, who held the regiment's captured commander and his lieutenant Kirith in the Serpent's Coil and tortured them both, until Kirith's will faltered and his screams rang through the halls of the cave.",
+    "triggers": [
+     [
+      4,
+      2721
+     ]
+    ],
+    "sources": [
+     "quest 2721 description",
+     "npc_text 1452, 1453, 1454 (Swamp of Sorrows, shown while on 2801)",
+     "quest 2681 objectives"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Kirith's spirit told what makes the three so vital to their master. Each wears around the neck a third of an amulet of Razelikh's making, the very key needed to summon the demon lord, and he cannot be reached until all three have fallen.",
+    "triggers": [
+     [
+      4,
+      2743
+     ]
+    ],
+    "sources": [
+     "quest 2743 description",
+     "quest 3627 description (to reach the Defiler you must first destroy the triad)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Killing them is no simple matter. In exchange for their servitude Razelikh granted each near-limitless power within the Blasted Lands, and the amulet pieces, attuned to their owners' lifeforce, keep them from death by any ordinary means as long as they remain there. Loramus Thalipedes saw the cruelty of the bargain: just as their servants were bound to the land, so were they, and the price of their immortality was imprisonment and eternal servitude under Razelikh.",
+    "triggers": [
+     [
+      5,
+      2744
+     ]
+    ],
+    "sources": [
+     "quest 2744 description",
+     "npc_text 1815, 1816 (Loramus gossip, shown while on quest 3141, offered on turning in 2744)"
+    ]
+   }
+  ]
  },
  {
   "id": 412,
@@ -293,7 +524,7 @@
   "sort": 3,
   "faction": 0,
   "title": "Kirith",
-  "body": "Kirith was lieutenant to the commander of Thrall's Grasp, and was taken alive with him when the regiment was overwhelmed in the Blasted Lands. Both were handed over to Archmage Allistarj, but where his commander endured, Kirith's will faltered, and his screams rang through the halls of the cave as the experiments went on. What came out was Kirith the Damned, a great fel beast that roams the back cave of the Serpent's Coil. Only death can free what remains of him. His spirit lingers for a short while afterward, grinning and blunt, long enough to tell how the Defiler's servants guard the secret of summoning their master.",
+  "body": "Kirith the Damned is a great fel beast, a hulking felhound that prowls the back cave of the Serpent's Coil, deep in the labyrinth Archmage Allistarj holds for the Defiler. It burns away the magic of those who face it and tears through their armor. Yet the beast is not all it seems. When it falls, a ghostly figure rises from the body and lingers for a short while, as if death had set something free: the Spirit of Kirith. To those who have no business with it, the spirit keeps its silence.",
   "triggers": [
    [
     3,
@@ -305,12 +536,45 @@
    ]
   ],
   "sources": [
+   "smart_scripts 7728 (Mana Burn, Pierce Armor; on death casts Spirit of Kirith)",
+   "creature_template 7728 display 6688 (felhound model); 7729 Spirit of Kirith, npcflag 2 only, no gossip menu or quest greeting",
    "quest 2721 description and reward text",
    "quest 2743 description (Kirith grins, my time here is limited)",
+   "npc_text 1451, 1452 (Swamp of Sorrows, shown while on quest 2801: captured, tortured in turn with Kirith)",
    "warcraft.wiki.gg/wiki/Kirith (Horde lieutenant, tortured by Allistarj, soul twisted into a beast, found in the Serpent's Coil cave; defeating him draws out his spirit)",
    "warcraft.wiki.gg/wiki/Fallen_Hero_of_the_Horde (Kirith roams the back cave as a huge felhunter)"
   ],
-  "notes": "verified. Spirit of Kirith 7729 is a quest NPC (npcflag 2, faction 35) that appears after the kill."
+  "notes": "Converted: the opening keeps his capture and torture (also in Swamp of Sorrows' Fallen Hero opening) and leaves him missing, as quest 2721 does. Part 1: he became Kirith the Damned and his spirit rose (KILL 7728, QUEST_DONE 2721, TALK 7729, the spirit that appears on his death). Part 2: the summoning secret (QUEST_ACCEPT 2743, offered by the spirit). Before: verified. Spirit of Kirith 7729 is a quest NPC (npcflag 2, faction 35). Check: 'Kirith remains unaccounted for' dropped from the opening, since part 1 makes it untrue; the opening now ends where the commander's knowledge ends. Fix: the opening told his rank in Thrall's Grasp, the regiment overwhelmed and his capture and torture by Allistarj, which Swamp of Sorrows holds back until QUEST_DONE 2801, so a chance or group KILL 7728, or a word with the spirit, read them early. The opening now holds only what such a character sees: the felhound in the back cave, its spells, the spirit rising on its death (smart_scripts 7728) and its silence (7729 has no gossip menu or greeting, only quests 2721 and 2743). The capture, torture and what he became moved into part 1 on QUEST_DONE 2721 alone (KILL 7728 and TALK 7729 dropped from it); part 2 unchanged. Entry triggers unchanged.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Kirith had been lieutenant of Thrall's Grasp. When the regiment was overwhelmed he fell into the hands of Archmage Allistarj, and his commander, captured later, was held beside him, the two tortured in turn. Where the commander endured, Kirith's will faltered, and his screams rang through the halls of the cave as the experiments went on. What came out of them was the beast. Only in death could what remained of him speak, and his spirit was startled to learn who had sent for him: Trebor, his old commander.",
+    "triggers": [
+     [
+      5,
+      2721
+     ]
+    ],
+    "sources": [
+     "quest 2721 description and reward text (Trebor? Trebor sent you?)",
+     "npc_text 1451, 1452",
+     "warcraft.wiki.gg/wiki/Kirith"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Kirith's spirit knew its time was limited and did not mince words. Grinning, it told how the Defiler's servants guard the secret of summoning their master, for the key to calling him down hangs around their own necks.",
+    "triggers": [
+     [
+      4,
+      2743
+     ]
+    ],
+    "sources": [
+     "quest 2743 description"
+    ]
+   }
+  ]
  },
  {
   "id": 413,
@@ -333,7 +597,7 @@
    "warcraft.wiki.gg/wiki/Kum%27isha_the_Collector",
    "warcraft.wiki.gg/wiki/Kum%27isha_the_Collector (race Lost One; pre-Cataclysm he opens a portal and goes through with other Lost Ones)"
   ],
-  "notes": "Now called one of the Lost Ones (wiki race) as well as a draenei exile, which his texts support (the hope of the Draenei, on Draenor)."
+  "notes": "Unchanged in the parts conversion: nothing to hide; npc_text and creature_text reread, period text only. Now called one of the Lost Ones (wiki race) as well as a draenei exile, which his texts support (the hope of the Draenei, on Draenor)."
  },
  {
   "id": 414,
@@ -360,7 +624,7 @@
    "warcraft.wiki.gg/wiki/Bloodmage_Drazial (blood elf, sister Lynnore, stationed near the entrance to the Blasted Lands)",
    "DB spawns 7505 and 7506 at -10884,-2935 (map 50,14), faction 35"
   ],
-  "notes": "verified. 'Elven' kept: the wiki says blood elf and the zone's texts name no race. Their Cataclysm move to a cave near the Altar of Storms left out."
+  "notes": "Unchanged in the parts conversion: nothing to hide; npc_text and creature_text reread, period text only. verified. 'Elven' kept: the wiki says blood elf and the zone's texts name no race. Their Cataclysm move to a cave near the Altar of Storms left out."
  },
  {
   "id": 415,
@@ -369,7 +633,7 @@
   "sort": 6,
   "faction": 1,
   "title": "Quartermaster Lungertz",
-  "body": "Quartermaster Lungertz keeps Nethergarde Keep supplied, no easy task at the far end of a road that winds through Deadwind Pass and the Swamp of Sorrows. Crates of powerstones for the keep's mages must be rushed from Darkshire before their power fades, barrels stamped with his name turn up lost along the way, and when Watcher Biggs' caravan was ambushed in the swamp he gave it up for gone. And he waits on Azoran crystals, a reagent the keep's wizards are running short of. As he reminds every visitor, Nethergarde always needs more: supplies for its mages' research and supplies to keep its defenders fit to fight.",
+  "body": "Quartermaster Lungertz keeps Nethergarde Keep supplied, no easy task at the far end of a road that winds through Deadwind Pass and the Swamp of Sorrows. Crates of powerstones for the keep's mages must be rushed from Darkshire before their power fades, barrels stamped with his name turn up lost along the way, and whole caravans have gone astray on the swamp road. The keep's stock of Azoran crystals, a reagent its wizards need, is running low. As he reminds every visitor, Nethergarde always needs more: supplies for its mages' research and supplies to keep its defenders fit to fight.",
   "triggers": [
    [
     2,
@@ -382,7 +646,7 @@
    "quest 1425 reward text (Azoran Crystals, Biggs' caravan thought lost)",
    "quest_greeting 5393 (Nethergarde always needs more supplies, for the mages' research and the defenders)"
   ],
-  "notes": "'Business as usual' line had no source and was replaced with his quest greeting. 'Most of all' softened. Faction 1: template 123 hostile to Horde, quests Alliance-only. Biggs' caravan belongs to Swamp of Sorrows and is only mentioned."
+  "notes": "Converted: Watcher Biggs' caravan and Lungertz giving it up for lost dropped (the ending of Swamp of Sorrows' Lost Caravan, quest 1425 turn-in, a Swamp quest not used here); kept only that caravans go astray and the Azoran crystal shortage. No parts. Before: quest greeting reread, period text. Faction 1: template 123 hostile to Horde, quests Alliance-only. Check: the Azoran crystal shortage kept: it is Lungertz's own remark about the keep, not an outcome of the Lost Caravan, and Swamp of Sorrows' caravan entries already say the wagon carried reagents for Nethergarde."
  },
  {
   "id": 416,
@@ -391,7 +655,7 @@
   "sort": 7,
   "faction": 1,
   "title": "Watcher Mahar Ba",
-  "body": "Watcher Mahar Ba is one of the watchers of Nethergarde Keep, a scholar eager to understand the forces at work around him. For a long while he waited on a request sent to Master Mazen of the Academy of Arcane Arts and Sciences in Stormwind: Khadgar's Essays on Dimensional Convergence, the writings of the very archmage at whose urging the keep was built. The young courier carrying them lost his way in the Swamp of Sorrows and dropped the essays as he fled from plantlike creatures of the marsh, and only a determined traveler brought them on. The chance to glimpse the insight of one as great as Khadgar excites him beyond words.",
+  "body": "Watcher Mahar Ba is one of the watchers of Nethergarde Keep, a scholar eager to understand the forces at work around him. Some time ago he sent a request to Master Mazen of the Academy of Arcane Arts and Sciences in Stormwind for Khadgar's Essays on Dimensional Convergence, the writings of the very archmage at whose urging the keep was built, and he still waits for them to arrive.",
   "triggers": [
    [
     2,
@@ -407,7 +671,22 @@
    "warcraft.wiki.gg/wiki/Nethergarde_Keep (built at Khadgar's behest)",
    "DB spawn 5385 in Nethergarde Keep, faction template 53 (hostile to Horde)"
   ],
-  "notes": "'Founded the keep' corrected: Khadgar urged its building. Faction 1: quest 1364 Alliance-only, template 53 hostile to Horde. The lost essay is described in Swamp of Sorrows' Misty Valley; only touched on here."
+  "notes": "Converted: the courier's loss and the essays' arrival moved to part 1 (QUEST_DONE 1364, turned in to him; also an entry trigger as before). Before: Khadgar urged the keep's building. Faction 1: quest 1364 Alliance-only, template 53 hostile to Horde. The lost essay is described in Swamp of Sorrows' Misty Valley.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The essays came at last, though not as planned. The young courier carrying them lost his way in the Swamp of Sorrows and dropped them as he fled from plantlike creatures of the marsh, and a determined traveler brought them on. Mahar Ba had feared his request overlooked, Mazen being bogged down with so many strange happenings. To glimpse the insight of one as great as Khadgar excites him beyond words.",
+    "triggers": [
+     [
+      5,
+      1364
+     ]
+    ],
+    "sources": [
+     "quest 1364 description and reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 417,
@@ -428,7 +707,7 @@
    "creature_text 8022",
    "warcraft.wiki.gg/wiki/Thadius_Grimshade"
   ],
-  "notes": "verified. Faction 1: template 55 hostile to Horde, quests Alliance-only. The Sharpbeak chain is Hinterlands' 'Saving Sharpbeak'; no quest triggers used here."
+  "notes": "Unchanged in the parts conversion: the opening tells only the premise Grimshade sets (2991) and nothing of where Sharpbeak is found, which stays with The Hinterlands; creature_text 8022 reread, period text. verified. Faction 1: template 55 hostile to Horde, quests Alliance-only. The Sharpbeak chain is Hinterlands' 'Saving Sharpbeak'; no quest triggers used here. Check: kept as is: the medallion demand is the premise Grimshade sets on 2991 and its long life rumor his own motive; neither is an outcome of The Hinterlands' Sharpbeak story, and no Tanaris or Zul'Farrak entry tells Nekrum."
  },
  {
   "id": 418,
@@ -450,7 +729,7 @@
    "warcraft.wiki.gg/wiki/Daio_the_Decrepit (elderly human warlock, formerly a mage, altar in the northern Tainted Scar, trains recruits, 'we pay grossly for the use of said powers')",
    "broadcast_text 9611 (we pay grossly for the use of said powers)"
   ],
-  "notes": "verified. Gossip open to all (faction 35); his quests are warlock class quests."
+  "notes": "Unchanged in the parts conversion: the crystal prison is the premise of his warlock quests, not an outcome; npc_text 6995 and broadcast_text 9611 reread, period text. verified. Gossip open to all (faction 35); his quests are warlock class quests."
  },
  {
   "id": 419,
@@ -458,6 +737,7 @@
   "zone": 4,
   "sort": 10,
   "faction": 0,
+  "requiredState": 8,
   "title": "Netherwane and Dar'toon",
   "body": "At the foot of the Dark Portal two camps stand side by side. Watch Commander Relthorn Netherwane of Nethergarde remembers the battle fought here not long ago, when the keep and the Argent Dawn held back a tide of demons until the kingdoms of Azeroth came to drive them through the gate. He never thought to see the portal open again, and fears the quiet hides the madness beyond it. Warlord Dar'toon of the Horde speaks of the same battle with open envy, wishing he had been there when the demons clashed with Azeroth's heroes. Both now send every soldier they can spare through the gate to the war in Outland.",
   "triggers": [
@@ -468,6 +748,14 @@
    [
     2,
     19254
+   ],
+   [
+    4,
+    10119
+   ],
+   [
+    4,
+    9407
    ]
   ],
   "sources": [
@@ -477,7 +765,7 @@
    "quest 9407 description",
    "warcraft.wiki.gg/wiki/Watch_Commander_Relthorn_Netherwane (Nethergarde)"
   ],
-  "notes": "verified. Faction 0: Relthorn (template 534) is not hostile to Horde and Dar'toon (template 714) is hostile to Alliance, so both factions can reach at least one."
+  "notes": "Converted: body unchanged; requiredState 8 set on the entry, since both NPCs are Burning Crusade (mod-individual-progression gives 16841 and 19254 npc_ipp_tbc, seen only from state 8) and the whole text describes the reopened portal. npc_text 8770 and 9969 reread, period text. Before: faction 0: Relthorn (template 534) not hostile to Horde, Dar'toon (template 714) hostile to Alliance. Check: requiredState 8 confirmed: codex_sql.py writes RequiredState, LoreCodexData.cpp hides the entry below it, and ipp_aware_npcs.sql gives 16841 and 19254 npc_ipp_tbc (CanBeSeen only from PROGRESSION_PRE_TBC, 8). Fix: ACCEPT 10119 (Alliance, from Relthorn) and 9407 (Horde, from Dar'toon) added, the two NPCs' own quests (QuestType 2, not auto-complete; also the opening of 420, same file), so the entry backfills when a character reaches state 8; TALK alone does not backfill. Area 72 not used: it is explored in classic, before the two camps stand there."
  },
  {
   "id": 420,
@@ -485,8 +773,9 @@
   "zone": 4,
   "sort": 1,
   "faction": 0,
+  "requiredState": 8,
   "title": "Through the Dark Portal",
-  "body": "For twenty years the Dark Portal stood silent, a monument to wars half forgotten. The histories kept at Nethergarde tell its story. Opened by Medivh and the Shadow Council, it carried the Horde into Azeroth, and when the Horde broke at the end of the Second War its last clans fell at the foot of the gate. A few months after the keep was finished the portal woke again, and Khadgar and Turalyon led the Alliance into Draenor, then destroyed the gate from the far side to spare Azeroth, their own fate unknown. Then the Burning Legion forced it open once more. Nethergarde and the Argent Dawn held until the armies of the Alliance and the Horde drove the demons back. Now both sides call for volunteers to cross, for beyond the gate rages a savage war that their commanders fear cannot be won without fresh strength from Azeroth.",
+  "body": "For twenty years the Dark Portal stood silent, a monument to wars half forgotten. The histories kept at Nethergarde tell its story. Opened by Medivh and the Shadow Council, it carried the Horde into Azeroth, and when the Horde broke at the end of the Second War its last clans fell at the foot of the gate. A few months after the keep was finished the portal woke again, and Khadgar and Turalyon led the Alliance into Draenor, then destroyed the gate from the far side to spare Azeroth. Then the Burning Legion forced it open once more. Nethergarde and the Argent Dawn held until the armies of the Alliance and the Horde drove the demons back. Now both sides call for volunteers, for beyond the gate rages a savage war their commanders fear they cannot win alone.",
   "triggers": [
    [
     4,
@@ -504,7 +793,7 @@
    "warcraft.wiki.gg/wiki/Dark_Portal (Stair of Destiny is the Outland counterpart in Hellfire Peninsula)",
    "quest_template 10288, 10120 (follow-ups start at the Outland end, so 10119 and 9407 are the Blasted Lands entry quests)"
   ],
-  "notes": "Closing line about the Stair of Destiny and the commanders there removed to keep the entry on the Blasted Lands side; replaced with the call for help Relthorn and Dar'toon give. 10119 (Alliance) and 9407 (Horde) confirmed as the entry quests (started by Relthorn and Dar'toon at the portal, no prerequisites). Faction 0."
+  "notes": "Converted: requiredState 8 set on the entry (10119 and 9407 are Burning Crusade quests, their givers npc_ipp_tbc under mod-individual-progression). Opening trimmed to the story length; 'their own fate unknown' for Khadgar and Turalyon dropped, since Outland later tells their fate. No parts: the turn-ins happen at the Stair of Destiny and belong to Hellfire Peninsula. Before: 10119 (Alliance) and 9407 (Horde) confirmed as the entry quests. Faction 0. Check: requiredState 8 confirmed as for 419; 10119 and 9407 are offered only by Relthorn and Dar'toon, both hidden before state 8."
  },
  {
   "id": 421,
@@ -513,7 +802,7 @@
   "sort": 2,
   "faction": 0,
   "title": "The Fall of the Defiler",
-  "body": "Once the souls of Thrall's Grasp were freed from their stones, the regiment's fallen commander turned to the one man still missing: his lieutenant Kirith, last heard screaming under Archmage Allistarj's experiments. Kirith was found in the Serpent's Coil, twisted into a fel beast, and only in death could his spirit speak. He revealed that Allistarj, Lady Sevine and Grol each wear a third of Razelikh's amulet, the key to summoning the Defiler, and that the pieces make them deathless within the Blasted Lands. The search for a weapon led to the demon hunter Loramus Thalipedes in Azshara, to azsharite crystals from the south of that land, and to Galvan the Ancient of the Mithril Order in Stranglethorn, who forged fel weapons able to weaken the three. Armed at last, the hero's champions slew the triad, joined the amulet and bore it to the altar atop the Rise of the Defiler. Razelikh fell, and his severed horn was carried back as proof that heroes still exist.",
+  "body": "With the souls of Thrall's Grasp set free, the regiment's fallen commander turns to the one man still unaccounted for: his lieutenant Kirith. The two were imprisoned together and tortured by Archmage Allistarj, but Kirith's will faltered, and his screams rang through the halls of the cave as the experiments went on. That was the last the commander saw or heard of him. As one chapter closes another begins, and the commander's work against the demon lord who destroyed his regiment, Razelikh the Defiler, is not yet over.",
   "triggers": [
    [
     4,
@@ -529,7 +818,76 @@
    "warcraft.wiki.gg/wiki/Razelikh_the_Defiler",
    "warcraft.wiki.gg/wiki/Fallen_Hero_of_the_Horde"
   ],
-  "notes": "verified. Picks up after Swamp of Sorrows' 'Thrall's Grasp' (2784, 2783, 2801, 2681) and the Heroes of Old reward (2702, 2701); 2721 is the first quest after them. Faction 0: all quests AllowableRaces 0."
+  "notes": "Converted: the opening is the setup of quest 2721 (both entry triggers come after the Swamp chain's 2681, so the freed souls are known). Parts follow the chain: 1 Kirith found (QUEST_DONE 2721), 2 the amulet (QUEST_ACCEPT 2743, offered by the Spirit of Kirith), 3 the triad's deathlessness and Loramus (QUEST_ACCEPT 2744), 4 the weapons and the triad slain (QUEST_DONE 3627), 5 Razelikh's fall and the horn (QUEST_DONE 3628). Azshara and Stranglethorn quests 3141 to 3626 are not used as triggers. KILL 7728 left off part 1 so a chance kill does not open the Swamp chain's setup. Before: picks up after Swamp of Sorrows' 'Thrall's Grasp' (2784, 2783, 2801, 2681) and Heroes of Old (2702, 2701). Faction 0: all quests AllowableRaces 0. Check: chain confirmed from quest_template_addon: 2784 or 2783, 2801, 2681, 2702, 2701, 2721, 2743, 2744, 3141 and the Azshara and Stranglethorn quests, 3626, 3627, 3628; 2743 and 2744 are QuestType 2 and not auto-complete. Trebor is also named by the freed servants (creature_text 7668 to 7671) at 2681, so naming him at 2721 gives nothing early. KILL 7728 correctly left off part 1, since a part trigger would open this opening, which assumes 2681 done.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Kirith was found in the Serpent's Coil, twisted by Allistarj's experiments into a great fel beast, and only in death could what remained of him speak. His spirit was startled to learn who had sent the messenger: Trebor, his old commander, the fallen hero of the Horde.",
+    "triggers": [
+     [
+      5,
+      2721
+     ]
+    ],
+    "sources": [
+     "quest 2721 reward text (Trebor? Trebor sent you?)",
+     "warcraft.wiki.gg/wiki/Fallen_Hero_of_the_Horde"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Kirith did not mince words. The Defiler is shielded by a triad of power, Archmage Allistarj, Lady Sevine and Grol the Destroyer, and each wears around the neck a third of an amulet of Razelikh's making: the very key needed to summon the demon lord. The triad must be destroyed.",
+    "triggers": [
+     [
+      4,
+      2743
+     ]
+    ],
+    "sources": [
+     "quest 2743 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "That would be no simple task. In exchange for their servitude Razelikh granted the three nearly unlimited power within the Blasted Lands, and the amulet pieces, attuned to their lifeforce, keep them from death as long as they remain there. For help the commander sent his champions across the sea to the demon hunter Loramus Thalipedes in Azshara.",
+    "triggers": [
+     [
+      4,
+      2744
+     ]
+    ],
+    "sources": [
+     "quest 2744 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The search for a weapon led to azsharite crystals from the south of Azshara and to Galvan the Ancient of the Mithril Order in Stranglethorn, who forged fel weapons able to weaken the three. Armed at last, the champions slew the triad and joined the amulet once more, and the Defiler, sensing the break in his chain of command, knew they were coming for him.",
+    "triggers": [
+     [
+      5,
+      3627
+     ]
+    ],
+    "sources": [
+     "quests 3141, 3602, 3621, 3625, 3626 (descriptions and reward texts)",
+     "quest 3627 description and reward text"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "They bore the amulet to the altar atop the Rise of the Defiler and called the demon lord down. Razelikh fell, and his severed horn was carried back to the commander, who hailed a day to be remembered for all eternity: the demonic overlord of the Blasted Lands had fallen, and the horn would stand as proof that heroes still exist in this war torn world.",
+    "triggers": [
+     [
+      5,
+      3628
+     ]
+    ],
+    "sources": [
+     "quest 3628 description and reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 422,
@@ -538,7 +896,7 @@
   "sort": 3,
   "faction": 0,
   "title": "Kum'isha's Spheres",
-  "body": "Somewhere in the Blasted Lands, Kum'isha the Collector insists, flawless spheres of draenethyst can still be found, though draenei have spent whole lifetimes searching for one and died with their purpose unfulfilled. Any creature of the wastes might carry one. He asks anyone willing, greedy as he believes them all to be, to bring him such a sphere in exchange for riches. When one at last reaches him he can hardly believe it. He sets it hovering before him, chants in an unknown tongue and tears open a rift, crying out to his brethren to rise and go home to Outland before it closes. Yet afterward he counts the conjuration a failure and waits for another sphere. Meanwhile he buys flawed fragments, which may still serve his people in other ways, paying in trinkets and scorn alike. His junk heap shrinks while theirs grows, which on Draenor, he says, counts as a fair trade.",
+  "body": "Somewhere in the Blasted Lands, Kum'isha the Collector insists, flawless spheres of draenethyst can still be found, though draenei have spent whole lifetimes searching for one and died with their purpose unfulfilled. Any creature of the wastes might carry one. He asks anyone willing, greedy as he believes them all to be, to bring him such a sphere in exchange for riches beyond their wildest dreams, for with it he hopes a rift may be opened to his homeland. Meanwhile he buys flawed fragments, which may still serve his people in other ways, paying in trinkets and scorn alike. His junk heap shrinks while theirs grows, which on Draenor, he says, counts as a fair trade.",
   "triggers": [
    [
     4,
@@ -554,6 +912,36 @@
    "creature_text 7363 groups 0-4",
    "npc_text 1302"
   ],
-  "notes": "verified. The rift opening (creature_text) and the conjuration failing (quest 2522) are both told as the sources give them; the wiki's pre-Cataclysm account has him succeed, so whether anyone got home is left open."
+  "notes": "Converted: the rift opening moved to part 1 (QUEST_DONE 2521, whose completion runs the rift script) and the failure to part 2 (QUEST_ACCEPT 2522, offered after 2521; QuestType 2, not auto-complete). Before: whether anyone got home is left open, as the sources give it.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "When a sphere at last reached him he could hardly believe his eyes. He set it hovering before him, chanted in an unknown tongue and tore open a rift, crying out to his brethren to rise and go home to Outland before it closed. Afterward, he remarked, one could see why he lives in a crater.",
+    "triggers": [
+     [
+      5,
+      2521
+     ]
+    ],
+    "sources": [
+     "quest 2521 reward text",
+     "creature_text 7363 groups 0-4",
+     "smart_scripts 7363 (runs on 2521 finished)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Yet Kum'isha counts the conjuration a failure. The hope of the draenei, he says, is as fervent as any greed for trinkets, and he remains hopeful that his next attempt will succeed. He sends the greedy back out into the cursed lands to find him another sphere.",
+    "triggers": [
+     [
+      4,
+      2522
+     ]
+    ],
+    "sources": [
+     "quest 2522 description"
+    ]
+   }
+  ]
  }
 ]

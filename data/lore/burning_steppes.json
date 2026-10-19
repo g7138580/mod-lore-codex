@@ -1,581 +1,945 @@
 [
-{
-"id": 4600,
-"kind": 0,
-"zone": 46,
-"sort": 0,
-"faction": 0,
-"title": "Burning Steppes",
-"body": "The Burning Steppes were green country once, the northern reaches of the Redridge Mountains, until exiled Dark Iron dwarves raised their capital of Thaurissan here. When Sorcerer-Thane Thaurissan called up Ragnaros the Firelord, mountains melted, Blackrock Mountain was born and the land was burned to ash. The sky still glows red above rivers of lava and charred earth. In the Second War the Horde made the mountain its stronghold, and at its foot Orgrim Doomhammer slew Anduin Lothar. Now the Blackrock orcs hold the steppes again, mining the hills for the metal of their weapons, and those who have seen inside their citadel say the clan answers to the black dragonflight, whose dragonkin swarm the eastern valleys. Firegut ogres guard Dreadmaul Rock for them, and Dark Iron agents prowl the ruins of the ancient city. Against all this stand only a few: the Alliance soldiers of Morgan's Vigil in the southeast, and an odd company of goblins, scholars and Horde fliers at Flame Crest.",
-"triggers": [
-[
-1,
-46
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Burning_Steppes_(Classic) (once part of Redridge, Thaurissan, Ragnaros melted mountains, red sky, Horde base at the Spire, Doomhammer slew Lothar at the foot of the volcano, Blackrock mine the mountains for metals)",
-"warcraft.wiki.gg/wiki/Burning_Steppes (history: Dark Iron exiles, War of the Three Hammers)",
-"quest 5002 description (orcs are beasts of burden and cannon fodder for the black dragonflight, true leader Nefarian)",
-"quest 3823 description (Firegut ogres allies of the Blackrock orcs)",
-"DB spawns by subzone (zone_areas.py): dragonkin in 2420, Thaurissan Dark Irons in 250, Alliance NPCs in 2418, goblins and Horde NPCs in 251"
-],
-"notes": "verified. Truce line from the classic page left out. Horde fliers = Vahgruk (Wind Rider Master, faction 29) at Flame Crest."
-},
-{
-"id": 4601,
-"kind": 1,
-"zone": 46,
-"sort": 1,
-"faction": 0,
-"title": "Blackrock Pass",
-"body": "Blackrock Pass is the road by which most travelers from the lands of Stormwind reach the Burning Steppes, climbing north out of the Redridge Mountains past the Blackrock camp that watches its southern end. The change on crossing is abrupt. Behind lie green slopes and the lake country around Lakeshire; ahead the earth is black and cracked and the air shimmers with heat. Living fire haunts the pass itself. Flamekin spitters and sprites, small elementals of flame, drift among the rocks, lava crabs scuttle through the cinders, and an elemental of obsidian lumbers along the road toward Morgan's Vigil.",
-"triggers": [
-[
-1,
-2417
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Blackrock_Pass (main foot entrance from the Redridge Mountains, from tranquil lands into scorched ruin)",
-"redridge.json 4407 Render's Camp (Blackrock camp just west of the pass)",
-"DB spawns in area 2417: Flamekin Spitter 9776, Flamekin Sprite 9777, Lava Crab 9700, Obsidian Elemental 7031 (posarea: -8500,-2540 and -8381,-2466 resolve to 2417, south of the Vigil)"
-],
-"notes": "verified"
-},
-{
-"id": 4602,
-"kind": 1,
-"zone": 46,
-"sort": 2,
-"faction": 0,
-"title": "Morgan's Vigil",
-"body": "On a ridge in the southeastern corner of the steppes, a small company of the Alliance keeps watch from among the scarred ruins of an older town. Morgan's Vigil is the Alliance's only foothold in this land, and a modest one: an innkeeper, a weaponsmith and a dwarven gryphon master whose birds fly to Stormwind, Lakeshire and Thorium Point. Marshal Maxwell commands, joined by the night elf Helendis Riverhorn, the gnome mage Jalinda Sprig, the priestess Mayara Brightwing and the half-mad dwarf Oralius. Their fight is Lakeshire's fight too. The Blackrock clan the Vigil watches day and night is the same that crossed the mountains to raid Redridge, and dragonkin roam the valley to the north.",
-"triggers": [
-[
-1,
-2418
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Burning_Steppes (scarred ruins of a town now known as Morgan's Vigil)",
-"warcraft.wiki.gg/wiki/Burning_Steppes_(Classic) (Alliance outpost in the southeast; flights to Stormwind, Lakeshire, Thorium Point, Nethergarde Keep)",
-"DB spawns in area 2418: Marshal Maxwell 9560, Helendis Riverhorn 9562, Jalinda Sprig 9561, Mayara Brightwing 9565, Oralius 9177, Gabrielle Chase 3298, Felder Stover 1296, Borgus Stoutarm 2299 (faction 55, Ironforge)",
-"quest 4262 description (Jalinda's gnome mages)",
-"quest 20 description (Blackrocks from the Burning Steppes raid Redridge)",
-"DB: Terror Wing Path dragonkin spawns run from just below the Vigil (x -8150) northward",
-"quest 4182 description (ruined buildings, dragonkin below this ridge; quest text still in the DB though not offered)"
-],
-"notes": "verified; 'last foothold' changed to 'only foothold' (no other Alliance outpost in the 3.3.5 steppes). Ridge and ruins backed by quest 4182 text. Gryphon route to Lakeshire from the classic wiki page."
-},
-{
-"id": 4603,
-"kind": 1,
-"zone": 46,
-"sort": 3,
-"faction": 0,
-"title": "Dreadmaul Rock",
-"body": "Dreadmaul Rock is a great crag in the east of the steppes, riddled with caves and old mines and held by the Firegut ogres. They are allies of the Blackrock orcs, guarding the rock's rich mineral seams and keeping the clan's supply lines open. Ogre-mages and brutes crowd its slopes, and the hulking Hahk'Zor and Gorgon'och stalk among them. Something darker goes on in the caves. Reports of strange rituals among the ogres drew a Horde patrol here, and none of them came home. Fire elementals and lava crabs creep over the lower slopes, and the molten giant Volchan is sometimes seen wandering near its foot.",
-"triggers": [
-[
-1,
-249
-]
-],
-"sources": [
-"quest 3823 description (Firegut allies of the Blackrock, mineral rich Dreadmaul Rock, supply lines)",
-"quests 3821, 3822 (ritual activity, platoon captured, caves and mines of Dreadmaul Rock)",
-"warcraft.wiki.gg/wiki/Dreadmaul_Rock (base of the Firegut ogres, cave system)",
-"DB spawns in area 249: Firegut Ogre Mage 7034, Firegut Brute 7035, Firegut Ogre 7033, Hahk'Zor 9602, Gorgon'och 9604 (both faction 45, rare), Flamekin Spitter/Sprite, Lava Crab, Volchan 10119 (rank 2) at -7770,-2443"
-],
-"notes": "verified. The brief mentions black dragonspawn at Dreadmaul Rock; the 3.3.5 DB has none there (one Scalding Broodling only), so they are placed in Terror Wing Path instead."
-},
-{
-"id": 4604,
-"kind": 1,
-"zone": 46,
-"sort": 4,
-"faction": 0,
-"title": "Terror Wing Path",
-"body": "North of Morgan's Vigil a long valley runs up the eastern edge of the steppes, and it belongs to the black dragonflight. Dragonspawn and wyrmkin patrol the Terror Wing Path in numbers, broodlings swarm underfoot, and black drakes prowl among them. Even seasoned travelers are warned not to come alone. Other hunters share the valley: venomtip scorpids, ember worgs and the great worg Deathmaw, Firegut ogres straying from Dreadmaul Rock, and malfunctioning war golems that lurch through the ash. At the valley's far northern end lies Slither Rock, the lair of the dragonspawn Cyrus Therepentous.",
-"triggers": [
-[
-1,
-2420
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Terror_Wing_Path (eastern valley, black dragonflight whelps, dragonkin and drakes, advised not to go alone)",
-"DB spawns in area 2420: Black Dragonspawn 7040, Black Broodling 7047, Black Wyrmkin 7041, Black Drake 7044, Venomtip Scorpid 9691, Ember Worg 9690, Firegut Ogre 7033, Malfunctioning Reaver 8981 (type mechanical), Deathmaw 10077",
-"posarea: area 2420 spans x -8150 to -7450 along y -2600 to -3000, between the Vigil and Slither Rock"
-],
-"notes": "verified. Black Drakes are listed as prowling rather than flying overhead (spawns are ground mobs)."
-},
-{
-"id": 4605,
-"kind": 1,
-"zone": 46,
-"sort": 5,
-"faction": 0,
-"title": "Slither Rock",
-"body": "In the far northeastern corner of the steppes, beyond the Terror Wing Path, a small cave opens in the rock. Few go there willingly. Slither Rock is the lair of a single great servant of the black dragonflight, the dragonspawn Cyrus Therepentous, and black broodlings scuttle near its mouth. Cyrus answers most visitors with contempt and a threat to devour them, yet those who prove themselves useful may leave with a bargain instead. For all his scorn, he will help a mortal against a foe they share, so long as it feeds his own hunger.",
-"triggers": [
-[
-1,
-2419
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Slither_Rock (small cave in the far northeast, beyond the Terror Wing Path, home of Cyrus)",
-"DB spawns in area 2419: Cyrus Therepentous 9459, Black Broodling 7047",
-"npc_text 2493, 2494 (Cyrus gossip)",
-"quests 4022, 4023",
-"warcraft.wiki.gg/wiki/Slither_Rock (Cyrus aids adventurers against a common foe, with rude and derisive comments)"
-],
-"notes": "Removed the unsupported last sentence (only place to trade openly with the black flight); replaced with the wiki's point that Cyrus helps against a shared foe, tied to quest 4024."
-},
-{
-"id": 4606,
-"kind": 1,
-"zone": 46,
-"sort": 6,
-"faction": 0,
-"title": "Flame Crest",
-"body": "Flame Crest is a rocky outcrop in the north of the steppes, reached by a crude bridge, with a small cave at its back. No kingdom rules it. Goblins and wandering scholars do business here: Tinkee Steamboil studies the local dragonkin, Kibler sells exotic pets from the cave, Yuka Screwspigot hunts for her worthless brother, and Maxwort Uberglint chases the lost treasures of the Dark Irons. The elven mage Mathredis Firestar seeks the librams scattered when the Scourge struck Quel'Thalas, and the drunken dwarf Ragged John wanders in from his jaunts to the Spire. The Horde keeps a foothold too, a wind rider master and a provisioner who serve its people in this hostile land.",
-"triggers": [
-[
-1,
-251
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Flame_Crest (rock outcrop, crude bridge, small cave; independent before Cataclysm; Kibler in the cave)",
-"warcraft.wiki.gg/wiki/Burning_Steppes_(Classic) (Flame Crest the Horde travel hub)",
-"quest 4324 description (Flame Crest a cave northwest of Dreadmaul Rock), quest 4136",
-"quests 4296, 4123 (Maxwort)",
-"npc_text 2993 (Mathredis: librams scattered when the Scourge was unleashed upon Quel'Thalas)",
-"quest 4866 (Ragged John's jaunts into the Spire)",
-"DB spawns in area 251: 9563, 10267, 9536, 9836, Gruna 3708 and Vahgruk 13177 (faction 29, Orgrimmar); Kibler 10260 just outside the 251 boundary"
-],
-"notes": "verified. Mathredis is a blood elf per the wiki; written as elven mage. Horde NPCs confirmed in the 3.3.5 DB though the wiki treats the outpost as neutral pre-Cataclysm."
-},
-{
-"id": 4607,
-"kind": 1,
-"zone": 46,
-"sort": 7,
-"faction": 0,
-"title": "Ruins of Thaurissan",
-"body": "In the heart of the steppes lie the broken streets of Thaurissan, once capital of the Dark Iron dwarves, destroyed when their sorcerer-thane called Ragnaros into the world. The Dark Irons have not given it up. Thaurissan spies, agents and firewalkers stalk the rubble beside iron war reavers, and a rare Dark Iron named Thauris Balgarr walks among them. Relics still lie in the ash. Touch one and a tormented voice may warn the intruder away as visions burn into the mind: eight dwarves at a ritual, a lone dwarf kneeling before a monolith of flame among seven corpses. Treasure hunters come regardless, drawn by rumors of a Tablet of the Seven.",
-"triggers": [
-[
-1,
-250
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Ruins_of_Thaurissan (capital destroyed in the summoning of Ragnaros)",
-"creature_text 8887 (A tormented voice: visions of eight dwarves at a ritual, a lone dwarf before a monolith of flame surrounded by seven corpses)",
-"quest 4296 description (ruins rumored to keep the Tablet of the Seven)",
-"DB spawns in area 250: Thaurissan Spy 7036, Firewalker 7037, Agent 7038, War Reaver 7039 (all faction 54), Thauris Balgarr 8978, Thaurissan Relic 153556, Tablet of the Seven 169294"
-],
-"notes": "verified. Archesonus's relic quest is told in Ironforge's 'The Ruin of Thaurissan' and Mayara's scouting in her own entry, so both are left out here."
-},
-{
-"id": 4608,
-"kind": 1,
-"zone": 46,
-"sort": 8,
-"faction": 0,
-"title": "The Pillar of Ash",
-"body": "South of the ruined city, out on the open plain, the Blackrock clan keeps the Pillar of Ash, one of its camps in the heart of the steppes. Slayers and soldiers stand guard, sorcerers and warlocks work their dark craft, and worgs bred in the Spire pace at their masters' heels. The orcs carry medallions of the clan, and those badges have become trophies: at Morgan's Vigil, the mad dwarf Oralius wants them by the fifty. Further west, more Blackrock camps dot the plain.",
-"triggers": [
-[
-1,
-253
-]
-],
-"sources": [
-"DB spawns in area 253: Blackrock Slayer 7027, Sorcerer 7026, Soldier 7025, Warlock 7028, Worg 7055; centered near -8080,-1850, south of the ruins (-7800,-1850)",
-"quest 4701 description (worgs bred and trained in Blackrock Spire)",
-"quest 4283 (Oralius wants fifty Blackrock Medallions)",
-"posarea: further Blackrock spawns west of the pillar at -8110,-1418 to -8230,-1750 (generic area 46), including Gor'tesh"
-],
-"notes": "'toward the Altar of Storms' dropped: the western camps (y -1418 to -1750) lie well south and east of the Altar (Mor'zul at -7649,-638). Otherwise verified."
-},
-{
-"id": 4609,
-"kind": 1,
-"zone": 46,
-"sort": 9,
-"faction": 0,
-"title": "Blackrock Stronghold",
-"body": "In the north of the steppes, just outside Blackrock Spire, the Blackrock clan has raised a great fortress, hidden from the road but always watching for an Alliance attack. Battlemasters, slayers and warlocks man its walls, sentries and grunts of the Scarshield Legion stand among them, and the orc Gruklash, prone to fits of frenzy, prowls the grounds. The fortress shelters friends of the clan as well. Grark Lorkrub, who betrayed the Kargath Expeditionary Force to the Blackrock, waits here under their protection, sure that no enemy could slip into so heavily fortified a place to take him.",
-"triggers": [
-[
-1,
-252
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Burning_Steppes_(Classic) (Blackrock Stronghold hidden from the road, keeping watch for Alliance attacks)",
-"warcraft.wiki.gg/wiki/Blackrock_Stronghold (northern Burning Steppes, just outside Blackrock Spire)",
-"DB spawns in area 252: Blackrock Warlock 7028, Slayer 7027, Battlemaster 7029, Scarshield Sentry 9044 and Grunt 9043 (Scarshield Legion), Gruklash 8979 (frenzy emote), Grark Lorkrub 9520",
-"quest 4122 description and log (massive Blackrock fortress), quest 4121 description (heavily fortified Blackrock fortress)"
-],
-"notes": "verified. Gruklash called an orc from his Blackrock faction (40) and humanoid type."
-},
-{
-"id": 4610,
-"kind": 1,
-"zone": 46,
-"sort": 10,
-"faction": 0,
-"title": "Blackrock Mountain",
-"body": "The northwestern sky of the steppes belongs to Blackrock Mountain, the volcano raised by Ragnaros's coming, and the road from the Steppes climbs straight to it. Dragonkin of the black flight hold its southern slopes, flamescale dragonspawn and wyrmkin among them, and great Blackrock drakes keep watch with them. Within the mountain the Dark Irons rule the depths and the Blackrock clan the Spire above, while orcs of the Scarshield Legion stand sentry on the slopes. Strange figures linger here. The ghost of Franclorn Forgewright, the dwarf who built the Spire, haunts his own tomb at its gate, and Lothos Riftwaker speaks of the rifts that tear the fabric of the world.",
-"triggers": [
-[
-1,
-254
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Burning_Steppes_(Classic) (Blackrock Mountain in the northwest; dragons hold the Spire's upper levels, Dark Irons the deeps)",
-"npc_text 2315-2317 (Franclorn: built the Spire under Ragnaros, tomb placed at the entrance to the city)",
-"npc_text 6933 (Lothos Riftwaker on rifts)",
-"DB spawns in area 254: Flamescale Dragonspawn 7042, Flamescale Wyrmkin 7043, Blackrock Drake 8964 (rank 1), Scarshield Sentry 9044, Quarry Slave 8917, Franclorn Forgewright 8888, Lothos Riftwaker 14387"
-],
-"notes": "'elite' (a game term) changed to 'great'. Otherwise verified; Franclorn's tomb at the city gate from npc_text 2317."
-},
-{
-"id": 4611,
-"kind": 1,
-"zone": 46,
-"sort": 11,
-"faction": 0,
-"title": "Altar of Storms",
-"body": "In the far west of the steppes, in the shadow of Blackrock Spire, stands the Altar of Storms, where Blackrock warlocks gather for strange rituals. They have unusual neighbors. Just beside the altar a human warlock, Mor'zul Bloodbringer, keeps a camp of his own, studying the place and perhaps hoping to harness its power. Warlocks of great skill seek him out, for he knows the rites that can bind a dreadsteed from the burning Plains of Xoroth, though the price is paid in blood, sweat and gold. His servant Gorzeeki Wildeyes, a gifted alchemist, prepares the ink and other trappings such work demands, and has a taste for spiders and beetles.",
-"triggers": [
-[
-1,
-255
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Altar_of_Storms_(Burning_Steppes) (shadow of Blackrock Spire, Blackrock warlocks perform strange rituals, Mor'zul and his servant Gorzeeki)",
-"warcraft.wiki.gg/wiki/Mor%27zul_Bloodbringer (human warlock, just west of the altar)",
-"quest 7562 description and reward text (camped near the Altar, study it, harness its energy, blood, sweat and gold)",
-"quests 7563, 7564, 7626 (Plains of Xoroth, Gorzeeki the alchemist)",
-"npc_text 6991 (Gorzeeki: spiders and beetles a treat)",
-"DB spawns in area 255: Blackrock Warlock 7028, Mor'zul 14436, Gorzeeki 14437, Alchemy Set 179782"
-],
-"notes": "Gorzeeki makes the ink (7564) and the Bell of Dethmoora from elixirs (7626); he does not brew potions, so 'brews the inks and potions' was reworded."
-},
-{
-"id": 4612,
-"kind": 1,
-"zone": 46,
-"sort": 12,
-"faction": 0,
-"title": "Draco'dar",
-"body": "Draco'dar is a stretch of scorched hills in the southwest of the steppes, crawling with servants of the black dragonflight. Flamescale broodlings tumble among the rocks, searscale drakes hunt the slopes, and the rare black drake Hematos is sometimes seen there, breathing fire on whatever moves. Giant ember worgs and firetail scorpids prowl the ash. Amid all this danger one man seems entirely at ease: Franklin the Friendly, who urges passers-by to ignore the lava and take in the joys of nature. Hunters who have challenged him tell a different story, for behind that smiling face waits the demon Klinfran the Crazed.",
-"triggers": [
-[
-1,
-2421
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Draco%27dar (scorched hills in the southwest, crawling with minions of the black dragonflight)",
-"DB spawns in area 2421: Flamescale Broodling 7049, Searscale Drake 7046, Hematos 8976 (rank 2), Giant Ember Worg 9697, Firetail Scorpid 9698, Franklin the Friendly 14529",
-"npc_text 7043 and gossip option 5870 (Klinfran the Crazed)",
-"warcraft.wiki.gg/wiki/Franklin_the_Friendly (felguard Klinfran in disguise, hunter quest Stave of the Ancients)"
-],
-"notes": "verified"
-},
-{
-"id": 4613,
-"kind": 2,
-"zone": 46,
-"sort": 1,
-"faction": 1,
-"title": "Marshal Maxwell",
-"body": "Marshal Maxwell commands the soldiers of Morgan's Vigil, Stormwind's only outpost in the Burning Steppes. The Vigil has paid dearly for its post. Its commanding officer, Marshal Windsor, was lost to a Blackrock raiding party, and a great store of intelligence on the clan went with him. Maxwell sees his war as one of two fronts: Stormwind fights the black dragonflight from within, and the Vigil carries the battle to its doorstep. He already knew the Blackrock were pawns of Nefarian, and with maps from a Horde spy he plans strikes on the Spire's war master, its ogre highlord and its overlord, then on General Drakkisath himself. None, he vows, will be spared.",
-"triggers": [
-[
-2,
-9560
-]
-],
-"sources": [
-"quest 5102 description and reward text (two fronts, none should be spared, strike at their dragon lords next)",
-"quest 5002 description and reward text (Nefarian, coincides with much of what we already knew)",
-"quest 5081 description (Voone, Omokk, Wyrmthalak)",
-"quest 4981 (Bijou a Horde operative of the K.E.F.)",
-"quest 4224 description (lost our commanding officer Marshal Windsor, and all our information with him; Blackrock raiding party)",
-"creature_template 9560 faction 12 (Stormwind)"
-],
-"notes": "'years of hard-won' intelligence was not in quest 4224 (it says enormous amounts); reworded. 'last outpost' to 'only outpost'. Windsor appears only as backstory from quest 4224 (in the DB, disabled as deprecated, chain 4182-6402 has no givers), nothing presents his rescue as something to do; his fate is left to Stormwind's 'Dragons at Court'. Faction 1: template 12."
-},
-{
-"id": 4614,
-"kind": 2,
-"zone": 46,
-"sort": 2,
-"faction": 1,
-"title": "Helendis Riverhorn",
-"body": "Helendis Riverhorn is a night elf who serves the Alliance at Morgan's Vigil, far from the forests of his people, and still asks the blessing of Cenarius on those he sends into danger. He has studied the enemy closely. The worgs the Blackrock orcs command never seem to dwindle, however many are slain, and his scouts have traced them to Blackrock Spire, where they are bred, trained and sent out to the clan. At the root of it, he has learned, is a corrupted she-worg the orcs call Halycon, a creature of dark magic. Like his comrades at the Vigil, he suspects the orcs themselves are pawns of the black dragonflight, which feeds their rage.",
-"triggers": [
-[
-2,
-9562
-]
-],
-"sources": [
-"quest 4701 description and reward text (worgs bred, trained and exported from Blackrock Spire; Halycon; corrupt, a product of dark magic; May Cenarius protect you)",
-"warcraft.wiki.gg/wiki/Helendis_Riverhorn (male night elf, Darnassus, Morgan's Vigil)",
-"quest 4183 description (Helendis: the black dragonflight control the orcs of Blackrock and fuel their rage)",
-"creature_template 9562 faction 80 (Darnassus)",
-"quest 5002 reward text (Maxwell: Bijou's news that the orcs serve the black dragonflight coincides with what the Vigil already knew)"
-],
-"notes": "Last sentence now framed as the Vigil's shared suspicion, supported by the active quest 5002 reward text; the wording on rage comes from quest 4183 (in the DB, disabled). Faction 1: template 80."
-},
-{
-"id": 4615,
-"kind": 2,
-"zone": 46,
-"sort": 3,
-"faction": 1,
-"title": "Oralius",
-"body": "Oralius is a dwarf soldier of Morgan's Vigil, and something in him has broken. He barks at every visitor as if at a raw recruit, cackles over his battle plans, and shouts, as a great confidence, that he is the only sane one left in the camp. His constant companion is Captain Winky, a friend no one else can see, with whom he argues, plots and on occasion trades a pirate's growl. He keeps a collection of severed ogre ears, and into one of them he calls out reports to some distant control. Mad or not, he wages his own war on the Firegut ogres and the Blackrock with deadly seriousness.",
-"triggers": [
-[
-2,
-9177
-],
-[
-4,
-4283
-]
-],
-"sources": [
-"quest 4283 description and request text (only sane one, Captain Winky, ogre ear collection, talking into a severed ogre ear: Burning Steppes to control)",
-"quests 3823, 3824 (Winky outbursts), 4286 (pirate impersonation)",
-"warcraft.wiki.gg/wiki/Oralius (male dwarf, Morgan's Vigil, war shock, imaginary Captain Winky)",
-"creature_template 9177 faction 55 (Ironforge)"
-],
-"notes": "In quest 4283 he shouts the line and only lowers his voice afterwards; 'in a whisper' corrected. Faction 1: template 55 and quest 4283 AllowableRaces 1101."
-},
-{
-"id": 4616,
-"kind": 2,
-"zone": 46,
-"sort": 4,
-"faction": 1,
-"title": "Mayara Brightwing",
-"body": "Mayara Brightwing is a priestess in the service of Count Remington Ridgewell of Stormwind's House of Nobles, who sent her to the Burning Steppes to scout the ruins of Thaurissan for treasures worthy of his family museum. Her search has led beyond the ruins, into Blackrock Spire. High in the citadel lies a chamber once called the Hall of Fortune, where the Dark Irons kept their relics, trophies and works of art, before it collapsed and fell to darker uses. Among its lost treasures is Doomrigger's Clasp, so encrusted with gems that it was said to make any dwarf who gazed upon it weep, and Mayara means to have it.",
-"triggers": [
-[
-2,
-9565
-]
-],
-"sources": [
-"quest 4766 description (Ridgewell's agent sent to scout Thaurissan for the family museum)",
-"quest 4764 description (Hall of Fortune, Doomrigger's Clasp)",
-"quest 4765, creature_template 2285 Count Remington Ridgewell <House of Nobles>",
-"warcraft.wiki.gg/wiki/Mayara_Brightwing (female human priest)",
-"creature_template 9565 faction 12"
-],
-"notes": "verified. Faction 1: template 12 and her quests are Alliance only."
-},
-{
-"id": 4617,
-"kind": 2,
-"zone": 46,
-"sort": 5,
-"faction": 0,
-"title": "Ragged John",
-"body": "Ragged John is a dwarf of Flame Crest who is rarely, if ever, entirely sober. The soldiers of Morgan's Vigil remember that he was with their commander, Marshal Windsor, when a Blackrock raiding party fell upon them, and that he came back when Windsor did not. These days he makes his own jaunts into Blackrock Spire, where he has overheard the orcs speak of a poison they call Mother's Milk, after the great spider Mother Smolderweb. Ragged John wants a sample, still flowing in the veins of someone brave or foolish enough to be bitten. He swears it is not for poisoning anyone: it will make the best ale yet.",
-"triggers": [
-[
-2,
-9563
-]
-],
-"sources": [
-"npc_text 2713 (What you be wanting? *hic*)",
-"quest 4866 description and reward text",
-"quest 4224 description (Ragged John was with Windsor when they were attacked by a Blackrock raiding party), quest 4241 (John says Windsor is alive)",
-"warcraft.wiki.gg/wiki/Ragged_John (dwarf, at Flame Crest before Cataclysm)",
-"creature_template 9563 faction 35"
-],
-"notes": "verified. Windsor tie from quests 4224 and 4241, still in the DB but no longer offered in 3.3.5. Mother's Milk (4866) is a Blackrock Spire quest, so only TALK is used. Faction 0: template 35."
-},
-{
-"id": 4618,
-"kind": 2,
-"zone": 46,
-"sort": 6,
-"faction": 0,
-"title": "Cyrus Therepentous",
-"body": "Cyrus Therepentous is a black dragonspawn who keeps to his lair at Slither Rock and holds every mortal in contempt. Those who disturb him are left to wonder whether he will devour them whole. Yet he finds uses for lesser beings. His flight knows what was done in the Searing Gorge, and he will deal with anyone who carries a molt given by one of his kin, or who survives a fight with his minion. What Cyrus craves is the molten fire of Blackrock Mountain. He hungers for the inner flame of Bael'Gar, a giant born of the fires of Ragnaros in the depths below, and has altered the molt so that it can capture it.",
-"triggers": [
-[
-2,
-9459
-],
-[
-4,
-4022
-],
-[
-4,
-4023
-]
-],
-"sources": [
-"npc_text 2493, 2494 (lair, devour you whole, challenge my minion)",
-"quests 4022, 4023, 4024 (descriptions, logs and reward texts; Altered Black Dragonflight Molt)",
-"warcraft.wiki.gg/wiki/Cyrus_Therepentous (black dragonspawn, Slither Rock)",
-"searing_gorge.json 5122 (molt given by Kalaran)"
-],
-"notes": "verified. Faction 0: template 35, quests 4022/4023 AllowableRaces 0. The molt's origin is told in Searing Gorge's 'Divine Retribution' and only referred to here."
-},
-{
-"id": 4619,
-"kind": 2,
-"zone": 46,
-"sort": 7,
-"faction": 0,
-"title": "Tinkee Steamboil",
-"body": "Tinkee Steamboil is a goblin scholar who has spent weeks at Flame Crest studying the dragonkin of the Burning Steppes. The land is dangerous, she admits, but scholars like her will do almost anything to advance their knowledge. Her inventions carry names as bold as her ambitions: the Draco Incarcinatrix 900, which draws the essence from a slain broodling, and the eggscilloscope, built to freeze a dragon's egg solid. She dreams of being the envy of dragon scholars around the world. Tinkee does not work for herself alone. Her research answers to a patron she calls her master, one she warns is not the sort anyone should wish to disappoint.",
-"triggers": [
-[
-2,
-10267
-]
-],
-"sources": [
-"npc_text 3296 (dangerous place, scholars like me)",
-"quest 4726 description, reward and request texts (weeks of study, Draco Incarcinatrix 900, envy of dragon scholars, patron not to be disappointed)",
-"quest 4734 (eggscilloscope), quest 5522 (my master, Vectus)",
-"warcraft.wiki.gg/wiki/Tinkee_Steamboil (female goblin, Flame Crest)"
-],
-"notes": "verified. Faction 0: template 120. Who her master really is belongs to the story entry."
-},
-{
-"id": 4620,
-"kind": 2,
-"zone": 46,
-"sort": 8,
-"faction": 0,
-"title": "Kibler",
-"body": "Kibler is a goblin animal lover by inclination and a salesman by trade. From his cave at Flame Crest, crowded with cages, he tracks down exotic beasts for the rich and famous and tames them into proper pets, from worg pups taken out of Blackrock Spire to the spiders that hatch from its eggs. He pays others to take the risks. One of his hirelings was the goblin Bijou, who turned out to be a Horde operative spending Horde funds on his errands. His parrot Opus squawks his secrets to anyone who listens: that Bijou is lost, that dragons control the orcs, and that Kibler is under investigation by something called G.E.T.A.",
-"triggers": [
-[
-2,
-10260
-]
-],
-"sources": [
-"quest 4729 description (animal lover, salesman, exotic animals for the rich and famous, cages)",
-"quest 4862 description (spire spider eggs, Bijou sent into the Spire)",
-"quest 4981 description (Bijou working for Kibler, using Horde funds)",
-"creature_text 10262 (Opus)",
-"warcraft.wiki.gg/wiki/Kibler (goblin, Flame Crest)",
-"warcraft.wiki.gg/wiki/Flame_Crest (Kibler lives in the cave with Opus)"
-],
-"notes": "verified. Faction 0: template 120. Kibler's spawn is just outside the 251 boundary, consistent with the cave."
-},
-{
-"id": 4621,
-"kind": 3,
-"zone": 46,
-"sort": 1,
-"faction": 1,
-"title": "The Firegut Offensive",
-"body": "Oralius of Morgan's Vigil has a plan, and it comes in three phases. The Firegut ogres of Dreadmaul Rock are allies of the Blackrock orcs, guarding the rock's rich minerals and keeping the clan's supply lines open, so the first blow must cripple their numbers: ogre-mages, ogres and brutes alike. The second must be decisive. Gor'tesh, the brute lord, rules the ogres not from Dreadmaul Rock but from a Blackrock structure to its west, and Oralius wants his fat head. The third is pure theater. Oralius mounts the head on a pike and sends it to be planted on the summit of Dreadmaul Rock, certain that the sight will send the cowardly ogres fleeing in mass hysteria. He speaks of a medal of bravery, then corrects himself: the soldier, of course, will be the one rewarded.",
-"triggers": [
-[
-4,
-3823
-]
-],
-"sources": [
-"quests 3823, 3824, 3825 (descriptions, logs and reward texts)",
-"gameobject 160840 Soft Dirt Mound at Dreadmaul Rock (area 249)",
-"DB: Gor'tesh 9176 at -8110,-1418 (generic area 46, west of Dreadmaul Rock)"
-],
-"notes": "verified. Alliance only (AllowableRaces 1101). Gor'tesh is not given a KILL trigger to keep one entry point."
-},
-{
-"id": 4622,
-"kind": 3,
-"zone": 46,
-"sort": 2,
-"faction": 2,
-"title": "The Fate of Sha'ni Proudtusk",
-"body": "Sha'ni Proudtusk of the Kargath Expeditionary Force went into the Burning Steppes with her platoon to look into reports of strange rituals among the Firegut ogres. Three weeks later there was still no word. Warlord Goretooth told her husband, Thal'trak, to move on and attend to his duties, but Thal'trak could not leave his post at Kargath and could not let her go, and he begged for someone to search. Her remains were found at Dreadmaul Rock, and her spirit told the rest. The platoon had been captured and slain, and Sha'ni was saved for the ogre Krom'Grul's ritual, chained to an altar and tortured until she died. He tore her wedding nose-ring from her face and wore it on his finger. When the ring came back to Kargath, Thal'trak collapsed and would not take it. It was to have been her last mission before they made a home in the Hinterlands with her parents.",
-"triggers": [
-[
-4,
-3821
-],
-[
-4,
-3822
-]
-],
-"sources": [
-"quests 3821, 3822 (descriptions, logs and reward texts)",
-"creature_queststarter: Thal'trak Proudtusk 9082 (Kargath Expeditionary Force) starts 3821; Sha'ni Proudtusk 9136 ends 3821 and starts 3822",
-"gameobject 160445 Sha'ni Proudtusk's Remains and Krom'Grul 8977 in area 249"
-],
-"notes": "verified. Horde only (AllowableRaces 690). 3821 is filed under Badlands but the Badlands file does not use it; Goretooth's line overlaps lightly with Badlands 322 only as a mention."
-},
-{
-"id": 4623,
-"kind": 3,
-"zone": 46,
-"sort": 3,
-"faction": 2,
-"title": "The Traitor of Kargath",
-"body": "Grandmaster Lexlort, head of the Kargath Expeditionary Force's reconnaissance, tracked one of the Horde's own across the Searing Gorge, through Blackrock Mountain and into the Burning Steppes. The traitor, Grark Lorkrub, had been caught red-handed passing word of the force's daily operations to the Blackrock orcs, and now sits in their great fortress believing himself safe. Lexlort's answer is a set of thorium shackles. Grark fights before he submits, and once bound he scorns his captor all the way, boasting of the power that comes from joining the legion of Blackrock and warning that his brethren will come for him. They do, again and again along the road through the mountain. If he reaches the Searing Gorge, Lexlort's men take him in hand, and the warlord prepares a final mission.",
-"triggers": [
-[
-4,
-4122
-]
-],
-"sources": [
-"quest 4122 description, log and reward text",
-"quest 4121 description, log and reward text (escort through the Steppes and Blackrock Mountain, the Warlord will speak of the final mission)",
-"quest 4082 description (Grandmaster Lexlort, head of the K.E.F. reconnaissance division)",
-"creature_text 9520 (Grark: submits, they will come for me, legion of Blackrock)",
-"smart_scripts 9520 (attacks on accept, submits at low health, summons creature groups at waypoints)"
-],
-"notes": "verified. Horde only: 4122 requires 4082 (AllowableRaces 690) and 4121 is 690. 4121 is the continuation, so only 4122 is listed as an entry point."
-},
-{
-"id": 4624,
-"kind": 3,
-"zone": 46,
-"sort": 4,
-"faction": 0,
-"title": "Eggs of the Black Flight",
-"body": "Tinkee Steamboil's study of the dragonkin began with broodlings. Her Draco Incarcinatrix 900 drew out their essence as they died, and the samples told her that dragon eggs might be frozen and preserved. For that she needed parts from her colleague Felnok Steelspring in distant Everlook, packed with the cold horns of chillwind chimaerae. With her eggscilloscope proven in the black dragons' rookery high in Blackrock Spire, and a collectronic module to carry off the frozen eggs, the harvest began. Then came a letter from one Leonid Barthalomew, saying that Tinkee's master Vectus wanted the eggs brought to Light's Hope Chapel. It was a trick. Leonid is of the Argent Dawn, and Vectus an undead mage of the Scourge in Scholomance. Had the eggs reached him, a great power would have fallen into the hands of the enemy.",
-"triggers": [
-[
-4,
-4726
-]
-],
-"sources": [
-"quests 4726, 4808, 4809, 4810, 4734, 4735, 5522 (descriptions and reward texts)",
-"quest 4771 description (Vectus, undead mage leading Scourge scholars in Scholomance)",
-"warcraft.wiki.gg/wiki/Tinkee_Steamboil (Vectus her master)"
-],
-"notes": "verified. Faction 0: every quest in the chain has AllowableRaces 0. The Dawn's Gambit sequel in Scholomance is left to that dungeon."
-}
+ {
+  "id": 4600,
+  "kind": 0,
+  "zone": 46,
+  "sort": 0,
+  "faction": 0,
+  "title": "Burning Steppes",
+  "body": "The Burning Steppes were green country once, the northern reaches of the Redridge Mountains, until exiled Dark Iron dwarves raised their capital of Thaurissan here. When Sorcerer-Thane Thaurissan called up Ragnaros the Firelord, mountains melted, Blackrock Mountain was born and the land was burned to ash. The sky still glows red above rivers of lava and charred earth. In the Second War the Horde made the mountain its stronghold, and at its foot Orgrim Doomhammer slew Anduin Lothar. Now the Blackrock orcs hold the steppes again, mining the hills for the metal of their weapons, and those who have seen inside their citadel say the clan answers to the black dragonflight, whose dragonkin swarm the eastern valleys. Firegut ogres guard Dreadmaul Rock for them, and Dark Iron agents prowl the ruins of the ancient city. Against all this stand only a few: the Alliance soldiers of Morgan's Vigil in the southeast, and an odd company of goblins, scholars and Horde fliers at Flame Crest.",
+  "triggers": [
+   [
+    1,
+    46
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Burning_Steppes_(Classic) (once part of Redridge, Thaurissan, Ragnaros melted mountains, red sky, Horde base at the Spire, Doomhammer slew Lothar at the foot of the volcano, Blackrock mine the mountains for metals)",
+   "warcraft.wiki.gg/wiki/Burning_Steppes (history: Dark Iron exiles, War of the Three Hammers)",
+   "quest 5002 description (orcs are beasts of burden and cannon fodder for the black dragonflight, true leader Nefarian)",
+   "quest 3823 description (Firegut ogres allies of the Blackrock orcs)",
+   "DB spawns by subzone (zone_areas.py): dragonkin in 2420, Thaurissan Dark Irons in 250, Alliance NPCs in 2418, goblins and Horde NPCs in 251"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: verified. Truce line from the classic page left out. Horde fliers = Vahgruk (Wind Rider Master, faction 29) at Flame Crest."
+ },
+ {
+  "id": 4601,
+  "kind": 1,
+  "zone": 46,
+  "sort": 1,
+  "faction": 0,
+  "title": "Blackrock Pass",
+  "body": "Blackrock Pass is the road by which most travelers from the lands of Stormwind reach the Burning Steppes, climbing north out of the Redridge Mountains past the Blackrock camp that watches its southern end. The change on crossing is abrupt. Behind lie green slopes and the lake country around Lakeshire; ahead the earth is black and cracked and the air shimmers with heat. Living fire haunts the pass itself. Flamekin spitters and sprites, small elementals of flame, drift among the rocks, lava crabs scuttle through the cinders, and an elemental of obsidian lumbers along the road toward Morgan's Vigil.",
+  "triggers": [
+   [
+    1,
+    2417
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Blackrock_Pass (main foot entrance from the Redridge Mountains, from tranquil lands into scorched ruin)",
+   "redridge.json 4407 Render's Camp (Blackrock camp just west of the pass)",
+   "DB spawns in area 2417: Flamekin Spitter 9776, Flamekin Sprite 9777, Lava Crab 9700, Obsidian Elemental 7031 (posarea: -8500,-2540 and -8381,-2466 resolve to 2417, south of the Vigil)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: verified"
+ },
+ {
+  "id": 4602,
+  "kind": 1,
+  "zone": 46,
+  "sort": 2,
+  "faction": 0,
+  "title": "Morgan's Vigil",
+  "body": "On a ridge in the southeastern corner of the steppes, a small company of the Alliance keeps watch from among the scarred ruins of an older town. Morgan's Vigil is the Alliance's only foothold in this land, and a modest one: an innkeeper, a weaponsmith and a dwarven gryphon master whose birds fly to Stormwind, Lakeshire and Thorium Point. Marshal Maxwell commands, joined by the night elf Helendis Riverhorn, the gnome mage Jalinda Sprig, the priestess Mayara Brightwing and the half-mad dwarf Oralius. Their fight is Lakeshire's fight too. The Blackrock clan the Vigil watches day and night is the same that crossed the mountains to raid Redridge, and dragonkin roam the valley to the north.",
+  "triggers": [
+   [
+    1,
+    2418
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Burning_Steppes (scarred ruins of a town now known as Morgan's Vigil)",
+   "warcraft.wiki.gg/wiki/Burning_Steppes_(Classic) (Alliance outpost in the southeast; flights to Stormwind, Lakeshire, Thorium Point, Nethergarde Keep)",
+   "DB spawns in area 2418: Marshal Maxwell 9560, Helendis Riverhorn 9562, Jalinda Sprig 9561, Mayara Brightwing 9565, Oralius 9177, Gabrielle Chase 3298, Felder Stover 1296, Borgus Stoutarm 2299 (faction 55, Ironforge)",
+   "quest 4262 description (Jalinda's gnome mages)",
+   "quest 20 description (Blackrocks from the Burning Steppes raid Redridge)",
+   "DB: Terror Wing Path dragonkin spawns run from just below the Vigil (x -8150) northward",
+   "quest 4182 description (ruined buildings, dragonkin below this ridge; quest text still in the DB though not offered)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: verified; 'last foothold' changed to 'only foothold' (no other Alliance outpost in the 3.3.5 steppes). Ridge and ruins backed by quest 4182 text. Gryphon route to Lakeshire from the classic wiki page."
+ },
+ {
+  "id": 4603,
+  "kind": 1,
+  "zone": 46,
+  "sort": 3,
+  "faction": 0,
+  "title": "Dreadmaul Rock",
+  "body": "Dreadmaul Rock is a great crag in the east of the steppes, riddled with caves and old mines and held by the Firegut ogres. They are allies of the Blackrock orcs, guarding the rock's rich mineral seams and keeping the clan's supply lines open. Ogre-mages and brutes crowd its slopes, and the hulking Hahk'Zor and Gorgon'och stalk among them. Something darker goes on in the caves. Reports of strange rituals among the ogres drew a Horde patrol here weeks ago, and no word has come back from it. Fire elementals and lava crabs creep over the lower slopes, and the molten giant Volchan is sometimes seen wandering near its foot.",
+  "triggers": [
+   [
+    1,
+    249
+   ]
+  ],
+  "sources": [
+   "quest 3823 description (Firegut allies of the Blackrock, mineral rich Dreadmaul Rock, supply lines)",
+   "quests 3821, 3822 (ritual activity, platoon captured, caves and mines of Dreadmaul Rock)",
+   "warcraft.wiki.gg/wiki/Dreadmaul_Rock (base of the Firegut ogres, cave system)",
+   "DB spawns in area 249: Firegut Ogre Mage 7034, Firegut Brute 7035, Firegut Ogre 7033, Hahk'Zor 9602, Gorgon'och 9604 (both faction 45, rare), Flamekin Spitter/Sprite, Lava Crab, Volchan 10119 (rank 2) at -7770,-2443"
+  ],
+  "notes": "Converted: 'none of them came home' made 'no word has come back from it' (quest 3821 description), since the platoon's fate is the reveal of The Fate of Sha'ni Proudtusk (4622 part 1). No parts. Earlier: verified. The brief mentions black dragonspawn at Dreadmaul Rock; the 3.3.5 DB has none there (one Scalding Broodling only), so they are placed in Terror Wing Path instead."
+ },
+ {
+  "id": 4604,
+  "kind": 1,
+  "zone": 46,
+  "sort": 4,
+  "faction": 0,
+  "title": "Terror Wing Path",
+  "body": "North of Morgan's Vigil a long valley runs up the eastern edge of the steppes, and it belongs to the black dragonflight. Dragonspawn and wyrmkin patrol the Terror Wing Path in numbers, broodlings swarm underfoot, and black drakes prowl among them. Even seasoned travelers are warned not to come alone. Other hunters share the valley: venomtip scorpids, ember worgs and the great worg Deathmaw, Firegut ogres straying from Dreadmaul Rock, and malfunctioning war golems that lurch through the ash. At the valley's far northern end lies Slither Rock, the lair of the dragonspawn Cyrus Therepentous.",
+  "triggers": [
+   [
+    1,
+    2420
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Terror_Wing_Path (eastern valley, black dragonflight whelps, dragonkin and drakes, advised not to go alone)",
+   "DB spawns in area 2420: Black Dragonspawn 7040, Black Broodling 7047, Black Wyrmkin 7041, Black Drake 7044, Venomtip Scorpid 9691, Ember Worg 9690, Firegut Ogre 7033, Malfunctioning Reaver 8981 (type mechanical), Deathmaw 10077",
+   "posarea: area 2420 spans x -8150 to -7450 along y -2600 to -3000, between the Vigil and Slither Rock"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: verified. Black Drakes are listed as prowling rather than flying overhead (spawns are ground mobs)."
+ },
+ {
+  "id": 4605,
+  "kind": 1,
+  "zone": 46,
+  "sort": 5,
+  "faction": 0,
+  "title": "Slither Rock",
+  "body": "In the far northeastern corner of the steppes, beyond the Terror Wing Path, a small cave opens in the rock. Few go there willingly. Slither Rock is the lair of a single great servant of the black dragonflight, the dragonspawn Cyrus Therepentous, and black broodlings scuttle near its mouth. Cyrus answers most visitors with contempt and a threat to devour them, yet those who prove themselves useful may leave with a bargain instead. For all his scorn, he will help a mortal against a foe they share, so long as it feeds his own hunger.",
+  "triggers": [
+   [
+    1,
+    2419
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Slither_Rock (small cave in the far northeast, beyond the Terror Wing Path, home of Cyrus)",
+   "DB spawns in area 2419: Cyrus Therepentous 9459, Black Broodling 7047",
+   "npc_text 2493, 2494 (Cyrus gossip)",
+   "quests 4022, 4023",
+   "warcraft.wiki.gg/wiki/Slither_Rock (Cyrus aids adventurers against a common foe, with rude and derisive comments)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Removed the unsupported last sentence (only place to trade openly with the black flight); replaced with the wiki's point that Cyrus helps against a shared foe, tied to quest 4024."
+ },
+ {
+  "id": 4606,
+  "kind": 1,
+  "zone": 46,
+  "sort": 6,
+  "faction": 0,
+  "title": "Flame Crest",
+  "body": "Flame Crest is a rocky outcrop in the north of the steppes, reached by a crude bridge, with a small cave at its back. No kingdom rules it. Goblins and wandering scholars do business here: Tinkee Steamboil studies the local dragonkin, Kibler sells exotic pets from the cave, Yuka Screwspigot hunts for her worthless brother, and Maxwort Uberglint chases the lost treasures of the Dark Irons. The elven mage Mathredis Firestar seeks the librams scattered when the Scourge struck Quel'Thalas, and the drunken dwarf Ragged John wanders in from his jaunts to the Spire. The Horde keeps a foothold too, a wind rider master and a provisioner who serve its people in this hostile land.",
+  "triggers": [
+   [
+    1,
+    251
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Flame_Crest (rock outcrop, crude bridge, small cave; independent before Cataclysm; Kibler in the cave)",
+   "warcraft.wiki.gg/wiki/Burning_Steppes_(Classic) (Flame Crest the Horde travel hub)",
+   "quest 4324 description (Flame Crest a cave northwest of Dreadmaul Rock), quest 4136",
+   "quests 4296, 4123 (Maxwort)",
+   "npc_text 2993 (Mathredis: librams scattered when the Scourge was unleashed upon Quel'Thalas)",
+   "quest 4866 (Ragged John's jaunts into the Spire)",
+   "DB spawns in area 251: 9563, 10267, 9536, 9836, Gruna 3708 and Vahgruk 13177 (faction 29, Orgrimmar); Kibler 10260 just outside the 251 boundary"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: verified. Mathredis is a blood elf per the wiki; written as elven mage. Horde NPCs confirmed in the 3.3.5 DB though the wiki treats the outpost as neutral pre-Cataclysm."
+ },
+ {
+  "id": 4607,
+  "kind": 1,
+  "zone": 46,
+  "sort": 7,
+  "faction": 0,
+  "title": "Ruins of Thaurissan",
+  "body": "In the heart of the steppes lie the broken streets of Thaurissan, once capital of the Dark Iron dwarves, destroyed when their sorcerer-thane called Ragnaros into the world. The Dark Irons have not given it up. Thaurissan spies, agents and firewalkers stalk the rubble beside iron war reavers, and a rare Dark Iron named Thauris Balgarr walks among them. Relics still lie in the ash. Touch one and a tormented voice may warn the intruder away as visions burn into the mind: eight dwarves at a ritual, a lone dwarf kneeling before a monolith of flame among seven corpses. Treasure hunters come regardless, drawn by rumors of a Tablet of the Seven.",
+  "triggers": [
+   [
+    1,
+    250
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Ruins_of_Thaurissan (capital destroyed in the summoning of Ragnaros)",
+   "creature_text 8887 (A tormented voice: visions of eight dwarves at a ritual, a lone dwarf before a monolith of flame surrounded by seven corpses)",
+   "quest 4296 description (ruins rumored to keep the Tablet of the Seven)",
+   "DB spawns in area 250: Thaurissan Spy 7036, Firewalker 7037, Agent 7038, War Reaver 7039 (all faction 54), Thauris Balgarr 8978, Thaurissan Relic 153556, Tablet of the Seven 169294"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: verified. Archesonus's relic quest is told in Ironforge's 'The Ruin of Thaurissan' and Mayara's scouting in her own entry, so both are left out here."
+ },
+ {
+  "id": 4608,
+  "kind": 1,
+  "zone": 46,
+  "sort": 8,
+  "faction": 0,
+  "title": "The Pillar of Ash",
+  "body": "South of the ruined city, out on the open plain, the Blackrock clan keeps the Pillar of Ash, one of its camps in the heart of the steppes. Slayers and soldiers stand guard, sorcerers and warlocks work their dark craft, and worgs bred in the Spire pace at their masters' heels. The orcs carry medallions of the clan, and those badges have become trophies: at Morgan's Vigil, the mad dwarf Oralius wants them by the fifty. Further west, more Blackrock camps dot the plain.",
+  "triggers": [
+   [
+    1,
+    253
+   ]
+  ],
+  "sources": [
+   "DB spawns in area 253: Blackrock Slayer 7027, Sorcerer 7026, Soldier 7025, Warlock 7028, Worg 7055; centered near -8080,-1850, south of the ruins (-7800,-1850)",
+   "quest 4701 description (worgs bred and trained in Blackrock Spire)",
+   "quest 4283 (Oralius wants fifty Blackrock Medallions)",
+   "posarea: further Blackrock spawns west of the pillar at -8110,-1418 to -8230,-1750 (generic area 46), including Gor'tesh"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: 'toward the Altar of Storms' dropped: the western camps (y -1418 to -1750) lie well south and east of the Altar (Mor'zul at -7649,-638). Otherwise verified."
+ },
+ {
+  "id": 4609,
+  "kind": 1,
+  "zone": 46,
+  "sort": 9,
+  "faction": 0,
+  "title": "Blackrock Stronghold",
+  "body": "In the north of the steppes, just outside Blackrock Spire, the Blackrock clan has raised a great fortress, hidden from the road but always watching for an Alliance attack. Battlemasters, slayers and warlocks man its walls, sentries and grunts of the Scarshield Legion stand among them, and the orc Gruklash, prone to fits of frenzy, prowls the grounds. The fortress shelters friends of the clan as well. Grark Lorkrub, who betrayed the Kargath Expeditionary Force to the Blackrock, waits here under their protection, sure that no enemy could slip into so heavily fortified a place to take him.",
+  "triggers": [
+   [
+    1,
+    252
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Burning_Steppes_(Classic) (Blackrock Stronghold hidden from the road, keeping watch for Alliance attacks)",
+   "warcraft.wiki.gg/wiki/Blackrock_Stronghold (northern Burning Steppes, just outside Blackrock Spire)",
+   "DB spawns in area 252: Blackrock Warlock 7028, Slayer 7027, Battlemaster 7029, Scarshield Sentry 9044 and Grunt 9043 (Scarshield Legion), Gruklash 8979 (frenzy emote), Grark Lorkrub 9520",
+   "quest 4122 description and log (massive Blackrock fortress), quest 4121 description (heavily fortified Blackrock fortress)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: verified. Gruklash called an orc from his Blackrock faction (40) and humanoid type."
+ },
+ {
+  "id": 4610,
+  "kind": 1,
+  "zone": 46,
+  "sort": 10,
+  "faction": 0,
+  "title": "Blackrock Mountain",
+  "body": "The northwestern sky of the steppes belongs to Blackrock Mountain, the volcano raised by Ragnaros's coming, and the road from the Steppes climbs straight to it. Dragonkin of the black flight hold its southern slopes, flamescale dragonspawn and wyrmkin among them, and great Blackrock drakes keep watch with them. Within the mountain the Dark Irons rule the depths and the Blackrock clan the Spire above, while orcs of the Scarshield Legion stand sentry on the slopes. Strange figures linger here. The ghost of Franclorn Forgewright, the dwarf who built the Spire, haunts his own tomb at its gate, and Lothos Riftwaker speaks of the rifts that tear the fabric of the world.",
+  "triggers": [
+   [
+    1,
+    254
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Burning_Steppes_(Classic) (Blackrock Mountain in the northwest; dragons hold the Spire's upper levels, Dark Irons the deeps)",
+   "npc_text 2315-2317 (Franclorn: built the Spire under Ragnaros, tomb placed at the entrance to the city)",
+   "npc_text 6933 (Lothos Riftwaker on rifts)",
+   "DB spawns in area 254: Flamescale Dragonspawn 7042, Flamescale Wyrmkin 7043, Blackrock Drake 8964 (rank 1), Scarshield Sentry 9044, Quarry Slave 8917, Franclorn Forgewright 8888, Lothos Riftwaker 14387"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: 'elite' (a game term) changed to 'great'. Otherwise verified; Franclorn's tomb at the city gate from npc_text 2317."
+ },
+ {
+  "id": 4611,
+  "kind": 1,
+  "zone": 46,
+  "sort": 11,
+  "faction": 0,
+  "title": "Altar of Storms",
+  "body": "In the far west of the steppes, in the shadow of Blackrock Spire, stands the Altar of Storms, where Blackrock warlocks gather for strange rituals. They have unusual neighbors. Just beside the altar a human warlock, Mor'zul Bloodbringer, keeps a camp of his own, studying the place and perhaps hoping to harness its power. Warlocks of great skill seek him out, for he knows the rites that can bind a dreadsteed from the burning Plains of Xoroth, though the price is paid in blood, sweat and gold. His servant Gorzeeki Wildeyes, a gifted alchemist, prepares the ink and other trappings such work demands, and has a taste for spiders and beetles.",
+  "triggers": [
+   [
+    1,
+    255
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Altar_of_Storms_(Burning_Steppes) (shadow of Blackrock Spire, Blackrock warlocks perform strange rituals, Mor'zul and his servant Gorzeeki)",
+   "warcraft.wiki.gg/wiki/Mor%27zul_Bloodbringer (human warlock, just west of the altar)",
+   "quest 7562 description and reward text (camped near the Altar, study it, harness its energy, blood, sweat and gold)",
+   "quests 7563, 7564, 7626 (Plains of Xoroth, Gorzeeki the alchemist)",
+   "npc_text 6991 (Gorzeeki: spiders and beetles a treat)",
+   "DB spawns in area 255: Blackrock Warlock 7028, Mor'zul 14436, Gorzeeki 14437, Alchemy Set 179782"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Gorzeeki makes the ink (7564) and the Bell of Dethmoora from elixirs (7626); he does not brew potions, so 'brews the inks and potions' was reworded."
+ },
+ {
+  "id": 4612,
+  "kind": 1,
+  "zone": 46,
+  "sort": 12,
+  "faction": 0,
+  "title": "Draco'dar",
+  "body": "Draco'dar is a stretch of scorched hills in the southwest of the steppes, crawling with servants of the black dragonflight. Flamescale broodlings tumble among the rocks, searscale drakes hunt the slopes, and the rare black drake Hematos is sometimes seen there, breathing fire on whatever moves. Giant ember worgs and firetail scorpids prowl the ash. Amid all this danger one man seems entirely at ease: Franklin the Friendly, a smiling stranger who urges passers-by to pay no mind to the lava and take in the joys that nature has to offer. How he lives so contentedly in such a place, he does not say.",
+  "triggers": [
+   [
+    1,
+    2421
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Draco%27dar (scorched hills in the southwest, crawling with minions of the black dragonflight)",
+   "DB spawns in area 2421: Flamescale Broodling 7049, Searscale Drake 7046, Hematos 8976 (rank 2), Giant Ember Worg 9697, Firetail Scorpid 9698, Franklin the Friendly 14529",
+   "npc_text 7043 and gossip option 5870 (Klinfran the Crazed)",
+   "warcraft.wiki.gg/wiki/Franklin_the_Friendly (felguard Klinfran in disguise, hunter quest Stave of the Ancients)"
+  ],
+  "notes": "Converted: Franklin's true identity (the demon Klinfran) moved from the opening to part 1 (KILL 14534). The opening keeps what a passer-by meets (npc_text 7043). Dialogue reread: npc_text 7043 is classic text. Earlier: verified Check: TALK 14529 dropped from part 1, since the gossip option naming Klinfran is added by the core script npc_franklin only while 7636 is in the log (hunters), so talking to him reveals nothing to anyone else and the trigger fired too early. 'One of the corrupters of the Burning Legion' dropped from the part: only quest 7636 (a hunter class quest given in Felwood) tells it, and the kill does not.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Franklin's smile is a mask. Hunters come to Draco'dar who know him by another name, Klinfran the Crazed, and dare him to face them in his true form. What answers the challenge is a demon, given to killing frenzies and with nothing friendly about it, and those who join the fight uninvited are made to regret it.",
+    "triggers": [
+     [
+      3,
+      14534
+     ]
+    ],
+    "sources": [
+     "gossip_menu_option 5870 option 0 (So you are Klinfran the Crazed? Do you dare face me in your true form?)",
+     "src/server/scripts/World/npc_stave_of_ancients.cpp npc_franklin (option added only while Stave of the Ancients 7636 is incomplete, a hunter quest; any attack reveals the true form, entry 14534; demonic enrage and the emote 'goes into a killing frenzy'; Fool's Plight on anyone fighting unfairly)",
+     "creature_template 14529 and 14534 type 3 (demon); 14534 faction 90 (hostile)",
+     "warcraft.wiki.gg/wiki/Franklin_the_Friendly"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 4613,
+  "kind": 2,
+  "zone": 46,
+  "sort": 1,
+  "faction": 1,
+  "title": "Marshal Maxwell",
+  "body": "Marshal Maxwell commands the soldiers of Morgan's Vigil, Stormwind's only outpost in the Burning Steppes. The Vigil has paid dearly for its post. Its commanding officer, Marshal Windsor, vanished when a Blackrock raiding party fell upon him, and a great store of intelligence on the clan went with him. Maxwell sees his war as one of two fronts: one is fought from Stormwind itself, while the Vigil carries the battle to the black dragonflight's doorstep. He has no doubt who stands behind the orcs, and none of the enemy, he vows, will be spared, as none of his own were spared when they struck at the homes and families of the Alliance.",
+  "triggers": [
+   [
+    2,
+    9560
+   ]
+  ],
+  "sources": [
+   "quest 5102 description and reward text (two fronts, none should be spared, strike at their dragon lords next)",
+   "quest 5002 description and reward text (Nefarian, coincides with much of what we already knew)",
+   "quest 5081 description (Voone, Omokk, Wyrmthalak)",
+   "quest 4981 (Bijou a Horde operative of the K.E.F.)",
+   "quest 4224 description (lost our commanding officer Marshal Windsor, and all our information with him; Blackrock raiding party)",
+   "creature_template 9560 faction 12 (Stormwind)",
+   "quest 5102 description (two fronts; none should be spared as none of our own were spared)",
+   "mod-individual-progression data/sql/world/base/quest_the_masquerade.sql (restores the Windsor chain: 4224, 4242 and 4322 ended by Marshal Maxwell 9560, 4241 and 6402 started by him; Ragged John's gossip menu 59563 shown only while 4224 is in the log)"
+  ],
+  "notes": "Converted: the Horde spy's map, Nefarian named as the orcs' master and the planned strikes on Voone, Omokk and Wyrmthalak moved to part 4 (QUEST_DONE 5002); Drakkisath as the next target to part 5 (QUEST_DONE 5089). The opening keeps Windsor's loss as the Vigil's premise ('vanished' instead of 'was lost', since he proves alive), the two fronts and the vow (5102 description) and Maxwell's certainty about the orcs' masters without naming Nefarian. New parts 1 to 3 tell the Windsor chain as Maxwell sees it, using only the steps whose turn-ins are Maxwell's: QUEST_DONE 4224 (Ragged John's tale), 4242 (Windsor found raving) and 4322 (Windsor freed, bound for Stormwind). These quests have no givers in the base 3.3.5 DB (4224 also disabled) and exist only under mod-individual-progression, which restores the chain, so without the module these parts stay hidden. 4241, 4264, 4282 (Blackrock Depths), 6402 and 6403 (Stormwind) are left to those files; Prestor's secret and Windsor's death stay with Stormwind's Dragons at Court (6403). Drakkisath's death (5102 done) and Bijou's own story are left to a Blackrock Spire file. Earlier: 'years of hard-won' intelligence was not in quest 4224 (it says enormous amounts); reworded. 'last outpost' to 'only outpost'. Windsor appears only as backstory from quest 4224 (in the DB, disabled as deprecated, chain 4182-6402 has no givers), nothing presents his rescue as something to do; his fate is left to Stormwind's 'Dragons at Court'. Faction 1: template 12. Check: 'Stormwind fights the black dragonflight from within' softened to 'one is fought from Stormwind itself', since 'from within' (5102: 'from the inside out') leans toward the court's secret, which is Stormwind's to reveal; the two fronts and the vow stay as Maxwell's outlook. Part 3's last clause reworded to match 6402 (an order given by Maxwell). Parts 1 to 3 confirmed: mod-individual-progression quest_the_masquerade.sql adds Maxwell as ender of 4224, 4242 and 4322 and starter of 4224, 4241 and 6402, removes the 4183-4224 disables, and gates none of them by progression state; all are Alliance only (AllowableRaces 1101).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Ragged John's tale changed everything. If the drunkard was to be believed, Windsor still lived, taken prisoner and dragged off into Blackrock Depths. Maxwell called John a good for nothing coward, and sent a deputy into the Dark Iron city all the same: if Windsor was alive, bring him back, and if he was dead, bring proof.",
+    "triggers": [
+     [
+      5,
+      4224
+     ]
+    ],
+    "sources": [
+     "quest 4224 reward text",
+     "quest 4241 description and log (that good for nothing coward says Windsor is alive; bring him back or proof; dragged off to a prison), offered by Maxwell once 4224 is done",
+     "mod-individual-progression data/sql/world/base/quest_the_masquerade.sql (restores the Windsor chain: 4224, 4242 and 4322 ended by Marshal Maxwell 9560, 4241 and 6402 started by him; Ragged John's gossip menu 59563 shown only while 4224 is in the log)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The marshal was found in a Dark Iron cell, but not as Maxwell remembered him. Windsor raged that Bolvar was a blind fool who could not see the proof in front of him, that his own information was lost for good, and that he would carry his hammer to Stormwind himself. Hearing it, Maxwell lowered his head in mourning for a proud and noble warrior turned into a raving wreck. It seemed a dead end.",
+    "triggers": [
+     [
+      5,
+      4242
+     ]
+    ],
+    "sources": [
+     "quest 4242 description (Windsor in Blackrock Depths) and reward text (gone mad, Maxwell lowers his head in mourning, a dead end)",
+     "mod-individual-progression data/sql/world/base/quest_the_masquerade.sql (restores the Windsor chain: 4224, 4242 and 4322 ended by Marshal Maxwell 9560, 4241 and 6402 started by him; Ragged John's gossip menu 59563 shown only while 4224 is in the log)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "It was not the end. With his lost information torn back from the Dark Irons and his gear recovered, Windsor broke out of the Depths and stormed through the Vigil, making grand claims he swore his evidence would prove. Then he was gone, bound for Stormwind to confront Highlord Bolvar and Lady Prestor, and Maxwell's orders to those who would follow were plain: gather an army and meet the marshal at the gates of the city.",
+    "triggers": [
+     [
+      5,
+      4322
+     ]
+    ],
+    "sources": [
+     "quest 4282 description (Windsor's information held by General Angerforge and Golem Lord Argelmach)",
+     "quest 4322 description and reward text (Windsor stormed through, grand claims supported by his evidence, on his way to confront Bolvar and Lady Prestor)",
+     "quest 6402 description (meet Windsor at the gates of Stormwind, amass an army), offered by Maxwell",
+     "mod-individual-progression data/sql/world/base/quest_the_masquerade.sql (restores the Windsor chain: 4224, 4242 and 4322 ended by Marshal Maxwell 9560, 4241 and 6402 started by him; Ragged John's gossip menu 59563 shown only while 4224 is in the log)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Word of the enemy's true master reached the Vigil by an unlikely road: a marked map from Bijou, a goblin spying for the Horde inside Blackrock Spire. The orcs, she reported, are beasts of burden and cannon fodder for the black dragonflight, and their true leader is Nefarian, brood of Deathwing. It matched much of what Maxwell already knew. With her markings he planned his strikes: the war master Voone, then the ogre Highlord Omokk, then the overlord Wyrmthalak.",
+    "triggers": [
+     [
+      5,
+      5002
+     ]
+    ],
+    "sources": [
+     "quest 5001 description (Bijou's mission is of utmost importance to the Horde)",
+     "quest 5002 description and reward text (beasts of burden and cannon fodder, Nefarian brood of Deathwing, coincides with much of what we already knew)",
+     "quest 5081 description (Voone, Omokk, Wyrmthalak), offered by Maxwell on the turn-in of 5002 (RewardNextQuest)"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "From the fallen overlord came a letter on protocol from his superior, General Drakkisath. The plot thickens, Maxwell said, and he named his next target: the general himself. The task would not be a simple one, he warned, but the rewards would be extravagant.",
+    "triggers": [
+     [
+      5,
+      5089
+     ]
+    ],
+    "sources": [
+     "quest 5089 description (letter from General Drakkisath concerning protocol, found on the corpse of the defeated serpent) and reward text (The plot thickens)",
+     "quest 5102 description (find General Drakkisath and destroy him; rewards extravagant), offered by Maxwell after 5089"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 4614,
+  "kind": 2,
+  "zone": 46,
+  "sort": 2,
+  "faction": 1,
+  "title": "Helendis Riverhorn",
+  "body": "Helendis Riverhorn is a night elf who serves the Alliance at Morgan's Vigil, far from the forests of his people, and still asks the blessing of Cenarius on those he sends into danger. He has studied the enemy closely. The worgs the Blackrock orcs command never seem to dwindle, however many are slain, and his scouts have traced them to Blackrock Spire, where they are bred, trained and sent out to the clan. Whatever lies at the root of it, the orcs know it by a single name: Halycon. Like his comrades at the Vigil, he suspects the orcs themselves are pawns of the black dragonflight, which feeds their rage.",
+  "triggers": [
+   [
+    2,
+    9562
+   ]
+  ],
+  "sources": [
+   "quest 4701 description and reward text (worgs bred, trained and exported from Blackrock Spire; Halycon; corrupt, a product of dark magic; May Cenarius protect you)",
+   "warcraft.wiki.gg/wiki/Helendis_Riverhorn (male night elf, Darnassus, Morgan's Vigil)",
+   "quest 4183 description (Helendis: the black dragonflight control the orcs of Blackrock and fuel their rage)",
+   "creature_template 9562 faction 80 (Darnassus)",
+   "quest 5002 reward text (Maxwell: Bijou's news that the orcs serve the black dragonflight coincides with what the Vigil already knew)"
+  ],
+  "notes": "Converted: what Halycon was (a corrupt she-worg of dark magic) and her death moved from the opening to part 1 (QUEST_DONE 4701, turned in to Helendis). The opening keeps the scouts' findings and the name Halycon, which is all he knows when he sends anyone (4701 description and log). Earlier: Last sentence now framed as the Vigil's shared suspicion, supported by the active quest 5002 reward text; the wording on rage comes from quest 4183 (in the DB, disabled). Faction 1: template 80.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The source of the worgs was a she-worg, Halycon, kept deep in the Spire. When she was dead, Helendis asked that no one dwell on her suffering. The beast had been corrupt, he said, a product of dark magic, and ending her was a great service to the Alliance.",
+    "triggers": [
+     [
+      5,
+      4701
+     ]
+    ],
+    "sources": [
+     "quest 4701 reward text (do not dwell upon her suffering; corrupt, a product of dark magic; a great service to the Alliance)",
+     "quest 4701 log (Halycon, the name the orcs use for the worg)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 4615,
+  "kind": 2,
+  "zone": 46,
+  "sort": 3,
+  "faction": 1,
+  "title": "Oralius",
+  "body": "Oralius is a dwarf soldier of Morgan's Vigil, and something in him has broken. He barks at every visitor as if at a raw recruit, cackles over his battle plans, and shouts, as a great confidence, that he is the only sane one left in the camp. His constant companion is Captain Winky, a friend no one else can see, with whom he argues, plots and on occasion trades a pirate's growl. He keeps a collection of severed ogre ears, and into one of them he calls out reports to some distant control. Mad or not, he wages his own war on the Firegut ogres and the Blackrock with deadly seriousness.",
+  "triggers": [
+   [
+    2,
+    9177
+   ],
+   [
+    4,
+    4283
+   ]
+  ],
+  "sources": [
+   "quest 4283 description and request text (only sane one, Captain Winky, ogre ear collection, talking into a severed ogre ear: Burning Steppes to control)",
+   "quests 3823, 3824 (Winky outbursts), 4286 (pirate impersonation)",
+   "warcraft.wiki.gg/wiki/Oralius (male dwarf, Morgan's Vigil, war shock, imaginary Captain Winky)",
+   "creature_template 9177 faction 55 (Ironforge)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: In quest 4283 he shouts the line and only lowers his voice afterwards; 'in a whisper' corrected. Faction 1: template 55 and quest 4283 AllowableRaces 1101."
+ },
+ {
+  "id": 4616,
+  "kind": 2,
+  "zone": 46,
+  "sort": 4,
+  "faction": 1,
+  "title": "Mayara Brightwing",
+  "body": "Mayara Brightwing is a priestess in the service of Count Remington Ridgewell of Stormwind's House of Nobles, who sent her to the Burning Steppes to scout the ruins of Thaurissan for treasures worthy of his family museum. Her search has led beyond the ruins, into Blackrock Spire. High in the citadel lies a chamber once called the Hall of Fortune, where the Dark Irons kept their relics, trophies and works of art, before it collapsed and fell to darker uses. Among its lost treasures is Doomrigger's Clasp, so encrusted with gems that it was said to make any dwarf who gazed upon it weep, and Mayara means to have it.",
+  "triggers": [
+   [
+    2,
+    9565
+   ]
+  ],
+  "sources": [
+   "quest 4766 description (Ridgewell's agent sent to scout Thaurissan for the family museum)",
+   "quest 4764 description (Hall of Fortune, Doomrigger's Clasp)",
+   "quest 4765, creature_template 2285 Count Remington Ridgewell <House of Nobles>",
+   "warcraft.wiki.gg/wiki/Mayara_Brightwing (female human priest)",
+   "creature_template 9565 faction 12"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: verified. Faction 1: template 12 and her quests are Alliance only."
+ },
+ {
+  "id": 4617,
+  "kind": 2,
+  "zone": 46,
+  "sort": 5,
+  "faction": 0,
+  "title": "Ragged John",
+  "body": "Ragged John is a dwarf of Flame Crest who is rarely, if ever, entirely sober. The soldiers of Morgan's Vigil remember that he was with their commander, Marshal Windsor, when a Blackrock raiding party fell upon them, and that he came back when Windsor did not. These days he makes his own jaunts into Blackrock Spire, where he has overheard the orcs speak of a poison they call Mother's Milk, after the great spider Mother Smolderweb. Ragged John wants a sample, still flowing in the veins of someone brave or foolish enough to be bitten. He swears it is not for poisoning anyone: it will make the best ale yet.",
+  "triggers": [
+   [
+    2,
+    9563
+   ]
+  ],
+  "sources": [
+   "npc_text 2713 (What you be wanting? *hic*)",
+   "quest 4866 description and reward text",
+   "quest 4224 description (Ragged John was with Windsor when they were attacked by a Blackrock raiding party), quest 4241 (John says Windsor is alive)",
+   "warcraft.wiki.gg/wiki/Ragged_John (dwarf, at Flame Crest before Cataclysm)",
+   "creature_template 9563 faction 35",
+   "mod-individual-progression data/sql/world/base/quest_the_masquerade.sql (restores the Windsor chain: 4224, 4242 and 4322 ended by Marshal Maxwell 9560, 4241 and 6402 started by him; Ragged John's gossip menu 59563 shown only while 4224 is in the log)"
+  ],
+  "notes": "Converted: new part 1 (QUEST_DONE 4224) tells Ragged John's account of Windsor's capture, from his gossip (npc_text 2714-2725, classic text), which mod-individual-progression shows only while 4224 is in the log and which completes it; without the module the part stays hidden. The opening needed no change: it says only that John came back when Windsor did not. Mother's Milk outcome not told. Earlier: verified. Windsor tie from quests 4224 and 4241, still in the DB but no longer offered in 3.3.5. Mother's Milk (4866) is a Blackrock Spire quest, so only TALK is used. Faction 0: template 35.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Pressed on official business, John at last tells of Windsor's last stand. Deep in Blackrock Mountain the orcs rushed them. John slipped into the shadows while Windsor held his ground for hours, swinging Ironfoe, a hammer Franclorn Forgewright made for the marshal's forebear. He came through it alive, drenched in orc blood, only for some three hundred Dark Irons to take him prisoner. Their leader kept Ironfoe, and Windsor, John figures, is somewhere in Blackrock Depths.",
+    "triggers": [
+     [
+      5,
+      4224
+     ]
+    ],
+    "sources": [
+     "npc_text 2714-2723, 2725 (Ragged John's tale: Ironfoe, fifty orcs, slipped into the shadows, three hundred Dark Irons, prisoner, their leader took Ironfoe, somewhere in Blackrock Depths)",
+     "mod-individual-progression data/sql/world/base/quest_the_masquerade.sql (restores the Windsor chain: 4224, 4242 and 4322 ended by Marshal Maxwell 9560, 4241 and 6402 started by him; Ragged John's gossip menu 59563 shown only while 4224 is in the log)",
+     "smart_scripts 9563 (quest credit at the end of the tale)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 4618,
+  "kind": 2,
+  "zone": 46,
+  "sort": 6,
+  "faction": 0,
+  "title": "Cyrus Therepentous",
+  "body": "Cyrus Therepentous is a black dragonspawn who keeps to his lair at Slither Rock and holds every mortal in contempt. Only a fool, he says, would disturb him there, and those who do are left to wonder whether he will devour them whole or let them live. Yet he finds uses for lesser beings. Those who seek out his flight he sends to challenge his minion, and any who survive and return with proof of their victory have shown, in his eyes, that they are not entirely useless.",
+  "triggers": [
+   [
+    2,
+    9459
+   ],
+   [
+    4,
+    4022
+   ],
+   [
+    4,
+    4023
+   ]
+  ],
+  "sources": [
+   "npc_text 2493, 2494 (lair, devour you whole, challenge my minion)",
+   "quests 4022, 4023, 4024 (descriptions, logs and reward texts; Altered Black Dragonflight Molt)",
+   "warcraft.wiki.gg/wiki/Cyrus_Therepentous (black dragonspawn, Slither Rock)",
+   "searing_gorge.json 5122 (molt given by Kalaran)"
+  ],
+  "notes": "Converted: his knowledge of the Searing Gorge and the molt from his kin moved to part 1 (QUEST_ACCEPT 4022, an entry trigger, reachable only after Kalaran's unmasking in the Searing Gorge, quest 3481); the opening no longer says the molt comes from a black dragon, which is Searing Gorge's reveal (3463). Bael'Gar and the altered molt moved to part 2 (QUEST_DONE 4022 or 4023, which offer 4024). Bael'Gar's fate (4024 done) is not told. Dialogue reread: npc_text 2493, 2494 are classic text. Earlier: verified. Faction 0: template 35, quests 4022/4023 AllowableRaces 0. The molt's origin is told in Searing Gorge's 'Divine Retribution' and only referred to here.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Some visitors Cyrus knows before they speak. The flight is aware of their work in the Searing Gorge, he tells them, and he demands to see the molt they were given there by one of his kin.",
+    "triggers": [
+     [
+      4,
+      4022
+     ]
+    ],
+    "sources": [
+     "quest 4022 description (the flight is aware of your work in the Searing Gorge; show me the molt) and log (molt received from Kalaran Windblade)",
+     "quest 4022 PrevQuestID 3481 (Searing Gorge)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Once satisfied, Cyrus names what he craves: the molten fire of Blackrock Mountain. In the depths below dwells Bael'Gar, a being of pure flame born of the fires of Ragnaros, and Cyrus hungers for his inner flame. He has altered a molt of his flight so that it can safely draw that fire from the giant's smoldering remains.",
+    "triggers": [
+     [
+      5,
+      4022
+     ],
+     [
+      5,
+      4023
+     ]
+    ],
+    "sources": [
+     "quests 4022, 4023 reward texts",
+     "quest 4024 description and log (Bael'Gar, born of the fires of Ragnaros; altered molt), offered on the turn-in of 4022 or 4023 (RewardNextQuest)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 4619,
+  "kind": 2,
+  "zone": 46,
+  "sort": 7,
+  "faction": 0,
+  "title": "Tinkee Steamboil",
+  "body": "Tinkee Steamboil is a goblin scholar who has spent weeks at Flame Crest studying the dragonkin of the Burning Steppes. The land is dangerous, she admits, but scholars like her will do almost anything to advance their knowledge. Her inventions carry names as bold as her ambitions: the Draco Incarcinatrix 900, which draws the essence from a slain broodling, and the eggscilloscope, built to freeze a dragon's egg solid. She dreams of being the envy of dragon scholars around the world. Tinkee does not work for herself alone. Her research answers to a patron she calls her master, one she warns is not the sort anyone should wish to disappoint.",
+  "triggers": [
+   [
+    2,
+    10267
+   ]
+  ],
+  "sources": [
+   "npc_text 3296 (dangerous place, scholars like me)",
+   "quest 4726 description, reward and request texts (weeks of study, Draco Incarcinatrix 900, envy of dragon scholars, patron not to be disappointed)",
+   "quest 4734 (eggscilloscope), quest 5522 (my master, Vectus)",
+   "warcraft.wiki.gg/wiki/Tinkee_Steamboil (female goblin, Flame Crest)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: verified. Faction 0: template 120. Who her master really is belongs to the story entry."
+ },
+ {
+  "id": 4620,
+  "kind": 2,
+  "zone": 46,
+  "sort": 8,
+  "faction": 0,
+  "title": "Kibler",
+  "body": "Kibler is a goblin animal lover by inclination and a salesman by trade. From his cave at Flame Crest, crowded with cages, he tracks down exotic beasts for the rich and famous and tames them into proper pets, from worg pups taken out of Blackrock Spire to the spiders that hatch from its eggs. He pays others to take the risks. One of them, the goblin Bijou, went into the Spire after its spider eggs weeks ago and has not been heard from since. His parrot Opus squawks his secrets to anyone who listens: that Bijou is lost, that dragons control the orcs, and that Kibler is under investigation by something called G.E.T.A.",
+  "triggers": [
+   [
+    2,
+    10260
+   ]
+  ],
+  "sources": [
+   "quest 4729 description (animal lover, salesman, exotic animals for the rich and famous, cages)",
+   "quest 4862 description (spire spider eggs, Bijou sent into the Spire)",
+   "quest 4981 description (Bijou working for Kibler, using Horde funds)",
+   "creature_text 10262 (Opus)",
+   "warcraft.wiki.gg/wiki/Kibler (goblin, Flame Crest)",
+   "warcraft.wiki.gg/wiki/Flame_Crest (Kibler lives in the cave with Opus)"
+  ],
+  "notes": "Converted: Bijou's allegiance moved from the opening to part 1 (QUEST_DONE 5002, turned in to Maxwell at Morgan's Vigil). The opening keeps Kibler's own account (4862: sent into the Spire, no word for weeks) and Opus's squawks. The Horde funds detail (quest 4981, Horde) is dropped: no Horde quest in this zone reveals it (4981 and 4983 start and end with Lexlort in Kargath), so the part carries only what the Alliance route (5001, 5002) tells. Earlier: verified. Faction 0: template 120. Kibler's spawn is just outside the 251 boundary, consistent with the cave. Check: part 2 added for the Horde (QUEST_ACCEPT 4981, given by Lexlort at Kargath; badlands.json neither uses nor tells 4981 or 4983), which brings back the original's Horde funds detail where it is really told. Bijou's own story (DONE 4981, 4982, 4983, 5001) is left to a Blackrock Spire file. Opus's squawk that Bijou is lost stays: it is the parrot's line and she is still missing to Kibler.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Bijou was more than Kibler's hireling. Found deep in Blackrock Spire, she proved to be an agent of the Horde on a mission of the utmost importance to her masters, spying on the Blackrock orcs. What she had learned, she judged, mattered to the Alliance as well, and she traded it for help recovering her lost belongings.",
+    "triggers": [
+     [
+      5,
+      5002
+     ]
+    ],
+    "sources": [
+     "quest 4862 description (Bijou sent into the Spire for spire spider eggs, not heard from in weeks)",
+     "quest 5001 description (mission of utmost importance to the Horde; information useful to the Alliance in exchange for her belongings)",
+     "quest 5002 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Bijou was more than Kibler's hireling. At Kargath, Grandmaster Lexlort counts her among the slipperiest operatives of the Kargath Expeditionary Force, and he is not pleased: she has been two-timing the Horde, working on the side for the pet dealer and paying for her errands with Horde funds. She was last seen entering Blackrock Spire, and Lexlort wants her brought back alive.",
+    "triggers": [
+     [
+      4,
+      4981
+     ]
+    ],
+    "sources": [
+     "quest 4981 description (one of our slipperiest operatives, working for Kibler, two timing us, using Horde funds, last seen entering Blackrock Spire, bring her back alive), given by Lexlort 9080 (Kargath Expeditionary Force) at Kargath, no prerequisite",
+     "quest 4082 description (Grandmaster Lexlort)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 4621,
+  "kind": 3,
+  "zone": 46,
+  "sort": 1,
+  "faction": 1,
+  "title": "The Firegut Offensive",
+  "body": "Oralius of Morgan's Vigil has a plan of attack, and he means to carry it out in phases. The Firegut ogres of Dreadmaul Rock are allies of the Blackrock orcs, guarding the rock's rich minerals and keeping the clan's supply lines open at all times, so the first blow must cripple their numbers: ogre-mages, ogres and brutes alike. He gives his orders like a drill sergeant, then breaks off to throttle the empty air and threaten his invisible friend Winky. Blood on the uniform, he insists, is the true measure of a soldier's work.",
+  "triggers": [
+   [
+    4,
+    3823
+   ]
+  ],
+  "sources": [
+   "quests 3823, 3824, 3825 (descriptions, logs and reward texts)",
+   "gameobject 160840 Soft Dirt Mound at Dreadmaul Rock (area 249)",
+   "DB: Gor'tesh 9176 at -8110,-1418 (generic area 46, west of Dreadmaul Rock)"
+  ],
+  "notes": "Converted: the opening is the setup of 3823 (the Firegut alliance, the first blow, Winky, the completion text's blood on the uniform). Gor'tesh's lair and the order for his head moved to part 1 (QUEST_DONE 3823, offering 3824); the head on a pike to part 2 (QUEST_DONE 3824, offering 3825); the medal slip to part 3 (QUEST_DONE 3825). 'Comes in three phases' softened to 'in phases', since the third phase is first named in 3824. Earlier: verified. Alliance only (AllowableRaces 1101). Gor'tesh is not given a KILL trigger to keep one entry point.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "With the ogres reeling, for minutes, maybe even hours, Oralius calls for the decisive strike. Gor'tesh, the brute lord, rules the ogres not from Dreadmaul Rock but from a Blackrock structure to its west, and Oralius wants his fat head brought back to prepare the third phase of the attack.",
+    "triggers": [
+     [
+      5,
+      3823
+     ]
+    ],
+    "sources": [
+     "quest 3823 reward text",
+     "quest 3824 description, offered on the turn-in of 3823 (RewardNextQuest)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The third phase is pure theater. Oralius mounts the head on a pike and sends it to be planted on the summit of Dreadmaul Rock, certain that the sight of that disgusting mug will send the cowardly ogres running for their lives in mass hysteria. He cackles wildly at the thought, and seems to be losing his grip on reality.",
+    "triggers": [
+     [
+      5,
+      3824
+     ]
+    ],
+    "sources": [
+     "quest 3824 reward text",
+     "quest 3825 description, offered on the turn-in of 3824 (RewardNextQuest)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "With the pike planted on the summit, Oralius is beside himself, and wants to know whether anyone painted pictures of the event. He will surely get the medal of bravery for this, he exclaims, then corrects himself: the soldier, of course, will be the one rewarded handsomely.",
+    "triggers": [
+     [
+      5,
+      3825
+     ]
+    ],
+    "sources": [
+     "quest 3825 completion and reward texts"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 4622,
+  "kind": 3,
+  "zone": 46,
+  "sort": 2,
+  "faction": 2,
+  "title": "The Fate of Sha'ni Proudtusk",
+  "body": "Sha'ni Proudtusk of the Kargath Expeditionary Force went into the Burning Steppes with her platoon to look into reports of strange ritual activity among the Firegut ogres. More than three weeks later there is still no word. Warlord Goretooth has told her husband, Thal'trak, that no one in the platoon has been heard from and that he should move on and attend to the task at hand. Thal'trak cannot leave his post at Kargath, and he cannot let her go either. She is his wife, and he begs for someone to search for her.",
+  "triggers": [
+   [
+    4,
+    3821
+   ],
+   [
+    4,
+    3822
+   ]
+  ],
+  "sources": [
+   "quests 3821, 3822 (descriptions, logs and reward texts)",
+   "creature_queststarter: Thal'trak Proudtusk 9082 (Kargath Expeditionary Force) starts 3821; Sha'ni Proudtusk 9136 ends 3821 and starts 3822",
+   "gameobject 160445 Sha'ni Proudtusk's Remains and Krom'Grul 8977 in area 249"
+  ],
+  "notes": "Converted: the opening is Thal'trak's plea (3821 description). The discovery of her remains, her spirit's account of Krom'Grul and the Hinterlands plans moved to part 1 (QUEST_DONE 3821, ACCEPT 3822); the ring's return and Thal'trak's grief to part 2 (QUEST_DONE 3822, turned in at Kargath; 3822 is filed under this zone and used by no other file). Earlier: verified. Horde only (AllowableRaces 690). 3821 is filed under Badlands but the Badlands file does not use it; Goretooth's line overlaps lightly with Badlands 322 only as a mention.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Her remains were found at Dreadmaul Rock, and her spirit told the rest. The whole platoon had been captured and slain, all but Sha'ni, whom the ogre Krom'Grul kept for some ritual. Chained to an altar, she was tortured until her body gave out, and the beast tore her wedding nose-ring from her face and wore it on his finger. Her grief was for Thal'trak: once their tours were over, they were to make a home with her parents in the Hinterlands.",
+    "triggers": [
+     [
+      5,
+      3821
+     ],
+     [
+      4,
+      3822
+     ]
+    ],
+    "sources": [
+     "quest 3821 reward text (plans to move in with her parents in the Hinterlands)",
+     "quest 3822 description (platoon captured and slain, ritual, altar, torture, nose-ring on his finger), offered by Sha'ni on the turn-in of 3821 (RewardNextQuest)",
+     "gameobject 160445 Sha'ni Proudtusk's Remains, Krom'Grul 8977 in area 249"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "When the ring came back to Kargath with her promise that they would meet again in another life, Thal'trak collapsed. This was to have been her last mission, he sobbed, and he would not take the ring. Without her, it meant nothing to him.",
+    "triggers": [
+     [
+      5,
+      3822
+     ]
+    ],
+    "sources": [
+     "quest 3822 description (tell him we will meet again in another life) and reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 4623,
+  "kind": 3,
+  "zone": 46,
+  "sort": 3,
+  "faction": 2,
+  "title": "The Traitor of Kargath",
+  "body": "Grandmaster Lexlort, head of the Kargath Expeditionary Force's reconnaissance, tracked one of the Horde's own across the Searing Gorge, through Blackrock Mountain and into the Burning Steppes. The traitor, Grark Lorkrub, was caught red-handed passing word of the force's daily operations to the Blackrock orcs, and now sits in their great fortress believing himself safe under their protection. Lexlort's answer is a set of thorium shackles. Grark is to be bound and led back through the mountain to the Searing Gorge, where Lexlort's men will be waiting to take him into custody.",
+  "triggers": [
+   [
+    4,
+    4122
+   ]
+  ],
+  "sources": [
+   "quest 4122 description, log and reward text",
+   "quest 4121 description, log and reward text (escort through the Steppes and Blackrock Mountain, the Warlord will speak of the final mission)",
+   "quest 4082 description (Grandmaster Lexlort, head of the K.E.F. reconnaissance division)",
+   "creature_text 9520 (Grark: submits, they will come for me, legion of Blackrock)",
+   "smart_scripts 9520 (attacks on accept, submits at low health, summons creature groups at waypoints)"
+  ],
+  "notes": "Converted: the opening is Lexlort's charge (4122 description and log). Grark's capture, his taunts and the ambushes moved to part 1 (QUEST_DONE 4122, turned in to Grark, and QUEST_ACCEPT 4121, which starts the fight and escort); the handover and the final mission to part 2 (QUEST_DONE 4121, turned in to Lexlort; filed under Blackrock Depths, used by no other file). Horde only as before. Earlier: verified. Horde only: 4122 requires 4082 (AllowableRaces 690) and 4121 is 690. 4121 is the continuation, so only 4122 is listed as an entry point.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Grark fights before he submits, and once bound he scorns his captor all the way, boasting of the power that comes from joining the legion of Blackrock and warning that his brethren will come for him, that the Blackrock armies prepare to destroy the world and the worst is yet to come. They do come, again and again along the road through the mountain.",
+    "triggers": [
+     [
+      5,
+      4122
+     ],
+     [
+      4,
+      4121
+     ]
+    ],
+    "sources": [
+     "quest 4122 reward text (the power we gain by joining the legion of Blackrock)",
+     "quest 4121 description",
+     "creature_text 9520 (submits; they will come for me; the Blackrock armies make preparations to destroy your world; the worst is yet to come)",
+     "smart_scripts 9520 (attacks on accepting 4121, submits at low health, summons creature groups at waypoints)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "At the Searing Gorge, Lexlort's men take the traitor in hand, and the grandmaster promises that the deed will not go unrecognized. A tribute is paid, and the Warlord, Lexlort says, will now speak of the final mission.",
+    "triggers": [
+     [
+      5,
+      4121
+     ]
+    ],
+    "sources": [
+     "quest 4121 completion and reward texts"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 4624,
+  "kind": 3,
+  "zone": 46,
+  "sort": 4,
+  "faction": 0,
+  "title": "Eggs of the Black Flight",
+  "body": "Tinkee Steamboil has spent weeks at Flame Crest studying the dragonkin of the Burning Steppes, and she believes she has made a breakthrough. Her Draco Incarcinatrix 900 is meant to capture the essence of black broodlings: zap one with the device, slay it while the effect holds, and its essence should be released for study. If that works, she dreams, one day she might capture living whelps or even their eggs, and be the envy of dragon scholars around the world. Her patron, she warns, is not the sort anyone should wish to disappoint.",
+  "triggers": [
+   [
+    4,
+    4726
+   ]
+  ],
+  "sources": [
+   "quests 4726, 4808, 4809, 4810, 4734, 4735, 5522 (descriptions and reward texts)",
+   "quest 4771 description (Vectus, undead mage leading Scourge scholars in Scholomance)",
+   "warcraft.wiki.gg/wiki/Tinkee_Steamboil (Vectus her master)"
+  ],
+  "notes": "Converted: the opening is the setup of 4726 (its description and reward text, the patron warning from its completion text). Felnok's parts moved to part 1 (QUEST_DONE 4726, offering 4808); the eggscilloscope and the harvest to part 2 (QUEST_DONE 4735, turned in to Tinkee); Leonid's letter to part 3 (QUEST_ACCEPT 5522, filed under this zone); the trick to part 4 (QUEST_DONE 5522). 'Vectus an undead mage in Scholomance' is trimmed to 'serves the Scourge', since his Scholomance post is told only in 4771, offered by Betina Bigglezink in the Eastern Plaguelands. The Dawn's Gambit sequel stays with Scholomance. Earlier: verified. Faction 0: every quest in the chain has AllowableRaces 0. The Dawn's Gambit sequel in Scholomance is left to that dungeon.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The essence told her that dragon eggs might be frozen and preserved. For that she needed special components from her colleague Felnok Steelspring in distant Everlook, and Felnok in turn needed pristine horns from the chillwind chimaerae of Winterspring, packed with cold, before he could send the package on.",
+    "triggers": [
+     [
+      5,
+      4726
+     ]
+    ],
+    "sources": [
+     "quest 4808 description, offered on the turn-in of 4726 (RewardNextQuest)",
+     "quests 4809, 4810 descriptions"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "With Felnok's parts she built the eggscilloscope, made to freeze a black dragon's egg solid, and it was proven in the dragons' rookery high in Blackrock Spire. A collectronic module carried the frozen eggs away. Tinkee was delighted, and so, she said, would her patron be, for he had heard of the work and was very eager to get his hands on them.",
+    "triggers": [
+     [
+      5,
+      4735
+     ]
+    ],
+    "sources": [
+     "quest 4734 description and reward text",
+     "quest 4735 description, completion and reward texts (my patron is very eager to get his hands on them)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Then a message came for Tinkee, meant to be from her master, Vectus, though it was signed by one Leonid Barthalomew. No one knows her master unless he allows it, so she did as she was told and sent the eggs to Leonid at Light's Hope Chapel in the Eastern Plaguelands, hurt only that Vectus had not trusted her to bring them herself.",
+    "triggers": [
+     [
+      4,
+      5522
+     ]
+    ],
+    "sources": [
+     "quest 5522 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "It was a trick. Leonid, called the Revered by his brethren of the Argent Dawn, is no servant of Tinkee's master. The eggs were meant for the Scourge, whose experiments sought to create a plagued dragonflight, and had they reached their destination a great power would have fallen into the hands of the enemy. Vectus, it follows, serves the Scourge.",
+    "triggers": [
+     [
+      5,
+      5522
+     ]
+    ],
+    "sources": [
+     "quest 5522 reward text (I am no servant of that master; known as the Revered to my brethren in the Argent Dawn; a great power would have fallen into the hands of the enemy)",
+     "quest 5531 description (Scourge experiments to create a plagued dragonflight), offered by Leonid on the turn-in of 5522 (RewardNextQuest)"
+    ]
+   }
+  ]
+ }
 ]

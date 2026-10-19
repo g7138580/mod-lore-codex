@@ -6,7 +6,7 @@
   "sort": 0,
   "faction": 0,
   "title": "Desolace",
-  "body": "Desolace is a grey and broken land southwest of the Stonetalon Mountains, a waste of bare rock, bleached bones and brackish yellow pools beneath a stormy sky. Only the western shore, where the Veiled Sea breaks on the Sar'theris Strand, keeps any green. This is the ancestral home of the centaur. The Cenarion Circle says the race was born long ago of Zaetar, first son of Cenarius, and the earth elemental Theradras, and that the children repaid their father by killing him. Their clans, the Kolkar, Gelkis, Magram and Maraudine, now fight one another across the plains, and outsiders dread the day they might unite. They are not the only danger. The night elves who once lived here are long gone, the Burning Blade holds Thunder Axe Fortress, demons gather at Mannoroc Coven, Hatefury satyrs haunt Sargeron and naga prowl the coast. The Alliance keeps watch from Nijel's Point in the northern mountains, while the Horde holds Ghost Walker Post above the Kodo Graveyard and the troll fishing village of Shadowprey.",
+  "body": "Desolace is a grey and broken land southwest of the Stonetalon Mountains, a waste of bare rock, bleached bones and brackish yellow pools beneath a stormy sky. Only the western shore, where the Veiled Sea breaks on the Sar'theris Strand, keeps any green. This is the ancestral home of the centaur, whose holy ground of Maraudon lies hidden deep in the Valley of Spears. Their clans, the Kolkar, Gelkis, Magram and Maraudine, now fight one another across the plains, and outsiders dread the day they might unite. They are not the only danger. The night elves who once lived here are long gone, the Burning Blade holds Thunder Axe Fortress, demons gather at Mannoroc Coven, Hatefury satyrs haunt Sargeron and naga prowl the coast. The Alliance keeps watch from Nijel's Point in the northern mountains, while the Horde holds Ghost Walker Post above the Kodo Graveyard and the troll fishing village of Shadowprey.",
   "triggers": [
    [
     1,
@@ -20,9 +20,10 @@
    "quest 1382 description",
    "quest 1466 completion text (centaur owned the land after the night elves left)",
    "quest 1453 description (Nijel's Point in the northern mountains)",
-   "quest 1432 description (Ghost Walker Post north of the Kodo Graveyard)"
+   "quest 1432 description (Ghost Walker Post north of the Kodo Graveyard)",
+   "npc_text 6334, 6335 (Marandis and Selendra keep the details of their mission from the unproven)"
   ],
-  "notes": "Fact-check: 'west of' Stonetalon corrected to southwest. Rest verified against quest text and wiki; no Cataclysm content."
+  "notes": "Check: the Zaetar and Theradras origin removed from the opening: in Desolace only the 7064 and 7065 descriptions tell it (Marandis and Selendra withhold it in gossip; npc_text 7216 is in no gossip menu); it now sits in 40535 part 1 on ACCEPT 7064/7065. Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. The Zaetar and Theradras origin stays: it is ancient history the Cenarion Circle tells openly (7064, 7065 descriptions), not an outcome. Earlier: Fact-check: 'west of' Stonetalon corrected to southwest. Rest verified against quest text and wiki; no Cataclysm content."
  },
  {
   "id": 40501,
@@ -50,7 +51,7 @@
    "zone_areas area 608: Nijel's Point Guard (template 11, Stormwind), Innkeeper Lyshaerya and Baritanas Skyriver (template 80, Darnassus), Marandis' Sister",
    "warcraft.wiki.gg/wiki/Kreldig_Ungor (quests present in Classic, removed 4.0.3a)"
   ],
-  "notes": "Fact-check: verified. Kreldig Ungor (5638) is spawned here in 3.3.5 and gives 1454-1467; wiki confirms those quests were removed only in 4.0.3a."
+  "notes": "Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. Earlier: Fact-check: verified. Kreldig Ungor (5638) is spawned here in 3.3.5 and gives 1454-1467; wiki confirms those quests were removed only in 4.0.3a."
  },
  {
   "id": 40502,
@@ -59,7 +60,7 @@
   "sort": 2,
   "faction": 0,
   "title": "Sargeron",
-  "body": "In the northeastern corner of Desolace stand the ruins of a night elf city that has lain broken since the War of the Ancients, its true name forgotten. The Hatefury satyrs who infest it call it Sargeron, after their dark master Sargeras. Rogues, tricksters, betrayers, felsworn, hellcallers and shadowstalkers prowl the fallen streets as allies of the Burning Blade. Maurin Bonesplitter of Ghost Walker Post wants a shadowstalker's scalp to break a demon lord's wards against scrying. Kreldig Ungor of Nijel's Point doubts the tale that the satyr are tied to the night elves, blaming it on the one elf who brought them into the war a few years back.",
+  "body": "In the northeastern corner of Desolace stand the ruins of a night elf city that has lain broken since the War of the Ancients, its true name forgotten. The Hatefury satyrs who infest it call it Sargeron, after their dark master Sargeras. Rogues, tricksters, betrayers, felsworn, hellcallers and shadowstalkers prowl the fallen streets as allies of the Burning Blade. Maurin Bonesplitter of Ghost Walker Post has a use for a shadowstalker's scalp in his spellwork. Kreldig Ungor of Nijel's Point doubts the tale that the satyr are tied to the night elves, blaming it on the one elf who brought them into the war a few years back.",
   "triggers": [
    [
     1,
@@ -73,7 +74,7 @@
    "zone_areas area 603: Hatefury Rogue, Trickster, Felsworn, Betrayer, Hellcaller, Shadowstalker",
    "quest 1481 description (Hatefury shadowstalker scalp to break wards against scrying)"
   ],
-  "notes": "Fact-check: removed the tauren companion line (quest 1434 belongs to Orgrimmar's Alliance Relations chain); replaced with Maurin's shadowstalker scalp from 1481."
+  "notes": "Converted: Maurin's reason for the scalp (breaking a demon lord's wards against scrying) made general, since the demon lord is revealed only at the turn-in of 1480; it is told in 40531 part 1. No parts. Earlier: Fact-check: removed the tauren companion line (quest 1434 belongs to Orgrimmar's Alliance Relations chain); replaced with Maurin's shadowstalker scalp from 1481."
  },
  {
   "id": 40503,
@@ -82,7 +83,7 @@
   "sort": 3,
   "faction": 0,
   "title": "Thunder Axe Fortress",
-  "body": "Thunder Axe Fortress rises in northern Desolace, just south of the ruins of Tethris Aran, and belongs to the Burning Blade, orcs who have given their loyalty to demons. From its stronghold, barracks and watchtowers the cult's augurs, adepts, reavers, felsworn and shadowmages practice their dark craft. Within lies a red crystal sealing the Demon Box, which holds the Hand of Iruxos the cult uses to open portals at Mannoroc Coven, and atop one watchtower a Burning Blade seer studies the Sceptre of Light, taken from the naga. When the Darnassian nobles Dalinda and Tyranis Malem were seized on the road, the cultists dragged them here, and Dalinda feared she would be sacrificed to their demon masters.",
+  "body": "Thunder Axe Fortress rises in northern Desolace, just south of the ruins of Tethris Aran, and belongs to the Burning Blade, orcs who have given their loyalty to demons. From its stronghold, barracks and watchtowers the cult's augurs, adepts, reavers, felsworn and shadowmages practice their dark craft. Within lies a red crystal sealing the Demon Box, which holds the Hand of Iruxos the cult uses to open portals at Mannoroc Coven, and atop one watchtower a Burning Blade seer studies the Sceptre of Light, taken from the naga. Not everyone within the walls belongs to the cult. Among the fires of the stronghold stands a night elf woman whom the orcs around her leave be.",
   "triggers": [
    [
     1,
@@ -97,9 +98,26 @@
    "quest 5741 description (seer studies the sceptre atop a Thunder Axe watchtower; acquired from the naga)",
    "quest 1438 reward text (captured and brought here; sacrifice to demon masters)",
    "zone_areas area 599: Burning Blade Augur, Felsworn, Adept, Reaver, Shadowmage, Seer 13019, Tyranis 5643, Dalinda 5644, Hand of Iruxos Crystal 176581",
-   "posarea.py: Tethris Aran (2404) lies directly north of the fortress (599)"
+   "posarea.py: Tethris Aran (2404) lies directly north of the fortress (599)",
+   "DB: Dalinda 5644 template 10 (friendly to the Alliance, not hostile to the Horde), no cage or chains near her spawn; display 3791 night elf female"
   ],
-  "notes": "Fact-check: verified. Tethris Aran position confirmed from map data. Burning Blade in Durotar and the Cleft of Shadow not retold."
+  "notes": "Check: the opening's 'the cult keeps prisoners' rested on 1438 (no cage; she stands free and non-hostile among the fires), so it now says only what any visitor sees; part 1 reworded so it no longer repeats 40530 part 2. Converted: the Malem siblings' capture and Dalinda's fear moved to part 1 (QUEST_DONE 1438, turned in to Dalinda in the fortress); the opening keeps only that the cult holds prisoners (Dalinda 5644 stands here, friendly). Tyranis's fate stays in 40524 and 40530. Earlier: Fact-check: verified. Tethris Aran position confirmed from map data. Burning Blade in Durotar and the Cleft of Shadow not retold.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "She is Dalinda Malem, of a Darnassian merchant house, and no guest of the cult but its captive. The Burning Blade seized her and her brother Tyranis and carried them here, and she believes she is meant as a sacrifice to the cult's demon masters.",
+    "triggers": [
+     [
+      5,
+      1438
+     ]
+    ],
+    "sources": [
+     "quest 1438 reward text (captured and brought here by the Burning Blade; sacrifice to their demon masters)",
+     "quest 1437 description (House Malem, Darnassian merchant family)"
+    ]
+   }
+  ]
  },
  {
   "id": 40504,
@@ -108,7 +126,7 @@
   "sort": 4,
   "faction": 0,
   "title": "Ethel Rethor",
-  "body": "On the northwestern coast the ruins of Ethel Rethor lie mostly beneath the waves, a drowned night elf city whose only standing remnant is a lone tower reached by a small bridge. From it the Argent Dawn mage Azore Aldamort watches both the Slitherblade naga who haunt the shallows and the Burning Blade to the east. Nearby lies the chest of the Stormwind mage Karnitol, who abandoned it when sea giants fell upon his ship offshore and teleported himself and his servants to safety. It was found curiously free of water damage, forced open and empty, its magical wards spent and its sides raked by long, deep gouges that no sword or dagger had made.",
+  "body": "On the northwestern coast the ruins of Ethel Rethor lie mostly beneath the waves, a drowned night elf city whose only standing remnant is a lone tower reached by a small bridge. From it the Argent Dawn mage Azore Aldamort watches both the Slitherblade naga who haunt the shallows and the Burning Blade to the east. Nearby lies the chest of the Stormwind mage Karnitol, who abandoned it when sea giants fell upon his ship offshore and saved himself and his servants by magic, leaving it behind for whoever might come looking.",
   "triggers": [
    [
     1,
@@ -121,7 +139,24 @@
    "quest 1454 description and reward text, 1455 description (Karnitol's chest, sea giants, teleport, no water damage, traps triggered, scratches)",
    "zone_areas area 2405: Azore Aldamort 11863, Karnitol's Chest 35251, Slitherblade naga"
   ],
-  "notes": "Fact-check: verified. Ice Stones are Midsummer objects and ignored."
+  "notes": "Check: part 1 trigger now ACCEPT 1455 only (the gouges and the empty chest are told in 1455's description, not at the 1454 turn-in); part 1 and the teleport line reworded so they no longer repeat 40533. Converted: the state of Karnitol's chest (forced, empty, gouged) moved to part 1 (QUEST_DONE 1454 and QUEST_ACCEPT 1455, both at the chest). Alliance-only triggers on a faction 0 place, as the brief allows. Earlier: Fact-check: verified. Ice Stones are Midsummer objects and ignored.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Something reached Karnitol's chest before any searcher did. It sits dry for all the sea around it, its lid prised open and the scorch of its spent wards still on the rim, and its sides are torn by deep furrows that neither man nor giant, sword nor dagger, would leave. Nothing remains inside.",
+    "triggers": [
+     [
+      4,
+      1455
+     ]
+    ],
+    "sources": [
+     "quest 1454 reward text (no water damage; forced open; traps triggered, burn marks)",
+     "quest 1455 description (scratches not made by dagger or sword, something other than a man or giant; empty)",
+     "DB: 1455 starts from the chest 35251, right after 1454 ends there"
+    ]
+   }
+  ]
  },
  {
   "id": 40505,
@@ -130,7 +165,7 @@
   "sort": 5,
   "faction": 0,
   "title": "Ranazjar Isle",
-  "body": "On Ranazjar Isle, a small rocky island off the northwestern coast, Slitherblade sea witches, tidehunters, myrmidons and oracles gather about a great serpent statue. Close by, sunken night elf ruins on the sea floor serve the Slitherblade as a home. The Argent Dawn knows that a gem set in the statue's hand will call forth Lord Kragaru, protector of the Book of the Ancients, which holds secrets the naga have kept for centuries. Drulzegar Skraghook's fishing crew was slaughtered by naga near the isle, and when Rackmore's ship was attacked by sea creatures on its way to Feathermoon Stronghold, he hid his treasure here in a chest that needs two keys, one silver and one gold.",
+  "body": "On Ranazjar Isle, a small rocky island off the northwestern coast, Slitherblade sea witches, tidehunters, myrmidons and oracles gather about a great serpent statue. Close by, sunken night elf ruins on the sea floor serve the Slitherblade as a home. The Argent Dawn knows that a gem set in the statue's hand will call forth the protector of the Book of the Ancients, which holds secrets the naga have kept for centuries. Drulzegar Skraghook's fishing crew was slaughtered by naga near the isle, and when Rackmore's ship was attacked by sea creatures on its way to Feathermoon Stronghold, he hid his treasure here in a chest that needs two keys, one silver and one gold.",
   "triggers": [
    [
     1,
@@ -146,7 +181,29 @@
    "quest 6161 description (Rackmore, Feathermoon, silver and gold keys)",
    "zone_areas area 2406: Slitherblade Sea Witch, Razortail, Myrmidon, Tidehunter, Oracle; Serpent Statue 177673; Rackmore's Chest 177786"
   ],
-  "notes": "Fact-check: verified. Statue removed only in 4.0.3a; Lord Hydronis is Cataclysm and absent."
+  "notes": "Check: part 1: 'beams' made one beam (a single Naga Beam object), 'to the death' softened; Kragaru is summoned only at the statue. Converted: the guardian's name, Lord Kragaru, moved to part 1 (KILL 12369, QUEST_DONE 6027); the opening keeps the summoning as Azore tells it. The part tells only what a bystander at the summoning and the fight sees. Earlier: Fact-check: verified. Statue removed only in 4.0.3a; Lord Hydronis is Cataclysm and absent.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The protector the gem calls forth is Lord Kragaru. When the gem is set in the serpent's hand, a beam of light springs up at the shrine and he appears beside the statue in a whirl of wind, and he fights hard for what he guards.",
+    "triggers": [
+     [
+      3,
+      12369
+     ],
+     [
+      5,
+      6027
+     ]
+    ],
+    "sources": [
+     "smart_scripts 177673 (Serpent Statue: naga beams, summons Lord Kragaru 12369)",
+     "smart_scripts 12369 (Cyclone Visual Spawn on respawn)",
+     "quest 6027 description (gem summons the book's protector)",
+     "gameobject_summon_groups 177673 (one Naga Beam 177705); smart_scripts 12369 (Cyclone Visual Spawn on spawn); 12369 has no creature spawn and is summoned only at the statue (with mod-individual-progression too, via the Naga Beam)"
+    ]
+   }
+  ]
  },
  {
   "id": 40506,
@@ -174,7 +231,7 @@
    "zone_areas area 598: Slitherblade naga, Drysnap Crawler/Pincer, Deepstrider Giant/Searcher, Giant Softshell Clam, Waterlogged Footlocker, Selendra 13699, Marandis' Sister",
    "zone_areas area 2324 (The Veiled Sea): Drysnap crawlers, shellfish traps"
   ],
-  "notes": "Fact-check: verified. The Veiled Sea (2324) is a reachable Desolace subzone."
+  "notes": "Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. Earlier: Fact-check: verified. The Veiled Sea (2324) is a reachable Desolace subzone."
  },
  {
   "id": 40507,
@@ -200,7 +257,7 @@
    "quest 5561 description (the only caravan brave enough to travel these parts)",
    "creature_template_model 13656 display 13909 (female)"
   ],
-  "notes": "Fact-check: 'central' corrected to north-central (wiki). The bone caravan is the Gizelton train by 5561 (the only caravan in Desolace). Willow's model is female; text still avoids pronouns."
+  "notes": "Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. Earlier: Fact-check: 'central' corrected to north-central (wiki). The bone caravan is the Gizelton train by 5561 (the only caravan in Desolace). Willow's model is female; text still avoids pronouns."
  },
  {
   "id": 40508,
@@ -226,7 +283,7 @@
    "zone_areas area 609: Kolkar Battle Lord, Windchaser, Mauler, Scout, Centaur, Destroyer, Khan Dez'hepah 5600",
    "warcraft.wiki.gg/wiki/Kolkar_clan (village in eastern Desolace near the mountains)"
   ],
-  "notes": "Fact-check: verified."
+  "notes": "Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. Earlier: Fact-check: verified."
  },
  {
   "id": 40509,
@@ -235,7 +292,7 @@
   "sort": 9,
   "faction": 0,
   "title": "Scrabblescrew's Camp",
-  "body": "Smeed Scrabblescrew's camp sits beside the road through central Desolace, a goblin's stake in the only caravan brave enough to cross these lands. Smeed claims to have learned how to rejuvenate and control aged and dying kodo with a device of his own, the kodo kombobulator, which jolts the beasts into tame pack animals. He supplies them to Cork and Rigger Gizelton, whose caravan pays his bills, and he pays the bodyguards who see it safely through, though he grumbles at every coin. Smeed fancies himself a far better businessman than Bibbly F'utzbuckle of Kormek's Hut, and can hardly wait to see the look on his rival's green face when word of his success gets around.",
+  "body": "Smeed Scrabblescrew's camp sits beside the road through central Desolace, a goblin's stake in the one caravan bold enough to brave these lands. Smeed claims to have learned how to rejuvenate and control aged and dying kodo with a device of his own, the kodo kombobulator, which jolts the beasts into tame pack animals. He supplies them to Cork and Rigger Gizelton, whose caravan pays his bills, and he pays the bodyguards who see it safely through, though he grumbles at every coin. Smeed fancies himself a far better businessman than Bibbly F'utzbuckle of Kormek's Hut, and can hardly wait to see the look on his rival's green face when word of his success gets around.",
   "triggers": [
    [
     1,
@@ -248,7 +305,7 @@
    "quest 5943 reward text",
    "zone_areas area 2617: Smeed Scrabblescrew 11596, Gizelton Caravan Kodo 11564"
   ],
-  "notes": "Fact-check: verified."
+  "notes": "Check: reworded one line so it no longer repeats another entry word for word. Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. Smeed's grumbling at the guards' pay stays: a trait, not an outcome. Earlier: Fact-check: verified."
  },
  {
   "id": 40510,
@@ -276,7 +333,7 @@
    "zone_areas area 597: Ghost Walker Brave, Takata 5641, Felgur 5395, Gurda 5412, Maurin 4498, Nataka 11259, Narv 8153",
    "warcraft.wiki.gg/wiki/Gurda_Wildmane (tauren; shaman only in non-canon RPG)"
   ],
-  "notes": "Fact-check: dropped 'shaman' for Gurda (only the non-canon RPG says so) and the unsourced 'hills'. Orgrimmar's Alliance Relations stays a one-line mention."
+  "notes": "Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. Orgrimmar's Alliance Relations stays a one-line pointer (the Ghost Walker Post side only). Earlier: Fact-check: dropped 'shaman' for Gurda (only the non-canon RPG says so) and the unsourced 'hills'. Orgrimmar's Alliance Relations stays a one-line mention."
  },
  {
   "id": 40511,
@@ -301,7 +358,7 @@
    "quest 6134 (selling ghost-o-plasm to the Magram)",
    "zone_areas area 596: Carrion Horror, Dying/Aged/Ancient Kodo, Kodo Bones, Grave Moss, Hornizz Brimbuzzle 6019"
   ],
-  "notes": "Fact-check: verified. Cataclysm chasm and greening absent."
+  "notes": "Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. Earlier: Fact-check: verified. Cataclysm chasm and greening absent."
  },
  {
   "id": 40512,
@@ -310,7 +367,7 @@
   "sort": 12,
   "faction": 0,
   "title": "Mannoroc Coven",
-  "body": "Named for the pit lord Mannoroth, Mannoroc Coven lies south of Ghost Walker Post among old night elf ruins, a land already dead that the demons have blasted further with fel magic. Burning Blade summoners opened portals here, and through them the Legion came: lesser infernals, doomwarders, felhounds that hunt mages, and succubi called nether maidens, sisters and sorceresses. Their master is the demon lord Azrethoc, whose signature marks a contract carried by the cult, and the orc warlock Jugkar Grim'rod serves at his side. Even the Gizelton caravan's kodo shy at the coven. At its southern edge an exiled centaur, the Pariah, nurses his dream of a single great tribe.",
+  "body": "Named for the pit lord Mannoroth, Mannoroc Coven lies south of Ghost Walker Post among old night elf ruins, a land already dead that the demons have blasted further with fel magic. Burning Blade summoners opened portals here, and through them the Legion came: lesser infernals, doomwarders, felhounds that hunt mages, and succubi called nether maidens, sisters and sorceresses. Their master is the demon lord Azrethoc, and the orc warlock Jugkar Grim'rod serves at his side. Even the Gizelton caravan's kodo shy at the coven. At its southern edge an exiled centaur, the Pariah, nurses his dream of a single great tribe.",
   "triggers": [
    [
     1,
@@ -328,7 +385,7 @@
    "DB positions: Centaur Pariah (-2146,1966) south of every coven demon spawn; Azrethoc (-1819,1673) south of Takata (-1178,1870)",
    "warcraft.wiki.gg/wiki/Jugkar_Grim'rod (orc warlock)"
   ],
-  "notes": "Fact-check: verified, including the Pariah at the southern edge and Jugkar as an orc."
+  "notes": "Converted: the contract bearing Azrethoc's signature dropped from the opening (revealed at the turn-in of 1480; told in 40531 part 1). Azrethoc and Jugkar stay, as both stand here in plain sight. No parts. Earlier: Fact-check: verified, including the Pariah at the southern edge and Jugkar as an orc."
  },
  {
   "id": 40513,
@@ -350,7 +407,7 @@
    "quest 1466 (ley hunters are felhounds)",
    "DB positions: ravine ~(-1938,650) southeast of Warug (-1591,863)"
   ],
-  "notes": "Fact-check: 'wild stallions from the plains' and 'penned' were inferred from creature names; made general. Wiki felsteed transformation is Cataclysm or RPG and stays out. Creatures confirmed spawned in 2198 (also a WMO area)."
+  "notes": "Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. Earlier: Fact-check: 'wild stallions from the plains' and 'penned' were inferred from creature names; made general. Wiki felsteed transformation is Cataclysm or RPG and stays out. Creatures confirmed spawned in 2198 (also a WMO area)."
  },
  {
   "id": 40514,
@@ -359,7 +416,7 @@
   "sort": 14,
   "faction": 0,
   "title": "Magram Village",
-  "body": "The Magram centaur hold the southeast of Desolace, their camps spread out at the foot of the eastern mountains. They are a clan that respects only strength. Wranglers, stormers, marauders, maulers and windchasers run with their bonepaws, and sacks of dried meat are stored so the clan can fight longer between hunts. Khan Jehn rules them, strong, his enemies say, but too sure of his own might. On the outskirts, under the eyes of his bodyguards, waits Warug, the clan's spokesman, who will hear any outsider strong enough to slay the Gelkis. To the Magram, the Gelkis faith in their mother Theradras is nothing but weakness, and they mean to prove it.",
+  "body": "The Magram centaur hold the southeast of Desolace, their camps spread out at the foot of the eastern mountains. They are a clan that respects only strength. Wranglers, stormers, marauders, maulers and windchasers run with their bonepaws, and sacks of dried meat are stored so the clan can fight longer between hunts. Khan Jehn rules them, and the Gelkis would like nothing better than his head. On the outskirts, under the eyes of his bodyguards, waits Warug, the clan's spokesman, who will hear any outsider strong enough to slay the Gelkis. To the Magram, the Gelkis faith in their mother Theradras is nothing but weakness, and they mean to prove it.",
   "triggers": [
    [
     1,
@@ -373,9 +430,10 @@
    "quest 1374 reward text (Khan Jehn strong but stupid, thought his own strength great)",
    "quest 1369 description (Theradras protects no one; Magram strongest)",
    "zone_areas area 604: Magram Wrangler, Windchaser, Stormer, Marauder, Mauler, Bonepaw, Sack of Meat, Warug's Bodyguard, Warug 5398, Khan Jehn 5601",
-   "warcraft.wiki.gg/wiki/Magram_clan (Warug at the base of the mountains on the eastern borders)"
+   "warcraft.wiki.gg/wiki/Magram_clan (Warug at the base of the mountains on the eastern borders)",
+   "quest 1374 description (Uthek wants the head of Khan Jehn)"
   ],
-  "notes": "Fact-check: 'yurts among acrid pools' not found in the wiki or DB; replaced with the eastern mountains. Shok'Thokar absent."
+  "notes": "Check: Khan Jehn's character (from 1374's reward text, said over his head) replaced by the Gelkis wanting his head (1374 description); the judgement stays in 40529 part 1. Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. Earlier: Fact-check: 'yurts among acrid pools' not found in the wiki or DB; replaced with the eastern mountains. Shok'Thokar absent."
  },
  {
   "id": 40515,
@@ -397,7 +455,7 @@
    "quest 6134 description and reward text (haunted by Magram ghosts; ghost magnets between the Dead Goliaths)",
    "zone_areas area 2657: Undead Ravager 11561, Outcast Necromancer 11559"
   ],
-  "notes": "Fact-check: verified. The wiki calls the Outcast Necromancers centaur; the text leaves their race unstated, which is safe."
+  "notes": "Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. Earlier: Fact-check: verified. The wiki calls the Outcast Necromancers centaur; the text leaves their race unstated, which is safe."
  },
  {
   "id": 40516,
@@ -427,7 +485,7 @@
    "warcraft.wiki.gg/wiki/Bolgan's_Hole (blue crystals called tears of Theradras)",
    "warcraft.wiki.gg/wiki/Gelkis_clan (Magram a brother tribe and mortal enemies; Uthek in a small tent)"
   ],
-  "notes": "Fact-check: verified. Bolgan's Hole 600 confirmed as an indoor WMO area (WMOAreaTable). Khan Shodo is Cataclysm and absent."
+  "notes": "Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. Earlier: Fact-check: verified. Bolgan's Hole 600 confirmed as an indoor WMO area (WMOAreaTable). Khan Shodo is Cataclysm and absent."
  },
  {
   "id": 40517,
@@ -452,7 +510,7 @@
    "zone_areas area 607: Maraudine Scout/Wrangler/Windchaser/Mauler/Stormer/Marauder/Priest, Ghostly Raider/Marauder, Ambereye Basilisk/Reaver, Shadowshard/Ambershard elementals, Cavindra 13697, Nameless Prophet 13718, Spirits of Kolk/Gelk/Magra, Melizza 12277 and her cage, Mouthpiece Mount 138497",
    "warcraft.wiki.gg/wiki/Cavindra (dryad, sister of Celebras)"
   ],
-  "notes": "Fact-check: the Prophet communes with ancestral spirits (page_text 2592), not specifically the first khans; corrected. Cavindra confirmed a dryad by the wiki. Cataclysm wall collapse absent."
+  "notes": "Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. The war horn and Khan Hratha are told as quest setup (1380, 1381 descriptions); his death is in 40529 part 3. Earlier: Fact-check: the Prophet communes with ancestral spirits (page_text 2592), not specifically the first khans; corrected. Cavindra confirmed a dryad by the wiki. Cataclysm wall collapse absent."
  },
  {
   "id": 40518,
@@ -461,7 +519,7 @@
   "sort": 18,
   "faction": 0,
   "title": "Shadowprey Village",
-  "body": "Shadowprey Village is a Darkspear troll fishing village on the western coast of Desolace, its docks reaching into the sea, and its catch is wanted inland at Ghost Walker Post. Tauren keep the inn and the wind riders. Fishermen of every temper work the docks: Jinar'Zillen pays others to empty his shellfish traps, Mai'Lahii would rather fish than sell tackle, and Drulzegar Skraghook lives only for revenge on the naga who killed his crew. Taiga Wisemane fights the demons of Mannoroc Coven, Vark Battlescar works to heal the corruption of Maraudon, and the tauren Roon Wildmane remembers the days he hunted with the dwarf Hemet Nesingwary. Rokaro, Champion of the Horde, keeps a secret left in his care by Rexxar.",
+  "body": "Shadowprey Village is a Darkspear troll fishing village on the western coast of Desolace, its docks reaching into the sea, and its catch is wanted inland at Ghost Walker Post. Tauren keep the inn and the wind riders. Fishermen of every temper work the docks: Jinar'Zillen pays others to empty his shellfish traps, Mai'Lahii would rather fish than sell tackle, and Drulzegar Skraghook lives only for revenge on the naga who killed his crew. Taiga Wisemane fights the demons of Mannoroc Coven, Vark Battlescar works to heal the corruption of Maraudon, and the tauren Roon Wildmane remembers the days he hunted with the dwarf Hemet Nesingwary.",
   "triggers": [
    [
     1,
@@ -478,9 +536,10 @@
    "quest 7029 (Vark, Vyletongue corruption)",
    "quest 5763 description (Roon and Hemet hunted together)",
    "quest 6567 description (Rokaro holds Rexxar's information)",
-   "zone_areas area 2408: Shadowprey Guardian, Darkspear vendors (template 126), Innkeeper Sikewa, Aboda, Thalon (template 104)"
+   "zone_areas area 2408: Shadowprey Guardian, Darkspear vendors (template 126), Innkeeper Sikewa, Aboda, Thalon (template 104)",
+   "mod-individual-progression zone_desolace.sql (10182 renamed Rexxar and respawned as a wanderer on the Desolace roads in every state)"
   ],
-  "notes": "Fact-check: verified. Rokaro's subname is Champion of the Horde; What the Wind Carries is only named."
+  "notes": "Check: Rokaro line dropped: with mod-individual-progression NPC 10182 is Rexxar wandering the roads with Misha in every state, without it he is Rokaro (patch 2.0.1) in Shadowprey, so no wording fits both; Orgrimmar 163715 tells the 6567 story. Converted: Rexxar's secret left with Rokaro dropped (Orgrimmar's What the Wind Carries 163715 tells it at the turn-in of 6567). Rokaro kept untagged, as Orgrimmar does. No parts. Earlier: Fact-check: verified. Rokaro's subname is Champion of the Horde; What the Wind Carries is only named."
  },
  {
   "id": 40519,
@@ -506,7 +565,7 @@
    "warcraft.wiki.gg/wiki/Warug",
    "DB: template 35 (friendly to both), Warug's Bodyguard 6068"
   ],
-  "notes": "Fact-check: verified. Faction 0: template 35 friendly to both; entry quests 1367 (Horde) and 1385 (Alliance)."
+  "notes": "Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. Earlier: Fact-check: verified. Faction 0: template 35 friendly to both; entry quests 1367 (Horde) and 1385 (Alliance)."
  },
  {
   "id": 40520,
@@ -515,7 +574,7 @@
   "sort": 2,
   "faction": 0,
   "title": "Uthek the Wise",
-  "body": "Uthek the Wise is a shaman of the Gelkis who keeps a tent on the outskirts of their village and listens to what the earth tells her. To strangers whose hands are wet with Magram blood she gives tasks and counsel: the Magram hoard meat to fight longer, the Kolkar know nothing of true magic, and the earth has whispered to her of a red crystal called draenethyst, new to this world, from a place where mountains fly and demons rule. She sent one ally as far as the Swamp of Sorrows for a shard of it. Earth magic, Uthek says, is stronger than any khan's might, and one day the Gelkis will rule.",
+  "body": "Uthek the Wise is a shaman of the Gelkis who keeps a tent on the outskirts of their village and listens to what the earth tells her. To strangers whose hands are wet with Magram blood she gives tasks and counsel: the Magram hoard meat to fight longer, the Kolkar know nothing of true magic, and the earth has whispered to her of a red crystal called draenethyst, new to this world, from a place where mountains fly and demons rule. For a shard of it she would send an ally as far as the Swamp of Sorrows. Earth magic, Uthek says, is stronger than any khan's might, and one day the Gelkis will rule.",
   "triggers": [
    [
     2,
@@ -532,7 +591,7 @@
    "warcraft.wiki.gg/wiki/Uthek_the_Wise (female)",
    "creature_template_model 5397 display 4875 (female)"
   ],
-  "notes": "Fact-check: only the draenethyst is called an earth whisper in 1373; reworded so the meat and Kolkar remarks are her own counsel. Female confirmed by 1382 ('through her') and model gender. Faction 0: template 35; entry quests 1368 (Horde) and 1382 (Alliance)."
+  "notes": "Check: the draenethyst errand put in the present (her task, not a done deed). Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. Earlier: Fact-check: only the draenethyst is called an earth whisper in 1373; reworded so the meat and Kolkar remarks are her own counsel. Female confirmed by 1382 ('through her') and model gender. Faction 0: template 35; entry quests 1368 (Horde) and 1382 (Alliance)."
  },
  {
   "id": 40521,
@@ -554,7 +613,7 @@
    "quest 1387 description and reward text (Corporal Melkins)",
    "warcraft.wiki.gg/wiki/Captain_Pentigast (human, Stormwind)"
   ],
-  "notes": "Fact-check: verified. Faction 1: factiontemplate 123 is Alliance and hostile to the Horde; 1382 and 1385 AllowableRaces 1101."
+  "notes": "Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. Earlier: Fact-check: verified. Faction 1: factiontemplate 123 is Alliance and hostile to the Horde; 1382 and 1385 AllowableRaces 1101."
  },
  {
   "id": 40522,
@@ -563,7 +622,7 @@
   "sort": 4,
   "faction": 2,
   "title": "Takata Steelblade",
-  "body": "Takata Steelblade is an orc swordsman of Orgrimmar who stands watch at Ghost Walker Post against the demons of Desolace, beside the warlock Maurin Bonesplitter. When Maurin's scrying revealed the demon lord Azrethoc, Takata judged that even the creature's image held more power than his companion, and he would have gone to face it himself, yet he would not shame his clan by abandoning his duties for his own glory. Instead he trusted others to strike at Mannoroc Coven. The demons only seem to multiply, and at times he wishes the centaur were his only foes, but he holds to the hope that the Horde may one day have a place it can safely call home again.",
+  "body": "Takata Steelblade is an orc swordsman of Orgrimmar who stands watch at Ghost Walker Post against the demons of Desolace, beside the Forsaken warlock Maurin Bonesplitter. He is a soldier first, bound to his post by duty to the Warchief and by the honor of his clan. The fight wears on him. The demons only seem to multiply, his hope of returning to the Warchief dwindles, and at times he wishes the centaur were his only foes.",
   "triggers": [
    [
     2,
@@ -577,7 +636,36 @@
    "warcraft.wiki.gg/wiki/Takata_Steelblade (orc)",
    "DB: Takata 5641 spawned in area 597, template 29 (Orgrimmar)"
   ],
-  "notes": "Fact-check: rewritten so nothing comes from quests 1432-1436 (Orgrimmar's Alliance Relations); now drawn only from The Corrupter (1484, 1488). Faction 2: template 29 hostile to the Alliance."
+  "notes": "Check: part 1 trigger now DONE 1484 only and trimmed to 1484's reward text (sending a party is 1488's description, moved to part 2 on DONE 1488); part 2 reworded so it no longer repeats 40531 part 3; the opening no longer repeats part 1. Converted: the scrying and his decision moved to part 1 (QUEST_DONE 1484, QUEST_ACCEPT 1488); Azrethoc's death and Takata's hope to part 2 (QUEST_DONE 1488). The opening keeps his character (1484 reward, 1488 completion text). Earlier: Fact-check: rewritten so nothing comes from quests 1432-1436 (Orgrimmar's Alliance Relations); now drawn only from The Corrupter (1484, 1488). Faction 2: template 29 hostile to the Alliance.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "When Maurin's scrying called up the image of the demon lord Azrethoc, Takata watched, and judged that even as an apparition the creature held more power than his companion. He doubted the warlock was equal to it. Going himself would serve the Warchief better, yet to leave his duties for his own honor would disgrace his clan.",
+    "triggers": [
+     [
+      5,
+      1484
+     ]
+    ],
+    "sources": [
+     "quest 1484 reward text (apparition more powerful than his warlock companion; would disgrace his clan to leave his duties)",
+     "quest 1488 description (must be stopped; influence over the Burning Blade; gather a party; head south)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Bound to his post, Takata trusted others to gather a party and strike south at the demon lord. When Azrethoc and his warlock servant fell, he hailed a mighty victory for all, and his outlook brightened: the demons would be slain, the Burning Blade would fail, and the Horde's future in this land seemed far less bleak than he had feared.",
+    "triggers": [
+     [
+      5,
+      1488
+     ]
+    ],
+    "sources": [
+     "quest 1488 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 40523,
@@ -586,7 +674,7 @@
   "sort": 5,
   "faction": 2,
   "title": "Maurin Bonesplitter",
-  "body": "Maurin Bonesplitter is a Forsaken warlock at Ghost Walker Post who knows the ways of the Burning Blade and holds them in contempt: their magic is feeble, he says, and what power they have is borrowed from the masters they serve. He can read a demon's contract written in runes only distantly related to Eredun, and he works with care, for a wrong reagent could kill the one who scries, and fate, he admits, has dealt him pain enough. Hunting the demon lord Azrethoc would win favor with the Warchief, favor he means to turn to his own ends, and he steers the proud Takata Steelblade with a light hand, so the swordsman believes the plan his own.",
+  "body": "Maurin Bonesplitter is a Forsaken warlock at Ghost Walker Post who knows the ways of the Burning Blade and holds them in contempt: their magic is feeble, he says, and what power they have is borrowed from the masters they serve, not born of any understanding of true power. He works with care, for in his craft a wrong reagent could kill the one who uses it, and fate, he admits, has dealt him pain enough. He keeps company with the swordsman Takata Steelblade, who stands watch beside him against the demons of Desolace.",
   "triggers": [
    [
     2,
@@ -601,7 +689,37 @@
    "warcraft.wiki.gg/wiki/Maurin_Bonesplitter (Forsaken)",
    "DB: Maurin 4498 spawned in area 597, template 68 (Undercity)"
   ],
-  "notes": "Fact-check: removed the Keldran and 'Warchief cub' material (quest 1433, Orgrimmar's chain); now drawn only from The Corrupter (1480-1484). 'Akin to Eredun' corrected to only distantly related. Faction 2: template 68 hostile to the Alliance."
+  "notes": "Check: parts 1 and 2 reworded so they no longer repeat 40531 parts 1 and 2; triggers unchanged (ACCEPT 1484 needs 1482 done, whose completion text and scrying script give part 2). Converted: the contract and Azrethoc's name moved to part 1 (QUEST_DONE 1480); his ambition and his handling of Takata to part 2 (QUEST_ACCEPT 1484, by which point 1482's completion text has been heard too). Earlier: Fact-check: removed the Keldran and 'Warchief cub' material (quest 1433, Orgrimmar's chain); now drawn only from The Corrupter (1480-1484). 'Akin to Eredun' corrected to only distantly related. Faction 2: template 68 hostile to the Alliance.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Maurin needed only a look at the flayed skin the cult carried. The writing was an old tongue, he judged, with a remote likeness to Eredun and drastic differences, and the thing itself a pact of some kind, sealed with a demon's mark: the signature of Lord Azrethoc.",
+    "triggers": [
+     [
+      5,
+      1480
+     ]
+    ],
+    "sources": [
+     "quest 1480 reward text (runes remotely similar to Eredun; contract; signature Lord Azrethoc)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Maurin's zeal is not only duty. Slaying Azrethoc would earn great favor with the Warchief, favor he means to spend on ends of his own. And when the demon lord's image proved stronger than he had bargained for, he did not ask the proud Takata Steelblade outright, but had the swordsman told of it gently, judging it best that Takata believe the hunt his own plan.",
+    "triggers": [
+     [
+      4,
+      1484
+     ]
+    ],
+    "sources": [
+     "quest 1482 completion text (favor with the Warchief; further our own ends)",
+     "quest 1484 description (far more dangerous than anticipated; better if Takata thinks it his own idea)",
+     "creature_text 4498 (the scrying)"
+    ]
+   }
+  ]
  },
  {
   "id": 40524,
@@ -610,7 +728,7 @@
   "sort": 6,
   "faction": 0,
   "title": "Tyranis Malem",
-  "body": "Tyranis Malem is a son of House Malem, a Darnassian merchant family, who came to Desolace with his sister Dalinda despite every warning about its demons. He had lately begun to crave knowledge of all things arcane, against the wishes of his people, and Darnassus already had doubts about his motives. When the Burning Blade slaughtered the siblings' guards and dragged them to Thunder Axe Fortress, Tyranis tried to impress his captors with his learning. His sister feared he would seek the cult's secrets and count himself among them. She was right. He is found among the cultists, an elf given over to the very powers his people most dread.",
+  "body": "Tyranis Malem is a night elf found within Thunder Axe Fortress, the stronghold of the Burning Blade. He walks free among the orc cultists rather than lying in their chains, and when strangers break into the fortress he takes up arms beside the cult and fights to the death against them. What brought an elf so far from the forests of his people, into the company of orcs who have given themselves to demons, is not something the fortress will tell.",
   "triggers": [
    [
     3,
@@ -623,9 +741,27 @@
    "quest 1439 description and completion text (guards slaughtered; tried to impress them; might count himself among their kind)",
    "quest 1439 reward text (his death was necessary)",
    "warcraft.wiki.gg/wiki/Thunder_Axe_Fortress (Tyranis, traitor to his own people)",
-   "DB: Tyranis Malem 5643 template 16, hostile, spawned in area 599"
+   "DB: Tyranis Malem 5643 template 16, hostile, spawned in area 599",
+   "DB: display 3790 is NightElfMale (CreatureDisplayInfoExtra race 4)"
   ],
-  "notes": "Fact-check: verified. Faction 0: Tyranis 5643 (template 16) is hostile to all players and a permanent spawn in 599, so either side can kill him."
+  "notes": "Check: night elf confirmed from display 3790 (NightElfMale model, race 4); part 1 reworded so it no longer repeats 40530 parts 2 and 3. Converted: the opening is unlocked by KILL 5643, so it now tells only what a bystander at the fight sees (an elf free among the cultists who fights beside them). His family, motives, betrayal and Dalinda's verdict moved to part 1 (QUEST_DONE 1439, Alliance), after he is found. Faction stays 0: either side can kill him. Earlier: Fact-check: verified. Faction 0: Tyranis 5643 (template 16) is hostile to all players and a permanent spawn in 599, so either side can kill him.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "He was a son of the Darnassian merchant house of Malem, and he and his sister Dalinda came to Desolace though both were warned of its demons. Of late he had hungered for arcane power, a thing his people count a crime to pursue, and Darnassus already doubted him. Taken by the cult, he tried to win his captors with his learning, and in the end he stood with them. To his sister his death was terrible, but necessary.",
+    "triggers": [
+     [
+      5,
+      1439
+     ]
+    ],
+    "sources": [
+     "quest 1437 description (House Malem, Darnassian merchant family)",
+     "quest 1438 description and reward text (superiors' concern over his motives; craving for the arcane; warned of demons)",
+     "quest 1439 description, completion and reward text (tried to impress them; might count himself among their kind; his death was necessary)"
+    ]
+   }
+  ]
  },
  {
   "id": 40525,
@@ -634,7 +770,7 @@
   "sort": 7,
   "faction": 0,
   "title": "Azore Aldamort",
-  "body": "Azore Aldamort is a human mage of the Argent Dawn who keeps the lone tower of Ethel Rethor on the northwestern coast, with two threats in view. The Burning Blade of Thunder Axe Fortress is rumored to have taken the Sceptre of Light from the naga, an artifact said in legend to sink whole cities beneath the sea, and a seer of the cult studies it from a watchtower. The Slitherblade naga, meanwhile, guard secrets kept for centuries in the Book of the Ancients, watched by a guardian on Ranazjar Isle. To trusted allies Azore entrusts the Gem of the Serpent to call that guardian out, meaning to pass the book on to the high council.",
+  "body": "Azore Aldamort is a human mage of the Argent Dawn who keeps the lone tower of Ethel Rethor on the northwestern coast, with two threats in view. The Burning Blade of Thunder Axe Fortress is rumored to have taken the Sceptre of Light from the naga, an artifact said in legend to sink whole cities beneath the sea, and a seer of the cult studies it from a watchtower. The Slitherblade naga, meanwhile, guard secrets kept for centuries in the Book of the Ancients, watched over by a protector on Ranazjar Isle. To trusted allies Azore entrusts the Gem of the Serpent, which calls that protector out.",
   "triggers": [
    [
     2,
@@ -647,7 +783,35 @@
    "warcraft.wiki.gg/wiki/Azore_Aldamort (human mage, Argent Dawn)",
    "DB: template 794 (friendly to both); 5741, 6027 AllowableRaces 0"
   ],
-  "notes": "Fact-check: 6027 says only 'the high council', not the Dawn's; corrected. Faction 0: template 794 has no enemy group; 5741 and 6027 open to all."
+  "notes": "Check: part 1: 'the Burning Blade would not wield it' (inferred) replaced by the plain fact that the cult no longer held it. Converted: the sceptre's recovery moved to part 1 (QUEST_DONE 5741) and the book's recovery and the high council to part 2 (QUEST_DONE 6027); the opening keeps both errands as Azore sets them. Earlier: Fact-check: 6027 says only 'the high council', not the Dawn's; corrected. Faction 0: template 794 has no enemy group; 5741 and 6027 open to all.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The sceptre was taken from the seer atop his watchtower and carried back to Ethel Rethor. Azore greeted it as the elusive Sceptre of Light and called its recovery the removal of a grave threat to the world. Whatever the cult had meant to do with it, the sceptre was out of its hands.",
+    "triggers": [
+     [
+      5,
+      5741
+     ]
+    ],
+    "sources": [
+     "quest 5741 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The protector on Ranazjar Isle was called out and the long lost Book of the Ancients brought to Azore, who thanked its finder as a hero should be thanked. The book, with all the secrets of the naga written in it, is to be passed on to the high council.",
+    "triggers": [
+     [
+      5,
+      6027
+     ]
+    ],
+    "sources": [
+     "quest 6027 reward text (long lost; passed on to the high council; thanked as a hero)"
+    ]
+   }
+  ]
  },
  {
   "id": 40526,
@@ -668,7 +832,7 @@
    "quest 261 description and reward text",
    "quest 1052 description (letter to Raleigh the Devout, Scarlet Monastery, true threat in Lordaeron)"
   ],
-  "notes": "Fact-check: verified. Faction 1: template 11 hostile to the Horde; 261 and 1052 AllowableRaces 1101."
+  "notes": "Unchanged in the parts conversion: nothing to hide; no Burning Crusade or Wrath text. Earlier: Fact-check: verified. Faction 1: template 11 hostile to the Horde; 261 and 1052 AllowableRaces 1101."
  },
  {
   "id": 40527,
@@ -677,7 +841,7 @@
   "sort": 9,
   "faction": 0,
   "title": "The Centaur Pariah",
-  "body": "At the southern edge of Mannoroc Coven lives a centaur exiled as a heretic, known only as the Pariah. He believes the tribes have forgotten themselves, fighting one another for scraps left by vultures and lands infested by the Legion, when their heritage is as noble as any night elf's or orc's. His dream is one great tribe. The Nameless Prophet within Maraudon, he says, wears the Amulet of Spirits without knowing its power, and its five missing gems are held by the ghosts of the first khans, Kolk, Gelk, Magra, Maraudos and Veng. Made whole as the Amulet of Union, it would give him the strength to reunite the clans. No centaur could help him without damnation.",
+  "body": "At the southern edge of Mannoroc Coven lives a centaur exiled as a heretic, known only as the Pariah. He needs no home, he says, to know he still has a place in this world. The tribes fight one another for scraps left by vultures and lands infested by the Legion, when their heritage is as noble as any night elf's or orc's. His dream is one great tribe, and exile has not shaken his belief in it. For his destiny to be complete he needs an outsider of no tribe, one willing to enter the holy halls of Maraudon, a tomb only the most devout of his people may enter.",
   "triggers": [
    [
     2,
@@ -691,7 +855,36 @@
    "warcraft.wiki.gg/wiki/Centaur_Pariah",
    "DB: template 35; spawn reads as area 602"
   ],
-  "notes": "Fact-check: verified. Faction 0: template 35 friendly to both; spawn at the southern edge of the coven."
+  "notes": "Check: ACCEPT 7067 confirmed: the quest hands over item 17781 (page_text 2591-2596), which holds the amulet plan; 7067 is QuestType 2. 7067 belongs to Desolace: a Maraudon file must leave it alone. Converted: the amulet plan from his parchment moved to part 1 (QUEST_ACCEPT 7067, which hands over the instructions; 7067 is not auto-complete); the amulet's delivery to part 2 (QUEST_DONE 7067). The opening keeps his gossip and the quest offer, both heard on talking to him. 7067 is free per STATUS (a Maraudon file must not use it now). Earlier: Fact-check: verified. Faction 0: template 35 friendly to both; spawn at the southern edge of the coven.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Pariah's instructions name his prize. The Nameless Prophet, highest of all the tribes in spiritual matters, wears the Amulet of Spirits without knowing its true power, and five gems missing from it are held by the spirits of the first khans, Gelk, Kolk, Magra, Maraudos and Veng, who roam Maraudon. Slaying the Prophet is heresy, and the rest would condemn any centaur for even thinking it. Made whole as the Amulet of Union, it would let him reform the tribes.",
+    "triggers": [
+     [
+      4,
+      7067
+     ]
+    ],
+    "sources": [
+     "quest 7067 description (he passes a parchment of instructions)",
+     "page_text 2591 to 2596 (the Pariah's instructions: Nameless Prophet, Amulet of Spirits, five gems, five khans, Amulet of Union, heresy)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Amulet of Union was brought to him at last, and the Pariah rejoiced: now the great task of uniting the tribes could begin. He gave thanks and a reward, and as they parted he told the one who had helped him that he hoped their next meeting would be on much different terms.",
+    "triggers": [
+     [
+      5,
+      7067
+     ]
+    ],
+    "sources": [
+     "quest 7067 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 40528,
@@ -700,7 +893,7 @@
   "sort": 1,
   "faction": 2,
   "title": "The Kolkar of Desolace",
-  "body": "Desolace is a land torn by war, and the Horde means to have its say. From his bunkers in the Barrens, Regthar Deathgate recruits agents for a mission against the centaur, for as long as the Kolkar stay strong in their homeland they will threaten the plains. His volunteers go to Felgur Twocuts at Ghost Walker Post, who has been gathering intelligence on the clans and warns that the struggle will be long. Many clans wander the dry plains, fighting and dying against each other, and that is a mercy, for united they would be a fierce foe. The Horde must act before they unite. First the Kolkar leader, Khan Dez'hepah, must die in his village to the northeast, since strength is what centaur understand best. Then the hunt for ears begins, from any clan at all, until every centaur knows the banner of the Horde. Beyond that, Gurda Wildmane has a subtler plan: ally with one clan and learn from it how to defeat them all.",
+  "body": "From his bunkers in the Barrens, Regthar Deathgate recruits agents for a mission against the centaur of Desolace, a land torn by war, for as long as the Kolkar stay strong in their homeland they will threaten the plains. His volunteers go to Felgur Twocuts at Ghost Walker Post, who has been gathering intelligence on the clans and warns that the struggle will be long. Many clans wander the dry plains, fighting and dying against each other, and that is a mercy, for united they would be a fierce foe. The Horde must act before they unite, and Felgur means to start with the Kolkar leader, Khan Dez'hepah, in his village to the northeast. At the same post Gurda Wildmane has a subtler plan: ally with one clan and learn from it how to defeat them all.",
   "triggers": [
    [
     4,
@@ -718,7 +911,36 @@
    "quest 1366 description and reward text",
    "quests 1367, 1368 descriptions (Gurda Wildmane)"
   ],
-  "notes": "Fact-check: verified. Faction 2: 1361 and 1362 AllowableRaces 690; Barrens left both quests free."
+  "notes": "Check: the ear bounty (1366's description, offered after the 1365 turn-in) moved from part 1 to part 2 (DONE 1366). Converted: the khan's death and the bounty moved to part 1 (QUEST_DONE 1365) and its end to part 2 (QUEST_DONE 1366); the opening keeps the plan to strike the khan (1365 description). Consistent with Barrens 1738, which points here in one line. Earlier: Fact-check: verified. Faction 2: 1361 and 1362 AllowableRaces 690; Barrens left both quests free.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Khan Dez'hepah was slain and his head laid before Felgur, a swift show of strength, and strength is what centaur understand best. The death of their leader would disrupt the Kolkar and give the other clans pause.",
+    "triggers": [
+     [
+      5,
+      1365
+     ]
+    ],
+    "sources": [
+     "quest 1365 reward text",
+     "quest 1366 description (offered next by Felgur)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Then the bleeding began: Felgur wanted ears from any clan at all, a hoard of them, to weaken their numbers and stamp out any thought of expansion. When the hoard was in, he was satisfied. By now, he said, the centaur must know the name of the one who hunted them, and respect it, and fear it, and know too the banner under which that hunter rides: the banner of the Horde.",
+    "triggers": [
+     [
+      5,
+      1366
+     ]
+    ],
+    "sources": [
+     "quest 1366 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 40529,
@@ -727,7 +949,7 @@
   "sort": 2,
   "faction": 0,
   "title": "The War of the Clans",
-  "body": "Captain Pentigast at Nijel's Point and Gurda Wildmane at Ghost Walker Post reach the same conclusion: the way to beat the centaur is through their hatred of one another. An outsider who slays enough Magram may win a hearing with Uthek the Wise of the Gelkis, while one who slays Gelkis may stand before Warug of the Magram. Each clan then demands proof. The Gelkis want the Magram meat stores raided, a draenethyst shard fetched from a far swamp and the head of the Magram Khan Jehn. The Magram want the Gelkis tears of Theradras broken, a new target dummy for Warug's amusement and the head of Khan Shaka. Alliance champions must bloody the Kolkar too. Both roads end in the Valley of Spears, where a war horn atop a high bluff summons the Maraudine until Khan Hratha himself rides out to die, carrying a piece of a key. Each clan swears it will now rule Desolace.",
+  "body": "Captain Pentigast at Nijel's Point and Gurda Wildmane at Ghost Walker Post reach the same conclusion: the way to beat the centaur is through their hatred of one another. United, the clans would be unstoppable; divided, they can be played against one another, and whoever wins the friendship of one may learn from it the way to beat them all. One who slays enough Magram may win a hearing with Uthek the Wise of the Gelkis, while one who slays Gelkis may stand before Warug of the Magram. Neither clan gives its trust freely. Each sets its new friends task after task written in the blood of its rivals, and Alliance champions are sent against the Kolkar as well.",
   "triggers": [
    [
     4,
@@ -753,7 +975,54 @@
    "quests 1384, 1386 (Alliance Kolkar tasks)",
    "quests 1380, 1381 descriptions and reward texts (war horn, Khan Hratha, key fragment, each clan will rule)"
   ],
-  "notes": "Fact-check: verified. Faction 0: 1382/1385 are Alliance (1101), 1367/1368 Horde (690); 1384 and 1386 follow the Alliance quests."
+  "notes": "Check: reworded one line so it no longer repeats another entry word for word. Converted: the clans' tasks and Khan Jehn's death moved to part 1 (QUEST_DONE 1374, Gelkis road), the Magram tasks and Khan Shaka's death to part 2 (QUEST_DONE 1375, Magram road), and Khan Hratha's death and the clans' boasts to part 3 (QUEST_DONE 1380, 1381). Parts 1 and 2 are written to stand alone, since a character usually walks only one road. Earlier: Fact-check: verified. Faction 0: 1382/1385 are Alliance (1101), 1367/1368 Horde (690); 1384 and 1386 follow the Alliance quests.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "For the Gelkis the proofs ran long: the Magram meat stores raided until Uthek could hear their bellies grumble, a shard of draenethyst taken from the lost one Ongeku in the Swamp of Sorrows, and at last the head of the Magram Khan, Jehn. He was strong but stupid, Uthek said, blind to the greater strength of earth magic, and without him the Magram would fall.",
+    "triggers": [
+     [
+      5,
+      1374
+     ]
+    ],
+    "sources": [
+     "quests 1370, 1373 descriptions and reward texts",
+     "quest 1374 description and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "For the Magram the proofs were cruder: the tears of Theradras in the Gelkis cave smashed, to show that their mother would not save them, a new wooden target dummy for Warug's amusement, and the head of the Gelkis Khan, Shaka. Warug set it on a pike and kept it by him, so that Shaka could see the strength of the Magram.",
+    "triggers": [
+     [
+      5,
+      1375
+     ]
+    ],
+    "sources": [
+     "quests 1369, 1371 descriptions and reward texts",
+     "quest 1375 description and reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Both roads ended in the Valley of Spears. With a mouthpiece taken from a trusted Maraudine, the war horn atop a high bluff was blown, and the Maraudine came in answer until Khan Hratha himself appeared and was slain, carrying a fragment of a key. His fall was hailed as the doom of the Maraudine, and each clan swore that it would now rule Desolace and remember the ally who had helped it.",
+    "triggers": [
+     [
+      5,
+      1380
+     ],
+     [
+      5,
+      1381
+     ]
+    ],
+    "sources": [
+     "quests 1380, 1381 descriptions and reward texts (war horn, mouthpiece, Khan Hratha, key fragment, each clan will rule and remember)"
+    ]
+   }
+  ]
  },
  {
   "id": 40530,
@@ -762,7 +1031,7 @@
   "sort": 3,
   "faction": 1,
   "title": "Vahlarriel's Search",
-  "body": "House Malem, a Darnassian merchant family, sent Vahlarriel Demonslayer to Nijel's Point when two of its children, Dalinda and Tyranis, vanished after passing through the Stonetalon Mountains. Their wagon was found wrecked by spells and weapons in a fight that had been swift and one-sided, with no blood and no bodies. A pendant lay in the wreckage, and tracks led south toward a fortress where a fire was kept: Thunder Axe, stronghold of the Burning Blade. Vahlarriel's superiors cared most that Dalinda come home safe; Tyranis was to be gauged first. Dalinda was found a prisoner, and she would not leave until her brother's fate was known. It was the one she dreaded. Tyranis had joined the cult, and he died at her rescuers' hands, as he surely would have at her own people's. Only then did she flee, making her way back to Nijel's Point on her own, to carry her brother's shame home to Darnassus.",
+  "body": "House Malem, a Darnassian merchant family, sent Vahlarriel Demonslayer to Nijel's Point when two of its children, Dalinda and Tyranis, went missing. Last word told of them passing through the Stonetalon Mountains a few weeks ago, bound for Desolace. Their father fears the worst. Vahlarriel is charged to do everything possible to find them, and hopes not to be in this grim land for long. The search begins on the road, with the siblings' wagon, and anyone who finds it is asked to come to Nijel's Point at once.",
   "triggers": [
    [
     4,
@@ -777,7 +1046,65 @@
    "quest 1440 reward text (arrived under her own power; Tyranis' embarrassment hers to endure)",
    "creature_text 5644 (escort lines)"
   ],
-  "notes": "Fact-check: verified. Faction 1: 1437 AllowableRaces 1101."
+  "notes": "Check: part 1: 'Vahlarriel knew it by repute' replaced by the locals' word (1465 reward text), and the superiors' wish (1438 description) moved to part 2; 'she would not leave' (1439 description) moved to part 3; part 2 reworded against 40503 part 1. Converted: the wagon and the trail to Thunder Axe moved to part 1 (QUEST_DONE 1465), Dalinda's capture to part 2 (QUEST_DONE 1438), Tyranis's betrayal and death to part 3 (QUEST_DONE 1439) and her escape to part 4 (QUEST_DONE 1440). The warning they ignored now sits in part 2 (Dalinda's own words). Earlier: Fact-check: verified. Faction 1: 1437 AllowableRaces 1101.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Malem wagon was found wrecked by spells and weapons, in a fight that had been swift and one-sided, with no blood and no bodies. A pendant lay in the wreckage, and footprints led south toward a fort where smoke rose from a kept fire. Vahlarriel was furious, for the two had been warned. From what the locals said, the fortress was infested with the Burning Blade, orcs dedicated to demon causes, who slay spies on sight.",
+    "triggers": [
+     [
+      5,
+      1465
+     ]
+    ],
+    "sources": [
+     "quest 1437 reward text (spells and weapons, one-sided, no blood, no bodies)",
+     "quest 1465 description and reward text (pendant, footprints south, kept fire, Burning Blade fortress)",
+     "quest 1438 description (offered next: Dalinda first, Tyranis to be gauged)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Vahlarriel's superiors in Darnassus cared most that Dalinda come home safe; Tyranis was to be gauged first. Dalinda was found a prisoner within the fortress, brought there with her brother by the Burning Blade and sure she would be sacrificed. Coming to Desolace had been a mistake, she said: Tyranis had begun to crave knowledge of all things arcane, against the wishes of their people, and had made the journey even after hearing of the demons.",
+    "triggers": [
+     [
+      5,
+      1438
+     ]
+    ],
+    "sources": [
+     "quest 1438 reward text",
+     "quest 1439 description (offered next: will not leave until his fate is known)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "She would not leave until his fate was known, and it was the fate she had dreaded. Tyranis had sought the cult's secrets and counted himself among their kind, and he died at her rescuers' hands, as he surely would have at her own people's. Dalinda called it necessary, and asked forgiveness if her thanks did not sound sincere.",
+    "triggers": [
+     [
+      5,
+      1439
+     ]
+    ],
+    "sources": [
+     "quest 1439 completion and reward text"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Only then did Dalinda flee the fortress. Partway out she sent her escort back to finish off the cultists and went on alone, and she reached Nijel's Point under her own power. Vahlarriel was glad of it, but grieved that both had not come back. The shame of her brother's choices is Dalinda's to carry home to Darnassus.",
+    "triggers": [
+     [
+      5,
+      1440
+     ]
+    ],
+    "sources": [
+     "creature_text 5644 (escort lines: finish off those you can, I should be fine on my own)",
+     "quest 1440 reward text (arrived under her own power; Tyranis' embarrassment hers to endure)"
+    ]
+   }
+  ]
  },
  {
   "id": 40531,
@@ -786,7 +1113,7 @@
   "sort": 4,
   "faction": 2,
   "title": "The Corrupter",
-  "body": "Among the Burning Blade's cultists some carry a strip of flayed demon skin, rotten-smelling and strangely supple, written over in red. Maurin Bonesplitter at Ghost Walker Post reads it as a contract in an old tongue only distantly like Eredun, signed by a demon: Lord Azrethoc. To find him Maurin needs the scalp of a Hatefury shadowstalker from Sargeron, to break the demon's wards against scrying, and an oracle crystal from the Slitherblade naga of the coast to focus the spell. When he calls Azrethoc by his true name, the demon lord's image appears, and even as an apparition it seems more powerful than Maurin himself. Finding the demon far more dangerous than he expected, Maurin sends word to Takata Steelblade, hoping the swordsman will think the hunt his own idea. Takata agrees that a demon seeking sway over the Burning Blade must be stopped. Azrethoc and his orc warlock servant Jugkar Grim'rod are slain at Mannoroc Coven, and Takata dares to hope the Horde may one day have a place it can safely call home again.",
+  "body": "Among the Burning Blade's cultists some carry a strip of flayed demon skin, rotten-smelling and strangely supple for something that looks so dry and fragile. Red markings in some unknown language cover one side, and at the bottom sits a clear symbol that seems to be a signature of some kind. Such a thing belongs before Maurin Bonesplitter at Ghost Walker Post, a Forsaken warlock who knows the cult's ways and scorns them. If anyone in Desolace can tell what the markings say, and whose mark is set beneath them, it is he.",
   "triggers": [
    [
     4,
@@ -801,7 +1128,51 @@
    "quest 1484 description and reward text",
    "quest 1488 description, completion and reward text"
   ],
-  "notes": "Fact-check: 'much like Eredun' corrected (1480: remotely similar, drastic differences); 'shaken' replaced by 1484's own words; closing line no longer places the home in Desolace. Faction 2: 1480-1488 AllowableRaces 690."
+  "notes": "Check: opening and part 2 reworded so they no longer repeat 40523's opening and part 2; part 1 trigger now ACCEPT 1481 (the scalp errand is 1481's description; the contract is told at the 1480 turn-in, which 1481 follows). Converted: the contract and Azrethoc's name moved to part 1 (QUEST_DONE 1480), the scrying and the appeal to Takata to part 2 (QUEST_ACCEPT 1484), the demon lord's death to part 3 (QUEST_DONE 1488). 1480 is item-started (Flags 0, QuestType 2), so its accept trigger fires. Earlier: Fact-check: 'much like Eredun' corrected (1480: remotely similar, drastic differences); 'shaken' replaced by 1484's own words; closing line no longer places the home in Desolace. Faction 2: 1480-1488 AllowableRaces 690.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Maurin read the runes as an old tongue, only distantly like Eredun, and the skin as a contract of some kind, signed by a demon: Lord Azrethoc. To find him Maurin first needed the scalp of a Hatefury shadowstalker from the ruins of Sargeron, to break any wards the demon held against scrying.",
+    "triggers": [
+     [
+      4,
+      1481
+     ]
+    ],
+    "sources": [
+     "quest 1480 reward text",
+     "quest 1481 description (offered next)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "With the scalp in hand and an oracle crystal from the Slitherblade naga to focus the spell, Maurin called Azrethoc by his true name, and the demon lord's image appeared. The creature was far more dangerous than Maurin had expected. Rather than face it alone he sent word to Takata Steelblade, the swordsman beside him, whose honor demanded he be told, with a warning not to press him too hard.",
+    "triggers": [
+     [
+      4,
+      1484
+     ]
+    ],
+    "sources": [
+     "quests 1481, 1482 descriptions and reward texts",
+     "creature_text 4498 (I call your true name, Azrethoc)",
+     "quest 1484 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Takata agreed that a demon seeking influence over the Burning Blade must be stopped, and sent champions directly south. Lord Azrethoc and his orc warlock servant Jugkar Grim'rod were slain at Mannoroc Coven, and Takata dared to hope that the Horde might one day have a place it could safely call home again.",
+    "triggers": [
+     [
+      5,
+      1488
+     ]
+    ],
+    "sources": [
+     "quest 1488 description and reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 40532,
@@ -810,7 +1181,7 @@
   "sort": 5,
   "faction": 2,
   "title": "The Hand of Iruxos",
-  "body": "Taiga Wisemane of Shadowprey Village learned that the Burning Blade possesses a Demon Box holding the Hand of Iruxos, the relic the cult uses to open demonic portals at Mannoroc Coven and let a tide of demons into the world. The box lay sealed within a red crystal at Thunder Axe Fortress, and Taiga provided a demon pick to break it free, though a demon spirit rose to guard it. Back at Shadowprey the box was opened, revealing the gruesome Hand. Then Taiga turned the cult's own tool against it. Carried into Mannoroc Coven, the Hand could banish the portals, though each one sent forth a guardian when touched. With six portals closed the flood of demons was stemmed, and all of Azeroth, Taiga declared, was safer for it.",
+  "body": "Taiga Wisemane of Shadowprey Village has learned that the Burning Blade possesses a Demon Box holding the Hand of Iruxos, the relic the cult uses to open demonic portals at Mannoroc Coven and let a tide of demons into the world. The box lies sealed within a red crystal at Thunder Axe Fortress, the cult's stronghold in the north, and Taiga provides a demon pick to break it free. The tide must be stopped, and Taiga wants the box carried back to Shadowprey, pick and all, so that what lies inside can be turned to that end.",
   "triggers": [
    [
     4,
@@ -823,7 +1194,38 @@
    "smart_scripts 176581 (Hand of Iruxos Crystal summons Demon Spirit 11876)",
    "smart_scripts 177243 (Demon Portal summons Demon Portal Guardian 11937)"
   ],
-  "notes": "Fact-check: verified. All ten Demon Portal objects summon a Demon Portal Guardian (smart_scripts). Faction 2: 5381 AllowableRaces 690."
+  "notes": "Check: the gruesome sight and the plan to banish the portals (5581's description, offered after the 5381 turn-in) moved from part 1 to part 2 (DONE 5581). Converted: the box opened and Taiga's plan moved to part 1 (QUEST_DONE 5381), the portals banished to part 2 (QUEST_DONE 5581). Earlier: Fact-check: verified. All ten Demon Portal objects summon a Demon Portal Guardian (smart_scripts). Faction 2: 5381 AllowableRaces 690.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The red crystal was broken, though a demon spirit rose to guard what it sealed, and the Demon Box was carried back to Shadowprey. There Taiga opened it, and inside lay the Hand of Iruxos, the cult's key to its portals.",
+    "triggers": [
+     [
+      5,
+      5381
+     ]
+    ],
+    "sources": [
+     "quest 5381 reward text",
+     "smart_scripts 176581 (Hand of Iruxos Crystal summons Demon Spirit 11876)",
+     "quest 5581 description (offered next)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Hand was a gruesome sight, but Taiga turned the cult's own tool against it: carried into Mannoroc Coven, it could banish the portals. Each portal sent forth a guardian when the Hand was set against it, but six were banished and the flood of demons was stemmed. The effort had helped greatly in the fight against the demon threat, Taiga declared, and all of Azeroth was safer because of it.",
+    "triggers": [
+     [
+      5,
+      5581
+     ]
+    ],
+    "sources": [
+     "quest 5581 description and reward text",
+     "smart_scripts 177243 (Demon Portal summons Demon Portal Guardian 11937)"
+    ]
+   }
+  ]
  },
  {
   "id": 40533,
@@ -832,7 +1234,7 @@
   "sort": 6,
   "faction": 1,
   "title": "The Karnitol Shipwreck",
-  "body": "Reclaimers Inc., the Ironforge firm that finds what people have lost for the right price, sent the dwarf Kreldig Ungor to Nijel's Point with a list of jobs. The first was for Karnitol, a mage and noble of Stormwind, whose ship was attacked by sea giants off the northwest coast. He had tried to bring a valuable chest ashore, then abandoned it and teleported away. The chest was found burned where its magical traps had fired, forced open and empty, scored by long gouges that no blade had made. Kreldig blamed the Slitherblade naga, and Karnitol's satchel turned up among their tidehunters and sea witches. The other job was a shopping list for Leftwitch, a gnome mage of Kharanos: Hatefury horns and claws, scorpashi venom, aged kodo hide and at last felhound brains, nether wings and doomwarder blood from Mannoroc Coven. Kreldig had not even known there were demons in Desolace.",
+  "body": "Reclaimers Inc., the Ironforge firm that finds what people have lost for the right price, sent the dwarf Kreldig Ungor to Nijel's Point with a list of jobs. The first is for Karnitol, a mage and noble of Stormwind, whose ship was attacked by sea giants off the northwest coast. He tried to bring a valuable chest ashore, then abandoned it and teleported himself and his servants to safety, and now he wants it found. The other is a shopping list for Leftwitch, a gnome mage of Kharanos, beginning with horns and claws from the Hatefury satyr. Roetten in Ironforge thinks it easy coin, though Kreldig is short-handed as it is.",
   "triggers": [
    [
     4,
@@ -855,7 +1257,50 @@
    "quest 1466 completion text (did not realize demons were in Desolace)",
    "quest 1467"
   ],
-  "notes": "Fact-check: verified. Kreldig 5638 spawned at Nijel's Point (template 122) and gives 1454-1467 in this DB; 1454 and 1458 follow 1453. Faction 1: all AllowableRaces 1101."
+  "notes": "Check: part 1 trigger now ACCEPT 1455 only (the gouges and empty chest are 1455's description; the 1454 turn-in tells only the forced lid and burn marks). 1453 (Roetten, Ironforge) is used by no other file. Converted: the empty chest moved to part 1 (QUEST_DONE 1454, QUEST_ACCEPT 1455), the satchel recovered from the naga to part 2 (QUEST_DONE 1456), the rest of Leftwitch's list and Kreldig's surprise at the demons to part 3 (QUEST_DONE 1466). Earlier: Fact-check: verified. Kreldig 5638 spawned at Nijel's Point (template 122) and gives 1454-1467 in this DB; 1454 and 1458 follow 1453. Faction 1: all AllowableRaces 1101.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The chest was found curiously free of water damage, its top forced open and its magical traps long since fired, as the burn marks showed. Long, deep gouges along its sides had been made by no sword or dagger, and by neither man nor giant. It was empty.",
+    "triggers": [
+     [
+      4,
+      1455
+     ]
+    ],
+    "sources": [
+     "quest 1454 reward text",
+     "quest 1455 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Kreldig blamed the Slitherblade naga, who make their home in sunken night elf ruins near Ranazjar Isle, and Karnitol's satchel turned up among their tidehunters and sea witches. Those blasted naga, Kreldig grumbled: he would rather spend his life at war with the Horde than go up against their kind.",
+    "triggers": [
+     [
+      5,
+      1456
+     ]
+    ],
+    "sources": [
+     "quest 1456 description and reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Leftwitch's list grew stranger as it went: scorpashi venom, the hide of aged kodo and no other, and at last felhound brains, nether wings and doomwarder blood from the demons of Mannoroc Coven. Kreldig had not even known there were demons in Desolace, a land he thought the centaur owned once the night elves left, and he wondered how they came to be there.",
+    "triggers": [
+     [
+      5,
+      1466
+     ]
+    ],
+    "sources": [
+     "quest 1459 description",
+     "quest 1466 description and completion text"
+    ]
+   }
+  ]
  },
  {
   "id": 40534,
@@ -864,7 +1309,7 @@
   "sort": 7,
   "faction": 0,
   "title": "The Gizelton Caravan",
-  "body": "The goblin brothers Cork and Rigger Gizelton run the only caravan brave enough to cross Desolace, a kodo train hauling their wares between a stop outside Kormek's Hut in the north and another on the southern road east of Shadowprey Village. At each stop a selling machine opens for business, Cork's Vendor-Tron 1000 and Rigger's Super-Seller 680, and Cork, his brother says, is sure his own will sell more. The road between is perilous. Near the Kolkar village the centaur war drums make the brothers halt until someone will guard them past, and farther south, where the demons of Mannoroc Coven usually ignore them, something has spooked the kodo. Bodyguards who see them through are paid by their partner Smeed Scrabblescrew, who supplies the kodo and grumbles at the cost, since the brothers clear a single gold piece a week.",
+  "body": "The goblin brothers Cork and Rigger Gizelton run the only caravan brave enough to cross Desolace, a kodo train hauling their wares between a stop outside Kormek's Hut in the north and another on the southern road east of Shadowprey Village. At each stop a selling machine opens for business, Cork's Vendor-Tron 1000 and Rigger's Super-Seller 680, and Cork, his brother says, is sure his own will sell more. The road between is perilous. Near the Kolkar village the centaur war drums make the brothers halt until someone will guard them past, and farther south, where the demons of Mannoroc Coven usually ignore them, something has spooked the kodo. Bodyguards collect their pay from the brothers' partner Smeed Scrabblescrew, who supplies the kodo.",
   "triggers": [
    [
     4,
@@ -883,7 +1328,35 @@
    "quest 5561 (Smeed supplies the kodo)",
    "warcraft.wiki.gg/wiki/Gizelton_Caravan (route and stops)"
   ],
-  "notes": "Fact-check: only Rigger speaks of the rivalry (npc_text 4815), so the line now credits him. Faction 0: both quests AllowableRaces 0, givers template 35."
+  "notes": "Converted: Smeed's reactions after each escort moved to parts (part 1 QUEST_DONE 5821, part 2 QUEST_DONE 5943), split because each turn-in tells its own. The opening keeps the route, the dangers and who pays. Earlier: Fact-check: only Rigger speaks of the rivalry (npc_text 4815), so the line now credits him. Faction 0: both quests AllowableRaces 0, givers template 35.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Past the Kolkar village the caravan came through intact, and Smeed paid as promised, though he doubted it was prosperous to be paying the likes of a hired guard. If he were a bit taller, he mused, he would ride kodo-back with the biggest gun he could carry and show the centaur a thing or two himself.",
+    "triggers": [
+     [
+      5,
+      5821
+     ]
+    ],
+    "sources": [
+     "quest 5821 completion and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The caravan came safely through Mannoroc Coven, and Smeed wiped his brow and thanked the goddess of greed, for if it ever disappeared he would be ruined. He still doubts the sense of paying so much to guard it, since Cork and Rigger make only one gold piece a week, but as long as they keep buying his kodo he cares little how they run their business.",
+    "triggers": [
+     [
+      5,
+      5943
+     ]
+    ],
+    "sources": [
+     "quest 5943 completion and reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 40535,
@@ -892,7 +1365,7 @@
   "sort": 8,
   "faction": 0,
   "title": "The Corruption of Maraudon",
-  "body": "At the end of the Valley of Spears lies Maraudon, holy ground of the centaur and the root of their story. The Cenarion Circle tells it plainly. Ages ago Zaetar, first son of Cenarius and brother of Remulos, came to the earth elemental Princess Theradras, a power somehow kin to the Old Gods, and their offspring became the centaur. The children killed their father, and Theradras keeps his remains in Maraudon still. Keeper Marandis at Nijel's Point and Selendra near Shadowprey have come from Stonetalon to recover them, and seek allies strong enough to slay Theradras. The caverns are fouled besides. The satyr Lord Vyletongue has poisoned them and created Noxxion as a living symbol of his corruption, and Talendria of Nijel's Point and Vark Battlescar of Shadowprey seek to heal the vines he twisted. Outside, Cavindra pleads for her brother Celebras, who wanders the depths cursed, his scepter stolen in two pieces.",
+  "body": "At the end of the Valley of Spears lies Maraudon, holy ground of the centaur and the root of their story. Keeper Marandis at Nijel's Point and Selendra near Shadowprey have come down from Stonetalon with their sisters on a mission for the Cenarion Circle, to lay to rest a sorrow from ages past, and they seek allies strong enough to see it done. The caverns are fouled besides: the satyr Lord Vyletongue poisoned them and made Noxxion as a living symbol of his corruption. Talendria and Vark Battlescar seek to heal the vines he twisted, and Cavindra pleads for her brother Celebras, wandering cursed within, his scepter stolen in two pieces.",
   "triggers": [
    [
     4,
@@ -920,8 +1393,86 @@
    "quest 7044 description (Vyletongue, Noxxion, Celebras, scepter in two parts)",
    "quests 7029, 7041 descriptions (Vylestem vines)",
    "npc_text 6574 (Cavindra barely escaped)",
-   "warcraft.wiki.gg/wiki/Zaetar, Maraudon (pre-Cataclysm)"
+   "warcraft.wiki.gg/wiki/Zaetar, Maraudon (pre-Cataclysm)",
+   "npc_text 6334, 6335 (Marandis and Selendra withhold the details from the unproven)"
   ],
-  "notes": "Fact-check: verified. Faction 0: 7064 and 7029 Horde, 7065 and 7041 Alliance, 7044 open to all. These Maraudon (sort 2100) quests are used by no finished zone."
+  "notes": "Check: the Zaetar and Theradras origin moved out of the opening into a new part 1 (ACCEPT 7064, 7065, whose descriptions tell it; trimmed to what both say, since 7064 has the centaur holding the remains and 7065 Theradras); 'brother of Remulos' (completion texts) moved to parts 4 and 5; old parts 1 to 4 renumbered 2 to 5. Converted: the vines healed moved to part 1 (QUEST_DONE 7029, 7041), Celebras redeemed to part 2 (QUEST_DONE 7044, turned in to Celebras inside Maraudon), Theradras's death to part 3 (Horde, QUEST_DONE 7064) and part 4 (Alliance, QUEST_DONE 7065), split because the two reward texts differ. All instance outcomes are out of the opening. Only the five quests Desolace owns are used. Earlier: Fact-check: verified. Faction 0: 7064 and 7029 Horde, 7065 and 7041 Alliance, 7044 open to all. These Maraudon (sort 2100) quests are used by no finished zone.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The sorrow is the centaur's own beginning. Ages ago Zaetar, first son of Cenarius, came together with Princess Theradras, an elemental force of earth somehow kin to the Old Gods, and their offspring became the centaur. The children repaid their father by killing him, and his remains lie in Maraudon still. The Circle seeks those strong enough to slay Theradras, so that Zaetar's remains can be recovered and carried back to Stonetalon.",
+    "triggers": [
+     [
+      4,
+      7064
+     ],
+     [
+      4,
+      7065
+     ]
+    ],
+    "sources": [
+     "quests 7064, 7065 descriptions (Zaetar, Theradras, the centaur killed their father; slay Theradras, recover the remains, return to Stonetalon)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Purified water from the orange crystal pool was poured on the Vylestem vines, and the corrupted scions Vyletongue sent up out of them were cut down. Some of the corruption he spread through Maraudon was healed and the plants could grow again, though much remains to be done.",
+    "triggers": [
+     [
+      5,
+      7029
+     ],
+     [
+      5,
+      7041
+     ]
+    ],
+    "sources": [
+     "quests 7029, 7041 descriptions, objectives and reward texts"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Both pieces of the Scepter of Celebras, the Celebrian Rod and the Celebrian Diamond, were taken back from Vyletongue and Noxxion, and Celebras woke as if from a nightmare that seemed it would never end. With the two parts of his scepter recovered, he has hope that Maraudon may one day be rid of the corruption.",
+    "triggers": [
+     [
+      5,
+      7044
+     ]
+    ],
+    "sources": [
+     "quest 7044 description, objectives, completion and reward text (Celebras the Redeemed 13716 ends it)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Princess Theradras was slain in the depths of Maraudon. Zaetar, brother to Remulos, had brought many pains to the world, Selendra said, and in the end they caused his death. It was the hardest of the tasks the dryads had come for, and Selendra rewarded her slayers with tokens of her people, as she had been given leave to do. Zaetar's remains are not yet settled: on that, Selendra means to seek the wisdom of Keeper Marandis.",
+    "triggers": [
+     [
+      5,
+      7064
+     ]
+    ],
+    "sources": [
+     "quest 7064 reward text (Horde, Selendra)",
+     "quest 7064 completion text (Zaetar, brother to Remulos, brought many pains)"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "Princess Theradras was slain in the depths of Maraudon. Zaetar, brother to Remulos, had brought many pains to the world and his own death with them, and there is a lesson in that, Marandis said. His remains did not come back with her slayers, and though it concerns him, Keeper Marandis will not question the will of Cenarius' first born. Perhaps now, he hopes, the will of the centaur will break and their thirst for blood will lessen.",
+    "triggers": [
+     [
+      5,
+      7065
+     ]
+    ],
+    "sources": [
+     "quest 7065 reward text (Alliance, Marandis)",
+     "quest 7065 completion text (brother to Remulos; a lesson to all)"
+    ]
+   }
+  ]
  }
 ]

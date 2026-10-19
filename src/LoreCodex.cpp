@@ -25,6 +25,7 @@
 #include "ChatCommand.h"
 #include "Config.h"
 #include "Creature.h"
+#include "Group.h"
 #include "Player.h"
 #include "QuestDef.h"
 #include "ScriptMgr.h"
@@ -287,10 +288,22 @@ public:
         return true;
     }
 
+    // The game names one player for a kill (the looter); everyone in their group close enough to
+    // share the kill's reward was there for it too.
     void OnPlayerCreatureKillCredit(Player* player, Creature* killed) override
     {
-        if (GetConfig().enabled && killed)
+        if (!GetConfig().enabled || !killed)
+            return;
+        Group* group = player->GetGroup();
+        if (!group)
+        {
             Data::OnTrigger(player, TRIGGER_KILL, killed->GetEntry());
+            return;
+        }
+        for (GroupReference* ref = group->GetFirstMember(); ref; ref = ref->next())
+            if (Player* member = ref->GetSource())
+                if (member == player || (member->IsInMap(player) && member->IsAtGroupRewardDistance(killed)))
+                    Data::OnTrigger(member, TRIGGER_KILL, killed->GetEntry());
     }
 
     void OnPlayerQuestAccept(Player* player, Quest const* quest) override

@@ -20,7 +20,7 @@
    "quest 642 description",
    "quest 663 description"
   ],
-  "notes": "Opening line softened from 'oldest human land in the Eastern Kingdoms' (unsourced) to the birthplace of Arathor; rest verified against the wiki and quests 638, 681."
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Thoras's death and the ruin of Stromgarde are the state of the land on arrival; the voice beneath the hills is told only as a plea. Arathi Basin (League of Arathor, Defilers) stays out: it is a battleground, and mod-individual-progression only sets its level brackets from state 0. Earlier: Opening line softened from 'oldest human land in the Eastern Kingdoms' (unsourced) to the birthplace of Arathor; rest verified against the wiki and quests 638, 681."
  },
  {
   "id": 4501,
@@ -42,7 +42,7 @@
    "posarea.py: area 1857 found on the western edge between Hillsbrad and Arathi",
    "zone_areas: Highland Strider 2559 and Plains Creeper 2563 spawn in area 1857"
   ],
-  "notes": "Reframed: Hillsbrad's Thoradin's Wall (26713, area 1057) already tells the wall's building and ruin, so this keeps to the Arathi side and only names its builder. Dropped the unsourced 'oldest works of human hands' and 'greatest threat' lines. Galen's Fall (Cataclysm) left out."
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Reframed: Hillsbrad's Thoradin's Wall (26713, area 1057) already tells the wall's building and ruin, so this keeps to the Arathi side and only names its builder. Dropped the unsourced 'oldest works of human hands' and 'greatest threat' lines. Galen's Fall (Cataclysm) left out."
  },
  {
   "id": 4502,
@@ -64,7 +64,7 @@
    "quest 671 description and reward text",
    "DB spawns: Syndicate Highwayman 2586, Mercenary 2589, Pathstalker 2587 in area 313; Singer 2600 (rare) at 32.3,31.0"
   ],
-  "notes": "verified. Barns is scene dressing for a farm estate."
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: verified. Barns is scene dressing for a farm estate."
  },
  {
   "id": 4503,
@@ -86,7 +86,7 @@
    "quest 677 description (Witherbark and Boulderfist working together)",
    "warcraft.wiki.gg/wiki/Boulderfist_clan (Tallow and Boulder'gor)"
   ],
-  "notes": "verified"
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: verified"
  },
  {
   "id": 4504,
@@ -121,7 +121,7 @@
    "warcraft.wiki.gg/wiki/Circle_of_Inner_Binding (southern highlands near Stromgarde, strongest stone)",
    "warcraft.wiki.gg/wiki/Fozruk (mountain giant, had three kobolds with him until 4.0.3a)"
   ],
-  "notes": "verified. Four AREA triggers so any circle unlocks it. Exile elements inferred from their names (Burning, Cresting, Thundering, Rumbling). The Cataclysm giant Thenan is left out."
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: verified. Four AREA triggers so any circle unlocks it. Exile elements inferred from their names (Burning, Cresting, Thundering, Rumbling). The Cataclysm giant Thenan is left out."
  },
  {
   "id": 4505,
@@ -145,7 +145,7 @@
    "quest 690 description (Trelane failed to hold the Tower)",
    "DB spawns in area 324: Galen 2607, Falconcrest 2597, Or'Kalar 2773 near the tower, Witherbark Berserker 2558 x3"
   ],
-  "notes": "verified. The Tower of Arathor (325) and The Sanctum (326) are folded in here; the city itself is area 324. Galen's murder of Thoras (later lore) left out."
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: verified. The Tower of Arathor (325) and The Sanctum (326) are folded in here; the city itself is area 324. Galen's murder of Thoras (later lore) left out."
  },
  {
   "id": 4506,
@@ -168,7 +168,7 @@
    "quest 669 description (tide too low, creatures watching)",
    "DB spawns in area 327: Shakes O'Breen 2610, Draxlegauge 2774, Phizzlethorpe 2768, Steelgut 2769, Nilzlix 2767, Lolo 2766"
   ],
-  "notes": "Name origin hedged (the wiki says apparently). 'Engineers' changed to 'inventors' (quests 663, 665: the Professor's contraptions, the doctor's goggles)."
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Name origin hedged (the wiki says apparently). 'Engineers' changed to 'inventors' (quests 663, 665: the Professor's contraptions, the doctor's goggles)."
  },
  {
   "id": 4507,
@@ -177,7 +177,7 @@
   "sort": 7,
   "faction": 0,
   "title": "The Drowned Reef",
-  "body": "Off the coast southwest of Faldir's Cove lies the Drowned Reef, and it is not only a reef. Sunken stonework, something like a temple, lies beneath the waves, guarded by the Daggerspine naga, and it is said the strange tide that wrecked the Blackwater Raiders was their doing. The Maiden's Folly and the Spirit of Silverpine ran aground on it and sank so fast that few escaped, and the naga slew the survivors in the water. The ships' logs and charts still lie in the wrecks, and gems from an old elven treasure, calcified into stone, are scattered across the sea floor. A naga called Prince Nazjak hunts these waters.",
+  "body": "Off the coast southwest of Faldir's Cove lies the Drowned Reef, and it is not only a reef. Sunken stonework, something like a temple, lies beneath the waves, guarded by the Daggerspine naga, and it is said the strange tide that wrecked the Blackwater Raiders was their doing. The Maiden's Folly and the Spirit of Silverpine ran aground on it and sank so fast that few escaped, and the naga slew the survivors in the water. The ships' logs and charts still lie in the wrecks, and somewhere in these waters, if a gnomish contraption is to be believed, lies the lost elven treasure that brought the Raiders here. A naga called Prince Nazjak hunts the reef.",
   "triggers": [
    [
     1,
@@ -191,7 +191,23 @@
    "warcraft.wiki.gg/wiki/Faldir's_Cove (tide caused by the naga guarding sunken ruins)",
    "DB spawns in area 328: Daggerspine Raider 2595 x42, Sorceress 2596 x10, Prince Nazjak 2779 (rare) at 19.4,90.2"
   ],
-  "notes": "verified. 'Few escaped' softened from quest 664, where Steelgut alone seems to have survived from his crew."
+  "notes": "Converted: the calcified elven gems on the sea floor, which the goggles reveal (quest 666), moved to part 1 (QUEST_DONE 666); the opening keeps only the treasure the Raiders came for (quest 663 reward text). Earlier: verified. 'Few escaped' softened from quest 664, where Steelgut alone seems to have survived from his crew. Checked: the naga-caused tide stays as hearsay; it is the wiki's pre-Cataclysm (World of Warcraft) history of Faldir's Cove, and quests 662, 663 and 669 (tide fell as the ships neared a temple in the reef, creatures disturbed) fit it.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The reef did hold the treasure. Elven gems lie scattered across the sea floor, so long under the water that they have calcified into thick stone and can hardly be told from the rocks around them. Only through gnomish goggles, charged in the cursed cave above the cove, can they be picked out of the dark sea, beneath the eyes of the naga.",
+    "triggers": [
+     [
+      5,
+      666
+     ]
+    ],
+    "sources": [
+     "quest 665 description (enchanted stone, cursed cave)",
+     "quest 666 description and reward text (gems calcified, goggles)"
+    ]
+   }
+  ]
  },
  {
   "id": 4508,
@@ -214,7 +230,7 @@
    "DB spawns in area 320: Refuge Pointe Defender 10696 x22, Cedrik Prose 2835 gryphon master, Wanted Board 2713, merchants",
    "quest 690 description (Trelane's items), quest 691 completion text (dwarven companion)"
   ],
-  "notes": "Removed Skuerto grumbling about Danath's return: npc_text 16390 uses broadcast text 43273, Cataclysm-era gossip (Danath only returns to Arathi in Cataclysm). Arathi Basin battlemasters left out."
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Removed Skuerto grumbling about Danath's return: npc_text 16390 uses broadcast text 43273, Cataclysm-era gossip (Danath only returns to Arathi in Cataclysm). Arathi Basin battlemasters left out."
  },
  {
   "id": 4509,
@@ -236,7 +252,7 @@
    "DB spawns in area 315: Dabyrie Laborer 2582 x26, Dabyrie Militia 2581 x9, Fardel 4479, Kenata 4480, Marcel 4481 (faction 123); Genavie Callow 4486 at 1561,260 (Undercity)",
    "waypoint_data 145720: Valorcall's path runs only between Stromgarde (324) and Refuge Pointe (320)"
   ],
-  "notes": "Valorcall's patrol removed: in this database his waypoint path runs between Stromgarde and Refuge Pointe and never reaches the farm. Replaced with Genavie Callow's grudge from quest 1164 (period content)."
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Valorcall's patrol removed: in this database his waypoint path runs between Stromgarde and Refuge Pointe and never reaches the farm. Replaced with Genavie Callow's grudge from quest 1164 (period content)."
  },
  {
   "id": 4510,
@@ -245,7 +261,7 @@
   "sort": 10,
   "faction": 0,
   "title": "Go'Shek Farm",
-  "body": "Go'Shek Farm, in the east of the highlands, has been taken over by the Horde to help feed Hammerfall, and peons work its fields under the watch of grunts. Not all of its business is farming. Forsaken bodyguards stand over a small house to the south, where Apothecary Jorell works in secret and promises anyone who troubles him that he will find a use for their body once they are dead. Couriers slip away from the house toward Tarren Mill, and the farm has drawn quiet watchers from Southshore who suspect the Forsaken are brewing something terrible.",
+  "body": "Go'Shek Farm, in the east of the highlands, has been taken over by the Horde to help feed Hammerfall, and peons work its fields under the watch of grunts. Not all of its business is farming. Forsaken bodyguards stand over a small house to the south, home to Apothecary Jorell, who promises anyone who troubles him that he will find a use for their body once he has killed them, and swears that no one will stop the Forsaken. Such company draws notice: a pair of watchers sent from Southshore keep a quiet eye on the farm from hiding, suspecting the Forsaken of some dark work.",
   "triggers": [
    [
     1,
@@ -258,7 +274,7 @@
    "creature_text 2733 (Jorell)",
    "DB spawns in area 314: Hammerfall Peon 2618 x27, Grunt 2619 x16, Forsaken Bodyguard 2721 x4, Apothecary Jorell 2733 at 60.1,59.3, Forsaken Courier 2714, Quae 2712, Kinelory 2713"
   ],
-  "notes": "Cut back to a brief mention of Phin Odelic's watchers: the Hints of a New Plague chain is told in Hillsbrad (26724, 26720). The wiki's earlier owner Primwell Skye left out."
+  "notes": "Converted: dropped that Jorell works in secret and that couriers carry his notes to Tarren Mill: the courier (QUEST_DONE 659) and Jorell's experiments (QUEST_DONE 658) are the reveals of Hillsbrad's Hints of a New Plague (26724 parts 1 and 2), whose quests stay Hillsbrad's. No parts: no Arathi trigger reveals them. Jorell's second line from creature_text 2733 (aggro lines only, nothing later). Earlier: Cut back to a brief mention of Phin Odelic's watchers: the Hints of a New Plague chain is told in Hillsbrad (26724, 26720). The wiki's earlier owner Primwell Skye left out. Checked: Jorell stays named; his nameplate and aggro lines (smart_scripts 2733, creature_text 2733) are what any visitor meets, and Hillsbrad 26724 part 2 reveals his experiments, not who he is."
  },
  {
   "id": 4511,
@@ -280,7 +296,7 @@
    "quest 638 description (northeastern Arathi)",
    "quest 677 description"
   ],
-  "notes": "verified. Defilers and Arathi Basin material left out."
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: verified. Defilers and Arathi Basin material left out."
  },
  {
   "id": 4512,
@@ -289,7 +305,7 @@
   "sort": 12,
   "faction": 0,
   "title": "Drywhisker Gorge",
-  "body": "Drywhisker Gorge cuts into the hills east of Hammerfall and ends in a cave held by the Drywhisker kobolds. They are allies of the giants who keep a prisoner beneath Arathi, and they carry motes of that prisoner's power. Nearby, a cluster of iridescent shards juts from the rock, much like the Shards of Myzrael, though it lacks their reassuring warmth. The gorge is also the only known source of lesser bloodstone ore, and the kobold geomancer Flintdagger is sometimes seen among the diggers and surveyors.",
+  "body": "Drywhisker Gorge cuts into the hills east of Hammerfall and ends in a cave held by the Drywhisker kobolds. The voice that speaks through the Shards of Myzrael names them allies of the giants who hold her captive beneath Arathi, and they carry motes of her power. Nearby, a cluster of iridescent shards juts from the rock, much like the Shards of Myzrael, though it lacks their reassuring warmth. The gorge is also the only known source of lesser bloodstone ore, and the kobold geomancer Flintdagger is sometimes seen among the diggers and surveyors.",
   "triggers": [
    [
     1,
@@ -302,7 +318,7 @@
    "warcraft.wiki.gg/wiki/Drywhisker_Gorge (east of Hammerfall, cave, only source of Lesser Bloodstone Ore before Cataclysm)",
    "DB spawns in area 318: Drywhisker Kobold 2572, Digger 2574, Surveyor 2573, Geomancer Flintdagger 2609 (rare); Lesser Bloodstone Deposit 2653 and Iridescent Shards 2701 at 83-87,29-34"
   ],
-  "notes": "verified. Iridescent Shards stand just outside area 318 (map files read area 45), hence 'nearby'."
+  "notes": "Converted: the kobolds' alliance with the giants is now Myzrael's claim (quest 642 description), since her own word is what the story later turns against. No parts. Earlier: verified. Iridescent Shards stand just outside area 318 (map files read area 45), hence 'nearby'."
  },
  {
   "id": 4513,
@@ -325,7 +341,7 @@
    "quest 677 description",
    "DB spawns in area 317: Headhunter 2556, Axe Thrower 2554, Witch Doctor 2555, Shadow Hunter 2557, Zalas Witherbark 2605 and Nimar the Slayer 2606 (rares, several spawn points)"
   ],
-  "notes": "Knife now limited to the strongest shadow hunters (quest 691). Nimar placed in the village (his spawn points are in area 317), not 'the hills around it'. Cavern and leaders from the wiki."
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Knife now limited to the strongest shadow hunters (quest 691). Nimar placed in the village (his spawn points are in area 317), not 'the hills around it'. Cavern and leaders from the wiki."
  },
  {
   "id": 4514,
@@ -334,7 +350,7 @@
   "sort": 14,
   "faction": 0,
   "title": "Boulderfist Hall",
-  "body": "Boulderfist Hall is an ogre stronghold in the south of the highlands, east of the Thandol Span. Brutes and magi of the Boulderfist clan hold it, and the defenders of Hammerfall count them a harder foe than the Witherbark. A hulking ogre known as Molok the Crusher is sometimes found there. Of late, one of the hall's ogres, Kor'gresh Coldrage, has been hurling blasts of ice at his own kin to keep them in line, using a wand that once belonged to Archmage Trelane of Stromgarde.",
+  "body": "Boulderfist Hall is an ogre stronghold in the south of the highlands, east of the Thandol Span. Brutes and magi of the Boulderfist clan hold it, and the defenders of Hammerfall count them a harder foe than the Witherbark. A hulking ogre known as Molok the Crusher is sometimes found there, and among the hall's ogres is one named Kor'gresh Coldrage, who bellows that he will smash his foes and fights with blasts of freezing cold.",
   "triggers": [
    [
     1,
@@ -344,9 +360,26 @@
   "sources": [
    "quest 693 description (south of Refuge Pointe, east of Thandol Span; Kor'gresh's ice blasts)",
    "quest 678 description (maulers and magi a greater challenge)",
-   "DB spawns in area 316: Boulderfist Brute 2566 x18, Magus 2567 x8, Kor'gresh Coldrage 2793, Molok the Crusher 2604 (rare)"
+   "DB spawns in area 316: Boulderfist Brute 2566 x18, Magus 2567 x8, Kor'gresh Coldrage 2793, Molok the Crusher 2604 (rare)",
+   "smart_scripts 2793 (Frost Nova, Trelane's Freezing Touch in combat)",
+   "creature_text 2793 (Me smash!)"
   ],
-  "notes": "Comparison fixed: quest 678 sets the Hall's ogres against the Witherbark of quest 677, not Boulder'gor."
+  "notes": "Converted: that Kor'gresh's wand is Trelane's, and his use of it on his kin, moved to part 1 (QUEST_ACCEPT 693, Skuerto's discovery; Alliance-only part on a faction 0 place). The opening keeps what anyone sees: his frost spells (smart_scripts 2793) and his battle cries. Earlier: Comparison fixed: quest 678 sets the Hall's ogres against the Witherbark of quest 677, not Boulder'gor.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The ice is not his own. A dwarf scouting for Archmage Malin of Stormwind learned that Kor'gresh carries the Wand of Invocation, left behind by Archmage Trelane when Stromgarde fell, and from the blasts of ice the ogre throws at his own kin to keep them in line, judged him close to mastering all of its powers.",
+    "triggers": [
+     [
+      4,
+      693
+     ]
+    ],
+    "sources": [
+     "quest 693 description"
+    ]
+   }
+  ]
  },
  {
   "id": 4515,
@@ -369,7 +402,7 @@
    "DB spawns: Foggy MacKreel 2696 in area 880; Dark Iron Shadowcaster 2577, Bombardier 4062, Supplier 2575 and Cache of Explosives 2704 at 48-50,87-89",
    "quest 647 description and reward text (Longbraid, debt to Brewmeister Bilger in Southshore)"
   ],
-  "notes": "Reframed to the Arathi end only: the bridge's building, the Dark Iron attack and the explosives cache are told in Wetlands (1110, 1129) and are no longer repeated here."
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Foggy's rumbling is his own account (quest 647, Southshore's quest, not a trigger here); the cache and the Span's story stay Wetlands' (1110, 1129). Earlier: Reframed to the Arathi end only: the bridge's building, the Dark Iron attack and the explosives cache are told in Wetlands (1110, 1129) and are no longer repeated here."
  },
  {
   "id": 4516,
@@ -378,7 +411,7 @@
   "sort": 1,
   "faction": 1,
   "title": "Captain Nials",
-  "body": "Captain Nials commands the remnants of the Stromgarde army at Refuge Pointe. Her city has fallen, and honor and duty bind her soldiers to the highlands until the king's banner flies over Stromgarde once more, so firmly that she turned away the dwarves of the Wetlands when they asked for aid. She knows the war is going badly, her ranks thinning while the enemy grows. When the badges of her fallen soldiers are taken back from the Syndicate, she reads their names aloud one by one and sighs that so many have been lost, and so many more must be before the battle ends. Then she sends word to their families.",
+  "body": "Captain Nials commands the remnants of the Stromgarde army at Refuge Pointe. Her city has fallen, and honor and duty bind her soldiers to the highlands until the king's banner flies over Stromgarde once more. She knows the war is going badly. Her ranks thin while the enemy grows, the help she needs from Southshore must pass through land the Syndicate holds, and inside the city the Syndicate pays its rabble a bounty in gold on the badge of every militiaman they kill. Nials will not let the cutthroats keep trophies of her brave dead, and she wants every one of those badges brought back.",
   "triggers": [
    [
     2,
@@ -392,7 +425,24 @@
    "creature_text 2700 (reading the names, So many lost)",
    "warcraft.wiki.gg/wiki/Refuge_Pointe (Captain Nials, she)"
   ],
-  "notes": "The dwarves' plea is cut to one clause, since Wetlands 1129 tells it. Faction 1: Nials uses faction template 12 (Stormwind), hostile to Horde; gossip menu 11881, so she can be talked to."
+  "notes": "Converted: the badges' return and her reading of the names moved to part 1 (QUEST_DONE 682, which needs 681, so Northfold's cleared road is told there too). Dropped her refusal of the Wetlands dwarves: it is the turn-in of Wetlands quest 634, told in wetlands 1120 and 1129 part 4. Gossip 11881 (npc_text 16661, broadcast 44809, Cataclysm-era) is not used. Faction 1: Nials uses faction template 12 (Stormwind), hostile to Horde. Checked: part 1's last line reworded off the 682 reward text and away from 4526 part 2. Gossip 11881 (npc_text 16661) still unused.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "With Northfold Manor's outlaws cut down, more supplies get through from Southshore, and Nials dares to hope her cause is not lost. When the badges come back, she searches through them and reads the names aloud, private after private, then sighs that so many have been lost, and so many more must be before the battle ends. Word will go to every family that its soldier died fighting: hard tidings to carry, yet kinder than leaving them to wonder.",
+    "triggers": [
+     [
+      5,
+      682
+     ]
+    ],
+    "sources": [
+     "quest 681 reward text",
+     "quest 682 reward text",
+     "creature_text 2700"
+    ]
+   }
+  ]
  },
  {
   "id": 4517,
@@ -401,7 +451,7 @@
   "sort": 2,
   "faction": 2,
   "title": "Prince Galen Trollbane",
-  "body": "Galen Trollbane is the son of King Thoras Trollbane and heir to a kingdom in ruins. With his father dead, he leads the militia that holds part of Stromgarde, keeping to a chapel deep in the city beside the Sanctum where Thoras lies entombed with the ancestral sword Trol'kalar. To guard the tomb, the sigils that unseal it were divided among the survivors: the sigil of Thoradin Galen broke into five pieces and gave to his defenders, the sigil of Arathor went to his cavalry leader Valorcall, and the sigil of Trollbane he keeps on his own person. He is well guarded and a capable warrior in his own right.",
+  "body": "Galen Trollbane is the son of King Thoras Trollbane and heir to a kingdom in ruins. With his father dead, he leads the militia that holds part of Stromgarde, keeping to a chapel deep in the city beside the Sanctum where Thoras lies entombed with the ancestral sword Trol'kalar. To guard the tomb, the sigils that unseal it were divided among the survivors: the sigil of Thoradin Galen broke into pieces and gave to his defenders, the sigil of Arathor went to his cavalry leader Valorcall, and the sigil of Trollbane he keeps on his own person. He is well guarded and a capable warrior in his own right.",
   "triggers": [
    [
     3,
@@ -420,7 +470,26 @@
    "quest 645 description (Sanctum behind the chapel)",
    "warcraft.wiki.gg/wiki/Galen_Trollbane (son and heir of Thoras, led the defenders, guarded the crypt)"
   ],
-  "notes": "verified. Faction 2: Galen uses faction template 123 (Stromgarde, hostile only to Horde) and has no gossip, so only the Horde can kill him; quest 644 is Horde-only. The later claim that Galen murdered Thoras, and his Forsaken afterlife, are left out."
+  "notes": "Converted: the opening was already free of outcomes; his death is part 1 (KILL 2607 or QUEST_DONE 644), kept to what a kill alone shows: the sigil he carried and the Darkspear's view of his line are told in 4529. Earlier: verified. Faction 2: Galen uses faction template 123 (Stromgarde, hostile only to Horde) and has no gossip, so only the Horde can kill him; quest 644 is Horde-only. The later claim that Galen murdered Thoras, and his Forsaken afterlife, are left out. Checked: 'five pieces' made 'pieces' (mod-individual-progression raises quest 640 to 11 fragments). Part 1 confirmed true for a plain kill.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Prince Galen's guards could not save him. He was cut down in his chapel deep in the militia-held quarter of Stromgarde, beside the Sanctum where his father lies entombed, and the defenders of the ruined city lost the prince who led them.",
+    "triggers": [
+     [
+      3,
+      2607
+     ],
+     [
+      5,
+      644
+     ]
+    ],
+    "sources": [
+     "quest 644 description and completion text"
+    ]
+   }
+  ]
  },
  {
   "id": 4518,
@@ -451,7 +520,44 @@
    "warcraft.wiki.gg/wiki/Syndicate (led by nobles of fallen Alterac; Falconcrest commands in Stromgarde)",
    "DB spawns: Falconcrest 2597 and Otto 2599 at 26,65.7 in area 324"
   ],
-  "notes": "verified. Faction 0: both are faction template 16, hostile to everyone, so both factions can kill them. The Argus Wake connection is left out (not shown in 3.3.5 Arathi content). 'No strategist' paraphrases quest 685 (not a strategic target)."
+  "notes": "Converted: their deaths are parts 1 (Otto: KILL 2599 or QUEST_DONE 685) and 2 (Falconcrest: KILL 2597 or QUEST_DONE 685), split because either can fall first; both factions can kill them. The Syndicate's Alterac nobles stay general, as in Hillsbrad's and Alterac's openings; no Perenolde, Vardus or Argus Wake. Earlier: verified. Faction 0: both are faction template 16, hostile to everyone, so both factions can kill them. The Argus Wake connection is left out (not shown in 3.3.5 Arathi content). 'No strategist' paraphrases quest 685 (not a strategic target). Checked: Otto's line is out-of-combat chatter (smart_scripts 2599), so part 1 no longer makes it his dying words. Both parts confirmed: either can die first, and QUEST_DONE 685 shows both.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Otto's assurances came to nothing. The bodyguard who had cut down dozens of Stromgarde's defenders was slain at last in the inner keep, and his promise to Lord Falconcrest that victory was only a matter of time died with him.",
+    "triggers": [
+     [
+      3,
+      2599
+     ],
+     [
+      5,
+      685
+     ]
+    ],
+    "sources": [
+     "quest 685 description",
+     "creature_text 2599"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Lord Falconcrest was struck down in the inner keep from which he had directed the Syndicate's war on Stromgarde. The militia had hoped that his death would throw the outlaws' efforts in the highlands into disarray, though his rabble holds the keep still.",
+    "triggers": [
+     [
+      3,
+      2597
+     ],
+     [
+      5,
+      685
+     ]
+    ],
+    "sources": [
+     "quest 685 description"
+    ]
+   }
+  ]
  },
  {
   "id": 4519,
@@ -460,7 +566,7 @@
   "sort": 4,
   "faction": 0,
   "title": "Marez Cowl",
-  "body": "Marez Cowl is a warlock and a high-ranking advisor and operative of the Syndicate, last seen in the outlaw-held quarter of Stromgarde. She traffics openly with demons. With a bloodstone orb she has called them forth in great numbers, a power the shaman Tor'gan of Hammerfall feels as a burning in his own blood. Captain Nials has heard it whispered that Marez is an emissary between the Syndicate and some other, darker power. Refuge Pointe and Hammerfall agree on little, but both want her dead.",
+  "body": "Marez Cowl is a warlock and a high-ranking advisor and operative of the Syndicate, last seen in the outlaw-held quarter of Stromgarde. She is skilled and cunning, and she traffics openly with demons, calling them forth in great numbers from within the city walls. Those who hunt her are warned to take the greatest care. Refuge Pointe and Hammerfall agree on little, but each has its own reasons to want her dead.",
   "triggers": [
    [
     3,
@@ -481,7 +587,43 @@
    "quest 671 completion text (burning in the blood)",
    "DB spawns: Marez Cowl 2783 at 29.6,63 in area 324"
   ],
-  "notes": "'Highest' softened to high-ranking (quest 684: a high-level advisor). Quest 673 calls the warlock him while 684 and its reward text say she; the entry follows 684. Faction 0: faction template 16, killable by both, and each faction has a quest for her."
+  "notes": "Converted: Nials's rumor of the darker power moved to part 2 (QUEST_DONE 684; Alliance-only part), her death to part 1 (KILL 2783, QUEST_DONE 684 or 673). Tor'gan's burning blood and the bloodstone orb left the opening: tracing the summoning to her is Tor'gan's reveal (4522 part 2, QUEST_ACCEPT 673), and the orb's fate is his part 3. The rumor is Arathi's own text and names no one, so it does not give away Alterac's Argus Wake. Pronoun follows quest 684 (she). Faction 0: faction template 16, killable by both, and each faction has a quest for her. Checked: part 2 reworded (was near the 684 reward text and 4526 part 3). The rumor names no one and does not give away Alterac's Argus Wake (3617 part 1).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Her demons could not save her. Marez Cowl was hunted down in the Syndicate's quarter of Stromgarde and slain among the outlaws she served, and the Syndicate in the highlands lost one of its most cunning advisors.",
+    "triggers": [
+     [
+      3,
+      2783
+     ],
+     [
+      5,
+      684
+     ],
+     [
+      5,
+      673
+     ]
+    ],
+    "sources": [
+     "quest 684 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "At Refuge Pointe, Captain Nials paid the bounty gladly. Marez had long been a danger to the city's defenders, and a whisper ran among them that troubled the captain more: the warlock may have been a go-between for the Syndicate and some other, darker power. If the whisper was true, that power has lost its envoy in the highlands.",
+    "triggers": [
+     [
+      5,
+      684
+     ]
+    ],
+    "sources": [
+     "quest 684 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 4520,
@@ -490,7 +632,7 @@
   "sort": 5,
   "faction": 2,
   "title": "Drum Fel and Korin Fel",
-  "body": "Drum Fel leads the defense of Hammerfall, a hard warrior with little patience for the untested and no time even to sharpen his axe. He sends every able fighter against the Witherbark and Boulderfist warbands that besiege the outpost, praising courage and scorning cowardice in equal measure, and believes Hammerfall will thrive in the highlands once its enemies are broken. His wife, Korin Fel, is a seer who loves him enough to deceive him. Her auguries revealed that the ogre Or'Kalar has laid a trap for her husband, and she has hidden every sign of the ogre from Drum, knowing he would rush off to face his old foe.",
+  "body": "Drum Fel leads the defense of Hammerfall, a hard warrior with little patience for the untested and no time even to sharpen his axe. He sends every able fighter against the Witherbark and Boulderfist warbands that besiege the outpost, praising courage and scorning cowardice in equal measure, and believes Hammerfall will thrive in the highlands once its enemies are broken. His wife, Korin Fel, a seer, lives beside him at the outpost and loves him dearly.",
   "triggers": [
    [
     2,
@@ -506,7 +648,35 @@
    "quest 680 description and completion text",
    "warcraft.wiki.gg/wiki/Hammerfall (Drum Fel led the settlement, believed it would thrive)"
   ],
-  "notes": "verified. Dropped npc_text 17772 from sources (Cataclysm-era broadcast text). Faction 2: both use faction template 125, hostile to Alliance."
+  "notes": "Converted: Korin's secret moved to part 1 (QUEST_ACCEPT 680, whose description holds it; 680 has no prerequisite, so it is offered on talking to her, but the TALK opening no longer tells it), Or'Kalar's death to part 2 (QUEST_DONE 680). Drum's belief that Hammerfall will thrive stays as his belief (quest 679 reward text, the wiki). Faction 2: both use faction template 125, hostile to Alliance. Earlier: Dropped npc_text 17772 (Cataclysm-era broadcast text). Checked: opening drops 'would do anything to keep him safe', which hinted at her secret; 'seer' stays (talking to her shows 680). Parts 1 and 2 reworded away from 4528 parts 3 and 4.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Korin's auguries have shown her what her husband cannot see. The ogre Or'Kalar, beaten by Drum years ago and hating him ever since, is behind the attacks and has set a trap for him. Sure that Drum would charge off to meet his old enemy, she keeps every trace of the ogre from him and quietly asks others to kill Or'Kalar in his place. Some may call her silence weak or dishonorable; to her it is a different kind of strength.",
+    "triggers": [
+     [
+      4,
+      680
+     ]
+    ],
+    "sources": [
+     "quest 680 description and completion text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In time Or'Kalar's head was laid before her. Drum would never walk into the ogre's trap, and Korin, with her husband and the outpost safe for another day, rewarded the courage of those who had spared him.",
+    "triggers": [
+     [
+      5,
+      680
+     ]
+    ],
+    "sources": [
+     "quest 680 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 4521,
@@ -515,7 +685,7 @@
   "sort": 6,
   "faction": 2,
   "title": "Gor'mul",
-  "body": "Gor'mul is an orc warrior of the old Horde who was once a prisoner in the internment camp that stood where Hammerfall is now. He saw Orgrim Doomhammer come in his midnight plate to free the camp, and saw a knight on horseback run the Warchief through from behind. As the earth shook and the other prisoners escaped, Gor'mul was left behind, and he wandered alone and without hope for years until the Horde returned. Bitter that he was not allowed to die beside his Warchief, he scorned every charm brought to cheer him, until the shaman Tor'gan let him feel the guile of the raptor and the strength the shamans had found again.",
+  "body": "Gor'mul is an orc warrior of the old Horde who was once a prisoner in the internment camp that stood where Hammerfall is now. He saw Orgrim Doomhammer come in his midnight plate to free the camp, and saw a knight on horseback run the Warchief through from behind. As the earth shook and the other prisoners escaped, Gor'mul was left behind, and he wandered alone and without hope for years until the Horde returned. He has never recovered from Doomhammer's death, and the shaman Tor'gan hopes that the shamanic power the Horde has found again may wake the warrior in him.",
   "triggers": [
    [
     2,
@@ -532,7 +702,42 @@
    "creature_text 2792",
    "warcraft.wiki.gg/wiki/Gor'mul (orc warrior of the Old Horde)"
   ],
-  "notes": "verified. Faction 2: Gor'mul uses faction template 29 (Orgrimmar) and quest 655 is Horde-only. His later role as a quest giver (Cataclysm) is left out."
+  "notes": "Converted: his scorn for the amulet moved to part 1 (QUEST_DONE 674, where 675 is offered), his awakening to part 2 (QUEST_DONE 702 at Gor'mul, creature_text 2792, or QUEST_DONE 847). Faction 2: Gor'mul uses faction template 29 (Orgrimmar) and quest 655 is Horde-only. His later role as a quest giver (Cataclysm) is left out. Checked: part 1's 'Tor'gan's pity' came from 702's request text; now kept to 675.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Trinkets do not move him. Handed an amulet of raptor bone, Gor'mul asked what use he had for polished bone and flung it to the ground. Mercy, he said, was denied him on the day he was not allowed to die beside his Warchief, and he cannot see why Tor'gan should show him any.",
+    "triggers": [
+     [
+      5,
+      674
+     ]
+    ],
+    "sources": [
+     "quest 674 reward text",
+     "quest 675 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Tor'gan's orb did what the amulet could not. As its power stirred his blood, Gor'mul felt the guile of the raptor slip through him and cried that his strength was returning. The power of the shamans had convinced him, for the time being, and he agreed to listen to what Tor'gan had to say.",
+    "triggers": [
+     [
+      5,
+      702
+     ],
+     [
+      5,
+      847
+     ]
+    ],
+    "sources": [
+     "quest 702 reward text",
+     "quest 847 description",
+     "creature_text 2792"
+    ]
+   }
+  ]
  },
  {
   "id": 4522,
@@ -541,7 +746,7 @@
   "sort": 7,
   "faction": 2,
   "title": "Tor'gan",
-  "body": "Tor'gan is a troll shaman of Hammerfall, a practitioner of the shamanic magic the Horde has found anew under its young Warchief Thrall. He has spent much patience on Gor'mul, crafting amulets and orbs filled with the spirit of the raptor in the hope of waking the warrior within. He feels fouler magic too. A burning in his blood led him to Northfold Manor and the traces of demonic summoning there, and to the warlock in Stromgarde whose bloodstone orb he vowed to destroy. When the five shattered pieces of the sigil of Thoradin were laid before him, he bound them whole again, and found it easier than he expected.",
+  "body": "Tor'gan is a troll shaman of Hammerfall, a practitioner of the shamanic magic the Horde has found anew under its young Warchief Thrall. He has spent much patience on Gor'mul, crafting amulets and orbs filled with the spirit of the raptor in the hope of waking the warrior within. He feels fouler magic too. A strangeness in the air simmers in his blood, and the search for its source led him west to Northfold Manor, where he found the traces of demonic summoning and a drained bloodstone amulet left behind.",
   "triggers": [
    [
     2,
@@ -554,7 +759,50 @@
    "quest 847 reward text",
    "creature_text 2706 (easier than I expected)"
   ],
-  "notes": "verified. Faction 2: faction template 126 (Darkspear). He has no gossip menu but starts and ends quests, so the quest dialog serves for TALK."
+  "notes": "Converted: the rebound sigil moved to part 1 (QUEST_DONE 640), the warlock in Stromgarde to part 2 (QUEST_ACCEPT 673, offered after 671; who is behind the summoning is the reveal), the orb to part 3 (QUEST_DONE 673). Faction 2: faction template 126 (Darkspear). He has no gossip menu but starts and ends quests, so the quest dialog serves for TALK. Checked: 'five pieces' dropped (mod-individual-progression sets 11 fragments for 640).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "When the scattered pieces of the sigil of Thoradin, which Prince Galen had divided among Stromgarde's defenders, were laid before him, Tor'gan judged its magical structure easy to reform. He bound the pieces whole again in a flash of power, and found it easier than he had expected.",
+    "triggers": [
+     [
+      5,
+      640
+     ]
+    ],
+    "sources": [
+     "quest 640 description and reward text",
+     "creature_text 2706"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The amulets from Northfold told him that the Syndicate dabbles in dark, demonic magic, and Tor'gan traced its source to Stromgarde. A powerful warlock dwells within its walls and, with an arcane relic, summons terrible demons in large numbers. The burning in his blood grows by the day, and he has vowed to destroy that relic so that it can taint the land no longer.",
+    "triggers": [
+     [
+      4,
+      673
+     ]
+    ],
+    "sources": [
+     "quest 671 reward text",
+     "quest 673 description and completion text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Marez Cowl's bloodstone orb came into his hands at last, and Tor'gan promised that his restless nights would turn to peaceful slumber once it was destroyed. It reminded him, chillingly, of the power the demons once held over the orcs, before Hellscream released them from their curse.",
+    "triggers": [
+     [
+      5,
+      673
+     ]
+    ],
+    "sources": [
+     "quest 673 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 4523,
@@ -563,7 +811,7 @@
   "sort": 8,
   "faction": 0,
   "title": "Or'Kalar",
-  "body": "Or'Kalar is a Boulderfist ogre who leads his clan's forces in Stromgarde, a pawn of Mug'thol, and he lurks near the Tower of Arathor. Years ago he was beaten by Drum Fel of Hammerfall, and he has hated him ever since. The attacks on Hammerfall are part of his design, a trap meant to draw Drum Fel out to his death. Only Drum's wife Korin knows it. She saw the plot in her auguries and hid all signs of the ogre from her husband, quietly seeking someone else to end the threat.",
+  "body": "Or'Kalar is a Boulderfist ogre who leads his clan's forces in the ruins of Stromgarde, a pawn of Mug'thol. He lurks near the Tower of Arathor, in the old mage district the Boulderfist have overrun, among the ogres and Witherbark berserkers who hold that quarter of the city against the militia and the Syndicate alike. Ogres crowd all around the tower, and few reach it without a fight.",
   "triggers": [
    [
     3,
@@ -577,9 +825,44 @@
   "sources": [
    "quest 680 description, completion and reward texts (Mug'thol's pawn, hatred of Drum Fel, trap, near the Tower of Arathor, his death stops the attacks)",
    "warcraft.wiki.gg/wiki/Boulderfist_clan (Or'Kalar led the Boulderfist forces in Stromgarde, answers to Mug'thol)",
-   "DB spawns: Or'Kalar 2773, 7 spawn points at 18-21,65-69 in area 324"
+   "DB spawns: Or'Kalar 2773, 7 spawn points at 18-21,65-69 in area 324",
+   "warcraft.wiki.gg/wiki/Stromgarde_Keep (Boulderfist hold the mage district)",
+   "quest 694 description (ogres all around the Tower of Arathor)",
+   "DB spawns within 80 yards of Trelane's Chest 2716: Boulderfist Shaman 2570 x6, Boulderfist Lord 2571 x6, Boulderfist Mauler 2569, Or'Kalar 2773 x5 (visible to both factions)"
   ],
-  "notes": "verified. Faction 0: Or'Kalar is faction template 45, hostile to both; the Alliance can meet him without the quest."
+  "notes": "Converted: his grudge against Drum Fel and the trap moved to part 1 (QUEST_ACCEPT 680; Horde-only part), his death to part 2 (KILL 2773 or QUEST_DONE 680), kept to what a kill alone shows. The opening keeps his rank and haunt (wiki, spawns). Faction 0: Or'Kalar is faction template 45, hostile to both. Checked: the ogres around the tower are visible spawns for both factions (added source), so the opening reads true for the Horde too.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Or'Kalar's quarrel is personal. Years ago he was beaten by Drum Fel of Hammerfall, and he has hated him ever since. The attacks on Hammerfall are his doing, a trap laid to draw Drum out to his death, and only Drum's wife Korin, who saw it in her auguries, knows it.",
+    "triggers": [
+     [
+      4,
+      680
+     ]
+    ],
+    "sources": [
+     "quest 680 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Or'Kalar was slain at last among the ruins near the Tower of Arathor, struck down amid the ogres he led, and the Boulderfist in Stromgarde lost the chieftain Mug'thol had set over them.",
+    "triggers": [
+     [
+      3,
+      2773
+     ],
+     [
+      5,
+      680
+     ]
+    ],
+    "sources": [
+     "quest 680 completion and reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 4524,
@@ -588,7 +871,7 @@
   "sort": 9,
   "faction": 0,
   "title": "Myzrael",
-  "body": "Myzrael calls herself a princess of the earth, held captive deep beneath the Arathi Highlands by the giants. Her only voice in the world above comes through crystal shards that break the surface in the northern hills, and through them she pleads for rescue, stirring a feeling of warmth and safety in all who listen. Those who set her free learn too late what she is. Summoned before her strength has returned, she turns on her rescuer and names them a fool for helping her. She has other servants already: cultists of the Twilight's Hammer revere her as their Lady and know how she may be called to the surface.",
+  "body": "Myzrael calls herself a princess of the earth, held captive deep beneath the Arathi Highlands by the giants. Her only voice in the world above comes through crystal shards that break the surface in the northern hills, and through them she pleads for rescue, stirring a feeling of warmth and safety in all who listen. She names the giants her captors and the Drywhisker kobolds their allies, and asks only for help in breaking the wards that pin her beneath the earth, promising that her gratitude will shake its very foundations.",
   "triggers": [
    [
     3,
@@ -607,7 +890,71 @@
    "quests 653, 687, 688 (Twilight's Hammer, the Lady)",
    "warcraft.wiki.gg/wiki/Myzrael (earth elemental princess imprisoned by giants)"
   ],
-  "notes": "'Others had answered her long before' reworded (the quests show the cult serving her, not when it began). Myzrael is summoned (event_scripts 420, summon creature 2755) at the Shards during quest 656, so the KILL trigger works for both factions. Old Gods madness and Deepholm (Cataclysm) left out."
+  "notes": "Converted: her release moved to part 1 (QUEST_ACCEPT 653 Alliance or 688 Horde, offered at the Keystone right after 652; their text is her cry of freedom), the Twilight's Hammer to part 2 (QUEST_ACCEPT 687, from Gerrig Bonegrip or Zaruk; the two are left unnamed since each side meets only its own), her betrayal and defeat to part 3 (KILL 2755, summoned only during 656, or QUEST_DONE 656). Theldurin's own warning stays Badlands' (320, 330 on 692). Old Gods madness and Deepholm (Cataclysm) left out. Earlier: Myzrael is summoned (event_scripts 420, summon creature 2755) at the Shards during quest 656, so the KILL trigger works for both factions. Checked: part 3 (KILL 2755 or QUEST_DONE 656) trimmed to her outburst and defeat, which a kill shows; the binding with her shackles is new part 4 on QUEST_DONE 656. Part 2 reworded away from 4530 part 3. Badlands 320 and 330 do not tell her defeat and use neither 656 nor 2755.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "With the Keystone broken, Myzrael cried out that she was free: free to gather strength hidden from the giants, who would overpower and imprison her again if they faced her now, but who in time would regret their wardship of her. She called her rescuer a noble ally, and promised to call on them again to summon her to the surface when she was ready.",
+    "triggers": [
+     [
+      4,
+      653
+     ],
+     [
+      4,
+      688
+     ]
+    ],
+    "sources": [
+     "quests 653, 688 descriptions"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Her allies were waiting. The friend she named greeted her rescuer as one who served the same higher cause, and the truth came out: they were cultists of the Twilight's Hammer, who call Myzrael their Lady and mean to see her return. The scroll that could summon her had been carried off by a renegade of their order, Theldurin the Lost, said to hide in the Badlands.",
+    "triggers": [
+     [
+      4,
+      687
+     ]
+    ],
+    "sources": [
+     "quests 653, 688 reward texts",
+     "quest 687 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Called up at the Shards of Myzrael before her time, the princess demanded to know why she had been summoned before reaching her full power, then named her rescuer a fool for helping her and attacked. She was beaten all the same.",
+    "triggers": [
+     [
+      3,
+      2755
+     ],
+     [
+      5,
+      656
+     ]
+    ],
+    "sources": [
+     "creature_text 2755",
+     "event_scripts 420 (Myzrael summoned at the Shards during quest 656)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Then she was bound once more. Her own Eldritch Shackles, fastened about the Shards, hold her beneath the earth again, and the crystals that once soothed every listener now carry only her ill will toward the world above.",
+    "triggers": [
+     [
+      5,
+      656
+     ]
+    ],
+    "sources": [
+     "quest 656 description (she will again be trapped) and reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 4525,
@@ -616,7 +963,7 @@
   "sort": 10,
   "faction": 0,
   "title": "Shakes O'Breen",
-  "body": "Captain Shakes O'Breen of the Blackwater Raiders led three ships out of Booty Bay to Faldir's Cove, steered by one of Professor Phizzlethorpe's contraptions toward a lost elven treasure. Only his own ship, the Harbinger, came through. He dreads what Fleet Master Seahorn will say about the loss, though Seahorn calls him the right captain for the job. O'Breen does not value his own life above his crew's, but he knows they cannot reach home without his knowledge of the seas, so when the naga gather for an attack he stands on the high ground beside the cannon to drive them back.",
+  "body": "Captain Shakes O'Breen of the Blackwater Raiders led three ships out of Booty Bay to Faldir's Cove, steered by one of Professor Phizzlethorpe's contraptions toward a lost elven treasure. Only his own ship, the Harbinger, came through: the sea gave a rumble, the water dropped away beneath the other two, and both crashed into the reef, which he is sure is no mere reef. He fears Fleet Master Seahorn will have his ship once he hears of the loss. Until the tide rises he is stranded in the cove with his crew, a pair of gnomes and the survivors of the wrecks, promising a handsome reward to anyone who helps them.",
   "triggers": [
    [
     2,
@@ -630,7 +977,37 @@
    "creature_text 2610",
    "DB: Cannon 113531 at 32.1,80.7"
   ],
-  "notes": "verified. Faction 0: O'Breen uses faction template 121 (friendly to both) and his quests have AllowableRaces 0. Booty Bay as the home port comes from quests 663 and 669."
+  "notes": "Converted: Seahorn's verdict moved to part 1 (QUEST_DONE 669, turned in to Seahorn in Booty Bay; an Arathi quest used by no other file), the naga attack and his reasons to part 2 (QUEST_DONE 667, the last of the chain). Faction 0: O'Breen uses faction template 121 (friendly to both) and his quests have AllowableRaces 0. Earlier: Booty Bay as the home port comes from quests 663 and 669. Checked: QUEST_DONE 669 unused elsewhere; stranglethorn 3323 does not mention O'Breen.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Seahorn took the news better than O'Breen feared. Shown a sample of the elven gems as proof that the treasure had been found, the fleet master declared that he had always known good old Shakes was the right captain for the mission, and sent secret word back to him.",
+    "triggers": [
+     [
+      5,
+      669
+     ]
+    ],
+    "sources": [
+     "quest 669 reward text",
+     "quest 670 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Then the Daggerspine gathered to strike. The naga would keep coming until he was dead, and though O'Breen does not value his own life above his crew's, they could never reach Booty Bay without his knowledge of the seas. He held the high ground beside the cannon as the naga came out of the sea, and his crew lived to wait out the low tide.",
+    "triggers": [
+     [
+      5,
+      667
+     ]
+    ],
+    "sources": [
+     "quest 667 description and reward text",
+     "creature_text 2610"
+    ]
+   }
+  ]
  },
  {
   "id": 4526,
@@ -639,7 +1016,7 @@
   "sort": 1,
   "faction": 1,
   "title": "The Defenders of Stromgarde",
-  "body": "From Refuge Pointe, Captain Nials fights a war she is losing. Her soldiers, the Syndicate and the ogres have divided Stromgarde in a bloody stalemate, and while her ranks thin, the enemy's swell. Help must come from Southshore, but the Syndicate holds the land between, so the outlaws of Northfold Manor must be cleared before the supply trains can get through. Inside the city, Syndicate leaders pay their rabble gold for every badge cut from a fallen militiaman, and Nials wants each one returned, so that families may at least know their loved ones died in battle. The wanted board at Refuge Pointe names the true targets: Marez Cowl, a warlock rumored to deal with some darker power, and Lord Falconcrest and his bodyguard Otto, whose deaths would throw the Syndicate's efforts in the highlands into disarray.",
+  "body": "From Refuge Pointe, Captain Nials fights a war she is losing. Her soldiers, the Syndicate and the ogres have divided Stromgarde in a bloody stalemate, and while her ranks thin, the enemy's swell. Help must come from Southshore, but the Syndicate holds the land between, so the outlaws of Northfold Manor must be cleared before the supply trains can get through. Inside the city, Syndicate leaders pay their rabble gold for every badge cut from a fallen militiaman, and Nials will not let them profit from her dead. The wanted board at Refuge Pointe names the true targets: Marez Cowl, a cunning warlock who traffics with demons, and Lord Falconcrest and his bodyguard Otto, whose deaths would throw the Syndicate's efforts in the highlands into disarray.",
   "triggers": [
    [
     4,
@@ -663,7 +1040,62 @@
    "creature_text 2700",
    "gameobject_queststarter: Wanted Board 2713 starts 684 and 685"
   ],
-  "notes": "verified. Faction 1: 681 has AllowableRaces 0 but its only giver, Captain Nials, is Stormwind-faction; 682, 684, 685 are Alliance-only."
+  "notes": "Converted: the opening is the setup of 681, 682, 684 and 685; the rumor about Marez (684 reward text) left it. Parts: 1 Northfold cleared (QUEST_DONE 681), 2 the badges (QUEST_DONE 682), 3 Marez (QUEST_DONE 684), 4 Falconcrest and Otto (QUEST_DONE 685). Faction 1: 681 has AllowableRaces 0 but its only giver, Captain Nials, is Stormwind-faction; 682, 684, 685 are Alliance-only. Checked: parts 2, 3 and 4 reworded away from the 682, 684 and 685 reward texts and from 4516 part 1 and 4519 part 2.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The outlaws of Northfold Manor were cut down, and with them the pressure on the road from Southshore eased. More supplies began to reach Refuge Pointe, and for the first time in a long while Nials allowed that her cause might yet have hope.",
+    "triggers": [
+     [
+      5,
+      681
+     ]
+    ],
+    "sources": [
+     "quest 681 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The badges came home. One by one Nials read out the names of the fallen and sighed at the cost, already counting the losses still to come before the city could be won. Each family would at least learn that its soldier had died in battle.",
+    "triggers": [
+     [
+      5,
+      682
+     ]
+    ],
+    "sources": [
+     "quest 682 reward text",
+     "creature_text 2700"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Marez Cowl's head was laid before Nials, and the captain was glad of it. The warlock had threatened her soldiers in the city, and some said she had carried the Syndicate's dealings with a darker power still.",
+    "triggers": [
+     [
+      5,
+      684
+     ]
+    ],
+    "sources": [
+     "quest 684 reward text"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The heads of Lord Falconcrest and Otto were brought to Refuge Pointe, and Nials counted the bounty money well spent. The man who directed the Syndicate's efforts in the highlands and the bodyguard who had killed dozens of her defenders were both dead.",
+    "triggers": [
+     [
+      5,
+      685
+     ]
+    ],
+    "sources": [
+     "quest 685 description and reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 4527,
@@ -672,7 +1104,7 @@
   "sort": 2,
   "faction": 1,
   "title": "Trelane's Treasures",
-  "body": "When Stromgarde fell, Archmage Trelane tried and failed to hold the Tower of Arathor, then fled to Stormwind, leaving his belongings behind. His former apprentice, Archmage Malin, sent two agents to recover them: the gruff dwarf Skuerto and Apprentice Kryten, who set up camp at Refuge Pointe. While Kryten sought Witherbark reagents for Malin, Skuerto went scouting and came back from Boulderfist Hall looking as if he had tangled with the ogres, having learned that the ogre Kor'gresh Coldrage had taken Trelane's Wand of Invocation and was close to mastering it. With the wand recovered, the rest lay in the tower itself, now overrun by ogres. A gem the Boulderfist shaman had stolen from the tower, enchanted by Kryten and pressed to a pedestal at its foot, woke the tower's old defenses, and Trelane's phylactery, orb and ember agate were carried out of their chests and home to a delighted Malin.",
+  "body": "When Stromgarde fell, Archmage Trelane tried and failed to hold the Tower of Arathor, then fled to Stormwind, leaving his belongings behind. His former apprentice, Archmage Malin, has sent two agents to recover them, the gruff dwarf Skuerto and Apprentice Kryten, who have made camp at Refuge Pointe and asked Malin for more help. Skuerto is off scouting and has no time for newcomers. Kryten, kinder, sets them to gathering the reagents Malin wants from the Witherbark trolls of the southeast: tusks, medicine pouches and the special knife the strongest shadow hunters carry after their rites of passage.",
   "triggers": [
    [
     4,
@@ -688,12 +1120,69 @@
    ]
   ],
   "sources": [
-   "quests 690, 691, 693, 694, 695, 696, 697 (descriptions and reward texts)",
+   "quest 690 description and reward text",
+   "quest 691 description, completion and reward text",
    "npc_text 3293, 3294 (Kryten)",
-   "DB: Runed Pedestal 2715 and Trelane's Chest 2716, Footlocker 2717, Lockbox 2718 at 18,67-69",
    "warcraft.wiki.gg/wiki/Stromgarde_Keep (Trelane failed to defend the Tower and exiled himself to Stormwind)"
   ],
-  "notes": "Faction 1: all quests are Alliance-only; Skuerto (2789, faction template 55 Ironforge) and Kryten (2788, faction template 1078 Stormwind) are hostile to Horde. Trelane's flight to Stormwind is from the wiki."
+  "notes": "Converted: the opening is the setup of 690 and 691 (npc_text 3294: Skuerto busy scouting). Parts: 1 the wand found (QUEST_ACCEPT 693), 2 the wand recovered (QUEST_DONE 693), 3 the tower raided (QUEST_DONE 696), 4 Malin's delight (QUEST_DONE 697, turned in to Malin in Stormwind; an Arathi chain quest used by no other file). Faction 1: all quests are Alliance-only; Skuerto (2789, faction template 55 Ironforge) and Kryten (2788, faction template 1078 Stormwind) are hostile to Horde. Skuerto's gossip 16390 (Danath, Cataclysm) stays unused. Trelane's flight to Stormwind is from the wiki. Checked: QUEST_DONE 697 unused elsewhere; stormwind.json never names Malin or Trelane. Skuerto's 16390 unused.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Skuerto came back from Boulderfist Hall looking as if he had tangled with the ogres, though he would rather no one mentioned it. He had found where the first of Trelane's treasures had gone: the ogre Kor'gresh Coldrage had the Wand of Invocation and, judging by the ice he hurled at his own kin, was close to mastering it.",
+    "triggers": [
+     [
+      4,
+      693
+     ]
+    ],
+    "sources": [
+     "quest 691 reward text",
+     "quest 693 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The wand came back from Boulderfist Hall. Three items remained on Skuerto's list, all of them in Stromgarde, in the Tower of Arathor that the ogres now surround, and the dwarf set about planning the next phase.",
+    "triggers": [
+     [
+      5,
+      693
+     ]
+    ],
+    "sources": [
+     "quest 693 reward text",
+     "quest 694 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The plan worked. An azure agate taken from the Boulderfist shaman, who had carried such gems off from the tower, was enchanted by Kryten into a key and pressed to a pedestal at the tower's foot, waking its old defenses. Under the ogres' noses, Trelane's phylactery, orb and ember agate were carried out of their chests, and Skuerto declared the mission an overwhelming success.",
+    "triggers": [
+     [
+      5,
+      696
+     ]
+    ],
+    "sources": [
+     "quests 694, 695, 696 (descriptions and reward texts)",
+     "DB: Runed Pedestal 2715 and Trelane's Chest 2716, Footlocker 2717, Lockbox 2718 at 18,67-69"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "In Stormwind, Archmage Malin opened Skuerto's sealed letter and his eyes grew wide. By the Light, it was done. Trelane would be so pleased, and Kryten and Skuerto were on their way home with what had been lost.",
+    "triggers": [
+     [
+      5,
+      697
+     ]
+    ],
+    "sources": [
+     "quest 697 reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 4528,
@@ -702,7 +1191,7 @@
   "sort": 3,
   "faction": 2,
   "title": "Hammerfall Besieged",
-  "body": "Hammerfall is under constant attack. In Tarren Mill, Tallow tests would-be defenders against the ogres of Boulder'gor before sending them to Drum Fel, who names the enemy plainly: the Witherbark trolls, who turned their backs on the Horde, and the Boulderfist ogres, who would make meat and bedding of orcs, have joined forces to drive Hammerfall from the land. Drum's champions carry the war to the Witherbark camps to the south, then to the brutes and magi of the ogre lair toward the dwarven bridge, and finally to the Boulderfist lords and shaman who direct the raids from the ruins of Stromgarde. Drum's wife Korin knows what he does not: the attacks are the work of Or'Kalar, an ogre who has hated her husband since Drum defeated him years ago and has laid a trap for him. Quietly, she asks for Or'Kalar's head instead.",
+  "body": "Hammerfall is under constant attack. In Tarren Mill, Tallow tests would-be defenders against the ogres of Boulder'gor before sending them on to Drum Fel, who names the enemy plainly: the Witherbark trolls, who turned their backs on the Horde, and the Boulderfist ogres, who would make meat and bedding of orcs, have joined forces to drive Hammerfall from the land. Drum means to show them that the Horde has a home here too. His champions begin with the Witherbark camps to the south, where they are to slay the trolls in droves and return only when the camps run thick with blood.",
   "triggers": [
    [
     4,
@@ -720,7 +1209,63 @@
   "sources": [
    "quests 676, 677, 678, 679, 680 (descriptions, completion and reward texts)"
   ],
-  "notes": "verified. Faction 2: all quests Horde-only. Tallow's race is not stated, so it is omitted."
+  "notes": "Converted: the opening is the setup of 676 and 677. Parts: 1 the Witherbark and the ogre lair (QUEST_DONE 678), 2 the Boulderfist lords (QUEST_DONE 679), 3 Korin's secret (QUEST_ACCEPT 680, which has no prerequisite and is an entry trigger), 4 Or'Kalar slain (QUEST_DONE 680). Faction 2: all quests Horde-only. Tallow's race is not stated, so it is omitted. Checked: Tallow and 676 are not told in hillsbrad.json; 676 is used by no other file.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The trolls bled first, then the ogres. In the Boulderfist lair toward the dwarven bridge, the maulers and magi who had long been the harder foe fell in turn. Drum named the last target: the head of the beast, the Boulderfist lords and their shaman who direct the attacks from the ruins of Stromgarde.",
+    "triggers": [
+     [
+      5,
+      678
+     ]
+    ],
+    "sources": [
+     "quests 677, 678 reward texts",
+     "quest 678 description",
+     "quest 679 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Boulderfist lords and their shaman fell among the ruins of Stromgarde. Drum judged the threat greatly lessened, praised those who struck the blow for doing their people proud, and declared himself sure that Hammerfall would begin to thrive in the highlands.",
+    "triggers": [
+     [
+      5,
+      679
+     ]
+    ],
+    "sources": [
+     "quest 679 reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Drum's wife Korin knows what he does not: why Hammerfall is under attack. The ogre Or'Kalar, Mug'thol's pawn in Stromgarde, has hated her husband since Drum defeated him years ago, and her auguries tell her he has laid a trap for him. She has hidden every sign of the ogre from Drum, who would rush off to face him, and quietly asks for Or'Kalar's head instead.",
+    "triggers": [
+     [
+      4,
+      680
+     ]
+    ],
+    "sources": [
+     "quest 680 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Or'Kalar died near the Tower of Arathor, and his head was brought to Korin. The trap he had laid would catch no one, and Drum's life and the safety of Hammerfall were protected, as Korin put it, for another day.",
+    "triggers": [
+     [
+      5,
+      680
+     ]
+    ],
+    "sources": [
+     "quest 680 completion and reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 4529,
@@ -729,7 +1274,7 @@
   "sort": 4,
   "faction": 2,
   "title": "Trol'kalar",
-  "body": "In the days of Arathor, Lord Ignaeus of Strom, called Trollbane, rode against the trolls with Trol'kalar, whose name means troll slayer, and for generations Strom and Arathor ravaged the trolls with it. With Thoras Trollbane dead and Stromgarde in ruins, Vol'jin resolved to take the sword for the Darkspear and turn it on the trolls of Zul'Gurub, and sent the hunter Zengu to Hammerfall to see it done. The blade lay sealed in Thoras's tomb behind wards only the sigils could break. The sigil of Strom was taken from the Syndicate, who had stolen it. The sigil of Thoradin, split into five among the city's defenders, was gathered and bound whole by Tor'gan. The sigil of Arathor was won from Lieutenant Valorcall, and the last from Prince Galen himself, slain in his chapel. Joined, they became the Sigil of Ignaeus, and at its touch the stone hands of the tomb released the sword, bound for Nimboya at Grom'gol.",
+  "body": "In the days of Arathor, Lord Ignaeus of Strom, called Trollbane, rode against the trolls with Trol'kalar, whose name means troll slayer, and for generations Strom and Arathor ravaged the trolls with it. With Thoras Trollbane dead and Stromgarde in ruins, Vol'jin resolved to take the sword for the Darkspear and turn it on the trolls of Zul'Gurub, and sent the hunter Zengu to Hammerfall to see it done. The blade lies in Thoras's tomb behind wards that only certain sigils can break, and those sigils were divided among the survivors of Stromgarde. The first, Zengu believes, was taken by the Syndicate and is carried by one of their agents in the city.",
   "triggers": [
    [
     4,
@@ -741,11 +1286,54 @@
    ]
   ],
   "sources": [
-   "quests 638, 639, 640, 641, 643, 644, 645, 646 (descriptions and reward texts)",
-   "creature_text 2706",
+   "quests 638, 639 (descriptions and reward texts)",
+   "quest 646 reward text (Strom and Arathor ravaged the trolls)",
    "warcraft.wiki.gg/wiki/Trol'kalar (pre-Cataclysm sections)"
   ],
-  "notes": "verified. Faction 2: every quest is Horde-only. Zengu's later death and the sword's return to Stromgarde (Cataclysm retcon) are left out."
+  "notes": "Converted: the opening is the setup of 638 and 639. Parts: 1 the sigils of Strom and Thoradin (QUEST_DONE 641), 2 Valorcall, Galen and the Sigil of Ignaeus (QUEST_DONE 644), 3 the sword released and sent to Grom'gol (QUEST_DONE 646). Faction 2: every quest is Horde-only. Zengu's later death and the sword's return to Stromgarde (Cataclysm retcon) are left out. Checked: 'five pieces' dropped (mod-individual-progression sets 11 fragments for 640); part 1 reworded away from 4522 part 1.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The sigil of Strom was taken from the Syndicate. The second, the sigil of Thoradin, Prince Galen had broken into pieces and shared among his defenders. Gathered and laid before Tor'gan, the pieces were made one again, and Zengu counted the work half done, though the holders of the third sigil roam the highlands.",
+    "triggers": [
+     [
+      5,
+      641
+     ]
+    ],
+    "sources": [
+     "quests 639, 640, 641 (descriptions and reward texts)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The third, the sigil of Arathor, was won from Lieutenant Valorcall, leader of Galen's cavalry, a heavy blow to Stromgarde's defenders. The last the prince kept on his own person, and it was taken from him when he was slain in his chapel. Zengu rejoiced that the blood of Trollbane would haunt his people no longer, and brought together, the four sigils merged into one: the Sigil of Ignaeus.",
+    "triggers": [
+     [
+      5,
+      644
+     ]
+    ],
+    "sources": [
+     "quests 643, 644 (descriptions and reward texts)",
+     "quest 645 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In the Sanctum behind the chapel, the glowing lines of the Sigil of Ignaeus matched the etchings on Trollbane's tomb. In a flash of light the sigil was consumed, and the stone hands of the tomb released Trol'kalar. Zengu sent the blade on to Nimboya at Grom'gol, to end the Darkspear's slow progress in the forests of Zul'Gurub.",
+    "triggers": [
+     [
+      5,
+      646
+     ]
+    ],
+    "sources": [
+     "quest 645 completion and reward text",
+     "quest 646 description and reward text"
+    ]
+   }
+  ]
  },
  {
   "id": 4530,
@@ -754,7 +1342,7 @@
   "sort": 5,
   "faction": 0,
   "title": "The Princess Beneath the Stones",
-  "body": "Those who touch the Shards of Myzrael in the northern hills hear a voice pleading for help: a princess of the earth, she says, imprisoned far below by the giants. To strengthen her, the Drywhisker kobolds are robbed of the motes of her power and a second cluster of shards in their gorge is woken. Next come the Stones of Binding. Keys taken from the circles of West, East and Outer Binding open the Stone of Inner Binding, and the Rod of Order, won from the stone watcher Fozruk, unlocks the Keystone. Myzrael cries out that she is free, and sends her rescuer to her servants in the Twilight's Hammer, who know how she may be called to the surface. That road leads to the Badlands and Theldurin the Lost, and in the end the summons is turned against her: called up at the Shards before her power is whole, Myzrael is defeated and bound again in her own Eldritch Shackles, and the shards pulse now with open menace.",
+  "body": "Those who touch the Shards of Myzrael in the northern hills hear a voice pleading for help and feel a sense of security pulse through the crystal. She is Myzrael, she says, a princess of the earth, trapped far below by her captors the giants, and these shards are her only way to speak with the surface world. Her first request is simple. The Drywhisker kobolds of the gorge to the east, allies of the giants, keep a shard cluster like hers and carry motes of her power, and if the motes are taken from them and applied to that cluster, she will grow stronger. Some find their way to her through a pulsing pendant, which sends them a vision of a brilliant crystal in the northern mountains.",
   "triggers": [
    [
     4,
@@ -766,11 +1354,74 @@
    ]
   ],
   "sources": [
-   "quests 635, 642, 651, 652, 653, 688, 687, 692, 656 (descriptions and reward texts)",
+   "quests 635, 642, 651, 652, 653, 688, 687, 656 (descriptions and reward texts)",
    "creature_text 2755",
-   "gameobject_queststarter: Shards of Myzrael 138492 starts 642; Iridescent Shards 2701, Stone of Inner Binding 2702, Keystone 2688"
+   "gameobject_queststarter: Shards of Myzrael 138492 starts 642; Iridescent Shards 2701, Stone of Inner Binding 2702, Keystone 2688 start 651, 652, 653 and 688"
   ],
-  "notes": "Faction 0: 642, 651, 652, 687, 692, 656 are open to both; 653 and 688 are the Alliance and Horde branches. Quest 635 starts from the Pendant of Myzrael (item 4614), a rare drop from Stranglethorn trolls, and leads to the same Shards. The scroll episode is only named, since Badlands 330 (quests 692, 709) tells it. The Cataclysm version (Skuerto, Thenan) is not used."
+  "notes": "Converted: the opening is the setup of 642 (and 635 from the Pendant of Myzrael). Parts: 1 the gorge and the Stones of Binding (QUEST_DONE 651), 2 the Keystone and her release (QUEST_ACCEPT 653 Alliance or 688 Horde, offered at the Keystone), 3 the Twilight's Hammer and the stolen scroll (QUEST_ACCEPT 687, from Gerrig Bonegrip or Zaruk, left unnamed since each side meets only its own), 4 her defeat (QUEST_DONE 656 at the Shards or KILL 2755). Theldurin's warning and the scroll's repair stay Badlands' (330 on 692 and 709) and are only alluded to. Faction 0: 642, 651, 652, 687, 692, 656 are open to both; 653 and 688 are the Alliance and Horde branches. The Cataclysm version (Skuerto, Thenan) is not used. Checked: part 4 now QUEST_DONE 656 only, since the shackles are bound at the turn-in, not at the kill (4524 keeps KILL 2755). Part 2 reworded away from 4524 part 1. Gerrig and Zaruk stay unnamed; ironforge 153701 does not expose Gerrig.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The gorge shards woke, and Myzrael felt more herself, though still far from free. Four Stones of Binding pinned her beneath the earth. With keys taken from the Stones of West, East and Outer Binding, past the guardians that watch them, the strongest, the Stone of Inner Binding, was opened, and she felt her shackles loosen. One lock remained: the Keystone, whose key, the Rod of Order, is held by the stone watcher Fozruk.",
+    "triggers": [
+     [
+      5,
+      651
+     ]
+    ],
+    "sources": [
+     "quest 642 reward text",
+     "quest 651 description and reward text",
+     "quest 652 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Rod of Order was taken from Fozruk and set in the Keystone, and a shudder ran through the ground. The last lock had given way. Rejoicing, Myzrael said she would hide and grow strong until she was ready to face the giants, and that her rescuer would then be needed to summon her to the surface; an ally of hers knew how.",
+    "triggers": [
+     [
+      4,
+      653
+     ],
+     [
+      4,
+      688
+     ]
+    ],
+    "sources": [
+     "quest 652 reward text",
+     "quests 653, 688 descriptions"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "That ally welcomed the rescuer as a fellow servant of a higher cause. Myzrael's friends are the Twilight's Hammer, cultists who revere her as their Lady and long to bring her back to them. The means to do it, the Scroll of Myzrael, was stolen by one of their own, Theldurin the Lost, who lost his mind, scorned their teachings and fled; rumor places him in the Badlands.",
+    "triggers": [
+     [
+      4,
+      687
+     ]
+    ],
+    "sources": [
+     "quests 653, 688 reward texts",
+     "quest 687 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The road led to the Badlands and to Theldurin, and in the end the summons was turned against her. Called up at the Shards before her power had returned, Myzrael raged at her rescuer as a fool, and was beaten. Her own Eldritch Shackles were bound to the Shards, an unhuman wail and a roar rose from far below, and the crystals that once promised warmth now pulse with open menace.",
+    "triggers": [
+     [
+      5,
+      656
+     ]
+    ],
+    "sources": [
+     "quest 656 reward text",
+     "creature_text 2755"
+    ]
+   }
+  ]
  },
  {
   "id": 4531,
@@ -779,7 +1430,7 @@
   "sort": 6,
   "faction": 0,
   "title": "The Blackwater Expedition",
-  "body": "Shakes O'Breen's Blackwater Raiders came to Faldir's Cove expecting to stay only a few hours, just long enough to raise a lost elven treasure and sail home to Booty Bay. Instead the sea rumbled, the tide fell away and two of their three ships broke apart on the Drowned Reef. Now the crew needs help. First Mate Nilzlix wants the wrecks' logs and charts recovered before prying eyes find them, and Captain Steelgut, who lost his Maiden's Folly and woke on the shore after the naga slew his crew, wants the Daggerspine made to pay. The gnomes Phizzlethorpe and Draxlegauge charge a pair of goggles from a cursed rune stone in a cave up the hill, and through them the calcified elven gems on the sea floor shine plainly. When the naga mass for an attack, O'Breen holds the high ground with a cannon, then sends a sample gem to Fleet Master Seahorn as proof of the find.",
+  "body": "Shakes O'Breen's Blackwater Raiders came to Faldir's Cove expecting to stay only a few hours, just long enough to raise a lost elven treasure and sail home to Booty Bay. Instead the sea rumbled, the tide fell away and two of their three ships broke apart on the Drowned Reef. Now the crew needs help. First Mate Nilzlix wants the wrecks' logs and charts recovered before prying eyes find them, and Captain Steelgut, who lost his Maiden's Folly and woke on the shore after the naga slew his crew, wants the Daggerspine made to pay. The gnomes Phizzlethorpe and Draxlegauge have made goggles to find the treasure in the dark sea, but first they must be charged at an enchanted stone in a cursed cave up the hill.",
   "triggers": [
    [
     4,
@@ -802,6 +1453,52 @@
    "quests 662 to 670 (descriptions, completion and reward texts)",
    "creature_text 2768, 2610"
   ],
-  "notes": "verified. Faction 0: all quests have AllowableRaces 0 and the Blackwater NPCs are neutral (factions 120, 121, 35)."
+  "notes": "Converted: the opening is the setup of 663, 662, 664 and 665. Parts: 1 the gems found (QUEST_DONE 666), 2 Seahorn's word (QUEST_DONE 669, turned in at Booty Bay), 3 the naga attack survived (QUEST_DONE 667, the last of the chain). Faction 0: all quests have AllowableRaces 0 and the Blackwater NPCs are neutral (factions 120, 121, 35). Checked: part 1 reworded away from 4507 part 1. QUEST_DONE 669 confirmed unused by stranglethorn.json (Seahorn 3323 uses TALK 2487 and does not tell the find).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Charged at the stone, the goggles worked perfectly, and through them the treasure showed plainly: elven gems crusted over with stone after their long years on the sea floor. The gnomes, wary after weeks among pirates of being caught holding the loot, sent the gems straight on to O'Breen.",
+    "triggers": [
+     [
+      5,
+      666
+     ]
+    ],
+    "sources": [
+     "quest 665 reward text",
+     "quest 666 description and reward text",
+     "quest 668 description",
+     "creature_text 2768"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "A sample gem went south to Fleet Master Seahorn in Booty Bay as proof of the find. Seahorn was delighted, and with heavy things brewing at home and abroad, he trusted a top secret letter to the messenger for the stranded captain.",
+    "triggers": [
+     [
+      5,
+      669
+     ]
+    ],
+    "sources": [
+     "quest 669 reward text",
+     "quest 670 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Then the Daggerspine massed for an attack, coming out of the sea to kill the one man who could steer the crew home. From the cannon on the high ground beside O'Breen, the naga were driven back and the Blackwater Raiders survived. They will sail as soon as the tide rises.",
+    "triggers": [
+     [
+      5,
+      667
+     ]
+    ],
+    "sources": [
+     "quest 667 description and reward text",
+     "creature_text 2610"
+    ]
+   }
+  ]
  }
 ]

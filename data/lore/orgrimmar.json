@@ -131,12 +131,12 @@
    {
     "part": 1,
     "body": "Of late a portal shimmers on the upper floor of Darkbriar Lodge. It opens across the sea onto the Blasted Lands, close by the Dark Portal, and so speeds the Horde's travelers on the long road to Outland.",
-    "minState": 13,
-    "sources": ["warcraft.wiki.gg/wiki/Darkbriar_Lodge (portal to the Blasted Lands on the second floor)", "warcraft.wiki.gg/wiki/Portal_to_Orgrimmar (patch 3.2.0: portal areas in all major cities offer a portal to the Blasted Lands near the Dark Portal)", "DB: gameobject 195142 Portal to Blasted Lands at 1472,-4215"]
+    "minState": 8,
+    "sources": ["warcraft.wiki.gg/wiki/Darkbriar_Lodge (portal to the Blasted Lands on the second floor)", "warcraft.wiki.gg/wiki/Portal_to_Orgrimmar (patch 3.2.0: portal areas in all major cities offer a portal to the Blasted Lands near the Dark Portal)", "DB: gameobject 195142 Portal to Blasted Lands at 1472,-4215", "mod-individual-progression ipp_aware_npcs.sql: portals 195141/195142 use gobject_ipp_tbc, shown from state 8"]
    }
   ],
   "sources": ["warcraft.wiki.gg/wiki/Valley_of_Spirits (long narrow valley, long-standing seat of the Darkspear, Darkbriar Lodge, Skyfury Staves)", "warcraft.wiki.gg/wiki/Darkbriar_Lodge (Valley of Spirits, Darkspear, mage trainers, portal to the Blasted Lands on the second floor)", "DB: gameobject 195142 Portal to Blasted Lands at 1472,-4215 inside 1637; mage trainers 5882, 5883, 5885, 7311 nearby", "npc_text 4440 (troll priests' warning: Zayus, Ur'kyo, X'yera)", "DB: Xan'tish 8404 Snake Vendor with snake pets, Ukra'nor 3349 Staff Merchant", "npc_text 6957 (Gorlach: latest news from both continents and points beyond)"],
-  "notes": "Converted: the Blasted Lands portal moved to part 1. It was added to the capitals in patch 3.2.0, so minState 13 rather than 8 (Burning Crusade had no such portal). No trigger. Zayus 5994 phase 1, gossip 4522."
+  "notes": "Converted: the Blasted Lands portal moved to part 1. It was added to the capitals in patch 3.2.0, so minState 13 rather than 8 (Burning Crusade had no such portal). No trigger. Zayus 5994 phase 1, gossip 4522. Fix: portal part minState 13 to 8, since mod-individual-progression shows the portal object from state 8."
  },
  {
   "id": 163707,
@@ -367,26 +367,19 @@
    },
    {
     "part": 2,
-    "body": "His champion Rexxar has found a way into her lair, and the secret waits in Shadowprey Village in Desolace with Rexxar's companion Rokaro. Only the strongest of the black flight may enter, Rokaro explains, by trials and a key enchanted by General Drakkisath himself. He sets the hero on the road: an illusion woven by Myranda the Hag, then the trials of the old drake Emberstrife.",
+    "body": "One of Thrall's champions has found a way into her lair, and the hero is sent into Desolace to seek out the champion of the Horde who keeps the secret. Only the strongest of the black flight may enter, the champion explains, by many trials and a key enchanted by General Drakkisath himself, and one not of black dragonkin will find passage hard. He sets the hero on the road: an illusion woven by Myranda the Hag, then the trials of the old drake Emberstrife.",
     "triggers": [[5, 6567]],
-    "sources": ["quest 6567 description and reward text (Rexxar's discovery, Rokaro in Shadowprey Village; trials; key enchanted by Drakkisath)", "quests 6568 to 6601 (Myranda's illusion, Emberstrife's tests)", "DB: Rokaro 10182 ends 6567, starts 6568 and 6602"]
+    "sources": ["quest 6567 description, base and mod-individual-progression rewrite (one of Thrall's champions found a way into the lair; seek him out in Desolace) and reward text (one way in; trials; key enchanted by Drakkisath; not of black dragonkin)", "quests 6568 to 6601 (Myranda's illusion, Emberstrife's tests)", "DB: 10182 ends 6567, starts 6568 and 6602"]
    },
    {
     "part": 3,
-    "body": "Rexxar is not there to tell it himself. Thrall's champion has crossed the Dark Portal to join the Horde's expedition into Outland, where rumors of his own Mok'Nathal people await him, and he left his discovery in Rokaro's keeping so that another might finish the hunt.",
-    "triggers": [[5, 6567]],
-    "minState": 8,
-    "sources": ["quest 6567 description (he has left Azeroth to join our expedition into Outland; left Rokaro with this information)", "blades_edge.json 352230 (Rexxar crossed the Dark Portal chasing rumors of his people)"]
-   },
-   {
-    "part": 4,
-    "body": "The trials passed, the amulet needs only the blood of General Drakkisath in Blackrock Spire to awaken. Ceremony, Rokaro scoffs, is a pretty word for the bloodletting that amuses the black flight. With the general's blood the Drakefire Amulet comes alive, and the way into the lair of the brood mother lies open. It will be a victory, Rokaro promises, remembered for many years.",
+    "body": "The trials passed, the amulet needs only the blood of General Drakkisath in Blackrock Spire to awaken. Ceremony, the champion scoffs, is a pretty word for the bloodletting that amuses the black flight. With the general's blood the Drakefire Amulet comes alive, and the way into the lair of the brood mother lies open. It will be a victory, the champion promises, remembered for many years.",
     "triggers": [[5, 6602]],
     "sources": ["quest 6602 description and reward text (Drakkisath's blood; the Drakefire Amulet opens Onyxia's lair; a victory remembered for many years)"]
    }
   ],
-  "sources": ["npc_text 5733 to 5738 (Thrall's account of Onyxia, the peace, the order to destroy her)", "quest 6566, 6567 (Rexxar, Rokaro in Shadowprey Village)", "quest 6568 to 6602 (Myranda's illusion, Emberstrife's tests, Drakkisath's blood)", "quest 6602 reward text (Drakefire Amulet opens Onyxia's lair; a victory remembered for many years)", "DB: Rokaro 10182 Champion of the Horde in Shadowprey Village ends 6567; creature_loot_template 10184 drops 49643/49644 only"],
-  "notes": "Converted: Onyxia's unmasking and Thrall's order moved to part 1 (QUEST_DONE 6566; Thrall tells it in the gossip that completes the quest); Rexxar's secret and Rokaro's road moved to part 2 (QUEST_DONE 6567); the amulet awakened moved to part 3 (QUEST_DONE 6602). Faction 2: AllowableRaces 690. Check: Rexxar leaving for Outland restored as part 3 (minState 8, QUEST_DONE 6567, the same trigger as part 2 so they show together; 6567's own description says it); the amulet is now part 4."
+  "sources": ["npc_text 5733 to 5738 (Thrall's account of Onyxia, the peace, the order to destroy her)", "quest 6566, 6567 (a champion's discovery; the Horde's champion in Desolace)", "quest 6568 to 6602 (Myranda's illusion, Emberstrife's tests, Drakkisath's blood)", "quest 6602 reward text (Drakefire Amulet opens Onyxia's lair; a victory remembered for many years)", "DB: 10182 Rokaro, Champion of the Horde, in Shadowprey Village ends 6567; creature_loot_template 10184 drops 49643/49644 only", "mod-individual-progression zone_desolace.sql (10182 renamed Rexxar in every state, wanders Desolace with Misha toward Feralas; 6567, 6568, 6601, 6602 texts rewritten for Rexxar)"],
+  "notes": "Converted: Onyxia's unmasking and Thrall's order moved to part 1 (QUEST_DONE 6566; Thrall tells it in the gossip that completes the quest); Rexxar's secret and Rokaro's road moved to part 2 (QUEST_DONE 6567); the amulet awakened moved to part 3 (QUEST_DONE 6602). Faction 2: AllowableRaces 690. Check: Rexxar leaving for Outland restored as part 3 (minState 8, QUEST_DONE 6567, the same trigger as part 2 so they show together; 6567's own description says it); the amulet is now part 4. Fix: with mod-individual-progression NPC 10182 is Rexxar wandering Desolace in every state, without it he is Rokaro at Shadowprey and Rexxar has gone to Outland, and no state gate separates the two, so part 2 names neither and keeps only what both 6567 texts share (a champion's way in, the Horde's champion in Desolace), the Outland part is dropped (Blade's Edge 352230 tells his crossing) and the amulet part is part 3 again, its speaker now the champion; consistent with Desolace 40518."
  },
  {
   "id": 163716,

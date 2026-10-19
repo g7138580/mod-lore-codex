@@ -1,46 +1,2235 @@
 [
-{"id": 352200, "kind": 0, "zone": 3522, "sort": 0, "faction": 0, "title": "Blade's Edge Mountains", "body": "The Blade's Edge Mountains are a maze of red canyons in the north of Outland, crowned by great curving spikes of stone. This is gronn country. Gruul the Dragonkiller, who once tore the black dragonflight from the sky and left its bones on the spires, rules from his lair in the north, and his seven sons drive the Bladespire and Bloodmaul ogres against each other and everyone else. Newcomers have carved out footholds all the same: the night elves at Sylvanaar, Toshley's gnomes on the Razor Ridge, the Horde in Thunderlord Stronghold and the Cenarion Expedition at Evergrove, while the half-ogre Mok'Nathal hold out in the east. Arakkoa cults whisper of a coming raven, the Wyrmcult worships the surviving black dragons, and the Burning Legion has raised forge camps on the high terraces, where ogres made wise by strange crystals have found a refuge of their own at Ogri'la.", "triggers": [[1, 3522]], "sources": ["warcraft.wiki.gg/wiki/Blade's_Edge_Mountains (gronn control the ogres; Wyrmcult worships the remaining black dragons; Ogri'la)", "warcraft.wiki.gg/wiki/Gruul (dragons impaled on the spires, Dragons' End)", "quest 10504 description (Gruul and his seven sons)", "quest 10607 reward text", "npc_text 10926 (Chu'a'lor)"], "notes": "Removed the origin from Gorgrond and Frostfire Ridge (Warlords of Draenor era naming, sourced on the wiki to BlizzCon 2013 and Chronicle). Wyrmcult 'serves' made 'worships' per the wiki."},
-{"id": 352201, "kind": 1, "zone": 3522, "sort": 1, "faction": 0, "title": "Sylvanaar", "body": "Sylvanaar is a night elf town in the southwest of the mountains, raised in a short time by elven magic on land its founders found empty. Around it they are coaxing the Living Grove to grow at an unnatural pace, meant to ring the town with a defensive woodland of tranquil beauty. Fey drakes pollinate the grove, treant defenders can be called up from its seedlings, and an ancient of war named Stronglimb Deeproot stands as its chief protector. Commander Skyshadow leads the town, wary of the ogres in the ravine below and of the Horde beyond it. To the south, a tunnel through Blade Tooth Canyon is Sylvanaar's lifeline to the Harborage in the swamps of Zangarmarsh.", "triggers": [[1, 3772], [1, 3771], [1, 3770]], "sources": ["warcraft.wiki.gg/wiki/Sylvanaar (night elf settlement in the Living Grove)", "quest 10487 description (elven magics grew a town and grove in a short time)", "quest 10504 reward text (land initially found empty)", "quests 10455, 10456, 10457", "quest 10489 (Stronglimb Deeproot, chief defender of the Living Grove)", "quest 10502 description", "quest 10927 description and reward (tunnel, lifeline to the swamp, trade with the Harborage)", "npc_text 10264 (Skyshadow)"], "notes": "Blade Tooth Canyon (3770) merged in: it is the tunnel toward Zangarmarsh beside Sentinel Moonwhisper."},
-{"id": 352202, "kind": 1, "zone": 3522, "sort": 2, "faction": 0, "title": "Veil Lashh", "body": "South of the Living Grove, the Lashh'an arakkoa roost among the trees of Veil Lashh, where tame kaliri flutter about their nests. Their magic unsettles the night elves next door. The Lashh'an tear out clawfuls of their own feathers as reagents and keep tomes of crude pictographs high in the branches. Their rites are worked at circles of power on the ground, and those who have dared to try one describe neither a curse nor a conjuring, but a kind of communion that fills the caster with the spirit of a kaliri. At Sylvanaar, Rina Moonspring suspects that the Lashh'an are behind the grove's lynxes turning on the town.", "triggers": [[1, 3782]], "sources": ["quest 10555 description and request text (feathers as reagents, spellbooks high in the trees)", "quest 10556 description and reward text (kaliri spirit, communion spell)", "quest 10455 description (arakkoa of Veil Lashh suspected)", "DB spawns: Tame Kaliri, Lashh'an Tome, kneel targets and spell origin in area 3782"], "notes": "verified"},
-{"id": 352203, "kind": 1, "zone": 3522, "sort": 3, "faction": 0, "title": "Bloodmaul Outpost", "body": "Bloodmaul Ravine cuts between Sylvanaar and Thunderlord Stronghold, and toward its southern end the Bloodmaul clan holds Bloodmaul Outpost, watched over by the Northmaul and Southmaul towers. The Bloodmaul are known for their brew, a foul swill their brewmasters carry about in barrels and their warriors practically live on. A troll witch doctor named T'chali taught them the craft, and they repaid him by burying him in the ravine. At the far south lies the Draenethyst Mine, where crystals grow naturally from the walls and the Explorers' League wants samples. The Bloodmaul keep plunder there too: a Thunderlord spear, the Thunderspike, stolen from the Bladespire, was hidden at the back of the mine.", "triggers": [[1, 3776], [1, 3824], [1, 3778], [1, 3924], [1, 3925]], "sources": ["quests 10502, 10511 (brewmasters carry the brew to the other ogres), 10512", "quest 10542 description (T'chali taught the Bloodmaul to brew, buried)", "quest 10510 description (Draenethyst Mine at the south end, crystals grow naturally)", "quest 10525 reward and 10526 description (Thunderspike stolen from the Bladespire, back of the mine)", "quest 10518 (Northmaul Tower)", "quest 10543 (Grimnok atop the Southmaul Tower)", "DB: T'chali 21349 stands in area 3824 Bloodmaul Ravine"], "notes": "verified"},
-{"id": 352204, "kind": 1, "zone": 3522, "sort": 4, "faction": 0, "title": "Thunderlord Stronghold", "body": "Thunderlord Stronghold was the seat of the Thunderlord clan until those orcs were made fel orcs by the blood of Mannoroth and abandoned it. The Bladespire ogres moved into the empty halls, and the Horde has since driven them out and holds the town in the old clan's name. Its warriors still fight ogres on every side, and the scholar Rokgah Bloodgrip hunts the clan's lost relics to appease its restless dead. The Horde's dire wolves den on the Jagged Ridge to the south under Rema, the den mother, sharing the slopes with bloodletters that eat and breed without pause. The tunnel of Blades' Run carries trade to Swamprat Post in Zangarmarsh, and Rexxar has come here seeking his people.", "triggers": [[1, 3769], [1, 3768], [1, 3767]], "sources": ["warcraft.wiki.gg/wiki/Thunderlord_Stronghold (abandoned after the fel transformation, Bladespire occupation, Horde holds it in honor of the clan, dire wolves under Rema at Jagged Ridge, Rexxar came seeking his race)", "quest 10486 description", "quest 10503 description", "quest 10456 description (the Horde brought dire wolves)", "quest 10690 (Rema)", "npc_text 10322 (Rokgah)", "quest 10526 request text (appease the dead spirits)", "quest 10928 (tunnel, trade with Swamp Rat)"], "notes": "Jagged Ridge (3768) and Blades' Run (3767) merged in."},
-{"id": 352205, "kind": 1, "zone": 3522, "sort": 5, "faction": 0, "title": "Bladespire Hold", "body": "Bladespire Hold, down in the ravine west of Thunderlord Stronghold, is the seat of the strongest ogre clan in the mountains. The Bladespire stand highest in the favor of Gruul the Dragonkiller, a place won for them by their crafty chieftain Gorr'Dim, and they keep packs of raptors alongside their brutes and shamans. They once held Thunderlord Stronghold, and the Thunderlord relics lost when the Horde drove them out, a drum, an arrow and a tablet, now lie somewhere in the hold. Gorr'Dim keeps defenders about him who are sworn never to touch the Bloodmaul brew. In a cage at the heart of the hold sits Vindicator Vuuleen of Sylvanaar, who insists he is exactly where he wants to be.", "triggers": [[1, 3773], [1, 3931]], "sources": ["quest 10503 description (west, the ones defeated to take the stronghold; ogres and raptors)", "quest 10504 description (strongest clan, favor of Gruul)", "quest 10517 description (Gorr'Dim elevated his clan, sober defenders)", "npc_text 10322 and quest 10524 (drum, arrow, tablet in Bladespire Hold)", "npc_text 10300 and quest 10516 (Vuuleen wants to stay in the cage)", "DB spawns: Bladespire Brute, Shaman, Raptor, Sober Defender in 3773"], "notes": "Bladespire Grounds (3931) merged in."},
-{"id": 352206, "kind": 1, "zone": 3522, "sort": 6, "faction": 0, "title": "Toshley's Station", "body": "When the night elves of Sylvanaar sent the gnome Toshley and his followers away over their machines and experiments, the gnomes climbed to the Razor Ridge and built Toshley's Station, where they can experiment as they please. The station is a clutter of laboratories and launch gear, from the Zapnabber twins' Zephyrium Capacitorium, which flings willing volunteers across the mountains, to a scientist who studies both time and sound. Razak's Roughriders, hired to protect the scientists, man the defense guns against the ravagers that swarm the ridge. To the north, at the ridge's southwestern edge, Bladespire ogres at the Bladespire Outpost raid the station's power converters, and the gronn Maggoc, warden of the eastern mountains, prowls nearby.", "triggers": [[1, 3918], [1, 3833], [1, 3922]], "sources": ["warcraft.wiki.gg/wiki/Toshley's_Station (left Sylvanaar over machines and experiments, built to experiment as they wish, Razak's Roughriders)", "quest 10580 description", "quest 10581 objective (up the ramp to the Razor Ridge)", "quests 10557, 10710 (Tally and Rally Zapnabber, Zephyrium Capacitorium)", "npc_text 10444 (Nickwinkle studies time and sound)", "npc_text 10469 and creature_text 21118 (assault by the bugs, def guns)", "quest 10620 description", "quest 10584 description (Bladespire Outpost to the north raids power converters)", "quest 10843 (Bladespire Outpost at the southwestern edge of the Razor Ridge)", "quest 10996 description (Maggoc, warden of the eastern mountain range)", "DB: Maggoc 20600 stands in area 3922"], "notes": "Razor Ridge (3833) and Bladespire Outpost (3922) merged in. Opening reworded: the elves drove the gnomes away (quest 10580), they did not simply leave."},
-{"id": 352207, "kind": 1, "zone": 3522, "sort": 7, "faction": 0, "title": "Singing Ridge", "body": "The Singing Ridge is a field of great crystals in the south of the mountains, their shards humming with harmonies that one gnome scholar suspects are a sign of life, perhaps bound in some way to the nether drakes that nest there. The drakes are a strange inheritance. Their eggs were once black dragon eggs, changed by the wave of nether energy that washed over the land when Draenor blew apart. Dreadwing, their brood mother, dwells on the ridge, and crystal flayers scratch away at the shards. To the north, the Scalewing Shelf belongs to serpents whose breath crackles with lightning and to ridgespine stalkers that drop on passersby from the rocks.", "triggers": [[1, 3919], [1, 3953]], "sources": ["quest 10594 reward text (crystals almost alive, symbiosis with the nether drakes)", "quest 10608 description", "quest 10609 request text (eggs used to be black dragon eggs, changed when Draenor blew apart)", "quest 10853 description", "quest 10845 description (Dreadwing, brood mother)", "quest 10657 description (Scalewing serpents, lightning breath)", "quest 10620 description (ridgespine stalkers)"], "notes": "Scalewing Shelf (3953) merged in."},
-{"id": 352208, "kind": 1, "zone": 3522, "sort": 8, "faction": 0, "title": "Veil Vekh", "body": "In the southeastern canyons the Vekh'nir arakkoa keep Veil Vekh. For years they troubled no one, but something has stirred them: a strange religion holds them in a frenzy, and they now carry crystals that they charge at their spell circles for some dark purpose. Nearby, in the caverns of Trogma's Claim, the Vekh'nir keep captured ogres as slaves under the watch of their leader, Vekh. Beside the veil, silkwing larvae spin their cocoons across Vekhaar Stand, prized by the Mok'Nathal for their silk and iridescent wings, and a tunnel from the stand leads into Death's Door.", "triggers": [[1, 3783], [1, 3779], [1, 3827]], "sources": ["quest 10565 description and request text (benign for many years, now stirred; crystals infused at spell circles)", "quest 10566 (ogre slaves at Trogma's Claim)", "quest 10846 description (Vekh'nir enslaved ogres at Trogma's Claim, Vekh)", "quests 10617, 10618 (silkwing cocoons and wings)", "quest 10910 description (Vekhaar Stand, tunnel into Death's Door)", "DB spawns: Silkwing Larva in 3827, Arakkoa Egg in 3783"], "notes": "Trogma's Claim (3779) and Vekhaar Stand (3827) merged in. Dertrok's two lines conflict (thorn in our sides vs benign for many years); the softer wording is used."},
-{"id": 352209, "kind": 1, "zone": 3522, "sort": 9, "faction": 0, "title": "Mok'Nathal Village", "body": "Mok'Nathal Village lies in the east of the mountains, where the Mok'Nathal still survive: a people of mixed orc and ogre blood, once honored by orc shamans before the clans fell to demonic corruption. Their hunters keep tame clefthoof and quilbeasts, the silk and wings of the canyon silkwings are worked into their crafts, and Matron Varah offers any wanderer a place at the village fires. The spiritcallers keep the memory of the ancestors alive in flame. Enemies press in from every side, from the Bladespire Outpost to the west, the Vekh'nir to the south and the nether drakes of the Singing Ridge, and the village chief, Leoroxx, measures every outsider by a harsh standard.", "triggers": [[1, 3844]], "sources": ["warcraft.wiki.gg/wiki/Blade's_Edge_Mountains (Mok'Nathal honored by shamans before the demonic corruption, small village)", "DB spawns: Tame Clefthoof, Quilbeast, Mok'Nathal Hunter in 3844", "quests 10617, 10618", "npc_text 10249 (Matron Varah)", "npc_text 10647 (Dohgar: flame of their memory)", "quests 10843, 10845, 10846", "npc_text 10645 (Leoroxx)"], "notes": "verified"},
-{"id": 352210, "kind": 1, "zone": 3522, "sort": 10, "faction": 0, "title": "Death's Door", "body": "Death's Door is a canyon south of Mok'Nathal Village, reached through a tunnel from Vekhaar Stand, where the Burning Legion holds open a portal onto the world in which it breeds its hounds. Baelmon the Hound-Master maintains the ritual that keeps the portal alive at the canyon's north end, and those who come through are sent on by translocator to Forge Camp: Wrath. Two warp-gates, one in the north and one in the south, serve to move and empower the void terrors, each within range of a fel cannon, while deathforge smiths and technicians tend the guns. To the druids of Evergrove it is the gravest danger the Legion poses in the mountains.", "triggers": [[1, 3831]], "sources": ["quest 10910 description (portal onto the world where the Legion breeds its hounds; route via Vekhaar Stand, south of Mok'Nathal)", "quest 10912 description (Baelmon maintains the ritual, north end)", "quest 10911 description (two warp-gates, teleportation and enhancement of void terrors, fel cannons)", "quest 10904 description", "creature_text 19747 (translocator, Forge Camp Wrath awaits)"], "notes": "verified"},
-{"id": 352211, "kind": 1, "zone": 3522, "sort": 11, "faction": 0, "title": "Razaan's Landing", "body": "Razaan's Landing, north of the Razor Ridge, is a camp of Razaani ethereals under Nexus-Prince Razaan. Their devices give off small pink orbs of light that drift above the landing like ornaments, and fiendling flesh beasts, some of them crackling with ether, wander among them. Neighbors from the gnome station and the Mok'Nathal village learned the truth the hard way. The orbs are made of nether energy and captured souls, among them the souls of gnomes who vanished on the road north and of Mok'Nathal ancestors.", "triggers": [[1, 3942]], "sources": ["quest 10674 description (pink floating light orbs, probably only decoration)", "quest 10675 description (nether energy and souls, gnome souls; Nexus-Prince Razaan)", "quest 10671 description (fiendling flesh beasts, ether-energized flesh)", "quest 10859 description", "quest 10865 description (some of them Mok'Nathal)", "quest 10620 request text (people who headed north disappeared)"], "notes": "verified"},
-{"id": 352212, "kind": 1, "zone": 3522, "sort": 12, "faction": 0, "title": "Dragons' End", "body": "Dragons' End is a valley of old bones. Here the gronn and the Bladespire clan brought down the black dragons Deathwing had left on Draenor, and Gruul impaled their bodies on the spires, where the remains still hang. At the eastern edge lies the Cursed Hollow, lair of the gronn Grulloc, who guards a sack and a dragon skull from his father's slaughter of the flight, and who cannot resist chasing a pig. Southwest of the Circle of Blood, the Churning Gulch seethes with crust bursters, among the most poisonous creatures in all of Outland, whose glands a certain alchemist values highly.", "triggers": [[1, 3825], [1, 3904], [1, 3862]], "sources": ["warcraft.wiki.gg/wiki/Gruul (Bladespire incantations, dragons impaled on the spires, bones at Dragons' End)", "quest 10721 description (Cursed Hollow on the eastern edge of Dragons' End, Huffer chased)", "quest 10800 description", "quest 10995 description (dragon skull from his father's slaying of the black dragonflight)", "creature_text 20216 (Me keep piggy as pet)", "quest 10715 description (Churning Gulch southwest, crust bursters most poisonous creatures)", "quest 10787 (deprecated) description (dragon corpses impaled upon the rocks at Dragons' End)", "quest 10724 reward text (head of a black dragon from Dragons' End)"], "notes": "Cursed Hollow (3904) and Churning Gulch (3862) merged in. 'Sack of his treasures' made 'a sack' (contents unstated); pig line softened to what the Huffer quest and Grulloc's yells show."},
-{"id": 352213, "kind": 1, "zone": 3522, "sort": 13, "faction": 0, "title": "Circle of Blood", "body": "The Circle of Blood is a great ogre structure in Daggermaw Canyon, raised around an arena where challengers meet one another in combat. Goblin organizers and merchants have set up their stalls at its gates. The towers just outside see quieter business. Atop the eastern one stands Mog'dorg the Wizened, an old Bloodmaul ogre who speaks with surprising clarity, and Chort, below, sends trusted visitors up to him with a warning to keep quiet. Nearby, a sharp-tongued alchemist who calls himself Baron Sablemane receives guests with a black whelp at his side.", "triggers": [[1, 3775], [1, 3855]], "sources": ["warcraft.wiki.gg/wiki/Circle_of_Blood (large ogre structure holding the arena, in Daggermaw Canyon)", "DB spawns in 3775: Steamwheedle Sam <Arena Organizer>, arena vendors, Mog'dorg 22941, Chort 22995, Baron Sablemane 22103, Blackwhelp 22108", "quest 11057 (tower on the eastern side of the arena)", "quest 10989 description", "npc_text 10877 (Chort)", "npc_text 10860 (Mog'dorg's clarity)", "quest 10783 description"], "notes": "PvP arena described neutrally, area triggers only (3855 is the arena subzone)."},
-{"id": 352214, "kind": 1, "zone": 3522, "sort": 14, "faction": 0, "title": "Bloodmaul Camp", "body": "North of the Circle of Blood, Daggermaw Canyon runs on toward Gruul's Lair, and along it the Bloodmaul have pitched Bloodmaul Camp. Here the clan plans its offensive against Sylvanaar and the Ruuan Weald under the chieftain Dorgok, and here its maulers, warlocks and battle worgs gather around kegs of grog, moonshine and seed beer. Down in the canyon, Bloodmaul taskmasters and soothsayers meet to talk over their gronn masters' orders, a den of marmots burrows among the rocks, and Bladespire enforcers patrol the stretch nearest the lair while Expedition wardens watch from the canyon's edge.", "triggers": [[1, 3777], [1, 3826]], "sources": ["quest 10795 description (attacks on Sylvanaar and Ruuan Weald staged from Bloodmaul Camp, Dorgok)", "quest 10784 / 10796 (maulers and warlocks)", "DB spawns: Bloodmaul Battle Worg, Green Spot Grog Keg, Ripe Moonshine Keg, Fermented Seed Beer Keg in 3777", "quest 10720 description (marmot den in Daggermaw Canyon past the Circle of Blood)", "quest 10714 (taskmaster and soothsayer in conversation; sons of Gruul)", "DB spawns in 3826: Bladespire Enforcer, Expedition Warden"], "notes": "Daggermaw Canyon (3826) merged in. Raids made a planned offensive (quest 10795); kegs 'as precious as any weapon' removed as unsupported."},
-{"id": 352215, "kind": 1, "zone": 3522, "sort": 15, "faction": 0, "title": "Gruul's Lair", "body": "The road through Daggermaw Canyon ends at Gruul's Lair, home of Gruul the Dragonkiller and of High King Maulgar, the old ogre king who serves him. Gruul trusts the approach only to the toughest of the Bladespire, enforcers, battlemages and ravagers led by Fingrom, and in their encampment outside the lair Rexxar's wyvern Leokk was kept caged. Before the entrance stands the altar of Goc, master of the Bladespire. On the right of the road, just short of the lair, lies Soulgrinder's Barrow, where the gronn Skulloc Soulgrinder keeps himself hidden from the world.", "triggers": [[1, 3774], [1, 3960]], "sources": ["quest 10805 description (Gruul protects the exterior with the toughest ogres, Fingrom)", "quest 10724 description (Leokk caged in the Bladespire encampment outside Gruul's Lair)", "quest 10742 description (Goc's altar outside Gruul's Lair)", "quest 10806 description (Goc, master of the Bladespire)", "quest 11000 description and reward text (barrow on the right before Gruul's Lair; Gruul and his puppet, the old king, Maulgar)", "quest 10998 description (Skulloc keeps himself hidden)", "DB spawns in 3774: Bladespire Enforcer, Battlemage, Ravager, Fingrom 20757, Leokk 22268, Meeting Stone"], "notes": "Raid interior not described beyond naming its two rulers. Soulgrinder's Barrow (3960) merged in. 'Held prisoners' narrowed to Leokk, the only captive the quests name."},
-{"id": 352216, "kind": 1, "zone": 3522, "sort": 16, "faction": 0, "title": "Evergrove", "body": "Evergrove is the Cenarion Expedition's haven in the Ruuan Weald, kept almost entirely by night elves and open to Alliance and Horde alike. Tree Warden Chawn leads the druids' effort to restore the balance of nature here, helped by scholars such as Timeon, who studies the arakkoa, and a gnome who wonders whether the druids hide batteries under their robes. The ancient Mosswood rests here before his long sleep. The weald around the grove is being cut and hunted bare by Wyrmcult hewers and poachers, the Ruuan'ok arakkoa raise their Harbingers of the Raven at Veil Ruuan to the north, and Watcher Moonshade holds the Wyrmskull Bridge to the west.", "triggers": [[1, 3951], [1, 3828], [1, 3829], [1, 3952]], "sources": ["warcraft.wiki.gg/wiki/Evergrove (Cenarion outpost in Ruuan Weald, manned almost entirely by night elves, services to both factions, Chawn leader)", "npc_text 10534 (Chawn: reestablish the balance of nature)", "quest 10615 reward text (Timeon)", "npc_text 10554 (O'Mally: batteries under those robes)", "npc_text 10640 (Mosswood: soon I will plant roots and sleep)", "quests 10682, 10713, 10717 (hewers, poachers)", "quest 10567 description (Ruuan'ok Harbingers of the Raven)", "npc_text 10667 and quest 10894 (Watcher Moonshade at Wyrmskull Bridge)"], "notes": "Ruuan Weald (3828), Veil Ruuan (3829) and Wyrmskull Bridge (3952) merged in. Arthorn Windsong and the druid flight form chain left to zangarmarsh.json."},
-{"id": 352217, "kind": 1, "zone": 3522, "sort": 17, "faction": 0, "title": "Forge Camp: Anger", "body": "On the eastern heights the Burning Legion works Forge Camp: Anger, where doomforge engineers and attendants labor at fel cannons under the eye of anger guards and a ring of Legion obelisks. Its masters give orders through a Legion communicator, and the demon on the far end suspects his underling Doomcryer of undermining him. Just north of the camp, fel corrupters spread their taint through the Bladed Gulch, turning its scalewings and daggermaws into felsworn beasts. Farther north lies Skald, a scorched land of ash and searing elementals. A great wood flourished there until the Legion sent imps of flame to burn it away, and Mosswood the Ancient is the last of its people.", "triggers": [[1, 3787], [1, 3867], [1, 3866]], "sources": ["quest 10819 description (east of Evergrove, Legion communicator)", "quests 10820, 10821 (Doomforge attendants and engineers, Doomcryer undermining his authority, five obelisks, anger guards)", "DB spawns in 3787: Legion Fel Cannon, Anger Guard, Legion Obelisk", "quest 10753 description (corruption spreading across Bladed Gulch, Fel Corrupters, Felsworn)", "quest 10770 description (great wood burned by imps sent by the Legion)", "quest 10771 description (only I remain)", "DB spawns in 3866: Searing Elemental, Scorch Imp, Fertile Volcanic Soil"], "notes": "Bladed Gulch (3867) and Skald (3866) merged in. Bladed Gulch lies north of the camp (fel corrupters near x 3230 against the camp near x 2920), not below it; Doomcryer called an underling."},
-{"id": 352218, "kind": 1, "zone": 3522, "sort": 18, "faction": 0, "title": "Blackwing Coven", "body": "The Blackwing Coven is the cavernous stronghold of the Wyrmcult, at the end of the road that runs west past Grishnath and the Raven's Wood. Its humans, orcs, draenei and Broken seek the power of the surviving black dragons, and in its depths they raise blackwhelps among clutches of eggs. Their patriarch is Maxnar the Ashmaw, one of the dragonkin, and his second, Kolphis Darkscale, drives his overseers hard for lumber and livestock from the weald. The cult is at war with the Boulder'mok ogres, and Kolphis has arranged a truce with the arakkoa. Its fighters mass in the Wyrmskull Tunnel under Draaca Longtail, ready to fall on Evergrove.", "triggers": [[1, 3780], [1, 3954], [1, 3963]], "sources": ["warcraft.wiki.gg/wiki/Wyrmcult (humans, orcs, Broken and draenei; harness the power of the black dragonflight; Blackwing Coven)", "quest 10722 and 10747 descriptions (route, whelps and eggs)", "quest 10748 description (Maxnar, dragonkin)", "creature_text 21983 (Kolphis second-in-command)", "npc_text 10541, 10543 (Kolphis: lumber and livestock, war with Boulder'mok, truce with the arakkoa)", "quest 10893 description (wyrmcultists massing in the tunnel, Draaca Longtail)", "creature_template 21389 subname Wyrmcult Patriarch", "DB positions: Maxnar, Kolphis and the coven's whelps and zealots stand at z 150 to 178, some 200 yards below the Forge Camp: Wrath demons (z 364 to 374)"], "notes": "Wyrmskull Tunnel (3954) and Dragonspine Ridge (3963, where Draaca Longtail stands) merged in. The truce was arranged by Kolphis (npc_text 10543), not bought. Maxnar and Kolphis map to area 3785 on the map grid, but their z puts them in the caverns far beneath Forge Camp: Wrath, so they belong here."},
-{"id": 352219, "kind": 1, "zone": 3522, "sort": 19, "faction": 0, "title": "Raven's Wood", "body": "The Raven's Wood spreads across the northwest, a forest of leafbeards and stonebarks watched over by Treebole, an ancient of lore who stands at a fork in the path past Grishnath. An evil has crept into its trees. The Grishna arakkoa have caused koi-koi spirits to possess the leafbeards and stonebarks, and dire ravens wheel through the branches. On the wood's western side lies Boulder'mok, a camp of Bladespire ogres who bring sacrifices to the altar of Gorgrom the Dragon-Eater and who fight a running war with the Wyrmcult nearby.", "triggers": [[1, 3830], [1, 3903]], "sources": ["quest 10829 description (Treebole, ancient of lore, fork in the path past Grishnath)", "quest 10830 description (Grishna, koi-koi spirits, leafbeards and stonebarks)", "DB spawns in 3830: Dire Raven, Raven's Wood Leafbeard and Stonebark", "quest 10803 description (west side of the Raven's Wood)", "quest 10786 (Bladespire ogres of Boulder'mok)", "quest 10723 description (Gorgrom accepting sacrifices from the ogres of Boulder'mok)", "npc_text 10543 (Wyrmcult fighting the Boulder'mok ogres)"], "notes": "Boulder'mok (3903) merged in."},
-{"id": 352220, "kind": 1, "zone": 3522, "sort": 20, "faction": 0, "title": "Grishnath", "body": "Grishnath is the roost of the Grishna arakkoa, in the north beside the Raven's Wood. Totems left by their Oracles of the Raven stand at four shrines, and through them the faithful hear the word of their god: that the raven will rise again from the darkest night, that the faithful will take flight with it while the rest walk the ground in shame, and that the old blood will flow once more. The Grishna carry strange orbs beneath their feathers, suffused with a purple glow and pulsing to an unheard beat, and with that magic they have set evil spirits upon the trees of the neighboring wood.", "triggers": [[1, 3781]], "sources": ["quest 10607 description (totems of the Oracles of the Raven, the Word of the Raven)", "broadcast_text 19475, 19476, 19477, 19478 (prophecies)", "DB: First to Fourth Prophecy objects in 3781", "quest 10825 description (orb from beneath the contour feathers)", "quest 10830 description (Grishnath orbs found throughout Grishnath; Grishna possess the trees)"], "notes": "verified"},
-{"id": 352221, "kind": 1, "zone": 3522, "sort": 21, "faction": 0, "title": "Ogri'la", "body": "High on a western terrace, reached only by flight, lies Ogri'la, the ogre heaven that the clans below whisper about. Its ogres, many of them two-headed, have gained a keen mind from the crystals that grow around their home, and they want only to live in peace, which the demons of the forge camps, the ethereals and above all the black dragonflight will not allow. Chu'a'lor, whose two heads finish each other's sentences, greets newcomers. Just to the north, the Sha'tari Skyguard keeps its outpost under Sky Commander Keller, who wears an eyepatch and claims he built the place with his own hands, and flies missions from it for the protection of both.", "triggers": [[1, 3786], [1, 3964]], "sources": ["warcraft.wiki.gg/wiki/Ogri'la (ogres transcended through apexis crystals, aided by the Sha'tari Skyguard)", "npc_text 10926 (Chu'a'lor: crystals, peace, demons, ethereals, Black Dragonflight)", "quest 11025 reward text (left and right heads)", "npc_text 10919 (Kronk: you only have one head)", "quest 11009 description (Ogri'la in the heavens above)", "quest 11030 and 11010 descriptions (flying mount)", "quest 11062 description and reward text (Skyguard Outpost to the north, built with me own hands, missions for mutual protection)", "npc_text 10906 (Keller's eyepatch)"], "notes": "Skyguard Outpost (3964) merged in. Terokkar owns Blackwind Landing and the Skettis Skyguard. 'Veteran' dropped as unsupported."},
-{"id": 352222, "kind": 1, "zone": 3522, "sort": 22, "faction": 0, "title": "Vortex Pinnacle", "body": "Vortex Pinnacle crowns the western terrace around Ogri'la, a field of crystal formations among the relics of the Apexis, a vanished sect of arakkoa who once lived atop these mountains. Their relics still answer those who master their sequences of colored light, and gan'arg analyzers of the Legion pick over them for secrets. Aether rays drift overhead, coveted by the Skyguard as mounts. The ghost of an arakkoa elder, Sai'kkal, lingers here, his sight so dim that he peers at every visitor as though hoping to know them. The black dragons Rivendark and Obsidia rule the skies of this terrace from their perches, a constant menace to Ogri'la.", "triggers": [[1, 3832], [1, 3969], [1, 3970]], "sources": ["quest 11058 description (Apexis, extinct sect, relics with colored sequences)", "quest 11025 request text", "DB spawns in 3832: Apexis Relic, Apexis Monument, Gan'arg Analyzer, Aether Ray", "quest 11065 description (aether rays around Vortex Pinnacle as remounts)", "quest 11078 description (Rivendark and Obsidia lord over this terrace, perches)", "npc_text 10794 (Sai'kkal cannot see clearly; default gossip)", "DB displays: Rivendark 24139 and Obsidia 12869 use black dragon skins", "npc_text 10926 (the Black Dragonflight threatens Ogri'la)"], "notes": "Rivendark's Perch (3969) and Obsidia's Perch (3970) merged in. Sai'kkal's Book of the Raven lines (npc_text 10795, 10796) sit behind a gossip option gated on druid quest 10980, part of the flight form chain owned by zangarmarsh.json, so removed. Perch dragons named black dragons from their display skins and Ogri'la's texts."},
-{"id": 352223, "kind": 1, "zone": 3522, "sort": 23, "faction": 0, "title": "Forge Camps Wrath and Terror", "body": "Two Burning Legion forge camps flank the western terrace, Forge Camp: Wrath to the north and Forge Camp: Terror to the south. Their flak cannons, fed from stacks of fel cannonballs, shoot down Skyguard riders left and right, and in each camp a fel crystalforge pours out green smoke as it turns apexis shards into unstable flasks. Demon chieftains such as Galvanoth and Braxxus answer when shards are offered at the camps' burning fel crystal prisms. On the southern border of Wrath the demons have raised Shartuul's Transporter, an experimental gate meant to expand the camp, which the ogres of Ogri'la fear will soon crush them.", "triggers": [[1, 3785], [1, 3784], [1, 4008]], "sources": ["quest 11010 description (Wrath and Terror to the north and south, fel cannons shooting down the Skyguard)", "DB spawns in 3785: Legion Flak Cannon, Fel Cannonball Stack", "quest 11030 description (fel crystalforge at either forge camp, green smoke, ten apexis shards)", "quest 11079 description (demon chiefs at fel crystal prisms: Galvanoth, Braxxus, Zarcsin, Mo'arg Incinerator)", "quest 11026 reward text (special transporter on their southern border, experimental gate to expand the forge camp)", "quest 11060 request text (the camp growing bigger, soon too big and crush us)"], "notes": "Shartuul's Transporter (4008) merged in. The transporter's own event is not described. The Wyrmcult spawns that map to area 3785 belong to the Blackwing Coven caverns beneath, so they are not placed in the camp."},
-{"id": 352224, "kind": 1, "zone": 3522, "sort": 24, "faction": 0, "title": "Bash'ir Landing", "body": "The northernmost shelf of the mountains holds Bash'ir Landing, a settlement of the Ethereum named for Bash'ir and his followers. In great stasis chambers they keep ferocious beasts gathered from many worlds, which they hope one day to command, and they smuggle mana cells out of Tempest Keep for Kael'thas. A crystalforge stands at the landing's northeast corner, and every few hours Skyguard aether-techs fly in to raid it. East of the landing rises the Crystal Spine, where felstorm corruptors and infernals of the Legion roam among Apexis relics, and the black dragons Insidion and Furywing rule the skies from their perches.", "triggers": [[1, 3864], [1, 3865], [1, 3971], [1, 3972]], "sources": ["quest 10974 description (Ethereum settlement on the northernmost shelf)", "warcraft.wiki.gg/wiki/Bash'ir_Landing (named for Bash'ir and his subdivision of the Ethereum; Skyguard assaults every two hours)", "quest 10974 reward text (beasts from many worlds, hope to command them)", "quest 11513 description (ethereals smuggling mana cells out of Tempest Keep for Kael'thas)", "quest 11061 description (crystalforge at the northeast corner)", "quest 11119 description", "DB spawns in 3865: Felstorm Corruptor, Darkflame Infernal, Apexis Relic", "quest 11078 description (Insidion and Furywing rule the terrace to the northeast)", "DB displays: Insidion and Furywing 12869, black dragon skins", "AreaTable 3864 name Bash'ir Landing (wiki trivia: the non-possessive form is correct)"], "notes": "Crystal Spine (3865), Insidion's Perch (3971) and Furywing's Perch (3972) merged in. Quest 11513 (Shattrath daily) cited but not used as a trigger. Title and text use the AreaTable name Bash'ir Landing; perch dragons named black dragons from display skins; 'seize' made 'raid' (quest 11119)."},
-{"id": 352230, "kind": 2, "zone": 3522, "sort": 1, "faction": 2, "title": "Rexxar", "body": "Rexxar, Champion of the Horde, is Mok'Nathal, of mixed orc and ogre blood, and the son of Leoroxx. Thirty years ago he left his people against his father's wishes to follow the Horde to Azeroth, where he roamed with his bear Misha and once took Thrall's place at a summit that proved to be an ambush. Now he has crossed the Dark Portal, chasing rumors of his people across Outland. At Thunderlord Stronghold he carries that search, the struggle against the Alliance and the war with the ogres and their gronn masters. With Misha, his hawk Spirit, his boar Huffer and his wyvern Leokk, he means to break the sons of Gruul and prove himself his father's true son.", "triggers": [[2, 21984]], "sources": ["quest 10709 description and reward text (my son; left thirty years ago to follow the Horde to Azeroth)", "quest 10614 description (rumors across Outland)", "npc_text 10661 (Rexxar)", "warcraft.wiki.gg/wiki/Thunderlord_Stronghold (Rexxar came seeking his race)", "quests 10714, 10721, 10723 (Spirit, Huffer, Misha)", "quest 10724 (Leokk)", "quest 10742 reward text (true son)", "warcraft.wiki.gg/wiki/Rexxar (Warcraft III: The Frozen Throne, 2003: volunteered to go to the summit in Thrall's place; bear Misha)", "warcraft.wiki.gg/wiki/Razor_Hill (the Kul Tiran summit was a planned ambush; Rexxar went in Thrall's place and defeated the assassins)"], "notes": "Faction 2: Rexxar uses faction template 83 (Horde), hostile to the Alliance. The Thrall line came from durotar.json 1407 (Razor Hill): it is The Frozen Throne's false summit at Razor Hill, pre-Cataclysm and supported by the wiki; made specific and sourced to the wiki instead of the other zone file. Nothing from Legion used."},
-{"id": 352231, "kind": 2, "zone": 3522, "sort": 2, "faction": 2, "title": "Leoroxx", "body": "Leoroxx leads the Mok'Nathal of the eastern village and is father to Rexxar, though he will not call him one of his people. He opposed Rexxar's departure with the Horde thirty years ago and has never forgiven it: to Leoroxx, being born a half-breed does not make one Mok'Nathal, and his son is not welcome. He judges outsiders just as harshly. Those who would understand his people must share their struggle, slaying Vekh of the Vekh'nir, Gnosh Brognat of the Bladespire Outpost and Dreadwing, mother of the Singing Ridge's nether drakes, and even then he warns that they do not yet know what it is to be Mok'Nathal.", "triggers": [[2, 22004], [4, 10846]], "sources": ["quest 10709 description", "quest 10709 reward text (Leoroxx staunchly against his leaving)", "warcraft.wiki.gg/wiki/Leoroxx", "quests 10846, 10843, 10845 descriptions and reward texts"], "notes": "Faction 2: Leoroxx uses template 83 (Horde); 10846 is Horde only. Reconciliation with Rexxar is later content and left out."},
-{"id": 352232, "kind": 2, "zone": 3522, "sort": 3, "faction": 0, "title": "Baron Sablemane", "body": "Baron Sablemane waits outside the Circle of Blood, a master of the alchemical arts whose loathing of interruptions is surpassed only by his hatred of Gruul the Dragonkiller and his seven sons. He will help those who fight the gronn, but always for a price, because, as he puts it, free things destroy friendships. He brews poisons from crust burster venom and fashions traps from the essence of dragon fire. The clues are there for those who look: the gronn slaughtered his people and his children, a pet dragon carries his messages, and his agent Samia Inkling aids the druids against the Wyrmcult at his behest. Few learn that he is a black dragon in a human guise.", "triggers": [[2, 22103]], "sources": ["npc_text 10603 (Sablemane gossip)", "quest 10783 description (master of the alchemical arts)", "quest 10715 description (free things destroy friendships)", "quests 10785, 10801 (they slaughtered my people, my children; dragon fire trap)", "quest 10818 description (pet dragon)", "npc_text 10538 (Samia, at the behest of her master Baron Sablemane)", "quest 10806 reward text (transformation, true identity)", "warcraft.wiki.gg/wiki/Baron_Sablemane (human disguise of a black dragon)", "DB: Baron Sablemane 22103 uses human male display 20807; his battle form Sabellian 22496 uses display 21079 with black dragon skins"], "notes": "Faction 0: template 35. The wiki name Sabellian is left out of the text. Black dragon in human guise confirmed by displays. Samia line matched to npc_text 10538."},
-{"id": 352233, "kind": 2, "zone": 3522, "sort": 4, "faction": 0, "title": "Gruul the Dragonkiller", "body": "Gruul the Dragonkiller is the greatest of the gronn and the master of the Blade's Edge Mountains, worshiped as a god by the ogres who live there. When Deathwing's black dragons nested in these lands, Gruul led the gronn and ogres against them; the Bladespire tore the dragons from the sky with their incantations, and Gruul impaled the bodies on the spires of Dragons' End. The ogre clans now fight one another for his favor, which rests with the Bladespire, and his seven sons enforce his will across the mountains and as far as Nagrand. He keeps to his lair in the north beside High King Maulgar, the old ogre king, whom his enemies call his puppet.", "triggers": [[3, 19044], [4, 10504], [4, 10505]], "sources": ["warcraft.wiki.gg/wiki/Gruul (war on the black dragonflight, Bladespire incantations, impaled on the spires, worshiped by the ogres of Blade's Edge, seven sons)", "quests 10504, 10505 descriptions and request texts (clans vie for the favor of Gruul the Dragonkiller)", "nagrand.json 351831 (Durn in Nagrand)", "quest 11000 reward text (Gruul and his puppet, the old king, Maulgar)"], "notes": "Faction 0: 10504 is Alliance only and 10505 Horde only, both naming Gruul; KILL 19044 is the raid boss. Gruul's appearance in Beyond the Dark Portal left out."},
-{"id": 352234, "kind": 2, "zone": 3522, "sort": 5, "faction": 0, "title": "The Sons of Gruul", "body": "Gruul has seven sons, and they are the true power behind the ogre wars of Blade's Edge. Goc commands the Bladespire from his altar outside his father's lair. Gorgrom the Dragon-Eater accepts sacrifices at Boulder'mok and quietly drives the Bloodmaul against their neighbors. Grulloc, dim-witted, hatches his schemes in the Cursed Hollow, and Maggoc patrols the eastern ranges as their warden. Skulloc Soulgrinder, trained by the ogre warlock Vim'gol the Vile, hides in a barrow near the lair. Slaag went into exile among the Gordunni ogres above Shattrath, and Durn the Hungerer hunts the fields of Nagrand. Mog'dorg the Wizened believes no ogre will be free until all of them are dead.", "triggers": [[3, 20555], [3, 21514], [3, 20216], [3, 20600], [3, 22910]], "sources": ["warcraft.wiki.gg/wiki/Gruul (seven sons named)", "quests 10742, 10806 (Goc, master of the Bladespire, altar outside Gruul's Lair)", "quests 10723, 10798 (Gorgrom at Boulder'mok, behind the Bloodmaul plans)", "quests 10721, 10995 (Grulloc)", "quest 10996 (Maggoc, warden of the eastern range)", "quest 10998 (Skulloc trained by Vim'gol)", "quest 10997 (Slaag exiled among the Gordunni)", "nagrand.json 351831 (Durn)", "quest 11000 reward text", "quests 10742, 10806 RequiredNpcOrGo 20555 (Goc summoned at his altar, Horde and Alliance)", "quests 10723, 10802 (Gorgrom summoned at his altar, Horde and Alliance)", "quest 11000 (Skulloc forced out at the barrow, open to all)"], "notes": "Faction 0: all five are hostile to both factions (factions 14 and 16). Grulloc and Maggoc are fixed outdoor spawns; Goc, Gorgrom and Skulloc are summoned outdoors by quests open to each side (10742/10806, 10723/10802, 11000). Slaag (Terokkar) and Durn (Nagrand) are named only. 'Greedy' replaced with the quests' dim-witted."},
-{"id": 352235, "kind": 2, "zone": 3522, "sort": 6, "faction": 0, "title": "Mog'dorg the Wizened", "body": "Mog'dorg the Wizened is a Bloodmaul ogre who stands atop a tower outside the Circle of Blood and speaks with a clarity no other ogre below can match. The gift came from a staff given him by the ogres of Ogri'la, whose crystal sharpened his mind. He has used it to build a secret society, an underground resistance against the gronn, for he believes his clan faces annihilation at the hands of the Bladespire and the sons of Gruul who back them. He sent the ogre Grok to Shattrath to beg for help, and dreams of a home where ogres may decide their own destiny. Not all ogres trust him: the wandering speaker Mar'grom calls Ogri'la a myth.", "triggers": [[2, 22941]], "sources": ["npc_text 10800, 10860 (resistance; staff from Ogri'la)", "quest 10983 description and reward text (sent Grok to the city)", "quests 10989, 11057 reward texts", "quest 10996 reward text (home for the ogres, own destiny)", "creature_text 18693 (Speaker Mar'grom)"], "notes": "Faction 0: template 35. Grok and quest 10984 belong to Shattrath and are not used."},
-{"id": 352236, "kind": 2, "zone": 3522, "sort": 7, "faction": 1, "title": "Toshley", "body": "Toshley is the gnome inventor who brought a whole band of scientists to Outland, with Razak's Roughriders hired to guard them. They first settled with the night elves at Sylvanaar, but their machines and experiments made a mess of the Living Grove, and the elves sent them away, which Toshley counts a blessing. He left a remote sentry, R-3D0, on the Jagged Ridge to turn visitors away, along with a trail of spare parts leading straight to his door. At his station he runs hair-raising projects, capturing electromentals and charging spheres with lightning from wild serpents, and cheerfully tells volunteers the odds that they would implode.", "triggers": [[2, 21691], [5, 10581]], "sources": ["quest 10580 description (driving Toshley and his gnome friends away)", "npc_text 10423 (glad to be rid of those stuffy elves)", "quest 10620 description (hired on to help Toshley when he decided to move to Outland)", "quests 10580 reward and 10581 description (R-3D0, trail of spare parts)", "quest 10584 description (electromentals)", "quest 10657 description and reward text (lightning, 23.72 chance of imploding)"], "notes": "Faction 1: Toshley uses template 1732 (Alliance), 10581 is Alliance only."},
-{"id": 352237, "kind": 2, "zone": 3522, "sort": 8, "faction": 0, "title": "Tree Warden Chawn", "body": "Tree Warden Chawn, a tauren of the Cenarion Expedition, leads Evergrove. He came to the Ruuan Weald to restore the balance of nature to the mountains and finds the arakkoa and the Wyrmcult making that task hard. Chawn prefers to begin with talk. When the cultists began logging and poaching in the weald, he offered their overseer a compromise and was refused out of hand, and only then did he set his allies on the hewers. He is quick to sense evil in an object, freely admits he is no military planner, and gladly accepts help, whether from passing travelers or from the scholar Samia Inkling.", "triggers": [[2, 22007]], "sources": ["warcraft.wiki.gg/wiki/Evergrove (Tree Warden Chawn, tauren, leader)", "npc_text 10534", "quest 10682 description and reward text", "quest 10713 description", "quest 10825 request and reward texts (senses evil)", "quest 10894 description (not much of a military planner)"], "notes": "Faction 0: template 1710 (Cenarion Expedition), not hostile to either faction."},
-{"id": 352238, "kind": 2, "zone": 3522, "sort": 9, "faction": 2, "title": "T'chali the Witch Doctor", "body": "T'chali the Witch Doctor is a troll who came down into Bloodmaul Ravine to teach the ogres to brew. The Bloodmaul were losing their war with the Bladespire, so he set out to create the perfect brew, one that would strengthen its drinker and weaken the enemy. His thanks was to be buried in the ravine and left to rot, with Grimnok Battleborn leading the burial, and the next day Korgaah came raiding from the Bladespire to kick him in the head. The ogres even stole his hookah. T'chali still speaks from his grave, and his thirst for revenge on both clans is far from quenched.", "triggers": [[2, 21349]], "sources": ["quest 10542 description", "quest 10545 description (perfect brew, strengthens you and weakens your enemy)", "quest 10543 description (Grimnok led the burial, Korgaah came south to raid)", "quest 10543 reward text and 10544 description (powerful witch doctor in life, revenge not quenched)"], "notes": "Faction 2: T'chali uses template 1734 (Horde); all his quests are Horde only."},
-{"id": 352250, "kind": 3, "zone": 3522, "sort": 1, "faction": 2, "title": "Rexxar's Kin", "body": "Among the Bladespire, Horde fighters find a Thunderlord clan artifact and bring it to Rokgah Bloodgrip, a scholar of that fallen clan. He seeks a drum, an arrow and a tablet lost when the Bladespire were driven from Thunderlord Stronghold, and with a fragment of his own fiery soul he sends a seeker's spirit flying to find the last relic, the Thunderspike, hidden at the back of the Draenethyst Mine. With the relics returned to appease the stronghold's dead, the ghost of Garm Wolfbrother, last chieftain of the Thunderlord, appears with news for Rexxar: the Mok'Nathal live in a village east beyond the Razor Ridge, and they are in danger. Rexxar, uneasy about how his people will greet him, sends an envoy to Leoroxx, who coldly admits that Rexxar is his son and wants nothing to do with him. Rexxar resolves to open his father's eyes. His hawk Spirit, sent to spy on the Bloodmaul leaders, learns that the sons of Gruul are driving the ogres to destroy the Mok'Nathal.", "triggers": [[4, 10524]], "sources": ["quests 10524, 10525, 10526 (descriptions and reward texts)", "npc_text 10322 (Rokgah)", "quest 10718 description and reward text (Garm, last chieftain of the Thunderlord)", "quest 10614 description", "quest 10709 description and reward text", "quest 10714 description and reward text", "warcraft.wiki.gg/wiki/Garm_Wolfbrother"], "notes": "Faction 2: chain 10524 to 10714 is Horde only (AllowableRaces 690); 10524 starts from the item Thunderlord Clan Artifact (30431) dropped by Bladespire ogres. Continues in Baron Sablemane's Price."},
-{"id": 352251, "kind": 3, "zone": 3522, "sort": 2, "faction": 0, "title": "Baron Sablemane's Price", "body": "Rexxar and Commander Haephus Stonewall, Sylvanaar's envoy at Evergrove, both need a weapon that can kill a gronn, and both turn to Baron Sablemane. For the Alliance the trail begins with Dorgok of Bloodmaul Camp, whose corpse yields a statuette of Gorgrom the Dragon-Eater, proof that the gronn is behind the Bloodmaul plans against Sylvanaar; for the Horde, Rexxar wants a poison for the Bloodmaul kegs, carried in by a marmot. Either way the work runs the same: venom glands from the crust bursters of the Churning Gulch, then the sack Grulloc guards in the Cursed Hollow as the baron's price, stolen while the gronn sleeps under a powder or chases Rexxar's boar. Satisfied, he crafts a trap of dragon fire. Set at Gorgrom's altar at Boulder'mok, it brings down the Dragon-Eater, and grisly totems of his worshippers' heads are planted around the body. Last comes Goc, master of the Bladespire, slain at his altar outside Gruul's Lair beside Rexxar, or beside Sablemane himself, who sheds his human guise in the battle.", "triggers": [[4, 10783], [4, 10795]], "sources": ["quests 10783, 10715, 10749, 10720, 10721, 10785, 10723, 10724, 10742 (Horde)", "quests 10795, 10797, 10798, 10799, 10800, 10801, 10802, 10818, 10805, 10806 (Alliance)", "npc_text 10612 (Stonewall representing Sylvanaar at Evergrove)"], "notes": "Faction 0: entry points 10783 (Horde only, from Rexxar) and 10795 (Alliance only, from Stonewall). Leokk's rescue and the Gruul's Lair massacre are folded into the Goc line. The glands feed the poison or the sleeping powder; the sack is the price on both sides, now worded that way."},
-{"id": 352252, "kind": 3, "zone": 3522, "sort": 3, "faction": 0, "title": "The King of the Ogres", "body": "Mog'dorg the Wizened leads a secret resistance among the Bloodmaul, convinced his clan will be wiped out by the Bladespire and the sons of Gruul who back them. Those he trusts are sent against the gronn one by one. Grulloc dies in the Cursed Hollow for the dragon skull he treasured, and Maggoc on the Razor Ridge for the treasure chest he carries, which turns out to be empty. Even Slaag, who exiled himself among the Gordunni ogres above Shattrath, must fall, lest he return. The last, Skulloc Soulgrinder, stays hidden, so the grimoire of his teacher, the warlock Vim'gol the Vile, is taken from the fire circle where Vim'gol is summoned, and its ritual is read aloud at Soulgrinder's Barrow, forcing Skulloc into the world while his ghostly victims try to smash the Soulgrinder. With the sons dead, Mog'dorg declares the ogres freed from their shackles. Bloodmaul and Bladespire alike gather to hail their liberator as a new king, while Gruul and Maulgar cower in their lair, and the new monarch is sent up to Ogri'la.", "triggers": [[4, 10989], [4, 11057], [4, 10995], [4, 10996]], "sources": ["quests 10989, 11057 reward texts", "quest 10995 description and reward text", "quest 10996 description and reward text", "quest 10997 description", "quest 10998 description", "quest 11000 description and reward text", "quest 11009 description", "creature_text 22941 (All hail the new king)"], "notes": "Faction 0: all quests AllowableRaces 0, Mog'dorg and Chort template 35. 10983 (from Grok in Shattrath) and 10984 are left to Shattrath; 10997 (Slaag, QuestSortID Terokkar) is told but not a trigger."},
-{"id": 352253, "kind": 3, "zone": 3522, "sort": 4, "faction": 0, "title": "Ogre Heaven", "body": "The ogres of Ogri'la are newly wise and wish only for peace, but they are beset on every side. Chu'a'lor teaches visitors about the Apexis shards that every creature on the terraces covets, named for a vanished arakkoa civilization, and about the relics that reward those who master their sequences of light, while the larger monuments summon crystal guardians that long ago turned on their arakkoan makers. The weary father Torkus wants two unstable flasks, from a forge camp and from Bash'ir's Landing, so that one of his ten sons can join the Sha'tari Skyguard. At the Skyguard Outpost nearby, Sky Commander Keller and his sharp-tongued sergeant Vanderlip send riders to bomb the fel cannonball stacks of the forge camps, Skyguard Khatie wants aether rays roped as remounts, and the dragons of the terraces must be lured from their perches by breaking open their eggs. Kronk's banishing crystal sends slain demons back where they came from, and Gahk dreams of smashing the demons' transporter.", "triggers": [[4, 11025], [4, 11010], [4, 11102], [4, 11026]], "sources": ["quest 11025 description and request text", "quests 11058, 11059", "quests 11030, 11061 descriptions, npc_text 10916 (ten sons)", "quest 11062 reward text (Vanderlip's sharp tongue)", "quests 11010, 11102", "quests 11065, 11066", "quest 11078 description", "quest 11026 description and reward text", "npc_text 10923 (Gahk)"], "notes": "Faction 0: all quests AllowableRaces 0, NPCs of Ogri'la (1872) and Skyguard (1856) templates. 11010 (classes 511, all but druids) and 11102 (class 1024, druids; the flying-as-a-crow version of Bombing Run, same giver Vanderlip, exclusive group 11010) are not part of the druid flight chain and no other zone uses them; 11102 gives druids their entry point. Terokkar's Skyguard triggers 11004 and 11098 are not used."},
-{"id": 352254, "kind": 3, "zone": 3522, "sort": 5, "faction": 0, "title": "The Souls of Razaan's Landing", "body": "Gnomes from Toshley's Station have been vanishing on the road north, and at Mok'Nathal Village the spiritcaller Dohgar senses a great deal of pain coming from the ethereals' direction. Both turn their eyes to the small pink orbs that drift above Razaan's Landing. Toshley, curious about the Razaani's technology, sends a trap to catch a few; Dohgar, who has already set free the twisted spirits of the Singing Ridge's nether drakes, plants totems to draw them in. The answer horrifies them both. The orbs are woven from nether energy and souls, some of them gnomes and some of them Mok'Nathal ancestors. Toshley demands the death of Nexus-Prince Razaan, and Leoroxx, trusting his spiritcallers, names it a defilement. Razaan is drawn out by the slaughter of his followers and slain, his collection of souls is carried off, and at Mok'Nathal Village the ancestors are released at last to the cleansing fire.", "triggers": [[4, 10674], [4, 10859]], "sources": ["quests 10620, 10671 (missing people)", "quests 10674, 10675 (Toshley)", "quests 10853 reward text, 10859, 10865, 10867 (Dohgar and Leoroxx)"], "notes": "Faction 0: 10674 is Alliance only, 10859 Horde only. Toshley's earlier station quests are in his person entry; Leoroxx's trials in his."},
-{"id": 352255, "kind": 3, "zone": 3522, "sort": 6, "faction": 0, "title": "Brew and Banner", "body": "Every ogre clan in Blade's Edge fights the others for Gruul's favor, and the newcomers have learned to use the feud. At Sylvanaar the dwarf Borgrim Stouthammer, on holiday with the Explorers' League after the dirt and insects of Silithus, sends for Bloodmaul brew, finds it vile, and has the rest poured down Bladespire throats to see what happens. Vindicator Vuuleen, caged by choice inside Bladespire Hold to spy on the clan, wants back the sword and shield its leaders took, then sends his helpers against the chieftain Gorr'Dim, and at last has a stolen Bladespire banner planted atop the Bloodmaul's Northmaul Tower, so that Bloodmaul fury falls on Bladespire Hold instead of Sylvanaar. The Horde's guide in the feud is a dead troll. T'chali, buried by the Bloodmaul he taught to brew, wants his hookah back, tests his brew on the Bladespire, has Grimnok Battleborn and Korgaah killed, and then curses the buildings of both clans with a fetish from his grave.", "triggers": [[4, 10511], [4, 10516], [4, 10542]], "sources": ["quests 10504, 10505 request texts (clans vie for Gruul's favor)", "quests 10510 request text, 10511, 10512 (Stouthammers, vacation, Silithus)", "quests 10516, 10517, 10518", "quests 10542, 10545, 10543, 10544"], "notes": "Faction 0: 10511 and 10516 Alliance only, 10542 Horde only. Bronwyn's 10510 is the speaker of the Silithus line; worded as the Explorers' League pair, now in her terms (dirt and insects)."},
-{"id": 352256, "kind": 3, "zone": 3522, "sort": 7, "faction": 0, "title": "The Blackwing Coven", "body": "When the Wyrmcult began felling the trees of the Ruuan Weald and slaughtering its wildlife, Tree Warden Chawn sent an envoy to their overseer, Nuaar, offering compromise. Nuaar answered that his people were free to do as they pleased, and Chawn turned to force, setting his allies on the hewers. A bloodstained note taken from a cultist then revealed a planned meeting between Nuaar and Kolphis Darkscale, second in command at the Blackwing Coven. Watcher Moonshade, holding the Wyrmskull Tunnel against the massing cultists, first wants their leader Draaca Longtail dead; then an agent of Evergrove enters the coven disguised as Nuaar. Kolphis berates the false overseer for the trickle of lumber and livestock, and lets slip that Maxnar the Ashmaw means to wipe out the druids, while Kolphis himself has arranged a truce with the arakkoa so the cult need not fight on another front. The Expedition strikes first. Samia Inkling has the coven's blackwhelps netted alive for study, and Maxnar the Ashmaw is slain in his caverns.", "triggers": [[4, 10682], [4, 10719]], "sources": ["quests 10682, 10713", "npc_text 10533 (Nuaar: no negotiations)", "quests 10719, 10894, 10893, 10722", "npc_text 10541, 10542, 10543 (Kolphis meeting)", "creature_text 21983 (second-in-command)", "quests 10717, 10747, 10748"], "notes": "Faction 0: all quests AllowableRaces 0. 10719 starts from the Meeting Note dropped by Wyrmcult poachers and hewers. The truce is Kolphis's arrangement (npc_text 10543), corrected."},
-{"id": 352257, "kind": 3, "zone": 3522, "sort": 8, "faction": 0, "title": "Whispers of the Raven", "body": "The arakkoa of Blade's Edge were long a quiet people, their cult of the Raven a gathering of misfits and madmen. That has changed, and every power in the mountains wants to know why. Dertrok of the Mok'Nathal studies the crystals the Vekh'nir charge at their spell circles, tests their power on the ogre slaves of Trogma's Claim, and sends his findings to Timeon at Evergrove; at Sylvanaar, Daranelle has a visitor cast a Lashh'an feather spell and finds it a strange communion. Timeon wants a pendant from the Harbingers of the Raven, heralds of the Ruuan'ok, and with its power the speech of the Grishna can be understood at their four shrines. Their prophecies of a raven rising from the darkest night trouble him deeply. Meanwhile an orb taken from a Grishna shows Chawn that the arakkoa have set spirits to possess the trees of the Raven's Wood, and the ancient Treebole calls for an exorcism to free them.", "triggers": [[4, 10567], [4, 10825], [4, 10565], [4, 10555]], "sources": ["quests 10565, 10566, 10615 (Dertrok, Horde)", "quests 10555, 10556 (Daranelle, Alliance)", "quests 10567, 10607 (Timeon; peaceful for a long time, misfits and madmen)", "broadcast_text 19475", "quests 10825, 10829, 10830"], "notes": "Faction 0: 10567 and 10825 are open to all; 10565 Horde, 10555 Alliance. Anzu and the Book of the Raven chain (10979 to 10993) are zangarmarsh.json's and not mentioned."},
-{"id": 352258, "kind": 3, "zone": 3522, "sort": 9, "faction": 0, "title": "The Hounds of Death's Door", "body": "A damaged mask taken from a fel corrupter in the Bladed Gulch still murmurs with strange sounds. O'Mally Zapnabber at Evergrove mends it and finds it a Legion communication device, a Felsworn gas mask that Wildlord Antelarion has long wanted. Wearing it, an agent slips into Forge Camp: Anger and speaks through the Legion communicator, telling the enraged demon on the other end that the camp has revolted. He orders every traitor silenced, so the camp's engineers and attendants are cut down on his behalf, and then the blame is laid on his underling Doomcryer, long suspected of undermining him, who is summoned through the camp's five obelisks and slain. Antelarion then turns to a greater danger. At Death's Door, Evergrove druids imbue fel cannonballs with nature's wrath, the Legion's own fel cannons are turned on the two warp-gates that strengthen the void terrors, and Baelmon the Hound-Master, keeper of the portal's ritual, falls with the druids' help.", "triggers": [[4, 10810]], "sources": ["quests 10810, 10812, 10819, 10820, 10821", "quests 10910, 10904, 10911, 10912", "item 31384 Damaged Mask dropped by Fel Corrupter 21300"], "notes": "Faction 0: all quests AllowableRaces 0. Single entry point; 10810 is item-started (QuestType 2, not auto-complete). Doomcryer 'rival lieutenant' made an underling suspected of undermining him (quest 10821)."},
-{"id": 352259, "kind": 3, "zone": 3522, "sort": 10, "faction": 0, "title": "The Stasis Chambers of Bash'ir", "body": "The trail of the Ethereum's prisoners leads Commander Ameer of the Protectorate from Netherstorm to Bash'ir Landing, where an image of the commander waits. Evidence from Stasis Chamber Alpha confirms his fears: these larger prisons hold ferocious beasts and creatures from many different worlds, which the Ethereum mean one day to command. Ameer resolves to destroy them all, forging keys from captured prison keys so that each chamber can be opened and whatever lurks within destroyed. Among the spoils may be a Mark of the Nexus-King, the last piece of a key to the stasis chambers hidden in the Mana-Tombs of Auchindoun. The Sha'tari Skyguard has its own business here. Every couple of hours Sky Commander Keller's aether-techs launch an assault on the landing's crystalforge, which they prefer to call research, and those who keep the ethereals off them long enough may buy the surplus the crystalforge yields.", "triggers": [[5, 10974], [4, 10976], [4, 11119]], "sources": ["quest 10974 description and reward text", "quest 10975 request and reward text", "quest 10976 description", "quest 10977 description", "quest 11119 description and reward text", "netherstorm.json 352340 (the trail leads to Bash'ir's Landing)"], "notes": "Faction 0: all quests AllowableRaces 0. 10974 is started in Netherstorm and turned in to the Image of Commander Ameer (22919) here, so QUEST_DONE; netherstorm.json does not use 10973 or 10974. 10975 is auto-complete and not used; 11119 is from Keller here. Uses the AreaTable name Bash'ir Landing."}
+ {
+  "id": 352200,
+  "kind": 0,
+  "zone": 3522,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Blade's Edge Mountains",
+  "body": "The Blade's Edge Mountains are a maze of red canyons in the north of Outland, crowned by great curving spikes of stone. This is gronn country. Gruul the Dragonkiller, who once tore the black dragonflight from the sky and left its bones on the spires, rules from his lair in the north, and his seven sons lord over the Bladespire and Bloodmaul ogres, who fight one another for the gronn's favor. Newcomers have carved out footholds all the same: the night elves at Sylvanaar, Toshley's gnomes on the Razor Ridge, the Horde in Thunderlord Stronghold and the Cenarion Expedition at Evergrove, while the half-ogre Mok'Nathal hold out in the east. Arakkoa cults whisper of a coming raven, the Wyrmcult worships the surviving black dragons, and the Burning Legion has raised forge camps on the high terraces, where ogres made wise by strange crystals have found a refuge of their own at Ogri'la.",
+  "triggers": [
+   [
+    1,
+    3522
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Blade's_Edge_Mountains (gronn control the ogres; Wyrmcult worships the remaining black dragons; Ogri'la)",
+   "warcraft.wiki.gg/wiki/Gruul (dragons impaled on the spires, Dragons' End)",
+   "quest 10504 description (Gruul and his seven sons)",
+   "quest 10607 reward text",
+   "npc_text 10926 (Chu'a'lor)"
+  ],
+  "notes": "Converted: requiredState 8 on the entry (Outland). One line softened: the sons now lord over the ogres, who fight one another for the gronn's favor (quest 10504/10505 request texts), instead of driving the ogres against everyone, which pointed at the reveal that a son of Gruul stands behind the Bloodmaul attacks (DONE 10714, ACCEPT 10798). Ogri'la is patch 2.1, not gated by mod-individual-progression, so it needs no tag beyond the entry's 8. npc_text 10926 reread: period text. Before: Removed the origin from Gorgrond and Frostfire Ridge (Warlords of Draenor era naming, sourced on the wiki to BlizzCon 2013 and Chronicle). Wyrmcult 'serves' made 'worships' per the wiki."
+ },
+ {
+  "id": 352201,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 1,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Sylvanaar",
+  "body": "Sylvanaar is a night elf town in the southwest of the mountains, raised in a short time by elven magic on land its founders found empty. Around it they are coaxing the Living Grove to grow at an unnatural pace, meant to ring the town with a defensive woodland of tranquil beauty. Fey drakes pollinate the grove, treant defenders can be called up from its seedlings, and an ancient of war named Stronglimb Deeproot stands as its chief protector. Commander Skyshadow leads the town, wary of the ogres in the ravine below and of the Horde beyond it. To the south, a tunnel through Blade Tooth Canyon is Sylvanaar's lifeline to the Harborage in the swamps of Zangarmarsh.",
+  "triggers": [
+   [
+    1,
+    3772
+   ],
+   [
+    1,
+    3771
+   ],
+   [
+    1,
+    3770
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Sylvanaar (night elf settlement in the Living Grove)",
+   "quest 10487 description (elven magics grew a town and grove in a short time)",
+   "quest 10504 reward text (land initially found empty)",
+   "quests 10455, 10456, 10457",
+   "quest 10489 (Stronglimb Deeproot, chief defender of the Living Grove)",
+   "quest 10502 description",
+   "quest 10927 description and reward (tunnel, lifeline to the swamp, trade with the Harborage)",
+   "npc_text 10264 (Skyshadow)"
+  ],
+  "notes": "Converted: requiredState 8 on the entry (Outland). Body unchanged: nothing to hide. npc_text 10264 reread: period text. Before: Blade Tooth Canyon (3770) merged in: it is the tunnel toward Zangarmarsh beside Sentinel Moonwhisper."
+ },
+ {
+  "id": 352202,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 2,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Veil Lashh",
+  "body": "South of the Living Grove, the Lashh'an arakkoa roost among the trees of Veil Lashh, where tame kaliri flutter about their nests. Their magic unsettles the night elves next door. The Lashh'an tear out clawfuls of their own feathers as reagents, keep tomes of crude pictographs high in the branches and work their rites at circles of power on the ground, and what those rites are for, the elves can only guess. At Sylvanaar, Rina Moonspring suspects that the Lashh'an are behind the grove's lynxes turning on the town.",
+  "triggers": [
+   [
+    1,
+    3782
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Daranelle of Sylvanaar had a visitor gather plucked feathers and cast one of the tome's spells at a Lashh'an circle. Its pictograms showed an arakkoa suffused with the spirit of a kaliri, and the spell proved to be neither a curse nor a conjuring, but a strange kind of communion that fills the caster with a kaliri's spirit. What it is meant for, she cannot yet say.",
+    "triggers": [
+     [
+      5,
+      10556
+     ]
+    ],
+    "sources": [
+     "quest 10555 reward text and 10556 description (pictogram, kaliri spirit)",
+     "quest 10556 reward text (communion or communication spell, not sure what to make of it)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10555 description and request text (feathers as reagents, spellbooks high in the trees)",
+   "quest 10556 description and reward text (kaliri spirit, communion spell)",
+   "quest 10455 description (arakkoa of Veil Lashh suspected)",
+   "DB spawns: Tame Kaliri, Lashh'an Tome, kneel targets and spell origin in area 3782"
+  ],
+  "notes": "Converted: the result of casting the Lashh'an spell (a communion with a kaliri's spirit) moved to part 1 (DONE 10556, Alliance; Daranelle's verdict is that turn-in). The opening keeps the feathers, tomes, circles and Rina's suspicion. requiredState 8 on the entry. Before: verified Check: part 1 kept; The Whispers of the Raven part 1 (same DONE 10556) reworded instead."
+ },
+ {
+  "id": 352203,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 3,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Bloodmaul Outpost",
+  "body": "Bloodmaul Ravine cuts between Sylvanaar and Thunderlord Stronghold, and toward its southern end the Bloodmaul clan holds Bloodmaul Outpost, watched over by the Northmaul and Southmaul towers. The Bloodmaul are known for their brew, a foul swill their brewmasters carry about in barrels and their warriors practically live on. A troll witch doctor named T'chali taught them the craft, and they repaid him by burying him in the ravine. At the far south lies the Draenethyst Mine, where crystals grow naturally from the walls and the Explorers' League wants samples.",
+  "triggers": [
+   [
+    1,
+    3776
+   ],
+   [
+    1,
+    3824
+   ],
+   [
+    1,
+    3778
+   ],
+   [
+    1,
+    3924
+   ],
+   [
+    1,
+    3925
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The mine hides plunder as well. Rokgah Bloodgrip of Thunderlord Stronghold, guided by a seeker's vision, learned that the Thunderspike, a lost Thunderlord spear, lies in the deepest reaches of the Draenethyst Mine, where the Bloodmaul keep it, most likely taken from the Bladespire who once held the stronghold and its relics.",
+    "triggers": [
+     [
+      5,
+      10525
+     ]
+    ],
+    "sources": [
+     "quest 10525 reward text (back of the Draenethyst Mine, stolen from the Bladespire)",
+     "quest 10524 description (the Bladespire inhabited the stronghold)"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10502, 10511 (brewmasters carry the brew to the other ogres), 10512",
+   "quest 10542 description (T'chali taught the Bloodmaul to brew, buried)",
+   "quest 10510 description (Draenethyst Mine at the south end, crystals grow naturally)",
+   "quest 10525 reward and 10526 description (Thunderspike stolen from the Bladespire, back of the mine)",
+   "quest 10518 (Northmaul Tower)",
+   "quest 10543 (Grimnok atop the Southmaul Tower)",
+   "DB: T'chali 21349 stands in area 3824 Bloodmaul Ravine"
+  ],
+  "notes": "Converted: the Thunderspike hidden at the back of the mine is what Rokgah's vision guide reveals, so it moved to part 1 (DONE 10525, Horde; Rexxar's Kin part 1 uses the same turn-in). requiredState 8 on the entry. T'chali's burial stays in the opening: it is his own premise, not an outcome. Before: verified Check: part 1 reworded so it does not repeat Rexxar's Kin part 1 (same DONE 10525)."
+ },
+ {
+  "id": 352204,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 4,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Thunderlord Stronghold",
+  "body": "Thunderlord Stronghold was the seat of the Thunderlord clan until those orcs were made fel orcs by the blood of Mannoroth and abandoned it. The Bladespire ogres moved into the empty halls, and the Horde has since driven them out and holds the town in the old clan's name. Its warriors still fight ogres on every side, and the scholar Rokgah Bloodgrip hunts the clan's lost relics to appease its restless dead. The Horde's dire wolves den on the Jagged Ridge to the south under Rema, the den mother, sharing the slopes with bloodletters that eat and breed without pause. The tunnel of Blades' Run carries trade to Swamprat Post in Zangarmarsh, and Rexxar has come here seeking his people.",
+  "triggers": [
+   [
+    1,
+    3769
+   ],
+   [
+    1,
+    3768
+   ],
+   [
+    1,
+    3767
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Help has been asked of the stronghold, too. Shadow Hunter Denjai of Zabra'jin sent word from Zangarmarsh begging aid against the ogres spreading through the marsh. Nekthar answered that the stronghold is spread thin with ogre troubles of its own, but promised to pass on what it knows of the local tribes and their tactics, in the hope that, if Zabra'jin holds out long enough, the two might one day strike the ogres from both sides.",
+    "triggers": [
+     [
+      5,
+      9795
+     ]
+    ],
+    "sources": [
+     "quest 9795 description and reward text (Nekthar's answer to Denjai)"
+    ]
+   }
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Thunderlord_Stronghold (abandoned after the fel transformation, Bladespire occupation, Horde holds it in honor of the clan, dire wolves under Rema at Jagged Ridge, Rexxar came seeking his race)",
+   "quest 10486 description",
+   "quest 10503 description",
+   "quest 10456 description (the Horde brought dire wolves)",
+   "quest 10690 (Rema)",
+   "npc_text 10322 (Rokgah)",
+   "quest 10526 request text (appease the dead spirits)",
+   "quest 10928 (tunnel, trade with Swamp Rat)"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Body unchanged. Added part 1 (DONE 9795, Horde): Nekthar's answer to Denjai, the turn-in Zangarmarsh 352130 left to this zone (quest filed under Blade's Edge, ended at Nekthar 18248 here). Rexxar named only as seeking his people: with mod-individual-progression a Rexxar (10182, renamed from Rokaro) also stands in Desolace in every state, and nothing here says where he is not. Before: Jagged Ridge (3768) and Blades' Run (3767) merged in. Check: part 1 checked against 9795's description and reward text (Nekthar 18248 ends it here, Denjai 18013 starts it, Horde only); 'what it learns' made 'what it knows' and the two-pronged assault tied to Zabra'jin surviving, as the reward text says."
+ },
+ {
+  "id": 352205,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 5,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Bladespire Hold",
+  "body": "Bladespire Hold, down in the ravine west of Thunderlord Stronghold, is the seat of the strongest ogre clan in the mountains. The Bladespire stand highest in the favor of Gruul the Dragonkiller, a place won for them by their crafty chieftain Gorr'Dim, and they keep packs of raptors alongside their brutes and shamans. They once held Thunderlord Stronghold, and the Thunderlord relics lost when the Horde drove them out, a drum, an arrow and a tablet, now lie somewhere in the hold. Gorr'Dim keeps defenders about him who are sworn never to touch the Bloodmaul brew. In a cage at the heart of the hold sits Vindicator Vuuleen of Sylvanaar, who insists he is exactly where he wants to be.",
+  "triggers": [
+   [
+    1,
+    3773
+   ],
+   [
+    1,
+    3931
+   ]
+  ],
+  "sources": [
+   "quest 10503 description (west, the ones defeated to take the stronghold; ogres and raptors)",
+   "quest 10504 description (strongest clan, favor of Gruul)",
+   "quest 10517 description (Gorr'Dim elevated his clan, sober defenders)",
+   "npc_text 10322 and quest 10524 (drum, arrow, tablet in Bladespire Hold)",
+   "npc_text 10300 and quest 10516 (Vuuleen wants to stay in the cage)",
+   "DB spawns: Bladespire Brute, Shaman, Raptor, Sober Defender in 3773"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Body unchanged: the relics and Vuuleen's cage are quest premises, nothing resolved. npc_text 10300 and 10322 reread: period text. Before: Bladespire Grounds (3931) merged in."
+ },
+ {
+  "id": 352206,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 6,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Toshley's Station",
+  "body": "When the night elves of Sylvanaar sent the gnome Toshley and his followers away over their machines and experiments, the gnomes climbed to the Razor Ridge and built Toshley's Station, where they can experiment as they please. The station is a clutter of laboratories and launch gear, from the Zapnabber twins' Zephyrium Capacitorium, which flings willing volunteers across the mountains, to a scientist who studies both time and sound. Razak's Roughriders, hired to protect the scientists, man the defense guns against the ravagers that swarm the ridge. To the north, at the ridge's southwestern edge, Bladespire ogres at the Bladespire Outpost raid the station's power converters, and the gronn Maggoc, warden of the eastern mountains, prowls nearby.",
+  "triggers": [
+   [
+    1,
+    3918
+   ],
+   [
+    1,
+    3833
+   ],
+   [
+    1,
+    3922
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Toshley's_Station (left Sylvanaar over machines and experiments, built to experiment as they wish, Razak's Roughriders)",
+   "quest 10580 description",
+   "quest 10581 objective (up the ramp to the Razor Ridge)",
+   "quests 10557, 10710 (Tally and Rally Zapnabber, Zephyrium Capacitorium)",
+   "npc_text 10444 (Nickwinkle studies time and sound)",
+   "npc_text 10469 and creature_text 21118 (assault by the bugs, def guns)",
+   "quest 10620 description",
+   "quest 10584 description (Bladespire Outpost to the north raids power converters)",
+   "quest 10843 (Bladespire Outpost at the southwestern edge of the Razor Ridge)",
+   "quest 10996 description (Maggoc, warden of the eastern mountain range)",
+   "DB: Maggoc 20600 stands in area 3922"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Body unchanged: nothing to hide. npc_text 10444, 10469 and creature_text 21118 reread: period text. Before: Razor Ridge (3833) and Bladespire Outpost (3922) merged in. Opening reworded: the elves drove the gnomes away (quest 10580), they did not simply leave."
+ },
+ {
+  "id": 352207,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 7,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Singing Ridge",
+  "body": "The Singing Ridge is a field of great crystals in the south of the mountains, their shards humming with harmonies that one gnome scholar suspects are a sign of life, perhaps bound in some way to the nether drakes that nest there. The drakes are a strange inheritance. Their eggs were once black dragon eggs, changed by the wave of nether energy that washed over the land when Draenor blew apart. Dreadwing, their brood mother, dwells on the ridge, and crystal flayers scratch away at the shards. To the north, the Scalewing Shelf belongs to serpents whose breath crackles with lightning and to ridgespine stalkers that drop on passersby from the rocks.",
+  "triggers": [
+   [
+    1,
+    3919
+   ],
+   [
+    1,
+    3953
+   ]
+  ],
+  "sources": [
+   "quest 10594 reward text (crystals almost alive, symbiosis with the nether drakes)",
+   "quest 10608 description",
+   "quest 10609 request text (eggs used to be black dragon eggs, changed when Draenor blew apart)",
+   "quest 10853 description",
+   "quest 10845 description (Dreadwing, brood mother)",
+   "quest 10657 description (Scalewing serpents, lightning breath)",
+   "quest 10620 description (ridgespine stalkers)"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Body unchanged: the black dragon eggs changed by the nether wave is told at the start of 10853 and in 10609's request text, background rather than an outcome. Before: Scalewing Shelf (3953) merged in."
+ },
+ {
+  "id": 352208,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 8,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Veil Vekh",
+  "body": "In the southeastern canyons the Vekh'nir arakkoa keep Veil Vekh. For years they troubled no one, but something has stirred them: a strange religion holds them in a frenzy, and they now carry crystals that they charge at their spell circles for some dark purpose. Nearby, in the caverns of Trogma's Claim, the Vekh'nir keep captured ogres as slaves under the watch of their leader, Vekh. Beside the veil, silkwing larvae spin their cocoons across Vekhaar Stand, prized by the Mok'Nathal for their silk and iridescent wings, and a tunnel from the stand leads into Death's Door.",
+  "triggers": [
+   [
+    1,
+    3783
+   ],
+   [
+    1,
+    3779
+   ],
+   [
+    1,
+    3827
+   ]
+  ],
+  "sources": [
+   "quest 10565 description and request text (benign for many years, now stirred; crystals infused at spell circles)",
+   "quest 10566 (ogre slaves at Trogma's Claim)",
+   "quest 10846 description (Vekh'nir enslaved ogres at Trogma's Claim, Vekh)",
+   "quests 10617, 10618 (silkwing cocoons and wings)",
+   "quest 10910 description (Vekhaar Stand, tunnel into Death's Door)",
+   "DB spawns: Silkwing Larva in 3827, Arakkoa Egg in 3783"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Body unchanged: nothing to hide. Before: Trogma's Claim (3779) and Vekhaar Stand (3827) merged in. Dertrok's two lines conflict (thorn in our sides vs benign for many years); the softer wording is used."
+ },
+ {
+  "id": 352209,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 9,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Mok'Nathal Village",
+  "body": "Mok'Nathal Village lies in the east of the mountains, where the Mok'Nathal still survive: a people of mixed orc and ogre blood, once honored by orc shamans before the clans fell to demonic corruption. Their hunters keep tame clefthoof and quilbeasts, the silk and wings of the canyon silkwings are worked into their crafts, and Matron Varah offers any wanderer a place at the village fires. The spiritcallers keep the memory of the ancestors alive in flame. Enemies press in from every side, from the Bladespire Outpost to the west, the Vekh'nir to the south and the nether drakes of the Singing Ridge, and the village chief, Leoroxx, measures every outsider by a harsh standard.",
+  "triggers": [
+   [
+    1,
+    3844
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Blade's_Edge_Mountains (Mok'Nathal honored by shamans before the demonic corruption, small village)",
+   "DB spawns: Tame Clefthoof, Quilbeast, Mok'Nathal Hunter in 3844",
+   "quests 10617, 10618",
+   "npc_text 10249 (Matron Varah)",
+   "npc_text 10647 (Dohgar: flame of their memory)",
+   "quests 10843, 10845, 10846",
+   "npc_text 10645 (Leoroxx)"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Body unchanged: nothing to hide. npc_text 10249, 10645, 10647 reread: period text. Before: verified"
+ },
+ {
+  "id": 352210,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 10,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Death's Door",
+  "body": "Death's Door is a canyon south of Mok'Nathal Village, reached through a tunnel from Vekhaar Stand, where the Burning Legion holds open a portal onto the world in which it breeds its hounds. Baelmon the Hound-Master maintains the ritual that keeps the portal alive at the canyon's north end, and those who come through are sent on by translocator to Forge Camp: Wrath. Two warp-gates, one in the north and one in the south, serve to move and empower the void terrors, each within range of a fel cannon, while deathforge smiths and technicians tend the guns. To the druids of Evergrove it is the gravest danger the Legion poses in the mountains.",
+  "triggers": [
+   [
+    1,
+    3831
+   ]
+  ],
+  "sources": [
+   "quest 10910 description (portal onto the world where the Legion breeds its hounds; route via Vekhaar Stand, south of Mok'Nathal)",
+   "quest 10912 description (Baelmon maintains the ritual, north end)",
+   "quest 10911 description (two warp-gates, teleportation and enhancement of void terrors, fel cannons)",
+   "quest 10904 description",
+   "creature_text 19747 (translocator, Forge Camp Wrath awaits)"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Body unchanged: Baelmon's ritual and the warp-gates are the premise of 10911/10912; their end is in The Hounds of Death's Door part 3. creature_text 19747 reread: period text. Before: verified"
+ },
+ {
+  "id": 352211,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 11,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Razaan's Landing",
+  "body": "Razaan's Landing, north of the Razor Ridge, is a camp of Razaani ethereals under Nexus-Prince Razaan. Their devices give off small pink orbs of light that drift above the landing like ornaments, and fiendling flesh beasts, some of them crackling with ether, wander among them. Scholars from Toshley's Station are eager to study the ethereals and their technology, though the Roughriders have their doubts about the road north: a few of their people who headed that way have disappeared.",
+  "triggers": [
+   [
+    1,
+    3942
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The orbs are no ornaments. Those who gathered them for study found them made of nether energy bound together with captured souls, and the neighbors who examined them recognized some of those souls as their own people's.",
+    "triggers": [
+     [
+      4,
+      10675
+     ],
+     [
+      4,
+      10865
+     ]
+    ],
+    "sources": [
+     "quest 10675 description (nether energy and souls, gnome souls)",
+     "quest 10865 description (souls, some of them Mok'Nathal)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10674 description (pink floating light orbs, probably only decoration)",
+   "quest 10675 description (nether energy and souls, gnome souls; Nexus-Prince Razaan)",
+   "quest 10671 description (fiendling flesh beasts, ether-energized flesh)",
+   "quest 10859 description",
+   "quest 10865 description (some of them Mok'Nathal)",
+   "quest 10620 request text (people who headed north disappeared)"
+  ],
+  "notes": "Converted: the truth of the orbs (nether energy and souls) moved to part 1 on ACCEPT 10675 (Alliance, Toshley) and ACCEPT 10865 (Horde, Dohgar), the quests whose descriptions reveal it; trimmed to what both reveal (souls of the finder's own people) since only 10675 names gnomes and only 10865 the Mok'Nathal. The opening keeps the missing travellers as the Roughriders' worry (10620 request text) and the scholars' interest (10620 reward text). requiredState 8 on the entry. Before: verified"
+ },
+ {
+  "id": 352212,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 12,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Dragons' End",
+  "body": "Dragons' End is a valley of old bones. Here the gronn and the Bladespire clan brought down the black dragons Deathwing had left on Draenor, and Gruul impaled their bodies on the spires, where the remains still hang. At the eastern edge lies the Cursed Hollow, lair of the gronn Grulloc, who guards a sack and a dragon skull from his father's slaughter of the flight, and who cannot resist chasing a pig. Southwest of the Circle of Blood, the Churning Gulch seethes with crust bursters, among the most poisonous creatures in all of Outland, whose glands a certain alchemist values highly.",
+  "triggers": [
+   [
+    1,
+    3825
+   ],
+   [
+    1,
+    3904
+   ],
+   [
+    1,
+    3862
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Gruul (Bladespire incantations, dragons impaled on the spires, bones at Dragons' End)",
+   "quest 10721 description (Cursed Hollow on the eastern edge of Dragons' End, Huffer chased)",
+   "quest 10800 description",
+   "quest 10995 description (dragon skull from his father's slaying of the black dragonflight)",
+   "creature_text 20216 (Me keep piggy as pet)",
+   "quest 10715 description (Churning Gulch southwest, crust bursters most poisonous creatures)",
+   "quest 10787 (deprecated) description (dragon corpses impaled upon the rocks at Dragons' End)",
+   "quest 10724 reward text (head of a black dragon from Dragons' End)"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Body unchanged: Grulloc's sack and skull are quest premises. creature_text 20216 reread: period text. Before: Cursed Hollow (3904) and Churning Gulch (3862) merged in. 'Sack of his treasures' made 'a sack' (contents unstated); pig line softened to what the Huffer quest and Grulloc's yells show."
+ },
+ {
+  "id": 352213,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 13,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Circle of Blood",
+  "body": "The Circle of Blood is a great ogre structure in Daggermaw Canyon, raised around an arena where challengers meet one another in combat. Goblin organizers and merchants have set up their stalls at its gates. The towers just outside see quieter business. Atop the eastern one stands Mog'dorg the Wizened, an old Bloodmaul ogre who speaks with surprising clarity, and Chort, below, sends trusted visitors up to him with a warning to keep quiet. Nearby, a sharp-tongued alchemist who calls himself Baron Sablemane receives guests with a black whelp at his side.",
+  "triggers": [
+   [
+    1,
+    3775
+   ],
+   [
+    1,
+    3855
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Circle_of_Blood (large ogre structure holding the arena, in Daggermaw Canyon)",
+   "DB spawns in 3775: Steamwheedle Sam <Arena Organizer>, arena vendors, Mog'dorg 22941, Chort 22995, Baron Sablemane 22103, Blackwhelp 22108",
+   "quest 11057 (tower on the eastern side of the arena)",
+   "quest 10989 description",
+   "npc_text 10877 (Chort)",
+   "npc_text 10860 (Mog'dorg's clarity)",
+   "quest 10783 description"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Body unchanged: Sablemane is shown only as a visitor sees him (the black whelp is a spawn beside him). npc_text 10860 is not used here (it shows only after quest 11000, gossip condition); Mog'dorg's clarity rests on his default gossip 10800. npc_text 10877 reread: period text. Before: PvP arena described neutrally, area triggers only (3855 is the arena subzone)."
+ },
+ {
+  "id": 352214,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 14,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Bloodmaul Camp",
+  "body": "North of the Circle of Blood, Daggermaw Canyon runs on toward Gruul's Lair, and along it the Bloodmaul have pitched Bloodmaul Camp. Here the clan plans its offensive against Sylvanaar and the Ruuan Weald under the chieftain Dorgok, and here its maulers, warlocks and battle worgs gather around kegs of grog, moonshine and seed beer. Down in the canyon, Bloodmaul taskmasters and soothsayers meet to talk in low voices, a den of marmots burrows among the rocks, and Bladespire enforcers patrol the stretch nearest the lair while Expedition wardens watch from the canyon's edge.",
+  "triggers": [
+   [
+    1,
+    3777
+   ],
+   [
+    1,
+    3826
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Bloodmaul do not plan their offensive alone. A son of Gruul stands behind the clan and pushes its warriors against their neighbors, so that whatever is plotted around the camp's kegs, the will behind it belongs to a gronn.",
+    "triggers": [
+     [
+      5,
+      10714
+     ],
+     [
+      4,
+      10798
+     ]
+    ],
+    "sources": [
+     "quest 10714 reward text (the sons of Gruul command the Bloodmaul)",
+     "quest 10798 description (Gorgrom behind the Bloodmaul plans against Sylvanaar)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10795 description (attacks on Sylvanaar and Ruuan Weald staged from Bloodmaul Camp, Dorgok)",
+   "quest 10784 / 10796 (maulers and warlocks)",
+   "DB spawns: Bloodmaul Battle Worg, Green Spot Grog Keg, Ripe Moonshine Keg, Fermented Seed Beer Keg in 3777",
+   "quest 10720 description (marmot den in Daggermaw Canyon past the Circle of Blood)",
+   "quest 10714 (taskmaster and soothsayer in conversation; sons of Gruul)",
+   "DB spawns in 3826: Bladespire Enforcer, Expedition Warden"
+  ],
+  "notes": "Converted: that the gronn stand behind the Bloodmaul is the reveal of 10714 (Horde, Spirit spies on a taskmaster and soothsayer) and 10798 (Alliance, Gorgrom's statuette), so the taskmasters' talk is now only seen in the opening and the gronn behind it moved to part 1 (DONE 10714, ACCEPT 10798), worded as a son of Gruul, which both reveal. requiredState 8 on the entry. Before: Daggermaw Canyon (3826) merged in. Raids made a planned offensive (quest 10795); kegs 'as precious as any weapon' removed as unsupported. Check: part 1 trimmed to what both triggers reveal: that the taskmasters' and soothsayers' talk carries gronn orders is what Spirit overhears for the Horde (10714) only; the Alliance's 10798 names Gorgrom behind the Bloodmaul plans, so the part now says only that a son of Gruul drives the clan."
+ },
+ {
+  "id": 352215,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 15,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Gruul's Lair",
+  "body": "The road through Daggermaw Canyon ends at Gruul's Lair, home of Gruul the Dragonkiller and of High King Maulgar, the old ogre king who serves him. Gruul trusts the approach only to the toughest of the Bladespire, enforcers, battlemages and ravagers led by Fingrom, and their encampment outside the lair holds the cage into which they threw Rexxar's wyvern, Leokk. Before the entrance stands the altar of Goc, master of the Bladespire. On the right of the road, just short of the lair, lies Soulgrinder's Barrow, where the gronn Skulloc Soulgrinder keeps himself hidden from the world.",
+  "triggers": [
+   [
+    1,
+    3774
+   ],
+   [
+    1,
+    3960
+   ]
+  ],
+  "sources": [
+   "quest 10805 description (Gruul protects the exterior with the toughest ogres, Fingrom)",
+   "quest 10724 description (Leokk caged in the Bladespire encampment outside Gruul's Lair)",
+   "quest 10742 description (Goc's altar outside Gruul's Lair)",
+   "quest 10806 description (Goc, master of the Bladespire)",
+   "quest 11000 description and reward text (barrow on the right before Gruul's Lair; Gruul and his puppet, the old king, Maulgar)",
+   "quest 10998 description (Skulloc keeps himself hidden)",
+   "DB spawns in 3774: Bladespire Enforcer, Battlemage, Ravager, Fingrom 20757, Leokk 22268, Meeting Stone"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Leokk's cage put in the present tense (he is a caged spawn in area 3774; 'was kept' hinted at his rescue, which is told in Baron Sablemane's Price part 4). Raid interior and outcomes stay out. Before: Raid interior not described beyond naming its two rulers. Soulgrinder's Barrow (3960) merged in. 'Held prisoners' narrowed to Leokk, the only captive the quests name. Check: Leokk line reworded to 'holds the cage into which they threw' him: true before and after his rescue in Baron Sablemane's Price part 4 (DONE 10742), with no hint of the rescue (Leokk 22268 stands in 3774)."
+ },
+ {
+  "id": 352216,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 16,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Evergrove",
+  "body": "Evergrove is the Cenarion Expedition's haven in the Ruuan Weald, kept almost entirely by night elves and open to Alliance and Horde alike. Tree Warden Chawn leads the druids' effort to restore the balance of nature here, helped by scholars such as Timeon, who studies the arakkoa, and a gnome who wonders whether the druids hide batteries under their robes. The ancient Mosswood rests here before his long sleep. The weald around the grove is being cut and hunted bare by Wyrmcult hewers and poachers, the Ruuan'ok arakkoa raise their Harbingers of the Raven at Veil Ruuan to the north, and Watcher Moonshade holds the Wyrmskull Bridge to the west.",
+  "triggers": [
+   [
+    1,
+    3951
+   ],
+   [
+    1,
+    3828
+   ],
+   [
+    1,
+    3829
+   ],
+   [
+    1,
+    3952
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Evergrove (Cenarion outpost in Ruuan Weald, manned almost entirely by night elves, services to both factions, Chawn leader)",
+   "npc_text 10534 (Chawn: reestablish the balance of nature)",
+   "quest 10615 reward text (Timeon)",
+   "npc_text 10554 (O'Mally: batteries under those robes)",
+   "npc_text 10640 (Mosswood: soon I will plant roots and sleep)",
+   "quests 10682, 10713, 10717 (hewers, poachers)",
+   "quest 10567 description (Ruuan'ok Harbingers of the Raven)",
+   "npc_text 10667 and quest 10894 (Watcher Moonshade at Wyrmskull Bridge)"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Body unchanged: nothing to hide. npc_text 10534, 10554, 10640, 10667 reread: period text. Before: Ruuan Weald (3828), Veil Ruuan (3829) and Wyrmskull Bridge (3952) merged in. Arthorn Windsong and the druid flight form chain left to zangarmarsh.json."
+ },
+ {
+  "id": 352217,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 17,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Forge Camp: Anger",
+  "body": "On the eastern heights the Burning Legion works Forge Camp: Anger, where doomforge engineers and attendants labor at fel cannons under the eye of anger guards and a ring of Legion obelisks. Its masters take their orders through a Legion communicator from a demon who does not like to be disturbed. Just north of the camp, fel corrupters spread their taint through the Bladed Gulch, turning its scalewings and daggermaws into felsworn beasts. Farther north lies Skald, a scorched land of ash and searing elementals. A great wood flourished there until the Legion sent imps of flame to burn it away, and Mosswood the Ancient is the last of its people.",
+  "triggers": [
+   [
+    1,
+    3787
+   ],
+   [
+    1,
+    3867
+   ],
+   [
+    1,
+    3866
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Those who have spoken through the communicator have heard the demon at the far end rage that his minions would never dare undermine his authority, and then name the one he suspects of doing just that: Doomcryer, who has been working against him for some time and whose anger guards hold the keys to summon her.",
+    "triggers": [
+     [
+      4,
+      10821
+     ]
+    ],
+    "sources": [
+     "quest 10820 description and reward text",
+     "quest 10821 description (Doomcryer undermining his authority, keys held by the anger guards)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10819 description (east of Evergrove, Legion communicator)",
+   "quests 10820, 10821 (Doomforge attendants and engineers, Doomcryer undermining his authority, five obelisks, anger guards)",
+   "DB spawns in 3787: Legion Fel Cannon, Anger Guard, Legion Obelisk",
+   "quest 10753 description (corruption spreading across Bladed Gulch, Fel Corrupters, Felsworn)",
+   "quest 10770 description (great wood burned by imps sent by the Legion)",
+   "quest 10771 description (only I remain)",
+   "DB spawns in 3866: Searing Elemental, Scorch Imp, Fertile Volcanic Soil"
+  ],
+  "notes": "Converted: the demon's suspicion of Doomcryer is revealed only during the deception (10820 reward, 10821 description), so it moved to part 1 (ACCEPT 10821, offered by the Legion Communicator object 185165; accept fires for object givers). The opening keeps the communicator and the demon's temper (10819 reward). requiredState 8 on the entry. Before: Bladed Gulch (3867) and Skald (3866) merged in. Bladed Gulch lies north of the camp (fel corrupters near x 3230 against the camp near x 2920), not below it; Doomcryer called an underling."
+ },
+ {
+  "id": 352218,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 18,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Blackwing Coven",
+  "body": "The Blackwing Coven is the cavernous stronghold of the Wyrmcult, at the end of the road that runs west past Grishnath and the Raven's Wood. Its humans, orcs, draenei and Broken seek the power of the surviving black dragons, and in its depths they raise blackwhelps among clutches of eggs. Their patriarch is Maxnar the Ashmaw, one of the dragonkin. The cult's fighters mass in the Wyrmskull Tunnel under Draaca Longtail, while the watchers of Evergrove make their stand at its far end.",
+  "triggers": [
+   [
+    1,
+    3780
+   ],
+   [
+    1,
+    3954
+   ],
+   [
+    1,
+    3963
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Below Maxnar stands Kolphis Darkscale, the cult's second in command, and those who have heard him speak freely know more. He presses his overseers for the weald's lumber and livestock, for the cult must prove itself worthy of elevation within the ranks of the Blackwing. Already at war with the Boulder'mok ogres, it can afford no second front, so Kolphis has secured a temporary peace with the arakkoa, while Maxnar readies an all-out assault to wipe the druids out.",
+    "triggers": [
+     [
+      5,
+      10722
+     ]
+    ],
+    "sources": [
+     "npc_text 10541, 10542, 10543 (Kolphis at the meeting: lumber and livestock, elevation within the ranks of the Blackwing, Boulder'mok, truce, Maxnar's attack)",
+     "quest 10722 reward text",
+     "creature_text 21983 (Samia: second-in-command; said after the note, DONE 10719)"
+    ]
+   }
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Wyrmcult (humans, orcs, Broken and draenei; harness the power of the black dragonflight; Blackwing Coven)",
+   "quest 10722 and 10747 descriptions (route, whelps and eggs)",
+   "quest 10748 description (Maxnar, dragonkin)",
+   "creature_text 21983 (Kolphis second-in-command)",
+   "npc_text 10541, 10543 (Kolphis: lumber and livestock, war with Boulder'mok, truce with the arakkoa)",
+   "quest 10893 description (wyrmcultists massing in the tunnel, Draaca Longtail)",
+   "creature_template 21389 subname Wyrmcult Patriarch",
+   "DB positions: Maxnar, Kolphis and the coven's whelps and zealots stand at z 150 to 178, some 200 yards below the Forge Camp: Wrath demons (z 364 to 374)",
+   "npc_text 10667 (Moonshade: we'll make our stand here)"
+  ],
+  "notes": "Converted: what Kolphis lets slip at the disguised meeting (the lumber and livestock, the war with Boulder'mok, the truce with the arakkoa, and Maxnar's planned attack, plus the Blackwing elevation line from npc_text 10542) moved to part 1 (DONE 10722). The opening keeps the cult, Maxnar (visible with his Wyrmcult Patriarch title), Kolphis as his second and Draaca's massing fighters. Known limit: players in the coven caverns may register as Forge Camp: Wrath (3785, entry 352223), so this entry may not unlock by area there; the tunnel and ridge areas 3954 and 3963 still work. requiredState 8 on the entry. Before: Wyrmskull Tunnel (3954) and Dragonspine Ridge (3963, where Draaca Longtail stands) merged in. The truce was arranged by Kolphis (npc_text 10543), not bought. Maxnar and Kolphis map to area 3785 on the map grid, but their z puts them in the caverns far beneath Forge Camp: Wrath, so they belong here. Check: Kolphis as Maxnar's second left the opening (he has no subname; Samia names his rank only after the note, creature_text 21983, The Blackwing Coven part 2) and now opens part 1 (DONE 10722). Part 1 reworded so it does not repeat The Blackwing Coven part 3 (same turn-in). Maxnar's dragonkin kind is visible (creature type 2)."
+ },
+ {
+  "id": 352219,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 19,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Raven's Wood",
+  "body": "The Raven's Wood spreads across the northwest, a forest of leafbeards and stonebarks watched over by Treebole, an ancient of lore who stands at a fork in the path past Grishnath. An evil has crept into its trees: the leafbeards and stonebarks have turned on all who pass, and dire ravens wheel through the branches. On the wood's western side lies Boulder'mok, a camp of Bladespire ogres who bring sacrifices to the altar of Gorgrom the Dragon-Eater and who fight a running war with the Wyrmcult nearby.",
+  "triggers": [
+   [
+    1,
+    3830
+   ],
+   [
+    1,
+    3903
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The evil has a source. The Grishna arakkoa of nearby Grishnath have caused evil koi-koi spirits to possess the leafbeards and stonebarks, and unless the trees are saved, the whole of the Raven's Wood will be lost.",
+    "triggers": [
+     [
+      4,
+      10830
+     ]
+    ],
+    "sources": [
+     "quest 10830 description (Grishna, koi-koi spirits, leafbeards and stonebarks)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10829 description (Treebole, ancient of lore, fork in the path past Grishnath)",
+   "quest 10830 description (Grishna, koi-koi spirits, leafbeards and stonebarks)",
+   "DB spawns in 3830: Dire Raven, Raven's Wood Leafbeard and Stonebark",
+   "quest 10803 description (west side of the Raven's Wood)",
+   "quest 10786 (Bladespire ogres of Boulder'mok)",
+   "quest 10723 description (Gorgrom accepting sacrifices from the ogres of Boulder'mok)",
+   "npc_text 10543 (Wyrmcult fighting the Boulder'mok ogres)"
+  ],
+  "notes": "Converted: who possesses the trees (the Grishna, with koi-koi spirits) moved to part 1 (ACCEPT 10830, Treebole's quest, whose description names both; 10829's description tells only arakkoa and evil spirits, so it is used in Grishnath part 2 and the story instead). The opening says only that an evil has crept into the trees, which hostile leafbeards and stonebarks show. requiredState 8 on the entry. Before: Boulder'mok (3903) merged in."
+ },
+ {
+  "id": 352220,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 20,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Grishnath",
+  "body": "Grishnath is the roost of the Grishna arakkoa, in the north beside the Raven's Wood. Totems left by their Oracles of the Raven stand at four shrines, and through them the faithful hear the Word of the Raven, spoken in a tongue that outsiders cannot understand. The Grishna carry strange orbs beneath their feathers, suffused with a purple glow and pulsing to an unheard beat, and holding one leaves a traveler uneasy. The Cenarion Expedition at Evergrove watches the cult with growing concern.",
+  "triggers": [
+   [
+    1,
+    3781
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Those who have borrowed a Grishna's understanding and listened at the shrines have heard the prophecies: the raven will rise again from the darkest night, the faithful will take flight with it while the rest walk the ground in shame, the dark wings will consume the minds of the weak, and the old blood will flow once more.",
+    "triggers": [
+     [
+      5,
+      10607
+     ]
+    ],
+    "sources": [
+     "quest 10607 description",
+     "broadcast_text 19475, 19476, 19477 (prophecies)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The orbs are more than tokens of faith. One carried to Evergrove held a residual memory of the evil within it, and it showed that the Grishna use such magic to set evil spirits upon the ancients and protectors of the neighboring Raven's Wood.",
+    "triggers": [
+     [
+      4,
+      10829
+     ]
+    ],
+    "sources": [
+     "quest 10825 reward text (residual memory)",
+     "quest 10829 description (the arakkoa cause the ancients and protectors to be possessed)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10607 description (totems of the Oracles of the Raven, the Word of the Raven)",
+   "broadcast_text 19475, 19476, 19477, 19478 (prophecies)",
+   "DB: First to Fourth Prophecy objects in 3781",
+   "quest 10825 description (orb from beneath the contour feathers)",
+   "quest 10830 description (Grishnath orbs found throughout Grishnath; Grishna possess the trees)",
+   "quest 10615 description (the Cenarion Expedition concerned with the arakkoa's intentions)"
+  ],
+  "notes": "Converted: the content of the prophecies is learned only with Timeon's pendant at the shrines (10607), so it moved to part 1 (DONE 10607); the opening keeps the totems and a tongue outsiders cannot follow (10607 description). The Grishna setting spirits on the trees moved to part 2 (ACCEPT 10829, Chawn's quest after reading the orb). Added the Expedition's concern (10615, 10567) to keep the opening in range. broadcast_text 19475 to 19478 reread: period text. requiredState 8 on the entry. Before: verified Check: parts kept; Whispers of the Raven parts 2 and 3 (same triggers) reworded instead."
+ },
+ {
+  "id": 352221,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 21,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Ogri'la",
+  "body": "High on a western terrace, reached only by flight, lies Ogri'la, the ogre heaven that the clans below whisper about. Its ogres, many of them two-headed, have gained a keen mind from the crystals that grow around their home, and they want only to live in peace, which the demons of the forge camps, the ethereals and above all the black dragonflight will not allow. Chu'a'lor, whose two heads finish each other's sentences, greets newcomers. Just to the north, the Sha'tari Skyguard keeps its outpost under Sky Commander Keller, who wears an eyepatch and claims he built the place with his own hands, and flies missions from it for the protection of both.",
+  "triggers": [
+   [
+    1,
+    3786
+   ],
+   [
+    1,
+    3964
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Ogri'la (ogres transcended through apexis crystals, aided by the Sha'tari Skyguard)",
+   "npc_text 10926 (Chu'a'lor: crystals, peace, demons, ethereals, Black Dragonflight)",
+   "quest 11025 reward text (left and right heads)",
+   "npc_text 10919 (Kronk: you only have one head)",
+   "quest 11009 description (Ogri'la in the heavens above)",
+   "quest 11030 and 11010 descriptions (flying mount)",
+   "quest 11062 description and reward text (Skyguard Outpost to the north, built with me own hands, missions for mutual protection)",
+   "npc_text 10906 (Keller's eyepatch)"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Body unchanged: nothing to hide. Ogri'la and the Sha'tari Skyguard are patch 2.1 (Burning Crusade) and mod-individual-progression does not gate them by state (it only lists their reputations in a command), so no tag beyond the entry's 8. npc_text 10906, 10919, 10926 reread: period text. Before: Skyguard Outpost (3964) merged in. Terokkar owns Blackwind Landing and the Skettis Skyguard. 'Veteran' dropped as unsupported."
+ },
+ {
+  "id": 352222,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 22,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Vortex Pinnacle",
+  "body": "Vortex Pinnacle crowns the western terrace around Ogri'la, a field of crystal formations among the relics of the Apexis, a vanished sect of arakkoa who once lived atop these mountains. Their relics still answer those who master their sequences of colored light, and gan'arg analyzers of the Legion pick over them for secrets. Aether rays drift overhead, coveted by the Skyguard as mounts. The ghost of an arakkoa elder, Sai'kkal, lingers here, his sight so dim that he peers at every visitor as though hoping to know them. The black dragons Rivendark and Obsidia rule the skies of this terrace from their perches, a constant menace to Ogri'la.",
+  "triggers": [
+   [
+    1,
+    3832
+   ],
+   [
+    1,
+    3969
+   ],
+   [
+    1,
+    3970
+   ]
+  ],
+  "sources": [
+   "quest 11058 description (Apexis, extinct sect, relics with colored sequences)",
+   "quest 11025 request text",
+   "DB spawns in 3832: Apexis Relic, Apexis Monument, Gan'arg Analyzer, Aether Ray",
+   "quest 11065 description (aether rays around Vortex Pinnacle as remounts)",
+   "quest 11078 description (Rivendark and Obsidia lord over this terrace, perches)",
+   "npc_text 10794 (Sai'kkal cannot see clearly; default gossip)",
+   "DB displays: Rivendark 24139 and Obsidia 12869 use black dragon skins",
+   "npc_text 10926 (the Black Dragonflight threatens Ogri'la)"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Body unchanged: nothing to hide; patch 2.1, no tag beyond 8. npc_text 10794 reread: period text (the druid-gated 10795/10796 stay out). Before: Rivendark's Perch (3969) and Obsidia's Perch (3970) merged in. Sai'kkal's Book of the Raven lines (npc_text 10795, 10796) sit behind a gossip option gated on druid quest 10980, part of the flight form chain owned by zangarmarsh.json, so removed. Perch dragons named black dragons from their display skins and Ogri'la's texts."
+ },
+ {
+  "id": 352223,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 23,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Forge Camps Wrath and Terror",
+  "body": "Two Burning Legion forge camps flank the western terrace, Forge Camp: Wrath to the north and Forge Camp: Terror to the south. Their flak cannons, fed from stacks of fel cannonballs, shoot down Skyguard riders left and right, and in each camp a fel crystalforge pours out green smoke as it turns apexis shards into unstable flasks. Demon chieftains such as Galvanoth and Braxxus answer when shards are offered at the camps' burning fel crystal prisms. On the southern border of Wrath the demons have raised Shartuul's Transporter, an experimental gate meant to expand the camp, which the ogres of Ogri'la fear will soon crush them.",
+  "triggers": [
+   [
+    1,
+    3785
+   ],
+   [
+    1,
+    3784
+   ],
+   [
+    1,
+    4008
+   ]
+  ],
+  "sources": [
+   "quest 11010 description (Wrath and Terror to the north and south, fel cannons shooting down the Skyguard)",
+   "DB spawns in 3785: Legion Flak Cannon, Fel Cannonball Stack",
+   "quest 11030 description (fel crystalforge at either forge camp, green smoke, ten apexis shards)",
+   "quest 11079 description (demon chiefs at fel crystal prisms: Galvanoth, Braxxus, Zarcsin, Mo'arg Incinerator)",
+   "quest 11026 reward text (special transporter on their southern border, experimental gate to expand the forge camp)",
+   "quest 11060 request text (the camp growing bigger, soon too big and crush us)"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Body unchanged: the transporter and flak cannons are premises of the Ogri'la quests. Patch 2.1, not gated by the module. Known limit: players in the Blackwing Coven caverns below may register in this area (3785) and unlock this entry there. Before: Shartuul's Transporter (4008) merged in. The transporter's own event is not described. The Wyrmcult spawns that map to area 3785 belong to the Blackwing Coven caverns beneath, so they are not placed in the camp."
+ },
+ {
+  "id": 352224,
+  "kind": 1,
+  "zone": 3522,
+  "sort": 24,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Bash'ir Landing",
+  "body": "The northernmost shelf of the mountains holds Bash'ir Landing, a settlement of the Ethereum named for Bash'ir and his followers. Here they keep great stasis chambers, far larger than the prisons the Ethereum use elsewhere. A crystalforge stands at the landing's northeast corner, and every few hours Skyguard aether-techs fly in to raid it. East of the landing rises the Crystal Spine, where felstorm corruptors and infernals of the Legion roam among Apexis relics, and the black dragons Insidion and Furywing rule the skies from their perches.",
+  "triggers": [
+   [
+    1,
+    3864
+   ],
+   [
+    1,
+    3865
+   ],
+   [
+    1,
+    3971
+   ],
+   [
+    1,
+    3972
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The chambers are no ordinary prisons. Evidence brought out of Stasis Chamber Alpha showed what they truly hold: savage beasts and creatures of many, many worlds, which the Ethereum hope to bend to their bidding one day.",
+    "triggers": [
+     [
+      5,
+      10974
+     ]
+    ],
+    "sources": [
+     "quest 10974 description (larger versions of the prisons, called stasis chambers)",
+     "quest 10974 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Shattered Sun Offensive has learned that the ethereals of the landing serve another cause as well. They had been smuggling mana cells out of Tempest Keep and carrying them to the Sunwell for Kael'thas, hidden from plain sight and guarded by phase wyrms.",
+    "minState": 12,
+    "sources": [
+     "quest 11513 description (smuggling mana cells out of Tempest Keep to the Sunwell for Kael'thas, phase devices, phase wyrm guardians)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10974 description (Ethereum settlement on the northernmost shelf)",
+   "warcraft.wiki.gg/wiki/Bash'ir_Landing (named for Bash'ir and his subdivision of the Ethereum; Skyguard assaults every two hours)",
+   "quest 10974 reward text (beasts from many worlds, hope to command them)",
+   "quest 11513 description (ethereals smuggling mana cells out of Tempest Keep for Kael'thas)",
+   "quest 11061 description (crystalforge at the northeast corner)",
+   "quest 11119 description",
+   "DB spawns in 3865: Felstorm Corruptor, Darkflame Infernal, Apexis Relic",
+   "quest 11078 description (Insidion and Furywing rule the terrace to the northeast)",
+   "DB displays: Insidion and Furywing 12869, black dragon skins",
+   "AreaTable 3864 name Bash'ir Landing (wiki trivia: the non-possessive form is correct)"
+  ],
+  "notes": "Converted: what the stasis chambers hold moved to part 1 (DONE 10974; the opening keeps that great chambers stand here, from 10974's description). The mana cell smuggling rests on 11513, a patch 2.4 Shattered Sun daily from Exarch Nasuun, so it is part 2 with minState 12 and no trigger (mod-individual-progression brings the Shattered Sun NPCs in at state 12; Quel'Danas 408002 uses ACCEPT 11514, and 11513 stays a source only). Bash'ir Landing and its Skyguard raids are patch 2.1, no tag beyond the entry's 8. requiredState 8 on the entry. Before: Crystal Spine (3865), Insidion's Perch (3971) and Furywing's Perch (3972) merged in. Quest 11513 (Shattrath daily) cited but not used as a trigger. Title and text use the AreaTable name Bash'ir Landing; perch dragons named black dragons from display skins; 'seize' made 'raid' (quest 11119). Check: part 1 reworded so it does not repeat The Stasis Chambers of Bash'ir part 1 (same DONE 10974). Part 2 kept trigger-free at minState 12, as hellfire 348314 part 1 tells its patch 2.4 Shattered Sun material: the module phases Exarch Nasuun (24932) into Shattrath from state 12 (ipp_aware_npcs.sql; AREA_SHATTRATH_CITY with PROGRESSION_TBC_TIER_4) and rewrites 11513 into a one-time quest in every state, and does not gate Bash'ir Landing itself; part 2 tells only the premise (no outcome), now framed as what the Shattered Sun learned and in the past perfect, so it stays true at 13 to 18 after Kael'thas falls."
+ },
+ {
+  "id": 352230,
+  "kind": 2,
+  "zone": 3522,
+  "sort": 1,
+  "faction": 2,
+  "requiredState": 8,
+  "title": "Rexxar",
+  "body": "Rexxar, Champion of the Horde, is Mok'Nathal, of mixed orc and ogre blood. He made his name on Azeroth, roaming the wilds with his bear Misha, and once took Thrall's place at a summit that proved to be an ambush. Now he has crossed the Dark Portal, chasing rumors of his people across Outland. At Thunderlord Stronghold that search weighs on him alongside the struggle against the Alliance and the war with the ogres and their gronn masters, and even he admits he can use some help. Beside Misha he keeps his hawk Spirit and his boar Huffer, and a wyvern, Leokk, whom the Bladespire took captive soon after he came to the mountains.",
+  "triggers": [
+   [
+    2,
+    21984
+   ],
+   [
+    5,
+    10718
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Rexxar is the son of Leoroxx, chief of the Mok'Nathal. Thirty years ago he left his people to follow the Horde to Azeroth, though his father was staunchly against it, and Leoroxx has neither forgiven him nor welcomed him home. Rexxar had hoped the years would dull that anger. His father wanted a Mok'Nathal for a son, and Rexxar means to open his eyes to the one he has.",
+    "triggers": [
+     [
+      5,
+      10709
+     ]
+    ],
+    "sources": [
+     "quest 10709 description and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "With Gorgrom and Goc dead, the Bloodmaul and Bladespire threaten the Mok'Nathal no longer, and Rexxar faced Goc himself at the gronn's altar. Even so, he is not ready to face his people. There is still much he can learn and do to grow stronger, he says, and to show his father that he is his true son.",
+    "triggers": [
+     [
+      5,
+      10742
+     ]
+    ],
+    "sources": [
+     "quest 10742 description, request and reward texts"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10709 description and reward text (my son; left thirty years ago to follow the Horde to Azeroth)",
+   "quest 10614 description (rumors across Outland)",
+   "npc_text 10661 (Rexxar)",
+   "warcraft.wiki.gg/wiki/Thunderlord_Stronghold (Rexxar came seeking his race)",
+   "quests 10714, 10721, 10723 (Spirit, Huffer, Misha)",
+   "quest 10724 (Leokk)",
+   "quest 10742 reward text (true son)",
+   "warcraft.wiki.gg/wiki/Rexxar (Warcraft III: The Frozen Throne, 2003: volunteered to go to the summit in Thrall's place; bear Misha)",
+   "warcraft.wiki.gg/wiki/Razor_Hill (the Kul Tiran summit was a planned ambush; Rexxar went in Thrall's place and defeated the assassins)"
+  ],
+  "notes": "Converted: his parentage and the thirty-year rift with Leoroxx are revealed by 10709 (Leoroxx's description and Rexxar's reply), so they moved to part 1 (DONE 10709); his resolve after Goc's death (10742 reward) is part 2 (DONE 10742). The opening keeps what meeting him tells (gossip npc_text 10661, 10614's rumors, his companions; Leokk's capture is 10724's premise). Added DONE 10718 (Horde; the quest that first sends one to him) so the gated entry backfills. With mod-individual-progression, Rokaro (10182) is renamed Rexxar in Desolace in every state, so a Rexxar wanders Desolace there too: the text says only that he roamed Azeroth and has now crossed the Portal, never that he left Kalimdor, which holds with and without the module. He stands in Thunderlord Stronghold (3769), not Mok'Nathal Village. npc_text 10661 reread: period text. requiredState 8. Before: Faction 2: Rexxar uses faction template 83 (Horde), hostile to the Alliance. The Thrall line came from durotar.json 1407 (Razor Hill): it is The Frozen Throne's false summit at Razor Hill, pre-Cataclysm and supported by the wiki; made specific and sourced to the wiki instead of the other zone file. Nothing from Legion used. Check: 'On Azeroth he roamed' made 'He made his name on Azeroth, roaming the wilds': with mod-individual-progression a Rexxar (Rokaro 10182 renamed) still wanders Desolace in every state, so the text no longer reads as though he has left Azeroth's wilds for good; true with and without the module. Rexxar 21984 confirmed in Thunderlord Stronghold (posarea 3769)."
+ },
+ {
+  "id": 352231,
+  "kind": 2,
+  "zone": 3522,
+  "sort": 2,
+  "faction": 2,
+  "requiredState": 8,
+  "title": "Leoroxx",
+  "body": "Leoroxx leads the Mok'Nathal of the eastern village, and he judges outsiders as harshly as his own. Enemies surround his people, and he would give them a better life if those enemies allowed it. Those who come to the Mok'Nathal, he says, understand neither them nor their struggle to survive, and the only way to understand is to share in it. So he sends would-be friends against the foes who press on the village, beginning with Vekh, leader of the Vekh'nir arakkoa, in the caverns of Trogma's Claim.",
+  "triggers": [
+   [
+    2,
+    22004
+   ],
+   [
+    4,
+    10846
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Leoroxx is father to Rexxar, though he will not call him one of his people. Rexxar made his choice a lifetime ago, and to Leoroxx he is not welcome: the Mok'Nathal have troubles enough with the Bloodmaul, and being born a half-breed, he says, does not make one Mok'Nathal.",
+    "triggers": [
+     [
+      4,
+      10709
+     ]
+    ],
+    "sources": [
+     "quest 10709 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "After Vekh came Gnosh Brognat, leader of the Bladespire Outpost, and then Dreadwing, brood mother of the Singing Ridge's nether drakes. Even with the chiefs of all three threats dead, Leoroxx offers only a grudging token and a warning: those who did it still do not fully understand what it is to be Mok'Nathal.",
+    "triggers": [
+     [
+      5,
+      10845
+     ]
+    ],
+    "sources": [
+     "quests 10843, 10845 descriptions and reward texts"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10709 description",
+   "quest 10709 reward text (Leoroxx staunchly against his leaving)",
+   "warcraft.wiki.gg/wiki/Leoroxx",
+   "quests 10846, 10843, 10845 descriptions and reward texts"
+  ],
+  "notes": "Converted: his being Rexxar's father is revealed when he offers 10709, so it moved to part 1 (ACCEPT 10709; his opposition to Rexxar's departure is in Rexxar's reply at 10709's turn-in, told in Rexxar 352230 part 1); his trials and final verdict moved to part 2 (DONE 10845). The opening keeps his gossip (npc_text 10645) and the first trial (10846 description). Triggers unchanged (ACCEPT 10846 already backfills). npc_text 10645 reread: period text. requiredState 8. Before: Faction 2: Leoroxx uses template 83 (Horde); 10846 is Horde only. Reconciliation with Rexxar is later content and left out."
+ },
+ {
+  "id": 352232,
+  "kind": 2,
+  "zone": 3522,
+  "sort": 3,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Baron Sablemane",
+  "body": "Baron Sablemane waits outside the Circle of Blood, a master of the alchemical arts whose loathing of interruptions is surpassed only by his hatred of Gruul the Dragonkiller and his seven sons. He will help those who fight the gronn, but always for a price, because, as he puts it, free things destroy friendships. He brews poisons from crust burster venom, a black whelp keeps him company, and his agent Samia Inkling aids the druids of Evergrove against the Wyrmcult at his behest.",
+  "triggers": [
+   [
+    2,
+    22103
+   ],
+   [
+    5,
+    10783
+   ],
+   [
+    5,
+    10798
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "His hatred is personal. The gronn, he says, slaughtered his people and his children, and he means to have his revenge. The trap he made to that end is drawn from the very essence of dragon fire, and those who carried it home were left wondering how an alchemist comes by such rare substances.",
+    "triggers": [
+     [
+      5,
+      10785
+     ],
+     [
+      5,
+      10801
+     ]
+    ],
+    "sources": [
+     "quests 10785, 10801 descriptions (they slaughtered my people, my children; dragon fire trap)",
+     "quests 10785, 10801 reward texts (rarified substances)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In time the baron sent his pet dragon with a summons and took a hand himself. At Goc's altar outside Gruul's Lair he answered the call of his signet and joined the fight against the son of Gruul, and in the battle he shed his human guise: Baron Sablemane is a black dragon. Afterward he asked that his true identity be kept quiet, for now.",
+    "triggers": [
+     [
+      5,
+      10806
+     ]
+    ],
+    "sources": [
+     "quest 10818 description (pet dragon)",
+     "quest 10806 description and reward text (transformation, true identity)",
+     "DB: battle form Sabellian 22496 uses black dragon display 21079"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 10603 (Sablemane gossip)",
+   "quest 10783 description (master of the alchemical arts)",
+   "quest 10715 description (free things destroy friendships)",
+   "quests 10785, 10801 (they slaughtered my people, my children; dragon fire trap)",
+   "quest 10818 description (pet dragon)",
+   "npc_text 10538 (Samia, at the behest of her master Baron Sablemane)",
+   "quest 10806 reward text (transformation, true identity)",
+   "warcraft.wiki.gg/wiki/Baron_Sablemane (human disguise of a black dragon)",
+   "DB: Baron Sablemane 22103 uses human male display 20807; his battle form Sabellian 22496 uses display 21079 with black dragon skins"
+  ],
+  "notes": "Converted: his identity as a black dragon is revealed only when he transforms at Goc's altar for the Alliance (10806), so it moved to part 2 (DONE 10806; the Horde's showdown 10742 brings Rexxar instead, so no Horde route); the pet dragon summons (10818) went with it. His grief for his people and children and the dragon fire trap moved to part 1 (ACCEPT 10785 Horde, ACCEPT 10801 Alliance). The opening keeps his gossip (npc_text 10603), the price (10715), the poison and Samia (npc_text 10538); the 'clues are there' framing dropped. Added DONE 10783 (Horde) and DONE 10798 (Alliance), the quests that bring each side to him, for backfill. npc_text 10603, 10538 reread: period text. requiredState 8. Before: Faction 0: template 35. The wiki name Sabellian is left out of the text. Black dragon in human guise confirmed by displays. Samia line matched to npc_text 10538. Check: part 1 moved from ACCEPT to DONE 10785 (Horde) and DONE 10801 (Alliance): its wondering at the rare substances is Rexxar's and Stonewall's reward text, so the turn-in is where all of it is known; reworded so it does not repeat Baron Sablemane's Price part 2. Part 2 has no Horde route (10742 brings Rexxar, not the baron); the opening and part 1 stand alone for the Horde."
+ },
+ {
+  "id": 352233,
+  "kind": 2,
+  "zone": 3522,
+  "sort": 4,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Gruul the Dragonkiller",
+  "body": "Gruul the Dragonkiller is the greatest of the gronn and the master of the Blade's Edge Mountains, worshiped as a god by the ogres who live there. When Deathwing's black dragons nested in these lands, Gruul led the gronn and ogres against them; the Bladespire tore the dragons from the sky with their incantations, and Gruul impaled the bodies on the spires of Dragons' End. The ogre clans now fight one another for his favor, which rests with the Bladespire, and his seven sons enforce his will across the mountains and as far as Nagrand. He keeps to his lair in the north beside Maulgar, the ogres' aging High King, whom his enemies call Gruul's puppet.",
+  "triggers": [
+   [
+    1,
+    3774
+   ],
+   [
+    4,
+    10504
+   ],
+   [
+    4,
+    10505
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Gruul (war on the black dragonflight, Bladespire incantations, impaled on the spires, worshiped by the ogres of Blade's Edge, seven sons)",
+   "quests 10504, 10505 descriptions and request texts (clans vie for the favor of Gruul the Dragonkiller)",
+   "nagrand.json 351831 (Durn in Nagrand)",
+   "quest 11000 reward text (Gruul and his puppet, the old king, Maulgar)"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Body unchanged: history and his court only, nothing a bystander at the KILL 19044 raid fight would not know or that a chain reveals; no instance outcome told. ACCEPT 10504 and 10505 give the gated entry its quest triggers. Before: Faction 0: 10504 is Alliance only and 10505 Horde only, both naming Gruul; KILL 19044 is the raid boss. Gruul's appearance in Beyond the Dark Portal left out. Check: KILL 19044 dropped: Gruul 19044 spawns only in the Gruul's Lair raid (map 565) and raid boss kills are not used as triggers (netherstorm 352315, shadowmoon 352016). AREA 3774 (Gruul's Lair, reachable, also on 352215) added as the area trigger, as shadowmoon 352033 shares 3840 with the Black Temple. With no kill trigger the bystander rule no longer applies; 'whom his enemies call his puppet' (Mog'dorg, 11000 reward text) is a characterization framed as a claim, not an outcome, and stays. Maulgar line reworded so it does not repeat Gruul's Lair's opening, which now unlocks with it on AREA 3774."
+ },
+ {
+  "id": 352234,
+  "kind": 2,
+  "zone": 3522,
+  "sort": 5,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Sons of Gruul",
+  "body": "Gruul has seven sons, gronn who share their father's rule over the mountains and the ogres who live in them. Goc is master of the Bladespire, with an altar outside his father's lair. Gorgrom the Dragon-Eater accepts sacrifices from the ogres of Boulder'mok. Grulloc, dim-witted, hatches his schemes in the Cursed Hollow, and Maggoc patrols the eastern ranges as their warden. Skulloc Soulgrinder, trained by the ogre warlock Vim'gol the Vile, hides in a barrow near the lair. Slaag went into exile among the Gordunni ogres above Shattrath, and Durn the Hungerer hunts the fields of Nagrand. Mog'dorg the Wizened believes no ogre will be free until all of them are dead.",
+  "triggers": [
+   [
+    3,
+    20555
+   ],
+   [
+    3,
+    21514
+   ],
+   [
+    3,
+    20216
+   ],
+   [
+    3,
+    20600
+   ],
+   [
+    3,
+    22910
+   ],
+   [
+    1,
+    3904
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The sons are the true power behind the ogre wars of Blade's Edge. Gorgrom the Dragon-Eater is master of the Bloodmaul as well, quietly driving them against their neighbors while the Bladespire, Gruul's favorites, answer to Goc.",
+    "triggers": [
+     [
+      4,
+      10798
+     ],
+     [
+      5,
+      10723
+     ]
+    ],
+    "sources": [
+     "quest 10798 description (Gorgrom behind the Bloodmaul plans)",
+     "quest 10723 reward text (the ogres of Bloodmaul and their master, Gorgrom)"
+    ]
+   }
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Gruul (seven sons named)",
+   "quests 10742, 10806 (Goc, master of the Bladespire, altar outside Gruul's Lair)",
+   "quests 10723, 10798 (Gorgrom at Boulder'mok, behind the Bloodmaul plans)",
+   "quests 10721, 10995 (Grulloc)",
+   "quest 10996 (Maggoc, warden of the eastern range)",
+   "quest 10998 (Skulloc trained by Vim'gol)",
+   "quest 10997 (Slaag exiled among the Gordunni)",
+   "nagrand.json 351831 (Durn)",
+   "quest 11000 reward text",
+   "quests 10742, 10806 RequiredNpcOrGo 20555 (Goc summoned at his altar, Horde and Alliance)",
+   "quests 10723, 10802 (Gorgrom summoned at his altar, Horde and Alliance)",
+   "quest 11000 (Skulloc forced out at the barrow, open to all)"
+  ],
+  "notes": "Converted: that the sons are behind the ogre wars and Gorgrom drives the Bloodmaul is a chain reveal (ACCEPT 10798 Alliance, DONE 10723 Horde, whose reward text calls Gorgrom the Bloodmaul's master), so it moved to part 1; the opening, which the five KILL triggers unlock for any group member, now names each son and where he is found, as a bystander or a newcomer would know. Added area 3904 (Cursed Hollow, where Grulloc stands) so the gated entry has an area trigger. requiredState 8. Before: Faction 0: all five are hostile to both factions (factions 14 and 16). Grulloc and Maggoc are fixed outdoor spawns; Goc, Gorgrom and Skulloc are summoned outdoors by quests open to each side (10742/10806, 10723/10802, 11000). Slaag (Terokkar) and Durn (Nagrand) are named only. 'Greedy' replaced with the quests' dim-witted. Check: AREA 3904 kept: the Cursed Hollow is where Grulloc 20216 stands (posarea 3904), as shadowmoon 352033 uses its area. The KILL-unlocked opening tells only who the sons are and where each is found, background like hellfire 348326 (Kazzak), and no outcome or reveal; the reveal that the sons drive the ogre wars stays in part 1."
+ },
+ {
+  "id": 352235,
+  "kind": 2,
+  "zone": 3522,
+  "sort": 6,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Mog'dorg the Wizened",
+  "body": "Mog'dorg the Wizened is a Bloodmaul ogre who stands atop a tower outside the Circle of Blood and speaks with a clarity no other ogre below can match. He has built a secret society, an underground resistance against the gronn, for he believes his clan faces annihilation at the hands of the Bladespire and the sons of Gruul who back them. He sent the ogre Grok to Shattrath to beg for help, and dreams of a home where ogres may decide their own destiny. Not all ogres trust him: the wandering speaker Mar'grom calls Ogri'la a myth and Mog'dorg's words lies.",
+  "triggers": [
+   [
+    2,
+    22941
+   ],
+   [
+    5,
+    10989
+   ],
+   [
+    5,
+    11057
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "His clarity is a gift of Ogri'la. The ogres there gave him a staff whose crystal sharpened his mind, and with the sons of Gruul dead he hopes one day to bring that boon to all his brethren. Reuniting the clans will take time, he admits, for old grudges are difficult to overcome.",
+    "triggers": [
+     [
+      5,
+      11000
+     ]
+    ],
+    "sources": [
+     "npc_text 10860 (staff from Ogri'la; shown only after quest 11000 is rewarded, gossip condition)",
+     "quest 11009 description (reunifying the clans, old grudges)"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 10800, 10860 (resistance; staff from Ogri'la)",
+   "quest 10983 description and reward text (sent Grok to the city)",
+   "quests 10989, 11057 reward texts",
+   "quest 10996 reward text (home for the ogres, own destiny)",
+   "creature_text 18693 (Speaker Mar'grom)"
+  ],
+  "notes": "Converted: the origin of his clarity (the Ogri'la staff, npc_text 10860) is gossip shown only once 11000 is rewarded, so it moved to part 1 (DONE 11000) with his plan to reunite the clans (11009 description). Added DONE 10989 (from Chort) and DONE 11057 (from Chu'a'lor), the quests that bring one to him, for backfill. creature_text 18693 (Mar'grom) and npc_text 10800 reread: period text. requiredState 8. Before: Faction 0: template 35. Grok and quest 10984 belong to Shattrath and are not used."
+ },
+ {
+  "id": 352236,
+  "kind": 2,
+  "zone": 3522,
+  "sort": 7,
+  "faction": 1,
+  "requiredState": 8,
+  "title": "Toshley",
+  "body": "Toshley is the gnome inventor who brought a whole band of scientists to Outland, with Razak's Roughriders hired to guard them. They first settled with the night elves at Sylvanaar, but their machines and experiments made a mess of the Living Grove, and the elves sent them away, which Toshley counts a blessing. He left a remote sentry, R-3D0, on the Jagged Ridge to turn visitors away, along with a trail of spare parts leading straight to his door. At his station he runs hair-raising projects, capturing electromentals and charging spheres with lightning from wild serpents, and cheerfully tells volunteers the odds that they would implode.",
+  "triggers": [
+   [
+    2,
+    21691
+   ],
+   [
+    5,
+    10581
+   ]
+  ],
+  "sources": [
+   "quest 10580 description (driving Toshley and his gnome friends away)",
+   "npc_text 10423 (glad to be rid of those stuffy elves)",
+   "quest 10620 description (hired on to help Toshley when he decided to move to Outland)",
+   "quests 10580 reward and 10581 description (R-3D0, trail of spare parts)",
+   "quest 10584 description (electromentals)",
+   "quest 10657 description and reward text (lightning, 23.72 chance of imploding)"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Body unchanged: his station projects are quest premises; the Razaan souls are told in 352254. npc_text 10423 reread: period text. Before: Faction 1: Toshley uses template 1732 (Alliance), 10581 is Alliance only."
+ },
+ {
+  "id": 352237,
+  "kind": 2,
+  "zone": 3522,
+  "sort": 8,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Tree Warden Chawn",
+  "body": "Tree Warden Chawn, a tauren of the Cenarion Expedition, leads Evergrove. He came to the Ruuan Weald to restore the balance of nature to the mountains and finds the arakkoa and the Wyrmcult making that task hard. Chawn prefers to begin with talk: when the cultists began logging and poaching in the weald, his first answer was to seek out their overseer and offer a compromise. He is quick to sense evil in an object, freely admits he is no military planner, and gladly accepts help, whether from passing travelers or from the scholar Samia Inkling.",
+  "triggers": [
+   [
+    2,
+    22007
+   ],
+   [
+    4,
+    10682
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The overseer dismissed his proposals out of hand. Only then did Chawn set his allies on the cult's hewers, for if the Wyrmcult would not listen to reason, he said, perhaps it would listen to a more assertive kind of persuasion. The trees, he decided, must come first.",
+    "triggers": [
+     [
+      5,
+      10682
+     ]
+    ],
+    "sources": [
+     "quest 10682 reward text",
+     "quest 10713 description (offered on the 10682 turn-in)"
+    ]
+   }
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Evergrove (Tree Warden Chawn, tauren, leader)",
+   "npc_text 10534",
+   "quest 10682 description and reward text",
+   "quest 10713 description",
+   "quest 10825 request and reward texts (senses evil)",
+   "quest 10894 description (not much of a military planner)"
+  ],
+  "notes": "Converted: the overseer's refusal moved to part 1 (DONE 10682, Chawn's own reaction in its reward text) with his turn to force (10713). Added ACCEPT 10682 (open to all) for backfill. npc_text 10534 reread: period text. requiredState 8. Before: Faction 0: template 1710 (Cenarion Expedition), not hostile to either faction. Check: part 1 trimmed to what DONE 10682 shows: the reasoning that trees regrow more slowly than wildlife is 10713's reward text, so it was dropped; 'the trees come first' is 10713's description, offered on the 10682 turn-in. Opening reworded so it does not repeat The Blackwing Coven's opening."
+ },
+ {
+  "id": 352238,
+  "kind": 2,
+  "zone": 3522,
+  "sort": 9,
+  "faction": 2,
+  "requiredState": 8,
+  "title": "T'chali the Witch Doctor",
+  "body": "T'chali the Witch Doctor is a troll who came down into Bloodmaul Ravine to teach the ogres how to brew their beer. He used to be a friendly sort, he says, but once the lesson was learned the Bloodmaul buried him in the ravine and left him there to rot, and worst of all, they stole his hookah. T'chali still speaks from his grave, and he wants his hookah back, along with some of the brew he taught them to make. The ogres who took the pipe, he thinks, went off southwest toward the mine.",
+  "triggers": [
+   [
+    2,
+    21349
+   ],
+   [
+    4,
+    10542
+   ]
+  ],
+  "sources": [
+   "quest 10542 description",
+   "quest 10545 description (perfect brew, strengthens you and weakens your enemy)",
+   "quest 10543 description (Grimnok led the burial, Korgaah came south to raid)",
+   "quest 10543 reward text and 10544 description (powerful witch doctor in life, revenge not quenched)"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Body unchanged: his burial and grudge are his own premises (10542, 10543 descriptions), and the outcomes of his revenge are told in Brew and Banner part 3. Added ACCEPT 10542 (Horde) for backfill. Before: Faction 2: T'chali uses template 1734 (Horde); all his quests are Horde only. Check: Opening trimmed to what he tells on first meeting (10542 description): teaching the brew, the burial, the stolen hookah and brews. The brew's purpose is what 'T'chali did not say' until 10545 (offered after 10542), so it moved to part 1 (ACCEPT 10545); Grimnok and Korgaah are named only in 10543's description, so they moved to part 2 (ACCEPT 10543). Both Horde, QuestType 2, no other zone uses them. The curse and the kills stay in Brew and Banner part 3 (DONE 10544).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "T'chali had not told the whole story. The Bloodmaul were in dire straits, crushed by the Bladespire and in need of a new weapon, so he set out to make the perfect brew, one to strengthen whoever drinks it and weaken the enemy. Whether it truly works, he could not say until someone carried it up to Bladespire Hold.",
+    "triggers": [
+     [
+      4,
+      10545
+     ]
+    ],
+    "sources": [
+     "quest 10545 description (what T'chali did not say: the Bloodmaul in dire straits, the perfect brew)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "His grudge has names. Grimnok Battleborn led the ogres who buried T'chali and left him to die, and the very next day Korgaah came raiding south from the Bladespire and kicked him in the head where he lay. The witch doctor wants them both dead, and he has waited a long time for his revenge.",
+    "triggers": [
+     [
+      4,
+      10543
+     ]
+    ],
+    "sources": [
+     "quest 10543 description (Grimnok led the burial, Korgaah kicked him the next day, T'chali has been waiting for his revenge)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 352250,
+  "kind": 3,
+  "zone": 3522,
+  "sort": 1,
+  "faction": 2,
+  "requiredState": 8,
+  "title": "Rexxar's Kin",
+  "body": "Among the Bladespire, Horde fighters find a Thunderlord clan artifact and bring it to Rokgah Bloodgrip, a scholar of that fallen clan at Thunderlord Stronghold. He has read all of the clan's texts and seeks a drum, an arrow and a tablet lost when the Horde crushed the Bladespire and drove them back into their hold, though others have gone after them and failed, or worse. The relics matter: once all are recovered, he says, the Horde's right to the stronghold will be secured by appeasing its restless dead. With the three in hand, he gives a fiery fragment of his own soul to send a seeker's spirit after the last relic.",
+  "triggers": [
+   [
+    4,
+    10524
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The seeker's vision found the last relic, the Thunderspike, at the back of the Draenethyst Mine, deep in Bloodmaul territory and too far for Rokgah to travel himself. The Bloodmaul must have stolen the spear from the Bladespire.",
+    "triggers": [
+     [
+      5,
+      10525
+     ]
+    ],
+    "sources": [
+     "quest 10525 reward text",
+     "quest 10526 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "With the relics returned to appease the dead, the ghost of Garm Wolfbrother, chieftain of the Thunderlord clan, appeared with news for Rexxar: the Mok'Nathal he seeks have a village to the east beyond the Razor Ridge, and they are in danger.",
+    "triggers": [
+     [
+      4,
+      10718
+     ],
+     [
+      5,
+      10718
+     ]
+    ],
+    "sources": [
+     "quest 10526 reward text",
+     "quest 10718 description and reward text (Garm, last chieftain)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Rexxar trusted the word of Garm, last chieftain of the Thunderlord, but was uneasy about how his people would greet him, and sent an envoy to their chief, Leoroxx. The welcome was cold. His father owned him as a son and nothing more, an outsider unwelcome in the village, and Rexxar resolved to open the old chief's eyes.",
+    "triggers": [
+     [
+      5,
+      10709
+     ]
+    ],
+    "sources": [
+     "quest 10614 description",
+     "quest 10709 description and reward text"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Rexxar could not believe that simple ogres would harass the Mok'Nathal for no gain. His hawk Spirit, sent to spy on a Bloodmaul taskmaster and soothsayer, learned the truth: the sons of Gruul are behind it, commanding the Bloodmaul to destroy the Mok'Nathal to win their favor.",
+    "triggers": [
+     [
+      5,
+      10714
+     ]
+    ],
+    "sources": [
+     "quest 10714 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10524, 10525, 10526 (descriptions and reward texts)",
+   "npc_text 10322 (Rokgah)",
+   "quest 10718 description and reward text (Garm, last chieftain of the Thunderlord)",
+   "quest 10614 description",
+   "quest 10709 description and reward text",
+   "quest 10714 description and reward text",
+   "warcraft.wiki.gg/wiki/Garm_Wolfbrother"
+  ],
+  "notes": "Converted: opening is Rokgah's search (10524 to 10525 descriptions, npc_text 10322). Moved: the Thunderspike's hiding place to part 1 (DONE 10525), Garm's news to part 2 (ACCEPT and DONE 10718; Garm wears the title Chieftain of the Thunderlord Clan), Leoroxx's cold answer to part 3 (DONE 10709), the sons of Gruul behind the Bloodmaul to part 4 (DONE 10714). All Horde (AllowableRaces 690). npc_text 10322 reread: period text. requiredState 8. Before: Faction 2: chain 10524 to 10714 is Horde only (AllowableRaces 690); 10524 starts from the item Thunderlord Clan Artifact (30431) dropped by Bladespire ogres. Continues in Baron Sablemane's Price. Check: part 3 reworded so it does not repeat Leoroxx part 1 (ACCEPT 10709). Part 2 checked: Garm Wolfbrother 21950 starts 10718 with the subname Chieftain of the Thunderlord Clan, so 'chieftain' holds at ACCEPT 10718; 'last chieftain' comes from 10718's reward text and is used only in part 3 (DONE 10709, after it)."
+ },
+ {
+  "id": 352251,
+  "kind": 3,
+  "zone": 3522,
+  "sort": 2,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Baron Sablemane's Price",
+  "body": "Baron Sablemane, the master alchemist at the Circle of Blood, will help anyone against the gronn, always for a price. Rexxar of Thunderlord Stronghold, set on ending the Bloodmaul threat to the Mok'Nathal, sends for his help: he wants a poison for the Bloodmaul kegs, to be carried into their camp by a marmot, and the baron's work begins with venom glands from the crust bursters of the Churning Gulch. For the Alliance the trail begins elsewhere, with Commander Haephus Stonewall, Sylvanaar's envoy at Evergrove, and Dorgok of Bloodmaul Camp, whose clan is preparing an offensive against Sylvanaar and the Ruuan Weald, though no one yet knows who is pushing them to it.",
+  "triggers": [
+   [
+    4,
+    10783
+   ],
+   [
+    4,
+    10795
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "A statuette fell from Dorgok's dead hand in the likeness of Gorgrom the Dragon-Eater, a son of Gruul. Gorgrom is behind the Bloodmaul plans against Sylvanaar, and since dealing with a gronn takes more than soldiers, Stonewall asks the baron to fashion a trap for him.",
+    "triggers": [
+     [
+      4,
+      10798
+     ]
+    ],
+    "sources": [
+     "quest 10797 description and reward text",
+     "quest 10798 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "First the baron named his price: the sack the gronn Grulloc guards in the Cursed Hollow, which had to be stolen from under the gronn's nose. Once it was in his hands, Sablemane, whose grudge runs to the slaughter of his own people by the gronn, gave over a trap of dragon fire with which even a gronn might be slain.",
+    "triggers": [
+     [
+      4,
+      10785
+     ],
+     [
+      4,
+      10801
+     ]
+    ],
+    "sources": [
+     "quests 10721, 10800 (Grulloc's sack, the price)",
+     "quests 10785, 10801 descriptions (dragon fire trap, my people, my children)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Set at Gorgrom's altar at Boulder'mok, the trap brought down the Dragon-Eater, and grisly totems made from the heads of his Boulder'mok worshippers were planted around the body, so that the ogres would know the price of seeking to destroy their enemies.",
+    "triggers": [
+     [
+      5,
+      10723
+     ],
+     [
+      5,
+      10802
+     ]
+    ],
+    "sources": [
+     "quests 10723, 10802 descriptions and reward texts"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Last came Goc, master of the Bladespire. Rexxar's wyvern Leokk, freed from his cage in the Bladespire encampment outside Gruul's Lair, brought back the head of a black dragon from Dragons' End to enrage the gronn, and at Goc's altar Rexxar answered the call of his horn and slew the son of Gruul beside his ally.",
+    "triggers": [
+     [
+      5,
+      10742
+     ]
+    ],
+    "sources": [
+     "quest 10724 description and reward text",
+     "quest 10742 description and reward text"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "For the Alliance the end came at the baron's own call. After his chosen proxy cut down the toughest Bladespire guarding Gruul's Lair and their leader Fingrom, Sablemane gave up his signet and came himself to Goc's altar, shedding his human guise in the battle that killed the master of the Bladespire.",
+    "triggers": [
+     [
+      5,
+      10806
+     ]
+    ],
+    "sources": [
+     "quest 10805 description",
+     "quest 10806 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10783, 10715, 10749, 10720, 10721, 10785, 10723, 10724, 10742 (Horde)",
+   "quests 10795, 10797, 10798, 10799, 10800, 10801, 10802, 10818, 10805, 10806 (Alliance)",
+   "npc_text 10612 (Stonewall representing Sylvanaar at Evergrove)"
+  ],
+  "notes": "Converted: opening keeps the two entry points (ACCEPT 10783 Horde, ACCEPT 10795 Alliance) and the baron's first step; it no longer says both sides need a weapon against a gronn, since for the Alliance that comes only from Dorgok's statuette. Moved: the statuette and Gorgrom behind the Bloodmaul to part 1 (ACCEPT 10798, Alliance), the price and the dragon fire trap to part 2 (ACCEPT 10785, ACCEPT 10801; worded so both sides fit, without the faction-specific sleeping powder or boar), Gorgrom's death to part 3 (DONE 10723, DONE 10802), Leokk's rescue and Goc's death beside Rexxar to part 4 (DONE 10742, Horde), the Gruul's Lair massacre and Sablemane's transformation to part 5 (DONE 10806, Alliance). requiredState 8. Before: Faction 0: entry points 10783 (Horde only, from Rexxar) and 10795 (Alliance only, from Stonewall). Leokk's rescue and the Gruul's Lair massacre are folded into the Goc line. The glands feed the poison or the sleeping powder; the sack is the price on both sides, now worded that way. Check: opening no longer says Stonewall goes to the baron (an Alliance reader at ACCEPT 10795 has not yet found the statuette; that step is part 1, ACCEPT 10798); the crust burster glands are now told as Rexxar's step. Part 2 reworded so it does not repeat Baron Sablemane part 1."
+ },
+ {
+  "id": 352252,
+  "kind": 3,
+  "zone": 3522,
+  "sort": 3,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The King of the Ogres",
+  "body": "Mog'dorg the Wizened leads a secret resistance among the Bloodmaul, convinced his clan will be wiped out by the Bladespire and the gronn behind them. Those he trusts are sent against the gronn one by one: Grulloc in the Cursed Hollow, for the dragon skull he treasures from Gruul's slaughter of the black dragonflight; Maggoc on the Razor Ridge, for the treasure chest he carries everywhere; and even Slaag, who exiled himself among the Gordunni ogres above Shattrath, lest he return once his brothers are dead.",
+  "triggers": [
+   [
+    4,
+    10989
+   ],
+   [
+    4,
+    11057
+   ],
+   [
+    4,
+    10995
+   ],
+   [
+    4,
+    10996
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Grulloc, Maggoc and Slaag fell, and Maggoc's precious chest turned out to be empty, proof to Mog'dorg of the mindless brutality his people face. One gronn remained: Skulloc Soulgrinder, who keeps himself hidden. To coax him out, the grimoire of his teacher, the warlock Vim'gol the Vile, had to be taken from the fire circle near the Broken Wilds where Vim'gol can be summoned.",
+    "triggers": [
+     [
+      4,
+      10998
+     ]
+    ],
+    "sources": [
+     "quest 10996 reward text (empty chest)",
+     "quest 10998 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Its ritual, read aloud at Soulgrinder's Barrow, forced Skulloc into the world while his ghostly victims tried to smash the Soulgrinder. With the sons dead, Mog'dorg declared the ogres freed from their shackles. Bloodmaul and Bladespire alike gathered to hail their liberator as a new king, while Gruul and Maulgar cowered in their lair, and the new monarch was sent up to Ogri'la.",
+    "triggers": [
+     [
+      5,
+      11000
+     ]
+    ],
+    "sources": [
+     "quest 11000 description and reward text",
+     "creature_text 22941 (All hail the new king)",
+     "quest 11009 description"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10989, 11057 reward texts",
+   "quest 10995 description and reward text",
+   "quest 10996 description and reward text",
+   "quest 10997 description",
+   "quest 10998 description",
+   "quest 11000 description and reward text",
+   "quest 11009 description",
+   "creature_text 22941 (All hail the new king)"
+  ],
+  "notes": "Converted: opening is Mog'dorg's resistance and the first three targets (10995, 10996, 10997 descriptions). Moved: the three deaths and the empty chest to part 1 (ACCEPT 10998, offered only once 10995, 10996 and 10997 are all done: exclusive group -10995), Skulloc's end, the freeing of the ogres and the new king to part 2 (DONE 11000). 10997 (Slaag, filed under Terokkar) stays text only, not a trigger; 10983/10984 (Grok) left to Shattrath. creature_text 22941 reread: period text. Patch 2.1, no tag beyond 8. requiredState 8. Before: Faction 0: all quests AllowableRaces 0, Mog'dorg and Chort template 35. 10983 (from Grok in Shattrath) and 10984 are left to Shattrath; 10997 (Slaag, QuestSortID Terokkar) is told but not a trigger. Check: opening lightly reworded so it does not repeat Mog'dorg's and Dragons' End's openings word for word."
+ },
+ {
+  "id": 352253,
+  "kind": 3,
+  "zone": 3522,
+  "sort": 4,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Ogre Heaven",
+  "body": "Ogri'la's ogres are newly wise and wish only for peace, but enemies beset them on every side. Chu'a'lor teaches visitors about the Apexis shards every creature on the terraces covets, named for a vanished arakkoa civilization, and the relics that reward those who master their sequences of light, while the larger monuments summon crystal guardians that long ago turned on their arakkoan makers. The weary father Torkus has ten sons, all longing to join the Sha'tari Skyguard. At the outpost nearby, Sky Commander Keller and his sharp-tongued sergeant Vanderlip send riders to bomb the forge camps' fel cannonball stacks, Skyguard Khatie wants aether rays roped as remounts, and the terraces' dragons must be lured from their perches by breaking their eggs. Kronk's banishing crystal sends slain demons back whence they came, and Gahk dreams of smashing the demons' transporter.",
+  "triggers": [
+   [
+    4,
+    11025
+   ],
+   [
+    4,
+    11010
+   ],
+   [
+    4,
+    11102
+   ],
+   [
+    4,
+    11026
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Torkus asked for two unstable flasks to give his boys every advantage: one from the fel crystalforge at either forge camp, which he believed took ten apexis shards to make, and one from the crystalforge at Bash'ir Landing, meant to make a boy cleverer still. With both in hand, he shouted for one of his sons and sent him north to the Skyguard Outpost.",
+    "triggers": [
+     [
+      5,
+      11061
+     ]
+    ],
+    "sources": [
+     "quest 11030 description and reward text",
+     "quest 11061 description, request and reward texts",
+     "npc_text 10916 (ten sons)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11025 description and request text",
+   "quests 11058, 11059",
+   "quests 11030, 11061 descriptions, npc_text 10916 (ten sons)",
+   "quest 11062 reward text (Vanderlip's sharp tongue)",
+   "quests 11010, 11102",
+   "quests 11065, 11066",
+   "quest 11078 description",
+   "quest 11026 description and reward text",
+   "npc_text 10923 (Gahk)"
+  ],
+  "notes": "Converted: requiredState 8 on the entry. Torkus's flasks and their outcome (a son sent north to the Skyguard, the 11061 turn-in) moved to part 1 (DONE 11061), which also brings the opening within the staged Story range; the opening keeps his ten sons' wish. Everything else is a quest premise at Ogri'la or the Skyguard Outpost. Ogri'la and the Skyguard are patch 2.1 and not gated by mod-individual-progression, so no tag beyond 8. npc_text 10916, 10923 reread: period text. Before: Faction 0: all quests AllowableRaces 0, NPCs of Ogri'la (1872) and Skyguard (1856) templates. 11010 (classes 511, all but druids) and 11102 (class 1024, druids; the flying-as-a-crow version of Bombing Run, same giver Vanderlip, exclusive group 11010) are not part of the druid flight chain and no other zone uses them; 11102 gives druids their entry point. Terokkar's Skyguard triggers 11004 and 11098 are not used. Check: part 1 kept: it hides a real outcome, the son sent north to the Skyguard Outpost on the 11061 turn-in; 'takes ten apexis shards' hedged as Torkus's belief (11030: we think)."
+ },
+ {
+  "id": 352254,
+  "kind": 3,
+  "zone": 3522,
+  "sort": 5,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Souls of Razaan's Landing",
+  "body": "Gnomes from Toshley's Station have been vanishing on the road north, and at Mok'Nathal Village the spiritcaller Dohgar senses a great deal of pain coming from the ethereals' direction. Both turn their eyes to the small pink orbs that drift above Razaan's Landing. Toshley, curious about the Razaani's technology and sure the orbs are only decoration, sends a trap to catch a few. Dohgar, who has already set free the twisted spirits of the Singing Ridge's nether drakes and thinks the orbs look like souls, plants totems to draw them in.",
+  "triggers": [
+   [
+    4,
+    10674
+   ],
+   [
+    4,
+    10859
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The answer horrified Toshley. The orbs are woven from nether energy and souls, some of them gnome souls, perhaps of the very people who never came home from the north. He demands the death of the Razaani leader, Nexus-Prince Razaan, and the return of the collection of souls he must be keeping.",
+    "triggers": [
+     [
+      4,
+      10675
+     ]
+    ],
+    "sources": [
+     "quest 10674 reward text",
+     "quest 10675 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Dohgar's fears proved true. The orbs hold souls, and among them are the souls of Mok'Nathal ancestors. He sent word to Leoroxx at once, and Leoroxx, who trusts his spiritcallers, named it a defilement of his people's honored dead and called for Razaan's death.",
+    "triggers": [
+     [
+      4,
+      10867
+     ]
+    ],
+    "sources": [
+     "quest 10859 reward text",
+     "quest 10865 description",
+     "quest 10865 reward text and 10867 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Razaan kept to hiding until the slaughter of his followers drew him out. He was slain, and the collection of souls he had gathered was carried away from the landing, out of the ethereals' hands.",
+    "triggers": [
+     [
+      5,
+      10675
+     ],
+     [
+      5,
+      10867
+     ]
+    ],
+    "sources": [
+     "quests 10675, 10867 descriptions and reward texts"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "At Mok'Nathal Village the recovered souls were given to Spiritcaller Dohgar, and the ancestors were released at last to the cleansing fire. Leoroxx counted those who brought them home among his people's heroes, and wished a thousand plagues upon the ethereals' brethren.",
+    "triggers": [
+     [
+      5,
+      10867
+     ]
+    ],
+    "sources": [
+     "quest 10867 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10620, 10671 (missing people)",
+   "quests 10674, 10675 (Toshley)",
+   "quests 10853 reward text, 10859, 10865, 10867 (Dohgar and Leoroxx)"
+  ],
+  "notes": "Converted: opening is the two entry points (ACCEPT 10674 Alliance, ACCEPT 10859 Horde) and their suspicions. Moved: the gnome souls and Toshley's demand to part 1 (ACCEPT 10675, Alliance), the Mok'Nathal souls and Leoroxx's response to part 2 (ACCEPT 10867, Horde; it is offered right after the 10865 turn-in, so the whole part is known by then), Razaan's death to part 3 (DONE 10675, DONE 10867), the ancestors' release to part 4 (DONE 10867, Horde). Razaan's Landing 352211 part 1 tells only that the orbs hold souls (ACCEPT 10675, 10865). requiredState 8. Before: Faction 0: 10674 is Alliance only, 10859 Horde only. Toshley's earlier station quests are in his person entry; Leoroxx's trials in his."
+ },
+ {
+  "id": 352255,
+  "kind": 3,
+  "zone": 3522,
+  "sort": 6,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Brew and Banner",
+  "body": "Every ogre clan in Blade's Edge fights the others for Gruul's favor, and the newcomers have learned to use the feud. At Sylvanaar the dwarf Borgrim Stouthammer, on holiday with the Explorers' League after the dirt and insects of Silithus, sends for Bloodmaul brew, since the elves know nothing of fermentation. Vindicator Vuuleen sits caged by choice inside Bladespire Hold to spy on the clan, but wants back the sword and shield its leaders took from him. The Horde's guide in the feud is a dead troll: T'chali, buried by the Bloodmaul he taught to brew, wants his hookah and his brews back.",
+  "triggers": [
+   [
+    4,
+    10511
+   ],
+   [
+    4,
+    10516
+   ],
+   [
+    4,
+    10542
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Borgrim found the brew vile and swore off it after one sip. Instead he had the rest poured down Bladespire throats to see what would happen, and the answer delighted him: ogres, it seems, will drink anything.",
+    "triggers": [
+     [
+      5,
+      10512
+     ]
+    ],
+    "sources": [
+     "quests 10511, 10512 descriptions and reward texts"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "With his trappings restored, Vuuleen sent his helpers against Gorr'Dim, the crafty chieftain of Bladespire Hold, and then had a stolen Bladespire banner planted atop the Bloodmaul's Northmaul Tower. The ruse worked: Bloodmaul fury now falls on Bladespire Hold instead of Sylvanaar.",
+    "triggers": [
+     [
+      5,
+      10518
+     ]
+    ],
+    "sources": [
+     "quests 10517, 10518 descriptions",
+     "quest 10518 reward text (pressure relieved on Sylvanaar)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "T'chali's brew had a purpose: the Bloodmaul were losing to the Bladespire, and he meant it to strengthen its drinker and weaken the enemy. He tested it on the Bladespire, had Grimnok Battleborn, who led his burial, and Korgaah, who came raiding to kick him in the head, killed, and then cursed the buildings of both clans with a fetish from his grave.",
+    "triggers": [
+     [
+      5,
+      10544
+     ]
+    ],
+    "sources": [
+     "quests 10545, 10543, 10544 descriptions and reward texts"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10504, 10505 request texts (clans vie for Gruul's favor)",
+   "quests 10510 request text, 10511, 10512 (Stouthammers, vacation, Silithus)",
+   "quests 10516, 10517, 10518",
+   "quests 10542, 10545, 10543, 10544"
+  ],
+  "notes": "Converted: opening is the three entry points (ACCEPT 10511, 10516 Alliance; ACCEPT 10542 Horde) and their requests. Moved: the brew's fate to part 1 (DONE 10512), Gorr'Dim and the banner to part 2 (DONE 10518), T'chali's revenge to part 3 (DONE 10544, Horde). requiredState 8. Before: Faction 0: 10511 and 10516 Alliance only, 10542 Horde only. Bronwyn's 10510 is the speaker of the Silithus line; worded as the Explorers' League pair, now in her terms (dirt and insects)."
+ },
+ {
+  "id": 352256,
+  "kind": 3,
+  "zone": 3522,
+  "sort": 7,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Blackwing Coven",
+  "body": "When the Wyrmcult began felling the trees of the Ruuan Weald and slaughtering its wildlife, Tree Warden Chawn sent an envoy to their overseer, Nuaar, who patrols between the cult's camps, offering compromise but refusing to allow wholesale slaughter. Until lately the cultists kept to the Blackwing Coven through the tunnel to the west; now they are encroaching on Evergrove. A bloodstained note dropped by one of them, meant for Nuaar and signed by one Kolphis Darkscale, may tell more.",
+  "triggers": [
+   [
+    4,
+    10682
+   ],
+   [
+    4,
+    10719
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Nuaar would hear none of it: his people are free to do as they please, he said, and the Cenarion Expedition does not own the mountains. Chawn answered with force against the hewers, and the scholar Samia Inkling, who studies the coven, began gathering nets to catch its blackwhelps alive.",
+    "triggers": [
+     [
+      5,
+      10682
+     ]
+    ],
+    "sources": [
+     "npc_text 10533 (Nuaar: no negotiations)",
+     "quests 10682, 10713",
+     "quests 10717, 10747 descriptions"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The note revealed a planned meeting between Nuaar and Kolphis Darkscale, second in command of the Wyrmcult at the Blackwing Coven. Watcher Moonshade, holding the Wyrmskull Tunnel against the massing cultists, first wanted their leader there, Draaca Longtail, dead, to sow confusion in their ranks.",
+    "triggers": [
+     [
+      5,
+      10719
+     ]
+    ],
+    "sources": [
+     "quest 10719 description and reward text",
+     "creature_text 21983 (Samia: second-in-command)",
+     "quests 10894, 10893"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Draaca fell, and an agent of Evergrove entered the coven disguised as Nuaar. Kolphis berated the false overseer for the trickle of lumber and livestock and let slip that Maxnar the Ashmaw means to wipe out the druids, while Kolphis himself has arranged a truce with the arakkoa so the cult need not fight on another front.",
+    "triggers": [
+     [
+      5,
+      10722
+     ]
+    ],
+    "sources": [
+     "quest 10722",
+     "npc_text 10541, 10542, 10543 (Kolphis meeting)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The Expedition struck first. Maxnar the Ashmaw, one of the dragonkin and patriarch of the cult, was slain in his caverns, and Evergrove and the Ruuan Weald breathe more easily, the coven's plans foiled whatever its ultimate goals.",
+    "triggers": [
+     [
+      5,
+      10748
+     ]
+    ],
+    "sources": [
+     "quest 10748 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10682, 10713",
+   "npc_text 10533 (Nuaar: no negotiations)",
+   "quests 10719, 10894, 10893, 10722",
+   "npc_text 10541, 10542, 10543 (Kolphis meeting)",
+   "creature_text 21983 (second-in-command)",
+   "quests 10717, 10747, 10748"
+  ],
+  "notes": "Converted: opening is the two entry points (ACCEPT 10682, ACCEPT 10719, the item-started note) and Chawn's offer. Moved: Nuaar's refusal and the turn to force to part 1 (DONE 10682; Samia's whelp-netting is now her plan there, 10717 offered after 10682), the note's meeting to part 2 (DONE 10719), the disguised meeting to part 3 (DONE 10722), Maxnar's death to part 4 (DONE 10748). npc_text 10533, 10541 to 10543 and creature_text 21983 reread: period text. requiredState 8. Before: Faction 0: all quests AllowableRaces 0. 10719 starts from the Meeting Note dropped by Wyrmcult poachers and hewers. The truce is Kolphis's arrangement (npc_text 10543), corrected. Check: part 1 reworded so it does not repeat Tree Warden Chawn part 1 (same DONE 10682)."
+ },
+ {
+  "id": 352257,
+  "kind": 3,
+  "zone": 3522,
+  "sort": 8,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Whispers of the Raven",
+  "body": "The arakkoa of Blade's Edge were long a quiet people, but something has stirred them, and every power in the mountains wants to know why. Dertrok of the Mok'Nathal studies the crystals the Vekh'nir charge at their spell circles, tests their power on the ogre slaves of Trogma's Claim, and sends his findings to Timeon at Evergrove. At Sylvanaar, Daranelle wants a visitor to cast a Lashh'an feather spell so she can learn its nature. Timeon wants a pendant from the Harbingers of the Raven, heralds of the Ruuan'ok, so that the speech of the Grishna can be understood at their four shrines, and strange orbs taken from the Grishna find their way to Tree Warden Chawn.",
+  "triggers": [
+   [
+    4,
+    10567
+   ],
+   [
+    4,
+    10825
+   ],
+   [
+    4,
+    10565
+   ],
+   [
+    4,
+    10555
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "At Veil Lashh the feather spell was cast at last, and it was not what Daranelle expected of magic she had called unnatural: no simple conjuring or enchantment, but some sort of communion or communication. She will need to think on it longer before she can say what the Lashh'an seek by it.",
+    "triggers": [
+     [
+      5,
+      10556
+     ]
+    ],
+    "sources": [
+     "quest 10556 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Prophecies of the Raven's return out of the darkest night, heard at the four shrines, troubled Timeon deeply. The arakkoa were peaceful for a long time, he says, and their cult of the Raven was nothing more than a gathering of misfits and madmen, but its power has grown past discounting, and there may be more to this Raven than anyone yet knows.",
+    "triggers": [
+     [
+      5,
+      10607
+     ]
+    ],
+    "sources": [
+     "quest 10607 description, request and reward texts",
+     "broadcast_text 19475"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Chawn tried the orb and felt the evil within it give up a lingering memory: the arakkoa are causing the guardian trees of the Raven's Wood to be possessed by evil spirits. One ancient of lore, Treebole, could not have been touched, and Chawn urges that he be found at once if the wood is to be saved.",
+    "triggers": [
+     [
+      4,
+      10829
+     ]
+    ],
+    "sources": [
+     "quest 10825 reward text",
+     "quest 10829 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Treebole called for an exorcism. With feathers made from Grishnath orbs and the pinfeathers of dire ravens, the koi-koi spirits were drawn out of the leafbeards and slain, and the evil began to lift from the Raven's Wood.",
+    "triggers": [
+     [
+      5,
+      10830
+     ]
+    ],
+    "sources": [
+     "quest 10830 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10565, 10566, 10615 (Dertrok, Horde)",
+   "quests 10555, 10556 (Daranelle, Alliance)",
+   "quests 10567, 10607 (Timeon; peaceful for a long time, misfits and madmen)",
+   "broadcast_text 19475",
+   "quests 10825, 10829, 10830"
+  ],
+  "notes": "Converted: opening is the four entry points (ACCEPT 10567, 10825 open to all; 10565 Horde; 10555 Alliance) and what each seeks; the 'misfits and madmen' line (10607 reward) left the opening for part 2, replaced by 10565's stirred arakkoa. Moved: Daranelle's finding to part 1 (DONE 10556, Alliance; same turn-in as Veil Lashh part 1), the prophecies to part 2 (DONE 10607), the possession of the trees to part 3 (ACCEPT 10829), the exorcism to part 4 (DONE 10830). The Book of the Raven and Anzu stay zangarmarsh.json's. requiredState 8. Before: Faction 0: 10567 and 10825 are open to all; 10565 Horde, 10555 Alliance. Anzu and the Book of the Raven chain (10979 to 10993) are zangarmarsh.json's and not mentioned. Check: parts 1 to 3 reworded so they do not repeat Veil Lashh part 1 (DONE 10556), Grishnath part 1 (DONE 10607) and Grishnath part 2 (ACCEPT 10829); part 1 follows 10556's reward wording (not a simple conjuration or enchantment, communion or communication), part 2 10607's reward text."
+ },
+ {
+  "id": 352258,
+  "kind": 3,
+  "zone": 3522,
+  "sort": 9,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Hounds of Death's Door",
+  "body": "The Burning Legion presses on the Ruuan Weald from the east. Fel corrupters spread its taint across the Bladed Gulch, turning the scalewings and daggermaws there into felsworn beasts, and the druids of Evergrove, who grieve to destroy what Elune has made, send help against them. From the corrupters' bodies comes a damaged mask that still murmurs with strange sounds, as if voices were speaking inside it. If it were whole, they might be heard more clearly, and O'Mally Zapnabber at Evergrove might be the one to mend it.",
+  "triggers": [
+   [
+    4,
+    10810
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "O'Mally mended the mask and found it a Legion communication device, a Felsworn gas mask of the kind Wildlord Antelarion had long been trying to get his hands on. Antelarion saw at once how much trouble it could cause Forge Camp: Anger.",
+    "triggers": [
+     [
+      5,
+      10812
+     ]
+    ],
+    "sources": [
+     "quest 10810 reward text",
+     "quest 10812 description and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Wearing it, an agent slipped into the camp and spoke through the Legion communicator, telling the enraged demon on the other end that the camp had revolted. He ordered every traitor silenced, so the camp's engineers and attendants were cut down on his behalf, and the blame was then laid on his underling Doomcryer, long suspected of undermining him, who was summoned through the camp's five obelisks and slain.",
+    "triggers": [
+     [
+      5,
+      10821
+     ]
+    ],
+    "sources": [
+     "quests 10819, 10820, 10821"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Antelarion then turned to a greater danger: Death's Door, a portal onto the world where the Legion breeds its hounds. Evergrove druids imbued fel cannonballs with nature's wrath, the Legion's own fel cannons were turned on the two warp-gates that move and strengthen the void terrors, and Baelmon the Hound-Master, who keeps the portal's ritual alive, fell with the druids' help.",
+    "triggers": [
+     [
+      5,
+      10912
+     ]
+    ],
+    "sources": [
+     "quests 10910, 10904, 10911, 10912"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 10810, 10812, 10819, 10820, 10821",
+   "quests 10910, 10904, 10911, 10912",
+   "item 31384 Damaged Mask dropped by Fel Corrupter 21300",
+   "quest 10753 description and reward text (Bladed Gulch corruption, Faradrella of Evergrove)"
+  ],
+  "notes": "Converted: opening is the item-started 10810 (ACCEPT kept) and the corruption it comes from (10753, Faradrella 22133 at Evergrove); the mask's nature and Antelarion's interest moved to part 1 (DONE 10812). Moved: the deception and Doomcryer's end to part 2 (DONE 10821), Death's Door to part 3 (DONE 10912). Forge Camp: Anger 352217 part 1 tells only the demon's suspicion (ACCEPT 10821). requiredState 8. Before: Faction 0: all quests AllowableRaces 0. Single entry point; 10810 is item-started (QuestType 2, not auto-complete). Doomcryer 'rival lieutenant' made an underling suspected of undermining him (quest 10821)."
+ },
+ {
+  "id": 352259,
+  "kind": 3,
+  "zone": 3522,
+  "sort": 10,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Stasis Chambers of Bash'ir",
+  "body": "Great stasis chambers stand at Bash'ir Landing, much larger cousins of the Ethereum's prisons elsewhere, and an image of Commander Ameer of the Protectorate waits among them to learn what they hold. The Sha'tari Skyguard has its own business at the landing. Every couple of hours Sky Commander Keller's aether-techs launch an assault on the landing's crystalforge, which they prefer to call research, and those who keep the ethereals off them long enough may buy the surplus the crystalforge yields.",
+  "triggers": [
+   [
+    5,
+    10974
+   ],
+   [
+    4,
+    10976
+   ],
+   [
+    4,
+    11119
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Evidence from Stasis Chamber Alpha confirmed Ameer's fears: the chambers hold ferocious beasts and creatures from many different worlds, which the Ethereum mean one day to command. Ameer resolved to destroy them all, forging stasis chamber keys from captured prison keys so that each chamber can be opened and whatever lurks within destroyed.",
+    "triggers": [
+     [
+      5,
+      10974
+     ]
+    ],
+    "sources": [
+     "quest 10974 reward text",
+     "quest 10975 request and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Among the spoils of the chambers was a Mark of the Nexus-King, the last piece of a key to the stasis chambers hidden in the Mana-Tombs of Auchindoun. Its glyphs spoke of two final prisons there, one near the entrance and one near Nexus-Prince Shaffar.",
+    "triggers": [
+     [
+      5,
+      10976
+     ]
+    ],
+    "sources": [
+     "quest 10976 description and reward text",
+     "quest 10977 description"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 10974 description and reward text",
+   "quest 10975 request and reward text",
+   "quest 10976 description",
+   "quest 10977 description",
+   "quest 11119 description and reward text",
+   "netherstorm.json 352340 (the trail leads to Bash'ir's Landing)"
+  ],
+  "notes": "Converted: the opening no longer says the trail leads Ameer here from Netherstorm (that is Netherstorm 352340 part 5 on DONE 10973, and ACCEPT 11119 unlocks this opening for Skyguard visitors who never did that chain); it keeps the chambers, the image (22919 stands here) and the Skyguard raids (11119). Moved: what the chambers hold and the key forging to part 1 (DONE 10974, also kept on the entry), the Mark and the Mana-Tombs prisons to part 2 (DONE 10976); 10977 (Mana-Tombs heroic) stays an instance lead-in with no outcome. 10975 is auto-complete and not used. Patch 2.1, no tag beyond 8. requiredState 8. Before: Faction 0: all quests AllowableRaces 0. 10974 is started in Netherstorm and turned in to the Image of Commander Ameer (22919) here, so QUEST_DONE; netherstorm.json does not use 10973 or 10974. 10975 is auto-complete and not used; 11119 is from Keller here. Uses the AreaTable name Bash'ir Landing. Check: opening lightly reworded so it does not repeat Bash'ir Landing's opening word for word."
+ }
 ]

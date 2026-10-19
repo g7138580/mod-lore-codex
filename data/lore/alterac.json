@@ -1,26 +1,926 @@
 [
-{"id":3600,"kind":0,"zone":36,"sort":0,"faction":0,"title":"Alterac Mountains","body":"These cold peaks between Lordaeron and the Hillsbrad foothills were once a proud human kingdom. Alterac began as a city-state of the old Arathorian empire, but in the Second War its king, Aiden Perenolde, secretly struck a bargain with Orgrim Doomhammer and let the Horde march through his mountain passes unopposed. When the treason came to light, King Terenas marched into Alterac, declared martial law and deposed him. The kingdom never recovered. Today the Crushridge ogres squat in the ruined capital, while the Syndicate, a gang of thieves led by Alterac's disgraced nobles under Aliden Perenolde, holds Strahnbrad and the Uplands and dreams of taking the land back. Darker masters steer the Syndicate in secret. On the shore of Lordamere Lake lies the crater left by Dalaran, its wizards still patrolling the ruins, and hidden in the eastern hills the assassins of Ravenholdt wage their own quiet war on the Syndicate. Yetis haunt the high caves, and both Southshore and Tarren Mill send agents north into the snow.","triggers":[[1,36]],"sources":["warcraft.wiki.gg/wiki/Kingdom_of_Alterac (Arathorian city-state, Perenolde's pact with Doomhammer, Terenas martial law, Aliden founded the Syndicate)","warcraft.wiki.gg/wiki/Alterac_Mountains (Crushridge in Alterac City, Syndicate in Strahnbrad)","quest 505 description (Syndicate led by villainous nobles of fallen Alterac)","quest 537 and page_text 248-259 (Argus Wake controls the Syndicate)","quest 602 description (Dalaran crater)","warcraft.wiki.gg/wiki/Ravenholdt (war on the Syndicate)","DB spawns: yetis in Growless Cave and The Headland"],"notes":"verified"},
-{"id":3601,"kind":1,"zone":36,"sort":1,"faction":0,"title":"Sofera's Naze and Corrahn's Dagger","body":"North and west of Tarren Mill, where the foothills climb into the mountains, the Syndicate keeps two rough camps at Sofera's Naze and Corrahn's Dagger. Footpads and thieves loiter about the tents, and a few drunkards among them sing the praises of Southshore stout. Papers left on the camp tables are worth reading: one lists black masks, paralytic poison, stolen guard uniforms and rations for twenty men, all for an important mission against Southshore, signed by a Baron V. Another, left with a dying henchman named Valik, orders him to guard a slave until it can be moved north, out of sight. Southshore's new magistrate blames the Syndicate for his predecessor's murder, and these camps are where he looked first.","triggers":[[1,1678],[1,1679]],"sources":["quest 505 description (camps in Sofera's Naze and Corrahn's Dagger north and west of Tarren Mill; previous magistrate assassinated)","page_text 371 (Foreboding Plans supply list, signed Baron V.)","quests 510, 511 (started from Syndicate Documents gameobjects 1740, 186420)","creature_text 2440 (Drunken Footpad on Southshore stout)","DB spawns: Syndicate Footpad 2240, Thief 2241, Drunken Footpad 2440 in areas 1678 and 1679","page_text 249 (Syndicate Missive addressed to Valik: guard the slave, moving it north)","quest 535 description (Valik injured and dying)","DB spawn: Henchman Valik 2333 in area 1678"],"notes":"Added Valik and his missive from the Taretha chain (owned by Hillsbrad) as camp detail, without quest triggers."},
-{"id":3602,"kind":1,"zone":36,"sort":2,"faction":0,"title":"Strahnbrad","body":"Strahnbrad was a mountain village of Lordaeron, defended in the Third War by Uther and Prince Arthas when Blackrock orcs raided it for slaves to sacrifice. Many of its people died, and the rest are long gone. The Syndicate now uses the town as its main base, and spies, wizards and the mysterious shadow mages of the Argus Wake walk its streets. Southshore's magistrate believes the gang's noble leaders hide here among common cutthroats, betrayed only by the signet rings of Alterac they still wear. The gang keeps prisoners here too: the orc Gol'dir was held in chains in a locked room, while the jailor Borhuin kept the key.","triggers":[[1,280]],"sources":["warcraft.wiki.gg/wiki/Strahnbrad (Third War Blackrock raid, Uther and Arthas; Syndicate main base; Gol'dir in a town cell, upstairs in the inn pre-Cataclysm)","quest 512 description (headquarters, nobles with signet rings)","quest 503 reward text","creature_text 2316 (Borhuin has the key)","DB spawns: Syndicate Spy 2242, Syndicate Wizard 2319, Argus Shadow Mage 2318, Gol'dir 2316, Jailor Borhuin 2431 in area 280"],"notes":"Gol'dir's cell was placed in an upstairs room of the inn; the wiki now says only a town cell and creature_text 2316 says a room, so made general."},
-{"id":3603,"kind":1,"zone":36,"sort":3,"faction":0,"title":"The Headland","body":"The Headland is a rugged spur of the mountains above the Hillsbrad foothills, riddled with caves where ferocious yetis den. In the Foothill Caverns here, the wizard Helcular raised two ceremonial pyres, the Flame of Azel and the Flame of Veraz, for the ritual that was meant to make him a lich, and their fires still burn. A mob from Southshore killed him before the work was done, and the yetis took over his lair. Mountain lions prowl the cliffs, and dwarves of the Stormpike clan keep a camp here on the road north.","triggers":[[1,1680]],"sources":["quest 552 description (Helcular nearly a lich, lynch mob, yeti overtook his ritual lair)","quest 553 description (Flame of Azel and Flame of Veraz in the Foothill Caverns)","DB spawns: Flame of Azel 1768 and Flame of Veraz 1769 in area 1680; Cave Yeti 2248, Ferocious Yeti 2249; Lieutenant Haggerdin 13841, Prospector Stonehewer 13816, Thanthaldis Snowgleam 13217 in area 1680","creature_loot_template: Helcular's Rod 3708 drops from yetis","warcraft.wiki.gg/wiki/Helcular"],"notes":"Dropped AREA 277 (Foothill Caverns is not in reachable_areas). Helcular's quest chain belongs to Hillsbrad; kept only the lair and pyres as place detail and removed the scattered belongings claim (quest 552 says one yeti has the rod)."},
-{"id":3604,"kind":1,"zone":36,"sort":4,"faction":0,"title":"Growless Cave","body":"High in the mountains above the Foothill Caverns, Growless Cave is a den of mountain yetis and the giants of their kind. Helcular built the third of his pyres here, the Flame of Uzel, and its fire still burns in the cold. Hunters who know the old lore use it as a lure: meat burned on the flame draws Frostmaw, an elusive yeti whose white coat hides him against the snow. During the Feast of Winter Veil the cave gains a stranger tenant, a creature called the Abominable Greench, who steals holiday treats and leaves those who cross him frozen into snowmen.","triggers":[[1,1683]],"sources":["quest 553 description (Flame of Uzel in a cave above the caverns, further north)","quest 1136 description (Frostmaw, white coat, lured with a scroll)","warcraft.wiki.gg/wiki/Growless_Cave (yeti, Flame of Uzel, Frostmaw lured by burning meat)","quests 6983, 7043 descriptions (Greench stole the treats, turned the speaker into a snowy mess)","DB spawns: Mountain Yeti 2250, Giant Yeti 2251, Flame of Uzel 1770, The Abominable Greench 13602, Strange Snowman 13636 in area 1683"],"notes":"verified"},
-{"id":3605,"kind":1,"zone":36,"sort":5,"faction":0,"title":"Ruins of Alterac","body":"The capital of Alterac was emptied when the kingdom fell, and after the Third War its deserted halls were claimed by the Crushridge ogres. Their warlord Mug'thol rules from the ruins of the old palace, with warmongers, maulers and ogre mages filling the broken streets. Among them wanders Grel'borg the Miser, a greedy ogre mage who spends his days digging through the rubble for baubles; rumor says he found the Perenolde Tiara, an heirloom of the old royal family crafted by Ironforge jewelers and set with emeralds. Wrecked meat wagons near the northern gate hint that the undead once tried to storm the place.","triggers":[[1,281]],"sources":["warcraft.wiki.gg/wiki/Ruins_of_Alterac (deserted ruins taken by Crushridge under Mug'thol after the Third War; meat wagons near the northern gate)","warcraft.wiki.gg/wiki/Mug'thol (based in the ruins of the old palace)","quest 543 description (Perenolde Tiara, Ironforge jewelers, emeralds, Grel'borg)","page_text 372 (Grel'borg searching for baubles)","quest 504 description","DB spawns: Crushridge Warmonger 2287, Mauler 2254, Enforcer 2256, Mage 2255, Mug'thol 2257, Grel'borg 2417 in area 281"],"notes":"verified"},
-{"id":3606,"kind":1,"zone":36,"sort":6,"faction":0,"title":"Crushridge Hold","body":"Beside the ruined capital, the Crushridge ogres have dug an ogre mound of their own into the mountains. Crushridge Hold is their stronghold, crowded with ogres and brutes, and their camps spill out into Slaughter Hollow and along the old road at Gallows' Corner, where they prowl around a ruined scout tower. The slopes here are rich in mithril and truesilver, and at least one bold trader in engineering supplies has set up shop in Slaughter Hollow. Southshore pays bounties on ogre knucklebones, fearing that if the Crushridge grow comfortable here they will move down into the foothills next.","triggers":[[1,282],[1,283],[1,1357]],"sources":["quest 500 description (ogre mound near the ruined city; fear they will move into the foothills)","warcraft.wiki.gg/wiki/Crushridge_clan (Crushridge Hold, Slaughter Hollow)","warcraft.wiki.gg/wiki/Gallows'_Corner (crossroads near the ruins, ogres around a ruined scout tower)","DB spawns: Crushridge Ogre 2252, Brute 2253 in areas 282, 283, 1357; Mithril and Truesilver Deposits; Rizz Loosebolt 2684 (Engineering Supplies) in area 283"],"notes":"Opening reworded: quest 500 does not say which the ogres took first."},
-{"id":3607,"kind":1,"zone":36,"sort":7,"faction":0,"title":"The Uplands","body":"North of Strahnbrad lie the Uplands, the farmlands that once fed the kingdom of Alterac. Today this is where the Syndicate is strongest. Sentries and saboteurs guard its camps, the shadow mages of the Argus Wake come and go, and Baron Vardus, a cold-hearted Alterac noble wanted by both Southshore and the Forsaken, has been seen among them. Not every house here belongs to a thief. Beside the lake lives Nancy Vishas, whose husband serves the Scarlet Crusade as an interrogator, and who waits anxiously at home whenever his work at the Monastery keeps him late.","triggers":[[1,284]],"sources":["warcraft.wiki.gg/wiki/The_Uplands (bread basket of Alterac; Syndicate strongest)","quest 537 description (Uplands where the Syndicate is strongest, north of Strahnbrad)","quest 566 description (Vardus last spotted in the Uplands)","quest 1051 description (Interrogator Vishas, wife Nancy along Lake Lordamere)","creature_text 3984, 3985","DB spawns: Syndicate Sentry 2243, Saboteur 2245, Argus Shadow Mage 2318, Baron Vardus 2306, Nancy 3984, Grandpa Vishas 3985 in area 284"],"notes":"verified"},
-{"id":3608,"kind":1,"zone":36,"sort":8,"faction":0,"title":"Dandred's Fold","body":"On the western edge of the Uplands, a farm and manor house look down on a small harbor on Lordamere Lake, near the Misty Shore. This is Dandred's Fold, the residence of Lord Aliden Perenolde, who styles himself lord of these lands and runs the Syndicate from here. Its grounds are guarded by the gang's assassins and enforcers. Within the manor, Perenolde keeps his mistress Elysa, and he meets here with Nagaz of the Argus Wake, the hidden power whose hand guides the Syndicate's ambitions. Snapping turtles crawl along the misty lakeshore below.","triggers":[[1,1682],[1,1681]],"sources":["warcraft.wiki.gg/wiki/Dandred's_Fold (farm and manor on the westernmost Uplands, harbor on Lordamere Lake, Misty Shore; Perenolde, Elysa, Nagaz, assassins and enforcers)","quest 506 description (styled himself lord of this land)","quest 507 description (manor on the shores of Lordamere Lake)","DB spawns: Lord Aliden Perenolde 2423, Elysa 2317, Nagaz 2320 side by side; Syndicate Assassin 2246, Enforcer 2247; Snapjaw 2408 in areas 1682 and 1681"],"notes":"verified; Nagaz near Perenolde is supported by warcraft.wiki.gg/wiki/Nagaz (positioned himself close to Perenolde) and spawns 2 yards apart."},
-{"id":3609,"kind":1,"zone":36,"sort":9,"faction":0,"title":"Lordamere Internment Camp","body":"On a hill above the crater of Dalaran stands the Lordamere Internment Camp, the only prison camp in the mountains, held by Dalaran's shield guards and theurgists under Warden Belamoore. Its newest inmates are four Forsaken who deserted the Undercity after breaking into a secure vault and stealing four artifacts, pieces of bloodstone the royal apothecaries needed for their studies. The thieves fled to Dalaran, and the wizards quarantined them here. The Dark Lady wants her property returned and the deserters punished.","triggers":[[1,278]],"sources":["warcraft.wiki.gg/wiki/Lordamere_Internment_Camp (only internment camp in the mountains, hill overlooking the crater, Dalaranian forces, Warden Belamoore, four Forsaken deserters)","quest 544 description and reward text","items 3688-3691 Bloodstone Oval, Marble, Shard, Wedge dropped by Kegan Darkmar 2414, Ricter 2411, Alina 2412, Dermot 2413","DB spawns: Dalaran Shield Guard 2271, Theurgist 2272, Warden Belamoore 2415 in area 278"],"notes":"verified"},
-{"id":3610,"kind":1,"zone":36,"sort":10,"faction":0,"title":"Dalaran Crater","body":"Dalaran, city of the Kirin Tor, was laid waste in the Third War when the Burning Legion's Archimonde was summoned before its walls. The wizards later raised a vast violet dome over the heart of their ruins and rebuilt behind it, and in time they lifted their reborn city whole into the skies of Northrend. All that remains on the shore of Lordamere Lake is a gaping crater beneath a dome now faded nearly to nothing, ringed by broken walls. Some mages stayed behind. Summoners and their bound earth elementals still patrol the ruined outskirts, workers labor in the rubble, and a few archmages keep watch over what is left.","triggers":[[1,279]],"sources":["warcraft.wiki.gg/wiki/Dalaran_Crater (Wrath: city lifted to Northrend leaving a gaping crater; dome remains, nearly transparent)","warcraft.wiki.gg/wiki/Alterac_Mountains (Archimonde destroyed Dalaran)","quest 545 description (vast magical dome, ruined outskirts patrolled by wizards and elemental slaves)","quest 602 description (rebuilt and moved to Northrend, massive crater; some mages remained)","quest 557 (Bracers of Earth Binding)","creature_text 2359 (elemental slave cracks, rubble)","DB spawns: Dalaran Summoner 2358, Elemental Slave 2359, Dalaran Worker 2628, Ansirem 2543, Archmage Cedric 18165 in area 279"],"notes":"verified; the faded dome over the crater matches 3.3.5 (warcraft.wiki.gg/wiki/Dalaran_Crater, Wrath section)."},
-{"id":3611,"kind":1,"zone":36,"sort":11,"faction":0,"title":"Ravenholdt Manor","body":"Hidden in the eastern hills above Hillsbrad, at the end of a winding mountain path northwest of Durnholde, stands Ravenholdt Manor, seat of the Assassin's League. Outsiders are not welcome. The guards greet strangers with a warning to watch their backs, and the assassins on the grounds are quicker still to show their contempt. Within, Lord Jorach Ravenholdt presides over a guild of thieves and killers that admits only the most gifted. The manor has its own poison seller, a specialist engineer, a garden kept by a landscape architect, and a training arena that is the domain of the orc Master Kang. Its long war is with the Syndicate.","triggers":[[1,3486]],"sources":["warcraft.wiki.gg/wiki/Ravenholdt_Manor (eastern Alterac, path northwest of Durnholde through a small cave; Simone Cantrell's garden; Master Kang, orc, training arena)","warcraft.wiki.gg/wiki/Ravenholdt (Assassin's League, only those of extraordinary prowess, outsiders not welcome, conflict with the Syndicate)","quest 8233 description (path in the mountains northwest of Durnholde)","npc_text for gossip menus 4861, 4862 (Watch your back, stranger; You dare set foot inside Ravenholdt Manor, worm?)","creature_template subnames: Smudge Thunderwood 6779 Poison Supplies, Zan Shivsproket 6777 Speciality Engineer, Simone Cantrell 7324 Landscape Architect","DB spawn: Master Kang 7325 in area 3486"],"notes":"Access path made general (the cave route is described on the wiki for the current game); training ring corrected to arena per wiki."},
-{"id":3612,"kind":1,"zone":36,"sort":12,"faction":0,"title":"Chillwind Point","body":"On the far eastern edge of the mountains, beside the river that runs north past Tarren Mill, a small rise is crowned by the ruins of an ancient troll site. Chill winds sweep down through a nearby ravine from the Plaguelands to the north, and give the point its name. Here the jungle troll hermit Bath'rah the Windwatcher keeps his camp and his cauldron, watching the ruins for a great elemental lord of the winds he calls Cyclonian. A red drake, Narillasanz, is sometimes seen in these eastern heights.","triggers":[[1,1684]],"sources":["warcraft.wiki.gg/wiki/Chillwind_Point (small rise on the far eastern edge, ancient troll ruin, named for chill winds from the Western Plaguelands, Bath'rah)","quest 1791 description (river along Tarren Mill's eastern flank, ruins on its eastern bank)","quest 1712 description (watching this site for Cyclonian, the wind lord)","warcraft.wiki.gg/wiki/Narillasanz (red drake in the Alterac Mountains)","DB spawns: Bath'rah 6176, Bath'rah's Cauldron 89931, Narillasanz 2447 in area 1684"],"notes":"verified"},
-{"id":3613,"kind":2,"zone":36,"sort":1,"faction":0,"title":"Lord Aliden Perenolde","body":"Aliden is the eldest son of Aiden Perenolde, the king who sold out the Alliance to the Horde. For two years after the Second War he tried to wash that stain from the family name, rising through the ranks at Durnholde under his mentor Aedelas Blackmoore. Then he left Blackmoore's service for the mountains of Alterac and founded the Syndicate. From his manor at Dandred's Fold he styles himself lord of the land, and he means to enslave the orcs who stand against him, just as his father and Blackmoore once planned. Nagaz of the Argus Wake keeps close at his side, and his young mistress Elysa wore a pendant the Warchief himself wanted back.","triggers":[[3,2423],[4,507]],"sources":["warcraft.wiki.gg/wiki/Aliden_Perenolde (eldest son of Aiden; two years clearing the name; Durnholde under Blackmoore; left to run operations in Alterac)","warcraft.wiki.gg/wiki/Kingdom_of_Alterac (Aliden founded the Syndicate)","quest 506 description (styled himself lord, plans to enslave orcs like his father and Blackmoore, mistress Elysa, pendant)","quest 507 description","warcraft.wiki.gg/wiki/Nagaz (positioned himself close to Perenolde)"],"notes":"'For years' made 'two years' per the wiki quote; 'lord of Alterac' softened to quest 506's 'lord of this land'; added Nagaz."},
-{"id":3614,"kind":2,"zone":36,"sort":2,"faction":0,"title":"Mug'thol","body":"Mug'thol is warlord of the Crushridge ogres and master of the ruined city of Alterac. He rules from what is left of the old palace, with his loyal lieutenants Targ, Muckrake and Glommus at his side and the greedy ogre mage Grel'borg the Miser among his followers. He was not always his own master. The Banshee Queen once bound him to her will through a banshee's possession and sent him into Alterac after a relic, the Crown of Will. He put the crown on, and it set him free. The Forsaken have not forgiven the insult, and Southshore fears his ogres will push down into the foothills next.","triggers":[[3,2257],[4,520]],"sources":["quest 495 description (sent to retrieve the Crown of Will, tried it on, resisted the possession)","warcraft.wiki.gg/wiki/Mug'thol (possessed by a banshee sister, old palace, lieutenants, founded the Crushridge in the ruins)","quest 519 description (Targ, Muckrake, Glommus loyal lieutenants)","quest 520 description","quest 500 description (fear the ogres will move into the foothills)"],"notes":"Reframed around his rule; the Crown of Will storyline belongs to Undercity (149713), so it is only mentioned in passing. Faction 0: Mug'thol (faction 45) is hostile to all."},
-{"id":3615,"kind":2,"zone":36,"sort":3,"faction":2,"title":"Gol'dir","body":"Gol'dir led the band of orc warriors the Warchief sent from Durotar to look into the Syndicate and to recover a small trinket Thrall wanted back. The humans overwhelmed them at Durnholde, and Gol'dir was carried off and moved from place to place until the Syndicate chained him in Strahnbrad. His captors set him to hauling burdens and digging, and the jailor Borhuin kept the key to his chains. There Aliden Perenolde himself came to boast of his plans to enslave the orcs, bringing along a mistress who wore the very pendant the Warchief sought. Gol'dir counts his own suffering as unimportant: what matters is that his people learn what he heard.","triggers":[[2,2316],[5,503]],"sources":["quest 498 description and reward text (expedition, Durnholde, Gol'dir taken elsewhere)","quest 533 description (humans moving him around)","quest 503 reward text (led the expedition from Durotar, forced to work hauling and digging)","quest 506 description (Perenolde's visit and plans)","creature_text 2316","item 3704 Rusted Iron Key from Jailor Borhuin 2431"],"notes":"Last line corrected: quest 503 says the news must reach whoever now leads his group, not the Warchief. Folded in the jailor detail from the removed Taretha chain entry. Faction 2: template 29 is hostile to the Alliance and quest 503 is Horde only."},
-{"id":3616,"kind":2,"zone":36,"sort":4,"faction":0,"title":"Baron Vardus","body":"Baron Vardus is a noble of fallen Alterac, known for his cold heart and brutal methods, and a high-ranking member of the Syndicate. A supply list for a raid on Southshore bears the signature of a Baron V., the gang's quartermaster, and a contract for the murder of Magistrate Henry Maleb, sealed in red wax with a distinctive signet, was signed with his name. That was enough for Southshore to demand his head. The Forsaken want him dead as well, for crimes against them, and High Executor Darthalia of Tarren Mill has posted a bounty. He was last seen in the Uplands.","triggers":[[3,2306],[4,523],[4,566]],"sources":["quest 523 description (noble of Alterac, cold heart, brutal practices, signed the contract)","quest 522 description (sealed with red wax and a distinctive signet ring)","page_text 371 (signed Baron V.)","quest 566 description (crimes against the Forsaken, high-ranking member, Uplands)","warcraft.wiki.gg/wiki/Syndicate (high-ranking member)","warcraft.wiki.gg/wiki/Baron_Vardus (Syndicate quartermaster, citing Foreboding Plans)"],"notes":"'One of the highest-ranking' softened to 'a high-ranking' (quest 566); the signet is not said to be his own. The wiki identifies Vardus as the quartermaster who signed Foreboding Plans. Faction 0: hostile to both, quests 523 (Alliance) and 566 (Horde)."},
-{"id":3617,"kind":2,"zone":36,"sort":5,"faction":0,"title":"Nagaz","body":"Nagaz is a hierophant of the Argus Wake, the shadowy circle that quietly steers the Syndicate, and the hand of his master's will in Alterac. He keeps close to Lord Perenolde at Dandred's Fold. In a letter to that master, written in one of the Wake's most obscure ciphers and signed in the name of Sargeras, he mocked the Alterac nobles for a bargain they would regret. He meant to steer them toward Stromgarde and so win the Wake a nation of its own, from which to prepare the way for the Third Host of the Burning Legion. Southshore wants his head, though its magistrate fears Nagaz is only a servant and the Wake runs far deeper.","triggers":[[3,2320],[4,537],[4,551]],"sources":["page_text 248, 257, 258, 259 (Decrypted Letter)","quest 537 description and reward text (Nagaz of the Argus Wake, servant of another)","warcraft.wiki.gg/wiki/Argus_Wake (hierophant, controlled the Syndicate)","DB spawn: Nagaz 2320 beside Perenolde 2423 in Dandred's Fold","page_text 315 (signed Nagaz, Argus Heirophant, in Sargeras' name; master appointed head of the Argus Wake by the Council)","quest 537 reward text (merely the servant of another; may run deep)","quest 551 (Ensorcelled Parchment bearing his name, from Worn Wooden Chest 1765 beside Nagaz in Dandred's Fold)"],"notes":"'A leader of the Argus Wake' corrected: page_text 315 shows his master heads the Wake and Nagaz is its hierophant in Alterac. Folded in the Dark Council and Ensorcelled Parchment material from the removed Argus Wake story (3626) and added QUEST_ACCEPT 551. Faction 0: Nagaz is hostile to both."},
-{"id":3618,"kind":2,"zone":36,"sort":6,"faction":0,"title":"Lord Jorach Ravenholdt","body":"Lord Jorach Ravenholdt is master of the Assassin's League, the order of thieves and killers that gathers at Ravenholdt Manor. After the Third War he took up the hunt for the Syndicate in these mountains, and the League has fought the gang ever since. With far fewer blades than their enemy has members, the League pays skilled rogues to shame Syndicate members by stealing their emblems. His grand master, Fahrad, trains the guild's rogues and sends anyone else away with a threat. Jorach greets those he needs with open arms and rewards loyal service generously, but keeps his own secrets close: the contents of a sealed azure bag he once lost were, he said, a private matter.","triggers":[[2,6768],[2,6707]],"sources":["warcraft.wiki.gg/wiki/Jorach_Ravenholdt (leader of the League, hunted the Syndicate after the Third War, Sealed Azure Bag)","warcraft.wiki.gg/wiki/Ravenholdt (outnumbered by the Syndicate, emblems stolen to shame members)","quest 6701 (Syndicate Emblems)","quests 8233, 8234, 8236 (welcome, private matter, golden glow from the bag)","npc_text 4838, 4839 (Fahrad gossip menu 3984)","quest 6701 starts from Ravenholdt Guard 6766"],"notes":"Emblem bounty credited to the League (quest 6701 is given by the guards, not Jorach); added Fahrad so his TALK backup has a reason. Both are faction template 471, neutral to both."},
-{"id":3619,"kind":2,"zone":36,"sort":7,"faction":1,"title":"Archmage Ansirem Runeweaver","body":"Ansirem Runeweaver is a senior archmage of the Kirin Tor, and by the Third War sat on the Council of Six. When Antonidas fell he fought outside the walls of Dalaran against Arthas and the Scourge while Kel'Thuzad called down Archimonde. Now that Dalaran has risen to Northrend, he is among the few mages who stayed at the crater. His learning ranges far: years ago he wrote a tome on the legends of the Gurubashi Empire, and he cannot resist a magical puzzle. His willful daughter Catelyn gave up the mage's life and ran off to Booty Bay to become a pirate.","triggers":[[2,2543],[5,602]],"sources":["warcraft.wiki.gg/wiki/Ansirem_Runeweaver (Kirin Tor, Council of Six, fought outside Dalaran while Kel'Thuzad summoned Archimonde)","quest 602 description and reward text (some mages remained; tome on the Gurubashi Empire; mages cannot resist a magical puzzle)","quest 603 description (willful daughter Catelyn ran off to Booty Bay to be a pirate)","creature_text 2543"],"notes":"verified; Catelyn also appears in the Stranglethorn draft's Stone of the Tides story (trigger 616 only, no overlap)."},
-{"id":3620,"kind":2,"zone":36,"sort":8,"faction":0,"title":"Archmage Cedric","body":"Archmage Cedric is an agent of the Violet Eye, the order the Kirin Tor assigned to watch over Karazhan and Medivh. He waits among the ruins at the edge of Dalaran Crater, unmoved by the desolation around him and certain that Dalaran is as powerful as ever. When Archmage Alturus sent word of a demonic presence stirring in the sealed tower, it was Cedric who read the report and sent it on to Shattrath, to Khadgar, the one man still living who was thought able to open Karazhan again. Those who help the Violet Eye may earn its trust, and its badge.","triggers":[[2,18165],[4,9829]],"sources":["quest 9826 description (Violet Eye, agents of the Kirin Tor watching Karazhan; Cedric in the outskirts of Dalaran Crater)","quest 9829 description (demonic emanation, Khadgar in Shattrath)","quest 9860 description and reward text (badge of the Violet Eye)","npc_text for gossip menu 7593 (Dalaran is as powerful as ever)"],"notes":"verified; the Deadwind Pass draft mentions Cedric in passing (triggers 9824, 9825, 11216, no overlap)."},
-{"id":3621,"kind":2,"zone":36,"sort":9,"faction":0,"title":"Bath'rah the Windwatcher","body":"Bath'rah is a jungle troll shaman and weaponcrafter who has taken up a hermit's life at the troll ruins of Chillwind Point. For ages, he says, he has watched the site, waiting for a champion able to bring down Cyclonian, the lord of the winds who can be called there. Those who gather what his summoning needs may face the elemental, and from its whirlwind heart Bath'rah will forge a weapon. Lately the spirits of the place have turned against him, and he has sought a spirit totem, strengthened with troll voodoo, to guard his sleep.","triggers":[[2,6176]],"sources":["warcraft.wiki.gg/wiki/Bath'rah_the_Windwatcher (jungle troll, weaponcrafter turned hermit, Chillwind Point)","quest 1791 description (skilled weapon maker and powerful shaman)","quests 1712, 1713, 1792 (Cyclonian, whirlwind heart, weapon)","quests 8412, 8413 (spirits no longer like him, spirit totem, voodoo, a full night's rest)"],"notes":"verified"},
-{"id":3622,"kind":2,"zone":36,"sort":10,"faction":0,"title":"Nancy Vishas","body":"Nancy Vishas lives in a house in the Uplands near Lake Lordamere, where she waits anxiously for her husband to come home from his work at the Monastery. Her husband is the Scarlet Crusade's Interrogator Vishas, and his work is torture. One of his victims, the Forsaken Vorrel Sengutz, was held and tormented for weeks, and saw his own wedding ring taken and given to Nancy. Vorrel's dying wish was that she be found and slain, and the ring returned to his widow Monika in Tarren Mill. An old man called Grandpa Vishas shares the house and has no patience for her fretting.","triggers":[[3,3984],[4,1051]],"sources":["quest 1051 description and reward text","creature_text 3984 (Sidney is late, work at the Monastery), 3985 (He's your husband, woman)","DB spawns: Nancy Vishas 3984 and Grandpa Vishas 3985 in area 284; Monika Sengutz 3982 in Tarren Mill","warcraft.wiki.gg/wiki/Interrogator_Vishas (wife Nancy, cottage on Lordamere Lake)"],"notes":"Husband's first name removed: Nancy calls him Sidney in creature_text but the wiki names him James. Faction 0: Nancy (template 16) is hostile to both; quest 1051 is Horde only."},
-{"id":3627,"kind":3,"zone":36,"sort":5,"faction":2,"title":"The Bloodstone Thieves","body":"Some months ago four Forsaken deserted the Undercity, and before they fled they broke into a secure vault and stole four artifacts the royal apothecaries needed for their studies. They ran to Dalaran, and the wizards locked them away in the Lordamere Internment Camp. Magus Wordeen Voidglare, who had come to Tarren Mill only to research, found himself charged with getting the artifacts back for the Dark Lady and seeing the deserters, Kegan Darkmar among them, brought to justice. The Magus has his own interests too. He has the patrols of summoners and elemental slaves around Dalaran thinned so that the ruins can be searched for magical treasures, and Keeper Bel'varil, who serves him, collects the stone tokens the wizards use to command their elementals, and the binding bracers set on the elementals themselves, for the Magus to study.","triggers":[[4,544],[4,556]],"sources":["quests 544, 545, 556, 557 (descriptions and reward texts)","creature_queststarter: Magus Wordeen Voidglare 2410 starts 544, 545; Keeper Bel'varil 2437 starts 556, 557"],"notes":"'His assistant' made 'who serves him' (not stated in the quests). Faction 2: quests 544 and 556 are AllowableRaces 690."}
+ {
+  "id": 3600,
+  "kind": 0,
+  "zone": 36,
+  "sort": 0,
+  "faction": 0,
+  "title": "Alterac Mountains",
+  "body": "These cold peaks between Lordaeron and the Hillsbrad foothills were once a proud human kingdom. Alterac began as a city-state of the old Arathorian empire, but in the Second War its king, Aiden Perenolde, secretly struck a bargain with Orgrim Doomhammer and let the Horde march through his mountain passes unopposed. When the treason came to light, King Terenas marched into Alterac, declared martial law and deposed him. The kingdom never recovered. Today the Crushridge ogres squat in the ruined capital, while the Syndicate, a gang of thieves led by Alterac's disgraced nobles under Aliden Perenolde, holds Strahnbrad and the Uplands and dreams of taking the land back. On the shore of Lordamere Lake lie the ruins of Dalaran, its wizards still patrolling the outskirts, and hidden in the eastern hills the assassins of Ravenholdt wage their own quiet war on the Syndicate. Yetis haunt the high caves, and both Southshore and Tarren Mill send agents north into the snow.",
+  "triggers": [
+   [
+    1,
+    36
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Kingdom_of_Alterac (Arathorian city-state, Perenolde's pact with Doomhammer, Terenas martial law, Aliden founded the Syndicate)",
+   "warcraft.wiki.gg/wiki/Alterac_Mountains (Crushridge in Alterac City, Syndicate in Strahnbrad)",
+   "quest 505 description (Syndicate led by villainous nobles of fallen Alterac)",
+   "quest 602 description (Dalaran crater)",
+   "warcraft.wiki.gg/wiki/Ravenholdt (war on the Syndicate)",
+   "DB spawns: yetis in Growless Cave and The Headland"
+  ],
+  "notes": "Converted: dropped the line that darker masters steer the Syndicate in secret (the Argus Wake behind the gang is revealed by the decoded letter: Hillsbrad 26727 part 3 on QUEST_DONE 525, and Nagaz 3617 part 1 here); the crater left by Dalaran (Wrath) became the ruins of Dalaran, true in every era, with the crater told in 3610's minState 13 part. No parts. Earlier: verified"
+ },
+ {
+  "id": 3601,
+  "kind": 1,
+  "zone": 36,
+  "sort": 1,
+  "faction": 0,
+  "title": "Sofera's Naze and Corrahn's Dagger",
+  "body": "North and west of Tarren Mill, where the foothills climb into the mountains, the Syndicate keeps two rough camps at Sofera's Naze and Corrahn's Dagger. Footpads and thieves loiter about the tents, and a few drunkards among them sing the praises of Southshore stout. The gang's papers pass through these camps, and the documents left lying on the camp tables are worth a careful look. In one camp lies a henchman named Valik, injured and dying, who still has something to bargain with. Southshore's new magistrate blames the Syndicate for his predecessor's murder, and these camps are where he looked first.",
+  "triggers": [
+   [
+    1,
+    1678
+   ],
+   [
+    1,
+    1679
+   ]
+  ],
+  "sources": [
+   "quest 505 description (camps in Sofera's Naze and Corrahn's Dagger north and west of Tarren Mill; previous magistrate assassinated)",
+   "quests 510, 511 (started from Syndicate Documents gameobjects 1740, 186420)",
+   "creature_text 2440 (Drunken Footpad on Southshore stout)",
+   "DB spawns: Syndicate Footpad 2240, Thief 2241, Drunken Footpad 2440 in areas 1678 and 1679",
+   "quest 535 description (Valik injured and dying)",
+   "DB spawn: Henchman Valik 2333 in area 1678",
+   "quest 535 description (Valik injured and dying, will talk for Southshore stout)"
+  ],
+  "notes": "Converted: the missive's orders moved to part 1 (QUEST_DONE 535, whose reward is the Syndicate Missive; 535 is an Alterac quest, QuestSortID 36, used by no other file). The supply list signed Baron V. was dropped from the opening: what it reveals (the mission against Southshore) is Hillsbrad's Maleb and Syndicate part 1 on QUEST_DONE 510, and no Alterac trigger reveals the list. The opening keeps the camps, the drunkards, the documents in general and Valik. Earlier: Valik is camp detail without his quest chain, which Hillsbrad owns.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "For a last mug of Southshore stout, the dying Valik hands over a missive he will no longer need. It orders him to guard a slave, called only it, until the others return, since the captive is no longer safe in the camp. It is to be moved north, far from any chance of being seen, for the writer calls the slave's people brutal animals and wants to give them no reason to rally and attack in force.",
+    "triggers": [
+     [
+      5,
+      535
+     ]
+    ],
+    "sources": [
+     "quest 535 reward text (Here, take this)",
+     "quest_template 535 RewardItem1 3601 Syndicate Missive",
+     "page_text 249 (Syndicate Missive addressed to Valik)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 3602,
+  "kind": 1,
+  "zone": 36,
+  "sort": 2,
+  "faction": 0,
+  "title": "Strahnbrad",
+  "body": "Strahnbrad was a mountain village of Lordaeron, defended in the Third War by Uther and Prince Arthas when Blackrock orcs raided it for slaves to sacrifice. Many of its people died, and the rest are long gone. The Syndicate now uses the town as its main base, and spies, wizards and the mysterious shadow mages of the Argus Wake walk its streets. The gang keeps a prisoner here as well. Somewhere in the town an orc named Gol'dir lies chained in a locked room, calling out to anyone who comes near for the key to his chains, which the jailor Borhuin carries.",
+  "triggers": [
+   [
+    1,
+    280
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Strahnbrad (Third War Blackrock raid, Uther and Arthas; Syndicate main base; Gol'dir in a town cell, upstairs in the inn pre-Cataclysm)",
+   "creature_text 2316 (Borhuin has the key)",
+   "DB spawns: Syndicate Spy 2242, Syndicate Wizard 2319, Argus Shadow Mage 2318, Gol'dir 2316, Jailor Borhuin 2431 in area 280"
+  ],
+  "notes": "Converted: dropped Southshore's belief that the noble leaders hide here behind their signet rings (quest 512, offered on QUEST_DONE 510; Hillsbrad 26727 part 1 tells it). Gol'dir now in the present tense, as found on arrival; his rescue and news are 3615 part 1. No parts. Earlier: Gol'dir's cell made general (creature_text 2316 says a room)."
+ },
+ {
+  "id": 3603,
+  "kind": 1,
+  "zone": 36,
+  "sort": 3,
+  "faction": 0,
+  "title": "The Headland",
+  "body": "The Headland is a rugged spur of the mountains above the Hillsbrad foothills, riddled with caves where ferocious yetis den. These hills have a grim history. The wizard Helcular once kept a ritual lair somewhere among them, close to becoming a lich, until a mob from Southshore found and killed him, and the yetis overran the lair. Mountain lions prowl the cliffs, and dwarves of the Stormpike clan keep a camp here on the road north. Deep in the Foothill Caverns two strange fires, the Flame of Azel and the Flame of Veraz, burn on in the dark.",
+  "triggers": [
+   [
+    1,
+    1680
+   ]
+  ],
+  "sources": [
+   "quest 552 description (Helcular nearly a lich, lynch mob, yeti overtook his ritual lair)",
+   "quest 553 description (Flame of Azel and Flame of Veraz in the Foothill Caverns)",
+   "DB spawns: Flame of Azel 1768 and Flame of Veraz 1769 in area 1680; Cave Yeti 2248, Ferocious Yeti 2249; Lieutenant Haggerdin 13841, Prospector Stonehewer 13816, Thanthaldis Snowgleam 13217 in area 1680",
+   "creature_loot_template: Helcular's Rod 3708 drops from yetis",
+   "warcraft.wiki.gg/wiki/Helcular"
+  ],
+  "notes": "Check: the two flames moved away from Helcular's lair and no longer called ceremonial pyres (quest 553's word, Hillsbrad's reveal on QUEST_DONE 552), so the opening no longer ties them to him. Converted: the pyres are no longer said to be Helcular's: Thaivand reveals that on QUEST_DONE 552 (Hillsbrad 26726 part 1), and no Alterac trigger reveals it, so the link is left to Hillsbrad. Helcular's lair and death stay as backstory (quest 552 description, also in Hillsbrad's Darrow Hill opening), placed only somewhere in these hills. No parts. Earlier: Dropped AREA 277 (Foothill Caverns is not in reachable_areas)."
+ },
+ {
+  "id": 3604,
+  "kind": 1,
+  "zone": 36,
+  "sort": 4,
+  "faction": 0,
+  "title": "Growless Cave",
+  "body": "High in the mountains above the Foothill Caverns, Growless Cave is a den of mountain yetis and the giants of their kind. A lone fire, the Flame of Uzel, burns here in the cold. Hunters who know the old lore use it as a lure: meat burned on the flame draws Frostmaw, an elusive yeti whose white coat hides him against the snow. During the Feast of Winter Veil the cave gains a stranger tenant, a creature called the Abominable Greench, who steals holiday treats and leaves those who cross him frozen into snowmen.",
+  "triggers": [
+   [
+    1,
+    1683
+   ]
+  ],
+  "sources": [
+   "quest 553 description (Flame of Uzel in a cave above the caverns, further north)",
+   "quest 1136 description (Frostmaw, white coat, lured with a scroll)",
+   "warcraft.wiki.gg/wiki/Growless_Cave (yeti, Flame of Uzel, Frostmaw lured by burning meat)",
+   "quests 6983, 7043 descriptions (Greench stole the treats, turned the speaker into a snowy mess)",
+   "DB spawns: Mountain Yeti 2250, Giant Yeti 2251, Flame of Uzel 1770, The Abominable Greench 13602, Strange Snowman 13636 in area 1683"
+  ],
+  "notes": "Check: 'ceremonial pyre' made 'fire' (the pyres' purpose is revealed on QUEST_DONE 552, Hillsbrad). Converted: the Flame of Uzel is no longer called the third of Helcular's pyres (revealed on QUEST_DONE 552, Hillsbrad 26726 part 1). No parts. Earlier: verified"
+ },
+ {
+  "id": 3605,
+  "kind": 1,
+  "zone": 36,
+  "sort": 5,
+  "faction": 0,
+  "title": "Ruins of Alterac",
+  "body": "The capital of Alterac was emptied when the kingdom fell, and after the Third War its deserted halls were claimed by the Crushridge ogres. Their warlord Mug'thol rules from the ruins of the old palace, with warmongers, maulers and ogre mages filling the broken streets. Among them wanders Grel'borg the Miser, a greedy ogre mage who spends his days digging through the rubble for baubles; rumor says he found the Perenolde Tiara, an heirloom of the old royal family crafted by Ironforge jewelers and set with emeralds. Wrecked meat wagons near the northern gate hint that the undead once tried to storm the place.",
+  "triggers": [
+   [
+    1,
+    281
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Ruins_of_Alterac (deserted ruins taken by Crushridge under Mug'thol after the Third War; meat wagons near the northern gate)",
+   "warcraft.wiki.gg/wiki/Mug'thol (based in the ruins of the old palace)",
+   "quest 543 description (Perenolde Tiara, Ironforge jewelers, emeralds, Grel'borg)",
+   "page_text 372 (Grel'borg searching for baubles)",
+   "quest 504 description",
+   "DB spawns: Crushridge Warmonger 2287, Mauler 2254, Enforcer 2256, Mage 2255, Mug'thol 2257, Grel'borg 2417 in area 281"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide; the tiara is the premise of quest 543. Earlier: verified"
+ },
+ {
+  "id": 3606,
+  "kind": 1,
+  "zone": 36,
+  "sort": 6,
+  "faction": 0,
+  "title": "Crushridge Hold",
+  "body": "Beside the ruined capital, the Crushridge ogres have dug an ogre mound of their own into the mountains. Crushridge Hold is their stronghold, crowded with ogres and brutes, and their camps spill out into Slaughter Hollow and along the old road at Gallows' Corner, where they prowl around a ruined scout tower. The slopes here are rich in mithril and truesilver, and at least one bold trader in engineering supplies has set up shop in Slaughter Hollow. Southshore pays bounties on ogre knucklebones, fearing that if the Crushridge grow comfortable here they will move down into the foothills next.",
+  "triggers": [
+   [
+    1,
+    282
+   ],
+   [
+    1,
+    283
+   ],
+   [
+    1,
+    1357
+   ]
+  ],
+  "sources": [
+   "quest 500 description (ogre mound near the ruined city; fear they will move into the foothills)",
+   "warcraft.wiki.gg/wiki/Crushridge_clan (Crushridge Hold, Slaughter Hollow)",
+   "warcraft.wiki.gg/wiki/Gallows'_Corner (crossroads near the ruins, ogres around a ruined scout tower)",
+   "DB spawns: Crushridge Ogre 2252, Brute 2253 in areas 282, 283, 1357; Mithril and Truesilver Deposits; Rizz Loosebolt 2684 (Engineering Supplies) in area 283"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide. Earlier: Opening reworded: quest 500 does not say which the ogres took first."
+ },
+ {
+  "id": 3607,
+  "kind": 1,
+  "zone": 36,
+  "sort": 7,
+  "faction": 0,
+  "title": "The Uplands",
+  "body": "North of Strahnbrad lie the Uplands, the farmlands that once fed the kingdom of Alterac. Today this is where the Syndicate is strongest. Sentries and saboteurs guard its camps, the shadow mages of the Argus Wake come and go, and Baron Vardus, a cold-hearted Alterac noble wanted by the Forsaken, has been seen among them. Not every house here belongs to a thief. Beside the lake lives Nancy Vishas, who waits anxiously at home whenever her husband's work at the Monastery keeps him late, work the old man of the house calls cleansing the world of impure scum.",
+  "triggers": [
+   [
+    1,
+    284
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/The_Uplands (bread basket of Alterac; Syndicate strongest)",
+   "quest 537 description (Uplands where the Syndicate is strongest, north of Strahnbrad)",
+   "quest 566 description (Vardus last spotted in the Uplands)",
+   "quest 1051 description (Interrogator Vishas, wife Nancy along Lake Lordamere)",
+   "creature_text 3984, 3985",
+   "DB spawns: Syndicate Sentry 2243, Saboteur 2245, Argus Shadow Mage 2318, Baron Vardus 2306, Nancy 3984, Grandpa Vishas 3985 in area 284",
+   "creature_text 3985 group 1 (cleansing the world of impure scum)"
+  ],
+  "notes": "Converted: Southshore no longer named among those hunting Vardus (the contract is revealed on QUEST_DONE 522, told in 3616 part 1 on QUEST_ACCEPT 523); the husband is no longer named as the Scarlet Crusade's interrogator (quest 1051, 3622 part 1), only his work at the Monastery as Nancy and Grandpa Vishas speak of it. No parts. Earlier: verified"
+ },
+ {
+  "id": 3608,
+  "kind": 1,
+  "zone": 36,
+  "sort": 8,
+  "faction": 0,
+  "title": "Dandred's Fold",
+  "body": "On the western edge of the Uplands, a farm and manor house look down on a small harbor on Lordamere Lake, near the Misty Shore. This is Dandred's Fold, the residence of Lord Aliden Perenolde, who styles himself lord of these lands and runs the Syndicate from here. Its grounds are guarded by the gang's assassins and enforcers. Within the manor lives Perenolde's mistress, Elysa, and close beside him stands a figure named Nagaz, a worn wooden chest at his feet. Snapping turtles crawl along the misty lakeshore below.",
+  "triggers": [
+   [
+    1,
+    1682
+   ],
+   [
+    1,
+    1681
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Dandred's_Fold (farm and manor on the westernmost Uplands, harbor on Lordamere Lake, Misty Shore; Perenolde, Elysa, Nagaz, assassins and enforcers)",
+   "quest 506 description (styled himself lord of this land)",
+   "quest 507 description (manor on the shores of Lordamere Lake)",
+   "DB spawns: Lord Aliden Perenolde 2423, Elysa 2317, Nagaz 2320 side by side; Syndicate Assassin 2246, Enforcer 2247; Snapjaw 2408 in areas 1682 and 1681",
+   "DB: Worn Wooden Chest 1765 beside Nagaz"
+  ],
+  "notes": "Check: Nagaz no longer called 'of the Argus Wake': nothing he wears or says shows it (no subname, not the shadow mages' model); the letter on QUEST_ACCEPT 537 reveals it (3617 part 1). Converted: Nagaz is no longer called the hidden power guiding the Syndicate (the decoded letter, told in 3617 part 1 on QUEST_ACCEPT 537); Perenolde no longer 'keeps' Elysa, which hinted at her plea on QUEST_DONE 507 (Hillsbrad). No parts. Earlier: verified; Nagaz near Perenolde is supported by warcraft.wiki.gg/wiki/Nagaz and spawns 2 yards apart."
+ },
+ {
+  "id": 3609,
+  "kind": 1,
+  "zone": 36,
+  "sort": 9,
+  "faction": 0,
+  "title": "Lordamere Internment Camp",
+  "body": "On a hill above the ruins of Dalaran stands the Lordamere Internment Camp, the only prison camp in the mountains, held by Dalaran's shield guards and theurgists under Warden Belamoore. Its newest inmates are four Forsaken who deserted the Undercity after breaking into a secure vault and stealing four artifacts, pieces of bloodstone the royal apothecaries needed for their studies. The thieves fled to Dalaran, and the wizards quarantined them here. The Dark Lady wants her property returned and the deserters punished.",
+  "triggers": [
+   [
+    1,
+    278
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Lordamere_Internment_Camp (only internment camp in the mountains, hill overlooking the crater, Dalaranian forces, Warden Belamoore, four Forsaken deserters)",
+   "quest 544 description and reward text",
+   "items 3688-3691 Bloodstone Oval, Marble, Shard, Wedge dropped by Kegan Darkmar 2414, Ricter 2411, Alina 2412, Dermot 2413",
+   "DB spawns: Dalaran Shield Guard 2271, Theurgist 2272, Warden Belamoore 2415 in area 278"
+  ],
+  "notes": "Check: 'crater of Dalaran' made 'ruins of Dalaran' (the crater exists only from patch 3.0.2, so the opening was wrong before Wrath). Unchanged in the parts conversion: the deserters and the Dark Lady's demand are quest 544's premise; their fate is told in 3627. Earlier: verified"
+ },
+ {
+  "id": 3610,
+  "kind": 1,
+  "zone": 36,
+  "sort": 10,
+  "faction": 0,
+  "title": "Dalaran Crater",
+  "body": "Dalaran, city of the Kirin Tor, was laid waste in the Third War when the Burning Legion's Archimonde was summoned before its walls. Afterward the survivors raised a vast violet dome over the heart of their ruined city, some say for protection in violent times, others for the solitude to study and plot. Around it, on the shore of Lordamere Lake, lie the ruined outskirts, ringed by broken walls. Summoners and their bound earth elementals patrol them, workers labor in the rubble, and an archmage or two keep watch over what is left.",
+  "triggers": [
+   [
+    1,
+    279
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Dalaran (survivors returned to rebuild the ruins and created a vast magical dome; the city later floated and moved to Northrend)",
+   "warcraft.wiki.gg/wiki/Dalaran_Crater (before 3.0 a large purple dome players could not pass; Wrath: city lifted to Northrend leaving a gaping crater; dome remains, nearly transparent)",
+   "warcraft.wiki.gg/wiki/Alterac_Mountains (Archimonde destroyed Dalaran)",
+   "quest 545 description (vast magical dome, protection or solitude; ruined outskirts patrolled by wizards and elemental slaves)",
+   "quest 557 (Bracers of Earth Binding)",
+   "creature_text 2359 (elemental slave cracks, rubble)",
+   "DB spawns: Dalaran Summoner 2358, Elemental Slave 2359, Dalaran Worker 2628, Ansirem 2543, Archmage Cedric 18165 in area 279"
+  ],
+  "notes": "Check: part 1 trimmed to the rebuilding as report ('said to be'), dropping the unsupported 'their own affair'; part 2 no longer leans on part 1 ('the work behind the dome'), since a Wrath reader never sees part 1. Converted for eras: the opening now holds only what is true in every era (the ruin, the dome, the outskirts and their patrols). Part 1 (maxState 12, no triggers): the whole, impassable dome with the city being rebuilt behind it. Part 2 (minState 13, no triggers): the city lifted to Northrend, the crater and the faded dome (patch 3.0.2). The title stays Dalaran Crater, the 3.3.5 AreaTable name. Earlier: verified",
+  "parts": [
+   {
+    "part": 1,
+    "maxState": 12,
+    "body": "For now the dome stands whole, a wall of violet light that no outsider can pass. Behind it, out of sight of the world, the surviving Kirin Tor are said to be rebuilding the heart of their city.",
+    "sources": [
+     "warcraft.wiki.gg/wiki/Dalaran (survivors returned to rebuild the ruins and created a vast magical dome)",
+     "warcraft.wiki.gg/wiki/Dalaran_Crater (before patch 3.0.2 players could not walk through the barrier)",
+     "quest 602 description (the mages succeeded in rebuilding their city before moving it)",
+     "DB spawns: Dalaran Worker 2628 in area 279"
+    ]
+   },
+   {
+    "part": 2,
+    "minState": 13,
+    "body": "In time the Kirin Tor finished rebuilding their city behind the dome and lifted it whole into the skies of Northrend. All that remains on the lakeshore is a gaping crater beneath a dome now faded nearly to nothing, open to anyone who walks in. Some mages stayed behind among the ruins rather than follow the city north.",
+    "sources": [
+     "quest 602 description (rebuilt and moved to Northrend, massive crater; some mages remained)",
+     "warcraft.wiki.gg/wiki/Dalaran_Crater (Wrath: gaping crater, dome nearly transparent and permitting entry; added in patch 3.0.2)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 3611,
+  "kind": 1,
+  "zone": 36,
+  "sort": 11,
+  "faction": 0,
+  "title": "Ravenholdt Manor",
+  "body": "Hidden in the eastern hills above Hillsbrad, at the end of a winding mountain path northwest of Durnholde, stands Ravenholdt Manor, seat of the Assassin's League. Outsiders are not welcome. The guards greet strangers with a warning to watch their backs, and the assassins on the grounds are quicker still to show their contempt. Within, Lord Jorach Ravenholdt presides over a guild of thieves and killers that admits only the most gifted. The manor has its own poison seller, a specialist engineer, a garden kept by a landscape architect, and a training arena that is the domain of the orc Master Kang. Its long war is with the Syndicate.",
+  "triggers": [
+   [
+    1,
+    3486
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Ravenholdt_Manor (eastern Alterac, path northwest of Durnholde through a small cave; Simone Cantrell's garden; Master Kang, orc, training arena)",
+   "warcraft.wiki.gg/wiki/Ravenholdt (Assassin's League, only those of extraordinary prowess, outsiders not welcome, conflict with the Syndicate)",
+   "quest 8233 description (path in the mountains northwest of Durnholde)",
+   "npc_text for gossip menus 4861, 4862 (Watch your back, stranger; You dare set foot inside Ravenholdt Manor, worm?)",
+   "creature_template subnames: Smudge Thunderwood 6779 Poison Supplies, Zan Shivsproket 6777 Speciality Engineer, Simone Cantrell 7324 Landscape Architect",
+   "DB spawn: Master Kang 7325 in area 3486"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide. Earlier: Access path made general (the cave route is described on the wiki for the current game); training ring corrected to arena per wiki."
+ },
+ {
+  "id": 3612,
+  "kind": 1,
+  "zone": 36,
+  "sort": 12,
+  "faction": 0,
+  "title": "Chillwind Point",
+  "body": "On the far eastern edge of the mountains, beside the river that runs north past Tarren Mill, a small rise is crowned by the ruins of an ancient troll site. Chill winds sweep down through a nearby ravine from the Plaguelands to the north, and give the point its name. Here the jungle troll hermit Bath'rah the Windwatcher keeps his camp and his cauldron, watching the ruins for a great elemental lord of the winds he calls Cyclonian. A red drake, Narillasanz, is sometimes seen in these eastern heights.",
+  "triggers": [
+   [
+    1,
+    1684
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Chillwind_Point (small rise on the far eastern edge, ancient troll ruin, named for chill winds from the Western Plaguelands, Bath'rah)",
+   "quest 1791 description (river along Tarren Mill's eastern flank, ruins on its eastern bank)",
+   "quest 1712 description (watching this site for Cyclonian, the wind lord)",
+   "warcraft.wiki.gg/wiki/Narillasanz (red drake in the Alterac Mountains)",
+   "DB spawns: Bath'rah 6176, Bath'rah's Cauldron 89931, Narillasanz 2447 in area 1684"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide; Cyclonian's defeat is told in 3621. Earlier: verified"
+ },
+ {
+  "id": 3613,
+  "kind": 2,
+  "zone": 36,
+  "sort": 1,
+  "faction": 0,
+  "title": "Lord Aliden Perenolde",
+  "body": "Aliden is the eldest son of Aiden Perenolde, the king who sold out the Alliance to the Horde. For two years after the Second War he tried to wash that stain from the family name, rising through the ranks at Durnholde under his mentor Aedelas Blackmoore. Then he left Blackmoore's service for the mountains of Alterac and founded the Syndicate. From his manor at Dandred's Fold he styles himself lord of the land, his mistress Elysa lives with him there, and Nagaz of the Argus Wake keeps close at his side.",
+  "triggers": [
+   [
+    3,
+    2423
+   ],
+   [
+    4,
+    507
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Aliden_Perenolde (eldest son of Aiden; two years clearing the name; Durnholde under Blackmoore; left to run operations in Alterac)",
+   "warcraft.wiki.gg/wiki/Kingdom_of_Alterac (Aliden founded the Syndicate)",
+   "quest 507 description",
+   "warcraft.wiki.gg/wiki/Nagaz (positioned himself close to Perenolde)",
+   "quest 506 description (styled himself lord of this land; mistress Elysa)"
+  ],
+  "notes": "Converted: his plan to enslave the orcs and the pendant on Elysa's neck moved to part 1 (QUEST_ACCEPT 507, Krusk's quest after Gol'dir's news is delivered; Horde-only part on a faction 0 entry). His death is part 2 (KILL 2423, both factions). What Elysa says and the pendant's return are Hillsbrad's (QUEST_DONE 507 and 508), so not told here. Earlier: 'two years' per the wiki; 'lord of this land' per quest 506; added Nagaz.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Word of him came out of Strahnbrad with the captive orc Gol'dir, whom Perenolde visited to boast. He means to make slaves of the orcs who stand against him, as his father and Blackmoore once planned, and the girl at his side, his mistress Elysa, wears around her neck the very pendant the Warchief sent his orcs to recover. In Tarren Mill the Horde now wants him dead and the pendant taken back.",
+    "triggers": [
+     [
+      4,
+      507
+     ]
+    ],
+    "sources": [
+     "quest 506 description (Gol'dir's news: plans to enslave orcs, mistress Elysa, the pendant)",
+     "quest 507 description (Perenolde must be killed, retrieve the pendant)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Lord Aliden Perenolde is slain in his own manor at Dandred's Fold, above the shore of Lordamere Lake. The son of Alterac's traitor king, who would have made himself lord of the land his father lost, dies among the outlaws he gathered to win it back.",
+    "triggers": [
+     [
+      3,
+      2423
+     ]
+    ],
+    "sources": [
+     "KILL 2423 at Dandred's Fold",
+     "quest 507 description (manor on the shores of Lordamere Lake)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 3614,
+  "kind": 2,
+  "zone": 36,
+  "sort": 2,
+  "faction": 0,
+  "title": "Mug'thol",
+  "body": "Mug'thol is warlord of the Crushridge ogres and master of the ruined city of Alterac. He rules from what is left of the old palace, with his loyal lieutenants Targ, Muckrake and Glommus at his side and the greedy ogre mage Grel'borg the Miser among his followers. He was not always his own master. The Banshee Queen once bound him to her will through a banshee's possession and sent him into Alterac after a relic, the Crown of Will. He put the crown on, and it set him free. The Forsaken have not forgiven the insult, and Southshore fears his ogres will push down into the foothills next.",
+  "triggers": [
+   [
+    3,
+    2257
+   ],
+   [
+    4,
+    520
+   ]
+  ],
+  "sources": [
+   "quest 495 description (sent to retrieve the Crown of Will, tried it on, resisted the possession)",
+   "warcraft.wiki.gg/wiki/Mug'thol (possessed by a banshee sister, old palace, lieutenants, founded the Crushridge in the ruins)",
+   "quest 519 description (Targ, Muckrake, Glommus loyal lieutenants)",
+   "quest 520 description",
+   "quest 500 description (fear the ogres will move into the foothills)"
+  ],
+  "notes": "Check: part 1's 'the Crushridge he led into the capital' verified: quest 495 sends him into Alterac with his warband and the wiki says he set his band up in the ruins as the Crushridge; kept. Converted: opening unchanged (the Crown of Will and his escape from the possession are the premise of Undercity's story opening, ACCEPT 495); his death added as part 1 on KILL 2257. The heads, the crown's return and Melisara's verdict stay in undercity.json (QUEST_DONE 519, 520, 521). Earlier: Reframed around his rule. Faction 0: Mug'thol (faction 45) is hostile to all.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Mug'thol falls at last amid the ruins of the old palace he made his seat. The warlord who threw off the Dark Lady's will by putting on the Crown of Will dies among the broken halls of Alterac, and the Crushridge he led into the dead kingdom's capital are left without their master.",
+    "triggers": [
+     [
+      3,
+      2257
+     ]
+    ],
+    "sources": [
+     "KILL 2257 in the Ruins of Alterac",
+     "warcraft.wiki.gg/wiki/Mug'thol (based in the ruins of the old palace, founded the Crushridge in the ruins)",
+     "quest 495 description (Mug'Thol and his ogre warband sent to Alterac); warcraft.wiki.gg/wiki/Mug'thol (after the crown freed him he established himself and his band in the ruins of Alterac as the Crushridge, citing The Crown of Will)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 3615,
+  "kind": 2,
+  "zone": 36,
+  "sort": 3,
+  "faction": 2,
+  "title": "Gol'dir",
+  "body": "Gol'dir is an orc warrior who led a band that the Warchief sent from Durotar into the Hillsbrad Foothills, to look into the human brigands called the Syndicate and to recover a small trinket Thrall wanted back. The mission went badly at Durnholde, where the Syndicate overwhelmed the orcs, and Gol'dir was carried off a captive. Now he lies chained in a locked room in Strahnbrad, calling out to anyone who comes near for the key to his chains, which the human jailor Borhuin carries.",
+  "triggers": [
+   [
+    2,
+    2316
+   ],
+   [
+    5,
+    503
+   ]
+  ],
+  "sources": [
+   "quest 498 description (expedition, investigate the Syndicate, the trinket, overwhelmed at Durnholde)",
+   "quest 533 description (held captive)",
+   "quest 503 reward text (led the expedition from Durotar, forced to work hauling and digging; the news must reach whoever leads the group now)",
+   "quest 506 description (Perenolde's visit and plans, Elysa and the pendant)",
+   "creature_text 2316 (inside the room; Borhuin has the key)",
+   "item 3704 Rusted Iron Key from Jailor Borhuin 2431"
+  ],
+  "notes": "Converted: the opening is Gol'dir as found in Strahnbrad (TALK 2316). His forced labor, Perenolde's visit, his plans and the pendant on Elysa moved to part 1 (QUEST_DONE 503, where 506 is offered at once). Hillsbrad's story 26725 tells the same news on QUEST_ACCEPT 506, which stays Hillsbrad's. Faction 2: template 29 is hostile to the Alliance and quest 503 is Horde only.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Freed at last, Gol'dir waves his own suffering aside, though his captors kept him hauling burdens and digging. What matters is his news. Lord Aliden Perenolde, leader of the Syndicate, came to boast that he would make slaves of the orcs who oppose him, just as his father and the despised Blackmoore once planned, and he brought his mistress, a wisp of a girl named Elysa. Around her neck hung the pendant the Warchief desires. Gol'dir sends the word back to Tarren Mill, and stays behind to settle his own business.",
+    "triggers": [
+     [
+      5,
+      503
+     ]
+    ],
+    "sources": [
+     "quest 503 reward text",
+     "quest 506 description (offered by Gol'dir on the turn-in of 503)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 3616,
+  "kind": 2,
+  "zone": 36,
+  "sort": 4,
+  "faction": 0,
+  "title": "Baron Vardus",
+  "body": "Baron Vardus is a noble of fallen Alterac, known for his cold heart and brutal methods, and a high-ranking member of the Syndicate. He keeps to the gang's haunts in the mountains, around the ruins of Strahnbrad and the valley north of them, and he was last seen in the Uplands. The Forsaken want him dead for crimes against them, and High Executor Darthalia of Tarren Mill has posted a bounty on his head, to be paid to whoever brings proof of his death.",
+  "triggers": [
+   [
+    3,
+    2306
+   ],
+   [
+    4,
+    523
+   ],
+   [
+    4,
+    566
+   ]
+  ],
+  "sources": [
+   "quest 523 description (noble of Alterac, cold heart, brutal practices, signed the contract; Strahnbrad or the valley north of it)",
+   "quest 522 description (sealed with red wax and a distinctive signet ring)",
+   "quest 566 description (crimes against the Forsaken, high-ranking member, Uplands, wanted dead)",
+   "quest 523 reward text",
+   "warcraft.wiki.gg/wiki/Syndicate (high-ranking member)"
+  ],
+  "notes": "Check: part 3 (Darthalia's verdict, QUEST_DONE 566) dropped: 566 is a Hillsbrad quest from a poster in Tarren Mill, turned in to Darthalia, and the turn-in reactions on the Vardus bounties belong to Hillsbrad (it holds Maleb's on QUEST_DONE 523 and has Darthalia's own entry 26714); it was new text, not from the original. The Baron V. supply list stays dropped: it is item 3718, the StartItem of quest 510, which only Hillsbrad's triggers reveal. Converted: the assassination contract moved to part 1 (QUEST_ACCEPT 523, offered on the turn-in of 522; Alliance-only part). His death is part 2 (KILL 2306, both factions); Darthalia's verdict part 3 (QUEST_DONE 566, Horde; not used by any other file). Maleb's relief on QUEST_DONE 523 stays Hillsbrad's. Dropped the Baron V. supply list and the wiki's identification of Vardus as its quartermaster: the list is read only through quest 510 (Hillsbrad's trigger, its contents told in Hillsbrad's part on QUEST_DONE 510), so no Alterac trigger can earn it. Faction 0: hostile to both, quests 523 (Alliance) and 566 (Horde).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Southshore has its own score with him. A contract for the murder of Magistrate Henry Maleb, sealed in red wax with a distinctive signet ring, turned up among the Syndicate, and it bears the signature of Baron Vardus. Maleb is not surprised to find the baron behind it, and wants him found and brought to justice.",
+    "triggers": [
+     [
+      4,
+      523
+     ]
+    ],
+    "sources": [
+     "quest 522 description",
+     "quest 523 description (offered on the turn-in of 522)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Baron Vardus is hunted down at last among the Syndicate haunts of the Uplands and slain. For all his cold heart and brutal methods, the baron falls like any common cutthroat, and the Syndicate has one high-ranking member fewer.",
+    "triggers": [
+     [
+      3,
+      2306
+     ]
+    ],
+    "sources": [
+     "KILL 2306 in the Uplands",
+     "quest 566 description"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 3617,
+  "kind": 2,
+  "zone": 36,
+  "sort": 5,
+  "faction": 0,
+  "title": "Nagaz",
+  "body": "Nagaz keeps close beside Lord Aliden Perenolde in the manor at Dandred's Fold, though what he is to the outlaw nobles of the Syndicate, and what he wants with them, is not plain to see. Strange company walks the gang's camps of Strahnbrad and the Uplands besides: the shadow mages of the Argus Wake, who come and go on business of their own. A worn wooden chest stands beside Nagaz. In it lies a parchment bound by a spell that leaves it unreadable, but for the single word at its top: his own name.",
+  "triggers": [
+   [
+    3,
+    2320
+   ],
+   [
+    4,
+    537
+   ],
+   [
+    4,
+    551
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Nagaz (positioned himself close to Perenolde)",
+   "DB spawn: Nagaz 2320 beside Perenolde 2423 in Dandred's Fold; Argus Shadow Mage 2318 in areas 280 and 284",
+   "quest 551 description (Ensorcelled Parchment, indecipherable but for the word Nagaz)",
+   "gameobject 1765 Worn Wooden Chest (loot 1570 holds item 3706 at 100 percent) beside Nagaz",
+   "page_text 248, 257, 258, 259, 315 (Decrypted Letter: esoteric cipher, conscripted messenger, the bargain they will regret, Stromgarde, a nation of their own, the Third Host; signed Nagaz, Argus Heirophant, in Sargeras' name; master appointed head of the Argus Wake by the Council)",
+   "quest 537 description (Nagaz of the Argus Wake; find him and kill him; envoys of the Argus Wake)",
+   "warcraft.wiki.gg/wiki/Argus_Wake (hierophant)"
+  ],
+  "notes": "Check: the opening no longer says Nagaz is of the Argus Wake (no subname or shared model shows it; quest 537 and the decoded letter reveal it, part 1); part 2 no longer calls him the Wake's envoy, since KILL 2320 alone does not reveal that. Converted: the decoded letter (his rank, his master, the plan for Alterac, Stromgarde and the Third Host) moved to part 1 (QUEST_ACCEPT 537, which follows the letter's decoding; Alliance-only part). His death is part 2 (KILL 2320, both factions). Dropped Maleb's fear that the Wake runs far deeper: that is his reward text on QUEST_DONE 537, told in Hillsbrad 26727 part 5. The sealed parchment stays in the opening (it reveals nothing but his name; QUEST_ACCEPT 551 is an entry trigger). Faction 0: Nagaz is hostile to both.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "A letter of his, taken from a Syndicate camp and decoded, shows what he is. Nagaz is the Argus Wake's hierophant in Alterac, the hand of a master whom the Council made head of the Wake, and he signs in the name of Sargeras. He mocks the Syndicate's bargain as one they will regret. He means to make them rulers of Alterac again, turn them on Stromgarde, and win the Wake a nation from which to prepare the way for the Third Host of the Legion. Southshore now wants his head.",
+    "triggers": [
+     [
+      4,
+      537
+     ]
+    ],
+    "sources": [
+     "page_text 248, 257, 258, 259, 315 (Decrypted Letter)",
+     "quest 537 description (offered on the turn-in of 525, after the letter is decoded)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Nagaz is slain in the manor at Dandred's Fold, beside the Syndicate lord he kept so close. Yet the shadow mages of the Argus Wake still walk the Syndicate camps of Strahnbrad and the Uplands.",
+    "triggers": [
+     [
+      3,
+      2320
+     ]
+    ],
+    "sources": [
+     "KILL 2320 at Dandred's Fold",
+     "quest 537 description (envoys of the Argus Wake)",
+     "DB spawns: Argus Shadow Mage 2318 in areas 280 and 284"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 3618,
+  "kind": 2,
+  "zone": 36,
+  "sort": 6,
+  "faction": 0,
+  "title": "Lord Jorach Ravenholdt",
+  "body": "Lord Jorach Ravenholdt is master of the Assassin's League, the order of thieves and killers that gathers at Ravenholdt Manor. After the Third War he took up the hunt for the Syndicate in these mountains, and the League has fought the gang ever since. With far fewer blades than their enemy has members, the League pays skilled rogues to shame Syndicate members by stealing their emblems. His grand master, Fahrad, trains the guild's rogues and sends anyone else away with a threat. Jorach greets those he needs with open arms and rewards loyal service generously, but keeps his own secrets close: the contents of a sealed azure bag he once lost were, he said, a private matter.",
+  "triggers": [
+   [
+    2,
+    6768
+   ],
+   [
+    2,
+    6707
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Jorach_Ravenholdt (leader of the League, hunted the Syndicate after the Third War, Sealed Azure Bag)",
+   "warcraft.wiki.gg/wiki/Ravenholdt (outnumbered by the Syndicate, emblems stolen to shame members)",
+   "quest 6701 (Syndicate Emblems)",
+   "quests 8233, 8234, 8236 (welcome, private matter, golden glow from the bag)",
+   "npc_text 4838, 4839 (Fahrad gossip menu 3984)",
+   "quest 6701 starts from Ravenholdt Guard 6766"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide; the azure bag's contents are never told. Earlier: Emblem bounty credited to the League (quest 6701 is given by the guards, not Jorach); added Fahrad so his TALK backup has a reason. Both are faction template 471, neutral to both."
+ },
+ {
+  "id": 3619,
+  "kind": 2,
+  "zone": 36,
+  "sort": 7,
+  "faction": 1,
+  "title": "Archmage Ansirem Runeweaver",
+  "body": "Ansirem Runeweaver is a senior archmage of the Kirin Tor, and by the Third War held a seat on the Council of Six that governed Dalaran. When the Scourge came and Antonidas fell, Ansirem fought outside the city walls against Arthas and the undead while Kel'Thuzad called down the demon lord Archimonde. He keeps his watch now beside the ruins of Dalaran on the shore of Lordamere Lake. His learning ranges far, and like most of his kind he can hardly resist a magical puzzle.",
+  "triggers": [
+   [
+    2,
+    2543
+   ],
+   [
+    5,
+    602
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Ansirem_Runeweaver (Kirin Tor, Council of Six, fought outside Dalaran while Kel'Thuzad summoned Archimonde)",
+   "quest 602 description and reward text (some mages remained; tome on the Gurubashi Empire; mages cannot resist a magical puzzle)",
+   "quest 603 description (willful daughter Catelyn ran off to Booty Bay to be a pirate)",
+   "creature_text 2543"
+  ],
+  "notes": "Check: Catelyn dropped from part 1: 602 has no RewardNextQuest, so she is revealed only by quest 603's description, a Stranglethorn quest whose turn-in tells her story in codex_stranglethorn_parts.json 3336 part 2 (QUEST_DONE 603); no shared trigger with that draft. Converted: the Gurubashi tome and his daughter Catelyn moved to part 1 (QUEST_DONE 602, his entry trigger; 603, which tells of Catelyn, is offered by him right after), since the stone's trail through Catelyn is Stranglethorn's Stone of the Tides story. Dalaran's move to Northrend (Wrath) moved to part 2 (minState 13, no triggers); the opening says only that he keeps watch by the ruins, true in every era. Earlier: verified; stranglethorn.json uses only trigger 616 for the stone.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Shown a bag of water elemental bracers and asked about the Stone of the Tides, Ansirem admits that years ago he wrote a tome on the legends of the Gurubashi Empire, and that he knows a good deal about the Stone. At least one of the bracers still bears a magical residue, and he sets to analyzing it at once.",
+    "triggers": [
+     [
+      5,
+      602
+     ]
+    ],
+    "sources": [
+     "quest 602 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "minState": 13,
+    "body": "Now that Dalaran has risen into the skies of Northrend, Ansirem is among the few mages who stayed behind at the crater it left on the shore of Lordamere Lake, rather than follow the city north.",
+    "sources": [
+     "quest 602 description (rebuilt and moved to Northrend; some mages remained here)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 3620,
+  "kind": 2,
+  "zone": 36,
+  "sort": 8,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Archmage Cedric",
+  "body": "Archmage Cedric is an agent of the Violet Eye, the order the Kirin Tor of Dalaran assigned long ago to keep watch over Karazhan and its master Medivh, in case things got out of hand, as they soon did. He waits among the ruined outskirts of Dalaran on the shore of Lordamere Lake, unmoved by the desolation around him and certain that Dalaran is as powerful as ever. Reports from the Eye's agents in Deadwind Pass come to him, and he is not pleased to find outsiders trusted with the order's secrets.",
+  "triggers": [
+   [
+    2,
+    18165
+   ],
+   [
+    4,
+    9829
+   ]
+  ],
+  "sources": [
+   "quest 9826 description and completion text (Violet Eye, agents of the Kirin Tor watching Karazhan and Medivh; Cedric in the outskirts of Dalaran; that old fool)",
+   "quest 9829 description (Karazhan sealed, lost agents, demonic emanation, Khadgar alive in Shattrath)",
+   "quest 9860 description and reward text (Legion renewing its attacks, the badge of the Violet Eye)",
+   "npc_text 9241 (gossip menu 7593: do not be fooled by the ruins, Dalaran is as powerful as ever)",
+   "warcraft.wiki.gg/wiki/Archmage_Cedric (added in patch 2.0.1, The Burning Crusade)",
+   "quest_template Flags 128 (Burning Crusade flag) on 9826, 9829, 9860"
+  ],
+  "notes": "Check: requiredState 8 confirmed (same pattern as undercity.json 149706, 149707 and stormwind.json 151915, 151916; codex_sql.py writes RequiredState and LoreCodexData.cpp honors it); source changed from tbc_creatures.sql, which is a stat file that also lists classic creatures. Converted: the entry is Burning Crusade content in a classic zone (Cedric and the Violet Eye chain arrived with the expansion), so the entry takes requiredState 8, as stormwind.json and undercity.json do for their Wrath-only entries. Alturus's report and Khadgar moved to part 1 (QUEST_ACCEPT 9829, the entry trigger); the badge to part 2 (QUEST_DONE 9860, turned in to Cedric; deadwind_pass.json uses only 9824, 9825, 11216). 'Dalaran Crater' dropped from the opening, which now holds in the Burning Crusade and Wrath alike. Earlier: verified",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Alturus's report unsettles him. Karazhan sealed itself off long ago, and the Eye's agents inside were never heard from again; now a demonic emanation stirs within. Only Medivh or his apprentice Khadgar was thought able to open the tower again, and Khadgar, long presumed dead, has been found alive in Shattrath City. Cedric sends the report on to him.",
+    "triggers": [
+     [
+      4,
+      9829
+     ]
+    ],
+    "sources": [
+     "quest 9829 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "When Alturus has told him all that came of the Eye's work at the tower, Cedric warns that it is not the end. While Karazhan stays sealed to outsiders, it is only a matter of time before the Legion renews its attacks while the Eye stands powerless. To those who have aided it he offers a badge bearing the Violet Eye's symbol, and the responsibility that comes with it.",
+    "triggers": [
+     [
+      5,
+      9860
+     ]
+    ],
+    "sources": [
+     "quest 9860 description and reward text (ends at Cedric 18165)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 3621,
+  "kind": 2,
+  "zone": 36,
+  "sort": 9,
+  "faction": 0,
+  "title": "Bath'rah the Windwatcher",
+  "body": "Bath'rah is a jungle troll shaman and weaponcrafter who has taken up a hermit's life at the troll ruins of Chillwind Point. For ages, he says, he has watched the site, waiting for a champion able to bring down Cyclonian, the lord of the winds who can be called there. Those who gather what his summoning needs may face the elemental, and from its whirlwind heart Bath'rah will forge a weapon. Lately the spirits of the place have turned against him, and he has sought a spirit totem, strengthened with troll voodoo, to guard his sleep.",
+  "triggers": [
+   [
+    2,
+    6176
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Bath'rah_the_Windwatcher (jungle troll, weaponcrafter turned hermit, Chillwind Point)",
+   "quest 1791 description (skilled weapon maker and powerful shaman)",
+   "quests 1712, 1713, 1792 (Cyclonian, whirlwind heart, weapon)",
+   "quests 8412, 8413 (spirits no longer like him, spirit totem, voodoo, a full night's rest)"
+  ],
+  "notes": "Converted: opening unchanged (his watch and his promise of a weapon are quest 1712's premise); Cyclonian's defeat and the weapon added as part 1 on QUEST_DONE 1713 (1792, which follows, is auto-complete; neither is used by another file). Earlier: verified",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The reagents are gathered and the ritual performed, and Cyclonian is summoned and brought down. His whirlwind heart is carried back to Bath'rah, who rejoices and keeps his word: he stands ready to set the heart within a weapon of the champion's choosing, so that the wind lord's power lives on in it.",
+    "triggers": [
+     [
+      5,
+      1713
+     ]
+    ],
+    "sources": [
+     "quest 1712 reward text",
+     "quest 1713 description and reward text",
+     "quest 1792 reward text (auto-complete, follows 1713)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 3622,
+  "kind": 2,
+  "zone": 36,
+  "sort": 10,
+  "faction": 0,
+  "title": "Nancy Vishas",
+  "body": "Nancy Vishas lives in a house in the Uplands near Lake Lordamere, where she waits anxiously for her husband to come home from his work at the Monastery. He is late again, she frets, though he must be overwhelmed with work, and she goes outside to look for him when she can bear the wait no longer. An old man called Grandpa Vishas shares the house and has no patience for her fretting: cleansing the world of impure scum, he reminds her, is not an easy job, and someone has to do it.",
+  "triggers": [
+   [
+    3,
+    3984
+   ],
+   [
+    4,
+    1051
+   ]
+  ],
+  "sources": [
+   "quest 1051 description and reward text",
+   "creature_text 3984 (Sidney is late, work at the Monastery), 3985 (He's your husband, woman)",
+   "DB spawns: Nancy Vishas 3984 and Grandpa Vishas 3985 in area 284; Monika Sengutz 3982 in Tarren Mill",
+   "warcraft.wiki.gg/wiki/Interrogator_Vishas (wife Nancy, cottage on Lordamere Lake)"
+  ],
+  "notes": "Check: part 2 reworded away from the reward text's wording. Converted: the husband's identity as Interrogator Vishas and Vorrel's story moved to part 1 (QUEST_ACCEPT 1051); the ring's return and Monika's mourning to part 2 (QUEST_DONE 1051); both Horde-only parts on a faction 0 entry. The opening is Nancy as met, from creature_text 3984 and 3985. Earlier: husband's first name left out (Sidney in creature_text, James on the wiki). Faction 0: Nancy (template 16) is hostile to both.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Her husband is the Scarlet Crusade's Interrogator Vishas, and his work at the Monastery is torture. One of his victims, the Forsaken Vorrel Sengutz, was tormented for weeks and saw his own wedding ring taken and given to Nancy, of whom the interrogator loved to brag. Broken past saving, Vorrel's last wish was that she be found and slain, and the ring returned to his wife Monika in Tarren Mill.",
+    "triggers": [
+     [
+      4,
+      1051
+     ]
+    ],
+    "sources": [
+     "quest 1051 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The ring comes home to Tarren Mill. Monika Sengutz grieves for a good mate whose existence was so troubled, gone now beyond any return to undeath. She curses the humans, and takes what solace she can from the revenge taken in his name.",
+    "triggers": [
+     [
+      5,
+      1051
+     ]
+    ],
+    "sources": [
+     "quest 1051 reward text (ends at Monika Sengutz 3982)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 3627,
+  "kind": 3,
+  "zone": 36,
+  "sort": 5,
+  "faction": 2,
+  "title": "The Bloodstone Thieves",
+  "body": "Some months ago four Forsaken deserted the Undercity, and before they fled they broke into a secure vault and stole four artifacts the royal apothecaries needed for their studies. They ran to Dalaran, and the wizards locked them away in the Lordamere Internment Camp. Magus Wordeen Voidglare, who had come to Tarren Mill only to research, found himself charged with getting the artifacts back for the Dark Lady. The Magus has his own interest in Dalaran's magic as well, and Keeper Bel'varil, who serves him, gathers the stone tokens the wizards use to command their elementals, so that the Magus may unlock their secrets.",
+  "triggers": [
+   [
+    4,
+    544
+   ],
+   [
+    4,
+    556
+   ]
+  ],
+  "sources": [
+   "quests 544, 545, 556, 557 (descriptions and reward texts)",
+   "creature_queststarter: Magus Wordeen Voidglare 2410 starts 544, 545; Keeper Bel'varil 2437 starts 556, 557"
+  ],
+  "notes": "Check: part 3 trigger QUEST_DONE 556 replaced by QUEST_ACCEPT 557: 556 has no RewardNextQuest, so the bracers are told only in 557's description; 557 needs 556, so its reward text is seen by then. 557 (Horde, QuestType 2, flags 8) is used by no other file. Converted: the opening is the setup of 544 and 556. Parts: 1 the artifacts recovered, the deserters' fate and the Magus's turn to the ruins (QUEST_DONE 544, where 545 is offered); 2 the patrols thinned (QUEST_DONE 545); 3 the faded tokens and the bracers (QUEST_DONE 556). Kegan Darkmar now named in part 1 with the deserters' fate. Earlier: 'His assistant' made 'who serves him'. Faction 2: quests 544 and 556 are AllowableRaces 690.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The four artifacts come back to the Forsaken, sorely missed, and Kegan Darkmar and the other betrayers meet their justice. Then the Magus turns to Dalaran itself. Whatever the wizards meant by their vast dome, protection or solitude, he cares only that the ruined outskirts may hide magical treasures, and he wants the patrols of wizards and elemental slaves thinned.",
+    "triggers": [
+     [
+      5,
+      544
+     ]
+    ],
+    "sources": [
+     "quest 544 reward text",
+     "quest 545 description (offered on the turn-in of 544)",
+     "items 3688-3691 Bloodstone Oval, Marble, Shard, Wedge dropped by Kegan Darkmar 2414, Ricter 2411, Alina 2412, Dermot 2413"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The summoners and their elemental slaves are hunted until their numbers fall, and the Magus judges the ruins around Dalaran safe enough to search at last, so long as the searchers are careful.",
+    "triggers": [
+     [
+      5,
+      545
+     ]
+    ],
+    "sources": [
+     "quest 545 reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The tokens prove faded, their magic gone, which suits the Magus well, for his first experiments are best made on inert specimens. Bel'varil knows he will soon want their counterpart too: the bracers of binding set around the wrists of the elementals themselves, which bind them into a mage's service.",
+    "triggers": [
+     [
+      4,
+      557
+     ]
+    ],
+    "sources": [
+     "quest 556 reward text (prerequisite of 557)",
+     "quest 557 description"
+    ]
+   }
+  ]
+ }
 ]

@@ -5,8 +5,9 @@
   "zone": 3483,
   "sort": 0,
   "faction": 0,
+  "requiredState": 8,
   "title": "Hellfire Peninsula",
-  "body": "Hellfire Peninsula is a red and broken waste, one of the fragments of Draenor that survived the day Ner'zhul tore the world apart with his portals. Long before that, the warlocks of the old Horde had already drained the land of life. At its heart stands Hellfire Citadel, once the Horde's great stronghold, and from its gates the Path of Glory, paved with draenei bones, runs east to the Stair of Destiny and the Dark Portal. For twenty years the Sons of Lothar have held out at Honor Hold. Now the portal has woken again. The Burning Legion pours in under Doom Lord Kazzak, raising forge camps along the northern ridges, while the citadel spills out the red-skinned fel orcs of a new Fel Horde. Against them the Horde has raised Thrallmar, blood elf pilgrims rest at Falcon Watch, draenei keep the Temple of Telhamat, the brown-skinned Mag'har hide in the hills, and the Cenarion Expedition studies a land in torment.",
+  "body": "Hellfire Peninsula is a red and broken waste, one of the fragments of Draenor that survived the day Ner'zhul tore the world apart with his portals. Long before that, the warlocks of the old Horde had already drained the land of life. At its heart stands Hellfire Citadel, once the Horde's great stronghold, and from its gates the Path of Glory, paved with draenei bones, runs east to the Stair of Destiny and the Dark Portal. For twenty years the Sons of Lothar have held out at Honor Hold. Now the portal has woken again. The Burning Legion pours in under Doom Lord Kazzak, raising forge camps along the northern ridges, while the citadel spills out the red-skinned fel orcs of a new Fel Horde. Against them the Horde has raised Thrallmar, blood elf pilgrims rest at Falcon Watch, draenei keep the Temple of Telhamat, and the Cenarion Expedition studies a land in torment.",
   "triggers": [
    [
     1,
@@ -20,10 +21,9 @@
    "quest 10047 description (Path of Glory paved with bones)",
    "quests 10123, 10142 (Kazzak commands the Legion in Outland)",
    "quest 10388 reward text (forge camps)",
-   "quests 9607, 11002 (fel orcs made with Magtheridon's blood)",
-   "quest 9442 (Mag'har keep their location secret)"
+   "quests 9607, 11002 (fel orcs made with Magtheridon's blood)"
   ],
-  "notes": "Fact-check: 'largest' surviving piece changed to one of the surviving fragments (the wiki says only one of the surviving parts). Tanaan Jungle name and Blackhand founding of the citadel kept out."
+  "notes": "Converted: body unchanged (nothing to hide); requiredState 8 on the entry, as for all of Outland. No Wrath or later text; the Mag'har are named only as a people hiding in the hills, as Mag'har Post shows anyone who walks in. Before: Fact-check: 'largest' surviving piece changed to one of the surviving fragments (the wiki says only one of the surviving parts). Tanaan Jungle name and Blackhand founding of the citadel kept out. Check: 'the brown-skinned Mag'har hide in the hills' dropped from the opening: that uncorrupted orcs survive in Hellfire is what the Horde chain 348337 reveals (9401 'Have we... found them?', 9406 'True orcs... here in Hellfire!'); the Mag'har are told by Mag'har Post 348318 to anyone who walks in."
  },
  {
   "id": 348301,
@@ -31,6 +31,7 @@
   "zone": 3483,
   "sort": 1,
   "faction": 0,
+  "requiredState": 8,
   "title": "The Stair of Destiny",
   "body": "On the Outland side of the Dark Portal a vast stair descends to the plain, and at its foot the armies of Azeroth hold the gate against the Legion. Alliance and Horde camp here side by side under Commander Duron and Lieutenant General Orion, with healers tending the wounded, peons and peasants hauling supplies, and quartermasters for both sides. Demons come at the stair in waves, and the defenders meet them in the field. Justinius the Harbinger calls the soldiers of Azeroth to break the demonic charge in the Light's name, while the tauren Melgromm Highmountain rallies his hunters to show the Legion that their world is not for the taking.",
   "triggers": [
@@ -46,7 +47,7 @@
    "quest 10119 reward text (troops of both sides fend off Legion platoons trying to take the platform)",
    "warcraft.wiki.gg/wiki/Path_of_Glory (Pit Commander returns to the Stair of Destiny)"
   ],
-  "notes": "Fact-check: dropped 'from the Legion Front' as the source of the waves (unsupported). Melgromm confirmed tauren (display 18409, TaurenMale). Portal history left to Blasted Lands 408/420."
+  "notes": "Converted: body unchanged (nothing to hide); requiredState 8 on the entry, as for all of Outland. creature_text 18966 and 18969 reread: period text (Justinius and Melgromm also appear on the Azeroth side in the module's state 7 battle, but stand at the Stair in every state). Vindicator Maraad not mentioned. Arrival quests 10288/10120 not used; 10119/9407 stay with the Blasted Lands. Before: Fact-check: dropped 'from the Legion Front' as the source of the waves (unsupported). Melgromm confirmed tauren (display 18409, TaurenMale). Portal history left to Blasted Lands 408/420."
  },
  {
   "id": 348302,
@@ -54,6 +55,7 @@
   "zone": 3483,
   "sort": 2,
   "faction": 0,
+  "requiredState": 8,
   "title": "The Path of Glory",
   "body": "The Path of Glory runs from the gates of Hellfire Citadel to the foot of the Stair of Destiny, and the orcs who named it paved it with the bones of the draenei they slaughtered. Warp-Scryer Kryv of Honor Hold mourns that his people were denied burial in the Light, and cleanses the trampled skeletons with holy water so their crying souls might rest. Along the road lie the wrecks of an older war: Alliance cannons on one side and Horde blade throwers on the other, still aimed at each other, which both sides now salvage or burn. Bonechewer scavengers pick through the battlements for war machine parts, and Shattered Hand fel orcs march the stretch nearest the citadel.",
   "triggers": [
@@ -72,7 +74,7 @@
    "warcraft.wiki.gg/wiki/Path_of_Glory (runs from the Stair of Destiny to Hellfire Citadel, paved with draenei bones, ruined cannons and blade throwers)",
    "quest 10047 log text (Draenei Holy Water)"
   ],
-  "notes": "Fact-check: Kryv's rite made specific (holy water, per 10047). Otherwise verified."
+  "notes": "Converted: body unchanged (nothing to hide); requiredState 8 on the entry, as for all of Outland. Before: Fact-check: Kryv's rite made specific (holy water, per 10047). Otherwise verified."
  },
  {
   "id": 348303,
@@ -80,6 +82,7 @@
   "zone": 3483,
   "sort": 3,
   "faction": 0,
+  "requiredState": 8,
   "title": "Honor Hold",
   "body": "Honor Hold is the last bastion of the Sons of Lothar, the survivors of the Alliance expedition who have held this keep for twenty years behind walls the fel orcs have battered and broken. Force Commander Danath Trollbane leads from the keep, and the reinforcements now arriving through the portal have given its weary defenders fresh hope. Field Commander Romus brought the newest troops from Nethergarde, the draenei Warp-Scryer Kryv reads demonic script in the war room, and the old priest Malgor Devidicus sits over his mug at the inn. The hold's own mine has been overrun by gan'arg, to the despair of Foreman Biggums, while in the courtyard a dog named Fei Fei buries whatever he can steal.",
   "triggers": [
@@ -99,7 +102,7 @@
    "quest 10916, 10919 (Fei Fei)",
    "warcraft.wiki.gg/wiki/Honor_Hold"
   ],
-  "notes": "verified (Devidicus's spawn sits beside Klatu and Barada at the inn)"
+  "notes": "Converted: body unchanged (nothing to hide); requiredState 8 on the entry, as for all of Outland. npc_text 9933, 9939, 8771 reread: period text. Romus bringing troops from Nethergarde is told here only (Blasted Lands 401 dropped it). The mine's retaking (10079, 10099) is not told. Before: verified (Devidicus's spawn sits beside Klatu and Barada at the inn)"
  },
  {
   "id": 348304,
@@ -107,6 +110,7 @@
   "zone": 3483,
   "sort": 4,
   "faction": 0,
+  "requiredState": 8,
   "title": "Thrallmar",
   "body": "Thrallmar is the Horde's foothold in Outland, raised by the warchief's expedition and commanded by Nazgrel. It stands caught between Hellfire Citadel to the west and the Legion's camps on the ridges behind it, and the Legion has bombarded it almost since the day it was built. Two of Thrall's chosen serve here, Far Seer Regulkut, the Eyes of the Warchief, and Shadow Hunter Ty'jin, his Ears, while his Hand, Overlord Hun Maimfist, leads the crew at Reaver's Fall. General Krakork barks at his grunts, Magister Bloodhawk deciphers captured Legion script, and peons patch the palisade under Watch Commander Krunk. Northwest of the walls a goblin foreman struggles to run a mine full of gan'arg and sleeping peons.",
   "triggers": [
@@ -128,7 +132,7 @@
    "DB spawn: Hun Maimfist 16576 stands in area 3807 Reaver's Fall",
    "quest 10124 (Maimfist's crew)"
   ],
-  "notes": "Fact-check: Hun Maimfist stands at Reaver's Fall, not in Thrallmar; sentence corrected."
+  "notes": "Converted: body unchanged (nothing to hide); requiredState 8 on the entry, as for all of Outland. npc_text 9995, 8717 and creature_text 19255 reread: period text. Before: Fact-check: Hun Maimfist stands at Reaver's Fall, not in Thrallmar; sentence corrected."
  },
  {
   "id": 348305,
@@ -136,8 +140,9 @@
   "zone": 3483,
   "sort": 5,
   "faction": 0,
+  "requiredState": 8,
   "title": "Hellfire Citadel",
-  "body": "Hellfire Citadel was the stronghold of the old Horde, the staging ground from which its armies marched against the draenei. The Alliance tore down its walls twenty years ago, yet now it is the heart of Illidan's Fel Horde. Deep within, the fel orcs draw the blood of the pit lord Magtheridon, once master of Outland, and from it breed new warriors, red-skinned and owing nothing to the Legion. Kargath Bladefist rules them as their self-styled warchief. Outside the gates the Shattered Hand drill for war: Force-Commander Gorax trains captains at the citadel's foot and Drillmaster Zurok marshals the troops where the Path of Glory ends. Behind the fortress lies Hellfire Basin, where the way to Magtheridon's prison opens.",
+  "body": "Hellfire Citadel was the stronghold of the old Horde, the staging ground from which its armies marched against the draenei. The Alliance tore down its walls twenty years ago, yet now it is the heart of a new Fel Horde. Each day its gates open and more red-skinned fel orcs pour out, and how so many have come to be is a secret the fortress still keeps. Kargath Bladefist rules them as their self-styled warchief. Outside the gates the Shattered Hand drill for war: Force-Commander Gorax trains captains at the citadel's foot and Drillmaster Zurok marshals the troops where the Path of Glory ends. Behind the fortress lies Hellfire Basin, where a way leads down into the citadel's deepest vaults.",
   "triggers": [
    [
     1,
@@ -149,17 +154,18 @@
    ]
   ],
   "sources": [
-   "warcraft.wiki.gg/wiki/Hellfire_Citadel (Horde staging ground, Magtheridon imprisoned, blood used for fel orcs)",
    "npc_text 9941 (Danath: tore down the walls of their Hellfire Citadel)",
-   "quest 9607 and 9608 reward text (pit lord blood, orcs not aligned with the Legion)",
-   "quest 11002 description (source of Illidan's fel orc army)",
    "quest 9492, 9495 (Kargath, self-styled Warchief)",
    "quest 10876, 10937 descriptions (Gorax, Zurok)",
    "DB spawns: Gorax 19264 and Zurok 19312 in area 3545; meeting stone and raid portal in area 3955",
    "quest 10838 (Hellfire Basin behind the citadel)",
-   "warcraft.wiki.gg/wiki/Magtheridon (former Lord of Outland)"
+   "warcraft.wiki.gg/wiki/Hellfire_Citadel (staging ground of the Horde's conquest of Draenor)",
+   "quest 11002 description (Illidan's fel orc army; source only)",
+   "quest 9607, 9608 reward text (Danath and Nazgrel do not know of the pit lord until the Blood Furnace is explored; not told here)",
+   "quest 10122 description (each day the gates open and more fel orcs pour out; source only)",
+   "quests 9587, 9588 reward text (Dark Tidings: the letter signed by Illidan is a Hellfire Ramparts revelation; not told here)"
   ],
-  "notes": "Fact-check: the wiki calls it the staging ground of the Horde's conquest of Draenor, not of Azeroth; corrected. No Blackhand founding (later retelling). Instance wings named only in passing; no instance quests used."
+  "notes": "Converted: the fel orcs bred from Magtheridon's blood and Magtheridon's prison taken out of the opening, since Danath and Nazgrel learn there is a pit lord only on the Blood Furnace turn-ins (9607/9608, 'THEY HAVE A PIT LORD?!'), which are instance quests left for a Hellfire Citadel file; the opening now says only that how the fel orcs are made is a secret. No part added (no Hellfire trigger reveals it). requiredState 8. Before: Fact-check: the wiki calls it the staging ground of the Horde's conquest of Draenor, not of Azeroth; corrected. No Blackhand founding (later retelling). Instance wings named only in passing; no instance quests used. Check: 'Illidan's Fel Horde' made 'a new Fel Horde': that Illidan stands behind the citadel is revealed by the Ramparts quests 9587/9588 (Danath: 'It's signed by Illidan you say?!'), instance quests left for a Hellfire Citadel file, like the Magtheridon breeding reveal (9607/9608, 11002/11003). 'In numbers no one can account for' was unsupported; now 10122's daily stream of fel orcs."
  },
  {
   "id": 348306,
@@ -167,8 +173,9 @@
   "zone": 3483,
   "sort": 6,
   "faction": 0,
+  "requiredState": 8,
   "title": "The Ramparts and Gor'gaz Outpost",
-  "body": "South and north of Hellfire Citadel, broken lengths of the old outer walls stretch across the plain, and the fel orcs have turned them into a chain of camps. The Shattered Hand hold both the Northern and Southern Ramparts, where guards, berserkers and acolytes keep watch and the brute Mekthorg the Wild sometimes prowls. Warboss Nekrogg commands on the southern wall. At Gor'gaz Outpost, below the ramparts, a captured human soldier and an orc scout wait in cages, and it was near here that Colonel Jules of Honor Hold fell to a demonic curse. Goblin peons dragged off from Thrallmar's mine have been found caged in the northern camps.",
+  "body": "South and north of Hellfire Citadel, broken lengths of the old outer walls stretch across the plain, and the fel orcs have turned them into a chain of camps. The Shattered Hand hold both the Northern and Southern Ramparts, where guards, berserkers and acolytes keep watch and the brute Mekthorg the Wild sometimes prowls. Warboss Nekrogg commands on the southern wall. At Gor'gaz Outpost, below the ramparts, a captured human soldier and an orc scout wait in cages, and it was near here that Colonel Jules of Honor Hold was stricken by a demonic curse. Goblin peons dragged off from Thrallmar's mine have been found caged in the northern camps.",
   "triggers": [
    [
     1,
@@ -189,7 +196,7 @@
    "quest 10903, 10909 (Jules cursed near Gor'gaz Outpost)",
    "quest 10238 (peons taken to the fel orc camps along the wall)"
   ],
-  "notes": "Fact-check: Nekrogg's tower unsupported, made general. Manni and Moh confirmed goblins (display 7109). The removed Imarion and Makha chains (no starters) are not told."
+  "notes": "Converted: 'fell to a demonic curse' reworded to 'was stricken by' (Jules is saved in 348336 part 1, so the opening must not read as his death). Otherwise unchanged; requiredState 8. Before: Fact-check: Nekrogg's tower unsupported, made general. Manni and Moh confirmed goblins (display 7109). The removed Imarion and Makha chains (no starters) are not told."
  },
  {
   "id": 348307,
@@ -197,6 +204,7 @@
   "zone": 3483,
   "sort": 7,
   "faction": 0,
+  "requiredState": 8,
   "title": "Expedition Armory",
   "body": "South of Honor Hold lie the ruins of the Expedition Armory, a Sons of Lothar base that fell near the end of the Alliance invasion of Draenor. Orcs and Horde death knights stormed it, and the death knights laid a curse on its defenders that trapped their souls between life and death. They are the Unyielding: footmen, knights and sorcerers who still fight the battle they lost, led by the ghosts of Arch Mage Xintor and Lieutenant Commander Thalvos, while Commander Hogarth keeps to the eastern tower. Ghostly townsfolk drift through the ruined buildings. Few in Honor Hold will speak of the place, and Father Devidicus once kept his quarters close by.",
   "triggers": [
@@ -214,7 +222,7 @@
    "DB spawns in area 3546: Unyielding Footman/Knight/Sorcerer, Ghostly Denizen 16976, Thalvos 16978, Xintor 16977, Hogarth 19937",
    "warcraft.wiki.gg/wiki/Expedition_Armory (ruined Sons of Lothar base, Nightwatch Inn ruins)"
   ],
-  "notes": "Fact-check: the old inn and Devidicus's quarters in the southern buildings made general (10058 says only 'to the south of the armory')."
+  "notes": "Converted: body unchanged (nothing to hide); requiredState 8 on the entry, as for all of Outland. The curse by Horde death knights is the premise of 10050 and the armory's own history, not a revelation; the Horde's battle horn and Hogarth's thanks are told in 348339. Before: Fact-check: the old inn and Devidicus's quarters in the southern buildings made general (10058 says only 'to the south of the armory')."
  },
  {
   "id": 348308,
@@ -222,13 +230,34 @@
   "zone": 3483,
   "sort": 8,
   "faction": 0,
+  "requiredState": 8,
   "title": "Zeth'Gor",
-  "body": "Zeth'Gor is a ruined orc fortress in the southeastern hills, now the lair of the Bleeding Hollow clan, fel orcs who struck a pact with demons. Warlord Morkh commands from its barracks, and his cruel tactics have cost Honor Hold dearly. Worg Master Kruush leads riders who prey on the supply trains to Spinebreaker Post, and in a cave beneath the fort lives the witch Grillok Darkeye, who traded one of his own eyes to dark powers. The orcs carry talismans made from the insignias of fallen Honor Hold soldiers, and their witches lay curses on the clan's own blood. Alliance gryphons have bombed its four guard towers, and Horde raiders have put its hovels and barracks to the torch.",
+  "body": "Zeth'Gor is a ruined orc fortress in the southeastern hills, now the lair of the Bleeding Hollow clan, fel orcs who struck a pact with demons. Warlord Morkh commands from its barracks, and his cruel tactics have cost Honor Hold dearly. Worg Master Kruush leads riders who prey on the supply trains to Spinebreaker Post, and in a cave beneath the fort lives the witch Grillok Darkeye, who traded one of his own eyes to dark powers. The orcs carry talismans made from the insignias of fallen Honor Hold soldiers, and their witches lay curses on the clan's own blood.",
   "triggers": [
    [
     1,
     3582
    ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Neither side has left Zeth'Gor untouched. Guided by smoke beacons set beneath its four guard towers, the gryphon riders of Expedition Point have bombed them from the air, and Horde raiders from Spinebreaker Post have hurled burning torches into its hovels, its stable and its barracks, until the smoke and flames could be seen from the outposts.",
+    "triggers": [
+     [
+      5,
+      10895
+     ],
+     [
+      5,
+      10792
+     ]
+    ],
+    "sources": [
+     "quest 10895 description and reward text (four guard towers, smoke beacons, gryphon riders)",
+     "quest 10792 description and reward text (torches thrown at hovels, stable and barracks)"
+    ]
+   }
   ],
   "sources": [
    "quest 10485 (Morkh in the barracks, his tactics)",
@@ -243,7 +272,7 @@
    "DB spawns in area 3582: 16964, 19442, 19457, Cursed Cauldron 184715",
    "quest 10538 (witches' curses on the blood)"
   ],
-  "notes": "Fact-check: the Horde quest 10792 burns hovels, stable and barracks, not the towers (the towers are the Alliance's 10895); corrected. Cauldron line reworded to what 10538 says."
+  "notes": "Converted: the burning of Zeth'Gor (Alliance towers bombed, Horde buildings torched) moved from the opening to part 1 (DONE 10895 Alliance, DONE 10792 Horde). requiredState 8. Before: Fact-check: the Horde quest 10792 burns hovels, stable and barracks, not the towers (the towers are the Alliance's 10895); corrected. Cauldron line reworded to what 10538 says."
  },
  {
   "id": 348309,
@@ -251,6 +280,7 @@
   "zone": 3483,
   "sort": 9,
   "faction": 0,
+  "requiredState": 8,
   "title": "Spinebreaker Post",
   "body": "Spinebreaker Post is a small Horde camp in the southern hills, close enough to Zeth'Gor that its captain boasts she can smell the Bleeding Hollow's blood. Stone Guard Ambelan keeps watch and warns visitors to keep their voices low. The post draws an unusual crowd. The Forsaken Althen the Historian and Emissary Mordiba study the Unyielding ghosts of the Expedition Armory, hoping to win them as allies. Apothecary Albreck of the Royal Apothecary Society tests the blood of fel orcs, Zezzak tries to see into the mind of the witch Grillok, and Ogath the Mad pursues the secrets of the void. Even the young scholar Grelag ended up here, limping on a wounded leg.",
   "triggers": [
@@ -271,7 +301,7 @@
    "quest 9344 (Grelag a promising student of history)",
    "CreatureDisplayInfo 19791, 19790 (Forsaken), 18486 (female orc)"
   ],
-  "notes": "Fact-check: Captain Darkhowl is female (display 18486, female gossip text 10610); pronoun fixed. Althen and Mordiba confirmed Forsaken (displays 19791 ScourgeMale, 19790 ScourgeFemale). Grelag a student per 9344."
+  "notes": "Converted: body unchanged (nothing to hide); requiredState 8 on the entry, as for all of Outland. npc_text 10610, 9777 reread: period text. Before: Fact-check: Captain Darkhowl is female (display 18486, female gossip text 10610); pronoun fixed. Althen and Mordiba confirmed Forsaken (displays 19791 ScourgeMale, 19790 ScourgeFemale). Grelag a student per 9344."
  },
  {
   "id": 348310,
@@ -279,6 +309,7 @@
   "zone": 3483,
   "sort": 10,
   "faction": 0,
+  "requiredState": 8,
   "title": "The Zeppelin Crash",
   "body": "In the southern wastes beyond the Expedition Armory lies the wreck of a goblin zeppelin out of Area 52, bound for Terokkar Forest by a shortcut that went badly wrong. The Legion shot it down despite its flag of truce. Its pilot, Screaming Screed Luckheed, swears he will never take another shortcut, and is busy rebuilding the engine to run on voidwalker essence from the Warp Fields. His companion, the cook Legassi, has turned the crash site into a kitchen of ravager eggs, helboar bacon and buzzard wings. Screed's cousin, Foreman Razelcraz, came to Outland on his promise of a fortune and now runs a miserable mine near Thrallmar, hoping the zeppelin crashes.",
   "triggers": [
@@ -296,7 +327,7 @@
    "quests 10236, 10238 (Razelcraz, cousin)",
    "DB spawns: 19344, 19367 in area 3816"
   ],
-  "notes": "Fact-check: Legassi as co-pilot unsupported; made companion."
+  "notes": "Converted: body unchanged (nothing to hide); requiredState 8 on the entry, as for all of Outland. npc_text 9781, 9789 reread: period text. The flag of truce is what Screed and Legassi tell any visitor. Before: Fact-check: Legassi as co-pilot unsupported; made companion."
  },
  {
   "id": 348311,
@@ -304,8 +335,9 @@
   "zone": 3483,
   "sort": 11,
   "faction": 0,
+  "requiredState": 8,
   "title": "The Warp Fields and Void Ridge",
-  "body": "At the southern edge of the peninsula the ground breaks away into the abyss, and there the walls between worlds grow thin. In the Warp Fields rogue and uncontrolled voidwalkers wander loose, and everyone seems to want them. Blood elf pilgrims feed on their essence, the draenei of Telhamat sever them from this world with charged crystals to keep that power from the elves, and a stranded goblin pilot wants them for engine fuel. Farther east, through a pass beyond Zeth'Gor, lies Void Ridge, where voidcallers and collapsing voidwalkers haunt the brink. Ogath the Mad has used his rift generator there to call Void Baron Galaxis, a prince of the void, out of the deep.",
+  "body": "At the southern edge of the peninsula the ground breaks away into the abyss, and there the walls between worlds grow thin. In the Warp Fields rogue and uncontrolled voidwalkers wander loose, and everyone seems to want them. Blood elf pilgrims feed on their essence, the draenei of Telhamat sever them from this world with charged crystals to keep that power from the elves, and a stranded goblin pilot wants them for engine fuel. Farther east, through a pass beyond Zeth'Gor, lies Void Ridge, where voidcallers and collapsing voidwalkers haunt the brink. It is on that brink that Ogath the Mad of Spinebreaker Post means to push his warp rift experiments furthest.",
   "triggers": [
    [
     1,
@@ -324,7 +356,7 @@
    "quest 10295",
    "DB spawns: Rogue/Uncontrolled Voidwalker in 3796; Collapsing Voidwalker, Vacillating Voidcaller in 3802"
   ],
-  "notes": "Fact-check: 'bind with sanctified crystals' reworded to what 9383 says (a charged crystal that severs the voidwalker's link to this world)."
+  "notes": "Converted: the summoning of Void Baron Galaxis (the end of Ogath's chain, 10295) taken out of the opening; Ogath's entry 348332 tells it in its parts. requiredState 8. Before: Fact-check: 'bind with sanctified crystals' reworded to what 9383 says (a charged crystal that severs the voidwalker's link to this world)."
  },
  {
   "id": 348312,
@@ -332,6 +364,7 @@
   "zone": 3483,
   "sort": 12,
   "faction": 0,
+  "requiredState": 8,
   "title": "The Legion Front",
   "body": "East of Thrallmar and Honor Hold the Burning Legion holds a long front across the plain, a mobile command post guarded by wrathguards, fel handlers and their netherhounds, with shivan subjugators overseeing all. Along it stand portals that draw in reinforcements from across Outland, and great gateways rise on either side of the Path of Glory. Antennas jut from the ground to carry the Legion's commands to its forge camps. Facing it stand two forward bases: the Horde's Reaver's Fall, raised on an old farm beside the wreck of a fel reaver, and the Alliance's Expedition Point, built where a Legion base once stood. Their soldiers are radicals, sworn to wipe out the Legion entirely.",
   "triggers": [
@@ -357,7 +390,7 @@
    "DB spawns in area 3804: Wrathguard, Fel Handler, Netherhound, Subjugator Shi'aziv, Yalqiz, Legion Antennas, Portal gameobjects",
    "warcraft.wiki.gg/wiki/Fel_Reaver (Reaver's Fall)"
   ],
-  "notes": "verified (10125, 10127 have no starters and are used only as descriptive sources)"
+  "notes": "Converted: body unchanged (nothing to hide); requiredState 8 on the entry, as for all of Outland. Before: verified (10125, 10127 have no starters and are used only as descriptive sources)"
  },
  {
   "id": 348313,
@@ -365,6 +398,7 @@
   "zone": 3483,
   "sort": 13,
   "faction": 0,
+  "requiredState": 8,
   "title": "The Forge Camps",
   "body": "Along the northern ridges above Thrallmar the Legion's engineers have raised a line of forge camps, where mo'arg overseers drive gan'arg servants day and night to build fel reavers. Forge Camp: Mageddon in the east is still under construction. Forge Camp: Rage has fel cannons aimed straight at Thrallmar, and at Invasion Point: Annihilator a warp portal draws fresh demons into Outland under Warbringer Arix'Amal. Behind the camps rises the Abyssal Shelf, the Legion's main production grounds, where gan'arg peons, mo'arg overseers and fel cannons crowd a high plateau. Gryphon and wyvern riders bomb it without rest, fearing what would march out if they let up.",
   "triggers": [
@@ -394,7 +428,7 @@
    "quest 10347 description (fear of a large demon attack from the north)",
    "DB spawns: Gan'arg Servant, Mo'arg Forgefiend, Fel Cannon MKI in 3541/3548/3549; Gan'arg Peon, Mo'arg Overseer, Fel Cannon in 3803; Arix'Amal 19298 in 3549"
   ],
-  "notes": "verified"
+  "notes": "Converted: body unchanged (nothing to hide); requiredState 8 on the entry, as for all of Outland. Before: verified"
  },
  {
   "id": 348314,
@@ -402,13 +436,40 @@
   "zone": 3483,
   "sort": 14,
   "faction": 0,
+  "requiredState": 8,
   "title": "Throne of Kil'jaeden",
-  "body": "The Throne of Kil'jaeden is a great mountain on the northern edge of the peninsula, and the orcs' histories tie it to the warlock Gul'dan and the demon lord whose name it bears. Today it is the seat of Doom Lord Kazzak, master of the Legion's armies in Outland, who waits on its heights for any who dare to climb. Wrath heralds and fel sparks drift across its slopes, and terrorguards hang suspended in the air while blood elves changed by demon blood drain their power. A gateway on the mountain once carried Prince Kael'thas's armies away to the Sunwell, and the Shattered Sun keeps watch on it still.",
+  "body": "The Throne of Kil'jaeden is a great mountain on the northern edge of the peninsula, and the orcs' histories tie it to the warlock Gul'dan and the demon lord whose name it bears. Today it is the seat of Doom Lord Kazzak, master of the Legion's armies in Outland, who waits on its heights for any who dare to climb. Fel sparks drift across its slopes, and the Legion holds the mountain as its own.",
   "triggers": [
    [
     1,
     3547
    ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Wrath heralds walk the mountain's slopes, and terrorguards hang suspended in the air while blood elves changed by demon blood drain their power. A gateway on the mountain once carried Prince Kael'thas's armies away to the Sunwell, and the Shattered Sun keeps watch on it still.",
+    "minState": 12,
+    "sources": [
+     "npc_text 12239 (Seyla: gateway Kael's armies used to retreat to the Sunwell)",
+     "DB spawns in area 3547: Felblood Initiate 24918, Suspended Terrorguard 24933, Wrath Herald 24919, Seyla 24937 (patch 2.4)",
+     "warcraft.wiki.gg/wiki/Throne_of_Kil'jaeden (felblood elves siphon suspended terrorguards; Kael's forces led from here to Quel'Danas)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Blasting the gateway buys only time. It is the road by which Legion reinforcements reach the Isle of Quel'Danas, and though Magistrix Seyla's living flares can tear it apart, the demons can repair it in due time, so it must be blown up again and again.",
+    "minState": 12,
+    "triggers": [
+     [
+      5,
+      11516
+     ]
+    ],
+    "sources": [
+     "quest 11516 description and reward text (stop Legion reinforcements to Quel'Danas; the demons might repair the gateway, blow it up again)"
+    ]
+   }
   ],
   "sources": [
    "warcraft.wiki.gg/wiki/Throne_of_Kil'jaeden (named by Gul'dan, Kazzak, Kael's forces led from here to Quel'Danas)",
@@ -419,7 +480,7 @@
    "warcraft.wiki.gg/wiki/Throne_of_Kil'jaeden (felblood elves siphon suspended terrorguards)",
    "DB spawns in area 3547: Wrath Herald 24919, Incandescent Fel Spark 22323, Suspended Terrorguard 24933"
   ],
-  "notes": "Fact-check: trimmed the felblood and Seyla material that Quel'Danas 408021 (11526) already tells; now a single pointer sentence. 11515/11516 remain sources only. The Gul'dan tie is kept general."
+  "notes": "Converted: the wrath heralds, the felbloods draining suspended terrorguards, Kael's retreat through the gateway and the Shattered Sun's watch moved to part 1 (minState 12, no triggers): all patch 2.4 Shattered Sun material. mod-individual-progression respawns the felbloods, wrath heralds and fel sparks here with phaseMask 1 in every state (zone_isle_of_queldanas.sql) and does not gate Seyla, so the module does not gate them by state and they are tagged by patch; the opening keeps only the fel sparks and says nothing that the felbloods would contradict. Part 2 (DONE 11516, minState 12): the gateway's repair, from 11516's turn-in, which Quel'Danas 408021 left to Hellfire. 11515 stays a source only (Quel'Danas 408021 part 1 already tells Seyla's felblood plan). Kael'thas being alive is not stated. requiredState 8 on the entry. Before: Fact-check: trimmed the felblood and Seyla material that Quel'Danas 408021 (11526) already tells; now a single pointer sentence. 11515/11516 remain sources only. The Gul'dan tie is kept general. Check: patch tag kept: the felbloods are Kael's followers who stayed after his retreat through the gateway (11515), a patch 2.4 event that mod-individual-progression places at state 12, so describing them before 12 would point at a story not yet happened; the opening stays true at 8 to 11 where the module shows the camp, and at 18 without it. Quel'Danas 408021 left the 11516 repair line to Hellfire, so part 2 matches."
  },
  {
   "id": 348315,
@@ -427,13 +488,29 @@
   "zone": 3483,
   "sort": 15,
   "faction": 0,
+  "requiredState": 8,
   "title": "Pools of Aggonar",
-  "body": "North of Hellfire Citadel lie the Pools of Aggonar, once sacred springs of the draenei. When the blood of the demon Aggonar was spilled into them it fouled the holy waters, and from them spawned slimes and blistering rots, while terrorfiends feed on the old demonic power. Aggonar's bones still lie at the northern end, and his essence lingered on in his offspring Aggonis. The draenei of Telhamat strive to cleanse the pools, but the blood elves of Falcon Watch harvest the felblood for its power and ambush the anchorites sent to purify it. The Legionlord Arazzius the Cruel has gathered his terrorfiends here too, and a blood elf scholar who came to study the slimes vanished in the pools.",
+  "body": "North of Hellfire Citadel lie the Pools of Aggonar, once sacred springs of the draenei. When the blood of the demon Aggonar was spilled into them it fouled the holy waters, and from them spawned slimes and blistering rots, while terrorfiends feed on the old demonic power. Aggonar's bones still lie at the northern end of the pools. The draenei of Telhamat strive to cleanse the pools, but the blood elves of Falcon Watch harvest the felblood for its power and ambush the anchorites sent to purify it. The Legionlord Arazzius the Cruel has gathered his terrorfiends here too, and a blood elf scholar who came to study the slimes vanished in the pools.",
   "triggers": [
    [
     1,
     3553
    ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Aggonar's essence had not quite left this world. When a cleansing vial was poured over his bones, it rose again in the form of his foul offspring, Aggonis, and only with that demon slain could the draenei of Telhamat begin the work of restoring the pools to their old purity.",
+    "triggers": [
+     [
+      5,
+      9427
+     ]
+    ],
+    "sources": [
+     "quest 9427 description and reward text (essence not quite gone, Aggonis, restoring the pools)"
+    ]
+   }
   ],
   "sources": [
    "quest 9426 description",
@@ -445,7 +522,7 @@
    "quest 9374 description (Arelion went missing in the pools)",
    "DB spawns in area 3553: Blistering Oozeling, Blistering Rot, Terrorfiend, Arazzius 19191"
   ],
-  "notes": "verified"
+  "notes": "Converted: Aggonis, Aggonar's essence living on, moved to part 1 (DONE 9427, Alliance; the Horde has no quest that reveals it). Arazzius is visible at the pools, so his presence stays in the opening. requiredState 8. Before: verified"
  },
  {
   "id": 348316,
@@ -453,6 +530,7 @@
   "zone": 3483,
   "sort": 16,
   "faction": 0,
+  "requiredState": 8,
   "title": "Temple of Telhamat",
   "body": "On the western frontier of the peninsula stands the Temple of Telhamat, one of the few draenei holy places to survive. When Prophet Velen prepared for the journey that took him to Azeroth, some draenei chose to stay and re-establish their people at the sacred sites, and here they are led by the blind elder Amaan the Wise. They call themselves the Omenai. The temple also shelters Broken who have escaped the Illidari: Ikan, who teaches the freed Dreghood the old ways of the Light, and the half-mad Makuru, who owes his life to a young paladin named Sedai. From here the anchorites work to cleanse the Pools of Aggonar.",
   "triggers": [
@@ -472,7 +550,7 @@
    "warcraft.wiki.gg/wiki/Temple_of_Telhamat (Omenai led by Amaan)",
    "DB spawns in area 3552: 16796, 16799, 16833, Escaped Dreghood 16836"
   ],
-  "notes": "verified"
+  "notes": "Converted: body unchanged (nothing to hide); requiredState 8 on the entry, as for all of Outland. npc_text 8792, 8852, 8854 reread: period text. Makuru owing his life to Sedai does not say Sedai is dead. Before: verified"
  },
  {
   "id": 348317,
@@ -480,13 +558,45 @@
   "zone": 3483,
   "sort": 17,
   "faction": 0,
+  "requiredState": 8,
   "title": "Falcon Watch",
-  "body": "Falcon Watch is the newly built outpost of the blood elves in the southwest of the peninsula, beyond Hellfire Citadel, and a resting place for the pilgrims who cross Outland in search of Prince Kael'thas. Many arrive exhausted and starved for magic. Ranger Captain Venn'ren seeks safe routes for them, for Alliance scouts watch every road. His people are ambitious: Ryathen the Somber harvests demonic felblood, Arcanist Calesthris covets the magic of the arakkoa, and an apothecary of the Forsaken tests demonic essences on a captive draenei. Not every trouble is the Legion's. The magistrix Carinda, mourning her husband Arelion, learned from his journal that he had a mistress in the camp.",
+  "body": "Falcon Watch is the newly built outpost of the blood elves in the southwest of the peninsula, beyond Hellfire Citadel, and a resting place for the pilgrims who cross Outland in search of Prince Kael'thas. Many arrive exhausted and starved for magic. Ranger Captain Venn'ren seeks safe routes for them, for Alliance scouts watch every road. His people are ambitious: Ryathen the Somber harvests demonic felblood, Arcanist Calesthris covets the magic of the arakkoa, and an apothecary of the Forsaken tests demonic essences on a captive draenei. Not every trouble is the Legion's. The magistrix Carinda mourns her husband Arelion, a scholar who went into the Pools of Aggonar to study slimes and never came back.",
   "triggers": [
    [
     1,
     3554
    ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Arelion's journal, found in the pools, held no research at all. Its pages told of his escapades with a young blood elf woman, and Carinda, who had believed every word about fel-infused slime, set out to learn who she was.",
+    "triggers": [
+     [
+      5,
+      9374
+     ]
+    ],
+    "sources": [
+     "quest 9374 reward text",
+     "quest 10286 description (escapades with a young female blood elf; identity not in the journal)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "His friend and confidant Magister Aledis, found on the road toward Zangarmarsh, gave up the name rather than take a beating for him: Viera Sunwhisper, a pilgrim of Falcon Watch itself. Carinda swore to show the girl that a magistrix is not one to be trifled with.",
+    "triggers": [
+     [
+      5,
+      10287
+     ]
+    ],
+    "sources": [
+     "quest 10286 description (Aledis, road to Zangarmarsh)",
+     "quest 10287 description and reward text (Viera Sunwhisper)",
+     "DB spawn: Viera Sunwhisper 17226 at Falcon Watch"
+    ]
+   }
   ],
   "sources": [
    "quest 9498, 9499 descriptions (recently built, southwest beyond the citadel)",
@@ -499,7 +609,7 @@
    "creature_template 16794 faction 68 (Undercity)",
    "quests 9374, 10286, 10287, 9472"
   ],
-  "notes": "verified. Azethen confirmed Forsaken (display 16071 ScourgeMale, faction 68). 9377 used only for the pilgrims' state."
+  "notes": "Converted: Arelion's affair moved from the opening to part 1 (DONE 9374), the mistress's name to part 2 (DONE 10287), both Horde. The opening keeps Carinda mourning a husband missing in the pools (9374 description). Carinda's revenge (9472) is not told. requiredState 8. Before: verified. Azethen confirmed Forsaken (display 16071 ScourgeMale, faction 68). 9377 used only for the pilgrims' state."
  },
  {
   "id": 348318,
@@ -507,8 +617,9 @@
   "zone": 3483,
   "sort": 18,
   "faction": 0,
+  "requiredState": 8,
   "title": "Mag'har Post",
-  "body": "In the hills northwest of Hellfire Citadel, hidden from the fel orcs who would destroy it, lies Mag'har Post, a camp of brown-skinned orcs who never drank the demon's blood. These are the Mag'har, the uncorrupted, and their captain Gorkan Bloodfist trusts no stranger this close to the citadel. Their first orders are to keep the camp's location secret, so even their shaman, Earthcaller Ryga, dares not go out to gather herbs. Many of their grunts lie sick on the Mag'har Grounds below the camp after drinking foul water. The draenei of Telhamat remember these orcs as enemies, and a draenei who came seeking peace with them was found dead nearby.",
+  "body": "In the hills northwest of Hellfire Citadel, hidden from the fel orcs who would destroy it, lies Mag'har Post, a camp of brown-skinned orcs who never drank the demon's blood. These are the Mag'har, the uncorrupted, and their captain Gorkan Bloodfist trusts no stranger this close to the citadel. Their first orders are to keep the camp's location secret, so even their shaman, Earthcaller Ryga, dares not go out to gather herbs. Many of their grunts lie sick on the Mag'har Grounds below the camp after drinking foul water. The draenei of Telhamat remember these orcs as enemies.",
   "triggers": [
    [
     1,
@@ -519,6 +630,22 @@
     3801
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Not far east of the Temple of Telhamat, on the way toward the post, lies the body of Sedai, a young draenei paladin who set out to seek peace with these orcs. He died from a blow to the back.",
+    "triggers": [
+     [
+      5,
+      9390
+     ]
+    ],
+    "sources": [
+     "quest 9390 description and reward text",
+     "DB spawn: Sedai's Corpse 16852"
+    ]
+   }
+  ],
   "sources": [
    "quest 9410 reward text (rarely trust strangers this close to the Citadel)",
    "quest 9406 description (free from demonic taint)",
@@ -528,7 +655,7 @@
    "DB spawns: 16845, 17123 in 3555; Debilitated Mag'har Grunt 16847 in 3801",
    "warcraft.wiki.gg/wiki/Mag'har"
   ],
-  "notes": "verified. Burning Crusade framing only; no WoD Mag'har history."
+  "notes": "Converted: Sedai's death moved from the opening to part 1 (DONE 9390, Alliance), worded so it does not say who struck him (348338's vision leaves that open). requiredState 8. Before: verified. Burning Crusade framing only; no WoD Mag'har history. Check: part 1 (DONE 9390) no longer says Sedai was unarmed: that is Obadei's line at the 9423 turn-in, told in 348338."
  },
  {
   "id": 348319,
@@ -536,8 +663,9 @@
   "zone": 3483,
   "sort": 19,
   "faction": 0,
+  "requiredState": 8,
   "title": "The Great Fissure",
-  "body": "The Great Fissure is a long scar in the earth east of Falcon Watch, crawling with stonescythe rock flayers and the tunnelers they hunt with. The Broken who flock to the Dark Portal from the south must cross it, and the flayers see them as easy prey. Blacktalon the Savage, the vicious matriarch of the flayers, dwells in a cave within and has killed many hunters. Ranger Captain Venn'ren has marked a secret path through the fissure with three beacons, so that blood elf pilgrims can avoid the roads the Alliance watches. Another cave here is the only place in the peninsula where the rare drycap mushroom grows, and the Mag'har need it for healing.",
+  "body": "The Great Fissure is a long scar in the earth east of Falcon Watch, crawling with stonescythe rock flayers and the tunnelers they hunt with. The Broken who flock to the Dark Portal from the south must cross it, and the flayers see them as easy prey. Blacktalon the Savage, the vicious matriarch of the flayers, dwells in a cave within and has killed many hunters. Ranger Captain Venn'ren means to mark a secret path through the fissure with three beacons, so that blood elf pilgrims can avoid the roads the Alliance watches. Another cave here is the only place in the peninsula where the rare drycap mushroom grows, an ingredient for healing salves.",
   "triggers": [
    [
     1,
@@ -552,7 +680,7 @@
    "quest 9442 (drycap cave)",
    "DB spawns in 3543: Stonescythe Whelp/Alpha, Tunneler, Fulgorge rare, three beacon gameobjects"
   ],
-  "notes": "Fact-check: the Broken come from the south toward the portal (9398), direction fixed; Blacktalon having devoured hunters softened to killed (9466)."
+  "notes": "Converted: 'has marked' the path made 'means to mark' (lighting the beacons is the outcome of 9391). Otherwise unchanged; requiredState 8. Before: Fact-check: the Broken come from the south toward the portal (9398), direction fixed; Blacktalon having devoured hunters softened to killed (9466). Check: 'the Mag'har need it' dropped from this area opening (it gave away the Mag'har before the Horde chain finds them); Ryga's need for drycap is now 348337 part 4 (DONE 9447)."
  },
  {
   "id": 348320,
@@ -560,8 +688,9 @@
   "zone": 3483,
   "sort": 20,
   "faction": 0,
+  "requiredState": 8,
   "title": "Den of Haal'esh",
-  "body": "In the southwest the arakkoa of the Haal'eshi make their den among the cliffs of Haal'eshi Gorge. Smart as any gnome by one dwarf's reckoning, they wield lightning magic and a violent temper, and they raid Alliance patrols and supply caravans. They have tamed the kaliri birds and keep their nests here. Their mage Avruu once bound a wind spirit named Aeranas, lord of the eastern winds, inside an orb, and an altar for that work stands hidden to the southeast. The dwarf brothers Gremni and Mirren Longbeard, hired by Honor Hold to deal with the bird-men, camp nearby with more ale than ammunition.",
+  "body": "In the southwest the arakkoa of the Haal'eshi make their den among the cliffs of Haal'eshi Gorge. Smart as any gnome by one dwarf's reckoning, they wield lightning magic and a violent temper, and they raid Alliance patrols and supply caravans. They have tamed the kaliri birds and keep their nests here. Their mage Avruu works his magic among them. The dwarf brothers Gremni and Mirren Longbeard, hired by Honor Hold to deal with the bird-men, camp nearby with more ale than ammunition.",
   "triggers": [
    [
     1,
@@ -572,6 +701,21 @@
     3798
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Avruu kept a prisoner. Taken from the mage, his orb speaks with the voice of Aeranas, a spirit who once ruled the eastern winds and was bound inside it at an altar hidden southeast of the den. Carried back to that altar, the orb sets him free, and he pays for his liberty with treasure.",
+    "triggers": [
+     [
+      5,
+      9418
+     ]
+    ],
+    "sources": [
+     "quest 9418 description and reward text (item-started from Avruu's Orb)"
+    ]
+   }
+  ],
   "sources": [
    "quest 9417 description (smart as any gnome, lightning, attacking patrols)",
    "quest 9558 (raiding supply caravans, Longbeards packed more ale)",
@@ -580,7 +724,7 @@
    "npc_text 8672, 8673",
    "DB spawns: Haal'eshi Talonguard/Windwalker, Kaliri Nests, Avruu 17084 in 3556; Haal'eshi Altar 181606 in 3798"
   ],
-  "notes": "verified"
+  "notes": "Converted: Aeranas bound in Avruu's orb (revealed only by the orb's quest 9418) moved to part 1 (DONE 9418, both factions). requiredState 8. Before: verified"
  },
  {
   "id": 348321,
@@ -588,6 +732,7 @@
   "zone": 3483,
   "sort": 21,
   "faction": 0,
+  "requiredState": 8,
   "title": "Ruins of Sha'naar",
   "body": "The Ruins of Sha'naar are an old draenei settlement in the west of the peninsula, now a slave camp. Illidari taskmasters drive the Dreghood, a tribe of Broken, to dig through the ruins for a powerful crystal of the ancient draenei, one their own captives doubt is even there. Their overseer is Arzeth the Merciless, servant of the Betrayer, who demands that the wretches be worked to the bone. The tribe's elders have been chained in the depths, and with them the spirits of wind, fire and water left their people. Some Dreghood have escaped to the Temple of Telhamat, and the scholars of Falcon Watch come to collect demonic essence from the taskmasters.",
   "triggers": [
@@ -609,7 +754,7 @@
    "quest 9387 (taskmasters)",
    "DB spawns in 3551: Dreghood Brute, Geomancer, Illidari Taskmaster, Arzeth, Naladu, elders"
   ],
-  "notes": "verified"
+  "notes": "Converted: body unchanged (nothing to hide); requiredState 8 on the entry, as for all of Outland. npc_text 9787 and creature_text 19354 reread: period text. The elders' fate and Naladu's secret are told in 348341. Before: verified"
  },
  {
   "id": 348322,
@@ -617,13 +762,29 @@
   "zone": 3483,
   "sort": 22,
   "faction": 0,
+  "requiredState": 8,
   "title": "Cenarion Post",
-  "body": "On the road west toward Zangarmarsh, before it climbs over Thornfang Hill, the Cenarion Expedition keeps a small camp. Its druids are here to study what has happened to this tortured land and to undo what harm they can. The tauren Thiah Redmane collects blood from the ever-mutating helboars, though her first antidote went disastrously wrong. Mahuram Stouthoof keeps the pass through Thornfang Hill clear of ravagers so the way to the Cenarion Refuge stays open. Earthbinder Galandria Nightbreeze and the blunt Tola'thion investigate a great red crystal that fell from the sky onto the ridge to the north. The post welcomes help from Falcon Watch and Telhamat alike.",
+  "body": "On the road west toward Zangarmarsh, before it climbs over Thornfang Hill, the Cenarion Expedition keeps a small camp. Its druids are here to study what has happened to this tortured land and to undo what harm they can. The tauren Thiah Redmane collects blood from the ever-mutating helboars, hoping it holds the base of an antidote. Mahuram Stouthoof keeps the pass through Thornfang Hill clear of ravagers so the way to the Cenarion Refuge stays open. Earthbinder Galandria Nightbreeze and the blunt Tola'thion investigate a great red crystal that fell from the sky onto the ridge to the north. The post welcomes help from Falcon Watch and Telhamat alike.",
   "triggers": [
    [
     1,
     3808
    ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Thiah's antidote did not do what she hoped. Tried on a hulking helboar, it backfired in a way she still cannot explain, though she prepared it just as she has against spider and snake venoms. She puts it down to one more of Outland's peculiarities, and has passed the results on to her comrades.",
+    "triggers": [
+     [
+      5,
+      10255
+     ]
+    ],
+    "sources": [
+     "quest 10255 description and reward text"
+    ]
+   }
   ],
   "sources": [
    "quests 10442, 10443 (south side of the road to Zangarmarsh, Thornfang Hill)",
@@ -635,7 +796,7 @@
    "npc_text 9770 (Tola'thion)",
    "DB spawns in area 3808: 16885, 16888, 16991, 19293, 19294"
   ],
-  "notes": "verified. Thiah and Mahuram confirmed tauren (displays 16588 TaurenFemale, 16430 TaurenMale)."
+  "notes": "Converted: the failed antidote moved from the opening to part 1 (DONE 10255, both factions). npc_text 8716, 9770 reread: period text. requiredState 8. Before: verified. Thiah and Mahuram confirmed tauren (displays 16588 TaurenFemale, 16430 TaurenMale)."
  },
  {
   "id": 348323,
@@ -643,13 +804,30 @@
   "zone": 3483,
   "sort": 23,
   "faction": 0,
+  "requiredState": 8,
   "title": "Fallen Sky Ridge",
-  "body": "Fallen Sky Ridge rises north of the Cenarion Post, and at its center a huge red crystal juts from the ground. It fell from the sky not long ago, shaking the land with a mighty earthquake, and soon after the ridge filled with raging colossi, mountain giants that had never been seen here before. The druids of the Cenarion Expedition sense a sickly evil flowing from the crystal, which seems to call the giants and drive them mad. It is too large to move and beyond their power to destroy, so Earthbinder Galandria has raised a circle at its edge to soothe the wounded land. What she has learned of its origin has filled her with fury.",
+  "body": "Fallen Sky Ridge rises north of the Cenarion Post, and at its center a huge red crystal juts from the ground. It fell from the sky not long ago, shaking the land with a mighty earthquake, and soon after the ridge filled with raging colossi, mountain giants that had never been seen here before. The druids of the Cenarion Expedition sense a sickly evil flowing from the crystal. It is too large to move and beyond their power to destroy, and Earthbinder Galandria Nightbreeze is eager to find what links it to the giants.",
   "triggers": [
    [
     1,
     3797
    ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The crystal is no falling star. Its evil emanations summon the giants and drive them mad, and when Galandria's circle at its northwest corner healed the land around it, the truth came out: it was dropped on the ridge by the servants of Prince Kael'thas, with Pathaleon the Calculator at work behind it.",
+    "triggers": [
+     [
+      5,
+      10351
+     ]
+    ],
+    "sources": [
+     "quest 10351 description and reward text",
+     "quest 10349 reward text"
+    ]
+   }
   ],
   "sources": [
    "quest 10132 description",
@@ -658,7 +836,7 @@
    "quest 10351 reward text",
    "DB spawns in area 3797: Raging Colossus x28"
   ],
-  "notes": "verified"
+  "notes": "Converted: the crystal calling the giants, Galandria's circle and her fury at its origin moved to part 1 (DONE 10351, both factions), which names Kael'thas's servants. The story 348340 tells the chain. Galandria's npc_text 10109 (blames Illidan) still not used. requiredState 8. Before: verified"
  },
  {
   "id": 348324,
@@ -666,8 +844,9 @@
   "zone": 3483,
   "sort": 1,
   "faction": 1,
+  "requiredState": 8,
   "title": "Force Commander Danath Trollbane",
-  "body": "Danath Trollbane, nephew of King Thoras of Stromgarde, followed Khadgar and Turalyon through the Dark Portal two decades ago to finish the Horde for good. In the war's final hours Draenor was torn apart, and his dearest friends were lost to the void. Danath took command of those left behind, the Sons of Lothar, and has held Honor Hold ever since, praying for the day the portal would open. Now it has, and Field Commander Romus has brought grim news: Lordaeron is lost, and his own Stromgarde has met no kinder fate. Danath swears that if he ever returns to Azeroth, Stromgarde will rise again. Until then he has orcs to fight, as he has all his life.",
+  "body": "Danath Trollbane, nephew of King Thoras of Stromgarde, followed Khadgar and Turalyon through the Dark Portal two decades ago to finish the Horde for good. In the war's final hours Draenor was torn apart, and his dear friends, he says, were lost to the void. Danath took command of those left behind, the Sons of Lothar, and has held Honor Hold ever since, praying for the day the portal would open. Now it has, and Field Commander Romus has brought grim news: Lordaeron is lost, and his own Stromgarde has met no kinder fate. Danath swears that if he ever returns to Azeroth, Stromgarde will rise again. Until then he has orcs to fight, as he has all his life.",
   "triggers": [
    [
     2,
@@ -683,7 +862,7 @@
    "quest 10254 reward text (leader of the Sons of Lothar)",
    "warcraft.wiki.gg/wiki/Danath_Trollbane (nephew of Thoras Trollbane, Alliance Expedition, took command of the Sons of Lothar)"
   ],
-  "notes": "Fact-check: 'Stromgarde has fallen' brought closer to npc_text 8772 (the fate of Stromgarde). Nephew of Thoras confirmed on the wiki. No WoD material. Faction 1: template 1671 hostile to the Horde; 10254 Alliance only."
+  "notes": "Converted: 'his dearest friends were lost to the void' framed as Danath's own account (npc_text 9932), since Khadgar is later found in Shattrath; nothing else to hide. npc_text 9932, 9933, 9941, 8772 reread: period text. requiredState 8; has DONE 10254. Before: Fact-check: 'Stromgarde has fallen' brought closer to npc_text 8772 (the fate of Stromgarde). Nephew of Thoras confirmed on the wiki. No WoD material. Faction 1: template 1671 hostile to the Horde; 10254 Alliance only."
  },
  {
   "id": 348325,
@@ -691,6 +870,7 @@
   "zone": 3483,
   "sort": 2,
   "faction": 2,
+  "requiredState": 8,
   "title": "Nazgrel",
   "body": "Nazgrel was among the orcs Thrall freed from the internment camps, and he became the warchief's chief of security in Durotar. Now, behind a ragged wolf mask, he commands Thrallmar as Thrall's right hand, charged with safeguarding the expedition to the world the orcs came from. He calls Thrall his warchief and his blood-brother, and would follow him through the gates of the abyss. He knows the risk: resources, warriors and the defense of Durotar itself have been staked on this venture. Thrall hopes to find the true tale of the orcish people somewhere in the wreckage of Draenor, and in his darkest moments Nazgrel fears that tale is better left untold.",
   "triggers": [
@@ -709,7 +889,7 @@
    "quest 9405 description",
    "warcraft.wiki.gg/wiki/Nazgrel (freed from an internment camp by Thrall, in charge of Durotar's security, commands Thrallmar)"
   ],
-  "notes": "verified. Origin limited to the internment camp; the Frostwolf origin is left out. Faction 2: template 1074 hostile to the Alliance; 10291 Horde only."
+  "notes": "Converted: body unchanged (nothing to hide); requiredState 8 on the entry, as for all of Outland. npc_text 9995, 10003, 10004 reread: period text. Has DONE 10291. Before: verified. Origin limited to the internment camp; the Frostwolf origin is left out. Faction 2: template 1074 hostile to the Alliance; 10291 Horde only."
  },
  {
   "id": 348326,
@@ -717,12 +897,21 @@
   "zone": 3483,
   "sort": 3,
   "faction": 0,
+  "requiredState": 8,
   "title": "Doom Lord Kazzak",
   "body": "After the Legion's defeat at Mount Hyjal, Lord Kazzak gathered its remnants in the Blasted Lands, and when the Dark Portal opened once more he passed through into Outland. Now he is Doom Lord Kazzak, commander of the Burning Legion's war in this shattered land, and his lieutenants direct demon troops across Hellfire Peninsula in his name. He waits atop the Throne of Kil'jaeden, still nursing the sting of the Third War, and promises that the shadow of the Legion now falls over this world and that all of mortal creation will be undone. His herald, Vorakem Doomspeaker, stalks the Legion's camps below. Where one demon falls, Kazzak boasts, ten shall rise.",
   "triggers": [
    [
     3,
     18728
+   ],
+   [
+    4,
+    10123
+   ],
+   [
+    4,
+    10142
    ]
   ],
   "sources": [
@@ -733,7 +922,7 @@
    "warcraft.wiki.gg/wiki/Doom_Lord_Kazzak",
    "data/lore/blasted_lands.json 409 (Kazzak at the Tainted Scar)"
   ],
-  "notes": "verified. Faction 90 is hostile to all. Blasted Lands tells his Azeroth years; one line here."
+  "notes": "Converted: body unchanged (it tells only who he is and what he says; nothing beyond what a group member at the kill hears or the Legion Front quests state). requiredState 8; added ACCEPT 10123 (Horde) and ACCEPT 10142 (Alliance), whose descriptions name Doom Lord Kazzak as commander of the Legion in Outland, so the entry has quest triggers for backfill. creature_text 18728 reread: period text. Before: verified. Faction 90 is hostile to all. Blasted Lands tells his Azeroth years; one line here."
  },
  {
   "id": 348327,
@@ -741,13 +930,74 @@
   "zone": 3483,
   "sort": 4,
   "faction": 0,
+  "requiredState": 8,
   "title": "Arazzius the Cruel",
-  "body": "Arazzius the Cruel is one of Kazzak's lieutenants and the commander of the Legion's ground forces in Hellfire Peninsula. He stayed hidden behind his underlings until Legion missives taken from the commanders of the forge camps revealed his name, and with it the host of terrorfiends he was gathering at the Pools of Aggonar. He holds the pools as his own doorstep and greets those who reach him with scorn, calling them children playing in a world beyond their understanding. Thrall himself has put a price on the Legionlord's head, and the Sons of Lothar count him as evil as any foe they have faced. Falling, he cries out to his master.",
+  "body": "Arazzius the Cruel is a Legionlord of the Burning Legion, and he holds the Pools of Aggonar as his own doorstep, with a host of hellish terrorfiends gathered around him. He meets those who reach him with fury and scorn, crying out at the insolence of anyone who thinks to defeat him there, calling each a child playing in a world beyond their comprehension, and warning that their weapons are nothing to him.",
   "triggers": [
    [
     3,
     19191
+   ],
+   [
+    4,
+    10136
+   ],
+   [
+    4,
+    10399
+   ],
+   [
+    4,
+    10400
    ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "He did not stay hidden. Legion missives taken from the commanders of the forge camps revealed him as one of Kazzak's lieutenants and the commander of the Legion's ground forces in Hellfire Peninsula. Thrall himself has put a price on his head, and the Sons of Lothar count him as evil as any foe they have ever faced.",
+    "triggers": [
+     [
+      4,
+      10136
+     ],
+     [
+      4,
+      10399
+     ],
+     [
+      4,
+      10400
+     ]
+    ],
+    "sources": [
+     "quest 10136 description (one of Kazzak's lieutenants, commands the ground forces)",
+     "quest 10399 description (secret Legionlord)",
+     "quest 10400 description",
+     "creature_text 19255 (the warchief's price on Arazzius's head)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Arazzius fell at last on his own doorstep, among the pools he claimed. Even in death his thoughts were for the one he served, and his final cry was an admission to his master that he had failed.",
+    "triggers": [
+     [
+      3,
+      19191
+     ],
+     [
+      5,
+      10136
+     ],
+     [
+      5,
+      10400
+     ]
+    ],
+    "sources": [
+     "creature_text 19191 group 1 (Master, I have failed...)",
+     "quest 10136 and 10400 reward text"
+    ]
+   }
   ],
   "sources": [
    "quest 10136 description (one of Kazzak's lieutenants, commands the Legion ground forces)",
@@ -755,9 +1005,10 @@
    "quest 10400 description",
    "creature_text 19191",
    "creature_text 19255 (the warchief's price on Arazzius's head)",
-   "DB spawn: 19191 in area 3553"
+   "DB spawn: 19191 in area 3553",
+   "creature_text 19191 groups 0, 2, 3"
   ],
-  "notes": "verified. Faction 90 is hostile to all."
+  "notes": "Converted: the opening now holds only what a group member at the kill sees and hears (the Legionlord at the pools, his terrorfiends, his yells), since KILL 19191 credits the whole group. The missives' revelation, his rank under Kazzak, Thrall's price and the Sons' judgment moved to part 1 (ACCEPT 10136 Horde, ACCEPT 10399 and 10400 Alliance); his death to part 2 (KILL 19191, DONE 10136, DONE 10400), told as a bystander sees it. Entry triggers: KILL 19191 kept, ACCEPT 10136, 10399, 10400 added (requiredState 8 needs a quest or area trigger). Before: verified. Faction 90 is hostile to all."
  },
  {
   "id": 348328,
@@ -765,13 +1016,38 @@
   "zone": 3483,
   "sort": 5,
   "faction": 1,
+  "requiredState": 8,
   "title": "Amaan the Wise",
-  "body": "Amaan the Wise is the elder of the Omenai, the draenei who chose to stay in Outland when Prophet Velen left and to keep their people's holy places alive. He lost his sight many years ago, but insists he never needed it to see what truly matters. From the Temple of Telhamat he sends helpers to cleanse the Pools of Aggonar, once his people's sacred springs, and any friend of Warp-Scryer Kryv is a friend of his. When a young paladin is found slain and blood is shed against the orcs in his name, Amaan offers no judgment. Instead he asks the avenger to look past what the eyes show and keep an open mind to every possibility.",
+  "body": "Amaan the Wise is the elder of the Omenai, the draenei who chose to stay in Outland when Prophet Velen left and to keep their people's holy places alive. He lost his sight many years ago, but insists he never needed it to see what truly matters. From the Temple of Telhamat he sends helpers to cleanse the Pools of Aggonar, once his people's sacred springs, and any friend of Warp-Scryer Kryv is a friend of his.",
   "triggers": [
    [
     2,
     16796
+   ],
+   [
+    4,
+    9426
+   ],
+   [
+    5,
+    10093
    ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "When a young paladin of his people is found slain and blood is shed against the orcs in his name, Amaan offers no judgment. Instead he asks the avenger to look past what the eyes show, and to keep an open mind to every possibility leading to the present and away from it.",
+    "triggers": [
+     [
+      4,
+      9545
+     ]
+    ],
+    "sources": [
+     "quest 9430 description (no judgment, see beyond what your eyes show)",
+     "quest 9545 description (the wise keep an open mind)"
+    ]
+   }
   ],
   "sources": [
    "npc_text 8792",
@@ -781,7 +1057,7 @@
    "warcraft.wiki.gg/wiki/Temple_of_Telhamat (Omenai led by Amaan)",
    "quest 10093 reward text (a friend of Kryv is a friend of his)"
   ],
-  "notes": "Fact-check: removed the clefthoof line (9382 has no quest giver in the DB, so it cannot be tied to Amaan) and the claim that his people sought vengeance (it was Makuru and the newcomer). Added his welcome of Kryv's friends (10093). Faction 1: template 1638 hostile to the Horde."
+  "notes": "Converted: his counsel after Sedai's death (a Sedai chain outcome) moved to part 1 (DONE 9543, ACCEPT 9430). Added entry triggers ACCEPT 9426 and DONE 10093 (both Alliance, so faction 1 holds) for backfill under requiredState 8. npc_text 8792 reread: period text. Before: Fact-check: removed the clefthoof line (9382 has no quest giver in the DB, so it cannot be tied to Amaan) and the claim that his people sought vengeance (it was Makuru and the newcomer). Added his welcome of Kryv's friends (10093). Faction 1: template 1638 hostile to the Horde. Check: part 1 triggers now ACCEPT 9545 only: DONE 9543 shows only Amaan's greeting and ACCEPT 9430 not the open-mind counsel, which is 9545's description."
  },
  {
   "id": 348329,
@@ -789,21 +1065,64 @@
   "zone": 3483,
   "sort": 6,
   "faction": 2,
+  "requiredState": 8,
   "title": "Gorkan Bloodfist",
-  "body": "Gorkan Bloodfist is the captain of the Mag'har at their hidden post northwest of Hellfire Citadel. Wary of every stranger, he keeps his orcs out of sight of the fel orcs and spares a stranger only when Earthcaller Ryga senses that the spirits walk with them. When a Horde envoy told him that the son of Durotan now rules a free Horde beyond the Dark Portal, untouched by the demons' taint, Gorkan could hardly believe it, and warned that it had better be no joke. It meant more to his people than words could say. He sent word to Nagrand for Hellscream at once, and a letter to Thrallmar: the Mag'har welcome their kin.",
+  "body": "Gorkan Bloodfist is the captain of the Mag'har at their hidden post northwest of Hellfire Citadel. Wary of every stranger, he keeps his orcs out of sight of the fel orcs, and spares an unannounced visitor only because Earthcaller Ryga senses that the spirits walk with them. Even then he warns that his people rarely trust strangers this close to the citadel, and that a visitor is welcome among them, at least for the time being.",
   "triggers": [
    [
     2,
     16845
+   ],
+   [
+    5,
+    9410
+   ],
+   [
+    5,
+    9441
    ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "When a Horde envoy told him that the son of Durotan now rules a free Horde beyond the Dark Portal, untouched by the demons' taint, Gorkan could hardly believe it, and warned that it had better be no joke. It meant more to his people than words could say. He sent word to Nagrand at once, for Hellscream must hear of it, and a letter to Thrallmar: the Mag'har welcome their kin.",
+    "triggers": [
+     [
+      4,
+      9406
+     ],
+     [
+      5,
+      9406
+     ]
+    ],
+    "sources": [
+     "quest 9406 description",
+     "creature_queststarter 16845 9406 (offered on turning in 9410)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In time the warchief's own envoy came to serve the Mag'har until Thrall's tribute and diplomats could arrive. It meant much to Gorkan's people that help came in their time of need, and he swore they will not easily forget the one who came, nor the one who sent them.",
+    "triggers": [
+     [
+      5,
+      9441
+     ]
+    ],
+    "sources": [
+     "quest 9441 description and reward text"
+    ]
+   }
   ],
   "sources": [
    "npc_text 8813",
    "quest 9410 reward text",
    "quest 9406 description",
-   "creature_template 16845 subname Mag'har Captain"
+   "creature_template 16845 subname Mag'har Captain",
+   "quest 9441 reward text"
   ],
-  "notes": "verified. Faction 2: template 1651 hostile to the Alliance."
+  "notes": "Converted: the news of Thrall's Horde and Gorkan's message to Nagrand and Thrallmar moved to part 1 (ACCEPT/DONE 9406); Thrall's envoy to part 2 (DONE 9441). Added entry triggers DONE 9410 and DONE 9441 (Horde only, so faction 2 holds) for backfill under requiredState 8; TALK 16845 kept. npc_text 8813 reread: period text. Before: verified. Faction 2: template 1651 hostile to the Alliance."
  },
  {
   "id": 348330,
@@ -811,8 +1130,9 @@
   "zone": 3483,
   "sort": 7,
   "faction": 1,
+  "requiredState": 8,
   "title": "Father Malgor Devidicus",
-  "body": "Father Malgor Devidicus is an old priest of the Sons of Lothar, usually found deep in his cups. On the eve of the expedition's departure for Draenor he gave his book, Mysteries of the Light, to Turalyon, and through the whole campaign and the long years after, Turalyon never failed to read the day's passage to his men. When Turalyon left them again, he gave the book back. Malgor kept it in his quarters by the Expedition Armory, believing it safe there, and then the armory fell. Brought back to him at last, battered but whole, it is the only token he has left of a man who had become closer to him than family.",
+  "body": "Father Malgor Devidicus is an old priest of the Sons of Lothar, usually found deep in his cups. On the eve of the expedition's departure for Draenor he gave his book, Mysteries of the Light, to Turalyon, and through the whole campaign and the long years after, Turalyon never failed to read the day's passage to his men. When Turalyon left them again, he gave the book back. Malgor kept it in his quarters to the south of the Expedition Armory, believing it safe there, and calls himself a fool for it.",
   "triggers": [
    [
     2,
@@ -823,11 +1143,26 @@
     10058
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Brought back to him from the ruins at last, battered by the years but whole, the book is the only token Malgor has left of Turalyon. He fights back tears over it: fight beside someone for that many years, he says, and they become closer than family.",
+    "triggers": [
+     [
+      5,
+      10058
+     ]
+    ],
+    "sources": [
+     "quest 10058 reward text"
+    ]
+   }
+  ],
   "sources": [
    "quest 10058 description, request and reward text",
    "creature_template 16825 faction 1667"
   ],
-  "notes": "Fact-check: 10058 says he believed the book safe, not lost; reworded. Faction 1: template 1667 hostile to the Horde; 10058 Alliance only."
+  "notes": "Converted: the book's recovery moved to part 1 (DONE 10058). requiredState 8; has ACCEPT 10058. Before: Fact-check: 10058 says he believed the book safe, not lost; reworded. Faction 1: template 1667 hostile to the Horde; 10058 Alliance only."
  },
  {
   "id": 348331,
@@ -835,12 +1170,21 @@
   "zone": 3483,
   "sort": 8,
   "faction": 0,
+  "requiredState": 8,
   "title": "The Fel Reaver",
-  "body": "The fel reaver is the Legion's great war engine, a towering construct on long striding legs that trails green smoke wherever it goes. Mo'arg engineers and their gan'arg servants build them in the forge camps on the northern ridges, and the Horde and Alliance fight hard to stop that work before a fleet of them is loosed. A few already roam Hellfire Peninsula, crushing careless travelers who stray into their path. At their heart burns a core of fel fire far hotter than any forge, and the blacksmiths of Thrallmar and Honor Hold have found a use even for that: a key mold plunged into a fallen reaver comes out tempered.",
+  "body": "The fel reaver is the Legion's great war engine, a towering construct on long striding legs that trails green smoke wherever it goes. Mo'arg engineers and their gan'arg servants build them in the forge camps on the northern ridges, and the Horde and Alliance fight hard to stop that work before a fleet of them is loosed. A few already roam Hellfire Peninsula, crushing careless travelers who stray into their path. At their heart burns a scalding core of fel fire, far hotter than any forge.",
   "triggers": [
    [
     3,
     18733
+   ],
+   [
+    4,
+    10390
+   ],
+   [
+    4,
+    10394
    ]
   ],
   "sources": [
@@ -850,7 +1194,7 @@
    "quest 10092 description (fleet of fel reavers)",
    "DB spawns: Fel Reaver 18733 x2 in Hellfire (area 3799 and the open zone)"
   ],
-  "notes": "verified. Fel Reaver faction 954 is hostile to all."
+  "notes": "Converted: the key mold tempered in a fallen reaver dropped (it is a step of the Shattered Halls key chain 10754 on, left unused here, and a group member at a KILL 18733 would not have earned it); the fel fire core stays (10764 as a source only). Added ACCEPT 10390 (Horde) and ACCEPT 10394 (Alliance), the Mageddon quests whose descriptions tell of fel reaver production, for backfill under requiredState 8. Before: verified. Fel Reaver faction 954 is hostile to all."
  },
  {
   "id": 348332,
@@ -858,8 +1202,9 @@
   "zone": 3483,
   "sort": 9,
   "faction": 2,
+  "requiredState": 8,
   "title": "Ogath the Mad",
-  "body": "Ogath the Mad has wandered Outland for a lifetime, searching for the truth of the void. Grown old and weak, he now waits at Spinebreaker Post with an unstable warp rift generator of his own design, which he means to set off in the Warp Fields, where time and space wear thin at the edge of the abyss. Each experiment makes it stronger, fed by soul shards torn from the voidwalkers of Void Ridge, until it can open a rift to the deepest parts of the abyss and summon Void Baron Galaxis, a true prince of the void. Others laughed at Ogath and called him insane. With Galaxis's soul shard, he believes, he will command the abyss itself.",
+  "body": "Ogath the Mad has wandered Outland for a lifetime, searching for the truth of the void. Grown old and weak, he now waits at Spinebreaker Post with an unstable warp rift generator of his own design, which he means to set off in the Warp Fields, where time and space wear thin at the edge of the abyss. He hopes to learn the secrets of the voidwalkers from whatever comes through, and dreams of one day opening a portal to the beyond that cannot be closed.",
   "triggers": [
    [
     2,
@@ -870,13 +1215,46 @@
     10278
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Each experiment makes the generator stronger. Fed with soul shards torn from the voidwalkers of Void Ridge, it can at last open a rift to the deepest parts of the abyss, and Ogath means to set it off among the void stones on the brink to summon a true prince of the void, Void Baron Galaxis, whose soul shard will tell him what lies beyond.",
+    "triggers": [
+     [
+      5,
+      10294
+     ],
+     [
+      4,
+      10295
+     ]
+    ],
+    "sources": [
+     "quest 10294 reward text",
+     "quest 10295 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Galaxis came through the rift and was destroyed, and his soul shard was carried back to Spinebreaker Post. Others had laughed at Ogath and called him insane for his obsession with the Warp Fields and Void Ridge. Now, he believes, he will unlock the secrets of the voidwalkers and command the power of the abyss itself.",
+    "triggers": [
+     [
+      5,
+      10295
+     ]
+    ],
+    "sources": [
+     "quest 10295 reward text"
+    ]
+   }
+  ],
   "sources": [
    "quest 10278 description and reward text",
    "quest 10294",
    "quest 10295 description and reward text",
    "DB spawn 19683 in area 3812"
   ],
-  "notes": "verified. Faction 2: template 1669 hostile to the Alliance; 10278 Horde only."
+  "notes": "Converted: the improved generator and the plan to summon Galaxis moved to part 1 (DONE 10294, ACCEPT 10295); Galaxis destroyed and Ogath's boast to part 2 (DONE 10295). No KILL trigger for Galaxis (a bystander would not see the shard delivered). requiredState 8; has ACCEPT 10278. Before: verified. Faction 2: template 1669 hostile to the Alliance; 10278 Horde only."
  },
  {
   "id": 348333,
@@ -884,8 +1262,9 @@
   "zone": 3483,
   "sort": 1,
   "faction": 0,
+  "requiredState": 8,
   "title": "The Legion Front",
-  "body": "Fresh soldiers from Azeroth are soon sent to the supply caravans outside the walls of Thrallmar and Honor Hold, where Sergeant Shatterskull and Sergeant Altumus watch the Legion. Kazzak himself is beyond reach, but his dreadlords call down the infernal storms that rain on both outposts from Felspark Ravine and the Path of Anguish, and they can be killed. Those who survive go on to the forward bases. At Reaver's Fall, Forward Commander To'arch's crew and, at Expedition Point, Forward Commander Kingston's, destroy the Legion's portals with primers built in Area 52, then send recruits aloft on armored wyverns and gryphons to bomb the twin gateways beside the Path of Glory. The Alliance's riders fly on from Shatter Point, a floating Wildhammer base that rarely tips, and both sides then hammer the Abyssal Shelf from the air.",
+  "body": "Fresh soldiers from Azeroth are soon sent to the supply caravans outside the walls of Thrallmar and Honor Hold, where Sergeant Shatterskull and Sergeant Altumus watch the Legion. Altumus asked Danath for a full battalion, and is not shy about saying so. Kazzak himself is beyond reach, but his dreadlords call down the infernal storms that rain on both outposts from Felspark Ravine and the Path of Anguish, and they can be killed. Beyond them, along the Legion Front, portals and great gateways draw in demon reinforcements from across Outland.",
   "triggers": [
    [
     4,
@@ -896,6 +1275,80 @@
     10141
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The storms slacken once the dreadlords and their imps and infernals are cut down, at least until the Legion brings forth more. Those who survive are sent on to the front lines, to Overlord Hun Maimfist's crew at Reaver's Fall or to Field Marshal Rohamus's at Expedition Point. Both crews are radicals, sworn to the complete extermination of the Burning Legion.",
+    "triggers": [
+     [
+      5,
+      10123
+     ],
+     [
+      5,
+      10142
+     ]
+    ],
+    "sources": [
+     "quests 10123, 10142 reward text",
+     "quests 10124, 10143 descriptions (radicals)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "There Forward Commanders To'arch and Kingston hand out primers built in Area 52, which turn the demons' own power into explosives. Set off inside the portals of the Legion Front, they tear the portals apart and stem the flow of reinforcements for a long time.",
+    "triggers": [
+     [
+      5,
+      10208
+     ],
+     [
+      5,
+      10144
+     ]
+    ],
+    "sources": [
+     "quests 10208, 10144 descriptions and reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Next come the twin gateways, Murketh and Shaadraz, on either side of the Path of Glory. Recruits are sent aloft on armored wyverns and gryphons to bomb them, setting the Legion back weeks. Then the Horde's riders are handed bombs for a new target, while the Alliance's are sent on to Shatter Point, a Wildhammer attack base on a floating piece of land near the portal.",
+    "triggers": [
+     [
+      5,
+      10129
+     ],
+     [
+      5,
+      10146
+     ]
+    ],
+    "sources": [
+     "quests 10129, 10146 descriptions and reward text",
+     "quest 10162 description (offered on turning in 10129)",
+     "quest 10340 description (offered on turning in 10146; Shatter Point)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "That target was the Abyssal Shelf, the Legion's main production grounds behind the forge camps. From the wyverns of Reaver's Fall and the gryphons of Shatter Point, a floating base that rarely tips, both sides bombed its gan'arg peons, mo'arg overseers and fel cannons from the air, and showed the Legion that not even the skies are safe.",
+    "triggers": [
+     [
+      5,
+      10162
+     ],
+     [
+      5,
+      10163
+     ]
+    ],
+    "sources": [
+     "quests 10162, 10163 descriptions, log text and request text",
+     "quest 10340 reward text, 10344 reward text (Shatter Point)"
+    ]
+   }
+  ],
   "sources": [
    "quests 10121, 10123, 10124, 10208, 10129, 10162 (Horde chain)",
    "quests 10141, 10142, 10143, 10144, 10146, 10340, 10344, 10163 (Alliance chain)",
@@ -903,7 +1356,7 @@
    "quest 10340 reward text, 10344 reward text (Shatter Point)",
    "quest 10121 reward text (Hyjal some five years past)"
   ],
-  "notes": "verified. Faction 0: 10121 Horde only (690), 10141 Alliance only (1101), one per side. Arrival quests 10288/10120 untold; 10119/9407 belong to Blasted Lands."
+  "notes": "Converted: opening is the caravans and the dreadlords' storms (ACCEPT 10121 Horde, 10141 Alliance). Parts: 1 dreadlords slain and the move to the forward bases (DONE 10123, 10142), 2 the portals destroyed (DONE 10208, 10144), 3 the gateways bombed, Shatter Point and the Abyssal Shelf (DONE 10129, 10146). Arrival quests 10288/10120 untold; 10119/9407 belong to the Blasted Lands. requiredState 8. Before: verified. Faction 0: 10121 Horde only (690), 10141 Alliance only (1101), one per side. Arrival quests 10288/10120 untold; 10119/9407 belong to Blasted Lands. Check: part 3 (DONE 10129, 10146) trimmed to what those turn-ins show (the gateways bombed, then 10162's bombs and 10340's Shatter Point); the Abyssal Shelf bombing and Shatter Point's tipping moved to new part 4 (DONE 10162 Horde, DONE 10163 Alliance)."
  },
  {
   "id": 348334,
@@ -911,8 +1364,9 @@
   "zone": 3483,
   "sort": 2,
   "faction": 0,
+  "requiredState": 8,
   "title": "The Forge Camps",
-  "body": "Scouts soon learn that the Legion camps on the ridge behind Thrallmar are forge camps building fel reavers. Nazgrel sends his best to kill the gan'arg and their master Razorsaw at unfinished Mageddon, then to blow up the fel cannons of Forge Camp: Rage, and finally to slay Warbringer Arix'Amal at Invasion Point: Annihilator and overload its warp portal with his key. From Honor Point, Field Marshal Brock sends the Alliance against the same camps, grudging but clear that Thrallmar must not fall while the Horde helps hold the Dark Portal. Each side takes a Legion missive from the camps' commanders. Magister Bloodhawk in Thrallmar and Warp-Scryer Kryv in Honor Hold decipher them and find the same name: Arazzius the Cruel, the Legionlord commanding the demons of the peninsula, massing terrorfiends at the Pools of Aggonar. Thrallmar and Honor Hold both send their champions to end him.",
+  "body": "Scouts soon learn that the Legion camps on the ridge behind Thrallmar are forge camps, where the demons build their fel reavers. Nazgrel sends his best to kill the gan'arg and their master Razorsaw at unfinished Mageddon, to blow up the fel cannons of Forge Camp: Rage, and to slay Warbringer Arix'Amal at Invasion Point: Annihilator and overload its warp portal with his key. From Honor Point, Field Marshal Brock sends the Alliance against the same camps, grudging but clear that Thrallmar must not fall, since the Alliance needs the Horde to help hold the line at the Dark Portal.",
   "triggers": [
    [
     4,
@@ -923,13 +1377,57 @@
     10382
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Each side takes a Legion missive from the camps' commanders, written in a scrawl that seems to twist and burn before the eyes. Magister Bloodhawk in Thrallmar and Warp-Scryer Kryv in Honor Hold decipher them and find the same name: Arazzius the Cruel, a secret Legionlord and one of Kazzak's lieutenants, who commands the demons of the peninsula and is massing terrorfiends at the Pools of Aggonar.",
+    "triggers": [
+     [
+      4,
+      10136
+     ],
+     [
+      4,
+      10399
+     ],
+     [
+      4,
+      10400
+     ]
+    ],
+    "sources": [
+     "quests 10393, 10395 descriptions (the missives)",
+     "quest 10136 description",
+     "quest 10399 description",
+     "item 29590 (Razorsaw) starts 10393; item 29588 (Arix'Amal) starts 10395"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Thrallmar and Honor Hold both sent their champions to end him, and Arazzius died at the pools. Nazgrel declared that Hellfire belonged to the Horde once again and wished Thrall had been there to see it. Danath praised the Light and looked ahead to the day the Legion runs for home, and the Sons of Lothar can go home too.",
+    "triggers": [
+     [
+      5,
+      10136
+     ],
+     [
+      5,
+      10400
+     ]
+    ],
+    "sources": [
+     "quest 10136 reward text",
+     "quest 10400 reward text"
+    ]
+   }
+  ],
   "sources": [
    "quests 10388, 10390, 10391, 10392, 10393, 10389, 10136 (Horde chain)",
    "quests 10382, 10394, 10396, 10397, 10395, 10399, 10400 (Alliance chain)",
    "quest 10396 description (need the Horde to hold the line)",
    "item 29590 Burning Legion Missive (drops from Razorsaw) starts 10393; item 29588 (drops from Arix'Amal) starts 10395"
   ],
-  "notes": "verified. Faction 0: 10388 Horde only, 10382 Alliance only. Missive items 29590 (Horde) and 29588 (Alliance)."
+  "notes": "Converted: opening is the forge camp missions as tasks (ACCEPT 10388 Horde, 10382 Alliance). Parts: 1 the missives and Arazzius named (ACCEPT 10136 Horde; ACCEPT 10399, 10400 Alliance), 2 his death and the two leaders' words (DONE 10136, 10400). No KILL trigger on part 2 (it tells what Nazgrel and Danath say; the Arazzius entry 348327 has the KILL). requiredState 8. Before: verified. Faction 0: 10388 Horde only, 10382 Alliance only. Missive items 29590 (Horde) and 29588 (Alliance)."
  },
  {
   "id": 348335,
@@ -937,8 +1435,9 @@
   "zone": 3483,
   "sort": 3,
   "faction": 0,
+  "requiredState": 8,
   "title": "Know Your Enemy",
-  "body": "Rumors reach Honor Hold of a new breed of orc, larger, meaner and more cunning than any the Sons have known, and Danath sends recruits to Lieutenant Amadi at the broken tower west of the hold. They begin with Bonechewer scavengers on the Path of Glory, then raid Zeth'Gor for the talismans the Bleeding Hollow make from fallen soldiers' insignias, and at last bring down Warlord Morkh. In Thrallmar, Vurtok Axebreaker rages at the sight of the red-skinned Bonechewers and wants their blood studied. The work passes from Apothecary Zelana at Reaver's Fall to Albreck at Spinebreaker Post, who has Bleeding Hollow blood boiled in the clan's own cursed cauldron, and then to Antonivich in Thrallmar, for the Royal Apothecary Society means to learn how orcs became fel orcs and keep it from happening again. A demoniac scryer is fed Shattered Hand souls and set to read the citadel. Then Nazgrel's blood burns for battle, and he sends a challenge to the Hand of Kargath.",
+  "body": "Rumors reach Honor Hold of a new breed of orc, larger, meaner and more cunning than any the Sons have known, and Danath sends recruits to Lieutenant Amadi at the broken tower west of the hold. In Thrallmar, Vurtok Axebreaker rages at the sight of the red-skinned Bonechewers, depraved cousins of his own people, and wants their blood gathered so the apothecaries can learn how they fell to the demon taint the orcs of the Horde so recently threw off. Both sides begin with the Bonechewer scavengers on the ruined battlements of the Path of Glory, and both soon turn to the Bleeding Hollow of Zeth'Gor.",
   "triggers": [
    [
     4,
@@ -949,13 +1448,58 @@
     10450
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "For the Alliance, Zeth'Gor gives up a grim find: talismans the Bleeding Hollow make from the insignias of fallen Honor Hold soldiers, cursed to work against the living. Corporal Ironridge at Expedition Point gathers them to honor the dead, then sends recruits after Warlord Morkh, whose clever, cruel tactics have cut deep. Morkh dies in his barracks, and his shattered armor is brought back to hearten the soldiers.",
+    "triggers": [
+     [
+      5,
+      10485
+     ]
+    ],
+    "sources": [
+     "quests 10482, 10483, 10484 descriptions and reward text",
+     "quest 10485 description and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "For the Horde, the blood passes from Apothecary Zelana at Reaver's Fall to Albreck at Spinebreaker Post, who has Bleeding Hollow blood boiled in the clan's own cursed cauldron to free it of the witches' curses, and then to Antonivich in Thrallmar. The Royal Apothecary Society means to learn how the orcs of Hellfire became fel orcs, and to keep that tragedy from ever befalling the orcs of the Horde.",
+    "triggers": [
+     [
+      5,
+      10835
+     ]
+    ],
+    "sources": [
+     "quests 10449, 10242, 10538 descriptions",
+     "quest 10835 description and reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Antonivich's demoniac scryer, fed the souls of Shattered Hand orcs, takes its reading of the citadel from Hellfire Basin. Then Nazgrel's blood burns for battle. Force-Commander Gorax falls at the citadel's foot, a challenge from the Horde is planted on his corpse, and the Hand of Kargath answers it and dies. The war on the fel orcs, Nazgrel says, is also a battle within the orcs themselves, and one they will win.",
+    "triggers": [
+     [
+      5,
+      10876
+     ]
+    ],
+    "sources": [
+     "quests 10864, 10838 descriptions",
+     "quest 10875 reward text",
+     "quest 10876 description and reward text"
+    ]
+   }
+  ],
   "sources": [
    "quests 10160, 10482, 10483, 10484, 10485 (Alliance chain)",
    "quests 10450, 10449, 10242, 10538, 10835, 10864, 10838, 10875, 10876 (Horde chain)",
    "quest 10450 description",
    "quest 10835 reward text"
   ],
-  "notes": "Fact-check: Albreck has the blood boiled for him (10538), and Zelana passes on a Bleeding Hollow sample rather than the Bonechewer blood; reworded. Faction 0: 10160 Alliance only, 10450 Horde only. The Alliance chain continues into The Exorcism of Colonel Jules."
+  "notes": "Converted: opening trimmed to the two starts (ACCEPT 10160 Alliance, 10450 Horde) and the shared first targets. Parts: 1 Alliance talismans and Morkh's death (DONE 10485; the chain continues in 348336), 2 Horde blood studies to the Royal Apothecary Society (DONE 10835), 3 the scryer and the Hand of Kargath (DONE 10876). requiredState 8. Before: Fact-check: Albreck has the blood boiled for him (10538), and Zelana passes on a Bleeding Hollow sample rather than the Bonechewer blood; reworded. Faction 0: 10160 Alliance only, 10450 Horde only. The Alliance chain continues into The Exorcism of Colonel Jules."
  },
  {
   "id": 348336,
@@ -963,20 +1507,69 @@
   "zone": 3483,
   "sort": 4,
   "faction": 1,
+  "requiredState": 8,
   "title": "The Exorcism of Colonel Jules",
-  "body": "While the fight against Zeth'Gor goes on, Corporal Ironridge receives word that his commanding officer, Colonel Jules, was stricken by a demonic corruption in battle near Gor'gaz Outpost. In an upper room of the Honor Hold inn, the draenei Anchorite Barada and his assistant Klatu prepare to drive it out. Jules's tormented spirit seeks peace through vengeance, so an anchorite relic is set down at Gor'gaz to draw out the fel spirits of the Shattered Hand to be destroyed. Klatu's prayer beads, needed for the rite, were stolen and buried by Fei Fei, the hound of Warrant Officer Proudwell. Then the exorcism begins. The thing inside the colonel mocks the anchorite and the colonel floats from the floor, but Barada's faith holds and the darkness is cast out. A messenger waiting in the hall seems to have fled at the sight, and Danath sends Jules's savior to slay Drillmaster Zurok at the citadel's foot.",
+  "body": "While the fight against Zeth'Gor goes on, Corporal Ironridge receives word that his commanding officer, Colonel Jules, was stricken by a demonic corruption in battle near Gor'gaz Outpost and is growing worse. In an upper room of the Honor Hold inn, the draenei Anchorite Barada prays over him while his assistant Klatu prepares for an exorcism. Jules's tormented spirit seeks peace through vengeance, so an anchorite relic is to be set down at Gor'gaz to draw out the fel spirits of the Shattered Hand for destruction. Klatu's prayer beads, needed for the rite, have gone missing in the courtyard, and he suspects Fei Fei, the hound of Warrant Officer Proudwell.",
   "triggers": [
    [
     4,
     10903
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Then the exorcism begins. The thing inside the colonel mocks the anchorite and swears the soul is its own, and the colonel rises floating from the floor, but Barada's faith holds and the darkness is cast back where it came from. Freed of the pit of blackness inside him, Jules looks up and sees the face of his savior.",
+    "triggers": [
+     [
+      5,
+      10935
+     ]
+    ],
+    "sources": [
+     "quest 10935 description and reward text",
+     "creature_text 22431, 22432",
+     "npc_text 10706"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "A messenger who had been waiting in the hall seems to have fled at the sight of the floating colonel, and Danath has heard all about it. The Shattered Hand in front of Hellfire Citadel are organizing for an all-out assault, and he sends Jules's savior to the citadel's foot to kill the one in charge, Drillmaster Zurok.",
+    "triggers": [
+     [
+      5,
+      10936
+     ],
+     [
+      4,
+      10937
+     ]
+    ],
+    "sources": [
+     "quest 10936 description and reward text",
+     "quest 10937 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Zurok fell at the foot of the citadel, and Danath's scouts soon reported the Shattered Hand there in disarray without their drillmaster. It had been a long road from Zeth'Gor to the citadel's gates, and Danath honored the one who walked it with armor from the hold.",
+    "triggers": [
+     [
+      5,
+      10937
+     ]
+    ],
+    "sources": [
+     "quest 10937 reward text"
+    ]
+   }
+  ],
   "sources": [
    "quests 10903, 10909, 10916, 10919, 10935, 10936, 10937 (descriptions and reward texts)",
    "creature_text 22431, 22432",
    "npc_text 10706"
   ],
-  "notes": "verified. Faction 1: all quests AllowableRaces 1101."
+  "notes": "Converted: opening is the curse and the preparations (ACCEPT 10903). Parts: 1 the exorcism (DONE 10935), 2 the fled messenger and Danath's order against Zurok (DONE 10936, ACCEPT 10937), 3 Zurok's death (DONE 10937). Fei Fei's Treat 10919 is auto-complete and not used. requiredState 8. Before: verified. Faction 1: all quests AllowableRaces 1101."
  },
  {
   "id": 348337,
@@ -984,18 +1577,91 @@
   "zone": 3483,
   "sort": 5,
   "faction": 2,
+  "requiredState": 8,
   "title": "The Mag'har",
-  "body": "Hellfire Citadel learns that Thrallmar is sending an envoy to Falcon Watch and sets an assassin on the road. Nazgrel's agent finds Krun Spinebreaker already dead, struck down from behind by a heavy stone axe of strange orcish make. Nazgrel can hardly believe it: whoever made that axe knows the old ways. Far Seer Regulkut gives the agent a wolf totem, and an ancestral spirit wolf leads the way to Mag'har Post, hidden in the hills, where brown orcs untouched by the demons' blood have survived. Gorkan Bloodfist sends word to Nagrand and a letter of welcome to Thrallmar, and Nazgrel's own letter goes to Thrall in Orgrimmar. The warchief resolves to reach his people as soon as he can, and sends the bearer back to serve the Mag'har until his tribute and diplomats arrive. Earthcaller Ryga's grunts lie sick from tainted water, and the Horde's envoy brings her the cure.",
+  "body": "Hellfire Citadel has learned that Thrallmar is sending an envoy to Falcon Watch, and has set an ambush. Nazgrel's scouts name the assassin, Krun Spinebreaker, who waits along the road north of the citadel, and Nazgrel sends an agent to slay him and show the fel orcs that the Horde is not to be trifled with. Nazgrel never forgets why the warchief backed this expedition: for the blood elves Outland is a promised land, but for the orcs it is a return home, to the world where their roots lie.",
   "triggers": [
    [
     4,
     9400
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Nazgrel's agent found Krun Spinebreaker already dead, struck down from behind by a heavy stone axe of orcish make but of materials like nothing the Horde has seen. Nazgrel could hardly believe it, and wondered aloud whether they had found them at last. Whoever made that axe, he said, knows the old ways, and must be found by something surer than ordinary tracking.",
+    "triggers": [
+     [
+      5,
+      9401
+     ],
+     [
+      5,
+      9405
+     ]
+    ],
+    "sources": [
+     "quest 9400 reward text",
+     "quest 9401 description and reward text",
+     "quest 9405 description (offered on turning in 9401)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Far Seer Regulkut gave the agent a wolf totem to call a spirit that follows not scent but essence. The ancestral spirit wolf led the way to Mag'har Post, hidden in the hills, where brown orcs untouched by the demons' blood have survived. Gorkan Bloodfist heard the news of Thrall's free Horde, sent word to Nagrand, and gave the agent a letter of welcome for Thrallmar.",
+    "triggers": [
+     [
+      5,
+      9410
+     ],
+     [
+      4,
+      9406
+     ]
+    ],
+    "sources": [
+     "quest 9410 description and reward text",
+     "quest 9406 description (offered on turning in 9410)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "True orcs, here in Hellfire. Nazgrel's letter, under his personal seal, reached Thrall in Orgrimmar, and the warchief's jaw slackened as he read. He resolved to reach his people as soon as he could, but matters in Durotar held him, so he sent the bearer back to serve the Mag'har until his tribute and diplomats arrive.",
+    "triggers": [
+     [
+      4,
+      9441
+     ],
+     [
+      5,
+      9441
+     ]
+    ],
+    "sources": [
+     "quest 9406 reward text",
+     "quest 9438 description and reward text",
+     "quest 9441 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The first service Earthcaller Ryga asked was drycap, a rare mushroom that grows in Hellfire only in a cave at the Great Fissure, since the post's orders forbid its orcs to risk being seen gathering it. With it she made a salve, and the grunts sickened by contaminated water were restored. The Mag'har, she said, are in the envoy's debt.",
+    "triggers": [
+     [
+      5,
+      9447
+     ]
+    ],
+    "sources": [
+     "quest 9442 description",
+     "quest 9447 description and reward text"
+    ]
+   }
+  ],
   "sources": [
    "quests 9400, 9401, 9405, 9410, 9406, 9438, 9441, 9442, 9447 (descriptions and reward texts)"
   ],
-  "notes": "verified. Faction 2: all Horde only. Orgrimmar does not tell 9438/9441 (its Thrall entry 163707 mentions only Geyah). Garadar's 10175 and 10212 left to Nagrand."
+  "notes": "Converted: opening is the assassination plot (ACCEPT 9400) and the expedition's purpose (9405). Parts: 1 the axe and the totem (DONE 9401, 9405), 2 the Mag'har found (DONE 9410, ACCEPT 9406), 3 Thrall's answer and the envoy (DONE 9438, ACCEPT 9441, DONE 9441; 9438 and 9441 are Hellfire quests turned in or given by Thrall in Orgrimmar, which Orgrimmar does not use). The cure itself (9447) not told. Garadar's 10175 and 10212 left to Nagrand. requiredState 8. Before: verified. Faction 2: all Horde only. Orgrimmar does not tell 9438/9441 (its Thrall entry 163707 mentions only Geyah). Garadar's 10175 and 10212 left to Nagrand. Check: opening's expedition line reworded as Nazgrel's standing reason (background, as in his entry 348325). Part 1 (DONE 9401, 9405) no longer gives Regulkut's totem (9410's text, offered only on turning in 9405); the totem opens part 2. Part 3 triggers now ACCEPT/DONE 9441 (DONE 9438 shows only Thrall's first words, not Durotar, the tribute and the envoy), and Ryga's drycap request (9442, accepted after 9441) moved with the cure to new part 4 (DONE 9447), restoring the original's cure line."
  },
  {
   "id": 348338,
@@ -1003,18 +1669,76 @@
   "zone": 3483,
   "sort": 6,
   "faction": 1,
+  "requiredState": 8,
   "title": "The Death of Sedai",
-  "body": "At the Temple of Telhamat, Anchorite Obadei grieves for his brother Sedai, an idealist who went to the orcs of Mag'har Post to seek peace. His body lies to the east, an unarmed young paladin struck in the back. Obadei asks to be left alone with his grief, but the Broken Makuru, to whom Sedai was like a brother, demands vengeance and sends the newcomer against the Mag'har for their ancestral beads. Afterward, Obadei admits that such retaliation is not what Sedai would have wanted. Amaan the Wise passes no judgment. He sends the avenger to search the Ruins of Sha'naar for relics, and with a seer's relic found there, a vision unfolds at Sedai's body of how his last moments may have gone. Was the truth what it seemed? No one can know for sure, Amaan says, and whether the old feud with the orcs must go on is still unwritten.",
+  "body": "At the Temple of Telhamat, Anchorite Obadei fears for his brother Sedai, an idealist who set out for the orcs of Mag'har Post, sure the time was ripe to set old differences aside and make peace. He has been missing for days, and Obadei asks a newcomer to search to the east, where Sedai must be somewhere near. The draenei have reason for dread: the orcs once drove them near to extinction, and since then they have kept away from orcs even when no demon drove them.",
   "triggers": [
    [
     4,
     9390
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Sedai lay not far to the east: the body of a young draenei paladin, slain by a blow to his back. The search was over, and the grim news had to be carried home to his brother.",
+    "triggers": [
+     [
+      5,
+      9390
+     ]
+    ],
+    "sources": [
+     "quest 9390 reward text",
+     "quest 9423 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "He had been unarmed. Obadei cursed the cowardly orcs and asked to be left alone with his grief. The Broken Makuru, to whom Sedai was like a brother, demanded vengeance, and sent the newcomer against the Mag'har grunts in the hills for their ancestral beads.",
+    "triggers": [
+     [
+      4,
+      9424
+     ]
+    ],
+    "sources": [
+     "quest 9423 reward text",
+     "quest 9424 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Afterward, Obadei admitted that such retaliation is not what Sedai would have wanted. Amaan the Wise passed no judgment. He sent the avenger to search the Ruins of Sha'naar for relics, trusting that fate would turn up what they needed, and asked only for patience.",
+    "triggers": [
+     [
+      4,
+      9430
+     ]
+    ],
+    "sources": [
+     "quest 9543 description",
+     "quest 9430 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "With a seer's relic found there, a vision unfolded at Sedai's body of how his last moments may have gone. Was the truth what it seemed? No one can know for sure, Amaan says, and whether the old feud with the orcs must go on is still unwritten. What matters is to stay open to the possibilities.",
+    "triggers": [
+     [
+      5,
+      9545
+     ]
+    ],
+    "sources": [
+     "quest 9545 description and reward text"
+    ]
+   }
+  ],
   "sources": [
    "quests 9390, 9423, 9424, 9543, 9430, 9545 (descriptions and reward texts)"
   ],
-  "notes": "Fact-check: dropped 'alone' (unsupported). Faction 1: all quests AllowableRaces 1101. The vision is kept vague, as the reward text only calls it a likely series of events."
+  "notes": "Converted: opening is Sedai missing (ACCEPT 9390). Parts: 1 his body and Makuru's demand (DONE 9390, 9423), 2 Obadei's regret and Amaan's errand (ACCEPT/DONE 9543, ACCEPT 9430), 3 the vision, kept vague (DONE 9545). requiredState 8. Before: Fact-check: dropped 'alone' (unsupported). Faction 1: all quests AllowableRaces 1101. The vision is kept vague, as the reward text only calls it a likely series of events. Check: part 1 split: DONE 9390 now shows only the body and the blow to the back; 'unarmed', Obadei's curse and Makuru's demand are part 2 (ACCEPT 9424, offered after the 9423 turn-in). Obadei's regret and Amaan's errand now part 3 on ACCEPT 9430 only (ACCEPT/DONE 9543 show the regret but not Amaan's errand). The vision is part 4. The opening's near-extinction line (9543) kept as background history, not a revelation."
  },
  {
   "id": 348339,
@@ -1022,8 +1746,9 @@
   "zone": 3483,
   "sort": 7,
   "faction": 0,
+  "requiredState": 8,
   "title": "The Unyielding",
-  "body": "The ghosts of the Expedition Armory draw both sides. In Honor Hold, Honor Guard Wesilow cannot bear to raise his blade against his old comrades, so he asks newcomers to put the cursed footmen, knights and sorcerers to rest, and when that fails, their beloved officers Xintor and Thalvos. The Horde has other plans. At Spinebreaker Post the Forsaken emissary Mordiba wants an army of undying warriors and means to beat the Unyielding into listening. A tome carried by one ghost reaches Althen the Historian, who finds it holds the armory's whole history, even what came after its fall. The spirits, he learns, think only of revenge on the orcs who destroyed them. So the Horde takes Thalvos's battle horn and sounds it at an old siege tower where the orc commander Urtrak once captured an Alliance banner. The Unyielding rise to fight beside their summoner, and Commander Hogarth offers thanks for honor restored.",
+  "body": "The ghosts of the Expedition Armory draw both sides. In Honor Hold, Honor Guard Wesilow cannot bear to raise his blade against his old comrades, cursed by Horde death knights near the end of the old invasion and trapped between life and death, so he asks newcomers to put the cursed footmen, knights and sorcerers to rest. The Horde has other plans. At Spinebreaker Post the Forsaken emissary Mordiba wants an army of undying warriors and means to beat the Unyielding into listening, and a tome carried by one of the ghosts, written in a secret Alliance cipher, is bound for Althen the Historian.",
   "triggers": [
    [
     4,
@@ -1038,12 +1763,59 @@
     10229
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The disturbances go on regardless. Wesilow wonders whether the ghosts are tied not to the ruins but to their leaders, and sends his helpers against the ghosts of Arch Mage Xintor and Lieutenant Commander Thalvos, who were close to their men. With the officers quieted, he can only hope the foot soldiers will follow.",
+    "triggers": [
+     [
+      5,
+      10057
+     ]
+    ],
+    "sources": [
+     "quest 10057 description and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Althen found that the tome holds the armory's whole history, even what came after its fall: the Unyielding have kept their story beyond death. They remain, he learned, as vengeful spirits locked in an endless battle against the fel orc clans, and think only of revenge. So the Horde went after Thalvos's battle horn, which can summon them.",
+    "triggers": [
+     [
+      5,
+      10229
+     ],
+     [
+      4,
+      10230
+     ]
+    ],
+    "sources": [
+     "quest 10229 reward text",
+     "quest 10230 description and reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The horn was sounded at an old siege tower east of Spinebreaker Post, where the orc commander Urtrak once captured an Alliance banner. The Unyielding rose to fight beside their summoner and Urtrak died. In the armory's eastern tower Commander Hogarth offered thanks for honor restored, and a weapon that calls those freed of the curse against their most hated foes.",
+    "triggers": [
+     [
+      5,
+      10258
+     ]
+    ],
+    "sources": [
+     "quest 10250 description and reward text",
+     "quest 10258 description and reward text"
+    ]
+   }
+  ],
   "sources": [
    "quests 10050, 10057 (Alliance)",
    "quests 10220, 10229, 10230, 10250, 10258 (Horde, descriptions and reward texts)",
    "item 28552 A Mysterious Tome starts 10229"
   ],
-  "notes": "verified. Faction 0: 10050 Alliance only; 10220 and 10229 Horde only."
+  "notes": "Converted: opening is the two sides' aims (ACCEPT 10050 Alliance; ACCEPT 10220, 10229 Horde). Parts: 1 Alliance officers (ACCEPT/DONE 10057), 2 Horde: the tome's history and the horn (DONE 10229, ACCEPT 10230), 3 Horde: Urtrak and Hogarth (DONE 10250, 10258). requiredState 8. Before: verified. Faction 0: 10050 Alliance only; 10220 and 10229 Horde only. Check: part 1 now DONE 10057 only (the officers quieted is its turn-in); part 2 says the Horde went after the horn (taking it is 10230's turn-in); part 3 now DONE 10258 only (Hogarth's thanks is that turn-in; DONE 10250 shows only Urtrak's death and the order to report)."
  },
  {
   "id": 348340,
@@ -1051,8 +1823,9 @@
   "zone": 3483,
   "sort": 8,
   "faction": 0,
+  "requiredState": 8,
   "title": "The Crimson Crystal",
-  "body": "Not long ago a huge red crystal fell from the sky onto the ridge north of the Cenarion Post, and an earthquake shook the land. Soon raging colossi were wandering the ridge, and the plain-spoken Tola'thion decided the cure was simply to kill enough of them. When one falls clutching a red shard of the crystal, the clue goes to Earthbinder Galandria Nightbreeze, who has been waiting for exactly that and suspects the crystal is calling the giants and driving them mad. She sends a seed of revitalization to her circle at the crystal's edge to heal the land with rain, growth and returning insects, warning that some outside force is at work. What comes back are names: Pathaleon the Calculator, and behind him Prince Kael'thas. Furious, Galandria vows the Expedition will stop any such attempt again.",
+  "body": "Not long ago a huge red crystal fell from the sky onto the ridge north of the Cenarion Post, and an earthquake shook the land. Soon raging colossi were wandering the ridge where none had been before. The plain-spoken Tola'thion admits something is strange about the crystal's energies, but has no time for it: in his view the cure is simply to kill enough of the giants. Some who do so notice that a fallen colossus was clutching a red shard that looks like a piece of the crystal itself.",
   "triggers": [
    [
     4,
@@ -1063,12 +1836,41 @@
     10134
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The shard goes to Earthbinder Galandria Nightbreeze, who has been waiting for exactly that while Tola'thion dragged his feet. She concludes that the crystal's evil emanations are summoning the giants and driving them mad. It is too large to move and beyond the Expedition's power to destroy, so she sends a seed of revitalization to her circle at its edge, to heal the land with rain, growth and returning insects, warning that some outside force is at work.",
+    "triggers": [
+     [
+      4,
+      10351
+     ]
+    ],
+    "sources": [
+     "quest 10349 description and reward text",
+     "quest 10351 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "What comes back are names: Pathaleon the Calculator, and behind him Prince Kael'thas. Galandria is furious. Dropping giant crystals from the sky to ravage the land, she says, is the work of a madman, and she vows the Cenarion Expedition will stop any such attempt again.",
+    "triggers": [
+     [
+      5,
+      10351
+     ]
+    ],
+    "sources": [
+     "quest 10351 reward text"
+    ]
+   }
+  ],
   "sources": [
    "quests 10132, 10134, 10349, 10351 (descriptions and reward texts)",
    "npc_text 9770",
    "item 29476 Crimson Crystal Shard starts 10134"
   ],
-  "notes": "Fact-check: Tola'thion being a druid unsupported, dropped. Faction 0: 10132 and 10134 are open to all races and the Cenarion NPCs are friendly to both (a shared pair, not one per side). Galandria's npc_text 10109 blames Illidan, contradicting the quest's Kael'thas reveal; not used."
+  "notes": "Converted: opening is the crystal, the colossi and Tola'thion's view, ending at the shard (ACCEPT 10132, 10134; 10134 is started by the shard). Parts: 1 Galandria's reading and the seed (DONE 10349, ACCEPT 10351), 2 Kael'thas named (DONE 10351). Galandria's npc_text 10109 (blames Illidan) still not used. requiredState 8. Before: Fact-check: Tola'thion being a druid unsupported, dropped. Faction 0: 10132 and 10134 are open to all races and the Cenarion NPCs are friendly to both (a shared pair, not one per side). Galandria's npc_text 10109 blames Illidan, contradicting the quest's Kael'thas reveal; not used. Check: part 1 now ACCEPT 10351 only: 10349 has no RewardNextQuest, so its turn-in shows only Galandria's eagerness, not her conclusion or the seed (10351's description)."
  },
  {
   "id": 348341,
@@ -1076,19 +1878,69 @@
   "zone": 3483,
   "sort": 9,
   "faction": 0,
+  "requiredState": 8,
   "title": "The Dreghood Elders",
-  "body": "Chained in the depths of the Ruins of Sha'naar, the elders of the Dreghood Broken have lost their bond with the spirits, and their people have lost heart. One elder begs a stranger to find Naladu, the fourth, feared dead. Naladu is alive, kept by the Illidari for his knowledge of ancient crystals, and he sends the stranger to a turncoat's hut for the key to the elders' chains. Morod the Windstirrer, Akoru the Firecaller and Aylaan the Waterwaker go free, and the winds, fire and water return to the tribe. Naladu then gives the stranger the Staff of the Dreghood Elders to break the powers of Arzeth the Merciless, and the taskmaster dies. Only then does Naladu confess: he was once the Keeper of Earth, and it was he who sold the other elders for empty promises of power. His tribe is free, and he can die in peace, but he will not go with them.",
+  "body": "Chained in the depths of the Ruins of Sha'naar, the elders of the Dreghood Broken have lost their bond with the spirits of wind, fire and water, and without them their people have lost heart. Above them the Illidari taskmasters of Arzeth the Merciless drive the tribe to dig for an ancient draenei crystal. One elder, chained and powerless like the others, begs a stranger to search the huts upstairs for Naladu, the fourth elder, whom he fears is dead, for it would be a great boon to the tribe if all its elders lived.",
   "triggers": [
    [
     4,
     10403
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Naladu is alive, kept by the Illidari for his knowledge of ancient crystals. Wherever a tribe of Broken is enslaved, he says, there is also a traitor who sold his brothers for promises of power, and he sends the stranger to the turncoat's hut at the top of the stairs for the key to the elders' chains.",
+    "triggers": [
+     [
+      5,
+      10403
+     ],
+     [
+      4,
+      10367
+     ]
+    ],
+    "sources": [
+     "quest 10403 reward text",
+     "npc_text 9787",
+     "quest 10367 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Morod the Windstirrer, Akoru the Firecaller and Aylaan the Waterwaker go free, and the winds, fire and water return to the tribe. Naladu then gives the stranger the Staff of the Dreghood Elders, once a great symbol of their people, to strip Arzeth the Merciless of the powers his dark lord granted him.",
+    "triggers": [
+     [
+      5,
+      10368
+     ]
+    ],
+    "sources": [
+     "quest 10368 description and reward text",
+     "creature_text 20677, 20678, 20679",
+     "quest 10369 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Arzeth dies, and only then does Naladu confess. He was once Naladu the Keeper of Earth, and it was he who betrayed the other elders for empty promises of power. His tribe is free and the spirits have returned, and he can die in peace now, but he will not go with them. He hopes the spirit of earth finds a new servant among his brothers.",
+    "triggers": [
+     [
+      5,
+      10369
+     ]
+    ],
+    "sources": [
+     "quest 10369 reward text"
+    ]
+   }
+  ],
   "sources": [
    "quests 10403, 10367, 10368, 10369 (descriptions and reward texts)",
    "creature_text 20677, 20678, 20679",
    "npc_text 9787"
   ],
-  "notes": "verified. Faction 0: quests AllowableRaces 0, elders and Naladu faction 35."
+  "notes": "Converted: opening is the chained elders and the search for Naladu (ACCEPT 10403). Parts: 1 Naladu alive and the traitor's key (DONE 10403, ACCEPT 10367), 2 the elders freed and the staff (DONE 10368), 3 Arzeth's death and Naladu's confession (DONE 10369). requiredState 8. Before: verified. Faction 0: quests AllowableRaces 0, elders and Naladu faction 35."
  }
 ]

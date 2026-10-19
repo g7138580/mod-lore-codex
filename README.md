@@ -8,15 +8,18 @@ An AzerothCore (WotLK 3.3.5a) module that adds a codex of Azeroth's lore which f
 
 - **Zones, places, people and stories.** Each zone has an overview entry, its notable places, the people who matter there and the storylines that run through it.
 - **Discovery like exploration.** Places unlock the way the game's own exploration does: on foot or on your own mount, never from a flight path or while dead.
-- **No spoilers.** An entry tells only what you have earned. It opens with the situation as you find it, and later parts are added as you get there, usually when you finish the quest that reveals them or defeat a foe. A banner says the entry was updated, and an entry that can still grow says so. Westfall and Orgrimmar are written this way so far; the other zones are being converted.
+- **No spoilers.** An entry tells only what you have earned. It opens with the situation as you find it, and later parts are added as you get there, usually when you finish the quest that reveals them or defeat a foe. A banner says the entry was updated, and an entry that can still grow says so.
 - **Locked entries.** Undiscovered entries show as locked placeholders with a hint, and each zone shows how much of it you have found.
 - **Only what you can reach.** Each character sees the entries it can actually unlock: the other faction's, other races' and classes' quests, and the death knight starting zone are left out.
 - **Past travels count.** At login, entries for areas a character already explored and quests it already did are credited quietly.
+- **Group kills count.** Defeating a foe credits everyone in the group who was close enough to share the kill, not only the one who tagged it.
 - **Lore in the database.** Entries, their parts and their triggers live in the world database and reload with `.codex reload`.
 
 ## Compatibility
 
-Not yet compatible with mod-individual-progression. Entries can already carry parts that only show in some of its eras, and the codex follows a character's era when that module is running, but most zones haven't been tagged yet.
+Works with or without [mod-individual-progression](https://github.com/ZhengPeiRu21/mod-individual-progression). When that module is running, the codex follows each character's progression: lore from a later era (the Burning Crusade, the Isle of Quel'Danas, Wrath of the Lich King) stays hidden until the character reaches it, events tied to one stage (the Ahn'Qiraj war, the Scourge invasion) show only during that stage, and lines that stop being true drop away. When a character moves on to a new stage, entries and parts it has already earned the triggers for are added quietly. Without the module, every character counts as having reached the end, so all eras show.
+
+Every zone follows the module's own gating where it has one. Where the module changes the world the same way in every stage (renaming an NPC, removing a spawn), the text is written to be true either way. Its phased areas are not matched exactly in every case, so a few lines may describe something a character at an early stage can already see, or not yet see.
 
 The server module and the addon must be the same version: after updating one, update the other.
 
@@ -61,7 +64,7 @@ Everything can be changed under **Interface > AddOns > Lore Codex** (also from t
 | 4 | Quest id: accepting it |
 | 5 | Quest id: turning it in |
 
-A trigger's `Part` says what it unlocks: 0 the entry, or a part from `mod_lore_codex_part`, whose text is added after the entry's own (earning a part also unlocks the entry). A part without triggers always shows with its entry. `MinState` and `MaxState` limit a part to some mod-individual-progression states.
+A trigger's `Part` says what it unlocks: 0 the entry, or a part from `mod_lore_codex_part`, whose text is added after the entry's own (earning a part also unlocks the entry). A part without triggers always shows with its entry. `MinState` and `MaxState` limit a part to some mod-individual-progression states, and an entry's `RequiredState` keeps the whole entry hidden until a character reaches that state. An entry with `RequiredState` should have at least one area or quest trigger, because those are the triggers credited again when a character's state rises.
 
 ## Sources
 

@@ -1,42 +1,1693 @@
 [
-{"id":35700,"kind":0,"zone":357,"sort":0,"faction":0,"title":"Feralas","body":"Feralas is a vast, rain-soaked forest in southwestern Kalimdor, green and wild beside the dry lands that surround it. Long ago the night elves built here, and their ruins lie everywhere beneath the canopy, above all the broken city of Eldre'Thalas, now called Dire Maul. Today the Gordunni ogres are the strongest power in the forest, and the land withers wherever they settle. On Sardor Isle, off the western shore, General Shandris Feathermoon holds Feathermoon Stronghold for the Alliance, the tauren of Camp Mojache keep the Horde's watch in the east, and the small way-station of Thalanaar stands on the border with the Thousand Needles. Neither side has the forest to itself. Woodpaw gnolls, Grimtotem tauren, Northspring harpies and Hatecrest naga each claim a share, a silithid hive festers in the southeast, and in the far north the great tree called the Dream Bough rises from an island in Jademir Lake, guarded by the green dragons of the Emerald Dream.","triggers":[[1,357]],"sources":["warcraft.wiki.gg/wiki/Feralas (rainforest; Gordunni dominant and tainting the land; Feathermoon on Sardor Isle; Camp Mojache; Dream Bough as one of the Great Trees)","quest 2981 description (Gordunni the dominant military force in Feralas)","quests 2939, 2982 (ruins that cover the forests of Feralas)","quest 7441 completion text (Queen, Shen'dralar, Prince Tortheldrin); quest 7481 (Eldre'Thalas, now Dire Maul)","quest 4267 description (infestation of southeastern Feralas)","zone_areas: Woodpaw, Grimtotem, Northspring, Hatecrest, Zukk'ash spawns; Lethlas, Dreamroarer, Emeriss at area 1111"],"notes":"Fact-check: 'country of the Highborne' made general (only Eldre'Thalas is Highborne); Dream Bough placed on an island in the lake."},
-{"id":35701,"kind":1,"zone":357,"sort":1,"faction":0,"title":"Thalanaar","body":"Thalanaar is a small night elf way-station on the eastern edge of Feralas, where the forest gives way to the dry canyons of the Thousand Needles. It offers little more than a hippogryph roost, a pair of merchants and a trainer of tribal leatherworking, yet it matters more than its size suggests. The druid Falfindel Waywarder keeps his post here, and couriers from Feathermoon Stronghold cross the whole breadth of Feralas to bring him supplies. Travelers remark on how abruptly the green forest ends at this border. One scholar who studies the barren lands beyond is sure that strange magic was at work when that happened.","triggers":[[1,489]],"sources":["warcraft.wiki.gg/wiki/Thalanaar (tiny night elf camp on the border of Feralas and Thousand Needles; Caryssia Moonhunter, Rendow, Brienna Starglow, Thyssiana)","zone_areas area 489: Falfindel 4048, Thyssiana 4319, Caryssia 7870, Rendow 1695, Brienna 6576","quest 4281 description and reward text (parcel from Feathermoon, small way-station of Thalanaar)","quest 4125 description (Raschal set out for Thalanaar)","quest 3841 request text (Quentin: odd transition between Feralas and Thousand Needles, strange magic)"],"notes":"Fact-check: verified. Stonetalon (40631) and Thousand Needles already point to Falfindel here; no shared triggers."},
-{"id":35702,"kind":1,"zone":357,"sort":2,"faction":0,"title":"Camp Mojache","body":"Camp Mojache is the Horde's foothold in Feralas, a tauren camp of hide tents built astride a swift stream above Wildwind Lake. Braves guard its paths, and it has an inn, a wind rider roost and trainers of many crafts. It is a meeting place as much as a village. The elder Talo Thornhoof tells his stories here, the troll Witch Doctor Uzer'i studies the spirits of beasts, the warrior Rok Orhan leads the fight against the ogres, and Krueg Skullsplitter has come on an errand from Orgrimmar. Its neighbors give it little peace. Woodpaw gnolls press up from the south with growing fury, and the Gordunni hold the river valley to the north.","triggers":[[1,1099]],"sources":["warcraft.wiki.gg/wiki/Camp_Mojache (tauren village overlooking Wildwind Lake, straddles a fast-moving stream; inn, flight master, trainers)","zone_areas area 1099: Camp Mojache Braves, Innkeeper Greul, Shyn, Talo 7776, Uzer'i 8115, Rok Orhan 7777, Krueg 4544, Hadoken 7875","quest 7492 (Talo Thornhoof, a tauren elder); npc_text 3545 (Talo: listen to the stories of an elder)","quest 2981 (Rok Orhan, a warrior); quest 2973 (Krueg on a mission for Orgrimmar masters)","quests 2862, 2975 (gnolls from the south, Gordunni north along the river)"],"notes":"Fact-check: verified."},
-{"id":35703,"kind":1,"zone":357,"sort":3,"faction":0,"title":"Lariss Pavilion","body":"North of Camp Mojache stands Lariss Pavilion, a large open-air hall raised in the old night elf style. It has two curious tenants. Azj'Tordin, a Highborne who slipped out of Dire Maul and the grip of its mad prince, lingers here, savoring the freedom for which he gave up his immortality. Nearby, the orc Xerash Fireblade prepares herb mixtures, and he trades them to Witch Doctor Uzer'i of Camp Mojache for such grim payment as the shrunken head of a dwarf. A door at the foot of the pavilion is said to lead back into the old city.","triggers":[[1,2518]],"sources":["warcraft.wiki.gg/wiki/Lariss_Pavilion (night elf-style outdoor building north of Camp Mojache; Azj'Tordin escaped Dire Maul through a back door at the bottom of the Pavilion; Xerash Fireblade)","quest 7441 description and completion text","quests 3121, 3122 (Xerash Fireblade at the Lariss Pavilion, shrunken head for herbs)","zone_areas area 2518: Azj'Tordin 14355, Xerash Fireblade 36208, Door 177198","warcraft.wiki.gg/wiki/Xerash_Fireblade (orc, added in patch 3.2.0, quests 3121/3122)"],"notes":"Xerash Fireblade (36208) is a 3.3 replacement for Neeru Fireblade in quest 3121; he is spawned in this DB. Elder Grimtotem here is a Lunar Festival NPC and is left out. Fact-check: builder unstated by sources, made general; Xerash confirmed an orc added in 3.2.0 (not 3.3), ends 3121 in this DB."},
-{"id":35704,"kind":1,"zone":357,"sort":4,"faction":0,"title":"Gordunni Outpost","body":"Following the river north from Camp Mojache leads to the Gordunni Outpost, a camp of the ogres who dominate Feralas. Ogres, brutes and ogre magi crowd it, and the land around them bears the scars of their presence. They guard more than their tents. The Gordunni bury a mineral called Gordunni cobalt in the earth here, betrayed only by its blue glow, and a goblin prospector newly arrived at Camp Mojache wants it dug up, sure it will fetch a pretty price. Soiled scrolls lie about the camp as well, and one of them depicts a dark ceremony performed by the ogre mage-lords, a puzzle the Horde is eager to solve.","triggers":[[1,1103]],"sources":["quest 2975 description (follow the river north to their outpost; their presence scars the land)","quest 2987 description (Orwin Gizzmick, Gordunni cobalt, blue glow, dig)","quests 2978, 2979 (Gordunni Scroll, ceremony of the mage-lords)","zone_areas area 1103: Gordunni Ogre, Brute, Ogre Mage; gameobject 143980 Gordunni Scroll","warcraft.wiki.gg/wiki/Orwin_Gizzmick (goblin at Camp Mojache)"],"notes":"Fact-check: Orwin sells the cobalt on, he does not pay well for it; reworded."},
-{"id":35705,"kind":1,"zone":357,"sort":5,"faction":0,"title":"Woodpaw Hills","body":"South of Camp Mojache, the wooded hills belong to the Woodpaw gnolls, who keep a den deep among them. Mystics, reavers, trappers and brutes fill their camps, and their leaders call themselves Alphas. Their raids on the tauren have grown more frequent and more savage, as if the gnolls were desperate, and the reason lies on their own southern border, where they are fighting a second war against insects from the Writhing Deep. Like all gnolls they keep what they scavenge, and the packs of a missing Feathermoon courier were once found tacked to a tree in one of their camps. A rare treant, Gnarl Leafbrother, is sometimes seen among the hills.","triggers":[[1,2519],[1,2520]],"sources":["zone_areas areas 2519, 2520: Woodpaw Mystic, Reaver, Trapper, Brute, Alpha; Gnarl Leafbrother 5354; Woodpaw Battle Map 142195; Large Leather Backpacks 164953","quests 2862, 2863, 2903 reward texts (attacks more savage, almost desperate; Alphas; two-front war)","quests 4131, 4135 (gnolls keep items they scavenge; backpacks tacked to a tree)","warcraft.wiki.gg/wiki/Gnarl_Leafbrother (rare treant)"],"notes":"Gnarl Leafbrother is creature type elemental in the DB; called a forest spirit to stay general. Fact-check: Gnarl named a treant per the wiki."},
-{"id":35706,"kind":1,"zone":357,"sort":6,"faction":0,"title":"The Writhing Deep","body":"Beyond the Woodpaw camps in southeastern Feralas, the earth is broken into the twisted mounds and tunnels of the Writhing Deep, a hive of the insects known here as the Zukk'ash. Workers, wasps, stingers and tunnelers swarm over its slopes, and even the ore in its veins comes smeared with ooze. Among them roams Stinglasher, far larger than its kin and wrapped in an aura the others lack. Not every victim dies at once: the Zukk'ash seal captives alive in hard, mucous pods. Scholars in both Darnassus and Orgrimmar know the creatures by an older and more frightening name, the silithid.","triggers":[[1,1101]],"sources":["quest 4135 description and reward text (Writhing Deep south of the gnoll camps; pod encasing a humanoid)","quest 4265 (Raschal paralyzed inside the pod)","quest 7731 description (Stinglasher, larger, secretes an aura); quest 7730","quests 4267, 7732 reward texts (silithid)","zone_areas area 1101: Zukk'ash Tunneler, Wasp, Worker, Stinger; Stinglasher 14661; Qirot; Ooze Covered deposits 123309/123310"],"notes":"Fact-check: verified."},
-{"id":35707,"kind":1,"zone":357,"sort":7,"faction":0,"title":"Grimtotem Compound","body":"East of Dire Maul, the Grimtotem tribe has raised a compound of tents in the Feralas woods, guarded by raiders, shamans and naturalists. These tauren are hostile to every outsider, and their work here is dark. In a bamboo pen nearby they keep captured sprite darters, the faerie dragons of the forest, for purposes no one has learned. Two night elves, Kindal Moonweaver and the priestess Jer'kai, keep watch over the camp from a rise above it. The Horde has taken notice too: in Orgrimmar, Belgrom Rockmaul has put a bounty on the clan's horns.","triggers":[[1,1100]],"sources":["warcraft.wiki.gg/wiki/Grimtotem_Compound (east of Dire Maul; cage of imprisoned sprite darters)","quest 2969 description (Grimtotem capturing faerie dragons, no idea what they plan, cage)","quest 2970 description (camp below us); quest 2972 reward (Jer'kai a priestess of Tyrande)","quest 2974 description (Belgrom's bounty)","zone_areas area 1100: Grimtotem Naturalist, Raider, Shaman; Captured Sprite Darters and Kindal/Jer'kai stand just outside at -4540,815 and -4481,858"],"notes":"Fact-check: verified."},
-{"id":35708,"kind":1,"zone":357,"sort":8,"faction":0,"title":"Dire Maul","body":"In the heart of Feralas rise the broken walls of Eldre'Thalas, a city of Queen Azshara's Highborne, its great halls now called Dire Maul. The Queen is long gone, and the Shen'dralar who linger within have been marred by the madness of their Prince Tortheldrin. Gordok ogres hold the grounds outside, their hyenas prowling among the fallen stones, and in an arena within the walls, the Maul, ogre champions brawl while spectators such as Griniblix cheer them on. Deeper in, the wings hold satyrs, a rogue blood elf mage and perhaps the last refuge of a lost elven master.","triggers":[[1,2577]],"sources":["warcraft.wiki.gg/wiki/Dire_Maul (Eldre'Thalas, Highborne capital of Azshara; Shen'dralar; Tortheldrin; Gordok)","quest 7441 completion text (Queen long passed, Shen'dralar marred by Prince Tortheldrin's madness)","quest 7481 (Eldre'Thalas, now Dire Maul; Kariel Winthalus); quest 7488 (Lethtendris among the satyrs in Warpwood)","zone_areas area 2577: Gordok Ogre-Mage, Enforcer, Gordok Hyena; posarea: Griniblix 14395, Mushgog, Skarr, The Razza in area 3217 The Maul (instance-zone area, not used as a trigger); npc_text 11738 (Griniblix: they are into it now)"],"notes":"The Maul (3217) belongs to the Dire Maul instance zone in AreaTable, so only 2577 is used. Fact-check: Kariel's fate is unknown in 7481 (no trace of him), so his refuge is hedged."},
-{"id":35709,"kind":1,"zone":357,"sort":9,"faction":0,"title":"The High Wilderness","body":"The High Wilderness spreads across the uplands of southern Feralas, a broad country of forest glades and broken ground. Groddoc apes, ironfur bears and longtooth howlers roam it, Frayfeather hippogryphs wheel over its clearings, and Feral Scar yetis prowl its slopes. This was once night elf land, and its abandoned, ruined buildings still stand. The Gordunni ogres have claimed them, and where they dwell the trees wither and the ground is desecrated. The Feathermoon scholar Troyas Moonbreeze often comes here alone to study the ruins, much to the worry of Angelas Moonbreeze.","triggers":[[1,1136]],"sources":["quest 2980 description (High Wilderness, abandoned structures on land that once belonged to the night elves, withered trees and desecrated terrain, Gordunni)","quest 2982 description (Troyas going alone to the High Wilderness; Gordunni took over)","zone_areas area 1136: Groddoc Ape, Frayfeather Hippogryph and Stagwing, Ironfur Bear, Longtooth Howler, Hulking and Enraged Feral Scar, Gordunni"],"notes":"Fact-check: yetis 'wander down' was unsupported; reworded to the spawns."},
-{"id":35710,"kind":1,"zone":357,"sort":10,"faction":0,"title":"Ruins of Isildien","body":"Deep in the High Wilderness lie the Ruins of Isildien, the remains of a large night elf city destroyed long ages ago. A broad stair climbs to a round hall that may once have been a temple. The Gordunni have made the ruins their stronghold, and here gather their mightiest: battlemasters, warlords, warlocks and the mage-lords whose dark ceremonies trouble the tauren of Camp Mojache. Their magic seems to wreak havoc on the very ground they stand on. Frayfeather hippogryphs still nest at the edges of the ruins, and an old bear called Old Grizzlegut is known to wander nearby.","triggers":[[1,2522]],"sources":["warcraft.wiki.gg/wiki/Ruins_of_Isildien (large night elven city in southwestern Feralas, Gordunni home; round building at the end of the stairs may have been a temple of Elune)","quest 2982 request text (Gordunni magic wreaks havoc on the land they stand on)","quest 2979 (mage-lords' ceremony)","zone_areas area 2522: Gordunni Battlemaster, Warlord, Mage-Lord, Warlock, Shaman, Mauler; Frayfeather Skystormer, Patriarch; Hippogryph Egg x7; Old Grizzlegut 5352 (family bear)"],"notes":"Fact-check: verified."},
-{"id":35711,"kind":1,"zone":357,"sort":11,"faction":0,"title":"Feral Scar Vale","body":"Feral Scar Vale is a valley of yetis in southern Feralas, just inland of the Forgotten Coast. Its yetis grow hides so thick that leatherworkers in both Feathermoon Stronghold and Camp Mojache prize them, claiming that properly treated they are as strong as iron. A rare brute called Bloodroar the Stalker hunts the vale. In a cave nearby lies a stranger find: OOX-22/FE, a gnomish homing robot that looks rather like a chicken. It crashed here, and its maker in Booty Bay calls for someone to carry a beacon to it and escort it safely to the road.","triggers":[[1,1105]],"sources":["quests 2821, 2822 (thick yeti hides, Feral Scar Vale just inland of the Forgotten Coast, stronger than iron)","quests 2766, 2767 (OOX-22/FE in a cave near Feral Scar Vale, Oglethorpe Obnoticus in Booty Bay, escort to the main road)","zone_areas area 1105: Feral Scar Yeti, Enraged Feral Scar, Bloodroar the Stalker 5346, Homing Robot OOX-22/FE 7807"],"notes":"Fact-check: verified. The OOX quests are mentioned here without triggers."},
-{"id":35712,"kind":1,"zone":357,"sort":12,"faction":0,"title":"Frayfeather Highlands","body":"In the far south of Feralas, the Frayfeather Highlands are home to great flocks of wild hippogryphs: stagwings, skystormers and the proud patriarchs that lead them. Hippogryphs have been loyal companions to the night elves for many years, and their eggs can be found in nests across these heights. That loyalty has drawn unwelcome attention, for Witch Doctor Uzer'i of Camp Mojache covets the steadfast spirits of these birds for his muisek magic. The greatest of the flock, a hippogryph known as Antilus the Soarer, is seldom seen.","triggers":[[1,1106]],"sources":["zone_areas area 1106: Frayfeather Skystormer, Stagwing, Patriarch; Antilus the Soarer 5347; Hippogryph Egg 141931","quest 3124 description (hippogryphs loyal companions to the night elves, spirits loyal and steadfast)"],"notes":"Fact-check: verified."},
-{"id":35713,"kind":1,"zone":357,"sort":13,"faction":0,"title":"The Twin Colossals","body":"Two immense peaks of rock tower over northwestern Feralas, the highest points in the land, and the road to Desolace runs between them. Mountain giants stride across the rocky ground at their feet, and Groddoc thunderers, ironfur patriarchs and rabid longtooths make every path dangerous. A few odd souls camp here. Marli Wishrunner can send a traveler to the top of a colossal, though only one way, and Kalin Windflight waits at the summit selling wings for the trip down. The gentle giant Rockbiter keeps a camp south of the Ruins of Ravenwind, and Gregan Brewspewer, a student of herbs who is hard to track down, keeps a camp out in these wilds.","triggers":[[1,1119]],"sources":["warcraft.wiki.gg/wiki/Twin_Colossals (two tall mesas, highest points, road to Desolace between them; Marli's one-way trip; Kalin sells the Colossal Parachute)","quest 3567 reward text (one way trip only); npc_text 2054 (Kalin: wings to get down); creature 7772 at z 246, vendor item 10684","zone_areas area 1119: Cliff Giant, Land Walker, Groddoc Thunderer, Ironfur Patriarch, Rabid Longtooth; Rockbiter 7765, Gregan 7775, Marli 7773, Kalin 7772","quest 3909 description (Gregan hard to track down, camping in the wilds of Feralas); quest 4041 (herbs and alchemy); quest 4142"],"notes":"Fact-check: verified. Gregan's quests belong to the Un'Goro chains (Linken 3909, Muigin 4142/4143); mentioned without triggers."},
-{"id":35714,"kind":1,"zone":357,"sort":14,"faction":0,"title":"Ruins of Ravenwind","body":"West of the Dream Bough lie the Ruins of Ravenwind, remains of an ancient night elf city now overrun by the Northspring harpies. Their queen, Edana Hatetalon, is said to have a heart of crystal, empty of all but hatred, and she comes when a harpy horn is sounded by the Hatetalon stones in the northern ruins. Older magic lingers among the stones. Four flames named Samha, Imbel, Byltan and Lahassa still burn there, and the Equinex Monolith guards a secret that only an energized stave can open. On the eastern edge of the ruins, a gnoll named Miblon Snarltooth stands guard over a patch of evoroot.","triggers":[[1,1114]],"sources":["warcraft.wiki.gg/wiki/Ruins_of_Ravenwind (ancient kaldorei city, Northspring harpies; Miblon Snarltooth guarding Evoroot)","quest 2879 description (Ruins of Ravenwind west of the Dream Bough; four flames; Equinex Monolith)","quest 3062 description (Edana Hatetalon, queen, heart of crystal, horn by the Hatetalon stones in the north of the ruins)","zone_areas area 1114: Northspring Windcaller, Harpy, Slayer, Roguefeather; Flames of Byltan, Lahassa, Imbel, Samha; Equinex Monolith 144063; Evoroot 164798; Miblon 9467","warcraft.wiki.gg/wiki/Miblon_Snarltooth (gnoll guarding Evoroot on the eastern outskirts; removed in 4.0.3a)"],"notes":"Fact-check: 'hungry' dropped; Miblon is pre-Cataclysm and spawned here."},
-{"id":35715,"kind":1,"zone":357,"sort":15,"faction":0,"title":"The Dream Bough","body":"In the far north of Feralas, Jademir Lake spreads its quiet waters around an island where a towering tree, the Dream Bough, rises above the forest. It is one of the great trees through which the Emerald Dream touches the waking world, and the green dragonflight guards it jealously. The dragons Lethlas and Dreamroarer keep watch over the island, and Jademir dragonkin patrol the lake shores and the grounds of Oneiros. At times a far greater shadow emerges from the Dream here: Emeriss, one of the great green dragons, now sick with corruption. Few mortals linger.","triggers":[[1,1111],[1,1112],[1,1113]],"sources":["warcraft.wiki.gg/wiki/Dream_Bough (Great Tree on an island in Jademir Lake, a portal to the Emerald Dream guarded by the green dragonflight)","warcraft.wiki.gg/wiki/Emeriss (corrupted green dragon, one of the four world dragons since patch 1.8)","zone_areas areas 1111, 1112, 1113: Lethlas 5312, Dreamroarer 12497, Emeriss 14889 (area 1111); Jademir Oracle, Tree Warder, Boughguard (dragonkin, faction 50)"],"notes":"Fact-check: verified. Emeriss is one of four dragons that appear at the Great Trees; worded as 'at times'."},
-{"id":35716,"kind":1,"zone":357,"sort":16,"faction":0,"title":"The Forgotten Coast","body":"The Forgotten Coast is the western shore of Feralas, looking out across the water to Sardor Isle. Elementals of brine and sea spray rise from the surf, coast crawl creatures scuttle on the sand, and towering giants of the shore and the deep wade through the shallows. A dock here serves the ferry to Feathermoon Stronghold, and beside it the goblin Zorbin Fandazzle is trying, with growing doubts, to run an engineering shop. Not every boat makes its crossing. The wreck of a Feathermoon row boat lies in the muddy water nearby, its side torn open as if something had tried to snap it in two.","triggers":[[1,1108]],"sources":["zone_areas area 1108: Sea Spray, Sea Elemental, Shore/Deep/Wave Strider (giants, type 5), Coast Crawl Snapclaw/Deepseer, Zorbin Fandazzle 14637, Wrecked Row Boat 164909","transports: The Forgotten Coast to Feathermoon Stronghold boat (Feathermoon Ferry)","quests 7003, 7721 (Zorbin at the docks of the Forgotten Coast)","quest 4125 reward text (wrecked row boat, Feathermoon crest, something tried to snap it in two)"],"notes":"Fact-check: verified."},
-{"id":35717,"kind":1,"zone":357,"sort":17,"faction":0,"title":"Sardor Isle","body":"Sardor Isle lies off the Forgotten Coast, a forested island that the night elves of Feathermoon Stronghold have made their own. Beyond the stronghold's walls the island is wild. Coast crawl snapclaws and deepseers swarm its beaches, longtooth runners hunt in its woods, and a rare beast called Diamond Head lurks along its shore. South of the stronghold, the Ruins of Solarsal have fallen to the Hatecrest naga, and the Sentinels fear that the naga mean in time to seize the whole island. The Isle of Dread lies across the water beyond.","triggers":[[1,1120]],"sources":["zone_areas area 1120: Coast Crawl Snapclaw, Deepseer, Longtooth Runner, Hatecrest naga, Diamond Head 5345","quest 2866 (Ruins of Solarsal to our south)","quest 2869 description (naga will eventually move to secure the island)","quest 2870 (Isle of Dread across the water)"],"notes":"Fact-check: verified. Diamond Head's race left unstated (wiki calls it a makura)."},
-{"id":35718,"kind":1,"zone":357,"sort":18,"faction":0,"title":"Feathermoon Stronghold","body":"Feathermoon Stronghold is the Alliance bastion of Feralas, a night elf fortress on Sardor Isle reached by ferry from the Forgotten Coast or on hippogryph wings. General Shandris Feathermoon led an expeditionary force here and commands it still, with Feathermoon Sentinels on watch. It is a place of scholars as much as soldiers. Troyas and Angelas Moonbreeze pore over their books on the ruins of Feralas, the priestess Vestia Moonspear studies strange relics, the druid Quintis Jonespyre keeps a tree house, and a history of the Sentinels and the Long Vigil is kept for visitors. Its defenders watch two foes: the naga to the south and the Horde.","triggers":[[1,1116]],"sources":["warcraft.wiki.gg/wiki/Feathermoon_Stronghold_(Classic) (island fortress on Sardor Isle, Shandris, boat from the Forgotten Coast, hippogryph flight point)","quest 4125 description (General Feathermoon led the expeditionary forces here)","quest 3130 description (stronghold open to direct attack from the Horde)","quests 2939, 2871, 4129 (Moonbreezes' books, Vestia scholar, Quintis' tree-house)","zone_areas area 1116: Feathermoon Sentinel 7939, Shandris 3936, Fyldren Moonfeather 8019; gameobject 175732 The Sentinels and the Long Vigil"],"notes":"Fact-check: verified."},
-{"id":35719,"kind":1,"zone":357,"sort":19,"faction":0,"title":"Ruins of Solarsal","body":"The Ruins of Solarsal, on Sardor Isle south of Feathermoon Stronghold, are far older than any of the night elves' present works. The Sentinels once explored them, found nothing of note and left them in peace. Now the Hatecrest naga have filled them in alarming numbers: warriors, screamers, sirens and wave riders. At the heart of the ruins stands a gazebo that does not belong. It is clearly newer than the stones around it, its sides are engraved with a repeating band of unknown glyphs, and its stone is warm to the touch.","triggers":[[1,1117]],"sources":["quest 2866 description and reward text","zone_areas area 1117: Hatecrest Screamer, Warrior, Siren, Wave Rider; Solarsal Gazebo 142179"],"notes":"Fact-check: verified."},
-{"id":35720,"kind":1,"zone":357,"sort":20,"faction":0,"title":"Isle of Dread","body":"South of Sardor Isle, across the water, lies the Isle of Dread. Hatecrest serpent guards, myrmidons and sorceresses hold a deep cave at its northern end, Shalzaru's Lair, where Lord Shalzaru, one of the crueler naga royals, unearthed a strange relic. A hidden passage beneath the waves is said to lead to an inner chamber where Lady Szallah dwells. The heart of the island, a valley walled in by cliffs, belongs to beasts deadlier still: the chimaerok, great two-headed hunters, led by the mighty Lord Lakmaeran.","triggers":[[1,1121],[1,3117]],"sources":["warcraft.wiki.gg/wiki/Isle_of_Dread (south of Sardor Isle; central valley enclosed by cliffs; chimaerok; Lord Lakmaeran; naga cave at the northern end with Lord Shalzaru; underwater passage to Lady Szallah)","quest 2870 description (royals, Lord Shalzaru, relic from an excavation in a cave on the Isle of Dread)","zone_areas area 1121: Hatecrest Serpent Guard, Sorceress, Myrmidon; Chimaerok, Arcane Chimaerok, Chimaerok Devourer; Lord Lakmaeran 12803; Lord Shalzaru 8136; Lady Szallah 5343"],"notes":"Fact-check: verified."},
-{"id":35721,"kind":2,"zone":357,"sort":1,"faction":1,"title":"Shandris Feathermoon","body":"Shandris Feathermoon is General of the Sentinel Army and the commander of Feathermoon Stronghold. Orphaned when the Burning Legion destroyed her village during the War of the Ancients, she was taken in by Tyrande Whisperwind and grew up at her side, through the Sundering and the long ages of the Sentinels, until she rose to lead them. In Feralas she weighs every move against the safety of her island. She would gladly throw her full strength against the Hatecrest naga, but she will not leave the stronghold open to the Horde. She also keeps ties to a quiet circle of the wary known as the Protectorate.","triggers":[[2,3936]],"sources":["warcraft.wiki.gg/wiki/Shandris_Feathermoon (Ara-Hinam destroyed by the Legion, adopted by Tyrande, Sundering, Sentinels, general based at Feathermoon)","creature_template 3936 subname General of the Sentinel Army, faction 124","quest 3130 description (full force vs. leaving the stronghold open to the Horde)","quest 3788 reward text (General Shandris Feathermoon and the Protectorate); quest 4267"],"notes":"Fact-check: verified. npc_text 15719 (her gossip) speaks of the war in Ashenvale and Stonetalon and holding the remaining wilds; it reads like Cataclysm text and is not used."},
-{"id":35722,"kind":2,"zone":357,"sort":2,"faction":1,"title":"Latronicus and Vestia Moonspear","body":"Latronicus Moonspear is Shandris Feathermoon's second, charged with meeting the naga directly. He has no patience for idle talk and is proud of his people's restraint: the night elves are no warmongers, he says, but they will act to protect their own. When the blood elf mage Lethtendris fled into Dire Maul with a web of stolen magic, it was Latronicus who called for agents to stop her. His wife Vestia is a priestess of the stronghold and one of its most learned scholars, and Latro, as she calls him when she forgets herself, brings her the puzzles he cannot solve.","triggers":[[2,7877],[2,7878]],"sources":["quest 3130 description (Latronicus is her second)","quest 2869 request text (not warmongers, will proactively protect our interests)","quests 7494, 7488 (Lethtendris)","quest 2871 description and request text (Vestia, priestess and scholar; Latro, erm, Latronicus)"],"notes":"Fact-check: verified."},
-{"id":35723,"kind":2,"zone":357,"sort":3,"faction":1,"title":"Quintis Jonespyre","body":"Quintis Jonespyre is the druid of Feathermoon Stronghold, a servant of Malfurion and the Cenarion Circle who keeps a little tree house within its walls. Curses are his specialty, and he can read the history of an object by touch, a draining art he calls psychometry. Lately he has been asking quiet questions about why Arch Druid Fandral Staghelm gathers so much morrowgrain in the Circle's name. The grain makes him uneasy, and he is sure something is amiss. His luck at cards is another matter. The stronghold calls him the King of the Bad Beats, and he owes Ginro Hearthkindle for his losses.","triggers":[[2,7879]],"sources":["quest 3788 reward text (druid, servant of Malfurion and the Cenarion Circle)","quest 3791 description and reward text (curses are my specialty; Staghelm and morrowgrain); quest 3792 reward text (something fishy)","quests 4129, 4130 (psychometry, tree-house, Kalimdor Hold 'Em debt, King of the Bad Beats)"],"notes":"Fact-check: verified."},
-{"id":35724,"kind":2,"zone":357,"sort":4,"faction":1,"title":"Troyas and Angelas Moonbreeze","body":"Troyas and Angelas Moonbreeze are scholars of Feathermoon Stronghold who comb the ruins that cover the forests of Feralas for what they can tell of the past. Troyas is the bolder of the two. He ventures alone into the ogre-held High Wilderness, and from the rubble of the south he once pulled a stave that he was sure was more than it seemed, though a colleague in Rut'theran grumbles that he always thinks he has found something important. Angelas worries over him, and quietly asks travelers to thin the Gordunni in his path, begging them not to tell him. She also sends the curious to the goblin Marvon Rivetseeker to learn of the Sunken Temple.","triggers":[[2,7764],[2,7900]],"sources":["quest 2982 description and reward text (investigating the ruins; Troyas alone in the High Wilderness; don't mention a word to Troyas)","quest 2939 description and reward text (stave; Daryn: Troyas always thinks he has found something important)","quest 3445 description (Marvon Rivetseeker, much like Troyas and I, has studied ancient areas)"],"notes":"Fact-check: the stave came from rubble to the south (2939), not stated to be the High Wilderness; Sunken Temple referral is Angelas's quest (3445)."},
-{"id":35725,"kind":2,"zone":357,"sort":5,"faction":1,"title":"Falfindel Waywarder","body":"Falfindel Waywarder is a night elf druid posted at Thalanaar, on the border of Feralas and the Thousand Needles, and his name carries far beyond it. Keeper Albagorm of Stonetalon sends to him when great forest spirits are needed, the dying druid Heralath named him as the one who must be warned of the crone of Razorfen Kraul, and the couriers of Feathermoon Stronghold cross the forest to bring him supplies. He studies the corruption of Agamaggan's resting place in the Barrens and fears that its answer lies in treachery. He has noticed, too, that the Woodpaw gnolls to the south have grown strangely agitated.","triggers":[[2,4048]],"sources":["quest 1059 (Stonetalon, ends with Falfindel); stonetalon.json 40631","item 5790 page_text 433-435 (Heralath: word must reach Falfindel Waywarder in Thalanaar; the druid known as Falfindel)","quest 1101 reward text (studies in the area; corruption of Agamaggan's resting place; treachery)","quest 4281 reward text (delivery from Feathermoon; Woodpaw highly agitated from a source to their south)","creature_template 4048 faction 80 (hostile to the Horde)"],"notes":"Fact-check: verified."},
-{"id":35726,"kind":2,"zone":357,"sort":6,"faction":1,"title":"Rockbiter","body":"Rockbiter is a mountain giant who camps at the foot of the Twin Colossals, and for all his size he is gentle and plain of speech. His charge is a little night elf girl named Shay Leafrunner, and watching over her is harder than it sounds. Shay loves to wander and drifts away whenever something lovely catches her eye. When she slipped off from him in the ruins to the north, Rockbiter was sick with worry and hardly knew what to do. Shay has one weakness that always brings her running back, the sound of a precious bell she keeps, and Rockbiter is delighted to learn of it.","triggers":[[2,7765],[4,2844]],"sources":["warcraft.wiki.gg/wiki/Ruins_of_Ravenwind (Shay escorted back to her guardian Rockbiter, a mountain giant south of the ruins)","quest 2844 description (Rockbiter lost Shay in the ruins just north)","quest 2845 description and reward text (Shay's bell)","creature 7765 in area 1119; faction 124; quests 2844/2845 Alliance only"],"notes":"Fact-check: verified."},
-{"id":35727,"kind":2,"zone":357,"sort":7,"faction":2,"title":"Talo Thornhoof","body":"Talo Thornhoof is a tauren elder of Camp Mojache who is always glad to share his stories. In his day he was a seasoned hunter who feared no creature, until Northspring harpies ambushed him in the forest and he barely dragged himself to safety. He was never the same, and the hate still boils in him. He longs for revenge on the harpies and for the crystal heart of their queen, Edana Hatetalon. He still thinks like a hunter: know your enemy, he teaches, and he sends the bold to test the fel-maddened beasts of Felwood. When the blood elf Lethtendris carried her web into Dire Maul, Talo called for help.","triggers":[[2,7776]],"sources":["npc_text 3545 (Listen to the stories of an elder)","quest 3063 description (seasoned hunter, ambushed by harpies, hate boils inside)","quest 3062 description (Edana Hatetalon's dark heart)","quest 4120 description and reward text (Felwood, always know your enemy)","quests 7492, 7489 (Talo Thornhoof, a tauren elder; Lethtendris's Web)"],"notes":"Fact-check: verified."},
-{"id":35728,"kind":2,"zone":357,"sort":8,"faction":2,"title":"Krueg Skullsplitter","body":"Krueg Skullsplitter is an orc who traveled down to Feralas with his companions on a mission for his masters in Orgrimmar. Between duties he has a gentler errand. His life-mate Korrin takes great pleasure in new clothing, and he means to make her a cloak adorned with the shimmering wings of the sprite darters west of Camp Mojache. He warns that the little dragons can be dangerous and that the night elves in the forests are worse. News of Grimtotem in the woods alarms him. He calls the clan evil, wants their horns by the pile, and at last sends them to Belgrom Rockmaul in the Valley of Honor, who had set a bounty on them.","triggers":[[2,4544]],"sources":["quest 2973 description and request text (mission for Orgrimmar masters, life-mate Korrin, gossamer wings, night elves)","quest 2974 description and request text (Grimtotem, Belgrom's bounty, the clan is evil)","quest 2976 description (crate of horns to Belgrom in the Valley of Honor)","creature_template 4544 faction 29 (Orgrimmar)"],"notes":"Fact-check: verified."},
-{"id":35729,"kind":2,"zone":357,"sort":9,"faction":0,"title":"Azj'Tordin","body":"Azj'Tordin is a Highborne who fled the halls of Eldre'Thalas and now lingers at the Lariss Pavilion. The Queen has long since passed, he says, and the works of the Shen'dralar have been marred by the madness of Prince Tortheldrin. He has traded his immortality for freedom and regrets nothing. In the haste of his escape, though, he was robbed. The imp Pusillin made off with his book of incantations and with the key to the once great halls. The key he no longer cares for. The book he wants back badly, and he waits for someone bold enough to chase the imp through the Warpwood Quarter.","triggers":[[2,14355],[4,7441]],"sources":["quest 7441 description and completion text","warcraft.wiki.gg/wiki/Lariss_Pavilion (Azj'Tordin, apparently a Highborne)","creature_template 14355 faction 1354 (Shen'dralar, neutral to both factions)"],"notes":"Fact-check: verified."},
-{"id":35730,"kind":2,"zone":357,"sort":10,"faction":0,"title":"Zorbin Fandazzle","body":"Zorbin Fandazzle is a goblin engineer who has set up shop beside the dock on the Forgotten Coast against his own better judgment, and now suspects it may be the worst place imaginable. The giants of Feralas are bad for business, so he has built an Ultra-Shrinker, a gnomish shrinking ray improved with superior goblin know-how, and wants someone to try it on them. Then there are the sea elementals of the coast, whose water cores make fine fuel for his device. He insists there was never any danger, pays in coin and loot, and swears that his comrades in the Steamwheedle Cartel will hear of anyone who helps him.","triggers":[[2,14637]],"sources":["quests 7003, 7721, 7725, 7726 descriptions and reward texts","npc_text 7114, 7116 (maybe this wasn't the best place for a shop)","creature_template 14637 faction 35"],"notes":"Fact-check: verified."},
-{"id":35731,"kind":3,"zone":357,"sort":1,"faction":1,"title":"Lonebrow's Journal","body":"Henrig Lonebrow came to Kalimdor for the Explorers' League, hunting the bones of a fallen god in the Barrens, until the boar men of the Razorfen dragged him into the thorns of Razorfen Kraul. There he shared a hut with Heralath, a dying druid who had come to learn why the resting place of the boar god Agamaggan, held to be pure, had been so corrupted. Before his strength failed, Heralath begged the dwarf to carry word to Falfindel Waywarder at Thalanaar: the crone Charlga Razorflank was rousing her minions, and she had to be stopped before her corruption spread. Lonebrow escaped but never reached Thalanaar, and his journal was found on his body. Falfindel grieved for both brave souls. With no time to send word to Darnassus, he asked for a party to enter the Kraul and bring back the crone's medallion. Her death let the druids' studies go on, but Falfindel feared that the answer to the corruption lay in treachery.","triggers":[[4,1100]],"sources":["item 5790 Henrig Lonebrow's Journal, page_text 424-435","quest 1100 reward and completion texts (journal found on a deceased dwarf)","quest 1101 description and reward text","thousand_needles.json 40001 (body at the Great Lift; Thousand Needles leaves 1100 to Feralas)"],"notes":"Fact-check: verified. Treshala Fallowbrook's side (darnassus.json 165716) is not retold. Quest 1101 (QuestSortID Razorfen Kraul) is given and ended by Falfindel in Thalanaar."},
-{"id":35732,"kind":3,"zone":357,"sort":2,"faction":1,"title":"The Hatecrest Naga","body":"When the Hatecrest naga crowded into the Ruins of Solarsal, Shandris Feathermoon feared an attack on her island and sent an investigator south. At the heart of the ruins stood a gazebo, newer than the stones around it, carved with repeating glyphs and warm to the touch. The general found the report disturbing: whatever the naga intended, their presence threatened the night elves' push into Feralas. Unwilling to strip the stronghold while the Horde was near, she gave the matter to her second, Latronicus Moonspear. His plan was twofold: weaken the naga in numbers and command, and learn what they were doing in the ruins. Hatecrest scales were gathered, and scouts named a royal, Lord Shalzaru, who had dug up a strange relic in his cave on the Isle of Dread. Shalzaru was slain and the relic carried to Vestia Moonspear. It was not of naga design, she judged, but something far more alien, and she set to studying it.","triggers":[[4,2866]],"sources":["quests 2866, 2867, 3130, 2869, 2870, 2871 descriptions and reward texts"],"notes":"Fact-check: Vestia's judgement reworded to match 2871 (not naga, something more alien)."},
-{"id":35733,"kind":3,"zone":357,"sort":3,"faction":1,"title":"The Missing Courier","body":"Raschal had carried Feathermoon's messages since Shandris Feathermoon brought her expedition to Feralas. A week after he set out for Thalanaar, meaning to row down the coast and cross southern Feralas to avoid the Horde camp, he was declared missing, but his friend Ginro Hearthkindle would not give up. Raschal's boat was found wrecked off the coast, and in the mud lay his knife. The druid Quintis Jonespyre read it by touch and saw the courier carry two packs inland, meet the Woodpaw gnolls and return to his boat in terror, too distracted to notice water elementals forming behind him. The packs hung from a tree in a gnoll camp, holding a parcel for Thalanaar and a hasty note: Raschal had gone south to investigate strange insects in the Writhing Deep. There he was found sealed alive in a Zukk'ash pod. Shandris sent his report on the hive to the priestess Gracina Spiritmight in Darnassus, who knew the insects for silithid.","triggers":[[4,4124]],"sources":["quests 4124, 4125, 4127, 4129, 4130, 4131, 4135, 4265, 4266, 4267 descriptions and reward texts","quest 4281 (parcel for Falfindel)"],"notes":"Fact-check: verified. Gracina (darnassus.json 165710) is only mentioned; her trigger is 4508, not 4267."},
-{"id":35734,"kind":3,"zone":357,"sort":4,"faction":1,"title":"Freedom for All Creatures","body":"From a rise above the Grimtotem Compound, Kindal Moonweaver and the priestess Jer'kai watched the tauren pen up sprite darters, and neither could guess why. Too few to fight their way in alone, they found a helper. Kindal took a bamboo cage key into the camp, threw open the pen and stayed beside the faerie dragons until they were safely away. Then the two elves took the fight to the Grimtotem, picking off naturalists, raiders and shamans until the clan was hunting them in turn. Jer'kai wondered whether other tauren frowned on these, as many races have less kindly cousins. With little to give, she sent her signet ring to High Priestess Tyrande Whisperwind as word that they were well. The Moonweavers also saved a nest of eggs whose mother had died. One went as a gift to their helper, beginning a journey to the scholar Quentin at the Shimmering Flats and on to the animal handler Agnar Beastamer at Aerie Peak, where it hatched.","triggers":[[4,2969]],"sources":["quests 2969, 2970, 2972 descriptions and reward texts","quests 3841, 3842, 3843, 4297, 4298 (sprite darter egg, Quentin, Agnar Beastamer at Aerie Peak)","hinterlands.json 4702 mentions Agnar hatching faerie dragon eggs from Feralas, no triggers on these quests"],"notes":"Fact-check: verified."},
-{"id":35735,"kind":3,"zone":357,"sort":5,"faction":1,"title":"The Stave of Equinex","body":"Searching the rubble of Feralas, Troyas Moonbreeze found a stave that looked ordinary, yet he could not shake the feeling that it was more. His books told him nothing, so he sent for help to his colleague Daryn Lightwind, a lore keeper in Rut'theran Village. She was unimpressed, grumbling that anything of value in those ruins had long since been hoarded by ogres or harpies. Still, she owned a worn old history of Feralas, and she would lend it for a price: a picture of Gammerita, a giant snapjaw of the Hinterlands, taken with the Super Snapper FX that the inventor Curgle Cranklehop built in Tanaris. With the book in hand, Troyas dared to hope that his find was the Stave of Equinex, the key to the Equinex Monolith in the Ruins of Ravenwind. Charged with the essence of the four ancient flames, it opened the monolith and gave up a stone that Troyas, reading on, identified as the Morrow Stone, a thing of great but unknown significance.","triggers":[[4,2939]],"sources":["quests 2939, 2940, 2941, 2944, 2943, 2879, 2942 descriptions and reward texts"],"notes":"Daryn is female in the quest text (talk to her). Teldrassil's Rut'theran entry mentions her book only. Fact-check: the book's own page text is unreliable, so it no longer 'confirms' anything (2879 only says the stave might be the Stave of Equinex); 'sparkling' dropped."},
-{"id":35736,"kind":3,"zone":357,"sort":6,"faction":2,"title":"War on the Woodpaw","body":"To Hadoken Swiftstrider of Camp Mojache, the Woodpaw gnolls were a threat to the camp's very existence. They had always been driven back, but lately they pushed north more often and more savagely, almost as if they were desperate. Hadoken answered with a bounty on their manes, then with a stroke meant to break them: five of their Alphas slain in swift succession. Still he wanted to know what drove them, and a battle map taken from their camps told the tale. Most of its arrows pointed south, away from Mojache, and beside them was drawn a great insect with tally marks beneath. The gnolls were fighting on two fronts. South of their hills lay the Zukk'ash hive of the Writhing Deep. Its swarms were thinned and the giant Stinglasher was cut open for study, and Hadoken sent his findings to Zilzibin Drumlore in Orgrimmar, who named the insects silithid, a far worse threat than anything the Alliance could muster.","triggers":[[4,2862]],"sources":["quests 2862, 2863, 2902, 2903, 7730, 7731, 7732 descriptions and reward texts"],"notes":"Fact-check: verified."},
-{"id":35737,"kind":3,"zone":357,"sort":7,"faction":2,"title":"The Ogres of Feralas","body":"In Orgrimmar, Belgrom Rockmaul called the Gordunni the dominant military force in Feralas and their growing numbers a danger to the Horde, and he sent the willing to the warrior Rok Orhan at Camp Mojache. She wanted the ogres pushed back, believing the land would heal once they were gone. North along the river, the ogres, brutes and ogre magi of the Gordunni Outpost were cut down. Then the fight moved to the High Wilderness, where stronger shamans, warlocks and maulers held old night elf ruins amid withered trees. A soiled scroll from the outpost raised a darker question. It showed a ceremony performed by the Gordunni mage-lords, and Rok Orhan sought one of their orbs, sure that a mage's orb held power enough to reveal the magic the ogres wield. A warrior, she could not tell what it was capable of. The orb went to the mage Uthel'nay in Orgrimmar, who found it fascinating, very powerful and very dangerous.","triggers":[[4,2981],[4,2975],[4,2978]],"sources":["quests 2981, 2975, 2980, 2978, 2979, 3002 descriptions and reward texts"],"notes":"2981 starts with Belgrom in Orgrimmar; 2978 starts from the Gordunni Scroll item. Fact-check: 3002 wording: she cannot tell what the orb can do."},
-{"id":35738,"kind":3,"zone":357,"sort":8,"faction":2,"title":"The Muisek","body":"Witch Doctor Uzer'i of Camp Mojache believes that great power lies in the muisek, the spirits of creatures slain in battle. When a beast dies violently, he teaches, its muisek may escape to seek revenge, even in the form of a greater creature. Shrink and capture the fallen at once, and the spirit is kept for use. His work began with a trade: a shrunken dwarf's head for herbs from Xerash Fireblade at the Lariss Pavilion, needed to prepare his vessel. Ironfur bears and longtooth runners came first. Then he turned on the allies of the night elves: hippogryphs for their loyal and steadfast spirits, faerie dragons for the strength hidden in their fragile bodies, treants for their power as protectors, and the mountain giants who left their peaks to stand with the kaldorei against the Burning Legion. With treant wood, minerals, sinew and metal fragments, he sealed the captured spirits forever into weapons for the Horde.","triggers":[[4,3121],[4,3128]],"sources":["quests 3121-3129 descriptions and reward texts","npc_text 1757 (Uzer'i on muisek)"],"notes":"Fact-check: verified. 3128 (Natural Materials) has no prerequisite, so it is a second entry point."},
-{"id":35739,"kind":3,"zone":357,"sort":9,"faction":0,"title":"Errands in Eldre'Thalas","body":"Both camps of Feralas send champions into Dire Maul. Lethtendris, a blood elf mage whose brutality is matched only by her craving for magic, fled into the Warpwood Quarter among the satyrs and wove a web to snare the magical energies of the place. Heralds in the capitals call for agents, sending the Alliance to Latronicus Moonspear and the Horde to Talo Thornhoof. Latronicus means to release the web's power safely over the wilds, while Talo would give it to more responsible students of magic. Neither rejoices at her death. A quieter search is shared by two scholars, Sage Korolusk of Camp Mojache and Scholar Runethorn of Feathermoon, who work together despite their banners. They hunt for Kariel Winthalus, an elven master who fled the ruin of his homeland in Quel'Thalas with ancient artifacts, and followed his trail across the sea to Feralas. They believe he sought sanctuary in Eldre'Thalas, alive or dead.","triggers":[[4,7494],[4,7492],[4,7488],[4,7489],[4,7481],[4,7482]],"sources":["quests 7494, 7492, 7488, 7489 descriptions and reward texts","quests 7481, 7482 descriptions and request text (my associate, the night elf scholar Runethorn)","npc_text 6917 (Runethorn: on the verge of a breakthrough)"],"notes":"Fact-check: verified. Dungeon quests given by NPCs standing in Feralas (Latronicus, Talo, Korolusk, Runethorn); 7492/7494 come from capital heralds. Pusillin (7441) is under Azj'Tordin."}
+ {
+  "id": 35700,
+  "kind": 0,
+  "zone": 357,
+  "sort": 0,
+  "faction": 0,
+  "title": "Feralas",
+  "body": "Feralas is a vast, rain-soaked forest in southwestern Kalimdor, green and wild beside the dry lands that surround it. Long ago the night elves built here, and their ruins lie everywhere beneath the canopy, above all the broken city of Eldre'Thalas, now called Dire Maul. Today the Gordunni ogres are the strongest power in the forest, and the land withers wherever they settle. On Sardor Isle, off the western shore, General Shandris Feathermoon holds Feathermoon Stronghold for the Alliance, the tauren of Camp Mojache keep the Horde's watch in the east, and the small way-station of Thalanaar stands on the border with the Thousand Needles. Neither side has the forest to itself. Woodpaw gnolls, Grimtotem tauren, Northspring harpies and Hatecrest naga each claim a share, the insect hive of the Zukk'ash festers in the southeast, and in the far north the great tree called the Dream Bough rises from an island in Jademir Lake, guarded by the green dragons of the Emerald Dream.",
+  "triggers": [
+   [
+    1,
+    357
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Feralas (rainforest; Gordunni dominant and tainting the land; Feathermoon on Sardor Isle; Camp Mojache; Dream Bough as one of the Great Trees)",
+   "quest 2981 description (Gordunni the dominant military force in Feralas)",
+   "quests 2939, 2982 (ruins that cover the forests of Feralas)",
+   "quest 7441 completion text (Queen, Shen'dralar, Prince Tortheldrin); quest 7481 (Eldre'Thalas, now Dire Maul)",
+   "quest 4267 description (infestation of southeastern Feralas)",
+   "zone_areas: Woodpaw, Grimtotem, Northspring, Hatecrest, Zukk'ash spawns; Lethlas, Dreamroarer, Emeriss at area 1111"
+  ],
+  "notes": "Check: 'a silithid hive' changed to the hive of the Zukk'ash, since naming them silithid is the reveal of DONE 7732 (here) and DONE 4267 (darnassus.json). Unchanged in the parts conversion: nothing to hide. The Nightmare dragon Emeriss is not named here; she appears only in 35715 part 1 (minState 2). Earlier: Fact-check: 'country of the Highborne' made general (only Eldre'Thalas is Highborne); Dream Bough placed on an island in the lake."
+ },
+ {
+  "id": 35701,
+  "kind": 1,
+  "zone": 357,
+  "sort": 1,
+  "faction": 0,
+  "title": "Thalanaar",
+  "body": "Thalanaar is a small night elf way-station on the eastern edge of Feralas, where the forest gives way to the dry canyons of the Thousand Needles. It offers little more than a hippogryph roost, a pair of merchants and a trainer of tribal leatherworking, yet it matters more than its size suggests. The druid Falfindel Waywarder keeps his post here, and couriers from Feathermoon Stronghold cross the whole breadth of Feralas to bring him supplies. Travelers remark on how abruptly the green forest ends at this border. One scholar who studies the barren lands beyond is sure that strange magic was at work when that happened.",
+  "triggers": [
+   [
+    1,
+    489
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Thalanaar (tiny night elf camp on the border of Feralas and Thousand Needles; Caryssia Moonhunter, Rendow, Brienna Starglow, Thyssiana)",
+   "zone_areas area 489: Falfindel 4048, Thyssiana 4319, Caryssia 7870, Rendow 1695, Brienna 6576",
+   "quest 4281 description and reward text (parcel from Feathermoon, small way-station of Thalanaar)",
+   "quest 4125 description (Raschal set out for Thalanaar)",
+   "quest 3841 request text (Quentin: odd transition between Feralas and Thousand Needles, strange magic)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Fact-check: verified. Stonetalon (40631) and Thousand Needles already point to Falfindel here; no shared triggers."
+ },
+ {
+  "id": 35702,
+  "kind": 1,
+  "zone": 357,
+  "sort": 2,
+  "faction": 0,
+  "title": "Camp Mojache",
+  "body": "Camp Mojache is the Horde's foothold in Feralas, a tauren camp of hide tents built astride a swift stream above Wildwind Lake. Braves guard its paths, and it has an inn, a wind rider roost and trainers of many crafts. It is a meeting place as much as a village. The elder Talo Thornhoof tells his stories here, the troll Witch Doctor Uzer'i studies the spirits of beasts, the warrior Rok Orhan leads the fight against the ogres, and Krueg Skullsplitter has come on an errand from Orgrimmar. Its neighbors give it little peace. Woodpaw gnolls press up from the south with growing fury, and the Gordunni hold the river valley to the north.",
+  "triggers": [
+   [
+    1,
+    1099
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Camp_Mojache (tauren village overlooking Wildwind Lake, straddles a fast-moving stream; inn, flight master, trainers)",
+   "zone_areas area 1099: Camp Mojache Braves, Innkeeper Greul, Shyn, Talo 7776, Uzer'i 8115, Rok Orhan 7777, Krueg 4544, Hadoken 7875",
+   "quest 7492 (Talo Thornhoof, a tauren elder); npc_text 3545 (Talo: listen to the stories of an elder)",
+   "quest 2981 (Rok Orhan, a warrior); quest 2973 (Krueg on a mission for Orgrimmar masters)",
+   "quests 2862, 2975 (gnolls from the south, Gordunni north along the river)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Fact-check: verified."
+ },
+ {
+  "id": 35703,
+  "kind": 1,
+  "zone": 357,
+  "sort": 3,
+  "faction": 0,
+  "title": "Lariss Pavilion",
+  "body": "North of Camp Mojache stands Lariss Pavilion, a large open-air hall raised in the old night elf style. Its strangest tenant is Azj'Tordin, a Highborne who slipped out of Dire Maul and the grip of its mad prince. He lingers here among the old stones, savoring the freedom for which he gave up his immortality, though he fled the city in such haste that he was robbed on the way. A door at the foot of the pavilion is said to lead back into the old city.",
+  "triggers": [
+   [
+    1,
+    2518
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Lariss_Pavilion (night elf-style outdoor building north of Camp Mojache; Azj'Tordin escaped Dire Maul through a back door at the bottom of the Pavilion; Xerash Fireblade)",
+   "quest 7441 description and completion text",
+   "quests 3121, 3122 (Xerash Fireblade at the Lariss Pavilion, shrunken head for herbs)",
+   "zone_areas area 2518: Azj'Tordin 14355, Xerash Fireblade 36208, Door 177198",
+   "warcraft.wiki.gg/wiki/Xerash_Fireblade (orc, added in patch 3.2.0, quests 3121/3122)",
+   "quest 7441 description (in my haste to escape the grip of the fallen Prince, I was robbed)"
+  ],
+  "notes": "Check: part 1 no longer says he prepares herbs: with mod-individual-progression 3121 ends and 3122 starts at Neeru Fireblade (zone_orgrimmar.sql), so at state 15 and up Xerash stands here with no quests; without the module (state 18) he exists in the 3.3.5 DB and the part is true. minState 15 kept (patch 3.2 NPC the module hides until TotC). Converted for eras: Xerash Fireblade moved to part 1, minState 15, no triggers: he came in patch 3.2 and mod-individual-progression shows him only from state 15 (npc_ipp_wotlk_totc). His trade of herbs for Uzer'i's shrunken head is no longer told here, because the module (zone_orgrimmar.sql, zone_feralas.sql) sends quests 3121 and 3122 to Neeru Fireblade in Orgrimmar in every state, so the trade is true of Xerash only without the module; the Muisek story (35738) now names the herbalist only as an orc named Fireblade. Azj'Tordin's robbery (7441 description, a premise) fills the opening. Earlier: Xerash Fireblade (36208) is a 3.3 replacement for Neeru Fireblade in quest 3121; he is spawned in this DB. Elder Grimtotem here is a Lunar Festival NPC and is left out. Fact-check: builder unstated by sources, made general; Xerash confirmed an orc added in 3.2.0 (not 3.3), ends 3121 in this DB.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Of late the pavilion has a second tenant, an unlikely neighbor for a Highborne: the orc Xerash Fireblade, who has set up among the old elven stones just north of Camp Mojache.",
+    "sources": [
+     "creature 36208 Xerash Fireblade in area 2518 (zone_areas); creature_template VerifiedBuild 10314 (patch 3.2.0)",
+     "quest 3121 description (Xerash at the Lariss Pavilion, north of Camp Mojache)",
+     "warcraft.wiki.gg/wiki/Xerash_Fireblade (added in patch 3.2.0)",
+     "mod-individual-progression ipp_aware_npcs.sql (36208 ScriptName npc_ipp_wotlk_totc: CanBeSeen only from state 15, PROGRESSION_WOTLK_TIER_2)"
+    ],
+    "minState": 15
+   }
+  ]
+ },
+ {
+  "id": 35704,
+  "kind": 1,
+  "zone": 357,
+  "sort": 4,
+  "faction": 0,
+  "title": "Gordunni Outpost",
+  "body": "Following the river north from Camp Mojache leads to the Gordunni Outpost, a camp of the ogres who dominate Feralas. Ogres, brutes and ogre magi crowd it, and the land around them bears the scars of their presence. They guard more than their tents. The Gordunni bury a mineral called Gordunni cobalt in the earth here, betrayed only by its blue glow, and a goblin prospector newly arrived at Camp Mojache wants it dug up, sure it will fetch a pretty price. Soiled scrolls lie about the camp as well, and one of them seems to depict some sort of meeting or ceremony of the ogres, a puzzle that Rok Orhan of Camp Mojache would dearly like to see solved.",
+  "triggers": [
+   [
+    1,
+    1103
+   ]
+  ],
+  "sources": [
+   "quest 2975 description (follow the river north to their outpost; their presence scars the land)",
+   "quest 2987 description (Orwin Gizzmick, Gordunni cobalt, blue glow, dig)",
+   "quests 2978, 2979 (Gordunni Scroll, ceremony of the mage-lords)",
+   "zone_areas area 1103: Gordunni Ogre, Brute, Ogre Mage; gameobject 143980 Gordunni Scroll",
+   "warcraft.wiki.gg/wiki/Orwin_Gizzmick (goblin at Camp Mojache)"
+  ],
+  "notes": "Converted: the scroll now only seems to show a meeting or ceremony (the 2978 item text); that it records a dark ceremony of the mage-lords is Rok Orhan's reading on 2979 and is told in 35737 part 2. Earlier: Fact-check: Orwin sells the cobalt on, he does not pay well for it; reworded."
+ },
+ {
+  "id": 35705,
+  "kind": 1,
+  "zone": 357,
+  "sort": 5,
+  "faction": 0,
+  "title": "Woodpaw Hills",
+  "body": "South of Camp Mojache, the wooded hills belong to the Woodpaw gnolls, who keep a den deep among them. Mystics, reavers, trappers and brutes fill their camps, and their leaders call themselves Alphas. Their raids on the tauren have grown more frequent and more savage, almost as if the gnolls were desperate, and Camp Mojache wonders what has driven them into such a frenzy. Like all gnolls they keep what they scavenge and fight over it. A rare treant, Gnarl Leafbrother, is sometimes seen among the hills.",
+  "triggers": [
+   [
+    1,
+    2519
+   ],
+   [
+    1,
+    2520
+   ]
+  ],
+  "sources": [
+   "zone_areas areas 2519, 2520: Woodpaw Mystic, Reaver, Trapper, Brute, Alpha; Gnarl Leafbrother 5354; Woodpaw Battle Map 142195; Large Leather Backpacks 164953",
+   "quests 2862, 2863, 2903 reward texts (attacks more savage, almost desperate; Alphas; two-front war)",
+   "quests 4131, 4135 (gnolls keep items they scavenge; backpacks tacked to a tree)",
+   "warcraft.wiki.gg/wiki/Gnarl_Leafbrother (rare treant)",
+   "quest 2862 request text (someone or something must be driving them into a frenzy)"
+  ],
+  "notes": "Converted: the two-front war against the insects moved to part 1 (DONE 2903, the turn-in where Hadoken reads the battle map; Horde only, which is fine on a faction 0 entry); the courier's packs found on a tree moved to part 2 (DONE 4131, the backpacks, or ACCEPT 4135, which they start). The opening keeps the desperate raids as a question. Earlier: Gnarl Leafbrother is creature type elemental in the DB; called a forest spirit to stay general. Fact-check: Gnarl named a treant per the wiki.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The answer lies on their own southern border. A battle map taken from their camps shows most of their forces turned south, away from Camp Mojache, beside a drawing of a great insect with tally marks beneath it. The gnolls are fighting a war on two fronts, and they spend their main strength against a foe to their south.",
+    "triggers": [
+     [
+      5,
+      2903
+     ]
+    ],
+    "sources": [
+     "quest 2902 reward text (map, arrows to the south, insect with tick marks)",
+     "quest 2903 reward text (two front war, main energy against a foe to their south)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The hoarding of the gnolls once held a clue for Feathermoon Stronghold. Two large leather backpacks bearing the stronghold's insignia, the packs of a missing courier, were found tacked to a tree in one of their camps.",
+    "triggers": [
+     [
+      5,
+      4131
+     ],
+     [
+      4,
+      4135
+     ]
+    ],
+    "sources": [
+     "quest 4131 description and reward text (gnolls keep items they scavenge; backpacks tacked to a tree, Feathermoon insignia)",
+     "quest 4135 description"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35706,
+  "kind": 1,
+  "zone": 357,
+  "sort": 6,
+  "faction": 0,
+  "title": "The Writhing Deep",
+  "body": "Beyond the Woodpaw camps in southeastern Feralas, the earth is broken into the twisted mounds and tunnels of the Writhing Deep, a hive of the insects known here as the Zukk'ash. Workers, wasps, stingers and tunnelers swarm over its slopes, and even the ore in its veins comes smeared with ooze. Among them roams Stinglasher, far larger than its kin and wrapped in an aura the others lack.",
+  "triggers": [
+   [
+    1,
+    1101
+   ]
+  ],
+  "sources": [
+   "quest 4135 description and reward text (Writhing Deep south of the gnoll camps; pod encasing a humanoid)",
+   "quest 4265 (Raschal paralyzed inside the pod)",
+   "quest 7731 description (Stinglasher, larger, secretes an aura); quest 7730",
+   "quests 4267, 7732 reward texts (silithid)",
+   "zone_areas area 1101: Zukk'ash Tunneler, Wasp, Worker, Stinger; Stinglasher 14661; Qirot; Ooze Covered deposits 123309/123310"
+  ],
+  "notes": "Converted: the living captives in pods moved to part 1 (ACCEPT 4265, from the pod, where the courier is found alive); the silithid name moved to part 2 on DONE 7732 (Zilzibin, Horde). The Darnassus side of the naming (DONE 4267) belongs to darnassus.json 165710 part 1, so this entry now names only the Orgrimmar scholar. Earlier: Fact-check: verified.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Not every victim of the hive dies at once. The Zukk'ash seal some of those they overwhelm in hard, mucous pods large enough to hold a grown elf whole, and at least one prisoner has been found alive inside such a pod, paralyzed but breathing.",
+    "triggers": [
+     [
+      4,
+      4265
+     ]
+    ],
+    "sources": [
+     "quest 4135 reward text (pod of an alien nature, mucous, large enough to encompass a humanoid)",
+     "quest 4265 description (awoke paralyzed inside this pod, surprisingly still alive)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Orgrimmar, the scholar Zilzibin Drumlore knows the Zukk'ash by an older and more frightening name. They are the silithid, he warns, an ancient threat that the Horde keeps choosing to ignore, and far worse than anything the Alliance could muster.",
+    "triggers": [
+     [
+      5,
+      7732
+     ]
+    ],
+    "sources": [
+     "quest 7732 reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35707,
+  "kind": 1,
+  "zone": 357,
+  "sort": 7,
+  "faction": 0,
+  "title": "Grimtotem Compound",
+  "body": "East of Dire Maul, the Grimtotem tribe has raised a compound of tents in the Feralas woods, guarded by raiders, shamans and naturalists. These tauren are hostile to every outsider, and their work here is dark. In a bamboo pen nearby they keep captured sprite darters, the faerie dragons of the forest, for purposes no one has learned. Two night elves, Kindal Moonweaver and the priestess Jer'kai, keep watch over the camp from a rise above it. The Horde has taken notice too: in Orgrimmar, Belgrom Rockmaul has put a bounty on the clan's horns.",
+  "triggers": [
+   [
+    1,
+    1100
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Grimtotem_Compound (east of Dire Maul; cage of imprisoned sprite darters)",
+   "quest 2969 description (Grimtotem capturing faerie dragons, no idea what they plan, cage)",
+   "quest 2970 description (camp below us); quest 2972 reward (Jer'kai a priestess of Tyrande)",
+   "quest 2974 description (Belgrom's bounty)",
+   "zone_areas area 1100: Grimtotem Naturalist, Raider, Shaman; Captured Sprite Darters and Kindal/Jer'kai stand just outside at -4540,815 and -4481,858"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Fact-check: verified."
+ },
+ {
+  "id": 35708,
+  "kind": 1,
+  "zone": 357,
+  "sort": 8,
+  "faction": 0,
+  "title": "Dire Maul",
+  "body": "In the heart of Feralas rise the broken walls of Eldre'Thalas, a city of Queen Azshara's Highborne, its great halls now called Dire Maul. The Queen is long gone, and the Shen'dralar who linger within have been marred by the madness of their Prince Tortheldrin. Gordok ogres hold the grounds outside, their hyenas prowling among the fallen stones, and in an arena within the walls, the Maul, ogre champions brawl while spectators such as Griniblix cheer them on. Deeper in, the wings hold satyrs, a rogue blood elf mage and perhaps the last refuge of a lost elven master.",
+  "triggers": [
+   [
+    1,
+    2577
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Dire_Maul (Eldre'Thalas, Highborne capital of Azshara; Shen'dralar; Tortheldrin; Gordok)",
+   "quest 7441 completion text (Queen long passed, Shen'dralar marred by Prince Tortheldrin's madness)",
+   "quest 7481 (Eldre'Thalas, now Dire Maul; Kariel Winthalus); quest 7488 (Lethtendris among the satyrs in Warpwood)",
+   "zone_areas area 2577: Gordok Ogre-Mage, Enforcer, Gordok Hyena; posarea: Griniblix 14395, Mushgog, Skarr, The Razza in area 3217 The Maul (instance-zone area, not used as a trigger); npc_text 11738 (Griniblix: they are into it now)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide: Kariel's refuge stays hedged and Lethtendris's fate is told only in 35739. Dire Maul is not gated by state in mod-individual-progression (it only phases its Scourge bosses at states 6 and 7), and patch 1.3 is classic, so no era tag. Earlier: The Maul (3217) belongs to the Dire Maul instance zone in AreaTable, so only 2577 is used. Fact-check: Kariel's fate is unknown in 7481 (no trace of him), so his refuge is hedged."
+ },
+ {
+  "id": 35709,
+  "kind": 1,
+  "zone": 357,
+  "sort": 9,
+  "faction": 0,
+  "title": "The High Wilderness",
+  "body": "The High Wilderness spreads across the uplands of southern Feralas, a broad country of forest glades and broken ground. Groddoc apes, ironfur bears and longtooth howlers roam it, Frayfeather hippogryphs wheel over its clearings, and Feral Scar yetis prowl its slopes. This was once night elf land, and its abandoned, ruined buildings still stand. The Gordunni ogres have claimed them, and where they dwell the trees wither and the ground is desecrated. The Feathermoon scholar Troyas Moonbreeze often comes here alone to study the ruins, much to the worry of Angelas Moonbreeze.",
+  "triggers": [
+   [
+    1,
+    1136
+   ]
+  ],
+  "sources": [
+   "quest 2980 description (High Wilderness, abandoned structures on land that once belonged to the night elves, withered trees and desecrated terrain, Gordunni)",
+   "quest 2982 description (Troyas going alone to the High Wilderness; Gordunni took over)",
+   "zone_areas area 1136: Groddoc Ape, Frayfeather Hippogryph and Stagwing, Ironfur Bear, Longtooth Howler, Hulking and Enraged Feral Scar, Gordunni"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Fact-check: yetis 'wander down' was unsupported; reworded to the spawns."
+ },
+ {
+  "id": 35710,
+  "kind": 1,
+  "zone": 357,
+  "sort": 10,
+  "faction": 0,
+  "title": "Ruins of Isildien",
+  "body": "Deep in the High Wilderness lie the Ruins of Isildien, the remains of a large night elf city destroyed long ages ago. A broad stair climbs to a round hall that may once have been a temple. The Gordunni have made the ruins their stronghold, and here gather their mightiest: battlemasters, warlords, warlocks, maulers and the mage-lords of the tribe. Their magic seems to wreak havoc on the very ground they stand on. Frayfeather hippogryphs still nest at the edges of the ruins, and an old bear called Old Grizzlegut is known to wander nearby.",
+  "triggers": [
+   [
+    1,
+    2522
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Ruins_of_Isildien (large night elven city in southwestern Feralas, Gordunni home; round building at the end of the stairs may have been a temple of Elune)",
+   "quest 2982 request text (Gordunni magic wreaks havoc on the land they stand on)",
+   "quest 2979 (mage-lords' ceremony)",
+   "zone_areas area 2522: Gordunni Battlemaster, Warlord, Mage-Lord, Warlock, Shaman, Mauler; Frayfeather Skystormer, Patriarch; Hippogryph Egg x7; Old Grizzlegut 5352 (family bear)"
+  ],
+  "notes": "Converted: the mage-lords' dark ceremony (Rok Orhan's reading of the scroll, 2979) dropped from the opening; it is told in 35737 part 2. Maulers added from the spawn list. Earlier: Fact-check: verified."
+ },
+ {
+  "id": 35711,
+  "kind": 1,
+  "zone": 357,
+  "sort": 11,
+  "faction": 0,
+  "title": "Feral Scar Vale",
+  "body": "Feral Scar Vale is a valley of yetis in southern Feralas, just inland of the Forgotten Coast. Its yetis grow hides so thick that leatherworkers in both Feathermoon Stronghold and Camp Mojache prize them, claiming that properly treated they are as strong as iron. A rare brute called Bloodroar the Stalker hunts the vale. In a cave nearby lies a stranger find: OOX-22/FE, a gnomish homing robot that looks rather like a chicken. It crashed here, and its maker in Booty Bay calls for someone to carry a beacon to it and escort it safely to the road.",
+  "triggers": [
+   [
+    1,
+    1105
+   ]
+  ],
+  "sources": [
+   "quests 2821, 2822 (thick yeti hides, Feral Scar Vale just inland of the Forgotten Coast, stronger than iron)",
+   "quests 2766, 2767 (OOX-22/FE in a cave near Feral Scar Vale, Oglethorpe Obnoticus in Booty Bay, escort to the main road)",
+   "zone_areas area 1105: Feral Scar Yeti, Enraged Feral Scar, Bloodroar the Stalker 5346, Homing Robot OOX-22/FE 7807"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Fact-check: verified. The OOX quests are mentioned here without triggers."
+ },
+ {
+  "id": 35712,
+  "kind": 1,
+  "zone": 357,
+  "sort": 12,
+  "faction": 0,
+  "title": "Frayfeather Highlands",
+  "body": "In the far south of Feralas, the Frayfeather Highlands are home to great flocks of wild hippogryphs: stagwings, skystormers and the proud patriarchs that lead them. Hippogryphs have been loyal companions to the night elves for many years, and their eggs can be found in nests across these heights. That loyalty has drawn unwelcome attention, for Witch Doctor Uzer'i of Camp Mojache covets the steadfast spirits of these birds for his muisek magic. The greatest of the flock, a hippogryph known as Antilus the Soarer, is seldom seen.",
+  "triggers": [
+   [
+    1,
+    1106
+   ]
+  ],
+  "sources": [
+   "zone_areas area 1106: Frayfeather Skystormer, Stagwing, Patriarch; Antilus the Soarer 5347; Hippogryph Egg 141931",
+   "quest 3124 description (hippogryphs loyal companions to the night elves, spirits loyal and steadfast)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Fact-check: verified."
+ },
+ {
+  "id": 35713,
+  "kind": 1,
+  "zone": 357,
+  "sort": 13,
+  "faction": 0,
+  "title": "The Twin Colossals",
+  "body": "Two immense peaks of rock tower over northwestern Feralas, the highest points in the land, and the road to Desolace runs between them. Mountain giants stride across the rocky ground at their feet, and Groddoc thunderers, ironfur patriarchs and rabid longtooths make every path dangerous. A few odd souls camp here. Marli Wishrunner can send a traveler to the top of a colossal, though only one way, and Kalin Windflight waits at the summit selling wings for the trip down. The gentle giant Rockbiter keeps a camp south of the Ruins of Ravenwind, and Gregan Brewspewer, a student of herbs who is hard to track down, keeps a camp out in these wilds.",
+  "triggers": [
+   [
+    1,
+    1119
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Twin_Colossals (two tall mesas, highest points, road to Desolace between them; Marli's one-way trip; Kalin sells the Colossal Parachute)",
+   "quest 3567 reward text (one way trip only); npc_text 2054 (Kalin: wings to get down); creature 7772 at z 246, vendor item 10684",
+   "zone_areas area 1119: Cliff Giant, Land Walker, Groddoc Thunderer, Ironfur Patriarch, Rabid Longtooth; Rockbiter 7765, Gregan 7775, Marli 7773, Kalin 7772",
+   "quest 3909 description (Gregan hard to track down, camping in the wilds of Feralas); quest 4041 (herbs and alchemy); quest 4142"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Fact-check: verified. Gregan's quests belong to the Un'Goro chains (Linken 3909, Muigin 4142/4143); mentioned without triggers."
+ },
+ {
+  "id": 35714,
+  "kind": 1,
+  "zone": 357,
+  "sort": 14,
+  "faction": 0,
+  "title": "Ruins of Ravenwind",
+  "body": "West of the Dream Bough lie the Ruins of Ravenwind, remains of an ancient night elf city now overrun by the Northspring harpies. Their queen, Edana Hatetalon, is said to have a heart of crystal, empty of all but hatred, and she comes when a harpy horn is sounded by the Hatetalon stones in the northern ruins. Older magic lingers among the stones. Four flames named Samha, Imbel, Byltan and Lahassa still burn there, and the Equinex Monolith stands silent nearby, keeping whatever it holds. On the eastern edge of the ruins, a gnoll named Miblon Snarltooth stands guard over a patch of evoroot.",
+  "triggers": [
+   [
+    1,
+    1114
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Ruins_of_Ravenwind (ancient kaldorei city, Northspring harpies; Miblon Snarltooth guarding Evoroot)",
+   "quest 2879 description (Ruins of Ravenwind west of the Dream Bough; four flames; Equinex Monolith)",
+   "quest 3062 description (Edana Hatetalon, queen, heart of crystal, horn by the Hatetalon stones in the north of the ruins)",
+   "zone_areas area 1114: Northspring Windcaller, Harpy, Slayer, Roguefeather; Flames of Byltan, Lahassa, Imbel, Samha; Equinex Monolith 144063; Evoroot 164798; Miblon 9467",
+   "warcraft.wiki.gg/wiki/Miblon_Snarltooth (gnoll guarding Evoroot on the eastern outskirts; removed in 4.0.3a)",
+   "quest 2879 request text (the Equinex Monolith stands silently among the ruins)"
+  ],
+  "notes": "Check: 'a secret that only an energized stave can open' removed from the opening: that the stave is the monolith's key is the Stave of Equinex reveal (35735 part 2, ACCEPT 2879); the monolith is now only described as it stands. Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Fact-check: 'hungry' dropped; Miblon is pre-Cataclysm and spawned here."
+ },
+ {
+  "id": 35715,
+  "kind": 1,
+  "zone": 357,
+  "sort": 15,
+  "faction": 0,
+  "title": "The Dream Bough",
+  "body": "In the far north of Feralas, Jademir Lake spreads its quiet waters around an island where a towering tree, the Dream Bough, rises above the forest. It is one of four great trees through which the Emerald Dream touches the waking world; the others stand in Duskwood, the Hinterlands and Ashenvale. The green dragonflight guards it jealously. The dragons Lethlas and Dreamroarer keep watch over the island, and Jademir dragonkin patrol the lake shores and the grounds of Oneiros. Few mortals linger.",
+  "triggers": [
+   [
+    1,
+    1111
+   ],
+   [
+    1,
+    1112
+   ],
+   [
+    1,
+    1113
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Dream_Bough (Great Tree on an island in Jademir Lake, a portal to the Emerald Dream guarded by the green dragonflight)",
+   "warcraft.wiki.gg/wiki/Emeriss (corrupted green dragon, one of the four world dragons since patch 1.8)",
+   "zone_areas areas 1111, 1112, 1113: Lethlas 5312, Dreamroarer 12497, Emeriss 14889 (area 1111); Jademir Oracle, Tree Warder, Boughguard (dragonkin, faction 50)",
+   "warcraft.wiki.gg/wiki/Twilight_Grove, Seradane, Bough_Shadow (the other three great trees)"
+  ],
+  "notes": "Check: part 1 no longer quotes Emeriss's aggro yell (creature_text 14889), which a reader of this trigger-free part may never have heard; it now describes her as she is met, as hinterlands.json 4714 does for Lethon. Converted for eras: Emeriss moved to part 1, minState 2, no triggers: mod-individual-progression phases the four Nightmare dragons and shows them at the Dream Bough and Jademir Lake only once Onyxia is passed (state 2), the pattern of duskwood.json 1000/1009, hinterlands.json 4714 and ashenvale.json 33123. Lethlas 5312, Dreamroarer 12497 and the Jademir dragonkin are not phased. The four-gateway sentence (as in duskwood.json 1009) keeps the opening in range. Earlier: Fact-check: verified. Emeriss is one of four dragons that appear at the Great Trees; worded as 'at times'.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Of late a far greater shadow comes out of the Dream here. At times Emeriss, one of the great green dragons of Ysera's flight, emerges beneath the Dream Bough, sick with corruption, and turns on any who come near.",
+    "sources": [
+     "warcraft.wiki.gg/wiki/Emeriss",
+     "DB: Emeriss 14889 spawn at -2872.7,1884.3 (area 1111)",
+     "mod-individual-progression ipp_aware_npcs.sql (Dragons of Nightmare 14887-14890 phaseMask IPPPHASE) and IndividualProgression.cpp checkIPPhasing (AREA_DREAM_BOUGH 1111, AREA_JADEMIR_LAKE 1112: IPP_PHASE cast once PROGRESSION_ONYXIA, state 2, is passed)",
+     "creature_template 14889 faction 50 (hostile)"
+    ],
+    "minState": 2
+   }
+  ]
+ },
+ {
+  "id": 35716,
+  "kind": 1,
+  "zone": 357,
+  "sort": 16,
+  "faction": 0,
+  "title": "The Forgotten Coast",
+  "body": "The Forgotten Coast is the western shore of Feralas, looking out across the water to Sardor Isle. Elementals of brine and sea spray rise from the surf, coast crawl creatures scuttle on the sand, and towering giants of the shore and the deep wade through the shallows. A dock here serves the ferry to Feathermoon Stronghold, and beside it the goblin Zorbin Fandazzle is trying, with growing doubts, to run an engineering shop. Not every boat makes its crossing. The wreck of a row boat lies in the muddy water nearby, its side torn open as if something had tried to snap it in two.",
+  "triggers": [
+   [
+    1,
+    1108
+   ]
+  ],
+  "sources": [
+   "zone_areas area 1108: Sea Spray, Sea Elemental, Shore/Deep/Wave Strider (giants, type 5), Coast Crawl Snapclaw/Deepseer, Zorbin Fandazzle 14637, Wrecked Row Boat 164909",
+   "transports: The Forgotten Coast to Feathermoon Stronghold boat (Feathermoon Ferry)",
+   "quests 7003, 7721 (Zorbin at the docks of the Forgotten Coast)",
+   "quest 4125 reward text (wrecked row boat, Feathermoon crest, something tried to snap it in two)"
+  ],
+  "notes": "Check: the wreck (gameobject 164909, a questgiver object spawned for everyone) is back in the opening as a visitor sees it; part 1 keeps only what the chain reveals: the Feathermoon crest, whose boat it is and the knife. Converted: the wrecked Feathermoon row boat moved to part 1 (DONE 4125, finding the boat, or ACCEPT 4127, which it starts), since it is the first find of the Missing Courier chain (35733). Alliance only in practice; the entry stays faction 0. Earlier: Fact-check: verified.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Up close the wreck tells more. A small crest of Feathermoon Stronghold is painted on its starboard side: it is almost surely the boat of the stronghold's missing courier. In the mud beneath it lay a well kept knife, perhaps lost by whoever was aboard.",
+    "triggers": [
+     [
+      5,
+      4125
+     ],
+     [
+      4,
+      4127
+     ]
+    ],
+    "sources": [
+     "quest 4125 description and reward text (Raschal took a row boat; Feathermoon crest on the starboard side)",
+     "quest 4127 description (knife in the mud, well cared for, lost by whoever was on the boat)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35717,
+  "kind": 1,
+  "zone": 357,
+  "sort": 17,
+  "faction": 0,
+  "title": "Sardor Isle",
+  "body": "Sardor Isle lies off the Forgotten Coast, a forested island that the night elves of Feathermoon Stronghold have made their own. Beyond the stronghold's walls the island is wild. Coast crawl snapclaws and deepseers swarm its beaches, longtooth runners hunt in its woods, and a rare beast called Diamond Head lurks along its shore. South of the stronghold, the Ruins of Solarsal have fallen to the Hatecrest naga, and the Sentinels fear that the naga mean in time to seize the whole island. The Isle of Dread lies across the water beyond.",
+  "triggers": [
+   [
+    1,
+    1120
+   ]
+  ],
+  "sources": [
+   "zone_areas area 1120: Coast Crawl Snapclaw, Deepseer, Longtooth Runner, Hatecrest naga, Diamond Head 5345",
+   "quest 2866 (Ruins of Solarsal to our south)",
+   "quest 2869 description (naga will eventually move to secure the island)",
+   "quest 2870 (Isle of Dread across the water)"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Fact-check: verified. Diamond Head's race left unstated (wiki calls it a makura)."
+ },
+ {
+  "id": 35718,
+  "kind": 1,
+  "zone": 357,
+  "sort": 18,
+  "faction": 0,
+  "title": "Feathermoon Stronghold",
+  "body": "Feathermoon Stronghold is the Alliance bastion of Feralas, a night elf fortress on Sardor Isle reached by ferry from the Forgotten Coast or on hippogryph wings. General Shandris Feathermoon led an expeditionary force here and commands it still, with Feathermoon Sentinels on watch. It is a place of scholars as much as soldiers. Troyas and Angelas Moonbreeze pore over their books on the ruins of Feralas, the priestess Vestia Moonspear is one of the most learned minds to be found anywhere, the druid Quintis Jonespyre keeps a tree house, and a history of the Sentinels and the Long Vigil is kept for visitors. Its defenders watch two foes: the naga to the south and the Horde.",
+  "triggers": [
+   [
+    1,
+    1116
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Feathermoon_Stronghold_(Classic) (island fortress on Sardor Isle, Shandris, boat from the Forgotten Coast, hippogryph flight point)",
+   "quest 4125 description (General Feathermoon led the expeditionary forces here)",
+   "quest 3130 description (stronghold open to direct attack from the Horde)",
+   "quests 2939, 2871, 4129 (Moonbreezes' books, Vestia scholar, Quintis' tree-house)",
+   "zone_areas area 1116: Feathermoon Sentinel 7939, Shandris 3936, Fyldren Moonfeather 8019; gameobject 175732 The Sentinels and the Long Vigil"
+  ],
+  "notes": "Converted: 'studies strange relics' replaced, since the relic she studies is the end of the Hatecrest chain (2871); she is now only named a scholar (2871 description). Earlier: Fact-check: verified."
+ },
+ {
+  "id": 35719,
+  "kind": 1,
+  "zone": 357,
+  "sort": 19,
+  "faction": 0,
+  "title": "Ruins of Solarsal",
+  "body": "The Ruins of Solarsal, on Sardor Isle south of Feathermoon Stronghold, are far older than any of the night elves' present works. The Sentinels once explored them, found nothing of note and left them in peace. Now the Hatecrest naga have filled them in alarming numbers: warriors, screamers, sirens and wave riders. At the heart of the ruins stands a gazebo that does not belong. It is clearly newer than the stones around it, its sides are engraved with a repeating band of unknown glyphs, and its stone is warm to the touch.",
+  "triggers": [
+   [
+    1,
+    1117
+   ]
+  ],
+  "sources": [
+   "quest 2866 description and reward text",
+   "zone_areas area 1117: Hatecrest Screamer, Warrior, Siren, Wave Rider; Solarsal Gazebo 142179"
+  ],
+  "notes": "Unchanged in the parts conversion: the gazebo's look is what anyone exploring the ruins sees; the Hatecrest story (35732) tells it as the investigation's finding in part 1. Earlier: Fact-check: verified."
+ },
+ {
+  "id": 35720,
+  "kind": 1,
+  "zone": 357,
+  "sort": 20,
+  "faction": 0,
+  "title": "Isle of Dread",
+  "body": "South of Sardor Isle, across the water, lies the Isle of Dread. Hatecrest serpent guards, myrmidons and sorceresses hold a deep cave at its northern end, Shalzaru's Lair, the seat of Lord Shalzaru, one of the crueler naga royals. A hidden passage beneath the waves is said to lead to an inner chamber where Lady Szallah dwells. The heart of the island, a valley walled in by cliffs, belongs to beasts deadlier still: the chimaerok, great two-headed hunters, led by the mighty Lord Lakmaeran.",
+  "triggers": [
+   [
+    1,
+    1121
+   ],
+   [
+    1,
+    3117
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Isle_of_Dread (south of Sardor Isle; central valley enclosed by cliffs; chimaerok; Lord Lakmaeran; naga cave at the northern end with Lord Shalzaru; underwater passage to Lady Szallah)",
+   "quest 2870 description (royals, Lord Shalzaru, relic from an excavation in a cave on the Isle of Dread)",
+   "zone_areas area 1121: Hatecrest Serpent Guard, Sorceress, Myrmidon; Chimaerok, Arcane Chimaerok, Chimaerok Devourer; Lord Lakmaeran 12803; Lord Shalzaru 8136; Lady Szallah 5343"
+  ],
+  "notes": "Check: Shalzaru's relic moved from the opening to part 1 (DONE 2869 or ACCEPT 2870, where the scouts' report is given), as 35718 already does for Vestia's relic; Shalzaru and his lair stay in the opening as a visitor finds them. Unchanged in the parts conversion: Shalzaru's relic is given as the scouts' report (2870 description), not as an outcome. Earlier: Fact-check: verified.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Feathermoon's scouts have news of the cave. In a recent naga excavation there, Lord Shalzaru himself uncovered an odd relic, and Latronicus Moonspear wants Shalzaru stopped and the relic brought back to the stronghold to be studied.",
+    "triggers": [
+     [
+      5,
+      2869
+     ],
+     [
+      4,
+      2870
+     ]
+    ],
+    "sources": [
+     "quest 2870 description (scouting reports, royals, Lord Shalzaru, odd relic from a recent excavation in a cave on the Isle of Dread)",
+     "quest 2869 reward text (2870 offered as its next quest)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35721,
+  "kind": 2,
+  "zone": 357,
+  "sort": 1,
+  "faction": 1,
+  "title": "Shandris Feathermoon",
+  "body": "Shandris Feathermoon is General of the Sentinel Army and the commander of Feathermoon Stronghold. Orphaned when the Burning Legion destroyed her village during the War of the Ancients, she was taken in by Tyrande Whisperwind and grew up at her side, through the Sundering and the long ages of the Sentinels, until she rose to lead them. In Feralas she weighs every move against the safety of her island. She would gladly throw her full strength against the Hatecrest naga, but she will not leave the stronghold open to the Horde.",
+  "triggers": [
+   [
+    2,
+    3936
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Shandris_Feathermoon (Ara-Hinam destroyed by the Legion, adopted by Tyrande, Sundering, Sentinels, general based at Feathermoon)",
+   "creature_template 3936 subname General of the Sentinel Army, faction 124",
+   "quest 3130 description (full force vs. leaving the stronghold open to the Horde)",
+   "quest 3788 reward text (General Shandris Feathermoon and the Protectorate); quest 4267"
+  ],
+  "notes": "Check: part 1 also on DONE 3787 (the Stormwind version of Jonespyre's Request, Tannysa 5566, same reward text; no other file uses it). Converted: her place in the Protectorate and its quiet watch on Fandral's work moved to part 1 (DONE 3788, where Quintis names her among his colleagues and asks for secrecy). Earlier: Fact-check: verified. npc_text 15719 (her gossip) speaks of the war in Ashenvale and Stonetalon and holding the remaining wilds; it reads like Cataclysm text and is not used.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Shandris keeps a quieter circle as well. She and the druid Quintis Jonespyre belong to the Protectorate, colleagues who take a close and private interest in the work being done for Arch Druid Fandral Staghelm in Darnassus, and who would much rather the Arch Druid did not hear of it.",
+    "triggers": [
+     [
+      5,
+      3788
+     ],
+     [
+      5,
+      3787
+     ]
+    ],
+    "sources": [
+     "quests 3788 and 3787 descriptions and reward texts (General Shandris Feathermoon and the Protectorate; keep our discussion from the ears of the Arch Druid)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35722,
+  "kind": 2,
+  "zone": 357,
+  "sort": 2,
+  "faction": 1,
+  "title": "Latronicus and Vestia Moonspear",
+  "body": "Latronicus Moonspear is Shandris Feathermoon's second, charged with meeting the naga directly. He has no patience for idle talk and is proud of his people's restraint: the night elves are no warmongers, he says, but they will act to protect their own. When the blood elf mage Lethtendris fled into Dire Maul with a web of stolen magic, it was Latronicus who called for agents to stop her. His wife Vestia is a priestess of the stronghold and one of its most learned scholars, and Latro, as she calls him when she forgets herself, brings her the puzzles he cannot solve.",
+  "triggers": [
+   [
+    2,
+    7877
+   ],
+   [
+    2,
+    7878
+   ]
+  ],
+  "sources": [
+   "quest 3130 description (Latronicus is her second)",
+   "quest 2869 request text (not warmongers, will proactively protect our interests)",
+   "quests 7494, 7488 (Lethtendris)",
+   "quest 2871 description and request text (Vestia, priestess and scholar; Latro, erm, Latronicus)"
+  ],
+  "notes": "Unchanged in the parts conversion: Lethtendris and the relic are given only as the errands he sets (7494, 2871 descriptions). Earlier: Fact-check: verified."
+ },
+ {
+  "id": 35723,
+  "kind": 2,
+  "zone": 357,
+  "sort": 3,
+  "faction": 1,
+  "title": "Quintis Jonespyre",
+  "body": "Quintis Jonespyre is the druid of Feathermoon Stronghold, a humble servant of Malfurion and the Cenarion Circle who keeps a little tree house within its walls. Curses are his specialty, and he can read the history of an object by touch, a draining art he calls psychometry. His luck at cards is another matter. The stronghold calls him the King of the Bad Beats, and he owes Ginro Hearthkindle for his losses at Kalimdor Hold 'Em.",
+  "triggers": [
+   [
+    2,
+    7879
+   ]
+  ],
+  "sources": [
+   "quest 3788 reward text (druid, servant of Malfurion and the Cenarion Circle)",
+   "quest 3791 description and reward text (curses are my specialty; Staghelm and morrowgrain); quest 3792 reward text (something fishy)",
+   "quests 4129, 4130 (psychometry, tree-house, Kalimdor Hold 'Em debt, King of the Bad Beats)"
+  ],
+  "notes": "Converted: his inquiry into Fandral's morrowgrain moved to part 1 (ACCEPT 3791; 3791 can follow 3785 without 3788, so the secrecy plea is left to Shandris 35721 part 1 on DONE 3788), his unease and suspicion to part 2 (DONE 3791). Earlier: Fact-check: verified.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Lately Quintis has been asking quiet questions. He is concerned to know why Arch Druid Fandral Staghelm is using the name and the resources of the Cenarion Circle to gather vast amounts of morrowgrain, a grain that under the right conditions shows qualities like the herbs used in primitive curses.",
+    "triggers": [
+     [
+      4,
+      3791
+     ]
+    ],
+    "sources": [
+     "quest 3791 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Handling the grain leaves him feeling strange, and he is uncomfortable even being near it. What Staghelm wants with so much of it Quintis cannot yet say, but he means to keep studying it, its alchemical uses among the rest, and he suspects that something is badly amiss.",
+    "triggers": [
+     [
+      5,
+      3791
+     ]
+    ],
+    "sources": [
+     "quest 3791 reward text (these morrowgrain make me feel weird; what is Staghelm up to; alchemical uses; uncomfortable)",
+     "quest 3792 reward text (something fishy going on)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35724,
+  "kind": 2,
+  "zone": 357,
+  "sort": 4,
+  "faction": 1,
+  "title": "Troyas and Angelas Moonbreeze",
+  "body": "Troyas and Angelas Moonbreeze are scholars of Feathermoon Stronghold who comb the ruins that cover the forests of Feralas for what they can tell of the past. Troyas is the bolder of the two. He ventures alone into the ogre-held High Wilderness, and from the rubble of the south he once pulled a stave that he was sure was more than it seemed, though a colleague in Rut'theran grumbles that he always thinks he has found something important. Angelas worries over him, and quietly asks travelers to thin the Gordunni in his path, begging them not to tell him. She also sends the curious to the goblin Marvon Rivetseeker to learn of the Sunken Temple.",
+  "triggers": [
+   [
+    2,
+    7764
+   ],
+   [
+    2,
+    7900
+   ]
+  ],
+  "sources": [
+   "quest 2982 description and reward text (investigating the ruins; Troyas alone in the High Wilderness; don't mention a word to Troyas)",
+   "quest 2939 description and reward text (stave; Daryn: Troyas always thinks he has found something important)",
+   "quest 3445 description (Marvon Rivetseeker, much like Troyas and I, has studied ancient areas)"
+  ],
+  "notes": "Unchanged in the parts conversion: Daryn's grumble and Angelas's plea are character, not outcomes; the stave's identity is told only in 35735. Earlier: Fact-check: the stave came from rubble to the south (2939), not stated to be the High Wilderness; Sunken Temple referral is Angelas's quest (3445)."
+ },
+ {
+  "id": 35725,
+  "kind": 2,
+  "zone": 357,
+  "sort": 5,
+  "faction": 1,
+  "title": "Falfindel Waywarder",
+  "body": "Falfindel Waywarder is a night elf druid who keeps his post at Thalanaar, the small way-station where the green forest of Feralas gives way to the dry canyons of the Thousand Needles. It is a lonely posting at the far end of the forest from Feathermoon Stronghold, whose couriers cross the whole breadth of Feralas to bring him his supplies. Yet his name is known well beyond Feralas, further than so small a post would suggest.",
+  "triggers": [
+   [
+    2,
+    4048
+   ]
+  ],
+  "sources": [
+   "item 5790 page_text 433-435 (Heralath: word must reach Falfindel Waywarder in Thalanaar; the druid known as Falfindel)",
+   "quest 1101 reward text (studies in the area; corruption of Agamaggan's resting place; treachery)",
+   "quest 4281 reward text (delivery from Feathermoon; Woodpaw highly agitated from a source to their south)",
+   "creature_template 4048 faction 80 (hostile to the Horde)"
+  ],
+  "notes": "Check: 'those in need far beyond Feralas send word to him' softened to a general reputation, so the opening no longer echoes Albagorm's message (stonetalon.json 40631 part 1) or Heralath's (part 1). Converted: Keeper Albagorm's call for forest spirits removed (Stonetalon's reveal, stonetalon.json 40631 part 1 on DONE 1057 / ACCEPT 1059; 1057 and 1059 not used here). Heralath's warning and the call to slay the crone moved to part 1 (DONE 1100, ACCEPT 1101), the crone's death and his fear of treachery to part 2 (DONE 1101), the late parcel and the agitated Woodpaw to part 3 (DONE 4281). The opening keeps his post, the Feathermoon couriers and, in general terms, that his name is known beyond Feralas. Earlier: Fact-check: verified.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "A weathered journal, found on the body of the dwarf Henrig Lonebrow, brought Falfindel grievous news. The druid Heralath, dying in Razorfen Kraul, had named him as the one who must be warned that the crone Charlga Razorflank was rousing her minions. With no time to send word to Darnassus, Falfindel called for a party to slay her and bring back her medallion.",
+    "triggers": [
+     [
+      5,
+      1100
+     ],
+     [
+      4,
+      1101
+     ]
+    ],
+    "sources": [
+     "item 5790 page_text 424-435",
+     "quest 1100 reward text",
+     "quest 1101 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "With the crone laid to rest, the druids' studies near the Kraul can go on, and Falfindel hopes at last to learn exactly what corrupted the resting place of the boar god Agamaggan, long held to be pure. Yet he fears that the answer lies in treachery.",
+    "triggers": [
+     [
+      5,
+      1101
+     ]
+    ],
+    "sources": [
+     "quest 1101 reward text",
+     "item 5790 page_text (resting place of Agamaggan held to be pure)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "When a Feathermoon parcel at last reached him by other hands than its courier's, Falfindel feared that some ill fate had befallen Raschal. He has noticed that the Woodpaw gnolls to the south have become highly agitated by some source beyond them, and he warns that the wilds there may have claimed the courier.",
+    "triggers": [
+     [
+      5,
+      4281
+     ]
+    ],
+    "sources": [
+     "quest 4281 reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35726,
+  "kind": 2,
+  "zone": 357,
+  "sort": 6,
+  "faction": 1,
+  "title": "Rockbiter",
+  "body": "Rockbiter is a mountain giant who camps at the foot of the Twin Colossals, south of the Ruins of Ravenwind, and for all his size he is gentle and plain of speech. His charge is a little night elf girl named Shay Leafrunner, and watching over her is harder than it sounds. Shay loves to wander and drifts away whenever something lovely catches her eye. When she slipped off from him in the ruins to the north, Rockbiter was sick with worry and hardly knew what to do, and he hoped that someone with quicker legs than his would go and look for her.",
+  "triggers": [
+   [
+    2,
+    7765
+   ],
+   [
+    4,
+    2844
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Ruins_of_Ravenwind (Shay escorted back to her guardian Rockbiter, a mountain giant south of the ruins)",
+   "quest 2844 description (Rockbiter lost Shay in the ruins just north)",
+   "quest 2845 description and reward text (Shay's bell)",
+   "creature 7765 in area 1119; faction 124; quests 2844/2845 Alliance only"
+  ],
+  "notes": "Converted: Shay's return and the bell moved to part 1 (DONE 2845, when she is brought back to him). The opening keeps her wandering and his worry (2844 description). Earlier: Fact-check: verified.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Shay was found at last, wandering happily among the ruins, and brought home to his camp. On the way she shared her secret: a precious bell whose sound she loves so much that she always comes running back when it rings. Rockbiter was overjoyed to have her back, and delighted to learn that the bell would work whenever she wandered off again.",
+    "triggers": [
+     [
+      5,
+      2845
+     ]
+    ],
+    "sources": [
+     "quest 2844 reward text (Shay: I am so glad you found me, isn't this a beautiful place)",
+     "quest 2845 description, request and reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35727,
+  "kind": 2,
+  "zone": 357,
+  "sort": 7,
+  "faction": 2,
+  "title": "Talo Thornhoof",
+  "body": "Talo Thornhoof is a tauren elder of Camp Mojache who is always glad to share his stories. In his day he was a seasoned hunter who feared no creature, until Northspring harpies ambushed him in the forest and he barely dragged himself to safety. He was never the same, and the hate still boils in him. He longs for revenge on the harpies and for the crystal heart of their queen, Edana Hatetalon. He still thinks like a hunter: know your enemy, he teaches, and he sends the bold to test the fel-maddened beasts of Felwood. When the blood elf Lethtendris carried her web into Dire Maul, Talo called for help.",
+  "triggers": [
+   [
+    2,
+    7776
+   ]
+  ],
+  "sources": [
+   "npc_text 3545 (Listen to the stories of an elder)",
+   "quest 3063 description (seasoned hunter, ambushed by harpies, hate boils inside)",
+   "quest 3062 description (Edana Hatetalon's dark heart)",
+   "quest 4120 description and reward text (Felwood, always know your enemy)",
+   "quests 7492, 7489 (Talo Thornhoof, a tauren elder; Lethtendris's Web)"
+  ],
+  "notes": "Unchanged in the parts conversion: his longing for revenge and the web are premises (3062, 3063, 7489 descriptions); no outcome is told. Earlier: Fact-check: verified."
+ },
+ {
+  "id": 35728,
+  "kind": 2,
+  "zone": 357,
+  "sort": 8,
+  "faction": 2,
+  "title": "Krueg Skullsplitter",
+  "body": "Krueg Skullsplitter is an orc who traveled down to Feralas with his companions on a mission for his masters in Orgrimmar. Between duties he has a gentler errand. His life-mate Korrin takes great pleasure in new clothing, and he means to make her a cloak adorned with the shimmering wings of the sprite darters west of Camp Mojache. He warns that the little dragons can be dangerous and that the night elves in the forests are worse. News of Grimtotem in the woods alarms him. He calls the clan evil and wants their horns by the pile, for Belgrom Rockmaul, one of his masters in Orgrimmar, has an interest in their kind and has put a bounty on them.",
+  "triggers": [
+   [
+    2,
+    4544
+   ]
+  ],
+  "sources": [
+   "quest 2973 description and request text (mission for Orgrimmar masters, life-mate Korrin, gossamer wings, night elves)",
+   "quest 2974 description and request text (Grimtotem, Belgrom's bounty, the clan is evil)",
+   "quest 2976 description (crate of horns to Belgrom in the Valley of Honor)",
+   "creature_template 4544 faction 29 (Orgrimmar)"
+  ],
+  "notes": "Check: part 1 'the hunter' reworded (read as the class); its claims are all shown by ACCEPT 2976 (2974 reward text, then 2976 offered as its next quest). Converted: how the horn chain ends (the crate sent on to Belgrom) moved to part 1 (ACCEPT or DONE 2976). The opening keeps the bounty as Belgrom's interest (2974 description). Earlier: Fact-check: verified.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Once the horns were piled before him, Krueg meant to carry them back to Belgrom himself. Reminded that he had let the bounty slip, he grumbled that it would teach him to keep his mouth shut, and owning that the work was not his, he had the horns crated for the one who had earned them to carry to Belgrom in the Valley of Honor and claim the reward.",
+    "triggers": [
+     [
+      4,
+      2976
+     ],
+     [
+      5,
+      2976
+     ]
+    ],
+    "sources": [
+     "quest 2974 reward text (I'll take these and be sure to tell Belgrom)",
+     "quest 2976 description and reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35729,
+  "kind": 2,
+  "zone": 357,
+  "sort": 9,
+  "faction": 0,
+  "title": "Azj'Tordin",
+  "body": "Azj'Tordin is a Highborne who fled the halls of Eldre'Thalas and now lingers at the Lariss Pavilion. The Queen has long since passed, he says, and the works of the Shen'dralar have been marred by the madness of Prince Tortheldrin. He has traded his immortality for freedom and regrets nothing. In the haste of his escape, though, he was robbed. The imp Pusillin made off with his book of incantations and with the key to the once great halls. The key he no longer cares for. The book he wants back badly, and he waits for someone bold enough to chase the imp through the Warpwood Quarter.",
+  "triggers": [
+   [
+    2,
+    14355
+   ],
+   [
+    4,
+    7441
+   ]
+  ],
+  "sources": [
+   "quest 7441 description and completion text",
+   "warcraft.wiki.gg/wiki/Lariss_Pavilion (Azj'Tordin, apparently a Highborne)",
+   "creature_template 14355 faction 1354 (Shen'dralar, neutral to both factions)"
+  ],
+  "notes": "Unchanged in the parts conversion: the book's recovery in Dire Maul is not told, so the opening holds no instance outcome. Earlier: Fact-check: verified."
+ },
+ {
+  "id": 35730,
+  "kind": 2,
+  "zone": 357,
+  "sort": 10,
+  "faction": 0,
+  "title": "Zorbin Fandazzle",
+  "body": "Zorbin Fandazzle is a goblin engineer who has set up shop beside the dock on the Forgotten Coast against his own better judgment, and now suspects it may be the worst place imaginable. The giants of Feralas are bad for business, so he has built an Ultra-Shrinker, a gnomish shrinking ray improved with superior goblin know-how, and wants someone to try it on them. Then there are the sea elementals of the coast, whose water cores make fine fuel for his device. He insists there was never any danger, pays in coin and loot, and swears that his comrades in the Steamwheedle Cartel will hear of anyone who helps him.",
+  "triggers": [
+   [
+    2,
+    14637
+   ]
+  ],
+  "sources": [
+   "quests 7003, 7721, 7725, 7726 descriptions and reward texts",
+   "npc_text 7114, 7116 (maybe this wasn't the best place for a shop)",
+   "creature_template 14637 faction 35"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Fact-check: verified."
+ },
+ {
+  "id": 35731,
+  "kind": 3,
+  "zone": 357,
+  "sort": 1,
+  "faction": 1,
+  "title": "Lonebrow's Journal",
+  "body": "Henrig Lonebrow came to Kalimdor for the Explorers' League, hunting the bones of a fallen god in the Barrens, until the boar men of the Razorfen dragged him into the thorns of Razorfen Kraul. There he shared a hut with Heralath, a dying druid who had come to learn why the resting place of the boar god Agamaggan, held to be pure, had been so corrupted. Before his strength failed, Heralath begged the dwarf to carry word to Falfindel Waywarder at Thalanaar: the crone Charlga Razorflank was rousing her minions, and she had to be stopped before her corruption spread. Lonebrow escaped but never reached Thalanaar, and his journal was found on his body.",
+  "triggers": [
+   [
+    4,
+    1100
+   ]
+  ],
+  "sources": [
+   "item 5790 Henrig Lonebrow's Journal, page_text 424-435",
+   "quest 1100 reward and completion texts (journal found on a deceased dwarf)",
+   "quest 1101 description and reward text",
+   "thousand_needles.json 40001 (body at the Great Lift; Thousand Needles leaves 1100 to Feralas)"
+  ],
+  "notes": "Converted: the opening is the journal (ACCEPT 1100); Falfindel's call to slay the crone moved to part 1 (DONE 1100, ACCEPT 1101), her death and his fear of treachery to part 2 (DONE 1101). 1101 is filed under Razorfen Kraul but given and ended by Falfindel in Thalanaar, and no other file uses it. Earlier: Fact-check: verified. Treshala Fallowbrook's side (darnassus.json 165716) is not retold. Quest 1101 (QuestSortID Razorfen Kraul) is given and ended by Falfindel in Thalanaar.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Falfindel grieved for both brave souls and would not let their valor go for nothing. There was no time to send word to Darnassus, so he called for a party to enter the Kraul, slay the crone and bring back Razorflank's Medallion as proof that she was dead.",
+    "triggers": [
+     [
+      5,
+      1100
+     ],
+     [
+      4,
+      1101
+     ]
+    ],
+    "sources": [
+     "quest 1100 reward text",
+     "quest 1101 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The crone was laid to rest, and with her minions dealt with, the druids' studies in the area could go on. Falfindel hoped to learn at last exactly what had corrupted the resting place of Agamaggan, but he feared that the answer lay in treachery as well.",
+    "triggers": [
+     [
+      5,
+      1101
+     ]
+    ],
+    "sources": [
+     "quest 1101 reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35732,
+  "kind": 3,
+  "zone": 357,
+  "sort": 2,
+  "faction": 1,
+  "title": "The Hatecrest Naga",
+  "body": "The Ruins of Solarsal, south of Feathermoon Stronghold on Sardor Isle, far predate the night elves' present works. The Sentinels explored them once, found nothing of note and left them in peace. Now the Hatecrest naga have occupied them in alarming numbers. At first Shandris Feathermoon took it for the prelude to an attack on her island, and that threat has not passed, but she suspects that something else is going on among the old stones, and she has sent an investigator south to look for anything that stands out.",
+  "triggers": [
+   [
+    4,
+    2866
+   ]
+  ],
+  "sources": [
+   "quests 2866, 2867, 3130, 2869, 2870, 2871 descriptions and reward texts"
+  ],
+  "notes": "Check: part 3 now has the relic sent for, not delivered (DONE 2870 / ACCEPT 2871); its delivery is part 4. Converted: the opening is the 2866 premise; the gazebo found moved to part 1 (DONE 2866 at the gazebo, ACCEPT 2867), Shandris's judgement and Latronicus's plan to part 2 (DONE 3130, ACCEPT 2869), the scales, Shalzaru's death and the relic to part 3 (DONE 2870, ACCEPT 2871; no KILL trigger on Shalzaru), Vestia's verdict to part 4 (DONE 2871). Earlier: Fact-check: Vestia's judgement reworded to match 2871 (not naga, something more alien).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "At the heart of the ruins stood a gazebo that did not belong. It was clearly newer than the stones around it, its sides bore a repeating band of glyphs of unknown origin and meaning, and its stone was warm to the touch.",
+    "triggers": [
+     [
+      5,
+      2866
+     ],
+     [
+      4,
+      2867
+     ]
+    ],
+    "sources": [
+     "quest 2866 reward text",
+     "quest 2867 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Shandris found the report disturbing: whatever the naga intended, their presence boded ill for the night elves' push into Feralas. Unwilling to leave the stronghold open to the Horde by committing her full force, she gave the matter to her second, Latronicus Moonspear, whose plan was twofold: to weaken the naga in numbers and in command, and to learn what they were doing in the ruins.",
+    "triggers": [
+     [
+      5,
+      3130
+     ],
+     [
+      4,
+      2869
+     ]
+    ],
+    "sources": [
+     "quest 2867 reward text",
+     "quest 3130 description and reward text",
+     "quest 2869 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Hatecrest scales were gathered, and scouts named the royals who gave the naga their orders, among them the cruel Lord Shalzaru, who had dug up an odd relic in a cave on the Isle of Dread. Shalzaru was slain, throwing the naga into disarray, and Latronicus asked that his relic be taken to his wife Vestia to be studied.",
+    "triggers": [
+     [
+      5,
+      2870
+     ],
+     [
+      4,
+      2871
+     ]
+    ],
+    "sources": [
+     "quest 2869 reward text",
+     "quest 2870 description and reward text",
+     "quest 2871 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Vestia judged that the relic did not belong to the ruins, yet it was not of naga design either: it was something far more alien. Unraveling it will take time, and she has set herself to the research.",
+    "triggers": [
+     [
+      5,
+      2871
+     ]
+    ],
+    "sources": [
+     "quest 2871 reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35733,
+  "kind": 3,
+  "zone": 357,
+  "sort": 3,
+  "faction": 1,
+  "title": "The Missing Courier",
+  "body": "Raschal has carried Feathermoon's messages since Shandris Feathermoon brought her expedition to Feralas, and he knows the forest well. About a week ago he set out for Thalanaar, meaning to row down the coast and cross southern Feralas to avoid the Horde camp, and he never arrived. The stronghold's own searches found nothing, and Latronicus Moonspear has had to declare him missing in action. His friend Ginro Hearthkindle would not give up, though every day's search in the wilds brought him back nothing but gnoll teeth and disappointment.",
+  "triggers": [
+   [
+    4,
+    4124
+   ]
+  ],
+  "sources": [
+   "quests 4124, 4125, 4127, 4129, 4130, 4131, 4135, 4265, 4266, 4267 descriptions and reward texts",
+   "quest 4281 (parcel for Falfindel)"
+  ],
+  "notes": "Converted: the opening is the 4124/4125 premise; the wreck and knife moved to part 1 (DONE 4125, ACCEPT 4127), the psychometric vision to part 2 (ACCEPT 4130), the packs and note to part 3 (DONE 4131, ACCEPT 4135), Raschal found alive to part 4 (DONE 4265), the report sent to Gracina to part 5 (ACCEPT 4267). Gracina's naming of the silithid was dropped: it is darnassus.json 165710 part 1 on DONE 4267, which this file must not use. Earlier: Fact-check: verified. Gracina (darnassus.json 165710) is only mentioned; her trigger is 4508, not 4267.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Raschal's row boat was found wrecked in the muddy water off the coast, its port side riddled with holes, as though something had tried to snap it in two. In the mud beneath it lay a well kept knife, and whoever found it had the uneasy feeling of not being alone in the water.",
+    "triggers": [
+     [
+      5,
+      4125
+     ],
+     [
+      4,
+      4127
+     ]
+    ],
+    "sources": [
+     "quest 4125 reward text",
+     "quest 4127 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Ginro had the knife taken to the stronghold's druid, Quintis Jonespyre, who read its history by touch. In his vision Raschal carried two large backpacks inland, ran into Woodpaw gnolls and came back to his boat almost terrified, so distracted that he never noticed water elementals forming behind him. There the images stopped.",
+    "triggers": [
+     [
+      4,
+      4130
+     ]
+    ],
+    "sources": [
+     "quest 4127 reward text",
+     "quest 4129 description",
+     "quest 4130 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Gnolls keep what they scavenge, and in one of the Woodpaw camps Raschal's packs hung tacked to a tree. Inside were a parcel bound for Thalanaar and a hasty note signed by Raschal of Feathermoon: he had found insidious bug-like creatures south of the gnoll camps, in a place called the Writhing Deep, and gone to investigate them as a threat to all of Feralas.",
+    "triggers": [
+     [
+      5,
+      4131
+     ],
+     [
+      4,
+      4135
+     ]
+    ],
+    "sources": [
+     "quest 4131 description and reward text",
+     "quest 4135 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "In the Writhing Deep he was found sealed in a hard, mucous pod of the Zukk'ash, paralyzed after the insects overwhelmed him, yet still alive. Freed from the hive, Raschal made his way home to Feathermoon, and Ginro swore that the one who saved him would always have a friend in him.",
+    "triggers": [
+     [
+      5,
+      4265
+     ]
+    ],
+    "sources": [
+     "quest 4135 reward text",
+     "quest 4265 description and reward text"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "Shandris Feathermoon gave her own thanks. The reports of the Zukk'ash had frightened the stronghold, and while Raschal's report on the infestation of southeastern Feralas was filed in Darnassus, she sent a copy to Gracina Spiritmight, a priestess of the Temple of the Moon and an associate of the Protectorate with broad knowledge of such creatures.",
+    "triggers": [
+     [
+      4,
+      4267
+     ]
+    ],
+    "sources": [
+     "quest 4266 description and reward text",
+     "quest 4267 description"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35734,
+  "kind": 3,
+  "zone": 357,
+  "sort": 4,
+  "faction": 1,
+  "title": "Freedom for All Creatures",
+  "body": "From a rise above the Grimtotem Compound, Kindal Moonweaver and the priestess Jer'kai keep watch on the tauren below. The filthy Grimtotem, as Kindal calls them, are capturing faerie dragons, the sprite darters of the forest, and penning them in a bamboo cage, and neither elf can guess what for. The two are not strong enough to fight their way into the camp alone. Kindal's plan is to carry a cage key into the compound with a helper and some strong friends, throw open the pen and stay beside the darters until they escape with their lives, while Jer'kai keeps her post on the rise.",
+  "triggers": [
+   [
+    4,
+    2969
+   ]
+  ],
+  "sources": [
+   "quests 2969, 2970, 2972 descriptions and reward texts",
+   "quests 3841, 3842, 3843, 4297, 4298 (sprite darter egg, Quentin, Agnar Beastamer at Aerie Peak)",
+   "hinterlands.json 4702 mentions Agnar hatching faerie dragon eggs from Feralas, no triggers on these quests"
+  ],
+  "notes": "Check: parts trimmed to what every trigger reveals: the camps to the east and the kills moved from part 1 (DONE 2969 does not show 2970) to part 2; the signet ring moved from part 2 (DONE 2970 does not offer 2972, RewardNextQuest 0) to part 3 (ACCEPT 3841, which needs 2972 done). Converted: the opening is the 2969 premise in the present; the release and the elves' offensive moved to part 1 (DONE 2969, ACCEPT 2970), the Grimtotem hunt and the ring to part 2 (DONE 2970, ACCEPT 2972; Tyrande's reply on DONE 2972 is not told), the nest of eggs to part 3 (ACCEPT 3841), the hatching at Aerie Peak to part 4 (DONE 4298). 3841-4298 are QuestSortID Feralas; thousand_needles.json and hinterlands.json leave them unused. Earlier: Fact-check: verified.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The pen was thrown open and the darters flew free, but Kindal knew they would not stay free for long. As she prepared their retribution, the two elves resolved to go on the offensive against the Grimtotem.",
+    "triggers": [
+     [
+      5,
+      2969
+     ],
+     [
+      4,
+      2970
+     ]
+    ],
+    "sources": [
+     "quest 2969 reward text",
+     "quest 2970 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Picking off naturalists, raiders and shamans in the camp below and in the camps to the east, the two elves soon counted their kills in the dozens, and the Grimtotem began hunting them like vipers in turn. Jer'kai wondered whether other tauren frowned on these, since many races have their less kindly cousins.",
+    "triggers": [
+     [
+      5,
+      2970
+     ],
+     [
+      4,
+      2972
+     ]
+    ],
+    "sources": [
+     "quest 2970 description, objectives, request and reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "With little to give out in the wilds, Jer'kai had sent her signet ring to High Priestess Tyrande Whisperwind in Darnassus as word that the two of them were well. In the meantime the Moonweavers saved a nest of sprite darter eggs whose mother had died before they reached her. The eggs were close to hatching, and they offered one to their helper as a pet, sending it first to the scholar Quentin at the race tracks of the Shimmering Flats.",
+    "triggers": [
+     [
+      4,
+      3841
+     ]
+    ],
+    "sources": [
+     "quest 2972 description (signet ring to Tyrande)",
+     "quest 3841 description (needs 2972 done)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Quentin found the egg healthy and near maturation, a rare find now that poachers have hunted the darters of Feralas, and sent it on to Agnar Beastamer, the animal handler of Aerie Peak. Agnar had Silvermane stalker flanks gathered for its first meal, but the egg was readier than he thought, and the faerie dragon hatched to bond with the one who had carried it so far.",
+    "triggers": [
+     [
+      5,
+      4298
+     ]
+    ],
+    "sources": [
+     "quest 3841 reward text",
+     "quests 3842, 3843, 4297 descriptions and reward texts",
+     "quest 4298 description and reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35735,
+  "kind": 3,
+  "zone": 357,
+  "sort": 5,
+  "faction": 1,
+  "title": "The Stave of Equinex",
+  "body": "Searching the rubble to the south a few days ago, Troyas Moonbreeze found a stave that looks ordinary, yet he cannot shake the feeling that it is something more. The ruins of Feralas are dangerous, but they have much to tell of what happened here. He and Angelas have pored over their books at Feathermoon Stronghold without finding a word about it, so Troyas has sent for help to a colleague in Darnassus, the lore keeper Daryn Lightwind of Rut'theran Village.",
+  "triggers": [
+   [
+    4,
+    2939
+   ]
+  ],
+  "sources": [
+   "quests 2939, 2940, 2941, 2944, 2943, 2879, 2942 descriptions and reward texts"
+  ],
+  "notes": "Converted: the opening is the 2939 premise; Daryn's answer and price moved to part 1 (DONE 2940, ACCEPT 2941), the hope that it is the Stave of Equinex to part 2 (ACCEPT 2879), the opened monolith and the Morrow Stone to part 3 (DONE 2942). Curgle (TALK 7763) stays with tanaris.json; the Super Snapper is not named. Earlier: Daryn is female in the quest text (talk to her). Teldrassil's Rut'theran entry mentions her book only. Fact-check: the book's own page text is unreliable, so it no longer 'confirms' anything (2879 only says the stave might be the Stave of Equinex); 'sparkling' dropped.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Daryn was unimpressed. Troyas always thinks he has found something important, she grumbled, when anything of value in those ruins was hoarded long ago by the ogres or the harpies. Still, she owned a worn old history of Feralas, and she would lend it for a price: a picture of Gammerita, a giant snapjaw of the Hinterlands, taken with a device that the inventor Curgle Cranklehop built for her in Tanaris.",
+    "triggers": [
+     [
+      5,
+      2940
+     ],
+     [
+      4,
+      2941
+     ]
+    ],
+    "sources": [
+     "quest 2939 reward text",
+     "quest 2940 description and reward text",
+     "quest 2941 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "With the book in hand, Troyas dared to hope that his find was the Stave of Equinex, the key to the Equinex Monolith in the Ruins of Ravenwind, west of the Dream Bough. Charged with the essence of the four flames that still burn there, Samha, Imbel, Byltan and Lahassa, it should unlock the monolith and the sacred artifact within.",
+    "triggers": [
+     [
+      4,
+      2879
+     ]
+    ],
+    "sources": [
+     "quests 2943, 2944 reward texts",
+     "quest 2879 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Energized by the flames, the stave opened a small door in the monolith, and beams of light filled the ruins. The stone inside was brought back to Troyas, who, reading on, named it the Morrow Stone. He cannot yet say what it is for, but anything hidden away with such care must be of great significance.",
+    "triggers": [
+     [
+      5,
+      2942
+     ]
+    ],
+    "sources": [
+     "quest 2879 reward text",
+     "quest 2942 description and reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35736,
+  "kind": 3,
+  "zone": 357,
+  "sort": 6,
+  "faction": 2,
+  "title": "War on the Woodpaw",
+  "body": "To Hadoken Swiftstrider of Camp Mojache, the Woodpaw gnolls are more than a nuisance: they are a constant threat to the camp's very existence. Whether or not they belong in Feralas matters little to him. If the tauren do not strengthen their resolve, he warns, they will find themselves driven out of the whole region, and the gnoll attacks have grown more fevered of late. Hadoken has answered with a bounty on Woodpaw manes, and he suspects that someone or something is driving the gnolls into a frenzy.",
+  "triggers": [
+   [
+    4,
+    2862
+   ]
+  ],
+  "sources": [
+   "quests 2862, 2863, 2902, 2903, 7730, 7731, 7732 descriptions and reward texts"
+  ],
+  "notes": "Converted: the opening is the 2862 premise; the desperate raids and the Alpha plan moved to part 1 (DONE 2862, ACCEPT 2863), the battle map and the two-front war to part 2 (DONE 2903), the Zukk'ash hive and Stinglasher to part 3 (ACCEPT 7732, which needs both 7730 and 7731 done), the silithid naming to part 4 (DONE 7732). Earlier: Fact-check: verified.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "In times past the camp had always driven them back, but lately they pushed north far more often and more savagely, almost as if they were desperate. Hadoken's answer was a stroke meant to throw them into chaos: five of their leaders, the Alphas, cut down in swift succession.",
+    "triggers": [
+     [
+      5,
+      2862
+     ],
+     [
+      4,
+      2863
+     ]
+    ],
+    "sources": [
+     "quest 2862 reward text",
+     "quest 2863 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Alphas fell, but Hadoken still wanted to know what drove the gnolls, and a battle map taken from their camps told the tale. Most of its arrows pointed south, away from Camp Mojache, and beside them was drawn a great insect with tally marks beneath. The gnolls were fighting on two fronts, and their main strength was spent against a foe to their south.",
+    "triggers": [
+     [
+      5,
+      2903
+     ]
+    ],
+    "sources": [
+     "quest 2863 reward text",
+     "quest 2902 description and reward text",
+     "quest 2903 reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "That foe was an insect race, the Zukk'ash of the Writhing Deep. Their swarms were thinned, and the giant Stinglasher, larger than its kin and wrapped in a strange aura, was cut open so that its glands could be studied. Yet nothing short of a full invasion would break the hive, and Hadoken sent all he had learned to Zilzibin Drumlore in the Drag of Orgrimmar, an expert on alien creatures.",
+    "triggers": [
+     [
+      4,
+      7732
+     ]
+    ],
+    "sources": [
+     "quests 7730, 7731 descriptions and reward texts",
+     "quest 7732 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Zilzibin had been expecting the report. The Zukk'ash, he said, are nothing more than the silithid, an ancient threat that the Horde keeps choosing to ignore. Some think them a mindless nuisance, but they are a far, far worse threat than anything the Alliance could muster.",
+    "triggers": [
+     [
+      5,
+      7732
+     ]
+    ],
+    "sources": [
+     "quest 7732 reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35737,
+  "kind": 3,
+  "zone": 357,
+  "sort": 7,
+  "faction": 2,
+  "title": "The Ogres of Feralas",
+  "body": "In Orgrimmar, Belgrom Rockmaul calls the Gordunni ogres the dominant military force in Feralas, and their numbers are growing. They must be stopped before they threaten the Horde's presence there, and he sends the willing to the warrior Rok Orhan at Camp Mojache. Rok Orhan has seen what the ogres do: their very presence scars the land, and she means to push them back before they spread further into the forest, beginning with their outpost up the river to the north. A soiled scroll from that outpost raises a darker question, for it seems to depict some sort of meeting or ceremony of the Gordunni.",
+  "triggers": [
+   [
+    4,
+    2981
+   ],
+   [
+    4,
+    2975
+   ],
+   [
+    4,
+    2978
+   ]
+  ],
+  "sources": [
+   "quests 2981, 2975, 2980, 2978, 2979, 3002 descriptions and reward texts"
+  ],
+  "notes": "Converted: the opening is the premise of all three entry points (2981, 2975, 2978); the outpost cleared and the High Wilderness moved to part 1 (DONE 2975, ACCEPT 2980), the dark ceremony of the mage-lords to part 2 (ACCEPT 2979), the orb and Uthel'nay's verdict to part 3 (DONE 3002). Earlier: 2981 starts with Belgrom in Orgrimmar; 2978 starts from the Gordunni Scroll item. Fact-check: 3002 wording: she cannot tell what the orb can do.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The ogres, brutes and ogre magi of the outpost were cut down, and Rok Orhan believes that in time the land will heal. The fight then moved southwest to the High Wilderness, where stronger shamans, warlocks and maulers hold old night elf ruins amid withered trees and desecrated ground.",
+    "triggers": [
+     [
+      5,
+      2975
+     ],
+     [
+      4,
+      2980
+     ]
+    ],
+    "sources": [
+     "quest 2975 reward text",
+     "quest 2980 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Rok Orhan read the scroll as the plans for a dark ceremony, a ritual conducted by the Gordunni mage-lords. She sought one of their orbs, sure that the orb of a mage holds power enough to reveal more of the ceremony and of the magic the ogres wield.",
+    "triggers": [
+     [
+      4,
+      2979
+     ]
+    ],
+    "sources": [
+     "quest 2979 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "An orb was taken from a mage-lord, but Rok Orhan, a warrior who knows her enemy well, could not tell what it was capable of. She sent it to the mage Uthel'nay in the Darkbriar Lodge of Orgrimmar, who found it fascinating: very powerful, and very dangerous.",
+    "triggers": [
+     [
+      5,
+      3002
+     ]
+    ],
+    "sources": [
+     "quest 2979 reward text",
+     "quest 3002 description and reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35738,
+  "kind": 3,
+  "zone": 357,
+  "sort": 8,
+  "faction": 2,
+  "title": "The Muisek",
+  "body": "Witch Doctor Uzer'i, a troll of Camp Mojache, teaches that incredible power can be found in the muisek, the spirits of the creatures one battles against, and he means to harness that power for the Horde. To prepare a vessel for the work, he needs herbs from an orc named Fireblade, mixed to his order and paid for with a shrunken head taken from some poor dwarf he came across in the forest. For the endeavor that is to follow he gathers natural materials as well: splintered logs from the treants of Feralas, minerals crusted on mountain giants and faerie dragons, resilient sinew from owlbeasts or hippogryphs, and a great many metallic fragments.",
+  "triggers": [
+   [
+    4,
+    3121
+   ],
+   [
+    4,
+    3128
+   ]
+  ],
+  "sources": [
+   "quests 3121-3129 descriptions and reward texts",
+   "npc_text 1757 (Uzer'i on muisek)",
+   "mod-individual-progression zone_orgrimmar.sql and zone_feralas.sql (3121 and 3122 rerouted to Neeru Fireblade 3216; 3123 changed to wildkin of the Hinterlands)"
+  ],
+  "notes": "Converted: the opening is the premise of both entry points (ACCEPT 3121, 3128); the tested vessel and the turn to the night elves' allies moved to part 1 (ACCEPT 3124, which follows 3123), the remaining captures to part 2 (DONE 3127), the weapons to part 3 (DONE 3129). Made true with or without mod-individual-progression: its SQL sends 3121/3122 to Neeru Fireblade in Orgrimmar instead of Xerash Fireblade at the Lariss Pavilion (so the herbalist is only an orc named Fireblade) and changes the 3123 test from ironfur bears and longtooth runners to Hinterlands wildkin (so the test names no targets). Earlier: Fact-check: verified. 3128 (Natural Materials) has no prerequisite, so it is a second entry point.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The herbs prepared the vessel, and a first test proved both the ritual and the hunter: the fallen were shrunk and captured before their spirits could escape. Upon a violent death, Uzer'i explained, the muisek of a creature may flee to seek revenge, but once captured it can be used as he pleases. Then he turned the vessel on the allies of the night elves, beginning with the hippogryphs, whose spirits are loyal and steadfast.",
+    "triggers": [
+     [
+      4,
+      3124
+     ]
+    ],
+    "sources": [
+     "quest 3122 reward text",
+     "quest 3123 description and reward text",
+     "quest 3124 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "A muisek allowed to escape, Uzer'i warned, might take the form of an even greater creature, and no one would be safe from its vengeance, yet the work went on. Faerie dragons followed, fragile in body but strong in spirit; then the wandering treants the night elves have enlisted as protectors against the Horde; and last the mountain giants, who came down from their peaks to aid the night elves when the Burning Legion appeared in the world.",
+    "triggers": [
+     [
+      5,
+      3127
+     ]
+    ],
+    "sources": [
+     "quest 3124 reward text",
+     "quests 3125, 3126, 3127 descriptions"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "With the muisek of all these creatures and the materials gathered, Uzer'i set about the difficult work of imbuing the spirits into weapons. When he was done, the muisek had been sealed forever into the weapons of the Horde, their energy for the bearer to wield as his own.",
+    "triggers": [
+     [
+      5,
+      3129
+     ]
+    ],
+    "sources": [
+     "quest 3127 reward text",
+     "quest 3129 description and reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 35739,
+  "kind": 3,
+  "zone": 357,
+  "sort": 9,
+  "faction": 0,
+  "title": "Errands in Eldre'Thalas",
+  "body": "Both camps of Feralas send champions into Dire Maul. Lethtendris, a blood elf mage whose brutality is matched only by her craving for magic, has fled into the Warpwood Quarter among the satyrs and woven a web to snare the magical energies of the place. Heralds in the capitals call for agents, sending the Alliance to Latronicus Moonspear and the Horde to Talo Thornhoof. A quieter search is shared by two scholars, Sage Korolusk of Camp Mojache and Scholar Runethorn of Feathermoon, who work together despite their banners. They hunt for Kariel Winthalus, an elven master who fled the ruin of Quel'Thalas with ancient artifacts, and they followed his trail across the sea to Feralas. They believe he sought sanctuary in Eldre'Thalas, alive or dead.",
+  "triggers": [
+   [
+    4,
+    7494
+   ],
+   [
+    4,
+    7492
+   ],
+   [
+    4,
+    7488
+   ],
+   [
+    4,
+    7489
+   ],
+   [
+    4,
+    7481
+   ],
+   [
+    4,
+    7482
+   ]
+  ],
+  "sources": [
+   "quests 7494, 7492, 7488, 7489 descriptions and reward texts",
+   "quests 7481, 7482 descriptions and request text (my associate, the night elf scholar Runethorn)",
+   "npc_text 6917 (Runethorn: on the verge of a breakthrough)"
+  ],
+  "notes": "Converted: Dire Maul outcomes kept out of the opening: Lethtendris's death and the web moved to part 1 for the Alliance (DONE 7488, Latronicus) and part 2 for the Horde (DONE 7489, Talo), each telling only its own turn-in; the failed search for Kariel to part 3 (DONE 7481, 7482). What each would do with the web (their reward texts) left the opening with the outcome. Dire Maul is not gated by state in mod-individual-progression, so no era tag. Earlier: Fact-check: verified. Dungeon quests given by NPCs standing in Feralas (Latronicus, Talo, Korolusk, Runethorn); 7492/7494 come from capital heralds. Pusillin (7441) is under Azj'Tordin.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Lethtendris fell in the Warpwood Quarter, and her web was carried back to Latronicus. Elves of her ilk, he said, believe themselves masters of magic and do not see that they are slaves to their own addiction. Her death saddened him, but it was necessary. He will have the web's energies released safely over a wide area and then destroy it, so that it can serve no one again.",
+    "triggers": [
+     [
+      5,
+      7488
+     ]
+    ],
+    "sources": [
+     "quest 7488 description and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Lethtendris fell in the Warpwood Quarter, and her web was carried back to Talo. It holds vast stores of the magic of Dire Maul, and he feared what harm might come if one so irresponsible had harnessed them. He was saddened by her death, but knew she would never have parted with the web while she lived. He will send it to more responsible students of magic, to be the new wardens of its power.",
+    "triggers": [
+     [
+      5,
+      7489
+     ]
+    ],
+    "sources": [
+     "quest 7489 description and reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The search for Kariel Winthalus ended in disappointment. No trace of the elven master was found in the halls, and the artifacts he carried are lost. It is a shame and a tragedy, the scholars lament, for they had believed themselves on the verge of a breakthrough.",
+    "triggers": [
+     [
+      5,
+      7481
+     ],
+     [
+      5,
+      7482
+     ]
+    ],
+    "sources": [
+     "quests 7481, 7482 reward texts",
+     "npc_text 6917 (Runethorn: on the verge of a breakthrough)"
+    ]
+   }
+  ]
+ }
 ]

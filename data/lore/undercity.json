@@ -6,21 +6,92 @@
   "sort": 0,
   "faction": 0,
   "title": "Undercity",
-  "body": "Beneath the broken capital of Lordaeron lies the Undercity, seat of the Forsaken. The old kingdom kept its royal crypts, catacombs, dungeons and sewers here, under the palace of its kings, and the poorest of its people lived in the gloom below. The Scourge began carving these depths into a stronghold, but Arthas left the work unfinished when he was called north. When Sylvanas Windrunner broke free and turned on the dreadlords who ruled the ruins, her Forsaken claimed the warren and finished it as their own. Lifts descend from the ruined palace to the Trade Quarter at its heart, ringed by the Magic Quarter, the Rogues' Quarter, the War Quarter and the Apothecarium, with foul canals running between them and the Royal Quarter beyond. The city has only lately been won back. After the treachery at the Wrathgate, Varimathras and Grand Apothecary Putress seized it in a bloody coup, and Thrall and Sylvanas retook it by force. Now Kor'kron orcs walk its halls, sent to guard the Forsaken and to watch them.",
+  "body": "Beneath the broken capital of Lordaeron lies the Undercity, seat of the Forsaken. The old kingdom kept its royal crypts, catacombs, dungeons and sewers here, under the palace of its kings, and the poorest of its people lived in the gloom below. The Scourge began carving these depths into a stronghold, but Arthas left the work unfinished when he was called north. When Sylvanas Windrunner broke free and turned on the dreadlords who ruled the ruins, her Forsaken claimed the warren and finished it as their own. Lifts descend from the ruined palace to the Trade Quarter at its heart, ringed by the Magic Quarter, the Rogues' Quarter, the War Quarter and the Apothecarium, with foul canals running between them. Beyond lies the Royal Quarter, where the Dark Lady holds court.",
   "triggers": [
    [
     1,
     1497
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "At her side stands the dreadlord Varimathras, one of three demon brothers who ruled Lordaeron's undead for the Burning Legion. When the Forsaken broke his forces he begged for his life and swore himself to her service, and he has served as her lieutenant ever since. The Deathstalkers, her elite agents, first served as his guard.",
+    "maxState": 12,
+    "sources": [
+     "warcraft.wiki.gg/wiki/Varimathras (brothers Balnazzar and Detheroc, begged Sylvanas for his life, her lieutenant until the Battle for the Undercity, patch 3.0)",
+     "warcraft.wiki.gg/wiki/Deathstalker (began as Varimathras's elite guard)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The war in Northrend brought treachery home. After Grand Apothecary Putress loosed his blight on Alliance and Horde alike at the Wrathgate, traitors within the city rose and seized it, and the Horde lost the capital of the Forsaken. Somewhere in its depths, Putress went to ground.",
+    "triggers": [
+     [
+      5,
+      13257
+     ],
+     [
+      4,
+      13371
+     ],
+     [
+      4,
+      13377
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "quest 13257 reward text (the Horde has lost the Undercity)",
+     "quest 13370 description and reward text (Putress at the Wrath Gate; they have lost the Undercity)",
+     "creature_text 32363 (a betrayal from within; the Horde has lost the Undercity)",
+     "quest 13377 description (deep inside the Undercity hides the assassin)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The city has been won back. Thrall and the Dark Lady fought their way down through blight and demons to the Royal Quarter, broke the traitors' last stand there, and Sylvanas took back the seat of her power.",
+    "triggers": [
+     [
+      3,
+      31565
+     ],
+     [
+      3,
+      31530
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "zone_undercity.cpp (Horde: courtyard, inner sanctum, Royal Quarter; Alliance: Thrall and Sylvanas met in the throne room)",
+     "creature_text 32518 group 28 (the Royal Quarter belongs to you)",
+     "creature_text 32401 group 22 (THRALL! HERE?)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Orcs of the Kor'kron, the Warchief's own guard, now walk the Undercity's halls. Thrall sent them to reinforce the city while the bulk of its forces fight at Vengeance Landing in Northrend, and to keep watch on the Forsaken: had anyone watched them more closely from the start, the overseers say, the Wrathgate might never have happened.",
+    "triggers": [
+     [
+      2,
+      36213
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "npc_text 14931, 14933 and 15321 (Kor'kron Overseer 36213 gossip, menu 10769: the forsaken need watching; Wrath Gate; bulk of forces at Vengeance Landing)",
+     "DB: 45 Kor'kron Overseer spawns in the city"
+    ]
+   }
+  ],
   "sources": [
    "warcraft.wiki.gg/wiki/Undercity (origins as royal crypts, catacombs, dungeons and sewers; poorest citizens lived there; Arthas left it unfinished; Forsaken completed it; quarter layout; elevators exit at Trade Quarter)",
-   "warcraft.wiki.gg/wiki/Battle_for_the_Undercity (coup, retaking, Kor'kron under Bragor)",
    "quest 13257 reward text",
    "npc_text 14931 and 15321 (Kor'kron Overseer gossip)",
-   "creature 31419 (Sylvanas in Grommash Hold during the crisis phase)"
+   "creature 31419 (Sylvanas in Grommash Hold during the crisis phase)",
+   "warcraft.wiki.gg/wiki/Battle_for_the_Undercity (coup, retaking)"
   ],
-  "notes": "Removed the unsupported claim that the Scourge works were meant for the Lich King. Quarter names come from the wiki layout section and match WMOAreaTable group names for zone 1497. Only 1497 and 4617 are real AreaTable ids, so no quarter gets its own Place entry."
+  "notes": "Converted: Varimathras at the Dark Lady's side added as part 1 (maxState 12, no trigger) so the classic and Burning Crusade city has its lieutenant; the coup moved to part 2 (minState 13, QUEST_DONE 13257 for the Horde, QUEST_ACCEPT 13371 and 13377 for the Alliance; trimmed to what the Alliance learns, so Varimathras is not named); the retaking moved to part 3 (minState 13, KILL 31565 Varimathras and KILL 31530 Putress, the battle's bosses; QUEST_DONE 13267 and 13377 belong to Orgrimmar and Stormwind); the Kor'kron moved to part 4 (minState 13, TALK 36213 Kor'kron Overseer, whose gossip tells it). Earlier: Removed the unsupported claim that the Scourge works were meant for the Lich King. Quarter names come from the wiki layout section and match WMOAreaTable group names for zone 1497. Only 1497 and 4617 are real AreaTable ids, so no quarter gets its own Place entry."
  },
  {
   "id": 149701,
@@ -29,20 +100,40 @@
   "sort": 1,
   "faction": 0,
   "title": "The Elevators",
-  "body": "Three great lifts join the ruined palace of Lordaeron to the Trade Quarter far below, the main road between the open ruins and the city of the dead. Travelers ride them down long, dark shafts, and their doors close so quickly that the careless learn to step lively. The lifts were a prize in the Battle for the Undercity. The rebels wrecked the way down and trapped the shaft, and Sylvanas warned that a fall would mean certain death. Thrall answered by calling on the spirits of air, and cyclones lowered the Horde's champions safely into the inner sanctum below.",
+  "body": "Three great lifts join the ruined palace of Lordaeron to the Trade Quarter far below, the main road between the open ruins and the city of the dead. They rise and fall without pause through long, dark shafts, and their doors close so quickly that the careless learn to step lively. Every traveler bound for the city's quarters, from the ruins above or the zeppelins beyond the walls, passes through them.",
   "triggers": [
    [
     1,
     4617
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "When the Horde came to retake the city, the way down was closed to it. The rebels had wrecked the lift and trapped the shaft, and Sylvanas warned that a fall would mean certain death. Thrall answered by calling on the spirits of air, and cyclones lowered the Horde's champions safely into the inner sanctum below, where Khanok the Impassable barred their way.",
+    "triggers": [
+     [
+      3,
+      32511
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "creature_text 32518 groups 15-18 (elevator destroyed, cyclones lower us to safety, inner sanctum breached)",
+     "creature_text 32365 group 1 (shaft is trapped)",
+     "zone_undercity.cpp (Khanok the Impassable 32511 summoned in the inner sanctum after the cyclone descent; killable, his death opens the way on)"
+    ]
+   }
+  ],
   "sources": [
    "AreaTable 4617 Elevator (parent 1497); WMOAreaTable rows 28864, 28882, 28865 map three Undercity WMO groups to area 4617",
    "warcraft.wiki.gg/wiki/Undercity (elevators connect the upper city to the depths; Trade Quarter at their lower exits; doors close dangerously fast)",
    "creature_text 32518 groups 15-17 (elevator destroyed, cyclones lower us to safety)",
-   "creature_text 32365 group 1 (shaft is trapped)"
+   "creature_text 32365 group 1 (shaft is trapped)",
+   "DB transports: Undervators 20649, 20652, 20655 (continuous)",
+   "tirisfal.json 8516 (zeppelins outside the walls)"
   ],
-  "notes": "verified; three lifts confirmed by three Undervator transports (20649, 20652, 20655). Area 4617 resolves only through WMO groups 3226-3228 (WMOAreaTable 28864, 28882, 28865), which the core's GetAreaId does use."
+  "notes": "Converted: the battle at the lifts moved to part 1 (minState 13, KILL 32511 Khanok the Impassable, the first kill after the cyclone descent; Horde only on a faction 0 entry). Opening extended with the continuous lifts and the travelers who use them. Earlier: verified; three lifts confirmed by three Undervator transports (20649, 20652, 20655). Area 4617 resolves only through WMO groups 3226-3228 (WMOAreaTable 28864, 28882, 28865), which the core's GetAreaId does use."
  },
  {
   "id": 149702,
@@ -51,21 +142,69 @@
   "sort": 1,
   "faction": 2,
   "title": "Lady Sylvanas Windrunner",
-  "body": "Once Ranger-General of Silvermoon, Sylvanas Windrunner fell defending Quel'Thalas from Arthas and was raised as a banshee in his service. When the Lich King's grip faltered she broke free, turned on the dreadlords who held Lordaeron and named her freed undead the Forsaken. She rules them from the Royal Quarter, curt with visitors, for the city does not run itself. She championed the blood elves' entry into the Horde, and sends her chosen to Nathanos Blightcaller, one of her first champions. Betrayed by Varimathras and Putress after the Wrathgate, she barely escaped with her life, then returned beside Thrall to take back her throne.",
+  "body": "Once Ranger-General of Silvermoon, Sylvanas Windrunner fell defending Quel'Thalas from Arthas and was raised as a banshee in his service. When the Lich King's grip faltered she broke free, turned on the dreadlords who held Lordaeron and named her freed undead the Forsaken. She rules them from the Royal Quarter, curt with visitors, for the city does not run itself. She sends her chosen to Nathanos Blightcaller, one of her first champions, and few in her ranks serve her with more devotion.",
   "triggers": [
    [
     2,
     10181
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In recent years she has championed the blood elves of Quel'Thalas, once her own people, and stood for their entry into the Horde while others doubted them. Their envoys come before her throne in the Royal Quarter.",
+    "minState": 8,
+    "sources": [
+     "quests 9621 and 9812 descriptions (doubts among our potential new allies; she is already on our side) and reward text",
+     "warcraft.wiki.gg/wiki/Sylvanas_Windrunner (blood elves)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The dreadlord Varimathras serves at her side as her lieutenant, the demon who begged for his life when her Forsaken broke his rule and swore himself to her. She keeps him close.",
+    "maxState": 12,
+    "sources": [
+     "warcraft.wiki.gg/wiki/Varimathras (lieutenant until patch 3.0)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "After the Wrathgate her own court turned on her. The dreadlord Varimathras, her lieutenant of many years, and Grand Apothecary Putress seized the Undercity in a bloody coup. The Dark Lady was nearly killed, and fled to Orgrimmar to wait in the Warchief's hold while the Horde prepared to take her city back.",
+    "triggers": [
+     [
+      5,
+      13257
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "quest 13257 reward text (Sylvanas was nearly killed in the coup)",
+     "creature 31419 (Sylvanas in Grommash Hold during the crisis)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "She came home at Thrall's side, promising the traitors an agonizing death. Together they fought down through the fallen city, and when Varimathras fell in the throne room she named it the fate of all enemies of the Horde. Thrall gave the Royal Quarter back to her, a right, he said, she had won with her own blood.",
+    "triggers": [
+     [
+      3,
+      31565
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "creature_text 32365 groups 3 and 7 (agonizing death; such will be the fate of all enemies of the Horde)",
+     "creature_text 32518 group 28 (the Royal Quarter belongs to you)"
+    ]
+   }
+  ],
   "sources": [
    "warcraft.wiki.gg/wiki/Sylvanas_Windrunner (Ranger-General, raised by Arthas, broke free, dreadlords, blood elves, Battle for the Undercity)",
    "npc_text 10212 (Sylvanas gossip)",
    "quest 5961 description (Nathanos among the first of my champions)",
-   "quests 9621 and 9812 reward text",
-   "quest 13257 reward text (Sylvanas nearly killed in the coup)"
+   "npc_text 10212 (city does not run itself)"
   ],
-  "notes": "Nathanos is among her first champions per quest 5961, not the first; softened."
+  "notes": "Converted: the blood elves moved to part 1 (minState 8, no trigger); Varimathras at her side added as part 2 (maxState 12, no trigger); the coup moved to part 3 (minState 13, QUEST_DONE 13257, where Thrall tells it); her return moved to part 4 (minState 13, KILL 31565). Earlier: Nathanos is among her first champions per quest 5961, not the first; softened."
  },
  {
   "id": 149703,
@@ -74,7 +213,7 @@
   "sort": 2,
   "faction": 2,
   "title": "Varimathras",
-  "body": "Varimathras was one of three dreadlord brothers who ruled Lordaeron's undead for the Burning Legion after Arthas went north. When Sylvanas broke his forces he begged for his life and offered his service, and for years he stood at her side in the Royal Quarter as her lieutenant, with the Deathstalkers first serving as his elite guard. His loyalty was a mask. After the Wrathgate he and Putress seized the Undercity and loosed demons and blight on its defenders. Cornered in the throne room by Thrall and Sylvanas, he raged over years of wasted planning and begged pardon of an unseen Master before the Dark Lady struck him down.",
+  "body": "Varimathras was one of three dreadlord brothers who ruled Lordaeron's undead for the Burning Legion after Arthas went north. When Sylvanas broke his forces he begged for his life and offered his service, and for years he stood at her side in the Royal Quarter as her lieutenant, with the Deathstalkers first serving as his elite guard. His loyalty was a mask. After the Wrathgate he and Putress seized the Undercity, turning its halls into a fortress of demons and blight against the Horde.",
   "triggers": [
    [
     4,
@@ -84,6 +223,24 @@
     3,
     31565
    ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Horde came for him through the fallen city, and he taunted it from the start: it would have its city back only in pieces. In the throne room, cornered by Thrall and Sylvanas, he opened portals for his demon kin, raged that years of tireless planning would not end like this, and begged a thousand-thousand pardons of an unseen Master, swearing to deal with the intruders himself. He could not. He fell with a last gasp: years, wasted.",
+    "triggers": [
+     [
+      3,
+      31565
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "creature_text 31565 groups 2, 7, 12 and 13",
+     "zone_undercity.cpp (Varimathras 31565 and his portals 31811 in the Royal Quarter)",
+     "warcraft.wiki.gg/wiki/Varimathras (unseen Master)"
+    ]
+   }
   ],
   "sources": [
    "warcraft.wiki.gg/wiki/Varimathras (brothers Balnazzar and Detheroc, begged Sylvanas for his life, lieutenant, coup, unseen Master)",
@@ -95,7 +252,7 @@
    "warcraft.wiki.gg/wiki/Varimathras (defeated by Sylvanas herself; unseen Master rebukes him)",
    "zone_undercity.cpp: Varimathras made attackable after SAY_VALIMATHRAS_ATTACK, killable by players for credit"
   ],
-  "notes": "Reworded the Deathstalker origin to match the wiki (they began as his elite guard). KILL 31565: he is a real attackable boss in the Horde battle, so players who fight him get credit; accept trigger covers the rest."
+  "notes": "Converted: his end in the throne room moved to part 1 (minState 13, KILL 31565). The coup stays in the opening: both entry triggers come after quest 13257 and 13266, which tell it. 'Before the Dark Lady struck him down' softened to 'he fell': in the 3.3.5 script Thrall and the champions fight him. Earlier: Reworded the Deathstalker origin to match the wiki (they began as his elite guard). KILL 31565: he is a real attackable boss in the Horde battle, so players who fight him get credit; accept trigger covers the rest. Check: part 1's 'back in pieces' boast is his courtyard taunt (creature_text 31565 group 2), reordered."
  },
  {
   "id": 149704,
@@ -104,7 +261,7 @@
   "sort": 3,
   "faction": 0,
   "title": "Grand Apothecary Putress",
-  "body": "Grand Apothecary Putress rose to lead the Royal Apothecary Society after winning Sylvanas's favor with a vow to take the plague that made the Forsaken and make it their own weapon. From the Apothecarium his chemists refined the New Plague, a blight lethal to living and undead alike, and the Horde even credited him with finding a cure for a recent outbreak of the Scourge's own plague. At the Wrathgate he turned his blight on Alliance, Horde and Scourge together, striking down Highlord Bolvar Fordragon and many soldiers. With Varimathras he then seized the Undercity. When King Varian's forces broke into his laboratory, Putress tried to swallow ever more power, raving that he saw everything, and died there.",
+  "body": "Grand Apothecary Putress rose to the head of the Royal Apothecary Society after winning Sylvanas's favor with a vow to take the plague that made the Forsaken and make it their own weapon. From the Apothecarium his chemists refined the New Plague, a blight lethal to living and undead alike. At the Wrathgate in Northrend he turned it on Alliance, Horde and Scourge together, striking down Highlord Bolvar Fordragon and many soldiers of both sides. Then he went to ground in the depths of the Undercity, which traitors among the Forsaken had seized.",
   "triggers": [
    [
     5,
@@ -119,6 +276,38 @@
     31530
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "To the Horde the betrayal cut deeper. Putress was the same apothecary credited with discovering the cure for the recent outbreak of the Scourge's plague, and he had not acted alone: with the dreadlord Varimathras he took the Undercity in a bloody coup, and those who would not side with them were executed or banished.",
+    "triggers": [
+     [
+      5,
+      13257
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "quest 13257 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "King Varian's forces broke into his laboratory in the Apothecarium, where blight generators fed him power. Cornered, Putress swore it would not end like this after so many years of work, swallowed ever more energy and raved that he saw everything. It availed him nothing. He died there, and Varian declared justice served.",
+    "triggers": [
+     [
+      3,
+      31530
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "creature_text 31530 groups 5-6",
+     "creature_text 32401 group 16 (and justice is served)",
+     "zone_undercity.cpp (blight generators 36212 cast Blight Empowerment on Putress; Putress made attackable)"
+    ]
+   }
+  ],
   "sources": [
    "warcraft.wiki.gg/wiki/Royal_Apothecary_Society (Putress founder, New Plague lethal to living and undead, Wrathgate, killed by Varian's forces)",
    "warcraft.wiki.gg/wiki/Battle_for_the_Undercity (Bolvar and thousands of soldiers killed)",
@@ -127,7 +316,7 @@
    "zone_undercity.cpp: Putress 31530 summoned and fought in the Alliance battle",
    "zone_undercity.cpp (Putress spawned at the Apothecarium position, blight generators empower him; world state APOTHECARIUM_FIGHT_A)"
   ],
-  "notes": "Fixed: Sylvanas created the Society, Putress was made Grand Apothecary (wiki), not its founder. Thousands of soldiers and stolen power were unsupported; generalized. KILL 31530 works: he is made attackable in the Alliance battle. Faction 0: Horde via 13257 done, Alliance via 13377 accept."
+  "notes": "Converted: the cure and the coup with Varimathras moved to part 1 (minState 13, QUEST_DONE 13257, the Horde's telling); his death moved to part 2 (minState 13, KILL 31530). The Wrathgate stays in the opening: every entry trigger (13257 done, 13377 accepted, the kill) comes after it is told. Earlier: Fixed: Sylvanas created the Society, Putress was made Grand Apothecary (wiki), not its founder. Thousands of soldiers and stolen power were unsupported; generalized. KILL 31530 works: he is made attackable in the Alliance battle. Faction 0: Horde via 13257 done, Alliance via 13377 accept. Check: 'seized in his name' made 'traitors among the Forsaken had seized'."
  },
  {
   "id": 149705,
@@ -136,21 +325,40 @@
   "sort": 4,
   "faction": 2,
   "title": "Master Apothecary Faranell",
-  "body": "Master Apothecary Faranell leads the Royal Apothecary Society from the Apothecarium, overseeing its most ambitious and most ghoulish work: guano from the bats of Razorfen Kraul, hearts cut from Scarlet zealots, venoms and composites sent home by his apothecaries in the field. He speaks of it all with unsettling delight. Since Putress's betrayal the Society labors under the eye of the Warchief's Kor'kron, and Faranell has turned diplomat, assuring his overseer that the apothecaries wish only to make amends for a tragic misguidance and to continue their research in peace. Putress, he insists, was an unfortunate anomaly.",
+  "body": "Master Apothecary Faranell directs the work of the Royal Apothecary Society in the Apothecarium, overseeing its most ambitious and most ghoulish projects: guano from the bats of Razorfen Kraul, hearts cut from Scarlet zealots, venoms and composites sent home by his apothecaries in the field. He speaks of it all with unsettling delight, for every grisly reagent brings the Forsaken closer to the new plague the Dark Lady awaits.",
   "triggers": [
    [
     2,
     2055
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Since Putress's betrayal the Society labors under the eye of the Warchief's Kor'kron, and Faranell has turned diplomat. He assures his overseer that the apothecaries wish only to make amends for the tragic misguidance that ended so many lives, and to continue their research in peace. Putress, he insists, was an unfortunate anomaly.",
+    "triggers": [
+     [
+      2,
+      2055
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "npc_text 14940 (Faranell gossip: Putress an unfortunate anomaly)",
+     "creature_text 2055 (tragic misguidance which ended so many lives; research in peace)"
+    ]
+   }
+  ],
   "sources": [
    "quests 1109 and 1113 (guano, hearts of Scarlet zealots)",
    "quests 513, 515 and 2938 reward text",
    "npc_text 14940 (Faranell gossip: Putress an unfortunate anomaly)",
    "creature_text 2055 (make up for the tragic misguidance, continue our research in peace)",
-   "warcraft.wiki.gg/wiki/Royal_Apothecary_Society (Faranell leads the Society)"
+   "warcraft.wiki.gg/wiki/Royal_Apothecary_Society (Faranell leads the Society)",
+   "tirisfal.json 8530 (Sylvanas's challenge to the Society: a new plague)",
+   "quest 513 reward text (the Dark Lady impressed by progress toward the new plague)"
   ],
-  "notes": "verified"
+  "notes": "Converted: the Kor'kron and his excuses for Putress moved to part 1 (minState 13, TALK 2055, since his 3.3.5 gossip tells it), so a classic reader meets the Society at its work. 'Leads the Society' made 'directs its work', true also while Putress was Grand Apothecary. Earlier: verified Check: plague phrasing tied to quest 513's reward text."
  },
  {
   "id": 149706,
@@ -158,13 +366,43 @@
   "zone": 1497,
   "sort": 5,
   "faction": 2,
+  "requiredState": 13,
   "title": "Bragor Bloodfist",
-  "body": "Bragor Bloodfist is a Kor'kron captain sent by Thrall to stand at the Dark Lady's side after the city was retaken. With most of the Forsaken army committed to Vengeance Landing in Northrend, the Warchief's guard now reinforces the Undercity, and Bragor has taken up many duties once held by Varimathras: sending agents against the Scarlet Crusade, receiving word from the Hillsbrad front, and hunting a Scourge emissary named Malcin near Razorfen Downs. A living orc among the dead, he keeps dangerous books from the Forsaken as carefully as from the Shadow Council. He judges newcomers by their deeds, and already counts the human king among the threats the Horde must one day end.",
+  "body": "Bragor Bloodfist is a Kor'kron captain whom Thrall has sent to stand at the Dark Lady's side in the Royal Quarter. With most of the Forsaken army committed to Vengeance Landing in Northrend, the Warchief's guard now reinforces the Undercity, and Bragor sends agents against the Scarlet Crusade, receives word from the Hillsbrad front, and hunts a Scourge emissary named Malcin near Razorfen Downs. A living orc among the dead, he keeps dangerous books from the Forsaken as carefully as from the Shadow Council. He judges newcomers by their deeds, and already counts the human king among the threats the Horde must one day end.",
   "triggers": [
    [
     2,
     36273
+   ],
+   [
+    4,
+    14353
+   ],
+   [
+    4,
+    14355
+   ],
+   [
+    4,
+    14356
    ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "He came after the city was retaken. The fall of Varimathras left an empty place at the Dark Lady's side, and the Warchief filled it with one of his own: many duties the dreadlord once held, from the war on the Scarlet Crusade to the reports from Hillsbrad, now pass through Bragor's hands.",
+    "triggers": [
+     [
+      3,
+      31565
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "warcraft.wiki.gg/wiki/Bragor_Bloodfist (replaced Varimathras in 3.3.0, sent by Thrall)",
+     "quests 14351 and 14355 (Hillsbrad, Scarlet Monastery)"
+    ]
+   }
   ],
   "sources": [
    "warcraft.wiki.gg/wiki/Bragor_Bloodfist (Kor'kron captain, replaced Varimathras in 3.3.0, sent by Thrall)",
@@ -174,7 +412,7 @@
    "quest 14351 reward text (with that king leading them, the humans remain a problem)",
    "quest 14356 (books kept from the Searing Blade and the Forsaken alike)"
   ],
-  "notes": "Removed the Varimathras-away gossip (npc_text 15319): it is a leftover line that contradicts his death in the battle. Replaced with his view of King Varian from quest 14351."
+  "notes": "Converted: entry given requiredState 13 (he and his quests arrived in 3.3.0 and stand in the city in every era in this database; nothing in the opening is true before Wrath). Replacing Varimathras after the city was retaken moved to part 1 (minState 13, KILL 31565). Earlier: Removed the Varimathras-away gossip (npc_text 15319): it is a leftover line that contradicts his death in the battle. Replaced with his view of King Varian from quest 14351. Check: requiredState 13 kept: with mod-individual-progression Bragor (guid 31901) is phased to after the Battle for the Undercity, and he has no classic role to write. Fix: ACCEPT 14353, 14355 and 14356 added, the quests he starts (Horde only, QuestType 2, not auto-complete; under mod-individual-progression offered only once he is phased in after the Battle for the Undercity), so the entry backfills when a character reaches state 13; TALK alone does not backfill. The city's only area is 1497 itself, explored in classic."
  },
  {
   "id": 149707,
@@ -182,12 +420,25 @@
   "zone": 1497,
   "sort": 6,
   "faction": 2,
+  "requiredState": 13,
   "title": "Overseer Kraggosh",
   "body": "Overseer Kraggosh is the Kor'kron orc posted inside the Apothecarium itself, and he makes no secret of how little he likes it. Since Putress loosed his blight at the Wrathgate, the Warchief has trusted the Royal Apothecary Society about as far as he could throw it, and Kraggosh is the result: no abomination guards, no secrecy, no plotting in the dark. The apothecaries can do nothing without him, and he has warned Master Apothecary Faranell that if the Society so much as spits without leave, the place will be shut down by force. His fellow overseers stand watch across the city and treat the Forsaken with open contempt.",
   "triggers": [
    [
     2,
     36217
+   ],
+   [
+    4,
+    14353
+   ],
+   [
+    4,
+    14355
+   ],
+   [
+    4,
+    14356
    ]
   ],
   "sources": [
@@ -196,7 +447,7 @@
    "npc_text 14931 and 14933 (Kor'kron Overseer gossip: the forsaken need watching, bonebag)",
    "warcraft.wiki.gg/wiki/Royal_Apothecary_Society (Kraggosh warns the apothecaries)"
   ],
-  "notes": "verified"
+  "notes": "Converted: text unchanged (nothing in it outruns his own gossip); entry given requiredState 13, since the Kor'kron overseer posted for Putress's crime is a 3.3.0 addition who stands in the city in every era in this database. Earlier: verified Check: requiredState 13 kept: with mod-individual-progression Kraggosh (guid 79263) is phased to after the Battle for the Undercity. Fix: ACCEPT 14353, 14355 and 14356 added (Bragor's quests, same file as 149706), so the entry backfills on reaching state 13. Kraggosh has no quests of his own, and the Apothecarium has no area of its own (posarea gives the surface areas; Undercity's only areas are 1497 and the elevators), so an area trigger would be all of Undercity, explored in classic, and would open his Wrathgate text early. DONE 13267 (the battle that phases the Kor'kron in) is used by orgrimmar 163707, and Faranell's quests are classic ones. Bragor's quests are offered only in the same phase and city as Kraggosh (both phased in after the Battle for the Undercity under mod-individual-progression; both always present without it) and tell nothing beyond his opening."
  },
  {
   "id": 149708,
@@ -216,7 +467,7 @@
    "warcraft.wiki.gg/wiki/Sharlindra (banshee, Royal Quarter, witnessed Varimathras's offer, attack on Detheroc's stronghold, lieutenant Melisara)",
    "quests 495 and 521"
   ],
-  "notes": "Following Sylvanas from the first days of the rebellion was unsupported; removed. Per quest 495 it was the Dark Lady who wanted the example made; Sharlindra passed the task on."
+  "notes": "Unchanged in the parts conversion: nothing to hide. Following Sylvanas from the first days of the rebellion was unsupported; removed. Per quest 495 it was the Dark Lady who wanted the example made; Sharlindra passed the task on."
  },
  {
   "id": 149709,
@@ -238,7 +489,7 @@
    "npc_text 5822 (his question)",
    "quest 6628"
   ],
-  "notes": "verified"
+  "notes": "Unchanged in the parts conversion: nothing to hide. verified"
  },
  {
   "id": 149710,
@@ -260,7 +511,7 @@
    "quest 864 reward text (Keever's insanity my genius; reward those who remain useful)",
    "quests 1358 (Helbrim at the Crossroads) and 4133 (Vivian Lagrave at Kargath)"
   ],
-  "notes": "verified"
+  "notes": "Unchanged in the parts conversion: nothing to hide. verified"
  },
  {
   "id": 149711,
@@ -269,7 +520,7 @@
   "sort": 1,
   "faction": 0,
   "title": "The Battle for the Undercity",
-  "body": "The blight that fell on the Wrathgate was not the end of the treachery. Grand Apothecary Putress and the dreadlord Varimathras had turned much of the Forsaken against their queen, and they seized the Undercity. Sylvanas barely escaped to Orgrimmar, those who would not side with the rebels were executed or banished, and Orgrimmar, now under martial law, took in the Forsaken refugees. Thrall vowed justice. Through portals from Grommash Hold the Horde gathered at the ruins with Vol'jin, then fought down past a wrecked lift and a trapped shaft into the Royal Quarter, where Varimathras fell. Meanwhile King Varian Wrynn, Jaina Proudmoore, Broll Bearmantle and Valeera Sanguinar led the Alliance through the sewers, hunting Putress to his death in the Apothecarium. Then Varian marched on the throne room and turned his blades on Thrall. Only Jaina's magic, freezing the combatants and carrying the Alliance away, prevented a slaughter. The old fellowship of the Wrathgate did not survive the day.",
+  "body": "At the Wrathgate in Northrend, Grand Apothecary Putress turned his blight on Alliance, Horde and Scourge alike, and Highlord Bolvar Fordragon fell with many soldiers of both sides. The treachery did not end there. Traitors within the Forsaken rose and seized the Undercity, and the Horde lost the capital of its ally, while Putress himself hid somewhere in its depths. Thrall has sworn that the perpetrators of this unforgivable crime will be brought to justice, and prepares to lay siege to the fallen city. Those who fought side by side at the Wrathgate are each left to count their dead.",
   "triggers": [
    [
     4,
@@ -288,6 +539,77 @@
     13377
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Thrall named the traitors: Putress, and with him the dreadlord Varimathras, the Dark Lady's own lieutenant. Those who would not side with their regime were executed or banished, Sylvanas herself was nearly killed, and the Forsaken who escaped fled to Orgrimmar to wait for the crisis to be resolved.",
+    "triggers": [
+     [
+      5,
+      13257
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "quest 13257 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Horde struck from the ruins with Thrall and Sylvanas at its head. It fought through the courtyard against the traitors' blight, found the lift wrecked and the shaft trapped, and dropped into the inner sanctum on cyclones the Warchief called. Beyond lay the Royal Quarter, where Varimathras opened portals for his demon kin and fell before Thrall and the Dark Lady.",
+    "triggers": [
+     [
+      3,
+      31565
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "quest 13266 and 13267 descriptions",
+     "creature_text 32518, 32365, 31565",
+     "zone_undercity.cpp (Horde: courtyard, elevator destroyed, cyclones, inner sanctum, Royal Quarter)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The Alliance came for Putress through the sewers. From the sewer entrance, where Broll Bearmantle and Valeera Sanguinar kept watch, King Varian and Jaina Proudmoore led their soldiers down past the engorged blight worm that guarded the tunnels to the Apothecarium. There, among his blight generators, Putress met his end, and Varian declared justice served.",
+    "triggers": [
+     [
+      3,
+      31530
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "quests 13371 and 13377 descriptions",
+     "creature_text 32401 groups 6-17",
+     "zone_undercity.cpp (Alliance: sewers, Engorged Blight Worm 32483, Putress at the Apothecarium)",
+     "warcraft.wiki.gg/wiki/Battle_for_the_Undercity (Varian, Jaina, Broll, Valeera in the sewers)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The day ended in the throne room, with the Horde holding it. Varian marched in declaring that Putress was only the first strike, and that the time had come to disband the Horde's treacherous kingdom of murderers and thieves. Then he turned his blades on Thrall. Jaina begged him to stop, froze the combatants where they stood and carried the Alliance away. It did not have to be like this, she said. The fellowship of the Wrathgate did not survive the day.",
+    "triggers": [
+     [
+      3,
+      31565
+     ],
+     [
+      3,
+      31530
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "creature_text 32401 groups 26-30",
+     "creature_text 32402 groups 3-4",
+     "creature_text 32518 group 30 (Alliance horns)",
+     "zone_undercity.cpp (both versions: Wrynn's throne room speech, Deep Freeze 61224, Greater Mass Teleport 60516)",
+     "quest 13267 reward text (gone are the days of Alliance and Horde battling alongside each other)"
+    ]
+   }
+  ],
   "sources": [
    "quest 13257 reward text (executed or banished, refugees, martial law)",
    "quest 13266 description and reward text",
@@ -298,7 +620,7 @@
    "creature 31419 (Sylvanas spawned in Grommash Hold during the crisis)",
    "zone_undercity.cpp (Horde: courtyard, elevator destroyed, cyclones, Royal Quarter; Alliance: sewers, Putress at the Apothecarium, throne room, Deep Freeze and Greater Mass Teleport)"
   ],
-  "notes": "Checked against quests 13257, 13266, 13267, 13371, 13377, creature_text and the battle script; martial law applied to Orgrimmar, reworded. Faction 0: Horde entry points 13266 and 13267, Alliance 13371 and 13377. Overlap with Stormwind story 151915 is limited: that one covers the Alliance road to the battle (13347, 13369), this one the battle itself."
+  "notes": "Converted: the opening keeps what both factions know when they take up the chain (Putress at the Wrathgate, the city lost, Thrall's vow; creature_text 32363 tells Jaina the siege is coming). Parts, all minState 13: 1 the coup's details (QUEST_DONE 13257, Horde); 2 the Horde assault and Varimathras's fall (KILL 31565); 3 the Alliance in the sewers and Putress's death (KILL 31530); 4 the clash in the throne room, seen in both versions of the event (KILL 31565, KILL 31530). The turn-ins 13267 and 13377 would be the natural triggers but belong to Orgrimmar (Thrall) and Stormwind (Varian), which tell the leaders' verdicts. Earlier: Checked against quests 13257, 13266, 13267, 13371, 13377, creature_text and the battle script; martial law applied to Orgrimmar, reworded. Faction 0: Horde entry points 13266 and 13267, Alliance 13371 and 13377. Overlap with Stormwind story 151915 is limited: that one covers the Alliance road to the battle (13347, 13369), this one the battle itself. Check: part 1 trims the Orgrimmar refugee and martial law detail (Orgrimmar 163700 tells it); part 2 drops Vol'jin holding the ruins (Orgrimmar 163708, Tirisfal 8516); part 3 drops Jaina's portal (Stormwind 151915 part 2) and keeps Broll and Valeera at the sewer entrance, where the script has them; part 3 no longer opens 'by another road', which read wrong for Alliance readers without part 2. Part 4 kept on both kills: in both scripts the throne room clash follows straight on from the kill."
  },
  {
   "id": 149712,
@@ -307,7 +629,7 @@
   "sort": 2,
   "faction": 2,
   "title": "The Lady's Necklace",
-  "body": "In the Ghostlands, a necklace was recovered from the Scourge near Windrunner Spire, bright against the gloom and inscribed as the property of Lady Sylvanas Windrunner. High Executor Mavren at Tranquillien saw that it was a gift to her from her sister Alleria, and sent it on to the Royal Quarter. Sylvanas seized it, startled into memory, then mastered herself and scorned the gift. Alleria, she declared, was a long dead memory, and the trinket meant nothing to the queen of the Forsaken. She let it fall to the floor and dismissed the bearer. Yet a moment later she knelt and took it up again. Whispering 'Belore', she wove a glamour that called forth the spirits of the Highborne, and the throne room filled with their ancient song of the sin'dorei.",
+  "body": "Windrunner Spire, on the coast of the Ghostlands, was once the home of the Windrunner family, and of Sylvanas, the Ranger-General who fell defending Quel'Thalas and now rules the Forsaken. Today mindless Scourge haunt its halls. Among them a necklace has turned up, a remarkable piece that shimmers as though the gloom of the Ghostlands cannot touch it. Its inscription names it the lost property of Lady Sylvanas Windrunner herself, and whoever recovers it does best to take it first to High Executor Mavren at Tranquillien, the highest ranking Forsaken in the land, who will know what to do with it.",
   "triggers": [
    [
     4,
@@ -318,13 +640,43 @@
     9180
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Mavren knew the necklace for what it was: a gift to Lady Sylvanas from her sister, Alleria. It had to go to her at once, to the Royal Quarter where she holds court, by way of the orb of translocation in Silvermoon City that crosses to the Undercity.",
+    "triggers": [
+     [
+      4,
+      9180
+     ]
+    ],
+    "sources": [
+     "quest 9180 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Sylvanas seized it, startled into memory, then mastered herself and scorned the gift. Alleria, she declared, was a long dead memory, and the trinket meant nothing to the queen of the Forsaken. She let it fall and dismissed the bearer. Yet a moment later she knelt and took it up again. Whispering 'Belore', she wove a glamour that called forth Highborne spirits, and the chamber filled with their ancient song of the sin'dorei.",
+    "triggers": [
+     [
+      5,
+      9180
+     ]
+    ],
+    "sources": [
+     "quest 9180 completion and reward text",
+     "creature_text 10181 groups 0-2"
+    ]
+   }
+  ],
   "sources": [
    "quest 9175 description and reward text (Windrunner Spire, inscription, Mavren at Tranquillien)",
    "quest 9180 description, completion and reward text",
    "creature_text 10181 groups 0-2 (kneels, Belore, Highborne spirits sing about the Sin'dorei)",
-   "warcraft.wiki.gg/wiki/Sylvanas_Windrunner (Alleria's necklace, lament)"
+   "warcraft.wiki.gg/wiki/Sylvanas_Windrunner (Alleria's necklace, lament)",
+   "ghostlands.json 343316 Windrunner Spire (quest 9173: original home of Sylvanas, overrun by Scourge)"
   ],
-  "notes": "Chain begins in Ghostlands; the Ghostlands codex may also tell its first half."
+  "notes": "Converted: Mavren's recognition of Alleria's gift moved to part 1 (QUEST_ACCEPT 9180, whose text tells it); Sylvanas's reaction moved to part 2 (QUEST_DONE 9180). No era tag: the chain belongs to the blood elf home ground of the Ghostlands. Opening filled out with Windrunner Spire. Earlier: Chain begins in Ghostlands; the Ghostlands codex may also tell its first half."
  },
  {
   "id": 149713,
@@ -333,17 +685,58 @@
   "sort": 3,
   "faction": 2,
   "title": "The Crown of Will",
-  "body": "Lady Sylvanas desired the Crown of Will, a relic to be had in Alterac, and sent the ogre Mug'Thol and his Crushridge warband to fetch it, bound to her service by possession. Mug'Thol found the crown and, being an ogre, could not resist putting it on. Its power let him throw off the Dark Lady's will, and his Crushridge overran the ruins of Alterac. The Dark Lady wanted an example made, and Sharlindra of the Royal Quarter passed the task to her lieutenant Melisara at Tarren Mill. Melisara had the Crushridge thinned, then claimed the heads of Mug'Thol's lieutenants Targ, Muckrake and Glommus, and at last Mug'Thol's own, meaning to mount all four on pikes above Alterac. The crown itself returned to Sharlindra, to be laid before the queen it was always meant for.",
+  "body": "Lady Sylvanas desired the Crown of Will, a relic to be had in Alterac, and sent the ogre Mug'Thol and his warband to fetch it, bound to her service by possession. Mug'Thol found the crown and, being an ogre, could not resist putting it on. Its power let him throw off the Dark Lady's will. She wants an example made, and Sharlindra of the Royal Quarter passes the task to her lieutenant Melisara at Tarren Mill, who means to deal with the ogre quickly, thoroughly and without incident. First the Crushridge, who have overrun the ruins of Alterac under Mug'Thol, must be thinned.",
   "triggers": [
    [
     4,
     495
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The snow of Alterac bloomed red with ogre blood before Melisara was satisfied, and then she wanted heads: those of Targ, Muckrake and Glommus, Mug'Thol's loyal lieutenants. When they were brought to her she promised that his would join them, all four mounted on pikes above Alterac as a monument to those who defy the Dark Lady.",
+    "triggers": [
+     [
+      5,
+      519
+     ]
+    ],
+    "sources": [
+     "quests 518 and 519 description and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Mug'Thol fell at last, and his head and the crown came back to Tarren Mill. His head would adorn the highest peak of the ruins of Alterac, Melisara declared, and the Deathguard would sweep what remained of the Crushridge into the ground.",
+    "triggers": [
+     [
+      5,
+      520
+     ]
+    ],
+    "sources": [
+     "quest 520 description and reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The crown itself went back to Sharlindra, to be laid before the queen it was always meant for. She marveled that something so simple could hold such power and fall into such clumsy hands, and promised that Lady Sylvanas would hear who had brought it home.",
+    "triggers": [
+     [
+      5,
+      521
+     ]
+    ],
+    "sources": [
+     "quest 521 description and reward text"
+    ]
+   }
+  ],
   "sources": [
    "quests 495, 518, 519, 520 and 521 (descriptions and reward text)"
   ],
-  "notes": "Quest 495: the Dark Lady, not Sharlindra, wants the example made; fixed. Most of the chain runs in Alterac and Hillsbrad; another zone's codex may also cover it."
+  "notes": "Converted: the lieutenants' heads moved to part 1 (QUEST_DONE 519), Mug'Thol's death to part 2 (QUEST_DONE 520), the crown's return to part 3 (QUEST_DONE 521, turned in to Sharlindra). Alterac's Mug'Thol entry uses ACCEPT 520, not these. Earlier: Quest 495: the Dark Lady, not Sharlindra, wants the example made; fixed. Most of the chain runs in Alterac and Hillsbrad; another zone's codex may also cover it."
  },
  {
   "id": 149714,
@@ -352,7 +745,7 @@
   "sort": 4,
   "faction": 2,
   "title": "The Deathstalkers",
-  "body": "Promising rogues of the Horde may be summoned to the Rogues' Quarter by Mennet Carkad, who tests candidates for the Deathstalkers, the Dark Lady's elite agents. The test is a quiet one. Their leaders suspect Andron Gant, a merchant whose shop stands by the Apothecarium, of selling secrets to some other power. First the candidate must obtain, by whatever means suits, the letter of introduction carried by Astor Hadren, a courier between Silverpine and the Undercity. Posing as the expected messenger, the recruit calls on Andron, who suspects nothing and hands over his ledger with his regards. The ledger names his true buyers: the Syndicate, proof of how far the lords of Alterac have fallen since their betrayal. Carkad welcomes the recruit into the Deathstalkers and sends the new agent to carry the findings to Aleric Hawkins, their master in the Royal Quarter.",
+  "body": "Promising rogues of the Horde may find themselves summoned to the Rogues' Quarter by Mennet Carkad, and few ignore the summons, for none care to learn what became of the last who did. Carkad tests candidates for the Deathstalkers, the Dark Lady's elite guard, and he does not pretend the test is safe: it could mean death. He tells the recruit little. First they must obtain the personal effects of Astor Hadren, a messenger who travels between Silverpine and the Undercity, by whatever means suits them. The less the recruit knows of the business the better, Carkad says, but success will earn the rest.",
   "triggers": [
    [
     4,
@@ -363,12 +756,65 @@
     14420
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Astor's letter of introduction is the key. Carkad's leaders suspect Andron Gant, a merchant whose shop stands by the Apothecarium, of aiding some other power, and they want proof of whom he serves. The recruit is to call on him posing as the messenger he expects. Andron, Carkad judges, lacks the wit to be suspicious.",
+    "triggers": [
+     [
+      4,
+      14419
+     ],
+     [
+      4,
+      1898
+     ]
+    ],
+    "sources": [
+     "quest 14419 description",
+     "quest 14420 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Andron suspected nothing. He welcomed the false messenger, handed over his ledger with his regards and asked that the same courier be sent again. The ledger named his true buyers: the Syndicate. The lords of Alterac, Carkad mused, have fallen far since their betrayal, and with that he welcomed the recruit into the Deathstalkers.",
+    "triggers": [
+     [
+      4,
+      14418
+     ],
+     [
+      4,
+      1978
+     ]
+    ],
+    "sources": [
+     "quest 14419 reward text",
+     "quest 14421 description",
+     "quest 14418 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The new agent carried the ledger to Aleric Hawkins, master of the Deathstalkers, in the Royal Quarter. Hawkins found the work admirable, commended the recruit's part in it and hoped such service would become routine, for his Deathstalkers always have use for a capable agent.",
+    "triggers": [
+     [
+      5,
+      14418
+     ]
+    ],
+    "sources": [
+     "quest 14418 log text and reward text",
+     "creature 36517 Aleric Hawkins (The Deathstalkers) beside Sylvanas"
+    ]
+   }
+  ],
   "sources": [
    "quests 1885, 14420, 14419, 14421 and 14418 (descriptions, log text and reward text)",
    "warcraft.wiki.gg/wiki/Deathstalker (elite assassins and spies; spying on Andron Gant)",
    "creature 36517 Aleric Hawkins (The Deathstalkers) spawned beside Sylvanas"
   ],
-  "notes": "Quests allow every Horde race (690), so 'Forsaken rogues' became 'rogues of the Horde'; the recruit carries the ledger to Hawkins himself (14418). Triggers kept: the chain really is rogue-only, so the story only unlocks for Horde rogues."
+  "notes": "Converted: the suspicion of Andron moved to part 1 (QUEST_ACCEPT 14419; 14420 keeps the business secret until it is done); the ledger, the Syndicate and the welcome to part 2 (QUEST_ACCEPT 14418, whose text tells them); Hawkins's commendation to part 3 (QUEST_DONE 14418). Earlier: Quests allow every Horde race (690), so 'Forsaken rogues' became 'rogues of the Horde'; the recruit carries the ledger to Hawkins himself (14418). Triggers kept: the chain really is rogue-only, so the story only unlocks for Horde rogues. Classic chain triggers added for mod-individual-progression, where 14418-14421 lose their givers: ACCEPT 1898 on part 1, ACCEPT 1978 on part 2."
  },
  {
   "id": 149715,
@@ -377,19 +823,64 @@
   "sort": 5,
   "faction": 2,
   "title": "Seeping Corruption",
-  "body": "In the Apothecarium, Chemist Cuely keeps a patient who did not come to be studied. Thersa Windsong, a tauren, was wounded by naga in the Ruins of Eldarath in Azshara and afterward drank from a tide pool on the beach. She has been sick ever since, and no priest or shaman could help her. Cuely, more accommodating than she finds comfortable, has a helper fill labeled vials at the pools so he can learn what she drank. From the samples he brews an elixir and has it carried to her. With nowhere else to turn, Thersa drinks and prays that the Earthmother will watch over her spirit. The elixir takes hold faster than even Cuely dreamed, and she does not survive it. Pleased, the chemist turns at once to the remaining samples, certain they will soon be of use to Lady Sylvanas.",
+  "body": "In the Apothecarium, Chemist Cuely keeps a patient who did not come to be studied. Thersa Windsong, a tauren, was wounded by naga in the Ruins of Eldarath in Azshara and afterward drank from a tide pool on the beach. She has been sick ever since. No priest or shaman could help her, and she came to the Undercity because its alchemists were said to be studying long and hard on a cure for their own affliction, though the place makes her feel far from welcome. Cuely wants to know what she drank, and has a helper fill labeled vials at the pools.",
   "triggers": [
    [
     4,
     3568
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Cuely is pleased the samples came back before she died. He has studied her symptoms with interest, and he is frank about where this leads: she cannot survive, so she might as well die doing something noble for the Forsaken. He brews an elixir from the samples and has it carried to her. Perhaps it will cure her, he says, perhaps not.",
+    "triggers": [
+     [
+      5,
+      3568
+     ]
+    ],
+    "sources": [
+     "quest 3568 completion and reward text",
+     "quest 3569 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Thersa finds Cuely disturbingly accommodating, but if he says the elixir will help her, she has no other choice and no time left to find another remedy. She drinks, praying that the Earthmother will watch over her spirit.",
+    "triggers": [
+     [
+      5,
+      3569
+     ]
+    ],
+    "sources": [
+     "quest 3569 reward text",
+     "creature_text 8393",
+     "warcraft.wiki.gg/wiki/Thersa_Windsong (turns green and dies after drinking the elixir)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The elixir took hold faster than even Cuely had dreamed, and Thersa did not survive it. Pleased, the chemist turns at once to the remaining samples, certain they will soon be of use to Lady Sylvanas and the Forsaken.",
+    "triggers": [
+     [
+      5,
+      3570
+     ]
+    ],
+    "sources": [
+     "quest 3570 reward text (auto-complete quest, so QUEST_DONE)",
+     "creature_text 8390"
+    ]
+   }
+  ],
   "sources": [
    "quests 3568, 3569 and 3570 (descriptions and reward text)",
    "creature_text 8393 and 8390",
    "warcraft.wiki.gg/wiki/Thersa_Windsong (tauren; turns green and dies after drinking the elixir)"
   ],
-  "notes": "verified; her death rests on the wiki (Thersa_Windsong), Cuely's 'back before she died' and his closing reward text."
+  "notes": "Converted: Cuely's verdict and the elixir moved to part 1 (QUEST_DONE 3568); Thersa's death to part 2 (QUEST_DONE 3569); Cuely's satisfaction to part 3 (QUEST_DONE 3570, an auto-complete quest). Her reasons for coming (3569 completion text) added to the opening. Earlier: verified; her death rests on the wiki (Thersa_Windsong), Cuely's 'back before she died' and his closing reward text. Check: Thersa's death moved from part 2 to part 3 (DONE 3570): no script kills her at the 3569 turn-in, Cuely's 3570 text is where the elixir's effect is told."
  },
  {
   "id": 149716,
@@ -398,7 +889,7 @@
   "sort": 6,
   "faction": 2,
   "title": "The Jeremiah Blues",
-  "body": "Among the records the Forsaken keep, few are stranger than the city census. Royal Overseer Bauhaus tends it by arcane means and disciplined mind, tracking the populace since the city was freed from the Scourge. When a dusty parcel turned up in the Plaguelands, addressed more than four years earlier to one Jeremiah Felstone of Lordaeron, the census held the answer. Like some Forsaken, Felstone had shed his old name with his old life, and now sold cockroaches as Jeremiah Payson beneath a walkway near the bank. He took the visit badly, since the sender was his sister Janice, dead these four years, until he saw the parcel truly came from her. Inside lay the deed to the Felstone farm, which he declined to reclaim, and half of a good luck charm, which he asked be returned to her restless spirit.",
+  "body": "Among the records the Forsaken keep, few are stranger than the city census. Royal Overseer Bauhaus tends it by arcane means and disciplined mind, tracking the populace since the city was freed from the Scourge, and he is asked often enough whether someone is dead. When a dusty parcel turned up in the Plaguelands, addressed more than four years earlier to one Jeremiah Felstone of Lordaeron, the census was the place to learn whether its recipient had outlived the plague, and what he had become.",
   "triggers": [
    [
     4,
@@ -409,12 +900,58 @@
     5049
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The census held the answer. Like some Forsaken, Felstone had shed his old name with his old life, and now sold cockroaches as Jeremiah Payson, groveling under a walkway near the bank. Bauhaus wished the bearer well on so world-shaping an errand.",
+    "triggers": [
+     [
+      5,
+      5023
+     ],
+     [
+      4,
+      5049
+     ]
+    ],
+    "sources": [
+     "quest 5023 reward text",
+     "quest 5049 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Jeremiah took the visit badly. He had not used the name Felstone in years, and the sender, his sister Janice, had been dead for four. He called the bearer a vulture and threatened to break his own brittle foot on them, until he saw the parcel truly came from her.",
+    "triggers": [
+     [
+      5,
+      5049
+     ]
+    ],
+    "sources": [
+     "quest 5049 reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Inside lay her personal effects: the deed to the Felstone farm, which he chose not to reclaim, and half of a good luck charm, the other half her husband's. If her spirit still walked the farm unable to rest, he asked, would the bearer return the charm to her, so that knowing he had these things might let her be at peace.",
+    "triggers": [
+     [
+      4,
+      5050
+     ]
+    ],
+    "sources": [
+     "quest 5050 description"
+    ]
+   }
+  ],
   "sources": [
    "quest 5023 description and reward text",
    "quest 5049 description, log text and reward text",
    "quest 5050 description",
    "npc_text 3653 (Bauhaus census gossip)"
   ],
-  "notes": "Quest 5023 says some Forsaken changed their names; softened 'many'. 5023 is accepted from a parcel object in Western Plaguelands; 5049 is the first quest given in the city. Janice's ghost and the farm belong to Western Plaguelands."
+  "notes": "Converted: his new name moved to part 1 (QUEST_DONE 5023, QUEST_ACCEPT 5049); his sister's death and his anger to part 2 (QUEST_DONE 5049); the deed and the half-charm to part 3 (QUEST_ACCEPT 5050, given by Jeremiah; Janice's ghost and the farm stay with Western Plaguelands). Earlier: Quest 5023 says some Forsaken changed their names; softened 'many'. 5023 is accepted from a parcel object in Western Plaguelands; 5049 is the first quest given in the city. Janice's ghost and the farm belong to Western Plaguelands."
  }
 ]

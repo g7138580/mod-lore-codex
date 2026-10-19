@@ -1,717 +1,1220 @@
 [
-{
-"id": 800,
-"kind": 0,
-"zone": 8,
-"sort": 0,
-"faction": 0,
-"title": "Swamp of Sorrows",
-"body": "The Swamp of Sorrows was once the northern reach of the Black Morass, a vast marshland whose southern half became barren waste after the Dark Portal was destroyed, the land now called the Blasted Lands. What remained was named in honor of those who died in the Second War. Long before, the Atal'ai, exiled priests of the Gurubashi trolls, raised a temple here to their blood god Hakkar, until Ysera of the green dragonflight drowned it beneath the Pool of Tears. Green dragons and their kin still guard the ruin. The orcs of Stonard hold the south as a Horde foothold, while Alliance caravans struggle along the road to Nethergarde Keep. In the north, Broken exiles shelter at the Harborage, beset by the Lost Ones, their own kin driven mad by the journey from Draenor. Murlocs crowd the misty eastern shore, jaguars and crocolisks stalk the mire, and beside the southern road the ghost of an orc hero still waits for orders that never came.",
-"triggers": [
-[
-1,
-8
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Swamp_of_Sorrows (Black Morass, southern part became barren after the Dark Portal was destroyed, named in honor of Second War dead, Atal'ai temple, Ysera drowned it, Stonard)",
-"warcraft.wiki.gg/wiki/Temple_of_Atal'Hakkar (exiled Gurubashi priests fled north into the swamp)",
-"quest 1389 description (Lost Ones driven mad by the rigors of the journey to Azeroth)",
-"quests 1396, 1421, 1425 (Alliance caravans to Nethergarde)",
-"npc_text 1392, quest 2621 (Fallen Hero awaiting orders)",
-"DB spawns: Marsh murlocs on the coast, Swamp Jaguar and Sawtooth Crocolisk in the mire"
-],
-"notes": "Era check: Bogpaddle, Marshtide Watch and the Alliance-aligned Harborage are Cataclysm and left out."
-},
-{
-"id": 801,
-"kind": 1,
-"zone": 8,
-"sort": 1,
-"faction": 0,
-"title": "Misty Valley",
-"body": "Misty Valley lies in the northwest corner of the swamp, just north of where the road climbs away toward Deadwind Pass. Fog clings to its sodden floor, and the valley belongs to the swamp itself. Swampwalkers and tangled horrors, lumbering plant-like creatures of root and muck, wander between its pools, and a hulking elemental called the Mire Lord dwells in the valley's cave. Such creatures are no friend to travelers. A courier carrying an essay of Khadgar's to Nethergarde Keep once took a wrong turn in the swamp and fled from them in terror, and one of the beasts made off with the precious pages.",
-"triggers": [
-[
-1,
-116
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Misty_Valley (northwest corner, north of the entrance to Deadwind Pass; pre-Cataclysm Tangled Horrors, Swampwalkers, Swampwalker Elders; Mire Lord in the valley's cave)",
-"quest 1364 description (courier, wrong turn, plant-like swamp creatures, essay taken)",
-"creature_loot_template: item 6065 Khadgar's Essays drops from 764, 765, 766, 1081",
-"DB: Mire Lord 1081 (type elemental) at area 116; Swampwalker and Tangled Horror spawns in area 116"
-],
-"notes": "The quest does not name the valley as the place the essay was lost; worded so it only says such creatures took it."
-},
-{
-"id": 802,
-"kind": 1,
-"zone": 8,
-"sort": 2,
-"faction": 0,
-"title": "Splinterspear Junction",
-"body": "Splinterspear Junction is where the main road into the swamp divides. The northern branch runs past the Harborage toward the Fallow Sanctuary, while the southern branch bends toward Stonard and the long road to the Blasted Lands. An old orcish watchtower stands near the fork, and scouts out of Stonard keep an eye on the crossing, for beyond it lies Horde country. Alliance travelers on the way to Nethergarde learn to watch the roads here. A short way to the south, the stranded Watcher Biggs keeps lonely guard over the remains of his caravan.",
-"triggers": [
-[
-1,
-1780
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Splinterspear_Junction (main road splits; north branch past the Harborage to Fallow Sanctuary, south branch to Stonard and the Blasted Lands; old orcish watch tower; Horde patrols)",
-"DB spawns: Stonard Scout 861 (faction 29) around -10390,-2640 in area 1780",
-"quest 9609 (Watcher Biggs is to the south); DB spawn Watcher Biggs 5476 at -10535,-2836"
-],
-"notes": "The Season of Discovery history of the site (Kyross) is not used."
-},
-{
-"id": 803,
-"kind": 1,
-"zone": 8,
-"sort": 3,
-"faction": 0,
-"title": "The Harborage",
-"body": "In the north of the swamp, a cluster of leather huts hung with crystals makes up the Harborage, refuge of the Broken who kept their minds after crossing from Draenor. Their leader Magtoor knows how few they are. The Lost Ones of the Fallow Sanctuary, once their own brethren, kill any who wander near, and they have stolen the sacred draenethyst the exiles fear they cannot do without. The village keeps on careful terms with nearby Stonard, a choice that troubles the draenei Anchorite Avuun, who has come to study the Lost Ones in hope of a cure. The Broken scholar Holaaru studies Atal'ai relics, hoping to understand the history of his new world.",
-"triggers": [
-[
-1,
-657
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/The_Harborage (pre-Cataclysm: base of Broken who stayed sane, leather huts hung with crystals)",
-"quest 1389 description",
-"creature_text 1776 (Magtoor on honoring the Horde), creature_text 17127 (Avuun: why do you traffic with the Horde)",
-"npc_text 8812, 9270",
-"quest 9610 reward text (Holaaru)",
-"DB spawns: Magtoor 1776, Anchorite Avuun 17127, Holaaru 18221, Broken Exile 11198 in area 657"
-],
-"notes": "Cataclysm rebuild (draenei architecture, inn, flight path, Alliance-only) left out."
-},
-{
-"id": 804,
-"kind": 1,
-"zone": 8,
-"sort": 4,
-"faction": 0,
-"title": "Itharius's Cave",
-"body": "In the hills along the swamp's western edge lies the lair of Itharius, who receives visitors in the guise of an elf but speaks for Ysera's green dragonflight. He shares the cave with a brood of green whelps, adolescents and dreamers alike, that snap at anyone who intrudes. These whelps carry a fine dream dust valued well beyond the swamp: a goblin of Booty Bay who trades in secrets will name his price in it before he gives one away. Few who find the cave know why its master is here. He waits for someone who has walked the sunken temple and can help end his brother's torment.",
-"triggers": [
-[
-1,
-1777
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Itharius (cave near the edge of the swamp, looks after green whelps, appears as an elf in Classic)",
-"gossip_menu_option 1341 (What's an elf like you doing inside a cave like this?)",
-"npc_text 1997 (brother trapped in a nightmare)",
-"quest 1116 description (dream dust from the dragon whelps of the Swamp of Sorrows, Krazek in Booty Bay)",
-"DB spawns: Itharius 5353, Adolescent Whelp 740, Dreaming Whelp 741 only in area 1777"
-],
-"notes": "Krazek described as a goblin who trades in secrets from quest 1116 and 1117 (he trades information on Nazz)."
-},
-{
-"id": 805,
-"kind": 1,
-"zone": 8,
-"sort": 5,
-"faction": 0,
-"title": "Fallow Sanctuary",
-"body": "Fallow Sanctuary is the village of the Lost Ones in the north of the swamp, east of the Harborage and within sight of the Redridge Mountains. Its huts and campfires belong to draenei twisted further than the Broken, maddened by the journey from their homeworld and hostile to every outsider. Hunters, fishermen, cooks, seers and riftseekers keep up a grim semblance of village life under their chieftains, guarding the draenethyst they stole from the Harborage. One of them, Ongeku, holds a shard so prized that the Gelkis centaurs of distant Desolace covet it. Beasts are kept in cages here, a captive human sits in another, and loot from a plundered Alliance caravan lies scattered nearby.",
-"triggers": [
-[
-1,
-76
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Fallow_Sanctuary (village of the Lost Ones, within view of Redridge, driven mad with homesickness)",
-"quest 1389 description",
-"quest 1373 description (Gelkis of Desolace, draenethyst shard held by Ongeku)",
-"quest 9440 description (caged animals at the Fallow Sanctuary)",
-"quest 1421 description (wagon dragged to the Fallow Sanctuary)",
-"DB spawns in area 76: Lost One Hunter, Fisherman, Cook, Seer, Riftseeker, Chieftain, Draenethyst Crystals, Captured Tarantula/Crocolisk; Galen's Cage 37118 and Caravan Chest 28024 just outside the area line",
-"creature_queststarter: Uthek the Wise 5397 starts 1373"
-],
-"notes": "The non-canon RPG history (draenei builders, raids on Stonard) is not used. Verify: quest 1373 comes from Uthek the Wise of the Gelkis centaurs; 'shamans' made 'Gelkis centaurs'. Ongeku 5622 spawns just outside the area line (area 8, -9956,-3715)."
-},
-{
-"id": 806,
-"kind": 1,
-"zone": 8,
-"sort": 6,
-"faction": 0,
-"title": "The Shifting Mire",
-"body": "The Shifting Mire is the broad, sodden heart of the swamp, lying west of the Pool of Tears. Swamp jaguars hunt between its twisted trees alongside sorrow spinners and young sawtooth crocolisks, and a thorny elemental known as Molt Thorn wanders its paths. Lost Ones wade the shallows, fishing and scavenging far from their village. North of Stonard, a man named Galen Goodward once kept his camp in the mire, and his strongbox still waits there, its keyhole stopped with black resin so that no key will ever turn it.",
-"triggers": [
-[
-1,
-1798
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/The_Shifting_Mire (central section west of the Pool of Tears; jaguars, spinners, young crocolisks, Lost Ones)",
-"DB spawns in area 1798: Swamp Jaguar x22, Molt Thorn 14448 (type elemental), Sorrow Spinner, Young Sawtooth Crocolisk, Lost One Mudlurker and Fisherman",
-"quest 1393 description and reward text; gameobject 32569 Galen's Strongbox in area 1798"
-],
-"notes": "The wiki's moving silt lore is tied to a Cataclysm quest and was left out."
-},
-{
-"id": 807,
-"kind": 1,
-"zone": 8,
-"sort": 7,
-"faction": 0,
-"title": "Stonard",
-"body": "Stonard is one of the oldest orc settlements in Azeroth, first raised by the old Horde as an outpost in the Black Morass after the Dark Portal opened. Probably lost in the wars that followed, it has been re-established by the new Horde, and it still keeps a great hall guarded by two burrows. Here Fel'zerul studies the sunken temple at the Warchief's command, Helgrum the Swift struggles to keep word flowing to distant Kargath, and Dispatch Commander Ruag relays the orders of Orgrimmar. Wayfinders and cartographers set out to chart the unmapped swamp. A captured human spy waits in custody, and a blood elf warlock named Cersei Dusksinger is perfecting a curse meant for the draenei.",
-"triggers": [
-[
-1,
-75
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Stonard (founded by the Old Horde in the Black Morass after the first opening of the Dark Portal, re-established by the new Horde, great hall and two burrows, wayfinders and cartographers mapping the swamp)",
-"quest 1424 description",
-"quest 1418 description",
-"quest 2622 description",
-"quest 1372 description (human infiltrator taken to Stonard)",
-"quest 9440 description",
-"DB spawns: Stonard Wayfinder 865, Stonard Cartographer 867, Infiltrator Marksen 5416 in area 75",
-"quest 1418 reward text (Neeka's outrunner to Stonard)"
-],
-"notes": "Faction 0: the only trigger is an AREA trigger, reachable by either faction. The Cataclysm war with Marshtide Watch is left out; the wiki's First War versus Second War dating is kept vague (old Horde, later re-established). Verify: Helgrum does not send outrunners himself (1418: Kargath's runner to Stonard failed), reworded; great hall and two burrows per wiki, 'rise again' dropped."
-},
-{
-"id": 808,
-"kind": 1,
-"zone": 8,
-"sort": 8,
-"faction": 0,
-"title": "Pool of Tears",
-"body": "The Pool of Tears is the great lake on the eastern side of the swamp, and beneath its dark water lies the Temple of Atal'Hakkar. The Atal'ai trolls built it to call their blood god Hakkar into the world, and the green dragonflight sank it to stop them. Ruins of the Atal'ai still lie scattered along the shore and under the water, where relics and tablets can be found, and cursed and mummified trolls haunt the stones. Ravenous sawfin frenzies swarm the water. Green dragonkin stand guard over the place, among them the ancient drake Somnus and the dragon Jade, who would sooner destroy an intruder than let one enter the temple.",
-"triggers": [
-[
-1,
-74
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Pool_of_Tears (pre-Cataclysm lake, temple sunk under its waters, Atal'ai ruins at the shore and underwater, frenzies)",
-"warcraft.wiki.gg/wiki/Temple_of_Atal'Hakkar",
-"quest 9610 description (Somnus, dragonkin, carnivorous fish)",
-"creature_text 1063 (Jade)",
-"DB spawns in area 74: Atal'ai Artifact and Atal'ai Tablet objects, Cursed/Mummified/Enthralled Atal'ai, Sawfin Frenzy 14356, Somnus 12900, Jade 1063"
-],
-"notes": "The Cataclysm waterway to the sea and Marshtide Watch are left out."
-},
-{
-"id": 809,
-"kind": 1,
-"zone": 8,
-"sort": 9,
-"faction": 0,
-"title": "Sorrowmurk",
-"body": "East of the Pool of Tears and the sunken temple lies Sorrowmurk, a stretch of swamp held by the green dragonflight. Scalebane captains, wyrmkin dreamwalkers and elder dragonkin patrol its pools in such numbers that few but the boldest travelers try to cross it, and among them walks a rare dragonspawn called Lord Captain Wyrmak. The dragons are not alone. Atal'ai priests and the cursed and mummified remnants of their tribe still creep through the murk, close to the drowned temple of their god.",
-"triggers": [
-[
-1,
-1778
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Sorrowmurk (just east of the Pool of Tears and the Sunken Temple, crawling with green dragonspawn, inhospitable for all but the most adventurous)",
-"warcraft.wiki.gg/wiki/Lord_Captain_Wyrmak (rare green dragonspawn in Sorrowmurk)",
-"DB spawns in area 1778: Scalebane Captain 745, Elder Dragonkin 746, Wyrmkin Dreamwalker 743, Lord Captain Wyrmak 14445, Atal'ai Priest, Cursed and Mummified Atal'ai"
-],
-"notes": "Crazy Larry's goblin camp is Cataclysm and left out."
-},
-{
-"id": 810,
-"kind": 1,
-"zone": 8,
-"sort": 10,
-"faction": 0,
-"title": "Stagalbog",
-"body": "Stagalbog is the dense marsh south of the Pool of Tears, pressed up against the mountains along the swamp's southern border. Deathstrike tarantulas lurk among the trees, and murlocs of the marsh tribes, inkspewers, flesheaters and oracles, range inland from the coast. A cave at the edge of the mountains shelters a murloc called the Swamp Talker, who can summon the spirits of the swamp to fight beside it. When murlocs ambushed a party of Stonard soldiers bound for the Blasted Lands, it was the Swamp Talker who tore the Warchief's orders from a messenger's hands as a spear struck him down.",
-"triggers": [
-[
-1,
-1797
-],
-[
-1,
-1817
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Stagalbog (south of the Pool of Tears, borders the southern mountain range, Stagalbog Cave at the edge of the mountains)",
-"warcraft.wiki.gg/wiki/Swamp_Talker (located in Stagalbog Cave, Summon Swamp Spirit)",
-"quest 2622 and 2623 descriptions (ambush, Swamp Talker took the orders)",
-"creature_loot: item 8463 Warchief's Orders from Swamp Talker 950",
-"DB spawns in area 1797: Deathstrike Tarantula, Marsh Inkspewer, Flesheater, Oracle; Swamp Talker 950 at -10967,-3658"
-],
-"notes": "Baba Bogbrew's camp is Cataclysm and left out. Area 1817 (Stagalbog Cave) added as a second trigger: it is in the reachable list, though posarea puts the Swamp Talker spawn itself in area 4. Verify: Bengor 7643 has no grunt title; reworded. 1817 kept: reachable indoor area of the cave; the map grid there reads 4 because the cave is a WMO."
-},
-{
-"id": 811,
-"kind": 1,
-"zone": 8,
-"sort": 11,
-"faction": 0,
-"title": "Misty Reed Strand",
-"body": "Misty Reed Strand is the long, fog-bound coast along the swamp's eastern edge, where the marsh gives way to the Forbidding Sea. Marsh murlocs crowd the shore in great numbers, and monstrous crawlers and sawtooth snappers scuttle through the surf. Sun-dried driftwood washes up among the reeds, prized by anyone in the swamp who needs timber sounder than the spongy wood of its trees. Stonard keeps a close eye on this coast. The orc Katar patrols the beach, nursing a bitter hatred of the sea and of every fish man it spawns, and crawler legs gathered here are shipped all the way to Orgrimmar.",
-"triggers": [
-[
-1,
-300
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Misty_Reed_Strand (gloomy coastline, driftwood, crocolisks, crabs, murlocs; Alliance collect driftwood, Horde hunt murlocs)",
-"quest 1398 description (strong, dry wood, not the spongy wood of the swamp's trees)",
-"quest 1426 description (Katar)",
-"quest 1430 description (crawler legs shipped to Orgrimmar)",
-"DB spawns in area 300: Marsh Inkspewer x38, Silt Crawler, Monstrous Crawler, Sawtooth Snapper, Sundried Driftwood objects, Katar 5593"
-],
-"notes": "Bogpaddle and goblin camps are Cataclysm and left out."
-},
-{
-"id": 812,
-"kind": 1,
-"zone": 8,
-"sort": 12,
-"faction": 0,
-"title": "Misty Reed Post",
-"body": "Just inland from the southern end of Misty Reed Strand, a small Horde camp keeps watch over the sea. Tok'Kar and his soldiers are stationed here to hold back the murlocs, or to warn Stonard if a force comes too large to stop. Between shifts of guard duty Tok'Kar cooks for his troops and forges weapons from the claws of sawtooth snappers, for the more blades the camp has ready, the better its chances. It is a spare life of fire, mead and steel, and Tok'Kar admits he would not mind if Stonard one day sent them a proper burrow, or at least a tower.",
-"triggers": [
-[
-1,
-1978
-]
-],
-"sources": [
-"quest 698 description (outpost near the beach, guard duty and cooking)",
-"quest 699 description, reward and request texts (protect or warn Stonard, weapons from claws, burrow or tower)",
-"DB spawns in area 1978: Tok'Kar 5592, Stonard Hunter 863 x5, Stonard Shaman 868"
-],
-"notes": "Tok'Kar's camp is placed by the DB (area 1978); wiki page for the post has no description."
-},
-{
-"id": 813,
-"kind": 2,
-"zone": 8,
-"sort": 1,
-"faction": 0,
-"title": "Itharius",
-"body": "Itharius greets visitors to his cave in the guise of an elf, but he is a green dragon of Ysera's flight. He knows the history of the god the Atal'ai called forth: the dragons destroyed its physical form and sank its temple, yet its corruption ran deeper than they believed. His brother Eranikus, charged with watching over the sunken temple, fell to it unwittingly and now lies trapped in a nightmare within the Dream itself. Eranikus' agony roused Itharius from his own dreaming, and he has made it his charge to end that torment. He speaks much of choices, and insists that there are correct ones.",
-"triggers": [
-[
-2,
-5353
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Itharius (green dragon, appears as a high elf in Classic, Ysera's flight)",
-"npc_text 1995, 1997, 1998, 1999",
-"creature 5353 faction 35 (friendly to all)"
-],
-"notes": "Wiki calls Eranikus his brother and Ysera's consort; the consort detail is left out."
-},
-{
-"id": 814,
-"kind": 2,
-"zone": 8,
-"sort": 2,
-"faction": 0,
-"title": "Magtoor",
-"body": "Magtoor leads the Broken exiles of the Harborage, among the few draenei who came through the Dark Portal and kept their reason. He has watched his former brethren at the Fallow Sanctuary become monsters that prey on his people, and he fears that without their sacred draenethyst the exiles too may lose their way. Magtoor is a realist about his neighbors. He trades with merchants in Stonard and believes the Horde would crush his village if it failed to honor them. He welcomes Anchorite Avuun to the Harborage, yet asks him plainly what he truly believes he can accomplish.",
-"triggers": [
-[
-2,
-1776
-]
-],
-"sources": [
-"warcraft.wiki.gg/wiki/Magtoor (pre-Cataclysm: Broken leader of a small group who kept their noble roots, came through the Dark Portal)",
-"quest 1389 description",
-"creature_text 1776 groups 0-3",
-"creature 1776 faction 35"
-],
-"notes": "The wiki's note on him being corrupted by fel from killing his brethren is unclear in era and is left out."
-},
-{
-"id": 815,
-"kind": 2,
-"zone": 8,
-"sort": 3,
-"faction": 1,
-"title": "Anchorite Avuun",
-"body": "Anchorite Avuun is a draenei who has come to the Harborage to study the Lost Ones of the Fallow Sanctuary. He has faith that the fel energies consuming them can be cured, and that the same cure would undo the damage done to the Broken. He has little patience for the village's dealings with the Horde, whose foul ways he thinks beneath his hosts. His gravest fear lies in Stonard. He is certain the blood elf Cersei Dusksinger is cursing the Lost Ones with still darker fel magic, and for those already twisted past saving, he asks only that they be granted mercy.",
-"triggers": [
-[
-2,
-17127
-],
-[
-4,
-9448
-]
-],
-"sources": [
-"npc_text 8812",
-"creature_text 17127 groups 0, 1, 3",
-"quest 9448 description and reward text",
-"warcraft.wiki.gg/wiki/The_Harborage (Avuun arrived to study the Broken and look for a cure, urged residents to stop trading with the Horde)"
-],
-"notes": "Faction 1: Avuun uses faction template 1694 (Exodar, enemy of Horde), and 9448 is only offered by him."
-},
-{
-"id": 816,
-"kind": 2,
-"zone": 8,
-"sort": 4,
-"faction": 2,
-"title": "Cersei Dusksinger",
-"body": "Cersei Dusksinger is a blood elf warlock working out of Stonard, and she has little good to say about the swamp, its air or the food in Stonard. She is perfecting a weapon against the draenei, testing fel-tainted morsels on the captive livestock of the Lost Ones so that the curse passes into whoever eats them. She scorns the orcs for sitting idle while others plunder the power that lies so close at hand. Anchorite Avuun's opposition she takes as a personal challenge, vowing that when she is finished, the draenei will wish they were Lost Ones.",
-"triggers": [
-[
-2,
-17109
-],
-[
-4,
-9440
-]
-],
-"sources": [
-"quest 9440 description and reward text",
-"creature_text 17109 (orcs are fools, Avuun dares to oppose me, cured ham steak from Thultash, no fresh air in this swamp)",
-"warcraft.wiki.gg/wiki/Cersei_Dusksinger (blood elf warlock in Stonard)",
-"creature 17109 faction 1604 (Silvermoon, enemy of Alliance)"
-],
-"notes": "Faction 2: Silvermoon faction template, quest 9440 is Horde races only. Verify: Thultash 982 is a food and drink vendor, not the inn; 'at the inn' made 'in Stonard'."
-},
-{
-"id": 817,
-"kind": 2,
-"zone": 8,
-"sort": 5,
-"faction": 0,
-"title": "Fallen Hero of the Horde",
-"body": "Beside the southern road toward the Blasted Lands stands the ghost of the orc who commanded Thrall's Grasp, twenty of the Warchief's most accomplished and honored soldiers. He had the regiment make camp here on the border to await orders from Orgrimmar, but weeks passed without word, and young and ambitious, he led them into the Blasted Lands. They were overwhelmed. He fled, then returned to rescue his men, only to be captured and tortured beside his lieutenant, Kirith, until he was beaten to death. Now his spirit lingers where he made his choice, warning travelers of what lies beyond and seeking anyone willing to set his soldiers free.",
-"triggers": [
-[
-2,
-7572
-]
-],
-"sources": [
-"npc_text 1391, 1392, 1411, 1451, 1452",
-"quest 2621 description",
-"quest 2743 (Kirith calls him Trebor)",
-"warcraft.wiki.gg/wiki/Fallen_Hero_of_the_Horde (Trebor, ghost beside the road south toward the Blasted Lands)",
-"creature 7572 faction 35"
-],
-"notes": "His name Trebor is left out of the body; the wiki says he escaped and died shortly after, while npc_text 1451 says he was beaten until dead, so the DB wording is used. Verify: npc_text 1452 says he and Kirith were tortured in turn; the body no longer implies Kirith was beaten to death with him."
-},
-{
-"id": 818,
-"kind": 2,
-"zone": 8,
-"sort": 6,
-"faction": 2,
-"title": "Fel'zerul",
-"body": "Fel'zerul came to Stonard on the Warchief's orders to look into strange happenings at the Temple of Atal'Hakkar, only to find the temple already sunk beneath the Pool of Tears and green dragons claiming to guard it. He has set out to piece the mystery together from Atal'ai relics, hoping their dark spells might prove useful to the Horde. A sentence of exile written in blood on dried flesh led him to a disgraced Atal'ai priest, and to the prophecy of Jammal'an. When the fetishes of Hakkar are finally laid before him, he destroys them as instruments of evil.",
-"triggers": [
-[
-2,
-1443
-],
-[
-4,
-1424
-]
-],
-"sources": [
-"quest 1424 description and request text",
-"quest 1429 description",
-"quest 1444 description",
-"quest 1445 description",
-"creature_text 1443 (I hereby destroy these instruments of evil! For the Horde!)",
-"creature 1443 faction 29"
-],
-"notes": "Faction 2: Orgrimmar faction template, 1424 Horde only."
-},
-{
-"id": 819,
-"kind": 2,
-"zone": 8,
-"sort": 7,
-"faction": 1,
-"title": "Watcher Biggs",
-"body": "Watcher Biggs was escorting a caravan from Darkshire bound for Nethergarde Keep when Lost Ones fell upon it, killing the guards and scattering the supplies. He alone survived. Stunned in the attack, he glimpsed one of the wagons being dragged north to the Fallow Sanctuary, carrying reagents the wizards of Nethergarde need for their work at the Dark Portal. Since then he has camped beside his broken wagon south of the Harborage, sworn to protect what remains from the swamp's beasts, and waiting for strong, dry wood to mend it so the shipment can finally go through.",
-"triggers": [
-[
-2,
-5476
-],
-[
-4,
-9609
-]
-],
-"sources": [
-"quest 9609 description (caravan from Darkshire, sole survivor, south of the Harborage)",
-"quest 1396 description",
-"quest 1421 description and reward text",
-"quest 1398 description",
-"creature 5476 faction 12 (Stormwind, enemy of Horde)"
-],
-"notes": "Quest 1396 says the caravan was destined for the eastern coast and 1425 mentions ogre attacks; both conflict with the rest and are left out."
-},
-{
-"id": 820,
-"kind": 2,
-"zone": 8,
-"sort": 8,
-"faction": 0,
-"title": "Galen Goodward",
-"body": "Galen Goodward is a human who made his camp in the swamp north of Stonard, and who now sits in a cage at the edge of the Fallow Sanctuary, certain his captors mean to eat him. He promises great treasure to anyone who will lead him to safety: a strongbox in his camp, its keyhole filled with black resin so that it cannot be picked, which opens only by a hidden latch on its underside. Once free he whispers the trick, swears he will never forget his rescuer, and slips away into the swamp. Even Cersei Dusksinger in Stonard knows of the human in the cage.",
-"triggers": [
-[
-2,
-5391
-],
-[
-4,
-1393
-]
-],
-"sources": [
-"quest 1393 description and reward text",
-"creature_text 5391 groups 3-5",
-"quest 9440 request text (that stupid human they have out there in the cage)",
-"gameobject 37118 Galen's Cage at -9898,-3724; 32569 Galen's Strongbox in area 1798",
-"creature 5391 faction 35"
-],
-"notes": "Captors not named in the quest; body says only captors."
-},
-{
-"id": 821,
-"kind": 2,
-"zone": 8,
-"sort": 9,
-"faction": 0,
-"title": "Noboru the Cudgel",
-"body": "Noboru the Cudgel is a Lost One who roams the swamp with his gang, killing any draenei who cross his path. For months he has been a terror to the Harborage, and the Broken admit they never had the strength to face him. His great club has become a symbol of all the brutality they have suffered at the hands of their maddened kin. Whoever brings that cudgel back to the Harborage is welcomed as a true friend of the exiles, and the day of his death is counted a joyous one.",
-"triggers": [
-[
-3,
-5477
-],
-[
-4,
-1392
-]
-],
-"sources": [
-"quest 1392 description and reward text",
-"creature 5477 faction 51 (hostile to all), spawn at -10174,-3505"
-],
-"notes": "verified"
-},
-{
-"id": 822,
-"kind": 2,
-"zone": 8,
-"sort": 10,
-"faction": 0,
-"title": "Somnus",
-"body": "Somnus is an ancient drake of the green dragonflight who dwells at the Pool of Tears with his dragonkin, above the drowned Temple of Atal'Hakkar. Anyone who goes digging for Atal'ai relics along the shore is warned of him first. His renown reaches even the black dragonflight. The black drake Emberstrife names him the drake champion of the Green Flight and sends Horde warriors into the swamp to bring back his skull, as proof that the children of the Aspects can be humbled as surely as the Aspects themselves.",
-"triggers": [
-[
-3,
-12900
-]
-],
-"sources": [
-"quest 9610 description (guarded by Somnus, an ancient green dragon, and his dragonkin)",
-"quest 6583 description (Emberstrife: Somnus, drake champion of the Green Flight; bring his skull)",
-"DB spawn: Somnus 12900 at -10661,-3924 (area 74)",
-"warcraft.wiki.gg/wiki/Somnus"
-],
-"notes": "Emberstrife 10321 is a dragon in Dustwallow Marsh; black drake follows the wiki and quest (Our Father = Deathwing)."
-},
-{
-"id": 823,
-"kind": 3,
-"zone": 8,
-"sort": 1,
-"faction": 0,
-"title": "The Sunken Temple",
-"body": "Horde and Alliance alike have come looking for the Temple of Atal'Hakkar. In Stormwind, the aged dwarf Brohann Caskbelly asks for help with his final task for the Explorers' League, a temple he once hunted by gryphon and never found. Searchers learn it lies sunk beneath the Pool of Tears and ringed by green dragons, and a tipsy gryphon rider who fell into the pool and swam out among the trolls sends back a troll relic to prove it. At the Harborage, the Broken scholar Holaaru seeks Atal'ai relics to learn the history of his new world. In Stonard, Fel'zerul gathers the same artifacts for the Horde, and a sentence written in blood leads him to an Atal'ai priest exiled to the Hinterlands. The exile tells of Jammal'an the Prophet, who believes Hakkar's return will make his tribe immortal, and warns that if the right fetishes are enchanted for the summoning, the world lies in great peril.",
-"triggers": [
-[
-4,
-1424
-],
-[
-4,
-1448
-],
-[
-4,
-9610
-]
-],
-"sources": [
-"quests 1448, 1469, 1475 (Brohann Caskbelly, Rhapsody Shindigger)",
-"quest 9610",
-"quests 1424, 1429, 1444, 1445, 1446"
-],
-"notes": "Faction 0: 1424 is Horde, 1448 and 9610 are Alliance. Verify: 1469 calls it a troll souvenir/Atal'ai artifact, carried to Brohann by the hero; 'brings back a fragment' reworded. 1448 starts in Stormwind (Brohann 5384); Stormwind's file does not use it."
-},
-{
-"id": 824,
-"kind": 3,
-"zone": 8,
-"sort": 2,
-"faction": 0,
-"title": "The Lost Ones",
-"body": "The Broken of the Harborage and the Lost Ones of the Fallow Sanctuary were once one people. Magtoor asks for help taking back the draenethyst crystals his maddened kin have stolen, without which his exiles fear they will lose their way as well, and whoever brings down the brutal Noboru the Cudgel earns the whole village's thanks. Anchorite Avuun studies the Lost Ones in the hope of a cure. But another hand is at work. In Stonard, Cersei Dusksinger has willing helpers feed fel-tainted morsels to the Lost Ones' caged livestock, so the curse will pass to those who slaughter and eat them, a trial for a weapon she means to turn on the draenei. The Cursed Lost Ones she creates are beyond help, and Avuun asks only that they be given a merciful end.",
-"triggers": [
-[
-4,
-1389
-],
-[
-4,
-1392
-],
-[
-4,
-9448
-],
-[
-4,
-9440
-]
-],
-"sources": [
-"quests 1389, 1392, 9440, 9448 (descriptions and reward texts)",
-"creature_text 17109, 17127"
-],
-"notes": "Faction 0: 1389 and 1392 are open to both; 9448 is effectively Alliance, 9440 Horde."
-},
-{
-"id": 825,
-"kind": 3,
-"zone": 8,
-"sort": 3,
-"faction": 0,
-"title": "Thrall's Grasp",
-"body": "The ghost on the road to the Blasted Lands tells his tale to anyone who will listen. Impatient for orders that never came, he led the regiment Thrall's Grasp into the Blasted Lands, where it was destroyed. To the Horde he confesses he must know what became of those orders. Dispatch Commander Ruag in Stonard swears he sent them, but murlocs ambushed the messengers, and the lone survivor, Bengor, can barely speak of a creature called the Swamp Talker. The recovered orders confirm the hero's fear that nineteen of his men need never have suffered. An Alliance ambassador at Nethergarde urges his own people to set aside old quarrels and hear the orc as well. The fate of the regiment is worse than death: the demon lord Razelikh tore out their souls, kept nine bound to stones near the Dark Portal and gave the rest to his lieutenants. Eighteen stones of binding must be shattered to free them.",
-"triggers": [
-[
-4,
-2784
-],
-[
-4,
-2783
-],
-[
-4,
-2801
-]
-],
-"sources": [
-"npc_text 1392, 1451-1456",
-"quests 2784, 2621, 2622, 2623, 2783, 2801, 2681 (descriptions and reward texts)",
-"warcraft.wiki.gg/wiki/Fallen_Hero_of_the_Horde"
-],
-"notes": "Faction 0: 2784 Horde, 2783 Alliance, 2801 both. The later chain against Razelikh plays out in the Blasted Lands and is only hinted at."
-},
-{
-"id": 826,
-"kind": 3,
-"zone": 8,
-"sort": 4,
-"faction": 1,
-"title": "The Lost Caravan",
-"body": "Supplies for Nethergarde Keep travel from Darkshire by the swamp road, and not all of them arrive. When Lost Ones ambushed one such caravan, only Watcher Biggs survived, and even the draenei of the Harborage send word that he needs help. Biggs first asks that the jaguars, spiders and young crocolisks closing in on his camp be driven back. Then he remembers the wagon dragged off to the Fallow Sanctuary with a chest of reagents for Nethergarde's wizards, whose work at the Dark Portal is vital to the Alliance. To mend his own wagon he needs sun-dried driftwood from the eastern coast, since the swamp's own timber is too spongy to serve. At last he entrusts the most vital supplies to his rescuer for the final road to Nethergarde, where the quartermaster had already given Biggs and his caravan up for lost.",
-"triggers": [
-[
-4,
-9609
-],
-[
-4,
-1396
-]
-],
-"sources": [
-"quests 9609, 1396, 1421, 1398, 1425 (descriptions and reward texts)"
-],
-"notes": "Faction 1: all quests AllowableRaces 1101 and Biggs is Stormwind faction."
-},
-{
-"id": 827,
-"kind": 3,
-"zone": 8,
-"sort": 5,
-"faction": 2,
-"title": "Threat from the Sea",
-"body": "Stonard's eastern flank faces the sea, and the Horde takes the danger seriously. Dar, a trader in Stonard, gathers sawtooth meat for the soldiers at Misty Reed Post and monstrous crawler legs for his customers in Orgrimmar. At the post, Tok'Kar welcomes the fresh meat, turns sawtooth snapper claws into weapons for the camp's defense, and sends willing hands on to Katar, who walks the beach on patrol. Katar's hatred of the sea and the murlocs it spawns runs deep. He calls himself as patient and enduring as an old stone of Draenor, and would cleanse every world of the fish men if he had the army to do it. Each murloc slain along the strand brings him a grim pleasure, and Tok'Kar rewards those who bring a smile to Katar's face with one of his finished blades.",
-"triggers": [
-[
-4,
-698
-],
-[
-4,
-1430
-]
-],
-"sources": [
-"quests 698, 699, 1422, 1426, 1427, 1428, 1430 (descriptions, request and reward texts)"
-],
-"notes": "Faction 2: all quests AllowableRaces 690 and the givers use Orgrimmar faction template 29."
-},
-{
-"id": 828,
-"kind": 3,
-"zone": 8,
-"sort": 6,
-"faction": 0,
-"title": "The Dreamer's Charge",
-"body": "Within the sunken temple lies a gem that holds part of the essence of Eranikus, the green dragon set to guard it. Through it Eranikus begs to be cleansed, but the essence font of his lair has itself been tainted by Hakkar, and he is dragged into an eternal nightmare. Those who carry the gem may find their way to Itharius in his cave in the swamp, who gives them an oathstone of Ysera's Dragonflight. Engaging it, they swear to help redeem a soul worthy of redemption, and surrender the gem as the first of many sacrifices. Itharius then begins the slow work of reaching his brother, who lies caught between sleep and death. The first step leads far north to Winterspring, to seek out Umbranse the Spiritspeaker, a human medium who speaks for the dead.",
-"triggers": [
-[
-4,
-3373
-],
-[
-4,
-3374
-],
-[
-5,
-3374
-]
-],
-"sources": [
-"quest 3373 description and reward text",
-"quest 3374 description and reward text",
-"quest 3512 description",
-"creature_text 5353 (I have given you an oathstone)",
-"item 10589 Oathstone of Ysera's Dragonflight starts 3374",
-"item 10454 Essence of Eranikus starts 3373; quest_template_addon 3374 PrevQuestID 3373"
-],
-"notes": "Faction 0: 3373, 3374 have AllowableRaces 0 and Itharius is faction 35. The rest of the chain lies outside the zone and is not told. Verify: added QUEST_ACCEPT 3373 (Essence of Eranikus item in the Sunken Temple), the chain's real start; 3374 requires 3373."
-}
+ {
+  "id": 800,
+  "kind": 0,
+  "zone": 8,
+  "sort": 0,
+  "faction": 0,
+  "title": "Swamp of Sorrows",
+  "body": "The Swamp of Sorrows was once the northern reach of the Black Morass, a vast marshland whose southern half became barren waste after the Dark Portal was destroyed, the land now called the Blasted Lands. What remained was named in honor of those who died in the Second War. Long before, the Atal'ai, exiled priests of the Gurubashi trolls, raised a temple here to their blood god Hakkar, until Ysera of the green dragonflight drowned it beneath the Pool of Tears. Green dragons and their kin still guard the ruin. The orcs of Stonard hold the south as a Horde foothold, while Alliance caravans struggle along the road to Nethergarde Keep. In the north, Broken exiles shelter at the Harborage, beset by the Lost Ones, their own kin driven mad by the journey from Draenor. Murlocs crowd the misty eastern shore, jaguars and crocolisks stalk the mire, and beside the southern road the ghost of an orc hero still waits for orders that never came.",
+  "triggers": [
+   [
+    1,
+    8
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Swamp_of_Sorrows (Black Morass, southern part became barren after the Dark Portal was destroyed, named in honor of Second War dead, Atal'ai temple, Ysera drowned it, Stonard)",
+   "warcraft.wiki.gg/wiki/Temple_of_Atal'Hakkar (exiled Gurubashi priests fled north into the swamp)",
+   "quest 1389 description (Lost Ones driven mad by the rigors of the journey to Azeroth)",
+   "quests 1396, 1421, 1425 (Alliance caravans to Nethergarde)",
+   "npc_text 1392, quest 2621 (Fallen Hero awaiting orders)",
+   "DB spawns: Marsh murlocs on the coast, Swamp Jaguar and Sawtooth Crocolisk in the mire"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide; the ghost still awaiting orders is how he presents himself (quest 2621), and the temple's sinking is open setting. Before: Era check: Bogpaddle, Marshtide Watch and the Alliance-aligned Harborage are Cataclysm and left out. Check: ok."
+ },
+ {
+  "id": 801,
+  "kind": 1,
+  "zone": 8,
+  "sort": 1,
+  "faction": 0,
+  "title": "Misty Valley",
+  "body": "Misty Valley lies in the northwest corner of the swamp, just north of where the road climbs away toward Deadwind Pass. Fog clings to its sodden floor, and the valley belongs to the swamp itself. Swampwalkers and tangled horrors, lumbering plant-like creatures of root and muck, wander between its pools, and a hulking elemental called the Mire Lord dwells in the valley's cave. Such creatures are no friend to travelers. A courier carrying an essay of Khadgar's to Nethergarde Keep once took a wrong turn in the swamp and fled from them in terror, and one of the beasts made off with the precious pages.",
+  "triggers": [
+   [
+    1,
+    116
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Misty_Valley (northwest corner, north of the entrance to Deadwind Pass; pre-Cataclysm Tangled Horrors, Swampwalkers, Swampwalker Elders; Mire Lord in the valley's cave)",
+   "quest 1364 description (courier, wrong turn, plant-like swamp creatures, essay taken)",
+   "creature_loot_template: item 6065 Khadgar's Essays drops from 764, 765, 766, 1081",
+   "DB: Mire Lord 1081 (type elemental) at area 116; Swampwalker and Tangled Horror spawns in area 116"
+  ],
+  "notes": "Unchanged in the parts conversion: the courier's loss is the premise of Alliance quest 1364 (Stormwind's Acolyte Dellis), not an outcome; Blasted Lands 416 tells the essays' arrival (DONE 1364). Before: The quest does not name the valley as the place the essay was lost; worded so it only says such creatures took it. Check: courier kept: it is the premise of 1364 as Acolyte Dellis tells it on offering the quest, not an outcome; blasted_lands.json 416 opens with Mahar Ba still waiting and tells the essays' arrival at DONE 1364, which this entry does not."
+ },
+ {
+  "id": 802,
+  "kind": 1,
+  "zone": 8,
+  "sort": 2,
+  "faction": 0,
+  "title": "Splinterspear Junction",
+  "body": "Splinterspear Junction is where the main road into the swamp divides. The northern branch runs past the Harborage toward the Fallow Sanctuary, while the southern branch bends toward Stonard and the long road to the Blasted Lands. An old orcish watchtower stands near the fork, and scouts out of Stonard keep an eye on the crossing, for beyond it lies Horde country. Alliance travelers on the way to Nethergarde learn to watch the roads here. A short way to the south, the stranded Watcher Biggs keeps lonely guard over the remains of his caravan.",
+  "triggers": [
+   [
+    1,
+    1780
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Splinterspear_Junction (main road splits; north branch past the Harborage to Fallow Sanctuary, south branch to Stonard and the Blasted Lands; old orcish watch tower; Horde patrols)",
+   "DB spawns: Stonard Scout 861 (faction 29) around -10390,-2640 in area 1780",
+   "quest 9609 (Watcher Biggs is to the south); DB spawn Watcher Biggs 5476 at -10535,-2836"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide. Before: The Season of Discovery history of the site (Kyross) is not used. Check: ok."
+ },
+ {
+  "id": 803,
+  "kind": 1,
+  "zone": 8,
+  "sort": 3,
+  "faction": 0,
+  "title": "The Harborage",
+  "body": "In the north of the swamp, a cluster of leather huts hung with crystals makes up the Harborage, refuge of the Broken who kept their minds after crossing from Draenor. Their leader Magtoor knows how few they are. The Lost Ones of the Fallow Sanctuary, once their own brethren, kill any who wander near, and they have stolen the sacred draenethyst the exiles fear they cannot do without. The village keeps on careful terms with nearby Stonard and trades with its merchants, for Magtoor believes the Horde would crush his people if they failed to honor it.",
+  "triggers": [
+   [
+    1,
+    657
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/The_Harborage (pre-Cataclysm: base of Broken who stayed sane, leather huts hung with crystals)",
+   "quest 1389 description",
+   "creature_text 1776 (Magtoor on honoring the Horde), creature_text 17127 (Avuun: why do you traffic with the Horde)",
+   "npc_text 8812, 9270",
+   "quest 9610 reward text (Holaaru)",
+   "DB spawns: Magtoor 1776, Anchorite Avuun 17127, Holaaru 18221, Broken Exile 11198 in area 657"
+  ],
+  "notes": "Converted: Anchorite Avuun and Holaaru (added in patch 2.0.1 with the Burning Crusade draenei material) moved to part 1, minState 8, no triggers. Trade with Stonard kept in the opening (creature_text 1776 groups 1 and 2, true in every era). Before: Cataclysm rebuild (draenei architecture, inn, flight path, Alliance-only) left out. Check: Holaaru kept at minState 8: he and quest 9610 were added in patch 2.0.1, and his own words (how are we Broken and draenei to fit in) assume the draenei have come; the starting-zone exception does not cover the Harborage.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Since the draenei joined the Alliance, the Harborage has drawn new attention. The draenei Anchorite Avuun has come to study the Lost Ones in hope of a cure, and it troubles him that the village deals with the Horde at all. The Broken scholar Holaaru, meanwhile, studies Atal'ai relics from the Pool of Tears, hoping to understand the history of his new world.",
+    "sources": [
+     "creature_text 17127 groups 0, 1, 3",
+     "npc_text 8812, 9270",
+     "quest 9610 description and reward text",
+     "warcraft.wiki.gg/wiki/Anchorite_Avuun, warcraft.wiki.gg/wiki/Holaaru (both added in patch 2.0.1)"
+    ],
+    "minState": 8
+   }
+  ]
+ },
+ {
+  "id": 804,
+  "kind": 1,
+  "zone": 8,
+  "sort": 4,
+  "faction": 0,
+  "title": "Itharius's Cave",
+  "body": "In the hills along the swamp's western edge lies a cave where Itharius, who looks to all the world like an elf, makes his home. He shares it with a brood of green whelps, adolescents and dreamers alike, that snap at anyone who intrudes. These whelps carry a fine dream dust valued well beyond the swamp: a goblin of Booty Bay who trades in secrets will name his price in it before he gives one away. Few who find the cave know why its master is here.",
+  "triggers": [
+   [
+    1,
+    1777
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Itharius (cave near the edge of the swamp, looks after green whelps, appears as an elf in Classic)",
+   "gossip_menu_option 1341 (What's an elf like you doing inside a cave like this?)",
+   "npc_text 1997 (brother trapped in a nightmare)",
+   "quest 1116 description (dream dust from the dragon whelps of the Swamp of Sorrows, Krazek in Booty Bay)",
+   "DB spawns: Itharius 5353, Adolescent Whelp 740, Dreaming Whelp 741 only in area 1777"
+  ],
+  "notes": "Converted: his true nature and his purpose (the Eranikus story) moved to part 1 on QUEST_ACCEPT and QUEST_DONE 3374: Itharius' Eranikus gossip (menu 1341 option 1) is conditioned on the Chained Essence and quest 3373 rewarded, and the oathstone that starts 3374 comes from that talk. Before: Krazek described as a goblin who trades in secrets from quest 1116 and 1117 (he trades information on Nazz). Check: ACCEPT and DONE 3374 confirmed as the earliest reveal: menu 1341 option 1 (Eranikus) needs item 10455 (3373's reward), 3373 rewarded, 3374 not rewarded and no oathstone yet; choosing it casts the oathstone that starts 3374, and accepting an item-started quest fires the module's hook. The opening says nothing of Eranikus or the temple's inner story.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Itharius is no elf. He speaks for Ysera's green dragonflight, and he waits in this cave for those who have walked the Sunken Temple and carry part of the essence of his brother Eranikus, whose torment he means to end.",
+    "triggers": [
+     [
+      4,
+      3374
+     ],
+     [
+      5,
+      3374
+     ]
+    ],
+    "sources": [
+     "npc_text 1997, 1999 (gossip shown only with the Chained Essence after quest 3373)",
+     "quest 3374 description"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 805,
+  "kind": 1,
+  "zone": 8,
+  "sort": 5,
+  "faction": 0,
+  "title": "Fallow Sanctuary",
+  "body": "Fallow Sanctuary is the village of the Lost Ones in the north of the swamp, east of the Harborage and within sight of the Redridge Mountains. Its huts and campfires belong to draenei twisted further than the Broken, maddened by the journey from their homeworld and hostile to every outsider. Hunters, fishermen, cooks, seers and riftseekers keep up a grim semblance of village life under their chieftains, guarding the draenethyst they stole from the Harborage. One of them, Ongeku, holds a shard so prized that the Gelkis centaurs of distant Desolace covet it. Beasts are kept in cages here, a captive human sits in another, and loot from a plundered Alliance caravan lies scattered nearby.",
+  "triggers": [
+   [
+    1,
+    76
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Fallow_Sanctuary (village of the Lost Ones, within view of Redridge, driven mad with homesickness)",
+   "quest 1389 description",
+   "quest 1373 description (Gelkis of Desolace, draenethyst shard held by Ongeku)",
+   "quest 9440 description (caged animals at the Fallow Sanctuary)",
+   "quest 1421 description (wagon dragged to the Fallow Sanctuary)",
+   "DB spawns in area 76: Lost One Hunter, Fisherman, Cook, Seer, Riftseeker, Chieftain, Draenethyst Crystals, Captured Tarantula/Crocolisk; Galen's Cage 37118 and Caravan Chest 28024 just outside the area line",
+   "creature_queststarter: Uthek the Wise 5397 starts 1373"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide; Galen is only mentioned as a captive. Before: The non-canon RPG history (draenei builders, raids on Stonard) is not used. Verify: quest 1373 comes from Uthek the Wise of the Gelkis centaurs; 'shamans' made 'Gelkis centaurs'. Ongeku 5622 spawns just outside the area line (area 8, -9956,-3715). Check: ok."
+ },
+ {
+  "id": 806,
+  "kind": 1,
+  "zone": 8,
+  "sort": 6,
+  "faction": 0,
+  "title": "The Shifting Mire",
+  "body": "The Shifting Mire is the broad, sodden heart of the swamp, lying west of the Pool of Tears. Swamp jaguars hunt between its twisted trees alongside sorrow spinners and young sawtooth crocolisks, and a thorny elemental known as Molt Thorn wanders its paths. Lost Ones wade the shallows, fishing and scavenging far from their village. North of Stonard, a man named Galen Goodward once kept his camp in the mire, and his strongbox still waits there, locked by a trick that only its owner knows.",
+  "triggers": [
+   [
+    1,
+    1798
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/The_Shifting_Mire (central section west of the Pool of Tears; jaguars, spinners, young crocolisks, Lost Ones)",
+   "DB spawns in area 1798: Swamp Jaguar x22, Molt Thorn 14448 (type elemental), Sorrow Spinner, Young Sawtooth Crocolisk, Lost One Mudlurker and Fisherman",
+   "quest 1393 description (strongbox in his camp north of Stonard, opened by a trick only Galen knows); gameobject 32569 Galen's Strongbox in area 1798"
+  ],
+  "notes": "Unchanged in the parts conversion: the resin-stopped keyhole is the box's look; the hidden latch stays in 820 part 2. Before: The wiki's moving silt lore is tied to a Cataclysm quest and was left out. Check: the resin-stopped keyhole is told only in quest 1393's reward text, read at the strongbox on turning the quest in, and 820 part 2 treats it as part of the trick; the opening now says only that the box is locked by a trick its owner knows (1393 description). Nothing lost: the resin and latch are in 820 part 2."
+ },
+ {
+  "id": 807,
+  "kind": 1,
+  "zone": 8,
+  "sort": 7,
+  "faction": 0,
+  "title": "Stonard",
+  "body": "Stonard is one of the oldest orc settlements in Azeroth, first raised by the old Horde as an outpost in the Black Morass after the Dark Portal opened. Probably lost in the wars that followed, it has been re-established by the new Horde, and it still keeps a great hall guarded by two burrows. Here Fel'zerul studies the sunken temple at the Warchief's command, Helgrum the Swift struggles to keep word flowing to distant Kargath, and Dispatch Commander Ruag relays the orders of Orgrimmar. Wayfinders and cartographers set out to chart the unmapped swamp, and a captured human spy waits in custody.",
+  "triggers": [
+   [
+    1,
+    75
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Stonard (founded by the Old Horde in the Black Morass after the first opening of the Dark Portal, re-established by the new Horde, great hall and two burrows, wayfinders and cartographers mapping the swamp)",
+   "quest 1424 description",
+   "quest 1418 description",
+   "quest 2622 description",
+   "quest 1372 description (human infiltrator taken to Stonard)",
+   "quest 9440 description",
+   "DB spawns: Stonard Wayfinder 865, Stonard Cartographer 867, Infiltrator Marksen 5416 in area 75",
+   "quest 1418 reward text (Neeka's outrunner to Stonard)"
+  ],
+  "notes": "Converted: Cersei Dusksinger (blood elf, Burning Crusade material) moved to part 1, minState 8, no triggers. Before: Faction 0: the only trigger is an AREA trigger, reachable by either faction. The Cataclysm war with Marshtide Watch is left out; the wiki's First War versus Second War dating is kept vague (old Horde, later re-established). Verify: Helgrum does not send outrunners himself (1418: Kargath's runner to Stonard failed), reworded; great hall and two burrows per wiki, 'rise again' dropped. Check: ok.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Since the blood elves joined the Horde, Stonard has a guest from Quel'Thalas. The warlock Cersei Dusksinger has little good to say about the swamp, its air or its food, and she scorns the orcs for sitting idle so close to so much power. Meanwhile she is perfecting a curse meant for the draenei.",
+    "sources": [
+     "creature_text 17109",
+     "quest 9440 description",
+     "warcraft.wiki.gg/wiki/Cersei_Dusksinger"
+    ],
+    "minState": 8
+   }
+  ]
+ },
+ {
+  "id": 808,
+  "kind": 1,
+  "zone": 8,
+  "sort": 8,
+  "faction": 0,
+  "title": "Pool of Tears",
+  "body": "The Pool of Tears is the great lake on the eastern side of the swamp, and beneath its dark water lies the Temple of Atal'Hakkar. The Atal'ai trolls built it to call their blood god Hakkar into the world, and the green dragonflight sank it to stop them. Ruins of the Atal'ai still lie scattered along the shore and under the water, where relics and tablets can be found, and cursed and mummified trolls haunt the stones. Ravenous sawfin frenzies swarm the water. Green dragonkin stand guard over the place, among them the ancient drake Somnus and the dragon Jade, who would sooner destroy an intruder than let one enter the temple.",
+  "triggers": [
+   [
+    1,
+    74
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Pool_of_Tears (pre-Cataclysm lake, temple sunk under its waters, Atal'ai ruins at the shore and underwater, frenzies)",
+   "warcraft.wiki.gg/wiki/Temple_of_Atal'Hakkar",
+   "quest 9610 description (Somnus, dragonkin, carnivorous fish)",
+   "creature_text 1063 (Jade)",
+   "DB spawns in area 74: Atal'ai Artifact and Atal'ai Tablet objects, Cursed/Mummified/Enthralled Atal'ai, Sawfin Frenzy 14356, Somnus 12900, Jade 1063"
+  ],
+  "notes": "Unchanged in the parts conversion: the temple's builders and its sinking are open setting (zone entry, quests 1424 and 1475 descriptions); nothing of the temple's inner story. Before: The Cataclysm waterway to the sea and Marshtide Watch are left out. Check: ok."
+ },
+ {
+  "id": 809,
+  "kind": 1,
+  "zone": 8,
+  "sort": 9,
+  "faction": 0,
+  "title": "Sorrowmurk",
+  "body": "East of the Pool of Tears and the sunken temple lies Sorrowmurk, a stretch of swamp held by the green dragonflight. Scalebane captains, wyrmkin dreamwalkers and elder dragonkin patrol its pools in such numbers that few but the boldest travelers try to cross it, and among them walks a rare dragonspawn called Lord Captain Wyrmak. The dragons are not alone. Atal'ai priests and the cursed and mummified remnants of their tribe still creep through the murk, close to the drowned temple of their god.",
+  "triggers": [
+   [
+    1,
+    1778
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Sorrowmurk (just east of the Pool of Tears and the Sunken Temple, crawling with green dragonspawn, inhospitable for all but the most adventurous)",
+   "warcraft.wiki.gg/wiki/Lord_Captain_Wyrmak (rare green dragonspawn in Sorrowmurk)",
+   "DB spawns in area 1778: Scalebane Captain 745, Elder Dragonkin 746, Wyrmkin Dreamwalker 743, Lord Captain Wyrmak 14445, Atal'ai Priest, Cursed and Mummified Atal'ai"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide. Before: Crazy Larry's goblin camp is Cataclysm and left out. Check: ok."
+ },
+ {
+  "id": 810,
+  "kind": 1,
+  "zone": 8,
+  "sort": 10,
+  "faction": 0,
+  "title": "Stagalbog",
+  "body": "Stagalbog is the dense marsh south of the Pool of Tears, pressed up against the mountains along the swamp's southern border. Deathstrike tarantulas lurk among the trees, and murlocs of the marsh tribes, inkspewers, flesheaters and oracles, range inland from the coast. A cave at the edge of the mountains shelters a murloc called the Swamp Talker, who can summon the spirits of the swamp to fight beside it, and whose kin waylay travelers on the swamp's roads.",
+  "triggers": [
+   [
+    1,
+    1797
+   ],
+   [
+    1,
+    1817
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Stagalbog (south of the Pool of Tears, borders the southern mountain range, Stagalbog Cave at the edge of the mountains)",
+   "warcraft.wiki.gg/wiki/Swamp_Talker (located in Stagalbog Cave, Summon Swamp Spirit)",
+   "quest 2622 and 2623 descriptions (ambush, Swamp Talker took the orders)",
+   "creature_loot: item 8463 Warchief's Orders from Swamp Talker 950",
+   "DB spawns in area 1797: Deathstrike Tarantula, Marsh Inkspewer, Flesheater, Oracle; Swamp Talker 950 at -10967,-3658"
+  ],
+  "notes": "Converted: the Swamp Talker's theft of the Warchief's orders (the lost orders of Thrall's Grasp, Bengor's account in 2623) moved to part 1 on QUEST_ACCEPT and QUEST_DONE 2623. 'Whose kin waylay travelers' rests on the same ambush (2622) told generally. Before: Baba Bogbrew's camp is Cataclysm and left out. Area 1817 (Stagalbog Cave) added as a second trigger: it is in the reachable list, though posarea puts the Swamp Talker spawn itself in area 4. Verify: Bengor 7643 has no grunt title; reworded. 1817 kept: reachable indoor area of the cave; the map grid there reads 4 because the cave is a WMO. Check: ok.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Swamp Talker has more to answer for than most. When murlocs ambushed a party of Stonard soldiers bound for the Blasted Lands, it was the Swamp Talker who tore the Warchief's orders from a messenger's hands as a spear struck him down, and carried them off to its cave.",
+    "triggers": [
+     [
+      4,
+      2623
+     ],
+     [
+      5,
+      2623
+     ]
+    ],
+    "sources": [
+     "quest 2622 and 2623 descriptions",
+     "creature_loot: item 8463 Warchief's Orders from Swamp Talker 950"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 811,
+  "kind": 1,
+  "zone": 8,
+  "sort": 11,
+  "faction": 0,
+  "title": "Misty Reed Strand",
+  "body": "Misty Reed Strand is the long, fog-bound coast along the swamp's eastern edge, where the marsh gives way to the Forbidding Sea. Marsh murlocs crowd the shore in great numbers, and monstrous crawlers and sawtooth snappers scuttle through the surf. Sun-dried driftwood washes up among the reeds, prized by anyone in the swamp who needs timber sounder than the spongy wood of its trees. Stonard keeps a close eye on this coast. The orc Katar patrols the beach, nursing a bitter hatred of the sea and of every fish man it spawns, and crawler legs gathered here are shipped all the way to Orgrimmar.",
+  "triggers": [
+   [
+    1,
+    300
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Misty_Reed_Strand (gloomy coastline, driftwood, crocolisks, crabs, murlocs; Alliance collect driftwood, Horde hunt murlocs)",
+   "quest 1398 description (strong, dry wood, not the spongy wood of the swamp's trees)",
+   "quest 1426 description (Katar)",
+   "quest 1430 description (crawler legs shipped to Orgrimmar)",
+   "DB spawns in area 300: Marsh Inkspewer x38, Silt Crawler, Monstrous Crawler, Sawtooth Snapper, Sundried Driftwood objects, Katar 5593"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide. Before: Bogpaddle and goblin camps are Cataclysm and left out. Check: ok."
+ },
+ {
+  "id": 812,
+  "kind": 1,
+  "zone": 8,
+  "sort": 12,
+  "faction": 0,
+  "title": "Misty Reed Post",
+  "body": "Just inland from the southern end of Misty Reed Strand, a small Horde camp keeps watch over the sea. Tok'Kar and his soldiers are stationed here to hold back the murlocs, or to warn Stonard if a force comes too large to stop. Between shifts of guard duty Tok'Kar cooks for his troops and forges weapons from the claws of sawtooth snappers, for the more blades the camp has ready, the better its chances. It is a spare life of fire, mead and steel, and Tok'Kar admits he would not mind if Stonard one day sent them a proper burrow, or at least a tower.",
+  "triggers": [
+   [
+    1,
+    1978
+   ]
+  ],
+  "sources": [
+   "quest 698 description (outpost near the beach, guard duty and cooking)",
+   "quest 699 description, reward and request texts (protect or warn Stonard, weapons from claws, burrow or tower)",
+   "DB spawns in area 1978: Tok'Kar 5592, Stonard Hunter 863 x5, Stonard Shaman 868"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide. Before: Tok'Kar's camp is placed by the DB (area 1978); wiki page for the post has no description. Check: ok."
+ },
+ {
+  "id": 813,
+  "kind": 2,
+  "zone": 8,
+  "sort": 1,
+  "faction": 0,
+  "title": "Itharius",
+  "body": "Itharius dwells in a cave on the western edge of the swamp, an elf to all appearances, sharing it with a brood of green whelps. He greets strangers as if he has been expecting them. Fate and forces beyond it, he says, have brought them to him for a reason, and it is one he takes no pleasure in being part of. Many decisions lie ahead of them, and he hopes they are wise enough to make the correct ones, for he insists that there are correct choices. Idle curiosity about why he lives in a cave earns only a cool dismissal.",
+  "triggers": [
+   [
+    2,
+    5353
+   ]
+  ],
+  "sources": [
+   "npc_text 1995 (default greeting), 1996 (reply to 'What's an elf like you doing inside a cave like this?')",
+   "DB spawns: Itharius 5353 with Adolescent and Dreaming Whelps in area 1777",
+   "warcraft.wiki.gg/wiki/Itharius (green dragon, appears as a high elf in Classic, Ysera's flight)",
+   "npc_text 1995, 1997, 1998, 1999",
+   "creature 5353 faction 35 (friendly to all)"
+  ],
+  "notes": "Converted: the opening keeps only what his default gossip shows (npc_text 1995, 1996). His identity, Eranikus and the corruption moved to part 1 on QUEST_ACCEPT and QUEST_DONE 3374, since his Eranikus gossip opens only after 3373 is done and leads to the oathstone that starts 3374. Before: Wiki calls Eranikus his brother and Ysera's consort; the consort detail is left out. Check: same as 804: part 1's triggers are the first a character can reach after the Eranikus gossip, which itself needs 3373 done inside the temple, so nothing of the Sunken Temple's inner story shows early.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "To those who carry part of the essence of Eranikus, Itharius abandons his pretenses. He is of Ysera's green dragonflight, and Eranikus is his brother. The dragons destroyed the physical form of the god the Atal'ai called forth and sank its temple, but its corruption ran deeper than they believed. Eranikus, charged with watching over the sunken temple, fell to it unwittingly and now lies trapped in a nightmare within the Dream. His agony roused Itharius from his own dreaming, and ending that torment is now his charge.",
+    "triggers": [
+     [
+      4,
+      3374
+     ],
+     [
+      5,
+      3374
+     ]
+    ],
+    "sources": [
+     "npc_text 1997, 1998, 1999",
+     "conditions: gossip menu 1341 option 1 needs item 10455 and quest 3373 rewarded",
+     "quest 3374 description"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 814,
+  "kind": 2,
+  "zone": 8,
+  "sort": 2,
+  "faction": 0,
+  "title": "Magtoor",
+  "body": "Magtoor leads the Broken exiles of the Harborage, among the few draenei who came through the Dark Portal and kept their reason. He has watched his former brethren at the Fallow Sanctuary become monsters that prey on his people, and he fears that without their sacred draenethyst the exiles too may lose their way. Magtoor is a realist about his neighbors. He trades with merchants in Stonard and believes the Horde would crush his village if it failed to honor them.",
+  "triggers": [
+   [
+    2,
+    1776
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Magtoor (pre-Cataclysm: Broken leader of a small group who kept their noble roots, came through the Dark Portal)",
+   "quest 1389 description",
+   "creature_text 1776 groups 0-3",
+   "creature 1776 faction 35"
+  ],
+  "notes": "Converted: Anchorite Avuun's arrival and Magtoor's warning about the blood elf (Burning Crusade material) moved to part 1, minState 8, no triggers. Before: The wiki's note on him being corrupted by fel from killing his brethren is unclear in era and is left out. Check: ok.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Since the draenei joined the Alliance, one of them has come to stay. Magtoor welcomes Anchorite Avuun to the Harborage for as long as he likes, yet asks him plainly what he truly believes he can accomplish. He also passes on a warning from Stonard, where one of his trading partners has heard a blood elf raving about a horrible disease she means to use against the draenei.",
+    "sources": [
+     "creature_text 1776 groups 0, 2, 3"
+    ],
+    "minState": 8
+   }
+  ]
+ },
+ {
+  "id": 815,
+  "kind": 2,
+  "zone": 8,
+  "sort": 3,
+  "faction": 1,
+  "title": "Anchorite Avuun",
+  "body": "Anchorite Avuun is a draenei who has come to the Harborage to study the Lost Ones of the Fallow Sanctuary. He has faith that the fel energies consuming them can be cured, and that the same cure would undo the damage done to the Broken. He has little patience for the village's dealings with the Horde, whose foul ways he thinks beneath his hosts. His gravest fear lies in Stonard. He is certain the blood elf Cersei Dusksinger is cursing the Lost Ones with still darker fel magic, and for those already twisted past saving, he asks only that they be granted mercy.",
+  "triggers": [
+   [
+    2,
+    17127
+   ],
+   [
+    4,
+    9448
+   ]
+  ],
+  "sources": [
+   "npc_text 8812",
+   "creature_text 17127 groups 0, 1, 3",
+   "quest 9448 description and reward text",
+   "warcraft.wiki.gg/wiki/The_Harborage (Avuun arrived to study the Broken and look for a cure, urged residents to stop trading with the Horde)"
+  ],
+  "notes": "Converted: body unchanged; requiredState 8 on the entry, since Avuun is a draenei of the Exodar added in patch 2.0.1 and nothing in the entry is true before the Burning Crusade (same pattern as alterac.json 3620). His suspicion of Cersei is the premise of 9448, shown on talking to him. npc_text 8812 and creature_text 17127 reread: period text. Before: Faction 1: Avuun uses faction template 1694 (Exodar, enemy of Horde), and 9448 is only offered by him. Check: requiredState 8 kept although mod-individual-progression does not phase Avuun 17127 (neither ipp_aware_npcs.sql nor the optional phasing file lists him): every line of the entry is patch 2.0.1 material, so there is no classic opening to write, and the pattern matches alterac.json 3620 (Archmage Cedric 18165, likewise unphased, gated by the era of his content). His Burning Crusade lines also live in minState 8 parts of 803, 814, 824 and 826, and 824's opening is open to classic readers.",
+  "requiredState": 8
+ },
+ {
+  "id": 816,
+  "kind": 2,
+  "zone": 8,
+  "sort": 4,
+  "faction": 2,
+  "title": "Cersei Dusksinger",
+  "body": "Cersei Dusksinger is a blood elf warlock working out of Stonard, and she has little good to say about the swamp, its air or the food in Stonard. She is perfecting a weapon against the draenei, testing fel-tainted morsels on the captive livestock of the Lost Ones so that the curse passes into whoever eats them. She scorns the orcs for sitting idle while others plunder the power that lies so close at hand. Anchorite Avuun's opposition she takes as a personal challenge, vowing that when she is finished, the draenei will wish they were Lost Ones.",
+  "triggers": [
+   [
+    2,
+    17109
+   ],
+   [
+    4,
+    9440
+   ]
+  ],
+  "sources": [
+   "quest 9440 description and reward text",
+   "creature_text 17109 (orcs are fools, Avuun dares to oppose me, cured ham steak from Thultash, no fresh air in this swamp)",
+   "warcraft.wiki.gg/wiki/Cersei_Dusksinger (blood elf warlock in Stonard)",
+   "creature 17109 faction 1604 (Silvermoon, enemy of Alliance)"
+  ],
+  "notes": "Converted: body unchanged; requiredState 8 on the entry, since Cersei is a blood elf of the Horde added in patch 2.0.1. Her plan is the premise of 9440, shown on talking to her. npc_text 8805 and creature_text 17109 reread: period text. Before: Faction 2: Silvermoon faction template, quest 9440 is Horde races only. Verify: Thultash 982 is a food and drink vendor, not the inn; 'at the inn' made 'in Stonard'. Check: requiredState 8 kept, as for 815 and alterac.json 3620: the entry is wholly patch 2.0.1 material. The base module does not phase Cersei 17109, but its optional zz_optional_phasing.sql gives her npc_ipp_tbc, so with that file she is hidden before state 8 anyway.",
+  "requiredState": 8
+ },
+ {
+  "id": 817,
+  "kind": 2,
+  "zone": 8,
+  "sort": 5,
+  "faction": 0,
+  "title": "Fallen Hero of the Horde",
+  "body": "Beside the southern road toward the Blasted Lands stands the ghost of the orc who commanded Thrall's Grasp, twenty of the Warchief's most accomplished and honored soldiers. He had the regiment make camp here on the border to await orders from Orgrimmar, but weeks passed without word and the men grew restless. Young, ambitious and afraid of nothing, he led them into the Blasted Lands, a decision he has regretted ever since: one bad choice, he says, and many horrible outcomes, all of them his fault. Now his spirit lingers where he made that choice, warning travelers of the death and chaos beyond and seeking anyone willing to help him regain his honor.",
+  "triggers": [
+   [
+    2,
+    7572
+   ]
+  ],
+  "sources": [
+   "npc_text 1391 (greeting before any quest), 1392 and 1411 (shown while on quest 2784), 1451-1454 (shown while on quest 2801)",
+   "conditions: gossip menu 840 option 0 needs quest 2784 taken; option 1 and npc_text 1451 need quest 2801 taken",
+   "quest 2784 reward text",
+   "quest 2621 description",
+   "warcraft.wiki.gg/wiki/Fallen_Hero_of_the_Horde (Trebor, ghost beside the road south toward the Blasted Lands)",
+   "creature 7572 faction 35",
+   "creature_text 7668-7671 (Give my regards to Commander Trebor)"
+  ],
+  "notes": "Converted: 'set his soldiers free' in the opening (which gave away the bound souls) became 'help him regain his honor' (quest 2784 reward text). Parts: 1 the lost orders (QUEST_DONE 2623, Horde only), 2 the souls bound to stones (QUEST_DONE 2801, both factions; npc_text 1451 to 1456 show only while on 2801), 3 the souls freed and his name Trebor (QUEST_DONE 2681). The opening keeps his backstory, capture and torture beside Kirith, which the Blasted Lands file agreed to. Source 'quest 2743' (Blasted Lands) replaced by the servants' creature_text. Before: His name Trebor is left out of the body; the wiki says he escaped and died shortly after, while npc_text 1451 says he was beaten until dead, so the DB wording is used. Verify: npc_text 1452 says he and Kirith were tortured in turn; the body no longer implies Kirith was beaten to death with him. Check: opening trimmed to what he tells before 2801: npc_text 1391 to anyone, 1392 and 1411 while on 2784 (Thrall's Grasp, the wait, his choice, his regret, 'several horrible outcomes'). 'They were overwhelmed', his flight, return, capture, torture beside Kirith and death come from npc_text 1451 and 1452, which show only while on 2801 (gossip menu 840 conditions), so they moved into part 2 (QUEST_DONE 2801). Kirith's capture is no longer in a TALK-only opening, in line with blasted_lands.json 406 and 421, which hold his fate for 2721.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The orders had been sent after all. Dispatch Commander Ruag relayed them, but murlocs ambushed the messengers on the road and the Swamp Talker carried the orders off. When they were brought to him at last, the hero found his fear confirmed: had he waited, nineteen of his men could have been spared the agony they suffered.",
+    "triggers": [
+     [
+      5,
+      2623
+     ]
+    ],
+    "sources": [
+     "quests 2622, 2623 descriptions",
+     "quest 2623 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In time he told the rest. He had fled the forces that overwhelmed his men, then returned to rescue them, only to be captured, tortured in turn with his lieutenant Kirith and beaten until dead. In a lull between torments Kirith told him the regiment's fate. The demon lord Razelikh had torn out their souls, binding nine to stones near the Dark Portal and dividing the rest among Archmage Allistarj, Lady Sevine and Grol the Destroyer. Soulless, their bodies cannot be killed, and they serve those who bind them.",
+    "triggers": [
+     [
+      5,
+      2801
+     ]
+    ],
+    "sources": [
+     "npc_text 1451, 1452, 1453, 1454 (gossip shown while on quest 2801)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "At last the stones were shattered and his men were freed. As each soul broke loose it spoke a few last words: of freedom, of the agony ending, of a warning for Thrall, and of their commander, Trebor, whose fault, they insisted, it had not been. The tortured souls could finally rest, but the hero's work was not yet over.",
+    "triggers": [
+     [
+      5,
+      2681
+     ]
+    ],
+    "sources": [
+     "creature_text 7668-7671 group 1",
+     "quest 2681 reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 818,
+  "kind": 2,
+  "zone": 8,
+  "sort": 6,
+  "faction": 2,
+  "title": "Fel'zerul",
+  "body": "Fel'zerul came to Stonard on the Warchief's orders to look into strange happenings at the Temple of Atal'Hakkar, only to find the temple already sunk beneath the Pool of Tears and green dragons claiming to guard it as protectors of Azeroth. He has set out to piece the mystery together from Atal'ai relics. The Atal'ai, he knows, are a tribe of dark casters who practiced forbidden magic, and he hopes their spells might prove useful to the Horde.",
+  "triggers": [
+   [
+    2,
+    1443
+   ],
+   [
+    4,
+    1424
+   ]
+  ],
+  "sources": [
+   "quest 1424 description and request text",
+   "quest 1429 description",
+   "quest 1444 description",
+   "quest 1445 description",
+   "creature_text 1443 (I hereby destroy these instruments of evil! For the Horde!)",
+   "creature 1443 faction 29"
+  ],
+  "notes": "Converted: the exile and Jammal'an's prophecy moved to part 1 (QUEST_DONE 1444, turned in to Fel'zerul in Stonard, and QUEST_ACCEPT 1445); his destroying the fetishes to part 2 (QUEST_DONE 1445). 1444 starts in the Hinterlands but ends with him; hinterlands.json uses only TALK 5598 and ACCEPT 1446. Before: Faction 2: Orgrimmar faction template, 1424 Horde only. Check: ok.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "A sentence of exile written in blood on dried flesh led him to a disgraced Atal'ai priest in the Hinterlands, and through him to the prophecy of Jammal'an the Prophet, who believes Hakkar's return will grant his tribe immortality. Fel'zerul calls it foolish trickery to bring about a premature doomsday, but the exile's talk of enchanted fetishes concerns him greatly, and he means to seize them.",
+    "triggers": [
+     [
+      5,
+      1444
+     ],
+     [
+      4,
+      1445
+     ]
+    ],
+    "sources": [
+     "quest 1429 description",
+     "quest 1444 description",
+     "quest 1445 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "When the fetishes of Hakkar were finally laid before him, Fel'zerul did not keep them for study. He destroyed them on the spot as instruments of evil, in the name of the Horde.",
+    "triggers": [
+     [
+      5,
+      1445
+     ]
+    ],
+    "sources": [
+     "quest 1445 reward text",
+     "creature_text 1443"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 819,
+  "kind": 2,
+  "zone": 8,
+  "sort": 7,
+  "faction": 1,
+  "title": "Watcher Biggs",
+  "body": "Watcher Biggs was escorting a caravan from Darkshire bound for Nethergarde Keep when Lost Ones fell upon it, killing the guards and scattering the supplies. He alone survived. Since then he has camped beside his broken wagon south of the Harborage, a lonely figure on the swamp road, sworn to protect what remains of the shipment from the jaguars, spiders and young crocolisks that skulk ever closer to his camp.",
+  "triggers": [
+   [
+    2,
+    5476
+   ],
+   [
+    4,
+    9609
+   ]
+  ],
+  "sources": [
+   "quest 9609 description (caravan from Darkshire, sole survivor, south of the Harborage)",
+   "quest 1396 description",
+   "quest 1421 description and reward text",
+   "quest 1398 description",
+   "creature 5476 faction 12 (Stormwind, enemy of Horde)"
+  ],
+  "notes": "Converted: the dragged wagon and its reagents moved to part 1 (QUEST_DONE 1421), the mended wagon and the shipment reaching Nethergarde, where he had been given up for lost, to part 2 (QUEST_DONE 1425). Lungertz is named in blasted_lands.json 415, which leaves this ending to Swamp. Before: Quest 1396 says the caravan was destined for the eastern coast and 1425 mentions ogre attacks; both conflict with the rest and are left out. Check: ok.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Stunned in the attack, Biggs had glimpsed one of the wagons being dragged north to the Fallow Sanctuary. It carried a chest of reagents the wizards of Nethergarde need for their studies, work tied to the Dark Portal that he calls vital to the security of the Alliance.",
+    "triggers": [
+     [
+      5,
+      1421
+     ]
+    ],
+    "sources": [
+     "quest 1421 description and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "To mend his own wagon Biggs needed strong, dry wood, not the spongy timber of the swamp's trees. While he worked he sent the most vital supplies ahead to Nethergarde, where Quartermaster Lungertz had already given Biggs and his caravan up for lost.",
+    "triggers": [
+     [
+      5,
+      1425
+     ]
+    ],
+    "sources": [
+     "quest 1398 description",
+     "quest 1425 description and reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 820,
+  "kind": 2,
+  "zone": 8,
+  "sort": 8,
+  "faction": 0,
+  "title": "Galen Goodward",
+  "body": "Galen Goodward is a human who made his camp in the swamp north of Stonard, and who now sits in a cage at the edge of the Fallow Sanctuary, certain his captors mean to eat him. He promises great treasure to anyone who will lead him to safety: a strongbox in his camp, locked so that only a trick of his own can open it, and he swears he will teach that trick to whoever helps him escape.",
+  "triggers": [
+   [
+    2,
+    5391
+   ],
+   [
+    4,
+    1393
+   ]
+  ],
+  "sources": [
+   "quest 1393 description and reward text",
+   "creature_text 5391 groups 3-5",
+   "quest 9440 request text (that stupid human they have out there in the cage)",
+   "gameobject 37118 Galen's Cage at -9898,-3724; 32569 Galen's Strongbox in area 1798",
+   "creature 5391 faction 35"
+  ],
+  "notes": "Converted: the escape and the strongbox's hidden latch moved to part 2 (QUEST_DONE 1393, turned in at Galen's Strongbox 32569). Cersei's remark (Burning Crusade material) moved to part 1, minState 8, no triggers, placed first because it describes him still caged. Before: Captors not named in the quest; body says only captors. Check: part 2 is now the only place the resin-stopped keyhole is told (806 no longer tells it).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Word of the caged human has reached Stonard. The blood elf warlock Cersei Dusksinger knows of him, and when her helpers come back from feeding her morsels to the Lost Ones' captive beasts, she asks in alarm whether they wasted any on that stupid human in the cage.",
+    "sources": [
+     "quest 9440 request text"
+    ],
+    "minState": 8
+   },
+   {
+    "part": 2,
+    "body": "Led out of danger, Galen thanked his rescuer, swore he would remember them always and pointed the way to his camp north of Stonard. Then he whispered his secret and slipped away into the swamp. The strongbox's keyhole is filled with black resin and cannot be picked, but a hidden latch on its underside opens it.",
+    "triggers": [
+     [
+      5,
+      1393
+     ]
+    ],
+    "sources": [
+     "creature_text 5391 groups 3-5",
+     "quest 1393 reward text (at gameobject 32569, the quest ender)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 821,
+  "kind": 2,
+  "zone": 8,
+  "sort": 9,
+  "faction": 0,
+  "title": "Noboru the Cudgel",
+  "body": "Noboru the Cudgel is a Lost One who roams the swamp with his gang, killing any draenei who cross his path. For months he has been a terror to the Harborage, a direct threat to its survival, and the Broken admit they never had the strength to face him. His great club has become a symbol of all the brutality they have suffered at the hands of their maddened kin.",
+  "triggers": [
+   [
+    3,
+    5477
+   ],
+   [
+    4,
+    1392
+   ]
+  ],
+  "sources": [
+   "quest 1392 description and reward text",
+   "creature 5477 faction 51 (hostile to all), spawn at -10174,-3505"
+  ],
+  "notes": "Converted: the Harborage's joy at his death moved to part 1 (QUEST_DONE 1392). Both entry triggers come after his death (1392 starts from his cudgel, item 6196), so the opening tells only who he is. Before: verified Check: ok.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "When Noboru's cudgel was laid before Magtoor, the leader of the Harborage could hardly believe it. If Noboru was truly dead, it was a joyous day for the exiles, and the one who brought down their tormentor is counted a true friend of the Harborage.",
+    "triggers": [
+     [
+      5,
+      1392
+     ]
+    ],
+    "sources": [
+     "quest 1392 reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 822,
+  "kind": 2,
+  "zone": 8,
+  "sort": 10,
+  "faction": 0,
+  "title": "Somnus",
+  "body": "Somnus is an ancient drake of the green dragonflight who dwells at the Pool of Tears with his dragonkin, above the drowned Temple of Atal'Hakkar. Anyone who goes digging for Atal'ai relics along the shore is warned of him first. His renown reaches even the black dragonflight. The black drake Emberstrife names him the drake champion of the Green Flight and sends Horde warriors into the swamp to bring back his skull, as proof that the children of the Aspects can be humbled as surely as the Aspects themselves.",
+  "triggers": [
+   [
+    3,
+    12900
+   ]
+  ],
+  "sources": [
+   "quest 9610 description (guarded by Somnus, an ancient green dragon, and his dragonkin)",
+   "quest 6583 description (Emberstrife: Somnus, drake champion of the Green Flight; bring his skull)",
+   "DB spawn: Somnus 12900 at -10661,-3924 (area 74)",
+   "warcraft.wiki.gg/wiki/Somnus"
+  ],
+  "notes": "Unchanged in the parts conversion: nothing to hide; Emberstrife's test is the premise of Dustwallow quest 6583, not used as a trigger. Before: Emberstrife 10321 is a dragon in Dustwallow Marsh; black drake follows the wiki and quest (Our Father = Deathwing). Check: ok."
+ },
+ {
+  "id": 823,
+  "kind": 3,
+  "zone": 8,
+  "sort": 1,
+  "faction": 0,
+  "title": "The Sunken Temple",
+  "body": "Horde and Alliance alike have come looking for the Temple of Atal'Hakkar, the shrine of the Atal'ai trolls to their blood god Hakkar. In Stormwind, the aged dwarf Brohann Caskbelly asks for help with his final task for the Explorers' League, a temple he once hunted by gryphon and never found. In Stonard, Fel'zerul has come at the Warchief's command to learn what happened there, and gathers Atal'ai artifacts in the hope that the trolls' forbidden magic might serve the Horde. Searchers soon learn that the temple lies sunk beneath the Pool of Tears, ringed by green dragons who claim to protect Azeroth.",
+  "triggers": [
+   [
+    4,
+    1424
+   ],
+   [
+    4,
+    1448
+   ],
+   [
+    4,
+    9610
+   ]
+  ],
+  "sources": [
+   "quests 1448, 1469, 1475 (Brohann Caskbelly, Rhapsody Shindigger)",
+   "quest 9610",
+   "quests 1424, 1429, 1444, 1445, 1446"
+  ],
+  "notes": "Converted: Rhapsody's tale moved to part 2 (QUEST_DONE 1469, turned in to Brohann in Stormwind, and QUEST_ACCEPT 1475, offered after it; hinterlands.json 4719 leaves the fall into the pool to this entry and uses neither); the exile and the prophecy moved to part 3 (QUEST_DONE 1444 at Fel'zerul, QUEST_ACCEPT 1445). Holaaru (added in patch 2.0.1, Burning Crusade material) moved to part 1, minState 8, no triggers; 9610 stays an entry trigger. Nothing of the temple's inner story (Eranikus, the Atal'ai within) is told; Tanaris and Stranglethorn quests not used. Before: Faction 0: 1424 is Horde, 1448 and 9610 are Alliance. Verify: 1469 calls it a troll souvenir/Atal'ai artifact, carried to Brohann by the hero; 'brings back a fragment' reworded. 1448 starts in Stormwind (Brohann 5384); Stormwind's file does not use it. Check: part 2 (DONE 1469, ACCEPT 1475) confirmed: hinterlands.json 4719 tells only that Rhapsody came back with a troll relic and a secret, leaves the fall into the pool here and uses only TALK 5634. Holaaru's part 1 kept at minState 8 (see 803).",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Since the draenei came to Azeroth, the Broken of the Harborage have taken an interest as well. The scholar Holaaru seeks Atal'ai relics from the shores and depths of the Pool of Tears, braving Somnus and his dragonkin, for how else, he asks, are the Broken and the draenei to fit in if they do not understand the history of their new world?",
+    "sources": [
+     "quest 9610 description and reward text"
+    ],
+    "minState": 8
+   },
+   {
+    "part": 2,
+    "body": "Brohann's lost pilot had known all along. The gryphon rider Rhapsody Shindigger, deep in his cups, fell from his mount into the pool, was sucked down among the trolls and swam out as fast as he could, carrying off a troll relic as a souvenir. It proved to Brohann that his temple lay below indeed.",
+    "triggers": [
+     [
+      5,
+      1469
+     ],
+     [
+      4,
+      1475
+     ]
+    ],
+    "sources": [
+     "quest 1469 description and reward text",
+     "quest 1475 description"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "For the Horde, a sentence written in blood led to an Atal'ai priest exiled to the Hinterlands. He told of Jammal'an the Prophet, who believes Hakkar's return will make his tribe immortal, and warned that the artifacts were harmless, but that if Jammal'an has found the right enchantment for the fetishes of the summoning, the world lies in great peril.",
+    "triggers": [
+     [
+      5,
+      1444
+     ],
+     [
+      4,
+      1445
+     ]
+    ],
+    "sources": [
+     "quest 1429 description",
+     "quest 1444 description",
+     "quest 1445 description"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 824,
+  "kind": 3,
+  "zone": 8,
+  "sort": 2,
+  "faction": 0,
+  "title": "The Lost Ones",
+  "body": "The Broken of the Harborage and the Lost Ones of the Fallow Sanctuary were once one people. The Lost Ones look as the Broken look, but the rigors of the journey to Azeroth drove them mad, and now they catch or kill any who wander near their village. They have stolen the draenethyst crystals sacred to the exiles, and Magtoor, lacking the strength to take them back, fears that without them his people too may lose their way. Worst of all is Noboru the Cudgel, whose gang has plagued the Harborage for months, killing any draenei who cross its path.",
+  "triggers": [
+   [
+    4,
+    1389
+   ],
+   [
+    4,
+    1392
+   ],
+   [
+    4,
+    9448
+   ],
+   [
+    4,
+    9440
+   ]
+  ],
+  "sources": [
+   "quests 1389, 1392, 9440, 9448 (descriptions and reward texts)",
+   "creature_text 17109, 17127"
+  ],
+  "notes": "Converted: Noboru's death moved to part 1 (QUEST_DONE 1392). Avuun and Cersei (Burning Crusade material) moved to minState 8 parts, one per faction since each side learns a different half: part 2 Avuun's suspicion and the mercy he asks (QUEST_ACCEPT 9448, Alliance in practice), part 3 Cersei's method (QUEST_ACCEPT 9440, Horde). Entry triggers unchanged. Before: Faction 0: 1389 and 1392 are open to both; 9448 is effectively Alliance, 9440 Horde. Check: ok.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Noboru's reign of terror ended at last. When his cudgel, the very symbol of the brutality the exiles had suffered, was brought to Magtoor, the Harborage counted it a joyous day and welcomed his slayer as a friend.",
+    "triggers": [
+     [
+      5,
+      1392
+     ]
+    ],
+    "sources": [
+     "quest 1392 description and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Since the draenei joined the Alliance, Anchorite Avuun has come to the Harborage to study the Lost Ones in hope of a cure. He is sure that the blood elf Cersei Dusksinger of Stonard has been cursing them, for several are now corrupted further, cursed with still more fel energy. Those, he believes, are beyond help, and he asks only that they be given a merciful end.",
+    "triggers": [
+     [
+      4,
+      9448
+     ]
+    ],
+    "sources": [
+     "quest 9448 description and reward text",
+     "creature_text 17127"
+    ],
+    "minState": 8
+   },
+   {
+    "part": 3,
+    "body": "Since the blood elves joined the Horde, the warlock Cersei Dusksinger has been working out of Stonard on a weapon against the draenei, and the Lost Ones, their backward cousins, are her test subjects. Her helpers feed fel-tainted morsels to the Lost Ones' caged livestock, so that the curse passes to those who slaughter and eat them. That, she crows, will show the stuffy anchorite at the Harborage.",
+    "triggers": [
+     [
+      4,
+      9440
+     ]
+    ],
+    "sources": [
+     "quest 9440 description",
+     "creature_text 17109"
+    ],
+    "minState": 8
+   }
+  ]
+ },
+ {
+  "id": 825,
+  "kind": 3,
+  "zone": 8,
+  "sort": 3,
+  "faction": 0,
+  "title": "Thrall's Grasp",
+  "body": "The ghost on the road to the Blasted Lands tells his tale to anyone who will listen. He commanded Thrall's Grasp, twenty of the Warchief's finest soldiers, and while they camped on the border awaiting orders from Orgrimmar he grew impatient and led them into the Blasted Lands, a choice that brought horrors he blames on no one but himself. To the Horde he confesses that he must know what became of those orders, and sends them to Dispatch Commander Ruag in Stonard. At Nethergarde, Ambassador Ardalan urges the Alliance to stop squabbling with orcs over scorched earth while the true power in these lands grows, and to hear the fallen hero, who knows the truth behind the Blasted Lands.",
+  "triggers": [
+   [
+    4,
+    2784
+   ],
+   [
+    4,
+    2783
+   ],
+   [
+    4,
+    2801
+   ]
+  ],
+  "sources": [
+   "npc_text 1392, 1451-1456",
+   "quests 2784, 2621, 2622, 2623, 2783, 2801, 2681 (descriptions and reward texts)",
+   "warcraft.wiki.gg/wiki/Fallen_Hero_of_the_Horde"
+  ],
+  "notes": "Converted: the opening is the setup (QUEST_ACCEPT 2784 Horde, 2783 Alliance, 2801 both; 2801 needs 2623 or 2783). Parts: 1 the ambushed messengers (QUEST_ACCEPT 2622, Ruag's text), 2 the Swamp Talker and the recovered orders (QUEST_DONE 2623), both Horde only; 3 capture, torture and the souls bound to stones (QUEST_DONE 2801, both); 4 the souls freed and the name Trebor (QUEST_DONE 2681); 5 Heroes of Old, added (QUEST_DONE 2702 or 2701; Thund 7750 is phased in on accepting 2702). Kirith's fate, the amulet, the triad's death and Razelikh's fall are left to blasted_lands.json 412 and 421 and not hinted at beyond 'the work was not yet over'. Thund is not called a member of the regiment: the wiki says only tauren ghost, his own text says 'you have honored us all'. Before: Faction 0: 2784 Horde, 2783 Alliance, 2801 both. The later chain against Razelikh plays out in the Blasted Lands and is only hinted at. Check: 'where they were overwhelmed' dropped from the opening: the defeat is told by npc_text 1451 (shown only while on 2801) and Ruag's 2621 reward text, and the entry triggers include ACCEPT 2783, where an Alliance character has heard only Ardalan. The opening now keeps the hero's own words from 2621 and npc_text 1411 (horrible outcomes, all his fault); part 3 (QUEST_DONE 2801) now opens with the regiment overwhelmed. Part 5 checked against 2702 and 2701 descriptions and reward texts and creature_text 7572: supported; Thund 7750 starts and ends 2701 and is not used by any other file.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Ruag swore he had relayed the orders. The soldiers who carried them were ambushed by murlocs on the way to the Blasted Lands and brutally beaten, and only one survived, if it could be called surviving: Bengor, who can hardly speak or walk. Whatever became of the orders, Ruag warned, prying too far might cost the curious their nose.",
+    "triggers": [
+     [
+      4,
+      2622
+     ]
+    ],
+    "sources": [
+     "quest 2621 reward text",
+     "quest 2622 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Bengor managed a few words before he passed out: a murloc called the Swamp Talker had torn the orders from his hands as a spear struck him, and fled east to a cave. The orders were recovered at last, and they were worse than the hero had imagined. Had he waited, nineteen of his men could have been spared the agony they faced.",
+    "triggers": [
+     [
+      5,
+      2623
+     ]
+    ],
+    "sources": [
+     "quest 2623 description and reward text",
+     "item 8463 Warchief's Orders (The seal is broken.)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The rest of his story is darker. Forces too great for the regiment overwhelmed it. He fled the slaughter, came back to rescue his men and was captured, tortured beside his lieutenant Kirith and beaten until dead. Kirith told him what had become of the regiment. The demon lord Razelikh had torn out their souls, keeping nine bound to stones near the Dark Portal and giving three apiece to Allistarj, Sevine and Grol. Eighteen stones of binding must be shattered to free them.",
+    "triggers": [
+     [
+      5,
+      2801
+     ]
+    ],
+    "sources": [
+     "npc_text 1451-1456 (gossip shown while on quest 2801)",
+     "quest 2681 description"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The stones were shattered and the men of Thrall's Grasp set free. As each soul broke loose it spoke a few last words: of freedom, of agony ending, of a warning that must reach Thrall, and of its commander, Trebor, whose fault, they said, it had not been. The tortured souls could rest at last, though the hero's work was not yet over.",
+    "triggers": [
+     [
+      5,
+      2681
+     ]
+    ],
+    "sources": [
+     "creature_text 7668-7671 group 1",
+     "quest 2681 reward text"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "The hero summoned another to give thanks. The ghost of a tauren, Corporal Thund Splithoof, appeared beside him and declared that the champions had honored them all, and that thanks alone were not enough. He offered a relic of old, for which the dead no longer had any use, to serve them in the fight against the Legion.",
+    "triggers": [
+     [
+      5,
+      2702
+     ],
+     [
+      5,
+      2701
+     ]
+    ],
+    "sources": [
+     "quest 2702 description and reward text",
+     "quest 2701 description",
+     "creature_text 7572 (Per your request, Corporal Splithoof has come)",
+     "warcraft.wiki.gg/wiki/Corporal_Thund_Splithoof (tauren ghost)"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 826,
+  "kind": 3,
+  "zone": 8,
+  "sort": 4,
+  "faction": 1,
+  "title": "The Lost Caravan",
+  "body": "Supplies for Nethergarde Keep travel from Darkshire by the long swamp road, and not all of them arrive. When Lost Ones ambushed one such caravan, killing its guards and scattering its supplies, only Watcher Biggs survived. He has made camp beside his broken wagon on the road south of the Harborage and sworn to protect what remains, but the swamp's jaguars, spiders and young crocolisks are closing in, and his first request of anyone who stops to help is to drive them back.",
+  "triggers": [
+   [
+    4,
+    9609
+   ],
+   [
+    4,
+    1396
+   ]
+  ],
+  "sources": [
+   "quests 9609, 1396, 1421, 1398, 1425 (descriptions and reward texts)"
+  ],
+  "notes": "Converted: the reagents in the dragged wagon moved to part 1 (QUEST_DONE 1421), the driftwood, the last delivery and Lungertz giving the caravan up for lost to part 2 (QUEST_DONE 1425). 'Even the draenei of the Harborage send word' became 'word has reached even the Harborage' (9609: Magtoor told Avuun), which holds in every era. Before: Faction 1: all quests AllowableRaces 1101 and Biggs is Stormwind faction. Check: 'word of the stranded watcher has reached even the Harborage' removed from the opening: it rests on quest 9609, given by Anchorite Avuun, a patch 2.0.1 NPC, so it is untrue for a classic character. It is told instead in a new part 1, minState 8, no triggers (9609 description); former parts 1 and 2 are now 2 and 3. ACCEPT 9609 stays an entry trigger: Avuun is not phased by mod-individual-progression, and the opening holds in every era.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Since the draenei joined the Alliance, help for Biggs can come from an unexpected quarter. Magtoor has told Anchorite Avuun of the stranded watcher south of the Harborage, and the anchorite sends travelers down the road to lend the caravan's sole survivor their aid.",
+    "sources": [
+     "quest 9609 description (Magtoor informed Avuun; sole survivor; somewhere to the south)",
+     "warcraft.wiki.gg/wiki/Anchorite_Avuun (added in patch 2.0.1)"
+    ],
+    "minState": 8
+   },
+   {
+    "part": 2,
+    "body": "Then Biggs remembered more. Before his sight went black he had seen one of the wagons dragged north to the Fallow Sanctuary, and in it a chest of reagents for the wizards of Nethergarde, whose work at the Dark Portal is vital to the security of the Alliance. With the reagents taken back from the Lost Ones' village, the wizards can continue their work.",
+    "triggers": [
+     [
+      5,
+      1421
+     ]
+    ],
+    "sources": [
+     "quest 1421 description and reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "To mend his wagon Biggs needed sun-dried driftwood from the eastern coast, since the swamp's own timber is too spongy to serve. While he made his repairs he entrusted the most vital supplies to his rescuer for the final road to Nethergarde, where Quartermaster Lungertz had already given Biggs and his caravan up for lost.",
+    "triggers": [
+     [
+      5,
+      1425
+     ]
+    ],
+    "sources": [
+     "quest 1398 description",
+     "quest 1425 description and reward text"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 827,
+  "kind": 3,
+  "zone": 8,
+  "sort": 5,
+  "faction": 2,
+  "title": "Threat from the Sea",
+  "body": "Stonard's eastern flank faces the sea, and the Horde takes the danger seriously. Dar, a trader in Stonard, gathers sawtooth meat for the soldiers at Misty Reed Post and monstrous crawler legs for his customers in Orgrimmar. At the post, Tok'Kar welcomes the fresh meat, turns sawtooth snapper claws into weapons for the camp's defense, and sends willing hands on to Katar, who walks the beach on patrol. Katar's hatred of the sea and the murlocs it spawns runs deep. He calls himself as patient and enduring as an old stone of Draenor, and would cleanse every world of the fish men if he had the army to do it. Each murloc slain along the strand brings him a grim pleasure, and Tok'Kar rewards those who bring a smile to Katar's face with one of his finished blades.",
+  "triggers": [
+   [
+    4,
+    698
+   ],
+   [
+    4,
+    1430
+   ]
+  ],
+  "sources": [
+   "quests 698, 699, 1422, 1426, 1427, 1428, 1430 (descriptions, request and reward texts)"
+  ],
+  "notes": "Unchanged in the parts conversion: no revelation in the chain; Tok'Kar's blade is a reward, not an outcome. Before: Faction 2: all quests AllowableRaces 690 and the givers use Orgrimmar faction template 29. Check: ok."
+ },
+ {
+  "id": 828,
+  "kind": 3,
+  "zone": 8,
+  "sort": 6,
+  "faction": 0,
+  "title": "The Dreamer's Charge",
+  "body": "Within the sunken temple lies a gem into which Eranikus of the green dragonflight, keeper of the temple, has poured part of his essence. His charge, to ensure that the trolls never again bring forth their god, has for now ended in failure, and he feels his grip on the Dream twisting into chaos. Through the gem he begs whoever finds it to place it in the essence font of his lair, so that the magic of his flight may purge the taint from his mind and let him rest.",
+  "triggers": [
+   [
+    4,
+    3373
+   ],
+   [
+    4,
+    3374
+   ],
+   [
+    5,
+    3374
+   ]
+  ],
+  "sources": [
+   "quest 3373 description and reward text",
+   "quest 3374 description and reward text",
+   "quest 3512 description",
+   "creature_text 5353 (I have given you an oathstone)",
+   "item 10589 Oathstone of Ysera's Dragonflight starts 3374",
+   "item 10454 Essence of Eranikus starts 3373; quest_template_addon 3374 PrevQuestID 3373"
+  ],
+  "notes": "Converted: the opening is the gem's plea (QUEST_ACCEPT 3373). Parts: 1 the tainted font and the eternal nightmare (QUEST_DONE 3373, at the Essence Font 148512), 2 the oath and Itharius (QUEST_ACCEPT and QUEST_DONE 3374), 3 Umbranse (QUEST_ACCEPT 3512, offered by Itharius; winterspring.json uses TALK 8588 and QUEST_DONE 3512, not the accept). Entry triggers unchanged. Moonglade's redemption of Eranikus is not told. Before: Faction 0: 3373, 3374 have AllowableRaces 0 and Itharius is faction 35. The rest of the chain lies outside the zone and is not told. Verify: added QUEST_ACCEPT 3373 (Essence of Eranikus item in the Sunken Temple), the chain's real start; 3374 requires 3373. Check: part 2 trimmed so it holds at QUEST_ACCEPT 3374 as well as the turn-in: the gem's surrender is now told as what the oath asks (3374 description), not as done. ACCEPT 3374 confirmed to fire for an item-started quest: CMSG_QUESTGIVER_ACCEPT_QUEST takes an item as the giver and calls Player::AddQuestAndCheckCompletion, which runs OnPlayerQuestAccept, the module's hook.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The font failed him. Even its sanctity had been tainted by the accursed god, and as the gem was laid inside, Eranikus felt his essence torn from him and an eternal nightmare taking hold. Chained in darkness, he implored his rescuer to find one of the green dragonflight to stop it.",
+    "triggers": [
+     [
+      5,
+      3373
+     ]
+    ],
+    "sources": [
+     "quest 3373 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "His plea led to Itharius in his cave in the swamp, who gave an oathstone of Ysera's Dragonflight. Engaging it, the bearer swore to aid the flight in redeeming a soul worthy of redemption, and the first of many sacrifices asked of them was the chained gem itself, so that Itharius might begin the slow work of reaching his brother.",
+    "triggers": [
+     [
+      4,
+      3374
+     ],
+     [
+      5,
+      3374
+     ]
+    ],
+    "sources": [
+     "quest 3374 description and reward text",
+     "creature_text 5353",
+     "item 10589 Oathstone of Ysera's Dragonflight starts 3374"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The first step led far north to eastern Winterspring, to Umbranse the Spiritspeaker, a human medium who speaks for the dead. Eranikus is not truly dead, Itharius explained, but lies between sleep and death, twisted within a weave of nightmares, and through the medium they might still reach him.",
+    "triggers": [
+     [
+      4,
+      3512
+     ]
+    ],
+    "sources": [
+     "quest 3512 description"
+    ]
+   }
+  ]
+ }
 ]
