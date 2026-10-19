@@ -29,7 +29,7 @@
   "sort": 1,
   "faction": 0,
   "title": "Thoradin's Wall",
-  "body": "From the highlands, Thoradin's Wall marks the western edge of the land, a long line of weathered stone between Arathi and the foothills beyond. King Thoradin raised it to guard Strom, the first human capital, and the ruins of that city, now called Stromgarde, still lie near it. The wall has held no army back for a very long time. Highland striders hunt along its foot and plains creepers crawl among its fallen stones. Where Thoradin once feared troll warbands, the highlands now face ogres, outlaws and the Witherbark all at once, and the old barrier stops none of them.",
+  "body": "From the highlands, Thoradin's Wall marks the western edge of the land, a long line of weathered stone between Arathi and the foothills beyond. The ruins of Stromgarde, the city it was raised to guard, still lie near it, but the wall has held no army back for a very long time. Highland striders hunt along its foot and plains creepers crawl among its fallen stones. The highlands it once sheltered now face ogres, outlaws and the Witherbark all at once, and the old barrier stops none of them.",
   "triggers": [
    [
     1,
@@ -42,7 +42,7 @@
    "posarea.py: area 1857 found on the western edge between Hillsbrad and Arathi",
    "zone_areas: Highland Strider 2559 and Plains Creeper 2563 spawn in area 1857"
   ],
-  "notes": "Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Reframed: Hillsbrad's Thoradin's Wall (26713, area 1057) already tells the wall's building and ruin, so this keeps to the Arathi side and only names its builder. Dropped the unsourced 'oldest works of human hands' and 'greatest threat' lines. Galen's Fall (Cataclysm) left out."
+  "notes": "Deduplicated 2026-10-19: the wall's building by King Thoradin and his capital of Strom are told only in hillsbrad.json 26713 (which owns the wall's history); this entry keeps the Arathi side and names Stromgarde only as the ruins near it. Earlier: Unchanged in the parts conversion: nothing to hide and nothing from a later era. Earlier: Reframed: Hillsbrad's Thoradin's Wall (26713, area 1057) already tells the wall's building and ruin, so this keeps to the Arathi side and only names its builder. Dropped the unsourced 'oldest works of human hands' and 'greatest threat' lines. Galen's Fall (Cataclysm) left out."
  },
  {
   "id": 4502,

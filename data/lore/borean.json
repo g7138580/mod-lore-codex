@@ -1,0 +1,1718 @@
+[
+ {
+  "id": 353700,
+  "kind": 0,
+  "zone": 3537,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Borean Tundra",
+  "body": "The Borean Tundra is the western gateway to Northrend, a wide land of frozen bog, steaming geysers and pale grass under a thin cover of snow. Here the war against the Lich King comes ashore. The Alliance holds Valiance Keep on the southern coast and the Horde's Warsong Offensive has raised Warsong Hold in the west, and both are hard pressed: Nerubians tunnel up beneath their walls, a Scourge host masses on the Plains of Nasam, and from the Temple City of En'kilah in the northeast the Scourge presses on every living thing. The tundra has older troubles as well. On the isle of Coldarra the blue dragonflight guards the Nexus, where Malygos wages a war of his own over the world's magic. Kvaldir raiders stalk the coasts out of a deadly mist, and the tuskarr, the taunka, the gnomes of Fizzcrank Airstrip and the Kirin Tor of Dalaran all struggle to hold their ground.",
+  "triggers": [
+   [
+    1,
+    3537
+   ]
+  ],
+  "sources": [
+   "quests 11585, 11598, 11634 descriptions (Warsong Hold, Mightstone Quarry, Plains of Nasam)",
+   "quests 11727, 11797 descriptions (Valiance Keep under siege by Nerubians)",
+   "quest 11628 description (Temple City of En'kilah, the Scourge's seat in the Borean Tundra)",
+   "quest 11733 reward text, npc_text 12590 (Nexus, Malygos, the conflict over magic)",
+   "npc_text 12424 (the mist), quest 11613 description (Kvaldir)",
+   "zone_npcs and zone_areas 3537 (Fizzcrank Airstrip, Amber Ledge Kirin Tor, Kaskala, Taunka'le)"
+  ],
+  "notes": "Checked: dropped the taunka saying that the snow has left (Mother Tauranook says it only at the end of the Horde evacuation, DONE 11929) and 'fighting since the day they landed' (no source). Otherwise as the writer had it: opening as everyone sees the zone on arrival; Kel'Thuzad, Valanar and the Wrathgate left out. requiredState 13 as for all of Northrend."
+ },
+ {
+  "id": 353701,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 1,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Valiance Keep",
+  "body": "Valiance Keep is the Alliance's port in the Borean Tundra, where ships from Stormwind unload soldiers and supplies for the war on the Lich King. General Arlos commands from the inner hold with Counselor Talbot at his side. A statue honors King Varian Wrynn, with a tribute from Highlord Bolvar Fordragon to the returned king whose valor the Alliance carries north. The keep is under siege, as undead Nerubians crawl out of sinkholes on the ridges beyond the Sands of Nasam. The draenei Harbinger Vurenn has offered regiments of his own, but the general takes them only as advisors, while Talbot warns that the troops are not ready to fight beside such exotic allies.",
+  "triggers": [
+   [
+    1,
+    4032
+   ],
+   [
+    1,
+    4101
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Not every enemy came by land. Cultists of the Cult of the Damned were found below deck on the Stormbreaker, and General Arlos accepted Counselor Talbot's word that it was an isolated civilian matter. Harbinger Vurenn was not convinced. His agent, Vindicator Yaala, who knows the cult's secret language, read their orders and found disguised cultists at work on the lower docks, in the jail of the inner hold and in the kitchen of the inn.",
+    "triggers": [
+     [
+      5,
+      11794
+     ]
+    ],
+    "sources": [
+     "quests 11789, 11920, 11791 (Talbot's assurance), 11792, 11793, 11794 descriptions and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The rot reached higher than anyone feared. At the top of Naxxanar, before an image of the Lich King, Counselor Talbot cast off his disguise: he was Prince Valanar of the San'layn, and he reported to his master that the cult's grip on the Alliance's leaders was well underway, and offered up the captives he had brought as proof. When Valanar was defeated, General Arlos, one of those captives, came to himself dazed, asking what had happened to him.",
+    "triggers": [
+     [
+      5,
+      12019
+     ]
+    ],
+    "sources": [
+     "SmartAI of Thassarian guid 101303 (actionlists 2617001-2617005): on 12019 the summoned Talbot 25301 is updated to Prince Valanar 28189 and speaks before the Lich King's image 26203",
+     "creature_text 25301/28189 groups 1-2 (infiltration well underway; offerings as proof)",
+     "creature_text 26203 group 0 (blood prince)",
+     "smart_scripts 25301 id 6 and 2525001 (Arlos speaks only after Talbot dies)",
+     "creature_text 25250 groups 0-1",
+     "warcraft.wiki.gg/wiki/Last_Rites"
+    ]
+   }
+  ],
+  "sources": [
+   "zone_areas 4032 and 4101 (Arlos 25250, Talbot 25301, Vurenn 25285, footmen, riflemen, cannoneers, crypt crawlers, flamespitters)",
+   "gameobject 190287 King Varian Wrynn, page_text 3102 (tribute signed by Highlord Bolvar Fordragon)",
+   "quests 11727, 11797, 11889, 11897 descriptions (siege, flying fiends, sinkholes)",
+   "creature_text 25250 group 2, 25285 groups 0-1, 25301 group 0 (the delegation offer and Talbot's warning)",
+   "quest 11672 description (enlistment)"
+  ],
+  "notes": "Checked: 'under siege from the first day' made general (no source); sinkholes placed on the ridges beyond the beach (quest 11897). Last Rites part verified against the SmartAI event (Thassarian guid 101303 summons Talbot and the Lich King's image; Talbot becomes Prince Valanar 28189, reports to the image and calls Arlos and Leryssa his offerings; Arlos's lines fire only on Talbot's death): every claim is shown during 12019, so DONE 12019 is right. Valanar is only said to be defeated. 'Unable to remember' softened to his own words. The opening keeps the ambient Vurenn, Talbot and Arlos scene (smart_scripts 2528500, out of combat line of sight) and names Talbot only as counselor; the cultists are part 1 (chain 11789-11794)."
+ },
+ {
+  "id": 353702,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 2,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Farshire",
+  "body": "Farshire is the farming and mining village behind Valiance Keep, reached through a passage in the keep's northern wall. Its fields and its mine were meant to supply the Alliance in Northrend, and a full detachment of soldiers was sent to guard the mine just before the Scourge came. Now ghouls and crypt crawlers overrun the farmland, cultists stalk among the burning buildings, and the harvest golems stand idle. Gerald Green has formed the farmers and miners into a militia, men who say they will defend their land with bare fists if they must, but nothing has been heard from the soldiers in the mine for days.",
+  "triggers": [
+   [
+    1,
+    4111
+   ],
+   [
+    1,
+    4112
+   ],
+   [
+    1,
+    4399
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The soldiers in the mine never had a chance. Their grain stank of the plague, and the footmen who guarded the mine were dead or worse. To Gerald Green it looks like an inside job, the work of a Cult of the Damned infiltrator, and with the last of the military gone, Farshire's militia must fight the Scourge alone.",
+    "triggers": [
+     [
+      5,
+      11902
+     ]
+    ],
+    "sources": [
+     "quest 11901 reward text, quest 11902 description and reward text",
+     "quest 11903 description (the last of our military dead)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Farshire chose to fight. Gerald Green sent the last ore from the mine to Hilda Stoneforge in Valiance Keep, asking only that she make good weapons of it, and Hilda, struck that he thought of her shipment while his village burned, sent back the arms meant for new recruits. With the weapons brought to the town hall, its bell rang out to rally every survivor.",
+    "triggers": [
+     [
+      5,
+      11965
+     ]
+    ],
+    "sources": [
+     "quests 11962, 11963, 11965 descriptions and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11928 description (passage out of the northern wall, detachment sent to the mine)",
+   "quest 11901 description (militia, no word from the detachment)",
+   "npc_text 12538 (Gerald Green)",
+   "quest 11908 description (harvest golems)",
+   "zone_areas 4111 (Plagued Scavenger, Crypt Crawler, Cultist Necrolyte, Harvest Collector, Farshire Militia)"
+  ],
+  "notes": "Checked: part 1 no longer says the footmen ate the grain (quest 11902 only finds plagued grain; 11903, offered on that turn-in, says dead or worse). Otherwise verified: the opening is the besieged village; the detachment (DONE 11902) and the rally (DONE 11965) are Alliance turn-ins, faction 0 since the areas are open to all."
+ },
+ {
+  "id": 353703,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 3,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Riplash",
+  "body": "Riplash, on the southern coast, was a city of the naga, and the strand below it is now the main base of the Kvaldir in the Borean Tundra. The giant raiders took the city from its people and drew their longboats up on the beach, where mistweavers and runecasters move among the ruins and tuskarr captives are held. At the Shrine of Scales on the western shore they have kept one naga alive, the priestess Veehja, who swears that the boat-riding scum will pay for their deeds. On the bluffs above the strand hides Karuk, a young tuskarr survivor of Pal'ea.",
+  "triggers": [
+   [
+    1,
+    4028
+   ],
+   [
+    1,
+    4029
+   ],
+   [
+    1,
+    4269
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Veehja told why the Kvaldir came. Five hundred years ago, she says, Queen Azshara imprisoned a being called Leviroth in the waters beneath Riplash, and the raiders mean to wake it. They sacrificed her brethren to it, and when the naga ran out they began on the tuskarr. Their captain, Ragnar Drakkarlund, keeps a golden trident in the depths of the ruins.",
+    "triggers": [
+     [
+      4,
+      11625
+     ]
+    ],
+    "sources": [
+     "quest 11625 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The trident did what it was made for. Azshara herself had blessed it for Raj Naz'jan, emperor of Riplash when Leviroth was imprisoned, so that it could slay the beast should it ever escape. Taken from Ragnar and driven into Leviroth beneath the iceberg off northern Riplash, it killed him.",
+    "triggers": [
+     [
+      5,
+      11626
+     ]
+    ],
+    "sources": [
+     "quest 11626 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11662 description (main base of the Kvaldir, Karuk on the bluffs)",
+   "quest 11620 and 11625 descriptions (naga priestess kept alive, they took over our city)",
+   "npc_text 12626 (Veehja)",
+   "zone_areas 4028, 4029, 4269 (Skadir raiders, mistweavers, runecasters, Captured Tuskarr Prisoner, Veehja 25450)"
+  ],
+  "notes": "Checked: 'slaughtered its people' made general (Veehja tells the sacrifices on 11625, part 1). Verified the mist aura: spell_area 54119 on 4028, 4029, 4031, 4106 and 4269 has no quest and autocast 1, so everyone arriving sees the phase 2 Skadir, Leviroth and the Captured Tuskarr Prisoner. Leviroth's five hundred years stay Veehja's claim. Karuk's oath is his own entry."
+ },
+ {
+  "id": 353704,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 4,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Kaskala and Unu'pe",
+  "body": "Kaskala is a tuskarr village on the coast northeast of Valiance Keep, a sacred place to which, its people say, the spirit Tayutka herself guided their ancestors. Now the Kvaldir come at it out of the mist without provocation, and its whalers answer with spears. The tuskarr have sent their families east to Unu'pe, a harbor town whose boats sail to the Dragonblight, and Utaik gathers what supplies can be salvaged so the families will not starve. The old shaman Elder Muahit refuses to leave the altar of Tayutka on the island in Njord's Breath Bay: if they do not abandon the spirits, he says, the spirits will not abandon them.",
+  "triggers": [
+   [
+    1,
+    4041
+   ],
+   [
+    1,
+    4040
+   ],
+   [
+    1,
+    4113
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The spirits answered. Issliruk's totem, lost when Muahit's nephew Iruk fell to Kvaldir spears, was brought up from the bay, and a storm rose that threw the raiders into confusion. In the chaos their leader, Heigarr the Horrible, was slain. The fight is not won, Muahit says, but his people now have a chance.",
+    "triggers": [
+     [
+      5,
+      11968
+     ]
+    ],
+    "sources": [
+     "quest 11961 description and reward text",
+     "quest 11968 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11949 description (Tayutka guided the ancestors; attacks from the mists)",
+   "quest 11945 description (families sent to Unu'pe)",
+   "quest 11950 description, npc_text 12578 (Muahit at the altar)",
+   "quest 12117 description (the boat from Unu'pe to the Dragonblight)",
+   "quest 11932 description (Kaskala northeast of Valiance Keep)",
+   "zone_areas 4040, 4041, 4113"
+  ],
+  "notes": "Checked: Utaik's line kept to his quest (11945, he asks for supplies). Otherwise verified. Unu'pe folded in; the Dragonblight trip (12117, reserved for the Dragonblight) is a source only, for the boat."
+ },
+ {
+  "id": 353705,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 5,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Coldrock Quarry",
+  "body": "Coldrock Quarry is where the craftsmen and shaman of Kaskala carve stone statues for their ancestors, homes to which the spirits of the elders are guided with sacred rites. The work has been brutally broken off. Blue and white platforms came flying over the plateau and set down mage hunters, treasure hunters and their beryl hounds, who murdered the craftsmen in the middle of the ceremonies and now plunder the quarry for artifacts and fragments of the statues. The craftsman Etaruk survives at its entrance, and outside it stands the statue of Elder Atkanok, guardian of the quarry for centuries, whose voice still speaks to those who stop before it.",
+  "triggers": [
+   [
+    1,
+    4039
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The plundering was stopped. The floating platforms were blown apart with explosives taken from the diggers, and Curator Insivius, a creature unlike anything the tuskarr hunters had ever seen, who led the mage hunters from a disk grounded on the quarry's upper rim, was killed.",
+    "triggers": [
+     [
+      5,
+      11623
+     ]
+    ],
+    "sources": [
+     "quests 11617, 11623 descriptions and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The quarry's spirits are at peace again. The spirits of the murdered craftsmen and shaman were freed from the hounds that held them in thrall, the old ritual objects were gathered, and the wandering elders Kesuk, Sagani and Takret were guided to their waiting statues. Atkanok promises that Kaskala's craftsmen will return, so that the line of ancestors continues unbroken.",
+    "triggers": [
+     [
+      5,
+      11610
+     ]
+    ],
+    "sources": [
+     "quests 11605, 11607, 11609, 11610 descriptions and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 11612, 11617 descriptions (platforms, mage hunters, murdered craftsmen, plunder)",
+   "quests 11605, 11607 descriptions (Elder Atkanok, ceremonies interrupted, beryl hounds)",
+   "zone_areas 4039 (Beryl Treasure Hunter, Beryl Reclaimer, Beryl Hound, Kaskala Craftsman and Shaman spirits, North/East/West Platform)"
+  ],
+  "notes": "Verified. Atkanok is a statue (gameobject 187565, starter of 11605-11610), so no TALK trigger."
+ },
+ {
+  "id": 353706,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 6,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Warsong Hold",
+  "body": "Warsong Hold is the Horde's fortress on the tundra's western coast, base of the Warsong Offensive and the start of its road to Icecrown, walled in steel and stone. Its Overlord, Garrosh Hellscream, greets newcomers by sniffing the air for their fear. Beside him stands High Overlord Saurfang, and the two quarrel openly: Saurfang counts supply lines, siege engines and the long haul from the Forsaken port across the continent, and Garrosh answers that the Horde needs nothing but its warrior spirit. A zeppelin links the hold to Durotar. Outside, Nerubians tunnel up through Mightstone Quarry, and below the walls Warden Nork Bloodfrenzy keeps Alliance deserters who surrendered at the gates.",
+  "triggers": [
+   [
+    1,
+    4129
+   ]
+  ],
+  "sources": [
+   "quest 11585 description and reward text (fortress, road to Icecrown, Garrosh sniffs for fear)",
+   "quest 11598 description (10 feet of steel and stone)",
+   "creature_text 25256 groups 0-12 and 25237 groups 1-5 (the argument over shipping lanes and siege engines)",
+   "zone_areas 4129 (Nargo Screwbore, Durotar Zeppelin Master; Horde Zeppelin), 4020 (Nork Bloodfrenzy, Alliance Deserter)",
+   "quest 11709 reward text, npc_text 12472 (deserters)"
+  ],
+  "notes": "Verified. Opening as on arrival. Per the zone notes the Warsong Hold phase of spell_area 60943 (13257 complete, racemask Horde) is not told: no NPC stands only in that phase (no non-phase-1 spawns in 4129), and 13257 is reserved. Nothing of the Wrathgate or the Undercity. Garrosh has no entry here (Nagrand)."
+ },
+ {
+  "id": 353707,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 7,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Coast of Echoes",
+  "body": "West of Warsong Hold the Coast of Echoes lies between two ruins swallowed by a living mist: Garrosh's Landing, where the Horde first came ashore, to the north, and the tuskarr village of Pal'ea to the south. The mist took both, and Hellscream has condemned the coast. Whoever steps into it vanishes; within, the Kvaldir, giant raiders the tuskarr call walkers of the fog, prowl the ruins and moor their ships, and even the Scourge seem to keep away. Only a few remain at its edge: Gorge the Corpsegrinder guarding the expedition's abandoned siege tanks, the mechanic Mobu who wants to go home, Elder Mootoo, and Waltor, a survivor of Pal'ea who wants justice for his people.",
+  "triggers": [
+   [
+    1,
+    4027
+   ],
+   [
+    1,
+    4106
+   ],
+   [
+    1,
+    4107
+   ],
+   [
+    1,
+    4031
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Waltor learned who led the attack on Pal'ea: Orabus the Helmsman, a Kvaldir lieutenant who oversaw the destruction of both villages and then vanished into the mist, leaving his mistweavers a horn to call him back. Blown at the end of the Warsong Jetty, the horn brought him out, and he was slain. It did not drive the raiders off. They only grew angrier.",
+    "triggers": [
+     [
+      5,
+      11661
+     ]
+    ],
+    "sources": [
+     "quests 11660, 11661 descriptions and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "One soul did come out of the mist. Mootoo the Younger had been hiding inside it, listening to the yells of the creatures outside and wondering whether the mist had swallowed the whole continent, until a rescuer led him back out to his father.",
+    "triggers": [
+     [
+      5,
+      11664
+     ]
+    ],
+    "sources": [
+     "quest 11664 description and reward text",
+     "creature 25504 phaseMask 3"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 12424 (Waltor: the mist is alive, Scourge fear it), 12426 (Mootoo: condemned by Hellscream), 12422 (Mobu)",
+   "quest 11655 description (Garrosh's Landing north, Pal'ea south, Kvaldir)",
+   "quest 11636 reward text (Gorge, tanks, coast condemned)",
+   "creature_text 25475 group 0 (Mobu wants to go home)",
+   "quest 11613 description (tuk-hariq, walkers of the fog)"
+  ],
+  "notes": "Checked: part 2 no longer says Mootoo the Younger hid there since the landing fell (quest 11664 does not say when). Verified the mist: spell_area 54119 (no quest, autocast) over 4028/4029/4031/4106/4269 shows the phase 2 Kvaldir to everyone there; the Coast of Echoes itself (4027) has no aura and holds only the phase 1 survivors. Elder Mootoo's race left unstated. Both parts Horde (11661, 11664); the entry is faction 0 since the areas are open to all."
+ },
+ {
+  "id": 353708,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 8,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Bloodspore Plains and Gammoth",
+  "body": "East of Warsong Hold the Bloodspore Plains are thick with bloodspore, tall red plants that kobolds guard fiercely, together with the moths that pollinate them. Beside the plants two members of the Horde keep a small camp: Bloodmage Laurith, who studies the plain with the delight of a naturalist, and Primal Mighthorn. Just to the west lies Gammoth, a den of magnataur, huge tusked hunters who live in prides much like lions, one or two dominant males with their mates and young. Gammoth's master is Gammothra the Tormentor, and the den's defenders are not to be taken lightly.",
+  "triggers": [
+   [
+    1,
+    4021
+   ],
+   [
+    1,
+    4022
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Laurith's science had a purpose. Pollinated through the moths, a bloodspore flower leaves whoever it touches weak and helpless, and with that proven she told the truth: Hellscream sent her and Mighthorn with a whole platoon to wipe out the magnataur on the hold's southern front, and the den's defenders killed everyone but the two of them. They are soldiers, not scholars, and the bloodspore is their weapon.",
+    "triggers": [
+     [
+      4,
+      11720
+     ]
+    ],
+    "sources": [
+     "quest 11719 description and reward text",
+     "quest 11720 description",
+     "creature_text 25381 group 0"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Crushed bloodspore weakens any magnataur, which is why the kobolds guard it so closely, and with it Gammothra was brought down. His head went to Warsong Hold, where Hellscream lifted it in one arm and spat in its face: they will all learn, he said, that the Horde is not to be trifled with.",
+    "triggers": [
+     [
+      5,
+      11722
+     ]
+    ],
+    "sources": [
+     "quests 11721, 11722 descriptions, completion and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 11716, 11717 descriptions (bloodspore, kobold guardians, moths)",
+   "quest 11721 description (magnataur prides, Gammothra leads Gammoth, west of here)",
+   "zone_areas 4021, 4022 (Laurith 25381, Mighthorn 25380, Gammothra 25789, Magnataur Huntress, Gammoth Tender)"
+  ],
+  "notes": "Checked: 'Horde officers' in the opening changed (that they are soldiers is the part 1 reveal); part 1 now says the flower weakens whoever it touches, as quest 11719 and creature_text 25381 show, instead of whoever breathes it. Primal Mighthorn's race left unstated. Part 1 on ACCEPT 11720, whose description tells the truth; part 2 on DONE 11722."
+ },
+ {
+  "id": 353709,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 9,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "D.E.H.T.A. Encampment",
+  "body": "In the middle of the tundra stands the camp of D.E.H.T.A., the druids for the ethical and humane treatment of animals, who welcome anyone of righteous cause so long as they harm no beast; visitors who reek of animal blood are greeted as butchers. Arch Druid Lathorius leads them, and their enemy is Hemet Nesingwary, whose wanted poster hangs in the camp, branding him the Extinctionator and naming Nagrand as the site of his last wildlife holocaust. His hunters, trappers and poachers are everywhere: at the caribou traps to the south, among the mammoth calves, and at Lake Kum'uya, said to be the world's only freshwater giant clam habitat, where loot-crazed divers farm pearls.",
+  "triggers": [
+   [
+    1,
+    4149
+   ],
+   [
+    1,
+    4109
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Khu'nok the Behemoth, a mammoth as wise as he is ancient, took in an orphaned calf from the druids and named the price of peace for his kin: the death of Kaw the Mammoth Destroyer. Riding a mammoth bull into Kaw's Roost, a champion of D.E.H.T.A. slew him and brought his war halberd to Lathorius, who counted Kaw one more of Nesingwary's lackeys brought to justice.",
+    "triggers": [
+     [
+      5,
+      11879
+     ]
+    ],
+    "sources": [
+     "quests 11878, 11879 descriptions and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Lathorius named the man behind the slaughter in the tundra: Harold Lane, the agent responsible for the killing in Nagrand, who ran Nesingwary's operations from Lake Kum'uya. The druids marked him as the Borean Butcher, and he fell. But Nesingwary was not there, and the arch druid wonders whether he ever was. He warns that the slippery demon will try again, and will try to charm those who hunt him.",
+    "triggers": [
+     [
+      5,
+      11892
+     ]
+    ],
+    "sources": [
+     "quest 11892 description, completion and reward text",
+     "npc_text 12511"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 12485 (Lathorius: who is welcome)",
+   "creature_text 25809 (butcher)",
+   "gameobject 187915, page_text 3057 (wanted poster)",
+   "quests 11865, 11869, 11876 descriptions",
+   "quest 11864 reward text (nearly fifty years)"
+  ],
+  "notes": "Verified. Nesingwary himself has entries in Stranglethorn and Nagrand; this tells only D.E.H.T.A.'s campaign. His whereabouts (Sholazar Basin) are not told. 11864 is auto-complete (QuestType 0), so it is not used as an ACCEPT."
+ },
+ {
+  "id": 353710,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 10,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Amber Ledge",
+  "body": "Amber Ledge is a Kirin Tor outpost north of Warsong Hold, a mage tower on a ledge above the rift. Librarian Donathan, a loyal representative of Dalaran, says that mages all across Azeroth are being abducted, and he has authority to conscript anyone able to help. His investigation begins at Beryl Point just to the south, a camp of mage hunters who keep their captives in arcane prisons. Beside the tower Librarian Garren charts the rift, where earthquakes have grown alarmingly frequent and scars in the earth expose fields of chaotic power. The red dragon Surristrasz keeps drakes here for travelers, though he greets visitors by asking why they disturb him.",
+  "triggers": [
+   [
+    1,
+    4023
+   ],
+   [
+    1,
+    4105
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The mage hunters had taken an archmage too. Lady Evanor vanished on her way from Dalaran, and a beryl sorcerer captured at Beryl Point, questioned by an outsider not bound by the Kirin Tor's code of conduct, gave up where she was held.",
+    "triggers": [
+     [
+      5,
+      11663
+     ]
+    ],
+    "sources": [
+     "quests 11590, 11646, 11648, 11663 descriptions and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The rescue came from the air. Inquisitor Salrand's shield was blasted down and her key taken, Surristrasz forged its broken pieces anew, and Warmage Anzim's war mages flew to Beryl Point and freed Lady Evanor, who came back to the tower to thank those who saved her.",
+    "triggers": [
+     [
+      5,
+      11681
+     ]
+    ],
+    "sources": [
+     "quests 11671, 11679, 11680, 11681 descriptions and reward text",
+     "creature_text 25784"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 11587 description (abductions across Azeroth, camp just south), 11574 (north of Warsong Hold)",
+   "quest 11576 description (earthquakes, scars, chaotic energy fields)",
+   "npc_text 12730 (Surristrasz), zone_areas 4023, 4105 (Beryl Mage Hunter, Arcane Prison, Inquisitor Salrand)"
+  ],
+  "notes": "Verified. Evanor's capture and rescue as parts. Dragonspeak (11682) and Traversing the Rift (11733) lead to Coldarra and are told there and in Malygos's entry."
+ },
+ {
+  "id": 353711,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 11,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Winterfin Village",
+  "body": "Below the northern cliffs the Westrift cuts a deep, watery trench, and beyond it lies Winterfin Village, home of the Winterfin murlocs. Not long ago an earthquake brought down a landslide there and laid open the Winterfin Caverns beneath. The murlocs who still hold the village now attack anything that comes near, and those who escaped have crowded into Winterfin Retreat on the near side of the water under a new and rather unusual king. They prize clams above all else, and out in Glimmer Bay the orcas of Glrggl prey on them whenever they swim.",
+  "triggers": [
+   [
+    1,
+    4033
+   ],
+   [
+    1,
+    4097
+   ],
+   [
+    1,
+    4099
+   ],
+   [
+    1,
+    4025
+   ],
+   [
+    1,
+    4098
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Lurgglbr, a Winterfin who escaped a cage deep in the caverns, found what drives the murlocs mad: magic seeping into the caves from Coldarra above. King Mrgl-Mrgl fears it is growing stronger, that the Nexus War between the blue dragonflight and the other dragons is spilling over, and that soon all will be caught up in it.",
+    "triggers": [
+     [
+      5,
+      11570
+     ]
+    ],
+    "sources": [
+     "quest 11569 description",
+     "quest 11570 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 12357 (King Mrgl-Mrgl: earthquake, landslide, caverns exposed)",
+   "quests 11559, 11560, 11561, 11563 descriptions (clams, the village across the water, the orcas)",
+   "zone_areas 4025, 4033, 4098, 4099"
+  ],
+  "notes": "Checked: 'old enemy' dropped (no source). Otherwise verified; the king and Claximus are told in 353722. Part 1 on DONE 11570, both factions."
+ },
+ {
+  "id": 353712,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 12,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Coldarra",
+  "body": "Coldarra is an island of ice and arcane light in the northwest of the tundra, and from a vast trench at its heart rises the Nexus, fortress of Malygos and his blue dragonflight. Spellweavers, wyrmkin and mage slayers guard it, the blue dragons lay their eggs at its base, and the island's glacial ancients are turning into beings bound by magic. Hidden beneath the Transitus Shield nearby, Kirin Tor mages and red dragons under Raelorasz watch the enemy and work against it, their supply lines cut and their food nearly gone; should the shield fail even for a moment, they would be found. A way leads down into the Nexus itself.",
+  "triggers": [
+   [
+    1,
+    4024
+   ],
+   [
+    1,
+    4121
+   ],
+   [
+    1,
+    4120
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "High on the upper rings of the Nexus, Raelorasz's sister Corastrasza, a trainer of red drakes, has gone against his wishes to watch Malygos's most powerful drakes. She lets mortals with nerve enough fly her pets against the Scalesworn elites, to learn the tactics they will need against the master of the blues.",
+    "triggers": [
+     [
+      4,
+      13413
+     ]
+    ],
+    "sources": [
+     "quest 13412 description (sister of Raelorasz, against his will, upper rings, powerful blue drakes)",
+     "quest 13413 description (trainer of red drakes, tactics against the master of the blues, ride her drake against the Scalesworn Elites)",
+     "npc_text 14168-14170",
+     "warcraft.wiki.gg/wiki/Corastrasza and warcraft.wiki.gg/wiki/Aces_High! (both added in patch 3.0.2)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11733 reward text (Transitus Shield, Nexus fortress of Malygos)",
+   "quests 11910, 11912, 11914, 11936 descriptions (ancients, supply lines, shield, eggs)",
+   "npc_text 12566 (Raelorasz: front line)",
+   "zone_areas 4024, 4120, 4121"
+  ],
+  "notes": "Checked: Corastrasza's part moved from DONE 13412 to ACCEPT 13413 (13412 tells only that she is Raelorasz's sister and went against his will to watch the blue drakes; the training and the Scalesworn flights are told by 13413, which needs 13412 done and is not a daily). minState 14 removed: the wiki gives patch 3.0.2 for Corastrasza and Aces High!, and mod-individual-progression does not gate her (no reference to 32548 or 13412-13414 in its source), so the part holds from state 13. The Nexus instance is only named."
+ },
+ {
+  "id": 353713,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 13,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Bor'gorok Outpost",
+  "body": "Bor'gorok Outpost stands on the tundra's northern edge, where Overlord Bor'gorok readies the Horde's push into Sholazar Basin. Its start was not a happy one. Force-Commander Steeljaw led a supply caravan south on a shortcut through a taunka burial ground, just after the Horde had struck up relations with the taunka, and the spirits he trampled rose and destroyed it; the wreck of Steeljaw's Caravan still lies among the graves. With the overlord came the spirit talker Snarlfang and her master, Farseer Grimwalker, who went east to observe the magnataur of Magmoth.",
+  "triggers": [
+   [
+    1,
+    4122
+   ],
+   [
+    1,
+    4127
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The caravan was set right with blood. Longrunner Proudhoof, whose ancestors lie in that ground, led Warsong raiders against the risen spirits and the cursed ghost of Steeljaw himself, and with the force-commander's spirit destroyed, the Horde's newborn friendship with the taunka was saved.",
+    "triggers": [
+     [
+      5,
+      11592
+     ]
+    ],
+    "sources": [
+     "quest 11592 description and reward text",
+     "quests 11593, 11594"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Farseer Grimwalker never came back. With a primal essence won from Imperean, the air spirit of the Ruins of Eldra'nath, Snarlfang called up a vision at her totem: his grunts were crushed at Magmoth, he was dragged into its depths, and there his spirit has been shackled.",
+    "triggers": [
+     [
+      5,
+      11631
+     ]
+    ],
+    "sources": [
+     "quests 11624, 11627, 11649, 11629, 11631 descriptions and reward text",
+     "creature_text 25339"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In the depths of Magmoth the farseer's spirit told the rest. The snobold Kaganishu had murdered him in a ritual and made a fetish of his body to learn all he knew of shamanism. With the fetish taken from Kaganishu, the spirit was freed, and his remains were carried home to Bor'gorok, where Snarlfang means to return him to the living.",
+    "triggers": [
+     [
+      5,
+      11638
+     ]
+    ],
+    "sources": [
+     "quests 11635, 11637, 11638 descriptions and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 12382 (push into Sholazar Basin)",
+   "quest 11591 description (Steeljaw's shortcut)",
+   "quest 12486 description (Grimwalker and his pupil Snarlfang went north with the overlord)",
+   "quest 11624 description (observing the magnataur at Magmoth)"
+  ],
+  "notes": "Verified. Steeljaw's Caravan (4127) folded in. Grimwalker's fate is parts 2 and 3, told by the Horde chain 11624-11638; the opening says only where he went. Faction 0: the areas are open to all."
+ },
+ {
+  "id": 353714,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 14,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Fizzcrank Airstrip",
+  "body": "Fizzcrank Airstrip is the Alliance's forward airbase in the north of the tundra, built in great haste by Fizzcrank Fullthrottle and his gnomish flying daredevils on the orders of General Arlos. It is a busy place of runways, flying machines and a transmatter that refuses to work, and it is hemmed in on every side: the magnataur of Magmoth den just to the north, the Scourge lie to the east, and the Horde has lately set up shop to the northwest. Worst of all, the pumping station the gnomes built in the pools to the east has gone silent, and those sent to it have not come back. Crafty Wobblesprocket, meanwhile, complains that snobolds stole all her stuff.",
+  "triggers": [
+   [
+    1,
+    4108
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Crafty found her creative solution to the magnataur. Her shortening blaster failed, so she stitched a Warsong orc disguise out of outfits taken from Steeljaw's dead caravan guards, and in it the magnataur chieftain Magmothregar was slain and a Warsong banner planted in his corpse. The magnataur and their snobolds now have the orcs of Bor'gorok Outpost to blame.",
+    "triggers": [
+     [
+      5,
+      11670
+     ]
+    ],
+    "sources": [
+     "quests 11653, 11658, 11670 descriptions and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 12456 and 12463 (Fizzcrank: airbase for Arlos; magnataur north, Scourge east, Horde northwest)",
+   "quest 11650 description (airstrip on the southern border of a magnataur den)",
+   "quest 11710 description (transmatter)",
+   "quest 11645 description, npc_text 12423 (Crafty)",
+   "npc_text 12459 (scouting parties never returned)"
+  ],
+  "notes": "Verified. The Mechazod story is 353729. Part 1 (Alliance) is Crafty's frame-up of the Horde."
+ },
+ {
+  "id": 353715,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 15,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Geyser Fields",
+  "body": "Between Fizzcrank Airstrip and Taunka'le Village the earth steams. In the Geyser Fields and the Scalding Pools oil bubbles up among the vents, and in the middle the gnomes' pumping station rises from drained pools ringed by four valve stations. Robots of every kind tramp through the muck, mechanical gnomes among them, and oil-soaked wolves, caribou and hawks pick through the wreckage of crashed gnomish flying machines. In the south the Nerubians of the Scourge have broken through the ground in great sinkholes, threatening both the airstrip and the village and harrying the patrols the taunka send out.",
+  "triggers": [
+   [
+    1,
+    4035
+   ],
+   [
+    1,
+    4036
+   ],
+   [
+    1,
+    4116
+   ],
+   [
+    1,
+    4117
+   ],
+   [
+    1,
+    4145
+   ],
+   [
+    1,
+    4146
+   ],
+   [
+    1,
+    4147
+   ],
+   [
+    1,
+    4148
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The sinkholes did not stay open. A great quake loosed at the southernmost of them collapsed the Nerubian tunnels, and it drew up the leader of the Nerubian assault, Lord Kryxix, who died there. The Nerubian offensive in the fields was broken.",
+    "triggers": [
+     [
+      5,
+      11723
+     ],
+     [
+      5,
+      11706
+     ]
+    ],
+    "sources": [
+     "quest 11723 description and reward text",
+     "quest 11706 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 12457 (pumping station in the drained pools)",
+   "quests 11788, 11907 descriptions (four valve stations)",
+   "quests 11684, 11713 descriptions (Nerubian sinkholes, patrols)",
+   "quests 11725, 11881 descriptions (crashed recon wing)",
+   "zone_areas 4035, 4036, 4116 (Sentry-bot, Defendo-tank, Fizzcrank Mechagnome, Oil-stained Wolf, Oiled Fledgeling, Oil-soaked Caribou)"
+  ],
+  "notes": "Checked: part 1 kept to what both factions' quests share (11723 Alliance speaks of a Nerubian leader and the Nerubian offensive, 11706 Horde of a commander and a flanking attack), so 'commander' and 'flanking attack' became 'leader' and 'offensive'; the opening says the sinkholes threaten, not flank, both camps. The Power of the Storm aura (spell_area 46424) is a quest aura, not a phase."
+ },
+ {
+  "id": 353716,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 16,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Taunka'le Village",
+  "body": "Taunka'le Village has been the home of the taunka of the Borean Tundra for many generations, a people of winter kin to the tauren. Chieftain Wintergale leads them, and his counselors pull him two ways: the warrior Durm Icehide would charge the Scourge head-on, while Sage Aeire would confound the enemy and strike at its leaders. Blind old Greatfather Mahan, who raised Durm, sits among the elders with Greatmother Taiga, Wind Tamer Barah and Sage Earth and Sky. The Scourge has the village surrounded, and many taunka have already gone east toward Icemist, their capital in the Dragonblight. A goblin, Fezzix Geartwist, tinkers with salvaged gnomish wreckage by the lodges.",
+  "triggers": [
+   [
+    1,
+    4037
+   ]
+  ],
+  "sources": [
+   "quest 11929 description (home for many generations; Icemist in the Dragonblight)",
+   "quest 11916 reward text (many already left for the Dragonblight)",
+   "creature_text 24703 groups 0-5, 24706, 24709 (the council)",
+   "warcraft.wiki.gg/wiki/Taunka (kin of the tauren)",
+   "quest 11977 reward text (Brighthoof: the tribe, tauren and taunka)",
+   "quests 11881, 11894 (Fezzix)"
+  ],
+  "notes": "Verified. Opening as on arrival. The village's fight and evacuation are the story 353727. The fate of Icemist is the Dragonblight's and is not told."
+ },
+ {
+  "id": 353717,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 17,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Talramas and the Dens of Dying",
+  "body": "In the northeast of the tundra lie the Dens of Dying, caves sacred to the magnataur, where the old go when their time comes. Something has fouled them: the magnataur on the slopes have caught a plague, and cultists brew it in cauldrons inside the caves. Just to the west lies Talramas, a Scourge necropolis that fell from the sky and broke upon the ground, still full of ghouls, bone warriors and abominations, with cultists working around the Festering Pools at its foot. Sage Highmesa of Taunka'le and the gnome Bixie Wrenchshanker have both come north to learn what fell.",
+  "triggers": [
+   [
+    1,
+    4118
+   ],
+   [
+    1,
+    4119
+   ],
+   [
+    1,
+    4124
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Longrunner Bristlehorn went into Talramas alone and was cut down. Dying, he sent his rescuer after the two who ruled the necropolis, Doctor Razorgrin and Lich-Lord Chillwinter, and both were destroyed. He was Greatmother Taiga's grandson. She took the news fighting to hold back her grief: he died an honorable death, she said, like a true taunka.",
+    "triggers": [
+     [
+      5,
+      11689
+     ]
+    ],
+    "sources": [
+     "quests 11678, 11687, 11689 descriptions and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11674 description (Dens of Dying sacred to the magnataur; something fell from the sky)",
+   "quests 11675, 11677, 11694 descriptions (plague, cultists, cauldron)",
+   "quests 11678, 11683, 11698 descriptions (fallen necropolis)",
+   "zone_areas 4118, 4119, 4124"
+  ],
+  "notes": "Verified. Part 1 Horde only (11689); Tinky's Alliance side (11697-11700) is not told. Faction 0: the areas are open to all."
+ },
+ {
+  "id": 353718,
+  "kind": 1,
+  "zone": 3537,
+  "sort": 18,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Temple City of En'kilah",
+  "body": "The Temple City of En'kilah, in the northeast of the tundra, is the Scourge's seat in the Borean Tundra, a plagued Nerubian city with the necropolis Naxxanar floating above it. Three great spires rise from its grounds, the Spire of Blood, the Spire of Pain and the Spire of Decay, each kept by a high priest, and plague cauldrons brew among the crypt fiends, gargoyles and the darkfallen of the San'layn. From here the Scourge commander sends his Nerubians to surround Taunka'le, and the land outside the walls lies blighted, its mammoths scourged. To the south stands the Wailing Ziggurat.",
+  "triggers": [
+   [
+    1,
+    4125
+   ],
+   [
+    1,
+    4128
+   ],
+   [
+    1,
+    4135
+   ],
+   [
+    1,
+    4136
+   ],
+   [
+    1,
+    4137
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Inside the Spire of Blood the Scourge keeps its prisoners alive. A dying taunka snow tracker, Grumm, told what is done to them: they are bled, their blood is gathered in globes, and the globes are carried up to the necropolis to feed a blood prince.",
+    "triggers": [
+     [
+      5,
+      11659
+     ]
+    ],
+    "sources": [
+     "quests 11654, 11659 descriptions and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "At the summit of Naxxanar waited Prince Valanar of the San'layn, the blood prince who commands the Scourge in the tundra, and there he was defeated. The Temple City still stands, but its master has been beaten.",
+    "triggers": [
+     [
+      5,
+      11898
+     ],
+     [
+      5,
+      12019
+     ]
+    ],
+    "sources": [
+     "quest 11898 description and reward text (Horde: Valanar at the prince's seat; Scourge presence in the tundra broken)",
+     "SmartAI of Thassarian guid 101303 and creature_text 26203 group 0 (Alliance: the Lich King's image calls Valanar blood prince and praises his progress in the region)",
+     "creature_template 25601 and 28189 (Prince Valanar, The San'layn)",
+     "warcraft.wiki.gg/wiki/Last_Rites"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11628 description (seat of the Scourge, commander, Nerubians, blighted land)",
+   "quest 11932 description (Scourge ziggurat outside a plagued Nerubian city)",
+   "quests 11633, 11640, 11647 descriptions (spires, high priests, cauldrons, necropolis)",
+   "zone_areas 4125, 4135-4137 (Darkfallen Deathblade, crypt fiends, gargoyles, high priests)"
+  ],
+  "notes": "Checked: part 2 verified for both factions (11898 Horde, 12019 Alliance, where the Lich King's image calls him blood prince and praises his progress in the region); 'broken' changed to 'beaten' so it says only that he was defeated (he returns in Icecrown Citadel). Part 1 Horde (11659). Valanar has an entry in the Scarlet Enclave file, so he gets none here."
+ },
+ {
+  "id": 353719,
+  "kind": 2,
+  "zone": 3537,
+  "sort": 1,
+  "faction": 2,
+  "requiredState": 13,
+  "title": "High Overlord Varok Saurfang",
+  "body": "High Overlord Varok Saurfang is an old warrior of the Horde who drank Mannoroth's blood with the rest of his people and remembers all too well what they did under its curse. He once proclaimed the Horde's victories in Orgrimmar, and he greets its champions by their deeds. Now he stands at Garrosh Hellscream's side in Warsong Hold, the voice of caution against the young Overlord's impatience. Fear, he says, has always been the orcs' greatest weapon, and now they face an enemy that knows none. He has told Garrosh plainly that he will not let him lead the Horde down that dark path again, even if he must kill him himself.",
+  "triggers": [
+   [
+    2,
+    25256
+   ],
+   [
+    4,
+    11595
+   ],
+   [
+    4,
+    11596
+   ],
+   [
+    4,
+    11597
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "When Shadowstalker Getry went down into the Warsong Farms to face Varidus the Flenser, it was Saurfang himself who came to the fight, and Getry counted it an honor to have fought beside him. Garrosh, who had sent only one soldier, crowed that he had told the old dog the newcomer would be fine.",
+    "triggers": [
+     [
+      5,
+      11705
+     ]
+    ],
+    "sources": [
+     "creature_text 25729 groups 2-3",
+     "quest 11705 completion and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The carapace of Ith'rix the Harvester, a great Nerubian of the Scourge, reminded him of Silithus, where the Might of Kalimdor trampled a thousand bugs like it in the desert. This land is different, he said, but the result will be the same.",
+    "triggers": [
+     [
+      5,
+      11632
+     ]
+    ],
+    "sources": [
+     "quest 11632 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 12381 (fear our greatest weapon)",
+   "creature_text 25256 groups 9-22 (Mannoroth's venom; I'll kill you myself)",
+   "quests 11595, 11596, 11597 descriptions (Nefarian's head, Scarab Lord, Hellscream's burden)",
+   "orgrimmar.json 163711 part 1 (Saurfang once proclaimed victories in Orgrimmar)"
+  ],
+  "notes": "Verified. Horde only (TALK 25256 faction 1979; 11595-11597 Horde). Nothing of his son or the Wrathgate (13242 and 13257 not used; Nagrand owns Saurfang the Younger)."
+ },
+ {
+  "id": 353720,
+  "kind": 2,
+  "zone": 3537,
+  "sort": 2,
+  "faction": 1,
+  "requiredState": 13,
+  "title": "Thassarian",
+  "body": "Thassarian is a death knight who now fights for the Alliance. In life he was a soldier of Lordaeron who followed Prince Arthas to Northrend and died there, and in death he served the Lich King. All he wished, he says, was to serve his king again against a common enemy. At Valiance Keep he was put in charge of Unit S, a dozen men sent to storm the Wailing Ziggurat. He took it, and in the ziggurat he now holds the high deathpriest Isidorus and the lich Tanathal captive, for the Alliance's own ranks have been infiltrated by cultists, and every sign points to Naxxanar.",
+  "triggers": [
+   [
+    2,
+    26170
+   ],
+   [
+    5,
+    12088
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "At the summit of Naxxanar the Lich King's image called him back to the Scourge, and Thassarian swore instead that Arthas would pay for what he did to his own men. His sister Leryssa, whom he had hoped to keep out of it all, was there, and she lived. He would not go home with her yet: his duty to his land and king was done, but he still owed something to himself, and he promised to come back to her when it was paid.",
+    "triggers": [
+     [
+      5,
+      12019
+     ]
+    ],
+    "sources": [
+     "creature_text 26170 groups 0-6",
+     "quest 12019 reward text",
+     "warcraft.wiki.gg/wiki/Last_Rites"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 12663 (serve my king again; infiltrated by cultists; Naxxanar)",
+   "quest 12019 description (served Arthas in death, no choice)",
+   "npc_text 12534 (Leryssa: her brother was part of Arthas's army)",
+   "quests 11604, 11932, 11944, 12088 descriptions (Unit S, the ziggurat)",
+   "quests 11956, 11938 descriptions (Isidorus, the lich and its phylactery)",
+   "scarlet_enclave.json 429822 (his earlier history, not retold)"
+  ],
+  "notes": "Checked: 'because he had no choice' dropped from the opening (he says it only on 12019, after both triggers). Part 1 verified against the SmartAI Last Rites event (Thassarian guid 101303, creature_text 26170 groups 0-6, 26203 groups 1-2) and the 12019 reward text. Approved under the rule for death knight figures: his Northrend story only, nothing from the Scarlet Enclave. Alliance only (TALK 26170 faction 1892, both spawns in this zone; DONE 12088 Alliance)."
+ },
+ {
+  "id": 353721,
+  "kind": 2,
+  "zone": 3537,
+  "sort": 3,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Karuk",
+  "body": "Karuk is a young tuskarr fisherman, one of the last survivors of Pal'ea. The Kvaldir, whom his people's legends call tuk-hariq, the walkers of the fog, burned his village to the ground and slew everyone he knew, his father Ariut among them. By tuskarr law it falls to Karuk to avenge the blood of his kin, but he has not yet passed the test of manhood and cannot stand toe to toe with the giants. So he hides on the bluffs above Riplash Strand, watching the Kvaldir base, and seeks someone to carry out his blood duty for him.",
+  "triggers": [
+   [
+    2,
+    25435
+   ],
+   [
+    4,
+    11613
+   ],
+   [
+    5,
+    12141
+   ],
+   [
+    5,
+    11662
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The leader of the raiders who killed Ariut was Gamel the Cruel, who made his lair in a cave on the beach. With Gamel slain, Karuk declared the deaths of the tuskarr avenged and their spirits free to rest.",
+    "triggers": [
+     [
+      5,
+      11619
+     ]
+    ],
+    "sources": [
+     "quest 11619 description and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "A tuskarr freed from the Kvaldir brought him word of his father's end. The raiders made their prisoners fight one another, a fate crueler than a quick death, and Ariut fought until the very end.",
+    "triggers": [
+     [
+      5,
+      12471
+     ]
+    ],
+    "sources": [
+     "quest 12471 description and reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "When Leviroth died beneath Riplash, Karuk counted his father honored and his people's spirits at peace, and he said he hoped one day to be as strong as the one who had done it.",
+    "triggers": [
+     [
+      5,
+      11626
+     ]
+    ],
+    "sources": [
+     "quest 11626 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11613 description",
+   "npc_text 12477",
+   "quest 11662 description (Karuk on the bluffs above Riplash Strand)",
+   "quest 12141 description (Valiance Keep sends help to the tuskarr)"
+  ],
+  "notes": "Verified. Both factions reach him: Alliance from Valiance Keep (12141), Horde from Waltor (11662), and either can take 11613 directly."
+ },
+ {
+  "id": 353722,
+  "kind": 2,
+  "zone": 3537,
+  "sort": 4,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "King Mrgl-Mrgl",
+  "body": "King Mrgl-Mrgl leads the Winterfin murlocs who fled to Winterfin Retreat, though he is no murloc at all. He came to the Westrift in a murloc disguise to watch the Winterfin and take notes on their daily lives, until an earthquake in Coldarra opened the caverns beneath their village. A strange makrura came out of them and stole the tadpoles, and the murlocs who went in after their young came back glowing and under its control. The rest fell back across the water, and the observer reluctantly found himself their king. He teaches friendly strangers the Winterfin tongue with steam taken from Scalder, an elemental of the trench.",
+  "triggers": [
+   [
+    2,
+    25197
+   ],
+   [
+    5,
+    11702
+   ],
+   [
+    5,
+    11704
+   ],
+   [
+    4,
+    11571
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "His secret is known to one murloc. Mrmrglmr, who cleaned his spare costume, has kept it and blackmails him with it, threatening to tell the others what their king truly is: a night elf.",
+    "triggers": [
+     [
+      5,
+      11562
+     ]
+    ],
+    "sources": [
+     "quest 11562 description and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The makrura was the lobstrok Claximus. Wearing the king's spare suit and carrying a white flag, an envoy walked into the Winterfin Caverns as if to surrender, and killed him. Mrgl-Mrgl called it regrettable but necessary, and hopes now to reunite the remaining murlocs and seal off the caverns.",
+    "triggers": [
+     [
+      5,
+      11566
+     ]
+    ],
+    "sources": [
+     "quests 11565, 11566 descriptions and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 12357",
+   "quests 11702, 11704 descriptions",
+   "quests 11571, 11560 descriptions",
+   "creature_text 25197"
+  ],
+  "notes": "Verified. Both factions (11702 Horde, 11704 Alliance; 11571 and the rest races 0). He wears the D.E.H.T.A. subname, but his tie to the druids is not stated in any text, so it is left out."
+ },
+ {
+  "id": 353723,
+  "kind": 2,
+  "zone": 3537,
+  "sort": 5,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Malygos",
+  "body": "Malygos is the Aspect of Magic and master of the blue dragonflight, and the Nexus on Coldarra is his fortress. Long ago Deathwing's betrayal all but destroyed his flight and wounded his mind, and for thousands of years he withdrew from the world. Now he has decided that mortals, with their brief lives, tap the world's arcane energies so carelessly that Azeroth will be annihilated, and before any council could be appointed he put his own remedy into action, drawing magic toward the Nexus while his servants hunt down mages. The red dragons and the Kirin Tor have gone to war against him, and they say that if he wins, the world will be no more.",
+  "triggers": [
+   [
+    5,
+    11733
+   ],
+   [
+    4,
+    11918
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "His work can be measured. Archmage Berinand's instruments, hidden around Coldarra in the guise of Malygos's own scrying orbs, show the Aspect channeling far too much power into this place, while reports of growing geologic instability arrive from all over Azeroth. If he is not stopped, Berinand warns, Azeroth will be the next Outland.",
+    "triggers": [
+     [
+      5,
+      11900
+     ]
+    ],
+    "sources": [
+     "quest 11900 description and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Malygos did not stay hidden for long. When Saragosa was slain, Keristrasza called him out of the safety of his realm to see what remained of his consort, and he came. He claimed the red dragon who had brought Saragosa down to take her place at his side, and when she refused him, he took her.",
+    "triggers": [
+     [
+      5,
+      11969
+     ]
+    ],
+    "sources": [
+     "smart_scripts 2623700-2623701 and creature_text 26237 groups 1-6, 26310 group 0 (the open-world event of 11969)",
+     "quest 11967 description (lure him from the safety of his realm)",
+     "quest 11969 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 12590 (Raelorasz: magic, irresponsible mortals, council, Malygos's plan)",
+   "quest 11918 description (if he is victorious, this world shall be no more)",
+   "quest 11733 reward text",
+   "quest 11900 reward text (channeling power to this place)",
+   "warcraft.wiki.gg/wiki/Malygos (Aspect of Magic; Deathwing's betrayal at the Demon Soul; long withdrawal; mage hunters)"
+  ],
+  "notes": "Checked: part 2 rewritten to the open-world event of 11969 as the database runs it (Keristrasza calls him over Saragosa's remains, Malygos 26310 is summoned, claims her, she refuses, both vanish). Removed the fight with the red dragons in the sky and his crying out for Saragosa: creature_text 29655 belongs to a static spawn that no script makes speak, and no script stages a battle. Nothing from inside the Nexus or from 11973. Opening and part 1 verified: only what the 3.3.5 world shows, no Eye of Eternity outcome."
+ },
+ {
+  "id": 353724,
+  "kind": 2,
+  "zone": 3537,
+  "sort": 6,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Keristrasza",
+  "body": "Keristrasza is a red dragon who would not bend to Malygos's will. For that he bound her in a prison, then shattered it and scattered its pieces across Coldarra, leaving her to wander an empty abyss for eternity. Gathered again by Raelorasz's allies, the prison set her free, and she has sworn never to forget the kindness. She is weak from her captivity, but she learned much about Malygos while she was his prisoner, and she means to use it against him, beginning with Saragosa, the great blue dragon who circles above the Nexus as his guardian and consort, and at whose hands she suffered greatly.",
+  "triggers": [
+   [
+    4,
+    11951
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "She made bait of mana shards, byproducts of Malygos's own schemes, and fashioned a Power Focus that the gluttonous Saragosa could not resist. Saragosa came down to it and was slain, and Keristrasza declared that the time had come to strike at Malygos himself.",
+    "triggers": [
+     [
+      5,
+      11957
+     ]
+    ],
+    "sources": [
+     "quest 11951 reward text",
+     "quest 11957 description and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The trap was sprung. Over the remains of Saragosa, Keristrasza called on the Lord of Magic to come and recover his precious consort, or what was left of her, and Malygos came. She urged her ally to flee and live to finish what they had begun. Then he turned on her: she had bested his consort, he said, and now she would take her place. She refused him, and he took her. Raelorasz counted it a blow against Malygos, bought at a high price.",
+    "triggers": [
+     [
+      5,
+      11969
+     ]
+    ],
+    "sources": [
+     "smart_scripts 2623700-2623701 (summons Corpse of Saragosa 26299 and Malygos 26310)",
+     "creature_text 26237 groups 1-6, 26310 group 0",
+     "quest 11969 reward text (a blow dealt at a high price)",
+     "quest 11973 (not used: instance quest)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11943 description and reward text",
+   "quest 11946 description",
+   "quest 11951 description"
+  ],
+  "notes": "Checked: DONE 11946 dropped from the entry's triggers, since the opening's Saragosa, her suffering and what Keristrasza learned of Malygos are told only by 11951's description; ACCEPT 11951 (needs 11946 done) now opens the entry. Part 2 rewritten to the event as the database runs it (smart_scripts 2623700-2623701): no battle with the red dragons and no rescue flight, which no script shows. Her capture rests on creature_text 26237 and 26310 in the open world; her fate inside the Nexus (11973 and the instance) is left to an instance file. She is summoned from the Augmented Arcane Prison, so no TALK trigger."
+ },
+ {
+  "id": 353725,
+  "kind": 3,
+  "zone": 3537,
+  "sort": 1,
+  "faction": 2,
+  "requiredState": 13,
+  "title": "The Defense of Warsong Hold",
+  "body": "Warsong Hold was built to be impregnable, but the Nerubians did not need to break its walls. They tunneled up through Mightstone Quarry beside it, where the ground is soft, and now they swarm the quarry, keep their eggs high on its scaffolding and drag off peons cocooned in webbing. Overlord Razgor holds the line from a hut south of the hold, and Quartermaster Holgoth could collapse their tunnels with heavy munitions, if only his munitions were not buried in the quarry under the Nerubians. Beyond the quarry, Razgor warns, thousands of Scourge wait for the order to attack, and if the Nerubians break the inner defenses, the hold will be overrun.",
+  "triggers": [
+   [
+    4,
+    11598
+   ],
+   [
+    4,
+    11606
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Razgor would rather strike at the root of the problem. West across the tundra, on the Plains of Nasam, a thousand Scourge at least and four great floating death machines are massing against the hold, and from the top of Warsong Wind Master To'bor points out the field of death beyond.",
+    "triggers": [
+     [
+      5,
+      11634
+     ]
+    ],
+    "sources": [
+     "quest 11634 description and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Horde had no siege engines to send. With its transports and shipping lanes failing, nothing heavy had reached Warsong; the only tanks left were the original expedition's, abandoned at Garrosh's Landing when Hellscream condemned the coast. There Gorge the Corpsegrinder kept them, and his mechanic Mobu patched them with plates scavenged from inside the mist.",
+    "triggers": [
+     [
+      5,
+      11651
+     ]
+    ],
+    "sources": [
+     "quests 11636, 11642, 11643, 11644, 11651 descriptions and reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The tanks rolled out onto the Plains of Nasam, cut through the Scourge host and pulled wounded Warsong soldiers from the field, and at the structure in its center they learned who led it: Kel'Thuzad. Garrosh took the news grimly. If Kel'Thuzad commanded these Scourge, then Naxxramas had returned, and there was no telling what else the Lich King held in store.",
+    "triggers": [
+     [
+      5,
+      11652
+     ]
+    ],
+    "sources": [
+     "quest 11652 description and reward text",
+     "creature_text 25465 (Kel'Thuzad on the plains)"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 11598, 11602, 11606, 11608, 11611 descriptions"
+  ],
+  "notes": "Checked: 'seaforium charges' changed to heavy munitions (the charges appear only in 11606's reward). Otherwise verified. Horde only. Kel'Thuzad's identity is part 3 (DONE 11652, whose reward text tells it). spell_area 47917 (4027, 4130) has start 11652 status 64 and end 11652 status 11, which can never both hold, so it shows nothing. The zone's reserved 13257 and the Warsong Hold phase are not touched."
+ },
+ {
+  "id": 353726,
+  "kind": 3,
+  "zone": 3537,
+  "sort": 2,
+  "faction": 2,
+  "requiredState": 13,
+  "title": "The Warsong Farms",
+  "body": "The Shadowstalkers in Warsong Hold came north by order of Varimathras, to spy and, as Shadowstalker Barthus admits, to do a little assassination on the side. One of his best field agents, Luther, has vanished while gathering intelligence on the Nerubians in the northern part of Mightstone Quarry, and Barthus fears not his death but his betrayal: an agent who has gone rogue would be worse than a dead one. He wants Luther found, and he would rather he were found dead.",
+  "triggers": [
+   [
+    4,
+    11614
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Luther was dead by his own hand: he took a deadly poison so that the Nerubians would not touch his body. His journal ended in a frantic scrawl about a dozen necrolords and the farms to the west, turned into a spawning ground for the Scourge, with row upon row of victims. Barthus sent word to Hellscream that reinforcements were needed.",
+    "triggers": [
+     [
+      5,
+      11615
+     ]
+    ],
+    "sources": [
+     "quests 11614 reward text, 11615 description and reward text",
+     "quest 11616 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Hellscream sent one soldier and called it reinforcements. At the Warsong Farms the Shadowstalkers found worse than Luther had written: the Scourge hold the place in force and infect everything they touch, and the lumbering monsters that roam the fields were once orcs and tauren.",
+    "triggers": [
+     [
+      5,
+      11686
+     ]
+    ],
+    "sources": [
+     "quests 11618, 11686 descriptions and reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The master of that work was the necrolord Varidus the Flenser, who meant to raise every captive as a servant of the Lich King. Shadowstalker Getry went down to face him with a single companion, and then help came from the hold itself: High Overlord Saurfang joined the fight, and Varidus fell. Hellscream was pleased to see the old warrior proven wrong.",
+    "triggers": [
+     [
+      5,
+      11705
+     ]
+    ],
+    "sources": [
+     "quests 11703, 11705 descriptions, completion and reward text",
+     "creature_text 25618, 25729"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11614 description"
+  ],
+  "notes": "Checked: part 2 no longer says the Scourge cage the Horde's soldiers (11686 says only that they cover the place and infect everything). Otherwise verified; Saurfang's arrival in part 3 is the summoned Saurfang 25749 of the 11705 event. Horde only. Varimathras is named only as the one who sent the Shadowstalkers."
+ },
+ {
+  "id": 353727,
+  "kind": 3,
+  "zone": 3537,
+  "sort": 3,
+  "faction": 2,
+  "requiredState": 13,
+  "title": "The Last Days of Taunka'le",
+  "body": "The taunka of Taunka'le Village have struck up relations with the Horde, and they need it. Their ambassador, Talonga, waits in Warsong Hold while the Overlord keeps him waiting, and when help finally comes east, Chieftain Wintergale fears it is too late: many of his people have already fled toward the Dragonblight. From the Temple City of En'kilah the Scourge commander's Nerubians surround the village. Durm Icehide wants to charge. Sage Aeire believes that a cloak of scourged mammoth pelts, cured in blighted earth, could hide a scout among the enemy, and the chieftain chooses her plan.",
+  "triggers": [
+   [
+    4,
+    11916
+   ],
+   [
+    4,
+    11888
+   ],
+   [
+    4,
+    11628
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Wearing Aeire's shroud, a scout walked unseen through the Temple City and studied its three great spires. Wintergale listened to the report and began to plan the assault on the necropolis above it.",
+    "triggers": [
+     [
+      5,
+      11633
+     ]
+    ],
+    "sources": [
+     "quest 11633 description and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The spires housed the high priests who command the Scourge there and hold the key to the necropolis. Their scrolls bore words in the harsh Nerubian tongue, 'Shabtir bakh sokhen', the servant bows to the master's authority, and those words gain entry to Naxxanar.",
+    "triggers": [
+     [
+      5,
+      11640
+     ]
+    ],
+    "sources": [
+     "quest 11640 description and reward text"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In the necropolis waited Prince Valanar, with his lieutenants Vanthryn the Merciless and Luthion the Vile, and they were defeated. Wintergale judged the Scourge's hold on the tundra broken, though not for long. He set Durm to lead the villagers to Icemist, and for himself he chose to stay: he could not abandon Taunka'le, and would defend it until he was slain.",
+    "triggers": [
+     [
+      5,
+      11898
+     ]
+    ],
+    "sources": [
+     "quest 11898 description and reward text"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Taunka'le was abandoned at last. Wintergale ordered every remaining taunka to leave for Icemist, and at the village gate Mother Tauranook wept for the home they left. Once, she remembered, the snow filled the tundra as far as she could see; now the snow has left them, a sign that their time here is over. Perhaps one day it will welcome them back.",
+    "triggers": [
+     [
+      5,
+      11929
+     ]
+    ],
+    "sources": [
+     "quest 11929 description and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 11888, 11916 descriptions and reward text",
+   "quest 11591 description (relations with the taunka)",
+   "quests 11628, 11630 descriptions",
+   "creature_text 24703, 24706, 24709"
+  ],
+  "notes": "Verified. Horde only. The story ends as the evacuation leaves (DONE 11929, turned in at the village gate). Across Transborea (11930) is turned in at Coldwind Pass in the Dragonblight (posarea 4478) and its reward tells Icemist's fall, which the Dragonblight owns, so it is not used."
+ },
+ {
+  "id": 353728,
+  "kind": 3,
+  "zone": 3537,
+  "sort": 4,
+  "faction": 1,
+  "requiredState": 13,
+  "title": "Thassarian, My Brother",
+  "body": "Leryssa came to Valiance Keep looking for a dead man. Her brother Thassarian went to Northrend in Prince Arthas's army years ago and never came back, yet William Allerton, a family friend, wrote to her that Thassarian had enlisted at the keep on the same day he did. She sold everything she owned to come north, only to be stonewalled by the keep's officials and threatened with arrest for snooping. She needs someone in the good graces of the higher-ups, and her first lead is William himself, posted at the Farshire mine.",
+  "triggers": [
+   [
+    4,
+    11599
+   ],
+   [
+    5,
+    11927
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "William Allerton lay dead in the mine, his throat cut by a blade, with no mark of tooth or claw on him. His enlistment card was the only clue, and Leryssa did not believe the Scourge had killed him. Something, she was sure, was wrong.",
+    "triggers": [
+     [
+      5,
+      11600
+     ]
+    ],
+    "sources": [
+     "quests 11599, 11600 descriptions and reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The recruitment ledger put Thassarian in a unit called simply S, when every other unit was named for an Alliance town. Old Man Colburn, a retired marine, remembered a deserter who swore that S stood for suicide, and the deserter, Private Brau, confirmed it: Thassarian had been given a handful of men to storm a Scourge ziggurat beside a plagued Nerubian city. The tuskarr of Kaskala, who saw him pass, said he bore the mark of Karkut, who watches over the dead.",
+    "triggers": [
+     [
+      5,
+      11932
+     ]
+    ],
+    "sources": [
+     "quests 11601, 11603, 11604, 11932 descriptions and reward text",
+     "npc_text 12555"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "At Death's Stand the last of Unit S held out below the Wailing Ziggurat, and Corporal Venn told the rest. Thassarian is a death knight, once a servant of Arthas, though the men who fought beside him call him a good man. He had gone up to the ziggurat alone, and when he learned that his sister was looking for him, he resolved to finish his work before she got hurt.",
+    "triggers": [
+     [
+      5,
+      12088
+     ]
+    ],
+    "sources": [
+     "quests 12086, 11944, 12088 descriptions and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 11927 description and reward text",
+   "quest 11599 description",
+   "npc_text 12534"
+  ],
+  "notes": "Verified. Alliance only. Thassarian's own entry (353720) tells Last Rites; this story ends where she finds him."
+ },
+ {
+  "id": 353729,
+  "kind": 3,
+  "zone": 3537,
+  "sort": 5,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Gearmaster Mechazod",
+  "body": "In the pools east of Fizzcrank Airstrip the gnomes built a pumping station to draw up sand and oil for their machines. Then it fell silent. The scouting parties sent out to it never returned, flying machines went down, and now the pools teem with robots and with strange mechanical gnomes that appeared not long after the gnomes themselves vanished. The taunka of Taunka'le, who say the gnomes have been fouling the land with their inventions, watch the pumping station as warily as the airstrip does, and both mean to learn what happened there.",
+  "triggers": [
+   [
+    4,
+    11708
+   ],
+   [
+    4,
+    11890
+   ],
+   [
+    4,
+    11899
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The mechagnomes are the station's own gnomes. Down in the pools they brought up the pieces of a broken robot shaped like a gnome and put him back together: Gearmaster Mechazod. By way of thanks he set about curing them of what he calls the curse of flesh, which he says befalls every creation of the titans, and rebuilt them as machines. Those who saw his work call him mad.",
+    "triggers": [
+     [
+      5,
+      11708
+     ],
+     [
+      4,
+      11909
+     ]
+    ],
+    "sources": [
+     "npc_text 12458, 12460-12463 (Alliance, during 11708)",
+     "Greatmother Taiga's smart_scripts 2560200 and creature_text 26097 groups 0-3 (Horde, the freed gnome souls on DONE 11899, before 11909)",
+     "quest 11712 description",
+     "quest 11909 description"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Fizzcrank Fullthrottle tells the rest. The pump's main suction pipe had clogged on Mechazod where he had lain broken for thousands of years, right beneath the station, and the mechanics rebuilt him without telling anyone. He claimed to be among the first gnomes ever made by the Grand Architect, a keeper of the titans. When Fizzcrank's people came out in force, they were surrounded and taken to the top of the station, and the few who escaped leapt off the platform with parachutes.",
+    "triggers": [
+     [
+      5,
+      11708
+     ]
+    ],
+    "sources": [
+     "npc_text 12457-12463 (gossip menus 9174-9182, the last two conditioned on 11708 in the log; option 0 of 9182 gives the 11708 credit)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Mechazod was stopped where he began. His manual was studied in the command hut atop the pumping station, and the Gearmaster was destroyed and his head carried home. With the blue dragons, the Nexus War and the Lich King to face, those who had sent his slayer agreed, the world had no need of a mad creation of the titans running loose.",
+    "triggers": [
+     [
+      5,
+      11798
+     ],
+     [
+      5,
+      11909
+     ]
+    ],
+    "sources": [
+     "quests 11798, 11909 descriptions and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 12457, 12459 (pumping station, lost scouts)",
+   "quest 11890 description (gnomes fouling the land)",
+   "quest 11899 description (mechagnomes appeared after the gnomes disappeared)"
+  ],
+  "notes": "Checked: part 1 rewritten to what both factions are shown: the Alliance in Fizzcrank's tale during 11708, the Horde from the freed gnome souls when 11899 is turned in (Taiga's smart_scripts 2560200, creature_text 26097), before 11909 can be taken. 'Immortality' dropped from part 1 (the Alliance hears it only in 11798's description). Part 2 is the Alliance-only detail of Fizzcrank's tale (gossip 9171-9182; the tale's options need 11708 in the log and the last one gives its credit, so DONE 11708 shows it). Part 3 on both kill quests. Ulduar is not named."
+ }
+]

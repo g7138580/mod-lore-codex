@@ -1,0 +1,594 @@
+[
+ {
+  "id": 419700,
+  "kind": 0,
+  "zone": 4197,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Wintergrasp",
+  "body": "Wintergrasp is a frozen valley in west-central Northrend, ringed by the Borean Tundra, Sholazar Basin, Icecrown and the Dragonblight. Titan fortifications dot the land and elemental riches abound, and both make it a prize: elementals of air, earth, water, fire and shadow roam it, and even living plants. At its northern end stands Wintergrasp Fortress, which guards the way into the Vault of Archavon, and the Valiance Expedition of the Alliance and the Horde's Warsong champions fight over it again and again, in what the call to arms names the Battle for Lake Wintergrasp. No victory here is more than temporary. Between battles one side garrisons the keep while the other gathers at a camp on the valley's edge, and when war returns, goblin and gnomish engineers turn out catapults, demolishers and siege engines at workshops across the field. The Wintergrasp River cuts the valley in two, with three towers beyond it to the south, and even in the lulls soldiers of both sides scour the land for embers, bone, herbs and armor, and kill each other for them.",
+  "triggers": [
+   [
+    1,
+    4197
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Wintergrasp (a frozen valley in western-central Northrend; borders Borean Tundra, Sholazar Basin, Dragonblight, Icecrown; ancient titan fortifications dot the landscape; earth, fire, water, air, shadow and life elementals; WotLK sections only)",
+   "warcraft.wiki.gg/wiki/Vault_of_Archavon (History, citing the Wrath-era zone page: an abundance of elemental materials and strategically important titan fortifications make Wintergrasp the focus of a tug-of-war)",
+   "creature_text 15214 group 27 (The Battle for Lake Wintergrasp is about to begin; BattlefieldWG.h BATTLEFIELD_WG_TEXT_WILL_START, sent before every battle); quest 13181 reward text (a victory in Lake Wintergrasp)",
+   "quest 13181 description (Valiance Expedition) and reward text (a victory, even a temporary one); creature_template 30739 Warsong Champion and 30740 Valiance Expedition Champion (the keep guards of each side)",
+   "BattlefieldWG.cpp/.h: keep NPCs shown for the defender, outside NPCs at each attacker's camp (5025,3674 and 5101,2186); six goblin workshops; creature_template 30400 Goblin Mechanic and 30499 Gnomish Engineer (Demolisher Engineer)",
+   "quest 13539 description (across the Wintergrasp River, three towers to the south)",
+   "quests 236, 13153, 13154, 13156 and the Horde counterparts (embers, armor, bone, herbs; slay the other side to take them)",
+   "zone_areas 4197: Chilled Earth Elemental 30849, Whispering Wind 30848, Glacial Spirit 30846, Raging Flame 30847, Wandering Shadow 30842, Living Lasher 30845"
+  ],
+  "notes": "Checked: 'high basin in western Northrend' changed to the wiki's frozen valley in west-central Northrend; 'titan fortifications' and the elemental wealth now follow the wiki wording (supported); the Lake Wintergrasp name now tied to the battle call that still opens every battle in 3.3.5 (creature_text 15214 group 27), since the wiki says the zone itself was renamed in 3.2.0. Otherwise verified. Writer: AREA 4197 only. Written to hold whichever side holds the fortress: the text names both sides and says only that one garrisons the keep and the other waits at its camp (BattlefieldWG shows each side's officers in the keep while it defends, at its own camp while it attacks). The Vault of Archavon is named only. The camps are not named. The later Battle for Wintergrasp epic battleground and later changes are excluded. The ground grid also reports 4197 in parts of Dragonblight's Maw of Neltharion cave; that cave is a WMO (WMOAreaTable root 5160, area 4223) and the server takes the WMO's area below the terrain, so the trigger does not fire there (see 419705)."
+ },
+ {
+  "id": 419701,
+  "kind": 1,
+  "zone": 4197,
+  "sort": 1,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Wintergrasp Fortress",
+  "body": "Wintergrasp Fortress stands at the northern end of the valley, the prize every battle is fought for. Two rings of walls guard it, broken by a great gate and anchored by four towers at its corners. Within lie two goblin workshops that can never be taken from the defenders, the officers and quartermasters of whichever side holds the place, and portals to distant battlefields. Behind the keep's innermost door lies the chamber where, in battle, an attacking army must claim the titan relic to win the fortress. Here too opens the way into the Vault of Archavon, which only the side holding the fortress may enter.",
+  "triggers": [
+   [
+    1,
+    4575
+   ]
+  ],
+  "sources": [
+   "BattlefieldWG.h WGGameObjectBuilding (outer and inner walls, the fortress door and last door, four keep towers), WGTurret (tower cannon positions), WGKeepNPC (officers, quartermasters 32294/32296/39172/39173, battlemasters 15350/15351 and the battleground portals 32616-32625)",
+   "BattlefieldWG.cpp OnBattleStart (Titan Relic 192829 spawned at 5440,2840 for the attacker, unselectable until the last door 191810 falls); warcraft.wiki.gg/wiki/Wintergrasp (the Titan Relic sits in the Relic Chamber in the keep's innermost area)",
+   "WorkshopsData (KEEP EAST and KEEP WEST cannot be taken); Goblin Workshop gameobjects 192028/192029 inside the walls",
+   "warcraft.wiki.gg/wiki/Wintergrasp_Fortress (two wall layers, outer wall with gates, inner wall protecting the keep, anti-vehicle turret alcoves)",
+   "warcraft.wiki.gg/wiki/Vault_of_Archavon (inside the fortress; only the faction that controls Wintergrasp may enter)",
+   "gameobjects 192903/192904 (instance portal, 5489,2839, posarea 4575)"
+  ],
+  "notes": "Checked: the source creature_text 22515 groups 17-18 dropped (those are Strand of the Ancients announcements, not Wintergrasp); the relic is now told from BattlefieldWG and the wiki, without the unsupported 'great sphere'; the vault's 'relics of untold power' cut so the raid is named only, as the zone notes ask. Writer: AREA 4575 only; the subzone reaches well outside the walls (posarea 4575 at 5080,2841 in front of the main gate, 5340,3120 north of the walls), so both sides can earn it in any state of the war. Text names no holder. Archavon's Log (gameobject 194356, page_text 3547-3549, 3602-3603) is deliberately left out: it is the voice of the vault's first boss. The Dalaran portal (194012) and the phase 64/128 keep vendors and mechanics are not named."
+ },
+ {
+  "id": 419702,
+  "kind": 1,
+  "zone": 4197,
+  "sort": 2,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Wintergrasp River",
+  "body": "The Wintergrasp River runs east to west across the middle of the valley and splits the field in two: the fortress and the nearer workshops on its northern side, the southern towers and the two farthest workshops beyond it. Three crossings span it, the Western, Central and Eastern Bridges, linking the two halves of the battlefield. Between battles the banks are quiet but not safe: glacial spirits drift along the water, and saronite crops out among the stones.",
+  "triggers": [
+   [
+    1,
+    4576
+   ],
+   [
+    1,
+    4577
+   ],
+   [
+    1,
+    4578
+   ]
+  ],
+  "sources": [
+   "quest 13539 description (travel across the Wintergrasp River and destroy one of the three towers to the south)",
+   "posarea: Central Bridge 4576 at x 4500-4700 on the fortress line, Eastern Bridge 4577 at y 2400, Western Bridge 4578 at y 3300; towers and southern workshops at x 4350-4560, fortress at x 5160-5490",
+   "zone_areas 4576-4578: Glacial Spirit 30846, Saronite Deposit 189980, Rich Saronite Deposit 189981"
+  ],
+  "notes": "Checked: the writer's 'choke points where siege engines grind forward under fire' had no source and is now general (the bridges link the two halves of the field); 'miners of both sides come to cut' saronite dropped as unsupported. Writer: AREA 4576, 4577, 4578. Water Revenants also stand here but only in phase 256 (the holding side sees them), so they are not named."
+ },
+ {
+  "id": 419703,
+  "kind": 1,
+  "zone": 4197,
+  "sort": 3,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Southern Towers",
+  "body": "South of the Wintergrasp River stand three fortified towers: Shadowsight Tower in the west, Winter's Edge Tower in the south and Flamewatch Tower in the east. In every battle they stand with the army besieging the fortress, and they are built so stoutly that only siege engines can bring one down. Between battles they stand silent over the southern field, and whispering winds drift past their walls.",
+  "triggers": [
+   [
+    1,
+    4583
+   ],
+   [
+    1,
+    4582
+   ],
+   [
+    1,
+    4581
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The towers are more than strongpoints. The officers of the fortress say they draw power away from it, and when one is brought down that power can be turned back into the titan relic to strengthen the fortress's own soldiers. So the defenders do not simply wait behind their walls: they cross the river and topple a tower where the attackers least expect it.",
+    "triggers": [
+     [
+      5,
+      13538
+     ],
+     [
+      5,
+      13539
+     ]
+    ],
+    "sources": [
+     "quest 13538 description (the towers are draining power from the Fortress) and reward text (rerouting the power into the Titan relic to super-charge our own forces)",
+     "quest 13539 description (attack where he is unprepared; the towers drain power we could use to bolster our own troops)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 13538 description (Shadowsight, Flamewatch and Winter's Edge Towers; only siege vehicles can damage a tower)",
+   "BattlefieldWG.h WGGameObjectBuilding south towers 190356 (4557,3623, posarea 4583, the western tower), 190357 (4398,2822, posarea 4582, southern) and 190358 (4459,1944, posarea 4581, eastern); creature_text 15214 groups 1-6 (southern, eastern and western tower damaged or destroyed)",
+   "warcraft.wiki.gg/wiki/Wintergrasp (three towers in the south belong to the attackers)",
+   "zone_areas 4582/4583: Whispering Wind 30848"
+  ],
+  "notes": "Checked: 'loom empty over the southern road' made general (no road found). Part 1 confirmed defender-only: zone_wintergrasp.cpp npc_wg_quest_giver offers 13538 (Ahbramis) only while the Alliance defends and 13539 (Kilrath) only while the Horde defends; AllowableRaces is 0 on both, but each giver is hostile to the other faction (factions 1891, 2132). The opening is reachable at any time through AREA 4581, 4582, 4583. Patch 3.0.8 (warcraft.wiki.gg/wiki/Southern_Sabotage), so state 13. Writer: the opening names no holder (the towers always serve whichever side attacks). Directions from the spawn coordinates. Area 4581 is also reported by the ground grid inside Dragonblight's Maw of Neltharion cave, where the server takes the WMO area 4223 instead (see 419705)."
+ },
+ {
+  "id": 419704,
+  "kind": 1,
+  "zone": 4197,
+  "sort": 4,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Siege Workshops",
+  "body": "Six goblin workshops build the siege engines of Wintergrasp. Two stand inside the fortress walls and never change hands. The other four lie out on the field: the Broken Temple in the west and the Sunken Ring in the east, nearer the fortress, and Westspark and Eastspark in the far south beyond the river. Each flies a banner that can be torn down and raised for the other side, and keeps a graveyard with a spirit guide, taunka for the Horde, dwarven for the Alliance. Goblin mechanics build for the Horde and gnomish engineers for the Alliance, turning out catapults, demolishers and siege engines for soldiers of rank enough to authorize one, while the parts last.",
+  "triggers": [
+   [
+    1,
+    4539
+   ],
+   [
+    1,
+    4538
+   ],
+   [
+    1,
+    4611
+   ],
+   [
+    1,
+    4612
+   ]
+  ],
+  "sources": [
+   "zone_areas 4538, 4539, 4611, 4612: Goblin Workshop 192030-192033, factory banners 190475/190487/194959/194962, Goblin Mechanic 30400, Gnomish Engineer 30499, Taunka Spirit Guide 31841, Dwarven Spirit Guide 31842",
+   "creature_text 15214 groups 11-26 (the Broken Temple, Eastspark, Sunken Ring and Westspark siege workshops attacked and captured)",
+   "BattlefieldWG.h WorkshopsData (NE, NW, SE, SW and the two keep workshops that cannot be taken); zone_wintergrasp.cpp npc_wg_demolisher_engineer (catapult, demolisher, siege engine)",
+   "npc_text 13761 and 14172 (only certified officers of the Horde or Alliance can authorize the purchase of a vehicle); npc_text 13786 (we've used all of the parts we can spare)",
+   "warcraft.wiki.gg/wiki/Wintergrasp (Broken Temple the western workshop, Sunken Ring the eastern)"
+  ],
+  "notes": "Checked: verified. The spirit guides and engineers named stand in the workshop control phases (16/32 in the field, 64/128 in the keep): a visitor sees the guide and engineer of whichever side holds that workshop, and the text pairs each with its side (Taunka 31841 faction 83 Horde, Dwarven 31842 faction 84 Alliance, Goblin Mechanic 1735 Horde, Gnomish Engineer 1732 Alliance), so it is true in either phase. AREA 4538, 4539, 4611, 4612 (all reachable). One entry for the four field workshops: nothing reliable was found about the ruins of the Broken Temple or the Sunken Ring themselves. The text avoids saying which side holds which workshop (at each battle's start the defender holds the two northern ones and the attacker the two southern, but that follows the holder of the fortress). Directions from the coordinates (larger y is west): Broken Temple 4961,3380, Sunken Ring 4942,2392, Westspark 4357,3309, Eastspark 4360,2355."
+ },
+ {
+  "id": 419705,
+  "kind": 1,
+  "zone": 4197,
+  "sort": 5,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Cauldron of Flames",
+  "body": "In the southeast of Wintergrasp lies the Cauldron of Flames, a burning hollow where raging flames and drifting cinder clouds roam among the rocks. It yields eternal embers, which the siegesmiths of both sides mix with coal to fuel their demolishers and siege engines. Between battles soldiers of the Alliance and the Horde come here to gather them, and as often as not they take the embers from each other's bodies. The Horde's Siegesmith Stronghoof tells his soldiers that if the enemy has already gone, they must fight the fire elementals until they find some.",
+  "triggers": [
+   [
+    1,
+    4584
+   ]
+  ],
+  "sources": [
+   "quests 236, 13197 (Siege Master Stouthandle) and 13191, 13200 (Siegesmith Stronghoof) descriptions: the Cauldron of Flames in southeastern Wintergrasp, eternal embers mixed with coal to fuel the demolishers and siege engines, slay the other side for their embers, or fight the fire elementals",
+   "zone_areas 4584: Raging Flame 30847, Cinder Cloud 32522"
+  ],
+  "notes": "Checked: 'its fire never dies' dropped (unsupported beyond the embers' name); fighting the fire elementals for embers now credited to Stronghoof, since only the Horde quests (13191, 13200) say it. AREA 4584 kept, after checking the Dragonblight overlap: the ground grid reports 4584 (and 4197, 4581) for the cult cave under the Obsidian Dragonshrine (Rothin the Decaying 27355 and his necromancers, z 158 to 175, far below Wintergrasp's surface near z 350), but that cave is a WMO (WMOAreaTable root 5160, all groups area 4223, Maw of Neltharion) and Map::GetAreaId takes the WMO's area whenever a character is below the terrain, so 4584 fires only on the surface in Wintergrasp. Even if it did fire in the cave, the text tells nothing of Dragonblight and stays true. No other trigger suits: the ember quests belong to 419721 and Raging Flame is a KILL. Writer: the ember quests are triggers of the elementals story (419721), not here. Flame Revenants (phase 256, holders only) are not named."
+ },
+ {
+  "id": 419706,
+  "kind": 1,
+  "zone": 4197,
+  "sort": 6,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Glacial Falls",
+  "body": "Glacial Falls spills down the eastern side of Wintergrasp, cold water and ice where glacial spirits drift. The Alliance's enchantress, Sorceress Kaylana, says her research shows that the armor of soldiers lately slain here comes away steeped in energy, and the Horde's Hoodoo Master Fu'jin claims the falls can draw out a strong warrior's soul, which he means to bind into his wards and jinxes. So both sides send soldiers to kill each other at the falls, and when no enemy can be found, they strip the armor of adventurers the elementals have killed.",
+  "triggers": [
+   [
+    1,
+    4585
+   ]
+  ],
+  "sources": [
+   "quests 13153 and 13198 descriptions (Kaylana: armor of soldiers recently slain in the Glacial Falls becomes imbued with an incredible amount of energy; the armor of an adventurer slain by the elementals)",
+   "quests 13192 and 13202 descriptions (Fu'jin: the Glacial Falls in east Wintergrasp has special properties to extract the soul; hoodoo wards, jinxing the walls)",
+   "creature_template 31051 Sorceress Kaylana <Enchantress>, 31101 Hoodoo Master Fu'jin <Master Hexxer>",
+   "zone_areas 4585: Glacial Spirit 30846"
+  ],
+  "notes": "Checked: the falls' 'strange property' is now told as Kaylana's research, as quest 13153 gives it, not as fact. Otherwise verified. Writer: AREA 4585 only. Kaylana and Fu'jin are named but not used as triggers (they stand in the keep or at their side's camp depending on who holds the fortress). Water Revenants here are phase 256 (holders only) and not named."
+ },
+ {
+  "id": 419707,
+  "kind": 1,
+  "zone": 4197,
+  "sort": 7,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Forest of Shadows",
+  "body": "On the western edge of Wintergrasp lies the Forest of Shadows, a dark wood littered with old dragon bones and haunted by wandering shadows. Some say the spirits impale their living victims on the bones as they die. The bones are useful all the same: with dragonbone grown hard to come by in the Dragonblight, the bowyers of both sides need splinters from this forest for their arrowheads, and their soldiers come hunting for them, and for each other. Bowyer Randolph of the Alliance has heard it is haunted, and admits he never goes there himself.",
+  "triggers": [
+   [
+    1,
+    4587
+   ]
+  ],
+  "sources": [
+   "quests 13154 and 13196 descriptions and completion text (Randolph: dragonbone arrowheads, bone hard to get from Dragonblight, the Forest of Shadows on the western edge; rumors the place is haunted, I never venture out there)",
+   "quests 13193 and 13199 descriptions (Vieron Blazefeather: the spirits impale their living victims on the bones as they die; the Alliance scavenge dragon bones there)",
+   "zone_areas 4587: Wandering Shadow 30842"
+  ],
+  "notes": "Checked: verified; the softening of Randolph's 'massacre at Angrathar' keeps the Wrathgate (Dragonblight's story) hidden and is kept. AREA 4587 only. Randolph's line 'since the massacre at Angrathar' is softened to bone being hard to come by in the Dragonblight, so the Wrathgate (Dragonblight's story) is not given away. Shadow Revenants (phase 256) are not named."
+ },
+ {
+  "id": 419708,
+  "kind": 1,
+  "zone": 4197,
+  "sort": 8,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Steppe of Life",
+  "body": "In the southwest of Wintergrasp, the Steppe of Life is a stretch of ground where things still grow despite the cold, guarded by living lashers that whip at anyone who comes too close. Both sides' healers depend on it. The Horde's Primalist Mulfort makes salve for the wounded from the roses that grow here, and the Alliance's Anchorite Tessa grinds its herbs into a medicine against the cold. Mulfort complains that the Alliance strips the roses too fast, Tessa that the Horde has been gathering the herbs, so soldiers come to gather and stay to kill one another, and Tessa still warns of the lashers that gave a Private Doane a fine whipping.",
+  "triggers": [
+   [
+    1,
+    4590
+   ]
+  ],
+  "sources": [
+   "quests 13194 and 13201 descriptions (Mulfort: roses of the Steppe of Life in southwestern Wintergrasp for salve; scarce because the Alliance harvest it too rapidly; a lasher might have one)",
+   "quests 13156 and 13195 descriptions and completion text (Tessa: herbs ground into medicine against the cold; the Horde collect them; lashers gave Private Doane quite a whipping)",
+   "zone_areas 4590: Living Lasher 30845"
+  ],
+  "notes": "Checked: 'each side complains the other harvests too fast' was more than Tessa says; now each says only what the quests give. Writer: AREA 4590 only. Mature Lashers (phase 256) are not named."
+ },
+ {
+  "id": 419710,
+  "kind": 2,
+  "zone": 4197,
+  "sort": 1,
+  "faction": 1,
+  "requiredState": 13,
+  "title": "Commander Zanneth",
+  "body": "Commander Zanneth leads the Alliance's fighters in Wintergrasp. He greets each newcomer as one come to serve the sons of Azeroth in battle, and whether he stands in the fortress or at the camp from which the Alliance marches on it, his orders never change: go out, defeat ten of the Horde's finest, and come back. Not all his officers think that enough. Tactical Officer Ahbramis grumbles that the commander might be content with a pile of Horde corpses at his feet, while what matters to the Valiance Expedition is who holds Wintergrasp.",
+  "triggers": [
+   [
+    2,
+    31036
+   ],
+   [
+    4,
+    13177
+   ],
+   [
+    4,
+    13179
+   ],
+   [
+    5,
+    13177
+   ],
+   [
+    5,
+    13179
+   ]
+  ],
+  "sources": [
+   "npc_text 14238 (Hail, friend! Have you come to serve the sons of Azeroth in battle?)",
+   "quests 13177 and 13179 descriptions and reward text (defeat ten of the Horde's finest)",
+   "quest 13181 description (Ahbramis: Commander Zanneth might be satisfied with a pile of Horde corpses at his feet; controlling Wintergrasp matters to the Valiance Expedition)",
+   "BattlefieldWG.h WGKeepNPC and WGOutsideNPC (Zanneth 31036 in the keep while the Alliance defends, at the Alliance camp at 5078,2183 while it attacks)"
+  ],
+  "notes": "Checked: verified. BattlefieldWG.cpp spawns Zanneth twice (WGKeepNPC at 5359,2838, posarea 4575; WGOutsideNPC at 5078,2183, posarea 4197) and HideNpc/ShowNpc keep exactly one visible: the keep copy while the Alliance defends, the camp copy while it attacks; both are swapped in OnBattleEnd and untouched during battle. ShowNpc sets phase 1; npcflag 3 with gossip 10256 (npc_text 14238). Faction 1891 is hostile to the Horde (FactionTemplate enemy group Horde), so no Horde character can talk to him. Faction 1: Zanneth (faction 1891) and both quests (AllowableRaces 1101) are Alliance only. TALK 31036 has no fixed spawn: the battlefield script summons him in the keep and at the Alliance camp and shows exactly one of them at any time, so an Alliance character can always reach him; he stands only in Wintergrasp. 13177 is his defender version and 13179 his attacker version (zone_wintergrasp.cpp), so listing both keeps a quest route open whichever side holds the fortress. Weekly quests, not auto-complete (QuestType 2). His staff (Stouthandle, Kaylana, Randolph, Tessa, Legoso) are told through the places and the battle story."
+ },
+ {
+  "id": 419711,
+  "kind": 2,
+  "zone": 4197,
+  "sort": 2,
+  "faction": 2,
+  "requiredState": 13,
+  "title": "Commander Dardosh",
+  "body": "Commander Dardosh leads the Horde's fighters in Wintergrasp, and he greets each newcomer with a war cry and a question: have they come to serve the Horde in battle? Whether he stands in the fortress or at the camp from which the Horde marches on it, he carries Warlord Garrosh's orders, and Garrosh asks only one thing: that every foe be slain. Every recruit is sent out to bring down ten of the Alliance's strongest. Tactical Officer Kilrath, at his side, takes a longer view: Dardosh may be content with slain foes, but what matters to Kilrath is holding the fortress itself.",
+  "triggers": [
+   [
+    2,
+    31091
+   ],
+   [
+    4,
+    13178
+   ],
+   [
+    4,
+    13180
+   ],
+   [
+    5,
+    13178
+   ],
+   [
+    5,
+    13180
+   ]
+  ],
+  "sources": [
+   "npc_text 14221 (Lok'tar! Have you come to serve the Horde in battle?)",
+   "quests 13178 and 13180 descriptions and reward text (Warlord Garrosh demands one thing: slay them all; ten of the strongest members of the Alliance)",
+   "quest 13183 description (Kilrath: while Dardosh might be content with slaying our foes, it is of the utmost importance that we control Wintergrasp Fortress)",
+   "BattlefieldWG.h WGKeepNPC and WGOutsideNPC (Dardosh 31091 in the keep while the Horde defends, at the Horde camp at 4994,3660 while it attacks)"
+  ],
+  "notes": "Checked: the verbatim quotes of npc_text 14221 and quest 13178 reworded. BattlefieldWG.cpp spawns Dardosh in the keep (5359,2838, posarea 4575) and at the Horde camp (4994,3660, posarea 4589) and shows exactly one: the keep copy while the Horde defends, the camp copy while it attacks. npcflag 3, gossip 10229; faction 2132 is hostile to the Alliance. He also takes the Horde ember quests 13191/13200, which stay with 419721. Faction 2: Dardosh (faction 2132) and both quests (AllowableRaces 690) are Horde only. TALK 31091 has no fixed spawn (battlefield script; one copy always shown, in the keep or the Horde camp, both in Wintergrasp). 13178 is the defender version and 13180 the attacker version, so a quest route is open whichever side holds. Garrosh has his own entry (Nagrand); he is only quoted here. Weekly quests, not auto-complete."
+ },
+ {
+  "id": 419720,
+  "kind": 3,
+  "zone": 4197,
+  "sort": 1,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Battle for Wintergrasp",
+  "body": "At set times the war for Wintergrasp breaks out anew. The defenders muster inside the fortress, while the attackers gather at their camp and march on it. The workshops pour out siege engines, and each side's officers give their soldiers the task their role demands. The attackers must crew and guard their machines while they smash wall after wall; the Alliance trusts in what Senior Demolitionist Legoso calls the power of gnomish technology, and the Horde's Lieutenant Murp wishes he could leave camp to smash walls himself. The defenders must wreck those machines before they break through. The attackers' goal lies deep in the keep, where they must claim the titan relic before time runs out; if they fail, the fortress stays in the defenders' hands.",
+  "triggers": [
+   [
+    4,
+    13181
+   ],
+   [
+    4,
+    13183
+   ],
+   [
+    4,
+    13185
+   ],
+   [
+    4,
+    13186
+   ],
+   [
+    4,
+    13222
+   ],
+   [
+    4,
+    13223
+   ],
+   [
+    5,
+    13185
+   ],
+   [
+    5,
+    13186
+   ],
+   [
+    5,
+    13222
+   ],
+   [
+    5,
+    13223
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "A victory in Wintergrasp has been won, and it will not be the last battle. Whoever holds the fortress must hold it again when the war returns, and whoever lost it will come back for it. The Alliance's officers count even a passing victory crucial to their whole strategy against the Horde, and the Horde's officers honor those who fought for it as having done a truly great thing.",
+    "triggers": [
+     [
+      5,
+      13181
+     ],
+     [
+      5,
+      13183
+     ]
+    ],
+    "sources": [
+     "quest 13181 reward text (a victory in Lake Wintergrasp, even a temporary one, is crucial to our overall strategy against the Horde)",
+     "quest 13183 reward text (a truly great thing you have accomplished; be recognized for your sacrifice)"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 13222 and 13223 descriptions (Legoso: the power of Gnomish technology, smash their walls; pilot or protect a siege vehicle as it destroys three structures; Murp: has to stay in camp, wishes he could smash walls)",
+   "quests 13185 and 13186 descriptions (destroy three enemy siege devices)",
+   "quests 13181 and 13183 descriptions (win the battle; control of the fortress matters most)",
+   "BattlefieldWG.cpp OnBattleStart and OnBattleEnd (relic spawned for the attackers, unselectable until the last door falls; a battle ended by the timer leaves the defenders in possession); OnPlayerJoinWar (defenders sent into the keep, attackers to their camps); warcraft.wiki.gg/wiki/Wintergrasp (Relic Chamber in the keep's innermost area)"
+  ],
+  "notes": "Checked: source creature_text 22515 group 18 dropped (a Strand of the Ancients line); 'both commands ask the same of their soldiers' made clear; Murp marked as the Horde's; part 1 typo fixed (the Horde's officers). Triggers verified against npc_wg_quest_giver: 13181/13183 fall in its default case (offered in either role), 13186/13185 to defenders, 13222/13223 to attackers. Opening triggers: ACCEPT 13181/13183 (Victory in Wintergrasp, offered to each side whichever role it has: npc_wg_quest_giver's default case) and ACCEPT and DONE of the siege quests: 13185/13186 (Stop the Siege, defenders) and 13222/13223 (Defend the Siege, attackers), so each faction has a route in both roles. All weekly, QuestType 2, none auto-complete. Faction 0: Alliance and Horde routes both exist. The text never says who holds the fortress; 'if they fail, the fortress stays as it was' is how a timed-out battle ends (BattlefieldWG OnBattleEnd endByTimer). Part 1 on DONE 13181/13183."
+ },
+ {
+  "id": 419721,
+  "kind": 3,
+  "zone": 4197,
+  "sort": 2,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Elementals of Wintergrasp",
+  "body": "Wintergrasp swarms with elementals. Chilled earth elementals lumber across the open valley, and glacial spirits haunt the river, the falls and the Chilled Quagmire. Whispering winds drift through the south, raging flames and cinder clouds burn in the Cauldron of Flames, wandering shadows stalk the Forest of Shadows, and living lashers guard the Steppe of Life. They answer to neither the Alliance nor the Horde and turn on whoever strays near them, so anyone who crosses the valley between battles must reckon with them as well as with the enemy.",
+  "triggers": [
+   [
+    5,
+    236
+   ],
+   [
+    5,
+    13153
+   ],
+   [
+    5,
+    13154
+   ],
+   [
+    5,
+    13156
+   ],
+   [
+    5,
+    13195
+   ],
+   [
+    5,
+    13196
+   ],
+   [
+    5,
+    13197
+   ],
+   [
+    5,
+    13198
+   ],
+   [
+    5,
+    13191
+   ],
+   [
+    5,
+    13192
+   ],
+   [
+    5,
+    13193
+   ],
+   [
+    5,
+    13194
+   ],
+   [
+    5,
+    13199
+   ],
+   [
+    5,
+    13200
+   ],
+   [
+    5,
+    13201
+   ],
+   [
+    5,
+    13202
+   ],
+   [
+    3,
+    30849
+   ],
+   [
+    3,
+    30846
+   ],
+   [
+    3,
+    30847
+   ],
+   [
+    3,
+    30842
+   ],
+   [
+    3,
+    30845
+   ]
+  ],
+  "sources": [
+   "zone_areas 4197 and subzones: Chilled Earth Elemental 30849, Glacial Spirit 30846 (bridges, Glacial Falls, Chilled Quagmire), Whispering Wind 30848 (Winter's Edge and Shadowsight Towers; spawns centred on x 4206), Raging Flame 30847 and Cinder Cloud 32522 (Cauldron of Flames), Wandering Shadow 30842 (Forest of Shadows), Living Lasher 30845 (Steppe of Life); all phase 1",
+   "creature_template factions 14, 834, 91, 21, 16 (hostile monsters)",
+   "warcraft.wiki.gg/wiki/Wintergrasp (wandering air, earth, fire, water, shadow and life elementals)"
+  ],
+  "notes": "Checked: the opening is unlocked by KILL, so it now tells only what anyone fighting the elementals sees (the creatures, where they roam, that they attack both sides); the elemental wealth and the soldiers' gathering moved to part 1 on the DONE of all sixteen gathering quests, which stay among the entry's own triggers too. KILL 30849, 30846, 30847, 30842, 30845 confirmed: fixed phase 1 spawns on map 571 only, every spawn inside Wintergrasp by posarea (30849: 4197, 4538, 4575, 4589; 30846: 4197, 4538, 4539, 4576-4578, 4585, 4589; 30847: 4584; 30842: 4587; 30845: 4590); not summons. Their aura 52107 hides them (phase 512) only while a battle is on. Whispering Wind 30848 (spawns in Dragonblight) and Cinder Cloud 32522 (spawns at the Obsidian Dragonshrine and elsewhere) stay untriggered. Routes: pool_template 384 (Horde) and 385 (Alliance) each pick one defender quest a week (max_limit 1), and npc_wg_quest_giver offers the attacker twin of that week's quest when the side attacks, so each faction always has exactly one gathering quest open whichever side holds. Quest 236 is a Wintergrasp quest despite its low id: QuestSortID 4197, given and taken by Siege Master Stouthandle 31108, pool 385, QUEST_FUELING_THE_DEMOLISHERS_ALLIANCE_DEF in zone_wintergrasp.cpp. Faction 0. The revenants and Mature Lashers (phase 256) are left out and are not triggers. ACCEPT of the weeklies not used.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The elementals are part of why the valley is worth fighting for, since it is rich in elemental materials. Between battles both armies send soldiers out to gather: embers from the fire, armor from the falls, bone from the shadowed forest and herbs from the lashers' steppe. The quartermasters would rather their soldiers took these things from enemy bodies, but when no enemy is about, the elementals and their victims will serve.",
+    "triggers": [
+     [
+      5,
+      236
+     ],
+     [
+      5,
+      13153
+     ],
+     [
+      5,
+      13154
+     ],
+     [
+      5,
+      13156
+     ],
+     [
+      5,
+      13195
+     ],
+     [
+      5,
+      13196
+     ],
+     [
+      5,
+      13197
+     ],
+     [
+      5,
+      13198
+     ],
+     [
+      5,
+      13191
+     ],
+     [
+      5,
+      13192
+     ],
+     [
+      5,
+      13193
+     ],
+     [
+      5,
+      13194
+     ],
+     [
+      5,
+      13199
+     ],
+     [
+      5,
+      13200
+     ],
+     [
+      5,
+      13201
+     ],
+     [
+      5,
+      13202
+     ]
+    ],
+    "sources": [
+     "quests 13153, 13198, 13192, 13202 (armor of adventurers slain by the elementals), 13191, 13200 (fight the fire elementals for embers), 13193, 13199 (bones from the spirits), 13195, 13194, 13201 (a lasher might have one); every gathering quest asks first for the enemy's bodies",
+     "warcraft.wiki.gg/wiki/Vault_of_Archavon (History, Wrath-era zone page: an abundance of elemental materials)"
+    ]
+   }
+  ]
+ }
+]

@@ -2,7 +2,7 @@
 
 An AzerothCore (WotLK 3.3.5a) module that adds a codex of Azeroth's lore which fills in as you play. Walking into a zone or a notable place, talking to someone, defeating someone, or taking and finishing quests unlocks entries. The included `LoreCodex` addon shows a toast for each discovery and a codex window to read them.
 
-> **Work in progress.** The Eastern Kingdoms, Kalimdor and Outland are covered (62 zones, about 1,900 entries). Northrend is still to come.
+> **Work in progress.** All four continents are covered: the Eastern Kingdoms, Kalimdor, Outland and Northrend (74 zones, about 2,200 entries). Dungeons and raids do not have entries of their own yet.
 
 ## Features
 
@@ -17,7 +17,7 @@ An AzerothCore (WotLK 3.3.5a) module that adds a codex of Azeroth's lore which f
 
 ## Compatibility
 
-Works with or without [mod-individual-progression](https://github.com/ZhengPeiRu21/mod-individual-progression). When that module is running, the codex follows each character's progression: lore from a later era (the Burning Crusade, the Isle of Quel'Danas, Wrath of the Lich King) stays hidden until the character reaches it, events tied to one stage (the Ahn'Qiraj war, the Scourge invasion) show only during that stage, and lines that stop being true drop away. When a character moves on to a new stage, entries and parts it has already earned the triggers for are added quietly. Without the module, every character counts as having reached the end, so all eras show.
+Works with or without [mod-individual-progression](https://github.com/ZhengPeiRu21/mod-individual-progression). When that module is running, the codex follows each character's progression: lore from a later era (the Burning Crusade, the Isle of Quel'Danas, Wrath of the Lich King, and later in Wrath the Argent Tournament and the Frozen Halls) stays hidden until the character reaches it, events tied to one stage (the Ahn'Qiraj war, the Scourge invasion) show only during that stage, and lines that stop being true drop away. When a character moves on to a new stage, entries and parts it has already earned the triggers for are added quietly. Without the module, every character counts as having reached the end, so all eras show.
 
 Every zone follows the module's own gating where it has one. Where the module changes the world the same way in every stage (renaming an NPC, removing a spawn), the text is written to be true either way. Its phased areas are not matched exactly in every case, so a few lines may describe something a character at an early stage can already see, or not yet see.
 

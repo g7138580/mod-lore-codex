@@ -1,0 +1,405 @@
+[
+ {
+  "id": 281700,
+  "kind": 0,
+  "zone": 2817,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Crystalsong Forest",
+  "body": "Crystalsong Forest lies at the heart of Northrend, hemmed in by the Dragonblight to the south, Zul'Drak to the east, and Icecrown and the Storm Peaks to the north. Its trees are crystal from root to leaf, and its woods glitter in shades of gold and russet. In ages past night elves dwelt here at Shandaral, and the ruins of their home still stand. Their spirits have never left: lost spirits roam the western woods, and in the ruins the dead still take up arms against every intruder. In the east, strange beings steeped in magic, called the Unbound, haunt the thicket. Above the western woods floats Dalaran, and on the ground beneath it the Kirin Tor hold the Violet Stand, while servants of the blue dragonflight have dug in close by at the Azure Front. Farther east, the Silver Covenant and the Sunreavers each keep a camp of their own, facing one another across the old ruins.",
+  "triggers": [
+   [
+    1,
+    2817
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Crystalsong_Forest (borders, Violet Stand under Dalaran, Azure Front, the two camps; later and RPG material left out)",
+   "DB spawns grouped by subzone (copy of zone_areas.py with Dalaran's floating spawns removed): Shandaral spirits 30863-30865, 31231 in 4553/4554/4557; Unbound 30856, 30860-30862, 30868, 33422; Kirin Tor at 4556; azure dragonkin at 4555; Silver Covenant at 4559, Sunreavers at 4558",
+   "quest 13641 description (night elf ruins in the Forlorn Woods)",
+   "quests 12791/12794 descriptions and dalaran.json 439500 (Dalaran floats above the forest)"
+  ],
+  "notes": "Checked: the spirits line corrected (Lost Shandaral Spirit 31231 is faction template 14, hostile to players like the ruins' spirits, not silent and harmless as drafted); 'twisted crystalline beings' made 'strange beings steeped in magic' (quest 13135; their look rests on nothing written). Rest verified. Writer: AREA 2817. Opening is the forest as anyone arriving sees it. How the forest became crystal is left out on purpose: the wiki's account (Highborne theft from the Nexus, a backfired spell) is cited to Exploring Azeroth (2021) and Chronicle (2016), and no 3.3.5 text tells it. Malygos and the Nexus War are only implied (Borean Tundra and Dragonblight tell them); Dalaran itself is dalaran.json's. The Great Tree (4549) gets no entry: nothing stands there in the database (the Crystalsong Oaks 33308 of quest 13627 have no spawns, and 13627 has no quest giver), and its only canon lore (planted from Nordrassil) comes from Chronicle and Exploring Azeroth. Nothing said of Wintergrasp's holder (spell_area 57940 in 2817 is the Essence of Wintergrasp). Also left out on purpose: the Frostmourne Altar scene and The Lich King 37857 (phase 2, ICC raid quest 24545), and the Black Knight's woodcutters and Maloric (icecrown.json 21047)."
+ },
+ {
+  "id": 281701,
+  "kind": 1,
+  "zone": 2817,
+  "sort": 1,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Violet Stand",
+  "body": "The Violet Stand is the Kirin Tor's foothold on the forest floor, set among old elven ruins in the west of the woods, beneath the edge of Dalaran. Gatekeeper Melindra and Librarian Belleford are posted here. The warmages Sarina, Halister and Ilsudria stand fixed at their posts, channeling their power without rest into the shield that guards the outpost, and Warmage Yurias stands ready beside them. The guard is not for show: blue dragonkin of the nearby Azure Front prowl at the stand's very edge. A crystal here carries travelers up to the city above.",
+  "triggers": [
+   [
+    1,
+    4556
+   ]
+  ],
+  "sources": [
+   "zone script zone_crystalsong_forest.cpp npc_warmage_violetstand (Sarina, Halister, Ilsudria channel Transitus Shield Beam 48310 at the shield orbs 27306 and never move)",
+   "DB spawns in 4556: Melindra 32373, Belleford 32374, Sarina 32369, Halister 32371, Ilsudria 32372, Yurias 32375 (faction 2009), Transitus Shield Invisible Bunny 27306 x3, Azure Scalebane 31402 x3, gameobject 191230 Teleport to Dalaran Crystal",
+   "npc_text 13455/13456 (Celindra: the crystal teleports to the ruins below Dalaran)",
+   "warcraft.wiki.gg/wiki/Violet_Stand (Kirin Tor outpost within night elf ruins, shield dome against the blue dragonflight)"
+  ],
+  "notes": "Checked: 'Melindra keeps it' made plain (nothing says she commands); 'the orbs of the shield' dropped (the beam targets 27306 are invisible bunnies, so no orbs are seen; the spell is Transitus Shield Beam). Rest verified. Writer: AREA 4556. None of the stand's people has gossip or quests, so no TALK. The crystal is one clause only; Celindra's showing of it is dalaran.json 439540 part 1. Spawns at x 5714-5747, y 1005-1030, z 174 (ground; Dalaran's spawns above are z 500 and up)."
+ },
+ {
+  "id": 281702,
+  "kind": 1,
+  "zone": 2817,
+  "sort": 2,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Twilight Rivulet",
+  "body": "The Twilight Rivulet winds through the Forlorn Woods in the shadow of floating Dalaran. It rises in the northwest at the Decrepit Flow, where ice spills down into the forest from the Ironwall Dam on the border of Icecrown, and runs south to a pool called the Mirror of Twilight. Schools of glassfin minnows dart through its clear water, and Crystalsong carrots grow wild along its banks. Dalaran's cooks send for them when the inn beneath the city runs short of food.",
+  "triggers": [
+   [
+    1,
+    4551
+   ],
+   [
+    1,
+    4550
+   ],
+   [
+    1,
+    4552
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "minState": 15,
+    "body": "Winter hyacinths grow nowhere but on the ice spilling down from the Ironwall Dam, and the Decrepit Flow is where that ice reaches the forest. Wandering bards tell of travelers who once carried these flowers to a lonely maiden at Drak'Mar Lake in the Dragonblight and were given gifts in return, and champions of the Argent Tournament in need of a blade now send for them again.",
+    "triggers": [
+     [
+      5,
+      13600
+     ],
+     [
+      5,
+      13669
+     ],
+     [
+      5,
+      13742
+     ],
+     [
+      5,
+      13747
+     ],
+     [
+      5,
+      13753
+     ],
+     [
+      5,
+      13758
+     ],
+     [
+      5,
+      13674
+     ],
+     [
+      5,
+      13763
+     ],
+     [
+      5,
+      13769
+     ],
+     [
+      5,
+      13774
+     ],
+     [
+      5,
+      13779
+     ],
+     [
+      5,
+      13784
+     ]
+    ],
+    "sources": [
+     "quests 13600, 13669, 13674, 13742, 13747, 13753, 13758, 13763, 13769, 13774, 13779, 13784 descriptions and request text (hyacinths grow only on the ice flowing from the Ironwall Dam; the bards' tale of the lonely maiden; Drak'Mar Lake; the wandering bard's tales)",
+     "gameobject 194213 Winter Hyacinth: 4 spawns in 4552, 8 in Ironwall Dam 4503 (Icecrown)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 13600 description (ice flowing from the Ironwall Dam on Crystalsong's northwestern border with Icecrown)",
+   "warcraft.wiki.gg/wiki/Forlorn_Woods (the Twilight Rivulet runs from the Decrepit Flow to the Mirror of Twilight beneath Dalaran)",
+   "DB: Glassfin Minnow School 192059 in 4550/4551, Crystalsong Carrot 192828 in 4551",
+   "quests 13102/13114 descriptions (Dalaran's cooks gather Crystalsong carrots for a stew)",
+   "posarea grid scan: 4552 at x 6100-6300 y 800-1160 (northwest), 4551 x 5500-6060 under Dalaran, 4550 x 5460-5500 y 80-160"
+  ],
+  "notes": "Checked: part 1 said the hyacinths grow only on the Decrepit Flow, but 8 of the 12 Winter Hyacinth spawns stand at the Ironwall Dam (4503, Icecrown); rewritten to the quests' own wording (only on the ice from the dam) with the Decrepit Flow as where it reaches the forest. 'Bards at the Argent Tournament' made 'wandering bards' (the texts never place the bards); the champions placed at the tournament instead. 'Still' pool and 'kitchens run short' made plain (13102/13114: the inn in the Dalaran sewers runs low on food). Era and triggers verified: all twelve variants exist (6 Alliance AllowableRaces 1101, 6 Horde 690), dailies (QuestType 2, Flags 4232), not auto-complete, given and turned in by tournament NPCs whose spawns mod-individual-progression moves into its state 15 phase (ipp_aware_npcs.sql, Argent Tournament guids), so minState 15 holds. icecrown.json and every other file use none of the 24 daily ids. Writer: AREA 4551, 4550 and 4552 (the stream, its pool and its source merged, each too thin for an entry). The carrots line uses Sewer Stew only as a source; 13102/13114 are given and turned in in Dalaran and are not triggers. Part 1 minState 15: A Worthy Weapon (patch 3.1) is given and turned in at the Argent Tournament grounds (QuestSortID -241), which the module opens at 15; DONE on all twelve faction and rank variants (6 Alliance, 6 Horde; dailies, QuestType 2, not auto-complete). Only the Crystalsong side of the quest is told; the maiden of Drak'Mar is not described further, and no other file uses these quests."
+ },
+ {
+  "id": 281703,
+  "kind": 1,
+  "zone": 2817,
+  "sort": 3,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Azure Front",
+  "body": "Southeast of the Violet Stand, the blue dragonflight holds the Azure Front, its foothold on the ground against Dalaran and the Kirin Tor in the war Malygos wages over the world's magic. Azure manashapers labor among the crystal trees, scalebanes and spellweavers stand guard with mana-hungry beasts at their heels, and crystal wyrms circle high above. Beams of light run from tree to tree, and foci of azure crystal are set among the trunks, as though the dragons mean to draw on whatever power the forest holds.",
+  "triggers": [
+   [
+    1,
+    4555
+   ]
+  ],
+  "sources": [
+   "DB spawns in 4555: Azure Manashaper 31401 x12 (work emote), Azure Scalebane 31402, Azure Spellweaver 31403, Azure Manabeast 31404 (Mana Bite), Crystal Wyrm 31393 (elite, z 315-322), Azure Front Channel Stalker 31400 casting 'Cosmetic - Crystalsong Tree Beam' 59044 from stalker to stalker (smart_scripts -111726, -111742, -111746, -203457), gameobjects Azure Focus 193202 x3 and Uncut Azure Focus 193214",
+   "warcraft.wiki.gg/wiki/The_Azure_Front (a front against Dalaran and the Kirin Tor; the flight draws power from the crystal trees)"
+  ],
+  "notes": "Checked: 'south' made 'southeast' (spawns x 5327-5547, y 555-930 against the stand at 5730, 1021); 'arcane' dropped from the beams (59044 is a cosmetic tree beam; only its look is told). Rest verified. Writer: AREA 4555. The purpose of the beams is framed as appearance ('as though'), since no 3.3.5 text explains them. Malygos and his war are named only (Borean Tundra and Dragonblight tell them). Post-Wrath reports (Exploring Azeroth: needles disabled, a remnant of dragonkin) left out."
+ },
+ {
+  "id": 281704,
+  "kind": 1,
+  "zone": 2817,
+  "sort": 4,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Forlorn Woods",
+  "body": "The Forlorn Woods fill the western heart of the forest, their crystal boughs tinted gold and russet as if caught forever in autumn. Wolves and dappled stags roam between the trunks, grove walkers and great ancient watchers stand among the trees, and dispirited ents move among them. The lost spirits of Shandaral wander here as well, and lonely elven ruins dot the woods. Near those ruins in the center of the forest gather the unbound seers, who turn on anyone who comes too close.",
+  "triggers": [
+   [
+    1,
+    4553
+   ]
+  ],
+  "sources": [
+   "DB spawns in 4553: Sinewy Wolf 31233, Dappled Stag 31236, Grove Walker 31228, Ancient Watcher 31229 (elite), Dispirited Ent 31041, Lost Shandaral Spirit 31231 (faction template 14, hostile to players), Unbound Seer 33422 x9 (faction 16, hostile; x 5727-5812, y 124-249)",
+   "quest 13641 description (unbound seers congregate near night elf ruins in the Forlorn Woods in the central part of the forest)",
+   "warcraft.wiki.gg/wiki/Forlorn_Woods (western half, autumn colors, lonely elf ruins)"
+  ],
+  "notes": "Checked: 'quiet and harmless' was WRONG (faction template 14 has players in its enemy mask, as do the Grove Walkers and Dispirited Ents; the spirits cast Moonfire in combat) and is removed; 'crystalline beings' dropped from the seers (no text gives their look); 'drift without purpose' made plain. Rest verified. Writer: AREA 4553. The seers are only placed: what Crusader Rhydalla wants from them is Icecrown's Black Knight story (21047, ACCEPT 13641 there). The Love is in the Air spawns here (Crown Sprayer 38032, Chemical Wagon 38035: game_event 8) left out as holiday content."
+ },
+ {
+  "id": 281705,
+  "kind": 1,
+  "zone": 2817,
+  "sort": 5,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Ruins of Shandaral",
+  "body": "The Ruins of Shandaral lie in the east of the forest, between the camps of the Silver Covenant and the Sunreavers: broken walls and fallen stonework of a night elf settlement from ages past. Its people have never left. Their spirits still keep watch, warriors with shields, druids, and hunters with spectral wolves at their side, and they strike at every living intruder as though the town still needed defending. Unbound corrupters and tricksters prowl the ruins among unbound ents and dryads, and blocks of ancient elven masonry lie scattered across the ground.",
+  "triggers": [
+   [
+    1,
+    4554
+   ]
+  ],
+  "sources": [
+   "DB spawns in 4554: Shandaral Warrior Spirit 30865 (Shield Bash), Druid Spirit 30863, Hunter Spirit 30864, Shandaral Spirit Wolf 31123 (all faction 16, hostile), Unbound Corrupter 30868, Trickster 30856, Ent 30862, Dryad 30860, Ancient Elven Masonry 192909-192912",
+   "quest 13130 description (elven masonry from the Ruins of Shandaral)",
+   "warcraft.wiki.gg/wiki/Windrunner's_Overlook (across the Ruins of Shandaral from Sunreaver's Command)",
+   "posarea grid scan: 4554 at x 5260-5460, between 4559 (x 5040) and 4558 (x 5620)"
+  ],
+  "notes": "Checked: 'crystal ents' made 'unbound ents' (Unbound Ent 30862). Rest verified. Writer: AREA 4554. The masonry is only placed: Silas's use of it for Justice Keep is Icecrown's (21002 part 3, DONE 13130). The wiki's founding date and Highborne relic story (Chronicle, Exploring Azeroth) left out; 'night elf' rests on quest 13641's 'night elf ruins' and the spirits' models. The art book's camp rivalry over the ruins is not shown in the game and is left out."
+ },
+ {
+  "id": 281706,
+  "kind": 1,
+  "zone": 2817,
+  "sort": 6,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Unbound Thicket",
+  "body": "The Unbound Thicket covers the eastern half of Crystalsong Forest. It takes its name from the Unbound who haunt it: tricksters and corrupters armed with fire and arcane curses, dryads who hurl spears, ents whose healing magic has turned corrupt, and towering ancients. Every creature of the thicket shares an affinity for magic, and each is said to hold a core of crystallized energy. Dispirited ents wander among their unbound kin, spirits of Shandaral stray out of the ruins, and trunks of crystalline heartwood lie on the thicket floor.",
+  "triggers": [
+   [
+    1,
+    4557
+   ]
+  ],
+  "sources": [
+   "DB spawns in 4557: Unbound Ent 30862 (Corrupted Rejuvenation 58624), Unbound Dryad 30860 (Throw Spear), Unbound Trickster 30856 (Fire Blast), Unbound Corrupter 30868 (Arcane Bolt, Ley Curse), Unbound Ancient 30861 (elite; Entangling Roots, Trample), Dispirited Ent 31041 (faction template 14, hostile), Shandaral Hunter, Druid and Warrior Spirits 30863-30865, Crystalline Heartwood 192908 x27",
+   "quest 13135 description (the thicket's creatures share an affinity for magical energy; each holds pure, crystallized energy)",
+   "warcraft.wiki.gg/wiki/Unbound_Thicket (eastern half)"
+  ],
+  "notes": "Checked: 'magical fissures split the ground' removed (the wiki cites it to Exploring Azeroth, 2021); 'crystal trees grow close' removed (unsupported); the ancients no longer share the ents' corrupted healing (30861 casts Entangling Roots and Trample); 'not all of the forest's wardens have gone that way' removed (the Dispirited Ents are hostile too, faction template 14); the spirits straying in from the ruins added (Shandaral spirits spawn in 4557). Writer: AREA 4557. Quest 13135 (Spitzpatrick, Icecrown) is only a source, not a trigger; the heartwood's use for Justice Keep is Icecrown's (21002 part 3). 'Unbound' kept to what the spawns show; the wiki's account of them as Highborne survivors comes from Exploring Azeroth (2021) and is left out. The Midsummer bonfires, Flame Warden 32807 and Flame Keeper 32815 here are holiday content and left out."
+ },
+ {
+  "id": 281707,
+  "kind": 1,
+  "zone": 2817,
+  "sort": 7,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Windrunner's Overlook",
+  "body": "Windrunner's Overlook is the Silver Covenant's camp in Crystalsong Forest, raised around an old elven tower on the southern edge of the Unbound Thicket. It bears the name of the Windrunners, the house of the Covenant's Ranger General, Vereesa. Scout Captain Daelin commands here. His scouts and mounted horsemen patrol the camp and the thicket around it, and Galendror Whitewing keeps the hippogryphs that carry the Covenant's riders through the north. The high elves stock a smith's supplies, food and drink, and poisons and reagents, but the Overlook is a soldiers' post first, keeping watch across the ruins toward the Sunreavers.",
+  "triggers": [
+   [
+    1,
+    4559
+   ]
+  ],
+  "sources": [
+   "DB spawns in 4559: Scout Captain Daelin 30261, Silver Covenant Scout 30238 (also in 4557), Horseman 30263, Hippogryph 30281, Galendror Whitewing 30271 (Hippogryph Master), Lanudal Silverhart 30241, Miura Brightweaver 30244, Aniduria 30255, Scout Yribria 30257",
+   "warcraft.wiki.gg/wiki/Windrunner's_Overlook (Silver Covenant outpost, Daelin, no quests)",
+   "warcraft.wiki.gg/wiki/Crystalsong_Forest (the camps hold two ruined elven towers)",
+   "dalaran.json 439521 (Vereesa, Ranger General of the Silver Covenant)"
+  ],
+  "notes": "Checked, verified. Faction 0 confirmed: no spell_area, Trespasser or area script in 4559 (the only spell_area row in the zone is 57940 on 2817), so a Horde visitor walks in and earns AREA 4559; the scouts and horsemen (faction template 2130) and the vendors (2025) are hostile to the Horde and fight them, which the text does not contradict. No quest giver or ender stands on the forest floor except Midsummer NPCs and bonfires in 4557 (11882, 11915, 11964, 11966, 13491, 13499, 13447, 13457). 'Old elven tower' rests on the wiki (Crystalsong Forest, Wrath section: two ruined Highborne towers) and what stands there. Writer: AREA 4559. No quest is given or turned in here (every creature and gameobject quest giver or ender on the ground of 2817 is Midsummer content), so the camp quests the task expected do not exist in this database. No TALK: none of the camp's people has the gossip flag (Galendror is npcflag 8192 only, vendors 128 and up without 1). Faction 0: nothing throws the Horde out of 4559 (no Trespasser script; the scouts only shoot in combat), so the area is reachable by both and the text reads true for a Horde visitor. Vereesa named only (dalaran.json 439521). The art book's fight over the ruins is not shown in game; the camps are only said to face each other."
+ },
+ {
+  "id": 281708,
+  "kind": 1,
+  "zone": 2817,
+  "sort": 8,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Sunreaver's Command",
+  "body": "Sunreaver's Command is the camp of the Sunreavers, the blood elves who follow Archmage Aethas Sunreaver, on the northern edge of the Unbound Thicket. Like the Silver Covenant's overlook to the south, it is raised around an old elven tower, and the two camps face each other across the thicket and the Ruins of Shandaral. Scout Captain Elsia commands here. Her scouts guard the camp, mounted hawkriders keep watch, and Skymaster Baeric tends the dragonhawks that carry Sunreaver riders across the north. Sellers of food, smithing goods, poisons and reagents keep the post supplied.",
+  "triggers": [
+   [
+    1,
+    4558
+   ]
+  ],
+  "sources": [
+   "DB spawns in 4558: Scout Captain Elsia 30259, Sunreaver Scout 30233, Sunreaver Hawkrider 30265, Sunreaver Dragonhawk 30290, Skymaster Baeric 30269 (Dragonhawk Master), Alanura Firecloud 30239, Felindel Sunhammer 30253, Marisalira 30254, Scout Ordimbral 30256",
+   "warcraft.wiki.gg/wiki/Sunreaver's_Command (Sunreaver outpost, Elsia, opposite Windrunner's Overlook, no quests)",
+   "warcraft.wiki.gg/wiki/Crystalsong_Forest (the camps hold two ruined elven towers)",
+   "dalaran.json 439522 (Aethas Sunreaver and his followers)"
+  ],
+  "notes": "Checked, verified. Faction 0 confirmed: nothing expels the Alliance from 4558 (no spell_area or script); the scouts, hawkriders and dragonhawks (faction template 2129) and the vendors (2121) are hostile to the Alliance, which the text does not contradict. No quests here (see 281707). Writer: AREA 4558. Mirror of 281707: no quests here, no TALK (Baeric npcflag 8192 only), faction 0 because nothing expels the Alliance from 4558. Aethas named only (dalaran.json 439522)."
+ },
+ {
+  "id": 281720,
+  "kind": 2,
+  "zone": 2817,
+  "sort": 1,
+  "faction": 0,
+  "requiredState": 14,
+  "title": "Lord Everblaze",
+  "body": "Lord Everblaze is a lord of living fire who has taken his perch on a lofty crag in the south of Crystalsong Forest, looking down over the mouth of the Crystal Vice in the Dragonblight. Fiery dancers circle him in a ring of flame, strange company among the cold crystal trees, and the height of his crag keeps him beyond the reach of anyone who cannot fly. What brought a creature of fire to this frozen forest, no one has said.",
+  "triggers": [
+   [
+    3,
+    33289
+   ],
+   [
+    5,
+    13616
+   ],
+   [
+    5,
+    13670
+   ],
+   [
+    5,
+    13743
+   ],
+   [
+    5,
+    13748
+   ],
+   [
+    5,
+    13754
+   ],
+   [
+    5,
+    13759
+   ],
+   [
+    5,
+    13675
+   ],
+   [
+    5,
+    13764
+   ],
+   [
+    5,
+    13770
+   ],
+   [
+    5,
+    13775
+   ],
+   [
+    5,
+    13780
+   ],
+   [
+    5,
+    13785
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "minState": 15,
+    "body": "Champions of the Argent Tournament in need of a blade have found a use for him. They send fighters up to his crag to slay him for his everburning ember, which can free a maiden encased in ice far away at Winter's Breath Lake in the Howling Fjord, the guardian of an ancient sword.",
+    "triggers": [
+     [
+      5,
+      13616
+     ],
+     [
+      5,
+      13670
+     ],
+     [
+      5,
+      13743
+     ],
+     [
+      5,
+      13748
+     ],
+     [
+      5,
+      13754
+     ],
+     [
+      5,
+      13759
+     ],
+     [
+      5,
+      13675
+     ],
+     [
+      5,
+      13764
+     ],
+     [
+      5,
+      13770
+     ],
+     [
+      5,
+      13775
+     ],
+     [
+      5,
+      13780
+     ],
+     [
+      5,
+      13785
+     ]
+    ],
+    "sources": [
+     "quests 13616, 13670, 13675, 13743, 13748, 13754, 13759, 13764, 13770, 13775, 13780, 13785 descriptions and reward text (Lord Everblaze in southern Crystalsong overlooking the Crystal Vice's exit; the everburning ember frees the maiden encased in ice at Winter's Breath Lake; she guards Winter's Edge)"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 33289 Lord Everblaze (type elemental, one spawn at 5143,-76, z 347, posarea 2817), Fiery Dancer 33291 x12 around him (faction 35)",
+   "quest 13616 description (southern Crystalsong Forest, overlooking the Crystal Vice's exit)",
+   "warcraft.wiki.gg/wiki/Lord_Everblaze (fire revenant, reachable only by flying, added in patch 3.1.0)"
+  ],
+  "notes": "Checked: part 1 trimmed to the Crystalsong side: the maiden giving up Winter's Edge to whoever frees her (the Howling Fjord half of the quest) dropped; the ember's 'heat' dropped (the texts say only that it frees her). Verified: Everblaze added in patch 3.1.0 (wiki), not gated by mod-individual-progression (no mention of 33289/33291 in its SQL or source; his guid 202502 and the dancers 202503-202514 are not in its tournament phase list), so requiredState 14; KILL 33289: one spawn only, map 571 at 5143,-76 (posarea 2817), phase 1, no game event, no summon or script, normal rank, not a boss; the opening tells only what a bystander sees. The twelve The Edge of Winter variants exist (6 Alliance, 6 Horde, QuestType 2, Flags 4232, not auto-complete), all given and turned in by tournament NPCs the module phases in at 15, so minState 15 on part 1 holds; no other file uses them. Writer: requiredState 14: Lord Everblaze and his dancers came with patch 3.1.0 and mod-individual-progression does not gate them (no mention in its SQL or source), so the patch rule gives 14. Triggers: KILL 33289 (one standing spawn, phase 1, not summoned; the opening tells only the creature as anyone sees it) and DONE on the twelve The Edge of Winter variants (6 Alliance, 6 Horde; dailies, QuestType 2, not auto-complete) as the entry's quest triggers. Part 1 minState 15: the quests are given at the Argent Tournament (state 15 in the module). They are given and turned in on the tournament grounds, but Icecrown's file neither uses nor tells them and they are the only text about Everblaze; flagged for the checker. Winter's Breath Lake (Howling Fjord) is only named."
+ }
+]

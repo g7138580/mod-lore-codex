@@ -1,0 +1,622 @@
+[
+ {
+  "id": 474200,
+  "kind": 0,
+  "zone": 4742,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 15,
+  "title": "Hrothgar's Landing",
+  "body": "Hrothgar's Landing is a small island in the North Sea, across the strait called the Sea Reaver's Run from the northern shore of Icecrown. From the grounds of the Argent Tournament it can be seen to the north, shrouded in mist, and the same mist lies heavy over the island and the strait. It was a tuskarr settlement until the Kvaldir came: seafaring vrykul raiders who sail out of the fog, whom the tuskarr call the walkers of the fog. They slew the Tualiq villagers, left them lying where they fell, and renamed the island Hrothgar's Landing. Their leader is Drottinn Hrothgar, a veteran raider. Kvaldir reavers and mist binders now hold its hills and shores, a raider ship lies at anchor at the eastern end of its harbor, and in the northeast a circle of old tuskarr statues still stands. Cargo the raiders have stolen lies scattered across the island, and the tournament fears its own grounds will be their next target.",
+  "triggers": [
+   [
+    1,
+    4742
+   ]
+  ],
+  "sources": [
+   "quest 14074 description (island to the north, seen shrouded in mist from the grounds; ship's cargo taken there)",
+   "quest 14080 description (Kvaldir murdered the tuskarr inhabitants and renamed the island Hrothgar's Landing; the tournament their next target)",
+   "quest 14101 description (kvaldir are seafaring vrykul; their leader the veteran raider Drottinn Hrothgar; circle of tuskarr statues in the northeast)",
+   "quest 14104 description (Ornolf's ship at anchor at the eastern end of the island's harbor)",
+   "spell_area: spell 68085 Mist of the Kvaldir (screen effect) on 4742 and 4760 for everyone, no quest (wowhead spell 68085)",
+   "zone_areas 4742: Kvaldir Reaver 34838, Kvaldir Mist Binder 34839, Slain Tualiq Villager 34852, Stolen Tallstrider Leg 195274; gameobjects 195328 Tualiq Monuments (10404,939) and 195330 Deck of the Bor's Fury (10004,645), posarea 4742",
+   "borean.json 353707 and 353721 (the tuskarr call the Kvaldir walkers of the fog); warcraft.wiki.gg/wiki/Kvaldir (tuk-hariq)",
+   "warcraft.wiki.gg/wiki/Hrothgar's_Landing (island north of Icecrown across the Sea Reaver's Run; tuskarr village conquered and renamed)"
+  ],
+  "notes": "Checked: 'always shrouded' made 'shrouded' (14074 says only that it is seen in mist); 'villagers of Tualiq' made 'the Tualiq villagers' (the creature name, not a place name the wiki calls speculation); 'renamed the island for Drottinn Hrothgar' softened to renamed it Hrothgar's Landing, with Hrothgar named as leader (14080, 14101). Spell 68085 confirmed in Spell.dbc as Apply Aura 260 (screen effect, misc 602), not a phase (261); every spawn named is phaseMask 1. Era: every trigger in this file is a daily quest except 24442. The codex credits a quest trigger on a state change only from quest status, and a daily's DONE is not kept as rewarded after the daily reset, so these triggers effectively fire only live; acceptable, since the quests become available only at state 15, where requiredState already lets them unlock. Patch: the landing came in 3.2.0 and 24442 in 3.2.2; requiredState 15 is the module gate either way. Writer's notes: Opening only: the island as it stands on arrival. Every spawn is phase 1 and the only spell_area row (68085) is the always-on mist screen effect, so there is no phase change to tell. 'Tualiq' rests on the creature name Slain Tualiq Villager and the Tualiq Monuments object; the wiki calls the name speculation, so it is used only as the villagers' name. Hrothgar is named as leader (quest 14101) but nothing of his fall. requiredState 15: every quest here comes from tournament NPCs, which mod-individual-progression shows from state 15. The module does not phase the landing's own spawns (none of guids 51932-54534 is in ipp_aware_npcs.sql), so AREA 4742 fires earlier, but requiredState blocks the unlock. Area 4769 is unreachable and unused."
+ },
+ {
+  "id": 474201,
+  "kind": 1,
+  "zone": 4742,
+  "sort": 1,
+  "faction": 0,
+  "requiredState": 15,
+  "title": "The Sea Reaver's Run",
+  "body": "The Sea Reaver's Run is the strait between Hrothgar's Landing and the Argent Tournament Grounds, and the Kvaldir mist hangs over it as thickly as over the island. Two ships are locked in battle there. On the western side lies the Sunreavers' Firehawk under the blood elf Captain Aerthas Firehawk, and on the eastern side the Silver Covenant's Wavecrest under the high elf Captain Elleane Wavecrest. Kvaldir berserkers and harpooners have boarded both, and the bodies of mariners and raiders lie together on the decks while the crews fight on. Between them, Kvaldir deepcallers stand aboard a raiding vessel in the middle of the strait, and the North Sea Kraken rises among the ships.",
+  "triggers": [
+   [
+    1,
+    4760
+   ]
+  ],
+  "sources": [
+   "zone_areas 4760: Captain Aerthas Firehawk 35090, Firehawk Mariner 35070 and dead mariners 35079/35083, Captain Elleane Wavecrest 35102, Wavecrest Mariner 35098 and dead mariners 35104/35105, Kvaldir Berserker 34947, Kvaldir Harpooner 34907 and their dead 35080/35084, Kvaldir Deepcaller 35092, North Sea Kraken 34925 (all phase 1)",
+   "quest 14136 description (the Firehawk on the western side of the Sea Reaver's Run, between the island and the grounds)",
+   "quest 14152 description (the Wavecrest on the east side of the pass)",
+   "quest 14108 description (ships detained by a Kvaldir raiding vessel; the kraken beneath the North Sea)",
+   "spell_area 68085 Mist of the Kvaldir on 4760",
+   "warcraft.wiki.gg/wiki/Captain_Aerthas_Firehawk (blood elf, Sunreavers); warcraft.wiki.gg/wiki/Captain_Elleane_Wavecrest (high elf, Silver Covenant); only their Wrath-era pages used",
+   "warcraft.wiki.gg/wiki/Kvaldir_Deepcaller (on the kvaldir raiding vessel in the middle of Sea Reaver's Run)"
+  ],
+  "notes": "Checked: deepcallers placed 'between them ... in the middle of the strait', per warcraft.wiki.gg/wiki/Kvaldir_Deepcaller (on the kvaldir raiding vessel in the middle of Sea Reaver's Run) and their spawns (z 9 to 25 between the ships). Firehawk west and Wavecrest east confirmed from 14136/14152 and spawn y (1165 vs 906; higher y is west); the main Hrothgar's Landing wiki page gives no side. Writer's notes: Opening only. Every spawn named stands in phase 1 (creature.phaseMask 1), so a first arrival sees both ships under attack and the kraken. West and east follow the quest texts and the spawn positions (Firehawk y 1165, Wavecrest y 906); the wiki puts the Firehawk in the east, which the quest text and positions contradict. The captains have no gossip and no quests (npcflag 0), so they get no TALK trigger and no person entries; their story is 474207. No KILL on the kraken (a vehicle-spear sequence)."
+ },
+ {
+  "id": 474202,
+  "kind": 2,
+  "zone": 4742,
+  "sort": 1,
+  "faction": 0,
+  "requiredState": 15,
+  "title": "Drottinn Hrothgar",
+  "body": "Drottinn Hrothgar leads the Kvaldir who overran the tuskarr island across the strait from the Argent Tournament, the island that now bears his name. He is a veteran raider among seafaring vrykul who prey on ships and coastal settlements, and he means to make himself master of these seas. While he rules them, the Argent Crusade fears that none of its supply ships or troop transports will be safe, and that its crusaders will be left stranded in Icecrown at the Lich King's mercy. High Crusader Adelard has a captured Kvaldir war horn for the champion who will carry it to the circle of tuskarr statues in the northeast of the island and sound it there as a challenge.",
+  "triggers": [
+   [
+    4,
+    14101
+   ],
+   [
+    5,
+    14101
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The horn brought the Sea Reaver out of the mist, demanding to know who dared challenge Drottinn Hrothgar, king of the seas, and in the circle of statues he was cut down. Adelard expects his death to set the Kvaldir fighting among themselves, and means the crusade to use the time it buys.",
+    "triggers": [
+     [
+      5,
+      14101
+     ]
+    ],
+    "sources": [
+     "creature_text 34980 group 0 (You dare to challenge Drottinn Hrothgar, king of the seas?)",
+     "smart_scripts 34980 (Cloud Aura on appearing)",
+     "quest 14101 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 14101 description",
+   "creature_template 34980 subname The Sea Reaver",
+   "gameobject 195328 Tualiq Monuments (spell focus for the horn), posarea 4742",
+   "warcraft.wiki.gg/wiki/Drottinn_Hrothgar (kvaldir, The Sea Reaver, took the island from the tuskarr; added 3.2.0)",
+   "warcraft.wiki.gg/wiki/Drottinn_Hrothgar (kvaldir raider who claimed Hrothgar's Landing from the local tuskarr)"
+  ],
+  "notes": "Checked: 'gave it his name' made 'the island that now bears his name' (warcraft.wiki.gg/wiki/Drottinn_Hrothgar: claimed the landing from the tuskarr), and 'veteran raider of ships and coastal settlements' reworded so the raiding of ships and settlements is the Kvaldir's (14101). Part 1 checked against creature_text 34980 and smart_scripts (Cloud Aura, then the line): it tells only the summoning and the defeat that DONE 14101 shows. Writer's notes: Opening on ACCEPT and DONE 14101 (a daily, QuestType 2, not auto-complete; ACCEPT given for an early unlock, DONE so a state change can credit it). His boast and his fall are part 1 on DONE 14101. No KILL trigger: he exists only when summoned by the horn. Faction 0: Adelard (34882) gives 14101 to both factions (conditions: the Crusader title, 2816 or 2817). The wiki says Drottinn is a title, but the 3.3.5 quest text does not, so it is left out."
+ },
+ {
+  "id": 474203,
+  "kind": 2,
+  "zone": 4742,
+  "sort": 2,
+  "faction": 0,
+  "requiredState": 15,
+  "title": "Mistcaller Yngvar",
+  "body": "Mistcaller Yngvar is one of the Kvaldir who have returned to the coasts of Northrend. He has made his lair in a cave on the western side of Hrothgar's Landing, and from there he works the mists that conceal the raiders and the sea beasts they command, so that they can fall on the crusade's supplies and reinforcements unseen. He keeps himself hidden as well: High Crusader Adelard gives a charm to the champion who will cross the strait, find the mistcaller's cave and use the charm to reveal him.",
+  "triggers": [
+   [
+    4,
+    14102
+   ],
+   [
+    5,
+    14102
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Revealed by the charm, the mistcaller cried that his foe could never stop the Kvaldir and turned the choking mist on his foes, but he was slain in his own cave. Adelard counted it valuable time bought to move against the raiders and free the seas of them.",
+    "triggers": [
+     [
+      5,
+      14102
+     ]
+    ],
+    "sources": [
+     "creature_text 34965 group 0 (Foolish, you cannot stop the Kvaldir!)",
+     "smart_scripts 34965 (Mist of Strangulation)",
+     "quest 14102 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 14102 description",
+   "gameobjects 195329 Mistcaller's Cave (spell focus) and 195318 Mistcaller's Brazier at 10185,1185, posarea 4742",
+   "smart_scripts 34965 (Call of the Mist out of combat, Mist of Strangulation in combat)"
+  ],
+  "notes": "Checked: 'He is hidden as well as his kin' reworded (unclear); part 1 'swore that no outsider could stop' made 'cried that his foe could never stop' to follow creature_text 34965 (said to the challenger). Tells only what DONE 14102 shows. Writer's notes: Opening on ACCEPT and DONE 14102 (daily, not auto-complete). Part 1 on DONE 14102. No KILL: he appears only when the charm reveals him. Faction 0 (Adelard, both factions). The Heart of the Mists he consults is told in 474212, not here, since only quest 24442 tells it."
+ },
+ {
+  "id": 474204,
+  "kind": 2,
+  "zone": 4742,
+  "sort": 3,
+  "faction": 0,
+  "requiredState": 15,
+  "title": "Ornolf the Scarred",
+  "body": "Ornolf the Scarred is a fearsome raider, renowned among the Kvaldir for taking ships. From the deck of his own vessel, Bor's Fury, he and his crew fall upon the crusade's ships and carry off their goods, and they were among those who slaughtered the tuskarr of the island and renamed it Hrothgar's Landing. Bor's Fury now lies at anchor at the eastern end of the island's harbor. High Crusader Adelard means to draw Ornolf out with a captured Kvaldir banner, raised on his own ship for him to see.",
+  "triggers": [
+   [
+    4,
+    14104
+   ],
+   [
+    5,
+    14104
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The banner did its work, and Ornolf came out to fight and died on the deck of Bor's Fury. His crew will want to avenge him, Adelard warns, but without him they will be easier to defeat, and the crusade must live to carry out its true mission: to rid Icecrown of the Scourge and every other evil.",
+    "triggers": [
+     [
+      5,
+      14104
+     ]
+    ],
+    "sources": [
+     "quest 14104 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 14104 description",
+   "gameobject 195330 Deck of the Bor's Fury (spell focus for the banner) at 10004,645, posarea 4742"
+  ],
+  "notes": "Checked: verified. Writer's notes: Opening on ACCEPT and DONE 14104 (daily, not auto-complete). Part 1 on DONE 14104. No KILL: he appears only when the banner is raised. Faction 0 (Adelard, both factions)."
+ },
+ {
+  "id": 474205,
+  "kind": 3,
+  "zone": 4742,
+  "sort": 1,
+  "faction": 0,
+  "requiredState": 15,
+  "title": "Stop the Aggressors",
+  "body": "The Kvaldir do not keep to their island. A fast Argent Crusade ship carrying tallstrider meat and other supplies to the tournament never arrived: scouts saw the raiders fall on it, kill its crew and carry the cargo off to Hrothgar's Landing, and without it the tournament will soon run short of food. The same raiders have murdered the island's tuskarr, and if they gain a foothold there, the grounds across the strait will surely be next. The crusade's own forces have their hands full with the Scourge, so the Silver Covenant's Narasi Snowdawn and the Sunreavers' Girana the Blooded, rivals in all else, both send champions north to win back the stolen supplies and strike at the Kvaldir before they can destroy anything more.",
+  "triggers": [
+   [
+    4,
+    14074
+   ],
+   [
+    4,
+    14143
+   ],
+   [
+    4,
+    14080
+   ],
+   [
+    4,
+    14140
+   ],
+   [
+    5,
+    14074
+   ],
+   [
+    5,
+    14143
+   ],
+   [
+    5,
+    14080
+   ],
+   [
+    5,
+    14140
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Much of the stolen meat was carried back from the island, a little worse for wear but still fit to eat, and the crusaders were glad to hear that some of the lost ship's cargo had been saved.",
+    "triggers": [
+     [
+      5,
+      14074
+     ],
+     [
+      5,
+      14143
+     ]
+    ],
+    "sources": [
+     "quests 14074 and 14143 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Champions crossed the strait and cut down the raiders on their own ground, showing the Kvaldir that the tournament will not be threatened. The order that sent them took the deed as proof that it, and not its rival, stands truest beside the Argent Crusade.",
+    "triggers": [
+     [
+      5,
+      14080
+     ],
+     [
+      5,
+      14140
+     ]
+    ],
+    "sources": [
+     "quests 14080 and 14140 completion and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 14074 and 14143 descriptions (the supply ship, its crew slain, cargo taken to the island)",
+   "quests 14080 and 14140 descriptions (tuskarr murdered; foothold; crusade busy with the Scourge)",
+   "quests 14080 and 14140 reward text (each order calls itself the better ally to the crusade)",
+   "creature_template 34880 subname The Silver Covenant, 34771 The Sunreavers"
+  ],
+  "notes": "Checked: verified; both sides' descriptions are identical (14074 = 14143, 14080 = 14140), so the opening holds for either side, and the parts tell only what both reward texts share. Writer's notes: Opening on ACCEPT and DONE of both sides' quests: 14074 and 14080 Alliance (Narasi Snowdawn, conditions: achievement 3676 A Silver Confidant), 14143 and 14140 Horde (Girana the Blooded, achievement 3677 The Sunreavers). All dailies, QuestType 2, none auto-complete. Faction 0 with an entry point on each side. Parts trimmed to what both sides' turn-ins show: part 1 the stolen meat recovered (Girana's jab about the half-eaten legs left out, Horde only), part 2 the strikes on the raiders, with the rivalry told so it holds for either side's reward text. The cooking and beast dailies (14076, 14090, 14092, 14112, 14141, 14145) belong to Icecrown and are not used."
+ },
+ {
+  "id": 474206,
+  "kind": 3,
+  "zone": 4742,
+  "sort": 2,
+  "faction": 0,
+  "requiredState": 15,
+  "title": "The Light's Mercy",
+  "body": "The tuskarr of Hrothgar's Landing still lie where the Kvaldir cut them down, and the mists that engulf the island keep their spirits from finding peace. At the tournament, Narasi Snowdawn of the Silver Covenant and Girana the Blooded of the Sunreavers have both been listening to Argent Confessor Paletress, and her words have moved them to learn from the crusaders as well as fight beside them. Each now sends champions across the strait with a prayer book from the confessor, to read the rites for the dead over the slain villagers so that their spirits may escape the mist.",
+  "triggers": [
+   [
+    4,
+    14077
+   ],
+   [
+    4,
+    14144
+   ],
+   [
+    5,
+    14077
+   ],
+   [
+    5,
+    14144
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "As the rites were read over each body, the villager's spirit rose from it and slipped away, free of the mist at last. The prayer book was returned to the one who lent it, with a word for the confessor whose teaching had sent it out.",
+    "triggers": [
+     [
+      5,
+      14077
+     ],
+     [
+      5,
+      14144
+     ]
+    ],
+    "sources": [
+     "smart_scripts 34852 (on Read Last Rites: quest credit, cast 66412, despawn)",
+     "smart_scripts 34888 Tualiq Spirit (on summon: spirit particles, rise up)",
+     "quests 14077 and 14144 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 14077 description (Narasi: take up the crusaders' mission; rites let the spirits escape the mists)",
+   "quest 14144 description (Girana: we can learn from them, too)",
+   "item 46870 Confessor's Prayer Book (start item of 14077)",
+   "zone_areas 4742: Slain Tualiq Villager 34852 x47"
+  ],
+  "notes": "Checked: part 1 'with thanks to the confessor' made 'with a word for the confessor' (Girana's reward text does not thank Paletress; Narasi's says the book was her gift). Writer's notes: Opening on ACCEPT and DONE 14077 (Alliance, Narasi) and 14144 (Horde, Girana); both dailies, not auto-complete; faction 0. Part 1 on both DONEs, kept to what both show: the spirits rising (smart_scripts 34852 and 34888, the same for both) and the book returned. Narasi's line that the book was Paletress's own gift (Alliance reward text only) is left out of the part."
+ },
+ {
+  "id": 474207,
+  "kind": 3,
+  "zone": 4742,
+  "sort": 3,
+  "faction": 0,
+  "requiredState": 15,
+  "title": "Rescue at Sea",
+  "body": "The Sunreavers and the Silver Covenant did not wait for the Kvaldir to come to them. Each sent a ship north to strike at Hrothgar's Landing: the Sunreavers sent the Firehawk under Captain Aerthas Firehawk, and the Silver Covenant the Wavecrest under Captain Elleane Wavecrest. Neither reached the island. In the Sea Reaver's Run both ran into a Kvaldir raiding party bound for the tournament grounds, and now berserkers and harpooners swarm their decks, far outnumbering the crews and slowly taking the ships from them. Champions are sent out over the water to fight beside the mariners.",
+  "triggers": [
+   [
+    4,
+    14136
+   ],
+   [
+    4,
+    14152
+   ],
+   [
+    5,
+    14136
+   ],
+   [
+    5,
+    14152
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Aboard the Firehawk the boarders were cut down, and the Kvaldir learned that the Sunreavers will not suffer such attacks. Girana the Blooded is pleased with the work, but she knows the fight for the strait goes on.",
+    "triggers": [
+     [
+      5,
+      14136
+     ]
+    ],
+    "sources": [
+     "quest 14136 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Many of the Wavecrest's crew owe their lives to those who fought beside them on her deck. Even so, Narasi Snowdawn has to admit that things at sea are worse than the Silver Covenant first thought.",
+    "triggers": [
+     [
+      5,
+      14152
+     ]
+    ],
+    "sources": [
+     "quest 14152 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 14136 description (Girana: the Firehawk under attack, vastly outnumbered)",
+   "quest 14152 description (Narasi: the Wavecrest intercepted by a raiding party headed for the grounds, slowly being taken)",
+   "quest 14108 description (both orders sent ships north to engage the Kvaldir)"
+  ],
+  "notes": "Checked: verified. The opening names both ships though ACCEPT 14136 names only the Firehawk and ACCEPT 14152 only the Wavecrest: both ships, both captains and the Kvaldir on their decks are phase 1 spawns any visitor to the strait sees (and 474201 names them on AREA 4760), and 14108 (both sides) says both orders sent ships; nothing in it is an outcome. Writer's notes: Opening on ACCEPT and DONE 14136 (Horde, Girana, achievement 3677) and 14152 (Alliance, Narasi, achievement 3676); dailies, not auto-complete; faction 0. Each ship's outcome is its own part, since each side's turn-in tells only its own ship: part 1 Horde (DONE 14136), part 2 Alliance (DONE 14152). Both orders' ships are named in the opening on the strength of 14108 (Silverdawn, both factions) and the spawns any visitor to the strait sees."
+ },
+ {
+  "id": 474208,
+  "kind": 3,
+  "zone": 4742,
+  "sort": 4,
+  "faction": 0,
+  "requiredState": 15,
+  "title": "The North Sea Kraken",
+  "body": "The ships the two elven orders sent north were caught and held in the strait by a Kvaldir raiding vessel, and worse followed: the raiders have found a way to call up the dreaded kraken that lives beneath the North Sea. Kvaldir deepcallers chant the summoning, and the beast rises among the ships. If anyone aboard is to escape alive, says Crusader Silverdawn of the Argent Crusade, the kraken must be driven off and the ritual broken. He sends crusaders out on Argent hippogryphs with flaming spears to hurl at the beast, and blades for the deepcallers.",
+  "triggers": [
+   [
+    4,
+    14108
+   ],
+   [
+    5,
+    14108
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Flaming spears struck the kraken again and again and the deepcallers fell, and Silverdawn judged that it may have bought the sailors just enough time to escape. He hopes that next time the Silver Covenant and the Sunreavers will listen before charging headlong at the enemy.",
+    "triggers": [
+     [
+      5,
+      14108
+     ]
+    ],
+    "sources": [
+     "quest 14108 reward text"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "One kraken did not escape the spears, and it left behind a whole tooth, a rare find, which was carried to Silverdawn as proof. With the beast no longer harrying the ships, he reasons, the Kvaldir will have no choice but to retreat.",
+    "triggers": [
+     [
+      5,
+      14095
+     ]
+    ],
+    "sources": [
+     "quest 14095 description and reward text",
+     "item 46955 Kraken Tooth (starts 14095)",
+     "smart_scripts 34925 events 2-3 (Kraken Tooth Explosion, then dies)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 14108 description and objectives",
+   "zone_areas 4760: North Sea Kraken 34925, Kvaldir Deepcaller 35092",
+   "smart_scripts 34925 (flaming spear hits; dies at low health with Kraken Tooth Explosion)"
+  ],
+  "notes": "Checked: part 1 'The spears drove the kraken back beneath the waves' softened: 14108's reward text says only that it may have bought the sailors time to escape, not that the kraken was driven off. Writer's notes: Opening on ACCEPT and DONE 14108 (Silverdawn, both factions, Crusader title; daily, not auto-complete). Part 1 on DONE 14108, part 2 on DONE 14095 (started by the Kraken Tooth, item 46955, which the kraken leaves when it dies; turned in to Silverdawn). No KILL on the kraken: it is fought from a hippogryph vehicle with quest spears. Faction 0."
+ },
+ {
+  "id": 474209,
+  "kind": 3,
+  "zone": 4742,
+  "sort": 5,
+  "faction": 0,
+  "requiredState": 15,
+  "title": "Kul the Reckless",
+  "body": "Crusader Kul, a dwarf of the Argent Crusade, has a long habit of getting himself into trouble, and this time he has not gone alone. When the Cult of the Damned made camp at Deathspeaker's Watch, on the ridge west of the tournament grounds, Kul gathered the tournament's aspirants and led them against it without reinforcements. The cultists took them all with ease. Kul and his followers now sit in the cult's black cages, and unless someone takes the keys from the cultists and sets them free, they will surely be sacrificed.",
+  "triggers": [
+   [
+    4,
+    14096
+   ],
+   [
+    4,
+    14142
+   ],
+   [
+    5,
+    14096
+   ],
+   [
+    5,
+    14142
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The keys were found and the cages opened. Kul came out declaring that the cultists had been seconds from strapping him to an altar and drawing out his soul, and he and the aspirants escaped the camp with their lives. It is far from the first time someone has had to save Kul from himself.",
+    "triggers": [
+     [
+      5,
+      14096
+     ],
+     [
+      5,
+      14142
+     ]
+    ],
+    "sources": [
+     "creature_text 34956 group 0 (spoken when his cage is opened)",
+     "quests 14096 and 14142 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 14096 and 14142 descriptions",
+   "creature 34956 Kul the Reckless at 8459,1632 (Deathspeaker's Watch, Icecrown); Captive Aspirant 34716",
+   "warcraft.wiki.gg/wiki/Kul_the_Reckless (dwarf, Argent Crusade, added 3.2.0)"
+  ],
+  "notes": "Checked: verified (Kul a dwarf of the Argent Crusade, warcraft.wiki.gg/wiki/Kul_the_Reckless). Does not retell icecrown.json 21022 beyond naming the camp. Writer's notes: Opening on ACCEPT and DONE 14096 (Alliance, Narasi) and 14142 (Horde, Girana); dailies, not auto-complete; faction 0. The rescue happens at Deathspeaker's Watch, which icecrown.json tells as a place (21022, AREA 4743 only); this entry tells only Kul's raid and rescue, not the camp. No TALK on Kul (he stands in Icecrown, has no gossip). Part 1 kept to what both turn-ins share: Kul's line on release (creature_text 34956, both sides) and that it is far from the first time; Narasi's worry about his bad habits and Girana's jab at the Silver Covenant are each one side only and left out."
+ },
+ {
+  "id": 474210,
+  "kind": 3,
+  "zone": 4742,
+  "sort": 6,
+  "faction": 0,
+  "requiredState": 15,
+  "title": "Deathspeaker Kharos",
+  "body": "The Cult of the Damned has redoubled its efforts to destroy the Argent Crusade and grown bold enough to mass its strength at Deathspeaker's Watch, on the ridge west of the tournament grounds, under Deathspeaker Kharos. An attack on the grounds is coming, with every weapon the cult can bring to bear. High Crusader Adelard, who holds it his duty to set worthy quests before the crusade's champions, is readying his men and the tournament's valiants to defend the grounds. He would rather blunt the blow before it falls, and asks champions to lead that effort: to find Kharos and slay him.",
+  "triggers": [
+   [
+    4,
+    14105
+   ],
+   [
+    5,
+    14105
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Kharos was found in his camp and slain. Adelard hailed the champion who did it as an example to all who have gathered beneath the crusade's banner, and as proof that together they will show the Scourge it cannot defeat them.",
+    "triggers": [
+     [
+      5,
+      14105
+     ]
+    ],
+    "sources": [
+     "quest 14105 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 14105 description",
+   "npc_text 14659 (Adelard: as High Crusader it is his duty to task such men and women with worthy quests)"
+  ],
+  "notes": "Checked: opening reworded so it no longer repeats icecrown.json 21022's sentence on Kharos (the ruthless deathspeaker who has his men fortify the camp); it now tells Adelard's charge, with Kharos named as the cult's leader there. Writer's notes: Opening on ACCEPT and DONE 14105 (Adelard, both factions, Crusader title; daily, not auto-complete); part 1 on DONE 14105. No KILL on Kharos (34808): he stands at Deathspeaker's Watch in Icecrown, outside this zone, and icecrown.json 21022 names him in its place entry. This entry tells only Adelard's charge and its result. Faction 0."
+ },
+ {
+  "id": 474211,
+  "kind": 3,
+  "zone": 4742,
+  "sort": 7,
+  "faction": 0,
+  "requiredState": 15,
+  "title": "The Fate of the Fallen",
+  "body": "The Argent Crusade is hardly the first force to challenge the Lich King, and the Scourge turns the spirits of those who fell before against it. They wander the Valley of Fallen Heroes, southwest of the tournament grounds between Aldur'thar and the Ironwall Rampart, and the ground there is littered with the soul crystals the Scourge uses to bind them. Crusader Silverdawn believes those heroes have more than earned their rest. He sends crusaders with a Light-blessed relic to gather the discarded crystals and, with the relic, bestow the blessing of peace upon the spirits.",
+  "triggers": [
+   [
+    4,
+    14107
+   ],
+   [
+    5,
+    14107
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Blessed, the spirits ceased to fight and woke as if from a nightmare: some had dreamt they were fighting their own friends, and others asked only to rest. Silverdawn was moved to think on his own fate. Should he fall, he would want the same done for him, rather than force his brothers to slay him again and again.",
+    "triggers": [
+     [
+      5,
+      14107
+     ]
+    ],
+    "sources": [
+     "creature_text 32149 group 0 (spoken on the Blessing of Peace, smart_scripts 3214900)",
+     "quest 14107 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 14107 description",
+   "item 47033 Light-Blessed Relic (start item of 14107)"
+  ],
+  "notes": "Checked: verified; the valley is named only as where the spirits wander, not described as a place (icecrown.json 21014). Writer's notes: Opening on ACCEPT and DONE 14107 (Silverdawn, both factions, Crusader title; daily, not auto-complete); part 1 on DONE 14107. The valley itself is icecrown.json 21014 (AREA only); this entry tells Silverdawn's quest, not the place. No KILL or TALK on Fallen Hero's Spirit 32149 (Icecrown). The spirits' words are spoken when the blessing lands (smart_scripts 3214900), so they are told on the turn-in. Faction 0."
+ },
+ {
+  "id": 474212,
+  "kind": 3,
+  "zone": 4742,
+  "sort": 8,
+  "faction": 0,
+  "requiredState": 15,
+  "title": "Battle Plans of the Kvaldir",
+  "body": "Now and then a Kvaldir raider on Hrothgar's Landing is found carrying orders, and they show that the raiders look far beyond Northrend. With them is a map of the Eastern Kingdoms and Kalimdor with major settlements marked, and the orders set out a series of devastating raids drafted by the Kvaldir captains. The attacks are to begin once Mistcaller Yngvar has consulted the Heart of the Mists. Taking that omen from the Mistcaller's Cave on the western side of the island might delay them, and the orders must be carried to Justicar Mariel Trueheart, seneschal of the tournament.",
+  "triggers": [
+   [
+    4,
+    24442
+   ],
+   [
+    5,
+    24442
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Heart of the Mists proved to be a seeing crystal. Mariel took it and the orders, and judged that the theft would not slow the Kvaldir for long, but that it had bought time enough to warn the leaders of the Horde and the Alliance of the attacks to come.",
+    "triggers": [
+     [
+      5,
+      24442
+     ]
+    ],
+    "sources": [
+     "quest 24442 reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 24442 description and objectives",
+   "item 49676 Kvaldir Attack Plans (starts 24442), dropped by Kvaldir Reaver 34838 and Kvaldir Mist Binder 34839 (5 percent)",
+   "gameobject 201367 Heart of the Mists at the cave (10186,1182, posarea 4742), loot item 49678",
+   "creature_template 33817 subname Seneschal of the Argent Tournament",
+   "warcraft.wiki.gg/wiki/Kvaldir (Kvaldir Attack Plans added in patch 3.2.2, never followed up)"
+  ],
+  "notes": "Checked: verified. Writer's notes: Not in the task's owned list, but 24442 has this zone's QuestSortID (4769), starts from a drop on the island, is turned in to Mariel at the grounds, and no other file uses it. QuestType 2, Flags 128, not auto-complete and not a daily, so ACCEPT is safe. Part 1 on DONE 24442. The raids themselves are never told as having happened (the wiki says the thread was never followed up). Mariel has her own entry in icecrown.json (21037); she is only named here. Faction 0 (AllowableRaces 0; the drop and Mariel serve both)."
+ }
+]
