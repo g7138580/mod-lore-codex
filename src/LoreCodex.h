@@ -31,7 +31,7 @@ namespace LoreCodex
     constexpr char const* PREFIX = "LCX";
 
     // Bumped when a message changes shape. The addon refuses the server on a mismatch.
-    constexpr uint32 PROTOCOL_VERSION = 3;
+    constexpr uint32 PROTOCOL_VERSION = 4;
 
     // Leaves room for the prefix and tab inside the client's 255-byte chat message limit.
     constexpr std::size_t MAX_PAYLOAD = 240;

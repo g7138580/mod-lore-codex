@@ -1,5 +1,5 @@
--- The options page (Interface > AddOns > Lore Codex): toasts, sound, the minimap and world map
--- buttons, and the key that opens the codex. Right-clicking the minimap button, the codex's
+-- The options page (Interface > AddOns > Lore Codex): toasts, their sound and position, the reading
+-- text size, the minimap and world map buttons, and the key that opens the codex. Right-clicking the minimap button, the codex's
 -- Options button and /codex options all open it.
 
 local LC = LoreCodex
@@ -35,9 +35,27 @@ discovery:SetPoint("TOPLEFT", subtitle, "BOTTOMLEFT", 0, -20)
 discovery:SetText("Discoveries")
 local toast = checkbox("toast", "Show a banner when you discover lore", discovery)
 local sound = checkbox("sound", "Play a sound with each discovery", toast)
+local moveToast = checkbox("moveToast", "Unlock the banners so you can drag them where you like", sound)
+
+local reading = panel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
+reading:SetPoint("TOPLEFT", moveToast, "BOTTOMLEFT", 0, -16)
+reading:SetText("Reading")
+
+local size = CreateFrame("Slider", "LoreCodexOptionTextSize", panel, "OptionsSliderTemplate")
+size:SetWidth(180)
+size:SetPoint("TOPLEFT", reading, "BOTTOMLEFT", 6, -24)
+size:SetMinMaxValues(1, 3)
+size:SetValueStep(1)
+LoreCodexOptionTextSizeText:SetText("Text size")
+LoreCodexOptionTextSizeLow:SetText("Small")
+LoreCodexOptionTextSizeHigh:SetText("Large")
+size:SetScript("OnValueChanged", function (self, value)
+	value = math.floor(value + 0.5)
+	if value ~= LC.GetOption("textSize") then LC.SetOption("textSize", value) end
+end)
 
 local buttons = panel:CreateFontString(nil, "ARTWORK", "GameFontNormal")
-buttons:SetPoint("TOPLEFT", sound, "BOTTOMLEFT", 0, -16)
+buttons:SetPoint("TOPLEFT", size, "BOTTOMLEFT", -6, -22)
 buttons:SetText("Buttons")
 local minimap = checkbox("minimap", "Show the minimap button", buttons)
 local map = checkbox("mapButton", "Show the Lore button on the world map", minimap)
@@ -99,12 +117,13 @@ open:SetPoint("TOPLEFT", window, "BOTTOMLEFT", 0, -8)
 
 local reset = button("Reset position", 120, function ()
 	LC.Fire("RESET_POSITION")
-	LC.Print("window position reset.")
+	LC.Print("window and banner positions reset.")
 end)
 reset:SetPoint("LEFT", open, "RIGHT", 6, 0)
 
 function panel.refresh()
 	for _, cb in ipairs(checks) do cb:SetChecked(LC.GetOption(cb.key) and true or false) end
+	size:SetValue(LC.GetOption("textSize") or 2)
 	local key = LC.KeyText()
 	keyText:SetText("Open the codex with: " .. (key and ("|cffffd200" .. key .. "|r") or "|cff999999not bound|r"))
 end

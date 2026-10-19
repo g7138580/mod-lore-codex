@@ -8,7 +8,7 @@ LoreCodex = LoreCodex or {}
 local LC = LoreCodex
 
 LC.PREFIX = "LCX"
-LC.PROTOCOL = 3
+LC.PROTOCOL = 4
 
 LC.KIND = { ZONE = 0, PLACE = 1, PERSON = 2, STORY = 3 }
 LC.KIND_NAME = { [0] = "Zone", [1] = "Place", [2] = "Person", [3] = "Story" }
@@ -311,18 +311,20 @@ end
 LC.known = {}
 LC.hidden = {}
 LC.parts = {}  -- [entry] = parts earned
+LC.found = {}  -- [entry] = unix time of its latest discovery (0 when credited quietly from past travels)
 LC.state = 0   -- the server's mod-individual-progression state for this character
 
 function LC.RefreshKnown(done)
 	if not LC.serverReady then if done then done() end return end
 	LC.Request("K", nil, function (result)
 		if result then
-			LC.known, LC.hidden, LC.parts = {}, {}, {}
+			LC.known, LC.hidden, LC.parts, LC.found = {}, {}, {}, {}
 			LC.state = tonumber(result.meta[2]) or 0
 			for _, r in ipairs(result.rows) do
 				if r[1] == "K" then
 					LC.known[r[2]] = true
 					LC.parts[r[2]] = tonumber(r[3]) or 0
+					LC.found[r[2]] = tonumber(r[4]) or 0
 				elseif r[1] == "H" then
 					LC.hidden[r[2]] = true
 				end
@@ -373,6 +375,24 @@ function LC.MarkRead(id)
 	end
 end
 
+-- Which of an entry's parts this character has read, by part number (nil when it was read with an
+-- older version of the addon, which only kept a count).
+function LC.ReadParts(id)
+	return LoreCodexCharDB.readParts[id]
+end
+
+-- Remembers the parts just shown as read.
+function LC.MarkPartsRead(id, shown)
+	local set = LoreCodexCharDB.readParts[id] or {}
+	for _, part in ipairs(shown or {}) do set[part] = true end
+	LoreCodexCharDB.readParts[id] = set
+end
+
+-- Ever opened, in this version or an older one.
+function LC.WasOpened(id)
+	return LoreCodexCharDB.read[id] ~= nil
+end
+
 -- Discovered and visible to this character, out of all visible, for a zone (or every zone).
 function LC.Progress(zone)
 	local known, total = 0, 0
@@ -394,8 +414,9 @@ function LC.Title(id)
 	return t and t.title
 end
 
--- done(entry) with entry = { title, body, parts, more, state }, or nil when the server wouldn't
--- say. more is true when the character could still earn another part.
+-- done(entry) with entry = { title, body, parts, more, state, shown }, or nil when the server
+-- wouldn't say. more is true when the character could still earn another part; shown lists the
+-- numbers of the parts in the body, in order (each is a paragraph after the opening).
 -- Texts on their way: [entry] = the callbacks waiting for it. The codex list asks again for every
 -- missing title each time it redraws, so a text already asked for is not asked for twice.
 local loading = {}
@@ -406,7 +427,7 @@ end
 
 function LC.LoadText(id, done)
 	local t = cache().text[id]
-	if t and t.body and t.parts == (LC.parts[id] or 0) and t.state == LC.state then done(t) return end
+	if t and t.body and t.shown and t.parts == (LC.parts[id] or 0) and t.state == LC.state then done(t) return end
 	if not LC.serverReady then done(nil) return end
 	if loading[id] then table.insert(loading[id], done) return end
 	loading[id] = { done }
@@ -415,8 +436,10 @@ function LC.LoadText(id, done)
 		loading[id] = nil
 		if result then
 			local meta = result.meta
+			local shown = {}
+			for n in (meta[8] or ""):gmatch("%d+") do table.insert(shown, tonumber(n)) end
 			t = { title = LC.Unescape(meta[4] or "-"), body = LC.Unescape(table.concat(result.raw)),
-				parts = tonumber(meta[5]) or 0, more = meta[6] == "1", state = tonumber(meta[7]) or 0 }
+				parts = tonumber(meta[5]) or 0, more = meta[6] == "1", state = tonumber(meta[7]) or 0, shown = shown }
 			cache().text[id] = t
 		else
 			t = nil
@@ -458,6 +481,7 @@ onDiscovered = function (fields, updated)
 	LC.known[id] = true
 	LC.hidden[id] = nil
 	LC.parts[id] = tonumber(fields[5]) or 0
+	LC.found[id] = time()
 	local t = cache().text[id] or {}
 	t.title = LC.Unescape(fields[4] or "-")
 	t.body = nil
@@ -494,9 +518,15 @@ events:SetScript("OnEvent", function (self, event, ...)
 			if LoreCodexDB.options.toast == nil then LoreCodexDB.options.toast = true end
 			if LoreCodexDB.options.sound == nil then LoreCodexDB.options.sound = true end
 			if LoreCodexDB.options.mapButton == nil then LoreCodexDB.options.mapButton = true end
+			LoreCodexDB.options.parchment = nil
+			LoreCodexDB.options.textSize = LoreCodexDB.options.textSize or 2
+			-- The banners are only unlocked for moving until the next login.
+			LoreCodexDB.options.moveToast = nil
 			LoreCodexDB.minimap = LoreCodexDB.minimap or { angle = 215 }
+			LoreCodexDB.collapsed = LoreCodexDB.collapsed or {}
 			LoreCodexCharDB = LoreCodexCharDB or {}
 			LoreCodexCharDB.read = LoreCodexCharDB.read or {}
+			LoreCodexCharDB.readParts = LoreCodexCharDB.readParts or {}
 		end
 	elseif event == "PLAYER_LOGIN" then
 		LC.Fire("LOGIN")
@@ -572,6 +602,41 @@ function LC.UnreadCount()
 	return n
 end
 
+-- Known entries in the index, newest discovery first; with onlyUnread, those not read yet (new or
+-- updated); otherwise those discovered while playing (not credited quietly), up to limit.
+function LC.KnownByTime(onlyUnread, limit)
+	local out = {}
+	if not LC.index then return out end
+	for id in pairs(LC.known) do
+		local e = LC.index.entries[id]
+		if e and LC.IsVisible(id) then
+			if onlyUnread then
+				if not LC.IsRead(id) then table.insert(out, e) end
+			elseif (LC.found[id] or 0) > 0 then
+				table.insert(out, e)
+			end
+		end
+	end
+	table.sort(out, function (a, b)
+		local ta, tb = LC.found[a.id] or 0, LC.found[b.id] or 0
+		if ta ~= tb then return ta > tb end
+		return a.id < b.id
+	end)
+	if limit then
+		for i = #out, limit + 1, -1 do out[i] = nil end
+	end
+	return out
+end
+
+-- "Today", "Yesterday" or a short date for a discovery time.
+function LC.WhenText(t)
+	if not t or t == 0 then return "" end
+	local day, now = date("%Y%m%d", t), time()
+	if day == date("%Y%m%d", now) then return date("%H:%M", t) end
+	if day == date("%Y%m%d", now - 86400) then return "Yesterday" end
+	return date("%b %d", t)
+end
+
 BINDING_HEADER_LORECODEX = "Lore Codex"
 BINDING_NAME_LORECODEX_TOGGLE = "Toggle the Lore Codex"
 
@@ -595,7 +660,7 @@ SlashCmdList.LORECODEX = function (msg)
 		LC.OpenOptions()
 	elseif msg == "reset" then
 		LC.Fire("RESET_POSITION")
-		LC.Print("window position reset.")
+		LC.Print("window and banner positions reset.")
 	elseif msg == "refresh" then
 		LoreCodexDB.cacheKey = nil
 		LC.CheckCache()
@@ -605,7 +670,7 @@ SlashCmdList.LORECODEX = function (msg)
 		LC.Print("|cffffd200/codex|r opens the codex" .. (LC.KeyText() and (" (or " .. LC.KeyText() .. ")") or "") .. ". "
 			.. "|cffffd200/codex options|r opens the settings. |cffffd200/codex toast|r, |cffffd200/codex sound|r, "
 			.. "|cffffd200/codex minimap|r and |cffffd200/codex map|r turn the toasts, their sound, the minimap button "
-			.. "and the world map button on or off. |cffffd200/codex reset|r moves the window back. "
+			.. "and the world map button on or off. |cffffd200/codex reset|r moves the window and the banners back. "
 			.. "|cffffd200/codex refresh|r fetches the data again.")
 	else
 		LC.Toggle()

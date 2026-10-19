@@ -1,18 +1,22 @@
--- The codex window: zones by continent on the left with how much of each you've found, the
--- zone's entries in the middle (undiscovered ones as locked placeholders) and the entry you
--- picked on the right.
+-- The codex window: a search box, Recent and Unread, and the zones by continent on the left with
+-- how much of each you've found; the list for what you picked in the middle (undiscovered entries
+-- as locked placeholders); the entry you picked on the right, with the parts you haven't read yet
+-- marked.
 
 local LC = LoreCodex
 
-local WIDTH, HEIGHT = 820, 520
-local ZONE_W, ENTRY_W = 210, 240
+local WIDTH, HEIGHT = 840, 560
+local ZONE_W, ENTRY_W = 220, 240
 local ZONE_ROW, ENTRY_ROW, HEADER_ROW = 20, 22, 22
+local RECENT_LIMIT = 30
 
 local GOLD = { 1, 0.82, 0 }
 local GREY = { 0.55, 0.55, 0.55 }
-local PARCHMENT = { 0.92, 0.87, 0.75 }
+local LIGHT_TEXT = { 0.92, 0.87, 0.75 }
+local TEXT_SIZES = { 12, 14, 16 }
 
-local view = { zone = nil, entry = nil }
+-- What the middle list shows: a zone, "recent", "unread" or "search"; and the entry being read.
+local view = { mode = "zone", zone = nil, entry = nil, query = "" }
 
 local function setShown(region, shown)
 	if shown then region:Show() else region:Hide() end
@@ -84,9 +88,9 @@ local function inset(x, width)
 end
 
 -- A scroll area inside an inset; 3.3.5's template wants a named frame for its scroll bar.
-local function scrollArea(parent, name)
+local function scrollArea(parent, name, top)
 	local s = CreateFrame("ScrollFrame", name, parent, "UIPanelScrollFrameTemplate")
-	s:SetPoint("TOPLEFT", parent, "TOPLEFT", 6, -6)
+	s:SetPoint("TOPLEFT", parent, "TOPLEFT", 6, -(top or 6))
 	s:SetPoint("BOTTOMRIGHT", parent, "BOTTOMRIGHT", -27, 6)
 	local content = CreateFrame("Frame", nil, s)
 	content:SetSize(10, 10)
@@ -100,10 +104,10 @@ local zonePane = inset(18, ZONE_W)
 local entryPane = inset(18 + ZONE_W + 6, ENTRY_W)
 local readPane = inset(18 + ZONE_W + 6 + ENTRY_W + 6)
 
-local zoneScroll = scrollArea(zonePane, "LoreCodexZoneScroll")
-local entryScroll = scrollArea(entryPane, "LoreCodexEntryScroll")
-local readScroll = scrollArea(readPane, "LoreCodexReadScroll")
-readScroll:SetPoint("TOPLEFT", readPane, "TOPLEFT", 10, -70)
+local zoneScroll = scrollArea(zonePane, "LoreCodexZoneScroll", 34)
+local entryScroll = scrollArea(entryPane, "LoreCodexEntryScroll", 30)
+local readScroll = scrollArea(readPane, "LoreCodexReadScroll", 70)
+readScroll:SetPoint("TOPLEFT", readPane, "TOPLEFT", 12, -70)
 
 -----------------------------------------
 -- rows
@@ -121,6 +125,14 @@ local function makeRow(parent, height)
 	hl:SetBlendMode("ADD")
 	hl:SetVertexColor(1, 1, 1, 0.3)
 	hl:SetAllPoints(b)
+	-- A progress bar behind a zone's name.
+	b.barBg = b:CreateTexture(nil, "BORDER")
+	b.barBg:SetTexture(1, 1, 1, 0.06)
+	b.barBg:SetPoint("TOPLEFT", b, "TOPLEFT", 2, -2)
+	b.barBg:SetPoint("BOTTOMRIGHT", b, "BOTTOMRIGHT", -2, 2)
+	b.bar = b:CreateTexture(nil, "BORDER")
+	b.bar:SetPoint("TOPLEFT", b.barBg, "TOPLEFT")
+	b.bar:SetPoint("BOTTOMLEFT", b.barBg, "BOTTOMLEFT")
 	b.text = b:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
 	b.text:SetJustifyH("LEFT")
 	b.right = b:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
@@ -153,7 +165,6 @@ end
 local zoneRows = pool(zoneScroll.content, ZONE_ROW)
 local entryRows = pool(entryScroll.content, ENTRY_ROW)
 
-local headers = {}
 local function header(parent, list, i, text, y)
 	local fs = list[i]
 	if not fs then
@@ -172,10 +183,43 @@ local function hideAll(list)
 	for _, fs in ipairs(list) do fs:Hide() end
 end
 
+-- Puts a row's text after its icon (or at an indent when it has none).
+local function layoutRow(b, width, withIcon, indent)
+	b:SetWidth(width)
+	b.text:ClearAllPoints()
+	if withIcon then
+		b.icon:Show()
+		b.text:SetPoint("LEFT", b.icon, "RIGHT", 6, 0)
+	else
+		b.icon:Hide()
+		b.text:SetPoint("LEFT", b, "LEFT", indent or 12, 0)
+	end
+	b.text:SetPoint("RIGHT", b.right, "LEFT", -4, 0)
+	b.barBg:Hide()
+	b.bar:Hide()
+	b.right:SetTextColor(GREY[1], GREY[2], GREY[3])
+end
+
 -----------------------------------------
--- left: zones
+-- left: search, Recent and Unread, the zones by continent
+
+local search = CreateFrame("EditBox", "LoreCodexSearch", zonePane, "InputBoxTemplate")
+search:SetHeight(20)
+search:SetPoint("TOPLEFT", zonePane, "TOPLEFT", 14, -7)
+search:SetPoint("TOPRIGHT", zonePane, "TOPRIGHT", -10, -7)
+search:SetAutoFocus(false)
+search:SetMaxLetters(40)
+
+local searchHint = search:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+searchHint:SetPoint("LEFT", search, "LEFT", 2, 0)
+searchHint:SetText("Search")
 
 local zoneHeaders = {}
+local continentRows = pool(zoneScroll.content, HEADER_ROW)
+
+local function playerZone()
+	return LC.ZoneByName(GetRealZoneText())
+end
 
 local function sortedZones()
 	local byMap = {}
@@ -185,8 +229,7 @@ local function sortedZones()
 			table.insert(byMap[zone.map], zone)
 		end
 	end
-	local out = {}
-	local seen = {}
+	local out, seen = {}, {}
 	local function add(map)
 		local list = byMap[map]
 		if not list then return end
@@ -199,35 +242,100 @@ local function sortedZones()
 	return out
 end
 
+-- Continents are folded by default, except the one you are on (the first time it is shown).
+local function isCollapsed(map)
+	local c = LoreCodexDB.collapsed[map]
+	if c == nil then
+		local here = playerZone()
+		local z = here and LC.index.zones[here]
+		return not (z and z.map == map)
+	end
+	return c
+end
+
+local function setBar(b, known, count)
+	b.barBg:Show()
+	if count > 0 and known > 0 then
+		b.bar:SetWidth(math.max(1, (b:GetWidth() - 4) * known / count))
+		if known == count then b.bar:SetTexture(0.3, 0.8, 0.3, 0.3) else b.bar:SetTexture(1, 0.82, 0, 0.22) end
+		b.bar:Show()
+	else
+		b.bar:Hide()
+	end
+end
+
+local function specialRow(b, y, width, label, mode)
+	b:ClearAllPoints()
+	b:SetPoint("TOPLEFT", zoneScroll.content, "TOPLEFT", 0, -y)
+	layoutRow(b, width, false, 6)
+	b.text:SetText(label)
+	b.text:SetTextColor(GOLD[1], GOLD[2], GOLD[3])
+	b.right:SetText("")
+	setShown(b.selected, view.mode == mode)
+	b.zone = nil
+	b:SetScript("OnClick", function () LC.ShowMode(mode) end)
+end
+
 local function refreshZones()
 	zoneRows:Reset()
+	continentRows:Reset()
 	hideAll(zoneHeaders)
 	local width = zoneScroll:GetWidth()
-	local y, h = 0, 0
+	local here = playerZone()
+	local y = 0
+
+	local unread = LC.UnreadCount()
+	specialRow(zoneRows:Get(), y, width, "Recent discoveries", "recent")
+	y = y + ZONE_ROW
+	local b = zoneRows:Get()
+	specialRow(b, y, width, "Unread", "unread")
+	b.right:SetText(unread > 0 and unread or "")
+	b.right:SetTextColor(GOLD[1], GOLD[2], GOLD[3])
+	y = y + ZONE_ROW + 6
+
 	for _, group in ipairs(sortedZones()) do
-		h = h + 1
-		header(zoneScroll.content, zoneHeaders, h, LC.CONTINENTS[group.map] or "Elsewhere", y)
+		local collapsed = isCollapsed(group.map)
+		local c = continentRows:Get()
+		c:ClearAllPoints()
+		c:SetPoint("TOPLEFT", zoneScroll.content, "TOPLEFT", 0, -y)
+		layoutRow(c, width, true)
+		c.icon:SetTexture(collapsed and "Interface\\Buttons\\UI-PlusButton-Up" or "Interface\\Buttons\\UI-MinusButton-Up")
+		c.icon:SetVertexColor(1, 1, 1)
+		c.text:SetText(LC.CONTINENTS[group.map] or "Elsewhere")
+		c.text:SetTextColor(GOLD[1], GOLD[2], GOLD[3])
+		local ck, ct = LC.ContinentProgress(group.map)
+		c.right:SetText(ck .. "/" .. ct)
+		c.selected:Hide()
+		c.map = group.map
+		c:SetScript("OnClick", function (self)
+			LoreCodexDB.collapsed[self.map] = not isCollapsed(self.map)
+			refreshZones()
+		end)
 		y = y + HEADER_ROW
-		for _, zone in ipairs(group.zones) do
-			local b = zoneRows:Get()
-			b:ClearAllPoints()
-			b:SetPoint("TOPLEFT", zoneScroll.content, "TOPLEFT", 0, -y)
-			b:SetWidth(width)
-			b.icon:Hide()
-			b.text:ClearAllPoints()
-			b.text:SetPoint("LEFT", b, "LEFT", 12, 0)
-			b.text:SetPoint("RIGHT", b.right, "LEFT", -4, 0)
-			b.text:SetText(zone.name)
-			local known, count = LC.Progress(zone.id)
-			b.right:SetText(known .. "/" .. count)
-			if known == count then b.right:SetTextColor(0.3, 1, 0.3) else b.right:SetTextColor(GREY[1], GREY[2], GREY[3]) end
-			if known == 0 then b.text:SetTextColor(GREY[1], GREY[2], GREY[3]) else b.text:SetTextColor(1, 1, 1) end
-			setShown(b.selected, zone.id == view.zone)
-			b.zone = zone.id
-			b:SetScript("OnClick", function (self) LC.ShowZone(self.zone) end)
-			y = y + ZONE_ROW
+		if not collapsed then
+			for _, zone in ipairs(group.zones) do
+				local r = zoneRows:Get()
+				r:ClearAllPoints()
+				r:SetPoint("TOPLEFT", zoneScroll.content, "TOPLEFT", 0, -y)
+				layoutRow(r, width, zone.id == here, 12)
+				if zone.id == here then
+					-- You are here.
+					r.icon:SetTexture("Interface\\Minimap\\MinimapArrow")
+					r.icon:SetVertexColor(1, 1, 1)
+				end
+				r.text:SetText(zone.name)
+				local known, count = LC.Progress(zone.id)
+				r.right:SetText(known .. "/" .. count)
+				if known == count then r.right:SetTextColor(0.3, 1, 0.3) end
+				if known == 0 then r.text:SetTextColor(GREY[1], GREY[2], GREY[3]) else r.text:SetTextColor(1, 1, 1) end
+				setBar(r, known, count)
+				setShown(r.selected, view.mode == "zone" and zone.id == view.zone)
+				r.zone = zone.id
+				r:SetScript("OnClick", function (self) LC.ShowZone(self.zone) end)
+				y = y + ZONE_ROW
+			end
 		end
-		y = y + 4
+		y = y + 2
 	end
 	zoneScroll.content:SetHeight(math.max(y, 10))
 	local known, count = LC.Progress()
@@ -235,76 +343,178 @@ local function refreshZones()
 end
 
 -----------------------------------------
--- middle: the zone's entries
+-- middle: the list
+
+local listTitle = entryPane:CreateFontString(nil, "OVERLAY", "GameFontNormal")
+listTitle:SetPoint("TOPLEFT", entryPane, "TOPLEFT", 10, -9)
+listTitle:SetPoint("RIGHT", entryPane, "RIGHT", -96, 0)
+listTitle:SetJustifyH("LEFT")
+
+local hideLocked = CreateFrame("CheckButton", "LoreCodexHideLocked", entryPane, "UICheckButtonTemplate")
+hideLocked:SetSize(20, 20)
+hideLocked:SetPoint("TOPRIGHT", entryPane, "TOPRIGHT", -62, -4)
+LoreCodexHideLockedText:SetFontObject("GameFontHighlightSmall")
+LoreCodexHideLockedText:SetText("Hide locked")
+hideLocked:SetScript("OnClick", function (self)
+	LC.SetOption("hideLocked", self:GetChecked() and true or false)
+end)
 
 local entryHeaders = {}
 local LOCK = "Interface\\LFGFrame\\UI-LFG-ICON-LOCK"
 
 local titleRedrawQueued = false
+local refreshEntries
 
-local function refreshEntries()
+-- Asks for a known entry's missing title (discovered on another computer, or before a reload) and
+-- redraws when it comes; a title already on its way isn't asked for again, and the redraws are
+-- folded into one per frame.
+local function wantTitle(id)
+	if LC.Title(id) or LC.IsLoadingText(id) then return end
+	LC.LoadText(id, function (t)
+		if not t or titleRedrawQueued then return end
+		titleRedrawQueued = true
+		LC.After(0, function ()
+			titleRedrawQueued = false
+			if frame:IsShown() then refreshEntries() end
+		end)
+	end)
+end
+
+local function entryRow(e, y, width, right)
+	local b = entryRows:Get()
+	b:ClearAllPoints()
+	b:SetPoint("TOPLEFT", entryScroll.content, "TOPLEFT", 0, -y)
+	layoutRow(b, width, true)
+	local known = LC.IsKnown(e.id)
+	if known then
+		b.icon:SetTexture(LC.KIND_ICON[e.kind])
+		b.icon:SetVertexColor(1, 1, 1)
+		b.text:SetText(LC.Title(e.id) or "...")
+		b.text:SetTextColor(1, 1, 1)
+		if LC.IsRead(e.id) then
+			b.right:SetText(right or "")
+		else
+			b.right:SetText(LC.IsUpdated(e.id) and "Updated" or "New")
+			b.right:SetTextColor(GOLD[1], GOLD[2], GOLD[3])
+		end
+		wantTitle(e.id)
+	else
+		b.icon:SetTexture(LOCK)
+		b.icon:SetVertexColor(0.8, 0.8, 0.8)
+		b.text:SetText("???")
+		b.text:SetTextColor(GREY[1], GREY[2], GREY[3])
+		b.right:SetText("")
+	end
+	setShown(b.selected, e.id == view.entry)
+	b.entry = e.id
+	b:SetScript("OnClick", function (self) LC.ShowEntry(self.entry) end)
+	return y + ENTRY_ROW
+end
+
+local function emptyNote(text)
+	local fs = header(entryScroll.content, entryHeaders, 1, text, 0)
+	fs:SetFontObject("GameFontDisableSmall")
+	fs:SetWidth(entryScroll:GetWidth() - 8)
+	return 40
+end
+
+-- The list Unread shows is taken when you open it, so entries don't vanish as you read them.
+local unreadSnapshot = {}
+
+local searchedTitles = false
+
+local function searchResults(query)
+	local q = query:lower()
+	local zones, entries = {}, {}
+	for _, zone in pairs(LC.index.zones) do
+		if select(2, LC.Progress(zone.id)) > 0 and zone.name:lower():find(q, 1, true) then table.insert(zones, zone) end
+	end
+	table.sort(zones, function (a, b) return a.name < b.name end)
+	for id in pairs(LC.known) do
+		local e = LC.index.entries[id]
+		local t = LC.Title(id)
+		if e and LC.IsVisible(id) and t and t:lower():find(q, 1, true) then table.insert(entries, e) end
+	end
+	table.sort(entries, function (a, b) return (LC.Title(a.id) or "") < (LC.Title(b.id) or "") end)
+	-- The first search fetches the titles this computer doesn't have yet; results fill in as they come.
+	if not searchedTitles then
+		searchedTitles = true
+		for id in pairs(LC.known) do if LC.index.entries[id] then wantTitle(id) end end
+	end
+	return zones, entries
+end
+
+refreshEntries = function ()
 	entryRows:Reset()
 	hideAll(entryHeaders)
-	local zone = view.zone and LC.index.zones[view.zone]
-	if not zone then
-		entryScroll.content:SetHeight(10)
-		return
-	end
 	local width = entryScroll:GetWidth()
-	-- Entries out of this character's reach are left out altogether.
-	local shown = {}
-	for _, e in ipairs(zone.entries) do
-		if LC.IsVisible(e.id) then table.insert(shown, e) end
-	end
-	local y, h, lastKind = 0, 0, nil
-	for _, e in ipairs(shown) do
-		if e.kind ~= lastKind then
-			if lastKind then y = y + 4 end
+	local y, h = 0, 0
+	hideLocked:SetChecked(LC.GetOption("hideLocked") and true or false)
+	setShown(hideLocked, view.mode == "zone")
+
+	if view.mode == "recent" then
+		listTitle:SetText("Recent discoveries")
+		local list = LC.KnownByTime(false, RECENT_LIMIT)
+		if #list == 0 then y = emptyNote("Entries you discover while you play are listed here, newest first.") end
+		for _, e in ipairs(list) do y = entryRow(e, y, width, LC.WhenText(LC.found[e.id])) end
+	elseif view.mode == "unread" then
+		listTitle:SetText("Unread")
+		if #unreadSnapshot == 0 then y = emptyNote("You have read everything you have discovered.") end
+		for _, e in ipairs(unreadSnapshot) do y = entryRow(e, y, width, LC.ZoneName(e.zone)) end
+	elseif view.mode == "search" then
+		listTitle:SetText("Search: " .. view.query)
+		local zones, entries = searchResults(view.query)
+		if #zones == 0 and #entries == 0 then y = emptyNote("Nothing you have discovered matches.") end
+		if #zones > 0 then
 			h = h + 1
-			header(entryScroll.content, entryHeaders, h, LC.KIND_SECTION[e.kind] or "", y)
+			header(entryScroll.content, entryHeaders, h, "Lands", y):SetFontObject("GameFontNormal")
 			y = y + HEADER_ROW
-			lastKind = e.kind
+			for _, zone in ipairs(zones) do
+				local b = entryRows:Get()
+				b:ClearAllPoints()
+				b:SetPoint("TOPLEFT", entryScroll.content, "TOPLEFT", 0, -y)
+				layoutRow(b, width, true)
+				b.icon:SetTexture(LC.KIND_ICON[0])
+				b.icon:SetVertexColor(1, 1, 1)
+				b.text:SetText(zone.name)
+				b.text:SetTextColor(1, 1, 1)
+				local known, count = LC.Progress(zone.id)
+				b.right:SetText(known .. "/" .. count)
+				b.selected:Hide()
+				b.entry = nil
+				b.zone = zone.id
+				b:SetScript("OnClick", function (self) LC.ShowZone(self.zone) end)
+				y = y + ENTRY_ROW
+			end
+			y = y + 4
 		end
-		local b = entryRows:Get()
-		b:ClearAllPoints()
-		b:SetPoint("TOPLEFT", entryScroll.content, "TOPLEFT", 0, -y)
-		b:SetWidth(width)
-		b.icon:Show()
-		b.text:ClearAllPoints()
-		b.text:SetPoint("LEFT", b.icon, "RIGHT", 6, 0)
-		b.text:SetPoint("RIGHT", b.right, "LEFT", -4, 0)
-		local known = LC.IsKnown(e.id)
-		if known then
-			b.icon:SetTexture(LC.KIND_ICON[e.kind])
-			b.icon:SetVertexColor(1, 1, 1)
-			b.text:SetText(LC.Title(e.id) or "...")
-			b.text:SetTextColor(1, 1, 1)
-			b.right:SetText(LC.IsRead(e.id) and "" or (LC.IsUpdated(e.id) and "Updated" or "New"))
-			b.right:SetTextColor(GOLD[1], GOLD[2], GOLD[3])
-		else
-			b.icon:SetTexture(LOCK)
-			b.icon:SetVertexColor(0.8, 0.8, 0.8)
-			b.text:SetText("???")
-			b.text:SetTextColor(GREY[1], GREY[2], GREY[3])
-			b.right:SetText("")
+		if #entries > 0 then
+			h = h + 1
+			header(entryScroll.content, entryHeaders, h, "Entries", y):SetFontObject("GameFontNormal")
+			y = y + HEADER_ROW
+			for _, e in ipairs(entries) do y = entryRow(e, y, width, LC.ZoneName(e.zone)) end
 		end
-		setShown(b.selected, e.id == view.entry)
-		b.entry = e.id
-		b:SetScript("OnClick", function (self) LC.ShowEntry(self.entry) end)
-		y = y + ENTRY_ROW
-		-- A known entry whose title isn't cached yet (discovered on another computer, or before a
-		-- reload): fetch it and redraw.
-		-- A title already on its way isn't asked for again, and the redraws its arrival asks for are
-		-- folded into one per frame.
-		if known and not LC.Title(e.id) and not LC.IsLoadingText(e.id) then
-			LC.LoadText(e.id, function (t)
-				if not t or titleRedrawQueued then return end
-				titleRedrawQueued = true
-				LC.After(0, function ()
-					titleRedrawQueued = false
-					if frame:IsShown() then refreshEntries() end
-				end)
-			end)
+	else
+		local zone = view.zone and LC.index.zones[view.zone]
+		listTitle:SetText(zone and zone.name or "")
+		if not zone then
+			entryScroll.content:SetHeight(10)
+			return
+		end
+		local hide = LC.GetOption("hideLocked")
+		local lastKind
+		for _, e in ipairs(zone.entries) do
+			-- Entries out of this character's reach are left out altogether.
+			if LC.IsVisible(e.id) and not (hide and not LC.IsKnown(e.id)) then
+				if e.kind ~= lastKind then
+					if lastKind then y = y + 4 end
+					h = h + 1
+					header(entryScroll.content, entryHeaders, h, LC.KIND_SECTION[e.kind] or "", y):SetFontObject("GameFontNormal")
+					y = y + HEADER_ROW
+					lastKind = e.kind
+				end
+				y = entryRow(e, y, width)
+			end
 		end
 	end
 	entryScroll.content:SetHeight(math.max(y, 10))
@@ -324,19 +534,33 @@ readTitle:SetJustifyH("LEFT")
 
 local readSub = readPane:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
 readSub:SetPoint("TOPLEFT", readTitle, "BOTTOMLEFT", 0, -4)
-readSub:SetTextColor(GREY[1], GREY[2], GREY[3])
 
 local rule = readPane:CreateTexture(nil, "ARTWORK")
-rule:SetTexture(1, 0.82, 0, 0.35)
 rule:SetHeight(1)
 rule:SetPoint("TOPLEFT", readPane, "TOPLEFT", 12, -62)
 rule:SetPoint("TOPRIGHT", readPane, "TOPRIGHT", -12, -62)
 
-local readBody = readScroll.content:CreateFontString(nil, "OVERLAY", "GameFontHighlight")
+local bodyFont = CreateFont("LoreCodexBodyFont")
+bodyFont:SetFontObject(GameFontHighlight)
+local readBody = readScroll.content:CreateFontString(nil, "OVERLAY")
+readBody:SetFontObject(bodyFont)
 readBody:SetPoint("TOPLEFT", readScroll.content, "TOPLEFT", 0, -4)
 readBody:SetJustifyH("LEFT")
 readBody:SetJustifyV("TOP")
 readBody:SetSpacing(3)
+
+-- The page's colors: { text, title, faint, new part }.
+local style = { text = LIGHT_TEXT, title = GOLD, faint = GREY, new = "|cffffe7a0", newLabel = "|cffffd200" }
+rule:SetTexture(1, 0.82, 0, 0.35)
+readSub:SetTextColor(GREY[1], GREY[2], GREY[3])
+
+-- The reading text at the chosen size.
+local function applyStyle()
+	local size = TEXT_SIZES[LC.GetOption("textSize") or 2] or 14
+	local file, _, flags = GameFontHighlight:GetFont()
+	bodyFont:SetFont(file, size, flags)
+	bodyFont:SetShadowOffset(1, -1)
+end
 
 local HINTS = {
 	[0] = "Travel to %s to learn of this land.",
@@ -356,16 +580,40 @@ local function setBody(text, color)
 	readScroll:SetVerticalScroll(0)
 end
 
+-- The text with the parts this character hasn't read yet marked. The body is the opening and then
+-- one paragraph per shown part; an entry never opened before is new as a whole, so nothing in it
+-- is marked.
+local function markNew(id, t)
+	local paragraphs = {}
+	for p in (t.body .. "\n\n"):gmatch("(.-)\n\n") do table.insert(paragraphs, p) end
+	local readParts = LC.ReadParts(id)
+	local marking = LC.WasOpened(id) and readParts ~= nil
+	local out, labelled = {}, false
+	for i, p in ipairs(paragraphs) do
+		local part = t.shown[i - 1]
+		if marking and part and not readParts[part] then
+			if not labelled then
+				table.insert(out, style.newLabel .. "New since you last read:|r")
+				labelled = true
+			end
+			table.insert(out, style.new .. p .. "|r")
+		else
+			table.insert(out, p)
+		end
+	end
+	return table.concat(out, "\n\n")
+end
+
 local function refreshReader()
 	local e = view.entry and LC.index.entries[view.entry]
 	if not e then
-		local zone = view.zone and LC.index.zones[view.zone]
+		local zone = view.mode == "zone" and view.zone and LC.index.zones[view.zone]
 		readIcon:SetTexture(LC.KIND_ICON[0])
 		readTitle:SetText(zone and zone.name or "Lore Codex")
-		readTitle:SetTextColor(GOLD[1], GOLD[2], GOLD[3])
+		readTitle:SetTextColor(style.title[1], style.title[2], style.title[3])
 		readSub:SetText("")
 		setBody("Pick an entry to read it. Places, people and stories unlock as you travel, meet the locals and "
-			.. "follow the events of each land.", GREY)
+			.. "follow the events of each land.", style.faint)
 		return
 	end
 	local zoneName = LC.ZoneName(e.zone)
@@ -374,26 +622,31 @@ local function refreshReader()
 	if not LC.IsKnown(e.id) then
 		readIcon:SetTexture(LOCK)
 		readTitle:SetText("Undiscovered")
-		readTitle:SetTextColor(GREY[1], GREY[2], GREY[3])
-		setBody(string.format(HINTS[e.kind] or HINTS[1], zoneName), GREY)
+		readTitle:SetTextColor(style.faint[1], style.faint[2], style.faint[3])
+		setBody(string.format(HINTS[e.kind] or HINTS[1], zoneName), style.faint)
 		return
 	end
 	readIcon:SetTexture(LC.KIND_ICON[e.kind])
 	readTitle:SetText(LC.Title(e.id) or "")
-	readTitle:SetTextColor(GOLD[1], GOLD[2], GOLD[3])
-	setBody("Loading...", GREY)
+	readTitle:SetTextColor(style.title[1], style.title[2], style.title[3])
+	setBody("Loading...", style.faint)
 	local id = e.id
 	LC.LoadText(id, function (t)
 		if view.entry ~= id then return end
 		if not t then
-			setBody("The codex couldn't fetch this entry. Try again in a moment.", GREY)
+			setBody("The codex couldn't fetch this entry. Try again in a moment.", style.faint)
 			return
 		end
 		readTitle:SetText(t.title)
-		setBody(t.more and (t.body .. "\n\n|cff8c8c8c" .. MORE .. "|r") or t.body, PARCHMENT)
+		local text = markNew(id, t)
+		local faint = string.format("|cff%02x%02x%02x", math.floor(style.faint[1] * 255),
+			math.floor(style.faint[2] * 255), math.floor(style.faint[3] * 255))
+		setBody(t.more and (text .. "\n\n" .. faint .. MORE .. "|r") or text, style.text)
+		LC.MarkPartsRead(id, t.shown)
 		if not LC.IsRead(id) then
 			LC.MarkRead(id)
 			refreshEntries()
+			refreshZones()
 		end
 	end)
 end
@@ -408,10 +661,6 @@ local function redraw()
 	refreshReader()
 end
 
-local function zoneOfPlayer()
-	return LC.ZoneByName(GetRealZoneText())
-end
-
 local function withIndex(fn)
 	LC.LoadIndex(function (index)
 		if not index then
@@ -423,17 +672,39 @@ local function withIndex(fn)
 	end)
 end
 
+local function clearSearch()
+	search:SetText("")
+	search:ClearFocus()
+end
+
 function LC.ShowZone(zone)
+	view.mode = "zone"
 	view.zone = zone
 	view.entry = nil
+	clearSearch()
 	entryScroll:SetVerticalScroll(0)
 	redraw()
 end
 
-function LC.ShowEntry(id)
+-- Recent, Unread or search results in the middle list.
+function LC.ShowMode(mode)
+	view.mode = mode
+	view.entry = nil
+	if mode == "unread" then unreadSnapshot = LC.KnownByTime(true) end
+	if mode ~= "search" then clearSearch() end
+	entryScroll:SetVerticalScroll(0)
+	redraw()
+end
+
+-- Reading an entry keeps the list you picked it from; from anywhere else it opens its zone.
+function LC.ShowEntry(id, fromOutside)
 	view.entry = id
 	local e = LC.index and LC.index.entries[id]
-	if e then view.zone = e.zone end
+	if e and (fromOutside or view.mode == "zone") then
+		view.mode = "zone"
+		view.zone = e.zone
+		clearSearch()
+	end
 	redraw()
 end
 
@@ -441,10 +712,10 @@ function LC.Open(id)
 	frame:Show()
 	withIndex(function ()
 		if id and LC.index.entries[id] then
-			LC.ShowEntry(id)
+			LC.ShowEntry(id, true)
 		else
-			if not view.zone or not LC.index.zones[view.zone] then
-				view.zone = zoneOfPlayer()
+			if view.mode == "zone" and (not view.zone or not LC.index.zones[view.zone]) then
+				view.zone = playerZone()
 				view.entry = nil
 			end
 			redraw()
@@ -459,19 +730,49 @@ function LC.OpenZone(zone)
 		if zone and LC.index.zones[zone] then
 			LC.ShowZone(zone)
 		else
-			view.zone = zoneOfPlayer()
-			view.entry = nil
-			redraw()
+			LC.ShowZone(playerZone())
 		end
 	end)
+end
+
+-- Opens the codex at Recent discoveries.
+function LC.OpenRecent()
+	frame:Show()
+	withIndex(function () LC.ShowMode("recent") end)
 end
 
 function LC.Toggle()
 	if frame:IsShown() then frame:Hide() else LC.Open() end
 end
 
-frame:SetScript("OnShow", function () PlaySound("igCharacterInfoOpen") end)
+search:SetScript("OnTextChanged", function (self)
+	local q = self:GetText():match("^%s*(.-)%s*$")
+	setShown(searchHint, self:GetText() == "" and not self:HasFocus())
+	if #q >= 2 then
+		view.mode = "search"
+		view.query = q
+		view.entry = nil
+		entryScroll:SetVerticalScroll(0)
+		redraw()
+	elseif view.mode == "search" then
+		view.mode = "zone"
+		redraw()
+	end
+end)
+search:SetScript("OnEditFocusGained", function () searchHint:Hide() end)
+search:SetScript("OnEditFocusLost", function (self) setShown(searchHint, self:GetText() == "") end)
+search:SetScript("OnEscapePressed", function (self) self:ClearFocus() end)
+search:SetScript("OnEnterPressed", function (self) self:ClearFocus() end)
+
+frame:SetScript("OnShow", function ()
+	PlaySound("igCharacterInfoOpen")
+	applyStyle()
+end)
 frame:SetScript("OnHide", function () PlaySound("igCharacterInfoClose") end)
 
 LC.On("KNOWN", redraw)
 LC.On("READY", redraw)
+LC.On("OPTIONS", function ()
+	applyStyle()
+	redraw()
+end)

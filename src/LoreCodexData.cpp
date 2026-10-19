@@ -110,7 +110,17 @@ namespace LoreCodex::Data
             uint32 backfilled = 0;
             std::unordered_set<uint32> known;
             std::unordered_set<uint64> knownParts;
+            // When each known entry, or the latest of its parts, was discovered (0 when it was
+            // credited quietly from past travels).
+            std::unordered_map<uint32, uint32> lastFound;
         };
+
+        void NoteFound(PlayerState& st, uint32 id, uint32 when)
+        {
+            uint32& t = st.lastFound[id];
+            if (when > t)
+                t = when;
+        }
 
         std::unordered_map<ObjectGuid::LowType, PlayerState> sPlayers;
         std::mutex sPlayersLock;
@@ -275,6 +285,7 @@ namespace LoreCodex::Data
             ObjectGuid::LowType guid = player->GetGUID().GetCounter();
             bool addon = false, newEntry = false, newPart = false;
             uint32 parts = 0;
+            uint32 when = announce ? uint32(GameTime::GetGameTime().count()) : 0;
             {
                 std::lock_guard<std::mutex> guard(sPlayersLock);
                 auto st = sPlayers.find(guid);
@@ -286,9 +297,9 @@ namespace LoreCodex::Data
                     return false;
                 addon = st->second.addon;
                 parts = PartsEarned(st->second, e);
+                NoteFound(st->second, id, when);
             }
 
-            uint32 when = announce ? uint32(GameTime::GetGameTime().count()) : 0;
             if (newEntry)
                 CharacterDatabase.Execute("INSERT IGNORE INTO mod_lore_codex_discovered (guid, entry, time) VALUES ({}, {}, {})",
                     guid, id, when);
@@ -311,14 +322,16 @@ namespace LoreCodex::Data
 
         // The entry for a known character: its body, each part it has earned and every part that
         // needs no earning, those limited to other progression states left out. Also says how many
-        // parts were earned and whether more could be.
+        // parts were earned, whether more could be, and the numbers of the parts the text shows, in
+        // order (each part is its own paragraph after the body).
         std::string Compose(Player* player, Content const& content, Entry const& e, PlayerState const& st,
-            uint32& earned, bool& more)
+            uint32& earned, bool& more, std::string& shown)
         {
             uint8 state = ProgressionState(player);
             std::string text = e.body;
             earned = 0;
             more = false;
+            shown.clear();
             for (Part const& p : e.parts)
             {
                 bool has = !p.earned || st.knownParts.count(PartKey(e.id, p.part));
@@ -327,7 +340,10 @@ namespace LoreCodex::Data
                 if (p.earned && !has && TargetReachable(player, content, { e.id, p.part }))
                     more = true;
                 if (has && state >= p.minState && state <= p.maxState)
+                {
                     text += "\n\n" + p.body;
+                    shown += (shown.empty() ? "" : ",") + std::to_string(p.part);
+                }
             }
             return text;
         }
@@ -511,18 +527,22 @@ namespace LoreCodex::Data
     {
         PlayerState state;
         ObjectGuid::LowType guid = player->GetGUID().GetCounter();
-        if (QueryResult result = CharacterDatabase.Query("SELECT entry FROM mod_lore_codex_discovered WHERE guid = {}", guid))
+        if (QueryResult result = CharacterDatabase.Query("SELECT entry, time FROM mod_lore_codex_discovered WHERE guid = {}", guid))
         {
             do
-                state.known.insert(result->Fetch()[0].Get<uint32>());
-            while (result->NextRow());
+            {
+                Field* f = result->Fetch();
+                state.known.insert(f[0].Get<uint32>());
+                NoteFound(state, f[0].Get<uint32>(), f[1].Get<uint32>());
+            } while (result->NextRow());
         }
-        if (QueryResult result = CharacterDatabase.Query("SELECT entry, part FROM mod_lore_codex_discovered_part WHERE guid = {}", guid))
+        if (QueryResult result = CharacterDatabase.Query("SELECT entry, part, time FROM mod_lore_codex_discovered_part WHERE guid = {}", guid))
         {
             do
             {
                 Field* f = result->Fetch();
                 state.knownParts.insert(PartKey(f[0].Get<uint32>(), f[1].Get<uint8>()));
+                NoteFound(state, f[0].Get<uint32>(), f[2].Get<uint32>());
             } while (result->NextRow());
         }
 
@@ -661,6 +681,7 @@ namespace LoreCodex::Data
             {
                 st->second.known.clear();
                 st->second.knownParts.clear();
+                st->second.lastFound.clear();
                 st->second.lastArea = 0;
             }
         }
@@ -735,7 +756,9 @@ namespace LoreCodex::Data
                 {
                     auto itr = content->entries.find(id);
                     uint32 parts = itr != content->entries.end() ? PartsEarned(st->second, itr->second) : 0;
-                    rows.push_back("K," + std::to_string(id) + "," + std::to_string(parts));
+                    auto found = st->second.lastFound.find(id);
+                    uint32 when = found != st->second.lastFound.end() ? found->second : 0;
+                    rows.push_back("K," + std::to_string(id) + "," + std::to_string(parts) + "," + std::to_string(when));
                 }
                 for (auto const& [id, e] : content->entries)
                     if (!st->second.known.count(id) && !Eligible(player, *content, e))
@@ -766,7 +789,7 @@ namespace LoreCodex::Data
         }
         Entry const& e = itr->second;
 
-        std::string text;
+        std::string text, shown;
         uint32 earned = 0;
         bool more = false;
         {
@@ -777,12 +800,12 @@ namespace LoreCodex::Data
                 SendError(player, req, "none");
                 return;
             }
-            text = Compose(player, *content, e, st->second, earned, more);
+            text = Compose(player, *content, e, st->second, earned, more, shown);
         }
 
         Send(player, "TR:" + req + ":" + std::to_string(id) + ":" + std::to_string(e.kind) + ":" + std::to_string(e.zone)
             + ":" + Escape(e.title) + ":" + std::to_string(earned) + ":" + (more ? "1" : "0") + ":"
-            + std::to_string(ProgressionState(player)));
+            + std::to_string(ProgressionState(player)) + ":" + (shown.empty() ? "-" : shown));
 
         // The text in pieces, never cutting an escape or a UTF-8 character in two.
         std::string body = Escape(text);

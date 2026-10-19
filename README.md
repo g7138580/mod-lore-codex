@@ -10,6 +10,7 @@ An AzerothCore (WotLK 3.3.5a) module that adds a codex of Azeroth's lore which f
 - **Discovery like exploration.** Places unlock the way the game's own exploration does: on foot or on your own mount, never from a flight path or while dead.
 - **No spoilers.** An entry tells only what you have earned. It opens with the situation as you find it, and later parts are added as you get there, usually when you finish the quest that reveals them or defeat a foe. A banner says the entry was updated, and an entry that can still grow says so.
 - **Locked entries.** Undiscovered entries show as locked placeholders with a hint, and each zone shows how much of it you have found.
+- **Finding your way.** Search what you have discovered, see your recent discoveries and everything still unread, fold continents away and hide locked entries. When an entry you have read grows, the new part is marked.
 - **Only what you can reach.** Each character sees the entries it can actually unlock: the other faction's, other races' and classes' quests, and the death knight starting zone are left out.
 - **Past travels count.** At login, entries for areas a character already explored and quests it already did are credited quietly.
 - **Group kills count.** Defeating a foe credits everyone in the group who was close enough to share the kill, not only the one who tagged it.
@@ -33,9 +34,9 @@ The server module and the addon must be the same version: after updating one, up
 
 ## Usage
 
-Open the codex with the minimap button, the Lore button on the world map, **Shift-L** (claimed only if the key is free) or `/codex`. Click a discovery banner to jump to its entry. The minimap button glows while new entries wait to be read, and its tooltip shows how much of your zone and continent you have found.
+Open the codex with the minimap button, the Lore button on the world map, **Shift-L** (claimed only if the key is free) or `/codex`. Click a discovery banner to jump to its entry; up to three show at once, and a larger burst is folded into one. The minimap button glows while new entries wait to be read, and its tooltip shows how much of your zone and continent you have found.
 
-Everything can be changed under **Interface > AddOns > Lore Codex** (also from the codex's Options button or by right-clicking the minimap button): the banner, its sound, both buttons and the key.
+Everything can be changed under **Interface > AddOns > Lore Codex** (also from the codex's Options button or by right-clicking the minimap button): the banners, their sound and position, the text size, both buttons and the key.
 
 | Command | Does |
 |---|---|

@@ -8,10 +8,13 @@
  *   HELLO:<req>:<protocol>  -> HELLO:<req>:<version>:<stamp>:<backfilled>
  *   I:<req>                 -> IR:<req>:<entries>, ID rows, IE    the index (LoreCodexData.cpp)
  *   K:<req>                 -> KR:<req>:<known>:<state>, KD rows (K known, H out of reach), KE
- *   T:<req>:<entry>         -> TR:<req>:<entry>:<kind>:<zone>:<title>:<parts earned>:<more to earn>:<state>,
+ *                              a K row is K,<entry>,<parts earned>,<unix time of its latest discovery, 0 if quiet>
+ *   T:<req>:<entry>         -> TR:<req>:<entry>:<kind>:<zone>:<title>:<parts earned>:<more to earn>:<state>:<shown>,
  *                              TD:<req>:<piece of the text>..., TE
  *
- * <state> is the mod-individual-progression state the text was put together for.
+ * <state> is the mod-individual-progression state the text was put together for. <shown> lists the
+ * numbers of the parts in the text, in order, comma separated ("-" for none): the text is the body
+ * and then one paragraph per shown part, each after a blank line.
  *
  * Pushed by the server (request id 0):
  *   NEW:0:<entry>:<kind>:<zone>:<title>:<parts>   a discovery
