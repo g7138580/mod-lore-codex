@@ -7,6 +7,8 @@
  *
  *   HELLO:<req>:<protocol>  -> HELLO:<req>:<version>:<stamp>:<backfilled>
  *   I:<req>                 -> IR:<req>:<entries>, ID rows, IE    the index (LoreCodexData.cpp)
+ *                              Z,<zone>,<map>,<name>,<continent>,<0 zone, 1 dungeon, 2 raid> and
+ *                              E,<entry>,<kind>,<zone>,<sort>,<faction> rows
  *   K:<req>                 -> KR:<req>:<known>:<state>, KD rows (K known, H out of reach), KE
  *                              a K row is K,<entry>,<parts earned>,<unix time of its latest discovery, 0 if quiet>
  *   T:<req>:<entry>         -> TR:<req>:<entry>:<kind>:<zone>:<title>:<parts earned>:<more to earn>:<state>:<shown>,

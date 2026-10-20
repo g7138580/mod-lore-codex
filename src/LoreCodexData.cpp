@@ -717,6 +717,34 @@ namespace LoreCodex::Data
         return st != sPlayers.end() && st->second.addon;
     }
 
+    // For a dungeon or raid map: the continent it belongs under and 1 for a dungeon, 2 for a raid.
+    // Other maps give themselves and 0. The map data's entrance map is followed to a continent,
+    // except where it points elsewhere than where the instance stands in 3.3.5.
+    std::pair<uint32, uint32> MapPlacement(uint32 mapId)
+    {
+        MapEntry const* map = sMapStore.LookupEntry(mapId);
+        if (!map || (!map->IsNonRaidDungeon() && !map->IsRaid()))
+            return { mapId, 0 };
+        uint32 kind = map->IsRaid() ? 2 : 1;
+        switch (mapId)
+        {
+            case 550: case 552: case 553: case 554: return { 530, kind }; // Tempest Keep, in Netherstorm
+            case 533: case 724: return { 571, kind };                      // Naxxramas, the Ruby Sanctum
+            default: break;
+        }
+        int32 at = int32(mapId);
+        for (int depth = 0; depth < 4; ++depth)
+        {
+            if (at == 0 || at == 1 || at == 530 || at == 571)
+                return { uint32(at), kind };
+            MapEntry const* m = sMapStore.LookupEntry(uint32(at));
+            if (!m || m->entrance_map < 0)
+                break;
+            at = m->entrance_map;
+        }
+        return { mapId, kind };
+    }
+
     void HandleIndex(Player* player, std::string const& req)
     {
         std::shared_ptr<Content const> content = Snapshot();
@@ -729,8 +757,10 @@ namespace LoreCodex::Data
             if (!zones.insert(e.zone).second)
                 continue;
             AreaTableEntry const* area = sAreaTableStore.LookupEntry(e.zone);
-            rows.push_back("Z," + std::to_string(e.zone) + "," + std::to_string(area ? area->mapid : 0) + ","
-                + Escape(area ? area->area_name[locale] : ""));
+            uint32 mapId = area ? area->mapid : 0;
+            auto [continent, kind] = MapPlacement(mapId);
+            rows.push_back("Z," + std::to_string(e.zone) + "," + std::to_string(mapId) + ","
+                + Escape(area ? area->area_name[locale] : "") + "," + std::to_string(continent) + "," + std::to_string(kind));
         }
         for (auto const& [id, e] : content->entries)
             rows.push_back("E," + std::to_string(id) + "," + std::to_string(e.kind) + "," + std::to_string(e.zone) + ","

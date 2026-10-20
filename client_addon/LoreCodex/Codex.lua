@@ -221,20 +221,24 @@ local function playerZone()
 	return LC.ZoneByName(GetRealZoneText())
 end
 
+-- The continents in order, each with its zones and its dungeons and raids, by name.
 local function sortedZones()
 	local byMap = {}
 	for _, zone in pairs(LC.index.zones) do
 		if select(2, LC.Progress(zone.id)) > 0 then
-			byMap[zone.map] = byMap[zone.map] or {}
-			table.insert(byMap[zone.map], zone)
+			local group = byMap[zone.map] or { map = zone.map, zones = {}, instances = {} }
+			byMap[zone.map] = group
+			table.insert((zone.instance or 0) > 0 and group.instances or group.zones, zone)
 		end
 	end
 	local out, seen = {}, {}
+	local byName = function (a, b) return a.name < b.name end
 	local function add(map)
-		local list = byMap[map]
-		if not list then return end
-		table.sort(list, function (a, b) return a.name < b.name end)
-		table.insert(out, { map = map, zones = list })
+		local group = byMap[map]
+		if not group then return end
+		table.sort(group.zones, byName)
+		table.sort(group.instances, byName)
+		table.insert(out, group)
 		seen[map] = true
 	end
 	for _, map in ipairs(LC.CONTINENT_ORDER) do add(map) end
@@ -242,13 +246,17 @@ local function sortedZones()
 	return out
 end
 
--- Continents are folded by default, except the one you are on (the first time it is shown).
-local function isCollapsed(map)
-	local c = LoreCodexDB.collapsed[map]
+-- Continents and their dungeon and raid groups are folded by default, except the ones you are in
+-- (the first time they are shown). A group's key is its continent, or "i" and the continent for
+-- its dungeons and raids.
+local function isCollapsed(key)
+	local c = LoreCodexDB.collapsed[key]
 	if c == nil then
 		local here = playerZone()
 		local z = here and LC.index.zones[here]
-		return not (z and z.map == map)
+		if not z then return true end
+		if type(key) == "string" then return not ((z.instance or 0) > 0 and "i" .. z.map == key) end
+		return z.map ~= key
 	end
 	return c
 end
@@ -293,46 +301,63 @@ local function refreshZones()
 	b.right:SetTextColor(GOLD[1], GOLD[2], GOLD[3])
 	y = y + ZONE_ROW + 6
 
-	for _, group in ipairs(sortedZones()) do
-		local collapsed = isCollapsed(group.map)
+	-- A foldable header: a continent, or a continent's dungeons and raids (key "i<map>").
+	local function folder(key, label, known, count, indent)
+		local collapsed = isCollapsed(key)
 		local c = continentRows:Get()
 		c:ClearAllPoints()
-		c:SetPoint("TOPLEFT", zoneScroll.content, "TOPLEFT", 0, -y)
-		layoutRow(c, width, true)
+		c:SetPoint("TOPLEFT", zoneScroll.content, "TOPLEFT", indent, -y)
+		layoutRow(c, width - indent, true)
 		c.icon:SetTexture(collapsed and "Interface\\Buttons\\UI-PlusButton-Up" or "Interface\\Buttons\\UI-MinusButton-Up")
 		c.icon:SetVertexColor(1, 1, 1)
-		c.text:SetText(LC.CONTINENTS[group.map] or "Elsewhere")
+		c.text:SetText(label)
 		c.text:SetTextColor(GOLD[1], GOLD[2], GOLD[3])
-		local ck, ct = LC.ContinentProgress(group.map)
-		c.right:SetText(ck .. "/" .. ct)
+		c.right:SetText(known .. "/" .. count)
 		c.selected:Hide()
-		c.map = group.map
+		c.key = key
 		c:SetScript("OnClick", function (self)
-			LoreCodexDB.collapsed[self.map] = not isCollapsed(self.map)
+			LoreCodexDB.collapsed[self.key] = not isCollapsed(self.key)
 			refreshZones()
 		end)
 		y = y + HEADER_ROW
-		if not collapsed then
-			for _, zone in ipairs(group.zones) do
-				local r = zoneRows:Get()
-				r:ClearAllPoints()
-				r:SetPoint("TOPLEFT", zoneScroll.content, "TOPLEFT", 0, -y)
-				layoutRow(r, width, zone.id == here, 12)
-				if zone.id == here then
-					-- You are here.
-					r.icon:SetTexture("Interface\\Minimap\\MinimapArrow")
-					r.icon:SetVertexColor(1, 1, 1)
+		return collapsed
+	end
+
+	local function zoneRow(zone, indent)
+		local r = zoneRows:Get()
+		r:ClearAllPoints()
+		r:SetPoint("TOPLEFT", zoneScroll.content, "TOPLEFT", indent, -y)
+		layoutRow(r, width - indent, zone.id == here, 12)
+		if zone.id == here then
+			-- You are here.
+			r.icon:SetTexture("Interface\\Minimap\\MinimapArrow")
+			r.icon:SetVertexColor(1, 1, 1)
+		end
+		r.text:SetText(zone.instance == 2 and (zone.name .. " |cff999999(raid)|r") or zone.name)
+		local known, count = LC.Progress(zone.id)
+		r.right:SetText(known .. "/" .. count)
+		if known == count then r.right:SetTextColor(0.3, 1, 0.3) end
+		if known == 0 then r.text:SetTextColor(GREY[1], GREY[2], GREY[3]) else r.text:SetTextColor(1, 1, 1) end
+		setBar(r, known, count)
+		setShown(r.selected, view.mode == "zone" and zone.id == view.zone)
+		r.zone = zone.id
+		r:SetScript("OnClick", function (self) LC.ShowZone(self.zone) end)
+		y = y + ZONE_ROW
+	end
+
+	for _, group in ipairs(sortedZones()) do
+		local ck, ct = LC.ContinentProgress(group.map)
+		if not folder(group.map, LC.CONTINENTS[group.map] or "Elsewhere", ck, ct, 0) then
+			for _, zone in ipairs(group.zones) do zoneRow(zone, 0) end
+			if #group.instances > 0 then
+				local ik, it = 0, 0
+				for _, zone in ipairs(group.instances) do
+					local k, t = LC.Progress(zone.id)
+					ik, it = ik + k, it + t
 				end
-				r.text:SetText(zone.name)
-				local known, count = LC.Progress(zone.id)
-				r.right:SetText(known .. "/" .. count)
-				if known == count then r.right:SetTextColor(0.3, 1, 0.3) end
-				if known == 0 then r.text:SetTextColor(GREY[1], GREY[2], GREY[3]) else r.text:SetTextColor(1, 1, 1) end
-				setBar(r, known, count)
-				setShown(r.selected, view.mode == "zone" and zone.id == view.zone)
-				r.zone = zone.id
-				r:SetScript("OnClick", function (self) LC.ShowZone(self.zone) end)
-				y = y + ZONE_ROW
+				if not folder("i" .. group.map, "Dungeons and Raids", ik, it, 10) then
+					for _, zone in ipairs(group.instances) do zoneRow(zone, 10) end
+				end
 			end
 		end
 		y = y + 2
@@ -617,8 +642,7 @@ local function refreshReader()
 		return
 	end
 	local zoneName = LC.ZoneName(e.zone)
-	readSub:SetText(e.kind == LC.KIND.ZONE and LC.CONTINENTS[(LC.index.zones[e.zone] or {}).map] or
-		((LC.KIND_NAME[e.kind] or "") .. " in " .. zoneName))
+	readSub:SetText(e.kind == LC.KIND.ZONE and LC.ZoneLabel(e.zone) or ((LC.KIND_NAME[e.kind] or "") .. " in " .. zoneName))
 	if not LC.IsKnown(e.id) then
 		readIcon:SetTexture(LOCK)
 		readTitle:SetText("Undiscovered")

@@ -258,14 +258,16 @@ end
 -- the index: zones and entries (without their titles)
 
 -- LC.index = { entries = { [id] = entry }, zones = { [zoneId] = zone } }; an entry is
--- { id, kind, zone, sort, faction }, a zone { id, map, name, entries = { entry, ... } }.
+-- { id, kind, zone, sort, faction }, a zone { id, map, name, instance, entries = { entry, ... } }
+-- where map is the continent it is listed under and instance is 0 for a zone, 1 for a dungeon and
+-- 2 for a raid.
 local function buildIndex(rows)
 	local index = { entries = {}, zones = {} }
 	local faction = UnitFactionGroup("player")
 	for _, r in ipairs(rows) do
 		if r[1] == "Z" then
-			index.zones[r[2]] = { id = r[2], map = LC.ZONE_CONTINENT[r[2]] or r[3], name = LC.Unescape(tostring(r[4] or "-")),
-				entries = {} }
+			index.zones[r[2]] = { id = r[2], map = LC.ZONE_CONTINENT[r[2]] or tonumber(r[5]) or r[3],
+				name = LC.Unescape(tostring(r[4] or "-")), instance = tonumber(r[6]) or 0, entries = {} }
 		end
 	end
 	for _, r in ipairs(rows) do
@@ -499,6 +501,15 @@ end
 function LC.ZoneName(zone)
 	local z = LC.index and LC.index.zones[zone]
 	return z and z.name or ""
+end
+
+-- What a zone is, for the line under its overview: the continent, or "Dungeon in" / "Raid in" it.
+function LC.ZoneLabel(zone)
+	local z = LC.index and LC.index.zones[zone]
+	if not z then return "" end
+	local continent = LC.CONTINENTS[z.map] or ""
+	if (z.instance or 0) == 0 then return continent end
+	return (z.instance == 2 and "Raid" or "Dungeon") .. (continent ~= "" and (" in " .. continent) or "")
 end
 
 -----------------------------------------

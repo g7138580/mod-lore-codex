@@ -140,7 +140,9 @@ local function show(toast, item)
 		toast.title:SetText(item.title or "")
 		local zone = LC.ZoneName(item.zone)
 		local kind = LC.KIND_NAME[item.kind] or ""
-		toast.sub:SetText(item.kind == LC.KIND.ZONE and "A new land" or (zone ~= "" and (kind .. " in " .. zone) or kind))
+		local z = LC.index and LC.index.zones[item.zone]
+		local newPlace = (z and z.instance == 2 and "A new raid") or (z and z.instance == 1 and "A new dungeon") or "A new land"
+		toast.sub:SetText(item.kind == LC.KIND.ZONE and newPlace or (zone ~= "" and (kind .. " in " .. zone) or kind))
 	end
 	toast.t = 0
 	toast:SetAlpha(1)
