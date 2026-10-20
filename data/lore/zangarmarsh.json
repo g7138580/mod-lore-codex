@@ -1403,7 +1403,7 @@
    },
    {
     "part": 3,
-    "body": "Matters only grew worse. The druid team never returned from the drain, and when a search reached the entrance to Coilfang Reservoir, deep beneath the lake, it found Watcher Jhang hiding there, too badly hurt by a twisted ankle to go back for help. His companions had gone on into the reservoir without him.",
+    "body": "Matters only grew worse. The druid team never returned from the drain, and when a search reached the entrance to Coilfang Reservoir, deep beneath the lake, it found Watcher Jhang hiding there, too badly hurt by a twisted ankle to go back for help. Her companions had gone on into the reservoir without him.",
     "triggers": [
      [
       5,
@@ -1427,7 +1427,7 @@
    "quest 9764 description and reward text (Vashj's seal, prepare for war)",
    "item 24330 Drain Schematics starts 9731, dropped by Bloodscale naga and Steam Pump Overseers"
   ],
-  "notes": "Converted: opening is the schematics (ACCEPT 9731, started by the item 24330). Parts: 1 the drain confirmed and the team sent (DONE 9731), 2 the Circle's answer (ACCEPT and DONE 9732; the Horde twins 9733/9734 have no givers, so both factions use 9724/9732), 3 the failed incursion and Jhang (DONE 9876, Ysiel to Jhang at the entrance on map 530; filed under Coilfang Reservoir 3905, so a Coilfang instance file must not reuse it). Dropped: the naga entering the steam vaults with Kalithresh's name (9763) and Lady Vashj's orders and the call to war (9764, 9765), instance quests left for Coilfang instance files; the companions are no longer placed in the Slave Pens and Underbog (9738, instance quest). requiredState 8. Before: Fact-check: 'Jhang alone was found' overstated (some companions live, 9738); reworded. 9731 starts from an item drop (QuestType 2, Flags 132, not auto-complete). Instance quests 9738, 9763, 9764 used as sources only."
+  "notes": "Converted: opening is the schematics (ACCEPT 9731, started by the item 24330). Parts: 1 the drain confirmed and the team sent (DONE 9731), 2 the Circle's answer (ACCEPT and DONE 9732; the Horde twins 9733/9734 have no givers, so both factions use 9724/9732), 3 the failed incursion and Jhang (DONE 9876, Ysiel to Jhang at the entrance on map 530; filed under Coilfang Reservoir 3905, so a Coilfang instance file must not reuse it). Dropped: the naga entering the steam vaults with Kalithresh's name (9763) and Lady Vashj's orders and the call to war (9764, 9765), instance quests left for Coilfang instance files; the companions are no longer placed in the Slave Pens and Underbog (9738, instance quest). requiredState 8. Before: Fact-check: 'Jhang alone was found' overstated (some companions live, 9738); reworded. 9731 starts from an item drop (QuestType 2, Flags 132, not auto-complete). Instance quests 9738, 9763, 9764 used as sources only. Fix 2026-10-20: Jhang is female (creature_model_info Gender 1 for 17884); part 3 'His companions' became 'Her companions'."
  },
  {
   "id": 352136,
