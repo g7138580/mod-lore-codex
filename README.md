@@ -2,7 +2,7 @@
 
 An AzerothCore (WotLK 3.3.5a) module that adds a codex of Azeroth's lore which fills in as you play. Walking into a zone or a notable place, talking to someone, defeating someone, or taking and finishing quests unlocks entries. The included `LoreCodex` addon shows a toast for each discovery and a codex window to read them.
 
-> **Work in progress.** All four continents are covered: the Eastern Kingdoms, Kalimdor, Outland and Northrend (74 zones, about 2,200 entries). Dungeons and raids are under way: Gnomeregan, the Deadmines, and in Outland the Hellfire Citadel and Coilfang Reservoir complexes so far.
+> **Work in progress.** All four continents are covered: the Eastern Kingdoms, Kalimdor, Outland and Northrend (74 zones, about 2,200 entries). Dungeons and raids are being added a few at a time, each listed under its continent in the codex window.
 
 ## Features
 

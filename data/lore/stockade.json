@@ -1,0 +1,246 @@
+[
+ {
+  "id": 71700,
+  "kind": 0,
+  "zone": 717,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Stockade",
+  "body": "The Stockade is the prison of Stormwind, a high-security complex hidden beneath the canal district, its gate opening on the northern stretch of the canal that rings the Mage Quarter. Thieves, political agitators and killers are all held here, but the guards no longer hold the place. The Defias among the inmates have risen in revolt and driven the guards out, and now prisoners, convicts and insurgents of the Brotherhood roam free through the halls in their red bandanas. From the gate a long hall leads inward, and beyond it the cell blocks stretch away on either hand. Some of the inmates are more than faces in the crowd. An orc called Targorr the Dread waits at the end of the long hall, and deep in the southern block, among the Brotherhood's insurgents, stands a man named Bazil Thredd. Few go in by choice. Outside the gate the warden paces and frets, unable to understand how his prison was lost so suddenly, and afraid of what the Captain will say when he hears.",
+  "triggers": [
+   [
+    1,
+    717
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Not every rioter in the Stockade is human. A dwarf named Bruegal Ironknuckle had thrown in his lot with the Defias in the cell blocks, and he fought at their side as fiercely as any of them. It did not save him. The dwarf fell among the rioters he had joined.",
+    "triggers": [
+     [
+      3,
+      1720
+     ]
+    ],
+    "sources": [
+     "creature 1720 Bruegal Ironknuckle, rank 2 (rare elite), faction 17 (the Defias rioters' faction), single spawn on map 34 at 160,46 in the northern cell block among Defias 1707/1708",
+     "warcraft.wiki.gg/wiki/Bruegal_Ironknuckle (dwarf, rare elite prisoner in the pre-Cataclysm Stockade)",
+     "smart_scripts 1720 base: On AI Init despawn 70 percent (flags 0, so present about 30 percent of the time); module dungeon_stockade.sql makes that despawn debug-only (flag 512), so with the module he is always present; module adds aggro lines (Thredd's broadcasts 1386-1395), left unquoted"
+    ]
+   }
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/The_Stockade, original World of Warcraft community site text (a high-security prison complex hidden beneath the canal district of Stormwind; its inmates; a prisoner-led revolt, the guards driven out); Geography: entrance on the northernmost section of the canal surrounding the Mage Quarter",
+   "areatrigger 101 (entrance at -8762,849 on map 0) and areatrigger_teleport 503 (exit at -8764,846); creature 1719 Warden Thelwater on map 0 at -8800,828, on the way down to the gate",
+   "creature spawns on map 34: entrance at 54,0,-18; upper hall z -26 from x 74 to 166; northern block (y 40 to 150) and southern block (y -40 to -137) at z -35",
+   "creature_template 1707, 1708, 1711, 1715 (Defias Captive, Inmate, Convict, Insurgent, faction 17) and 1706 (Defias Prisoner, faction 290; the module's switch to 17 is debug-only); Red Wool Bandana 2909 drops from all of them (quest 388: the gang's wool scarves, the color of blood)",
+   "creature 1696 Targorr (display 517, orc) at 160,1, east end of the upper hall; creature 1716 Bazil Thredd at 90,-137 in the southern block among Defias Insurgents 1715",
+   "creature_text 1719 Warden Thelwater (All of a sudden they were everywhere; How could this happen?; If the Captain finds out, it'll be the end of me), said out of combat every 20 to 43 seconds, base and module"
+  ],
+  "notes": "Check: Dextren Ward and Kam Deepfury cut from the opening: that they are held here is what duskwood.json 1026 (ACCEPT 377) and wetlands.json 1128 part 3 (ACCEPT 378) reveal, and naming them as men known beyond these walls with enemies outside handed over those quests' premises. Thredd no longer called the revolt's leader: nothing seen or heard inside says so (his aggro lines are shared word for word with Bruegal's in the module), and stormwind.json 151912 tells it on ACCEPT 389; he is now only a named man seen in the southern block. The warden's errand (387's premise) replaced by what anyone passing him hears (his out-of-combat lines, say range 40). Gate location reworded to the wiki's geography (northern stretch of the canal ringing the Mage Quarter). Part 1 verified: base despawns Bruegal 70 percent of the time on AI init (flags 0), the module makes that debug-only, so he is sometimes absent without it and always present with it; the part claims neither, quotes nothing (his lines exist only with the module) and he is a dwarf (display 2142, DwarfMale). Writer: AREA 717 (the only area on map 34, tools/research/zones/stockade.txt). Nothing of Thredd's death or of Thredd as VanCleef's lieutenant (stormwind.json 151912). Part 1 Bruegal: KILL 1720 only; no claim about how often he is present (30 percent without the module, always with it), no quoted lines (module only), no loot. Hallow's End decorations (gameobjects 180405-180411) and the Scourge invasion left out. No requiredState (classic dungeon, state 0)."
+ },
+ {
+  "id": 71701,
+  "kind": 2,
+  "zone": 717,
+  "sort": 1,
+  "faction": 0,
+  "title": "Targorr the Dread",
+  "body": "Targorr the Dread is an orc, one of the inmates of the Stockade, and the riot has left him as free as any of the men around him. He stands among the rioters at the far end of the long hall that leads in from the gate, a sword in each hand, and anyone who means to go deeper into the prison must pass him. What brought an orc to a cell beneath Stormwind, and how he earned his name, the halls themselves do not say.",
+  "triggers": [
+   [
+    1,
+    717
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In Lakeshire his name is not forgotten. Targorr served the Blackrock warlord Gath'Ilzogg as his supreme executioner, and men who fought bravely to defend the kingdom were tortured at his whim. Taken at last, he was locked in the Stockade under sentence of death.",
+    "triggers": [
+     [
+      4,
+      386
+     ]
+    ],
+    "sources": [
+     "quest 386 description (served under Gath'Ilzogg as supreme executioner; men who fought to defend the kingdom tortured on his whim; held in the Stockade, sentenced to die)",
+     "redridge.json 4417 (Gath'Ilzogg, Warlord of the Blackrock Clan)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Targorr fought with a blade in each hand, his blows falling in sudden furious flurries. Wounded near to death, he went into a frenzy and struck harder and faster still, but it was not enough. The orc fell on the stones of the long hall he had held, among the rioters he had stood with.",
+    "triggers": [
+     [
+      3,
+      1696
+     ]
+    ],
+    "sources": [
+     "creature 1696 single spawn, map 34 only, at 160,1,-26 (east end of the upper hall from the gate at 54,0) among Defias 1706/1707",
+     "creature_equip_template 1696 (two swords 5305); creature_template_addon aura 3417 Thrash (base, unchanged by the module)",
+     "smart_scripts 1696 base and module: Dual Wield, Enrage 8599 at 30 percent; module adds a cast Thrash 3391. The frenzy emote (creature_text 1696) is linked in the base; the module's link points at the wrong event, so it may not show there: the part tells the enrage, not the emote"
+    ]
+   }
+  ],
+  "sources": [
+   "redridge.json 4417 (Gath'Ilzogg's supreme executioner, tortured captured defenders, locked in the Stockade)",
+   "quest 386 description (served under Gath'Ilzogg as supreme executioner; men who fought to defend the kingdom tortured on his whim; held in the Stockade, sentenced to die)",
+   "warcraft.wiki.gg/wiki/Targorr_the_Dread (orc, Blackrock executioner, pre-Cataclysm Stockade)",
+   "creature 1696 spawn and equipment as in part 1"
+  ],
+  "notes": "Check: his past (Gath'Ilzogg's executioner, the torture, the death sentence) moved out of the opening, which fires on AREA 717 and shows only an orc with two swords among the rioters at the end of the hall; it is now part 1 on ACCEPT 386, the quest whose text tells it (the same trigger as story 71704, which keeps the noble's hold). The kill part (now part 2) no longer speaks of his sentence or the headsman, since Horde characters reach it without part 1. Verified: Thrash aura 3417 in creature_template_addon (base; the module only adds a cast), Dual Wield and Enrage 8599 at 30 percent in base and module, two swords 5305, display 517 (orc). Writer: Targorr has no entry in any zone file (redridge.json 4417 names him only as the premise of 386). Kill part KILL 1696 (single spawn, map 34 only): dual wield, Thrash (flurries), Enrage with the frenzy emote at 30 percent, all present with and without the module. No claim that he sided with the Defias (his faction 41 is not theirs): he only stands among the rioters."
+ },
+ {
+  "id": 71702,
+  "kind": 2,
+  "zone": 717,
+  "sort": 2,
+  "faction": 0,
+  "title": "Hamhock",
+  "body": "Hamhock is a two-headed ogre, and one of the strangest prisoners the Stockade holds. He is no man of the Brotherhood, but the riot has made allies of unlikely cellmates, and he has thrown in his lot with the Defias. He stands deep in the southern cell block among the Brotherhood's insurgents, a heavy cleaver in his fist, not far from where Bazil Thredd holds out at the far end of the block.",
+  "triggers": [
+   [
+    1,
+    717
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Hamhock met intruders with a bellow that he would crush them. He hurled lightning that leapt from one foe to the next, and worked himself into a bloodlust that drove his blows faster, but none of it was enough. The two-headed ogre went down at last among the insurgents he had joined.",
+    "triggers": [
+     [
+      3,
+      1717
+     ]
+    ],
+    "sources": [
+     "creature 1717 single spawn, map 34 only",
+     "creature_text 1717 (I'll crush you!), said on aggro by smart_scripts 1717 in the base and in the module",
+     "smart_scripts 1717 base and module: Chain Lightning 421, Bloodlust 6742 on himself (the base also casts it on allies, the module does not)"
+    ]
+   }
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Hamhock (two-headed ogre mage, pre-Cataclysm Stockade; no quests)",
+   "creature 1717 at 106,-106,-35 in the southern block, faction 17 (Defias rioters), among Defias Insurgents 1715 at 95,-106; 109,-114; 92,-126; 132,-124; Bazil Thredd 1716 at 90,-137",
+   "creature_equip_template 1717 (2827 cleaver)"
+  ],
+  "notes": "Check: verified. Display 3250 uses the OgreMage model (CreatureModelData 33), the two-headed ogre mage of the classic client, so two-headed holds; spawns as listed (35 yards from Thredd); aggro line, chain lightning and self bloodlust in base and module; 2827 is a cleaver. Writer: Hamhock has no quest; his entry rests on AREA 717 plus KILL 1717 (single spawn, map 34 only). His origin is unknown (the wiki's Duskwood guess is marked speculation and left out). Positions: Hamhock at 106,-106, Thredd at 90,-137 at the far end of the southern block; Thredd named in the present tense only, nothing of his fight or death. Part 1: aggro line, chain lightning and bloodlust on himself are common to base and module."
+ },
+ {
+  "id": 71703,
+  "kind": 3,
+  "zone": 717,
+  "sort": 1,
+  "faction": 1,
+  "title": "Quell the Uprising",
+  "body": "Outside the Stockade gate, Warden Thelwater still cannot understand how he lost his prison. The prisoners were suddenly everywhere at once, he says, and someone must have helped them. He fears for his post as much as for the city: if word gets out that the prison is overrun he will lose his job, and if the Captain hears of it, it will be the end of him. Whatever foul play lies behind it, the first task is to force the prisoners back into submission for the safety of Stormwind. The punishment for insurgency is death, and he wants the Defias prisoners, convicts and insurgents cut down until the uprising is under control.",
+  "triggers": [
+   [
+    4,
+    387
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "More than two dozen of the rioters died in the Stockade's halls, and Thelwater was thankful to the one who had shown such force there. But he could see now that the trouble ran deeper than a few unruly prisoners. This problem, he admitted, was bigger than the both of them.",
+    "triggers": [
+     [
+      5,
+      387
+     ]
+    ],
+    "sources": [
+     "quest 387 objectives (10 Defias Prisoners, 8 Convicts, 8 Insurgents) and reward text (bigger than the both of us; thankful)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 387 description (uprising; lose my job if word gets out the prison is overrun; foul play; force the prisoners into submission for the safety of Stormwind; punishment for insurgency is death)",
+   "creature_text 1719 Warden Thelwater (All of a sudden they were everywhere; They must have had someone helping them; If the Captain finds out, it'll be the end of me), said out of combat every 20 to 43 seconds (smart_scripts 1719 event 1, flags 0)",
+   "creature 1719 on map 0 at -8800,828 (Stormwind, outside the Stockade gate; the gate's exit point is -8764,846); creature_queststarter/questender 1719 for 387",
+   "quest_template 387 AllowableRaces 1101, QuestType 2, Flags 8"
+  ],
+  "notes": "Check: verified. Thelwater's lines are said out of combat every 20 to 43 seconds (smart_scripts 1719 event 0, flags 0, base; the module does not touch him), say range 40, so anyone at his side to take 387 hears them; the rest is 387's description; the part is 387's reward text. Writer: faction 1 (AllowableRaces 1101; Thelwater faction 12, Stormwind). Opening on ACCEPT 387 (QuestType 2, flags 8: not auto-complete), part DONE 387. Thelwater stands on map 0, so no TALK trigger. His spoken lines are heard by anyone at his side when the quest is taken. Nothing of Thredd or of quests 389 and 391 (stormwind.json 151912). His summoned Defias Rioters are debug-only (flags 512) and left out."
+ },
+ {
+  "id": 71704,
+  "kind": 3,
+  "zone": 717,
+  "sort": 2,
+  "faction": 1,
+  "title": "What Comes Around",
+  "body": "In Lakeshire, Guard Berton has not forgotten Targorr the Dread, the orc who served Gath'Ilzogg as his executioner and tortured men who fought bravely for the kingdom. Targorr is held in the Stormwind Stockade under sentence of death, yet the sentence has not been carried out: one of the nobles in the capital has put a hold on the execution. Berton is sure that foul play is at work, and he will not wait to see what comes of it. He wants someone to go to the Stockade and behead the orc before any trickery can come to his aid.",
+  "triggers": [
+   [
+    4,
+    386
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Targorr's head came back to Lakeshire. Berton was glad of it, and glad that the orc had learned at the end what it was to be on the other side of the executioner's work. Sometimes, he said, the truest justice can only be found outside the courtroom, beyond the reach of nobles and their politics.",
+    "triggers": [
+     [
+      5,
+      386
+     ]
+    ],
+    "sources": [
+     "quest 386 reward text (on the receiving end of Death's grip; the truest justice outside the courtroom and beyond the clouded vision of politics)",
+     "Head of Targorr 3630 drops only from creature 1696 (map 34 only)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 386 description and objectives (Guard Berton, Lakeshire; supreme executioner under Gath'Ilzogg; men who defended the kingdom tortured on his whim; held in the Stockade, sentenced to die; a noble put a hold on the execution; foul play; behead him before trickery)",
+   "creature_queststarter/questender 859 Guard Berton (map 0, area 69 Lakeshire, faction 11)",
+   "quest_template 386 AllowableRaces 1101, QuestType 2, Flags 8",
+   "redridge.json 4417 (names Targorr as the premise of 386, uses no 386 trigger)"
+  ],
+  "notes": "Check: dropped the claim that Berton will not wait on the courts (the courtroom is the reward text's, not the description's); otherwise verified against quest 386's description and reward text. ACCEPT 386 is shared with Targorr's part 1 in this file, which tells only his past; the noble's hold stays here. Writer: faction 1. Opening on ACCEPT 386, part DONE 386. 386 is free (no file uses it). Redridge's Gath'Ilzogg entry already names the noble's intervention; this story carries Berton's own reasons. Targorr's fight is told on his person entry 71701 (KILL 1696); this part tells only what the turn-in shows. Berton stands on map 0, so no TALK trigger."
+ },
+ {
+  "id": 71705,
+  "kind": 3,
+  "zone": 717,
+  "sort": 3,
+  "faction": 1,
+  "title": "The Color of Blood",
+  "body": "In Old Town, Nikova Raskol carries a grief that has gone cold and bitter. Her grandson Mac was only fourteen. When the army was sent off to the front he took up arms to defend the city, and he served as a guard in the Stockade, where the Defias gang is locked up. Mac scolded some of the prisoners for tearing up their wool blankets to make scarves, the mark of their gang, and for that they stabbed him in the back. Nikova wants revenge, and she has named its token: ten of the gang's precious wool bandanas, red as blood.",
+  "triggers": [
+   [
+    4,
+    388
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Ten red wool bandanas, taken from the Defias in the Stockade, came back to Old Town. Nikova saw only waste in them. These filthy rags were what her grandson had died for. She could not undo the past, she said, but the one who brought them had won her family justice.",
+    "triggers": [
+     [
+      5,
+      388
+     ]
+    ],
+    "sources": [
+     "quest 388 reward text (filthy tokens of corruption; such a waste; cannot return to the past; brought my family justice)",
+     "Red Wool Bandana 2909 drops only from creatures of map 34 (1663, 1706, 1707, 1708, 1711, 1715, 1716, 1720)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 388 description (grandson Mac, 14; took up arms when the army went to the front; guard in the Stockade where the Defias gang is locked up; reprimanded prisoners for tearing wool blankets into scarves, the gang's symbol; stabbed in the back; 10 wool bandanas, the color of blood)",
+   "creature 1721 Nikova Raskol, map 0 at -8696,391 (Old Town), faction 12; creature_queststarter/questender 1721 for 388",
+   "quest_template 388 AllowableRaces 1101, QuestType 2, Flags 8"
+  ],
+  "notes": "Check: verified. Red Wool Bandana 2909 is in creature_loot_template only (no reference, gameobject, item or pickpocket loot), for 1663, 1706, 1707, 1708, 1711, 1715, 1716 and 1720, all spawned only on map 34. Writer: faction 1. Opening on ACCEPT 388, part DONE 388. 388 is free. Nikova stands on map 0, so no TALK trigger. Mac's death happened before the riot as the quest tells it; no claim about when."
+ }
+]
