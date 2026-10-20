@@ -1,0 +1,499 @@
+[
+ {
+  "id": 71800,
+  "kind": 0,
+  "zone": 718,
+  "sort": 0,
+  "faction": 0,
+  "title": "Wailing Caverns",
+  "body": "The Wailing Caverns run deep beneath Lushwater Oasis, where the druid Naralex went down to dream the Barrens green and found a nightmare instead. The nightmare has filled the caves he chose. Deviate beasts prowl the winding tunnels and dark pools: ravagers and guardians, lashers and shamblers, vipers, adders and dreadfangs, while ectoplasms ooze through the gloom, shifting from one hue to the next. Robed druids who call themselves the Druids of the Fang walk among the beasts unharmed, channeling the power of nature and taking the shape of serpents when pressed. Somewhere in the depths Naralex still sleeps, and just inside the entrance one of his disciples keeps watch. Few come here without a reason. The disciples outside want the deviate beasts culled, the one within wants the Fanglords slain, a Forsaken apothecary wants the serpentbloom that grows in the darkest recesses, and a goblin of Ratchet wants back a bottle that a thief carried off into the caves.",
+  "triggers": [
+   [
+    1,
+    718
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Not every creature in the caverns is hostile. A turtle called Kresh swims the river not far from the entrance, paying no mind to those who pass and troubling no one who leaves him be. Some did not leave him be, and for all his heavy shell, the turtle died in the waters he had swum.",
+    "triggers": [
+     [
+      3,
+      3653
+     ]
+    ],
+    "sources": [
+     "creature 3653 Kresh, single spawn on map 43, faction 7 (neutral: attacks only when attacked), sea turtle model 5126; MovementType 2, path 273680 along the water at z -106, x -64 to -4, y 94 to 319 (the entrance teleport lands at -163,133)",
+     "no smart_scripts or template spells: nothing scripted in the fight",
+     "warcraft.wiki.gg/wiki/Kresh (turtle wandering the river near the start of the instance; not aggressive)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Far from the entrance, with Druids of the Fang standing near, lurks a thunder lizard called Skum. He met intruders with crackling bolts of lightning that leapt from one foe to the next, until at last the beast lay still in the dark where he had lurked.",
+    "triggers": [
+     [
+      3,
+      3674
+     ]
+    ],
+    "sources": [
+     "creature 3674 Skum, single spawn on map 43 at -286,-313 z-69, about 500 yards from the entrance; thunder lizard model 4203; two Druids of the Fang 3840 within 23 yards",
+     "creature_template_spell 3674 and smart_scripts 3674 (Chained Bolt 6254: lightning that arcs to another nearby enemy), kept by the module's dungeon_wailing_caverns.sql",
+     "warcraft.wiki.gg/wiki/Wailing_Caverns (Skum, a thunder lizard guarded by druids)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "A deviate faerie dragon, twisted like the other beasts of the caves, sometimes keeps company with a band of Druids of the Fang, though it is seldom seen there. This one fought at the side of the druids, and it fell among them.",
+    "triggers": [
+     [
+      3,
+      5912
+     ]
+    ],
+    "sources": [
+     "creature 5912 Deviate Faerie Dragon, single spawn on map 43 at 0,-56 z-67; faerie dragon model 1267; three Druids of the Fang 3840 within 2 yards, Deviate Shamblers within 8",
+     "smart_scripts 5912 (On AI Init despawn, event_chance 85: present about 15 percent of the time); not touched by the module",
+     "creature_template faction 270, shared with the Druids of the Fang"
+    ]
+   }
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Wailing_Caverns (beneath the Barrens; Naralex sought to enter the Emerald Dream and restore the land; his dream became a nightmare; deviates, Druids of the Fang)",
+   "barrens.json 1715 (the mouth beneath Lushwater Oasis; Naralex's dream turned to nightmare; told there, pointed to in one clause)",
+   "DB spawns on map 43: Deviate Ravager 3636, Guardian 3637, Lasher 5055, Shambler 5761, Viper 5755, Adder 5048, Dreadfang 5056, Venomwing 5756, Python 8886, Crocolisk 5053, Evolving Ectoplasm 3640 x12, Druid of the Fang 3840 x69; the deviates and druids share faction template 270",
+   "smart_scripts 3640 (Evolving Ectoplasm: random Black, Blue, Green or Red form)",
+   "smart_scripts 3840 (Druid of the Fang: Nature Channeling out of combat, Serpent Form 8041 at 30 percent), kept by the module",
+   "creature 3678 Disciple of Naralex at -135,125, about 30 yards from the entrance teleport point (areatrigger_teleport 228, -163,133)",
+   "quests 1486, 1487 (Nalpak and Ebru outside), 962 (Zamah: serpentbloom in the darkest recesses of the Wailing Caverns), 959 (Bigglefuzz: Mad Magglish ran off with the port to the Wailing Caverns)",
+   "gameobject Serpentbloom x24 on map 43",
+   "npc_text 698 (the Disciple inside: the Fanglords must be slain before the awakening ritual)"
+  ],
+  "notes": "Check: the errand list no longer names quest 914 (the druids of Thunder Bluff and the leaders of the Fang): that premise is what barrens.json 1737 part 5 reveals on ACCEPT 914, and it is Horde-only; the in-cave reason, the Disciple wanting the Fanglords slain (npc_text 698), takes its place. Skum part: the druids who kept him was an inference from proximity (Skum is faction 14, the druids 270), now general. Faerie dragon part: no longer worded as who gets to see it. Kresh part verified (faction 7, no scripts: death only). Writer: opening on AREA 718, the only area on map 43. The set-up (the mouth under Lushwater, Naralex's dream turned nightmare) is barrens.json 1715's and is a one-clause pointer. Mad Magglish stands in the outer caves on map 1, so the overview says only that the thief carried the bottle off into the caves, as 959 says. Parts: KILL 3653, 3674, 5912, each a single spawn on map 43 only; each tells only its fight and death. The faerie dragon is present about 15 percent of the time, with and without the module. Evolving Ectoplasm changes form every 15 to 20 seconds (smart_scripts 3640), so shifting hue holds. No requiredState (classic dungeon, state 0)."
+ },
+ {
+  "id": 71801,
+  "kind": 2,
+  "zone": 718,
+  "sort": 1,
+  "faction": 0,
+  "title": "Naralex",
+  "body": "Naralex is a night elf druid who came down into these caverns with an honorable goal: to enter the Emerald Dream and regrow the Barrens into a lush forest. His focus waned, and serpentine visions crept into his thoughts. Now he lies in fitful sleep in a chamber far within the caverns, and reptilian beasts seep from his dreams into the land. The disciple who keeps watch inside the caves warns that unless he is woken from the nightmare he will be lost forever, and a great evil will be unleashed.",
+  "triggers": [
+   [
+    1,
+    718
+   ],
+   [
+    2,
+    3678
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "When Mutanus the Devourer fell, Naralex woke with a great cry that he was awake at last. Pulled from the dreaded nightmare, he thanked his loyal disciple and the brave companions who had stood beside him. There was much work to be done, he said, before he could make another attempt to restore the Barrens, and first he would gather with his other disciples. Then he bid his rescuers farewell, took the form of an owl and flew away, his disciple following.",
+    "triggers": [
+     [
+      3,
+      3654
+     ]
+    ],
+    "sources": [
+     "creature_text 3679 groups 3-5 (I AM AWAKE, AT LAST!; thanks to his loyal Disciple and brave companions; gather with the other Disciples, much work before another attempt to restore the Barrens; Farewell, brave souls!)",
+     "smart_scripts 3654 (On Just Died: Set Data 1 1 on Naralex 3679) and actionlist 367900 (the three lines, Owl Form 8153 on himself and cross cast on the Disciple, both fly off and despawn)",
+     "Spell.dbc 8153 Owl Form (a flying form)"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 698 (gossip_menu 201 of Disciple of Naralex 3678: Naralex sleeps again; honorable goal of entering the Emerald Dream and regrowing the Barrens into a lush forest; focus waned, thoughts tainted by serpentine visions; reptilian beasts seep from his dreams to the land; must be awoken or be forever lost and a great evil unleashed)",
+   "creature 3679 Naralex, single spawn on map 43 at 115,240 z-94 (the end of the Disciple's escort path), night elf male model 4216, faction 35, React Passive",
+   "creature_text 3679 group 0 (tosses fitfully in troubled sleep)",
+   "barrens.json 1715 (his dream turned to nightmare; told there briefly)"
+  ],
+  "notes": "Check: last faithful disciple was unsupported (npc_text 698 does not say so), now the disciple who keeps watch inside. Part verified against creature_text 3679 groups 3-5 and actionlist 367900. Mutanus 3654 has no spawn and no entry swap; he is summoned only at the end of the Disciple's escort (smart_scripts 3678 id 31), gives normal kill credit, and the codex credits group members in the map within reward distance, so those credited were at the pool when Naralex woke. check_staged warns that 3654 has no fixed spawn: no quest ends the event (1500 and 999 have no giver or ender), so KILL 3654 stays. Race from model 4216 (night elf male), visible. Writer: opening on AREA 718 and TALK 3678 (the Disciple's gossip). Not touched by mod-individual-progression. Faction 0."
+ },
+ {
+  "id": 71802,
+  "kind": 2,
+  "zone": 718,
+  "sort": 2,
+  "faction": 0,
+  "title": "Lord Cobrahn",
+  "body": "Lord Cobrahn is one of the Fanglords, the four who lead the Druids of the Fang, a tall night elf in the robes of his order. He keeps his lair by a bonfire in a far reach of the caverns, where the serpents are thickest: deviate vipers, adders and pythons crowd the passages around him, and two pythons coil at his very side. To the disciple of Naralex, Cobrahn and his fellow lords are his master's corrupted servants.",
+  "triggers": [
+   [
+    1,
+    718
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Cobrahn met intruders with a vow that they would never wake the dreamer. He hurled lightning, lulled his foes into slumber and called on healing magic, and when he was sorely wounded he cast off his elven shape and became a great serpent, venom in every bite. Even so he fell, and the dreamer had one guardian fewer.",
+    "triggers": [
+     [
+      3,
+      3669
+     ]
+    ],
+    "sources": [
+     "creature_text 3669 group 0 (You will never wake the dreamer!), said on aggro",
+     "smart_scripts 3669, base and module: Lightning Bolt 9532, Druid's Slumber 8040, Healing Touch 5187, Cobrahn Serpent Form 7965 and Poison Proc 3616 at 30 percent; On Just Died sets instance data 0 to DONE"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 3669 Lord Cobrahn, subname Fanglord, single spawn on map 43 at -151,414 z-73; night elf male model 4213 at scale 1.2",
+   "gameobject 146091 Bonfire at -137,415; Deviate Python 8886 x2 within 2 yards; Deviate Viper 5755, Adder 5048 and Python 8886 spawns at x -152 to 65, y 377 to 525",
+   "npc_text 698 (only after his corrupted servants, the Fanglords, have been slain can I perform the awakening ritual)",
+   "quest 914 description (four leaders), as a source only; ACCEPT and DONE 914 are barrens.json 1737's"
+  ],
+  "notes": "Check: verified. Aggro line and spells match base smart_scripts 3669 and the module's rewrite (both keep Druid's Slumber 8040, Cobrahn Serpent Form 7965 with Poison Proc at 30 percent). Night elf from model 4213, visible. Writer: Decided with the user: each Fang leader may have a person entry; the KILL part tells only the fight (his words, his death), never the gem carried to Nara or her dreams freed (barrens.json 1737 part 6). 'Four who lead' rests on the Disciple's gossip and the four Fanglord templates; dream gems not named. Opening on AREA 718 (met only in combat). KILL 3669: single spawn, map 43 only, no entry swap; the module rewrites his script with the same spells. Faction 0."
+ },
+ {
+  "id": 71803,
+  "kind": 2,
+  "zone": 718,
+  "sort": 3,
+  "faction": 0,
+  "title": "Lady Anacondra",
+  "body": "Lady Anacondra is one of the Fanglords, the four who lead the Druids of the Fang, a night elf and the only woman among them. She makes her lair not far within the caverns, among the halls where deviate guardians and ravagers roam, so that those who come in from the oasis often find her before the other lords. Like them she wears the robes of the Fang, and like them, the disciple of Naralex counts her among his master's corrupted servants.",
+  "triggers": [
+   [
+    1,
+    718
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Anacondra greeted intruders with a boast that none could stand against the Serpent Lords. She wrapped herself in thorns that bit at anyone who struck at her, hurled lightning, lulled foes into slumber and mended wounds with healing magic. The boast did not hold, and she fell all the same.",
+    "triggers": [
+     [
+      3,
+      3671
+     ]
+    ],
+    "sources": [
+     "creature_text 3671 group 0 (None can stand against the Serpent Lords!), said on aggro",
+     "smart_scripts 3671, base and module: Lightning Bolt 9532, Druid's Slumber 8040 (module: Sleep 700), Healing Touch 5187, Thorns 8148; On Just Died sets instance data 2 to DONE"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 3671 Lady Anacondra, subname Fanglord, night elf female model 4313; base spawn on map 43 at 15,297 z-88 with Deviate Guardian 3637 x5 within 8 yards",
+   "mod-individual-progression dungeon_wailing_caverns.sql: pool 601040 puts her at one of four spots (15,297; -54,271; -68,123; 46,184), all within the spread of Deviate Guardian 3637 (x -101 to 47, y 97 to 312) and Deviate Ravager 3636 (x -107 to 57, y 85 to 255), 100 to 230 yards from the entrance teleport point (-163,133); Cobrahn stands about 290 yards in, Serpentis about 160, Pythas about 400",
+   "warcraft.wiki.gg/wiki/Wailing_Caverns (Anacondra in Screaming Gully near the entrance)",
+   "npc_text 698 (the Fanglords his corrupted servants)"
+  ],
+  "notes": "Check: verified. Thorns 8148 is an aura that harms whoever strikes her or those near her, so thorns that bit at anyone who struck at her holds. Sleep spell differs (base 8040, module 700); lulled into slumber is true of both. Often holds with and without the module: her base spot is the first Fanglord on the usual route and the module's three other spots lie closer to the entrance, while Serpentis sits on the high ledge reached later. Writer: Location kept general so it is true with and without the module's pool (four spots, all in the first halls among the guardians and ravagers). 'Often find her before the other lords' rests on distance from the entrance and the wiki's route; Serpentis (about 160 yards) can be nearer than her farthest module spot (about 230), hence 'often'. Part on KILL 3671: every spawn of the pool is the same entry on map 43 only; fight only. Gem and Nara stay with barrens.json 1737. Faction 0."
+ },
+ {
+  "id": 71804,
+  "kind": 2,
+  "zone": 718,
+  "sort": 4,
+  "faction": 0,
+  "title": "Lord Pythas",
+  "body": "Lord Pythas is one of the Fanglords, the four who lead the Druids of the Fang, a tall night elf who keeps his lair deep in the caverns, far from the entrance. A druid of his order stands at his side, and deviate lashers and shamblers prowl the passages around them. He is a lord of the Fang like the others, robed and wielding the same twisted gifts, and the disciple of Naralex numbers him among his master's corrupted servants.",
+  "triggers": [
+   [
+    1,
+    718
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Pythas greeted intruders with a threat: the coils of death would crush them. He fought with lightning and slumber like his fellow lords, and again and again a thunderclap rolled out around him, slowing every foe it caught. He mended his wounds with healing magic, but in the end it was Pythas who fell.",
+    "triggers": [
+     [
+      3,
+      3670
+     ]
+    ],
+    "sources": [
+     "creature_text 3670 group 0 (The coils of death will crush you!), said on aggro",
+     "smart_scripts 3670, base and module: Lightning Bolt 9532, Druid's Slumber 8040 (module: Sleep 700), Thunderclap 8147 (Nature damage to nearby enemies, slowing their attacks and movement), Healing Touch 5187; On Just Died sets instance data 1 to DONE"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 3670 Lord Pythas, subname Fanglord, single spawn on map 43 at 37,-241 z-79, about 400 yards from the entrance; night elf male model 4214 at scale 1.2",
+   "Druid of the Fang 3840 at 6 yards, Deviate Shambler 5761 at 14, Deviate Lasher 5055 x2 within 37",
+   "npc_text 698 (the Fanglords his corrupted servants)"
+  ],
+  "notes": "Check: verified. Thunderclap 8147 (Spell.dbc: Nature damage to nearby enemies, slower attacks and movement) in base and module; sleep 8040 base, 700 module, both told as slumber. Writer: Opening on AREA 718; KILL 3670 single spawn, map 43 only; fight only. 'Twisted gifts' is a general phrase for the druid spells he shares with the others. The nearest campfire (56820) stands about 50 yards off, so it is not claimed as his. Faction 0."
+ },
+ {
+  "id": 71805,
+  "kind": 2,
+  "zone": 718,
+  "sort": 5,
+  "faction": 0,
+  "title": "Lord Serpentis",
+  "body": "Lord Serpentis is one of the Fanglords, the four who lead the Druids of the Fang, a tall night elf whose lair lies higher than any of theirs, on a ledge above the cavern floor. Deviate venomwings wheel near him, and a druid of his order keeps watch nearby. Not far away, on the same heights, looms the great bog beast Verdan the Everliving. The disciple of Naralex counts Serpentis among his master's corrupted servants, like the rest of the Fang's lords.",
+  "triggers": [
+   [
+    1,
+    718
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Serpentis met intruders proclaiming himself the serpent king, a lord who could do anything. He hurled lightning, lulled his foes into slumber and healed himself and his allies, but the serpent king could not keep his own life. He fell on his high ledge, and his boast fell with him.",
+    "triggers": [
+     [
+      3,
+      3673
+     ]
+    ],
+    "sources": [
+     "creature_text 3673 group 1 (I am the serpent king! I can do anything!), said on aggro",
+     "smart_scripts 3673, base and module: Lightning Bolt 9532, Druid's Slumber 8040 (module: Sleep 700), Healing Touch 6778 on a friendly missing health; On Just Died sets instance data 3 to DONE"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 3673 Lord Serpentis, subname Fanglord, single spawn on map 43 at -120,-25 z-29 (the other Fanglords stand at z -73 to -88); night elf male model 4215 at scale 1.2",
+   "Deviate Venomwing 5756 at 13 yards, Druid of the Fang 3840 at 24; Verdan the Everliving 5775 at -82,32 z-31, about 70 yards away at the same height",
+   "npc_text 698 (the Fanglords his corrupted servants)"
+  ],
+  "notes": "Check: verified. Aggro line group 1; Healing Touch 6778 on a friendly missing health in both base and module. Writer: The instance script also has him yell the same line (group 0) when Cobrahn dies, but Cobrahn stands about 440 yards away, beyond the yell range, so it is not claimed. 'Healed himself and his allies': Healing Touch targets any friendly missing health, himself included. Opening on AREA 718; KILL 3673 single spawn, map 43 only; fight only. Faction 0."
+ },
+ {
+  "id": 71806,
+  "kind": 2,
+  "zone": 718,
+  "sort": 6,
+  "faction": 0,
+  "title": "Verdan the Everliving",
+  "body": "Verdan the Everliving is a bog beast of enormous size, a towering mass of root, moss and mire that dwells on the heights of the caverns, not far from the lair of Lord Serpentis. The Druids of the Fang and the deviate beasts let him be, and he lets them be in turn; to anyone else who comes near, he is as hostile as the rest of the nightmare's creatures. The crag where he stands bears his name.",
+  "triggers": [
+   [
+    1,
+    718
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Verdan fought with the strength of living roots. Vines burst up around him to strike down those nearby and hold them fast, while his great bulk pounded at whoever stood before him. For all his name, the Everliving could die like any other creature, and his huge body came to rest upon his crag.",
+    "triggers": [
+     [
+      3,
+      5775
+     ]
+    ],
+    "sources": [
+     "smart_scripts 5775 base (Grasping Vines 8142 in combat) and module (Grasping Vines within 8 yards): Physical damage to nearby enemies, knocking them down and immobilizing them",
+     "Spell.dbc 8142 Grasping Vines"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 5775 Verdan the Everliving, single spawn on map 43 at -82,32 z-31; creature type 4 (elemental), bog beast model 4256 at scale 4.5",
+   "creature_template faction 270, shared with the Druids of the Fang and the deviates",
+   "WMOAreaTable 15301 Crag of the Everliving (WMO 1143, the Wailing Caverns), 3.3.5 DBC",
+   "creature 3673 Lord Serpentis at -120,-25 z-29, about 70 yards away",
+   "warcraft.wiki.gg/wiki/Verdan_the_Everliving (bog beast; allied with the insane druids; the Adventure Guide account of his origin is later and not used)"
+  ],
+  "notes": "Check: verified. Grasping Vines 8142 (Spell.dbc: Physical damage to nearby enemies, knockdown and root) in base and module. Crag of the Everliving is a WMOAreaTable name inside the instance WMO, shown as the minimap subzone text when standing there, so a visitor can read it. Writer: His origin (once the caverns' guardian, corrupted by the nightmare) is Adventure Guide text from Cataclysm or later: not used. 'The crag bears his name' rests on the 3.3.5 WMOAreaTable label Crag of the Everliving (no AreaTable entry). 'Root, moss and mire' is a description of the bog beast model. 'Pounded at whoever stood before him' is his melee only. Opening on AREA 718; KILL 5775 single spawn, map 43 only. Faction 0."
+ },
+ {
+  "id": 71807,
+  "kind": 3,
+  "zone": 718,
+  "sort": 1,
+  "faction": 0,
+  "title": "Waking Naralex",
+  "body": "Just inside the caverns one of Naralex's disciples keeps his vigil, and he greets those who speak with him with the blessing of the wild. Naralex sleeps again, he says, and must be woken before he is lost. The disciple means to do it himself, with an awakening ritual, but he cannot begin while the Fanglords live. Those corrupted servants of his master must be slain first, and only then can the ritual be performed and the dreamer called back.",
+  "triggers": [
+   [
+    1,
+    718
+   ],
+   [
+    2,
+    3678
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "With the Fanglords dead, the disciple led the way. These caverns were once a temple of promise for the Barrens, he mourned, and now they are halls of nightmares. Within a circle of fire he banished the spirits of the slain Fanglords, then pressed on to Naralex's chamber and delved into the Emerald Dream as serpents and ectoplasms came against him. Naralex writhed as he broke through, and dreamed up a horror: from the murky waters rose Mutanus the Devourer, a monstrous murloc who cast sleep and terror before he fell.",
+    "triggers": [
+     [
+      3,
+      3654
+     ]
+    ],
+    "sources": [
+     "creature_text 3678 groups 1-8 (preparations; temple of promise, now halls of nightmares; circle of fire to banish the spirits of the slain Fanglords; caverns purified, to Naralex's chamber; beyond this corridor; delve into the Emerald Dream; begins the awakening ritual)",
+     "creature_text 3679 groups 0-2 (tosses fitfully; writhes in agony, the Disciple seems to be breaking through; dreams up a horrendous vision, something stirs beneath the murky waters)",
+     "smart_scripts 3678 and actionlist 367800 (escort path 3678; two Deviate Ravagers at waypoint 5; Serpentine Cleansing 6270 and a Deviate Viper with two Adders at waypoint 12; three Deviate Moccasins 5762, serpent model, at the ritual; six Nightmare Ectoplasms 5763 (creature_summon_groups 3678 group 2) after the moccasins die; Mutanus 3654 summoned after the ectoplasms at 151,252 z-103, below Naralex's ledge at z-94)",
+     "creature 3654 Mutanus the Devourer: murloc model 4088 at scale 4, no spawn, summoned only by the Disciple; Naralex's Nightmare 7967 (sleep), Terrify 7399, Thundercrack 8150"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 698 (gossip_menu 201: Naralex sleeps again; must be awoken or be forever lost; only after his corrupted servants, the Fanglords, have been slain can I perform the awakening ritual)",
+   "gossip_menu_option 201 (Let the event begin!) with conditions 15/201: instance data 0-3 (Cobrahn, Pythas, Anacondra, Serpentis) all DONE",
+   "smart_scripts 3678 id 0 (On Gossip Hello: cast Mark of the Wild 5232 on the speaker)",
+   "creature_text 3678 group 1 (You must protect me!)",
+   "creature 3678 Disciple of Naralex, single spawn on map 43 at -135,125, near the entrance; tauren male model 1941"
+  ],
+  "notes": "Check: the opening no longer tells that he will set out for the chamber with companions guarding him: that is shown only once the event begins (creature_text 3678 groups 0-1), not by AREA 718 or his gossip; it now keeps to npc_text 698. Part verified against creature_text 3678 groups 1-8, 3679 groups 0-2, smart_scripts 3678, actionlist 367800 and creature_summon_groups 3678 (viper and two adders at the circle of fire, three moccasins at the ritual, six Nightmare Ectoplasms after them, then Mutanus). Mutanus's spells per Spell.dbc: Naralex's Nightmare 7967 (sleep), Terrify 7399 (fear), Thundercrack 8150. check_staged warns that 3654 has no fixed spawn; no quest ends the event, so KILL 3654 stays (the codex credits group members within reward distance, all present at the pool). Writer: Quest 1500 Waking Naralex has no text, no giver and no ender, and 999 is empty too: both unreachable, so the event rests on TALK 3678 and KILL 3654. The opening is the Disciple's gossip and its option condition. Part on KILL 3654: Mutanus exists only as the Disciple's summon at the end of the escort (no spawn on any map, no entry swap; his death sets the instance's Mutanus data and wakes Naralex), so everyone credited went through the escort and heard its lines. 'Serpents' are the Deviate Moccasins (serpent model) and the viper and adders. Naralex's waking words are told on 71801's KILL 3654 part, not here. The Disciple's race is not stated (model 1941 tauren, verified build 51831). Not changed by mod-individual-progression. Faction 0."
+ },
+ {
+  "id": 71808,
+  "kind": 3,
+  "zone": 718,
+  "sort": 2,
+  "faction": 0,
+  "title": "The Glowing Shard",
+  "body": "From the remains of Mutanus the Devourer comes a shard of brilliant green crystal. Solid though it is, something like smoke swirls just beneath its surface, and whoever holds it finds it hard to stop staring into its depths, even while sensing that something about it is deeply disturbing. Its finder can make nothing of it alone, yet it is too strange simply to set aside. Perhaps someone in Ratchet, the goblin port on the Barrens coast, can say more about what it is.",
+  "triggers": [
+   [
+    4,
+    6981
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The answer came from Falla Sagewind, who stands on the heights above the caverns. She had never seen anything like it. The shard held great secrets, she said, the pure essence of the Emerald Dream, yet the vision she glimpsed within it was a nightmare. Not wishing to alarm its bearer, she would say no more, only that it should be placed in the hands of a wise druid as soon as possible.",
+    "triggers": [
+     [
+      4,
+      3369
+     ],
+     [
+      4,
+      3370
+     ]
+    ],
+    "sources": [
+     "quest 6981 reward text (I have never seen anything like this)",
+     "quests 3369 and 3370 descriptions (great secrets; pure essence of the Emerald Dream; a nightmare; deliver it into the hands of a wise druid as soon as you can; I cannot say more)",
+     "creature 8418 Falla Sagewind, tauren female model 7870, faction 35, at -602,-2259 z212 on map 1 (area 17, the heights above the caverns' mouth, where the disciples stand at z97)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Darnassus the shard reached Mathrengyl Bearwalker of the Cenarion Circle. One look into its depths left him stammering, and he would not say what he had seen. Talk of such things is unwise, he cautioned; they are for the Cenarion druids alone to settle. He offered only this: the Emerald Dream is not what the druids had believed.",
+    "triggers": [
+     [
+      5,
+      3370
+     ]
+    ],
+    "sources": [
+     "quest 3370 log text and reward text (Mathrengyl Bearwalker in the Cenarion Circle; peers into the shard; not wise to speak of; matters the Cenarion druids alone must attend to; things in the Emerald Dream are not as we thought)",
+     "creature 4217 Mathrengyl Bearwalker, Druid Trainer, in Darnassus"
+    ]
+   }
+  ],
+  "sources": [
+   "item 10441 Glowing Shard starts quest 6981; creature_loot_template 3654 (Mutanus the Devourer) gives 10441 at 100 percent, its only source",
+   "quest 6981 description and log text (brilliant green; smoke swirls just below the surface; something very disturbing; see if anyone in Ratchet can tell you more)",
+   "quest 6981: QuestSortID 718, QuestType 2, Flags 2, AllowableRaces 0, ended by Falla Sagewind 8418; 3366 (same title) has no giver, starting item or ender and is unused"
+  ],
+  "notes": "Check: kept 3369 and 3370 here. They are sorted under the Barrens (17), but they exist only for the shard: both have PrevQuestID 6981 (filed under 718), and the shard drops only from Mutanus. barrens.json uses neither and darnassus.json's Mathrengyl (165709) does not tell the shard, so no zone file claims them; thunder_bluff.json 163808 part 1 takes only DONE 3369. ACCEPT 3369 here is a different trigger and tells Falla's offer, which Hamuul's part recalls in a clause as his own backstory; Hamuul's ending is not retold. Part 2 reworded so it no longer echoes Hamuul's phrasing (peered into it and faltered, warned the bearer). Opening: the shard no longer points the way itself; the Ratchet hint is the finder's own thought, as in 6981. All of 6981, 3369, 3370 are QuestType 2, not auto-complete. Writer: Opening on ACCEPT 6981 (item-started, not auto-complete). The quest's own text sends the bearer to Ratchet while Falla stands on the heights above the caverns' mouth (area 17), so the opening keeps Ratchet as the shard's hint and part 1 names where the answer really came from. Part 1 on ACCEPT 3369 (Horde) and 3370 (Alliance), Falla's offer text, trimmed to what both show (a wise druid, not Hamuul or Mathrengyl). Part 2 on DONE 3370 (Alliance, Mathrengyl in Darnassus): no zone file uses 3370; the Horde ending, DONE 3369 at Hamuul, is thunder_bluff.json 163808 part 1 and is neither used nor retold. Faction 0: 6981 is open to both."
+ },
+ {
+  "id": 71809,
+  "kind": 3,
+  "zone": 718,
+  "sort": 3,
+  "faction": 0,
+  "title": "The Disciples of Naralex",
+  "body": "Outside the caverns, two more of Naralex's disciples keep watch, and each has a different answer to the nightmare below. Ebru, a night elf, reminds travelers that their master's goal was noble: to regrow these harsh lands into the forest they once were. Something went terribly wrong, and corrupt creatures now fill the caves. While other disciples seek to wake Naralex, Ebru wants the deviate beasts wiped out, for the disciples' numbers dwindle and they lack the strength to do it alone. Nalpak, a tauren, sees more in the beasts. They rose from beneath the Barrens as Naralex sank deeper into his nightmare, evil yet strangely otherworldly, and he believes some good may come of them, beginning with their hides.",
+  "triggers": [
+   [
+    4,
+    1486
+   ],
+   [
+    4,
+    1487
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Ebru commended the bravery of those who went down among the deviate beasts and thinned their ranks. To the Disciples of Naralex, she said, it was only the first step in their long struggle to see the Barrens restored.",
+    "triggers": [
+     [
+      5,
+      1487
+     ]
+    ],
+    "sources": [
+     "quest 1487 reward text (as a Disciple of Naralex I commend your bravery; the first step in our long plight to see the Barrens restored)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The deviate hides came back to Nalpak, who had been eager to examine the skins of the creatures that now infest the caves. He thanked the one who gathered them for such dedication, and promised that the effort would not go unnoticed.",
+    "triggers": [
+     [
+      5,
+      1486
+     ]
+    ],
+    "sources": [
+     "quest 1486 request and reward text (very interested in examining the hides from the deviate creatures who have infested these caves; your efforts shall not go unnoticed; thank you for your dedication)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 1487 description and request text (Naralex had a noble goal; regrow these harsh lands back into the lush forest; dream turned into a nightmare; some Disciples seek to awake our master, my concern is ridding these caves; our numbers are dwindling, we have not the forces)",
+   "quest 1486 description (as Naralex descended deeper into his nightmare a strange breed of beasts arose from beneath the Barrens; otherworldly properties; evil in nature, yet some good can come; hides of use in leatherworking)",
+   "creature 5767 Nalpak (tauren male model 4289) and 5768 Ebru (night elf female model 4290), subname Disciple of Naralex, faction 35, at -797,-2037 z97 on map 1 (area 17, outside the instance); quests 1486 and 1487: QuestSortID 718, QuestType 2, flags 8, AllowableRaces 0",
+   "barrens.json 1715 (his disciples keep watch near the entrance asking travelers to cull the deviates; 1486 and 1487 there only as sources, no trigger)"
+  ],
+  "notes": "Check: verified. 1486 and 1487 are filed under 718, given and ended by Nalpak 5767 and Ebru 5768 on map 1 (area 17, posarea), used by no zone file; the text puts them outside the caverns and nothing targets them. Races from models 4289 (tauren) and 4290 (night elf), visible. Writer: Opening on ACCEPT 1486 and 1487, unused by any zone file (barrens.json 1715 names them only as sources). It goes beyond 1715's one sentence (the two disciples' own views) without retelling the Lushwater set-up. 'Beginning with their hides' stands for the quest's leatherworking. Parts: DONE 1487 (Ebru's reward text), DONE 1486 (Nalpak's request and reward text). Faction 0."
+ },
+ {
+  "id": 71810,
+  "kind": 3,
+  "zone": 718,
+  "sort": 4,
+  "faction": 0,
+  "title": "Trouble at the Docks",
+  "body": "On the docks of Ratchet, Crane Operator Bigglefuzz has had a little mishap. The morning cargo from Booty Bay was the biggest he had ever seen, and in trying to unload more than he could handle he brought the crates tumbling down. In the confusion a menace called Mad Magglish ran off with a bottle of ninety-nine-year-old port. Bigglefuzz chased him all the way to the Wailing Caverns, but there he stopped; he was not going in. Now he asks someone braver to find the thief, who is hiding somewhere in the caves, and bring the bottle back.",
+  "triggers": [
+   [
+    4,
+    959
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The port came back to Ratchet, and with it the crane operator's job. The bottle had been meant as a gift for Gazlowe from none other than Baron Revilgaz, and the dockmaster had been on Bigglefuzz's case ever since it went missing. Delighted, he promised to see the gift delivered to Gazlowe at once.",
+    "triggers": [
+     [
+      5,
+      959
+     ]
+    ],
+    "sources": [
+     "quest 959 request text (the dockmaster has been on my case; the bottle intended as a gift for Gazlowe from Baron Revilgaz) and reward text (just as I was about to lose my job; I will see to it that Gazlowe gets this gift immediately)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 959 description and log text (morning cargo shipment from Booty Bay; crates came tumbling down; Mad Magglish ran off with a bottle of 99-Year-Old Port; chased him to Wailing Caverns; hiding in the Wailing Caverns)",
+   "creature 3665 Crane Operator Bigglefuzz, goblin model 7051, faction 69 (Ratchet), in Ratchet; starts and ends 959 (QuestSortID 718, QuestType 2, flags 8, AllowableRaces 0)",
+   "creature 3655 Mad Magglish, goblin model 7221, on map 1 in the caves around the caverns' mouth (area 17): base spawn -659,-2007; the module's pool 601039 adds -729,-2124 and -786,-2087"
+  ],
+  "notes": "Check: verified against 959's description, request and reward text; Mad Magglish 3655 stays on map 1 with and without the module's pool 601039, and no trigger targets him. Writer: Opening and part on ACCEPT and DONE 959, unused by any zone file. Mad Magglish stands only on map 1 (the outer caves), so neither text puts him inside the instance: 'somewhere in the caves', as the quest says. His fight is not told (no KILL: he is open world). Faction 0: Bigglefuzz is Ratchet's neutral faction and 959 is open to both."
+ }
+]
