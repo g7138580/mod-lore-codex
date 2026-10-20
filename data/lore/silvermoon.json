@@ -403,7 +403,7 @@
    "warcraft.wiki.gg/wiki/Solanar_Bloodwrath (Liadrin went to Shattrath for a new power source after Kael's betrayal)",
    "creature_questender 17076 ends 10960 (Children's Week, AllowableRaces 0); npcflag 2 so right-click passes through the gossip hello hook"
   ],
-  "notes": "Converted: the captive naaru and its loss moved to part 1 (QUEST_ACCEPT 9684, by which the initiate has heard Astalor reveal the naaru and learned that Liadrin seeks a new source); Shattrath, A'dal and the Shattered Sun moved to part 2 (minState 12, TALK 17076: she stands beside A'dal on the Terrace of Light); her restored faith moved to part 3 (minState 13, no trigger). Opening gains Solanar keeping her post (quest 9721) and her headquarters (npc_text 9334). The Sunwell's own story is left to quel_danas.json; part 3 keeps one clause on M'uru's heart because it closes her arc. Unsure: the A'dal scene exists only as broadcast_text 24463-24468 with no script here, so part 2 rests on the wiki plus her standing at A'dal's side. Earlier: verified. Childhood (Vandellor, Amani) and faith restored after the Sunwell are on the wiki (Chronicle, All That is Sacred, WotLK section). TALK 17076 faction 35 in Shattrath, questgiver flag, both factions. Check: her headquarters and Solanar kept in the opening, but her absence moved to part 2 (minState 12): before patch 2.4 she resided in the Hall of Blood beside M'uru (wiki). Part 1 split: the naaru as the order's source stays era-free; its loss, Kael's betrayal and her search are part 2 (minState 12, QUEST_ACCEPT 9684). Part 3 (Shattrath) trimmed to what TALK 17076 and the wiki support: the A'dal conversation (confession, M'uru knowing his fate) rests only on unscripted broadcast_text 24463-24468, which no character sees here, and was cut. Part 4: the clause on the Sunwell rekindled with M'uru's heart cut as the Sunwell's own story (quel_danas.json); added her teaching from the wiki's Wrath section.",
+  "notes": "Converted: the captive naaru and its loss moved to part 1 (QUEST_ACCEPT 9684, by which the initiate has heard Astalor reveal the naaru and learned that Liadrin seeks a new source); Shattrath, A'dal and the Shattered Sun moved to part 2 (minState 12, TALK 17076: she stands beside A'dal on the Terrace of Light); her restored faith moved to part 3 (minState 13, no trigger). Opening gains Solanar keeping her post (quest 9721) and her headquarters (npc_text 9334). The Sunwell's own story is left to quel_danas.json; part 3 keeps one clause on M'uru's heart because it closes her arc. Unsure: the A'dal scene exists only as broadcast_text 24463-24468 with no script here, so part 2 rests on the wiki plus her standing at A'dal's side. Earlier: verified. Childhood (Vandellor, Amani) and faith restored after the Sunwell are on the wiki (Chronicle, All That is Sacred, WotLK section). TALK 17076 faction 35 in Shattrath, questgiver flag, both factions. Check: her headquarters and Solanar kept in the opening, but her absence moved to part 2 (minState 12): before patch 2.4 she resided in the Hall of Blood beside M'uru (wiki). Part 1 split: the naaru as the order's source stays era-free; its loss, Kael's betrayal and her search are part 2 (minState 12, QUEST_ACCEPT 9684). Part 3 (Shattrath) trimmed to what TALK 17076 and the wiki support: the A'dal conversation (confession, M'uru knowing his fate) rests only on unscripted broadcast_text 24463-24468, which no character sees here, and was cut. Part 4: the clause on the Sunwell rekindled with M'uru's heart cut as the Sunwell's own story (quel_danas.json); added her teaching from the wiki's Wrath section. mod-individual-progression fix 2026-10-20: ACCEPT 109684 added to part 1 (the module's pre-12 version of 9684).",
   "parts": [
    {
     "part": 1,
@@ -412,12 +412,17 @@
      [
       4,
       9684
+     ],
+     [
+      4,
+      109684
      ]
     ],
     "sources": [
      "quest 9681 reward text (the captive naaru, a gift from Kael'thas)",
      "warcraft.wiki.gg/wiki/The_Burning_Crusade_Townhall/Shamans_and_Paladins (Liadrin the first to take the stolen powers)",
-     "warcraft.wiki.gg/wiki/Astalor_Bloodsworn (helped Liadrin commune with the naaru)"
+     "warcraft.wiki.gg/wiki/Astalor_Bloodsworn (helped Liadrin commune with the naaru)",
+     "quest 109684 (mod-individual-progression, before state 12: the vessel used on the captive naaru itself)"
     ]
    },
    {
@@ -528,6 +533,10 @@
    [
     5,
     9681
+   ],
+   [
+    5,
+    109681
    ]
   ],
   "sources": [
@@ -539,7 +548,7 @@
    "creature_template 17718 faction 1604",
    "warcraft.wiki.gg/wiki/A_Study_in_Power (pre-2.4 and post-2.4 texts; patch 2.4.0 change)"
   ],
-  "notes": "Converted: the captive naaru moved to part 1 (QUEST_DONE 9681, where he reveals it); the drained magisters and the vessel moved to part 2 (QUEST_ACCEPT 9684). The opening keeps his gossip (npc_text 12370), which TALK 17718 shows. Earlier: verified Check: his gossip curse (npc_text 12370, patch 2.4 text) moved from the opening to part 2 (minState 12, TALK 17718), so a pre-2.4 reader does not learn of the betrayal; the opening now tells his chamber and teaching (quest 9681 description; the pre-2.4 9681 text on the wiki: the nature and breadth of the order's power). Part 1 keeps only the era-free secret; the seizure moved to part 3 with the drained magisters (minState 12, QUEST_ACCEPT 9684).",
+  "notes": "Converted: the captive naaru moved to part 1 (QUEST_DONE 9681, where he reveals it); the drained magisters and the vessel moved to part 2 (QUEST_ACCEPT 9684). The opening keeps his gossip (npc_text 12370), which TALK 17718 shows. Earlier: verified Check: his gossip curse (npc_text 12370, patch 2.4 text) moved from the opening to part 2 (minState 12, TALK 17718), so a pre-2.4 reader does not learn of the betrayal; the opening now tells his chamber and teaching (quest 9681 description; the pre-2.4 9681 text on the wiki: the nature and breadth of the order's power). Part 1 keeps only the era-free secret; the seizure moved to part 3 with the drained magisters (minState 12, QUEST_ACCEPT 9684). mod-individual-progression fix 2026-10-20: DONE 109681 added to the opening and part 1 (the module's pre-12 9681, same reward text). Part 4 (maxState 11, ACCEPT 109684) tells the older vessel scene, where initiates drain the captive naaru itself; it exists only with the module and is the pre-12 twin of part 3.",
   "parts": [
    {
     "part": 1,
@@ -548,6 +557,10 @@
      [
       5,
       9681
+     ],
+     [
+      5,
+      109681
      ]
     ],
     "sources": [
@@ -583,6 +596,21 @@
      "quest 9684 description",
      "warcraft.wiki.gg/wiki/Blood_Knight (felblood elves seized M'uru; magisters left dazed)",
      "DB: Blood Elf Magister 17845 around Astalor"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The naaru still waits captive in the chamber, and Astalor puts an enchanted vessel into each initiate's hands to take its power and claim it for their own, enough to restore a fallen comrade to life. Some would call the order's work wrong, he knows. Much of what has befallen the elves is wrong too, he answers, and no one complains when that power keeps Silvermoon from further ruin.",
+    "triggers": [
+     [
+      4,
+      109684
+     ]
+    ],
+    "maxState": 11,
+    "sources": [
+     "quest 109684 description and objective (mod-individual-progression zone_silvermoon.sql: use the Shimmering Vessel on M'uru; those who would say what we're doing is wrong; they do not complain when our power is used to prevent the further destruction of Silvermoon)",
+     "quest 109681 reward text (the captive being in the center of the room)"
     ]
    }
   ]
@@ -705,6 +733,10 @@
    [
     4,
     9681
+   ],
+   [
+    4,
+    109681
    ]
   ],
   "sources": [
@@ -713,7 +745,7 @@
    "warcraft.wiki.gg/wiki/Blood_Knight (M'uru beneath the Hall of Blood, stolen by Kael's felblood elves)",
    "warcraft.wiki.gg/wiki/A_Study_in_Power (pre-2.4 and post-2.4 texts)"
   ],
-  "notes": "Converted: the captive naaru moved to part 1 (QUEST_DONE 9681); the vessel and Liadrin's search moved to part 2 (QUEST_DONE 9684); Stillblade's resurrection moved to part 3 (QUEST_DONE 9685). Opening is the 9681 description: Stillblade's coming resurrection, the betrayal and the lost power source. Earlier: verified Check: the 9681 description's betrayal and lost power source (patch 2.4 text) moved from the opening to part 1 (minState 12, QUEST_ACCEPT 9681, where the description tells it); the naaru secret (9681 reward text, era-free) is part 2; the drained keepers and Liadrin's search are part 3 (minState 12, QUEST_DONE 9684); the resurrection (part 4) no longer leans on part 3, so a pre-2.4 reading runs opening, secret, resurrection. Opening padded from the pre-2.4 9681 text on the wiki.",
+  "notes": "Converted: the captive naaru moved to part 1 (QUEST_DONE 9681); the vessel and Liadrin's search moved to part 2 (QUEST_DONE 9684); Stillblade's resurrection moved to part 3 (QUEST_DONE 9685). Opening is the 9681 description: Stillblade's coming resurrection, the betrayal and the lost power source. Earlier: verified Check: the 9681 description's betrayal and lost power source (patch 2.4 text) moved from the opening to part 1 (minState 12, QUEST_ACCEPT 9681, where the description tells it); the naaru secret (9681 reward text, era-free) is part 2; the drained keepers and Liadrin's search are part 3 (minState 12, QUEST_DONE 9684); the resurrection (part 4) no longer leans on part 3, so a pre-2.4 reading runs opening, secret, resurrection. Opening padded from the pre-2.4 9681 text on the wiki. mod-individual-progression fix 2026-10-20: the module replaces 9681 with its own 109681 before state 12 (same reward text, an older description: charms and parlor tricks, the nature and breadth of our power). ACCEPT 109681 added to the opening, DONE 109681 to part 2; part 3 (12+, DONE 9684) has no pre-12 twin here: the older vessel scene is told in Astalor's part 4.",
   "parts": [
    {
     "part": 1,
@@ -736,6 +768,10 @@
      [
       5,
       9681
+     ],
+     [
+      5,
+      109681
      ]
     ],
     "sources": [

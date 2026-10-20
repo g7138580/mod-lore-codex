@@ -330,6 +330,10 @@
    [
     2,
     2055
+   ],
+   [
+    2,
+    102055
    ]
   ],
   "parts": [
@@ -356,9 +360,10 @@
    "creature_text 2055 (make up for the tragic misguidance, continue our research in peace)",
    "warcraft.wiki.gg/wiki/Royal_Apothecary_Society (Faranell leads the Society)",
    "tirisfal.json 8530 (Sylvanas's challenge to the Society: a new plague)",
-   "quest 513 reward text (the Dark Lady impressed by progress toward the new plague)"
+   "quest 513 reward text (the Dark Lady impressed by progress toward the new plague)",
+   "mod-individual-progression zone_undercity.sql (Faranell copy 102055 stands in phase II before the Battle for the Undercity; 2055 only after it)"
   ],
-  "notes": "Converted: the Kor'kron and his excuses for Putress moved to part 1 (minState 13, TALK 2055, since his 3.3.5 gossip tells it), so a classic reader meets the Society at its work. 'Leads the Society' made 'directs its work', true also while Putress was Grand Apothecary. Earlier: verified Check: plague phrasing tied to quest 513's reward text."
+  "notes": "Converted: the Kor'kron and his excuses for Putress moved to part 1 (minState 13, TALK 2055, since his 3.3.5 gossip tells it), so a classic reader meets the Society at its work. 'Leads the Society' made 'directs its work', true also while Putress was Grand Apothecary. Earlier: verified Check: plague phrasing tied to quest 513's reward text. mod-individual-progression fix 2026-10-20: TALK 102055 added to the opening: with the module the Faranell met before the Battle for the Undercity is its copy 102055 (2055 only stands there after the battle), so the opening was unreachable before it. Part 1 keeps TALK 2055 (after the battle)."
  },
  {
   "id": 149706,

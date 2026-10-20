@@ -66,7 +66,7 @@
   "sort": 3,
   "faction": 2,
   "title": "Grommash Hold",
-  "body": "Grommash Hold is the fortress of the Warchief, built into the cliffs of the Valley of Wisdom and bearing the name of Grom Hellscream, whose blow slew Mannoroth and freed the orcs from the demon's curse. Guards still call it Thrall's Fortress. Its throne room is thick walled and windowless, and the Kor'kron, the Warchief's elite bodyguard, stand watch at every turn. Vol'jin of the Darkspear and the old warrior Eitrigg have long counseled Thrall at his side, and a guest named Mokvar, granted sanctuary by Thrall, takes care to bring his host no trouble.",
+  "body": "Grommash Hold is the fortress of the Warchief, built into the cliffs of the Valley of Wisdom and bearing the name of Grom Hellscream, whose blow slew Mannoroth and freed the orcs from the demon's curse. Guards still call it Thrall's Fortress. Its throne room is thick walled and windowless, and the Kor'kron, the Warchief's elite bodyguard, stand watch at every turn. Vol'jin of the Darkspear and the old warrior Eitrigg have long counseled Thrall at his side.",
   "triggers": [[2, 17098]],
   "parts": [
    {
@@ -81,10 +81,16 @@
     "triggers": [[5, 13266]],
     "minState": 13,
     "sources": ["quest 13257 description (strongest champions report to his throne room)", "quest 13266 description (justice must be served; portals to Undercity in Grommash Hold; Vol'jin waiting) and reward text"]
+   },
+   {
+    "part": 3,
+    "body": "A guest keeps to the hold as well. Mokvar speaks of the great kindness Thrall showed in granting him sanctuary within his domain, and he means not to overstay his welcome: it would be a great dishonor, he says, to bring any trouble to the Warchief.",
+    "minState": 3,
+    "sources": ["npc_text 8332 (Mokvar: Thrall has shown great kindness in granting me sanctuary; do not wish to overstay my welcome; a great dishonor if I brought any trouble to our leader)"]
    }
   ],
   "sources": ["warcraft.wiki.gg/wiki/Grommash_Hold (built into the cliffside, guards called it Thrall's Fortress, thick walls and no windows)", "warcraft.wiki.gg/wiki/Kor'kron_Guard (Thrall's bodyguards stationed in Grommash Hold)", "warcraft.wiki.gg/wiki/Thrall (Grom's blow killed Mannoroth)", "DB spawns: Thrall 4949, Eitrigg 3144, Vol'jin 10540, Mokvar 16012, Ambassador Dawnsinger 17098, 24 Kor'kron Elite 14304 all inside the hold", "quest 9428 (Dawnsinger keeps her voice low; cement our relationship with the rest of the Horde)", "npc_text 8332 (Mokvar granted sanctuary)", "quest 13266 (portals to Undercity in Grommash Hold)"],
-  "notes": "Converted: the blood elf ambassador moved to part 1 (minState 8, no trigger); the Undercity portals moved to part 2 (minState 13, QUEST_DONE 13266, turned in at the ruins after taking the portal; ACCEPT 13266 is the Undercity file's). Eitrigg reworded to 'have long counseled' so the line stays true in Wrath, when he serves in Zul'Drak. The entry trigger is still Dawnsinger 17098, a blood elf, though she stands in the hold in every era. Check: part 2 'war room' and 'Vol'jin waited to lead them in' trimmed: Vol'jin waits at the ruins, Thrall leads the assault."
+  "notes": "Converted: the blood elf ambassador moved to part 1 (minState 8, no trigger); the Undercity portals moved to part 2 (minState 13, QUEST_DONE 13266, turned in at the ruins after taking the portal; ACCEPT 13266 is the Undercity file's). Eitrigg reworded to 'have long counseled' so the line stays true in Wrath, when he serves in Zul'Drak. The entry trigger is still Dawnsinger 17098, a blood elf, though she stands in the hold in every era. Check: part 2 'war room' and 'Vol'jin waited to lead them in' trimmed: Vol'jin waits at the ruins, Thrall leads the assault. mod-individual-progression fix 2026-10-20: Mokvar moved from the opening to part 3 (minState 3, no trigger): the module shows him (16012, npc_ipp_ds2) only from state 3."
  },
  {
   "id": 163704,

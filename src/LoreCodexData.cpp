@@ -402,6 +402,7 @@ namespace LoreCodex::Data
         }
 
         uint32 triggers = 0;
+        uint32 unknown = 0;
         std::unordered_set<uint32> areaTriggers;
         if (QueryResult result = WorldDatabase.Query("SELECT Entry, Type, Value, Part FROM mod_lore_codex_trigger"))
         {
@@ -459,8 +460,11 @@ namespace LoreCodex::Data
                 }
                 if (!valid)
                 {
-                    LOG_ERROR("module", "LoreCodex: trigger (entry {}, part {}, type {}, value {}) points at nothing, skipped.",
+                    // Usually content for another module this server does not run (mod-individual-progression
+                    // adds its own quests and creatures), so one summary line below instead of an error each.
+                    LOG_DEBUG("module", "LoreCodex: trigger (entry {}, part {}, type {}, value {}) points at nothing, skipped.",
                         entry, part, type, value);
+                    ++unknown;
                     continue;
                 }
 
@@ -508,6 +512,8 @@ namespace LoreCodex::Data
         content->stamp = h;
 
         LOG_INFO("module", ">> LoreCodex: loaded {} entries, {} parts and {} triggers.", content->entries.size(), parts, triggers);
+        if (unknown)
+            LOG_INFO("module", ">> LoreCodex: skipped {} triggers on quests, creatures or areas this server does not have (content for other modules).", unknown);
 
         std::lock_guard<std::mutex> guard(sContentLock);
         sContent = std::move(content);

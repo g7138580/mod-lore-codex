@@ -111,7 +111,7 @@
   "sort": 3,
   "faction": 0,
   "title": "Twilight's Run",
-  "body": "Twilight's Run is a cave tucked into the northeast corner of Silithus, one of the Twilight's Hammer's bases of operation in the desert. Outside its mouth the cult keeps a camp of overlords, masters and flamereavers, and within the tunnels dwells Vyral the Vile, the local leader of the cult in Silithus, who carries a signet ring. The druids of Cenarion Hold count the horrors of the cave as formidable indeed, and Huum Wildmane names Vyral among the heads of the serpent that the Circle means to strike.",
+  "body": "Twilight's Run is a cave tucked into the northeast corner of Silithus, one of the Twilight's Hammer's bases of operation in the desert. It lies down the road from Staghelm Point, the old night elven tower that looks out over the desert from its high peak. Outside its mouth the cult keeps a camp of overlords, masters and flamereavers, and within the tunnels dwells Vyral the Vile, the local leader of the cult in Silithus, who carries a signet ring.",
   "triggers": [
    [
     1,
@@ -126,7 +126,17 @@
    "vmaps 001_31_43.vmtile spawn 165997 and Md_Mountaincave_Medium_H.wmo.vmo (root 2938, group 15847)",
    "quest 8320 description (heads of these serpents)"
   ],
-  "notes": "Converted: the claim that killing Vyral would deal the cult a blow it would not easily recover from came from the 8321 reward text (the outcome); the opening now gives only Huum's intent (8320, 8321 descriptions). Vyral's fall is told in 137726 part 1 (DONE 8321). Earlier: Fact-check: 3446 confirmed. WMOAreaTable rows 36440-36443 map WMO 2938 name set 2 (groups 15847-15849) to 3446; the vmap placement 165997 (Md_Mountaincave_Medium_H.wmo, name set 2, root 2938, tile 001_31_43) has world bounds x -6189 to -6389, y -88 to 162, z -12 to 36, containing Vyral (-6320,16, z 6) and the flamereavers inside (z -10). 'Wears as his mark' made 'carries' (8321 only asks for the ring). No KILL fallback needed."
+  "notes": "Converted: the claim that killing Vyral would deal the cult a blow it would not easily recover from came from the 8321 reward text (the outcome); the opening now gives only Huum's intent (8320, 8321 descriptions). Vyral's fall is told in 137726 part 1 (DONE 8321). Earlier: Fact-check: 3446 confirmed. WMOAreaTable rows 36440-36443 map WMO 2938 name set 2 (groups 15847-15849) to 3446; the vmap placement 165997 (Md_Mountaincave_Medium_H.wmo, name set 2, root 2938, tile 001_31_43) has world bounds x -6189 to -6389, y -88 to 162, z -12 to 36, containing Vyral (-6320,16, z 6) and the flamereavers inside (z -10). 'Wears as his mark' made 'carries' (8321 only asks for the ring). No KILL fallback needed. mod-individual-progression fix 2026-10-20: Huum's line moved to part 1 (minState 3, no trigger): the module shows Huum (15270) and gates quest 8320 from state 3, while the cave itself is reachable from state 0. Opening lengthened with the road from Staghelm Point (wiki source already listed) after Huum's line moved to part 1.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Huum Wildmane of Cenarion Hold counts the horrors of the cave as formidable indeed, and he names Vyral among the heads of the serpent that the Circle means to strike.",
+    "minState": 3,
+    "sources": [
+     "quest 8320 description (Huum Wildmane: Vyral the Vile; formidable)"
+    ]
+   }
+  ]
  },
  {
   "id": 137704,
@@ -651,7 +661,7 @@
    "warcraft.wiki.gg/wiki/Gates_of_Ahn'Qiraj (gates stayed open, Ruins and Temple beyond)",
    "DB: gate doors 180904/180898/180899 spawn state 0 (open); posarea: 3478 at -8200,1530 west of the door, 2741 at the gong"
   ],
-  "notes": "Check: mod-individual-progression shows the shut gate 176146-176148 below state 5 (aq_gate CanBeSeen: before PROGRESSION_AQ_WAR) and the gong's opening resets after five minutes, so at state 4 the gates stand shut again: part 1 stays maxState 3 (its 'whatever stirs stays behind them' is false once the qiraji are outside at 4) and part 4 now tells the opening as an event without saying the gates stand open. The gong (CanBeSeen states 3 and 4) and Jonathan (npc_ipp_aqwewar, states 3 and 4) vanish from state 5 but stand at 18 without the module, so parts 2 and 3 are worded in the past (the gong was set before the gates, Jonathan was posted on the dais), true both ways. The 8519 vision is spoken the same way by the core script and the module's replacement (same creature_text groups). 'Simply Bang a Gong!' (108743, module only, autocomplete) is not a trigger. Part 5 reworded (shared phrases with 137700 part 3). Converted for eras: the opening keeps the gates' history. mod-individual-progression spawns a shut gate (176146-176148) seen before state 5, so part 1 (maxState 3) tells the sealed gates; part 4 (state 4 only) the rung gong and the warbringers before the wall (aq_war.sql); part 5 (from state 5, and without the module, where the base doors spawn open) the open gates. The gong's purpose moved to part 2 on ACCEPT 8519 (the vision), Jonathan to part 3 (TALK 15693 or DONE 8745, both reachable only where he stands). The champion with the scepter dropped from the opening (under the module 'Simply Bang a Gong!' can open the gates without it) and the Twin Emperors line dropped (creature_text 15183, never said). Earlier: Fact-check: gong warning reworded (was too close to 8743's text). Open gates confirmed for 3.3.5 server state (doors state 0, no script, no event; 8214 and 8216 speakers permanent). 3478 confirmed west of the door (posarea -8200,1530) and reachable; 2741 at the gong. 8743 and 8745 autocomplete, not used. Rest verified.",
+  "notes": "Check: mod-individual-progression shows the shut gate 176146-176148 below state 5 (aq_gate CanBeSeen: before PROGRESSION_AQ_WAR) and the gong's opening resets after five minutes, so at state 4 the gates stand shut again: part 1 stays maxState 3 (its 'whatever stirs stays behind them' is false once the qiraji are outside at 4) and part 4 now tells the opening as an event without saying the gates stand open. The gong (CanBeSeen states 3 and 4) and Jonathan (npc_ipp_aqwewar, states 3 and 4) vanish from state 5 but stand at 18 without the module, so parts 2 and 3 are worded in the past (the gong was set before the gates, Jonathan was posted on the dais), true both ways. The 8519 vision is spoken the same way by the core script and the module's replacement (same creature_text groups). 'Simply Bang a Gong!' (108743, module only, autocomplete) is not a trigger. Part 5 reworded (shared phrases with 137700 part 3). Converted for eras: the opening keeps the gates' history. mod-individual-progression spawns a shut gate (176146-176148) seen before state 5, so part 1 (maxState 3) tells the sealed gates; part 4 (state 4 only) the rung gong and the warbringers before the wall (aq_war.sql); part 5 (from state 5, and without the module, where the base doors spawn open) the open gates. The gong's purpose moved to part 2 on ACCEPT 8519 (the vision), Jonathan to part 3 (TALK 15693 or DONE 8745, both reachable only where he stands). The champion with the scepter dropped from the opening (under the module 'Simply Bang a Gong!' can open the gates without it) and the Twin Emperors line dropped (creature_text 15183, never said). Earlier: Fact-check: gong warning reworded (was too close to 8743's text). Open gates confirmed for 3.3.5 server state (doors state 0, no script, no event; 8214 and 8216 speakers permanent). 3478 confirmed west of the door (posarea -8200,1530) and reachable; 2741 at the gong. 8743 and 8745 autocomplete, not used. Rest verified. mod-individual-progression fix 2026-10-20: part 3 minState 3: Jonathan the Revelator (15693) stands at the gong only in states 3 and 4 under the module.",
   "parts": [
    {
     "part": 1,
@@ -690,7 +700,8 @@
     "sources": [
      "quest 8745 reward text",
      "ipp_aware_npcs.sql: 15693 npc_ipp_aqwewar (states 3-4)"
-    ]
+    ],
+    "minState": 3
    },
    {
     "part": 4,
@@ -721,6 +732,7 @@
   "zone": 1377,
   "sort": 1,
   "faction": 0,
+  "requiredState": 3,
   "title": "Commander Mar'alith",
   "body": "Commander Mar'alith leads the Cenarion Circle's forces at Cenarion Hold, a night elf warrior bound by duty to his outpost even while his heart is elsewhere. His beloved Natalia has gone missing after weeks of strange behavior, talking to herself when she thought no one was near and insisting that her research must go on, and the captain of his guard admits he has not been himself since. Those who come to him find him distracted, asking why this has come now, with so much work still to be done. Still the war is his to run, and he rewards well those who bring him word of the Twilight's Hammer.",
   "triggers": [
@@ -736,7 +748,7 @@
    "warcraft.wiki.gg/wiki/Commander_Mar'alith (night elf warrior, head of the Circle's forces)",
    "quests 8287, 8498 (intelligence on the cult turned in to him)"
   ],
-  "notes": "Check: part 1 reworded (shared phrases with 137724 part 2). Vish Kozus (15182) is not phased and his gossip 7733 says the commander has not been himself since his mistress vanished, so the opening reads right wherever Mar'alith (state 3) can be met. Converted: Natalia's fate (8306 reward) added as part 1 on DONE 8306. Battle orders and news from Ahn'Qiraj moved to part 2, minState 5: they come from field duty quests that mod-individual-progression opens only after the war (Kaldon and the briefings, npc_ipp_aq); the AQ20 turn-in 8791 is not told. Vish Kozus's remark (npc_text 7733) kept as the captain's. Mar'alith himself is npc_ipp_preaq (state 3), the same as his TALK trigger. npc_text 7732, 7733 reread: classic. Earlier: verified. Faction 0: template 994 (FactionTemplate 994, Cenarion Circle, no enemy groups). Night elf male, class warrior (display 15315, unit_class 1).",
+  "notes": "Check: part 1 reworded (shared phrases with 137724 part 2). Vish Kozus (15182) is not phased and his gossip 7733 says the commander has not been himself since his mistress vanished, so the opening reads right wherever Mar'alith (state 3) can be met. Converted: Natalia's fate (8306 reward) added as part 1 on DONE 8306. Battle orders and news from Ahn'Qiraj moved to part 2, minState 5: they come from field duty quests that mod-individual-progression opens only after the war (Kaldon and the briefings, npc_ipp_aq); the AQ20 turn-in 8791 is not told. Vish Kozus's remark (npc_text 7733) kept as the captain's. Mar'alith himself is npc_ipp_preaq (state 3), the same as his TALK trigger. npc_text 7732, 7733 reread: classic. Earlier: verified. Faction 0: template 994 (FactionTemplate 994, Cenarion Circle, no enemy groups). Night elf male, class warrior (display 15315, unit_class 1). mod-individual-progression fix 2026-10-20: requiredState 3: the module shows the Cenarion Hold leaders of the Ahn'Qiraj era (npc_ipp_preaq, npc_ipp_ds2) only from state 3, and every trigger here comes from them or their quests.",
   "parts": [
    {
     "part": 1,
@@ -770,6 +782,7 @@
   "zone": 1377,
   "sort": 2,
   "faction": 0,
+  "requiredState": 3,
   "title": "Baristolth of the Shifting Sands",
   "body": "Baristolth of the Shifting Sands is a night elf who lingers among the tents of Cenarion Hold with his eyes on the desert. A thousand years ago, he says, death had all but claimed him when a great one of the bronze dragonflight breathed once upon his broken body and let the sands of time heal his wounds, then bound him to remain a Watcher for as long as he must. Now the land shudders, the hive stirs and the drakes of the Brood of Nozdormu have returned to the skies, and Baristolth knows a second war is upon them. The time has come to keep a promise he made in that long-ago war.",
   "triggers": [
@@ -784,7 +797,7 @@
    "creature_text 15180 (the Brood of Nozdormu have returned)",
    "warcraft.wiki.gg/wiki/Baristolth_of_the_Shifting_Sands (night elf, Watcher of the bronze dragonflight)"
   ],
-  "notes": "Check: part 1 reworded (shared phrases with 137728 part 1). Converted: opening unchanged (his story as he tells it at the 8286 offer). Added part 1 (DONE 8286, his watch ends) and part 2 (ACCEPT 8303, his secrets and the tome); the chain itself is 137728. Under mod-individual-progression he is npc_ipp_preaq (state 3) and 8286 needs the War Effort quest, so nothing shows earlier. npc_text 7731 and creature_text 15180 reread: classic. Earlier: verified. Faction 0: template 994. Night elf male (display 15311). Person only; the chain is the Scepter story.",
+  "notes": "Check: part 1 reworded (shared phrases with 137728 part 1). Converted: opening unchanged (his story as he tells it at the 8286 offer). Added part 1 (DONE 8286, his watch ends) and part 2 (ACCEPT 8303, his secrets and the tome); the chain itself is 137728. Under mod-individual-progression he is npc_ipp_preaq (state 3) and 8286 needs the War Effort quest, so nothing shows earlier. npc_text 7731 and creature_text 15180 reread: classic. Earlier: verified. Faction 0: template 994. Night elf male (display 15311). Person only; the chain is the Scepter story. mod-individual-progression fix 2026-10-20: requiredState 3: the module shows the Cenarion Hold leaders of the Ahn'Qiraj era (npc_ipp_preaq, npc_ipp_ds2) only from state 3, and every trigger here comes from them or their quests.",
   "parts": [
    {
     "part": 1,
@@ -821,6 +834,7 @@
   "zone": 1377,
   "sort": 3,
   "faction": 0,
+  "requiredState": 3,
   "title": "Geologist Larksbane",
   "body": "Geologist Larksbane is a dwarf scholar serving the Cenarion Circle at Cenarion Hold, and she hears what others miss: a humming from the crystals of the desert that grows louder every day, which she believes is driving the silithid mad. Her work turns on the hidden writings of Silithus. She gathers the clay tablets left in a ruined Twilight's Hammer camp in the northwest to learn what the cult is doing here, and she studies the glyphed crystals that the qiraji have set within the hives.",
   "triggers": [
@@ -835,7 +849,7 @@
    "quest 8284 description",
    "quest 8314 description"
   ],
-  "notes": "Check: confirmed no quest, gossip, book or other text tells the prophecy's content (only creature_text 15183, which has no script in the core or the module), so nothing is restored. Part 1 reworded (shared phrases with 137725 parts 3 and 4); 8316 and 8376-8382 are QuestType 0, one per class (DK none), PrevQuestID 8315. Converted: the prophecy's content (Titan and Old God, the silithid of the Well, the qiraji and Ahn'Qiraj) is removed: it rested on creature_text 15183, which no script says in this core, so it was never told to anyone. The opening keeps her humming crystals (npc_text 7734) and her work (8284, 8314); part 1 tells her reaction on DONE of Armaments of War (8316 and its class versions 8376-8382, all autocomplete, so DONE). npc_text 7734 reread: classic. Earlier: verified. Faction 0: template 994. Dwarf female (display 15316). Summarises prophecy groups 1 to 5 only; Valstann (groups 15 to 17, cited by darnassus.json) not retold.",
+  "notes": "Check: confirmed no quest, gossip, book or other text tells the prophecy's content (only creature_text 15183, which has no script in the core or the module), so nothing is restored. Part 1 reworded (shared phrases with 137725 parts 3 and 4); 8316 and 8376-8382 are QuestType 0, one per class (DK none), PrevQuestID 8315. Converted: the prophecy's content (Titan and Old God, the silithid of the Well, the qiraji and Ahn'Qiraj) is removed: it rested on creature_text 15183, which no script says in this core, so it was never told to anyone. The opening keeps her humming crystals (npc_text 7734) and her work (8284, 8314); part 1 tells her reaction on DONE of Armaments of War (8316 and its class versions 8376-8382, all autocomplete, so DONE). npc_text 7734 reread: classic. Earlier: verified. Faction 0: template 994. Dwarf female (display 15316). Summarises prophecy groups 1 to 5 only; Valstann (groups 15 to 17, cited by darnassus.json) not retold. mod-individual-progression fix 2026-10-20: requiredState 3: the module shows the Cenarion Hold leaders of the Ahn'Qiraj era (npc_ipp_preaq, npc_ipp_ds2) only from state 3, and every trigger here comes from them or their quests.",
   "parts": [
    {
     "part": 1,
@@ -887,6 +901,7 @@
   "zone": 1377,
   "sort": 4,
   "faction": 0,
+  "requiredState": 3,
   "title": "Huum and Bor Wildmane",
   "body": "The tauren brothers Huum and Bor Wildmane are druids of the Cenarion Circle at Cenarion Hold who keep watch on an enemy most others overlook. While every eye is on the silithid, they track the Twilight's Hammer. Huum, the elder, hears the spirits of Silithus weeping for the woeful tale the land has to tell, and he directs the strikes against the cult's geolords and its local leader. Bor is blunter. He gathers up the cult's coded papers just to keep them out of circulation, and he wants the elemental templars the cultists summon given a proper beating, since nothing throws troops into disarray like taking out the chain of command.",
   "triggers": [
@@ -906,7 +921,7 @@
    "warcraft.wiki.gg/wiki/Huum_Wildmane and Bor_Wildmane (tauren druids, brothers)",
    "quests 8318, 8361 descriptions (Bor)"
   ],
-  "notes": "Check: part 1 trimmed to what ACCEPT 8331 tells (the Council, the wind stones, Aurel's gambit); the dukes, lords and disguises come later (8332, 8341) and are told in 137726. Converted: the dukes and lords of the Council (revealed from ACCEPT 8331) and Bor's wish to wrestle a lord (8352 request text) moved to parts 1 (ACCEPT 8331) and 2 (DONE 8352). The opening keeps Huum's geolords and leader (8320, 8321) and Bor's papers and templars (8318, 8361), both offered freely. Both are state 3 under mod-individual-progression (Huum npc_ipp_ds2, Bor npc_ipp_preaq), the same as their TALK triggers. Earlier: verified. Faction 0: Huum template 994, Bor 635 (both Cenarion Circle, no enemy groups). Both tauren male (displays 15371, 15370).",
+  "notes": "Check: part 1 trimmed to what ACCEPT 8331 tells (the Council, the wind stones, Aurel's gambit); the dukes, lords and disguises come later (8332, 8341) and are told in 137726. Converted: the dukes and lords of the Council (revealed from ACCEPT 8331) and Bor's wish to wrestle a lord (8352 request text) moved to parts 1 (ACCEPT 8331) and 2 (DONE 8352). The opening keeps Huum's geolords and leader (8320, 8321) and Bor's papers and templars (8318, 8361), both offered freely. Both are state 3 under mod-individual-progression (Huum npc_ipp_ds2, Bor npc_ipp_preaq), the same as their TALK triggers. Earlier: verified. Faction 0: Huum template 994, Bor 635 (both Cenarion Circle, no enemy groups). Both tauren male (displays 15371, 15370). mod-individual-progression fix 2026-10-20: requiredState 3: the module shows the Cenarion Hold leaders of the Ahn'Qiraj era (npc_ipp_preaq, npc_ipp_ds2) only from state 3, and every trigger here comes from them or their quests.",
   "parts": [
    {
     "part": 1,
@@ -942,6 +957,7 @@
   "zone": 1377,
   "sort": 5,
   "faction": 0,
+  "requiredState": 3,
   "title": "Hermit Ortell",
   "body": "Hermit Ortell is a human who, rumor has it, once belonged to the Twilight's Hammer and deserted his sect. He hides in a cave in the mountains south of Southwind Village and lives there as a hermit, wanting nothing to do with strangers, and he sends off anyone who comes calling. Those who do find him are met with suspicion and a string of questions: how did they find him, who are they, and were they followed?",
   "triggers": [
@@ -957,7 +973,7 @@
    "npc_text 7816",
    "warcraft.wiki.gg/wiki/Hermit_Ortell (human, deserter, Ortell's Hideout)"
   ],
-  "notes": "Converted: what Ortell reveals once trusted moved out of the opening: the hunt, the code and the Lexicon to part 1 (DONE 8285), the True Believer to part 2 (ACCEPT 8323). The opening keeps the rumor (8285 description), his gossip (npc_text 7816) and his greeting (8285 request text). Under mod-individual-progression he is npc_ipp_preaq (state 3). Earlier: Fact-check: 'share with Cenarion Hold' made general (8323 only says he can share it). Human male (display 15326). Faction 0: template 35. Hyjal and other later Ortell roles absent; 3447 still not used.",
+  "notes": "Converted: what Ortell reveals once trusted moved out of the opening: the hunt, the code and the Lexicon to part 1 (DONE 8285), the True Believer to part 2 (ACCEPT 8323). The opening keeps the rumor (8285 description), his gossip (npc_text 7816) and his greeting (8285 request text). Under mod-individual-progression he is npc_ipp_preaq (state 3). Earlier: Fact-check: 'share with Cenarion Hold' made general (8323 only says he can share it). Human male (display 15326). Faction 0: template 35. Hyjal and other later Ortell roles absent; 3447 still not used. mod-individual-progression fix 2026-10-20: requiredState 3: the module shows the Cenarion Hold leaders of the Ahn'Qiraj era (npc_ipp_preaq, npc_ipp_ds2) only from state 3, and every trigger here comes from them or their quests.",
   "parts": [
    {
     "part": 1,
@@ -1035,6 +1051,7 @@
   "zone": 1377,
   "sort": 7,
   "faction": 0,
+  "requiredState": 3,
   "title": "Windcaller Proudhorn",
   "body": "Windcaller Proudhorn, a tauren of the Cenarion Circle, welcomes the volunteers who answer the call raised by the Circle's emissaries in Orgrimmar and Ironforge. The silithid, those emissaries warn, have been left unchecked too long and are preparing to spread, and tremors near hives all across Azeroth betray their swelling numbers. Proudhorn is sure that while Cenarion Hold stands, victory over the silithid is certain, provided the supplies keep coming. To her mind the desert worms threaten the caravans more than the insects do: dredge strikers recently ravaged a whole shipment of morrowgrain, and their larger southern cousins wait to move in.",
   "triggers": [
@@ -1058,7 +1075,7 @@
    "npc_text 7746",
    "warcraft.wiki.gg/wiki/Windcaller_Proudhorn (female tauren)"
   ],
-  "notes": "Converted: the scout reports (8534, 8738, 8739, field duty quests that mod-individual-progression opens only from state 5) moved to part 1, minState 5. Proudhorn is npc_ipp_preaq (state 3), like her triggers. npc_text 7746 reread: classic. Earlier: verified. Female tauren (display 15353). Faction 0: template 994; 8275 (Alliance) and 8276 (Horde) both end with her; emissaries 15187 and 15188 permanent spawns, not used by ironforge.json or orgrimmar.json.",
+  "notes": "Converted: the scout reports (8534, 8738, 8739, field duty quests that mod-individual-progression opens only from state 5) moved to part 1, minState 5. Proudhorn is npc_ipp_preaq (state 3), like her triggers. npc_text 7746 reread: classic. Earlier: verified. Female tauren (display 15353). Faction 0: template 994; 8275 (Alliance) and 8276 (Horde) both end with her; emissaries 15187 and 15188 permanent spawns, not used by ironforge.json or orgrimmar.json. mod-individual-progression fix 2026-10-20: requiredState 3: the module shows the Cenarion Hold leaders of the Ahn'Qiraj era (npc_ipp_preaq, npc_ipp_ds2) only from state 3, and every trigger here comes from them or their quests.",
   "parts": [
    {
     "part": 1,
@@ -1077,6 +1094,7 @@
   "zone": 1377,
   "sort": 1,
   "faction": 0,
+  "requiredState": 3,
   "title": "The Twilight Mystery",
   "body": "Geologist Larksbane of Cenarion Hold wants to know what the Twilight's Hammer is doing in Silithus. A camp of the cult once thrived northwest of the hold, but anyone who goes there now finds the ground swarming with elementals and only scattered wood and canvas to mark where the tents stood. From the site she has recovered a few fragments of a clay tablet, too few to piece together anything useful, and she needs someone to brave the elementals and gather the rest so the tablet can be restored and read.",
   "triggers": [
@@ -1088,7 +1106,7 @@
   "sources": [
    "quest 8284 description"
   ],
-  "notes": "Check: the diary moved off DONE 8279: the transcription (item 20405) is 8287's StartItem, handed over on accepting 8287, so part 3 (DONE 8279) keeps Ortell's decoding, new part 4 (ACCEPT 8287) the diary and the hand-off with Ortell's hope (8287 description), part 5 (DONE 8287) Mar'alith's verdict. Converted: the chain moved out of the opening into parts on the turn-ins where each step is revealed: the code and the rumor of Ortell (DONE 8284), Ortell and the Lexicon (DONE 8285), the decoding and the diary (DONE 8279; the diary's content, page_text 2807-2809, is new and told in more detail in 137707 part 1), the parchment's delivery (DONE 8287). The opening keeps Larksbane's request (8284 description). Larksbane is state 3 under mod-individual-progression, like 8284. Earlier: verified (8284, 8285, 8279, 8287; Lexicon loot Mayna 1, Exeter 2, Havunth 3). 8284 only entry point, QuestType 2. Faction 0.",
+  "notes": "Check: the diary moved off DONE 8279: the transcription (item 20405) is 8287's StartItem, handed over on accepting 8287, so part 3 (DONE 8279) keeps Ortell's decoding, new part 4 (ACCEPT 8287) the diary and the hand-off with Ortell's hope (8287 description), part 5 (DONE 8287) Mar'alith's verdict. Converted: the chain moved out of the opening into parts on the turn-ins where each step is revealed: the code and the rumor of Ortell (DONE 8284), Ortell and the Lexicon (DONE 8285), the decoding and the diary (DONE 8279; the diary's content, page_text 2807-2809, is new and told in more detail in 137707 part 1), the parchment's delivery (DONE 8287). The opening keeps Larksbane's request (8284 description). Larksbane is state 3 under mod-individual-progression, like 8284. Earlier: verified (8284, 8285, 8279, 8287; Lexicon loot Mayna 1, Exeter 2, Havunth 3). 8284 only entry point, QuestType 2. Faction 0. mod-individual-progression fix 2026-10-20: requiredState 3: the module shows the Cenarion Hold leaders of the Ahn'Qiraj era (npc_ipp_preaq, npc_ipp_ds2) only from state 3, and every trigger here comes from them or their quests.",
   "parts": [
    {
     "part": 1,
@@ -1167,6 +1185,7 @@
   "zone": 1377,
   "sort": 2,
   "faction": 0,
+  "requiredState": 3,
   "title": "Dearest Natalia",
   "body": "Commander Mar'alith's beloved Natalia has vanished. For weeks before, she had been acting strangely, talking to herself when no one was around and insisting that all was well and that her research must be allowed to go on. She was last seen heading for the dwarven camp of Bronzebeard's expedition in the south. The commander's soldiers are spread too thin to search, and duty binds him to his post, so he asks for help: go to the dwarves and question them about what became of her.",
   "triggers": [
@@ -1178,7 +1197,7 @@
   "sources": [
    "quest 8304 description"
   ],
-  "notes": "Converted: the dwarves' account (heard during 8304) moved to part 1 on DONE 8304, Natalia's fate to part 2 on DONE 8306. The opening keeps Mar'alith's request (8304 description). Natalia's kill is not a trigger. Mar'alith is state 3 under mod-individual-progression, like 8304. Earlier: verified against 8304, 8306 and npc_text 7755 to 7768. 8304 QuestType 2, no prerequisite. Faction 0.",
+  "notes": "Converted: the dwarves' account (heard during 8304) moved to part 1 on DONE 8304, Natalia's fate to part 2 on DONE 8306. The opening keeps Mar'alith's request (8304 description). Natalia's kill is not a trigger. Mar'alith is state 3 under mod-individual-progression, like 8304. Earlier: verified against 8304, 8306 and npc_text 7755 to 7768. 8304 QuestType 2, no prerequisite. Faction 0. mod-individual-progression fix 2026-10-20: requiredState 3: the module shows the Cenarion Hold leaders of the Ahn'Qiraj era (npc_ipp_preaq, npc_ipp_ds2) only from state 3, and every trigger here comes from them or their quests.",
   "parts": [
    {
     "part": 1,
@@ -1322,6 +1341,7 @@
   "zone": 1377,
   "sort": 4,
   "faction": 0,
+  "requiredState": 3,
   "title": "The Abyssal Council",
   "body": "The Twilight's Hammer has set up camps across Silithus and performs rituals in them day and night. The druids of Cenarion Hold do not yet know its plans, though they suspect a link with the pulsing red crystals spread across the desert, and Huum Wildmane means to strike first at the heads of the serpent, the Twilight geolords, and then at the cult's local leader. His brother Bor has watched cultists call up mighty elemental nobles and receive orders from them. Whether these are the beings the cult worships or messengers of something greater, none can say.",
   "triggers": [
@@ -1342,7 +1362,7 @@
    "warcraft.wiki.gg/wiki/Abyssal_Council (templars, dukes, lords)",
    "quests 8320, 8361 descriptions"
   ],
-  "notes": "Check: part 2 no longer opens 'The hope was mistaken', which leaned on part 1: 8331 needs only Friendly with the Cenarion Circle (RequiredMinRep 609, 3000), no PrevQuestID and no conditions, so it can be accepted before 8321. Opening reworded slightly (shared phrases with 137706). Converted: the campaign moved out of the opening into parts: Vyral's fall (DONE 8321), the Abyssal Council and Aurel (ACCEPT 8331), the medallion and the dukes (DONE 8332), the ring, the lords and Bor's reward (DONE 8352). The opening keeps the situation of the entry points 8320 and 8361 (both offered freely). Entry trigger ACCEPT 8331 also unlocks part 2. All givers are state 3 under mod-individual-progression (Huum and Aurel npc_ipp_ds2, Bor npc_ipp_preaq). Earlier: Fact-check: 'High Council' (not in game text) made 'the lords of the Council' (8341). Aurel confirmed night elf female (display 15372, NightElfFemale; Darnassian phrases in 9248, prayer to Elune in 8829). 8320, 8331, 8361 QuestType 2, not autocomplete, AllowableRaces 0. Lords' and dukes' lines checked (creature_text 15203 to 15208, 15220, 15305). Faction 0.",
+  "notes": "Check: part 2 no longer opens 'The hope was mistaken', which leaned on part 1: 8331 needs only Friendly with the Cenarion Circle (RequiredMinRep 609, 3000), no PrevQuestID and no conditions, so it can be accepted before 8321. Opening reworded slightly (shared phrases with 137706). Converted: the campaign moved out of the opening into parts: Vyral's fall (DONE 8321), the Abyssal Council and Aurel (ACCEPT 8331), the medallion and the dukes (DONE 8332), the ring, the lords and Bor's reward (DONE 8352). The opening keeps the situation of the entry points 8320 and 8361 (both offered freely). Entry trigger ACCEPT 8331 also unlocks part 2. All givers are state 3 under mod-individual-progression (Huum and Aurel npc_ipp_ds2, Bor npc_ipp_preaq). Earlier: Fact-check: 'High Council' (not in game text) made 'the lords of the Council' (8341). Aurel confirmed night elf female (display 15372, NightElfFemale; Darnassian phrases in 9248, prayer to Elune in 8829). 8320, 8331, 8361 QuestType 2, not autocomplete, AllowableRaces 0. Lords' and dukes' lines checked (creature_text 15203 to 15208, 15220, 15305). Faction 0. mod-individual-progression fix 2026-10-20: requiredState 3: the module shows the Cenarion Hold leaders of the Ahn'Qiraj era (npc_ipp_preaq, npc_ipp_ds2) only from state 3, and every trigger here comes from them or their quests.",
   "parts": [
    {
     "part": 1,
@@ -1473,6 +1493,7 @@
   "zone": 1377,
   "sort": 6,
   "faction": 0,
+  "requiredState": 3,
   "title": "The Scepter of the Shifting Sands",
   "body": "Baristolth of the Shifting Sands has waited a thousand years for a sign, and now the hive stirs once more around Cenarion Hold. In the old war, he says, the bronze flight bound him to remain as a Watcher, and he made a promise then that he means to keep. Before he can act he must be sure of one thing. War has come again, he believes, and so he asks a seeker to venture to the Caverns of Time in Tanaris and learn whether his master of the bronze has returned.",
   "triggers": [
@@ -1493,7 +1514,7 @@
    "quest 8286 description and reward text",
    "npc_text 7731"
   ],
-  "notes": "Check: part 10 keeps only what 8742 says: the red shard won in Blackwing Lair (8730) and the green with Remulos (8741, Moonglade's chain) dropped. Opening rewritten so it does not repeat 137717's opening (Baristolth's healing is told there). Part 9 drops 'a hundred feet of death and destruction' (tanaris.json 44036 part 4 uses it). The 8519 vision (part 6) is spoken the same way by the core script and mod-individual-progression's replacement (same creature_text groups). Parts 3 and 4 (ACCEPT 8303) share no phrases with 137708 part 2 or 137717 part 2. Converted: the chain moved out of the opening into parts on its turn-ins, and now tells what Tanaris 44028 left to it: the Scepter given as the key and Fandral shattering it (part 6, ACCEPT 8519: the vision event at the tear), the shards divided among the flights (part 7, DONE 8519) and Anachronos's distrust (part 8, DONE 8555, autocomplete). Valstann's death and the dragons' council from the tome (parts 3 and 4, ACCEPT 8303), as Darnassus left them; Larksbane's creature_text 15183 is not used. The Maws fight and the blue shard (part 9, DONE 8729), the reforged scepter (part 10, DONE 8742), the gong (part 11, DONE 8743, autocomplete). 8730 (BWL, Vaelastrasz) and 8733-8741 (Moonglade's Eranikus chain) are not used as triggers. Under mod-individual-progression Baristolth is state 3 and 8286 needs the War Effort quest (aq_gate_quest.sql conditions), so nothing shows earlier; ringing the gong raises a character to state 4. Earlier: Fact-check: reworked so it does not retell tanaris.json 44028 (Anachronos's own history: the forging, Fandral breaking the scepter, the shards divided) or 44007 (Caverns of Time): Caverns and Fandral's betrayal dropped, Anachronos left unnamed beyond 'the bronze dragon'; Narain and the buoy not retold (only the Bay of Storms). Triggers kept: 8286 (QuestType 2), 8729 and 8742 turn-ins (8742 QuestType 0); none used by tanaris.json (which uses 8576, 8584, 8597) or azshara.json. Green shard chain 8733 to 8736 left to Moonglade. Faction 0.",
+  "notes": "Check: part 10 keeps only what 8742 says: the red shard won in Blackwing Lair (8730) and the green with Remulos (8741, Moonglade's chain) dropped. Opening rewritten so it does not repeat 137717's opening (Baristolth's healing is told there). Part 9 drops 'a hundred feet of death and destruction' (tanaris.json 44036 part 4 uses it). The 8519 vision (part 6) is spoken the same way by the core script and mod-individual-progression's replacement (same creature_text groups). Parts 3 and 4 (ACCEPT 8303) share no phrases with 137708 part 2 or 137717 part 2. Converted: the chain moved out of the opening into parts on its turn-ins, and now tells what Tanaris 44028 left to it: the Scepter given as the key and Fandral shattering it (part 6, ACCEPT 8519: the vision event at the tear), the shards divided among the flights (part 7, DONE 8519) and Anachronos's distrust (part 8, DONE 8555, autocomplete). Valstann's death and the dragons' council from the tome (parts 3 and 4, ACCEPT 8303), as Darnassus left them; Larksbane's creature_text 15183 is not used. The Maws fight and the blue shard (part 9, DONE 8729), the reforged scepter (part 10, DONE 8742), the gong (part 11, DONE 8743, autocomplete). 8730 (BWL, Vaelastrasz) and 8733-8741 (Moonglade's Eranikus chain) are not used as triggers. Under mod-individual-progression Baristolth is state 3 and 8286 needs the War Effort quest (aq_gate_quest.sql conditions), so nothing shows earlier; ringing the gong raises a character to state 4. Earlier: Fact-check: reworked so it does not retell tanaris.json 44028 (Anachronos's own history: the forging, Fandral breaking the scepter, the shards divided) or 44007 (Caverns of Time): Caverns and Fandral's betrayal dropped, Anachronos left unnamed beyond 'the bronze dragon'; Narain and the buoy not retold (only the Bay of Storms). Triggers kept: 8286 (QuestType 2), 8729 and 8742 turn-ins (8742 QuestType 0); none used by tanaris.json (which uses 8576, 8584, 8597) or azshara.json. Green shard chain 8733 to 8736 left to Moonglade. Faction 0. mod-individual-progression fix 2026-10-20: requiredState 3: the module shows the Cenarion Hold leaders of the Ahn'Qiraj era (npc_ipp_preaq, npc_ipp_ds2) only from state 3, and every trigger here comes from them or their quests.",
   "parts": [
    {
     "part": 1,

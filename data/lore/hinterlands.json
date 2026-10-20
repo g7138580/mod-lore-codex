@@ -891,6 +891,7 @@
   "zone": 47,
   "sort": 9,
   "faction": 0,
+  "requiredState": 2,
   "title": "Lethon",
   "body": "Lethon was once among the most trusted lieutenants of Ysera, Aspect of the green dragonflight, until the nightmare spreading through the Emerald Dream warped him. His scales have darkened and he wields the power of shadow. Now he haunts Seradane, turning on all who come near the portal. Lethon claims to sense the shadow in the hearts of those who face him, and he tears it from them as dark shades that return to their master and mend his wounds.",
   "triggers": [
@@ -904,7 +905,7 @@
    "creature_text 14888 (I can sense the SHADOW on your hearts)",
    "DB: Lethon 14888 spawned at Seradane (753,-4012), area 356"
   ],
-  "notes": "Unchanged in the parts conversion: nothing to hide: the opening is who he is and what anyone fighting him sees and hears (creature_text 14888, his shades). His only trigger is his KILL; with mod-individual-progression he exists only from state 2 (see 4714), so the entry cannot unlock earlier and needs no tag. Before: In the live game the four Nightmare dragons rotated between portals; this DB spawns Lethon at Seradane only."
+  "notes": "Unchanged in the parts conversion: nothing to hide: the opening is who he is and what anyone fighting him sees and hears (creature_text 14888, his shades). His only trigger is his KILL; with mod-individual-progression he exists only from state 2 (see 4714), so the entry cannot unlock earlier and needs no tag. Before: In the live game the four Nightmare dragons rotated between portals; this DB spawns Lethon at Seradane only. mod-individual-progression fix 2026-10-20: requiredState 2: the module phases the dragons of nightmare into the Emerald Dream portal areas from state 2 (Seradane), as the Duskwood dragons already are."
  },
  {
   "id": 4726,

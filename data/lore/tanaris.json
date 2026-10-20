@@ -951,6 +951,7 @@
     "zone": 440,
     "sort": 10,
     "faction": 0,
+    "requiredState": 8,
     "title": "Andormu",
     "body": "Andormu is a bronze dragon of the Keepers of Time who wears the shape of an elf, at times a grown man and at times a child, both sometimes seen at once. With his sister Nozari he leads the keepers in the Caverns of Time while Nozdormu is away. Small meddlers hardly concern him, such as a greedy wizard nudging the past to better his station. What troubles him now is worse: strange beings seen more and more often across the timeways, trying to alter the course of history itself. The keepers dare not risk themselves, so Andormu welcomes heroes from Azeroth to defend the timeways in their place.",
     "triggers": [
@@ -965,7 +966,7 @@
       "quest 10277",
       "creature_text 19932 groups 1 and 2 (greedy wizard improving his station)"
     ],
-    "notes": "Unchanged in conversion: nothing to hide; no era tag, since mod-individual-progression shows Andormu (20130, npc_ipp_tbc) only from state 8, so his only trigger cannot fire earlier. Dialogue reread (creature_text 19932, 19933): Burning Crusade text, nothing from Cataclysm. Earlier: Fact-check: 'no patience for small meddlers' reworded to his line (19932: not talking about a greedy wizard improving his station). Instance chains not used. Faction 0: 1779. Rest verified."
+    "notes": "Unchanged in conversion: nothing to hide; no era tag, since mod-individual-progression shows Andormu (20130, npc_ipp_tbc) only from state 8, so his only trigger cannot fire earlier. Dialogue reread (creature_text 19932, 19933): Burning Crusade text, nothing from Cataclysm. Earlier: Fact-check: 'no patience for small meddlers' reworded to his line (19932: not talking about a greedy wizard improving his station). Instance chains not used. Faction 0: 1779. Rest verified. mod-individual-progression fix 2026-10-20: requiredState 8: the module shows Andormu (20130, npc_ipp_tbc) only from state 8, and the Caverns of Time keepers are Burning Crusade content."
   },
   {
     "id": 44030,
