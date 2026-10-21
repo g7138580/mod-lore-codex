@@ -1,0 +1,631 @@
+[
+ {
+  "id": 210000,
+  "kind": 0,
+  "zone": 2100,
+  "sort": 0,
+  "faction": 0,
+  "title": "Maraudon",
+  "body": "Maraudon lies beneath the Valley of Spears, the holy ground of the centaur, a tomb their people guard and only the most devout of them may enter. Its caverns run far down into the earth, and they are sick. A rot has spread through the upper caves: the water is poisoned, twisted vines and lashers choke the passages, oozes and larvae crawl through the damp, and satyrs move among them as if the place were theirs. Dryads walk there too, tending the poisoned growth as though it were still a garden. Deeper down the rot thins, and the stone itself is awake: elementals and giants of the earth walk halls of bare rock and crystal. Pale spirits of centaur drift through the caverns, paying the living no heed. Outsiders come all the same. Sisters of the Cenarion Circle in Desolace seek allies for a task they cannot finish alone, a dryad begs help for the family she left inside, an exile of the centaur wants something only these caverns hold, and scholars far away pay for its crystals.",
+  "triggers": [
+   [
+    1,
+    2100
+   ]
+  ],
+  "sources": [
+   "AreaTable 2100 Maraudon (map 349); tools/research/zones/maraudon.txt (2100 the only area); WMOAreaTable rows for root 3233 (Foulspore Cavern, The Wicked Grotto, The Noxious Hollow, Vyletongue Seat, Poison Falls, Earth Song Falls, Zaetar's Grave) all have area 0, so the core reports 2100 throughout",
+   "quest 7067 description (a tomb my people protect, only the most devout are ever allowed to enter); desolace.json 40517 (holy ground of the Maraudine), pointed to",
+   "DB spawns map 349, placed by WMO group from the vmap: Vylestem Vine 178908, Barbed Lasher 12219, Constrictor Vine 12220, Noxious Slime 12221, Creeping Sludge 12222, Vile Larva 12218, Putridus Satyr, Trickster, Shadowstalker 11790-11792, Celebrian Dryad 11793, Sister of Celebras 11794 in Foulspore Cavern, The Wicked Grotto, The Noxious Hollow and Poison Falls; Theradrim Guardian 11784, Primordial Behemoth 12206 (giant), Deep Borer 11789 in the lower unlabeled groups and Earth Song Falls; Spirit of Maraudos 12242 and Spirit of Veng 12243 (CentaurKhan model, faction 35, no gossip)",
+   "creature_text 11793 group 0 (You do not belong in these gardens), base and module",
+   "quests 7064, 7065 (the Circle's sisters seek allies), 7067 (the Pariah, an exile), 7068, 7070, 7028 (crystals); npc_text 6574 (Cavindra: my brother and sisters trapped inside)"
+  ],
+  "notes": "Writer: opening on AREA 2100 only, the only area on map 349. An overview: no boss or figure named (Theradras, Zaetar, Celebras, Vyletongue, Noxxion are left to their entries and to desolace.json 40535), no outcome. The errands are named by who sends them, without names: the Circle's sisters (Marandis, Selendra, desolace.json 40535), the dryad (Cavindra, 40535 and 40517), the exile (the Pariah, 40527), the scholars (7068, 7070, 7028; 210013). The centaur's origin and Vyletongue's corruption are not retold: the rot is described as anyone sees it. The spirits are described as met (friendly faction 35, no gossip). Elder Splitrock 15556 (Lunar Festival) and the Scourge invasion are left out. No requiredState (classic dungeon, state 0). The module (dungeon_maraudon.sql) changes smart_scripts, Theradrim and Maraudos patrols, and the Nameless Prophet (map 1); nothing here depends on it. Checker: verified; overview only, no names, no reveal."
+ },
+ {
+  "id": 210001,
+  "kind": 1,
+  "zone": 2100,
+  "sort": 1,
+  "faction": 0,
+  "title": "Foulspore Cavern",
+  "body": "Foulspore Cavern is a garden gone to rot under the stone. Great twisted vines rise from its floor, barbed lashers and constrictor vines wait for anything that passes, and creeping sludges ooze through the damp. Vile larvae swarm over the ground, and in one corner a spewer spits out still more of them. Dryads walk among the poisoned growth as though they still tended it, and some cry out that intruders do not belong in these gardens and that their bodies shall nourish the lovely creations growing there.",
+  "triggers": [
+   [
+    3,
+    12218
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Among the lashers of the cavern grew one far larger than the rest, Razorlash. It swept its foes with cleaving blows that struck several of them at once, and in the end it was cut down among the vines it had grown with.",
+    "triggers": [
+     [
+      3,
+      12258
+     ]
+    ],
+    "sources": [
+     "creature 12258 single spawn on map 349 at 979,-10, WMO group 17089 (Foulspore Cavern); Lasher model at scale 2.5",
+     "smart_scripts 12258 base (Cleave 40504) and module (Cleave, Puncture, Thrash): only the cleave is told"
+    ]
+   }
+  ],
+  "sources": [
+   "DB spawns map 349: Vile Larva 12218 x56 (Foulspore Cavern 16, The Noxious Hollow 40), no other map; Vylestem Vine 178908 in the Foulspore groups and the Hollow; Barbed Lasher 12219, Constrictor Vine 12220, Creeping Sludge 12222 x15, Celebrian Dryad 11793, Sister of Celebras 11794",
+   "gameobject 178559 Larva Spewer at 938,-379 (group 17081, Foulspore Cavern); smart_scripts 178559 (summons Spewed Larva 13533 every 6.4 s, which crawl off at random); Spore Trees 178561-178569 in The Noxious Hollow (Spore Cloud 21547)",
+   "creature_text 11793 group 0 (You do not belong in these gardens. Your body shall nourish our lovely creations!), said on aggro at 50 percent in base and module",
+   "WMOAreaTable 31472-31475, 31480, 31487-31488 Foulspore Cavern; 31485 The Noxious Hollow"
+  ],
+  "notes": "Writer: the cavern's WMO label, period-correct (the map has no subareas). Opening on KILL 12218 (all 56 spawns on map 349, in this cavern and the Hollow beyond it, so the Hollow is told as lying beyond). The vines are described only as they stand: their healing and the scions are desolace.json 40535 part 2 (DONE 7029/7041), the orange crystal pool likewise. The dryads' cry is 11793's, said in base and module. Noxxion, master of the Hollow, has his own entry (210009). Part 1 KILL 12258 (single spawn): only the cleave, common to base and module. Checker: dropped the closing sentence on the Noxious Hollow: it is the far end of the wing (Noxxion), not what someone arriving at the first larvae (16 in group 17081) sees; the Hollow is told in 210009. Larva 12218: 56 spawns, all map 349, none touched by the module."
+ },
+ {
+  "id": 210002,
+  "kind": 1,
+  "zone": 2100,
+  "sort": 2,
+  "faction": 0,
+  "title": "The Wicked Grotto",
+  "body": "The Wicked Grotto belongs to the satyrs. Putridus satyrs hold its passages, their breath foul with rot, and they strike low and gouge at those who face them, while tricksters slip behind their foes to stab them in the back and shadowstalkers creep about unseen. Poison sprites spit venom from a distance, and corruptors, demons of the rot, lay creeping corruption on all around them. Treants of the deep rot walk with them, stompers who shake the ground and tanglers wreathed in thorns.",
+  "triggers": [
+   [
+    3,
+    11790
+   ],
+   [
+    3,
+    13141
+   ]
+  ],
+  "sources": [
+   "DB spawns map 349: Putridus Satyr 11790 x16, all in The Wicked Grotto groups (17080, 17091, 17095, 17911); Deeprot Stomper 13141 x12 in The Wicked Grotto and Vyletongue Seat (17092); Putridus Trickster 11791, Shadowstalker 11792, Poison Sprite 12216, Corruptor 12217 (type 3, demon), Deeprot Tangler 13142",
+   "smart_scripts base and module: 11790 Putrid Breath, Sinister Strike, Gouge; 11791 Backstab from behind; 11792 Sneak; 12216 Poison Bolt; 12217 Corruption (base; the module does not touch 12217); 13141 War Stomp; 13142 Thorns, Entangling Roots",
+   "WMOAreaTable 31476-31479, 31490, 31492, 31494, 31496, 32592 The Wicked Grotto; 31491 Vyletongue Seat; creature 12236 Lord Vyletongue at 749,-220 in group 17092"
+  ],
+  "notes": "Writer: the grotto's WMO label. Opening on KILL 11790 (all spawns in the grotto's groups) or 13141 (the grotto and the seat at its heart). The lord at its heart is not named: Lord Vyletongue is 210008 and his corruption is desolace.json 40535, so the seat's label (Vyletongue Seat) is not used either. The Spirit of Maraudos walks here too and is told in 210012. No parts. Checker: dropped the closing sentence on the lord at the grotto's heart: the far end (210008), not what someone arriving sees. Triggers verified: 11790 all 16 in Grotto groups, 13141 all 12 in Grotto and Vyletongue Seat groups."
+ },
+ {
+  "id": 210003,
+  "kind": 1,
+  "zone": 2100,
+  "sort": 3,
+  "faction": 0,
+  "title": "Poison Falls",
+  "body": "Poison Falls is where the fouled water of Maraudon comes down. It pours over the rock into pools crowded with noxious slimes, which loose clouds of poison on any who come near. Constrictor vines and barbed lashers grow thick along the water, and the lashers fling volleys of thorns. Sisters of Celebras, dryads of the caverns, hurl their spears from the banks, and cavern lurkers and shamblers of the deep knock intruders from their feet, the shamblers mending their own wounds as they fight. Satyrs and corruptors have come down here too, and the rot is as thick as anywhere in the caverns.",
+  "triggers": [
+   [
+    3,
+    12221
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Seldom found here is Meshlok the Harvester, a hulking bog beast who wanders the falls. Where he appeared he struck heavy blows and stamped the ground, stunning and hurling back those around him, until he was brought down beside the water.",
+    "triggers": [
+     [
+      3,
+      12237
+     ]
+    ],
+    "sources": [
+     "creature 12237 single spawn on map 349 at 770,-74 (group 17094, Poison Falls), MovementType 2; BogBeast model",
+     "smart_scripts 12237 (despawns on AI init 85 percent of the time; flags 512 is WHILE_CHARMED, which does not stop the event; Strike, War Stomp); not in the module"
+    ]
+   }
+  ],
+  "sources": [
+   "DB spawns map 349: Noxious Slime 12221 x27, all in Poison Falls (group 17094); Constrictor Vine 12220 x15, Barbed Lasher 12219, Sister of Celebras 11794 x8, Cavern Lurker 12223, Cavern Shambler 12224, Putridus Trickster 11791, Corruptor 12217 there too",
+   "smart_scripts 12221 base (Noxious Cloud in combat) and module (Noxious Cloud in melee range, and on death)",
+   "smart_scripts 12219 Thorn Volley, 11794 Throw and Strike, 12223 Knockdown, 12224 Wild Regeneration and Knockdown, base and module",
+   "WMOAreaTable 31493 Poison Falls"
+  ],
+  "notes": "Writer: the falls' WMO label. Opening on KILL 12221 (all 27 spawns in group 17094). The slimes' cloud is told as base and module share it (in combat); the module's extra cloud on death is not claimed. Part 1 KILL 12237, a rare (85 percent despawn at spawn, base only): told as seldom found. Checker: verified. Meshlok: smart_scripts 12237 id 0 despawns on AI init 85 percent of the time (event_flags 512 is WHILE_CHARMED, not a block), the module leaves 12237 alone, so seldom found holds; War Stomp 15593 knocks back and stuns."
+ },
+ {
+  "id": 210004,
+  "kind": 1,
+  "zone": 2100,
+  "sort": 4,
+  "faction": 0,
+  "title": "The Deep Caverns",
+  "body": "Below the rotting gardens Maraudon changes. The rot thins, the passages turn to bare rock and crystal, and what lives here belongs to the earth. Deep borers tunnel through the stone in swarms, and subterranean diemetradons stun intruders with bursts of piercing sound. Theradrim guardians, elementals of the deep rock, knock their foes down, and when one falls it breaks apart into shardlings that fight on. Primordial behemoths, giants of stone, hurl boulders and trample those who come close. No satyr walks here and no poisoned vine grows: the caverns are simply old, and their keepers want no visitors.",
+  "triggers": [
+   [
+    3,
+    11789
+   ],
+   [
+    3,
+    13323
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Greatest of the giants in these caverns was Landslide. He struck his foes flying and trampled those beneath him, and as the fight wore on he shook the rock until those around him reeled, while shardlings of stone came pouring out of it to fight for him. When the giant fell at last, the shardlings he had called vanished with him.",
+    "triggers": [
+     [
+      3,
+      12203
+     ]
+    ],
+    "sources": [
+     "creature 12203 single spawn on map 349 at 357,-185 (group 17070); MountainGiant model, type 5",
+     "smart_scripts 12203 base (Landslide every 25-35 s, Knock Away, Trample; on death despawn 11783 within 100 yards) and module (Landslide below 50 percent every 60 s, Knock Away, Trample, the same despawn)",
+     "Spell.dbc 21808 Landslide (summons Theradrim Shardlings every 2 seconds and stuns enemies in an area)"
+    ]
+   }
+  ],
+  "sources": [
+   "DB spawns map 349: Deep Borer 11789 x98 (family 42, worm), Subterranean Diemetradon 13323 x31, Theradrim Guardian 11784, all in the unlabeled WMO groups 17055-17070, no other map; Primordial Behemoth 12206 (type 5) in 17066, 17070 and Zaetar's Grave",
+   "smart_scripts 11784 (Knockdown; on death Summon Theradrim Shardling 21057, three shardlings), 13323 Sonic Burst 8281, 12206 Boulder and Trample, base and module",
+   "positions: Poison Falls and Foulspore z -32 to -80; these groups z -100 to -175"
+  ],
+  "notes": "Writer: no client label covers these groups (17055-17070 are unnamed in WMOAreaTable), so the title is descriptive. Opening on KILL 11789 or 13323 (every spawn in these groups, map 349 only). The module adds Theradrim patrols with shardling escorts and removes six single guardians: the text says only that a guardian breaks into shardlings when it falls, true of both. 'No satyr walks here and no poisoned vine grows' is the absence of Putridus, Deeprot, lasher, vine and slime spawns in these groups. Tinkerer Gizlock (group 17061) has his own entry (210010). Part 1 KILL 12203: the fight common to base and module. Checker: verified. The module adds Theradrim patrols with shardling escorts (11783) and removes six single 11784; 11784 keeps its base death summon (not in the module list), so the shardling line holds in both. 11789 and 13323 untouched by the module."
+ },
+ {
+  "id": 210005,
+  "kind": 1,
+  "zone": 2100,
+  "sort": 5,
+  "faction": 0,
+  "title": "Earth Song Falls",
+  "body": "Deep in Maraudon the caverns open wide. Water falls from the heights into broad pools, and the rot of the upper caves has not reached here: green grows over the stone, frogs hop along the water's edge and fish move in the pools. Stolid snapjaws, turtles with spiked shells, crawl along the shores, and Thessala hydras rise from the water to lash at intruders with jets of water and poisoned bites. Whatever sickness fills the caves above, here the caverns are alive.",
+  "triggers": [
+   [
+    3,
+    13599
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The deep water beneath the falls hid Rotgrip, a crocolisk of enormous size who swam his round beneath the cliffs. He tore at his foes with bites that left them bleeding and drained their life to mend his own, but he was dragged down at last in his own water.",
+    "triggers": [
+     [
+      3,
+      13596
+     ]
+    ],
+    "sources": [
+     "creature 13596 single spawn on map 349 at 42,-66, z -200 (in the water of group 17065), MovementType 2; Crocodile model at scale 3.0",
+     "smart_scripts 13596 base (Puncture, Fatal Bite below 20 percent) and module (Puncture, Fatal Bite in melee)",
+     "Spell.dbc 16495 Fatal Bite (drains health, heals the caster)"
+    ]
+   }
+  ],
+  "sources": [
+   "DB spawns map 349: Stolid Snapjaw 13599 x26 (family 21, turtle; Spikes out of combat) in groups 17052 Earth Song Falls, 17072 beside it and 17065 Zaetar's Grave, no other map; Thessala Hydra 12207 (Deadly Poison, Aqua Jet), Frog 13321, School of Fish 6145; Primordial Behemoth 12206 x10 in 17065",
+   "WMOAreaTable 31451 Earth Song Falls, 31464 Zaetar's Grave",
+   "warcraft.wiki.gg/wiki/Maraudon (Zaetar's Grave spared from the corruption, a green area; Rotgrip below the waterfall)",
+   "quest 7066 description (this place rings of hope)"
+  ],
+  "notes": "Writer: the falls' WMO label. Opening on KILL 13599 (all spawns in the falls and the valley beyond). The valley's own label, Zaetar's Grave, is not used: it names a death the codex tells on ACCEPT 7064/7065 (desolace.json 40535 part 1); the valley is described only as seen. Princess Theradras walks it (210006). Part 1 KILL 13596: Puncture and Fatal Bite are cast in both scripts. Checker: opening: not the bottom of Maraudon (Zaetar's Grave and the deep caverns lie lower, z to -209), and the sentence on the valley past the falls (Zaetar's Grave, Theradras's place) dropped as the far end. The green is supported by warcraft.wiki.gg (Earth Song Falls the lush wing, hydras and crocolisks). Part 1: Puncture 21911 procs 15976, physical damage over time (bleeding), not armor; the valley reference removed since the opening no longer names it; Rotgrip lies below the waterfall (wiki) at z -200."
+ },
+ {
+  "id": 210006,
+  "kind": 2,
+  "zone": 2100,
+  "sort": 1,
+  "faction": 0,
+  "title": "Princess Theradras",
+  "body": "Princess Theradras walks the green valley deep in Maraudon, an enormous figure of living rock, and great giants of stone keep the valley about her. She is an elemental of the earth and a power in these caverns, and she says nothing at all to those who come before her. Of what she is and why she is here she gives no account; that is told elsewhere, in Desolace. Whoever reaches her valley meets her only as a foe.",
+  "triggers": [
+   [
+    3,
+    12201
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Theradras fought with the weight of the earth. She hurled boulders at her foes, shook the ground so that it flung away all around her, and roared at one foe until it stood paralyzed with terror while the rest fled from her in fear. In the end the princess fell in her valley. Then a spirit rose in the valley, a towering keeper of the grove, and he cried out that he was free, free from his bonds at last.",
+    "triggers": [
+     [
+      3,
+      12201
+     ]
+    ],
+    "sources": [
+     "smart_scripts 12201 (Thrash on reset; Boulder 21832 on a target within 30 yards; Dust Field 21909; Repulsive Gaze 21869; on death summon 12238 Zaetar's Spirit); not changed by the module",
+     "Spell.dbc 21909 Dust Field (shakes the ground, damages and knocks back nearby enemies), 21869 Repulsive Gaze (paralyzes one enemy with terror, nearby enemies flee in fear)",
+     "creature_text 12238 group 0 (Free! Free from my bonds at last!, yell on AI init); creature_template_model 12238 KeeperOfTheGrove at scale 3.0"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 12201 single spawn on map 349 at 28,83 in WMO group 17065 (Zaetar's Grave), MovementType 2; creature_template_model 12201 display 12292 (Tharazun model at scale 2.0), type 4 elemental; no creature_text",
+   "DB spawns: Primordial Behemoth 12206 x10 in the same group",
+   "desolace.json 40535 part 1 (her nature and the centaur's origin, ACCEPT 7064/7065) and parts 4-5 (her death on DONE 7064/7065), pointed to"
+  ],
+  "notes": "Writer: first entry for Theradras, owned here as agreed (her entry and fight; Desolace keeps the telling of her death to Selendra and Marandis). Opening and part on KILL 12201 (single spawn, map 349 only, no entry swap). The opening tells only what a foe in her valley sees; her kinship to the Old Gods and the centaur's origin are pointed to in one phrase, not retold. The part tells the fight and what happens in the valley: the spirit's summon and yell (12238 is summoned only by her death). The spirit is described, not named, in the part; his entry is 210011. Checker: opening no longer says she has to do with the centaur (40535 part 1's reveal, not shown by the kill); points to Desolace without content; not the very bottom (the lake lies lower). Part 1: Boulder targets a random foe (target type 5), not those standing back; 12238 is summoned at a fixed point (28,62) in the valley while she patrols, so not where she stood. Spirit kept unnamed; yell 12238 on AI init, only after her death."
+ },
+ {
+  "id": 210007,
+  "kind": 2,
+  "zone": 2100,
+  "sort": 2,
+  "faction": 0,
+  "title": "Celebras",
+  "body": "Celebras the Cursed keeps to a hollow beside the poisoned falls, deep in Maraudon. He is a keeper of the grove, antlered and stag-bodied like the keepers of the Cenarion Circle, and dryads and twisted forces of nature gather about him. Whatever he was before, the corruption of the caverns has him now, and he turns on any who come near him. Those who face him here find only the curse.",
+  "triggers": [
+   [
+    3,
+    12225
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Celebras fought with the powers of his kind turned foul. He hurled bolts of nature's wrath, wrapped his foes in a storm of twisted tranquility that slowed them and wore them down, bound them in roots and called up corrupted forces of nature to fight for him. When he fell, the curse fell with him: there in his hollow stood Celebras again, calm now, the corruption gone from him.",
+    "triggers": [
+     [
+      3,
+      12225
+     ]
+    ],
+    "sources": [
+     "smart_scripts 12225 (Wrath 21807, Twisted Tranquility 21793, Corrupt Forces of Nature 21968, Entangling Roots 12747; on death summon 13716 Celebras the Redeemed at his place); not changed by the module",
+     "Spell.dbc 21793 (nature damage over time, slows movement and attacks), 21968 (summons Forces of Nature)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Freed, Celebras speaks of what befell him. Long ago, he says, he and his dryad sisters came into these caves to free the tortured spirit of his uncle, Zaetar, but the corruption already spreading through the caverns overcame them, and they too fell, to wander the passages with toxins poisoning their minds. His spirit may be at rest now, but he knows he failed in his mission, and that sorrow he must bear.",
+    "triggers": [
+     [
+      2,
+      13716
+     ]
+    ],
+    "sources": [
+     "gossip_menu 5349 (npc_text 6354: At last, I am free of the corruption), option 0 to menu 5347 (npc_text 6380); no conditions"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Celebras is a son of Remulos. His father, he says, was strong and beautiful, his uncle Zaetar cunning and slight of build, and though the two were respected equally, Zaetar always felt he could never match his brother's glory. After Celebras and his sisters were born, Zaetar, blinded by jealousy, set out to outdo Remulos, and when he fell for a princess of elemental earth, Remulos knew the union was cursed and tried to stop him. Zaetar would not listen; he was the creator of his own end.",
+    "triggers": [
+     [
+      2,
+      13716
+     ]
+    ],
+    "sources": [
+     "gossip_menu 5349 options 1-2 to menus 5354 (npc_text 6181) and 5148 (npc_text 6180); no conditions",
+     "desolace.json 40535 part 1 (the union and the centaur's origin), pointed to"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Celebras's scepter was once his hope, and it gave him power over these caverns; with it he had meant to bring peace to his uncle's spirit. Now that its two pieces have come back to him, he needs help to make them one again: whoever aids him must follow him and do as he instructs while he channels the power to join the rod to the diamond.",
+    "triggers": [
+     [
+      4,
+      7046
+     ]
+    ],
+    "sources": [
+     "quest 7046 description and log (assist Celebras the Redeemed while he creates the Scepter of Celebras); QuestType 2, flags 2; starter and ender 13716; PrevQuestID 7044"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "Celebras led his helpers to the place of the ritual, thanking them as he went: for so long he had drifted in his cursed form, and they had freed him. He set a tome before them, bade them read it and speak its words aloud, and began to channel, focusing on the stone. Together, he said, the two parts would become one again, and he spoke words in an old tongue. The scepter made, he gave it to them with a charge: its power must be used for good. Further on, he hoped, lay his uncle's remains, and much danger.",
+    "triggers": [
+     [
+      5,
+      7046
+     ]
+    ],
+    "sources": [
+     "smart_scripts 13716 and action lists 1371600-1371601 (creature_text 13716 groups 0-6: Follow me; For so long I have drifted in my cursed form, you have freed me; Please do as I instruct; Read this tome I have placed before you and speak the words aloud; begins to channel his energy, focusing on the stone; Together, the two parts shall become one, once again; Shal myrinan ishnu daldorah; then quest credit); gameobject 178965 Incantation of Celebras summoned before him",
+     "quest 7046 reward text (the power allotted to you now must be used for good; with hope, you will find the remains of my uncle; much danger awaits you)"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 12225 single spawn on map 349 at 726,78 (WMO group 17071, unlabeled, beside Corrupt Force of Nature 13743 x3, Celebrian Dryad 11793 x2, Sister of Celebras 11794 x2); display 12350 KeeperOfTheGrove at scale 1.3",
+   "creature 13716 Celebras the Redeemed: no spawn, summoned only by 12225's death (faction 35, gossip 5349, questgiver of 7046, ender of 7044 and 7046)",
+   "desolace.json 40535 opening (Cavindra pleads for her brother Celebras, cursed) and part 3 (DONE 7044: the scepter pieces back and his waking), pointed to, not retold",
+   "Poison Falls group 17094 (z -56 to -80) lies beside his grove (17071, x 700-800, z -87)"
+  ],
+  "notes": "Writer: first entry for Celebras, owned here as agreed: met inside, redeemed, and the scepter's making (7046). Desolace keeps his cursing (40535 opening) and his waking and the pieces' recovery on DONE 7044 (40535 part 3), which are not retold; 7044 is not used. Title 'Celebras' (his name in both forms), not 'the Redeemed', so it gives nothing away. Opening on KILL 12225 (single spawn, map 349): what a foe in his grove sees; his sister is a phrase pointing at 40535. Part 1 KILL 12225: the fight and the summon of 13716 at his body, which every killer sees. Parts 2-3 TALK 13716 (gossip with three options, no conditions; 13716 exists only after the kill): his own account; part 3 points to the union, which Desolace tells, and adds only his own view (jealousy, Remulos's warning); kept as two parts for length. Parts 4-5 on ACCEPT and DONE 7046 (QuestType 2, flags 2, not auto-complete; free). Line 7 (My scepter will once again become whole) is never called by the action lists and is not used. The scepter's old use (the portal, needed before 3.0.8) is not told. Checker: opening: dropped his sister pleading in Desolace (40535's, not shown by the kill); quiet grove made a hollow beside the falls (group 17071, unlabeled, next to Poison Falls). Part 1: 13716 is summoned at his spawn point, so not where he lay. Parts 2-3 both on TALK 13716 (hello shows menu 5349; options 0-2 lead to npc_text 6380, 6181, 6180, no conditions): they always unlock together, but merged they run about 160 words, over the 100-word part limit, so kept as two. Part 3 is his own view from 6180/6181 (jealousy, the cursed union, Remulos's warning) and leaves out the centaur's birth and Zaetar's murder, which 40535 part 1 tells."
+ },
+ {
+  "id": 210008,
+  "kind": 2,
+  "zone": 2100,
+  "sort": 3,
+  "faction": 0,
+  "title": "Lord Vyletongue",
+  "body": "Lord Vyletongue is a satyr, master of the Putridus who hold the Wicked Grotto, and he keeps his seat at its heart with tricksters, shadowstalkers and deeprot treants close about him. He carries a bow as readily as a blade, and he does not wait for intruders to come within his reach before he strikes at them. He is the greatest of the satyrs in these caverns, and he treats the centaur's holy place as his own.",
+  "triggers": [
+   [
+    3,
+    12236
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Vyletongue fought from a distance whenever he could, loosing arrows at single foes and volleys that struck several at once. When they closed on him he threw down a smoke bomb that left those around him stunned and blinked away out of their reach. For all his tricks, the satyr lord fell at last in his own seat.",
+    "triggers": [
+     [
+      3,
+      12236
+     ]
+    ],
+    "sources": [
+     "smart_scripts 12236 base (Dual Wield on reset, Shoot, Multi-Shot, Blink, Smoke Bomb) and module (the same without Dual Wield, with ranged movement)",
+     "Spell.dbc 7964 Smoke Bomb (stuns nearby enemies), 21655 Blink (teleports 20 yards forward)"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 12236 single spawn on map 349 at 749,-220 in WMO group 17092 (Vyletongue Seat, within The Wicked Grotto); display 12334 Satyr model at scale 2.0; type 3 (demon)",
+   "DB spawns in group 17092: Putridus Trickster 11791 x4, Shadowstalker 11792 x4, Deeprot Stomper 13141 x4, Deeprot Tangler 13142 x6",
+   "desolace.json 40535 opening (Vyletongue poisoned the caverns, made Noxxion, stole a piece of the scepter), pointed to in one phrase"
+  ],
+  "notes": "Writer: first entry for Vyletongue. Opening on KILL 12236 (single spawn, map 349). His corruption is desolace.json 40535's (ACCEPT 7044 and the vine quests): one phrase only. 'A bow as readily as a blade' rests on Shoot and Multi-Shot in both scripts and his melee; the base Dual Wield is not claimed. The Celebrian Diamond he carries (7044, Desolace's) is not told. Part 1 KILL 12236: spells common to base and module. Checker: opening: dropped the line that Desolace lays the corruption at his feet (40535's, not shown by the kill); added only what a foe sees (a lord, scale 2.0, his seat at the grotto's heart)."
+ },
+ {
+  "id": 210009,
+  "kind": 2,
+  "zone": 2100,
+  "sort": 4,
+  "faction": 0,
+  "title": "Noxxion",
+  "body": "Noxxion is a great shape of poisoned water given life, and he waits at the far end of the Noxious Hollow, where the spore trees and the larvae are thickest. He looks like the sickness of the caverns given a body, and the Hollow around him is the foulest place in Maraudon. Whoever comes to the end of it finds him there, ready to drown them in his poison.",
+  "triggers": [
+   [
+    3,
+    13282
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Noxxion lashed his foes with volleys of poison and struck them off their feet with heavy blows. Beaten down to half his strength, he broke apart: five spawns of his substance poured out to fight, and Noxxion himself could not be reached until they were gone, when he drew himself together and fought on. In the end he fell in his Hollow.",
+    "triggers": [
+     [
+      3,
+      13282
+     ]
+    ],
+    "sources": [
+     "smart_scripts 13282 (Toxic Volley 21687, Uppercut 10966; at 50 percent, once, Summon Noxxion's Spawns 21707 (five) and 21708, unit flag 33554432 not selectable; when five summons have despawned, remove 21708 and the flag; on death set instance data); not in the module"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 13282 single spawn on map 349 at 1130,-191 in WMO group 17086 (The Noxious Hollow); display 11172 WaterElemental at scale 2.0; type 4",
+   "DB spawns in 17086: Vile Larva 12218 x40, Spore Trees 178561-178569, Corruption Spewer 178570 beside him",
+   "desolace.json 40535 opening (Vyletongue made Noxxion as a living symbol of his corruption), pointed to"
+  ],
+  "notes": "Writer: first entry for Noxxion. Opening on KILL 13282 (single spawn, map 349). That Vyletongue made him is Desolace's (40535): told only as what is said there, in a phrase. 'Poisoned water' rests on the water elemental model and the Hollow. What his death does to the Corruption Spewer (instance data, GO state) is not told: the visible effect is not verified. The Celebrian Rod he carries (7044) is Desolace's. Part 1 KILL 13282: the split as the base script runs it (the module does not touch 13282). Checker: opening: that Vyletongue made him as a symbol of corruption is 40535's and not shown by the kill; reworded as a foe's impression. Split verified: 21707 summons five spawns at 50 percent once, unit flag 33554432 (not selectable) until five summons despawn; the module does not touch 13282."
+ },
+ {
+  "id": 210010,
+  "kind": 2,
+  "zone": 2100,
+  "sort": 5,
+  "faction": 0,
+  "title": "Tinkerer Gizlock",
+  "body": "Tinkerer Gizlock is a goblin, and what a goblin is doing in the deep caverns of the centaur's holy place, far below the rot and among the stone guardians and borers of the depths, he does not say. He has made a corner of the caverns his own, with his guns and gadgets about him, and he wants no one to know he is there. Anyone who stumbles on him has found something he meant to keep hidden.",
+  "triggers": [
+   [
+    3,
+    13601
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Gizlock met intruders shrieking that it was all his, that Gizlock was the ruler of this domain and they would never reveal his presence. He shot at them, lobbed bombs among them, set off flash bombs that sent any beasts with them running, and turned a goblin dragon gun on them that sprayed fire in a cone before him, when it did not blow up in his face. The ruler of his little domain fell all the same.",
+    "triggers": [
+     [
+      3,
+      13601
+     ]
+    ],
+    "sources": [
+     "creature_text 13601 group 0 (Mine! Mine! Mine! Gizlock is the ruler of this domain! You shall never reveal my presence!, yell on aggro), base and module",
+     "smart_scripts 13601 base and module (Shoot, Bomb, Flash Bomb, Goblin Dragon Gun)",
+     "Spell.dbc 29419 Flash Bomb (beasts within 5 yards run away), 21833 Goblin Dragon Gun (fire in a cone, unless it explodes)"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 13601 single spawn on map 349 at 135,-314 in WMO group 17061 (unlabeled), beside Theradrim Guardian 11784 and Deep Borer 11789; display 7125 GoblinMale",
+   "warcraft.wiki.gg/wiki/Maraudon (Tinkerer Gizlock, a goblin)"
+  ],
+  "notes": "Writer: first entry for Gizlock. Opening on KILL 13601 (single spawn, map 349): no quest or gossip names him, so the opening is what his place and his yell show; why he is there is left open. 'Wants no one to know he is there' rests on his yell (You shall never reveal my presence), heard on aggro by everyone credited with the kill: opening and part arrive together. 'When it did not blow up in his face' comes from the Dragon Gun's own tooltip and is worded as a possibility. Checker: verified (GoblinMale display 7125; yell on aggro in base and module; Dragon Gun tooltip: unless it explodes)."
+ },
+ {
+  "id": 210011,
+  "kind": 2,
+  "zone": 2100,
+  "sort": 6,
+  "faction": 0,
+  "title": "Zaetar's Spirit",
+  "body": "When Princess Theradras fell, the spirit of Zaetar was freed, a towering keeper of the grove who stands now in the green valley where she walked. He does not mean to leave it. The centaur are his misbegotten sons and daughters, he says, and they have need of their father. This place rings with hope and with all that his father Cenarius preaches, and it sprang from him; he will not take that from them, not even for their crimes against him. He asks only one thing, to ease his brother's mind: that the first seed to fall from the life his remains nourished be carried to Remulos in Moonglade, with word that his spirit remains here and lives on.",
+  "triggers": [
+   [
+    4,
+    7066
+   ]
+  ],
+  "sources": [
+   "quest 7066 description and log (the misbegotten centaur, my sons and daughters, have need of their father; this place rings of hope and all that my father Cenarius preaches, it sprung from me; not even for their crimes against me; ease my brother's mind; the first seed that fell from the life my remains nourished; seek out Remulos in Moonglade); QuestType 2, flags 0; starter 12238 only",
+   "creature 12238 no spawn: summoned only by 12201's death (smart_scripts 12201 id 4); creature_text 12238 (Free! Free from my bonds at last!); display 12369 KeeperOfTheGrove at scale 3.0; gossip 5304 (npc_text 6336: I greet you)",
+   "moonglade.json 49305 part 1 (DONE 7066: the seed's delivery and Remulos's answer), not retold"
+  ],
+  "notes": "Writer: first entry for Zaetar's Spirit, owned here as met inside (ACCEPT 7066; Moonglade keeps the delivery on DONE 7066, reserved). Opening on ACCEPT 7066 only: 12238 exists only after Theradras's death, so every reader stands where she fell; 'When Princess Theradras fell' states only that. TALK 12238 not used: its gossip is a bare greeting. The centaur's origin and his death are touched only through his own words in 7066 (misbegotten sons and daughters, their crimes against him); desolace.json 40535 part 1 tells the rest. No parts. Checker: verified: everything rests on the 7066 description and log, shown at ACCEPT; Moonglade 49305 part 1 keeps the delivery and Remulos's answer, untouched."
+ },
+ {
+  "id": 210012,
+  "kind": 3,
+  "zone": 2100,
+  "sort": 1,
+  "faction": 0,
+  "title": "The Spirits of the Khans",
+  "body": "Ghosts walk the caverns of Maraudon. They are centaur, great khans by their look, and each bears the title of a khan of old, numbered as though in a line of rulers long gone. They drift through the rot and the dark, take no notice of the living who pass them and harm no one, and most who see them leave them be. Yet the dead of Maraudon are not beyond reach: there are those who know how to call them back into the world, and what is called back does not come in peace.",
+  "triggers": [
+   [
+    3,
+    13739
+   ],
+   [
+    3,
+    13738
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The spirit of Maraudos, the Fourth Khan, paces the Wicked Grotto. Called into the world by one who knew the way, he took on a body again as Maraudos and turned on those who had summoned him. He fought as the khan he had been, until he fell a second time.",
+    "triggers": [
+     [
+      3,
+      13739
+     ]
+    ],
+    "sources": [
+     "smart_scripts 12242 id 0 (on spell hit 21960 Manifest Spirit, update template to 13739 Maraudos, The Fourth Kahn, faction 134)",
+     "Spell.dbc 21960 Manifest Spirit (forces the spirits of the first centaur khans to manifest in the physical world); item 17757 Amulet of Spirits casts it, a quest drop for 7067 only"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The spirit of Veng, the Fifth Khan, roams Foulspore Cavern. Called into the world by one who knew the way, he took on a body again as Veng and turned on those who had summoned him. He fought as the khan he had been, until he fell a second time.",
+    "triggers": [
+     [
+      3,
+      13738
+     ]
+    ],
+    "sources": [
+     "smart_scripts 12243 id 0 (on spell hit 21960, update template to 13738 Veng, The Fifth Kahn, faction 134)"
+    ]
+   }
+  ],
+  "sources": [
+   "creatures 12242 Spirit of Maraudos (The Fourth Kahn) at 650,-360 in The Wicked Grotto (group 17091; the module moves him to a patrol from 790,-500) and 12243 Spirit of Veng (The Fifth Kahn) at 1055,-424 in Foulspore Cavern (group 17073), both faction 35, CentaurKhan model, no gossip",
+   "creature_template 13738 Veng and 13739 Maraudos (faction 134, no AIName); no spawn of their own, reached only by the template update",
+   "desolace.json 40527 parts 1-2 (the Pariah, the five khans and their gems, ACCEPT and DONE 7067), pointed to"
+  ],
+  "notes": "Writer: the khans as the fight shows, as agreed; the Pariah's story stays with desolace.json 40527 (7067 reserved). Only Maraudos and Veng stand in the instance: the spirits of Gelk, Kolk and Magra (12239-12241) stand on map 1 in the outer caves, so KILL 13740-13742 are not used. Opening and parts on KILL 13739 and 13738: each kill shows the spirit manifest and the khan fall; the amulet and the gems are not named (the gems are loot, the instructions 40527's). 'There are those who know a way' only hints that someone does it, which the kill shows. The fight is told without spells: 13738 and 13739 have no AIName. check_staged may warn that 13738 and 13739 have no spawn: they exist only through the template update on map 349. The module re-creates the Maraudos spawn (guid 54684) on a patrol (path 546840): all 61 points lie in The Wicked Grotto and Vyletongue Seat groups (17079, 17080, 17091, 17092, 17095, 17911); Veng's base path 539700 lies wholly in Foulspore Cavern groups, so the places named hold in both. The codex reads killed->GetEntry() (LoreCodex.cpp 305), which after the template update is 13738 or 13739. The database spells the subname Kahn; the text says Khan. Checker: opening no longer names both spirits and their places: either kill shows only one, so each spirit and its place moved to its own part; the opening holds at either kill and names no Pariah, amulet, gems or Desolace (the tale-told-in-Desolace pointer dropped). Part 2 no longer leans on part 1 (in the same way, too). 13738/13739 have no spawn: they are 12243/12242 after SMART_ACTION_UPDATE_TEMPLATE on spell hit 21960 (Manifest Spirit, cast by item 17757, the 7067 quest drop); faction 134 is hostile to players; the core credits killed->GetEntry(). check_staged warns on no fixed spawn: expected."
+ },
+ {
+  "id": 210013,
+  "kind": 3,
+  "zone": 2100,
+  "sort": 2,
+  "faction": 0,
+  "title": "The Crystals of Maraudon",
+  "body": "The crystals of Maraudon are wanted outside its caverns. More than one seeker who will not go in asks travelers to bring the stones out, and each says much the same thing in their own way: there is power in the crystals of Maraudon, power worth studying, and whoever carries some of it back will be paid for the trouble. What each of them means to make of that power, they keep largely to themselves. The asking is plain enough, and so is the promise of a reward.",
+  "triggers": [
+   [
+    4,
+    7068
+   ],
+   [
+    4,
+    7070
+   ],
+   [
+    4,
+    7028
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In Orgrimmar the troll mage Uthel'nay has heard that strong magics lie in the centaur holy place, and the tribes cannot stop him taking what he needs. He wants the purple crystals of the rock creatures made of shadowshard that dwell there, and he warns that the place is dangerous enough to bring friends.",
+    "triggers": [
+     [
+      4,
+      7068
+     ]
+    ],
+    "sources": [
+     "quest 7068 description (strong magics in the centaur holy place; the tribes protect it with their lives but cannot stop us; rock creatures made of shadowshard, the purple crystals; bring some friends); AllowableRaces 690; Uthel'nay 7311 in Orgrimmar"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The shadowshards suited Uthel'nay perfectly. Rituals of power and spells of great strength, he says, may come of such crystals, and he paid with a trinket of his making before turning back to his studies.",
+    "triggers": [
+     [
+      5,
+      7068
+     ]
+    ],
+    "sources": [
+     "quest 7068 completion text (rituals of power, spells of great strength) and reward text (perfect for me magics; take one of these trinkets; much studying)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In Theramore, Archmage Tervosh has begun testing crystals for their arcane properties, and Lady Proudmoore has given him leave to ask travelers bound for Desolace to visit Maraudon. Within the ruined temple, he says, stand great elementals made of purplish stones, which he has named shadowshards, and he offers to fashion a trinket from any that are brought to him.",
+    "triggers": [
+     [
+      4,
+      7070
+     ]
+    ],
+    "sources": [
+     "quest 7070 description (testing crystals; Lady Proudmoore has given me leave; great elementals composed of purplish stones I've named shadowshards); AllowableRaces 1101; Tervosh 4967 in Theramore"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The shadowshards were just what Tervosh wanted. Others had already come back from Maraudon with samples, and from those he had fashioned his trinkets; he gave one in thanks and kept the new stones to study.",
+    "triggers": [
+     [
+      5,
+      7070
+     ]
+    ],
+    "sources": [
+     "quest 7070 reward text (other adventurers returned from there also; fashioned these; more samples to study)"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "Willow of the Twilight's Hammer, at Kormek's Hut, names the place where the carvings lie: the crystal caverns of Terramok, deep within Maraudon to the west, an ancient place with much history, where relics of the old gods lie hidden behind the giant doors. Whoever braves the twisted evils of the caverns is to collect the theradric crystal carvings found there.",
+    "triggers": [
+     [
+      4,
+      7028
+     ]
+    ],
+    "sources": [
+     "quest 7028 description (the crystal caverns of Terramok lie to the west, deep within Maraudon; an ancient place with much history; relics of the old gods hidden behind the giant doors; theradric crystal carvings); QuestType 2, flags 8",
+     "desolace.json 40507 (Willow at Kormek's Hut pays for crystal carvings, relics of the old gods whose powers have been too long at rest), pointed to"
+    ]
+   },
+   {
+    "part": 6,
+    "body": "Willow laughed to see the carvings come back. Questions were not welcome, but the muttering that followed was plain enough: so easy to convince, and willing to do anything for the right price.",
+    "triggers": [
+     [
+      5,
+      7028
+     ]
+    ],
+    "sources": [
+     "quest 7028 completion text (Don't ask questions!) and reward text (Ha ha ha! I knew you'd be back; Willow mutters: So easy to convince; Will do anything for the right price)"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 7068 (Horde), 7070 (Alliance), 7028 (both): all QuestSortID 2100, QuestType 2, flags 8, not auto-complete; no other file uses them",
+   "creature_loot_template: Shadowshard Fragment 17756 from Shadowshard Rumbler 11777 and Smasher 11778 (map 1, the outer caves only); Theradric Crystal Carving 17684 from nearly every creature in the instance and the outer caves (quest drop)"
+  ],
+  "notes": "Writer: the three crystal errands in one story, each part on the quest that shows it. Opening on ACCEPT 7068, 7070 or 7028 (all accepted far from the instance): it holds what the three texts share (power in the stone of the centaur's holy place, danger, outsiders who pay and study) and describes nothing inside. The shadowshard elementals stand in the outer caves on map 1 (Desolace), so nothing about their place is claimed beyond the quest texts. Willow is desolace.json 40507's: the ACCEPT 7028 part points to that and adds only what 7028 gives beyond it (Terramok, the giant doors); the muttering on DONE 7028 is new. Willow's model is female; no pronoun is used, as in 40507. Lady Proudmoore is named as Tervosh names her. Checker: opening rewritten: it said Far from Desolace and distant students of magic, untrue at ACCEPT 7028 (Willow at Kormek's Hut in Desolace, Twilight's Hammer), and the tribes guarding the place with their lives is 7068 only. It now holds only what all three accepts share: crystals of Maraudon wanted by someone outside who sends others in, study, a reward. Parts verified against the quest texts; the 7028 part adds Terramok and the giant doors to 40507 without retelling it."
+ }
+]
