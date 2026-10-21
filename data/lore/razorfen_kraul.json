@@ -1,0 +1,427 @@
+[
+ {
+  "id": 49100,
+  "kind": 0,
+  "zone": 491,
+  "sort": 0,
+  "faction": 0,
+  "title": "Razorfen Kraul",
+  "body": "Razorfen Kraul is a warren of the quilboar, burrowed deep into the Razorfen at the southern edge of the Barrens, the great thorn mass the quilboar hold to be the body of their fallen boar god. Its tunnels wind through living bramble, down into a trench where great boars roam, and on to dim hollows where bats roost. The Razorfen tribe holds it: quilguards and defenders, beast handlers, and geomancers, groundshakers and earthbreakers who call on the stone itself. Its ruler is the crone Charlga Razorflank, who keeps her seat on a height near its heart. Not every quilboar here is of the Razorfen, though. Quilboar who name themselves the Death's Head gather in halls of their own, guard a pen at the far end of the warren and stand watch at the foot of the crone's height. Outsiders come for many reasons: vengeance, a rare root, a foul reagent for the apothecaries. Somewhere within, the quilboar keep the captives they have dragged in from the plains.",
+  "triggers": [
+   [
+    1,
+    491
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Roogug, one of the tribe's casters, met intruders with bolts of lightning, hurled one after another as fast as he could call them down. He had nothing else to answer them with, and he fell among the quilboar of his hall.",
+    "triggers": [
+     [
+      3,
+      6168
+     ]
+    ],
+    "sources": [
+     "creature 6168 Roogug, single spawn on map 47 at 2143,1582 z80 (Razorfen Beastmasters 4532 nearby); display 6110, QuillBoarCaster model",
+     "smart_scripts 6168 base: Lightning Bolt 9532 every 3 seconds, nothing else; not touched by the module"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The earthcaller Halmgar kept a stone rumbler at his side, a creature of living rock he had called up from the earth. Attacked, he hurled lightning, planted a totem that dragged at his enemies' feet, and tried to flee for help when the fight turned against him. None of it saved him.",
+    "triggers": [
+     [
+      3,
+      4842
+     ]
+    ],
+    "sources": [
+     "creature 4842 Earthcaller Halmgar, single spawn on map 47 at 2119,1695 z80; rank 2; display 6102, QuillBoarCaster model",
+     "smart_scripts 4842 base: out of combat Summon Earth Rumbler 8270 (Stone Rumbler 4528), Lightning Bolt 9532, Earthbind Totem 2484 (Spell.dbc: slows the movement of nearby enemies), flee for assist at 15 percent; despawn on AI init at event_chance 70 (event_flags 512 is WHILE_CHARMED in SmartScriptMgr.h, not debug only): a rare spawn, present about three times in ten; warcraft.wiki.gg lists him as a rare spawn; not touched by the module"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Not far below the crone's seat, the night elf Heralath Fallowbrook lies on the ground among the quilboar's captives, too weak to rise. He has not long to live, he whispers, and the brave dwarf Lonebrow has gone to warn Falfindel. His last plea is for his wife, Treshala, in Darnassus. Her pendant of bonding to him was stolen by one of his attackers, and he begs that it be found and carried home to her, with word of his lonely death.",
+    "triggers": [
+     [
+      4,
+      1142
+     ]
+    ],
+    "sources": [
+     "quest 1142 description and log text (not long to live; the brave dwarf Lonebrow sent to warn Falfindel; Treshala's pendant of bonding stolen by one of the foul aggressors; return it to Treshala in Darnassus with word of my lonely death); AllowableRaces 1101, QuestType 2, flags 8",
+     "creature 4510 Heralath Fallowbrook, single spawn on map 47 at 2187,1789 z65; creature_template_addon bytes1 7 (lying as if dead); display 2596, NightElfMale model; starts 1142 (creature_queststarter)",
+     "Willix 4508 held beside him at 2194,1792; Charlga 4421 at 2190,1864 z79"
+    ]
+   }
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Razorfen_Kraul_(Classic), the original official description (Agamaggan fell in the War of the Ancients; his blood raised the thorns; the quilboar hold these regions sacred; the Razorfen at their heart; Kraul conquered by the old crone Charlga Razorflank); the Scourge line of that description is left out (Razorfen Downs owns it)",
+   "barrens.json 1722 (the Razorfen as the body of Agamaggan), pointed to in one phrase",
+   "areatrigger_teleport 244 (entrance at 1943,1545 z82); zones/razorfen_kraul.txt (map 47: 491 only)",
+   "DB spawns map 47: Razorfen Quilguard 4436 x10, Defender 4442 x19, Handler 4530, Beast Trainer 4531, Beastmaster 4532, Geomancer 4520, Earthbreaker 4525 (faction 152); Agam'ar 4511 x15, Raging Agam'ar 4514 x15 at z 55 to 58; Kraul Bat 4538 x13, Greater Kraul Bat 4539 x6 around 2121,1964",
+   "Death's Head Acolyte 4515, Adept 4516, Sage 4518, Seer 4519 (faction 154) with Aggem Thorncurse 4424 and Jargba 4428 around 2080 to 2190, 1410 to 1530; Death's Head Ward Keeper 4625 x2 at the ward 21099; Death's Head Priest 4517 x4 at 2178 to 2193, 1836 to 1862 z58-60, below Charlga 4421 at 2190,1864 z79",
+   "quests 1102, 1109, 1221 (premises only, as reasons to go in); creature 4508 Willix and 4510 Heralath at 2194,1792 and 2187,1789"
+  ],
+  "notes": "Writer: AREA 491 (the only area on map 47). The Death's Head are named (the subnames of Aggem and Jargba show the name) but the outside power behind them is not: Razorfen Downs owns the Scourge pact and Amnennar. The official description's line about Charlga negotiating with Scourge agents is left out for that reason. Reasons to go in are phrases only (Auld's vengeance, Mebok's tubers, Faranell's guano); Falfindel's call (DONE 1100, ACCEPT 1101) is Feralas's and is not named. The captives are not named in the opening. Parts: KILL 6168 Roogug and KILL 4842 Earthcaller Halmgar (single spawns, map 47 only; Halmgar is a rare spawn: his despawn on AI init has event_chance 70 and event_flags 512, which is SMART_EVENT_FLAG_WHILE_CHARMED in this core, not debug only, so he stands in about three instances in ten; told only on his KILL, so the text holds; neither touched by the module), and ACCEPT 1142 (Heralath, Alliance only, QuestType 2, flags 8). Heralath gets no entry of his own: the part shows only his body and dying words; the pendant's ending is darnassus.json 165716 (DONE 1142), Lonebrow's errand is a phrase. No requiredState (classic dungeon, state 0). Checker: earthcallers changed to groundshakers and earthbreakers (Earthcaller Halmgar is a single rare; Razorfen Groundshaker 4523 x7 and Earthbreaker 4525 x5 are the stone casters); caverns made general (dim hollows), since no source calls the bats' quarter a cavern. Heralath's part verified against 1142's text: it tells only his state and his words, not the pendant's ending (darnassus.json 165716) or Lonebrow's fate (feralas/thousand_needles)."
+ },
+ {
+  "id": 49101,
+  "kind": 1,
+  "zone": 491,
+  "sort": 1,
+  "faction": 0,
+  "title": "The Trench",
+  "body": "At the bottom of the Kraul runs a deep trench, a winding gully walled in by the bramble. It belongs to the boars. Agam'ar roam its floor in numbers, some raging, some rotting where they stand and dulling the wits of whoever comes near, and slimes that bear the name of the Blood of Agamaggan crawl among them. The quilboar who handle and train the beasts work in the halls above. From the trench the warren climbs again, toward the height where the crone keeps her seat.",
+  "triggers": [
+   [
+    1,
+    491
+   ]
+  ],
+  "sources": [
+   "page_text 1211 (Snufflenose Owner's Manual: the trench area of Razorfen Kraul) and creature_text 4508 groups 3 and 7 (There's blueleaf tuber in this trench; Glad to be out of that wretched trench), for the name",
+   "DB spawns map 47: Agam'ar 4511 x15 (avg 2111,1737 z55), Raging Agam'ar 4514 x15 (2077,1735 z58), Rotting Agam'ar 4512 at z55 to 64, Blood of Agamaggan 4541 x4 at z48 to 62; Charlga 4421 at z79 and the halls around at z72 to 86",
+   "smart_scripts 4512 (Cursed Blood 8267: lowers the Intellect of nearby enemies), 4514 (Frenzy 8269 at 40 percent), 4541 (Curse of Blood 8282); not touched by the module",
+   "CreatureDisplayInfo: 4541 uses the Slime model; Agam'ar the Boar model",
+   "Razorfen Handler 4530 (z80), Beast Trainer 4531 (z74), Beastmaster 4532 (z77)"
+  ],
+  "notes": "Writer: the place is a landmark the quests make clear: the gopher manual (quest 1221) sends hunters to the trench area, and Willix's escort names it. No subzone exists on map 47. The tubers are not placed in the opening (they are what 1221 and Willix's line show). Willix's escort route runs through it (waypoints 5 to 33 at z47 to 64). No parts: the boars have no named leader here. Faction 0. Checker: verified."
+ },
+ {
+  "id": 49102,
+  "kind": 1,
+  "zone": 491,
+  "sort": 2,
+  "faction": 0,
+  "title": "The Bat Roosts",
+  "body": "Beyond the trench, at the far end of the warren, the warren opens onto dim hollows beneath the bramble where the Kraul bats roost. They hang in the dark in great numbers and drop on anything that stirs below. The smaller bats strike with bolts of lightning, and the greater ones loose a shrieking burst that batters everyone near and chokes off any spell. At times another hunts among them, one called the Blind Hunter, though it is not always there to be found.",
+  "triggers": [
+   [
+    1,
+    491
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In the Undercity, Master Apothecary Faranell has a use for these caverns. The Kraul bats, he says, are a rare breed found nowhere but in this muck-hole, and for one of the most ambitious works of the Royal Apothecary Society he needs what they leave behind: their guano, foul as it is.",
+    "triggers": [
+     [
+      4,
+      1109
+     ]
+    ],
+    "sources": [
+     "quest 1109 description and log text (a rare substance; foul material from a rare species of bats only found in the muck-hole known as Razorfen Kraul; the most ambitious of our alchemical attempts; guano from the Kraul Bats)",
+     "creature_loot_template: Kraul Guano 5801 from 4538 and 4539 only (QuestRequired)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Blind Hunter came at intruders out of the dark, striking again and again with bolts of lightning. Blind or not, it found its foes well enough, but it could not drive them off, and it fell among the roosts.",
+    "triggers": [
+     [
+      3,
+      4425
+     ]
+    ],
+    "sources": [
+     "creature 4425 Blind Hunter, single spawn on map 47 at 2201,1978 z57; rank 2",
+     "smart_scripts 4425 base: Shock 12553 every 6 seconds; despawn on AI init at event_chance 70 (rare spawn; event_flags 512 is WHILE_CHARMED, not debug only); not touched by the module"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The guano reached the Apothecarium, and Faranell was delighted. It was just the start the Society needed, he said. What the apothecaries mean to make of it, he did not say.",
+    "triggers": [
+     [
+      5,
+      1109
+     ]
+    ],
+    "sources": [
+     "quest 1109 reward text (Splendid! This is just the start we needed)"
+    ]
+   }
+  ],
+  "sources": [
+   "DB spawns map 47: Kraul Bat 4538 x13 (avg 2121,1964 z63), Greater Kraul Bat 4539 x6 (2116,1987 z64), Blind Hunter 4425 at 2201,1978 z57; display 1955/1954/4735, FelBat model; warcraft.wiki.gg/wiki/Razorfen_Kraul_(Classic) lists Blind Hunter as a rare spawn",
+   "smart_scripts 4538 (Shock 12553), 4539 (Sonic Burst 8281, Spell.dbc: damage to nearby enemies, preventing them from spellcasting), base and module",
+   "quest 1109 (QuestSortID 1717, AllowableRaces 690, QuestType 2, flags 8)"
+  ],
+  "notes": "Writer: the caverns are a real landmark the quest makes clear (1109 sends Faranell's errand-runners to the Kraul bats). Opening on AREA 491 only (ACCEPT 1109 is taken in the Undercity, where nothing of the caverns is shown); what Faranell says of the bats is part 1 on ACCEPT 1109. Part 2 KILL 4425 Blind Hunter: single spawn, map 47 only; he is a rare spawn: the despawn on AI init has event_chance 70 and event_flags 512, which is WHILE_CHARMED in this core, not debug only, so he stands in about three instances in ten; not touched by the module. His size is not claimed (display scale 0.45, the same as an ordinary Kraul bat). Part 3 DONE 1109 (free; undercity.json 149705 names the guano in Faranell's opening and uses only TALK 2055). Faction 0 (the opening's AREA trigger; the quest parts are Horde only by their quest). Checker: title The Bat Caverns changed to The Bat Roosts and the caverns made general (no source names a cavern; the place stands on the bats' concentration at the far end, 19 spawns, and quest 1109); the opening now says the Blind Hunter is not always there (rare spawn, warcraft.wiki.gg and smart_scripts 4425 event_chance 70)."
+ },
+ {
+  "id": 49103,
+  "kind": 2,
+  "zone": 491,
+  "sort": 1,
+  "faction": 0,
+  "title": "Charlga Razorflank",
+  "body": "Charlga Razorflank, the Crone, rules Razorfen Kraul. She is old and a caster of great power, and from her seat on a height near the heart of the warren she musters the army the Razorfen has been gathering. Her own tribe fills the halls around her, but the guards at the foot of her height are not Razorfen: four priests of the Death's Head keep watch there, ready to heal and to strike. Far away in Thunder Bluff, Auld Stonespire wants her heart.",
+  "triggers": [
+   [
+    1,
+    491
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Charlga met intruders scorning them as troublesome whelps who would learn not to interfere. She struck with lightning that leapt from foe to foe, wrapped herself in a shield no blow or spell could pierce while her wounds mended, and drew fresh power into herself when her strength ran low. Still she fell, defiant to the last, crying that her power ruled here.",
+    "triggers": [
+     [
+      3,
+      4421
+     ]
+    ],
+    "sources": [
+     "creature_text 4421 group 0 (Troublesome whelps. I'll teach you to interfere!) on aggro, group 3 (Bah! My power rules here!) on death, yells",
+     "smart_scripts 4421 base: Chain Bolt 8292 (Spell.dbc: lightning that arcs to another nearby enemy), Purity 8361 (immune to all attacks and spells), Renew 6077, Mana Spike 8358 at 0 to 10 percent mana (restores the caster's mana); not touched by the module"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Her heart was carried to Thunder Bluff, and Auld Stonespire took it grimly. The foul tribe of Razorfen Kraul, he said, now knew the pain of his people, and it served the beasts right. He thanked the one who had aided him in his plight.",
+    "triggers": [
+     [
+      5,
+      1102
+     ]
+    ],
+    "sources": [
+     "quest 1102 reward text (the nasty tribe of Razorfen Kraul now knows the pain of my people; serves the foul beasts right; thank you for aiding me in my plight)",
+     "creature_loot_template 4421: Razorflank's Heart 5793 (QuestRequired, 100 percent)"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 4421 Charlga Razorflank, subname The Crone, single spawn on map 47 at 2190,1864 z79; display 4642, QuillBoarCaster model; faction 152 (Razorfen)",
+   "warcraft.wiki.gg/wiki/Razorfen_Kraul_(Classic), the original official description (the Kraul conquered by the old crone Charlga Razorflank)",
+   "Death's Head Priest 4517 x4 at 2178 to 2193, 1836 to 1862, z58 to 60; smart_scripts 4517 (Heal, Power Word: Fortitude, Shadow Bolt)",
+   "quest 1102 description (the crone, Charlga Razorflank, who musters a foul army from within Razorfen Kraul; bring me Razorflank's heart); barrens.json 1722 and thunder_bluff.json 163814 tell Auld's grievance, pointed to in a phrase"
+  ],
+  "notes": "Writer: agreed: Charlga's Person entry is here (no zone file has one). Opening on AREA 491 only: ACCEPT 1102 is taken in Thunder Bluff, where nothing of her seat or her guards is shown, so it is not an opening trigger; DONE 1102 (part 2) is reached only after her death inside. Auld's wish is a phrase (thunder_bluff.json 163814, TALK 4451). The army is a phrase pointing to barrens.json 1722 and 1102's own text. Nothing of her alliance with an outside power: her unused creature_text group 4 (Our new allies will avenge us!) is never said in the DB (On Death says group 3), and Razorfen Downs owns the pact. Part 1 KILL 4421 (single spawn, map 47 only; not touched by the module): aggro line and death line only (the in-combat group 2 picks one of two lines at random, so neither is quoted as certain). Part 2 DONE 1102 (Horde only by its quest), Auld's reward text; the medallion and Falfindel's ending (DONE 1101) stay in feralas.json 35725/35731 and are not told. The Small Scroll she drops starts 14352 An Unholy Alliance (QuestSortID 722): left to Razorfen Downs. Faction 0. Checker: old quilboar shaman made general (no source names her a shaman; her spells mix lightning with healing and warding); her lines verified against smart_scripts 4421 (aggro line 0, kill line 1, in-combat group 2, death line 3; group 4 never called)."
+ },
+ {
+  "id": 49104,
+  "kind": 2,
+  "zone": 491,
+  "sort": 2,
+  "faction": 0,
+  "title": "Agathelos the Raging",
+  "body": "Agathelos the Raging is a boar of monstrous size, twice as large as the greatest of the Agam'ar, kept penned at the far end of the Kraul. A ward bars the mouth of his pen. Two Death's Head ward keepers stand before it, channeling the magic that holds it, and two ward guardians of the Razorfen stand with them. Behind the ward the great boar paces back and forth. What the quilboar mean to do with such a beast, no one here says.",
+  "triggers": [
+   [
+    1,
+    491
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "When the ward keepers fell, the ward opened, and Agathelos charged out to the place where it had stood. He trampled everyone around him, leaving them stunned, struck single foes down so savagely that they lay as if dead, and went into a frenzy as his wounds mounted. It was not enough. The great boar died at the mouth of the pen that had held him.",
+    "triggers": [
+     [
+      3,
+      4422
+     ]
+    ],
+    "sources": [
+     "smart_scripts 21099 source_type 1 (On Update: set GO state, set data 1 on 4422) with conditions 22/1/21099 (no 4625 within 50 yards); smart_scripts 4422 id 0 (On Data Set: move to 2070.26,2003.44)",
+     "smart_scripts 4422 base and module: Rampage 8285 (Spell.dbc: damage to nearby enemies, stunning them), Left for Dead 8555 (forces the enemy to feign death), enrage with creature_text 4422 group 0 (%s goes into a frenzy!)"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 4422 Agathelos the Raging, single spawn on map 47 at 1994,1976 z63 with waypoint path 874860 (pacing to 2017,2003); display 2450, Boar model at scale 3.0 (Raging Agam'ar 2453 at 1.5, Agam'ar 1.3 to 1.5)",
+   "gameobject 21099 ward (door, spawn state 1, closed) at 2060,2016 z62; Death's Head Ward Keeper 4625 x2 at 2069,2015 and 2064,2009 (smart_scripts: Quillboar Channeling 7083 out of combat); Ward Guardian 4427 x2 (faction 152) at 2067,1999 and 2077,2009",
+   "warcraft.wiki.gg/wiki/Agathelos_the_Raging (boar penned by quilboar guards who maintained a field)"
+  ],
+  "notes": "Writer: opening on AREA 491 (met only in combat). The Adventure Guide's account (fed bat guano, meant as a weapon) is later material and not used; the last sentence stays open. Part on KILL 4422 (single spawn, map 47 only). The ward's release is in the part: smart_scripts 21099 (gameobject) sets the ward open every 5 seconds once no Death's Head Ward Keeper 4625 is alive within 50 yards (conditions 22/1/21099, NOT creature in range), and sets data 1 on Agathelos, who then moves to 2070,2003 at the ward (smart_scripts 4422 id 0, base and module). Fight: Rampage 8285 (stuns nearby enemies) and Left for Dead 8555 (forces the target to feign death) in base and module; base enrages at 25 percent (Enrage 30485), the module at 60 and 40 percent (Frenzy 8269), both with the frenzy emote (creature_text 4422), so the part says only that he went into a frenzy as he was wounded. Faction 0. Checker: verified."
+ },
+ {
+  "id": 49105,
+  "kind": 2,
+  "zone": 491,
+  "sort": 3,
+  "faction": 0,
+  "title": "Overlord Ramtusk",
+  "body": "Overlord Ramtusk is a war leader of the Razorfen, bigger than any warrior in the halls around him, and he holds a high ledge in the upper Kraul. Two Razorfen spearhides stand at his side, bristling with thorns that wound anyone who strikes near them and spinning their spears through any foe who closes in. The quilguards and defenders of the nearby halls are never far from his call.",
+  "triggers": [
+   [
+    1,
+    491
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Ramtusk bellowed for help the moment he was attacked, and the quilboar nearby came running. He roared a battle cry that lent strength to those around him and loosed thunderclaps that staggered and slowed his foes, but the overlord fell on his ledge all the same.",
+    "triggers": [
+     [
+      3,
+      4420
+     ]
+    ],
+    "sources": [
+     "smart_scripts 4420 base: On Aggro Call For Help (radius 10), Battle Shout 9128 (Spell.dbc: increases melee attack power of nearby party members), Thunderclap 15548 (nature damage to nearby enemies, slowing attacks and movement); not touched by the module"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 4420 Overlord Ramtusk, single spawn on map 47 at 2203,1640 z86; display 4652, QuillBoarWarrior model at scale 1.6 (Razorfen Spearhide 6078 at 1.2, Jargba 1.5)",
+   "Razorfen Spearhide 4438 x2 at about 2202,1643 z86; smart_scripts 4438 (Thorns Aura 8148: nature damage to anyone who strikes a nearby ally; Whirling Barrage 8259: damage to nearby enemies)",
+   "Razorfen Quilguard 4436 and Defender 4442 spawns in the halls at z72 to 81"
+  ],
+  "notes": "Writer: opening on AREA 491 (met only in combat). His creature_text 4420 (Victory! For Agamaggan!) is not called by any script, so it is not quoted. 'Bigger than any warrior' from display scale (1.6, the largest QuillBoarWarrior display on the map). Part on KILL 4420 (single spawn, map 47 only; not touched by the module): Call for Help on aggro, Battle Shout 9128, Thunderclap 15548. No claim that he answers to Charlga (no source). Faction 0. Checker: verified."
+ },
+ {
+  "id": 49106,
+  "kind": 2,
+  "zone": 491,
+  "sort": 4,
+  "faction": 0,
+  "title": "Aggem Thorncurse",
+  "body": "Aggem Thorncurse is the prophet of the Death's Head, a quilboar larger than most of his kin. The Death's Head are not like the Razorfen around them. Their priests strike with shadow, their adepts with frost and with chains of ice that lock a foe in place, where the tribe's own shamans call on earth and lightning. Aggem keeps to the halls where the Death's Head gather, near their captain, Death Speaker Jargba. What he prophesies, and in whose name, the Kraul does not tell.",
+  "triggers": [
+   [
+    1,
+    491
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Aggem called up the spirits of boars to fight beside him, and they came at his foes again and again. The prophet could call them, but he could not save himself with them, and he fell among the halls of the Death's Head.",
+    "triggers": [
+     [
+      3,
+      4424
+     ]
+    ],
+    "sources": [
+     "smart_scripts 4424 base (Summon Boar Spirit 8286 every 30 seconds) and module (the same, plus Battle Shout 6192 and Chain Heal 14900); Boar Spirit 6021"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 4424 Aggem Thorncurse, subname Death's Head Prophet, single spawn on map 47 at 2082,1464 z73; display 6097, QuilBoar model at scale 1.5 (Death's Head Priest 1.0, Acolyte 1.15, Adept 1.3)",
+   "smart_scripts 4517 Death's Head Priest (Shadow Bolt 9613), 4516 Adept (Frostbolt 9672, Chains of Ice 113: locks the target in place), base and module; Razorfen Geomancer, Earthcaller Halmgar, Roogug (Lightning Bolt, Summon Earth Rumbler)",
+   "creature 4428 Jargba at 2146,1411, about 85 yards away; Death's Head Acolytes 4515 and Adepts 4516 around 2116 to 2192, 1414 to 1528"
+  ],
+  "notes": "Writer: opening on AREA 491 (met only in combat). The hint at an outside power is limited to what is seen (shadow and frost magic, the cult's name) and an open question; no Scourge, Lich King or Amnennar (Razorfen Downs owns them). Part on KILL 4424 (single spawn, map 47 only): Summon Boar Spirit 8286 in base and module; the module adds Battle Shout and Chain Heal, so neither is told. Faction 0. Checker: verified."
+ },
+ {
+  "id": 49107,
+  "kind": 2,
+  "zone": 491,
+  "sort": 5,
+  "faction": 0,
+  "title": "Death Speaker Jargba",
+  "body": "Death Speaker Jargba is the captain of the Death's Head, a towering quilboar who stands among the cult's acolytes in their halls of the Kraul. His title is a strange one for a quilboar, and his magic stranger still. He is no shaman of earth and stone but a caster of shadow, and those who face him find their own minds taken from them and turned against their friends. For whom the Death Speaker speaks, the warren does not say.",
+  "triggers": [
+   [
+    1,
+    491
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Jargba hurled bolts of shadow at those who came for him and seized their minds one after another, turning friend against friend. Still they brought him down, and the captain of the Death's Head fell among his acolytes.",
+    "triggers": [
+     [
+      3,
+      4428
+     ]
+    ],
+    "sources": [
+     "smart_scripts 4428 base (Shadow Bolt 9613 every 3 seconds, Dominate Mind 14515) and module (the same spells, retimed)"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 4428 Death Speaker Jargba, subname Death's Head Captain, single spawn on map 47 at 2146,1411 z74; display 4644, QuillBoarWarrior model at scale 1.5; Death's Head Acolyte 4515 at 2141,1414",
+   "smart_scripts 4428 base and module: Shadow Bolt 9613, Dominate Mind 14515 (Spell.dbc: takes control of a humanoid enemy)"
+  ],
+  "notes": "Writer: opening on AREA 491 (met only in combat). Hint at an outside power kept to an open question; nothing names the Scourge, the Lich King or Amnennar. Part on KILL 4428 (single spawn, map 47 only); the module only retimes his two spells. Faction 0. Checker: verified."
+ },
+ {
+  "id": 49108,
+  "kind": 3,
+  "zone": 491,
+  "sort": 1,
+  "faction": 0,
+  "title": "Blueleaf Tubers",
+  "body": "In Ratchet, Mebok Mizzyrix has one more scheme. Blueleaf tubers are a delicacy prized around the world, he says, and very rare: they grow only here in the Barrens, deep in the earth inside Razorfen Kraul, and even there no one can find them who does not know just where to look. His answer is the snufflenose gopher, trained to smell a tuber from fifty paces away. He sends his partners off with a crate with holes to carry a gopher, a command stick to send it searching and an owner's manual to read, and promises to pay handsomely for six tubers.",
+  "triggers": [
+   [
+    4,
+    1221
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The gophers did their work in the trench of the Kraul, nosing out the buried tubers and digging them up, and six of them came back to Ratchet. Mebok was delighted. His contacts would pay a bundle for these, he said, and he called the one who brought them a great partner.",
+    "triggers": [
+     [
+      5,
+      1221
+     ]
+    ],
+    "sources": [
+     "quest 1221 reward text (Great, you got them! I can sell these to my contacts for a bundle! You are a great partner)",
+     "page_text 1211 and 1213 (the trench area of Razorfen Kraul; the gopher sniffs for a tuber, moves toward it and digs it up); gameobject 20920 Blueleaf Tuber x15 on map 47, nine of them at z51 to 61"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 1221 description and log text (a delicacy around the world; rare; the only place is here in the Barrens, deep in the earth, in Razorfen Kraul; impossible to find unless you know where to look; snufflenose gophers smell a tuber from fifty paces; Crate with Holes, Snufflenose Command Stick, Snufflenose Owner's Manual; 6 Blueleaf Tubers; I'll pay you handsomely); QuestSortID 1717, AllowableRaces 0, QuestType 2, flags 0",
+   "creature 3446 Mebok Mizzyrix starts and ends 1221, on map 1 in Ratchet; barrens.json 1731 names the tuber venture in a clause and uses only TALK 3446"
+  ],
+  "notes": "Writer: free quest. barrens.json 1731 (Mebok) names the tubers and gophers in one clause as one of his ventures and uses no 1221 trigger; this entry tells the quest itself, as blackfathom_deeps.json 71908 does for Bonegrip. Opening on ACCEPT 1221 (QuestType 2, flags 0, not auto-complete), part on DONE 1221. The manual's pages are not retold (read after accepting); the trench is named in the part, where the hunt has been done. Faction 0 (AllowableRaces 0; Mebok is neutral). Checker: verified."
+ },
+ {
+  "id": 49109,
+  "kind": 3,
+  "zone": 491,
+  "sort": 2,
+  "faction": 0,
+  "title": "Willix the Importer",
+  "body": "Deep in Razorfen Kraul, a goblin named Willix is held prisoner by the quilboar, and he has been there so long that he cannot remember the last time he saw the outside. He is an entrepreneur, always out for a copper. Word reached him that Mebok Mizzyrix was paying well for blueleaf tubers from this pig pen, and he took it for an easy in, easy out sort of job. It was not, he admits. Now he asks only to be led out, and promises to make it worth his rescuer's while.",
+  "triggers": [
+   [
+    4,
+    1144
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Willix whooped at the chance to leave, and he talked the whole way. Below the crone's height he grumbled about the blasted old crone, in the trench he marveled at the tubers there, like gold waiting to be mined, and he complained of the smell, while raging boars burst out at them more than once. At the warren's mouth at last he stopped to catch his breath, paid what he had promised and set off for Ratchet.",
+    "triggers": [
+     [
+      5,
+      1144
+     ]
+    ],
+    "sources": [
+     "creature_text 4508 groups 0, 1, 3, 5, 7, 9, 10 (Woo hoo! Finally getting out of here; Up there is where Charlga Razorflank resides. Blasted old crone.; There's blueleaf tuber in this trench! It's like gold waiting to be mined; sheesh it smells; I'll rest a moment and catch my breath before heading back to Ratchet; I'm off to Ratchet now)",
+     "smart_scripts 4508 (On Quest Accept start waypoints; summon Raging Agam'ar 4514 at waypoints 5, 15 and 44); waypoints 4508 (47 points, from 2194,1792 to 1947,1566)",
+     "quest 1144 reward text (Thanks again, friend! I told you I'd make it worth your while)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 1144 description and log text (held prisoner; can't remember the last time I saw the outside; an entrepreneur, always out for a copper; Mebok Mizzyrix paying well for Blueleaf Tuber from this here pig pen; easy in, easy out; I was a bit wrong; I'll make it worth your while); QuestSortID 1717, AllowableRaces 0, QuestType 2, flags 2 (escort)",
+   "creature 4508 Willix the Importer, single spawn on map 47 at 2194,1792 z66; display 7155, GoblinMale model; starts and ends 1144"
+  ],
+  "notes": "Writer: free quest. Opening on ACCEPT 1144 (QuestType 2, flags 2, not auto-complete), part on DONE 1144 at the exit (waypoint 47, 1947,1566, beside the entrance at 1943,1545). The part tells the escort as it is seen: his lines (creature_text 4508, said on waypoints and on accepting), the Raging Agam'ar summoned at waypoints 5, 15 and 44, and the reward text. Heralath, beside him, is told only in the overview's part 3. Faction 0 (AllowableRaces 0). Checker: everywhere dropped from the smell line (said once, at waypoint 13)."
+ }
+]
