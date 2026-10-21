@@ -1,0 +1,690 @@
+[
+ {
+  "id": 117600,
+  "kind": 0,
+  "zone": 1176,
+  "sort": 0,
+  "faction": 0,
+  "title": "Zul'Farrak",
+  "body": "Zul'Farrak is the city of the Sandfury trolls, and inside its walls the desert sky still stands open overhead. Streets of sand wind between temples of old stone, past graves and shrines and a great stepped pyramid, and the Sandfury hold all of it. Their blood drinkers and shadowcasters, witch doctors, shadowhunters and soul eaters fall on any outsider they find. They do not hold the city alone. Scarabs swarm over the sands, and basilisks crawl among the ruins, their stares stiffening flesh like stone. The tribe's rulers keep to places of their own within, and its holy places are closely guarded. Still the outsiders come. Goblins and gnomes want things that can be had only here, a scholar wants writings carried into the city long ago, a mage wants back what the trolls stole from her, and some come for nothing more than the treasure trolls are said to hoard.",
+  "triggers": [
+   [
+    1,
+    1176
+   ]
+  ],
+  "sources": [
+   "tools/research/zones/zulfarrak.txt (1176 the only area on map 209)",
+   "warcraft.wiki.gg/wiki/Zul'Farrak (almost entirely outdoors; pyramid, graves, the sacred pool)",
+   "DB spawns on map 209 only: Sandfury Blood Drinker 5649 x55, Witch Doctor 5650 x39, Shadowhunter 7246 x34, Shadowcaster 5648 x26, Soul Eater 7247 x6, Scarab 7269 x68, Sul'lithuz Sandcrawler 8095 x19 (smart_scripts 8095: Petrify)",
+   "quests 2768, 2770, 2846, 2865, 3042, 3527 (the errands that send outsiders in; givers all outside the city)",
+   "tanaris.json 44011 (the walls and the Sandfury, told there)"
+  ],
+  "notes": "Checked: verified. An overview only (no boss or figure named, no outcome). Writer: opening on AREA 1176, the only area on map 209. An overview only: no boss or figure is named, nothing of the prisoners, the pyramid event, the hydra's summoning or any fall. The errands are named only by who sends them (rod and scale: goblin and gnome; shells: goblin; tablets: Yeh'kinya, the scholar; tiara: Tabetha, the mage), without names, which tanaris.json, dustwallow.json and thousand_needles.json give. The legends tanaris.json 44011 tells (Gahz'rilla in the pool, Theka's scarabs) are not retold. No rares as parts here: they are in 117612. Elder Wildmane 15578 (Lunar Festival) and the Scourge invasion are left out. No requiredState (classic dungeon, state 0)."
+ },
+ {
+  "id": 117601,
+  "kind": 1,
+  "zone": 1176,
+  "sort": 1,
+  "faction": 0,
+  "title": "The Sacred Pool",
+  "body": "Deep in Zul'Farrak lies a broad sheet of still water, the sacred pool of the Sandfury, a strange sight in a city of sand. Trolls of the tribe keep watch along its banks, blood drinkers, witch doctors and shadowhunters among them, and a hydromancer of the tribe walks the shore as if the water were hers to command. At the edge of the pool hangs a great gong. What it is for, the trolls do not tell outsiders.",
+  "triggers": [
+   [
+    3,
+    7795
+   ],
+   [
+    3,
+    7273
+   ]
+  ],
+  "sources": [
+   "gameobject 141832 Gong of Zul'Farrak at 1651,1172, single spawn on map 209; smart_scripts 141832 (on use: summon 7273 at 1659,1180, in the water)",
+   "creature 7795 Hydromancer Velratha, single spawn at 1698,1211, MovementType 2 (patrols the shore)",
+   "DB spawns around 1600-1750, 1150-1250: Sandfury Witch Doctor 5650, Shadowhunter 7246, Blood Drinker 5649",
+   "waypoint_data 815700 (Velratha's patrol, 1630-1707, 1153-1229, around the pool); Gahz'rilla 7273 summoned only by the gong, fights on the shore"
+  ],
+  "notes": "Checked: ACCEPT 2770 (Shimmering Flats) and ACCEPT 3527 (Tanaris) removed: a Place opens only on something that stands there. No common creature stands only at the pool (every Sandfury type, scarab and basilisk near it also stands elsewhere in the city; Elder Wildmane 15578 is Lunar Festival), so it opens on KILL 7795 (single spawn, her waypoint path 815700 keeps her on the shore) and KILL 7273 (summoned only by the gong, dies on the shore). Opening trimmed to what someone arriving sees: the secret of the summoning (2770's text) is gone, the gong is described but not what it calls. Mallet: base gong lock 99, module lock 459, so neither is mentioned."
+ },
+ {
+  "id": 117602,
+  "kind": 2,
+  "zone": 1176,
+  "sort": 1,
+  "faction": 0,
+  "title": "Theka the Martyr",
+  "body": "Theka the Martyr died long ago, yet he still walks Zul'Farrak. An undead troll, he paces the ground about his tomb, and the city's scarabs gather there in their dozens. It is said they were once his persecutors, cursed into the shape of the beetles that now scuttle about his shrine. A carved tablet stands beside his resting place. What made him a martyr, and to whom, the city does not tell outsiders.",
+  "triggers": [
+   [
+    3,
+    7272
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Theka fought as a dead thing fights, laying a fevered plague on those around him that went on burning in their blood. As his wounds mounted his body changed, swelling larger, and for a time neither blade nor shadow could harm him. The change did not last, and the martyr fell at last beside his tomb.",
+    "triggers": [
+     [
+      3,
+      7272
+     ]
+    ],
+    "sources": [
+     "smart_scripts 7272 (Fevered Plague 8600; at 30 percent, not repeatable, Theka Transform 11089)",
+     "Spell.dbc 11089 Theka Transform: aura 56 transform into 7791 Theka the Martyr Shapeshift (CreatureDisplayInfo 6697 at scale 1.2 against his own 6696 at 1.0), aura 39 school immunity physical (1) and shadow (32), duration index 9 (30 s); he stays entry 7272",
+     "warcraft.wiki.gg/wiki/Theka_the_Martyr (patch 1.12.0: the immunity no longer permanent)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The first tablet of Mosh'aru had lain with Theka. Taken from the martyr, it went to Steamwheedle Port together with its twin, and the troll mystic Yeh'kinya received them gladly. He would fuse the ancient tablets together, he said, and study their hidden secrets, and he told their bearer that his debt to them was growing.",
+    "triggers": [
+     [
+      5,
+      3527
+     ]
+    ],
+    "sources": [
+     "quest 3527 description (the first tablet held by the long-dead troll Theka the Martyr) and reward text (fuse these ancient tablets together and study their hidden secrets; my debt to you grows)",
+     "creature_loot_template 7272: First Mosh'aru Tablet, quest drop"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 7272 single spawn on map 209 at 1778,860, type 6 (undead), MovementType 2",
+   "gameobject 142715 Tablet of Theka at 1801,858 beside him (its use is hinterlands.json 4730)",
+   "DB spawns: Scarab 7269 x68 on map 209 only, about 30 of them within 1750-1850, 800-950",
+   "warcraft.wiki.gg/wiki/Theka_the_Martyr (undead sand troll)",
+   "quest 3527 description (his persecutors cursed into scarabs that scuttle about his shrine); tanaris.json 44011 (the same legend)"
+  ],
+  "notes": "Checked: ACCEPT 3527 removed from the entry's triggers. It fires in Tanaris and shows only the quest text, while the opening told the tomb and the undead troll a foe sees; and a kill alone does not show the tablet of Mosh'aru. Now KILL 7272 only (single spawn, map 209), opening as a foe facing him knows it; the Mosh'aru tablet moved out of the opening into part 2 on DONE 3527 (reward text only: fuse and study, no egg; the tablet drops from him, so its bringer saw his fall). Part 1: 'while the scarabs pressed in around his foes' removed (nothing links the scarabs to his fight; smart_scripts 7272 casts only Fevered Plague and the transform). Transform verified: display 6697 scale 1.2, immune to physical and shadow, 30 s; the transform is an aura, so the kill reports 7272. The scarab legend stays as hearsay (3527, tanaris.json 44011). Shadra's name on the carved tablet is the Hinterlands'."
+ },
+ {
+  "id": 117603,
+  "kind": 2,
+  "zone": 1176,
+  "sort": 2,
+  "faction": 0,
+  "title": "Witch Doctor Zum'rah",
+  "body": "Witch Doctor Zum'rah keeps his sanctum at the edge of a troll graveyard, where shallow graves crowd the sand on every side and a cauldron bubbles over its fire beside his chest. Left alone he stands quietly among the graves and pays no heed to those who pass at a distance. His sanctum, though, is his own, and anyone who sets foot in it answers to him.",
+  "triggers": [
+   [
+    3,
+    7271
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Zum'rah met those who stepped into his sanctum with fury, demanding how they dared. He loosed volleys of shadow and planted a ward from which skeletons rose one after another to fight for him, and he closed his own wounds with healing waves. Over each foe who fell he called on the sands to consume them. In the end the witch doctor fell among his graves.",
+    "triggers": [
+     [
+      3,
+      7271
+     ]
+    ],
+    "sources": [
+     "areatrigger 962 (radius 10 at his spot, 1909,1015) and smart_scripts 962 (set faction 37 on him); creature_template 7271 faction 35 until then; smart_scripts 7271 id 0 (on reset restore faction)",
+     "creature_text 7271 group 0 (How dare you enter my sanctum!, on aggro) and groups 1-2 (Fall!, Sands consume you!, on kill)",
+     "smart_scripts 7271 (Shadow Bolt Volley, Shadow Bolt, Ward of Zum'rah, Healing Wave below 70 percent)",
+     "Spell.dbc 11086 Ward of Zum'rah (a totem that periodically summons a Skeleton of Zum'rah, 7786)"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 7271 single spawn on map 209 at 1912,1016",
+   "gameobjects 128308 and 128403 Shallow Grave, 40 each, all within 1825-1900, 975-1050; 141851 Cauldron (go_flames) and 141596 Witch Doctor's Chest beside him",
+   "warcraft.wiki.gg/wiki/Zul'Farrak (Zum'rah raises the dead; his skeletons)"
+  ],
+  "notes": "Writer: first entry for Zum'rah. Opening on KILL 7271 (single spawn, map 209 only). He is friendly (faction 35) until someone enters the 10-yard areatrigger at his spot, then hostile: told as the sanctum being his own. The graves' zombies are not claimed: trap 128972 (spell 10247, Summon Zul'Farrak Zombies) has no spawn and nothing in the database casts 10247, so whether opening a grave raises anything in 3.3.5 is not verified. The skeletons are his ward's (11086). The module does not touch 7271."
+ },
+ {
+  "id": 117604,
+  "kind": 2,
+  "zone": 1176,
+  "sort": 3,
+  "faction": 0,
+  "title": "Hydromancer Velratha",
+  "body": "Hydromancer Velratha is a mystic of the Sandfury who commands water, a rare gift in a city of sand. She walks the shore of the sacred pool deep in Zul'Farrak, following the water's edge as if it were her own, while warriors and witch doctors of her tribe keep watch along the banks around her. Whoever comes to the pool comes before her, and she does not let strangers walk its shore unchallenged.",
+  "triggers": [
+   [
+    3,
+    7795
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Velratha fought with the cold of deep water, hurling bolts of frost at her foes and turning healing waves on any troll beside her who faltered. The pool she kept could not save her, and the hydromancer fell on its shore.",
+    "triggers": [
+     [
+      3,
+      7795
+     ]
+    ],
+    "sources": [
+     "smart_scripts 7795 (Frostbolt; Healing Wave on a friend missing health), the same spells in the module's dungeon_zulfarrak.sql",
+     "creature 7795 single spawn at 1698,1211, patrolling the shore"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The second tablet of Mosh'aru had been in Velratha's keeping. Taken from the hydromancer, it went with its twin to the troll mystic Yeh'kinya in Steamwheedle Port, who meant to fuse the two ancient tablets together and study the secrets hidden in them.",
+    "triggers": [
+     [
+      5,
+      3527
+     ]
+    ],
+    "sources": [
+     "quest 3527 description (the second tablet held by the hydromancer Velratha) and reward text (fuse these ancient tablets together, study their hidden secrets)",
+     "creature_loot_template 7795: Second Mosh'aru Tablet 10661, quest drop"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The Tiara of the Deep, which Velratha's agents had stolen from the mage Tabetha, went home to Dustwallow. Tabetha was delighted to have it back, and as glad that Velratha no longer had it as she was of the jewel itself. She declared herself forever in her helper's debt, and asked them to pay no mind if she had sounded a little mean before: she is a much nicer person, she says, to those who have not stolen from her.",
+    "triggers": [
+     [
+      5,
+      2846
+     ]
+    ],
+    "sources": [
+     "quest 2846 description (Velratha sent agents to steal it) and reward text (Velratha no longer has it; forever in your debt; much nicer to those who haven't stolen from me)",
+     "creature_loot_template 7795: Tiara of the Deep 9234, quest drop"
+    ]
+   }
+  ],
+  "sources": [
+   "creature_template_model 7795 display 6685 (TrollFemale)",
+   "creature 7795 single spawn on map 209; waypoint_data 815700 (her patrol along the pool's shore, 1630-1707, 1153-1229)"
+  ],
+  "notes": "Checked: ACCEPT 3527 and ACCEPT 2846 removed. The three triggers share only her name and title (3527: the tablet and the pool; 2846: the tiara and its theft; the kill: the shore and her fight), too little for an opening, and each quest fires outside the instance. Now KILL 7795 only (single spawn, map 209), opening as a foe at the pool sees her; 'priestess' and 'a taste for things of power' dropped (unsupported or unshown). The tablet is part 2 on DONE 3527 (reward text, no egg) and the tiara part 3 on DONE 2846, both quest drops from her, so their bringers saw her fall. The theft is one clause (dustwallow.json 1526)."
+ },
+ {
+  "id": 117605,
+  "kind": 2,
+  "zone": 1176,
+  "sort": 4,
+  "faction": 0,
+  "title": "Gahz'rilla",
+  "body": "Gahz'rilla is a huge beast of Zul'Farrak. He dwells in the sacred pool deep within the troll city, a still water in the middle of the desert, and from that pool he can be called up to face any who would challenge him. The trolls keep the manner of his summoning a close secret, and whoever would stand before Gahz'rilla must first wrest it from them.",
+  "triggers": [
+   [
+    4,
+    2770
+   ],
+   [
+    3,
+    7273
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In the Shimmering Flats the gnome Wizzle Brassbolts wants a scale of Gahz'rilla. The beast is so fierce, he says, that even his scales crackle with energy, and it is that energy he hopes to harness for his racing car, if someone will bring him the electrified scale.",
+    "triggers": [
+     [
+      4,
+      2770
+     ]
+    ],
+    "sources": [
+     "quest 2770 description (his scales crackle with energy; harness it for my car; bring me the electrified scale)",
+     "thousand_needles.json 40022 (Wizzle and the rocket car)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The great gong at the edge of the pool was struck, and the water answered. Gahz'rilla rose from the depths, a hydra of enormous size, and waded ashore before he turned on those who had called him. He fought with the cold of the deep, hurling icicles that slowed his foes, freezing them solid where they stood and slamming into them with a force that flung them back. At last the hydra fell on the shore of his pool.",
+    "triggers": [
+     [
+      3,
+      7273
+     ]
+    ],
+    "sources": [
+     "smart_scripts 141832 (gong on use: summon 7273 at 1659,1180, z 1, under the water; not repeatable)",
+     "smart_scripts 7273 (on AI init move to 1697,1217, z 8.9, on the shore, with unit flags 768 until he arrives; Icicle, Freeze Solid, Gahz'rilla Slam; on death set instance data)",
+     "Spell.dbc 11131 Icicle (frost, slows), 11836 Freeze Solid (stun, frost damage), 11902 Gahz'rilla Slam (damage nearby, knock back)",
+     "creature_template_model 7273 display 7271, Hydra model at scale 3.0"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The electrified scale reached Wizzle Brassbolts in the Shimmering Flats, and he could hardly wait to try out ways to harness its energy. First, though, he had a question for whoever brought it: had they really seen Gahz'rilla, and was he as big as everyone says?",
+    "triggers": [
+     [
+      5,
+      2770
+     ]
+    ],
+    "sources": [
+     "quest 2770 completion and reward text"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 2770 description (deep in Zul'Farrak a sacred pool; from it the trolls summon Gahz'rilla; his scales crackle with energy; harness it for my car; the summoning a well-kept secret; wrest it from them)",
+   "creature 7273 no fixed spawn: summoned only by gong 141832 (smart_scripts 141832; no other summoner in smart_scripts or core scripts)",
+   "thousand_needles.json 40022 (Wizzle Brassbolts and the rocket car, told there)",
+   "warcraft.wiki.gg/wiki/Zul'Farrak (patch 3.0.8: the mallet requirement removed in favour of the gong)"
+  ],
+  "notes": "Checked: opening trimmed to what both triggers show (ACCEPT 2770's text and a foe at the pool): a huge beast called up from the sacred pool, the summoning a troll secret. 'Hydra' and the gnome's wish moved out: the hydra is told in part 2 (the kill), Wizzle's wish in part 1 on ACCEPT 2770, which a kill alone does not show. Part 2 verified: base gong lock 99, module lock 459 (mallet), so only 'the gong was struck'; smart_scripts 7273 (move ashore, Icicle, Freeze Solid, Gahz'rilla Slam). 7273 has no fixed spawn: summoned only by gong 141832 on map 209."
+ },
+ {
+  "id": 117606,
+  "kind": 2,
+  "zone": 1176,
+  "sort": 5,
+  "faction": 0,
+  "title": "Antu'sul",
+  "body": "Antu'sul, the Overseer of Sul, is a troll who keeps the basilisks of Zul'Farrak, and he calls them his children. He waits apart from the city's busy streets with young basilisks about his feet, and the Sul'lithuz that crawl through the ruins are of his brood. He does not wait for visitors to reach him. Anyone who comes near his place finds the overseer and his children already coming to meet them.",
+  "triggers": [
+   [
+    3,
+    8127
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Antu'sul greeted intruders as a meal: lunch had arrived, he told his beautiful children, and they were to tear it to pieces. Basilisk servants rose at his call to defend their master, and more came as he was wounded. He fought as a shaman, with chain lightning and shocks of earth, totems that held his foes fast and wards that healed him. At the last he cried for the children of Sul to protect him, but the overseer fell all the same.",
+    "triggers": [
+     [
+      3,
+      8127
+     ]
+    ],
+    "sources": [
+     "creature_text 8127 groups 0-2 (Lunch has arrived, my beautiful children; Rise and defend your master!; The children of Sul will protect their master. Rise once more Sul'lithuz!)",
+     "smart_scripts 8127 (on aggro Antu'sul's Minion and line 1; at 75 percent minion and line 2; at 25 percent minion and line 0; Earthgrab Totem and Healing Ward at 75 percent chance; Chain Lightning; Earth Shock; Healing Wave of Antu'sul below 20 percent)",
+     "Spell.dbc 11894 Antu'sul's Minion (summons Servant of Antu'sul 8156, a basilisk), 8376 Earthgrab Totem (immobilizes), 11899 Healing Ward"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 8127 single spawn on map 209 at 1816,670, subname Overseer of Sul; Sul'lithuz Hatchling 8130 x3 beside him (1800-1812, 650-700)",
+   "areatrigger 1447 (radius 30 at 1811,701) and smart_scripts 1447 (set data 1 1 on him); smart_scripts 8127 id 6 (on data set, attack the nearest player within 100 yards)",
+   "DB spawns: Sul'lithuz Sandcrawler 8095 x19 across the city"
+  ],
+  "notes": "Writer: first entry for Antu'sul. Opening on KILL 8127 (single spawn, map 209 only). 'Of his brood' rests on his own line naming the Sul'lithuz the children of Sul who protect their master. He comes at intruders when they enter a 30-yard areatrigger near him (told as coming to meet them). The Sul'thraze halves he carries (loot, and Trenton Lighthammer's tale in tanaris.json 44011) are not told. The module does not change 8127."
+ },
+ {
+  "id": 117607,
+  "kind": 2,
+  "zone": 1176,
+  "sort": 6,
+  "faction": 0,
+  "title": "Nekrum Gutchewer",
+  "body": "Nekrum Gutchewer is a troll of Zul'Farrak who has not let death stop him. Undead, he fights for the Sandfury still, a dead warrior who has not given up his place in his tribe. He keeps no hall of his own and is not met walking the city's streets. He comes only when the tribe gathers its warriors against intruders at the great pyramid, and he stands among the last and strongest of them.",
+  "triggers": [
+   [
+    3,
+    7796
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Nekrum met his foes with a charge that bowled them over, then laid a fevered plague on those around him and hamstrung any who tried to slip away from him. He fought at the foot of the great pyramid's stairs among the last of the Sandfury host, and there he fell.",
+    "triggers": [
+     [
+      3,
+      7796
+     ]
+    ],
+    "sources": [
+     "smart_scripts 7796 (on aggro Berserker Charge 19471, a charge with knockback; Fevered Plague; Hamstring)",
+     "instance_zulfarrak.cpp pyramidSpawns (Nekrum summoned with wave 3 at 1881,1200, z 8.9, at the foot of the stairs)"
+    ]
+   }
+  ],
+  "sources": [
+   "creature_template 7796 type 6 (undead), display 6690 (TrollMale)",
+   "instance_zulfarrak.cpp (Nekrum 7796 has no fixed spawn; summoned only in the third wave of the pyramid battle, beside Shadowpriest Sezz'ziz)"
+  ],
+  "notes": "Checked: ACCEPT 2991 removed and Thadius and the medallion dropped from the opening. 2991 fires in the Blasted Lands and shows only that a troll named Nekrum holds a medallion Thadius wants, while the opening told what a foe at the pyramid sees, and a kill alone does not show the medallion (a quest drop) or Thadius. The medallion and Sharpbeak stay with blasted_lands.json 417 and the Hinterlands; only Nekrum's fall is told here. KILL 7796 only: no fixed spawn, summoned only by instance_zulfarrak.cpp in the third wave at the foot of the stairs. Part 1 verified (Berserker Charge 19471 knockback, Fevered Plague, Hamstring)."
+ },
+ {
+  "id": 117608,
+  "kind": 2,
+  "zone": 1176,
+  "sort": 7,
+  "faction": 0,
+  "title": "Chief Ukorz Sandscalp",
+  "body": "Chief Ukorz Sandscalp rules Zul'Farrak from above it. His seat is a high terrace over the city, reached only past a heavy door not far from the great pyramid, and great serpents and hulking basilisks keep guard there with him. At his side stands Ruuzlu, a Sandfury warrior with axe in hand. No outsider reaches the chief of the Sandfury without first finding a way through that door.",
+  "triggers": [
+   [
+    3,
+    7267
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Ukorz met intruders as a chief of the desert. He roared that the Sandfury reign supreme and that his foes would feel the fury of the sands, and he fought in a berserker's stance, cleaving through those before him; as his wounds mounted he fell into a frenzy. It was not enough. The chief of Zul'Farrak fell on his own high seat, above the city he ruled.",
+    "triggers": [
+     [
+      3,
+      7267
+     ]
+    ],
+    "sources": [
+     "creature_text 7267 groups 1 and 2 (Feel the fury of the sands!; The Sandfury reign supreme!), both said with and without the module (base: group 2 on aggro, group 1 with Frenzy at 30 percent; module: groups 1 and 2 with Frenzy at 60 and 30 percent, group 0 on aggro)",
+     "smart_scripts 7267, base and module (Berserker Stance, Cleave, Frenzy)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Ruuzlu fought beside his chief like a headsman, cleaving through those in front of him and cutting down with a single killing blow any foe who faltered. He did not outlive the fight.",
+    "triggers": [
+     [
+      3,
+      7797
+     ]
+    ],
+    "sources": [
+     "smart_scripts 7797, base and module (Berserker Stance, Cleave, Execute on a target below 20 percent)",
+     "creature 7797 single spawn at 1730,1015 z 55, beside Ukorz at 1727,1017"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 7267 single spawn on map 209 at 1727,1017, z 55, the highest point of the city",
+   "DB spawns beside him: Sandfury Guardian 7268 x4 (family 35, serpent model) and Sul'lithuz Abomination 8120 x2 (basilisks), both only there",
+   "gameobject 146084 End Door at 1855,1143 z 16; npc_text 1511 and 1514 (the door that leads to the chief of Zul'Farrak)",
+   "warcraft.wiki.gg/wiki/Zul'Farrak (Ukorz reached only after the pyramid battle; Ruuzlu his companion)"
+  ],
+  "notes": "Checked: verified; part 1 reworded so the two lines carry no order (base: reign supreme on aggro, fury with Frenzy at 30 percent; module: fury at 60 and reign supreme at 30, Die, outlander on aggro, left out). The End Door (146084, type 0, lock 0, flags 32, no script of its own) opens only through Weegli's Armed Barrel 141612, so the terrace is reached past it. Writer: Ukorz is the Sandfury ruler this file owns. Opening on KILL 7267 (single spawn, map 209 only; opening and kill part arrive together). The door is named but not who opens it (117610 part 3). Ruuzlu has no entry of his own: a part on KILL 7797 (single spawn beside Ukorz; creature_equip_template 7797 gives him a two-handed axe, 5288). 'This desert be mine!' (group 3, said only on killing a foe) and 'Die, outlander!' (module only) are left out. The module adds Wide Slash; not named."
+ },
+ {
+  "id": 117609,
+  "kind": 2,
+  "zone": 1176,
+  "sort": 8,
+  "faction": 0,
+  "title": "Sergeant Bly",
+  "body": "Sergeant Bly is a human, the leader of a band of adventurers who came to Zul'Farrak, and the trolls caught them. Bly and his companions, Raven, Oro Eyegouge, Murta Grimgut and the goblin Weegli Blastfuse, were caged atop the great pyramid, and the trolls mean to sacrifice them. From his cage Bly pleads with any who will listen: get them out, and he will give his rescuers anything they want.",
+  "triggers": [
+   [
+    2,
+    7604
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Bly's gratitude did not last. When the fighting was done he thanked his rescuers, then told them to forget anything he might have said about repaying them. Called out for it, he flared up, demanding how they dared say such a thing to him; after all they had been through, he declared, he had never liked them anyway. Those of his band still standing took his side and turned on their rescuers, but Bly himself fell.",
+    "triggers": [
+     [
+      3,
+      7604
+     ]
+    ],
+    "sources": [
+     "npc_text 1517 (gossip after the battle: thanks; if I had mentioned repaying you, you can forget it)",
+     "zulfarrak.cpp npc_sergeant_bly (gossip option to fight, then creature_text 7604 groups 0 and 1, What? How dare you say that to me?!? and After all we've been through? Well, I didn't like you anyway!!; faction 41; Raven, Oro and Murta set hostile if alive; Shield Bash, Revenge)",
+     "creature_template 7604 faction 35 otherwise: he can be fought only after that exchange"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The divino-matic rod went back to Chief Engineer Bilgewhizzle in Gadgetzan, taken from Bly. Bilgewhizzle was delighted, and he had a question for whoever returned it: had they had to fight Bly for it? He hoped they had knocked the sergeant and his band down good and hard.",
+    "triggers": [
+     [
+      5,
+      2768
+     ]
+    ],
+    "sources": [
+     "quest 2768 reward text (Did you have to fight Bly for it? I hope you knocked him and his band down good and hard!)",
+     "creature_loot_template 7604: Divino-matic Rod 8548, 100 percent, quest drop; no other source"
+    ]
+   }
+  ],
+  "sources": [
+   "npc_text 1515 (gossip before the cages open: my band and I captured by trolls, going to sacrifice us; get us out and I'll give you anything you want)",
+   "creatures 7604 Sergeant Bly (display 6433 HumanMale), 7605 Raven (HumanFemale), 7606 Oro Eyegouge (OrcMale), 7608 Murta Grimgut (DwarfFemale), 7607 Weegli Blastfuse (GoblinMale), each a single spawn at the top of the pyramid (1881-1891, 1295-1299, z 48) beside Troll Cages 141070-141074"
+  ],
+  "notes": "Checked: the rod clause (by Gadgetzan's account he walked off with the divining rod) and 'mercenary' removed from the opening: TALK 7604 shows only his plea (npc_text 1515), and the theft is tanaris.json 44021's. Title shows nothing of the turn. Part 1 verified in zulfarrak.cpp: gossip 1517 (forget the repayment) and the option to fight are offered only from PYRAMID_MOVED_DOWNSTAIRS; choosing it makes him say groups 0 and 1, set faction 41 and turn Raven, Oro and Murta hostile if alive; Weegli leaves for the door. Until then he is friendly (faction 35, escortee), so a player's KILL 7604 always follows the turn. Part 2 on DONE 2768 (reward text; the rod drops only from Bly) unchanged."
+ },
+ {
+  "id": 117610,
+  "kind": 3,
+  "zone": 1176,
+  "sort": 1,
+  "faction": 0,
+  "title": "The Prisoners of the Pyramid",
+  "body": "The great pyramid of Zul'Farrak rises in broad steps above the sand, and a long stair climbs its face to the platform at its top. There the Sandfury keep their prisoners, shut in cages, and an executioner of the tribe stands over them. In the cages waits a band of adventurers the trolls have taken, two humans, an orc, a dwarf and a goblin, and every one of them wants out. The trolls do not mean to let their captives go, and whoever would free them must first deal with the guard who stands over the cages.",
+  "triggers": [
+   [
+    3,
+    7274
+   ],
+   [
+    2,
+    7607
+   ],
+   [
+    2,
+    7604
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The goblin of the band, Weegli Blastfuse, has a bargain to offer whoever helps them: he can blow up the door that leads to the chief of Zul'Farrak. With that door down, he makes plain, nothing would stand between them and the troll chief himself.",
+    "triggers": [
+     [
+      2,
+      7607
+     ]
+    ],
+    "sources": [
+     "npc_text 1511 (if you get me out of here, I can blow up the door that leads to the chief of Zul'Farrak), 1513 (kill enough and I'll blow the door to the troll chief) and 1514 (the only thing between us and the chief troll is that door), the three menus of gossip 940"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The executioner met any who came to stop him with a cry that the executions should begin, and over each foe who fell he declared that justice was done. He fell beside the cages all the same, and on his body was the key that opened them.",
+    "triggers": [
+     [
+      3,
+      7274
+     ]
+    ],
+    "sources": [
+     "creature_text 7274 (Let the executions begin!, on aggro; Justice is done!, on kill), base and module",
+     "creature_loot_template 7274: Executioner's Key 8444, 100 percent; Troll Cages 141070-141074 lock 420 (key 8444)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "When the cages opened, the freed band took its stand at the top of the stairs, and Weegli saw what was coming: here they come! Below, the Sandfury massed in the courtyard, slaves and drudges, cretins, acolytes and zealots, and climbed the stairs in ever larger groups. A second host followed the first. When it too was broken, Bly cried that it was time to move forward, and the band went down the stairs to meet the last of them at the foot of the pyramid, led by a shadowpriest and an undead troll.",
+    "triggers": [
+     [
+      3,
+      7275
+     ],
+     [
+      3,
+      7796
+     ]
+    ],
+    "sources": [
+     "go_troll_cage (zulfarrak.cpp: on opening, the band walks to the top of the stairs at 1882-1891, 1263-1272, z 41)",
+     "npc_weegli_blastfuse (on arrival, creature_text 7607 group 0, Oh no! Here they come!)",
+     "instance_zulfarrak.cpp pyramidSpawns and Update (wave 1: 23 Sandfury Cretins, Slaves, Acolytes, Drudges and Zealots at z 8.9 sent up the stairs in growing groups every 10 s; wave 2 the same after 10 s; wave 3 five trolls with Shadowpriest Sezz'ziz 7275 and Nekrum 7796; Bly says group 2, Let's move forward!, and the band moves to the foot of the stairs)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The shadowpriest Sezz'ziz led the last host, and Bly went straight for him, calling his band after him. Sezz'ziz hurled bolts of shadow, sent his foes reeling in terror with a psychic scream and healed the trolls around him, while fresh zealots and acolytes kept coming at his call. He fell at the foot of the stairs all the same.",
+    "triggers": [
+     [
+      3,
+      7275
+     ]
+    ],
+    "sources": [
+     "zulfarrak.cpp npc_sergeant_bly MovementInform (at the descent point Bly attacks Sezz'ziz and calls for help within 100 yards)",
+     "zulfarrak.cpp npc_shadowpriest_sezziz (Shadow Bolt, Psychic Scream, Renew and Heal on the most wounded friend, summons Sandfury Zealots 8877 and Acolytes 8876 every 10-14 s)"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "With the last of the Sandfury host dead, the goblin Weegli ran to the door that barred the way to the chief, set a barrel of explosives against it and blew it open, then ran off. Beyond the broken door the way lay open to the chief of Zul'Farrak.",
+    "triggers": [
+     [
+      3,
+      7267
+     ]
+    ],
+    "sources": [
+     "npc_text 1514 (after the battle: the only thing between us and the chief troll is that door yonder)",
+     "zulfarrak.cpp npc_weegli_blastfuse (on the door option, or when Bly turns, he runs to 1857,1146 and casts 10772 Plant explosives, Weegli's Armed Barrel 141612; then path 815530 and despawn)",
+     "smart_scripts 141612 (open End Door 146084, exploded state, set DATA_END_DOOR done); the End Door opens no other way, so whoever reached Ukorz passed it"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 7274 Sandfury Executioner, single spawn at 1887,1290, z 46, beside Troll Cages 141070-141074 (z 48); creature_loot_template 7274: Executioner's Key 8444, 100 percent, not a quest drop; Lock.dbc 420 (key 8444); item 8444 spell 10738 Unlocking (opens every cage within 15 yards)",
+   "creature_template_model 7604-7608 (two humans, an orc, a goblin, a dwarf)",
+   "npc_text 1515 (Bly: captured, to be sacrificed)"
+  ],
+  "notes": "Checked: the opening now holds for each of its triggers (KILL 7274, TALK 7607, TALK 7604): the pyramid, the cages, the executioner over them, the captives. The executioner's cries and key, shown only by his kill, moved to part 2 on KILL 7274; Weegli's offer, shown only by talking to him (all three of his menus name the door to the chief), to part 1 on TALK 7607. Parts 3 and 4 (the waves, Sezz'ziz) unchanged and verified against instance_zulfarrak.cpp and zulfarrak.cpp. Part 5 (KILL 7267): End Door 146084 has lock 0 and no script; only Weegli's Armed Barrel 141612 opens it (smart_scripts 141612), which Weegli plants on request or when Bly turns, both only after the host is dead; 'made good on his word' and 'not seen again' removed, since a kill of Ukorz does not show the offer and Weegli simply runs off and despawns. check_staged warns that 7275 and 7796 have no fixed spawn: summoned only by instance_zulfarrak.cpp. The module does not change the event; the executioner's lines are the same in both."
+ },
+ {
+  "id": 117611,
+  "kind": 3,
+  "zone": 1176,
+  "sort": 2,
+  "faction": 0,
+  "title": "The Scarabs of Zul'Farrak",
+  "body": "Scarabs swarm through Zul'Farrak. They scuttle along its streets and among its ruins in ones and twos, and in places they gather in their dozens. Each is small and hard of shell, but they come together, and a cloud of plague rises about them that saps the strength, quickness and wits of anyone caught in it. The trolls of the city do not trouble them, nor do the scarabs trouble the trolls, and the beetles go about their business among the graves and ruins as if the city were as much theirs as the tribe's.",
+  "triggers": [
+   [
+    3,
+    7269
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In Gadgetzan the goblin Tran'rek prizes those shells. They are hard enough to build with, so useful that the scarabs of Tanaris were hunted nearly to extinction, and he knew a colony still thrived in Zul'Farrak, where the trolls do not hunt them for their shells. The uncracked shells reached him in good time, for his cousin in Booty Bay was growing impatient, and he called their bringer a real lifesaver.",
+    "triggers": [
+     [
+      5,
+      2865
+     ]
+    ],
+    "sources": [
+     "quest 2865 description (very hard shells; building material; hunted to near extinction; a colony in Zul'Farrak; the trolls don't hunt them for their shells), completion text (my cousin in Booty Bay, getting impatient) and reward text (a real lifesaver)"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 7269 Scarab x68, map 209 only; about 30 within 1750-1850, 800-950, around Theka 7272 (1778,860)",
+   "smart_scripts 7269 (Plague Cloud 3256 in combat); Spell.dbc 3256 (reduces Strength, Agility and Intellect of all enemies in the area)",
+   "creature_template 7269 faction 15 (creature), not of the Sandfury (37)",
+   "quest 2865 (Tran'rek 7876 in Gadgetzan gives and ends it; both factions); the shells drop from the scarabs of Zul'Farrak"
+  ],
+  "notes": "Checked: ACCEPT 2865 removed from the entry and its part. It fires in Gadgetzan, where the opening's swarms, plague cloud and Theka's tomb are not shown, and a scarab kill does not show Tran'rek. Now KILL 7269 only (68 spawns, map 209 only). Theka's name and the persecutor legend removed from the opening: about half the scarabs stand nowhere near his tomb, and the legend is told on his own entry (117602) and tanaris.json 44011. Tran'rek's tale and his thanks merged into one part on DONE 2865, whose quest text shows both; its bringer killed scarabs in the city."
+ },
+ {
+  "id": 117612,
+  "kind": 3,
+  "zone": 1176,
+  "sort": 3,
+  "faction": 0,
+  "title": "The Sandfury",
+  "body": "Zul'Farrak is the Sandfury's city, and its streets belong to the tribe's warriors and mystics. Blood drinkers leech the life from their foes, and shadowcasters wrap themselves in demon skin and hurl bolts of shadow. Witch doctors plant totems that spout lava and wards that heal the trolls around them, and they mend their wounded kin with quick prayers. Shadowhunters shoot down those at a distance and hex their foes, and soul eaters bite at the souls of their enemies while dark offerings heal their kin. Badly hurt, many of them break off and run, only to come back with others at their side.",
+  "triggers": [
+   [
+    3,
+    5649
+   ],
+   [
+    3,
+    5648
+   ],
+   [
+    3,
+    5650
+   ],
+   [
+    3,
+    7246
+   ],
+   [
+    3,
+    7247
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In Gadgetzan, the smith Trenton Lighthammer prizes one of the tribe's crafts. The Sandfury make a tempering agent from sandstones, and connoisseurs value the goods tempered with it, so he asked for a good supply. When twenty vials of troll temper were set before him, he was delighted: he would be at work for days, he said, before he had used it all.",
+    "triggers": [
+     [
+      5,
+      3042
+     ]
+    ],
+    "sources": [
+     "quest 3042 description (tempering agent from sandstones; highly prized by connoisseurs) and reward text (at work for days)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Sandarr Dunereaver is seldom found in the city, but when he walks its streets he is a warrior to be feared. He met his foes with a shout that sapped their strength, struck hard and pummeled any who tried to cast a spell, and when he appeared he fell like the rest.",
+    "triggers": [
+     [
+      3,
+      10080
+     ]
+    ],
+    "sources": [
+     "creature 10080 single spawn on map 209 at 1546,1015; smart_scripts 10080 (despawns at spawn 90 percent of the time; Demoralizing Shout, Strike, Pummel), not changed by the module"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Dustwraith is a Sandfury seldom seen. Where he appeared he fought like an assassin, striking with sinister blows and leaving a virulent poison in his victims' blood, until he was cut down.",
+    "triggers": [
+     [
+      3,
+      10081
+     ]
+    ],
+    "sources": [
+     "creature 10081 single spawn on map 209 at 1864,1152; smart_scripts 10081 (despawns at spawn 90 percent of the time; base: Virulent Poison 12251 in combat, Sinister Strike; module: Virulent Poison 12254 on reset, Sinister Strike)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Zerillis is rarely seen among the Sandfury, a hunter who keeps his distance. Where he appeared he shot at his foes from afar, slowed them with shots of frost and caught them in his net, and he was brought down at last.",
+    "triggers": [
+     [
+      3,
+      10082
+     ]
+    ],
+    "sources": [
+     "creature 10082 single spawn on map 209 at 1674,905; smart_scripts 10082 (despawns at spawn 90 percent of the time; base: Net on aggro, Shoot, Frost Shot at 20-40 percent; module: Shoot, Frost Shot, Net)"
+    ]
+   }
+  ],
+  "sources": [
+   "DB spawns on map 209 only: Sandfury Blood Drinker 5649 x55, Witch Doctor 5650 x39, Shadowhunter 7246 x34, Shadowcaster 5648 x26, Soul Eater 7247 x6",
+   "smart_scripts 5648, 5649, 5650, 7246, 7247, base and module dungeon_zulfarrak.sql: Blood Leech; Demon Skin, Shadow Bolt, Shadow Word: Pain; Healing Ward, Lava Spout Totem, Flash Heal; Shoot, Hex; Soul Bite, Dark Offering; Flee For Assist at 15 percent",
+   "creature_template_model 10080-10082 (TrollMale)"
+  ],
+  "notes": "Checked: every spawn of 5648, 5649, 5650, 7246, 7247 is on map 209 (the module's added 5649 patrols are on map 209 too). Opening: 'hex those who come near' made 'hex their foes' (only the module limits Hex to 20 yards) and Dark Offering told as healing their kin (Spell.dbc 7154 heals an ally). Rares: each despawns at spawn 90 percent of the time in base and module, so each part says he is seldom found; Dustwraith's poison worded so it holds for base 12251 (cast on the victim) and module 12254 (a weapon proc). Part 1 on DONE 3042 (Trenton Lighthammer; no zone file uses it). the tribe as it is met inside, and its errands. Opening on KILL of the five common Sandfury that stand only on map 209 (the outdoor Hideskinners, Axe Thrower and Firecallers are not used). Every spell named is common to base and module (Dismounting Blast left out: the module drops it from 5648). Part 1 on DONE 3042 (Trenton Lighthammer 7804 gives and ends it; no zone file uses 3042 or TALK 7804; his memory of the warband and Sul'thraze is tanaris.json 44011 and not retold). Parts 2-4: the three rares, each on its own KILL (single spawn, map 209 only, event_chance 90 despawn with flag 512, which is WHILE_CHARMED and does not stop the event firing), each telling only its fight."
+ }
+]

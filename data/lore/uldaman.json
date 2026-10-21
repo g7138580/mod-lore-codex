@@ -1,0 +1,748 @@
+[
+ {
+  "id": 133700,
+  "kind": 0,
+  "zone": 1337,
+  "sort": 0,
+  "faction": 0,
+  "title": "Uldaman",
+  "body": "Uldaman lies buried beneath the northern Badlands, a vault of the titans far older than any dwarven hold, its halls and stairways cut from the living rock on a scale no mortal mason ever attempted. The dwarves of Ironforge broke into it, and their excavation still scars the outer halls: empty camps, cold cookfires, chests left behind in haste. They did not keep it. The Stonevault troggs boiled up out of the depths in numbers no dig crew could hold back, and they swarm the old tunnels still, while the Shadowforge clan of the Dark Iron dwarves digs behind barricades of its own. Deeper in, past troggs and diggings alike, the vault keeps guardians of its own, figures of living stone that stand as still as statues. Explorers come looking for lost companions and the secrets of the makers of the world, and others for whatever the fleeing and the fallen left behind.",
+  "triggers": [
+   [
+    1,
+    1337
+   ]
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Uldaman (pre-Cataclysm official description: an ancient titan vault buried deep within the earth; dwarven digs penetrated it and released the troggs; Dark Iron incursions; guardians of living stone); its disc and creation lore is left out",
+   "AreaTable 1337 Uldaman (map 70); on map 0 the outer halls are WMO 1218 (Kz_Uldaman_A, name set 1), whose WMOAreaTable rows all report area 1337, so the overview also fires in the excavated outer halls; creature 2909 there has areaId 1337",
+   "badlands.json 300 (Stonevault troggs woken from long slumber; the Shadowforge clan; the vault of the titans), pointed to, not retold",
+   "quests 1360 and 2342 (diggers fled the troggs and left their chests in the Common Halls), 2398 (troggs came so fast and in such numbers), 2201 (Shadowforge and troggs vie for control of the dig site)",
+   "DB spawns map 70: Stonevault troggs (4850-4855, 7175, 7320, 7321), Shadowforge (4847-4849, 7030, 7290, 7291), stone guardians (4857, 4860, 7011, 7012, 7206, 7309, 7396, 7397) with spell 10255 Stoned on the vault's sleepers"
+  ],
+  "notes": "Writer: opening on AREA 1337 only. No boss, no Archaedas, no discs and no word of what the troggs and dwarves are (that is the discs' revelation, Ironforge 153714 and Thunder Bluff 163817). Shadowforge and Stonevault are names Badlands 300 already gives. Hammertoe, Agmond, Infernus and the tablets are left to the Badlands and Ironforge files. The last line names the errands without outcomes. No requiredState (classic dungeon, state 0); dungeon_uldaman.sql changes only smart_scripts (no spawns added or removed). Checker: 'stand motionless until someone comes near' changed to 'as still as statues' (the keepers and Archaedas wake by altar, not by approach). Otherwise verified."
+ },
+ {
+  "id": 133701,
+  "kind": 1,
+  "zone": 1337,
+  "sort": 1,
+  "faction": 0,
+  "title": "The Common Halls",
+  "body": "The first halls of Uldaman, cut deep into the cliffs beyond the Maker's Terrace, still show the dwarves who dug here. Their chests stand in the Common Halls, north and south, abandoned when the troggs came. Shadowforge diggers and surveyors work the halls now, guarded by ruffians and obsidian golems, and Stonevault cave hunters prowl the tunnels with their nets. Clusters of magenta fungus caps grow along the walls, and a jostled cluster spews poison spores.",
+  "triggers": [
+   [
+    3,
+    4856
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Somewhere among the Shadowforge in these halls walks Magregan Deepshadow. He carries an amulet taken from the old prisoner the Dark Irons dragged here, and anyone who means to help the prisoner must win it back from him before it leads his clan to what they are digging for.",
+    "triggers": [
+     [
+      4,
+      722
+     ]
+    ],
+    "sources": [
+     "quest 722 description (Deepshadow's got it, Magregan Deepshadow; he's round here in the ruins; that amulet will lead them right to the scrolls; more powerful golems)",
+     "creature 2932 single spawn on map 0 at -6190,-3042 in the outer halls, among Shadowforge 4844-4846 and Obsidian Golem 4872"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The amulet was won back from Magregan Deepshadow and carried to the prospector who had begged for it, and he laughed through his coughing that he had known it would be found. What it held, and what became of him, is his own tale.",
+    "triggers": [
+     [
+      5,
+      722
+     ]
+    ],
+    "sources": [
+     "quest 722 reward text (knew you'd find me amulet)",
+     "smart_scripts 2932 (Whirlwind, base and module; the module adds only a flee at 15 percent)",
+     "badlands.json 316 and 326 (Hammertoe's capture, the amulet and his death), pointed to"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Krom Stoutarm, once a digger here and now in Ironforge, left his most treasured possession in his chest at the end of the North Common Hall. When it came back to him he felt complete again. Some dwarves treasure the luster of metal and some the glint of gems, he said, but a Stoutarm without a treasured stein in hand is hardly a Stoutarm at all.",
+    "triggers": [
+     [
+      5,
+      1360
+     ]
+    ],
+    "sources": [
+     "quest 1360 description and reward text",
+     "gameobject 124389 Krom Stoutarm's Chest, map 0 at -6279,-2964 in the outer halls"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The Garretts toiled here as diggers once, and their family chest in the South Common Hall held the family weapon of choice. Patrick Garrett, reduced to sweeping the bat pens of the Undercity, spent his hard-won coin to get it back. It was a broom, at last a broom worthy of a Garrett, and he brandished it at the bats and bade them tremble.",
+    "triggers": [
+     [
+      5,
+      2342
+     ]
+    ],
+    "sources": [
+     "quest 2342 description and reward text",
+     "gameobject 124388 Garrett Family Chest, map 0 at -6199,-2930",
+     "creature 5651 Patrick Garrett in the Undercity"
+    ]
+   }
+  ],
+  "sources": [
+   "quests 1360 and 2342 descriptions (diggers at the excavation; left their chests when the troggs came; North and South Common Hall)",
+   "gameobjects 126049 and 128293 Magenta Cap Clusters on map 0 (outer halls, x -6295 to -6062) and map 70",
+   "WMOAreaTable WMO 1218: North Common Hall, South Common Hall, Excavation Center, Dig One (area 1337)",
+   "DB spawns map 0, outer halls (x -6280 to -6020, z 204 to 282): Shadowforge Digger 4846, Surveyor 4844, Ruffian 4845, Obsidian Golem 4872, Stonevault Cave Hunter 4856 (smart_scripts 4856: Net, Throw)",
+   "creature 4856 Stonevault Cave Hunter: 17 spawns, all on map 0 inside WMO 1218 (Kz_Uldaman_A, name set 1): North Common Hall 8, South Common Hall 2, unnamed groups 1253 and 1236 beside them 7 (vmap group lookup); WMOAreaTable gives area 1337 for every group of that name set, so the server reports Uldaman there",
+   "quests 17 and 2202 descriptions (magenta fungus caps grow in clusters in the early tunnels; poison spores if jostled)"
+  ],
+  "notes": "Writer: the excavated halls in front of the instance portal (map 0, inside the cliff; the WMO reports area 1337). No KILL or TALK: everything here stands on map 0, where check_staged maps the grid to another zone, and Hammertoe's TALK 2909 is badlands.json's. Opening on ACCEPT 1360 (Alliance, Krom Stoutarm, Ironforge), 2342 (Horde, Patrick Garrett, Undercity), 17 (Alliance, Ghak Healtouch, Thelsamar) and 2202 (Horde, Jarkal Mossmeld, Kargath): all filed under 1517, QuestType 2, flags 8, not auto-complete. Magregan Deepshadow (KILL 2932 fails the map check: map 0) is told only through 722: part 1 on ACCEPT 722 (that he holds the amulet, one phrase of Hammertoe's plea, which badlands 316 tells), part 2 on DONE 722 (the amulet back and Hammertoe's reward line; nothing of the fight or his death). Faction 0; parts 1-3 Alliance only in practice, part 4 Horde only. Checker: Opening moved off ACCEPT 1360, 2342, 17 and 2202 (all accepted far away, so the Place opened before arrival) onto KILL 4856 Stonevault Cave Hunter, every spawn of which stands in these halls where the server reports area 1337. check_staged reports it outside the zone only because it reads the Badlands ADT grid under the cliff (known, kept). Opening trimmed to what an arrival sees ('above the Maker's Terrace' made 'beyond': the halls run in from the terrace under Stonesplinter Valley) (the alchemists' interest in the caps came from 17 and 2202). Part 1 reworded so the Hammertoe overlap with badlands 316 is one phrase. Parts 2-4 verified."
+ },
+ {
+  "id": 133702,
+  "kind": 1,
+  "zone": 1337,
+  "sort": 2,
+  "faction": 0,
+  "title": "The Hall of the Keepers",
+  "body": "Past the gate of the vault proper opens its first great hall, the Hall of the Keepers, and the Stonevault troggs hold it in force. Rockchewers fly into a frenzy when wounded, and oracles raise shields of lightning, healing wards and spouts of lava for their kin. From the hall, ways lead off into side digs and deeper chambers. In one corner, where the troggs pay them no mind, lie the remains of a paladin, left where he fell.",
+  "triggers": [
+   [
+    2,
+    6912
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "At the far end of the hall, where it opens on the next chamber, Revelosh stood among the troggs. He fought with lightning, hurling bolts at single foes and chains of it that leapt from one to the next, and he fell there all the same.",
+    "triggers": [
+     [
+      3,
+      6910
+     ]
+    ],
+    "sources": [
+     "creature 6910 Revelosh, single spawn on map 70 at -226,161",
+     "smart_scripts 6910 (Lightning Bolt 15801, Chain Lightning 16006; identical in dungeon_uldaman.sql)",
+     "page_text 1011 (Baelog's journal: the trogg Revelosh in the chamber before the map room)"
+    ]
+   }
+  ],
+  "sources": [
+   "WMOAreaTable WMO 1219 (Kz_Uldaman_B, the map 70 model) groups 1259, 1281, 1282, 1285, 1289, 1291, 1292 Hall of the Keepers; the entrance (areatrigger_teleport 286, -226,49) lies in group 1281",
+   "warcraft.wiki.gg/wiki/Hall_of_the_Keepers (the first hall of the dungeon, past the portal; Stonevault troggs; Revelosh; Remains of a Paladin)",
+   "vmap group lookup, map 70: Remains of a Paladin 6912 (-176,169) in group 1285, Revelosh 6910 in 1282; Stonevault Rockchewer 4851 (19 on map 70) all in Hall of the Keepers groups; Stonevault Oracle 4852 in the hall and beyond",
+   "smart_scripts 4851 (Frenzy at 30 percent base, Enrage at 50 percent module, both with the emote goes into a frenzy), 4852 (Lightning Shield, Healing Ward, Lava Spout Totem, Healing Wave)"
+  ],
+  "notes": "Writer: the hall's name is its WMO subzone label (shown in the client), placed by the wiki as the first hall. Opening on KILL 7175 (all eight spawns on map 70, in this hall) and TALK 6912 (the paladin's remains, npcflag 2, questgiver of 2201 and 2318, ender of 2200 and 2284; single spawn here). The remains are only described: who he was and what his journal says are the necklace stories (133712, 133713) and Talvash (ironforge 153709). Part 1 on KILL 6910 (single spawn): only the fight; the Shaft of Tsol he carries is loot and is left out. Faction 0. Checker: KILL 7175 dropped from the opening: 6 of the 8 Stonevault Ambushers stand in the Map Chamber (WMO 1219 group 1300), not this hall. Opening now on TALK 6912 alone (single spawn in hall group 1285); ambushers and cave lurkers (Map Chamber, Dig Two) taken out of the text and the rockchewers' frenzy put in. The writer's WMOAreaTable rows were the map 0 model's; the hall's name is confirmed in WMO 1219. Part 1 trimmed ('the hall had a master', 'lost their keeper' unsupported)."
+ },
+ {
+  "id": 133703,
+  "kind": 1,
+  "zone": 1337,
+  "sort": 3,
+  "faction": 0,
+  "title": "The Halls of Living Stone",
+  "body": "Beyond the halls the troggs hold, the vault grows quieter, but it is not empty. Its side caves crawl with cleft scorpids, and shrike bats and basilisks nest in the passages. Past them lies the Temple Hall, and figures of living stone called earthen keep it and the ways around it: rocksmashers who strike with crushing force and sculptors who wreathe themselves in fire and buffet their foes with flame. Stone stewards shake the ground beneath intruders' feet. The stone folk do not speak, and they do not let anyone pass.",
+  "triggers": [
+   [
+    3,
+    7011
+   ],
+   [
+    3,
+    7012
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In a side cave crawling with cleft scorpids hides Annora, an enchanter. Whoever clears the creatures from her hiding place earns her undying gratitude: she had begun to think she might have to hide out forever. What brought her so deep she does not say, but she has kept her craft, and she will teach it to those who ask.",
+    "triggers": [
+     [
+      2,
+      11073
+     ]
+    ],
+    "sources": [
+     "creature 11073 Annora, Enchanting Trainer, single spawn on map 70 at -160,196 beside Cleft Scorpid 7078 (x30, x -175 to -133)",
+     "gossip_menu 4171, npc_text 5253 (undying gratitude for dispensing with those dreadful creatures; might have to hide out forever)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Greatest of the Temple Hall's guardians was the Ancient Stone Keeper, a great figure of living rock. When intruders reached it, it called up whirling storms of sand to fight at its side and pounded on among them, until at last it was broken and fell still in the hall it had kept.",
+    "triggers": [
+     [
+      3,
+      7206
+     ]
+    ],
+    "sources": [
+     "creature 7206 Ancient Stone Keeper, single spawn on map 70 at -38,221, among Earthen Rocksmasher 7011",
+     "smart_scripts 7206 (Sand Storms 10132 and 10094), not changed by dungeon_uldaman.sql"
+    ]
+   }
+  ],
+  "sources": [
+   "DB spawns map 70: Earthen Rocksmasher 7011 x24 and Earthen Sculptor 7012 x8 (x -111 to -2, y 197 to 332), Stone Steward 4860, Shrike Bat 4861, Jadespine Basilisk 4863, Cleft Scorpid 7078, Venomlash Scorpid 7022",
+   "smart_scripts 7011 (Battle Stance, Strike), 7012 (Fire Shield IV, Flame Buffet), 4860 (Ground Tremor); the module's versions keep the same spells",
+   "creature_template 7011, 7012 type 7, faction 415",
+   "vmap group lookup, map 70: Earthen Rocksmasher 7011 and Sculptor 7012 stand in Temple Hall groups 1266, 1283, 1293 (22 of 32) and the unnamed passages 1262 and 1274 beside it; Ancient Stone Keeper 7206 in 1293; Annora 11073 in unnamed cave 1277 among Cleft Scorpids 7078 (groups 1272, 1276, 1277), joined to the Temple Hall through 1298"
+  ],
+  "notes": "Writer: descriptive title, no in-game subzone (the wiki's Temple Hall is a later map label). Opening on KILL 7011 or 7012 (map 70 only, these halls only). The earthen are named only as their creature names give them; what the earthen are and how troggs and dwarves came from them is the discs' revelation (ironforge 153714, thunder_bluff 163817) and is not touched. Part 1 on TALK 11073 (npcflag 81, gossip 4171; single spawn): her gossip only. Part 2 on KILL 7206 (single spawn, not touched by the module): its fight. Faction 0. Checker: Title kept as a descriptive name: the entry covers the client's Temple Hall (WMO 1219, period-correct, not a later label) plus the unnamed side caves and passages around it, where the rest of the earthen stand. Opening reordered so an arrival in the scorpid caves (Annora's TALK opens the entry there) reads true; 'shaped like stout dwarves' dropped as a nudge toward the discs' revelation. Part 2: 'Oldest' changed to 'Greatest'. Part 1 verified."
+ },
+ {
+  "id": 133704,
+  "kind": 1,
+  "zone": 1337,
+  "sort": 4,
+  "faction": 0,
+  "title": "Echomok Cavern",
+  "body": "Echomok Cavern lies at the vault's back door, where a rough passage leads out of the ruins to the open Badlands, the one that opens on Dustwind Gulch. The Shadowforge hold it now. Their relic hunters search the cavern for whatever the titans left, withering their foes with shadow and silencing their spells while they mend their own wounded, and geologists among them lash out with flame. A heavy door, the Echomok Door, stands at the cavern's edge.",
+  "triggers": [
+   [
+    3,
+    4847
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Something older than the Dark Irons stood in the cavern: the Obsidian Sentinel, a construct of black volcanic glass. Struck, it turned spells back on those who cast them, sprayed splinters of its own obsidian, and shed shards of itself that came to life and joined the fight. For all of that, it shattered at last on the cavern floor.",
+    "triggers": [
+     [
+      3,
+      7023
+     ]
+    ],
+    "sources": [
+     "creature 7023 Obsidian Sentinel, single spawn on map 70 at -164,388, type 9 mechanical",
+     "smart_scripts 7023 (Reflection 9906, Splintered Obsidian 10072, Summon Obsidian Shard 10061), not changed by dungeon_uldaman.sql"
+    ]
+   }
+  ],
+  "sources": [
+   "WMOAreaTable WMO 1219 group 1296 Echomok Cavern (map 70); the exit (areatrigger_teleport 902) and the Echomok Door lie in unnamed group 8105 at its edge",
+   "gameobject 124370 Echomok Door at -185,390",
+   "areatrigger_teleport 902 Uldaman Exit (map 70, -214,383) to map 0 at -6606,-3762; badlands.json 314 (a rear passage opens into Uldaman at Dustwind Gulch), pointed to",
+   "DB spawns map 70: Shadowforge Relic Hunter 4847 x5 (x -161 to -137, y 364 to 389), Shadowforge Geologist 7030; smart_scripts 4847 (Shadow Word: Pain, Silence, Heal), 7030 (Flame Spike, Flame Lash)",
+   "vmap group lookup, map 70: all 5 Shadowforge Relic Hunters 4847 and the Obsidian Sentinel 7023 in group 1296; no troggs there"
+  ],
+  "notes": "Writer: a WMO subzone of its own. Opening on KILL 4847 (all five spawns on map 70, here). Part 1 on KILL 7023 (single spawn). Faction 0. Checker: Opening: 'Troggs roam here too' removed (no trogg stands in the cavern group); 'have pushed in this way' made 'hold it now'. Source corrected to the map 70 WMO row. Triggers verified (KILL 4847, all five spawns in the cavern)."
+ },
+ {
+  "id": 133705,
+  "kind": 1,
+  "zone": 1337,
+  "sort": 5,
+  "faction": 0,
+  "title": "The Hall of the Crafters",
+  "body": "In the eastern reaches of Uldaman lies the Hall of the Crafters, grander than the halls before it, and the stone folk who keep it are stronger: earthen stonebreakers who strike with crushing blows and stonecarvers who wrap themselves in fire. On its upper floor stands an altar, and around it four stone keepers wait, as still as statues, before a closed temple door. Its lower floor opens on a vast chamber where rows of stone figures stand silent, as still as the keepers above.",
+  "triggers": [
+   [
+    3,
+    7396
+   ],
+   [
+    3,
+    7397
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Whoever called upon the altar woke the keepers, and they shook off their stillness one at a time. Each trampled its foes and then, as it fell, blew itself apart, and as each one died the next stirred to take its place. With the keepers' fall the temple door beyond them stood open, and the way led on.",
+    "triggers": [
+     [
+      3,
+      4857
+     ]
+    ],
+    "sources": [
+     "gameobject 130511 Altar of The Keepers (type 18, spell 11568 Uldaman Sub-Boss Agro; instance_uldaman.cpp spell_uldaman_sub_boss_agro_keepers wakes the nearest Stone Keeper)",
+     "smart_scripts -27554, -27555, -27794, -28368 (Stone Keeper 4857: Stoned until woken, Trample, Self Destruct on death, set data on the next keeper, open Temple Door 124367, instance data 1 DONE)",
+     "creature 4857 x4 on map 70 at z -26 around the altar (91 to 118, 259 to 286)"
+    ]
+   }
+  ],
+  "sources": [
+   "DB spawns map 70: Earthen Stonebreaker 7396 x24 and Stonecarver 7397 x7 (x 49 to 154, z -52 to -26), Stone Keeper 4857 x4 at z -26, Earthen Custodian 7309, Hallshaper 7077, Guardian 7076 and Vault Warder 10120 on the floor below (z -52), all with Stoned",
+   "gameobjects 130511 Altar of The Keepers (105,272,-26), 124367 Temple Door (138,288,-26)",
+   "smart_scripts 7396 (Battle Stance, Strike), 7397 (Fire Shield IV, Flame Buffet)",
+   "WMOAreaTable WMO 1219 groups 1261, 1264, 1269, 1270, 1284, 1287, 1288, 1290, 1299 Hall of the Crafters; vmap group lookup: every Earthen Stonebreaker 7396 (24) and Stonecarver 7397 (7), the four Stone Keepers and the Altar of The Keepers stand in them; the chamber below is Khaz'goroth's Seat (group 1267)"
+  ],
+  "notes": "Writer: named for the altar gameobject, the landmark of the upper hall. Opening on KILL 7396 or 7397 (map 70 only, these halls). The chamber below is described only as anyone sees it (silent stone figures); its seated master is 133707, opened on his kill. Part 1 on KILL 4857: any keeper's death opens 124367 (action 118 on every keeper's death), so 'the temple door stood open' holds for the first kill; the chain wake is per the guid scripts. The Stone Keepers' scripts are guid scripts the module does not touch. Faction 0. Checker: Retitled from the altar to the hall's client label, the Hall of the Crafters: every spawn of its opening triggers stands in that hall's groups, on both floors. Opening reworded for a reader on either floor; 'as though they too are only waiting to be called' dropped (it foreshadowed Archaedas waking them). Part 1 verified against the guid scripts."
+ },
+ {
+  "id": 133706,
+  "kind": 2,
+  "zone": 1337,
+  "sort": 1,
+  "faction": 0,
+  "title": "Ironaya",
+  "body": "Ironaya is a guardian of Uldaman, a towering figure of iron sealed away in a hidden chamber behind the great carved Seal of Khaz'mul. A keystone stands before the seal, and it will not turn for just anyone: only the right key unlocks it. Those who open the way find that the chamber has not been left unguarded, and that its keeper has not forgotten what she was set there to protect.",
+  "triggers": [
+   [
+    3,
+    7228
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "When the keystone turned, the seal took long moments to grind open, and then Ironaya stirred and strode out with a warning: none may steal the secrets of the Makers. She swept her foes with arcing blows, struck them flying across the hall and stamped the ground to stun all around her. In the end she fell, and the hidden chamber lay open to explore.",
+    "triggers": [
+     [
+      3,
+      7228
+     ]
+    ],
+    "sources": [
+     "smart_scripts 124371 (Keystone, on use: after 27 seconds open Seal of Khaz'Mul 124372, set instance data, make Ironaya attackable, Ironaya says line 0 and moves out)",
+     "creature_text 7228 group 0, broadcast 3261 (None may steal the secrets of the Makers!)",
+     "smart_scripts 7228 (Arcing Smash, Knock Away, War Stomp; same in dungeon_uldaman.sql)"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 7228 Ironaya, single spawn on map 70 at -236,310, female text, type 10",
+   "gameobjects 124371 Keystone (-235,240; lock 359 needs item 7733 Staff of Prehistoria) and 124372 Seal of Khaz'Mul (-235,295)",
+   "quest 2240 description and areatrigger_involvedrelation 822 (explore the Chamber of Khaz'mul; AreaTrigger.dbc 822 at -234,319 on map 70, Ironaya's hall)",
+   "ironforge.json 153714 part 1 (Baelog's journal shows the way into the Chamber of Khaz'mul), pointed to"
+  ],
+  "notes": "Writer: opening and part both on KILL 7228 (single spawn, map 70 only). The opening is what a foe in her chamber knows: the seal, the keystone, a keeper inside; the key is not named (the staff and Baelog's instructions are 2240's and ironforge 153714's). Later lore that makes her the vault's builder (Chronicle) is left out. Faction 0. Checker: Opening no longer names the Chamber of Khaz'mul (a name from 2240 and ironforge 153714, which a Horde reader never sees); the seal's own name stays. Part verified; the say comes from the Keystone's gameobject script, which the module does not touch."
+ },
+ {
+  "id": 133707,
+  "kind": 2,
+  "zone": 1337,
+  "sort": 2,
+  "faction": 0,
+  "title": "Archaedas",
+  "body": "Archaedas, the Ancient Stone Watcher, sits in Khaz'goroth's Seat, the great chamber beneath the Hall of the Crafters, a giant of living stone seated in silence. Around him stand rows of stone dwarves, custodians, hallshapers and guardians, as still as he is, and behind him the door of the Ancient Vault stays shut. Before him stands an altar. Whatever lies in the vault, he is its last guard, and calling upon that altar is how anyone wakes him.",
+  "triggers": [
+   [
+    3,
+    2748
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "He woke with a roar, demanding who dared awaken Archaedas, who dared the wrath of the Makers. He shook the ground beneath his foes and woke the stone dwarves around him a few at a time, and as he weakened he bade his servants awake and defend the discs, then called the vault warders, his brothers, to his side. Any foe who fell he named a reckless mortal. When Archaedas fell, every servant he had woken was gone with him, and the door of the Ancient Vault opened.",
+    "triggers": [
+     [
+      3,
+      2748
+     ]
+    ],
+    "sources": [
+     "creature_text 2748 groups 0-3 (Who dares awaken Archaedas? Who dares the wrath of the Makers?; Awake, ye servants! Defend the Disks!; To my side, brothers! For the Makers!; Reckless mortal!)",
+     "smart_scripts 2748 base and module (Stoned until the altar's event, say 0 on aggro, at 70 percent say 1 and Awaken Earthen Guardians, at 40 percent say 2 and Awaken Vault Warder, every 10 s Awaken Earthen Dwarf, Ground Tremor; on death instance data DONE and despawn of Vault Warders, Earthen Guardians, Hallshapers, Custodians; base also casts Destroy Earthen Guards)",
+     "instance_uldaman.cpp (DATA_ARCHAEDAS DONE opens The Ancient Vault 124369; the temple door 141869 shuts while he fights)"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 2748 Archaedas, subname Ancient Stone Watcher, type 5 giant, single spawn on map 70 at 104,272,-52",
+   "gameobject 133234 Altar of Archaedas (96,269,-52; type 18, spell 10340 Uldaman Boss Agro; spell_uldaman_boss_agro_archaedas wakes him)",
+   "DB spawns: Earthen Custodian 7309 x32, Hallshaper 7077 x12, Guardian 7076 x6, Vault Warder 10120 x4 around him, all Stoned",
+   "gameobject 124369 The Ancient Vault (138,288,-52)",
+   "warcraft.wiki.gg/wiki/Uldaman (official description: the Discs guarded by a massive, sapient Stonekeeper called Archaedas)",
+   "WMOAreaTable WMO 1219 group 1267 Khaz'goroth's Seat; vmap group lookup: Archaedas, the Altar of Archaedas, The Ancient Vault door and every custodian, hallshaper and guardian stand in it"
+  ],
+  "notes": "Writer: opening and part on KILL 2748 (single spawn, no entry swap). The part follows the shared script: the module's version has the same yells, thresholds and despawns (it drops only the Destroy Earthen Guards cast), so 'gone with him' holds in both. The discs are named only through his own yell (Defend the Disks); what they hold is 133711 and the Ironforge and Thunder Bluff files. The power source he carries for the necklace chains is loot and stays in those stories. Faction 0. Checker: Opening names the chamber by its client label and drops 'has not stirred in ages' (unsupported). Part verified: base and module scripts share yells, thresholds and despawns; the module only drops the Destroy Earthen Guards cast, which the text never mentions."
+ },
+ {
+  "id": 133708,
+  "kind": 2,
+  "zone": 1337,
+  "sort": 3,
+  "faction": 0,
+  "title": "Galgann Firehammer",
+  "body": "Galgann Firehammer is the Dark Iron master of Dig Three, the Shadowforge dig deep in the ruins, a barricaded camp where sharpshooters, darkcasters, archaeologists and geologists work and stand guard around him. Close by his post an ancient tablet lies among the clan's diggings. He is a master of fire, and he does not take kindly to strangers in his dig.",
+  "triggers": [
+   [
+    3,
+    7291
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Galgann met intruders with an oath by Thaurissan's beard and ordered his dwarves to slay them. He wreathed his foes in fire, lashing and searing them with flame, bursting into a nova of fire and laying on them a curse that made the flames bite deeper. He fell among his diggings all the same, and Dig Three lost its master.",
+    "triggers": [
+     [
+      3,
+      7291
+     ]
+    ],
+    "sources": [
+     "creature_text 7291, broadcast 6212 (By Thaurissan's beard! Slay them!)",
+     "smart_scripts 7291 (say 0 on aggro; Amplify Flames, Fire Nova, Flame Lash, Flame Shock), not changed by dungeon_uldaman.sql"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 7291 single spawn on map 70 at -10,415",
+   "DB spawns near him: Shadowforge Sharpshooter 7290, Darkcaster 4848, Archaeologist 4849, Geologist 7030 (x -5 to 15, y 384 to 418)",
+   "gameobject 142088 Tablet of Will at -2,422; gameobject 113757 Shadowforge Cache at 21,414 (quest 2201: the ruby in a barricaded Shadowforge area)",
+   "ironforge.json 153706 part 4 (the Tablet of Will), pointed to only as an ancient tablet",
+   "WMOAreaTable WMO 1219 group 1295 Dig Three; vmap group lookup: Galgann, his sharpshooters, darkcasters, archaeologists, two geologists, the Tablet of Will and the Shadowforge Cache stand in it"
+  ],
+  "notes": "Writer: opening and part on KILL 7291 (single spawn). The tablet is not named or explained (ironforge 153706 tells the Tablet of Will on DONE 1139). Faction 0. Checker: 'commands the Shadowforge dwarves inside the vault' and 'the Shadowforge in the vault lost their master' were unsupported (Shadowforge also hold Echomok Cavern and the outer halls): now master of Dig Three, the client label of his camp."
+ },
+ {
+  "id": 133709,
+  "kind": 2,
+  "zone": 1337,
+  "sort": 4,
+  "faction": 0,
+  "title": "Grimlok",
+  "body": "Of all the troggs that swarm Uldaman, none stands above Grimlok, chieftain of the Stonevault. He keeps to the Stone Vault deep in the ruins with his brawlers and fire-hurling geomancers about him and jadespine basilisks crouched nearby. He is no common brute: like the oracles of his tribe he calls on the power of storm and earth, and he has made himself master of the deep halls he holds.",
+  "triggers": [
+   [
+    3,
+    4854
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Me Grimlok, king, he bellowed as the fight began, and he fought like a shaman of his tribe, hurling lightning that leapt from foe to foe, shrinking a foe to a fraction of his strength and planting a totem in the ground. Wounded, he whipped himself into a bloodlust, and over every foe who fell he roared Die, die. The king of the troggs fell at last in his own vault.",
+    "triggers": [
+     [
+      3,
+      4854
+     ]
+    ],
+    "sources": [
+     "creature_text 4854, broadcasts 6213 (Me Grimlok, king!) and 6214 (Die! Die!)",
+     "smart_scripts 4854 base and module (say 0 on aggro, say 1 on kill; Lightning Bolt, Chain Bolt, Shrink, Tremor Totem; Bloodlust at 40 percent)"
+    ]
+   }
+  ],
+  "sources": [
+   "creature 4854 Grimlok, subname Stonevault Chieftain, single spawn on map 70 at 57,455",
+   "DB spawns near him: Stonevault Brawler 4855, Geomancer 4853 (Fireball, Flame Buffet), Jadespine Basilisk 4863 (x 9 to 85, y 305 to 455)",
+   "quests 2201 and 2339 (Grimlok, the trogg leader, claimed the sapphire), told in 133712 and 133713",
+   "WMOAreaTable WMO 1219 groups 1286, 1294, 1297 The Stone Vault; Grimlok in 1294; Shrink 11892 targets a single foe"
+  ],
+  "notes": "Writer: opening and part on KILL 4854 (single spawn); both scripts identical in spells and lines. The sapphire is left to the necklace stories. Faction 0. Checker: Opening names the Stone Vault (client label); part 1: Shrink hits one foe, not those around him. Otherwise verified."
+ },
+ {
+  "id": 133710,
+  "kind": 2,
+  "zone": 1337,
+  "sort": 5,
+  "faction": 0,
+  "title": "Baelog",
+  "body": "Baelog is a dwarf of Ironforge who keeps a camp in a side dig off the first hall of the vault, with troggs on every side. With him are two companions, Eric, called the Swift, and Olaf, who bears a great shield. The camp has a fire to sit by, a stout chest and a journal, and the three look as though they have been there a long while. They are loyal to Ironforge and the Alliance, and any of the Horde who walk into their camp find three seasoned dwarves raising their weapons against them.",
+  "triggers": [
+   [
+    2,
+    6906
+   ],
+   [
+    3,
+    6907
+   ],
+   [
+    3,
+    6908
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The dwarves did not give up their camp quietly. Eric came on at a rush, Olaf slammed foes senseless with his shield, and Baelog struck hard and fast, three veterans fighting side by side. In the end Baelog himself fell in the camp he had kept so long, and the camp fell quiet.",
+    "triggers": [
+     [
+      3,
+      6906
+     ]
+    ],
+    "sources": [
+     "smart_scripts 6906 (base: Shoot, Strike; module: Strike, flee at 15 percent), 6907 (Rushing Charge, both), 6908 (Shield Slam, both)",
+     "creature 6906 Baelog rank 1, single spawn at -353,117"
+    ]
+   }
+  ],
+  "sources": [
+   "creatures 6906 Baelog, 6907 Eric The Swift, 6908 Olaf: single spawns on map 70 at -353,117, -358,119 and -357,132; faction template 122 (Ironforge: friendly to the Alliance, enemy group Horde)",
+   "gameobjects 123329 Baelog's Chest (-356,113), 123463 Baelog's Journal (-355,115), 103011 Dwarven Campfire (-358,121)",
+   "quest 2398 description (Baelog led a small band of dwarves deep within the site just before the troggs showed up)",
+   "ironforge.json 153707 and 153714 (Stormpike's search, the wager over Olaf's beard, the journal's way into the Chamber of Khaz'mul), not retold",
+   "vmap group lookup, map 70: the camp is WMO 1219 group 1303 Dig Two, off the Hall of the Keepers"
+  ],
+  "notes": "Writer: first entry for Baelog's band (ironforge names him only inside Stormpike's and the discs' entries). Opening on TALK 6906 (Alliance: questgiver of 2240, ender of 2398; no gossip menu, so the talk shows his quest dialog) and KILL 6907 or 6908 (Horde: the three are hostile to the Horde through faction template 122). Neither 2398 nor 2240 is used (ironforge's). Part 1 on KILL 6906 only, so it tells Baelog's own fall; Baelog's bow is left out because the module's script drops his Shoot. No title from quest 2398 (The Lost Dwarves is ironforge's quest). Faction 0. Checker: Opening no longer says Baelog led his band in just before the troggs and has stayed there: that is 2398's and 2240's news (ironforge 153714), and neither a talk before 2398 (no quest, no gossip) nor a Horde kill shows it. Part 1: 'as they had held out against the troggs' and 'his band's long wait' removed for the same reason."
+ },
+ {
+  "id": 133711,
+  "kind": 3,
+  "zone": 1337,
+  "sort": 1,
+  "faction": 0,
+  "title": "The Platinum Discs",
+  "body": "Beyond the door that opened when the vault's last guard fell lies a treasure chamber, and its centerpieces are four huge platinum discs adorned with sigils of no known origin. A hand laid on them tingles. At the touch the image of a great stone watcher springs up beside them, the Lore Keeper of Norgannon, and offers its salutations: it is a keeper of knowledge, and the record of the Creators' work for this world is stored here, it says, in the Discs of Norgannon. Then it waits beside the discs, ready to be asked.",
+  "triggers": [
+   [
+    4,
+    2278
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The stone watcher would not part with its record lightly. Only when the visitor had heard all it had to tell, of the earthen, of the troggs and of the dwarves, would it let the discs be touched again. Then a faint, brief hum sounded within them, and the watcher declared the discs synthesized: one more touch, and a copy would be the visitor's own to keep.",
+    "triggers": [
+     [
+      5,
+      2278
+     ]
+    ],
+    "sources": [
+     "quest 2278 completion text (satisfy the data assimilation prerequisite; fully explore the information within this repository first) and reward text (now that you have learned about the history of the Earthen, the troggs, and the dwarves; a faint, brief hum; access once more to receive your personal copy)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "At the next touch a strange grinding sounded from inside the discs, and a pack grew suddenly heavier: in it lay a miniature version of the discs. The sages of Thunder Bluff, historians known throughout the Horde, would surely know what to make of such a thing.",
+    "triggers": [
+     [
+      4,
+      2280
+     ]
+    ],
+    "sources": [
+     "quest 2280 description (grinding noise; miniature version of the discs in your backpack; the sages of Thunder Bluff, known throughout the Horde)",
+     "thunder_bluff.json 163811 part 1 (DONE 2280, Sage Truthseeker) carries it on"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 2278 description (four huge platinum discs; sigils of unknown origin; your hand tingles; the visage of a large stone watcher springs forth; Salutations, I am a keeper of knowledge; stored here for this world in the Discs of Norgannon)",
+   "gameobject 131474 The Discs of Norgannon, single spawn at 162,298,-51 behind The Ancient Vault 124369 (opened only on Archaedas's death, instance_uldaman.cpp)",
+   "smart_scripts 131474 (on accepting 2278, summon 7172 Lore Keeper of Norgannon); creature 7172 gossip 562 (npc_text 1079: offers insight into the Creators' synthesis of the Earthen at your leisure)",
+   "ironforge.json 153705 part 1 and 153714 part 2, thunder_bluff.json 163811 part 1 and 163817 (what the discs say and where they lead), pointed to only"
+  ],
+  "notes": "Writer: opening on ACCEPT 2278 (offered by the discs, both factions, QuestType 2, flags 2); part 1 on DONE 2278 (at the discs); part 2 on ACCEPT 2280 (Horde; not used by thunder_bluff, which takes DONE 2280). The Alliance twin ACCEPT 2279 is ironforge 153714's opening trigger and is not used; its part there tells the same moment for the Alliance. Nothing of the watcher's history (npc_text 1080-1093: the earthen's making, the troggs and dwarves as its variants) is told: only that it spoke of those three things, as 2278's reward text says. 'The vault's last guard fell' is what a reader of 2278 has necessarily seen (the vault opens only on Archaedas's death); he is not named. No TALK 7172: its gossip is the revelation itself. Faction 0. Checker: Opening's last line came from the Lore Keeper's gossip (npc_text 1079), which ACCEPT 2278 does not show; replaced. No revelation of ironforge 153714 or thunder_bluff 163817 is retold; parts verified."
+ },
+ {
+  "id": 133712,
+  "kind": 3,
+  "zone": 1337,
+  "sort": 2,
+  "faction": 1,
+  "title": "The Shattered Necklace",
+  "body": "Somewhere in Uldaman turns up a tarnished necklace whose tarnish cannot hide its craftsmanship, intricate and plainly magical. It has been shattered: its setting stands empty where three gems once sat. On its underside is the faint imprint of the city seal of Ironforge, and below the seal three tiny engraved letters, TdK. Whatever the necklace is worth, and whatever it has to do with these ruins, the place to start is with whoever made it, and the seal and the initials point the way.",
+  "triggers": [
+   [
+    4,
+    2198
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The paladin who carried the necklace last was found in the vault, or what remained of him, and his journal with him. After much effort he had learned where all three gems had gone. The Shadowforge hid the ruby in their barricaded dig as they battled the troggs for the ruins; the troggs stashed the topaz in an urn close to some unexpected dwellers, dwarves of the Alliance; and Grimlok, the trogg leader, kept the sapphire for himself.",
+    "triggers": [
+     [
+      4,
+      2201
+     ]
+    ],
+    "sources": [
+     "quest 2201 description and objectives (the paladin's journal; the ruby in a barricaded Shadowforge area; the topaz in an urn in one of the trogg areas near some Alliance dwarves; the sapphire claimed by Grimlok); quest_template_addon 2201 PrevQuestID 2200",
+     "creature 6912 Remains of a Paladin (questgiver of 2201)",
+     "gameobjects 113757 Shadowforge Cache (21,414), 125477 Conspicuous Urn (-351,83, beside Baelog's camp)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "With all three gems in hand, the finder called on Talvash through his phial of scrying, and the jeweler's image rose from the water of the bowl: still alive, he marveled, and he begged not to have a charge wasted just to chat, for those things are not cheap. The gems were the right ones. But the necklace had no strength left in it and needed a power source, and the biggest, baddest construct in Uldaman ought to have one. What came of it is the jeweler's own tale.",
+    "triggers": [
+     [
+      5,
+      2201
+     ],
+     [
+      4,
+      2204
+     ]
+    ],
+    "sources": [
+     "quest 2201 completion text (Talvash's image comes into focus from the waters of the scrying bowl; still alive; don't waste a charge just to chat) and reward text (those are the three gems; you need a strong power source; the necklace has no more oomph to give)",
+     "quest 2204 description (take out the biggest, baddest construct and grab its power source); gameobject 112877 Talvash's Scrying Bowl ends 2201 and offers 2204",
+     "ironforge.json 153709 part 2 (DONE 2361: the restored necklace), pointed to"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Anyone careless enough to lose the phial heard about it. Phials of scrying do not grow on trees, Talvash complained, and he demanded a mana potion, a piece of coal and some sweet nectar to make another. When they arrived he admitted he had a spare all along, and that the makings would do for the next one, when that was lost too.",
+    "triggers": [
+     [
+      5,
+      3375
+     ]
+    ],
+    "sources": [
+     "quest 3375 description and reward text (those phials don't grow on trees; a mana potion, coal and sweet nectar; I lied, I had another phial; enough to make you another when you lose that too)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 2198 description (a tarnished necklace; intricate and magical craftsmanship; missing three gems; the faint imprint of the city seal of Ironforge; the letters TdK); item 7666 Shattered Necklace starts it",
+   "creature_loot_template 7666: Shadowforge Surveyor, Ruffian, Digger (outer halls), Stonevault Rockchewer, Oracle, Cave Hunter",
+   "ironforge.json 153709 (Talvash del Kissel: TALK 6826, ACCEPT 2200, DONE 2361), not retold"
+  ],
+  "notes": "Writer: faction 1 (2198-2204, 3375 are AllowableRaces 1101 or given by Talvash, faction 875). Opening on ACCEPT 2198 (item-started, QuestType 2, flags 0). Talvash's own parts (whose necklace it is, the paladin and the rumor of a curse on ACCEPT 2200; the finished necklace on DONE 2361) are not told; DONE 2198 and 2199 (his first greeting and price) are left unused as his. Part 1 on ACCEPT 2201 (offered by the remains after 2200; QuestType 2, flags 0): the journal's clues as 2201 gives them. Part 2 on DONE 2201 or ACCEPT 2204 (2204 needs 2201 done): the bowl scene, inside Uldaman. Part 3 on DONE 3375 (Talvash, Ironforge; free): his phial humour. The power source's source (Archaedas) is not named. Grimlok is named as the quest names him. Checker: verified: the bowl scene (DONE 2201) and the phial joke (DONE 3375) appear nowhere in ironforge 153709, which tells only Talvash's greeting, ACCEPT 2200 and DONE 2361."
+ },
+ {
+  "id": 133713,
+  "kind": 3,
+  "zone": 1337,
+  "sort": 3,
+  "faction": 2,
+  "title": "Necklace Recovery",
+  "body": "In Orgrimmar, Dran Droffers of Droffers and Son Salvage has heard a tale worth silver. Some idiot paladin died at the Uldaman dig site in the Badlands not long ago, and he had a very valuable necklace on him, said to carry three large gems: a ruby, a sapphire and a topaz. The Droffers want it. It may be damaged, Dran allows, but that is neither here nor there, for they will fix whatever scratches it has, and they are paying top silver to whoever has the guts to go and get it.",
+  "triggers": [
+   [
+    4,
+    2283
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The necklace came out of Uldaman, but its gems were gone. Dran was furious, swearing that even his son Malton could see it, and though he allowed that the finder might not have stolen them, the necklace was worthless without them. The gems had to be somewhere in Uldaman, he reasoned, and if the paladin's corpse had not been stripped clean, they might still be on him.",
+    "triggers": [
+     [
+      5,
+      2283
+     ],
+     [
+      4,
+      2284
+     ]
+    ],
+    "sources": [
+     "quest 2283 reward text (this necklace is missing the gems; even Malton could see the gems are gone; worthless without those gems)",
+     "quest 2284 description (those gems are still in Uldaman somewhere; maybe you'll find the corpse of the paladin)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The paladin's remains lay in the vault. He had no gems on him, only a journal, most of its pages stained with dried blood, and what could still be read was written in the tongue of humans, gibberish to the finder. It would have to be translated, and the nearest place that might have someone able to do it was Kargath, the Horde outpost in the Badlands.",
+    "triggers": [
+     [
+      5,
+      2284
+     ],
+     [
+      4,
+      2318
+     ]
+    ],
+    "sources": [
+     "quest 2284 reward text (the remains of the paladin; his journal; dried blood; written in the native tongue of the humans; you will need the book translated)",
+     "quest 2318 description (the closest location that might have someone is the Kargath outpost)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "At Kargath the troll Jarkal Mossmeld was waiting, and he already knew what the finder carried and why: it is his job to know such things. He alone could translate the journal, he said, and he had a better offer than the Droffers. Let him borrow the necklace to study, so that he could learn to make such pieces himself, and he would translate the journal in return. No one else would be the wiser.",
+    "triggers": [
+     [
+      5,
+      2318
+     ],
+     [
+      4,
+      2338
+     ]
+    ],
+    "sources": [
+     "quest 2318 reward text (I know you seek my gift of tongues; I'm the only one who can translate it; a better offer than Dran Droffers)",
+     "quest 2338 description (Droffers and Son Salvage aren't smart enough to restore the magic; let me borrow it; no one else will be the wiser)",
+     "creature 6868 Jarkal Mossmeld in Kargath (badlands.json 301 names him only)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "True to his word, Jarkal cast a spell over the journal and it could be read. The dwarves had hidden the ruby, the troggs the topaz, and a trogg named Grimlok had the sapphire. And there was something Dran did not know: the necklace needed a power source to work again, and Jarkal advised going as deep into Uldaman as possible and killing whatever construct was the strongest there.",
+    "triggers": [
+     [
+      4,
+      2339
+     ]
+    ],
+    "sources": [
+     "quest 2338 reward text (a spell to translate the human tongue; a troll of my word)",
+     "quest 2339 description and objectives (dwarves hid the ruby, troggs the topaz, Grimlok has the sapphire; a power source; kill whatever construct is the strongest)"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "With the gems and the power source before him, Jarkal studied them with an incantation of his own and declared himself finished with the necklace: he could copy its making. The necklace and its gems would go to Orgrimmar as promised, but the power source he kept, for it was what would bring the magic back.",
+    "triggers": [
+     [
+      5,
+      2339
+     ]
+    ],
+    "sources": [
+     "quest 2339 reward text (I am confident I can duplicate the construction process; analyze those gems) and completion text (I will be keeping the power source; the thing that will make the necklace work)"
+    ]
+   },
+   {
+    "part": 6,
+    "body": "Jarkal sent the finder on to Orgrimmar with a warning to keep quiet about their deal, hinting at a surprise on the way back. There Dran Droffers checked everything twice and three times over, kept the bag as well, and crowed that the necklace would be the firm's greatest haul yet. He paid the agreed fee and told the finder to beat it, and as he and Malton began squabbling over their new salvage, half the deal was done.",
+    "triggers": [
+     [
+      5,
+      2340
+     ],
+     [
+      4,
+      2341
+     ]
+    ],
+    "sources": [
+     "quest 2340 description (just keep your mouth shut about our deal; I might have a wonderful surprise for you)",
+     "quest 2340 completion and reward text (double and triple checking; mind if we keep the bag; our greatest haul yet; here's your fee; beat it)",
+     "quest 2341 description (Dran and Malton Droffers begin to squabble over their new salvage; half of the deal is now complete)"
+    ]
+   },
+   {
+    "part": 7,
+    "body": "The other half waited in Kargath. The power source had exceeded every hope Jarkal had for it: he had made one necklace for himself and one for his partner in the deal, with enough left over for at least three more, and they would fetch a fine fee with Droffers and Son Salvage none the wiser.",
+    "triggers": [
+     [
+      5,
+      2341
+     ]
+    ],
+    "sources": [
+     "quest 2341 reward text (the power source exceeded every expectation; made both you and me a necklace; enough left over to make at least three more; Droffers and Son Salvage none the wiser)"
+    ]
+   }
+  ],
+  "sources": [
+   "quest 2283 description (an idiot paladin who died at the Uldaman dig site; a very valuable necklace with a ruby, a sapphire and a topaz; top silver; we'll fix whatever scratches)",
+   "creature 6986 Dran Droffers, Droffers and Son Salvage, in Orgrimmar (faction 29); 6868 Jarkal Mossmeld in Kargath (faction 126); 6912 Remains of a Paladin on map 70",
+   "quest_template_addon chain 2283-2284-2318-2338-2339-2340-2341"
+  ],
+  "notes": "Writer: faction 2: 2339-2341 are AllowableRaces 690 and 2283-2338 are given by Horde NPCs (Dran faction 29, Jarkal faction 126) though their AllowableRaces is 0. No zone file uses any of these quests. Opening on ACCEPT 2283; each part on the DONE that shows it, paired with the next quest's ACCEPT (which needs that DONE). The double-dealing first appears on DONE 2318, never in the title or opening. Part 6 on DONE 2340 or ACCEPT 2341 (Dran's turn-in); part 7 on DONE 2341 (Jarkal's surprise). The power source's construct is not named. Checker: 2338 and 2339 have no RewardNextQuest (Jarkal offers each separately), so DONE 2338 does not show 2339's text and DONE 2339 does not show 2340's: part 4 now on ACCEPT 2339 only, part 5 on DONE 2339 only, and the keep-quiet hint moved from part 5 to part 6 (DONE 2340 or ACCEPT 2341, both after accepting 2340). Other pairs (2283-2284, 2284-2318, 2318-2338, 2340-2341) are RewardNextQuest links and verified. Faction 2 verified: 2283, 2284 and 2341 come from Dran (faction 29), 2338-2340 from Jarkal (126), 2318 from the remains but only after 2284."
+ }
+]
