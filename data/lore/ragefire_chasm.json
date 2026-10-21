@@ -6,7 +6,7 @@
   "sort": 0,
   "faction": 0,
   "title": "Ragefire Chasm",
-  "body": "Ragefire Chasm is a network of volcanic caverns beneath Orgrimmar, entered from the Cleft of Shadow in the heart of the city. Lava lights its tunnels, and the rock itself seems to stir: molten elementals walk the burning paths, and earthborers, burrowing worms, gnaw through the stone. In the lower caves the troggs of Ragefire swarm with their shamans, and off the main way their chieftain Oggleflint keeps a cave of his own. Beyond them the halls belong to the Searing Blade. Orc cultists, shield-bearing enforcers and warlocks with voidwalkers at their heels hold the deeper caverns, and in the midst of a lake of lava stands a felguard of great size, Taragaman the Hungerer. Further on wait two more of the cult's own: the warlock Jergosh the Invoker, and on a high walkway overhead the satyr Bazzalan. Few come down here unbidden. Neeru Fireblade sends some, the Undercity others, and the tauren of Thunder Bluff have their own reasons.",
+  "body": "Ragefire Chasm is a network of volcanic caverns beneath Orgrimmar, entered from the Cleft of Shadow in the heart of the city. Lava lights its tunnels, and the rock itself seems to stir: molten elementals walk the burning paths, and earthborers, burrowing worms, gnaw through the stone. In the lower caves the troggs of Ragefire swarm with their shamans, and off the main way their chieftain Oggleflint keeps a cave of his own. Beyond them the halls belong to the Searing Blade. Orc cultists, shield-bearing enforcers and warlocks with voidwalkers at their heels hold the deeper caverns, and in the midst of a lake of lava stands a felguard of great size, Taragaman the Hungerer. Further on, the cult's warlocks hold the deepest halls, and a satyr walks a high walkway overhead. Few come down here unbidden. Neeru Fireblade sends some, the Undercity others, and the tauren of Thunder Bluff have their own reasons.",
   "triggers": [
    [
     1,
@@ -16,7 +16,7 @@
   "parts": [
    {
     "part": 1,
-    "body": "Near Jergosh the Invoker, the Searing Blade keeps an orb brimming with blood, and it is less still than it looks. When one who had come seeking that blood laid hands on the orb, a demon of the doomguard kind came forth from it into the chasm: Zelemar the Wrathful. He never left the caverns. He was slain there, far beneath the city.",
+    "body": "Deep in the cult's halls, the Searing Blade keeps an orb brimming with blood, and it is less still than it looks. When one who had come seeking that blood laid hands on the orb, a demon of the doomguard kind came forth from it into the chasm: Zelemar the Wrathful. He never left the caverns. He was slain there, far beneath the city.",
     "triggers": [
      [
       3,
@@ -51,10 +51,6 @@
   "title": "Taragaman the Hungerer",
   "body": "Taragaman the Hungerer is a felguard, a demon of the Burning Legion, and he towers over the cultists of the Searing Blade in Ragefire Chasm. His place is in the midst of a lake of lava in the cult's halls, where the fire gives him light and the cultists gather on the stone around him. He is armored like a warrior of the Legion and bears a massive two-handed sword. How a demon of his kind came to the caverns beneath the Horde's own capital, nothing in the chasm says.",
   "triggers": [
-   [
-    1,
-    2437
-   ],
    [
     4,
     5761
@@ -122,8 +118,8 @@
   "body": "Oggleflint is the Ragefire Chieftain, lord of the troggs who swarm through the lower caves of Ragefire Chasm. He is bigger than the troggs and shamans around him, a squat brute of stone-grey hide, and he keeps to a cave of his own off the main way through the caverns. A great bone serves him for a club. Whatever the troggs of Ragefire want in the depths beneath Orgrimmar, it is Oggleflint they follow.",
   "triggers": [
    [
-    1,
-    2437
+    3,
+    11517
    ]
   ],
   "parts": [

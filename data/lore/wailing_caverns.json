@@ -83,10 +83,6 @@
   "body": "Naralex is a night elf druid who came down into these caverns with an honorable goal: to enter the Emerald Dream and regrow the Barrens into a lush forest. His focus waned, and serpentine visions crept into his thoughts. Now he lies in fitful sleep in a chamber far within the caverns, and reptilian beasts seep from his dreams into the land. The disciple who keeps watch inside the caves warns that unless he is woken from the nightmare he will be lost forever, and a great evil will be unleashed.",
   "triggers": [
    [
-    1,
-    718
-   ],
-   [
     2,
     3678
    ]
@@ -126,8 +122,8 @@
   "body": "Lord Cobrahn is one of the Fanglords, the four who lead the Druids of the Fang, a tall night elf in the robes of his order. He keeps his lair by a bonfire in a far reach of the caverns, where the serpents are thickest: deviate vipers, adders and pythons crowd the passages around him, and two pythons coil at his very side. To the disciple of Naralex, Cobrahn and his fellow lords are his master's corrupted servants.",
   "triggers": [
    [
-    1,
-    718
+    3,
+    3669
    ]
   ],
   "parts": [
@@ -164,8 +160,8 @@
   "body": "Lady Anacondra is one of the Fanglords, the four who lead the Druids of the Fang, a night elf and the only woman among them. She makes her lair not far within the caverns, among the halls where deviate guardians and ravagers roam, so that those who come in from the oasis often find her before the other lords. Like them she wears the robes of the Fang, and like them, the disciple of Naralex counts her among his master's corrupted servants.",
   "triggers": [
    [
-    1,
-    718
+    3,
+    3671
    ]
   ],
   "parts": [
@@ -202,8 +198,8 @@
   "body": "Lord Pythas is one of the Fanglords, the four who lead the Druids of the Fang, a tall night elf who keeps his lair deep in the caverns, far from the entrance. A druid of his order stands at his side, and deviate lashers and shamblers prowl the passages around them. He is a lord of the Fang like the others, robed and wielding the same twisted gifts, and the disciple of Naralex numbers him among his master's corrupted servants.",
   "triggers": [
    [
-    1,
-    718
+    3,
+    3670
    ]
   ],
   "parts": [
@@ -239,8 +235,8 @@
   "body": "Lord Serpentis is one of the Fanglords, the four who lead the Druids of the Fang, a tall night elf whose lair lies higher than any of theirs, on a ledge above the cavern floor. Deviate venomwings wheel near him, and a druid of his order keeps watch nearby. Not far away, on the same heights, looms the great bog beast Verdan the Everliving. The disciple of Naralex counts Serpentis among his master's corrupted servants, like the rest of the Fang's lords.",
   "triggers": [
    [
-    1,
-    718
+    3,
+    3673
    ]
   ],
   "parts": [
@@ -276,8 +272,8 @@
   "body": "Verdan the Everliving is a bog beast of enormous size, a towering mass of root, moss and mire that dwells on the heights of the caverns, not far from the lair of Lord Serpentis. The Druids of the Fang and the deviate beasts let him be, and he lets them be in turn; to anyone else who comes near, he is as hostile as the rest of the nightmare's creatures. The crag where he stands bears his name.",
   "triggers": [
    [
-    1,
-    718
+    3,
+    5775
    ]
   ],
   "parts": [
@@ -314,10 +310,6 @@
   "title": "Waking Naralex",
   "body": "Just inside the caverns one of Naralex's disciples keeps his vigil, and he greets those who speak with him with the blessing of the wild. Naralex sleeps again, he says, and must be woken before he is lost. The disciple means to do it himself, with an awakening ritual, but he cannot begin while the Fanglords live. Those corrupted servants of his master must be slain first, and only then can the ritual be performed and the dreamer called back.",
   "triggers": [
-   [
-    1,
-    718
-   ],
    [
     2,
     3678

@@ -44,7 +44,7 @@
    },
    {
     "part": 3,
-    "body": "Not far below the crone's seat, the night elf Heralath Fallowbrook lies on the ground among the quilboar's captives, too weak to rise. He has not long to live, he whispers, and the brave dwarf Lonebrow has gone to warn Falfindel. His last plea is for his wife, Treshala, in Darnassus. Her pendant of bonding to him was stolen by one of his attackers, and he begs that it be found and carried home to her, with word of his lonely death.",
+    "body": "Not far below the crone's seat, among the quilboar's captives, a night elf named Heralath Fallowbrook lies on the ground too weak to rise. He has not long to live, he whispers, and what strength he has left he spends on a last plea for his wife in Darnassus.",
     "triggers": [
      [
       4,
@@ -78,8 +78,12 @@
   "body": "At the bottom of the Kraul runs a deep trench, a winding gully walled in by the bramble. It belongs to the boars. Agam'ar roam its floor in numbers, some raging, some rotting where they stand and dulling the wits of whoever comes near, and slimes that bear the name of the Blood of Agamaggan crawl among them. The quilboar who handle and train the beasts work in the halls above. From the trench the warren climbs again, toward the height where the crone keeps her seat.",
   "triggers": [
    [
-    1,
-    491
+    3,
+    4511
+   ],
+   [
+    3,
+    4541
    ]
   ],
   "sources": [
@@ -101,8 +105,12 @@
   "body": "Beyond the trench, at the far end of the warren, the warren opens onto dim hollows beneath the bramble where the Kraul bats roost. They hang in the dark in great numbers and drop on anything that stirs below. The smaller bats strike with bolts of lightning, and the greater ones loose a shrieking burst that batters everyone near and chokes off any spell. At times another hunts among them, one called the Blind Hunter, though it is not always there to be found.",
   "triggers": [
    [
-    1,
-    491
+    3,
+    4538
+   ],
+   [
+    3,
+    4539
    ]
   ],
   "parts": [
@@ -165,8 +173,8 @@
   "body": "Charlga Razorflank, the Crone, rules Razorfen Kraul. She is old and a caster of great power, and from her seat on a height near the heart of the warren she musters the army the Razorfen has been gathering. Her own tribe fills the halls around her, but the guards at the foot of her height are not Razorfen: four priests of the Death's Head keep watch there, ready to heal and to strike. Far away in Thunder Bluff, Auld Stonespire wants her heart.",
   "triggers": [
    [
-    1,
-    491
+    3,
+    4421
    ]
   ],
   "parts": [
@@ -217,8 +225,8 @@
   "body": "Agathelos the Raging is a boar of monstrous size, twice as large as the greatest of the Agam'ar, kept penned at the far end of the Kraul. A ward bars the mouth of his pen. Two Death's Head ward keepers stand before it, channeling the magic that holds it, and two ward guardians of the Razorfen stand with them. Behind the ward the great boar paces back and forth. What the quilboar mean to do with such a beast, no one here says.",
   "triggers": [
    [
-    1,
-    491
+    3,
+    4422
    ]
   ],
   "parts": [
@@ -254,8 +262,8 @@
   "body": "Overlord Ramtusk is a war leader of the Razorfen, bigger than any warrior in the halls around him, and he holds a high ledge in the upper Kraul. Two Razorfen spearhides stand at his side, bristling with thorns that wound anyone who strikes near them and spinning their spears through any foe who closes in. The quilguards and defenders of the nearby halls are never far from his call.",
   "triggers": [
    [
-    1,
-    491
+    3,
+    4420
    ]
   ],
   "parts": [
@@ -290,8 +298,8 @@
   "body": "Aggem Thorncurse is the prophet of the Death's Head, a quilboar larger than most of his kin. The Death's Head are not like the Razorfen around them. Their priests strike with shadow, their adepts with frost and with chains of ice that lock a foe in place, where the tribe's own shamans call on earth and lightning. Aggem keeps to the halls where the Death's Head gather, near their captain, Death Speaker Jargba. What he prophesies, and in whose name, the Kraul does not tell.",
   "triggers": [
    [
-    1,
-    491
+    3,
+    4424
    ]
   ],
   "parts": [
@@ -326,8 +334,8 @@
   "body": "Death Speaker Jargba is the captain of the Death's Head, a towering quilboar who stands among the cult's acolytes in their halls of the Kraul. His title is a strange one for a quilboar, and his magic stranger still. He is no shaman of earth and stone but a caster of shadow, and those who face him find their own minds taken from them and turned against their friends. For whom the Death Speaker speaks, the warren does not say.",
   "triggers": [
    [
-    1,
-    491
+    3,
+    4428
    ]
   ],
   "parts": [

@@ -34,8 +34,12 @@
   "body": "The Pool of Ask'ar is the first great flooded hall of the deeps, a wide basin of dark water beyond the passages where the murlocs dwell. Blackfathom sea witches and myrmidons keep watch around it, crustaceans scuttle through its shallows, and in the pool itself swims Ghamoo-ra, a sea turtle of great size. Off the pool a side cavern opens, and there a naga called Lady Sarevess holds her ground with a myrmidon of her people at her side.",
   "triggers": [
    [
-    1,
-    719
+    3,
+    4822
+   ],
+   [
+    3,
+    4824
    ]
   ],
   "sources": [
@@ -86,8 +90,12 @@
   "body": "Some way into the deeps, past the first halls, Blindlight murlocs, oracles and muckdwellers have gathered around an old shrine of the drowned temple. Their master is Gelihast, a hulking murloc larger than any of his kin, and the shrine is his: his followers crowd close about it and let no stranger near. The stone stands dark and silent among them. What the shrine once was, and whom it honored, no one has said.",
   "triggers": [
    [
-    1,
-    719
+    3,
+    4819
+   ],
+   [
+    3,
+    4820
    ]
   ],
   "sources": [
@@ -124,8 +132,16 @@
   "body": "Deep within the flooded temple lie the Moonshrine Ruins, the broken remains of a shrine of the moon, half drowned in dark water. The Twilight's Hammer has made its camp among them. Acolytes tend the wounded, reavers swing heavy blows, loreseekers swell and slow their foes, and aquamancers keep elementals of living water at their sides, while the cult's cries that the Old Gods will be restored echo off the old stones.",
   "triggers": [
    [
-    1,
-    719
+    3,
+    4810
+   ],
+   [
+    3,
+    4812
+   ],
+   [
+    3,
+    4811
    ]
   ],
   "sources": [
@@ -147,8 +163,8 @@
   "body": "Below the cult's sanctum lies the Forgotten Pool, a deep basin of black water at the heart of the drowned temple. Threshfins hunt in its depths and barbed crustaceans crawl along its edges, but the pool has an older master. Old Serra'kis, a great thresher, glides through the dark water beneath the cultists' feet, and whoever swims these waters swims through his.",
   "triggers": [
    [
-    1,
-    719
+    3,
+    4830
    ]
   ],
   "sources": [
@@ -184,10 +200,6 @@
   "title": "Twilight Lord Kelris",
   "body": "Twilight Lord Kelris leads the Twilight's Hammer in Blackfathom Deeps. An orc, he keeps to the Moonshrine Sanctum above the Forgotten Pool, where he sits deep in meditation, channeling dark power, while shadowmages and elementalists of the cult stand watch around him. Four great braziers, the Fires of Aku'mai, stand about the sanctum, and beyond them a massive portal holds shut the way deeper into the temple. Every cultist who cries that Aku'mai demands more sacrifices answers to him.",
   "triggers": [
-   [
-    1,
-    719
-   ],
    [
     4,
     6561
@@ -244,8 +256,8 @@
   "body": "Aku'mai is the beast the Twilight's Hammer reveres in Blackfathom Deeps. Legend holds that it is an ancient creature, a favored pet of the Old Gods, that has taken up residence in the ruins of the temple and preyed upon the area ever since, and the cult has gathered here to be near it. Its name is on every cultist's lips: Aku'mai demands more sacrifices, they cry. Its lair lies somewhere beyond the sealed portal that bears its name. How it came to the temple is a tale the Argent Dawn can tell.",
   "triggers": [
    [
-    1,
-    719
+    3,
+    4829
    ]
   ],
   "sources": [

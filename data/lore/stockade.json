@@ -6,7 +6,7 @@
   "sort": 0,
   "faction": 0,
   "title": "The Stockade",
-  "body": "The Stockade is the prison of Stormwind, a high-security complex hidden beneath the canal district, its gate opening on the northern stretch of the canal that rings the Mage Quarter. Thieves, political agitators and killers are all held here, but the guards no longer hold the place. The Defias among the inmates have risen in revolt and driven the guards out, and now prisoners, convicts and insurgents of the Brotherhood roam free through the halls in their red bandanas. From the gate a long hall leads inward, and beyond it the cell blocks stretch away on either hand. Some of the inmates are more than faces in the crowd. An orc called Targorr the Dread waits at the end of the long hall, and deep in the southern block, among the Brotherhood's insurgents, stands a man named Bazil Thredd. Few go in by choice. Outside the gate the warden paces and frets, unable to understand how his prison was lost so suddenly, and afraid of what the Captain will say when he hears.",
+  "body": "The Stockade is the prison of Stormwind, a high-security complex hidden beneath the canal district, its gate opening on the northern stretch of the canal that rings the Mage Quarter. Thieves, political agitators and killers are all held here, but the guards no longer hold the place. The Defias among the inmates have risen in revolt and driven the guards out, and now prisoners, convicts and insurgents of the Brotherhood roam free through the halls in their red bandanas. From the gate a long hall leads inward, and beyond it the cell blocks stretch away on either hand. Some of the inmates are more than faces in the crowd. An orc called Targorr the Dread waits at the end of the long hall, and deep in the southern block the Brotherhood's insurgents hold out in numbers. Few go in by choice. Outside the gate the warden paces and frets, unable to understand how his prison was lost so suddenly, and afraid of what the Captain will say when he hears.",
   "triggers": [
    [
     1,
@@ -50,8 +50,8 @@
   "body": "Targorr the Dread is an orc, one of the inmates of the Stockade, and the riot has left him as free as any of the men around him. He stands among the rioters at the far end of the long hall that leads in from the gate, a sword in each hand, and anyone who means to go deeper into the prison must pass him. What brought an orc to a cell beneath Stormwind, and how he earned his name, the halls themselves do not say.",
   "triggers": [
    [
-    1,
-    717
+    3,
+    1696
    ]
   ],
   "parts": [
@@ -100,11 +100,11 @@
   "sort": 2,
   "faction": 0,
   "title": "Hamhock",
-  "body": "Hamhock is a two-headed ogre, and one of the strangest prisoners the Stockade holds. He is no man of the Brotherhood, but the riot has made allies of unlikely cellmates, and he has thrown in his lot with the Defias. He stands deep in the southern cell block among the Brotherhood's insurgents, a heavy cleaver in his fist, not far from where Bazil Thredd holds out at the far end of the block.",
+  "body": "Hamhock is a two-headed ogre, and one of the strangest prisoners the Stockade holds. He is no man of the Brotherhood, but the riot has made allies of unlikely cellmates, and he has thrown in his lot with the Defias. He stands deep in the southern cell block among the Brotherhood's insurgents, a heavy cleaver in his fist, not far from where the insurgents hold out at the far end of the block.",
   "triggers": [
    [
-    1,
-    717
+    3,
+    1717
    ]
   ],
   "parts": [

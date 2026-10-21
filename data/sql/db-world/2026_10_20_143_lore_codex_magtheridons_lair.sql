@@ -15,7 +15,6 @@ INSERT INTO `mod_lore_codex_part` (`Entry`, `Part`, `MinState`, `MaxState`, `Bod
 
 INSERT INTO `mod_lore_codex_trigger` (`Entry`, `Type`, `Value`, `Part`) VALUES
 (383600, 1, 3836, 0),
-(383601, 1, 3836, 0),
 (383601, 4, 11002, 0),
 (383601, 4, 11003, 0),
 (383602, 4, 11002, 0),

@@ -65,8 +65,12 @@
   "body": "Just inside the keep's gate, a row of barred cells serves Arugal as a prison. Rethilgore, a worgen called the Cell Keeper, stands guard over them with whitescalp worgen about him, and levers set in the walls work the cell doors. Three prisoners wait behind the bars: a human sorcerer named Ashcrombe, a Forsaken deathstalker named Adamant, and a man called Landen Stilwell. Past the cells, the door into the keep's courtyard stays firmly shut.",
   "triggers": [
    [
-    1,
-    209
+    3,
+    3851
+   ],
+   [
+    2,
+    17822
    ]
   ],
   "parts": [
@@ -147,8 +151,12 @@
   "body": "Past the cells, the courtyard door opens on the open heart of the keep. Shadowfang moonwalkers prowl the yard, the restless spirits of the keep's servants drift through it, and in the stables at its far end fel steeds stand in the stalls. Off the yard lies the kitchen, where the fires still roar and a worgen butcher holds sway, and beyond it the way runs on into the keep's great hall and the floors above.",
   "triggers": [
    [
-    1,
-    209
+    3,
+    3853
+   ],
+   [
+    3,
+    3864
    ]
   ],
   "parts": [
@@ -186,8 +194,8 @@
   "body": "Baron Silverlaine was lord of this keep when the worgen came to Silverpine. They besieged his home until it fell into shadow and ruin, and the baron did not live through it. His spirit has not left. A pale ghost, he keeps to the great hall beyond the kitchen, where the shades of the keep's servants still drift and worgen gluttons sit among crates of food and barrels of melon juice. It is said that his vengeful ghost haunts Arugal himself.",
   "triggers": [
    [
-    1,
-    209
+    3,
+    3887
    ]
   ],
   "parts": [
@@ -223,8 +231,8 @@
   "body": "Commander Springvale is one more of the keep's dead who will not rest. His ghost holds the keep's upper floor among the wailing spirits of guardsmen, while the shades of tormented officers keep watch along the walls, as though the garrison still stood to its duty. He bears a commander's rank still, and he fights as a paladin of the Light once did, calling on a holy power that death has not taken from him.",
   "triggers": [
    [
-    1,
-    209
+    3,
+    4278
    ]
   ],
   "parts": [
@@ -260,8 +268,8 @@
   "body": "Fenrus the Devourer is Arugal's pet, a wolf of enormous size, and it is said that the archmage counts on him for protection. He lairs in a chamber partway up the keep's tower, on the only way to his master's rooms, with the Sons of Arugal and lupine horrors prowling the tower around him. Above his chamber, on a high ledge, stands a focus of Arugal's magic, and past it a sealed gate bars the way on.",
   "triggers": [
    [
-    1,
-    209
+    3,
+    4274
    ]
   ],
   "parts": [
@@ -299,8 +307,8 @@
   "body": "Wolf Master Nandos is the worgen who keeps the beasts of Shadowfang, and he stands near the top of the tower before the door of Arugal's Lair. He does not stand alone. His pack waits at his side, a lupine horror and worgs of every breed the keep holds, and while he lives the door to his master's chamber stays shut.",
   "triggers": [
    [
-    1,
-    209
+    3,
+    3927
    ]
   ],
   "parts": [
@@ -336,8 +344,8 @@
   "body": "Shadowfang Keep is Arugal's now. The archmage of the Kirin Tor whose summoned worgen overran Silverpine has made the baron's home his own, and he calls the worgen his children. The Sons of Arugal stalk the tower beneath his rooms, carrying his dark gift that withers those they strike, and the Shadowfang worgen hold the halls and walls below. He keeps to the topmost chamber of the tower, behind Fenrus and his wolf master, and from there his voice can carry through the keep. Those who would reach him face a long climb through his creatures, and at the end of it a madman.",
   "triggers": [
    [
-    1,
-    209
+    3,
+    4275
    ]
   ],
   "parts": [

@@ -52,8 +52,12 @@
   "body": "Far from the entrance, past the idol and the hall of the gong, the quilboar of the Downs keep pens for the living. They stand at the far end of the Downs, walled in by bramble, with withered quilboar walking the paths nearby. Few would expect to find anyone still alive in this place, but the pens are not empty. Two men are held in them, and with them an ogre, Sah'rhee. What the quilboar mean to do with the people they carry off from the Barrens, nothing in the pens says.",
   "triggers": [
    [
-    1,
-    722
+    2,
+    8767
+   ],
+   [
+    2,
+    8516
    ]
   ],
   "parts": [
@@ -88,11 +92,15 @@
   "sort": 2,
   "faction": 0,
   "title": "The Gong",
-  "body": "Between the idol near the entrance and the pens at the far end of the Downs, a broad hall opens in the bramble. Necromancers of the Death's Head stand there among withered reavers and quilguards, and dark corridors lead off from it into the thorns. At the side of the hall hangs a great gong. Nothing marks what it is for, or what might come if someone were to strike it.",
+  "body": "Between the idol near the entrance and the pens at the far end of the Downs, a broad hall opens in the bramble. Necromancers of the Death's Head stand there among withered reavers and quilguards, and dark corridors lead off from it into the thorns. At the side of the hall hangs a great gong. No one standing there can say what it is for.",
   "triggers": [
    [
-    1,
-    722
+    3,
+    7349
+   ],
+   [
+    3,
+    7351
    ]
   ],
   "parts": [
@@ -129,10 +137,6 @@
   "title": "Amnennar the Coldbringer",
   "body": "Amnennar the Coldbringer is a lich, and he keeps his seat on a height deep within Razorfen Downs, above the lowest reaches where the dead crowd thickest. A shell of frost clings about him, and spirits of the bitter cold drift through the halls on the way up to him. Anyone who would reach him must first pass the great abomination that lumbers through the depths at the foot of his height.",
   "triggers": [
-   [
-    1,
-    722
-   ],
    [
     4,
     3636
@@ -297,8 +301,8 @@
   "body": "Mordresh Fire Eye is a towering skeleton, twice the size of a common one, who keeps to the far reaches of the Downs, not far from the pens where the quilboar hold their captives. He is no mindless thing of bone. He has a voice of his own, and a name that speaks of fire in a place where the dead mostly bring the cold.",
   "triggers": [
    [
-    1,
-    722
+    3,
+    7357
    ]
   ],
   "parts": [
@@ -334,8 +338,8 @@
   "body": "Glutton is a hulking abomination stitched together from dead flesh, larger than any of the ghouls around it. It lumbers through the lowest reaches of the Downs, at the foot of the height where the lich keeps his seat, and anyone climbing toward Amnennar must pass its way. A cloud of disease hangs about it at all times, a reek of rot that sickens anyone who comes too near.",
   "triggers": [
    [
-    1,
-    722
+    3,
+    8567
    ]
   ],
   "parts": [
