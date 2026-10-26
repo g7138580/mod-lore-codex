@@ -267,7 +267,7 @@
   "sort": 0,
   "faction": 0,
   "title": "The Crystal Vale",
-  "body": "In the far northwest of Silithus lies the Crystal Vale, ruled by elementals of earth and air, and within it the ravaged remains of a Twilight's Hammer camp. A lone human, Highlord Demitrian, keeps vigil there. He serves Thunderaan, Prince of Air, betrayed in the Elemental Sundering by Ragnaros's lieutenants Geddon and Garr, struck down by the Firelord and fed upon; what remained was sealed in a talisman, broken in two.",
+  "body": "In the far northwest of Silithus lies the Crystal Vale, ruled by elementals of earth and air, and within it the ravaged remains of a Twilight's Hammer camp. A lone human, Highlord Demitrian, keeps vigil there, and to those who pass he says only this: look to this ravaged field and know the power that the elements hold.",
   "triggers": [
    [
     1,
@@ -290,6 +290,19 @@
      [
       4,
       8287
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Crystal_Vale (far northwestern corner, earth and air elementals, thorium, Ravaged Twilight Camp, Demitrian)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Demitrian serves Thunderaan, Prince of Air, betrayed in the Elemental Sundering by Ragnaros's lieutenants Geddon and Garr, struck down by the Firelord and fed upon; what remained was sealed in a talisman, broken in two.",
+    "triggers": [
+     [
+      4,
+      7785
      ]
     ],
     "sources": [

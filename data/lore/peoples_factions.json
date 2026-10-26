@@ -76,8 +76,12 @@
     "body": "They are not as free as they think. Letters taken from their camps point to a hidden patron, the Argus Wake, guiding them from the shadows on behalf of someone none of them has seen.",
     "triggers": [
      [
+      4,
+      537
+     ],
+     [
       5,
-      525
+      537
      ]
     ],
     "sources": [
@@ -3651,8 +3655,8 @@
     "body": "In Zul'Drak the knights keep Ebon Watch and hunt Overlord Drakuru, the troll commander of the Scourge, whom they have followed since the Grizzly Hills.",
     "triggers": [
      [
-      1,
-      4312
+      5,
+      12884
      ]
     ],
     "minState": 13,

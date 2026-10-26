@@ -244,7 +244,7 @@
   "faction": 0,
   "requiredState": 13,
   "title": "Ebon Watch",
-  "body": "Ebon Watch is the camp of the Knights of the Ebon Blade in western Zul'Drak, raised to hunt the Scourge they once served. Stefan Vadu commands it, holding that none know the Scourge better than death knights and that the best weapon against fire is fire; he has little patience for the Argent Crusade, late to the party once again. The knights have one target here: Overlord Drakuru, whom they have followed since the Grizzly Hills.",
+  "body": "Ebon Watch is the camp of the Knights of the Ebon Blade in western Zul'Drak, raised to hunt the Scourge they once served. Stefan Vadu commands it, holding that none know the Scourge better than death knights and that the best weapon against fire is fire.",
   "triggers": [
    [
     1,
@@ -267,6 +267,19 @@
      [
       5,
       12638
+     ]
+    ],
+    "sources": [
+     "zone_areas 4312 (Stefan Vadu 28518, Bloodrose Datura 28532, Captured Drakkari Scout 28541, Corrosion, Spiked, Mulch, Deathdrip, Corpsedust, Scabbard, Squirmworm, Baneflight 28615, Ebon Watch Guardian)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Stefan has little patience for the Argent Crusade, late to the party once again. The knights' quarry here is Overlord Drakuru, whom they have tracked since the Grizzly Hills.",
+    "triggers": [
+     [
+      5,
+      12884
      ]
     ],
     "sources": [

@@ -643,7 +643,7 @@
   "sort": 30025,
   "faction": 0,
   "title": "The Lost King",
-  "body": "Some years after the Third War, King Varian Wrynn sailed in secret for Theramore to meet Lady Jaina Proudmoore, and never arrived. The Defias, helped by someone greater than they, had slipped their man Hendel aboard the royal ship and taken him. To keep order, the royal council crowned his young son Anduin, at the urging of the noblewoman Lady Katrana Prestor, and Highlord Bolvar Fordragon was named regent to rule in the boy's name.",
+  "body": "Some years after the Third War, King Varian Wrynn sailed in secret for Theramore to meet Lady Jaina Proudmoore, and never arrived. The Defias, helped by someone greater than they, had slipped their man Hendel aboard the royal ship and taken him. To keep order, the royal council crowned his young son Anduin, and Highlord Bolvar Fordragon was named regent to rule in the boy's name.",
   "triggers": [
    [
     4,
@@ -653,7 +653,7 @@
   "parts": [
    {
     "part": 1,
-    "body": "The councilor who pressed for Anduin's crowning was the black dragon Onyxia, daughter of Deathwing, and a medallion she gave the regent held his mind captive. Unmasked in the keep, she fled to her lair in Dustwallow Marsh.",
+    "body": "The noblewoman Lady Katrana Prestor, who had pressed for Anduin's crowning, was the black dragon Onyxia, daughter of Deathwing, and a medallion she gave the regent held his mind captive. Unmasked in the keep, she fled to her lair in Dustwallow Marsh.",
     "triggers": [
      [
       5,
