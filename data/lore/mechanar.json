@@ -1,0 +1,52 @@
+[
+ {
+  "id": 384900,
+  "kind": 0,
+  "zone": 3849,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Mechanar",
+  "body": "The Mechanar is the satellite of Tempest Keep given over to machines. Kael'thas's Sunseeker astromages, engineers and netherbinders keep its works running, Tempest-Forge golems and great drilling engines stalk its ramps, and blood elf physicians and slayers stand guard among them. Two mechanical gatewatchers hold the way in, and stacks of overcharged manacells hum in the halls above, each holding more power than any forge could use.",
+  "triggers": [
+   [
+    1,
+    3849
+   ]
+  ],
+  "related": [
+   352315,
+   352305,
+   384901
+  ],
+  "sources": [
+   "Mechanar spawns (map 554); Shadowmoon quest 10665 (manacells around Capacitus); creature_text 19218, 19710"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 384901,
+  "kind": 2,
+  "zone": 3849,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Pathaleon the Calculator",
+  "body": "Pathaleon the Calculator runs the Mechanar for Kael'thas, and runs it on a strict timetable: nothing, he warns intruders, will be allowed to interfere. He prefers to be hands-on. Short of hands, he simply takes new ones, bending a visitor's mind to his service and calling nether wraiths to supplement his work force.",
+  "triggers": [
+   [
+    3,
+    19220
+   ]
+  ],
+  "related": [
+   384900,
+   92000002,
+   352305
+  ],
+  "sources": [
+   "creature_text 19220"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

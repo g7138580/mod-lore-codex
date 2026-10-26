@@ -1,0 +1,201 @@
+[
+ {
+  "id": 481200,
+  "kind": 0,
+  "zone": 4812,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 16,
+  "title": "Icecrown Citadel",
+  "body": "Icecrown Citadel stands open at last. The Argent Crusade and the Knights of the Ebon Blade, joined as the Ashen Verdict, have broken in, and Tirion Fordring leads the march on the Frozen Throne through halls of saronite and bone, where cultists, deathbound wards and the risen of every race hold the ramparts. The Lich King watches them climb, and he does not hide his amusement.",
+  "triggers": [
+   [
+    1,
+    4812
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "As the march began the Lich King taunted Tirion with a prize: Highlord Bolvar Fordragon, whom all thought dead at the Wrathgate, lives in his hands, his soul nearly broken. Lord Marrowgar, the first of his guardians, swore none would enter the sanctum.",
+    "triggers": [
+     [
+      3,
+      36612
+     ]
+    ],
+    "sources": [
+     "Icecrown Citadel spawns (map 631); Icecrown Citadel quests 24548, 24919; creature_text 36678, 36853, 36855, 37119, 37181, 37187, 38608"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Lady Deathwhisper, who leads the Cult of the Damned in the citadel, preached that flesh is a crippling flaw, a joke the Creators played upon their own creations, and released her faithful from the curse of flesh.",
+    "triggers": [
+     [
+      3,
+      36855
+     ]
+    ],
+    "sources": [
+     "Icecrown Citadel spawns (map 631); Icecrown Citadel quests 24548, 24919; creature_text 36678, 36853, 36855, 37119, 37181, 37187, 38608"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Professor Putricide ran the citadel's plague works with his favorites, Festergut and Rotface, and announced the good news that he had perfected a plague to destroy all life on Azeroth.",
+    "triggers": [
+     [
+      3,
+      36678
+     ]
+    ],
+    "sources": [
+     "Icecrown Citadel spawns (map 631); Icecrown Citadel quests 24548, 24919; creature_text 36678, 36853, 36855, 37119, 37181, 37187, 38608"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Sindragosa, queen of the frost wyrms, guarded the way to the Frozen Throne and swore the icy winds of Northrend would consume all who came. Dying, she sighed that she was free at last.",
+    "triggers": [
+     [
+      3,
+      36853
+     ]
+    ],
+    "sources": [
+     "Icecrown Citadel spawns (map 631); Icecrown Citadel quests 24548, 24919; creature_text 36678, 36853, 36855, 37119, 37181, 37187, 38608"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "The throne was once a prison: Kil'jaeden made it from the Nether to hold Ner'zhul's spirit. When Arthas struck it with Frostmourne, Ner'zhul's soul merged with his own, and splinters of the crystal lie scattered through the citadel.",
+    "triggers": [
+     [
+      4,
+      24548
+     ]
+    ],
+    "sources": [
+     "Icecrown Citadel spawns (map 631); Icecrown Citadel quests 24548, 24919; creature_text 36678, 36853, 36855, 37119, 37181, 37187, 38608"
+    ]
+   },
+   {
+    "part": 6,
+    "body": "Among the Lich King's sealed possessions was a medal. Uther knew it: he had presented it to Arthas himself, long ago, and with it returned, his soul could rest at last.",
+    "triggers": [
+     [
+      5,
+      24919
+     ]
+    ],
+    "sources": [
+     "Icecrown Citadel spawns (map 631); Icecrown Citadel quests 24548, 24919; creature_text 36678, 36853, 36855, 37119, 37181, 37187, 38608"
+    ]
+   }
+  ],
+  "related": [
+   21018,
+   92000005,
+   92000001,
+   481201
+  ],
+  "sources": [
+   "Icecrown Citadel spawns (map 631); Icecrown Citadel quests 24548, 24919; creature_text 36678, 36853, 36855, 37119, 37181, 37187, 38608"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 481201,
+  "kind": 2,
+  "zone": 4812,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 16,
+  "title": "Deathbringer Saurfang",
+  "body": "Deathbringer Saurfang was Dranosh, Saurfang the Younger, who led the Horde at the Wrathgate and died there. The Lich King raised him, and he bars the way to the upper citadel: for every soldier the Alliance and the Horde killed of each other, he tells them, the Lich King's armies grew. He has become death, he says, and to the Horde he offers his own father a place at his side.",
+  "triggers": [
+   [
+    3,
+    37813
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Dying, the Deathbringer said he was released. His father came for his body: he had named him Dranosh, Heart of Draenor, and crossed the Dark Portal alone so that his son would stay untainted, and he took him home to Nagrand.",
+    "triggers": [
+     [
+      3,
+      37813
+     ]
+    ],
+    "sources": [
+     "creature_text 37813, 37187, 37879, 37200"
+    ]
+   }
+  ],
+  "related": [
+   91000035,
+   353719,
+   481200
+  ],
+  "sources": [
+   "creature_text 37813, 37187, 37879, 37200"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 481202,
+  "kind": 2,
+  "zone": 4812,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 16,
+  "title": "The Blood Princes and the Blood-Queen",
+  "body": "The princes of the San'layn have risen again in the citadel: Valanar, who calls Naxxanar a mere setback, Keleseth and Taldaram, each made mighty by the power of the Darkfallen Orb. Above them in the Crimson Hall reigns their queen, Blood-Queen Lana'thel, whose bite turns the thirst of her victims on their own companions.",
+  "triggers": [
+   [
+    3,
+    37970
+   ],
+   [
+    3,
+    37972
+   ],
+   [
+    3,
+    37973
+   ],
+   [
+    3,
+    37955
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Dying, the Blood-Queen sounded almost wounded, as though her killers had betrayed a friendship: they had been getting along so well.",
+    "triggers": [
+     [
+      3,
+      37955
+     ]
+    ],
+    "sources": [
+     "creature_text 37955, 37970, 37972, 37973"
+    ]
+   }
+  ],
+  "related": [
+   481200,
+   20601,
+   449400,
+   353718
+  ],
+  "sources": [
+   "creature_text 37955, 37970, 37972, 37973"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

@@ -1,0 +1,429 @@
+[
+ {
+  "id": 158400,
+  "kind": 0,
+  "zone": 1584,
+  "sort": 0,
+  "faction": 0,
+  "title": "Blackrock Depths",
+  "body": "Blackrock Depths is the capital of the Dark Iron dwarves, Shadowforge City, buried in the molten heart of Blackrock Mountain. Emperor Dagran Thaurissan rules it from his throne, and the whole nation serves the Firelord whose coming made the mountain. Its halls hold a prison block and a court that sentences outsiders to death in an arena, forges and a golem manufactory, a tavern and a vault, and lava runs everywhere beneath the stone.",
+  "triggers": [
+   [
+    1,
+    1584
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "General Angerforge's forces in the Depths slaughtered the 109th division of the Kargath Expeditionary Force, and Warlord Goretooth wants every one of them destroyed.",
+    "triggers": [
+     [
+      4,
+      4081
+     ],
+     [
+      4,
+      4132
+     ]
+    ],
+    "sources": [
+     "Blackrock Depths quests 4081, 4132"
+    ]
+   }
+  ],
+  "related": [
+   90000010,
+   91000018,
+   4610
+  ],
+  "sources": [
+   "Blackrock Depths quests 4081, 4132"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 158401,
+  "kind": 2,
+  "zone": 1584,
+  "sort": 0,
+  "faction": 0,
+  "title": "Emperor Dagran Thaurissan",
+  "body": "Emperor Dagran Thaurissan rules the Dark Iron nation from the Imperial Seat in Shadowforge City, and he names himself the most powerful servant of Ragnaros. At his side stands Princess Moira Bronzebeard, daughter of King Magni of Ironforge, who fights at his side and heals him as he falls. The emperor scorns every challenger as beneath him.",
+  "triggers": [
+   [
+    3,
+    9019
+   ],
+   [
+    4,
+    4003
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The princess is not there by choice. Thaurissan holds her under a powerful spell that bends her thoughts to his will.",
+    "triggers": [
+     [
+      2,
+      9021
+     ],
+     [
+      4,
+      3982
+     ],
+     [
+      4,
+      4003
+     ]
+    ],
+    "sources": [
+     "Blackrock Depths quests 3982, 4003, 4004; creature_text 9019, 8929"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "With the emperor dead, Moira mourned him as her husband. She carries his child, she said, who will be the next ruler of Ironforge, and Thrall saw a new threat on the horizon.",
+    "triggers": [
+     [
+      4,
+      4004
+     ],
+     [
+      5,
+      4004
+     ]
+    ],
+    "sources": [
+     "Blackrock Depths quests 3982, 4003, 4004; creature_text 9019, 8929"
+    ]
+   }
+  ],
+  "related": [
+   153702,
+   90000010,
+   158402
+  ],
+  "sources": [
+   "Blackrock Depths quests 3982, 4003, 4004; creature_text 9019, 8929"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 158402,
+  "kind": 2,
+  "zone": 1584,
+  "sort": 0,
+  "faction": 0,
+  "title": "Kharan Mighthammer",
+  "body": "Kharan Mighthammer was charged with protecting Princess Moira when she answered Lakeshire's plea against the Blackrock orcs. In the Burning Steppes a hundred Dark Irons fell on them out of the very rocks, his twenty guardsmen were executed, and the princess was carried off to Thaurissan. Kharan sits in the Depths' prison, sure he is kept alive only for ransom, or out of cruelty.",
+  "triggers": [
+   [
+    2,
+    9021
+   ],
+   [
+    4,
+    4341
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The ambush was too well made, as if the Dark Irons knew every move before it was made. Someone tipped them off, Kharan swears, and he means to find the traitor.",
+    "triggers": [
+     [
+      2,
+      9021
+     ]
+    ],
+    "sources": [
+     "Kharan Mighthammer gossip 1822-1839; quest 4341"
+    ]
+   }
+  ],
+  "related": [
+   158401,
+   153702,
+   4407
+  ],
+  "sources": [
+   "Kharan Mighthammer gossip 1822-1839; quest 4341"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 158403,
+  "kind": 2,
+  "zone": 1584,
+  "sort": 0,
+  "faction": 0,
+  "title": "Marshal Windsor",
+  "body": "Marshal Windsor commanded Morgan's Vigil until a Blackrock raid took him, and with him a great store of intelligence on the clan. He sits in the Depths' prison, half mad with rage. He was gathering proof for Highlord Bolvar, he says, who is a blind fool: proof stands two feet from him and he does not see it. Windsor means to put his hammer between that reptile's eyes.",
+  "triggers": [
+   [
+    2,
+    9023
+   ],
+   [
+    4,
+    4242
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "A note from Thaurissan himself says General Angerforge and the golem lord Argelmach have nearly broken the code of Windsor's notes, and that their lord will rise from the depths.",
+    "triggers": [
+     [
+      4,
+      4264
+     ],
+     [
+      5,
+      4264
+     ]
+    ],
+    "sources": [
+     "Blackrock Depths quests 4241, 4242, 4264, 4282, 4322"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Windsor won back his notes and his freedom, and stormed off to Stormwind to confront Bolvar, and Lady Prestor, with his evidence.",
+    "triggers": [
+     [
+      5,
+      4322
+     ]
+    ],
+    "sources": [
+     "Blackrock Depths quests 4241, 4242, 4264, 4282, 4322"
+    ]
+   }
+  ],
+  "related": [
+   4613,
+   158401,
+   90000024
+  ],
+  "sources": [
+   "Blackrock Depths quests 4241, 4242, 4264, 4282, 4322"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 158404,
+  "kind": 2,
+  "zone": 1584,
+  "sort": 0,
+  "faction": 0,
+  "title": "Franclorn Forgewright",
+  "body": "Franclorn Forgewright was the Dark Iron architect of the stonewrought style, and he built Blackrock Spire. Under Ragnaros's control, he says, Thaurissan tore out the heart of the mountain and raised the Spire, and Franclorn stood by his king and watched the Firelord's corruption drive an honorable people to madness. When the Spire was done his will to live gave way, and he lies in a tomb at its entrance.",
+  "triggers": [
+   [
+    4,
+    3801
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "His great hammer Ironfel passed to the new chief architect, Fineous Darkvire, a man of despicable motive and little talent. Franclorn wants it back in the hands of his statue at the Shrine of Thaurissan.",
+    "triggers": [
+     [
+      4,
+      3802
+     ]
+    ],
+    "sources": [
+     "Franclorn Forgewright gossip 1663-1667; quests 3801, 3802"
+    ]
+   }
+  ],
+  "related": [
+   4610,
+   158300,
+   90000010
+  ],
+  "sources": [
+   "Franclorn Forgewright gossip 1663-1667; quests 3801, 3802"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 158405,
+  "kind": 1,
+  "zone": 1584,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Tomb of the Seven",
+  "body": "In a tomb within the Depths dwell seven Dark Iron spirits whom the city calls the Seven, Doom'rel and his six brothers. They challenge any who come to their tomb. Their fate, Doom'rel says, is the doom of all who face the Great Fire. In the ruins of the old capital, visions show a lone dwarf kneeling before a monolith of flame among seven corpses.",
+  "triggers": [
+   [
+    2,
+    9039
+   ]
+  ],
+  "related": [
+   4607,
+   91000018,
+   158401
+  ],
+  "sources": [
+   "Doom'rel gossip 1947, 1950; creature_text 9039"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 158406,
+  "kind": 2,
+  "zone": 1584,
+  "sort": 0,
+  "faction": 0,
+  "title": "Lord Incendius",
+  "body": "Lord Incendius is a being of fire who keeps the Black Anvil deep in the Depths, a minion of Ragnaros by every account. He cannot be destroyed, he cries: by the Firelord's will he shall be reborn, and he raises his servant Pyron from the ashes at the quarry gate however often it is put down.",
+  "triggers": [
+   [
+    3,
+    9017
+   ],
+   [
+    4,
+    4263
+   ],
+   [
+    4,
+    3907
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "He is only an emissary. A tablet taken from him names his master, and the shaman of Kargath read it with dread: Ragnaros himself is in the mountain, a general of the Old Gods in this world.",
+    "triggers": [
+     [
+      5,
+      3907
+     ]
+    ],
+    "sources": [
+     "Blackrock Depths quests 4262, 4263, 3907; creature_text 9017"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Dying, Incendius spoke his master's name, and at Morgan's Vigil the gnome who had sent the hunt could only ask, aghast, whether he had truly said Ragnaros.",
+    "triggers": [
+     [
+      5,
+      4263
+     ]
+    ],
+    "sources": [
+     "Blackrock Depths quests 4262, 4263, 3907; creature_text 9017"
+    ]
+   }
+  ],
+  "related": [
+   91000018,
+   158400,
+   5100
+  ],
+  "sources": [
+   "Blackrock Depths quests 4262, 4263, 3907; creature_text 9017"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 158407,
+  "kind": 2,
+  "zone": 1584,
+  "sort": 0,
+  "faction": 0,
+  "title": "Golem Lord Argelmach",
+  "body": "Golem Lord Argelmach rules the Manufactory of the Depths, where the Dark Irons build golems of incomparable killing power around a unique essence of the elements. The gnome Lotwil Veriatus swears it cannot be him: Argelmach twisted Lotwil's life's work to his own ends, and Lotwil killed him ten years ago.",
+  "triggers": [
+   [
+    3,
+    8983
+   ],
+   [
+    4,
+    4063
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The head brought back from the Manufactory was not flesh. It was a Dark Iron machine, a shadow of Argelmach, and Lotwil expects another to rise in its place.",
+    "triggers": [
+     [
+      5,
+      4063
+     ]
+    ],
+    "sources": [
+     "Blackrock Depths quests 4063, 3911; creature_text 8983"
+    ]
+   }
+  ],
+  "related": [
+   319,
+   158400,
+   90000010
+  ],
+  "sources": [
+   "Blackrock Depths quests 4063, 3911; creature_text 8983"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 158408,
+  "kind": 1,
+  "zone": 1584,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Grim Guzzler",
+  "body": "The Grim Guzzler is the tavern of Shadowforge City, where Dark Irons drink under the eye of Plugger Spazzring and even the Thorium Brotherhood does business: Lokhtos Darkbargainer trades here with the Brotherhood's friends, and will sell plans no smith above ground can buy.",
+  "triggers": [
+   [
+    2,
+    12944
+   ],
+   [
+    2,
+    9499
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Its pride is Thunderbrew Lager, made from a recipe that Hurley Blackbreath's Dark Irons stole from the Thunderbrew Distillery of Kharanos.",
+    "triggers": [
+     [
+      4,
+      4126
+     ],
+     [
+      4,
+      4134
+     ]
+    ],
+    "sources": [
+     "Blackrock Depths quests 4126, 4128, 4134, 7604"
+    ]
+   }
+  ],
+  "related": [
+   90000025,
+   104,
+   158400
+  ],
+  "sources": [
+   "Blackrock Depths quests 4126, 4128, 4134, 7604"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

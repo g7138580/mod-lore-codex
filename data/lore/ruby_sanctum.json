@@ -1,0 +1,120 @@
+[
+ {
+  "id": 498700,
+  "kind": 0,
+  "zone": 4987,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 17,
+  "title": "The Ruby Sanctum",
+  "body": "The Ruby Sanctum is the red dragonflight's sanctum beneath Wyrmrest Temple, the chamber where it keeps its eggs, and it has fallen. Its guardians lie slain, Charscale invokers, assaulters and elites of the black dragonkin hold its grounds, and from a bluff above, their general oversees the whole assault while fires burn across the sanctum's sacred groves and the bodies of the slain red dragons.",
+  "triggers": [
+   [
+    1,
+    4987
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Xerestrasza, the last of its guardians, held out barred inside a tree. The black dragonkin appeared from thin air, she said, slaughtered her brethren with cold efficiency, and seemed most interested in the eggs.",
+    "triggers": [
+     [
+      5,
+      26013
+     ]
+    ],
+    "sources": [
+     "Ruby Sanctum spawns (map 724); Ruby Sanctum quest 26013; creature_text 40429"
+    ]
+   }
+  ],
+  "related": [
+   6509,
+   90000079,
+   498701
+  ],
+  "sources": [
+   "Ruby Sanctum spawns (map 724); Ruby Sanctum quest 26013; creature_text 40429"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 498701,
+  "kind": 2,
+  "zone": 4987,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 17,
+  "title": "Halion",
+  "body": "Halion, the Twilight Destroyer, is the true leader of the assault on the Ruby Sanctum, a full-grown twilight dragon who fights in the physical realm and the twilight realm at once. He is the light and the darkness, he proclaims, and the herald of a new age of destruction.",
+  "triggers": [
+   [
+    3,
+    39863
+   ],
+   [
+    3,
+    40142
+   ],
+   [
+    4,
+    26034
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Not since Dargonax, Xerestrasza says, has a full-grown spawn of Sinestra's twisted experiments been seen in the world. This was no reckless attack.",
+    "triggers": [
+     [
+      4,
+      26034
+     ]
+    ],
+    "sources": [
+     "Ruby Sanctum quest 26034; creature_text 39863, 40142"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "He named his master as he fought: he was the herald of Deathwing. Dying, he told his killers to relish their victory, for the world would burn with the master's return.",
+    "triggers": [
+     [
+      3,
+      39863
+     ],
+     [
+      3,
+      40142
+     ]
+    ],
+    "sources": [
+     "Ruby Sanctum quest 26034; creature_text 39863, 40142"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "At the name of Deathwing, Krasus's eyes went wide. The news of the Destroyer was troubling beyond words, and he had much to discuss with the Accord.",
+    "triggers": [
+     [
+      5,
+      26034
+     ]
+    ],
+    "sources": [
+     "Ruby Sanctum quest 26034; creature_text 39863, 40142"
+    ]
+   }
+  ],
+  "related": [
+   498700,
+   90000078,
+   90000024
+  ],
+  "sources": [
+   "Ruby Sanctum quest 26034; creature_text 39863, 40142"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

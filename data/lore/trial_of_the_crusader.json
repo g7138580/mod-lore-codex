@@ -1,0 +1,82 @@
+[
+ {
+  "id": 472200,
+  "kind": 0,
+  "zone": 4722,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 15,
+  "title": "Trial of the Crusader",
+  "body": "The Trial of the Crusader is the Argent Crusade's great test in the Crusaders' Coliseum. Highlord Tirion Fordring sets the champions who answered his call against the worst Northrend can offer, before the eyes of King Varian Wrynn, Lady Jaina Proudmoore, Thrall and Garrosh Hellscream, and those who survive, he promises, will march with the Crusade on Icecrown Citadel and the Lich King himself.",
+  "triggers": [
+   [
+    1,
+    4722
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Grand Warlock Wilfred Fizzlebang, a gnome, meant to summon a doomguard for the trial and called up Lord Jaraxxus, an eredar lord of the Burning Legion, who killed him on the spot. Dying, the demon warned that another would take his place.",
+    "triggers": [
+     [
+      3,
+      34780
+     ]
+    ],
+    "sources": [
+     "Trial of the Crusader quest 24589; creature_text 34564, 34780, 34990, 34995, 34996, 35458, 35877"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The summoner was of the Alliance, and Garrosh cried treachery. Varian demanded justice in turn, and Tirion, who swore there was no conspiracy, let the champions of the Alliance and the Horde fight each other in place of his knights.",
+    "triggers": [
+     [
+      3,
+      34780
+     ]
+    ],
+    "sources": [
+     "Trial of the Crusader quest 24589; creature_text 34564, 34780, 34990, 34995, 34996, 35458, 35877"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "When the last trial was won, the Lich King himself came. The Nerubians had built an empire beneath the frozen wastes, he told Tirion, and the Crusade had built upon it: his empire. Then he broke the arena floor.",
+    "triggers": [
+     [
+      3,
+      34564
+     ]
+    ],
+    "sources": [
+     "Trial of the Crusader quest 24589; creature_text 34564, 34780, 34990, 34995, 34996, 35458, 35877"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Below waited Anub'arak, risen again, who had expected his guests just as the master promised. Dying, the crypt lord confessed that he had failed his master.",
+    "triggers": [
+     [
+      3,
+      34564
+     ]
+    ],
+    "sources": [
+     "Trial of the Crusader quest 24589; creature_text 34564, 34780, 34990, 34995, 34996, 35458, 35877"
+    ]
+   }
+  ],
+  "related": [
+   21019,
+   92000001,
+   92000005,
+   427701
+  ],
+  "sources": [
+   "Trial of the Crusader quest 24589; creature_text 34564, 34780, 34990, 34995, 34996, 35458, 35877"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

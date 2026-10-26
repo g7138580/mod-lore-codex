@@ -1,0 +1,96 @@
+[
+ {
+  "id": 419600,
+  "kind": 0,
+  "zone": 4196,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Drak'Tharon Keep",
+  "body": "Drak'Tharon Keep is the Drakkari fortress on the border of the Grizzly Hills and Zul'Drak, raised in ages past to be impervious. The Scourge holds it now as a stepping stone in its war on Zul'Drak: risen Drakkari warriors, soulmages, bat riders and death knights walk its halls with ghouls and brutes, reanimators raise the fallen to fight for their new liege, and webs choke the lower passages.",
+  "triggers": [
+   [
+    1,
+    4196
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Kurzel of the Granite Springs bounty hunters came in alone when her partners would not, and was found alive in the depths. She means to teach the lazy lot a lesson they will not forget.",
+    "triggers": [
+     [
+      4,
+      13129
+     ]
+    ],
+    "sources": [
+     "Drak'Tharon Keep spawns (map 600); Drak'Tharon quests 12037, 12238, 13129, 13249; Kurzel gossip 9690"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "At the top of the keep Drakuru performed his ritual, meant, he said, to cleanse it and restore it to its noble purpose. Then he told his helpers to seek him in Zul'Drak when the time was right: there was a war to be won.",
+    "triggers": [
+     [
+      5,
+      12238
+     ]
+    ],
+    "sources": [
+     "Drak'Tharon Keep spawns (map 600); Drak'Tharon quests 12037, 12238, 13129, 13249; Kurzel gossip 9690"
+    ]
+   }
+  ],
+  "related": [
+   39406,
+   90000081,
+   6623,
+   419601
+  ],
+  "sources": [
+   "Drak'Tharon Keep spawns (map 600); Drak'Tharon quests 12037, 12238, 13129, 13249; Kurzel gossip 9690"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 419601,
+  "kind": 2,
+  "zone": 4196,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Prophet Tharon'ja",
+  "body": "The Prophet Tharon'ja rules Drak'Tharon Keep for the Scourge, a Drakkari prophet risen in undeath who holds his dynasty eternal: Tharon'ja sees all, and the work of mortals shall not end it. He strips the flesh of his foes to the bone and takes their mortal shells for his own use.",
+  "triggers": [
+   [
+    3,
+    26632
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Dying, the prophet could not believe what was happening to him: Tharon'ja was eternal, he insisted, until the words failed him.",
+    "triggers": [
+     [
+      3,
+      26632
+     ]
+    ],
+    "sources": [
+     "creature_text 26632; Drak'Tharon quest 13249"
+    ]
+   }
+  ],
+  "related": [
+   419600,
+   90000081,
+   90000006
+  ],
+  "sources": [
+   "creature_text 26632; Drak'Tharon quest 13249"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

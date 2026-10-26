@@ -1,0 +1,168 @@
+[
+ {
+  "id": 20600,
+  "kind": 0,
+  "zone": 206,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Utgarde Keep",
+  "body": "Inside, Utgarde Keep is the Dragonflayer stronghold at work. Its forges ring as metalworkers and weaponsmiths turn out the vrykul's arms, handlers drive enslaved proto-drakes in chains while their riders wait to mount, and strategists, runecasters and ironhelms hold the halls. The Scourge is here too, among the living giants, and its dead rise out of the frost to fight beside the giants.",
+  "triggers": [
+   [
+    1,
+    206
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Dark Ranger Marrah is the last of a Forsaken recon party sent into the keep. What she learned did not come cheaply.",
+    "triggers": [
+     [
+      4,
+      11262
+     ]
+    ],
+    "sources": [
+     "Utgarde Keep spawns (map 574); Utgarde Keep quests 11262, 13205, 13206; creature_text 24200, 24201"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Dragonflayer's weapons are deceptively well balanced and wickedly sharp, with something unnatural about them. Valgarde and Vengeance Landing both want to learn their secret.",
+    "triggers": [
+     [
+      4,
+      13205
+     ],
+     [
+      4,
+      13206
+     ]
+    ],
+    "sources": [
+     "Utgarde Keep spawns (map 574); Utgarde Keep quests 11262, 13205, 13206; creature_text 24200, 24201"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Skarvald the Constructor and Dalronn the Controller held a hall together and despised each other: the warrior scorned the necromancer for hanging back, the necromancer the warrior for charging in. Whichever fell first came back as a ghost to fight on.",
+    "triggers": [
+     [
+      3,
+      24200
+     ],
+     [
+      3,
+      24201
+     ]
+    ],
+    "sources": [
+     "Utgarde Keep spawns (map 574); Utgarde Keep quests 11262, 13205, 13206; creature_text 24200, 24201"
+    ]
+   }
+  ],
+  "related": [
+   49503,
+   90000076,
+   20602
+  ],
+  "sources": [
+   "Utgarde Keep spawns (map 574); Utgarde Keep quests 11262, 13205, 13206; creature_text 24200, 24201"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 20601,
+  "kind": 2,
+  "zone": 206,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Prince Keleseth",
+  "body": "Prince Keleseth of the San'layn, the blood princes of the Scourge, keeps a chamber in Utgarde Keep among the vrykul. He entombs his foes in frost, raises the dead to fight beside him, and promises that the darkness waits for them.",
+  "triggers": [
+   [
+    3,
+    23953
+   ],
+   [
+    4,
+    11272
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "High Executor Anselm wants him dead in front of any vrykul watching: the prince came to Vengeance Landing, insulted the Banshee Queen and killed Anselm's men, and Arthas should know the Forsaken are playing for keeps.",
+    "triggers": [
+     [
+      4,
+      11272
+     ]
+    ],
+    "sources": [
+     "Utgarde Keep quest 11272; creature_text 23953"
+    ]
+   }
+  ],
+  "related": [
+   49505,
+   20600,
+   90000006
+  ],
+  "sources": [
+   "Utgarde Keep quest 11272; creature_text 23953"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 20602,
+  "kind": 2,
+  "zone": 206,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Ingvar the Plunderer",
+  "body": "Ingvar the Plunderer is the master of Utgarde Keep, the champion the Dragonflayer esteem above all, a warrior born who means to paint his face with his enemies' blood. Valgarde and Vengeance Landing both believe that bringing him down will break the vrykul's spirit, and perhaps give them a chance.",
+  "triggers": [
+   [
+    3,
+    23954
+   ],
+   [
+    4,
+    11252
+   ],
+   [
+    4,
+    11262
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "He fell crying out his life for the death god, and did not stay down. The val'kyr Annhylde the Caller raised him, damned for his failure as a warning to all, to carry out the master's will.",
+    "triggers": [
+     [
+      3,
+      23954
+     ]
+    ],
+    "sources": [
+     "Utgarde Keep quests 11252, 11262; creature_text 23954, 24068"
+    ]
+   }
+  ],
+  "related": [
+   20600,
+   49503,
+   90000076
+  ],
+  "sources": [
+   "Utgarde Keep quests 11252, 11262; creature_text 23954, 24068"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

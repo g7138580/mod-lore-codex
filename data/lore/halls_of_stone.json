@@ -1,0 +1,154 @@
+[
+ {
+  "id": 426400,
+  "kind": 0,
+  "zone": 4264,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Halls of Stone",
+  "body": "The Halls of Stone are one of Ulduar's outer works, titan halls of carved stone that the Dark Rune dwarves of Loken have made their own. Warriors, theurgists and shapers stand among iron and lightning constructs, rune giants guard the great doors, and somewhere in the depths a forge still turns out iron where once it made stone. Brann Bronzebeard has found his way here, sure there are monumental discoveries to be made.",
+  "triggers": [
+   [
+    1,
+    4264
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Maiden of Grief keeps a hall of the outer works, a stone guardian weighed down by sorrow, who blames her visitors for her burden and dies saying she never wanted this.",
+    "triggers": [
+     [
+      3,
+      27975
+     ]
+    ],
+    "sources": [
+     "Halls of Stone spawns (map 599); Halls of Stone quest 13207; creature_text 27975"
+    ]
+   }
+  ],
+  "related": [
+   6718,
+   6732,
+   90000077,
+   426401
+  ],
+  "sources": [
+   "Halls of Stone spawns (map 599); Halls of Stone quest 13207; creature_text 27975"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 426401,
+  "kind": 1,
+  "zone": 4264,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Tribunal of Ages",
+  "body": "The Tribunal of Ages is a titan archive deep in the Halls of Stone, watched over by the carved faces of three keepers. Brann Bronzebeard means to make it talk: he wants to know how the dwarves came to be, starting at the beginning. Its guardians do not recognize him, and treat anything they do not recognize as a threat.",
+  "triggers": [
+   [
+    4,
+    13207
+   ],
+   [
+    5,
+    13207
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The archive told of Azeroth's infancy, infected by parasites it named the Old Gods. They left every system defenseless to assimilate it, the earthen among them, and that unravelling it calls the Curse of Flesh.",
+    "triggers": [
+     [
+      5,
+      13207
+     ]
+    ],
+    "sources": [
+     "Halls of Stone quest 13207; creature_text 28070, 30897, 30898, 30899"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The titans found the infestation too deep to cut out without killing the world, so they imprisoned it within. They made the Forge of Wills to make new earthen and appointed protectors, storm and earth giants under Loken, and set the Dragon Aspects to watch.",
+    "triggers": [
+     [
+      5,
+      13207
+     ]
+    ],
+    "sources": [
+     "Halls of Stone quest 13207; creature_text 28070, 30897, 30898, 30899"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Then the protectors went to war. Loken ended it by destroying the rest and put the seed races, earthen, giants and vrykul, to sleep; by the time the first earthen woke, the curse had made them dwarves.",
+    "triggers": [
+     [
+      5,
+      13207
+     ]
+    ],
+    "sources": [
+     "Halls of Stone quest 13207; creature_text 28070, 30897, 30898, 30899"
+    ]
+   }
+  ],
+  "related": [
+   426400,
+   91000036,
+   90000086,
+   6731
+  ],
+  "sources": [
+   "Halls of Stone quest 13207; creature_text 28070, 30897, 30898, 30899"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 426402,
+  "kind": 2,
+  "zone": 4264,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Sjonnir the Ironshaper",
+  "body": "Sjonnir the Ironshaper keeps the forge at the heart of the Halls of Stone for Loken, a dwarf of iron who pities soft, vulnerable shells and their brief fragile lives. None can escape the curse of flesh, he promises, and armies of iron will smother the world.",
+  "triggers": [
+   [
+    3,
+    27978
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Dying, he swore that Loken would not rest until the forge was retaken. Brann set it to making earthen to stand guard, and guessed another machine was turning out iron vrykul: Loken had to be found and stopped.",
+    "triggers": [
+     [
+      3,
+      27978
+     ]
+    ],
+    "sources": [
+     "creature_text 27978, 28070; Halls of Stone quest 13252"
+    ]
+   }
+  ],
+  "related": [
+   426400,
+   90000077,
+   6731
+  ],
+  "sources": [
+   "creature_text 27978, 28070; Halls of Stone quest 13252"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

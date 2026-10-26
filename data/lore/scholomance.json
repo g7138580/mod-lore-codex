@@ -1,0 +1,250 @@
+[
+ {
+  "id": 205700,
+  "kind": 0,
+  "zone": 2057,
+  "sort": 0,
+  "faction": 0,
+  "title": "Scholomance",
+  "body": "Scholomance lies in the vaults beneath Caer Darrow, once the seat of House Barov and now the school of necromancy where the Cult of the Damned was born, its capital in all but name. Instructors drill students in the dark arts, the dead of the island fill its halls, and the family that sold its house still haunts the rooms they lived in.",
+  "triggers": [
+   [
+    1,
+    2057
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Scourge breeds a plagued dragonflight here from black dragon eggs, and the instructor Vectus lectures his students on its care: torture the prisoner where the dragon can see.",
+    "triggers": [
+     [
+      4,
+      5529
+     ],
+     [
+      4,
+      5531
+     ],
+     [
+      3,
+      10432
+     ]
+    ],
+    "sources": [
+     "Scholomance quests 5529, 5531; creature_text 10432"
+    ]
+   }
+  ],
+  "related": [
+   2804,
+   92000000,
+   90000006
+  ],
+  "sources": [
+   "Scholomance quests 5529, 5531; creature_text 10432"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 205701,
+  "kind": 2,
+  "zone": 2057,
+  "sort": 0,
+  "faction": 0,
+  "title": "Darkmaster Gandling",
+  "body": "Darkmaster Gandling is the headmaster of Scholomance, master of its instructors and of every student in its halls. School is in session, he announces to intruders, and he moves them about the building at will, shutting them into rooms with the school's restless dead.",
+  "triggers": [
+   [
+    3,
+    1853
+   ]
+  ],
+  "related": [
+   205700,
+   92000000
+  ],
+  "sources": [
+   "creature_text 1853"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 205702,
+  "kind": 2,
+  "zone": 2057,
+  "sort": 0,
+  "faction": 0,
+  "title": "Doctor Theolen Krastinov",
+  "body": "Doctor Theolen Krastinov, the Butcher, is responsible for the deaths of thousands. When the Barovs turned, he took their servants for his experiments in devising a plague, kept them alive by magic for weeks of pain, and threw them at the last to his ghouls. The spirits of the butler and the head maid, Lucien and Eva Sarkhoff, want him destroyed.",
+  "triggers": [
+   [
+    3,
+    11261
+   ],
+   [
+    4,
+    5382
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Krastinov serves a master of his own, Kirtonos, and appeases him with the blood of innocents. Jandice Barov carries that blood from the Butcher to his master.",
+    "triggers": [
+     [
+      4,
+      5515
+     ]
+    ],
+    "sources": [
+     "Eva Sarkhoff gossip 3301-3310; quests 5382, 5515"
+    ]
+   }
+  ],
+  "related": [
+   2804,
+   205703,
+   205705
+  ],
+  "sources": [
+   "Eva Sarkhoff gossip 3301-3310; quests 5382, 5515"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 205703,
+  "kind": 2,
+  "zone": 2057,
+  "sort": 0,
+  "faction": 0,
+  "title": "Kirtonos the Herald",
+  "body": "Kirtonos the Herald is the dark master the Butcher served, a winged horror appeased with the blood of innocents, the purest blood there is. He does not keep to the halls. Blood placed on the brazier on the school's porch summons him, for he cannot resist it, and with that same blood he must be destroyed.",
+  "triggers": [
+   [
+    3,
+    10506
+   ],
+   [
+    4,
+    5384
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "With Kirtonos dead, the Sarkhoffs said, one chapter in the horrible tale of Scholomance came to a close, though there was more to be done.",
+    "triggers": [
+     [
+      5,
+      5384
+     ]
+    ],
+    "sources": [
+     "Scholomance quest 5384"
+    ]
+   }
+  ],
+  "related": [
+   205702,
+   205700
+  ],
+  "sources": [
+   "Scholomance quest 5384"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 205704,
+  "kind": 2,
+  "zone": 2057,
+  "sort": 0,
+  "faction": 0,
+  "title": "Ras Frostwhisper",
+  "body": "Ras Frostwhisper is a lich of Scholomance. As a human mage he pledged his undying soul to the Lich King, drew a dagger across his own throat inside a pentagram and smiled as he did it, and the Lich King raised him. A keepsake of his mortal life, the Argent Dawn says, can make him mortal again.",
+  "triggers": [
+   [
+    3,
+    10508
+   ],
+   [
+    4,
+    5466
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "When the ritual was done the lich cried that it could not be, and Ras died a mortal man. Ten thousand souls cry out in unison, Leonid Barthalomew said.",
+    "triggers": [
+     [
+      5,
+      5466
+     ]
+    ],
+    "sources": [
+     "Scholomance quest 5466; Stratholme quest 5463; creature_text 10508"
+    ]
+   }
+  ],
+  "related": [
+   201700,
+   90000006
+  ],
+  "sources": [
+   "Scholomance quest 5466; Stratholme quest 5463; creature_text 10508"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 205705,
+  "kind": 2,
+  "zone": 2057,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Barovs",
+  "body": "The Barovs ruled a far reaching empire from Caer Darrow, and to keep it beyond their own lifetimes they bargained with Kel'Thuzad. Their greed broke the dam. Lord Alexei, Lady Illucia and their daughter Jandice still walk the house, undead now, among the cult that took it from them.",
+  "triggers": [
+   [
+    3,
+    10504
+   ],
+   [
+    3,
+    10502
+   ],
+   [
+    3,
+    10503
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Their sons, Alexi and Weldon, are the last heirs. Each sends adventurers after the family's deeds, hidden in the ruins, before the other can claim the fortune.",
+    "triggers": [
+     [
+      4,
+      5341
+     ],
+     [
+      4,
+      5343
+     ]
+    ],
+    "sources": [
+     "Eva Sarkhoff gossip 3307, 3308; quests 5341, 5343"
+    ]
+   }
+  ],
+  "related": [
+   2804,
+   92000000,
+   205702
+  ],
+  "sources": [
+   "Eva Sarkhoff gossip 3307, 3308; quests 5341, 5343"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

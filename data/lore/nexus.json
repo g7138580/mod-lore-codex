@@ -1,0 +1,126 @@
+[
+ {
+  "id": 426500,
+  "kind": 0,
+  "zone": 4265,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Nexus",
+  "body": "The Nexus is the fortress of Malygos beneath Coldarra, a frozen maze of halls where the blue flight's servants gather the magic drawn out of the world. Azure magi, warders and enforcers keep it beside the mage hunters who abduct the world's spellcasters, crazed mana-wyrms and mana-surges drift through its passages, and in one cavern the flood of arcane power has turned a grove and its ancients to living crystal.",
+  "triggers": [
+   [
+    1,
+    4265
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Azeroth's ley lines are being redirected to the Nexus, Archmage Berinand has found, and the influx is tearing a rift between dimensions deep inside. He cannot stop it, only slow it.",
+    "triggers": [
+     [
+      4,
+      11905
+     ]
+    ],
+    "sources": [
+     "Nexus spawns (map 576); Nexus quests 11905, 11911; creature_text 26763"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The ancients of the crystal grove are changing into something different, and they fight back: some intelligence, Berinand suspects, is behind the transformation.",
+    "triggers": [
+     [
+      5,
+      11911
+     ]
+    ],
+    "sources": [
+     "Nexus spawns (map 576); Nexus quests 11905, 11911; creature_text 26763"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The rift had a guardian, Anomalus, a creature of chaos that tore the fabric of reality open around it until it was itself unwoven.",
+    "triggers": [
+     [
+      3,
+      26763
+     ]
+    ],
+    "sources": [
+     "Nexus spawns (map 576); Nexus quests 11905, 11911; creature_text 26763"
+    ]
+   }
+  ],
+  "related": [
+   353712,
+   353723,
+   90000063,
+   426501
+  ],
+  "sources": [
+   "Nexus spawns (map 576); Nexus quests 11905, 11911; creature_text 26763"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 426501,
+  "kind": 2,
+  "zone": 4265,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Keristrasza",
+  "body": "Keristrasza is the red dragon who slew Saragosa, consort of Malygos, and Malygos took her in Saragosa's place. She lies frozen at the heart of the Nexus, and she will never cooperate willingly, but the Aspect of Magic is powerful and in time he will bend her will.",
+  "triggers": [
+   [
+    3,
+    26723
+   ],
+   [
+    4,
+    11973
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Her will was already breaking. She raved that there was no truth in preserving, only in the taking, and begged to be finished; dying, she called on the Dragonqueen, the Life-Binder, to preserve her.",
+    "triggers": [
+     [
+      3,
+      26723
+     ]
+    ],
+    "sources": [
+     "Nexus quests 11973, 13246; creature_text 26723"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Raelorasz swore that their kind would never forget the sacrifice Keristrasza made for the cause, and that her fate would only steel the dragons' resolve.",
+    "triggers": [
+     [
+      5,
+      11973
+     ]
+    ],
+    "sources": [
+     "Nexus quests 11973, 13246; creature_text 26723"
+    ]
+   }
+  ],
+  "related": [
+   353723,
+   90000079,
+   426500
+  ],
+  "sources": [
+   "Nexus quests 11973, 13246; creature_text 26723"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

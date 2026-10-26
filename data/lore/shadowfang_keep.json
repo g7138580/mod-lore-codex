@@ -6,7 +6,7 @@
   "sort": 0,
   "faction": 0,
   "title": "Shadowfang Keep",
-  "body": "Shadowfang Keep crowns the heights above Pyrewood Village in southern Silverpine. It was the seat of Baron Silverlaine until the worgen loosed on the forest turned on the living and laid siege to it, and the keep fell into shadow and ruin. Now it belongs to Arugal, the archmage whose magic brought them. He keeps to the top of the keep's tower, the worgen he calls his sons prowl its halls and walls, and Fenrus, a wolf of enormous size, guards the way up to him. The keep's dead have not left. The ghosts of its servants, guardsmen and officers still walk its rooms, and the baron himself is said to haunt the place. Just inside the gate a worgen cell keeper holds prisoners, and a heavy door shuts off the courtyard beyond. Few come here by choice. The Forsaken want word of their missing deathstalkers, and a keeper in the Undercity wants a book of Dalaran lore said to be somewhere within.",
+  "body": "Shadowfang Keep crowns the heights above Pyrewood Village in southern Silverpine. It was the seat of Baron Silverlaine until the worgen loosed on the forest laid siege to it, and the keep fell into shadow and ruin. Now it belongs to the archmage Arugal, who brought them. He keeps to the top of its tower, the worgen he calls his sons prowl its halls, and the ghosts of its servants, guardsmen and officers still walk the rooms they kept in life.",
   "triggers": [
    [
     1,
@@ -16,33 +16,22 @@
   "parts": [
    {
     "part": 1,
-    "body": "Odo the Blindwatcher, a worgen sentry, keeps watch on the walk that leads from the keep's halls toward the tower. The moment intruders reach him he calls the beasts nearby to his side, and the more he is wounded the more his howling rage swells. It did not save him, and the Blindwatcher fell at his post.",
+    "body": "The Forsaken sent two deathstalkers in to spy out the keep ahead of an assault. A ward of Arugal's gave them away: Adamant was thrown in a cell, and Vincent was found dead.",
     "triggers": [
      [
-      3,
-      4279
+      5,
+      1098
      ]
     ],
     "sources": [
-     "creature 4279 Odo the Blindwatcher, single spawn on map 33 at -237,2146 z100 (the wall walk between the halls and the tower; Tormented Officers at z97 and Sons of Arugal toward the tower); display 522, Shadowfang worgen model",
-     "smart_scripts 4279 (On Aggro Call For Help radius 40; Howling Rage 7481/7483/7484 at 70, 50 and 30 percent, damage and size); not changed by the module's dungeon_shadowfang_keep.sql"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "Not every ghost of the garrison is a common soldier. A Deathsworn Captain sometimes walks the keep's walls on his rounds, though more often he is nowhere to be found. Where he did appear, he fought with cleaving blows and strikes that crippled, until he too was laid to rest.",
-    "triggers": [
-     [
-      3,
-      3872
-     ]
-    ],
-    "sources": [
-     "creature 3872 Deathsworn Captain, single spawn on map 33 at -192,2125 z97, MovementType 2 (waypoint patrol) on the wall walk; type 6 undead, ghost model 3224; rank 2 (rare)",
-     "smart_scripts 3872 (On AI Init despawn, event_chance 85: present about 15 percent of the time; Battle Stance, Cleave 15496, Hamstring 9080); 3872 not changed by the module",
-     "warcraft.wiki.gg/wiki/Shadowfang_Keep_(original) (Deathsworn Captain listed as a rare)"
+     "warcraft.wiki.gg/wiki/Shadowfang_Keep_(original), official World Dungeons description (the worgen besieged Baron Silverlaine's keep above Pyrewood, which fell into shadow and ruin; Arugal adopted the worgen as his children and retreated there; protected by his massive pet Fenrus; haunted by the vengeful ghost of Baron Silverlaine)"
     ]
    }
+  ],
+  "related": [
+   91000007,
+   13013,
+   20907
   ],
   "sources": [
    "warcraft.wiki.gg/wiki/Shadowfang_Keep_(original), official World Dungeons description (the worgen besieged Baron Silverlaine's keep above Pyrewood, which fell into shadow and ruin; Arugal adopted the worgen as his children and retreated there; protected by his massive pet Fenrus; haunted by the vengeful ghost of Baron Silverlaine)",
@@ -51,18 +40,20 @@
    "DB spawns map 33: Haunted Servitor 3875 x19, Wailing Guardsman 3877 x10, Tormented Officer 3873 x6 (all undead ghosts); Fenrus the Devourer 4274 at -136,2169 z129 in the tower; Archmage Arugal 4275 at -77,2152 z156",
    "creature 3914 Rethilgore, The Cell Keeper, at -252,2123 z81 beside the cells, near the entrance (areatrigger_teleport 145 lands at -229,2109 z77); gameobject 18895 Courtyard Door",
    "quest 1098 description (deathstalkers sent to the keep, not returned); quest 1013 description (the Book of Ur in Shadowfang Keep, great mage of Dalaran; Keeper Bel'dugur in the Undercity)",
-   "zones/shadowfang_keep.txt (map 33: 209 only)"
+   "zones/shadowfang_keep.txt (map 33: 209 only)",
+   "quest 1098 description and log text (deathstalkers sent to gather intelligence for an assault on Shadowfang; not returned after many days; find Adamant and Vincent and aid them; as dangerous as it is critical); AllowableRaces 690, QuestType 2, Flags 8, QuestSortID 209",
+   "creature 1952 High Executor Hadrec starts 1098 (silverpine.json 13017, TALK 1952, tells him; this file takes only quest 1098); creature 4444 Deathstalker Vincent ends it"
   ],
-  "notes": "Check: verified: spawns (4279, 3872 single spawns on map 33), Odo's and the captain's scripts, the official description; captain part put into past tense after the kill. Writer: AREA 209 (the only area on map 33; posarea gives 209 at the entrance and at Arugal's chamber). Arugal has no entry of his own (his person entry is grizzly_hills.json 39422, his death on Dalar's chain is silverpine.json 13025 part 5): he is named here as master of the keep, as Silverpine's overview already does, and his fight is told in 20909. The worgen's origin (ashenvale.json 33138) is not retold: only 'the worgen loosed on the forest' and 'whose magic brought them'. Parts: Odo (KILL 4279) and the rare Deathsworn Captain (KILL 3872), minor figures with no entry of their own. No requiredState (classic dungeon, state 0). The Scourge invasion boss Sever 14682 (module state 6 phase) and the Love is in the Air apothecaries (36296, 36885, 38208 and the Valentine objects) are left out."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
   "id": 20901,
   "kind": 1,
   "zone": 209,
-  "sort": 1,
+  "sort": 0,
   "faction": 0,
   "title": "The Cells",
-  "body": "Just inside the keep's gate, a row of barred cells serves Arugal as a prison. Rethilgore, a worgen called the Cell Keeper, stands guard over them with whitescalp worgen about him, and levers set in the walls work the cell doors. Three prisoners wait behind the bars: a human sorcerer named Ashcrombe, a Forsaken deathstalker named Adamant, and a man called Landen Stilwell. Past the cells, the door into the keep's courtyard stays firmly shut.",
+  "body": "Just inside the keep's gate a row of barred cells serves Arugal as a prison, kept by a worgen called Rethilgore. Three prisoners wait behind the bars. Ashcrombe is a sorcerer the Kirin Tor sent to learn how Arugal's war on the undead was going, never guessing the wizard had lost his mind. Adamant is a Forsaken deathstalker, and Landen Stilwell begs to be left alone before his sickness takes him again.",
   "triggers": [
    [
     3,
@@ -71,84 +62,55 @@
    [
     2,
     17822
+   ],
+   [
+    2,
+    3850
+   ],
+   [
+    2,
+    3849
    ]
   ],
   "parts": [
    {
     "part": 1,
-    "body": "Rethilgore fought for his cells to the last, holding his foes fast while he drained the life out of them. When the Cell Keeper fell, his prisoners spoke up at once. The deathstalker remarked that it was about time someone killed the wretch, and a moment later the sorcerer agreed with him, for once, though he still called him scum.",
+    "body": "Landen Stilwell is a smith, curious enough to have smuggled a crate of the Blood Knights' bloodforged ingots into the keep before he was taken, and no one knows where he hid it.",
     "triggers": [
      [
-      3,
-      3914
+      4,
+      9692
      ]
     ],
     "sources": [
-     "smart_scripts 3914 (Soul Drain 7295: immobilizes and drains health; On Just Died set data 1 1 on 3850 and 1 2 on 3849); the module's dungeon_shadowfang_keep.sql keeps the spell and both set-data actions",
-     "smart_scripts 3849 id 0 (data 1 2: say line 4) and 3850 ids 0-1 (data 1 1: timed event 5 s, say line 4); creature_text 3849 group 4 (About time someone killed the wretch., say, broadcast 1328), 3850 group 4 (For once I agree with you... scum., say, broadcast 1329)",
-     "the yells Free from this wretched cell at last! (3849 group 0) and Follow me and I'll open the courtyard door (3850 group 0) come only after the gossip option is chosen (event 62 starts the waypoint path, said at waypoint 1), so they are not on this KILL"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "Ashcrombe is glad to talk. The Kirin Tor sent him from Dalaran to learn how Arugal's work against the undead of Silverpine was faring, never guessing that the wizard had lost his grip on sanity. He must report the whole sorry business at once, but first he offers to undo the magical lock on the courtyard door for whoever cut down Rethilgore, who may yet survive what lies beyond.",
-    "triggers": [
-     [
-      2,
-      3850
-     ]
-    ],
-    "sources": [
-     "gossip_menu 21213 / npc_text 798 (broadcast 2801): the Kirin Tor sent me from Dalaran to investigate Arugal's progress with the undead; the wizard had lost his grasp on sanity; I must report this mess; I will undo the magical lock on the courtyard door; you defeated Rethilgore",
-     "creature 3850 Sorcerer Ashcrombe, faction 12 (Stormwind), npcflag 1, single spawn on map 33"
-    ]
-   },
-   {
-    "part": 3,
-    "body": "Adamant has a report to make. High Executor Hadrec sent him and Vincent, another deathstalker, to spy out the keep so that a plan could be laid to overthrow Arugal for good. But the old wizard has many tricks, and a magical ward gave them away. Adamant was thrown into this cell. Vincent, he says, was not so lucky. Adamant must hurry back to Hadrec, but first he will pick the lock on the courtyard door.",
-    "triggers": [
-     [
-      2,
-      3849
-     ]
-    ],
-    "sources": [
-     "gossip_menu 21214 / npc_text 799 (broadcast 2803): Hadrec sent us to gather information so a plan could be formulated to overthrow Arugal once and for all; detected by a magical ward; thrown in this prison; Vincent was not so lucky; I must return to Hadrec; I will pick the lock to the courtyard door",
-     "creature 3849 Deathstalker Adamant, faction 68 (Undercity), npcflag 1, single spawn on map 33; quest 1098 names Deathstalker Vincent"
-    ]
-   },
-   {
-    "part": 4,
-    "body": "Landen Stilwell, the third prisoner, wants no company. He warns anyone who comes near his cell to stay away, for there is no telling when the sickness will take him again, and he begs to be left alone before it does. Whatever ails him, it has come over him before.",
-    "triggers": [
-     [
-      2,
-      17822
-     ]
-    ],
-    "sources": [
-     "gossip_menu 7530 / npc_text 9067 (broadcast 14391): Stay away from me! There's no telling when the sickness will take me again; just leave me alone before it happens again",
-     "creature 17822 Landen Stilwell, faction 35, npcflag 1, single spawn on map 33 at -239,2133 by Cell Door 18935; not changed by the module",
-     "his transformation (smart_scripts 17822, spell 31310 into Crazed Worgen 17823) needs game event 25 Pyrewood Village (conditions 22/2/17822, daily 21:00 for 9 hours), so it is not told: a TALK at other hours shows only the gossip"
+     "DB spawns map 33: Rethilgore 3914 at -252,2123 z81 (display 524, worgen); Shadowfang Whitescalp 3851 at -247,2136, -243,2129, -247,2115; Sorcerer Ashcrombe 3850 at -241,2123 by Cell Door 18936; Deathstalker Adamant 3849 at -244,2114 by Cell Door 18934; Landen Stilwell 17822 at -239,2133 by Cell Door 18935; Levers 18900, 18901, 101811 at z83 beside them"
     ]
    }
+  ],
+  "related": [
+   20900,
+   20907
   ],
   "sources": [
    "DB spawns map 33: Rethilgore 3914 at -252,2123 z81 (display 524, worgen); Shadowfang Whitescalp 3851 at -247,2136, -243,2129, -247,2115; Sorcerer Ashcrombe 3850 at -241,2123 by Cell Door 18936; Deathstalker Adamant 3849 at -244,2114 by Cell Door 18934; Landen Stilwell 17822 at -239,2133 by Cell Door 18935; Levers 18900, 18901, 101811 at z83 beside them",
    "areatrigger_teleport 145 (the entrance lands at -229,2109 z77, a few yards from the cells)",
    "gameobject 18895 Courtyard Door (guid 20835), opened only by the prisoners' scripts 384900 and 385000 or by instance data TYPE_COURTYARD",
-   "warcraft.wiki.gg/wiki/Shadowfang_Keep_(original) (map caption Jail; Ashcrombe human, Adamant Forsaken, Landen Stilwell human)"
+   "warcraft.wiki.gg/wiki/Shadowfang_Keep_(original) (map caption Jail; Ashcrombe human, Adamant Forsaken, Landen Stilwell human)",
+   "quest 9692 description and log text (the blood-tempered ranseur; a Crate of Bloodforged Ingots among the materials); StartItem 24223 Bloodvalor's Notes; AllowableRaces 512 (blood elf), AllowableClasses 2 (paladin), QuestType 2, Flags 128, follows 9691",
+   "page_text 2932 (bloodforged ingots a superior material, a well-kept secret; rumor that any smith who handles the metal becomes cursed, proven false by our craftsmen; the Forsaken sent word of a supply in Shadowfang Keep; Landen Stilwell smuggled a crate in; not known where; held prisoner in the keep's dungeon; use any means)",
+   "creature 17822 Landen Stilwell, single spawn on map 33 by Cell Door 18935; gameobject 182011 Crate of Ingots, single spawn at -207,2245 z80 in the stables; gameobject_loot 18672 holds item 24224",
+   "warcraft.wiki.gg/wiki/Landen_Stilwell (added in 2.0.3 for the Blood-Tempered Ranseur chain; he hid the ingots in the stables)"
   ],
-  "notes": "Check: part 1 rewritten: on Rethilgore's death the prisoners say only line 4 (Adamant: About time someone killed the wretch; Ashcrombe 5 s later: For once I agree with you... scum); the courtyard yells the writer used follow the gossip option, not the kill. Part 4 trimmed to the gossip: the worgen transformation needs game event 25 and a TALK at other hours does not show it. Factions verified: Ashcrombe 12 (Stormwind, Alliance only), Adamant 68 (Undercity, Horde only), Landen 35 (both); each side reads part 1, its own prisoner's part and part 4, and each reads on cleanly. Writer: AREA 209 opening (the cells stand by the entrance, so anyone entering sees them and their keeper). Parts: KILL 3914 (both prisoners call out when he dies, smart_scripts 3914 set data on 3850 and 3849, the same in the module); TALK 3850 (Alliance only in practice: Ashcrombe is faction 12, Stormwind); TALK 3849 (Horde only in practice: faction 68, Undercity); TALK 17822 Landen. All four creatures stand only on map 33. Part 4 is the only conditional: Landen's transformation (spell 31310, into Crazed Worgen 17823) is gated by game event 25 Pyrewood Village (21:00 for 9 hours daily, conditions 22/2/17822), so it is told as what may be seen after nightfall, not as certain."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
   "id": 20902,
   "kind": 1,
   "zone": 209,
-  "sort": 2,
+  "sort": 0,
   "faction": 0,
   "title": "The Courtyard",
-  "body": "Past the cells, the courtyard door opens on the open heart of the keep. Shadowfang moonwalkers prowl the yard, the restless spirits of the keep's servants drift through it, and in the stables at its far end fel steeds stand in the stalls. Off the yard lies the kitchen, where the fires still roar and a worgen butcher holds sway, and beyond it the way runs on into the keep's great hall and the floors above.",
+  "body": "Past the cells a door opens on the courtyard at the heart of the keep. Moonwalkers prowl the yard, the spirits of the keep's servants drift through it, and fel steeds stand in the stables at its far end. Off the yard lies the kitchen, where a worgen butcher holds sway, and beyond it the great hall and the floors above.",
   "triggers": [
    [
     3,
@@ -162,36 +124,43 @@
   "parts": [
    {
     "part": 1,
-    "body": "Razorclaw the Butcher kept the kitchen among its roaring fires, a worgen at home at the chopping block. He fought savagely and drained the magic from those who stood against him, but the butcher fell at last on his own kitchen floor.",
+    "body": "Jordan Stilwell, now a smith in Ironforge, lived in Pyrewood before the plague and learned the secret of steel in this keep. Fleeing, he left his father's hammer in the stables.",
     "triggers": [
      [
-      3,
-      3886
+      4,
+      1654
      ]
     ],
     "sources": [
-     "smart_scripts 3886 (Butcher Drain 7485, Spell.dbc: drains mana from the target); the module keeps the same spell at melee range",
-     "creature 3886 Razorclaw the Butcher, single spawn on map 33 at -203,2258 z76 by the Roaring Fires 35593-35598; loot Butcher's Cleaver, Butcher's Slicer, Bloody Apron (warcraft.wiki.gg)"
+     "DB spawns map 33: Shadowfang Moonwalker 3853 x14 at z80-87 between y 2159 and 2250; Haunted Servitor 3875 (ghost) in the yard at -204,2214 and -222,2160; Fel Steed 3864 x3 at -234,2236, -224,2246, -217,2247 (the stables)"
     ]
    }
+  ],
+  "related": [
+   20900,
+   20901
   ],
   "sources": [
    "DB spawns map 33: Shadowfang Moonwalker 3853 x14 at z80-87 between y 2159 and 2250; Haunted Servitor 3875 (ghost) in the yard at -204,2214 and -222,2160; Fel Steed 3864 x3 at -234,2236, -224,2246, -217,2247 (the stables)",
    "page_text 875 (Jordan's Weapon Notes: I left it in the stables in the main courtyard of the keep); gameobject 91138 Jordan's Hammer and 182011 Crate of Ingots at -218,2237 and -207,2245, beside the fel steeds",
    "gameobject 35593-35598 Roaring Fire at -221 to -213, 2258 to 2273 z77 (the kitchen); creature 3886 Razorclaw the Butcher at -203,2258 z76 (display 524, worgen)",
    "Haunted Servitors, Shadowfang Gluttons 3857 and Baron Silverlaine 3887 at z75-76 beyond the kitchen (y 2273 to 2297); Wailing Guardsmen and Commander Springvale 4278 on the upper floor (z101-103)",
-   "warcraft.wiki.gg/wiki/Shadowfang_Keep_(original) (map captions Courtyard; Kitchen and Reception Hall)"
+   "warcraft.wiki.gg/wiki/Shadowfang_Keep_(original) (map captions Courtyard; Kitchen and Reception Hall)",
+   "quest 1654 description and log text (Jordan will craft a weapon; Jordan's Weapon Notes; Jordan's Smithing Hammer among the items); StartItem 6996 Jordan's Weapon Notes; AllowableRaces 1101, AllowableClasses 2 (paladin), QuestType 2, Flags 0",
+   "page_text 871 (thanks for saving his wife) and 874-875 (lived in Pyrewood before the plague; the keep where I learned the secret of steel; escaped with my wife; the hammer my father gave me, said to be enchanted, the last reminder of him before he was killed by the Scourge; left in the stables in the main courtyard)",
+   "gameobject 91138 Jordan's Hammer, single spawn on map 33 at -218,2237 z81; gameobject_loot 4275 holds item 6895",
+   "westfall.json (Daphne Stilwell, wife of the smith Jordan Stilwell), pointed to only"
   ],
-  "notes": "Check: verified; part 1 says drained the magic from those who stood against him (Butcher Drain drains mana from its target) instead of naming spellcasters. Writer: a landmark the quests make clear (the prisoners' courtyard door, Jordan's notes on the stables in the main courtyard). AREA 209 opening, part KILL 3886 Razorclaw (single spawn, map 33 only). The opening says only that the door opens on the yard, not who opens it (the prisoners' entries tell that)."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
   "id": 20903,
   "kind": 2,
   "zone": 209,
-  "sort": 1,
+  "sort": 0,
   "faction": 0,
   "title": "Baron Silverlaine",
-  "body": "Baron Silverlaine was lord of this keep when the worgen came to Silverpine. They besieged his home until it fell into shadow and ruin, and the baron did not live through it. His spirit has not left. A pale ghost, he keeps to the great hall beyond the kitchen, where the shades of the keep's servants still drift and worgen gluttons sit among crates of food and barrels of melon juice. It is said that his vengeful ghost haunts Arugal himself.",
+  "body": "Baron Silverlaine was lord of Shadowfang Keep when the worgen came to Silverpine. They besieged his home until it fell, and he did not live through it. His ghost keeps to the great hall, where the shades of his servants still drift, and it is said that his vengeful spirit haunts Arugal himself.",
   "triggers": [
    [
     3,
@@ -201,44 +170,7 @@
   "parts": [
    {
     "part": 1,
-    "body": "The baron met intruders with a veil of shadow that withered every healing touch his foes received, and he gave no ground. It was not enough. The ghost of Baron Silverlaine was struck down in his own hall, and the shades around him went on drifting as before.",
-    "triggers": [
-     [
-      3,
-      3887
-     ]
-    ],
-    "sources": [
-     "smart_scripts 3887 (Veil of Shadow 7068, Spell.dbc: reduces healing effects on an enemy); the module keeps the spell",
-     "Haunted Servitors 3875 are separate spawns not linked to him"
-    ]
-   }
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Shadowfang_Keep_(original), official description (the worgen besieged Baron Silverlaine's keep; it fell into shadow and ruin; Arugal is haunted by the vengeful ghost of Baron Silverlaine)",
-   "creature 3887 Baron Silverlaine, single spawn on map 33 at -275,2297 z76; type 6 undead, ghost model 3222",
-   "DB spawns z75: Haunted Servitor 3875 x6 and Shadowfang Glutton 3857 x4 at -226 to -262, 2273 to 2297; gameobject 3695 Food Crate and 3659 Barrel of Melon Juice at -257,2249 and -233,2268"
-  ],
-  "notes": "Check: verified (official description: the siege, his vengeful ghost haunting Arugal); broadcast 48821 confirmed Cataclysm-range, left unquoted; doubled among in the opening fixed. Writer: AREA 209 opening, part KILL 3887 (single spawn, map 33 only). His aggro line 'Leave this accursed place at once!' (creature_text 3887, broadcast 48821, used by smart_scripts 3887 with and without the module) is left out: its broadcast id lies in the Cataclysm range, among Springvale's 48826 and 48829, so it was copied in from the reworked dungeon. 'Great hall' follows the wiki's Reception Hall caption."
- },
- {
-  "id": 20904,
-  "kind": 2,
-  "zone": 209,
-  "sort": 2,
-  "faction": 0,
-  "title": "Commander Springvale",
-  "body": "Commander Springvale is one more of the keep's dead who will not rest. His ghost holds the keep's upper floor among the wailing spirits of guardsmen, while the shades of tormented officers keep watch along the walls, as though the garrison still stood to its duty. He bears a commander's rank still, and he fights as a paladin of the Light once did, calling on a holy power that death has not taken from him.",
-  "triggers": [
-   [
-    3,
-    4278
-   ]
-  ],
-  "parts": [
-   {
-    "part": 1,
-    "body": "Springvale still had the Light at his call. As his foes wore him down he closed his own wounds with holy light, and when he was hard pressed he wrapped himself in its protection. None of it saved him. The commander fell at last, and his guardsmen went on wailing in the halls.",
+    "body": "His garrison stands to its duty still. Its commander, Springvale, holds the upper floor among the ghosts of his guardsmen, and the Light still answers the dead paladin's call.",
     "triggers": [
      [
       3,
@@ -246,187 +178,47 @@
      ]
     ],
     "sources": [
-     "smart_scripts 4278 base (Holy Light 1026 on himself below 60 percent, Divine Shield 33581 below 30 percent, also Hammer of Justice 5588); the module's dungeon_shadowfang_keep.sql (Holy Light on himself below 80 percent and on friends, Divine Protection 498 below 25 percent, no Hammer of Justice): the part names only what both versions share"
+     "warcraft.wiki.gg/wiki/Shadowfang_Keep_(original), official description (the worgen besieged Baron Silverlaine's keep; it fell into shadow and ruin; Arugal is haunted by the vengeful ghost of Baron Silverlaine)"
     ]
    }
   ],
+  "related": [
+   20900,
+   20907
+  ],
   "sources": [
+   "warcraft.wiki.gg/wiki/Shadowfang_Keep_(original), official description (the worgen besieged Baron Silverlaine's keep; it fell into shadow and ruin; Arugal is haunted by the vengeful ghost of Baron Silverlaine)",
+   "creature 3887 Baron Silverlaine, single spawn on map 33 at -275,2297 z76; type 6 undead, ghost model 3222",
+   "DB spawns z75: Haunted Servitor 3875 x6 and Shadowfang Glutton 3857 x4 at -226 to -262, 2273 to 2297; gameobject 3695 Food Crate and 3659 Barrel of Melon Juice at -257,2249 and -233,2268",
    "creature 4278 Commander Springvale, single spawn on map 33 at -223,2259 z103; type 6 undead, ghost model 3223",
    "DB spawns: Wailing Guardsman 3877 at z92-103 (five at -222 to -260, 2238 to 2256 on his floor); Tormented Officer 3873 x6 at z97 on the wall walk",
    "smart_scripts 4278 (Hammer of Justice, Holy Light, Divine Shield; the module: Holy Light, Divine Protection): paladin spells",
    "warcraft.wiki.gg/wiki/Commander_Springvale checked: its lore (commander of Silverlaine's troops, ghost avenging his lord) is cited to Exploring Azeroth: The Eastern Kingdoms (2020) and the Adventure Guide, so it is not used"
   ],
-  "notes": "Check: opening rewritten without commander of Silverlaine's troops and avenging the baron: the wiki cites them to Exploring Azeroth (2020) and the Adventure Guide, later than 3.3.5; what stands is his rank (the name), the ghost, the guardsmen and officers around him, and his paladin spells. Part 1: fell at his post a second time became fell at last (an earlier death at his post is unsupported). Broadcasts 48826 and 48829 confirmed Cataclysm-range, left unquoted. Writer: AREA 209 opening, part KILL 4278 (single spawn, map 33 only). His commander's post and wish to avenge Silverlaine rest on the wiki's lore section; the paladin arts are his spells in both versions. His lines 'Intruders in the keep! To arms!' and 'Our vigilance is eternal...' (broadcast 48826, 48829, used with and without the module) are left out as Cataclysm-era text. Part 1 names only Holy Light on himself and a protective spell (Divine Shield in the base, Divine Protection in the module); Hammer of Justice is base only and left out."
- },
- {
-  "id": 20905,
-  "kind": 2,
-  "zone": 209,
-  "sort": 3,
-  "faction": 0,
-  "title": "Fenrus the Devourer",
-  "body": "Fenrus the Devourer is Arugal's pet, a wolf of enormous size, and it is said that the archmage counts on him for protection. He lairs in a chamber partway up the keep's tower, on the only way to his master's rooms, with the Sons of Arugal and lupine horrors prowling the tower around him. Above his chamber, on a high ledge, stands a focus of Arugal's magic, and past it a sealed gate bars the way on.",
-  "triggers": [
-   [
-    3,
-    4274
-   ]
-  ],
-  "parts": [
-   {
-    "part": 1,
-    "body": "Fenrus fought with a venomous slaver that burned his foes and sapped their magic. When the great wolf died, Arugal's voice rang through the tower, demanding to know who dared interfere with the Sons of Arugal. Moments later his focus above the chamber stirred, and voidwalkers appeared and fell upon the intruders, mending one another with dark offerings as they fought.",
-    "triggers": [
-     [
-      3,
-      4274
-     ]
-    ],
-    "sources": [
-     "smart_scripts 4274 (Toxic Saliva 7125, Spell.dbc: nature damage over time and mana drain; On Just Died set instance data, set data 1 on Arugal 4275)",
-     "smart_scripts 4275 id 0 and script 427500 (say line 0, custom animation on gameobject 18973 Arugal's Focus, summon creature group 1); creature_text 4275 group 0 (Who dares interfere with the Sons of Arugal?, yell, broadcast 1435)",
-     "creature_summon_groups 4275 group 1: four Arugal's Voidwalker 4627 at z128 around -140 to -153, 2165 to 2180; smart_scripts 4627 (Dark Offering 7154 heals an ally, attack on reset, On Just Died set gameobject 18972 Sorcerer's Gate, guid 33785, open)"
-    ]
-   }
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Shadowfang_Keep_(original), official description (Arugal is protected by his massive pet, Fenrus)",
-   "creature 4274 Fenrus the Devourer, single spawn on map 33 at -136,2169 z129; type 1 beast, display 20180",
-   "DB spawns: Son of Arugal 2529 x8 at z94-145 and Lupine Horror 3863 at z94-113 in the tower; gameobject 18973 Arugal's Focus at -146,2173 z151, above his chamber; 18972 Sorcerer's Gate at -129,2166 z129",
-   "instance_shadowfang_keep.cpp (GO_SORCERER_DOOR opens once TYPE_FENRUS_THE_DEVOURER is done)"
-  ],
-  "notes": "Check: part 1: the gate opening dropped (it opens only when a voidwalker dies, which the kill of Fenrus does not show); the yell, the focus and the voidwalkers stay, since script 427500 runs them within six seconds of his death in his chamber. Toxic Saliva drains mana, so drained their strength became sapped their magic. Writer: AREA 209 opening, part KILL 4274 (single spawn, map 33 only; not changed by the module). Part 1 tells what follows at once in his chamber: Arugal's yell (heard keep-wide, type 14), the focus animating, the four voidwalkers of summon group 1 at z128 attacking at once, and the gate opening when the first of them dies. The voidwalkers (4627) are summons and get no trigger."
- },
- {
-  "id": 20906,
-  "kind": 2,
-  "zone": 209,
-  "sort": 4,
-  "faction": 0,
-  "title": "Wolf Master Nandos",
-  "body": "Wolf Master Nandos is the worgen who keeps the beasts of Shadowfang, and he stands near the top of the tower before the door of Arugal's Lair. He does not stand alone. His pack waits at his side, a lupine horror and worgs of every breed the keep holds, and while he lives the door to his master's chamber stays shut.",
-  "triggers": [
-   [
-    3,
-    3927
-   ]
-  ],
-  "parts": [
-   {
-    "part": 1,
-    "body": "When the last beast of his pack fell, Nandos could not believe it. They had destroyed his pack, he howled, and now they would face his wrath. He called fresh beasts to his side as he fought, but the wolf master fell all the same, and with his death the door of Arugal's Lair swung open.",
-    "triggers": [
-     [
-      3,
-      3927
-     ]
-    ],
-    "sources": [
-     "creature_text 3927 group 0 (I can't believe it, you've destroyed my pack...Now face my wrath!; broadcast_text 2086 holds the same line), yell; smart_scripts 3927 ids 5-6 (counter 1 reaches 4: say line 0, attack), the same in the module",
-     "smart_scripts 3927 (Call Lupine Horror 7489, Call Bleak Worg 7487; module adds Call Slavering Worg 7488); On Just Died set instance data 2 and gameobject guid 33241 Arugal's Lair, kept by the module"
-    ]
-   }
-  ],
-  "sources": [
-   "creature 3927 Wolf Master Nandos, single spawn on map 33 at -121,2162 z156; display 11179",
-   "DB spawns z156 around him: Lupine Horror 3863 (guid 16238), Bleak Worg 3861 (16239), Slavering Worg 3862 (16240), Wolfguard Worg 5058 (16241)",
-   "gameobject 18971 Arugal's Lair (guid 33241) at -118,2162 z156; instance_shadowfang_keep.cpp (GO_ARUGAL_DOOR opens once TYPE_WOLF_MASTER_NANDOS is done)"
-  ],
-  "notes": "Check: verified: broadcast 2086 is classic text and matches creature_text 3927; the counter yell and door are the same with and without the module. Writer: AREA 209 opening, part KILL 3927 (single spawn, map 33 only). His line is classic text (broadcast_text 2086). Base and module both: the four pack beasts each add to his counter on death (smart_scripts -16238 to -16241), and at four he yells and attacks; Fenrus's death resets that counter. Summons differ (base: timed Lupine Horror and Bleak Worg; module: Bleak Worg, Slavering Worg, Lupine Horror at 75, 50, 25 percent), so the part says only that he called more beasts."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
   "id": 20907,
-  "kind": 3,
+  "kind": 2,
   "zone": 209,
-  "sort": 1,
+  "sort": 0,
   "faction": 0,
-  "title": "The Master of Shadowfang",
-  "body": "Shadowfang Keep is Arugal's now. The archmage of the Kirin Tor whose summoned worgen overran Silverpine has made the baron's home his own, and he calls the worgen his children. The Sons of Arugal stalk the tower beneath his rooms, carrying his dark gift that withers those they strike, and the Shadowfang worgen hold the halls and walls below. He keeps to the topmost chamber of the tower, behind Fenrus and his wolf master, and from there his voice can carry through the keep. Those who would reach him face a long climb through his creatures, and at the end of it a madman.",
+  "title": "Archmage Arugal",
+  "body": "Arugal was an archmage of the Kirin Tor who summoned the worgen to fight the Scourge, and when they turned on the living his mind broke. He took Shadowfang Keep, calls the worgen his children, and keeps to the topmost chamber of its tower behind his great wolf Fenrus and the wolf master Nandos. Those who reach him find a madman, and his curse can make a worgen of anyone who faces him.",
   "triggers": [
    [
     3,
     4275
-   ]
-  ],
-  "parts": [
-   {
-    "part": 1,
-    "body": "Arugal met intruders in his chamber with a promise that they too would serve. He hurled bolts of void, stunned those around him with a thundering shock, and vanished in shadow only to reappear elsewhere in the room. Worst was his curse. Crying out to release their rage, he turned one of his attackers into a worgen glutton and set the beast against its friends. Whenever one fell, he gloated that another had fallen. But in the end the archmage fell himself.",
-    "triggers": [
-     [
-      3,
-      4275
-     ]
-    ],
-    "sources": [
-     "creature_text 4275 groups 1-3 (You, too, shall serve! on aggro; Release your rage! with the curse; Another falls! on a kill); broadcast 6115, 6535, 6116",
-     "smart_scripts 4275 (Void Bolt 7588, Thundershock 7803 nature damage and stun to nearby enemies, Arugal's Curse 7621 Spell.dbc: transforms an enemy into a Shadowfang Glutton and enslaves it to the caster, Shadow Port 7136/7586/7587 teleports him); creature 4275 not changed by the module"
-    ]
-   }
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Shadowfang_Keep_(original), official description (Arugal adopted the worgen as his children and retreated to the keep; protected by Fenrus)",
-   "silverpine.json 13000 (the archmage who summoned the worgen; calls them his children) and 13025, pointed to",
-   "creature 2529 Son of Arugal x8 in the tower; smart_scripts 2529 (Arugal's Gift 7124, Spell.dbc: shadow damage over time; kept by the module); Shadowfang Whitescalp, Moonwalker, Ragetooth, Darksoul, Glutton across the keep",
-   "creature 4275 Archmage Arugal, single spawn at -77,2152 z156, beyond gameobject 18971 Arugal's Lair; creature_text 4275 groups 0-1 (Who dares interfere with the Sons of Arugal?; You, too, shall serve!)",
-   "gossip npc_text 798 (Ashcrombe: the wizard had lost his grasp on sanity)"
-  ],
-  "notes": "Check: verified: Arugal's lines and spells (smart_scripts 4275, Arugal's Curse into a Shadowfang Glutton), nothing of Dalar, the head or Northrend. The courtyard scene of creature 10000 is left out: smart_scripts 10000 are update events timed from spawn (visible at 5 s, despawn at 22 s), so it plays when the grid loads, not when anyone reaches the courtyard. Writer: Arugal has no person entry here (decided with the user: grizzly_hills.json 39422 is his); this story tells who holds the keep and, on KILL 4275, his fight as anyone in the room sees it. Nothing of Dalar, the head (silverpine.json 13025 part 5, DONE 1014) or his shade in Northrend (silverpine.json 13013, grizzly_hills.json 39422). The courtyard Arugal (creature 10000, his speech to Vincent) is left out: its scene is timed from spawn (smart_scripts 10000, event 60 not repeat) and runs when the grid loads, before anyone can reach the courtyard. 'Madman' rests on Ashcrombe's gossip and the official description (driven mad with guilt)."
- },
- {
-  "id": 20908,
-  "kind": 3,
-  "zone": 209,
-  "sort": 2,
-  "faction": 2,
-  "title": "Deathstalkers in Shadowfang",
-  "body": "At the Sepulcher in Silverpine, High Executor Hadrec is still waiting for a report that has not come. Ahead of an assault on Shadowfang Keep, two deathstalkers, Adamant and Vincent, were sent into the keep to gather intelligence. Many days have passed and neither has returned, yet without their findings the Forsaken have little hope of a successful attack. Hadrec wants both of them found, and helped if they need it. The mission, he warns, is as dangerous as it is critical, and failure is not to be thought of.",
-  "triggers": [
+   ],
    [
     4,
-    1098
+    1014
    ]
   ],
   "parts": [
    {
     "part": 1,
-    "body": "Vincent was found at last, his body broken and still. Adamant would carry his own report back to Hadrec, but whatever more Vincent had learned in the keep would stay with him. All he still held was a small trinket, clutched in his hand, and it went back with the one who found him.",
-    "triggers": [
-     [
-      5,
-      1098
-     ]
-    ],
-    "sources": [
-     "quest 1098 reward text (Vincent's body lies broken, and still; Adamant will send his report to Hadrec; whatever additional details Vincent gained must remain with him; clutched in his hand is a small trinket)",
-     "creature 4444 Deathstalker Vincent at -218,2151 z81, standstate dead (creature_addon bytes1 7)"
-    ]
-   }
-  ],
-  "sources": [
-   "quest 1098 description and log text (deathstalkers sent to gather intelligence for an assault on Shadowfang; not returned after many days; find Adamant and Vincent and aid them; as dangerous as it is critical); AllowableRaces 690, QuestType 2, Flags 8, QuestSortID 209",
-   "creature 1952 High Executor Hadrec starts 1098 (silverpine.json 13017, TALK 1952, tells him; this file takes only quest 1098); creature 4444 Deathstalker Vincent ends it"
-  ],
-  "notes": "Check: verified: 1098 is filed under 209, Horde only, used by no zone file (silverpine 13017 is TALK 1952 only). Writer: faction 2 (AllowableRaces 690). Opening on ACCEPT 1098, part DONE 1098 (turned in to Vincent's body, creature 4444, single spawn on map 33, npcflag 2). Adamant's own account (TALK 3849) is in 20901 part 3, not repeated here. 'Ghostly Mantle' (reward item 3324) not named."
- },
- {
-  "id": 20909,
-  "kind": 3,
-  "zone": 209,
-  "sort": 3,
-  "faction": 2,
-  "title": "The Book of Ur",
-  "body": "In the Apothecarium of the Undercity, Keeper Bel'dugur has his eye on a book. It lies somewhere in Shadowfang Keep: the Book of Ur, written by a great mage of Dalaran in the days before the Scourge came. Ur studied other worlds, and that work, the keeper says, is of real value to certain parties among the Forsaken, though he does not say who they are. The book would be a prize for his collection, and whoever brings it to him will have the service reported to the Dark Lady herself.",
-  "triggers": [
-   [
-    4,
-    1013
-   ]
-  ],
-  "parts": [
-   {
-    "part": 1,
-    "body": "The book came back from the keep. Ur wrote it to catalogue the fiends of other worlds, and its pages describe the worgen: real beasts from a dark place of nightmare, drawn into this world only by powerful magic. He hoped no wizard of Dalaran would ever seek them out. Bel'dugur was pleased. Ur's knowledge was great, he said, but his conscience held him back from true power, and when the Scourge tested him it failed. The Forsaken cannot afford such weakness.",
+    "body": "The Book of Ur, found in the keep, describes the worgen as beasts of a dark place of nightmare, drawn into this world only by powerful magic. Ur hoped no wizard of Dalaran would ever seek them out.",
     "triggers": [
      [
       5,
@@ -434,104 +226,32 @@
      ]
     ],
     "sources": [
-     "item 6283 The Book of Ur, page_text 698-705 (catalogue of otherworldly fiends; the worgen are real, not from our world, pulled here by powerful magics; their home a dark place of nightmare; I hope no Dalaran wizard seeks out the worgen)",
-     "quest 1013 reward text (his knowledge was great, but his conscience held him from true power; when the Scourge came his strength was tested and it failed; the Forsaken cannot afford such weakness)"
+     "warcraft.wiki.gg/wiki/Shadowfang_Keep_(original), official description (Arugal adopted the worgen as his children and retreated to the keep; protected by Fenrus)"
     ]
    }
   ],
+  "related": [
+   91000007,
+   20900,
+   90000020
+  ],
   "sources": [
+   "warcraft.wiki.gg/wiki/Shadowfang_Keep_(original), official description (Arugal adopted the worgen as his children and retreated to the keep; protected by Fenrus)",
+   "silverpine.json 13000 (the archmage who summoned the worgen; calls them his children) and 13025, pointed to",
+   "creature 2529 Son of Arugal x8 in the tower; smart_scripts 2529 (Arugal's Gift 7124, Spell.dbc: shadow damage over time; kept by the module); Shadowfang Whitescalp, Moonwalker, Ragetooth, Darksoul, Glutton across the keep",
+   "creature 4275 Archmage Arugal, single spawn at -77,2152 z156, beyond gameobject 18971 Arugal's Lair; creature_text 4275 groups 0-1 (Who dares interfere with the Sons of Arugal?; You, too, shall serve!)",
+   "gossip npc_text 798 (Ashcrombe: the wizard had lost his grasp on sanity)",
+   "warcraft.wiki.gg/wiki/Shadowfang_Keep_(original), official description (Arugal is protected by his massive pet, Fenrus)",
+   "creature 4274 Fenrus the Devourer, single spawn on map 33 at -136,2169 z129; type 1 beast, display 20180",
+   "DB spawns: Son of Arugal 2529 x8 at z94-145 and Lupine Horror 3863 at z94-113 in the tower; gameobject 18973 Arugal's Focus at -146,2173 z151, above his chamber; 18972 Sorcerer's Gate at -129,2166 z129",
+   "instance_shadowfang_keep.cpp (GO_SORCERER_DOOR opens once TYPE_FENRUS_THE_DEVOURER is done)",
+   "creature 3927 Wolf Master Nandos, single spawn on map 33 at -121,2162 z156; display 11179",
+   "DB spawns z156 around him: Lupine Horror 3863 (guid 16238), Bleak Worg 3861 (16239), Slavering Worg 3862 (16240), Wolfguard Worg 5058 (16241)",
+   "gameobject 18971 Arugal's Lair (guid 33241) at -118,2162 z156; instance_shadowfang_keep.cpp (GO_ARUGAL_DOOR opens once TYPE_WOLF_MASTER_NANDOS is done)",
    "quest 1013 description and log text (the Book of Ur in Shadowfang Keep; Ur a great mage of Dalaran before the coming of the Scourge; his studies in other worlds of much value to certain parties among the Forsaken; I will report your service to our Dark Lady; Keeper Bel'dugur at the Apothecarium)",
    "creature 2934 Keeper Bel'dugur starts and ends 1013 (AllowableRaces 690, QuestType 2, Flags 8, QuestSortID 209)",
    "gameobject 36738 The Book of Ur, single spawn on map 33 at -155,2186 z131 (beside Fenrus's chamber); gameobject_loot 3623 holds item 6283"
   ],
-  "notes": "Check: verified against quest 1013 and page_text 698-705. Writer: faction 2. Opening on ACCEPT 1013, part DONE 1013. The part tells the book's own pages (item 6283, page_text 698-705), which the bringer carries, and Bel'dugur's reward text. Ur's book speaks of worgen in general and is not the Scythe of Elune story (ashenvale.json 33138)."
- },
- {
-  "id": 20910,
-  "kind": 3,
-  "zone": 209,
-  "sort": 4,
-  "faction": 1,
-  "title": "Jordan's Hammer",
-  "body": "In Ironforge, the smith Jordan Stilwell owes a paladin more than he can repay, and means to forge a holy weapon in thanks. His notes list what he needs, and one item lies in Shadowfang Keep. Before the plague, Jordan lived in Pyrewood, and it was in the keep above the village that he learned the secret of steel. When he and his wife escaped from it they left precious things behind, among them the smithing hammer his father gave him. His father always swore it was enchanted, and it is the last reminder Jordan has of him, for the Scourge killed him. It lies in the stables of the keep's courtyard, unless the creatures there have taken up smithing.",
-  "triggers": [
-   [
-    4,
-    1654
-   ]
-  ],
-  "parts": [
-   {
-    "part": 1,
-    "body": "Jordan had everything he needed at last. He had kept the plans for this weapon for a long time, he admitted, and only lacked the chance to gather the goods. Holding his father's hammer again felt good, and he set to the forge.",
-    "triggers": [
-     [
-      5,
-      1654
-     ]
-    ],
-    "sources": [
-     "quest 1654 reward text (I've actually had the plans for doing this for some time; I just never had the opportunity to gather the goods; it feels good to have my father's hammer again)"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "The weapon was finished at Jordan's forge. He named it for a great dwarven paladin who had been his friend, Bosch Verigan, and gave it on behalf of himself and his wife, for the world, he said, would be a safer place with such a champion of the Light abroad.",
-    "triggers": [
-     [
-      5,
-      1806
-     ]
-    ],
-    "sources": [
-     "quest 1806 reward text (named after a great dwarven paladin who was a friend of mine, Bosch Verigan; on behalf of myself and my wife; the world will be a safer place)"
-    ]
-   }
-  ],
-  "sources": [
-   "quest 1654 description and log text (Jordan will craft a weapon; Jordan's Weapon Notes; Jordan's Smithing Hammer among the items); StartItem 6996 Jordan's Weapon Notes; AllowableRaces 1101, AllowableClasses 2 (paladin), QuestType 2, Flags 0",
-   "page_text 871 (thanks for saving his wife) and 874-875 (lived in Pyrewood before the plague; the keep where I learned the secret of steel; escaped with my wife; the hammer my father gave me, said to be enchanted, the last reminder of him before he was killed by the Scourge; left in the stables in the main courtyard)",
-   "gameobject 91138 Jordan's Hammer, single spawn on map 33 at -218,2237 z81; gameobject_loot 4275 holds item 6895",
-   "westfall.json (Daphne Stilwell, wife of the smith Jordan Stilwell), pointed to only"
-  ],
-  "notes": "Check: verified: 1654 and 1806 are paladin class quests (QuestSortID -141) told by no zone file (westfall and loch_modan only name Daphne and Jordan; no file uses 1649-1654 or 1806); the hammer exists only in the keep. Writer: faction 1 (AllowableRaces 1101, paladin only). The chain runs through the keep by the hammer (6895, only from gameobject 91138 on map 33); the other materials (Deadmines oak, Loch Modan ore, a Kor gem) are not told. The rescue of Jordan's wife belongs to Westfall and is named only as the debt. Opening on ACCEPT 1654 (the notes are given on accepting), parts DONE 1654 and DONE 1806 (QuestType 2, Flags 0, follows 1654)."
- },
- {
-  "id": 20911,
-  "kind": 3,
-  "zone": 209,
-  "sort": 5,
-  "faction": 2,
-  "title": "The Bloodforged Ingots",
-  "body": "Knight-Lord Bloodvalor's notes for a new adept of the Blood Knights list the makings of the order's blood-tempered ranseur, and one of them is hidden in Shadowfang Keep. Bloodforged ingots are a superior metal made by a well-kept secret, and rumor says any smith who works them is cursed, though the order's craftsmen claim to have proved the tale false. The Forsaken have sent word that a supply may be found in the keep. A skilled smith named Landen Stilwell grew curious enough to smuggle a crate of the ingots inside. No one knows where he hid it, but the smith himself is said to be a prisoner in the keep's dungeon, and any means may be used to get the ingots.",
-  "triggers": [
-   [
-    4,
-    9692
-   ]
-  ],
-  "parts": [
-   {
-    "part": 1,
-    "body": "The crate was found in the stables off the keep's courtyard, where Stilwell had hidden it, and it was carried back to Silvermoon with everything else the notes demanded. Bloodvalor looked it over and was satisfied. All that remained, he said, was to forge the weapon.",
-    "triggers": [
-     [
-      5,
-      9692
-     ]
-    ],
-    "sources": [
-     "gameobject 182011 Crate of Ingots at -207,2245 z80, beside the Fel Steeds 3864 and Jordan's Hammer (the stables)",
-     "quest 9692 reward text (Excellent. It's all here. All that remains is to forge the weapon); NextQuest 9707 Forging the Weapon"
-    ]
-   }
-  ],
-  "sources": [
-   "quest 9692 description and log text (the blood-tempered ranseur; a Crate of Bloodforged Ingots among the materials); StartItem 24223 Bloodvalor's Notes; AllowableRaces 512 (blood elf), AllowableClasses 2 (paladin), QuestType 2, Flags 128, follows 9691",
-   "page_text 2932 (bloodforged ingots a superior material, a well-kept secret; rumor that any smith who handles the metal becomes cursed, proven false by our craftsmen; the Forsaken sent word of a supply in Shadowfang Keep; Landen Stilwell smuggled a crate in; not known where; held prisoner in the keep's dungeon; use any means)",
-   "creature 17822 Landen Stilwell, single spawn on map 33 by Cell Door 18935; gameobject 182011 Crate of Ingots, single spawn at -207,2245 z80 in the stables; gameobject_loot 18672 holds item 24224",
-   "warcraft.wiki.gg/wiki/Landen_Stilwell (added in 2.0.3 for the Blood-Tempered Ranseur chain; he hid the ingots in the stables)"
-  ],
-  "notes": "Check: verified: 9692 is a step of the Blood Knight chain (9686-9691-9692-9707-9710) whose end silvermoon.json 348709 tells on DONE 9710 in one phrase (gathering the materials); no Silvermoon file uses 9692 or tells the ingots, the keep or Landen, and this entry stops before the forging. Nothing here is true only after 2.4 (no Sunwell, no M'uru); Landen and the crate are not gated by the module. Writer: faction 2 (AllowableRaces 512). Burning Crusade content in a classic dungeon, but the blood elf paladin chain is open from character creation and the module does not gate it, so no tag. silvermoon.json 348706 (Bloodvalor) uses TALK 17717, DONE 9678, ACCEPT 9685; 9692 is free. The other materials (Kor gem, blood of the wrathful, insignia) are not told. Landen's gossip and curse are in 20901 part 4. Opening on ACCEPT 9692, part DONE 9692 (where the crate lay is known to whoever took it)."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  }
 ]

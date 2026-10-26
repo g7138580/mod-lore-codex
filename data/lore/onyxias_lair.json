@@ -1,0 +1,86 @@
+[
+ {
+  "id": 215900,
+  "kind": 0,
+  "zone": 2159,
+  "sort": 0,
+  "faction": 0,
+  "title": "Onyxia's Lair",
+  "body": "Behind a cave mouth shaped like a dragon's jaws in the Wyrmbog lies the lair of Onyxia, brood mother of the black dragonflight and daughter of Deathwing. A winding passage guarded by her warders opens on a great cavern, its walls lined with eggs where her whelps hatch, and in its heart the brood mother herself waits on a floor scorched black by her breath.",
+  "triggers": [
+   [
+    1,
+    2159
+   ]
+  ],
+  "related": [
+   1520,
+   90000024,
+   215901
+  ],
+  "sources": [
+   "creature_text 10184"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 215901,
+  "kind": 2,
+  "zone": 2159,
+  "sort": 0,
+  "faction": 0,
+  "title": "Onyxia",
+  "body": "Onyxia is the brood mother of the black dragonflight, daughter of Deathwing and twin of Nefarian. Usually, she says, she must leave her lair to feed, and she greets intruders as a fortunate meal. When the fight wearies her she takes wing and pours fire on them from above, and her eggs answer her from the walls.",
+  "triggers": [
+   [
+    3,
+    10184
+   ],
+   [
+    3,
+    301000
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Her head has been taken before, and those who receive it again would rather not think too hard about how she came to be in her lair once more.",
+    "triggers": [
+     [
+      5,
+      24428
+     ],
+     [
+      5,
+      24429
+     ]
+    ],
+    "sources": [
+     "creature_text 10184; quests 7490, 7509, 24428, 24429"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The lorekeeper of the Shen'dralar in Dire Maul sends the ancient blade Quel'Serrar to her lair: only her breath can heat it, and only her blood can temper it.",
+    "triggers": [
+     [
+      4,
+      7509
+     ]
+    ],
+    "sources": [
+     "creature_text 10184; quests 7490, 7509, 24428, 24429"
+    ]
+   }
+  ],
+  "related": [
+   90000024,
+   215900,
+   255703
+  ],
+  "sources": [
+   "creature_text 10184; quests 7490, 7509, 24428, 24429"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

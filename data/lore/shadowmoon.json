@@ -413,12 +413,52 @@
     "sources": [
      "npc_text 10447 (known as a traitor, Illidan's lapdog)"
     ]
+   },
+   {
+    "part": 3,
+    "body": "Akama gave the Medallion of Karabor into the keeping of A'dal as his promise to stand with his allies against Illidan. Through it A'dal showed a glimpse of what may come: Akama and Maiev fighting their way from the Warden's Cage to the temple.",
+    "triggers": [
+     [
+      5,
+      10708
+     ]
+    ],
+    "sources": [
+     "npc_text 10447 (known as a traitor, Illidan's lapdog)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Seer Olum, his spy among the naga, was found out. Rather than let Illidan pry the Ashtongue secret from him, he chose to go into the spirit world among his brothers.",
+    "triggers": [
+     [
+      5,
+      10944
+     ]
+    ],
+    "sources": [
+     "npc_text 10447 (known as a traitor, Illidan's lapdog)"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "Illidan is dead and the Broken are free. Every decision Akama made since the Betrayer came, Seer Kanai says, was made for this moment.",
+    "triggers": [
+     [
+      5,
+      10959
+     ]
+    ],
+    "sources": [
+     "npc_text 10447 (known as a traitor, Illidan's lapdog)"
+    ]
    }
   ],
   "related": [
    92000009,
    90000021,
-   352016
+   352016,
+   395900
   ],
   "sources": [
    "npc_text 10447 (known as a traitor, Illidan's lapdog)",
@@ -448,7 +488,8 @@
    "quests 10568, 10571, 10574, 10575 (Aldor) and 10683, 10684, 10685, 10686 (Scryers)",
    "quests 10622, 10628 (Sanoru, Zandras, Akama)",
    "quests 10705, 10706, 10707, 10708 (replicas, Udalo in the Arcatraz, Heart of Fury, A'dal)",
-   "creature_text 21700 (Heart of Fury, take it to A'dal)"
+   "creature_text 21700 (Heart of Fury, take it to A'dal)",
+   "Shadowmoon quests 10708, 10944; Black Temple quest 10959; creature_text 22820"
   ],
   "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },

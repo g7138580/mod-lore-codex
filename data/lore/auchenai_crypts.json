@@ -1,0 +1,178 @@
+[
+ {
+  "id": 379000,
+  "kind": 0,
+  "zone": 3790,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Auchenai Crypts",
+  "body": "The Auchenai Crypts lie beneath Auchindoun, where the draenei's death priests laid their honored dead and tended them for some five hundred years. The priests still keep the halls, though no longer as caretakers: monks and soulpriests hush intruders, warning that the spirits are sleeping, and fall on them as violators. Bones rise from the floors, raging souls drift through the passages, and the ghosts of draenei soldiers flicker in and out of sight.",
+  "triggers": [
+   [
+    1,
+    3790
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Ramdor the Mad, once a death priest of the crypts, calls the Auchenai insane to the last. He alone kept his sense, he says, and they cast him out for his beliefs.",
+    "triggers": [
+     [
+      5,
+      10227
+     ],
+     [
+      4,
+      10228
+     ]
+    ],
+    "sources": [
+     "Auchindoun quests 10227, 10228, 10253; creature_text 18493-18497"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The book of the dead came to Levixus, a young draenei who stood on the upper ruins binding the souls of the dead to his will. With Levixus slain, the book went to Ramdor, who admitted he had lied to get it.",
+    "triggers": [
+     [
+      5,
+      10253
+     ]
+    ],
+    "sources": [
+     "Auchindoun quests 10227, 10228, 10253; creature_text 18493-18497"
+    ]
+   }
+  ],
+  "related": [
+   351916,
+   90000051,
+   379001
+  ],
+  "sources": [
+   "Auchindoun quests 10227, 10228, 10253; creature_text 18493-18497"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 379001,
+  "kind": 2,
+  "zone": 3790,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Exarch Maladaar",
+  "body": "Exarch Maladaar leads the Auchenai in the depths of the crypts. To him every visitor is a defiler of the ancestors' resting place, fit only to join the dead, and he does not leave the dead at rest either: he calls on his fallen brothers to rise, take form and fight.",
+  "triggers": [
+   [
+    3,
+    18373
+   ],
+   [
+    4,
+    10164
+   ],
+   [
+    4,
+    10167
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Ramdor says Maladaar withdrew to the Crypt of Remembrance to begin experiments in necromancy on the dead the Auchenai had cared for so long.",
+    "triggers": [
+     [
+      4,
+      10228
+     ]
+    ],
+    "sources": [
+     "Auchenai Crypts quests 10164, 10167; Auchindoun quest 10228; creature_text 18373"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Greatfather Aldrimus, a spirit outside the crypts, escaped both Levixus and Maladaar's experiments. He asks only that the exarch die, so that the spirits trapped inside may rest.",
+    "triggers": [
+     [
+      4,
+      10164
+     ]
+    ],
+    "sources": [
+     "Auchenai Crypts quests 10164, 10167; Auchindoun quest 10228; creature_text 18373"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Struck down at last among the dead he had raised, the exarch spoke no curse. This, Maladaar sighed, was where he belonged.",
+    "triggers": [
+     [
+      3,
+      18373
+     ]
+    ],
+    "sources": [
+     "Auchenai Crypts quests 10164, 10167; Auchindoun quest 10228; creature_text 18373"
+    ]
+   }
+  ],
+  "related": [
+   379000,
+   379002,
+   90000051
+  ],
+  "sources": [
+   "Auchenai Crypts quests 10164, 10167; Auchindoun quest 10228; creature_text 18373"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 379002,
+  "kind": 2,
+  "zone": 3790,
+  "sort": 0,
+  "faction": 2,
+  "requiredState": 8,
+  "title": "D'ore",
+  "body": "D'ore is a naaru, the captive spirit freed when Exarch Maladaar fell. Drained by a crash long ago, he was a dim speck of void when the Prophet Velen and his companions bore his remains here and laid them in a sarcophagus: the first tomb, from which all of Auchindoun grew. He has been regenerating for nearly a thousand years, and the cycle is almost complete.",
+  "triggers": [
+   [
+    5,
+    10167
+   ],
+   [
+    4,
+    10168
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Over the centuries the spirits of Auchindoun gathered into his darkened essence, and many of the crypt's catastrophes came of his weakness. Nothing can stop it, he says: without the void, the Light cannot exist.",
+    "triggers": [
+     [
+      4,
+      10168
+     ]
+    ],
+    "sources": [
+     "Auchenai Crypts quest 10167; Nagrand quest 10168"
+    ]
+   }
+  ],
+  "related": [
+   90000052,
+   351810,
+   351916,
+   379001
+  ],
+  "sources": [
+   "Auchenai Crypts quest 10167; Nagrand quest 10168"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

@@ -1088,6 +1088,53 @@
     "sources": [
      "Wetlands 1100, 1109, 1110, 1122, 1128"
     ]
+   },
+   {
+    "part": 2,
+    "body": "In Gnomeregan Dark Iron agents hold the last tunnels before Thermaplugg's court, among machines that leave them be. Who sent them, and what the clan wants in the ruin, none of them will say.",
+    "triggers": [
+     [
+      3,
+      6212
+     ],
+     [
+      4,
+      2945
+     ]
+    ],
+    "sources": [
+     "Wetlands 1100, 1109, 1110, 1122, 1128"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The goblin Kernobee found that the Dark Irons had a hand in making the gnomes' new rig. For that they beat him nearly to death and threw him to the troggs.",
+    "triggers": [
+     [
+      4,
+      2904
+     ]
+    ],
+    "sources": [
+     "Wetlands 1100, 1109, 1110, 1122, 1128"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Rings taken from the Dark Irons there bore the seals of Ironforge and Orgrimmar. Nogg wonders whether the gnomes stole Dark Iron golem plans, and whether the clan wants payback.",
+    "triggers": [
+     [
+      5,
+      2947
+     ],
+     [
+      5,
+      2949
+     ]
+    ],
+    "sources": [
+     "Wetlands 1100, 1109, 1110, 1122, 1128"
+    ]
    }
   ],
   "hint": "Learned where the dwarves of the dark fight their kin.",
@@ -1098,7 +1145,8 @@
   ],
   "sources": [
    "Wetlands 1100, 1109, 1110, 1122, 1128",
-   "Burning Steppes, Searing Gorge (Blackrock Mountain)"
+   "Burning Steppes, Searing Gorge (Blackrock Mountain)",
+   "Gnomeregan 72104, 72106"
   ],
   "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
@@ -7366,6 +7414,96 @@
    "Dalaran 439508, 439522",
    "Crystalsong 281708",
    "warcraft.wiki.gg Sunreavers"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000089,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Infinite Dragonflight",
+  "body": "The Infinite Dragonflight is a new flight of dragons that even the bronze flight cannot account for: no one knows where it came from or why it strikes at the timeways. Its agents slip into moments of history to unmake them, and the changes they seek would end the world as it is.",
+  "triggers": [
+   [
+    5,
+    10282
+   ],
+   [
+    4,
+    10296
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "At Hillsbrad its Epoch Hunter came for the young Thrall himself, whose future must not come to pass. Dying, he said that the master would not be pleased.",
+    "triggers": [
+     [
+      3,
+      18096
+     ]
+    ],
+    "sources": [
+     "Caverns of Time quests 10282, 10296; creature_text 17879, 17880, 17881, 18096"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In the Black Morass its rift lords tried to talk the Guardian's defenders out of it: think how many lives could be saved, they asked, if the portal never opened and the wars that followed were erased.",
+    "triggers": [
+     [
+      3,
+      17879
+     ],
+     [
+      3,
+      17880
+     ]
+    ],
+    "sources": [
+     "Caverns of Time quests 10282, 10296; creature_text 17879, 17880, 17881, 18096"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Aeonus, who led them in the morass, would shatter this clockwork universe so that none need be slaves of the hourglass, and warned that those who would not embrace that greater path would become its victims.",
+    "triggers": [
+     [
+      3,
+      17881
+     ]
+    ],
+    "sources": [
+     "Caverns of Time quests 10282, 10296; creature_text 17879, 17880, 17881, 18096"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "At Stratholme Chrono-Lord Epoch came for Prince Arthas himself, promising that the death he was destined to visit upon others would be his own that day.",
+    "triggers": [
+     [
+      3,
+      26532
+     ]
+    ],
+    "sources": [
+     "Caverns of Time quests 10282, 10296; creature_text 17879, 17880, 17881, 18096"
+    ]
+   }
+  ],
+  "hint": "Learned in the timeways of the Caverns of Time.",
+  "related": [
+   44007,
+   90000060,
+   236700,
+   236600
+  ],
+  "sources": [
+   "Caverns of Time quests 10282, 10296; creature_text 17879, 17880, 17881, 18096",
+   "creature_text 26532"
   ],
   "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  }

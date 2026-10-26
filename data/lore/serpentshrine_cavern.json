@@ -1,9 +1,159 @@
 [
-{"id": 360700, "kind": 0, "zone": 3607, "sort": 0, "faction": 0, "requiredState": 9, "title": "Serpentshrine Cavern", "body": "Serpentshrine Cavern is the deepest hold of Coilfang Reservoir, a vast flooded cavern beneath Serpent Lake and the seat of Lady Vashj, matron of the Coilfang naga. Here the water drawn in from the bogs gathers, and the work never stops: Vashj'ir honor guards drive their workers at the pumps and valves, boasting that the reservoir fills nicely and that soon all of Draenor's water will be theirs. Coilfang priestesses, shatterers, serpentguards and fathom-witches walk its halls, Greyheart Broken serve the naga as technicians, tidecallers and nether-mages, Tidewalker murlocs crowd one shore, and colossi of the bog and sporebats roam the wilder reaches. Frenzies swarm the dark water. Her lords hold the cavern's outer chambers, and Vashj herself waits at its heart.", "triggers": [[1, 3607]], "sources": ["zones/serpentshrine_cavern.txt (map 548: area 3607 only)", "DB spawns map 548: Vashj'ir Honor Guard 21218, Greyheart Technician 21263, Tidecaller 21229, Nether-Mage 21230 (Broken models), Coilfang Priestess 21220, Shatterer 21301, Serpentguard 21298, Fathom-Witch 21299, Tidewalker Warrior 21225, Shaman 21226, Harpooner 21227, Hydromancer 21228, Depth-Seer 21224 (murloc models), Underbog Colossus 21251, Serpentshrine Sporebat 21246, Coilfang Frenzy Corpse 21689; bosses 21216, 21215, 21214, 21213, 21212; gameobject 184956 Strange Pool", "creature_text 21218 groups 1-3 (patrol lines: Steady the pumps; Keep those pumps working; The reservoir fills nicely; Soon all of Draenor's water will be ours; Direct the flow from the western bog; Lady Vashj expects our work to be done soon), run by the honor guards' patrol scripts", "creature_template 21212 Lady Vashj, subname Coilfang Matron", "instance_serpent_shrine.cpp (Coilfang Frenzies summoned around swimmers until the Lurker Below falls)"], "notes": "Opening on AREA 3607: the cavern as anyone entering finds it (spawns, the honor guards' patrol talk, which names Lady Vashj and the pumps), the bosses by name and Vashj as its mistress (her nameplate and subname, and the guards' own words; the Steamvault file's 9764 tells how Zangarmarsh learns of her). The honor guards' lines are random variants, told as what they boast. No line about bridges, consoles or what opens the way to Vashj's platform (mod-individual-progression's config can change it). No attunement is named. No Places: only area 3607. requiredState 9 on every entry (mod-individual-progression's gate for map 548, the instance table's state 9). Check: verified (spawns map 548, creature_text 21218 groups 1-3). The frenzies swarm only while the pool area guards live (instance_serpent_shrine.cpp DATA_ALIVE_KEEPERS); true on entering."},
-{"id": 360701, "kind": 2, "zone": 3607, "sort": 1, "faction": 0, "requiredState": 9, "title": "Hydross the Unstable", "body": "Hydross the Unstable, called the Duke of Currents, is a great lord of water who dwells in a chamber of Serpentshrine Cavern. Tainted water spirits come to him one after another, and he purifies them and sends them on clean. Yet his name is earned. He tells intruders that he cannot allow them to interfere, and when he is drawn out of the cleansing field about him, the poison takes him at once: he cries out in pain and turns foul. Drawn back in, he grows clean, sighing that this is better, much better.", "triggers": [[3, 21216]], "parts": [{"part": 1, "body": "Hydross fell in his chamber, and his last words depended on what he was when he died. Pure, he sighed that he was released. Poisoned, he turned on his killers with an accusation: they were the disease, not he. Either way, the Duke of Currents was no more.", "triggers": [[3, 21216]], "sources": ["creature_text 21216 groups 3 (I am... released.) and 6 (You... are the disease... not I...)", "boss_hydross_the_unstable.cpp JustDied (corrupt or clean death line by his form)"]}], "sources": ["creature_template 21216 (subname Duke of Currents, type 4, display 20162 WaterElemental); fixed spawn 153018, map 548 only", "boss_hydross_the_unstable.cpp (out of combat he summons Tainted Water Elementals that walk to him, are purified and leave as Purified Water Elementals; Cleansing Field aura; leaving it applies Corruption)", "creature_text 21216 groups 0 (I cannot allow you to interfere!), 1 (Better, much better.), 4 (Aaghh, the poison...)"], "notes": "Opening on AREA 3607 (met only in combat; the purifying is what anyone in his chamber sees before the fight), part 1 on KILL 21216, with both death lines since either can be heard. His slay lines (They have forced me to this; I had no choice; You are no better than they) come only on a kill and are left out. Who poisoned the waters is not said (no period text says). Check: small trims: 'rising again in tainted form' and 'at last' not in the source. Groups 0-6 verified against the script."},
-{"id": 360702, "kind": 2, "zone": 3607, "sort": 2, "faction": 0, "requiredState": 9, "title": "The Lurker Below", "body": "At the center of Serpentshrine Cavern lies a strange pool, its water dark and still, and something lives beneath it that does not show itself to the idle. Only one who casts a line into the pool may draw it up: the Lurker Below, a great beast of the deep that surfaces in a rush of water. It spouts torrents across those who stand against it, lashes about in a whirling frenzy and bursts geysers beneath their feet, and when it dives again, Coilfang ambushers and guardians rise from the depths to fight in its place.", "triggers": [[3, 21217]], "parts": [{"part": 1, "body": "The Lurker Below died in its pool. With it went the danger of the cavern's water: after its fall the frenzies no longer swarmed about those who swam, and the water of Serpentshrine could be crossed in peace.", "triggers": [[3, 21217]], "sources": ["instance_serpent_shrine.cpp (spell_serpentshrine_cavern_coilfang_water: no frenzies or scalding water once DATA_THE_LURKER_BELOW is DONE)"]}], "sources": ["gameobject 184956 Strange Pool (map 548), go_strange_pool in boss_lurker_below.cpp (fishing it summons The Lurker Below 21217)", "creature_template 21217 (display 20216, Krakken model)", "boss_lurker_below.cpp (Spout, Whirl, Geyser, Water Bolt; on submerging summons Coilfang Ambushers 21865 and Coilfang Guardians 21873)", "creature_text 21217 group 0 (takes a deep breath)"], "notes": "Opening on AREA 3607 (the pool and how it is drawn up, as anyone present sees). Part 1 on KILL 21217: the Lurker is summoned from the pool and has no fixed spawn (check_staged warns), but it is the creature that dies, map 548 only. 'Great beast of the deep' rests on its kraken model; no history exists in period sources. Check: KILL 21217 kept: summoned by go_strange_pool, map 548 only, and the creature that dies (check_staged warns). Part 1 holds whether the frenzies or the scalding water were active before the kill."},
-{"id": 360703, "kind": 2, "zone": 3607, "sort": 3, "faction": 0, "requiredState": 9, "title": "Leotheras the Blind", "body": "Leotheras the Blind is a blood elf demon hunter, and he is a prisoner in Serpentshrine Cavern. Three Greyheart spellbinders keep him banished, kneeling and helpless within their spells, and only when the last of them falls is he free. Finally, he cries, his banishment ends. He fights with twin blades, spinning in a whirlwind of steel, but he is not alone in his body. From time to time a demon takes him over, mocking the trifling elf it has cast aside, wearing a fiend's shape and whispering to his foes that we all have our demons.", "triggers": [[3, 21215]], "parts": [{"part": 1, "body": "Near the end the elf took back his body, but the struggle broke him: no, he cried, he was the master, and he could not contain him. His demon tore free as a shadow of its own, rejoicing that it was liberated at last, and the two fought on side by side until Leotheras fell, and his shadow vanished with him.", "triggers": [[3, 21215]], "sources": ["creature_text 21215 group 5 (No... no! What have you done? I am the master! ... Can't... contain him.) and 21875 group 1 (At last I am liberated. It has been too long since I have tasted true freedom!)", "boss_leotheras_the_blind.cpp (at 15 percent health he kneels, speaks SAY_FINAL_FORM and summons the Shadow of Leotheras 21875, a summon despawned with him)"]}], "sources": ["creature_template 21215 (display 20514, BloodElfMale); fixed spawn 153139, map 548 only", "smart_scripts 21806 (Greyheart Spellbinder: Green Beam out of combat, Banish in combat, on death checks the others; Leotheras wakes when none is left)", "boss_leotheras_the_blind.cpp (passive and kneeling until freed; SAY_AGGRO Finally, my banishment ends!; dual wield and Whirlwind; Metamorphosis with SAY_SWITCH_TO_DEMON Be gone, trifling elf. I am in control now!; Insidious Whisper with SAY_INNER_DEMONS We all have our demons....)", "warcraft.wiki.gg/wiki/Leotheras_the_Blind (blood elf demon hunter; kept banished by the Greyheart Spellbinders)"], "notes": "Opening on AREA 3607 (met only in combat; the banishment is what anyone in his chamber sees), part 1 on KILL 21215. No death line exists on this core (the script has no JustDied text; SAY_DEATH is never called), so the part ends on the shadow's line and his fall. His training under Illidan (the wiki cites a source with no date) is left out. The demon is told as the yells show it, not named. Check: the shadow is a summon despawned with him, not killed. No death line confirmed: SAY_DEATH is defined but never called; the shadow speaks its line through smart_scripts 21875."},
-{"id": 360704, "kind": 2, "zone": 3607, "sort": 4, "faction": 0, "requiredState": 9, "title": "Fathom-Lord Karathress", "body": "Fathom-Lord Karathress is a naga lord of Serpentshrine Cavern, and he holds his chamber with three Fathom-Guards at his side: Sharkkis, a hunter with beasts at his call, Tidalvess, a shaman of totems and frost, and Caribdis, a caster of water and cyclones who mends her allies' wounds. When intruders come he calls his guards to attention, for they have visitors, and he hurls bolts and searing novas at those who dare his hall. In a cage at the edge of his chamber sits a prisoner, a Broken called Seer Olum.", "triggers": [[3, 21214]], "parts": [{"part": 1, "body": "As each of the Fathom-Guards fell, its power passed to its lord, but Karathress could not hold his hall. When the fathom-lord died, the cage at the edge of his chamber swung open, and its prisoner, Seer Olum, walked free.", "triggers": [[3, 21214]], "sources": ["boss_fathomlord_karathress.cpp (each Fathom-Guard casts Power of Sharkkis, Tidalvess or Caribdis on him at death; JustDied opens the Cage 185474 and walks Seer Olum 22820 out, giving him gossip and quests)"]}], "sources": ["creature_template 21214 (display 20662, Naga_Male); fixed spawn 153154, map 548 only", "DB spawns map 548: Fathom-Guard Caribdis 21964 (female model), Tidalvess 21965, Sharkkis 21966 beside him; Seer Olum 22820 (display 21101, BrokenMale) and gameobject 185474 Cage at the same spot", "boss_fathomlord_karathress.cpp (Cataclysmic Bolt, Sear Nova; Sharkkis summons a Fathom Lurker and Sporebat, Tidalvess drops totems and Frost Shock, Caribdis summons a cyclone, Water Bolt Volley and Healing Wave)", "creature_text 21214 group 0 (Guards, attention! We have visitors....)", "instance_serpent_shrine.cpp (Olum has no gossip or quests until freed)"], "notes": "Opening on AREA 3607 (met only in combat), part 1 on KILL 21214. Only his aggro line is quoted: base AzerothCore's script calls groups 0-6 while the base creature_text has his lines in groups 0-4 (so a base fight speaks no death line, and his 'Her excellency awaits' is heard when a guard falls), and mod-individual-progression renumbers them; group 0 is the same with and without the module. The Blessing of the Tides line (group 1 in both) depends on his guards living at 75 percent and is left out. Olum appears only as the room shows him (a Broken in a cage, freed by the kill): what he tells, the Secret Compromised (10944), and Akama belong to shattrath.json 370321. Check: verified. Base script groups 0-6 against base creature_text 0-4 confirmed (base: group 3 slay lines on Sharkkis's death, group 4 'Her excellency awaits' on Caribdis's death, no death line); group 0 is the same with and without the module."},
-{"id": 360705, "kind": 2, "zone": 3607, "sort": 5, "faction": 0, "requiredState": 9, "title": "Morogrim Tidewalker", "body": "Morogrim Tidewalker is a giant of the sea who rules a shore of Serpentshrine Cavern, where the Tidewalker murlocs who bear his name crowd about the water: warriors, shamans, harpooners, hydromancers and depth-seers. He greets intruders with a curse, flood of the deep take you, and fights with the sea itself, hurling tidal waves, sealing foes in watery graves and shaking the ground with earthquakes. When the earth shakes the murlocs come running from the shallows, and he calls on his subjects to destroy his foes.", "triggers": [[3, 21213]], "parts": [{"part": 1, "body": "As he weakened the Tidewalker sent globules of water to hunt his foes instead of graves, but he fell all the same on the shore he ruled. His last words meant nothing to those who heard them: great currents of Ageon.", "triggers": [[3, 21213]], "sources": ["creature_text 21213 group 4 (Great currents of... Ageon...)", "boss_morogrim_tidewalker.cpp (below 25 percent health Watery Globules replace Watery Grave; JustDied: SAY_DEATH)"]}], "sources": ["creature_template 21213 (type 5, display 20739 SeaGiant); fixed spawn 153169, map 548 only", "DB spawns map 548: Tidewalker Warrior 21225, Shaman 21226, Harpooner 21227, Hydromancer 21228, Depth-Seer 21224 (murloc models)", "creature_text 21213 groups 0 (Flood of the deep, take you!), 1 (By the tides!; Destroy them, my subjects!), 6 (The violent earthquake has alerted nearby Murlocs!)", "boss_morogrim_tidewalker.cpp (Tidal Wave, Watery Grave, Earthquake followed by murloc summons with SAY_SUMMON)"], "notes": "Opening on AREA 3607 (met only in combat), part 1 on KILL 21213. The summon line is one of two variants, told as his habit. 'Ageon' is quoted as he says it and not explained (no period source does). Check: verified."},
-{"id": 360706, "kind": 2, "zone": 3607, "sort": 6, "faction": 0, "requiredState": 9, "title": "Lady Vashj", "body": "Lady Vashj is the matron of the Coilfang naga and the mistress of Serpentshrine Cavern. Long ago she was one of the Highborne of ancient Kalimdor, a handmaiden to Queen Azshara, and she rose from the sea with her naga when Illidan Stormrage called on them; she has served him ever since, and followed him to Outland. Throughout Coilfang her naga cry that Illidan reigns. To any who reach her she declares her purpose: water is life, a rare commodity in Outland that her people alone shall control, and the time has come at last for the Highborne to retake their rightful place in the world.", "triggers": [[3, 21212]], "parts": [{"part": 1, "body": "Vashj fought with bow and lightning, then drew back to the heart of her platform behind a barrier fed by four shield generators, calling elementals, elite naga and striders against her foes. When the barrier fell she came on again under clouds of toxic sporebats. At the last she died with an apology to her master: Lord Illidan, I am sorry.", "triggers": [[3, 21212]], "sources": ["creature_text 21212 group 7 (Lord Illidan, I... I am... sorry.)", "boss_lady_vashj.cpp (Shoot, Multi-Shot, Shock Blast, Static Charge, Entangle; at 70 percent she returns home, Magic Barrier from the four Shield Generators 185051-185054, summons Enchanted and Tainted Elementals, Coilfang Elites and Striders; when the barrier is gone she fights on with Toxic Sporebats; JustDied: SAY_DEATH)"]}], "sources": ["creature_template 21212 (subname Coilfang Matron, display 20748); fixed spawn 153195, map 548 only", "creature_text 21212 group 0 (Water... is life. It has become a rare commodity here in Outland; a commodity that we alone shall control. We are the Highborne, and the time has come at last for us to retake our rightful place in the world!, said once when a player first comes into sight) and group 1 (Victory to Lord Illidan!)", "creature_text 17726, 17800 and others (Illidan reigns!)", "Warcraft III: The Frozen Throne (2003) and The Well of Eternity (2004): Vashj a Highborne handmaiden of Azshara, summoned with her naga by Illidan, his servant in Outland", "warcraft.wiki.gg/wiki/Lady_Vashj"], "notes": "No file gives Vashj an entry; this one does. Opening on AREA 3607: who she is (history from Warcraft III: The Frozen Throne and The Well of Eternity, both before 3.3.5; nothing from later retellings or Vashj'ir) and her intro speech, heard once anyone comes near. Part 1 on KILL 21212: the fight as seen and her death line. Her death line and the Illidan service are the same with and without mod-individual-progression (the module does not touch her). What opens the way to her platform is not told. Vashj's Vial Remnant (10445/13432, the Hyjal attunement) is left for a Hyjal file. The Steamvault file's 371504 tells how the Expedition learns of her hand (9764). Check: verified. History checked: Highborne handmaiden of Azshara (The Well of Eternity), summoned with her naga by Illidan and his servant in Outland (The Frozen Throne). Nothing of Illidan's plans or of Akama's and Olum's secret (shattrath.json 370321); Shadowmoon's opening already names Illidan as master of the Black Temple. Fight details match boss_lady_vashj.cpp."}
+ {
+  "id": 360700,
+  "kind": 0,
+  "zone": 3607,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 9,
+  "title": "Serpentshrine Cavern",
+  "body": "Serpentshrine Cavern is the deepest hold of Coilfang Reservoir, a vast flooded cavern beneath Serpent Lake and the seat of Lady Vashj, matron of the Coilfang naga. Here the water drawn in from the bogs gathers, and honor guards drive the workers at the pumps, boasting that soon all of Draenor's water will be theirs. Greyheart Broken serve the naga, Tidewalker murlocs crowd one shore, and Vashj's lords hold the outer chambers.",
+  "triggers": [
+   [
+    1,
+    3607
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Hydross the Unstable, a lord of water, purifies the tainted spirits that come to him, but drawn out of his cleansing field the poison takes him at once.",
+    "triggers": [
+     [
+      3,
+      21216
+     ]
+    ],
+    "sources": [
+     "zones/serpentshrine_cavern.txt (map 548: area 3607 only)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Fathom-Lord Karathress kept a Broken, Seer Olum, caged at the edge of his chamber. When the fathom-lord died the cage swung open.",
+    "triggers": [
+     [
+      3,
+      21214
+     ]
+    ],
+    "sources": [
+     "zones/serpentshrine_cavern.txt (map 548: area 3607 only)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Morogrim Tidewalker, giant of the sea and lord of the murlocs here, died with words that meant nothing to those who heard them: great currents of Ageon.",
+    "triggers": [
+     [
+      3,
+      21213
+     ]
+    ],
+    "sources": [
+     "zones/serpentshrine_cavern.txt (map 548: area 3607 only)"
+    ]
+   }
+  ],
+  "related": [
+   360706,
+   90000055,
+   352121
+  ],
+  "sources": [
+   "zones/serpentshrine_cavern.txt (map 548: area 3607 only)",
+   "DB spawns map 548: Vashj'ir Honor Guard 21218, Greyheart Technician 21263, Tidecaller 21229, Nether-Mage 21230 (Broken models), Coilfang Priestess 21220, Shatterer 21301, Serpentguard 21298, Fathom-Witch 21299, Tidewalker Warrior 21225, Shaman 21226, Harpooner 21227, Hydromancer 21228, Depth-Seer 21224 (murloc models), Underbog Colossus 21251, Serpentshrine Sporebat 21246, Coilfang Frenzy Corpse 21689; bosses 21216, 21215, 21214, 21213, 21212; gameobject 184956 Strange Pool",
+   "creature_text 21218 groups 1-3 (patrol lines: Steady the pumps; Keep those pumps working; The reservoir fills nicely; Soon all of Draenor's water will be ours; Direct the flow from the western bog; Lady Vashj expects our work to be done soon), run by the honor guards' patrol scripts",
+   "creature_template 21212 Lady Vashj, subname Coilfang Matron",
+   "instance_serpent_shrine.cpp (Coilfang Frenzies summoned around swimmers until the Lurker Below falls)",
+   "creature_template 21216 (subname Duke of Currents, type 4, display 20162 WaterElemental); fixed spawn 153018, map 548 only",
+   "boss_hydross_the_unstable.cpp (out of combat he summons Tainted Water Elementals that walk to him, are purified and leave as Purified Water Elementals; Cleansing Field aura; leaving it applies Corruption)",
+   "creature_text 21216 groups 0 (I cannot allow you to interfere!), 1 (Better, much better.), 4 (Aaghh, the poison...)",
+   "gameobject 184956 Strange Pool (map 548), go_strange_pool in boss_lurker_below.cpp (fishing it summons The Lurker Below 21217)",
+   "creature_template 21217 (display 20216, Krakken model)",
+   "boss_lurker_below.cpp (Spout, Whirl, Geyser, Water Bolt; on submerging summons Coilfang Ambushers 21865 and Coilfang Guardians 21873)",
+   "creature_text 21217 group 0 (takes a deep breath)",
+   "creature_template 21214 (display 20662, Naga_Male); fixed spawn 153154, map 548 only",
+   "DB spawns map 548: Fathom-Guard Caribdis 21964 (female model), Tidalvess 21965, Sharkkis 21966 beside him; Seer Olum 22820 (display 21101, BrokenMale) and gameobject 185474 Cage at the same spot",
+   "boss_fathomlord_karathress.cpp (Cataclysmic Bolt, Sear Nova; Sharkkis summons a Fathom Lurker and Sporebat, Tidalvess drops totems and Frost Shock, Caribdis summons a cyclone, Water Bolt Volley and Healing Wave)",
+   "creature_text 21214 group 0 (Guards, attention! We have visitors....)",
+   "instance_serpent_shrine.cpp (Olum has no gossip or quests until freed)",
+   "creature_template 21213 (type 5, display 20739 SeaGiant); fixed spawn 153169, map 548 only",
+   "DB spawns map 548: Tidewalker Warrior 21225, Shaman 21226, Harpooner 21227, Hydromancer 21228, Depth-Seer 21224 (murloc models)",
+   "creature_text 21213 groups 0 (Flood of the deep, take you!), 1 (By the tides!; Destroy them, my subjects!), 6 (The violent earthquake has alerted nearby Murlocs!)",
+   "boss_morogrim_tidewalker.cpp (Tidal Wave, Watery Grave, Earthquake followed by murloc summons with SAY_SUMMON)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 360703,
+  "kind": 2,
+  "zone": 3607,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 9,
+  "title": "Leotheras the Blind",
+  "body": "Leotheras the Blind is a blood elf demon hunter held banished in Serpentshrine Cavern by three Greyheart spellbinders. He fights with twin blades, but he is not alone in his body: from time to time a demon takes him over, mocking the trifling elf it has cast aside. Near the end the elf cannot contain it, and it tears free as a shadow of its own.",
+  "triggers": [
+   [
+    3,
+    21215
+   ]
+  ],
+  "related": [
+   360700,
+   92000009
+  ],
+  "sources": [
+   "creature_template 21215 (display 20514, BloodElfMale); fixed spawn 153139, map 548 only",
+   "smart_scripts 21806 (Greyheart Spellbinder: Green Beam out of combat, Banish in combat, on death checks the others; Leotheras wakes when none is left)",
+   "boss_leotheras_the_blind.cpp (passive and kneeling until freed; SAY_AGGRO Finally, my banishment ends!; dual wield and Whirlwind; Metamorphosis with SAY_SWITCH_TO_DEMON Be gone, trifling elf. I am in control now!; Insidious Whisper with SAY_INNER_DEMONS We all have our demons....)",
+   "warcraft.wiki.gg/wiki/Leotheras_the_Blind (blood elf demon hunter; kept banished by the Greyheart Spellbinders)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 360706,
+  "kind": 2,
+  "zone": 3607,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 9,
+  "title": "Lady Vashj",
+  "body": "Lady Vashj is the matron of the Coilfang naga. Long ago she was one of the Highborne of ancient Kalimdor, a handmaiden to Queen Azshara, and she rose from the sea with her naga when Illidan Stormrage called on them; she has served him ever since. Water is life, she says, a rare thing in Outland that her people alone shall control, and the time has come for the Highborne to retake their rightful place in the world.",
+  "triggers": [
+   [
+    3,
+    21212
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "She made her last stand at the heart of her platform behind a barrier fed by four shield generators, and died with an apology to her master: Lord Illidan, I am sorry.",
+    "triggers": [
+     [
+      3,
+      21212
+     ]
+    ],
+    "sources": [
+     "creature_template 21212 (subname Coilfang Matron, display 20748); fixed spawn 153195, map 548 only"
+    ]
+   }
+  ],
+  "related": [
+   92000009,
+   90000055,
+   90000057
+  ],
+  "sources": [
+   "creature_template 21212 (subname Coilfang Matron, display 20748); fixed spawn 153195, map 548 only",
+   "creature_text 21212 group 0 (Water... is life. It has become a rare commodity here in Outland; a commodity that we alone shall control. We are the Highborne, and the time has come at last for us to retake our rightful place in the world!, said once when a player first comes into sight) and group 1 (Victory to Lord Illidan!)",
+   "creature_text 17726, 17800 and others (Illidan reigns!)",
+   "Warcraft III: The Frozen Throne (2003) and The Well of Eternity (2004): Vashj a Highborne handmaiden of Azshara, summoned with her naga by Illidan, his servant in Outland",
+   "warcraft.wiki.gg/wiki/Lady_Vashj"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
 ]

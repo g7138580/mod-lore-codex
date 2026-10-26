@@ -1,0 +1,157 @@
+[
+ {
+  "id": 360600,
+  "kind": 0,
+  "zone": 3606,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 10,
+  "title": "Hyjal Summit",
+  "body": "The timeway opens onto Mount Hyjal at the end of the Third War, as the Burning Legion and its Scourge come up the mountain toward the World Tree. Lady Jaina Proudmoore's Alliance force holds the first line, Thrall's Horde holds a camp beyond it, and Tyrande Whisperwind's night elves keep the slopes above, each ready to fight and then fall back in turn. Keepers of the bronze flight stand among them, there to see that the battle ends as it must.",
+  "triggers": [
+   [
+    1,
+    3606
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Illidan drew seven vials from the Well of Eternity and poured three into the lake atop Hyjal to make the second Well. Kael'thas and Vashj each held another, and what remains of them can serve the bronze flight as a focus to reach any moment tied to Hyjal.",
+    "triggers": [
+     [
+      4,
+      10445
+     ],
+     [
+      4,
+      13432
+     ]
+    ],
+    "sources": [
+     "Hyjal Summit spawns (map 534); Caverns of Time quests 10445, 13432; Jaina, Thrall and Tyrande gossip 7552, 7581, 7706"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In the water Soridormi could see every moment linked to Hyjal: the making of the second Well, Illidan's imprisonment, the enchantment of the World Tree and the battle itself. The timeline, she warned, is not safe.",
+    "triggers": [
+     [
+      5,
+      13432
+     ]
+    ],
+    "sources": [
+     "Hyjal Summit spawns (map 534); Caverns of Time quests 10445, 13432; Jaina, Thrall and Tyrande gossip 7552, 7581, 7706"
+    ]
+   }
+  ],
+  "related": [
+   44007,
+   91000030,
+   90000060,
+   360602
+  ],
+  "sources": [
+   "Hyjal Summit spawns (map 534); Caverns of Time quests 10445, 13432; Jaina, Thrall and Tyrande gossip 7552, 7581, 7706"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 360601,
+  "kind": 2,
+  "zone": 3606,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 10,
+  "title": "Rage Winterchill",
+  "body": "Rage Winterchill is a lich of the Scourge, sent at the head of the first wave against Jaina Proudmoore's line. The Legion's final conquest has begun, he cries; the subjugation of this world is within its grasp once more, and none shall survive.",
+  "triggers": [
+   [
+    3,
+    17767
+   ],
+   [
+    4,
+    10947
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Akama had a vision of the lich's phylactery. Its power was lost forever when Winterchill fell at Hyjal, so only the timeway can reach it as it was.",
+    "triggers": [
+     [
+      4,
+      10947
+     ]
+    ],
+    "sources": [
+     "Hyjal Summit quest 10947; creature_text 17767"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The phylactery can contain a soul and siphon it into itself, and with its power Akama meant to reclaim what belonged to him.",
+    "triggers": [
+     [
+      5,
+      10947
+     ]
+    ],
+    "sources": [
+     "Hyjal Summit quest 10947; creature_text 17767"
+    ]
+   }
+  ],
+  "related": [
+   360600,
+   395901,
+   90000006
+  ],
+  "sources": [
+   "Hyjal Summit quest 10947; creature_text 17767"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 360602,
+  "kind": 2,
+  "zone": 3606,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 10,
+  "title": "Archimonde",
+  "body": "Archimonde, eredar lord of the Burning Legion, leads its assault on Mount Hyjal. At the summit he reaches the World Tree, Nordrassil, and begins to drain it: soon, he gloats, the heart of this world will beat no more. Those who stand against him there are buying time for Malfurion's plan.",
+  "triggers": [
+   [
+    3,
+    17968
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Dying, he cried that it could not be, and the ancient wisps of the forest swarmed over him by the dozen.",
+    "triggers": [
+     [
+      3,
+      17968
+     ]
+    ],
+    "sources": [
+     "creature_text 17968; Tyrande gossip 9410; boss_archimonde.cpp (ancient wisps)"
+    ]
+   }
+  ],
+  "related": [
+   360600,
+   91000030,
+   90000065
+  ],
+  "sources": [
+   "creature_text 17968; Tyrande gossip 9410; boss_archimonde.cpp (ancient wisps)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

@@ -1,0 +1,83 @@
+[
+ {
+  "id": 392300,
+  "kind": 0,
+  "zone": 3923,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Gruul's Lair",
+  "body": "Gruul's Lair lies at the end of Daggermaw Canyon in northern Blade's Edge, the cave where Gruul the Dragonkiller, greatest of the gronn, makes his home. Only the toughest ogres are trusted to guard its approach. Inside, lair brutes and gronn-priests keep the tunnels, and the ogre lords who serve the gronn hold the first great chamber in his name.",
+  "triggers": [
+   [
+    1,
+    3923
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "High King Maulgar, lord of the ogres, holds that chamber for Gruul with four ogre lords at his side: Kiggler the Crazed, Blindeye the Seer, Olm the Summoner and Krosh Firehand. Gronn, he says, are the real power in Outland.",
+    "triggers": [
+     [
+      3,
+      18831
+     ],
+     [
+      3,
+      18832
+     ],
+     [
+      3,
+      18834
+     ],
+     [
+      3,
+      18835
+     ],
+     [
+      3,
+      18836
+     ]
+    ],
+    "sources": [
+     "Blade's Edge quest 10805 (the toughest ogres guard the exterior); creature_text 18831"
+    ]
+   }
+  ],
+  "related": [
+   90000072,
+   90000026,
+   392301
+  ],
+  "sources": [
+   "Blade's Edge quest 10805 (the toughest ogres guard the exterior); creature_text 18831"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 392301,
+  "kind": 2,
+  "zone": 3923,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Gruul the Dragonkiller",
+  "body": "Gruul the Dragonkiller waits at the back of his lair, the greatest of the gronn, master of the ogre clans of Blade's Edge and father of the gronn who rule them in his name. He speaks little, a word at a time: come and die, scurry, beg for life. The longer anyone stands against him, the larger he grows, until the stone of his cave shatters under his blows.",
+  "triggers": [
+   [
+    3,
+    19044
+   ]
+  ],
+  "related": [
+   90000072,
+   352212,
+   392300
+  ],
+  "sources": [
+   "creature_text 19044"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

@@ -1,0 +1,67 @@
+[
+ {
+  "id": 472300,
+  "kind": 0,
+  "zone": 4723,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 15,
+  "title": "Trial of the Champion",
+  "body": "The Trial of the Champion is fought in the arena of the Argent Coliseum beside the tournament grounds, before the leaders of the Alliance and the Horde and a crowd of every people cheering its own. The tournament's champions ride first against its grand champions in the joust, and then face the Crusade's own best, a paladin who will not hold back and a confessor of the Light who makes them face their past deeds.",
+  "triggers": [
+   [
+    1,
+    4723
+   ]
+  ],
+  "related": [
+   21019,
+   90000031,
+   472301
+  ],
+  "sources": [
+   "Trial of the Champion spawns (map 650); creature_text 33628, 34928, 35004, 35005, 35119"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 472301,
+  "kind": 2,
+  "zone": 4723,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 15,
+  "title": "The Black Knight",
+  "body": "The Black Knight came back in the middle of the trial, killing the herald where he stood. Did they honestly think, he asked, that an agent of the Lich King would be bested on the field of their pathetic little tournament? He had come to finish his task, and when his rotting flesh fell away he fought on as bone, and then without even that.",
+  "triggers": [
+   [
+    3,
+    35451
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Dying at last, the knight cried out that he must not fail again, as though a second failure frightened him more than death.",
+    "triggers": [
+     [
+      3,
+      35451
+     ]
+    ],
+    "sources": [
+     "creature_text 35451, 35004, 35005, 35545; Trial of the Champion quest 14199"
+    ]
+   }
+  ],
+  "related": [
+   21019,
+   472300,
+   92000005
+  ],
+  "sources": [
+   "creature_text 35451, 35004, 35005, 35545; Trial of the Champion quest 14199"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

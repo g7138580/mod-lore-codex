@@ -1,0 +1,131 @@
+[
+ {
+  "id": 441500,
+  "kind": 0,
+  "zone": 4415,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Violet Hold",
+  "body": "The Violet Hold is the prison of Dalaran, where the Kirin Tor keep the most dangerous beings they have taken, each sealed in a cell of its own. The blue dragonflight has broken in. Portals open in the hall one after another, azure invaders pour out of them to batter at the great door that keeps them from the city, and Lieutenant Sinclari's guards cannot hold much longer.",
+  "triggers": [
+   [
+    1,
+    4415
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Rhonin wants the invasion handled with the utmost discretion: the citizens of Dalaran must not be alarmed if it can possibly be avoided.",
+    "triggers": [
+     [
+      4,
+      13158
+     ]
+    ],
+    "sources": [
+     "Violet Hold quests 13158, 13159; Sinclari gossip 9997; creature_text 30658, 32204"
+    ]
+   }
+  ],
+  "related": [
+   439500,
+   90000063,
+   90000003,
+   441502
+  ],
+  "sources": [
+   "Violet Hold quests 13158, 13159; Sinclari gossip 9997; creature_text 30658, 32204"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 441501,
+  "kind": 2,
+  "zone": 4415,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Prisoners of the Violet Hold",
+  "body": "The Hold's cells keep creatures the Kirin Tor could not leave free: Xevozz, an ethereal who sees every room as resources primed for acquisition; Erekem, an arakkoa who wants only to fly; Ichoron, a fury of water that will not be contained; Zuramat the Obliterator, a thing of the void; and the beasts Lavanthor and Moragg. As the blues break in, the cells open one by one, whether by accident or by design.",
+  "triggers": [
+   [
+    3,
+    29266
+   ],
+   [
+    3,
+    29315
+   ],
+   [
+    3,
+    29313
+   ],
+   [
+    3,
+    29314
+   ],
+   [
+    3,
+    29312
+   ],
+   [
+    3,
+    29316
+   ]
+  ],
+  "related": [
+   441500,
+   441502
+  ],
+  "sources": [
+   "creature_text 29266, 29313, 29314, 29315; Violet Hold quest 13256 (prisoners freed, perhaps on purpose)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 441502,
+  "kind": 2,
+  "zone": 4415,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Cyanigosa",
+  "body": "Cyanigosa leads the blue dragonflight's invasion of Dalaran through the Violet Hold. If her forces cannot break through, she will fulfill Malygos's wishes herself: the city must be razed and the Kirin Tor ended, for the world has forgotten what true magic is, and Dalaran will serve as the reminder.",
+  "triggers": [
+   [
+    3,
+    31134
+   ],
+   [
+    4,
+    13159
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Dying, the dragon allowed that the blue flight had perhaps underestimated the defenders of Dalaran, and in the end the prison held.",
+    "triggers": [
+     [
+      3,
+      31134
+     ]
+    ],
+    "sources": [
+     "Violet Hold quest 13159; creature_text 31134"
+    ]
+   }
+  ],
+  "related": [
+   441500,
+   90000063,
+   353723
+  ],
+  "sources": [
+   "Violet Hold quest 13159; creature_text 31134"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

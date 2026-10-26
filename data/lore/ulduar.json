@@ -1,0 +1,443 @@
+[
+ {
+  "id": 427300,
+  "kind": 0,
+  "zone": 4273,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 14,
+  "title": "Ulduar",
+  "body": "Behind its gates Ulduar opens on vast formation grounds, where Brann Bronzebeard's expedition and the Kirin Tor have brought siege engines against iron constructs and storm beacons that keep the city's defenses alive. Beyond lie a colossal forge, a scrapyard and halls built for giants, and the deeper anyone goes the less Ulduar seems like a city of the titans at all.",
+  "triggers": [
+   [
+    1,
+    4273
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Lore Keeper of Norgannon at the gates told the expedition what the complex was built for: to imprison an entity designated Yogg-Saron. Its security has been compromised, and the prison's status is unknown.",
+    "triggers": [
+     [
+      2,
+      33686
+     ]
+    ],
+    "sources": [
+     "Ulduar spawns (map 603); Lore Keeper of Norgannon gossip 10366, creature_text 33686, 33701; creature_text 33118, 33293, 32857, 32867, 32927, 33235"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Ignis the Furnace Master tempered weapons in the colossal forge for Loken, swearing they would be used to reclaim the world. Dying, the fire giant said only: I have failed.",
+    "triggers": [
+     [
+      3,
+      33118
+     ]
+    ],
+    "sources": [
+     "Ulduar spawns (map 603); Lore Keeper of Norgannon gossip 10366, creature_text 33686, 33701; creature_text 33118, 33293, 32857, 32867, 32927, 33235"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In the scrapyard the XT-002 Deconstructor, a construct of Mimiron's that thinks of itself as the keeper's son, begged for new toys and promised not to break them this time.",
+    "triggers": [
+     [
+      3,
+      33293
+     ]
+    ],
+    "sources": [
+     "Ulduar spawns (map 603); Lore Keeper of Norgannon gossip 10366, creature_text 33686, 33701; creature_text 33118, 33293, 32857, 32867, 32927, 33235"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The Assembly of Iron, Steelbreaker, Runemaster Molgeim and Stormcaller Brundir, sat in judgment over the way inward. Their fall opened the Archivum.",
+    "triggers": [
+     [
+      3,
+      32867
+     ],
+     [
+      3,
+      32927
+     ],
+     [
+      3,
+      32857
+     ]
+    ],
+    "sources": [
+     "Ulduar spawns (map 603); Lore Keeper of Norgannon gossip 10366, creature_text 33686, 33701; creature_text 33118, 33293, 32857, 32867, 32927, 33235"
+    ]
+   }
+  ],
+  "related": [
+   6718,
+   6732,
+   90000012,
+   427301
+  ],
+  "sources": [
+   "Ulduar spawns (map 603); Lore Keeper of Norgannon gossip 10366, creature_text 33686, 33701; creature_text 33118, 33293, 32857, 32867, 32927, 33235"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 427301,
+  "kind": 1,
+  "zone": 4273,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 14,
+  "title": "The Archivum",
+  "body": "The Archivum is Ulduar's great titan archive, and in it Brann Bronzebeard found something worse than he feared: the Algalon signal. When a world's Prime Designate dies, an emergency signal calls the Observer, Algalon, to judge it. Loken was Azeroth's Prime Designate, and his death set the signal off.",
+  "triggers": [
+   [
+    5,
+    13604
+   ],
+   [
+    5,
+    13817
+   ],
+   [
+    4,
+    13607
+   ],
+   [
+    4,
+    13816
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Algalon's analysis ends in one of two replies: Alpha, all is well, or Omega, re-origination, the world broken down into rock, metal and gas and rebuilt to its original blueprint. The replies are built into Algalon; he is both messenger and message.",
+    "triggers": [
+     [
+      5,
+      13604
+     ],
+     [
+      5,
+      13817
+     ]
+    ],
+    "sources": [
+     "Ulduar quests 13604, 13607, 13622, 13816, 13817; creature_text 33874, 33235"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The way to the Celestial Planetarium needs the sigils of the four watchers, Freya, Thorim, Hodir and Mimiron, and an outside influence is gaining control of all four. Only enough force will free them.",
+    "triggers": [
+     [
+      5,
+      13607
+     ],
+     [
+      5,
+      13816
+     ]
+    ],
+    "sources": [
+     "Ulduar quests 13604, 13607, 13622, 13816, 13817; creature_text 33874, 33235"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The hammer Val'anyr was made by the titans for Urel Stoneheart, the first earthen king, to give life to his brethren. It was shattered in the first war between the earthen and the iron dwarves.",
+    "triggers": [
+     [
+      5,
+      13622
+     ]
+    ],
+    "sources": [
+     "Ulduar quests 13604, 13607, 13622, 13816, 13817; creature_text 33874, 33235"
+    ]
+   }
+  ],
+  "related": [
+   427300,
+   6731,
+   91000036,
+   427305
+  ],
+  "sources": [
+   "Ulduar quests 13604, 13607, 13622, 13816, 13817; creature_text 33874, 33235"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 427302,
+  "kind": 2,
+  "zone": 4273,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 14,
+  "title": "The Keepers of Ulduar",
+  "body": "Four keepers of the titans remain in Ulduar, Freya, Hodir, Thorim and Mimiron, and the thing in the prison has its hold on all of them. Freya guards her conservatory against any intruder, Hodir offers only endless winter, Thorim makes sport of his captives in his arena, and Mimiron is delighted to have guests for his latest tests.",
+  "triggers": [
+   [
+    5,
+    13606
+   ],
+   [
+    5,
+    13609
+   ],
+   [
+    5,
+    13610
+   ],
+   [
+    5,
+    13611
+   ],
+   [
+    5,
+    13821
+   ],
+   [
+    5,
+    13822
+   ],
+   [
+    5,
+    13823
+   ],
+   [
+    5,
+    13824
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Thorim had been listening to an illusion of his wife Sif, who died by his brother's hand. Freed, he felt as though he were waking from a nightmare whose shadows still lingered.",
+    "triggers": [
+     [
+      5,
+      13610
+     ],
+     [
+      5,
+      13823
+     ]
+    ],
+    "sources": [
+     "Ulduar quests 13606, 13609, 13610, 13611, 13821-13824; creature_text 32845, 32865, 32906, 33196, 33350"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Mimiron admitted a slight miscalculation: he had let the fiend in the prison corrupt his mind and override his primary directive.",
+    "triggers": [
+     [
+      5,
+      13611
+     ],
+     [
+      5,
+      13824
+     ]
+    ],
+    "sources": [
+     "Ulduar quests 13606, 13609, 13610, 13611, 13821-13824; creature_text 32845, 32865, 32906, 33196, 33350"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Freya felt his hold on her dissipate and saw clearly once more, and Hodir said he was released from his grasp at last.",
+    "triggers": [
+     [
+      5,
+      13606
+     ],
+     [
+      5,
+      13821
+     ],
+     [
+      5,
+      13609
+     ],
+     [
+      5,
+      13822
+     ]
+    ],
+    "sources": [
+     "Ulduar quests 13606, 13609, 13610, 13611, 13821-13824; creature_text 32845, 32865, 32906, 33196, 33350"
+    ]
+   }
+  ],
+  "related": [
+   427301,
+   6730,
+   91000036,
+   427304
+  ],
+  "sources": [
+   "Ulduar quests 13606, 13609, 13610, 13611, 13821-13824; creature_text 32845, 32865, 32906, 33196, 33350"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 427303,
+  "kind": 2,
+  "zone": 4273,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 14,
+  "title": "General Vezax",
+  "body": "General Vezax guards the Descent into Madness for his master, a faceless lord in whom the black blood of Yogg-Saron courses. He welcomes those who stand before the legions of death with promises of a new age of suffering, and the saronite vapors around him gather into a monstrous form.",
+  "triggers": [
+   [
+    3,
+    33271
+   ]
+  ],
+  "related": [
+   427304,
+   427300
+  ],
+  "sources": [
+   "creature_text 33271"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 427304,
+  "kind": 2,
+  "zone": 4273,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 14,
+  "title": "Yogg-Saron",
+  "body": "Yogg-Saron is the Old God imprisoned beneath Ulduar, the god of death, as he names himself, whose whispers turned Loken and reached into the keepers. A young woman, Sara, cries for help at his prison, then urges his attackers on, then shows herself for what she is: the lucid dream, the monster in their nightmares, the fiend of a thousand faces.",
+  "triggers": [
+   [
+    3,
+    33288
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In his mind lie visions of what he has touched: the forging of the Dragon Soul, the night the orcs came for King Llane, the Lich King on his throne. A thousand deaths, he whispers, or one murder.",
+    "triggers": [
+     [
+      3,
+      33288
+     ]
+    ],
+    "sources": [
+     "creature_text 33134, 33288, 33552, 33436, 33437, 33441, 33523; boss_yoggsaron.cpp"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Dying, he promised that his fate was sealed for them too: the end of days was upon all who inhabit this miserable little seedling.",
+    "triggers": [
+     [
+      3,
+      33288
+     ]
+    ],
+    "sources": [
+     "creature_text 33134, 33288, 33552, 33436, 33437, 33441, 33523; boss_yoggsaron.cpp"
+    ]
+   }
+  ],
+  "related": [
+   427302,
+   427303,
+   91000036,
+   6731
+  ],
+  "sources": [
+   "creature_text 33134, 33288, 33552, 33436, 33437, 33441, 33523; boss_yoggsaron.cpp"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 427305,
+  "kind": 2,
+  "zone": 4273,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 14,
+  "title": "Algalon the Observer",
+  "body": "Algalon the Observer is the herald of the titans' Pantheon, come down to Azeroth when its Prime Designate died, to analyze the world and send back his reply. He has not come to fight, he says: should he find systemic corruption, it is in the universe's best interest to re-originate the planet.",
+  "triggers": [
+   [
+    5,
+    13614
+   ],
+   [
+    5,
+    13818
+   ],
+   [
+    4,
+    13631
+   ],
+   [
+    4,
+    13819
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Beaten, he spoke of worlds razed while his heart felt nothing, and wondered whether mortals' imperfections, which grant them free will, let them prevail where the titans' perfect creations failed. He rearranged the reply code so the world would be spared.",
+    "triggers": [
+     [
+      4,
+      13631
+     ],
+     [
+      4,
+      13819
+     ]
+    ],
+    "sources": [
+     "Ulduar quests 13614, 13631, 13818, 13819; creature_text 32871, 34064"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Too weak to send the signal himself, he left it to the mortals. Brann carried it to Rhonin in Dalaran, a place of power close to the skies, and Rhonin said: let us hope this works, for all our sakes.",
+    "triggers": [
+     [
+      5,
+      13631
+     ],
+     [
+      5,
+      13819
+     ]
+    ],
+    "sources": [
+     "Ulduar quests 13614, 13631, 13818, 13819; creature_text 32871, 34064"
+    ]
+   }
+  ],
+  "related": [
+   427301,
+   91000036,
+   427300
+  ],
+  "sources": [
+   "Ulduar quests 13614, 13631, 13818, 13819; creature_text 32871, 34064"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

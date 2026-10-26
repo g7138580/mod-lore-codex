@@ -1,0 +1,120 @@
+[
+ {
+  "id": 481300,
+  "kind": 0,
+  "zone": 4813,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 16,
+  "title": "The Pit of Saron",
+  "body": "The Pit of Saron is the great quarry beneath Icecrown Citadel's walls, where soldiers of the Alliance and the Horde taken captive mine saronite for the Lich King under the lash of the Ymirjar. A frost giant works the forges, a gnome rides an abomination among the slaves, and frost wyrms watch from the cliffs over the long path up to the Scourgelord's rise.",
+  "triggers": [
+   [
+    1,
+    4813
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "When his abomination fell, Krick the gnome begged for his life: what they sought lay in the master's lair beyond Tyrannus, in the Halls of Reflection, where Frostmourne held the truth. Then Tyrannus struck him down from above.",
+    "triggers": [
+     [
+      3,
+      36476
+     ]
+    ],
+    "sources": [
+     "Pit of Saron spawns (map 658); Pit of Saron quests 24461, 24559, 24683; creature_text 36477, 36990, 36993"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Jaina blamed herself for the men the Scourgelord took: whenever she thinks her guilt over Arthas cannot go any deeper, he proves her wrong.",
+    "triggers": [
+     [
+      5,
+      24683
+     ]
+    ],
+    "sources": [
+     "Pit of Saron spawns (map 658); Pit of Saron quests 24461, 24559, 24683; creature_text 36477, 36990, 36993"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Quel'Delar was reforged at the forgemaster's anvil with the pit's infused saronite, though the Blood-Queen Lana'thel had proclaimed it could not be done.",
+    "triggers": [
+     [
+      5,
+      24461
+     ],
+     [
+      5,
+      24559
+     ]
+    ],
+    "sources": [
+     "Pit of Saron spawns (map 658); Pit of Saron quests 24461, 24559, 24683; creature_text 36477, 36990, 36993"
+    ]
+   }
+  ],
+  "related": [
+   21018,
+   481301,
+   408013
+  ],
+  "sources": [
+   "Pit of Saron spawns (map 658); Pit of Saron quests 24461, 24559, 24683; creature_text 36477, 36990, 36993"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 481301,
+  "kind": 2,
+  "zone": 4813,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 16,
+  "title": "Scourgelord Tyrannus",
+  "body": "Scourgelord Tyrannus commands the Pit of Saron for the Lich King, riding the frostwyrm Rimefang above the quarry, and the Lich King has placed an army of the undead at his command. When he is done with intruders, he promises, his master's blade will feast upon their souls.",
+  "triggers": [
+   [
+    3,
+    36658
+   ],
+   [
+    4,
+    24710
+   ],
+   [
+    4,
+    24712
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The freed slaves' leader began to swear that no foe could stand when Alliance and Horde set aside their differences, and the frost wyrm Sindragosa cut him and his people down before he could finish.",
+    "triggers": [
+     [
+      3,
+      36658
+     ]
+    ],
+    "sources": [
+     "Pit of Saron quests 24710, 24712; creature_text 36658, 36794, 37580, 37581, 36993, 36990"
+    ]
+   }
+  ],
+  "related": [
+   481300,
+   92000005,
+   482000
+  ],
+  "sources": [
+   "Pit of Saron quests 24710, 24712; creature_text 36658, 36794, 37580, 37581, 36993, 36990"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

@@ -1,0 +1,56 @@
+[
+ {
+  "id": 236700,
+  "kind": 0,
+  "zone": 2367,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Old Hillsbrad Foothills",
+  "body": "The timeway west of the Caverns opens onto the Hillsbrad Foothills of seven years ago. Durnholde Keep still stands over its internment camps, its sentries, riflemen and tracking hounds patrolling the hills, and Tarren Mill is still a human village with its own guardsmen and lookouts. Two agents of the bronze flight, Erozion and the drake Brazen, wait on the hillside below the keep.",
+  "triggers": [
+   [
+    1,
+    2367
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "It was Taretha Foxton who set the diversion that let Thrall escape Durnholde. The Infinite have taken her to Tarren Mill, so unless someone else lights the internment lodges, the escape will never happen.",
+    "triggers": [
+     [
+      4,
+      10283
+     ]
+    ],
+    "sources": [
+     "Caverns of Time quests 10282, 10283, 10284; creature_text 18723, 18887"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Taretha bade Thrall farewell: they call you a monster, she told him, but they are the monsters, not you. Erozion then made them forget the strangers, and said that her fate was, regrettably, unavoidable.",
+    "triggers": [
+     [
+      5,
+      10284
+     ]
+    ],
+    "sources": [
+     "Caverns of Time quests 10282, 10283, 10284; creature_text 18723, 18887"
+    ]
+   }
+  ],
+  "related": [
+   44007,
+   91000002,
+   90000089,
+   26710
+  ],
+  "sources": [
+   "Caverns of Time quests 10282, 10283, 10284; creature_text 18723, 18887"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

@@ -1,0 +1,99 @@
+[
+ {
+  "id": 379200,
+  "kind": 0,
+  "zone": 3792,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Mana-Tombs",
+  "body": "The Mana-Tombs are the wing of Auchindoun where ethereals have shut themselves in with the draenei dead. Crypt raiders, sorcerers and nexus stalkers strip the tombs hall by hall, greeting strangers with a whisper of welcome to the Void, and they have warded the way in against every other ethereal band. Mana leeches and nexus terrors drift through the dark between the sarcophagi.",
+  "triggers": [
+   [
+    1,
+    3792
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "With the way cleared, the Consortium came in through the ethereals' own transporters, and its cryo-engineer Sha'heen drained the ether gathered in the collectors. By the energy levels, he said, Shaffar had been set to make a killing.",
+    "triggers": [
+     [
+      5,
+      10218
+     ]
+    ],
+    "sources": [
+     "Mana-Tombs quests 10216, 10218, 10977; creature_text 18309-18331, 19671; npc_text 9897 (Kaftiz)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Ethereum keep two stasis chambers in the tombs, one near the entrance and one beside Shaffar's own rooms. Commander Ameer of the Protectorate has forged a key to open them and learn what they hold.",
+    "triggers": [
+     [
+      4,
+      10977
+     ]
+    ],
+    "sources": [
+     "Mana-Tombs quests 10216, 10218, 10977; creature_text 18309-18331, 19671; npc_text 9897 (Kaftiz)"
+    ]
+   }
+  ],
+  "related": [
+   90000071,
+   351916,
+   379201
+  ],
+  "sources": [
+   "Mana-Tombs quests 10216, 10218, 10977; creature_text 18309-18331, 19671; npc_text 9897 (Kaftiz)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 379201,
+  "kind": 2,
+  "zone": 3792,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Nexus-Prince Shaffar",
+  "body": "Nexus-Prince Shaffar is the ethereal lord who holds the Mana-Tombs, a shrewd rival who keeps the Consortium out while he pillages the crypt for all it is worth. He greets intruders as a gracious host, apologizing that he was not expecting company, and then tends to them personally, calling ethereal beacons to his side.",
+  "triggers": [
+   [
+    3,
+    18344
+   ],
+   [
+    4,
+    10165
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Nexus-Prince Haramad of the Consortium paid well for proof of Shaffar's death, and remarked only that another competitor had gone under.",
+    "triggers": [
+     [
+      5,
+      10165
+     ]
+    ],
+    "sources": [
+     "Mana-Tombs quest 10165; creature_text 18344"
+    ]
+   }
+  ],
+  "related": [
+   379200,
+   90000071,
+   352316
+  ],
+  "sources": [
+   "Mana-Tombs quest 10165; creature_text 18344"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

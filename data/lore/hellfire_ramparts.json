@@ -1,8 +1,116 @@
 [
-{"id": 356200, "kind": 0, "zone": 3562, "sort": 0, "faction": 0, "requiredState": 8, "title": "Hellfire Ramparts", "body": "The Hellfire Ramparts are the battlements on the outer face of Hellfire Citadel, the first of its defenses that any attacker from the peninsula must climb. The Fel Horde holds them in strength. Bonechewer destroyers and hungerers walk the walls, Bleeding Hollow archers, scryers and darkcasters stand among them, and Shattered Hand warhounds wait for their beastmaster to loose them. The officers warn their sentries to keep a close watch, for intruders could come at any time. Watchkeeper Gargolmar commands the watch with his own subordinates at his side, the demon Omor the Unscarred holds a stretch of the walls, and at the far end a rider called Vazruden the Herald circles above the battlement on his drake, Nazan. Honor Hold and Thrallmar, caught between the citadel and the Burning Legion, mean to strike at the fortress now, and the key to it is breaking through these walls first.", "triggers": [[1, 3562]], "sources": ["zones/hellfire_ramparts.txt (map 543: 3562 and its unreachable sub-area 3563 only)", "DB spawns map 543: Bonechewer Hungerer 17259, Ravener 17264, Destroyer 17271, Ripper 17281, Beastmaster 17455; Bleeding Hollow Darkcaster 17269, Archer 17270, Scryer 17478; Shattered Hand Warhound 17280; Hellfire Watcher 17309 (Watchkeeper's Subordinate); bosses 17306, 17307, 17308", "creature_text 17264 group 1 (keep a close watch on these ramparts, intruders could approach at any time), 17271 group 1, 17455 groups 0-1 (release the warhounds)", "boss_vazruden_the_herald.cpp (Vazruden the Herald 17307 circles above the far battlement; sentries; Vazruden 17537 and Nazan 17536 come down)", "quests 9572 and 9575 descriptions (Thrallmar and Honor Hold caught between the citadel and the Legion; first break through the ramparts)"], "notes": "Check: the closing line ('no blow can land while the ramparts stand') overstated 9572/9575 ('the key to this is to first break through their ramparts'); reworded to their claim. Rest verified (spawns, creature_text 17264/17271/17455, map 543 has only 3562/3563). Before: Pilot instance file. The opening is what anyone entering sees: the clans on the walls (spawns), the three commanders by name (no master named: that Vazruden heralds Illidan is the Dark Tidings reveal, 356203 part 2 and 356205 part 1), and why Honor Hold and Thrallmar come (the Weaken the Ramparts premise, told as the outposts' aim). No Places: the map has only 3562 and the unreachable 3563, and the walls are the instance itself. requiredState 8 (every Outland instance opens at state 8; mod-individual-progression has no dungeon_ file for the citadel). AREA 3562 is the instance's own area (reachable_areas.json)."},
-{"id": 356201, "kind": 2, "zone": 3562, "sort": 1, "faction": 0, "requiredState": 8, "title": "Watchkeeper Gargolmar", "body": "Watchkeeper Gargolmar commands the watch on the Hellfire Ramparts, and he trusts his nose as much as his eyes. When strangers set foot on the walls he scents them at once, warning his soldiers that fresh meat has somehow breached the citadel and that they should be wary. He does not fight alone. The Hellfire Watchers, his own subordinates, stand close by, and they are expected to heal him the moment he calls. He relishes the work, promising each foe that this may hurt a little.", "triggers": [[3, 17306]], "parts": [{"part": 1, "body": "Gargolmar called on his watchers to heal him and drove back any who pressed too close, but the watch on the ramparts was broken all the same. He died much as he had fought, laughing at his foes until a cough cut the laugh short.", "triggers": [[3, 17306]], "sources": ["creature_text 17306 groups 1-2 (heal me, quickly; back off, pup) and 5 (death: laughter, cough)", "boss_watchkeeper_gargolmar.cpp (calls the Hellfire Watchers to heal him)"]}], "sources": ["creature_text 17306 groups 0 (fresh meat has somehow breached our citadel; be wary of any intruders), 1, 3 (this may hurt a little)", "creature_template 17309 Hellfire Watcher, subname Watchkeeper's Subordinate", "boss_watchkeeper_gargolmar.cpp", "quests 9572/9575 (Watchkeeper Gargolmar named as a leader of the ramparts)"], "notes": "Check: verified. Heal call at 50 percent and Surge ('Back off, pup!') every 11 seconds are scheduled in every fight (boss_watchkeeper_gargolmar.cpp), death line fixed; sniffing taunt is his MoveInLineOfSight intro. Before: Opening on AREA 3562 (a figure met only in combat rests on the instance's AREA plus a KILL part, per the brief): what meeting him shows, from his own yells and his subordinates' subname. Race not stated (no period source beyond the model). Part 1 on KILL 17306, his fixed spawn, the entry that dies (map 543 only): only what the fight shows. Gargolmar's Hand for 9572/9575 is told in 356204, not here."},
-{"id": 356202, "kind": 2, "zone": 3562, "sort": 2, "faction": 0, "requiredState": 8, "title": "Omor the Unscarred", "body": "Omor the Unscarred is no orc. He is a demon standing among the fel orcs on the Hellfire Ramparts, and his very name boasts that he bears no scar. He meets intruders with scorn, demanding to know who dares stand against him and promising that their insolence will be their death. He calls up fiendish hounds to fight at his side, urging each to feast and eat its fill, and lays curses on those who face him, spitting words of power as he does.", "triggers": [[3, 17308]], "parts": [{"part": 1, "body": "Omor fell on the ramparts all the same, for all his boasting. His last words were no plea but a warning, gasped out as he died: it is not over. Whatever he meant by it, the stretch of wall he had guarded stood open.", "triggers": [[3, 17308]], "sources": ["creature_text 17308 group 4 (It is... not over.)", "boss_omor_the_unscarred.cpp (summons Fiendish Hounds)"]}], "sources": ["creature_text 17308 groups 0 (You dare stand against ME? Your insolence will be your death), 1 (Feast, my pet! Eat your fill!), 2 (A-kreesh, on cursing)", "creature_template 17308 type 3 (demon), faction 90", "boss_omor_the_unscarred.cpp (Summon Fiendish Hound, curse)", "warcraft.wiki.gg/wiki/Omor_the_Unscarred"], "notes": "Check: 'no weapon has ever left its mark' was more than the name says; now 'bears no scar'. Part 1: 'his hounds with him' dropped (the hounds need not die before him). Opening's curse line is a 33 percent yell, kept as habit. Before: Opening on AREA 3562, part 1 on KILL 17308 (fixed spawn on map 543 only). The wiki's backstory (disciple of Hakkar the Houndmaster, Illidan's envoy to the fel orcs) comes from the Cataclysm Adventure Guide, a later source, and is left out; he is described only as a demon (type 3), by his yells and his hounds."},
-{"id": 356203, "kind": 2, "zone": 3562, "sort": 3, "faction": 0, "requiredState": 8, "title": "Vazruden the Herald", "body": "Vazruden the Herald guards the far end of the Hellfire Ramparts, circling above it on the back of his drake, Nazan, while sentries hold the battlement below. When the sentries fall he comes down to meet the intruders himself, mocking them for facing so many challenges in vain and promising that soon their people will kneel to his lord. Whose herald he is, he does not say. At most he boasts in the fight of a higher call he answers, or of a dark lord who laughs at those who stand against him.", "triggers": [[3, 17537]], "parts": [{"part": 1, "body": "Vazruden fought on foot while Nazan wheeled overhead and rained fire on the stones. When the herald was hard pressed he called for the drake to come down and fight beside him, and still it did not save him. With his dying breath he swore that his lord would be the end of them all.", "triggers": [[3, 17537]], "sources": ["creature_text 17537 groups 1 (I answer a higher call; the dark lord laughs at you) and 3 (My lord will be... the end of you all!)", "creature_text 17536 (Nazan descends from the sky)", "boss_vazruden_the_herald.cpp (Nazan casts fireballs from the air; Vazruden calls Nazan below 35 percent health)"]}, {"part": 2, "body": "The lord Vazruden served, the one to whom he promised their people would kneel, is Illidan Stormrage, the Betrayer. The fel orcs of the citadel may call Kargath Bladefist their warchief, but their herald answered to Illidan.", "triggers": [[5, 9587], [5, 9588], [4, 11354]], "sources": ["quests 9587 and 9588 description and reward text (letter on Vazruden's body; It's signed by Illidan you say?!)", "quest 9590 description (the letter comes from the Betrayer)", "quest 11354 description (Vazruden the Herald, Illidan's herald, and his dragon mount Nazan)"]}], "sources": ["creature_text 17307 group 0 (You have faced many challenges... Soon your people will kneel to MY lord!)", "creature_text 17537 groups 0-3", "boss_vazruden_the_herald.cpp (controller 17307 circles; two Hellfire Sentries; when they die it calls Vazruden 17537 and Nazan 17536)", "quests 9572/9575 (the drake, Nazan)", "quests 9587, 9588, 11354", "warcraft.wiki.gg/wiki/Vazruden_the_Herald"], "notes": "Check: KILL 17537 confirmed: the spawned 17307 is NON_ATTACKABLE, turns invisible on landing and only KillSelf()s when both summons are dead (no player credit); 17537 is the summoned fighter that dies and drops the Ominous Letters 23890/23892 (creature_loot). Call Nazan is cast at 35 percent in every fight (DamageTaken), but Nazan can in principle be shot down in the air first, so part 1 now says he called for the drake rather than that it came. The opening's aggro lines are three random variants (group 1), so they are told as 'at most he boasts'. Part 2: 11354's description really calls Vazruden 'Illidan's herald' (QuestType 2, Flags 4232, daily, not auto-complete, filed under 3535, given by Zhareem 24369 in Lower City, used by no other file); a fair trigger, as accepting it shows the claim. 'Bring every foe to its knees' brought back to 17307's own words (your people will kneel to my lord). Before: Opening on AREA 3562: only what the fight shows; his lord is not named, since the Illidan reveal belongs to the Dark Tidings turn-ins (hellfire.json 348305 notes left 9587/9588 for this file). Part 1 on KILL 17537, Vazruden the summoned fighter: the spawned controller 17307 'Vazruden the Herald' is invisible and only kills itself when both summons are dead (KillSelf gives no player credit), so it cannot fire; 17537 drops the Ominous Letter and has no spawn anywhere (check_staged warns: summoned). Nazan's descent is safe on that kill, as the script calls him down at 35 percent. Part 2 on DONE 9587/9588 and ACCEPT 11354 (Zhareem's heroic daily, filed under 3535, used by no other file; QuestType 2, Flags 4232, not auto-complete): each shows that Vazruden serves Illidan. The Kargath line is connective (hellfire.json names him as the fel orcs' self-styled warchief). Nazan's riding crop (only in 11354) left out so the part holds for every trigger."},
-{"id": 356204, "kind": 3, "zone": 3562, "sort": 1, "faction": 0, "requiredState": 8, "title": "Weaken the Ramparts", "body": "Thrallmar and Honor Hold are caught between two enemies, Hellfire Citadel to the west and the Burning Legion to the east. For now the Legion's attention is turned toward the Dark Portal, and both outposts mean to use that moment to strike at the fel orcs of the citadel, beginning with its ramparts. In Honor Hold, Lieutenant Chadwick sends volunteers up onto the walls with proof to be brought to Gunny across the hall; in Thrallmar, Stone Guard Stok'ton does the same, with Caza'rez awaiting the report. The targets are the leaders of the walls: Watchkeeper Gargolmar, Omor the Unscarred and the drake Nazan, whose hand, hoof and head are the proof required.", "triggers": [[4, 9572], [4, 9575]], "parts": [{"part": 1, "body": "With the three dead, the defenders of the ramparts were thrown into disarray, and the artillery on the walls fell silent, so that an army could come close enough to strike at the citadel itself. Yet at both outposts the one who took the report sensed there was more to the citadel than met the eye, and held a further task in reserve.", "triggers": [[5, 9572], [5, 9575]], "sources": ["quests 9572 and 9575 reward text (forces in disarray; artillery up there silenced; more to this than meets the eye; something else for you to do)", "quest_template RewardNextQuest 9572 -> 9608, 9575 -> 9607 (Heart of Rage, told in the Blood Furnace file)"]}], "sources": ["quests 9572 (Stok'ton 17493 to Caza'rez 17558, Horde) and 9575 (Lieutenant Chadwick 17557 to Gunny 17479, Alliance) descriptions, log text and reward text", "quest_template_addon PrevQuestID 9572 <- 10124, 9575 <- 10142 (after the Legion Front chain told by hellfire.json 348333)"], "notes": "Check: verified (9572 Stok'ton 17493 to Caza'rez 17558, 9575 Chadwick 17557 to Gunny 17479 per queststarter/questender; reward texts agree). Before: Faction 0: ACCEPT 9572 Horde only, 9575 Alliance only, one route each; both filed under QuestSortID 3535 (the generic Hellfire Citadel sort that all four wings' quests share; see the report on check_staged). Opening on ACCEPT (the task), part 1 on DONE (the outcome, both reward texts agree). The next mission (Heart of Rage) is only hinted: it ends in the Blood Furnace and is told there. Caza'rez is called Centurion in 9608's text; plain name used here as in 9572's log text."},
-{"id": 356205, "kind": 3, "zone": 3562, "sort": 2, "faction": 0, "requiredState": 8, "title": "The Herald's Letter", "body": "On the body of Vazruden the Herald lies a rolled letter, its seal still unbroken and marked with an elaborate I in blood-red ink. Whoever cracks it open finds a message disturbing enough to carry straight back to the commanders of the peninsula, Force Commander Danath Trollbane at Honor Hold or Nazgrel at Thrallmar. Until now the fel orcs of the citadel have seemed to answer to no one but Kargath Bladefist, their self-styled warchief, and Alliance and Horde alike have fought them as a new Fel Horde risen from nowhere. Yet the herald boasted on the ramparts that soon their people would kneel to his lord.", "triggers": [[4, 9587], [4, 9588]], "parts": [{"part": 1, "body": "The letter was signed by Illidan. The commander read it twice and was silent a moment before speaking: this was ominous news, and the plans against Hellfire Citadel and its Blood Furnace had to move faster now. The one who had brought the letter was put at the head of them, with the warning that the next mission would be far deadlier than the first.", "triggers": [[5, 9587], [5, 9588]], "sources": ["quests 9587 and 9588 reward text (It's signed by Illidan you say?!; reads it twice; accelerate our plans against Hellfire Citadel and this Blood Furnace; head up those plans; far deadlier than your first)"]}], "sources": ["quests 9587 and 9588 description and reward text (started by Ominous Letter 23890/23892, dropped by Vazruden 17537)", "hellfire.json 348305 (Kargath as self-styled warchief; how the fel orcs come to be is the citadel's secret)", "creature_text 17307 group 0 (Soon your people will kneel to MY lord!, said in every fight when the sentries fall)"], "notes": "Check: the garbled seal phrase fixed; the closing line rested on Vazruden's random aggro variants (17537 group 1, not heard in every fight) and now rests on 17307's intro yell, said in every fight. Before: The Illidan reveal that hellfire.json 348305 left for this file (its notes: 'Illidan's Fel Horde' made 'a new Fel Horde' because 9587/9588 reveal it). Opening on ACCEPT 9587/9588 (item-started, QuestType 2, Flags 128, not auto-complete; filed under 3483 Hellfire Peninsula, so check_staged warns; no zone file uses them): only the letter as found and the open question. Part 1 on DONE 9587/9588, whose reward texts are the same for both commanders. The follow-up The Blood is Life (9589/9590) is told in the Blood Furnace file. Faction 0: 9587 Alliance only, 9588 Horde only."}
+ {
+  "id": 356200,
+  "kind": 0,
+  "zone": 3562,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Hellfire Ramparts",
+  "body": "The Hellfire Ramparts are the battlements on the outer face of Hellfire Citadel, the first of its defenses that any attacker from the peninsula must climb. The Fel Horde holds them in strength: Bonechewer and Bleeding Hollow warriors walk the walls, Shattered Hand warhounds wait to be loosed, and Watchkeeper Gargolmar commands the watch. A demon, Omor the Unscarred, holds a stretch of the wall, and at the far end a herald circles overhead on his drake.",
+  "triggers": [
+   [
+    1,
+    3562
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Honor Hold and Thrallmar, caught between the citadel and the Legion, mean to break the walls while the Legion's eyes are on the Dark Portal, so that an army can come close enough to strike at the fortress.",
+    "triggers": [
+     [
+      4,
+      9572
+     ],
+     [
+      4,
+      9575
+     ]
+    ],
+    "sources": [
+     "zones/hellfire_ramparts.txt (map 543: 3562 and its unreachable sub-area 3563 only)"
+    ]
+   }
+  ],
+  "related": [
+   90000064,
+   348305,
+   356203
+  ],
+  "sources": [
+   "zones/hellfire_ramparts.txt (map 543: 3562 and its unreachable sub-area 3563 only)",
+   "DB spawns map 543: Bonechewer Hungerer 17259, Ravener 17264, Destroyer 17271, Ripper 17281, Beastmaster 17455; Bleeding Hollow Darkcaster 17269, Archer 17270, Scryer 17478; Shattered Hand Warhound 17280; Hellfire Watcher 17309 (Watchkeeper's Subordinate); bosses 17306, 17307, 17308",
+   "creature_text 17264 group 1 (keep a close watch on these ramparts, intruders could approach at any time), 17271 group 1, 17455 groups 0-1 (release the warhounds)",
+   "boss_vazruden_the_herald.cpp (Vazruden the Herald 17307 circles above the far battlement; sentries; Vazruden 17537 and Nazan 17536 come down)",
+   "quests 9572 and 9575 descriptions (Thrallmar and Honor Hold caught between the citadel and the Legion; first break through the ramparts)",
+   "creature_text 17306 groups 0 (fresh meat has somehow breached our citadel; be wary of any intruders), 1, 3 (this may hurt a little)",
+   "creature_template 17309 Hellfire Watcher, subname Watchkeeper's Subordinate",
+   "boss_watchkeeper_gargolmar.cpp",
+   "quests 9572/9575 (Watchkeeper Gargolmar named as a leader of the ramparts)",
+   "creature_text 17308 groups 0 (You dare stand against ME? Your insolence will be your death), 1 (Feast, my pet! Eat your fill!), 2 (A-kreesh, on cursing)",
+   "creature_template 17308 type 3 (demon), faction 90",
+   "boss_omor_the_unscarred.cpp (Summon Fiendish Hound, curse)",
+   "warcraft.wiki.gg/wiki/Omor_the_Unscarred",
+   "quests 9572 (Stok'ton 17493 to Caza'rez 17558, Horde) and 9575 (Lieutenant Chadwick 17557 to Gunny 17479, Alliance) descriptions, log text and reward text",
+   "quest_template_addon PrevQuestID 9572 <- 10124, 9575 <- 10142 (after the Legion Front chain told by hellfire.json 348333)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 356203,
+  "kind": 2,
+  "zone": 3562,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Vazruden the Herald",
+  "body": "Vazruden the Herald guards the far end of the Hellfire Ramparts, circling above it on his drake Nazan until he comes down to meet intruders himself. Soon, he promises, their people will kneel to his lord. Whose herald he is he does not say, though the fel orcs of the citadel name no lord but Kargath Bladefist.",
+  "triggers": [
+   [
+    3,
+    17537
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "On his body was a letter sealed with a blood-red I, and it was signed by Illidan. The Fel Horde may call Kargath warchief, but their herald answered to the Betrayer.",
+    "triggers": [
+     [
+      5,
+      9587
+     ],
+     [
+      5,
+      9588
+     ],
+     [
+      4,
+      11354
+     ]
+    ],
+    "sources": [
+     "creature_text 17307 group 0 (You have faced many challenges... Soon your people will kneel to MY lord!)"
+    ]
+   }
+  ],
+  "related": [
+   92000009,
+   90000064,
+   371403
+  ],
+  "sources": [
+   "creature_text 17307 group 0 (You have faced many challenges... Soon your people will kneel to MY lord!)",
+   "creature_text 17537 groups 0-3",
+   "boss_vazruden_the_herald.cpp (controller 17307 circles; two Hellfire Sentries; when they die it calls Vazruden 17537 and Nazan 17536)",
+   "quests 9572/9575 (the drake, Nazan)",
+   "quests 9587, 9588, 11354",
+   "warcraft.wiki.gg/wiki/Vazruden_the_Herald",
+   "quests 9587 and 9588 description and reward text (started by Ominous Letter 23890/23892, dropped by Vazruden 17537)",
+   "hellfire.json 348305 (Kargath as self-styled warchief; how the fel orcs come to be is the citadel's secret)",
+   "creature_text 17307 group 0 (Soon your people will kneel to MY lord!, said in every fight when the sentries fall)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
 ]

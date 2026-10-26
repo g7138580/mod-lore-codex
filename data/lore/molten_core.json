@@ -1,0 +1,122 @@
+[
+ {
+  "id": 271700,
+  "kind": 0,
+  "zone": 2717,
+  "sort": 0,
+  "faction": 0,
+  "title": "Molten Core",
+  "body": "The Molten Core lies at the very bottom of Blackrock Mountain, beneath the depths of the Dark Iron city: the domain of the Firelord, a world of lava and burning stone. Core hounds and fire elementals walk its halls, giants of molten rock guard its passages, and fiery runes on its floors are tended by the Firelord's captains. Nothing short of an army can hope to enter it and live.",
+  "triggers": [
+   [
+    1,
+    2717
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Duke Hydraxis of the Waterlords wants the hands of the Firelord's captains, Lucifron, Sulfuron, Gehennas and Shazzrah: their deaths would deal the lords of fire a terrible blow.",
+    "triggers": [
+     [
+      4,
+      6824
+     ],
+     [
+      5,
+      6824
+     ]
+    ],
+    "sources": [
+     "Molten Core quests 6822, 6824; creature_text 12018"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Among the Firelord's lieutenants here are Baron Geddon and Garr, who betrayed Thunderaan, Prince of Air, in the Elemental Sundering.",
+    "triggers": [
+     [
+      3,
+      12056
+     ],
+     [
+      3,
+      12057
+     ]
+    ],
+    "sources": [
+     "Molten Core quests 6822, 6824; creature_text 12018"
+    ]
+   }
+  ],
+  "related": [
+   91000018,
+   271701,
+   1613
+  ],
+  "sources": [
+   "Molten Core quests 6822, 6824; creature_text 12018"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 271701,
+  "kind": 2,
+  "zone": 2717,
+  "sort": 0,
+  "faction": 0,
+  "title": "Ragnaros the Firelord",
+  "body": "Ragnaros the Firelord, ancient when this world was young, rules the Molten Core from a lake of fire at its heart, the master whose coming made Blackrock Mountain. His steward, Majordomo Executus, leads the Sons of the Living Flame and guards the way to his lair. Ragnaros wields the great hammer Sulfuras, and those who face him are purged by fire.",
+  "triggers": [
+   [
+    3,
+    11502
+   ],
+   [
+    2,
+    12018
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Beaten, Executus submitted and went to summon his lord. Woken too soon, Ragnaros named his steward a failure who had let insects run through the hallowed Core, and destroyed him.",
+    "triggers": [
+     [
+      2,
+      12018
+     ],
+     [
+      3,
+      11502
+     ]
+    ],
+    "sources": [
+     "creature_text 11502, 12018"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Firelord's form in this world was broken in his own lair, though no mortal blade can end him: he is the living flame.",
+    "triggers": [
+     [
+      3,
+      11502
+     ]
+    ],
+    "sources": [
+     "creature_text 11502, 12018"
+    ]
+   }
+  ],
+  "related": [
+   91000018,
+   90000010,
+   271700
+  ],
+  "sources": [
+   "creature_text 11502, 12018"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

@@ -1,0 +1,361 @@
+[
+ {
+  "id": 345700,
+  "kind": 0,
+  "zone": 3457,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Karazhan",
+  "body": "Inside Karazhan, the tower of Medivh, time does not run as it should. Its stewards and servants still keep the house as though their master were about to come home, guests linger at a dinner that never ends, and ghosts walk the stables and the halls. The Violet Eye has sent agents inside for years, and few have come back. Somewhere at the top of the tower, something has come that does not belong.",
+  "triggers": [
+   [
+    1,
+    3457
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Koren, the tower's blacksmith, was in the Violet Eye's pay. Now he remembers nothing but making horseshoes, over and over, and the Eye's agent Keanna is confirmed dead.",
+    "triggers": [
+     [
+      4,
+      9840
+     ],
+     [
+      4,
+      9843
+     ],
+     [
+      2,
+      16388
+     ]
+    ],
+    "sources": [
+     "Karazhan quests 9840, 9843; Koren gossip 7435"
+    ]
+   }
+  ],
+  "related": [
+   4107,
+   91000017,
+   4111
+  ],
+  "sources": [
+   "Karazhan quests 9840, 9843; Koren gossip 7435"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 345701,
+  "kind": 2,
+  "zone": 3457,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Moroes",
+  "body": "Moroes is the steward of Karazhan, and he goes on keeping the tower as he always has. The Master is deep in study, he tells visitors, or resting after his labors, or meeting with his apprentice; the Master will return from Stormwind soon. Unannounced guests mean one more for dinner this evening, and he never has enough time.",
+  "triggers": [
+   [
+    3,
+    15687
+   ]
+  ],
+  "related": [
+   345700,
+   91000017
+  ],
+  "sources": [
+   "creature_text 15687"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 345702,
+  "kind": 1,
+  "zone": 3457,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Opera House",
+  "body": "Karazhan's opera house still puts on its plays, and Barnes, the stage manager, has everything in place for his visitors' big debut. Each evening's presentation is a different tale, a lost girl and a wicked crone, a grandmother who is not what she seems, or a forbidden love that ends as such loves do, and the visitors find themselves cast in the parts.",
+  "triggers": [
+   [
+    2,
+    16812
+   ],
+   [
+    3,
+    17534
+   ],
+   [
+    3,
+    17533
+   ],
+   [
+    3,
+    17521
+   ],
+   [
+    3,
+    18168
+   ]
+  ],
+  "related": [
+   345700
+  ],
+  "sources": [
+   "Barnes gossip 7421; creature_text 16812"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 345703,
+  "kind": 2,
+  "zone": 3457,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Shade of Aran",
+  "body": "The Shade of Aran haunts the library of Karazhan, a tormented old wizard who begs to be left alone: please, no more, his son has gone mad. He is Nielas Aran, Medivh's father, and he is no simple jester, he insists; his son is powerful, but he has powers of his own.",
+  "triggers": [
+   [
+    3,
+    16524
+   ],
+   [
+    4,
+    9640
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Violet Eye's agent Kamsis gave Medivh's journal to Aran, because he asked for it so nicely, and he was the master's father, after all.",
+    "triggers": [
+     [
+      4,
+      9640
+     ]
+    ],
+    "sources": [
+     "Karazhan quest 9640; creature_text 16524"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Struck down at last, the shade of the old wizard did not curse his killers. He sighed that the nightmare was over.",
+    "triggers": [
+     [
+      3,
+      16524
+     ]
+    ],
+    "sources": [
+     "Karazhan quest 9640; creature_text 16524"
+    ]
+   }
+  ],
+  "related": [
+   345704,
+   91000017
+  ],
+  "sources": [
+   "Karazhan quest 9640; creature_text 16524"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 345704,
+  "kind": 1,
+  "zone": 3457,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Guardian's Library",
+  "body": "The Guardian's Library is where the Violet Eye's agents went looking for Medivh's journal and never came out. Wravien, Gradav and Kamsis are still there, alive, lost in the books and scrolls; each has forgotten what they came for, and each is sure that one of the others must have found it by now.",
+  "triggers": [
+   [
+    2,
+    16813
+   ],
+   [
+    2,
+    16814
+   ],
+   [
+    2,
+    16815
+   ],
+   [
+    4,
+    9630
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Medivh's journal is not like other journals. It does not merely record his memories: it holds them, and read on the Master's Terrace a page will show what it remembers.",
+    "triggers": [
+     [
+      4,
+      9645
+     ]
+    ],
+    "sources": [
+     "Karazhan quests 9630, 9638, 9639, 9645"
+    ]
+   }
+  ],
+  "related": [
+   345703,
+   345705,
+   4111
+  ],
+  "sources": [
+   "Karazhan quests 9630, 9638, 9639, 9645"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 345705,
+  "kind": 2,
+  "zone": 3457,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Nightbane",
+  "body": "Nightbane is what became of Arcanagos, a dragon of the blue flight, whose charred remains lie at the foot of Karazhan. An urn on the Master's Terrace can bring them back to life, and the stars predict that whoever does it must destroy what rises, or let a great terror loose upon the skies.",
+  "triggers": [
+   [
+    3,
+    17225
+   ],
+   [
+    4,
+    9644
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The journal's page shows the Master's Terrace long ago: Arcanagos warned Medivh that a dark power sought to use him. Medivh would not be bullied, and wove his own essence into a spell that burned the dragon from within.",
+    "triggers": [
+     [
+      5,
+      9645
+     ]
+    ],
+    "sources": [
+     "Karazhan quests 9644, 9645; creature_text 17225, 17651, 17652"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "From the risen dragon came a fragment of Medivh's own essence, faint but enough, Alturus said, to tell the Violet Eye much about its master.",
+    "triggers": [
+     [
+      5,
+      9644
+     ]
+    ],
+    "sources": [
+     "Karazhan quests 9644, 9645; creature_text 17225, 17651, 17652"
+    ]
+   }
+  ],
+  "related": [
+   90000063,
+   91000017,
+   345704
+  ],
+  "sources": [
+   "Karazhan quests 9644, 9645; creature_text 17225, 17651, 17652"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 345706,
+  "kind": 1,
+  "zone": 3457,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Gamesman's Hall",
+  "body": "The Gamesman's Hall holds a great chessboard, and the echo of Medivh waits beside it. To pass beyond his hall, he says, visitors must defeat him in a game of skill, and he plays as his living self might have, coolly, with an eye on every move, and not above cheating.",
+  "triggers": [
+   [
+    2,
+    16816
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Bested, the echo let the curse binding the doors of the hall lift, and the halls of Karazhan shook as they opened.",
+    "triggers": [
+     [
+      2,
+      16816
+     ]
+    ],
+    "sources": [
+     "Echo of Medivh gossip 8404; creature_text 16816"
+    ]
+   }
+  ],
+  "related": [
+   91000017,
+   345700
+  ],
+  "sources": [
+   "Echo of Medivh gossip 8404; creature_text 16816"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 345707,
+  "kind": 2,
+  "zone": 3457,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Prince Malchezaar",
+  "body": "Prince Malchezaar is an eredar lord of the Burning Legion who has taken the top of Karazhan for his own. The Violet Eye's agent Keanna sensed his coming before she died. Karazhan is a portal into the nether, a beacon shining into other worlds, and in his hands, he boasts, all realities and all dimensions are open to him.",
+  "triggers": [
+   [
+    3,
+    15690
+   ],
+   [
+    4,
+    9844
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "When the prince fell, the Violet Eye's readings of the tower began to return to normal, and Alturus sent word to Cedric in Dalaran.",
+    "triggers": [
+     [
+      5,
+      9844
+     ]
+    ],
+    "sources": [
+     "Karazhan quest 9844; creature_text 15690"
+    ]
+   }
+  ],
+  "related": [
+   90000065,
+   345700,
+   4111
+  ],
+  "sources": [
+   "Karazhan quest 9844; creature_text 15690"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

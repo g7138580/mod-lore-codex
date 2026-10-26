@@ -1,0 +1,108 @@
+[
+ {
+  "id": 449400,
+  "kind": 0,
+  "zone": 4494,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Ahn'kahet: The Old Kingdom",
+  "body": "Ahn'kahet, the Old Kingdom, lies far beneath Azjol-Nerub, the ancient city from which the Nerubians came. The Scourge's Ahn'kahar hold its upper halls, web winders, slashers and spell flingers among great crawling beasts, while a San'layn prince keeps watch unseen. Deeper still the caverns turn strange: robed cultists gather in the dark, and beings with no faces stand among them.",
+  "triggers": [
+   [
+    1,
+    4494
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Fighting the Scourge, the Nerubians dug deeper as they lost ground, and in desperation they dug too deep. They exposed a tendril of an Old God's will, the Faceless, and caught between two enemies they lost the war and their home.",
+    "triggers": [
+     [
+      4,
+      13187
+     ]
+    ],
+    "sources": [
+     "Ahn'kahet spawns (map 619); Ahn'kahet quest 13187; creature_text 29308"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Prince Taldaram of the San'layn called himself the watcher unseen. He hungered for warm blood after too long without it, and died still thirsting.",
+    "triggers": [
+     [
+      3,
+      29308
+     ]
+    ],
+    "sources": [
+     "Ahn'kahet spawns (map 619); Ahn'kahet quest 13187; creature_text 29308"
+    ]
+   }
+  ],
+  "related": [
+   427700,
+   90000080,
+   449401
+  ],
+  "sources": [
+   "Ahn'kahet spawns (map 619); Ahn'kahet quest 13187; creature_text 29308"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 449401,
+  "kind": 2,
+  "zone": 4494,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Jedoga Shadowseeker",
+  "body": "Jedoga Shadowseeker leads the Twilight's Hammer in Ahn'kahet, here on the very borders of her master's domain. She promises her cultists immortality if they pledge themselves fully to Yogg-Saron, calls the devoted forward to be sacrificed as gifts for him, and swears that the elements will rise against the civilized world and only the faithful will be spared.",
+  "triggers": [
+   [
+    3,
+    29310
+   ]
+  ],
+  "related": [
+   90000009,
+   449400,
+   449402
+  ],
+  "sources": [
+   "creature_text 29310, 30385"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 449402,
+  "kind": 2,
+  "zone": 4494,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Herald Volazj",
+  "body": "Herald Volazj is one of the Faceless, the leader of the Old God's creatures in Ahn'kahet. He speaks mostly in a tongue no one should understand, and when he speaks plainly it is of them: they who dine on lost souls and know only hunger, who do not die and do not live, for they are outside the cycle. Where one falls, he promises, many shall take its place.",
+  "triggers": [
+   [
+    3,
+    29311
+   ],
+   [
+    4,
+    13187
+   ]
+  ],
+  "related": [
+   449400,
+   449401
+  ],
+  "sources": [
+   "Ahn'kahet quests 13187, 13255; creature_text 29311"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

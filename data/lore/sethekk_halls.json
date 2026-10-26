@@ -1,0 +1,230 @@
+[
+ {
+  "id": 379100,
+  "kind": 0,
+  "zone": 3791,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Sethekk Halls",
+  "body": "The Sethekk Halls are the wing of Auchindoun held by the Sethekk, a sect of arakkoa who have made the draenei ruins their temple. Their priests, oracles and talon lords fill the vaulted halls, crying out in Terokk's name and sworn to protect the Veil. Some of them seem faded, lost out of time, and dark hawks and cobalt serpents answer to their call.",
+  "triggers": [
+   [
+    1,
+    3791
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The exile Isfar says the Sethekk marched out of Skettis with great fanfare when Auchindoun exploded, sure it was an omen of their master's arrival, and took up the ruins to face their god.",
+    "triggers": [
+     [
+      4,
+      10097
+     ]
+    ],
+    "sources": [
+     "Auchindoun quests 10097, 10098; item 32888 page 3029; creature_text 18318-18328"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "They carried away from Skettis the relics of Terokk, the ancient king who vanished long ago: his mask, his quill and his saga, cherished by every arakkoa.",
+    "triggers": [
+     [
+      4,
+      10098
+     ]
+    ],
+    "sources": [
+     "Auchindoun quests 10097, 10098; item 32888 page 3029; creature_text 18318-18328"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Restored to Isfar, the relics will go home to Skettis. By returning them he hopes to begin to atone for his part in the crimes of the Sethekk.",
+    "triggers": [
+     [
+      5,
+      10098
+     ]
+    ],
+    "sources": [
+     "Auchindoun quests 10097, 10098; item 32888 page 3029; creature_text 18318-18328"
+    ]
+   }
+  ],
+  "related": [
+   90000067,
+   351923,
+   351916
+  ],
+  "sources": [
+   "Auchindoun quests 10097, 10098; item 32888 page 3029; creature_text 18318-18328"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 379101,
+  "kind": 2,
+  "zone": 3791,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Darkweaver Syth",
+  "body": "Darkweaver Syth is one of the leaders of the Sethekk, a caster who calls elementals of fire, frost, shadow and arcane to fight for him and cackles over his nice pets. In a cage in his halls he keeps his own sister, Lakka, who begs anyone passing to kill him so that she can go free.",
+  "triggers": [
+   [
+    3,
+    18472
+   ],
+   [
+    4,
+    10097
+   ],
+   [
+    2,
+    18956
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "His brother Isfar came to doubt Syth and his ally Ikiss. Syth had him cast out of the halls, but would not let Lakka go with him.",
+    "triggers": [
+     [
+      4,
+      10097
+     ]
+    ],
+    "sources": [
+     "Auchindoun quests 10097, 10098; Lakka gossip 7868; creature_text 18472, 18956"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In the Sethekk rituals Syth wore the mask of Terokk himself, one of the relics his people carried away from Skettis.",
+    "triggers": [
+     [
+      4,
+      10098
+     ]
+    ],
+    "sources": [
+     "Auchindoun quests 10097, 10098; Lakka gossip 7868; creature_text 18472, 18956"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Lakka is free and bound for Shattrath. Isfar cannot forgive himself his brother's death, and will perform the death rites for him in Skettis, so that his spirit may atone.",
+    "triggers": [
+     [
+      5,
+      10097
+     ]
+    ],
+    "sources": [
+     "Auchindoun quests 10097, 10098; Lakka gossip 7868; creature_text 18472, 18956"
+    ]
+   }
+  ],
+  "related": [
+   379100,
+   379102,
+   90000067
+  ],
+  "sources": [
+   "Auchindoun quests 10097, 10098; Lakka gossip 7868; creature_text 18472, 18956"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 379102,
+  "kind": 2,
+  "zone": 3791,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Talon King Ikiss",
+  "body": "Talon King Ikiss rules the Sethekk from the innermost hall, an arakkoa lord whose eyes light up at trinkets: there is power in them, he cackles, great power, and woe to anyone who comes near his own. When pressed he gathers arcane force enough to fill his hall.",
+  "triggers": [
+   [
+    3,
+    18473
+   ],
+   [
+    4,
+    10098
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Ikiss carries the quill of Terokk as a sign of his authority, and Isfar believes he does it to convince his followers that he is Terokk reborn.",
+    "triggers": [
+     [
+      4,
+      10098
+     ]
+    ],
+    "sources": [
+     "Auchindoun quest 10098; item 32888 page 3029; creature_text 18473"
+    ]
+   }
+  ],
+  "related": [
+   379100,
+   379101,
+   351923
+  ],
+  "sources": [
+   "Auchindoun quest 10098; item 32888 page 3029; creature_text 18473"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 379103,
+  "kind": 2,
+  "zone": 3791,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Anzu",
+  "body": "Anzu is the raven god of arakkoa legend, a great dark bird. Called back into the world at the Raven's Claw in the Sethekk Halls, he cries for his children to awaken and assist their master, and croaks that the spells cast at him are weak magics, easy to turn against their casters.",
+  "triggers": [
+   [
+    3,
+    23035
+   ],
+   [
+    4,
+    11001
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "To the druids of the Cenarion Refuge he is an enemy in the Emerald Dream. A moonstone infused with the essences of three bird spirits can lure him out, if he believes his followers have gathered to welcome him back into the world.",
+    "triggers": [
+     [
+      4,
+      11001
+     ]
+    ],
+    "sources": [
+     "druid quests 10994, 11001; creature_text 23035"
+    ]
+   }
+  ],
+  "related": [
+   379100,
+   90000067,
+   90000048
+  ],
+  "sources": [
+   "druid quests 10994, 11001; creature_text 23035"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

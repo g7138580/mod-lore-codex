@@ -1,0 +1,216 @@
+[
+ {
+  "id": 267700,
+  "kind": 0,
+  "zone": 2677,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 1,
+  "title": "Blackwing Lair",
+  "body": "Blackwing Lair is the inner sanctum of the lord of the black flight, high in the peak of Blackrock Spire, reached only by those who bear the right mark. Here Deathwing's son keeps his court and his laboratories, where black dragonkin and the Blackwing legion tend his work, and where eggs of a new brood lie waiting in their hundreds.",
+  "triggers": [
+   [
+    1,
+    2677
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The bronze dragonflight wants the Broodlord Lashlayer dead, the beast that guards the Halls of Strife before the inner sanctum. Whoever does it may be the first in a thousand years to earn the Brood's favor.",
+    "triggers": [
+     [
+      4,
+      8288
+     ],
+     [
+      5,
+      8288
+     ]
+    ],
+    "sources": [
+     "Blackwing Lair quest 8288"
+    ]
+   }
+  ],
+  "related": [
+   90000024,
+   158300,
+   267704
+  ],
+  "sources": [
+   "Blackwing Lair quest 8288"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 267701,
+  "kind": 2,
+  "zone": 2677,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 1,
+  "title": "Razorgore the Untamed",
+  "body": "Razorgore the Untamed is a great black dragon kept in the first hall of the lair, bound by an orb that Grethok the Controller holds, to guard the eggs of the new brood. Those eggs, he warns, are more precious than any intruder knows, and he swears they will pay for every one that is broken.",
+  "triggers": [
+   [
+    3,
+    12435
+   ],
+   [
+    3,
+    12557
+   ]
+  ],
+  "related": [
+   267700,
+   267704
+  ],
+  "sources": [
+   "creature_text 12435"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 267702,
+  "kind": 2,
+  "zone": 2677,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 1,
+  "title": "Vaelastrasz the Corrupt",
+  "body": "Vaelastrasz of the red flight, who came to the Spire to stand against Nefarian, matched his power against the Lord of Blackrock and lost. Nefarius consumed his energy with ease and filled him with black fire, and now he begs the heroes who find him to kill him before he loses all control.",
+  "triggers": [
+   [
+    2,
+    13020
+   ],
+   [
+    3,
+    13020
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "For a thousand years Vaelastrasz had kept a shard of the Scepter of the Shifting Sands. Nefarius took it from him and means to destroy it.",
+    "triggers": [
+     [
+      4,
+      8730
+     ]
+    ],
+    "sources": [
+     "Vaelastrasz gossip 21333; quest 8730; creature_text 13020"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "With his death his soul found its ease, and the Aspects, a dragon said, watch the shard's new bearer with great interest.",
+    "triggers": [
+     [
+      5,
+      8730
+     ]
+    ],
+    "sources": [
+     "Vaelastrasz gossip 21333; quest 8730; creature_text 13020"
+    ]
+   }
+  ],
+  "related": [
+   158304,
+   90000079,
+   267704
+  ],
+  "sources": [
+   "Vaelastrasz gossip 21333; quest 8730; creature_text 13020"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 267703,
+  "kind": 2,
+  "zone": 2677,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 1,
+  "title": "Chromaggus",
+  "body": "Chromaggus is the fruit of Nefarian's experiments, a dragon of many colors bred to hold the powers of every flight and to answer to none of their Aspects. He waits in his own hall beyond the Halls of Strife, his scales shifting from one hue to the next, his breath a different ruin with every change.",
+  "triggers": [
+   [
+    3,
+    14020
+   ]
+  ],
+  "related": [
+   158304,
+   267704
+  ],
+  "sources": [
+   "Vaelan gossip 12044"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 267704,
+  "kind": 2,
+  "zone": 2677,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 1,
+  "title": "Nefarian",
+  "body": "Nefarian, son of Deathwing and Lord of Blackrock, walks the Spire in the guise of a man, Lord Victor Nefarius, and carries on his father's work. Time, he says, is his greatest ally, and the game mortals think they play in fact plays them. When his minions fail he takes his true form and calls on his birthright, the fury of the earth.",
+  "triggers": [
+   [
+    3,
+    11583
+   ],
+   [
+    4,
+    7781
+   ],
+   [
+    4,
+    7783
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Beaten, he raised his fallen servants to fight again, and died crying that he was the master here and that mortals were nothing to his kind.",
+    "triggers": [
+     [
+      3,
+      11583
+     ]
+    ],
+    "sources": [
+     "creature_text 11583, 10162; Lord Victor Nefarius gossip 21330-21332; quests 7781, 7783"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Thrall greeted the great scarred head with a warning: the son of Deathwing lay dead, and surely the evil one stirred.",
+    "triggers": [
+     [
+      5,
+      7783
+     ]
+    ],
+    "sources": [
+     "creature_text 11583, 10162; Lord Victor Nefarius gossip 21330-21332; quests 7781, 7783"
+    ]
+   }
+  ],
+  "related": [
+   90000024,
+   215901,
+   158304
+  ],
+  "sources": [
+   "creature_text 11583, 10162; Lord Victor Nefarius gossip 21330-21332; quests 7781, 7783"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

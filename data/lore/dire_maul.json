@@ -1,0 +1,241 @@
+[
+ {
+  "id": 255700,
+  "kind": 0,
+  "zone": 2557,
+  "sort": 0,
+  "faction": 0,
+  "title": "Dire Maul",
+  "body": "Within the walls of Dire Maul lie the sealed wings of Eldre'Thalas, the city of Queen Azshara's Highborne. In the east, the Warpwood Quarter, satyrs and twisted treants have overrun the gardens. In the west the city's last Highborne still keep their halls, where strange pylons hum and ghosts of their people drift. In the north the Gordok ogres have made a kingdom of the old commons, and the strongest of them wears the crown.",
+  "triggers": [
+   [
+    1,
+    2557
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "A blood elf mage, Lethtendris, fled into the Warpwood Quarter with a web she made to siphon the city's tainted magic, and both the Alliance and the Horde want it taken from her.",
+    "triggers": [
+     [
+      4,
+      7488
+     ],
+     [
+      4,
+      7489
+     ]
+    ],
+    "sources": [
+     "Dire Maul quests 7488, 7489"
+    ]
+   }
+  ],
+  "related": [
+   35708,
+   90000057,
+   90000026
+  ],
+  "sources": [
+   "Dire Maul quests 7488, 7489"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 255701,
+  "kind": 1,
+  "zone": 2557,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Warpwood Quarter",
+  "body": "The Warpwood Quarter is the eastern wing of Dire Maul, its old gardens overgrown and corrupted. Satyrs hold it, and the trees themselves have turned: Tendris Warpwood calls the ancients of the grove to rise against intruders. Its master is the satyr Alzzin the Wildshaper, and the imp Pusillin hides among them with a stolen key to the city's sealed halls.",
+  "triggers": [
+   [
+    3,
+    11489
+   ],
+   [
+    3,
+    11492
+   ],
+   [
+    3,
+    11490
+   ],
+   [
+    3,
+    14327
+   ],
+   [
+    4,
+    7441
+   ]
+  ],
+  "related": [
+   255700,
+   90000050
+  ],
+  "sources": [
+   "Dire Maul quest 7441; creature_text 11489"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 255702,
+  "kind": 2,
+  "zone": 2557,
+  "sort": 0,
+  "faction": 0,
+  "title": "Prince Tortheldrin",
+  "body": "Prince Tortheldrin has ruled Eldre'Thalas for ten thousand years. He leads the Shen'dralar, Queen Azshara's most revered arcanists, in whose halls her most important demands were carried out in secret. After the Well was destroyed he raised the pylons of the west wing, and behind their great field he keeps a demon of immense power, Immol'thar, imprisoned.",
+  "triggers": [
+   [
+    3,
+    11486
+   ],
+   [
+    3,
+    11496
+   ],
+   [
+    2,
+    14358
+   ],
+   [
+    4,
+    7461
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The demon was meant as a battery for the city's magic. As the cost of holding it grew, the Prince fed it with his own people: the Highborne ghosts in the halls were slain by Tortheldrin himself.",
+    "triggers": [
+     [
+      2,
+      14358
+     ],
+     [
+      4,
+      7461
+     ]
+    ],
+    "sources": [
+     "Shen'dralar Ancient gossip 5723-5729; quests 7461, 1318, 7703"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Long ago Tortheldrin stole the Gauntlet of Gordok Might from an ogre king, and every Gordok king since has failed to win it back.",
+    "triggers": [
+     [
+      4,
+      1318
+     ],
+     [
+      4,
+      7703
+     ]
+    ],
+    "sources": [
+     "Shen'dralar Ancient gossip 5723-5729; quests 7461, 1318, 7703"
+    ]
+   }
+  ],
+  "related": [
+   90000057,
+   255703,
+   255704
+  ],
+  "sources": [
+   "Shen'dralar Ancient gossip 5723-5729; quests 7461, 1318, 7703"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 255703,
+  "kind": 1,
+  "zone": 2557,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Athenaeum",
+  "body": "The Athenaeum is the library of the Shen'dralar in the west wing of Dire Maul, kept by lorekeepers who have indexed ten thousand years of existence and find present troubles meaningless. With its chest beneath the stair and its shelves of old knowledge, it is the one place in the city where its Highborne will deal with outsiders.",
+  "triggers": [
+   [
+    2,
+    14368
+   ],
+   [
+    2,
+    16032
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Foror's Compendium, a book of dragon slaying sealed in the Athenaeum, was found with its seal broken. Lydros is not pleased: its secrets now lie open to any with the wit to read them.",
+    "triggers": [
+     [
+      5,
+      7507
+     ]
+    ],
+    "sources": [
+     "Lorekeeper Lydros gossip 5747; quest 7507 (Foror's Compendium, its seal broken; reward text)"
+    ]
+   }
+  ],
+  "related": [
+   255702,
+   90000057
+  ],
+  "sources": [
+   "Lorekeeper Lydros gossip 5747; quest 7507 (Foror's Compendium, its seal broken; reward text)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 255704,
+  "kind": 2,
+  "zone": 2557,
+  "sort": 0,
+  "faction": 0,
+  "title": "King Gordok",
+  "body": "King Gordok rules the ogres who have made the north wing of Dire Maul their kingdom, and he means to stay king forever. Among the Gordok the crown passes to whoever kills the king, and Cho'Rush the Observer will serve the next one as faithfully as the last.",
+  "triggers": [
+   [
+    3,
+    11501
+   ],
+   [
+    2,
+    14324
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Made king, the victor can try for the Gauntlet of Gordok Might, an artifact marked with magic older than the Gordok themselves, which only the one true king may recover.",
+    "triggers": [
+     [
+      5,
+      7703
+     ]
+    ],
+    "sources": [
+     "Dire Maul quests 1318, 7703; creature_text 11501; Cho'Rush gossip 5742"
+    ]
+   }
+  ],
+  "related": [
+   90000026,
+   255702,
+   35708
+  ],
+  "sources": [
+   "Dire Maul quests 1318, 7703; creature_text 11501; Cho'Rush gossip 5742"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

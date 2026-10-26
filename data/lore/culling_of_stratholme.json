@@ -1,0 +1,69 @@
+[
+ {
+  "id": 410000,
+  "kind": 0,
+  "zone": 4100,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Culling of Stratholme",
+  "body": "The timeway opens onto the day Prince Arthas came to Stratholme, before the city fell. The plague is already in the grain, Uther and Jaina ride with the prince, and Chromie of the bronze flight waits by the road with work for anyone she can find. In the city the townsfolk go about an ordinary market day, footmen and knights of Lordaeron gather at the gates, and something that does not belong here has come too.",
+  "triggers": [
+   [
+    1,
+    4100
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Infinite Dragonflight means to deceive Arthas into believing none of the grain carries the plague, so that he never has to make the fateful decision to cull the city. Chromie means for him to make it.",
+    "triggers": [
+     [
+      4,
+      13149
+     ]
+    ],
+    "sources": [
+     "Culling of Stratholme spawns (map 595); Culling of Stratholme quests 13149, 13151; creature_text 26497, 26499, 26527, 26528, 26533"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "At the gates Arthas ordered the city purged. Uther refused, Arthas relieved him of his command and called it treason, and Jaina could not watch. You have just crossed a terrible threshold, Uther told him.",
+    "triggers": [
+     [
+      5,
+      13151
+     ]
+    ],
+    "sources": [
+     "Culling of Stratholme spawns (map 595); Culling of Stratholme quests 13149, 13151; creature_text 26497, 26499, 26527, 26528, 26533"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Mal'Ganis would not die. Your journey has just begun, young prince, he said: meet me in Northrend, where your true destiny will unfold. Arthas swore to hunt him to the ends of the earth and began planning an expedition.",
+    "triggers": [
+     [
+      5,
+      13151
+     ]
+    ],
+    "sources": [
+     "Culling of Stratholme spawns (map 595); Culling of Stratholme quests 13149, 13151; creature_text 26497, 26499, 26527, 26528, 26533"
+    ]
+   }
+  ],
+  "related": [
+   44007,
+   92000005,
+   90000089,
+   91000005
+  ],
+  "sources": [
+   "Culling of Stratholme spawns (map 595); Culling of Stratholme quests 13149, 13151; creature_text 26497, 26499, 26527, 26528, 26533"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

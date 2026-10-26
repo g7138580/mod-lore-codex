@@ -1,0 +1,124 @@
+[
+ {
+  "id": 119600,
+  "kind": 0,
+  "zone": 1196,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Utgarde Pinnacle",
+  "body": "Utgarde Pinnacle is the higher hall of the vrykul at the top of the crag above Utgarde Keep, the seat of their king. The Ymirjar, the vrykul the Lich King has chosen, hold it now with Dragonflayer fanatics and seers, Scourge hulks lumber through its halls, and treasure lies heaped in its chambers, guarded by those who could not leave it alone.",
+  "triggers": [
+   [
+    1,
+    1196
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Brigg Smallshanks came with his pirate mates for that treasure. They hurled themselves at the gold and turned to rattling bones, cursed; Brigg was only spared because he was knocked down, a wee bit tipsy.",
+    "triggers": [
+     [
+      4,
+      13132
+     ]
+    ],
+    "sources": [
+     "Utgarde Pinnacle spawns (map 575); Utgarde Pinnacle quest 13132; creature_text 26693, 26893"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Skadi the Ruthless rode his drake Grauf over the ramparts, promising a feast to whoever brought him the intruders' heads, until the harpoon launchers on the walls brought the drake down.",
+    "triggers": [
+     [
+      3,
+      26693
+     ]
+    ],
+    "sources": [
+     "Utgarde Pinnacle spawns (map 575); Utgarde Pinnacle quest 13132; creature_text 26693, 26893"
+    ]
+   }
+  ],
+  "related": [
+   49503,
+   90000076,
+   119602
+  ],
+  "sources": [
+   "Utgarde Pinnacle spawns (map 575); Utgarde Pinnacle quest 13132; creature_text 26693, 26893"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 119601,
+  "kind": 2,
+  "zone": 1196,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Svala Sorrowgrave",
+  "body": "Svala was a vrykul who knelt before an image of the Lich King in the Pinnacle and begged for his blessing. He took her sacrifice as proof of her obedience and raised her as a val'kyr, Svala Sorrowgrave, beyond anything she had imagined, and set her a first test: to destroy the uninvited guests.",
+  "triggers": [
+   [
+    3,
+    26668
+   ]
+  ],
+  "related": [
+   119600,
+   90000076,
+   92000005
+  ],
+  "sources": [
+   "creature_text 26668, 29280, 29281"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 119602,
+  "kind": 2,
+  "zone": 1196,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "King Ymiron",
+  "body": "King Ymiron rules the vrykul from the throne of Utgarde Pinnacle, woken from an ancient sleep to serve the Lich King, the death god of his people. He promises to tear the hearts from intruders' chests as gifts for that god, and calls on the spirits of the old kings, Bjorn, Haldor, Ranulf and Tor, to lend him their might.",
+  "triggers": [
+   [
+    3,
+    26861
+   ],
+   [
+    4,
+    13132
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Dying, the ancient king who had sent so many to the death god asked only one thing: what awaited him now.",
+    "triggers": [
+     [
+      3,
+      26861
+     ]
+    ],
+    "sources": [
+     "Utgarde Pinnacle quest 13132; creature_text 26861"
+    ]
+   }
+  ],
+  "related": [
+   91000034,
+   49516,
+   119600
+  ],
+  "sources": [
+   "Utgarde Pinnacle quest 13132; creature_text 26861"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

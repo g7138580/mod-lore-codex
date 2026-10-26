@@ -1,0 +1,159 @@
+[
+ {
+  "id": 384800,
+  "kind": 0,
+  "zone": 3848,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Arcatraz",
+  "body": "The Arcatraz is the prison satellite of Tempest Keep, where the naaru held some of the most dangerous beings they met in their travels. Kael'thas's forces hold it now, and the prison is failing: the bodies of its defenders and warders lie in the halls, and the creatures of the cells roam free, demons and void-things, eredar soul-eaters and soldiers of the Ethereum among them.",
+  "triggers": [
+   [
+    1,
+    3848
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Nexus-Prince Haramad told the Sha'tar how to get in. The key to the Arcatraz is split in two shards, one held by the ancient Warp Splinter in the Botanica, the other by Pathaleon the Calculator in the Mechanar.",
+    "triggers": [
+     [
+      4,
+      10704
+     ]
+    ],
+    "sources": [
+     "Arcatraz spawns (map 552); Tempest Keep quest 10704; Shattrath quest 10886; creature_text 20904"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Not every prisoner is dangerous. The gnome Millhouse Manastorm is a stowaway, A'dal says, who was in the wrong naaru vessel at the wrong time.",
+    "triggers": [
+     [
+      4,
+      10886
+     ]
+    ],
+    "sources": [
+     "Arcatraz spawns (map 552); Tempest Keep quest 10704; Shattrath quest 10886; creature_text 20904"
+    ]
+   }
+  ],
+  "related": [
+   352315,
+   90000052,
+   384802
+  ],
+  "sources": [
+   "Arcatraz spawns (map 552); Tempest Keep quest 10704; Shattrath quest 10886; creature_text 20904"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 384801,
+  "kind": 2,
+  "zone": 3848,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Dalliah and Soccothrates",
+  "body": "Dalliah the Doomsayer and Wrath-Scryer Soccothrates keep the inner halls of the Arcatraz for Kael'thas, and they cannot stand each other. Soccothrates asks intruders whether they have come to kill Dalliah, and whether he may watch; Dalliah calls him an overstuffed peacock and complains that she is forever cleaning up his messes.",
+  "triggers": [
+   [
+    3,
+    20885
+   ],
+   [
+    3,
+    20886
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Whichever of them fell first, the other congratulated the killers: Dalliah had wanted to do that for years, and Soccothrates could only say finally, well done.",
+    "triggers": [
+     [
+      3,
+      20885
+     ],
+     [
+      3,
+      20886
+     ]
+    ],
+    "sources": [
+     "creature_text 20885, 20886"
+    ]
+   }
+  ],
+  "related": [
+   384800,
+   92000002
+  ],
+  "sources": [
+   "creature_text 20885, 20886"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 384802,
+  "kind": 2,
+  "zone": 3848,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Harbinger Skyriss",
+  "body": "Harbinger Skyriss is a servant of the Old Gods, one of the beings the naaru locked away in the Arcatraz. He bears allegiance, he says, to powers untouched by time that no force on this world or beyond can bend, not even the Legion, and he would usher in their vision of conquering every world there is. Controlling a weak mind is a small matter to him.",
+  "triggers": [
+   [
+    3,
+    20912
+   ],
+   [
+    4,
+    10882
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "His voice reached the warden, Mellichar, who released the prisoners one by one for his great one and meant to tell the prince that intruders had done it. Skyriss died saying he was merely one of infinite multitudes.",
+    "triggers": [
+     [
+      3,
+      20912
+     ]
+    ],
+    "sources": [
+     "Tempest Keep quest 10882; creature_text 20904, 20912"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Had he broken free, A'dal says, countless thousands would have died, as they did when another servant of the Old Gods, Skeram, rose on Azeroth.",
+    "triggers": [
+     [
+      5,
+      10882
+     ]
+    ],
+    "sources": [
+     "Tempest Keep quest 10882; creature_text 20904, 20912"
+    ]
+   }
+  ],
+  "related": [
+   384800,
+   90000052,
+   342800
+  ],
+  "sources": [
+   "Tempest Keep quest 10882; creature_text 20904, 20912"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

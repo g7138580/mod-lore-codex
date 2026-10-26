@@ -6,12 +6,79 @@
   "sort": 0,
   "faction": 0,
   "title": "Blackfathom Deeps",
-  "body": "Blackfathom Deeps opens at the northern end of the Zoram Strand, where the forest of Ashenvale meets the sea. It was once a temple of the night elves' moon goddess, Elune, until the Sundering shattered it and sank it beneath the waves. For ages its drowned halls lay undisturbed, until the naga and the satyrs came, drawn by its ancient power. Now Blindlight murlocs crowd the halls nearest the entrance, Blackfathom sea witches and myrmidons hold the great pools beyond, and Fallenroot satyrs stalk the tunnels. The cultists have gathered deeper in, among the ruins of an old shrine, crying that the Old Gods will be restored and that Aku'mai demands more sacrifices. Legend holds that an ancient beast of that name, a favored pet of the Old Gods, has made its lair in the temple's depths. The Argent Dawn and the Earthen Ring both have business with the cult here, and a collector of old lore wants a manuscript said to lie at the bottom.",
+  "body": "Blackfathom Deeps opens at the northern end of the Zoram Strand, where Ashenvale meets the sea. It was once a temple of Elune, until the Sundering shattered it and sank it beneath the waves. For ages its drowned halls lay undisturbed, until the naga and the satyrs came, drawn by its ancient power. Murlocs crowd the halls nearest the entrance, naga hold the great pools beyond, and deeper in the Twilight's Hammer has gathered, crying that Aku'mai demands more sacrifices.",
   "triggers": [
    [
     1,
     719
    ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Argent Dawn has heard that the Twilight's Hammer and the naga have joined forces in the old temple, and the scout it sent to learn more has not come back.",
+    "triggers": [
+     [
+      4,
+      1198
+     ],
+     [
+      4,
+      1199
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Blackfathom_Deeps_(Classic) (partially underwater dungeon in northwestern Ashenvale; temple of Elune sunk beneath the Veiled Sea by the Great Sundering, untouched until the naga and satyrs found it; the Twilight's Hammer guards Aku'mai, a pet of the Old Gods); the pre-Cataclysm official description (legends hold the ancient beast Aku'mai, a favored pet of the Old Gods, has taken up residence in the temple's ruins; the Twilight's Hammer drawn to its presence)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The naga harvest sapphire crystals from the walls of the first tunnels. The spirits of water cling to them, and the cult's aquamancers use them in their summonings.",
+    "triggers": [
+     [
+      4,
+      6563
+     ],
+     [
+      4,
+      6564
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Blackfathom_Deeps_(Classic) (partially underwater dungeon in northwestern Ashenvale; temple of Elune sunk beneath the Veiled Sea by the Great Sundering, untouched until the naga and satyrs found it; the Twilight's Hammer guards Aku'mai, a pet of the Old Gods); the pre-Cataclysm official description (legends hold the ancient beast Aku'mai, a favored pet of the Old Gods, has taken up residence in the temple's ruins; the Twilight's Hammer drawn to its presence)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "A cultist named Lorgus Jett means to use the crystals to appease Aku'mai and bring it back, and with it an era of rule by the Old Gods.",
+    "triggers": [
+     [
+      5,
+      6564
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Blackfathom_Deeps_(Classic) (partially underwater dungeon in northwestern Ashenvale; temple of Elune sunk beneath the Veiled Sea by the Great Sundering, untouched until the naga and satyrs found it; the Twilight's Hammer guards Aku'mai, a pet of the Old Gods); the pre-Cataclysm official description (legends hold the ancient beast Aku'mai, a favored pet of the Old Gods, has taken up residence in the temple's ruins; the Twilight's Hammer drawn to its presence)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "In Auberdine Gershala Nightwhisper studies the naga and satyrs here, elves deformed by demonic magic, to learn what fate awaits the blood elves.",
+    "triggers": [
+     [
+      4,
+      1275
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Blackfathom_Deeps_(Classic) (partially underwater dungeon in northwestern Ashenvale; temple of Elune sunk beneath the Veiled Sea by the Great Sundering, untouched until the naga and satyrs found it; the Twilight's Hammer guards Aku'mai, a pet of the Old Gods); the pre-Cataclysm official description (legends hold the ancient beast Aku'mai, a favored pet of the Old Gods, has taken up residence in the temple's ruins; the Twilight's Hammer drawn to its presence)"
+    ]
+   }
+  ],
+  "related": [
+   90000009,
+   90000055,
+   33103
   ],
   "sources": [
    "warcraft.wiki.gg/wiki/Blackfathom_Deeps_(Classic) (partially underwater dungeon in northwestern Ashenvale; temple of Elune sunk beneath the Veiled Sea by the Great Sundering, untouched until the naga and satyrs found it; the Twilight's Hammer guards Aku'mai, a pet of the Old Gods); the pre-Cataclysm official description (legends hold the ancient beast Aku'mai, a favored pet of the Old Gods, has taken up residence in the temple's ruins; the Twilight's Hammer drawn to its presence)",
@@ -20,18 +87,19 @@
    "faction templates: naga, satyrs and cultists share 128 (Blackfathom); the Blindlight murlocs are 18 (Murloc)",
    "creature_text 4809-4814 group 0 (Aku'mai demands more sacrifices; The Old Gods will be restored), said on aggro: base smart_scripts 4810 (Twilight Reaver), the module's dungeon_blackfathom_deeps.sql all six cult types",
    "quest 971 (the Lorgalis Manuscript at the bottom of Blackfathom Deeps), as the premise only",
-   "zones/blackfathom_deeps.txt (map 48: 719 only)"
+   "zones/blackfathom_deeps.txt (map 48: 719 only)",
+   "Blackfathom quests 1198, 1199, 1275, 6563, 6564"
   ],
-  "notes": "Checker: removed the clause that the naga and satyrs count the cult as allies (faction template data, nothing a visitor sees or is told). Rest verified against the wiki's Classic page, the pre-Cataclysm description, spawns and creature_text. Writer: opening on AREA 719, the only area on map 48. The temple's history is the classic official description and the wiki's Classic page; the moonwell's corruption and Aku'mai's rise are Thaelrid's account (ashenvale.json 33143 part 1) and are not told. Thaelrid is not placed in the overview (finding him is the turn of 1198). Lorgus Jett is not named: his name is what 6564's turn-in reveals. The cult lines are on aggro (base: reavers; module: all six types, 20 percent). No requiredState (classic dungeon, state 0)."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
   "id": 71901,
   "kind": 1,
   "zone": 719,
-  "sort": 1,
+  "sort": 0,
   "faction": 0,
   "title": "The Pool of Ask'ar",
-  "body": "The Pool of Ask'ar is the first great flooded hall of the deeps, a wide basin of dark water beyond the passages where the murlocs dwell. Blackfathom sea witches and myrmidons keep watch around it, crustaceans scuttle through its shallows, and in the pool itself swims Ghamoo-ra, a sea turtle of great size. Off the pool a side cavern opens, and there a naga called Lady Sarevess holds her ground with a myrmidon of her people at her side.",
+  "body": "The Pool of Ask'ar is the first great flooded hall of the deeps, a wide basin of dark water beyond the murlocs' passages. Naga sea witches and myrmidons keep watch around it, a great sea turtle swims in it, and off its shore a naga called Lady Sarevess holds a side cavern. Past it lies an old shrine where the murloc Gelihast keeps his tribe.",
   "triggers": [
    [
     3,
@@ -42,94 +110,31 @@
     4824
    ]
   ],
+  "related": [
+   71900,
+   90000055
+  ],
   "sources": [
    "WMOAreaTable 11909/11910 The Pool of Ask'ar (WMO 1204, Blackfathom Deeps), 3.3.5 DBC: shown as the minimap subzone name",
    "warcraft.wiki.gg/wiki/Blackfathom_Deeps_(Classic) (Ghamoo-Ra in the Pool of Ask'ar; Lady Sarevess in the Pool of Ask'ar, side cavern)",
    "creature 4887 Ghamoo-ra, single spawn on map 48 at -442,212 z-53; display 5027, SeaTurtle model at scale 1.5",
    "creature 4831 Lady Sarevess, single spawn (guid 26129) at -300,414 z-57; display 4979, naga Siren model; Blackfathom Myrmidon 4807 (guid 26121) at -328,400; the module gives her a patrol path (261290) within x -300 to -354, y 324 to 407",
-   "Snapping Crustacean 4822 x18 at x -358 to -568, y 106 to 284; Blackfathom Sea Witch 4805 and Myrmidon 4807 spawns across the pool"
-  ],
-  "notes": "Checker: verified (WMOAreaTable label, wiki location, spawns; Trample, Sarevess's aggro yell and spells shared by base and module; 'Paltry kill.' rightly left out). 'Enormous' softened to 'great': display scale 1.5 against 1.0 for the other sea turtles in the deeps. Writer: place named by the WMO area name, which the minimap shows; bosses placed as the wiki's Classic page has them, and the spawns agree (Ghamoo-ra about 300 yards from the entrance teleport, past the murloc halls). Sarevess's cavern: true with the module's patrol path too (it stays within about 90 yards of her spawn). Parts: KILL 4887 and KILL 4831, each a single spawn on map 48 only, fight only. Sarevess's death line differs (base: Paltry kill. On Just Died; module: on killing a player), so it is not told. Faction 0.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "Ghamoo-ra met intruders with the weight of his shell, trampling everyone who stood near him again and again. For all his bulk he could not outlast them, and the great turtle died in the waters of Ask'ar.",
-    "triggers": [
-     [
-      3,
-      4887
-     ]
-    ],
-    "sources": [
-     "smart_scripts 4887 base and module (Trample 5568, Spell.dbc: normal damage plus additional damage to nearby enemies)"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "Lady Sarevess met intruders crying that they should not be here, and ordered them slain. She shot at her foes, hurled forked lightning across them, slowed those she struck and froze anyone who pressed close in a burst of frost. It was not enough, and the naga fell in her own cavern.",
-    "triggers": [
-     [
-      3,
-      4831
-     ]
-    ],
-    "sources": [
-     "creature_text 4831 group 0 (You should not be here! Slay them!), yell: base On Aggro, module In Combat no repeat",
-     "smart_scripts 4831 base and module: Shoot 6660, Forked Lightning 8435 (a cone in front of her), Slow 246, Frost Nova 865 (Spell.dbc: frost damage to enemies near the caster, freezing them in place)"
-    ]
-   }
-  ]
- },
- {
-  "id": 71902,
-  "kind": 1,
-  "zone": 719,
-  "sort": 2,
-  "faction": 0,
-  "title": "The Shrine of Gelihast",
-  "body": "Some way into the deeps, past the first halls, Blindlight murlocs, oracles and muckdwellers have gathered around an old shrine of the drowned temple. Their master is Gelihast, a hulking murloc larger than any of his kin, and the shrine is his: his followers crowd close about it and let no stranger near. The stone stands dark and silent among them. What the shrine once was, and whom it honored, no one has said.",
-  "triggers": [
-   [
-    3,
-    4819
-   ],
-   [
-    3,
-    4820
-   ]
-  ],
-  "sources": [
+   "Snapping Crustacean 4822 x18 at x -358 to -568, y 106 to 284; Blackfathom Sea Witch 4805 and Myrmidon 4807 spawns across the pool",
    "gameobject 103015 Shrine of Gelihast, single spawn on map 48 at -413,44 z-48; gameobject_template_addon flags 16 (not selectable); instance_blackfathom_deeps.cpp and smart_scripts 6243 (On Just Died: instance data TYPE_GELIHAST done, remove the not-selectable flag); linked trap 94039 casts Blessing of Blackfathom 8733",
    "creature 6243 Gelihast, single spawn at -413,41 z-48; display 1773, Murloc model at scale 2.0; Blindlight Muckdweller 4819 and Oracle 4820 x5 each at -400 to -461, 4 to 38",
    "warcraft.wiki.gg/wiki/Blackfathom_Deeps_(Classic) (Gelihast at the Shrine of Gelihast)",
    "the entrance teleport lands at -152,107, about 270 yards away"
   ],
-  "notes": "Checker: 'twice the size of his kin' was wrong (display 1773 scale 2.0, but the Blindlight murlocs around him are 1.3 to 1.75), now 'larger than any of his kin'. Removed the opening's line that the shrine stays closed while he lives: that foretold what his death unlocks, which only the KILL part shows. Part verified (Net in base and module; flag removal on death in base and module). Writer: the shrine is a real landmark (named gameobject and wiki location) that the boss's script makes clear. Twice the size from display scale 2.0 (ordinary Blindlight murlocs are at 1). The last sentence stays a question: nothing in 3.3.5 says what the shrine was. Part on KILL 6243: single spawn, map 48 only; tells the fight (Net, base and module) and the shrine becoming usable with its blessing (Spell.dbc 8733: Intellect, Spirit, Frost damage). Faction 0.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "Gelihast fought among his murlocs, flinging nets that held his foes fast. When he fell, the shrine he had kept could be touched at last, and those who laid hands on it felt a blessing of the deeps settle over them, sharpening the mind and quickening the spirit, as though the old temple still had something to give.",
-    "triggers": [
-     [
-      3,
-      6243
-     ]
-    ],
-    "sources": [
-     "smart_scripts 6243 base and module (Net 6533, Spell.dbc: immobilizes an enemy; On Just Died remove the shrine's flags)",
-     "gameobject 103015 linked trap 94039, Blessing of Blackfathom 8733 (Spell.dbc: increases Intellect, Spirit and Frost damage)"
-    ]
-   }
-  ]
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
   "id": 71903,
   "kind": 1,
   "zone": 719,
-  "sort": 3,
+  "sort": 0,
   "faction": 0,
   "title": "The Moonshrine Ruins",
-  "body": "Deep within the flooded temple lie the Moonshrine Ruins, the broken remains of a shrine of the moon, half drowned in dark water. The Twilight's Hammer has made its camp among them. Acolytes tend the wounded, reavers swing heavy blows, loreseekers swell and slow their foes, and aquamancers keep elementals of living water at their sides, while the cult's cries that the Old Gods will be restored echo off the old stones.",
+  "body": "Deep within the flooded temple lie the Moonshrine Ruins, the broken remains of a shrine of the moon, half drowned in dark water. The Twilight's Hammer has made its camp among them. Its aquamancers keep elementals of living water at their sides, and its cries that the Old Gods will be restored echo off the old stones. Somewhere in the water lies the ruins' fathom stone.",
   "triggers": [
    [
     3,
@@ -144,66 +149,101 @@
     4811
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Inside the fathom stone is a fathom core, a device that relates a history of all elemental activity. The Earthen Ring hopes it will show what the cult is doing to the elements here.",
+    "triggers": [
+     [
+      4,
+      6921
+     ]
+    ],
+    "sources": [
+     "WMOAreaTable 11923/11924 Moonshrine Ruins (WMO 1204), 3.3.5 DBC; quest 6921 description (the Twilight's Hammer has moved into the Moonshrine Ruins; the ruin's fathom stone somewhere close in the water), as a source only"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Disturbing the stone raises Baron Aquanis, a water elemental long thought a corrupted power. The globe that fed him should prove who corrupted him, and how.",
+    "triggers": [
+     [
+      3,
+      12876
+     ],
+     [
+      5,
+      909
+     ],
+     [
+      5,
+      6922
+     ]
+    ],
+    "sources": [
+     "WMOAreaTable 11923/11924 Moonshrine Ruins (WMO 1204), 3.3.5 DBC; quest 6921 description (the Twilight's Hammer has moved into the Moonshrine Ruins; the ruin's fathom stone somewhere close in the water), as a source only"
+    ]
+   }
+  ],
+  "related": [
+   90000009,
+   90000070,
+   71905
+  ],
   "sources": [
    "WMOAreaTable 11923/11924 Moonshrine Ruins (WMO 1204), 3.3.5 DBC; quest 6921 description (the Twilight's Hammer has moved into the Moonshrine Ruins; the ruin's fathom stone somewhere close in the water), as a source only",
    "DB spawns map 48: Twilight Acolyte 4809, Reaver 4810 x11, Aquamancer 4811 x7, Loreseeker 4812 x8 at x -693 to -822, y -106 to 8, z -30 to -38; gameobject 177964 Fathom Stone at -782,-64 z-45 (size 0.15)",
    "smart_scripts base and module: Acolyte Heal and Renew on friends; Reaver Arcing Smash 8374; Loreseeker Enlarge 8365 and Slow 18972; Aquamancer Summon Aqua Guardian 8372 out of combat",
    "creature_text 4810 group 0 (The Old Gods will be restored), reavers in base, all cult types in the module",
-   "warcraft.wiki.gg/wiki/Blackfathom_Deeps_(Classic) (Baron Aquanis, a quest boss, in the Moonshrine Ruins)"
+   "warcraft.wiki.gg/wiki/Blackfathom_Deeps_(Classic) (Baron Aquanis, a quest boss, in the Moonshrine Ruins)",
+   "gameobject 177964 Fathom Stone at -782,-64 z-45; loot 15100 holds only the Fathom Core 16762 (QuestRequired, quest 6921, AllowableRaces 690); smart_scripts 177964 (On Just Deactivated: summon Baron Aquanis 12876 at -776,-74)",
+   "creature 12876 Baron Aquanis: no spawn, summoned only by the stone; display 110, WaterElemental model at scale 1.5; faction 91 (Elemental); rank 2",
+   "creature_text 12876 group 0 (%s emerges to protect the Fathom Stone!), emote on AI init",
+   "warcraft.wiki.gg/wiki/Blackfathom_Deeps_(Classic) (Baron Aquanis, quest boss, Moonshrine Ruins)"
   ],
-  "notes": "Checker: removed the fathom stone sentence: the stone is usable and its purpose known only through 6921 (Ashenvale's), and naming it in an AREA opening told what the trigger does not show. Rest verified (WMOAreaTable 11923/11924, cult spells shared by base and module). Writer: place from the WMO area name and quest 6921's own wording; the cult camp's spawns sit around the Fathom Stone. ACCEPT and DONE 6921 are Ashenvale's (33143) and are not used; what the fathom core holds is told there and not here. The stone is only named as visible. Baron Aquanis has his own entry (71907), Horde only. Faction 0."
- },
- {
-  "id": 71904,
-  "kind": 1,
-  "zone": 719,
-  "sort": 4,
-  "faction": 0,
-  "title": "The Forgotten Pool",
-  "body": "Below the cult's sanctum lies the Forgotten Pool, a deep basin of black water at the heart of the drowned temple. Threshfins hunt in its depths and barbed crustaceans crawl along its edges, but the pool has an older master. Old Serra'kis, a great thresher, glides through the dark water beneath the cultists' feet, and whoever swims these waters swims through his.",
-  "triggers": [
-   [
-    3,
-    4830
-   ]
-  ],
-  "sources": [
-   "WMOAreaTable 11926 The Forgotten Pool (WMO 1204), 3.3.5 DBC",
-   "warcraft.wiki.gg/wiki/Blackfathom_Deeps_(Classic) (Old Serra'kis in the Forgotten Pool)",
-   "creature 4830 Old Serra'kis, single spawn on map 48 at -747,-169 z-51; display 1816, Threshadon model at scale 1.3; faction 16 (Monster)",
-   "Deep Pool Threshfin 4827 x8 at x -701 to -843, y -156 to -55, z -43 to -37; Barbed Crustacean 4823 at x -761 to -844, y -116 to -35 (the module removes one of three)",
-   "Twilight Lord Kelris 4832 at -819,-156 z-26 with Shadowmages and Elementalists at z-26, above the pool"
-  ],
-  "notes": "Checker: softened 'anyone who would cross the pool must swim' (the route is not shown by any source) to a plain statement about the water. Rest verified. Writer: 'above'/'below' from z: the pool at z -37 to -51, the sanctum at z -26 over the same ground. Thresher is the family name of the threshadon model. Part on KILL 4830: single spawn, map 48 only; he has no script or spells, so the part tells only his death. Faction 0.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "Old Serra'kis had no spells and no words, only teeth and hunger, and he fought with both until he could fight no more. At last the old thresher sank lifeless into the deep water of the pool he had ruled, and the threshfins swam on without him.",
-    "triggers": [
-     [
-      3,
-      4830
-     ]
-    ],
-    "sources": [
-     "creature_template 4830: no AIName, no script: melee only; not touched by the module"
-    ]
-   }
-  ]
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
   "id": 71905,
   "kind": 2,
   "zone": 719,
-  "sort": 1,
+  "sort": 0,
   "faction": 0,
   "title": "Twilight Lord Kelris",
-  "body": "Twilight Lord Kelris leads the Twilight's Hammer in Blackfathom Deeps. An orc, he keeps to the Moonshrine Sanctum above the Forgotten Pool, where he sits deep in meditation, channeling dark power, while shadowmages and elementalists of the cult stand watch around him. Four great braziers, the Fires of Aku'mai, stand about the sanctum, and beyond them a massive portal holds shut the way deeper into the temple. Every cultist who cries that Aku'mai demands more sacrifices answers to him.",
+  "body": "Twilight Lord Kelris, an orc, leads the Twilight's Hammer in Blackfathom Deeps. He sits in meditation in the Moonshrine Sanctum, channeling dark power among the four Fires of Aku'mai, and beyond them a massive portal holds shut the way deeper into the temple. Every cultist who cries that Aku'mai demands sacrifices answers to him, and he sacrifices innocents to the beast for power.",
   "triggers": [
+   [
+    3,
+    4832
+   ],
    [
     4,
     6561
+   ],
+   [
+    4,
+    1200
    ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Argent Dawn had hunted him for years and thought him dead or missing. Wherever evil showed itself in these parts, it says, Kelris had a hand in it.",
+    "triggers": [
+     [
+      5,
+      1200
+     ]
+    ],
+    "sources": [
+     "creature 4832 Twilight Lord Kelris, single spawn on map 48 at -819,-156 z-26; display 4939, OrcMale model"
+    ]
+   }
+  ],
+  "related": [
+   90000009,
+   71906,
+   71903
   ],
   "sources": [
    "creature 4832 Twilight Lord Kelris, single spawn on map 48 at -819,-156 z-26; display 4939, OrcMale model",
@@ -211,82 +251,29 @@
    "DB spawns: Twilight Shadowmage 4813 x7 and Elementalist 4814 x6 at z-26, x -784 to -849, y -99 to -162",
    "gameobject 21118-21121 Fire of Aku'mai at -813 to -824, -159 to -170 z-25 (not lit until used); 21117 Portal of Aku'Mai at -818,-201 (door, flags 34, opened by the instance script once all four fires are done and their summons slain)",
    "WMOAreaTable 11925 Moonshrine Sanctum (WMO 1204); warcraft.wiki.gg/wiki/Blackfathom_Deeps_(Classic) (Kelris in the Moonshrine Sanctum)",
-   "quest 6561 description (the cultists, led by Kelris), for the Horde way in"
+   "quest 6561 description (the cultists, led by Kelris), for the Horde way in",
+   "Blackfathom quest 1200"
   ],
-  "notes": "Checker: part 1 trimmed to 6561's own text: Thaelrid is a guard of the Argent Dawn (his name and subname as shown), not a scout (that word is 1198's, Alliance); 6561 does not name him, but the giver's name is shown. The sacrifice line is what 6561 itself says; its moonwell and Aku'Mai's rising stay with ashenvale.json 33143 part 1, whose triggers are Alliance only, so no reader sees both. Part 2: 'whispered' and 'breathed' changed, since Sleep... and Dust to dust. are yells. Opening: 'high above' to 'above' (about 10 to 25 yards by z), dropped 'cold' for the fires (not supported). Writer: Decided: Kelris may have a person entry; his KILL part tells only the fight, never his head or Selgorm (ashenvale.json 33143 part 2, DONE 1200). Opening on AREA 719 and ACCEPT 6561 (Horde, Thaelrid inside the instance; QuestType 2, flags 8, not auto-complete). DONE 6561 is not used: the ending is Ashenvale's for the Alliance. ACCEPT 1200 and DONE 1198 are Ashenvale's and not used. The ACCEPT 6561 reader stands inside the instance, so AREA 719 has fired for them too. Orc from the model (visible). Not touched by the module (no Kelris rows in dungeon_blackfathom_deeps.sql). Faction 0.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "Within the deeps the Horde found Thaelrid, a guard of the Argent Dawn, his strength gone and calling for help. The cultists of the Twilight's Hammer, he said, have allied with the naga to hold these grounds, and their leader Kelris sacrifices innocents to Aku'mai for power. He asked that Kelris be slain and his head carried to Bashana Runetotem in Thunder Bluff.",
-    "triggers": [
-     [
-      4,
-      6561
-     ]
-    ],
-    "sources": [
-     "quest 6561 description and log text (Strength has left me; the cultists, led by Kelris, sacrifice innocents to Aku'Mai for power; slay Kelris and bring his head to Bashana in Thunder Bluff); AllowableRaces 690; started by Argent Guard Thaelrid 4787 (single spawn, map 48), ended by Bashana Runetotem 9087",
-     "the temple's fall and Aku'mai's rise from the moonwell, also in 6561's text, are left out: ashenvale.json 33143 part 1 tells them",
-     "creature_template 4787 Argent Guard Thaelrid, subname The Argent Dawn (shown); 6561 itself does not name him"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "Kelris rose from his meditation demanding to know who dared disturb it. He sent his foes into sleep with a single word and struck at them with blasts of the mind, but the Twilight Lord could not hold them off. Dust to dust, he cried as he fell, and the sanctum was left without its master.",
-    "triggers": [
-     [
-      3,
-      4832
-     ]
-    ],
-    "sources": [
-     "creature_text 4832 groups 0-2 (Who dares disturb my meditation? on aggro; Sleep... on Sleep hitting; Dust to dust. on his own death), yells",
-     "smart_scripts 4832 (Sleep 8399: puts nearby enemies to sleep; Mind Blast 15587; On Just Died say line 2); not touched by the module"
-    ]
-   }
-  ]
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
   "id": 71906,
   "kind": 2,
   "zone": 719,
-  "sort": 2,
+  "sort": 0,
   "faction": 0,
   "title": "Aku'mai",
-  "body": "Aku'mai is the beast the Twilight's Hammer reveres in Blackfathom Deeps. Legend holds that it is an ancient creature, a favored pet of the Old Gods, that has taken up residence in the ruins of the temple and preyed upon the area ever since, and the cult has gathered here to be near it. Its name is on every cultist's lips: Aku'mai demands more sacrifices, they cry. Its lair lies somewhere beyond the sealed portal that bears its name. How it came to the temple is a tale the Argent Dawn can tell.",
+  "body": "Aku'mai is a hydra of terrible size, the beast the Twilight's Hammer reveres. Legend calls it a favored pet of the Old Gods. The Argent Dawn tells how it came: the corruption of an Old God seeped up from beneath the earth and tainted the temple's moonwell, and Aku'mai rose from the waters. It has preyed on the place ever since, and its lair lies beyond the portal the cult guards.",
   "triggers": [
    [
     3,
     4829
    ]
   ],
-  "sources": [
-   "the pre-Cataclysm official description (legends hold the ancient beast Aku'mai, a favored pet of the primordial Old Gods, has taken up residence within the temple's ruins and preyed upon the area ever since; the Twilight's Hammer drawn to its presence); warcraft.wiki.gg/wiki/Blackfathom_Deeps_(Classic) (the cult guards Aku'mai, a pet of the Old Gods)",
-   "creature_text 4809-4814 group 0 line (Aku'mai demands more sacrifices, now you must die!)",
-   "gameobject 21117 Portal of Aku'Mai at -818,-201 (door, closed); creature 4829 Aku'mai at -848,-454 z-34 beyond it",
-   "ashenvale.json 33143 part 1 (Thaelrid's account: Aku'mai rose from the tainted moonwell), pointed to in one phrase"
-  ],
-  "notes": "Checker: 'the Argent Dawn's scout' changed to 'the Argent Dawn': the scout is what 1198 reveals, and the opening fires on entering. Part 1 verified (fires, summon groups, portal script, Aku'mai's spells in base and module). Part 2 verified against npc_text 818 (former cultist, homeland Khaz Modan, passage to Darnassus via gossip option 321) and creature_text 6729; Morridune is faction template 80, hostile to the Horde, so only the Alliance can earn the TALK, which the text fits. Writer: Decided: Aku'mai may have a person entry; its origin from the moonwell only as a phrase pointing to what Thaelrid tells, so the opening says only that the scout has the tale. Opening on AREA 719 (met only in combat). The portal's name (Portal of Aku'Mai) is shown on the gameobject. Faction 0.",
   "parts": [
    {
     "part": 1,
-    "body": "The way to Aku'mai opened only once the four Fires of Aku'mai in the sanctum were lit. Each fire called up defenders: snapping turtles, crustaceans and servants of living water that rained frost. When the last of them died, the great portal opened. Beyond it, past more of the turtles, the beast waited in its pool, a hydra of terrible size. Aku'mai fought wrapped in a cloud of poison and flew into frenzied rages, but at last it lay dead.",
-    "triggers": [
-     [
-      3,
-      4829
-     ]
-    ],
-    "sources": [
-     "smart_scripts 21118-21121 (On Gossip Hello: instance data FIRE1-4 done, summon creature group 1); creature_summon_groups: Aku'mai Snapjaw 4825 (SeaTurtle model), Murkshallow Softshell 4977, Barbed Crustacean 4823 (Crab), Aku'mai Servant 4978 (WaterElemental; Frostbolt Volley, Frost Nova)",
-     "instance_blackfathom_deeps.cpp (the Portal of Aku'Mai opens when all four fires are done and every summoned defender is dead)",
-     "creature 4829 Aku'mai, single spawn on map 48 at -848,-454; display 2837, Hydra model at scale 2.0; Aku'mai Snapjaw 4825 x7 along y -215 to -408",
-     "smart_scripts 4829 base and module (Poison Cloud 3815: Nature damage to nearby enemies; Frenzied Rage 3490: faster attacks); On Just Died removes the Altar of the Deeps' not-selectable flag"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "When the altar in Aku'mai's lair was touched, a dwarf appeared beside it, crying that Aku'mai was dead and he could leave this wretched place at last. His name was Morridune. He had once followed the Twilight's Hammer, he said, and come here to draw power from the cursed beast, but the sacrifice of countless innocents brought him to his senses. Trapped so far from his homeland of Khaz Modan, he was free now, and he offered his rescuers passage to Darnassus.",
+    "body": "A dwarf of Khaz Modan waited by the altar in its lair. Morridune had followed the Twilight's Hammer here to draw power from the beast, until the sacrifice of countless innocents brought him to his senses.",
     "triggers": [
      [
       2,
@@ -294,140 +281,22 @@
      ]
     ],
     "sources": [
-     "gameobject 103016 Altar of the Deeps (not selectable until Aku'mai dies); smart_scripts 103016 (On Gossip Hello: summon Morridune 6729 at -864,-459)",
-     "creature 6729 Morridune: no spawn on any map, summoned only by the altar; display 5465, DwarfMale model; faction 80 (Darnassus, hostile to the Horde), npcflag 1, gossip_menu 321",
-     "creature_text 6729 groups 0-1 (Aku'mai is dead! At last, I can leave this wretched place.; Speak with me to hear my tale.); smart_scripts 6729 (say on reset, walk to the altar)",
-     "npc_text 818 (followed the ways of the Twilight's Hammer; obsessed with reviving the Old Gods; journeyed deep to draw power from the cursed beast; after witnessing the sacrifice of countless innocents I came to my senses; trapped but now free; far from my homeland of Khaz Modan; passage to Darnassus in return for slaying Aku'mai); gossip_menu_option 321 (port me to Darnassus, spell 9268)"
+     "the pre-Cataclysm official description (legends hold the ancient beast Aku'mai, a favored pet of the primordial Old Gods, has taken up residence within the temple's ruins and preyed upon the area ever since; the Twilight's Hammer drawn to its presence); warcraft.wiki.gg/wiki/Blackfathom_Deeps_(Classic) (the cult guards Aku'mai, a pet of the Old Gods)"
     ]
    }
-  ]
- },
- {
-  "id": 71907,
-  "kind": 2,
-  "zone": 719,
-  "sort": 3,
-  "faction": 2,
-  "title": "Baron Aquanis",
-  "body": "Baron Aquanis is a water elemental of the Moonshrine Ruins, a great form of living water. He keeps no watch where he can be seen. When the fathom stone that lies in the water of the ruins is disturbed, he rises from the depths and emerges to protect it, and whoever has laid hands on the stone must answer to him.",
-  "triggers": [
-   [
-    3,
-    12876
-   ],
-   [
-    4,
-    6922
-   ]
+  ],
+  "related": [
+   71905,
+   90000009,
+   71900
   ],
   "sources": [
-   "gameobject 177964 Fathom Stone at -782,-64 z-45; loot 15100 holds only the Fathom Core 16762 (QuestRequired, quest 6921, AllowableRaces 690); smart_scripts 177964 (On Just Deactivated: summon Baron Aquanis 12876 at -776,-74)",
-   "creature 12876 Baron Aquanis: no spawn, summoned only by the stone; display 110, WaterElemental model at scale 1.5; faction 91 (Elemental); rank 2",
-   "creature_text 12876 group 0 (%s emerges to protect the Fathom Stone!), emote on AI init",
-   "warcraft.wiki.gg/wiki/Blackfathom_Deeps_(Classic) (Baron Aquanis, quest boss, Moonshrine Ruins)"
+   "the pre-Cataclysm official description (legends hold the ancient beast Aku'mai, a favored pet of the primordial Old Gods, has taken up residence within the temple's ruins and preyed upon the area ever since; the Twilight's Hammer drawn to its presence); warcraft.wiki.gg/wiki/Blackfathom_Deeps_(Classic) (the cult guards Aku'mai, a pet of the Old Gods)",
+   "creature_text 4809-4814 group 0 line (Aku'mai demands more sacrifices, now you must die!)",
+   "gameobject 21117 Portal of Aku'Mai at -818,-201 (door, closed); creature 4829 Aku'mai at -848,-454 z-34 beyond it",
+   "ashenvale.json 33143 part 1 (Thaelrid's account: Aku'mai rose from the tainted moonwell), pointed to in one phrase",
+   "Blackfathom quest 1200"
   ],
-  "notes": "Checker: verified. Fathom Stone has gameobject flag 4 (usable only with its quest condition) and only the 6921 quest item, so only a Horde group on 6921 summons him; KILL credit goes to group members in range, summons included. ACCEPT 6922 shows the globe's own text; ashenvale.json 33131 part 2 (DONE 6922) tells Je'neu's reading, which this part only points to, so no clash and no retelling. Writer: faction 2: the stone yields only the quest item of 6921 (Horde), so only a Horde group with that quest can summon him, and 6922 is AllowableRaces 690. Opening on KILL 12876 and ACCEPT 6922 (item-started from the Strange Water Globe, QuestType 2, flags 0, not auto-complete). No AREA trigger: the stone and the baron are never seen without 6921, whose ACCEPT and DONE are Ashenvale's. 6922 is filed under Ashenvale (331); its DONE is ashenvale.json 33131 part 2 (Je'neu's reading of the globe), so it is not used and not retold here; ACCEPT 6922 (the globe's own text) is free, as wailing_caverns.json uses ACCEPT 3369 beside thunder_bluff's DONE. check_staged may warn that 12876 has no fixed spawn: he is summoned only here. Not touched by the module.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "Aquanis met those who had taken from the stone with frost, hurling bolts of ice that slowed whoever they struck and freezing those around him where they stood. It was not enough. The guardian of the fathom stone fell in the ruins he had risen to defend.",
-    "triggers": [
-     [
-      3,
-      12876
-     ]
-    ],
-    "sources": [
-     "smart_scripts 12876 (Frostbolt 15043: frost damage and slowed movement; Frost Nova 14907: frost damage to nearby enemies, immobilizing them)"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "The baron left behind a strange globe of water. Inside it a putrid-looking water sloshes about, and the globe itself seems proof against any blow. It seemed to have fed the elemental his strength. If anyone could make sense of it, it would be Je'neu Sancrea of the Earthen Ring, at the Horde's Zoram'gar Outpost, and what he made of it is his own tale.",
-    "triggers": [
-     [
-      4,
-      6922
-     ]
-    ],
-    "sources": [
-     "quest 6922 description and log text (the defeated water elemental left a strange water globe; it somehow fed the beast energy; putrid-looking water; impervious to physical force; Je'neu Sancrea of the Earthen Ring at Zoram'gar Outpost)",
-     "creature_loot_template 12876: Strange Water Globe 16782 at 100 percent, starts 6922"
-    ]
-   }
-  ]
- },
- {
-  "id": 71908,
-  "kind": 3,
-  "zone": 719,
-  "sort": 1,
-  "faction": 1,
-  "title": "Knowledge in the Deeps",
-  "body": "In the Forlorn Cavern of Ironforge, Gerrig Bonegrip gathers lore, and not the harmless kind: the old and powerful sort said to open doorways and stir Those Who Sleep. Now he has heard rumors of an old piece of it, the Lorgalis Manuscript, said to lie at the bottom of Blackfathom Deeps. That place, he says, was the dwelling of long-dead elves who held great knowledge before their city fell to ruin. He wants the manuscript found and brought to him, and whoever does it, he promises, will not be forgotten, not even after the end days.",
-  "triggers": [
-   [
-    4,
-    971
-   ]
-  ],
-  "sources": [
-   "quest 971 description and log text (I collect lore: old, powerful, lore that opens doorways and can awaken Those Who Sleep; rumors of the Lorgalis Manuscript at the bottom of Blackfathom Deeps; the old dwelling of long-dead elves who held great knowledge before their city fell to ruin; I will not forget it, not even after the end days); QuestSortID 719, AllowableRaces 1101, QuestType 2, flags 8",
-   "creature 2786 Gerrig Bonegrip starts and ends 971, on map 0 in area 1537 (Ironforge); ironforge.json 153701 names him and his taste for such lore but uses no trigger of 971"
-  ],
-  "notes": "Checker: opening's first line reworded (it followed 971's wording too closely); dropped 'He named no names' from the part (no source, and it hints at more than 971 shows). Writer: free quest, as the notes say: ironforge.json's Forlorn Cavern (153701) describes Bonegrip's collecting in a general way and cites 971 only as a source, with no trigger and no manuscript; this entry tells the quest itself. Faction 1 (AllowableRaces 1101). Opening on ACCEPT 971, part on DONE 971.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "The manuscript was found in a pitted iron chest beneath the water of a flooded hall and carried back to Ironforge. Bonegrip rejoiced. Copies would be made and passed around, he said, and at last the ancient knowledge of Lorgalis would be known to his brothers and sisters.",
-    "triggers": [
-     [
-      5,
-      971
-     ]
-    ],
-    "sources": [
-     "gameobject 13949 Pitted Iron Chest, single spawn on map 48 at -331,212 z-70 (under water: the crustaceans of the pool stand at z -56 to -77); gameobject_loot 2774 holds the Lorgalis Manuscript 5359 (QuestRequired)",
-     "quest 971 reward text (copies will be made and distributed; the ancient knowledge of Lorgalis will finally be known to my brothers and sisters)"
-    ]
-   }
-  ]
- },
- {
-  "id": 71909,
-  "kind": 3,
-  "zone": 719,
-  "sort": 2,
-  "faction": 0,
-  "title": "The Orb of Soran'ruk",
-  "body": "In the southern Barrens, Doan Karhan knows the orbs of the Burning Legion well. When a demon falls out of the Legion's favor, he explains, its spirit is imprisoned within an orb and handed to the Legion's mages and warlocks, and many such orbs were carried into Azeroth by their servants. Even broken, they keep the powers of the demons inside. The orb of Soran'ruk was split in two. One half was broken again, its fragments carried by the acolytes of the Twilight's Hammer in Blackfathom Deeps; the larger piece lies in Shadowfang Keep. Bring him the pieces, and he can make the orb whole.",
-  "triggers": [
-   [
-    4,
-    1740
-   ]
-  ],
-  "sources": [
-   "quest 1740 description and log text (demons of the Legion who fall out of favor imprisoned within orbs distributed to their mages and warlocks; many carried by their servants in Azeroth; even fragmented they possess the powers of the demons inside; Soran'ruk broken into two pieces, one further broken and used by the acolytes of the Twilight's Hammer in Blackfathom Deeps, the larger in Shadowfang Keep; find them and I can reform it); AllowableRaces 0, AllowableClasses 256 (warlock), QuestSortID -61, QuestType 2, flags 8",
-   "creature 6247 Doan Karhan starts and ends 1740, on map 1 at -2252,-2374 (area 1156, zone 17, the Barrens), faction 35",
-   "creature_loot_template: Soran'ruk Fragment 6914 from Twilight Acolyte 4809 (map 48 only, QuestRequired); Large Soran'ruk Fragment 6915 from Shadowfang Darksoul 3855 (map 33)",
-   "quest 1740 reward text (I have dedicated my life to the study of the Burning Legion's orbs)"
-  ],
-  "notes": "Checker: part reworded where it said he kept the pieces and also handed them back (the reward text: he studies them and returns them reforged). Placement agreed: no other file tells 1740 (barrens, shadowfang_keep, silverpine checked), three of its four pieces come from this instance's acolytes, Doan stands in the open Barrens. Writer: a warlock quest no file uses (barrens.json does not name Doan; shadowfang_keep.json does not tell it). Three of its four pieces come from Blackfathom's acolytes, so the story sits here; Shadowfang is named only as where the larger piece lies. The quest calls its holder a wizard, but it drops from a worgen (Shadowfang Darksoul), so the opening does not say who holds it. His life's study of the orbs is his reward text, so the opening says only that he knows them. Faction 0 (AllowableRaces 0; Doan is neutral). Opening on ACCEPT 1740, part on DONE 1740.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "The pieces came back to Doan, and the orb proved hardly broken at all: almost every fragment was there, and making Soran'ruk whole was a simple thing for one who had spent his life on such work. He was glad of the chance to study the pieces, and handed the orb back reforged in whatever form its bearer chose. His own orb, Zargain, had taken him many years to gather.",
-    "triggers": [
-     [
-      5,
-      1740
-     ]
-    ],
-    "sources": [
-     "quest 1740 reward text (the orb was not greatly fragmented, almost all of the pieces are here; a simple thing to recreate them; I will give them back fully reconstructed in a form of your choosing) and request text (it took me many years to collect the pieces of the orb of Zargain); RewardChoiceItem 6898 Orb of Soran'ruk, 15109 Staff of Soran'ruk"
-    ]
-   }
-  ]
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  }
 ]

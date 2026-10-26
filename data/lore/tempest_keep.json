@@ -1,0 +1,154 @@
+[
+ {
+  "id": 384500,
+  "kind": 0,
+  "zone": 3845,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 9,
+  "title": "The Eye",
+  "body": "The Eye is the heart of Tempest Keep, the naaru vessel Kael'thas Sunstrider took for his seat, and here the prince holds court. Bloodwarders and the knights and battle mages of the Crimson Hand guard its bridges, astromancers and star scryers work beneath the open sky of the Nether, crystalcore constructs and tempest-smiths keep its machines, and phoenix-hawks wheel through its halls.",
+  "triggers": [
+   [
+    1,
+    3845
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Tempest Keep is a naaru creation, A'dal says, and the way in has always been theirs to grant. They go back now only because they must: Kael'thas cannot be allowed to speak the words of damnation.",
+    "triggers": [
+     [
+      5,
+      10883
+     ]
+    ],
+    "sources": [
+     "The Eye spawns (map 550); Shattrath quest 10883; Hellfire quests 10888, 13430; Tempest Keep quest 11007"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "A'dal set four trials for those who would go in, and the last was the death of Magtheridon. To those who passed them all, the naaru granted the way into Tempest Keep.",
+    "triggers": [
+     [
+      5,
+      10888
+     ],
+     [
+      5,
+      13430
+     ]
+    ],
+    "sources": [
+     "The Eye spawns (map 550); Shattrath quest 10883; Hellfire quests 10888, 13430; Tempest Keep quest 11007"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The Verdant Sphere taken from Kael'thas's body told A'dal that the prince still lived, maimed, calling now to a higher power than Illidan: Kil'jaeden the Deceiver, who is coming to Azeroth.",
+    "triggers": [
+     [
+      5,
+      11007
+     ]
+    ],
+    "sources": [
+     "The Eye spawns (map 550); Shattrath quest 10883; Hellfire quests 10888, 13430; Tempest Keep quest 11007"
+    ]
+   }
+  ],
+  "related": [
+   352315,
+   92000002,
+   90000052,
+   370301
+  ],
+  "sources": [
+   "The Eye spawns (map 550); Shattrath quest 10883; Hellfire quests 10888, 13430; Tempest Keep quest 11007"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 384501,
+  "kind": 2,
+  "zone": 3845,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 9,
+  "title": "High Astromancer Solarian",
+  "body": "High Astromancer Solarian leads the astromancers of the Eye for Kael'thas, crying for the Sunwell and by the blood of the Highborne as she fights, and calling her astromancers to her side. Pressed hard, she calls on the fury of the cosmos itself and becomes one with the Void.",
+  "triggers": [
+   [
+    3,
+    18805
+   ]
+  ],
+  "related": [
+   384500,
+   92000002
+  ],
+  "sources": [
+   "creature_text 18805"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 384502,
+  "kind": 2,
+  "zone": 3845,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 9,
+  "title": "Al'ar",
+  "body": "Al'ar is the phoenix god, the great firebird of Kael'thas, kept in the Eye where it flies between the platforms of its chamber. Like any phoenix it does not stay dead: struck down, it is reborn from its own flames, and it comes back stronger than before.",
+  "triggers": [
+   [
+    3,
+    19514
+   ],
+   [
+    4,
+    10946
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Illidan demanded Al'ar's death of Akama. Akama sent an ally in a magic cowl, to look like one of his own Ashtongue, so that doing the Betrayer's bidding would lull him into a false sense of security.",
+    "triggers": [
+     [
+      4,
+      10946
+     ]
+    ],
+    "sources": [
+     "Al'ar (subname Phoenix God); Tempest Keep quest 10946"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The deed was done, and Akama was a step closer to shifting Illidan's attention away from the Ashtongue, and from the prisoner he keeps in the Warden's Cage.",
+    "triggers": [
+     [
+      5,
+      10946
+     ]
+    ],
+    "sources": [
+     "Al'ar (subname Phoenix God); Tempest Keep quest 10946"
+    ]
+   }
+  ],
+  "related": [
+   384500,
+   92000002,
+   352028
+  ],
+  "sources": [
+   "Al'ar (subname Phoenix God); Tempest Keep quest 10946"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

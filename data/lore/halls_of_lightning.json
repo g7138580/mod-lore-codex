@@ -1,0 +1,73 @@
+[
+ {
+  "id": 427200,
+  "kind": 0,
+  "zone": 4272,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Halls of Lightning",
+  "body": "The Halls of Lightning are Ulduar's other outer work, a titan watchtower of storm and iron. Stormforged tacticians, runeshapers and sentinels hold its halls with titanium vanguards and siegebreakers, hardened steel giants stand guard, and bound storms and firestorms crackle in the air. At its heart, in the watchtower overlooking the peaks, Loken himself sits and listens to his master.",
+  "triggers": [
+   [
+    1,
+    4272
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "General Bjarngrim called himself the greatest of his father's sons, and died unable to believe that flesh had proved stronger than iron.",
+    "triggers": [
+     [
+      3,
+      28586
+     ]
+    ],
+    "sources": [
+     "Halls of Lightning spawns (map 602); Halls of Lightning quests 13108, 13109; creature_text 28586, 28587, 28923"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Volkhan made life from lifelessness at his anvil, golems of molten iron for the armies of iron. To the frost giants of Dun Niffelem he is a threat to their very existence.",
+    "triggers": [
+     [
+      3,
+      28587
+     ],
+     [
+      4,
+      13109
+     ]
+    ],
+    "sources": [
+     "Halls of Lightning spawns (map 602); Halls of Lightning quests 13108, 13109; creature_text 28586, 28587, 28923"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Loken told his killers that his master had shown him the future: Azeroth reborn in darkness, Yogg-Saron released, the Pantheon fallen. Dying, he said that his death heralded the end of this world.",
+    "triggers": [
+     [
+      3,
+      28923
+     ]
+    ],
+    "sources": [
+     "Halls of Lightning spawns (map 602); Halls of Lightning quests 13108, 13109; creature_text 28586, 28587, 28923"
+    ]
+   }
+  ],
+  "related": [
+   6718,
+   6731,
+   90000077,
+   426402
+  ],
+  "sources": [
+   "Halls of Lightning spawns (map 602); Halls of Lightning quests 13108, 13109; creature_text 28586, 28587, 28923"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

@@ -1,0 +1,66 @@
+[
+ {
+  "id": 384700,
+  "kind": 0,
+  "zone": 3847,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Botanica",
+  "body": "The Botanica is the garden satellite of Tempest Keep, a vast greenhouse where Kael'thas's Sunseeker botanists, chemists and gene-splicers raise and remake plant life of every kind. Their creations crowd the paths, nethervine reapers and tricksters, shrieking mutates and lashing horrors, while bloodwarder protectors and falconers keep the halls and the botanists guard their precious specimens jealously against every intruder.",
+  "triggers": [
+   [
+    1,
+    3847
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "High Botanist Freywinn scolded intruders that his specimens were very delicate, called on nature to bend to his will, and died fretting that the specimens must be preserved.",
+    "triggers": [
+     [
+      3,
+      17975
+     ]
+    ],
+    "sources": [
+     "Botanica spawns (map 553); creature_text 17975"
+    ]
+   }
+  ],
+  "related": [
+   352315,
+   384701,
+   384900
+  ],
+  "sources": [
+   "Botanica spawns (map 553); creature_text 17975"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 384701,
+  "kind": 2,
+  "zone": 3847,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Warp Splinter",
+  "body": "Warp Splinter is an ancient that dwells at the heart of the Botanica and calls it its sanctuary. It fights intruders with its saplings, its children, yet it is torn even as it fights, stopping to ask what it is doing and why before driving on. It is confused, it says, and it does not belong here.",
+  "triggers": [
+   [
+    3,
+    17977
+   ]
+  ],
+  "related": [
+   384700,
+   384800
+  ],
+  "sources": [
+   "creature_text 17977; Tempest Keep quest 10704 (an ancient in the Botanica)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

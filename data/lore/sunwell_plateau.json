@@ -1,0 +1,242 @@
+[
+ {
+  "id": 407500,
+  "kind": 0,
+  "zone": 4075,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 12,
+  "title": "Sunwell Plateau",
+  "body": "The Sunwell Plateau crowns the Isle of Quel'Danas, and at its heart lies the Sunwell, the fount of the high elves' power, defiled by Arthas and now in the hands of the Burning Legion. Sunblade elves and Shadowsword eredar hold its courtyards and halls, demons of every kind guard the approaches, and in the well's chamber the Legion's servants work to open the way for their master.",
+  "triggers": [
+   [
+    1,
+    4075
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Immersed in the Sunwell, Quel'Delar was made whole and bonded to its bearer. Lor'themar had not thought he would live to see Thalorien's sword restored; Rommath called it a sign that his people will never give up.",
+    "triggers": [
+     [
+      5,
+      24553
+     ],
+     [
+      5,
+      24564
+     ],
+     [
+      5,
+      24594
+     ],
+     [
+      5,
+      24595
+     ],
+     [
+      5,
+      24596
+     ],
+     [
+      5,
+      24598
+     ]
+    ],
+    "sources": [
+     "Sunwell Plateau spawns (map 580); Sunwell Plateau quests 24553, 24564, 24594-24598; creature_text 37763, 37764"
+    ]
+   }
+  ],
+  "related": [
+   408000,
+   90000036,
+   407504,
+   408013
+  ],
+  "sources": [
+   "Sunwell Plateau spawns (map 580); Sunwell Plateau quests 24553, 24564, 24594-24598; creature_text 37763, 37764"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 407501,
+  "kind": 2,
+  "zone": 4075,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 12,
+  "title": "Madrigosa",
+  "body": "Madrigosa was a dragon of the blue flight who came to the Sunwell and found the pit lord Brutallus guarding the way in. She held the demon to make him tell where Anveena was and what had become of Kalec, and he killed her. Dying, she told her lord Malygos that she had done her best.",
+  "triggers": [
+   [
+    3,
+    24882
+   ],
+   [
+    3,
+    25038
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Her body did not rest. When Brutallus fell, the Legion raised it as Felmyst, a fel dragon crying glory to Kil'jaeden. When Felmyst fell in turn, Kalecgos said that Madrigosa had deserved a far better fate.",
+    "triggers": [
+     [
+      3,
+      25038
+     ]
+    ],
+    "sources": [
+     "creature_text 24882, 24895, 25038, 24844"
+    ]
+   }
+  ],
+  "related": [
+   407500,
+   90000063,
+   413101
+  ],
+  "sources": [
+   "creature_text 24882, 24895, 25038, 24844"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 407502,
+  "kind": 2,
+  "zone": 4075,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 12,
+  "title": "Sathrovarr the Corruptor",
+  "body": "Sathrovarr the Corruptor is the demon that has taken hold of Kalecgos of the blue flight at the edge of the Sunwell. Over the terrace the maddened dragon rages in Kil'jaeden's name, while in a realm beyond the waking world his true self, Kalec, begs for help before he loses his mind. Sathrovarr always wins, he boasts; he is never on the losing side.",
+  "triggers": [
+   [
+    3,
+    24892
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Freed, Kalecgos swore that he was forever in his rescuers' debt, and that once Kil'jaeden was beaten the whole world would be in their debt as well.",
+    "triggers": [
+     [
+      3,
+      24892
+     ]
+    ],
+    "sources": [
+     "creature_text 24850, 24891, 24892"
+    ]
+   }
+  ],
+  "related": [
+   413101,
+   90000063,
+   407500
+  ],
+  "sources": [
+   "creature_text 24850, 24891, 24892"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 407503,
+  "kind": 2,
+  "zone": 4075,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 12,
+  "title": "M'uru",
+  "body": "M'uru is the naaru that Kael'thas's followers took from Tempest Keep and brought to the Sunwell, where its light has been drained to feed the well. What is left of it still fights, and when its light finally fails it collapses into darkness and rises again as Entropius, a thing of the void.",
+  "triggers": [
+   [
+    3,
+    25840
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "After the Deceiver's defeat, Lady Liadrin grieved that her people's arrogance had damned one of the most noble beings of all. Velen showed her M'uru's heart, its spark reclaimed and unblemished: in time, he said, its light might rebirth the soul of a nation.",
+    "triggers": [
+     [
+      3,
+      25315
+     ]
+    ],
+    "sources": [
+     "creature_text 26246, 26247; M'uru 25741 and Entropius 25840 (summoned on M'uru's fall)"
+    ]
+   }
+  ],
+  "related": [
+   90000052,
+   384500,
+   407504,
+   92000003
+  ],
+  "sources": [
+   "creature_text 26246, 26247; M'uru 25741 and Entropius 25840 (summoned on M'uru's fall)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 407504,
+  "kind": 2,
+  "zone": 4075,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 12,
+  "title": "Kil'jaeden",
+  "body": "Kil'jaeden the Deceiver, eredar lord of the Burning Legion, comes through the Sunwell at last. With the expendable perished, he means to succeed where Sargeras could not: to bleed this world and secure his place as the true master of the Legion. His servants drain a girl in the well's chamber to open his way.",
+  "triggers": [
+   [
+    3,
+    25315
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The girl was Anveena, whom Kalecgos loved. He begged her to wake and become what she was always meant to be, for only she could cleanse the Sunwell. She let go, the spell broke, and the Sunwell's power turned against the Deceiver.",
+    "triggers": [
+     [
+      3,
+      25315
+     ]
+    ],
+    "sources": [
+     "creature_text 25315, 25608, 25319, 26046, 26246"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Prophet Velen, who called the Deceiver his brother, said that his anguished cry of defeat would echo across the universe and bring new hope to all who still stand against the Legion.",
+    "triggers": [
+     [
+      3,
+      25315
+     ]
+    ],
+    "sources": [
+     "creature_text 25315, 25608, 25319, 26046, 26246"
+    ]
+   }
+  ],
+  "related": [
+   90000065,
+   91000031,
+   355705,
+   407503
+  ],
+  "sources": [
+   "creature_text 25315, 25608, 25319, 26046, 26246"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

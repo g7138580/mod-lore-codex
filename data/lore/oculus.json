@@ -1,0 +1,177 @@
+[
+ {
+  "id": 422800,
+  "kind": 0,
+  "zone": 4228,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Oculus",
+  "body": "The Oculus floats above the Nexus, a great orb of rings turning around a core of raw arcane power: the conduit through which Malygos draws the magic of the world's ley lines. Azure ring guardians patrol its bands on blue drakes, inquisitors, spellbinders and ring-lords keep its platforms, and centrifuge constructs turn in the middle rings, shielding the commander who holds the skies.",
+  "triggers": [
+   [
+    1,
+    4228
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The dragons' latest strike team was captured and is held inside the Oculus. Malygos and his servants, Raelorasz admits, grow stronger with each passing day.",
+    "triggers": [
+     [
+      4,
+      13124
+     ]
+    ],
+    "sources": [
+     "Oculus spawns (map 578); Oculus quests 13124, 13128; creature_text 27447"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Not since the start of the Nexus War, Raelorasz said, had the dragons dealt the Lord of Magic a blow of such magnitude.",
+    "triggers": [
+     [
+      5,
+      13128
+     ]
+    ],
+    "sources": [
+     "Oculus spawns (map 578); Oculus quests 13124, 13128; creature_text 27447"
+    ]
+   }
+  ],
+  "related": [
+   353712,
+   353723,
+   90000078,
+   422801
+  ],
+  "sources": [
+   "Oculus spawns (map 578); Oculus quests 13124, 13128; creature_text 27447"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 422801,
+  "kind": 2,
+  "zone": 4228,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Belgaristrasz, Verdisa and Eternos",
+  "body": "Belgaristrasz of the red flight, Verdisa of the green and Eternos of the bronze led the dragons' strike into the Oculus and were taken prisoner, held by Drakos the Interrogator, for whom the word of Malygos is law. Freed, they lend drakes of their own flights to their rescuers: only on dragonback can anyone reach the blue flight's lords on the rings above.",
+  "triggers": [
+   [
+    5,
+    13124
+   ],
+   [
+    4,
+    13126
+   ],
+   [
+    3,
+    27654
+   ]
+  ],
+  "related": [
+   422800,
+   90000079,
+   90000022,
+   90000060
+  ],
+  "sources": [
+   "Oculus quests 13124, 13126; creature_text 27654, 27658"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 422802,
+  "kind": 2,
+  "zone": 4228,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Mage-Lord Urom",
+  "body": "Mage-Lord Urom guards the Oculus's third ring for the Spell-Weaver, a trickster and conjurer who appears alone and defenseless and is neither. He pities those who defy Malygos as blind fools without foresight: Malygos, he insists, is saving the world from itself.",
+  "triggers": [
+   [
+    3,
+    27655
+   ],
+   [
+    4,
+    13127
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Even dying he did not recant: everything he had done, he insisted with his last breath, had been for Azeroth.",
+    "triggers": [
+     [
+      3,
+      27655
+     ]
+    ],
+    "sources": [
+     "Oculus quest 13127; creature_text 27655, 28012"
+    ]
+   }
+  ],
+  "related": [
+   422800,
+   353723
+  ],
+  "sources": [
+   "Oculus quest 13127; creature_text 27655, 28012"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 422803,
+  "kind": 2,
+  "zone": 4228,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Ley-Guardian Eregos",
+  "body": "Ley-Guardian Eregos is a blue dragon of immense power and one of Malygos's most trusted servants, the guardian of the ley line conduit at the top of the Oculus. He draws his strength from the energies he defends, sipping from the well of the Aspect himself, and he scorns those who would turn the arcane against its masters.",
+  "triggers": [
+   [
+    3,
+    27656
+   ],
+   [
+    4,
+    13128
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Beaten, he told the victors to savor their small victory: they and their dragon allies had won a battle, but the blue flight would win the Nexus War.",
+    "triggers": [
+     [
+      3,
+      27656
+     ]
+    ],
+    "sources": [
+     "Oculus quest 13128; creature_text 27656"
+    ]
+   }
+  ],
+  "related": [
+   422800,
+   90000063,
+   353723
+  ],
+  "sources": [
+   "Oculus quest 13128; creature_text 27656"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

@@ -1,0 +1,90 @@
+[
+ {
+  "id": 450000,
+  "kind": 0,
+  "zone": 4500,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Eye of Eternity",
+  "body": "The Eye of Eternity is Malygos's own domain at the heart of the Nexus, a platform hanging in a starry void that can be reached only through the focusing iris. It is a realm of his making, where he claims the rules of reality do not apply, and here all the magic he drains from the world gathers around him in the dark.",
+  "triggers": [
+   [
+    1,
+    4500
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Krasus brings the judgment of the other Aspects: Malygos cannot be brought back into the fold, and the Spell-Weaver must be put down.",
+    "triggers": [
+     [
+      4,
+      13384
+     ],
+     [
+      4,
+      13385
+     ]
+    ],
+    "sources": [
+     "Eye of Eternity quests 13384, 13385; creature_text 28859, 32295"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In his realm Malygos offered one chance to pledge fealty. Then he blamed reckless, careless mortals for the war, and accepted their extinction if that was the price.",
+    "triggers": [
+     [
+      3,
+      28859
+     ]
+    ],
+    "sources": [
+     "Eye of Eternity quests 13384, 13385; creature_text 28859, 32295"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "His last words were for his sister: the mortals would destroy everything. Alexstrasza answered that he had given her no alternative, declared the Nexus War ended, and said she would mourn him, once a guardian.",
+    "triggers": [
+     [
+      3,
+      28859
+     ]
+    ],
+    "sources": [
+     "Eye of Eternity quests 13384, 13385; creature_text 28859, 32295"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Magic is now without its guardian, Krasus said. He hoped the decision would prove wise, for a storm was still brewing and the world had lost one of its mightiest defenders.",
+    "triggers": [
+     [
+      5,
+      13384
+     ],
+     [
+      5,
+      13385
+     ]
+    ],
+    "sources": [
+     "Eye of Eternity quests 13384, 13385; creature_text 28859, 32295"
+    ]
+   }
+  ],
+  "related": [
+   353723,
+   6523,
+   90000063,
+   90000078
+  ],
+  "sources": [
+   "Eye of Eternity quests 13384, 13385; creature_text 28859, 32295"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

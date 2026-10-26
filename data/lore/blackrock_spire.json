@@ -1,0 +1,318 @@
+[
+ {
+  "id": 158300,
+  "kind": 0,
+  "zone": 1583,
+  "sort": 0,
+  "faction": 0,
+  "title": "Blackrock Spire",
+  "body": "Blackrock Spire is the citadel the Dark Irons carved in the upper reaches of Blackrock Mountain, and it is theirs no longer. The Blackrock orcs hold it as their capital, with ogres and Smolderthorn trolls in the lower city, and worgs are bred here for their raids. Above them, in the upper citadel, dragonkin of the black flight hold the halls, and the clan's warchief keeps his court.",
+  "triggers": [
+   [
+    1,
+    1583
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The lower city answers to three commanders: the ogre Highlord Omokk, the Smolderthorn war master Voone, and Overlord Wyrmthalak, master of the lower citadel.",
+    "triggers": [
+     [
+      4,
+      4903
+     ],
+     [
+      4,
+      5081
+     ]
+    ],
+    "sources": [
+     "Blackrock Spire quests 4701, 4724, 4903, 5002, 5081"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The worgs of Blackrock come from Halycon, their gigantic den mother, and her mate, of whom no one has lived to tell.",
+    "triggers": [
+     [
+      4,
+      4724
+     ],
+     [
+      4,
+      4701
+     ]
+    ],
+    "sources": [
+     "Blackrock Spire quests 4701, 4724, 4903, 5002, 5081"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The goblin operative Bijou learned the truth of the place: the orcs are beasts of burden and cannon fodder for the black dragonflight, and their true master is Nefarian, brood of Deathwing.",
+    "triggers": [
+     [
+      4,
+      5002
+     ]
+    ],
+    "sources": [
+     "Blackrock Spire quests 4701, 4724, 4903, 5002, 5081"
+    ]
+   }
+  ],
+  "related": [
+   90000017,
+   90000024,
+   4610
+  ],
+  "sources": [
+   "Blackrock Spire quests 4701, 4724, 4903, 5002, 5081"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 158301,
+  "kind": 1,
+  "zone": 1583,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Halls of Binding",
+  "body": "The Halls of Binding guard the way into the upper citadel of Blackrock Spire. There the Blackhand legion's incarcerators keep a great fire elemental, Pyroguard Emberseer, chained in their magic, and none pass on to the upper halls without first dealing with what the halls hold bound.",
+  "triggers": [
+   [
+    1,
+    4628
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "When the incarcerators fell, Emberseer regained its strength and broke free of its bonds. It laughed, thanked its liberators, and set about charring the flesh from their bones.",
+    "triggers": [
+     [
+      3,
+      9816
+     ]
+    ],
+    "sources": [
+     "creature_text 9816"
+    ]
+   }
+  ],
+  "related": [
+   158300,
+   158302
+  ],
+  "sources": [
+   "creature_text 9816"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 158304,
+  "kind": 2,
+  "zone": 1583,
+  "sort": 0,
+  "faction": 0,
+  "title": "Vaelan",
+  "body": "Vaelan appears in the lower citadel in a form mortals can bear: he is the red dragon Vaelastrasz. Nefarian rules this citadel, he says, and carries on his father Deathwing's work, breeding chromatic dragonkin that no Aspect's power can touch. Ysera saw the abominations and forced the flights to act, but ancient wards keep every dragon from Nefarian's sanctum.",
+  "triggers": [
+   [
+    2,
+    10296
+   ],
+   [
+    4,
+    4742
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "One not of dragon kind may pass the wards with a Seal of Ascension, the token of Nefarian's Blackhand legion, forged from an unadorned seal in black dragonfire.",
+    "triggers": [
+     [
+      4,
+      4742
+     ],
+     [
+      4,
+      4743
+     ]
+    ],
+    "sources": [
+     "Vaelan gossip 12039-12048; quests 4742, 4743"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The seal complete, Vaelastrasz laid the protection of his flight on it: in their darkest hour its bearers would have the might of the red flight at their side.",
+    "triggers": [
+     [
+      5,
+      4743
+     ]
+    ],
+    "sources": [
+     "Vaelan gossip 12039-12048; quests 4742, 4743"
+    ]
+   }
+  ],
+  "related": [
+   90000024,
+   90000079,
+   158305
+  ],
+  "sources": [
+   "Vaelan gossip 12039-12048; quests 4742, 4743"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 158302,
+  "kind": 2,
+  "zone": 1583,
+  "sort": 0,
+  "faction": 0,
+  "title": "Warchief Rend Blackhand",
+  "body": "Rend Blackhand is the son of Blackhand, warchief of the old Horde, and he calls himself Warchief in Blackrock Spire. His war with the Dark Irons for the Spire cost the clan dearly, and the black dragonflight protects him now. He rides the dragon Gyth, and Thrall wants his head.",
+  "triggers": [
+   [
+    3,
+    10429
+   ],
+   [
+    4,
+    4974
+   ],
+   [
+    4,
+    4941
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Rend was thought slain decades ago, and the Horde had long believed it. Even Eitrigg, who knows the workings of the Blackrock better than anyone, had believed it.",
+    "triggers": [
+     [
+      4,
+      4941
+     ]
+    ],
+    "sources": [
+     "Blackrock Spire quests 4974, 4941; creature_text 10162, 10429"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Rend fought in an arena while Lord Victor Nefarius, Lord of Blackrock, looked on from above, and when his champions failed, Nefarius sent the warchief himself. Rend was knocked from his drake and died.",
+    "triggers": [
+     [
+      3,
+      10429
+     ]
+    ],
+    "sources": [
+     "Blackrock Spire quests 4974, 4941; creature_text 10162, 10429"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Thrall called his death a crippling blow to the forces of Blackrock: with their false Warchief slain, the Blackrock legion was thrown back into chaos.",
+    "triggers": [
+     [
+      5,
+      4974
+     ]
+    ],
+    "sources": [
+     "Blackrock Spire quests 4974, 4941; creature_text 10162, 10429"
+    ]
+   }
+  ],
+  "related": [
+   90000017,
+   163709,
+   158300
+  ],
+  "sources": [
+   "Blackrock Spire quests 4974, 4941; creature_text 10162, 10429"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 158305,
+  "kind": 2,
+  "zone": 1583,
+  "sort": 0,
+  "faction": 0,
+  "title": "General Drakkisath",
+  "body": "General Drakkisath, a black dragon champion, rules the dragonspawn armies of Nefarian from the heights of the upper citadel, with drakonids and dragonspawn guarding the halls around him. He answers to no one in the Spire but the lord of the black flight, and Marshal Maxwell of Morgan's Vigil wants him dead.",
+  "triggers": [
+   [
+    3,
+    10363
+   ],
+   [
+    4,
+    5102
+   ],
+   [
+    4,
+    6502
+   ],
+   [
+    4,
+    6602
+   ],
+   [
+    4,
+    7761
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Only the blood of a black dragon champion can mend the Drakefire Amulet, the key that opens Onyxia's lair, and Drakkisath is that champion.",
+    "triggers": [
+     [
+      4,
+      6502
+     ],
+     [
+      4,
+      6602
+     ]
+    ],
+    "sources": [
+     "Blackrock Spire quests 5089, 5102, 6502, 6602, 7761"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "A letter from Rend Blackhand to his quartermaster says the orb that leads into Blackwing works only for those with Drakkisath's mark branded on their hand, and the general guards the brand himself.",
+    "triggers": [
+     [
+      4,
+      7761
+     ]
+    ],
+    "sources": [
+     "Blackrock Spire quests 5089, 5102, 6502, 6602, 7761"
+    ]
+   }
+  ],
+  "related": [
+   90000024,
+   158304,
+   4613
+  ],
+  "sources": [
+   "Blackrock Spire quests 5089, 5102, 6502, 6602, 7761"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

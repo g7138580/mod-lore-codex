@@ -1,0 +1,98 @@
+[
+ {
+  "id": 480900,
+  "kind": 0,
+  "zone": 4809,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 16,
+  "title": "The Forge of Souls",
+  "body": "The Forge of Souls is a side way into Icecrown Citadel, a great engine where the Cult of the Damned harvests the souls of the dead for the master's host. Soulguard watchmen, reapers, animators and bonecasters tend its machines of death, and souls in torment drift through its halls. Lady Jaina Proudmoore and Lady Sylvanas Windrunner have each found the hole in the citadel's defenses and slipped inside with a small band, while the Lich King's eyes are on the front gate.",
+  "triggers": [
+   [
+    1,
+    4809
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Jaina hopes that past the forge, in the Halls of Reflection where Arthas lets his guard down, she will find a clue to his weakness, or maybe, just maybe, his redemption.",
+    "triggers": [
+     [
+      5,
+      24499
+     ]
+    ],
+    "sources": [
+     "Forge of Souls spawns (map 632); Forge of Souls quests 24499, 24511; creature_text 37596, 37597"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Sylvanas hopes that past the forge, in the Halls of Reflection where Arthas lets his guard down, she will find a clue to his weakness, and a route to a vengeance long overdue.",
+    "triggers": [
+     [
+      5,
+      24511
+     ]
+    ],
+    "sources": [
+     "Forge of Souls spawns (map 632); Forge of Souls quests 24499, 24511; creature_text 37596, 37597"
+    ]
+   }
+  ],
+  "related": [
+   21018,
+   92000005,
+   480901
+  ],
+  "sources": [
+   "Forge of Souls spawns (map 632); Forge of Souls quests 24499, 24511; creature_text 37596, 37597"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 480901,
+  "kind": 2,
+  "zone": 4809,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 16,
+  "title": "The Devourer of Souls",
+  "body": "The Devourer of Souls is the harvest of the forge made flesh, a towering host of the souls it has taken, and it screams at those who dare look upon it that it will devour them whole. Its keeper, Bronjahm, the Godfather of Souls, fed it everyone he could sever from his body, promising that the Devourer awaited.",
+  "triggers": [
+   [
+    3,
+    36502
+   ],
+   [
+    3,
+    36497
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Dying, the Devourer warned that the swell of souls would not be abated: its killers had only delayed the inevitable.",
+    "triggers": [
+     [
+      3,
+      36502
+     ]
+    ],
+    "sources": [
+     "creature_text 36497, 36502"
+    ]
+   }
+  ],
+  "related": [
+   480900,
+   91000021
+  ],
+  "sources": [
+   "creature_text 36497, 36502"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

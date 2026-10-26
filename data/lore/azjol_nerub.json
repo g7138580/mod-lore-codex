@@ -1,0 +1,99 @@
+[
+ {
+  "id": 427700,
+  "kind": 0,
+  "zone": 4277,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Azjol-Nerub",
+  "body": "Azjol-Nerub is the underground kingdom of the Nerubians beneath the Dragonblight, and its upper city belongs to the dead now. Anub'ar warriors, shadowcasters and skirmishers hold its gate, brood keepers tend the clutches of eggs from which the Scourge's next Nerubians will hatch, and webs hang thick across tunnels that once carried the traffic of a great and ancient empire.",
+  "triggers": [
+   [
+    1,
+    4277
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The gatewatcher Krik'thir held that the kingdom belonged to the Scourge and only the dead might enter. Dying, he said he should have been grateful, but had long ago lost the capacity.",
+    "triggers": [
+     [
+      3,
+      28684
+     ]
+    ],
+    "sources": [
+     "Azjol-Nerub spawns (map 601); Azjol-Nerub quest 13182; creature_text 28684"
+    ]
+   }
+  ],
+  "related": [
+   90000080,
+   427701,
+   90000006
+  ],
+  "sources": [
+   "Azjol-Nerub spawns (map 601); Azjol-Nerub quest 13182; creature_text 28684"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 427701,
+  "kind": 2,
+  "zone": 4277,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Anub'arak",
+  "body": "Anub'arak, the traitor king, rules the ruins of Azjol-Nerub for the Lich King, a crypt lord at the head of an army of undead Nerubians sworn to his master. He was king of this empire once, he says: in life he stood as its champion, in death he returned as its conqueror, and now he protects the kingdom once more. Ironic, he finds it.",
+  "triggers": [
+   [
+    3,
+    29120
+   ],
+   [
+    4,
+    13167
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "As he died, something left him with a roar. He had never thought, he gasped, that he would be free of him.",
+    "triggers": [
+     [
+      3,
+      29120
+     ]
+    ],
+    "sources": [
+     "Azjol-Nerub quests 13167, 13254; creature_text 29120"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Kilix's eyes blazed at the sight of the traitor king's husk: the deed would be recorded in the history of his people.",
+    "triggers": [
+     [
+      5,
+      13167
+     ]
+    ],
+    "sources": [
+     "Azjol-Nerub quests 13167, 13254; creature_text 29120"
+    ]
+   }
+  ],
+  "related": [
+   90000080,
+   427700,
+   92000005
+  ],
+  "sources": [
+   "Azjol-Nerub quests 13167, 13254; creature_text 29120"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

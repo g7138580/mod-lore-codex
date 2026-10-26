@@ -1,0 +1,158 @@
+[
+ {
+  "id": 380500,
+  "kind": 0,
+  "zone": 3805,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 12,
+  "title": "Zul'Aman",
+  "body": "Zul'Aman is the ancient capital of the Amani, the city of the forest trolls in the mountains east of Quel'Thalas, and it is stirring again. Warbringers, medicine men and flame casters crowd its terraces, beast tamers drive bears, lynxes and war dragonhawks before them, and the priests at its heart call on the spirits of the animal gods. Outside the gates a treasure hunter's crew waits for someone else to go in first.",
+  "triggers": [
+   [
+    1,
+    3805
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Harrison Jones, an adventurer, warns strangers that this place will chew them up and spit out their bones, then leads them to the gates anyway: if enough of them strike the gong at once, by his calculations, the seal will break.",
+    "triggers": [
+     [
+      2,
+      24358
+     ]
+    ],
+    "sources": [
+     "Zul'Aman spawns (map 568); Harrison Jones gossip 8932, creature_text 24358; Zul'Aman quest 11178; Ghostlands quest 11163"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Budd Nedreck took the Blood of Zul'jin with poor grace. He could have taken the warlord down with ease, he said; the old cretin could not have been as fearsome as the legends claim.",
+    "triggers": [
+     [
+      5,
+      11178
+     ]
+    ],
+    "sources": [
+     "Zul'Aman spawns (map 568); Harrison Jones gossip 8932, creature_text 24358; Zul'Aman quest 11178; Ghostlands quest 11163"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Donna Brascoe of Budd's crew was a Shattrath Peacekeeper all along, sent to infiltrate his gang and keep an eye on the people who came to work for him.",
+    "triggers": [
+     [
+      5,
+      11163
+     ]
+    ],
+    "sources": [
+     "Zul'Aman spawns (map 568); Harrison Jones gossip 8932, creature_text 24358; Zul'Aman quest 11178; Ghostlands quest 11163"
+    ]
+   }
+  ],
+  "related": [
+   90000030,
+   343318,
+   380502
+  ],
+  "sources": [
+   "Zul'Aman spawns (map 568); Harrison Jones gossip 8932, creature_text 24358; Zul'Aman quest 11178; Ghostlands quest 11163"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 380501,
+  "kind": 2,
+  "zone": 3805,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 12,
+  "title": "The Four Avatars",
+  "body": "Four of the Amani's high priests have given themselves to the animal gods of their people: Nalorakk to the bear, Akil'zon to the eagle, Halazzi to the lynx and Jan'alai to the dragonhawk. Each fights in the shape or with the power of his god, and each would feed the souls of strangers to his spirit: what could be better, Nalorakk asks, than serving the bear spirit for eternity?",
+  "triggers": [
+   [
+    3,
+    23576
+   ],
+   [
+    3,
+    23574
+   ],
+   [
+    3,
+    23577
+   ],
+   [
+    3,
+    23578
+   ]
+  ],
+  "related": [
+   380500,
+   380502,
+   90000030
+  ],
+  "sources": [
+   "creature_text 23574, 23576, 23577, 23578 (subnames Eagle, Bear, Lynx and Dragonhawk Avatar)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 380502,
+  "kind": 2,
+  "zone": 3805,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 12,
+  "title": "Zul'jin",
+  "body": "Zul'jin is the warlord of the Amani, the troll the Farstriders once held captive until he cut off his own arm to escape, and he has come home to Zul'Aman to raise the empire again. Everybody always wants to take from his people, he says; now they will take back. He has learned new tricks: the forms of the bear, the eagle, the lynx and the dragonhawk, whose avatars guard his city.",
+  "triggers": [
+   [
+    3,
+    23863
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Even dying, Zul'jin did not give ground in his words: he might fall, he said, but the Amani empire would never die.",
+    "triggers": [
+     [
+      3,
+      23863
+     ]
+    ],
+    "sources": [
+     "creature_text 23863, 24239; Silvermoon 348704 (Halduron)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Hex Lord Malacrass, his master of voodoo, guarded the way to him, siphoning the souls of his enemies to turn their own powers against them. Dying, the Hex Lord swore that this was not the end for him.",
+    "triggers": [
+     [
+      3,
+      24239
+     ]
+    ],
+    "sources": [
+     "creature_text 23863, 24239; Silvermoon 348704 (Halduron)"
+    ]
+   }
+  ],
+  "related": [
+   380500,
+   348704,
+   90000030
+  ],
+  "sources": [
+   "creature_text 23863, 24239; Silvermoon 348704 (Halduron)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

@@ -1,0 +1,86 @@
+[
+ {
+  "id": 449300,
+  "kind": 0,
+  "zone": 4493,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Obsidian Sanctum",
+  "body": "The Obsidian Sanctum is the black dragonflight's chamber among the sanctums of the Aspects beneath Wyrmrest Temple, a hot cavern of black rock and running lava. Onyx sanctum guardians, brood generals, blaze mistresses and flight captains keep its approaches, and at its heart, ringed by fire and lava, lies a clutch of strange eggs watched over by the greatest of them.",
+  "triggers": [
+   [
+    1,
+    4493
+   ]
+  ],
+  "related": [
+   6509,
+   90000024,
+   449301
+  ],
+  "sources": [
+   "Obsidian Sanctum spawns (map 615); creature_text 30453, 30680"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 449301,
+  "kind": 2,
+  "zone": 4493,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Sartharion",
+  "body": "Sartharion, the Onyx Guardian, holds the Obsidian Sanctum, and it is his charge to watch over its eggs: he will see intruders burn before any harm comes to them. When the siege presses him he calls his three drakes to his side, Tenebron, Shadron and Vesperon, and the lava around him churns until it sweeps the floor.",
+  "triggers": [
+   [
+    3,
+    28860
+   ],
+   [
+    3,
+    30452
+   ],
+   [
+    3,
+    30451
+   ],
+   [
+    3,
+    30449
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "His drakes are twilight dragons, and they think little of him. Father taught us well, Shadron boasts; Father was right about you, Vesperon tells Sartharion, you are a weakling. Who their father is, none of them says.",
+    "triggers": [
+     [
+      3,
+      30452
+     ],
+     [
+      3,
+      30451
+     ],
+     [
+      3,
+      30449
+     ]
+    ],
+    "sources": [
+     "creature_text 28860, 30449, 30451, 30452"
+    ]
+   }
+  ],
+  "related": [
+   449300,
+   90000024
+  ],
+  "sources": [
+   "creature_text 28860, 30449, 30451, 30452"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

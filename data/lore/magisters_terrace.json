@@ -1,0 +1,117 @@
+[
+ {
+  "id": 413100,
+  "kind": 0,
+  "zone": 4131,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 12,
+  "title": "Magisters' Terrace",
+  "body": "Magisters' Terrace rises over the Isle of Quel'Danas, a sanctum of the magisters of Quel'Thalas, and the forces of Prince Kael'thas hold it now. Sunblade magisters, warlocks, physicians and blood knights keep its halls, wretched elves maddened by their hunger for magic shamble among them, and Coilskar naga, Ethereum smugglers and sisters of torment stand with the Sunblade against all comers.",
+  "triggers": [
+   [
+    1,
+    4131
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Shattered Sun Offensive had a blood elf spy, Tyrith, embedded in the terrace, and he has suddenly stopped reporting.",
+    "triggers": [
+     [
+      4,
+      11488
+     ]
+    ],
+    "sources": [
+     "Magisters' Terrace spawns (map 585); Magisters' Terrace quests 11488, 11490; creature_text 24723"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Tyrith was found dying. With his last breath he gasped that they are feeding the Sunwell, and that they must be stopped.",
+    "triggers": [
+     [
+      4,
+      11490
+     ]
+    ],
+    "sources": [
+     "Magisters' Terrace spawns (map 585); Magisters' Terrace quests 11488, 11490; creature_text 24723"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Magister Selin Fireheart held the first hall, drawing on fel crystals until he cried that he was a god. Dying, he begged for more.",
+    "triggers": [
+     [
+      3,
+      24723
+     ]
+    ],
+    "sources": [
+     "Magisters' Terrace spawns (map 585); Magisters' Terrace quests 11488, 11490; creature_text 24723"
+    ]
+   }
+  ],
+  "related": [
+   408000,
+   90000036,
+   92000002,
+   413101
+  ],
+  "sources": [
+   "Magisters' Terrace spawns (map 585); Magisters' Terrace quests 11488, 11490; creature_text 24723"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 413101,
+  "kind": 2,
+  "zone": 4131,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 12,
+  "title": "Kalecgos",
+  "body": "Kalecgos is a dragon of the blue flight who has watched over the nascent powers of the Sunwell for some time, and he comes in the guise of a high elf to those who use the scrying orb on the terrace. Their ends are the same, he assures them: the well's terrible power could usher in the end of the world.",
+  "triggers": [
+   [
+    2,
+    24848
+   ],
+   [
+    5,
+    11490
+   ],
+   [
+    4,
+    11492
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Legion works tirelessly to bend the Sunwell's power to its ends, and Kael'thas has risen from the ashes of defeat to lead them once more. Kalecgos leaves the prince's fate to others; more urgent matters call him.",
+    "triggers": [
+     [
+      4,
+      11492
+     ]
+    ],
+    "sources": [
+     "Magisters' Terrace quests 11490, 11492; Kalecgos gossip 9199-9201"
+    ]
+   }
+  ],
+  "related": [
+   413100,
+   90000063,
+   92000002
+  ],
+  "sources": [
+   "Magisters' Terrace quests 11490, 11492; Kalecgos gossip 9199-9201"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

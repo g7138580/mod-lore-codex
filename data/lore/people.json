@@ -69,6 +69,23 @@
     "sources": [
      "Western Plaguelands 2800, 2804, 2805, 2824"
     ]
+   },
+   {
+    "part": 6,
+    "body": "In the frozen lair of Naxxramas Kel'Thuzad fell to mortal heroes, and swore with his last breath that their victory was hollow, for he would return with powers beyond their imagining.",
+    "triggers": [
+     [
+      3,
+      15990
+     ],
+     [
+      3,
+      351019
+     ]
+    ],
+    "sources": [
+     "Western Plaguelands 2800, 2804, 2805, 2824"
+    ]
    }
   ],
   "hint": "Learned where the Cult of the Damned first spread its plague.",
@@ -87,7 +104,8 @@
    "Quel'Danas 408000, Eversong 343012 (raised at the Sunwell)",
    "Alterac 3619 (Archimonde at Dalaran)",
    "warcraft.wiki.gg Kel'Thuzad (pre-Cataclysm)",
-   "Borean 353725"
+   "Borean 353725",
+   "Naxxramas creature_text 15990"
   ],
   "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
@@ -299,6 +317,32 @@
     "sources": [
      "Silvermoon 348700, 348701, 348703"
     ]
+   },
+   {
+    "part": 2,
+    "body": "In the Eye he met his challengers with a boast: energy and power, his people's addiction since the Sunwell fell, were their future. He set his four advisors on them, raised them again when they fell, since fair treatment was never shown his people, and died crying for Quel'Thalas.",
+    "triggers": [
+     [
+      3,
+      19622
+     ]
+    ],
+    "sources": [
+     "Silvermoon 348700, 348701, 348703"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "On Quel'Danas he met his challengers again, scorning Tempest Keep as a mere setback: he had never trusted the future to a blind, half night elf mongrel, who was only an instrument. He died swearing that the master would have them and the world would burn.",
+    "triggers": [
+     [
+      3,
+      24664
+     ]
+    ],
+    "sources": [
+     "Silvermoon 348700, 348701, 348703"
+    ]
    }
   ],
   "hint": "Learned in the city that still awaits its prince.",
@@ -313,7 +357,9 @@
   "sources": [
    "Silvermoon 348700, 348701, 348703",
    "Quel'Danas 408000",
-   "warcraft.wiki.gg Kael'thas Sunstrider (pre-Cataclysm)"
+   "warcraft.wiki.gg Kael'thas Sunstrider (pre-Cataclysm)",
+   "creature_text 19622",
+   "creature_text 24664"
   ],
   "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
@@ -541,6 +587,45 @@
     "sources": [
      "quest 12593 description (immortality, force of retribution)"
     ]
+   },
+   {
+    "part": 6,
+    "body": "On the Frozen Throne he told Tirion he had trained the greatest fighting force the world had ever known and delivered it into his hands, as he intended: he would raise them as masters of the Scourge.",
+    "triggers": [
+     [
+      3,
+      36597
+     ]
+    ],
+    "sources": [
+     "quest 12593 description (immortality, force of retribution)"
+    ]
+   },
+   {
+    "part": 7,
+    "body": "Tirion broke free and shattered Frostmourne, and from the blade came the spirit of King Terenas Menethil, Arthas's father: free at last, he told his son, it was over.",
+    "triggers": [
+     [
+      3,
+      36597
+     ]
+    ],
+    "sources": [
+     "quest 12593 description (immortality, force of retribution)"
+    ]
+   },
+   {
+    "part": 8,
+    "body": "Dying, he looked on his killers: now he stood, the lion before the lambs, and they did not fear. They could not fear.",
+    "triggers": [
+     [
+      3,
+      36597
+     ]
+    ],
+    "sources": [
+     "quest 12593 description (immortality, force of retribution)"
+    ]
    }
   ],
   "hint": "Learned in the presence of the master of the Scourge.",
@@ -567,7 +652,8 @@
    "creature_text 29520 (unworthy initiate: I was a soldier of the Light once)",
    "warcraft.wiki.gg/wiki/Acherus:_The_Ebon_Hold (necromancers raised bodies Razuvious selected)",
    "warcraft.wiki.gg Lich King, Ner'zhul, Arthas Menethil (pre-Cataclysm)",
-   "Icecrown 21030, 21036, 21045"
+   "Icecrown 21030, 21036, 21045",
+   "creature_text 36597, 38579, 38995"
   ],
   "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
@@ -599,6 +685,19 @@
     "sources": [
      "warcraft.wiki.gg/wiki/Thrall (Durotan and Draka, Frostwolf, Durnholde gladiator, internment camps, Doomhammer's warhammer and Warchief title, Kalimdor)"
     ]
+   },
+   {
+    "part": 2,
+    "body": "As a young slave in Durnholde he hid his dreams: one day his people would overthrow their oppressors and rise as one, and from that uprising the orcish Horde would be born.",
+    "triggers": [
+     [
+      4,
+      10284
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Thrall (Durotan and Draka, Frostwolf, Durnholde gladiator, internment camps, Doomhammer's warhammer and Warchief title, Kalimdor)"
+    ]
    }
   ],
   "hint": "Learned in the Warchief's own hall.",
@@ -615,7 +714,8 @@
    "npc_text 5736 (peace with the Alliance; too young to remember the wars and bloodshed of ages past)",
    "quest 10175 reward text (I have a grandmother? She lives?)",
    "quest 13266 description (Justice must be served)",
-   "warcraft.wiki.gg Thrall (pre-Cataclysm)"
+   "warcraft.wiki.gg Thrall (pre-Cataclysm)",
+   "Caverns of Time quest 10284"
   ],
   "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
@@ -772,6 +872,19 @@
     "body": "Champions from Shattrath fought their way to the summit of the Black Temple, and Illidan Stormrage was struck down in the seat he had taken from Magtheridon.",
     "triggers": [],
     "minState": 12
+   },
+   {
+    "part": 2,
+    "body": "When Akama opened his sanctum, Illidan said he should have slaughtered Akama's malformed brethren long ago. Then Maiev Shadowsong came for him. Dying, he told her the huntress is nothing without the hunt, and she admitted he was right: she felt nothing.",
+    "triggers": [
+     [
+      3,
+      22917
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Shadowmoon_Valley (clan named after the valley, ancestor worship, Temple of Karabor as spiritual capital, Hand of Gul'dan raised to sever the link to the elements, Black Temple as Shadow Council base, Illidan's headquarters, settlements)"
+    ]
    }
   ],
   "hint": "Learned before the walls of the temple he took.",
@@ -791,7 +904,8 @@
    "creature_template subnames 'Servant of Illidan' on Ashtongue, Coilskar, Shadowmoon fel orcs; Eclipsion blood elves",
    "quests 10562, 10595 (infernals from Legion Hold)",
    "warcraft.wiki.gg/wiki/Black_Temple (sacred draenei site; no coastal setting in BC)",
-   "warcraft.wiki.gg Illidan Stormrage (pre-Cataclysm)"
+   "warcraft.wiki.gg Illidan Stormrage (pre-Cataclysm)",
+   "creature_text 22917, 23197"
   ],
   "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  }

@@ -1,0 +1,128 @@
+[
+ {
+  "id": 482000,
+  "kind": 0,
+  "zone": 4820,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 16,
+  "title": "The Halls of Reflection",
+  "body": "The Halls of Reflection are the Lich King's private sanctum within the citadel, a vaulted chamber of ice where, the scouts say, he lets his guard down. Spectral soldiers, priests and mages stand frozen in its halls, and at its heart, on an altar, rests Frostmourne itself, unguarded, just as the gnome claimed. Arthas would not leave it unguarded entirely, Jaina and Sylvanas both suspect.",
+  "triggers": [
+   [
+    1,
+    4820
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Lich King came for them and they fled before him through walls of ice. Jaina admitted it had been foolish to follow him; she had made that mistake too many times. With Uther's guidance, she said, they might stand a chance.",
+    "triggers": [
+     [
+      5,
+      24500
+     ]
+    ],
+    "sources": [
+     "Halls of Reflection spawns (map 668); Halls of Reflection quests 24500, 24711, 24713, 24802; creature_text 36955, 37221, 37223, 37554"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Lich King came for them and they fled before him through walls of ice. His strength has grown tenfold, Sylvanas said; it will take an army greater than even the Horde can rouse to destroy him.",
+    "triggers": [
+     [
+      5,
+      24802
+     ]
+    ],
+    "sources": [
+     "Halls of Reflection spawns (map 668); Halls of Reflection quests 24500, 24711, 24713, 24802; creature_text 36955, 37221, 37223, 37554"
+    ]
+   }
+  ],
+  "related": [
+   21018,
+   92000005,
+   482001
+  ],
+  "sources": [
+   "Halls of Reflection spawns (map 668); Halls of Reflection quests 24500, 24711, 24713, 24802; creature_text 36955, 37221, 37223, 37554"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 482001,
+  "kind": 2,
+  "zone": 4820,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 16,
+  "title": "Uther the Lightbringer",
+  "body": "Uther the Lightbringer, first of the paladins of the Silver Hand, died at the hand of the prince he trained, and his soul is one of those locked within Frostmourne. Before the blade in the Halls of Reflection he can still speak, but only for a moment: the Lich King sees what the sword sees.",
+  "triggers": [
+   [
+    4,
+    24500
+   ],
+   [
+    4,
+    24802
+   ],
+   [
+    5,
+    24480
+   ],
+   [
+    5,
+    24561
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Arthas, Uther said, is only a dwindling presence in the Lich King's mind. He must be destroyed where he merged with Ner'zhul, at the Frozen Throne, and yet there must always be a Lich King, or the Scourge would wash over the world.",
+    "triggers": [
+     [
+      4,
+      24500
+     ],
+     [
+      4,
+      24802
+     ]
+    ],
+    "sources": [
+     "Halls of Reflection quests 24480, 24500, 24561, 24802; creature_text 37225, 37158"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The reforged Quel'Delar leapt to life before Frostmourne. It was forged from saronite, Uther warned, the blood of an Old God, and it drank in the evil of the place; only the waters of the Sunwell could cleanse it.",
+    "triggers": [
+     [
+      5,
+      24480
+     ],
+     [
+      5,
+      24561
+     ]
+    ],
+    "sources": [
+     "Halls of Reflection quests 24480, 24500, 24561, 24802; creature_text 37225, 37158"
+    ]
+   }
+  ],
+  "related": [
+   482000,
+   90000032,
+   92000005
+  ],
+  "sources": [
+   "Halls of Reflection quests 24480, 24500, 24561, 24802; creature_text 37225, 37158"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

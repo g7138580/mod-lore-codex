@@ -1,0 +1,197 @@
+[
+ {
+  "id": 395900,
+  "kind": 0,
+  "zone": 3959,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 10,
+  "title": "The Black Temple",
+  "body": "Inside, the Black Temple is Illidan's fortress, and the old sanctuary of Karabor shows only in the stone. Coilskar naga and water elementals hold the flooded lower halls, Shadowmoon orcs and Bonechewer fel orcs crowd the barracks and the arena, the Dragonmaw keep the walls, courtesans and temple concubines wait in the upper halls, and blood elves and demons of the Illidari guard the way to the summit.",
+  "triggers": [
+   [
+    1,
+    3959
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Xi'ri's army of Aldor and Scryers drew Illidan's forces away from the gates so that Akama and Maiev could slip inside, and the naaru gave back the Medallion of Karabor, its power augmented, as the key to the temple.",
+    "triggers": [
+     [
+      5,
+      10985
+     ]
+    ],
+    "sources": [
+     "Black Temple spawns (map 564); Shadowmoon quest 10985; Spirit of Udalo gossip 8749, Spirit of Olum 8750"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The spirits of two of Akama's Deathsworn, Udalo and Olum, linger in the temple. Their bond to their brethren is still strong enough to carry Akama's allies deeper inside.",
+    "triggers": [
+     [
+      2,
+      23410
+     ],
+     [
+      2,
+      23411
+     ]
+    ],
+    "sources": [
+     "Black Temple spawns (map 564); Shadowmoon quest 10985; Spirit of Udalo gossip 8749, Spirit of Olum 8750"
+    ]
+   }
+  ],
+  "related": [
+   352016,
+   92000009,
+   352028,
+   395901
+  ],
+  "sources": [
+   "Black Temple spawns (map 564); Shadowmoon quest 10985; Spirit of Udalo gossip 8749, Spirit of Olum 8750"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 395901,
+  "kind": 2,
+  "zone": 3959,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 10,
+  "title": "The Shade of Akama",
+  "body": "Akama's soul is not his own. Illidan holds it prisoner in the Black Temple, and could destroy him at any moment, which is why the leader of the Ashtongue has hidden his intentions so long rather than side openly with the naaru. Inside the temple his shade stands bound by Ashtongue channelers, and he must take it back before he can strike.",
+  "triggers": [
+   [
+    3,
+    22841
+   ],
+   [
+    4,
+    10957
+   ],
+   [
+    4,
+    10948
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "With the shade destroyed, Akama called the Broken of the Ashtongue out of the shadows: the Betrayer's dark magic over the Ashtongue soul was broken, and the time had come to turn on their Illidari masters.",
+    "triggers": [
+     [
+      3,
+      22841
+     ]
+    ],
+    "sources": [
+     "Shattrath quest 10948; Black Temple quest 10957; creature_text 23191"
+    ]
+   }
+  ],
+  "related": [
+   352028,
+   395900,
+   90000021
+  ],
+  "sources": [
+   "Shattrath quest 10948; Black Temple quest 10957; creature_text 23191"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 395902,
+  "kind": 2,
+  "zone": 3959,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 10,
+  "title": "Teron Gorefiend",
+  "body": "Teron Gorefiend keeps a hall of the Black Temple, the temple whose clerics he murdered when it fell. He was the first, he says, and for him the wheel of death has spun many times; so much time has passed that he has a lot of catching up to do. Whoever he marks with the shadow of death dies where they stand, and must fight on as a spirit.",
+  "triggers": [
+   [
+    3,
+    22871
+   ]
+  ],
+  "related": [
+   352016,
+   352017,
+   395900
+  ],
+  "sources": [
+   "creature_text 22871; boss_teron_gorefiend.cpp (Shadow of Death, shadowy constructs)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 395903,
+  "kind": 2,
+  "zone": 3959,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 10,
+  "title": "The Illidari Council",
+  "body": "The Illidari Council is the high command of Illidan's blood elves, four lords who guard the way to their master and fight as one: Gathios the Shatterer, High Nethermancer Zerevor, who scorns the common tongue as crude, Lady Malande, who cries for Quel'Thalas and the Sunwell, and Veras Darkshadow, who strikes from hiding.",
+  "triggers": [
+   [
+    3,
+    22949
+   ],
+   [
+    3,
+    22950
+   ],
+   [
+    3,
+    22951
+   ],
+   [
+    3,
+    22952
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Gathios was the last to speak to his master, or tried to: Lord Illidan, he began, and never finished. With the council dead, Akama could force open the doors to Illidan's sanctum.",
+    "triggers": [
+     [
+      3,
+      22949
+     ],
+     [
+      3,
+      22950
+     ],
+     [
+      3,
+      22951
+     ],
+     [
+      3,
+      22952
+     ]
+    ],
+    "sources": [
+     "creature_text 22949-22952, 23089"
+    ]
+   }
+  ],
+  "related": [
+   395900,
+   92000009,
+   90000033
+  ],
+  "sources": [
+   "creature_text 22949-22952, 23089"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

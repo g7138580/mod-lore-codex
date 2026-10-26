@@ -1,0 +1,69 @@
+[
+ {
+  "id": 236600,
+  "kind": 0,
+  "zone": 2366,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Black Morass",
+  "body": "The timeway opens onto the Black Morass on the day the Dark Portal first opened, a swamp of black water and twisted trees where the Blasted Lands will one day lie. At its heart the Guardian, Medivh, works inside a shield of his own to open the gate for Gul'dan's Horde. Sa'at of the Keepers of Time waits at the swamp's edge, for rifts are tearing open across the morass.",
+  "triggers": [
+   [
+    1,
+    2366
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Infinite mean to kill Medivh before the portal opens. It may look like a boon to the Alliance, Andormu says, but it would be a catastrophe.",
+    "triggers": [
+     [
+      4,
+      10296
+     ]
+    ],
+    "sources": [
+     "Caverns of Time quests 10296, 10297; creature_text 15608"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Without the orcs, Sa'at explains, the Alliance would never form. The human kingdoms would fall into civil war, and when the Burning Legion came there would be no one left to defend the world.",
+    "triggers": [
+     [
+      5,
+      10296
+     ]
+    ],
+    "sources": [
+     "Caverns of Time quests 10296, 10297; creature_text 15608"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Medivh thanked his champions, taking them as a sign of the dark one's blessing. Now Gul'dan's Horde would sweep across the world like a locust swarm, he said, and all his carefully laid plans would fall into place.",
+    "triggers": [
+     [
+      5,
+      10297
+     ]
+    ],
+    "sources": [
+     "Caverns of Time quests 10296, 10297; creature_text 15608"
+    ]
+   }
+  ],
+  "related": [
+   44007,
+   91000017,
+   90000089,
+   400
+  ],
+  "sources": [
+   "Caverns of Time quests 10296, 10297; creature_text 15608"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

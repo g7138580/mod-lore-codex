@@ -1,0 +1,368 @@
+[
+ {
+  "id": 345600,
+  "kind": 0,
+  "zone": 3456,
+  "sort": 0,
+  "faction": 0,
+  "title": "Naxxramas",
+  "body": "Naxxramas is the floating necropolis of Kel'Thuzad, the dread citadel of the Scourge and the seat of his power. Four quarters ring its heart, each held by the master's greatest servants: the spider kingdom of the Nerubians, the plague works, the halls where death knights train, and the laboratories where the dead are stitched into abominations. Above them all lies the frozen lair where the lich himself waits.",
+  "triggers": [
+   [
+    1,
+    3456
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Its entrance lies in the Plaguewood, behind a rune portal sealed by magical wards, and the Argent Dawn has found a way past them with an old Kirin Tor cantrip of arcane cloaking.",
+    "triggers": [
+     [
+      4,
+      9121
+     ],
+     [
+      4,
+      9122
+     ],
+     [
+      4,
+      9123
+     ]
+    ],
+    "maxState": 12,
+    "sources": [
+     "Naxxramas quests 9121-9123; creature_text 15990, 16980"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Of the master of Naxxramas only his phylactery remained, and a priest at Light's Hope paid hugely for it, whatever it might mean for the lich's return.",
+    "triggers": [
+     [
+      4,
+      9120
+     ],
+     [
+      5,
+      9120
+     ]
+    ],
+    "maxState": 12,
+    "sources": [
+     "Naxxramas quests 9121-9123; creature_text 15990, 16980"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Now the necropolis hangs over the Dragonblight above Wintergarde Keep, sent down by the Lich King to strike at the armies of the living in Northrend.",
+    "triggers": [],
+    "minState": 13
+   }
+  ],
+  "related": [
+   92000000,
+   13915,
+   6519
+  ],
+  "sources": [
+   "Naxxramas quests 9121-9123; creature_text 15990, 16980"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 345601,
+  "kind": 1,
+  "zone": 3456,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Arachnid Quarter",
+  "body": "The Arachnid Quarter is the Nerubian wing of Naxxramas. The crypt lord Anub'Rekhan greets intruders to his parlor, hungry after too long without blood; Grand Widow Faerlina tells her worshippers they are the master's acolytes now, and that the greatest glory is to die in his service; and the great spider Maexxna wraps her prey in webs.",
+  "triggers": [
+   [
+    3,
+    15956
+   ],
+   [
+    3,
+    351009
+   ],
+   [
+    3,
+    15953
+   ],
+   [
+    3,
+    351007
+   ],
+   [
+    3,
+    15952
+   ],
+   [
+    3,
+    351006
+   ]
+  ],
+  "related": [
+   345600,
+   90000080,
+   90000006
+  ],
+  "sources": [
+   "creature_text 15956, 15953, 15952"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 345602,
+  "kind": 1,
+  "zone": 3456,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Plague Quarter",
+  "body": "The Plague Quarter is where the Scourge works its plague. Noth the Plaguebringer raises his fallen soldiers to fight again, glad to serve the master even in death; Heigan the Unclean sees endless suffering and promises that the races of the world will perish; and in the last hall Loatheb, a thing of fungus and rot, fills the air with an aura that blocks all healing.",
+  "triggers": [
+   [
+    3,
+    15954
+   ],
+   [
+    3,
+    351008
+   ],
+   [
+    3,
+    15936
+   ],
+   [
+    3,
+    351005
+   ],
+   [
+    3,
+    16011
+   ],
+   [
+    3,
+    351020
+   ]
+  ],
+  "related": [
+   345600,
+   90000006
+  ],
+  "sources": [
+   "creature_text 15954, 15936, 16011"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 345603,
+  "kind": 1,
+  "zone": 3456,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Military Quarter",
+  "body": "The Military Quarter trains the Scourge's death knights. Instructor Razuvious drills his students, Gothik the Harvester waits behind a gate dividing the living from the dead, and at the end of the halls ride the Four Horsemen: Thane Korth'azz, Lady Blaumeux, who wagers on the first kill, and Sir Zeliek, who begs intruders to turn back and obeys only because he has no choice.",
+  "triggers": [
+   [
+    3,
+    16061
+   ],
+   [
+    3,
+    351036
+   ],
+   [
+    3,
+    16060
+   ],
+   [
+    3,
+    351035
+   ],
+   [
+    3,
+    16064
+   ],
+   [
+    3,
+    351039
+   ],
+   [
+    3,
+    16065
+   ],
+   [
+    3,
+    351040
+   ],
+   [
+    3,
+    16063
+   ],
+   [
+    3,
+    351038
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The fourth rider in these days is Baron Rivendare, raised again after his fall in Stratholme. Life is meaningless, he says; it is in death that we are truly tested.",
+    "triggers": [
+     [
+      3,
+      30549
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "creature_text 16061, 16060, 16063, 16064, 16065, 30549"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The fourth rider is Highlord Mograine, a fallen hero of the Light whom Kel'Thuzad holds in chains of his own.",
+    "triggers": [
+     [
+      3,
+      351037
+     ]
+    ],
+    "maxState": 12,
+    "sources": [
+     "creature_text 16061, 16060, 16063, 16064, 16065, 30549"
+    ]
+   }
+  ],
+  "related": [
+   345600,
+   429801,
+   201704
+  ],
+  "sources": [
+   "creature_text 16061, 16060, 16063, 16064, 16065, 30549"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 345604,
+  "kind": 1,
+  "zone": 3456,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Construct Quarter",
+  "body": "The Construct Quarter is the Scourge's laboratory of flesh. Patchwerk, an abomination Kel'Thuzad made his avatar of war, only wants to play; Grobbulus and Gluth feed on what the plague and the hounds leave behind; and Thaddius, stitched from the dead and bound by two guardians of living current, cries that he must obey.",
+  "triggers": [
+   [
+    3,
+    16028
+   ],
+   [
+    3,
+    351028
+   ],
+   [
+    3,
+    15931
+   ],
+   [
+    3,
+    351003
+   ],
+   [
+    3,
+    15932
+   ],
+   [
+    3,
+    351004
+   ],
+   [
+    3,
+    15928
+   ],
+   [
+    3,
+    351000
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Even as he fought, the souls inside Thaddius begged for help and for an end. When it came, his last word was thank you.",
+    "triggers": [
+     [
+      3,
+      15928
+     ],
+     [
+      3,
+      351000
+     ]
+    ],
+    "sources": [
+     "creature_text 16028, 15928"
+    ]
+   }
+  ],
+  "related": [
+   345600,
+   90000006
+  ],
+  "sources": [
+   "creature_text 16028, 15928"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 345605,
+  "kind": 2,
+  "zone": 3456,
+  "sort": 0,
+  "faction": 0,
+  "title": "Sapphiron",
+  "body": "Sapphiron is the frost wyrm that guards the way to Kel'Thuzad's lair, a dragon of the Scourge that takes to the air to bury intruders in ice, and those who reach the lich must first pass him in the frozen heart of Naxxramas.",
+  "triggers": [
+   [
+    3,
+    15989
+   ],
+   [
+    3,
+    351018
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In his clutches lay a key held only by the most ancient of Malygos's blue dragons, and Alexstrasza called it the break the dragons had waited for to strike at the Aspect of Magic.",
+    "triggers": [
+     [
+      4,
+      13372
+     ],
+     [
+      5,
+      13372
+     ]
+    ],
+    "sources": [
+     "creature_text 15989; quest 13372"
+    ]
+   }
+  ],
+  "related": [
+   345600,
+   92000000,
+   90000063
+  ],
+  "sources": [
+   "creature_text 15989; quest 13372"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

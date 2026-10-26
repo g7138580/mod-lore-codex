@@ -1,0 +1,26 @@
+[
+ {
+  "id": 460300,
+  "kind": 0,
+  "zone": 4603,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Vault of Archavon",
+  "body": "The Vault of Archavon lies beneath Wintergrasp Fortress, a titan vault that opens only to whoever holds the fortress, and its guardians are colossal. In its first chamber Archavon the Stone Watcher stands among his warders, and in the deeper halls wait other watchers of the same make, bound to storm, to flame and to ice, as though the vault were built to keep something in or keep everyone out.",
+  "triggers": [
+   [
+    1,
+    4603
+   ]
+  ],
+  "related": [
+   419700,
+   419701
+  ],
+  "sources": [
+   "Vault of Archavon spawns (map 624): Archavon, Emalon, Koralon, Toravon and their warders"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

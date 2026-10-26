@@ -1,0 +1,215 @@
+[
+ {
+  "id": 378900,
+  "kind": 0,
+  "zone": 3789,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Shadow Labyrinth",
+  "body": "The Shadow Labyrinth is the deepest wing of Auchindoun, a maze of halls the Shadow Council has taken for its own. Cabal cultists, assassins and warlocks crowd its passages crying out in Sargeras' name, fel overseers drive tortured skeletons at their labor, and at the labyrinth's mouth ritualists stand chanting around a demon held in banishment. Somewhere deeper in, the cabal keeps watch over what it called.",
+  "triggers": [
+   [
+    1,
+    3789
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The spymistress of the Lower City has agents inside. Their reports say the Shadow Council has gone onto a war footing, and that its preparations face inward, not out.",
+    "triggers": [
+     [
+      4,
+      10177
+     ]
+    ],
+    "sources": [
+     "Auchindoun quests 10177, 10178; Shadow Labyrinth quest 10091; creature_text 18631-18830, 18731; boss_ambassador_hellmaw.cpp (banished until the Cabal Ritualists die)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The bound demon was Ambassador Hellmaw. Freed when his wardens fell, he railed at the infidels who had invaded the sanctuary, and died warning his killers not to grow overconfident.",
+    "triggers": [
+     [
+      3,
+      18731
+     ]
+    ],
+    "sources": [
+     "Auchindoun quests 10177, 10178; Shadow Labyrinth quest 10091; creature_text 18631-18830, 18731; boss_ambassador_hellmaw.cpp (banished until the Cabal Ritualists die)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Spy To'gun, caged deep in the maze, says the cabal fed his fellow spies to Hellmaw. It is bent on summoning powers it cannot control, and makes its soul shards stronger with special devices.",
+    "triggers": [
+     [
+      4,
+      10091
+     ]
+    ],
+    "sources": [
+     "Auchindoun quests 10177, 10178; Shadow Labyrinth quest 10091; creature_text 18631-18830, 18731; boss_ambassador_hellmaw.cpp (banished until the Cabal Ritualists die)"
+    ]
+   }
+  ],
+  "related": [
+   90000062,
+   351916,
+   378903
+  ],
+  "sources": [
+   "Auchindoun quests 10177, 10178; Shadow Labyrinth quest 10091; creature_text 18631-18830, 18731; boss_ambassador_hellmaw.cpp (banished until the Cabal Ritualists die)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 378901,
+  "kind": 2,
+  "zone": 3789,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Blackheart the Inciter",
+  "body": "Blackheart the Inciter is one of the Shadow Council's lords in the Shadow Labyrinth, a preacher of ruin who swears that all flesh must burn and all creation be unmade. His voice is his weapon: with a burst of laughter he can set companions at one another's throats.",
+  "triggers": [
+   [
+    3,
+    18667
+   ],
+   [
+    4,
+    10649
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Book of Fel Names, the artifact that gave the demon hunter Varedis his power, is said to be in Blackheart's keeping. Altruis the Sufferer calls it the only hope of standing against Varedis.",
+    "triggers": [
+     [
+      4,
+      10649
+     ]
+    ],
+    "sources": [
+     "Auchindoun quest 10649; creature_text 18667; boss_blackheart_the_inciter.cpp (Incite Chaos, Laughter)"
+    ]
+   }
+  ],
+  "related": [
+   378900,
+   352016,
+   90000062
+  ],
+  "sources": [
+   "Auchindoun quest 10649; creature_text 18667; boss_blackheart_the_inciter.cpp (Incite Chaos, Laughter)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 378902,
+  "kind": 2,
+  "zone": 3789,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Grandmaster Vorpil",
+  "body": "Grandmaster Vorpil leads the Shadow Council in the labyrinth, and he keeps his followers' minds on the days of reckoning: soon, he preaches, the destroyer of worlds will return to make good on his promise, and the destruction of all that is will begin. Void portals open around him at his call, and he gives his life gladly for the cause.",
+  "triggers": [
+   [
+    3,
+    18732
+   ]
+  ],
+  "related": [
+   378900,
+   90000062,
+   90000065
+  ],
+  "sources": [
+   "creature_text 18732; boss_grandmaster_vorpil.cpp (void portals, Void Travelers)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 378903,
+  "kind": 2,
+  "zone": 3789,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Murmur",
+  "body": "Murmur waits at the heart of the Shadow Labyrinth, the being the Shadow Council called into Auchindoun: a vast shape of living sound, held in place by beams of containment and drawing energy out of the very air around it.",
+  "triggers": [
+   [
+    3,
+    18708
+   ],
+   [
+    5,
+    10094
+   ],
+   [
+    4,
+    10095
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Codex of Blood names Murmur the essence of sound, born beyond mortal minds; to hear it speak is death eternal. Summoners on another world once bound it with souls caught in their soul devices, lost control, and only the book survived.",
+    "triggers": [
+     [
+      5,
+      10094
+     ],
+     [
+      4,
+      10095
+     ]
+    ],
+    "sources": [
+     "Auchindoun quests 10094, 10095; Codex of Blood gossip 7984-7990 (npc_text 9834-9840); creature_text 18708"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Shadow Council has lost control of it. Its summoning caused the explosion of Auchindoun and the Bone Wastes, and with the grandmaster and the cabal's leaders dead, it threatens to break free.",
+    "triggers": [
+     [
+      4,
+      10095
+     ]
+    ],
+    "sources": [
+     "Auchindoun quests 10094, 10095; Codex of Blood gossip 7984-7990 (npc_text 9834-9840); creature_text 18708"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The Lower City's spymistress could only wonder what the cabal did wrong after holding it for two years. Had it broken free, she said, all of Outland would have paid.",
+    "triggers": [
+     [
+      5,
+      10095
+     ]
+    ],
+    "sources": [
+     "Auchindoun quests 10094, 10095; Codex of Blood gossip 7984-7990 (npc_text 9834-9840); creature_text 18708"
+    ]
+   }
+  ],
+  "related": [
+   378900,
+   90000062,
+   351912
+  ],
+  "sources": [
+   "Auchindoun quests 10094, 10095; Codex of Blood gossip 7984-7990 (npc_text 9834-9840); creature_text 18708"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

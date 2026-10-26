@@ -1,8 +1,108 @@
 [
-{"id": 371300, "kind": 0, "zone": 3713, "sort": 0, "faction": 0, "requiredState": 8, "title": "The Blood Furnace", "body": "The Blood Furnace lies within Hellfire Citadel, a wing of halls and cell blocks deep inside the fortress, and the Fel Horde keeps it well guarded. Shadowmoon warlocks, summoners and technicians tend it, arming bombs against intruders, while Laughing Skull enforcers, rogues and wardens stand watch and felguards and imps serve beside them. Orc captives fill its cells. In its chambers wait nascent fel orcs, new to their red skins and eager for blood, and through the halls the cry goes up that the blood is their power. Demons work among the fel orcs here, and the furnace's masters keep to its deeper chambers. Honor Hold and Thrallmar know only that something unnatural is at work in the furnace, and they mean to learn what it is.", "triggers": [[1, 3713]], "sources": ["zones/blood_furnace.txt (map 542: area 3713 only)", "DB spawns map 542: Shadowmoon Warlock 17371, Summoner 17395, Adept 17397, Technician 17414, Channeler 17653; Laughing Skull Enforcer 17370, Rogue 17491, Warden 17624, Legionnaire 17626; Felguard Annihilator 17400, Felguard Brute 18894; Hellfire Imp 17477; Orc Captive 17416 (38); Nascent Fel Orc 17398 (23); bosses 17381, 17380, 17377", "creature_text 17414 group 1 (begins to arm the Proximity Bomb); 17398 group 0 (The blood is our power!)", "boss_kelidan_the_breaker.cpp (Evocation ritual inside the ring of Shadowmoon Channelers)", "quests 9607 and 9608 descriptions (something unnatural is occurring in there)", "warcraft.wiki.gg/wiki/The_Blood_Furnace"], "notes": "Check: verified. Magtheridon 21174 yells his group 0 taunts on an UPDATE timer (first after 60 seconds, then every 5 minutes, smart_scripts 21174) with yell range across the instance; the opening still names no pit lord, as the notes intend. Before: Pilot instance file. The opening keeps the furnace's secret: no pit lord and no word of how the fel orcs are made, since hellfire.json 348305 says the fortress keeps that secret and its notes leave the reveal to the Heart of Rage turn-ins 9607/9608 (371305 part 1). What anyone entering sees is told: the clans and demons (spawns), captives in cells, nascent fel orcs, the three masters by name. 'New to their red skins' interprets the creature name Nascent Fel Orc. Magtheridon (21174 here, chained far below Keli'dan's chamber and yelling on a timer) belongs to Magtheridon's Lair and gets no entry or name here. No Places: the map has only area 3713. requiredState 8."},
-{"id": 371301, "kind": 2, "zone": 3713, "sort": 1, "faction": 0, "requiredState": 8, "title": "The Maker", "body": "The Maker is a demon, one of the mo'arg, and he works among the fel orcs of the Blood Furnace as a craftsman works at his bench. He does not welcome visitors. His work, he warns, must not be interrupted, though he wonders aloud whether he might find a use for those who try, and he counts anger and hatred among the tools ready to his hand. To those who fall before him he makes a cold promise: he will see what he can make of them.", "triggers": [[3, 17381]], "parts": [{"part": 1, "body": "The Maker fought to keep his work from interruption, bending the minds of his attackers against one another, and in the end it was interrupted for good. Dying, he could only gasp at them to stay away. Whatever he had been making in the Blood Furnace, he would make no more of it.", "triggers": [[3, 17381]], "sources": ["creature_text 17381 group 2 (Stay away from... Me!)", "warcraft.wiki.gg/wiki/The_Maker (Domination turns a player against allies)"]}], "sources": ["creature_text 17381 groups 0 (My work must not be interrupted; Perhaps I can find a use for you; Anger... hate... These are tools I can use) and 1 (Let's see what I can make of you)", "creature_template 17381 type 3 (demon)", "warcraft.wiki.gg/wiki/The_Maker (male mo'arg)"], "notes": "Check: verified (Domination and the aggro, slay and death lines from boss_the_maker.cpp and creature_text 17381). Before: Opening on AREA 3713 (met only in combat), part 1 on KILL 17381 (fixed spawn, map 542 only). The wiki's account of what he does (speeding the transformation of fel magic users, from the Cataclysm Adventure Guide) is a later source and left out; his own words carry the hint of his craft. Mo'arg rests on the wiki's infobox and his demon type."},
-{"id": 371302, "kind": 2, "zone": 3713, "sort": 2, "faction": 0, "requiredState": 8, "title": "Broggok", "body": "Broggok is a demon kept behind a barred gate in the Blood Furnace, at the end of a hall of prison cells. The cells hold fel orcs, and a lever beside them opens their doors one after another. When the lever is pulled, Broggok calls the intruders on from behind its gate, and the cells loose one band after another on whoever stands in the hall. Only when the last band has fallen does the gate rise and Broggok come forth: a floating horror steeped in poison, which sprays venom and leaves clouds of it hanging in the air.", "triggers": [[3, 17380]], "parts": [{"part": 1, "body": "Broggok died in the hall of cells, among the fel orcs who had been loosed before it, and the poison clouds it had raised faded with it. With Broggok dead, the way on toward the deeper chambers of the furnace lay open.", "triggers": [[3, 17380]], "sources": ["boss_broggok.cpp (no JustDied override: BossAI::_JustDied despawns its summons, the poison clouds, on death)", "instance_blood_furnace.cpp (doorData: Broggok's doors open when the encounter is done)"]}], "sources": ["creature_text 17380 (Come intruders....)", "creature_template 17380 type 3 (demon)", "boss_broggok.cpp, instance_blood_furnace.cpp, blood_furnace.h (prison cells 181817-181821, lever 181982, rear door 181819)", "warcraft.wiki.gg/wiki/Broggok (an observer that floats; poison bolt, slime spray, poison cloud)"], "notes": "Check: the wiki's poison clouds outlasting Broggok is not true on this core: Broggok's clouds are summons and BossAI::_JustDied despawns them, so part 1 now says they faded with it. 'Come intruders' is its JustEngagedWith yell, said when the lever pulls it into combat, before the cells open, so the opening now puts the call there and not at the gate rising. Before: Opening on AREA 3713, part 1 on KILL 17380 (fixed spawn, map 542 only). The cells and lever are the scripted event before him (AzerothCore releases Nascent Fel Orcs 17398 from the cells), told as anyone present sees it. The wiki's role for him (keeping the fel orcs in line) comes from the Cataclysm Adventure Guide and is left out. 'Floating' rests on the wiki (observer); its poison abilities on the wiki and the boss script."},
-{"id": 371303, "kind": 2, "zone": 3713, "sort": 3, "faction": 0, "requiredState": 8, "title": "Keli'dan the Breaker", "body": "Keli'dan the Breaker holds the deepest chamber of the Blood Furnace. He is a fel orc sorcerer, and he does not stand guard so much as stand at work: in the middle of a ring of five Shadowmoon channelers he keeps a ritual burning, his whole attention bent on it, while they stand watch around him. What the ritual serves, no intruder is told. He will not turn from it lightly, and the channelers will let no one near him without a fight.", "triggers": [[3, 17377]], "parts": [{"part": 1, "body": "When his channelers were cut down, Keli'dan broke from his ritual in a fury. Who dared interrupt, he demanded, and what had they done? They would ruin everything. He came at them wreathed in fire, crying for them to come closer and burn, and still he fell. He died with a bitter wish of good luck for his killers, who would need it.", "triggers": [[3, 17377]], "sources": ["creature_text 17377 groups 0 (Who dares interrupt--What is this; what have you done? You'll ruin everything!, on engage), 3 (Closer! Come closer... and burn!, with Burning Nova every 25 to 32 seconds), 4 (Good...luck. You'll need it.)", "boss_kelidan_the_breaker.cpp (he becomes selectable and attacks once no Shadowmoon Channeler is left)"]}], "sources": ["boss_kelidan_the_breaker.cpp (Evocation while out of combat; the five Shadowmoon Channelers 17653 around him; he joins the fight once they are dead)", "creature_text 17377", "quest 11362 description (a blood orc within Hellfire Citadel known as Keli'dan the Breaker)", "warcraft.wiki.gg/wiki/Keli'dan_the_Breaker (fel orc)"], "notes": "Check: flag 2: the bound thing below is cut. Magtheridon 21174's yells are on a 5 minute instance-wide timer (smart_scripts 21174: UPDATE 60000/300000, not every 60 seconds), not part of this fight, and the line pointed at the pit lord ahead of 9607/9608. Keli'dan's group 1 lines (You mustn't let him loose! He'll kill us all!) are never spoken on this core: SAY_ADD_AGGRO hangs on ACTION_CHANNELER_AGGRO, which nothing sends (the channelers' SmartAI only sends action 1 on death), so they are cut too. Part 1 is now his wake line, his Burning Nova cry and his death line. Opening: 'lend him their strength' unsupported (the channelers cast nothing on him; Evocation is self-cast) and 'breaking into it rouses him' inexact (he wakes when the channelers are dead); both reworded. Before: Opening on AREA 3713, part 1 on KILL 17377 (fixed spawn, map 542 only). The fight shows his words, and the bound thing below is what anyone in the chamber hears (Magtheridon 21174 stands 109 yards straight below and yells on a 60 second timer); it is kept unnamed so the pit lord stays the Heart of Rage reveal (371305) and Magtheridon's own entry stays with Magtheridon's Lair. The wiki's 'jailor of Magtheridon' is not stated (no period text says it outright). Zhareem's heroic daily 11362 used only as a source: its 'blood orc' and plain stave add nothing to the entry."},
-{"id": 371304, "kind": 3, "zone": 3713, "sort": 1, "faction": 0, "requiredState": 8, "title": "The Blood is Life", "body": "The herald's letter has stirred up Honor Hold and Thrallmar alike. Both already fight the Burning Legion on their eastern flank, and now an army of new fel orcs gathers to the west, more of them all the time. If only they knew how those fel orcs were being made, they might find some way to stop it. So Gunny at Honor Hold and Caza'rez at Thrallmar send volunteers into what the fel orcs call the Blood Furnace, inside Hellfire Citadel, to kill fel orcs there and bring back vials of their blood.", "triggers": [[4, 9589], [4, 9590]], "parts": [{"part": 1, "body": "Gunny took the vials with delight, calling the one who brought them his favorite person on the sorry remains of this sorry planet. He was sure the scholars of Honor Hold would be thrilled to study the blood, and hoped they might find a new weapon in it against the fel orcs.", "triggers": [[5, 9589]], "sources": ["quest 9589 reward text (favorite person on the sorry remains of this sorry planet; eggheads; maybe a new weapon against the fel orcs)"]}, {"part": 2, "body": "Caza'rez was impressed: twice now the same volunteer had gone into Hellfire Citadel and come back with what was asked. He promised the blood would reach those who could unlock its mysteries, and hoped they might find a way to reverse what had been done to these orcs.", "triggers": [[5, 9590]], "sources": ["quest 9590 reward text (twice now infiltrated Hellfire Citadel; delivered to those who can unlock its mysteries; perhaps a way to reverse the process)"]}], "sources": ["quests 9589 (Gunny 17479, Alliance) and 9590 (Caza'rez 17558, Horde) descriptions, log text and reward text", "quest_template_addon PrevQuestID 9589 <- 9587, 9590 <- 9588 (after Dark Tidings, told in the Ramparts file)", "creature_loot 23894 Fel Orc Blood Vial from the furnace's fel orcs (loot 17370, 17377, 17381)"], "notes": "Check: verified; Gunny's display 17036 is male in creature_model_info (Gender 0), matching the wiki. Before: Opening on ACCEPT 9589/9590 (filed under 3535, the citadel-wide sort). It follows the Ramparts file's Dark Tidings, so the letter is named but not its signer (9590's text calls it the Betrayer's; 9589 does not), keeping the opening true for both. The two turn-ins say different things, so each is its own part (Alliance part 1, Horde part 2), and neither tells where the blood comes from: that is Heart of Rage (371305). Gunny is a male dwarf (warcraft.wiki.gg/wiki/Gunny). Faction 0: one quest per side."},
-{"id": 371305, "kind": 3, "zone": 3713, "sort": 2, "faction": 0, "requiredState": 8, "title": "Heart of Rage", "body": "With the ramparts broken, Honor Hold and Thrallmar turn their scrying on the Blood Furnace, and what it shows them is troubling. Something unnatural is happening inside, but a power within blocks every attempt to look closer, which can only mean it matters a great deal. No mission sent into the furnace has ever come back. So the furnace must be scouted from end to end by a band strong enough to survive it, and whatever is found there reported straight to Force Commander Danath Trollbane, or to Nazgrel, advisor to Thrall.", "triggers": [[4, 9607], [4, 9608]], "parts": [{"part": 1, "body": "They have a pit lord. The commander's shout drew every eye in the room, and he dropped his voice to a whisper. The fel orcs must be made from this pit lord's blood, a new breed somehow not aligned with the Burning Legion, and what could be done to the brown orcs of Draenor could be done to any orc at all. The heart of their military might had to be struck, and soon.", "triggers": [[5, 9607], [5, 9608]], "sources": ["quests 9607 and 9608 reward text (THEY HAVE A PIT LORD?!; lowers his voice to a whisper; using the blood from this pit lord to create new fel orcs that are somehow not aligned with the Burning Legion; brown orcs, green ones too (9607) or Mag'har brown orcs, us (9608); strike at the heart of their military might, and soon)"]}], "sources": ["quests 9607 (Gunny to Danath, Alliance) and 9608 (Caza'rez to Nazgrel, Horde) descriptions and reward text", "quest_template RewardNextQuest 9575 -> 9607, 9572 -> 9608 (after Weaken the Ramparts, told in the Ramparts file)", "hellfire.json 348305 notes (the reveal left for this file)"], "notes": "Check: verified (scouting objective is areatrigger 4200/4201 past Keli'dan's chamber; both reward texts as quoted). Before: The pit lord reveal that hellfire.json 348305 left for this file, on DONE 9607/9608 as asked. Opening on ACCEPT 9607/9608 (QuestType 2, Flags 140, not auto-complete; filed under 3535). The part is trimmed to what both turn-ins say: 9607 speaks of brown and green orcs and the Horde streaming through the portal, 9608 of the Mag'har and the Horde itself, so 'any orc at all' covers both. Magtheridon is not named (neither text names him); his entry and fall belong to Magtheridon's Lair. Faction 0: 9607 Alliance only, 9608 Horde only."}
+ {
+  "id": 371300,
+  "kind": 0,
+  "zone": 3713,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Blood Furnace",
+  "body": "The Blood Furnace lies deep inside Hellfire Citadel, a wing of halls and cell blocks that the Fel Horde guards well. Shadowmoon warlocks tend it beside felguards and imps, a mo'arg demon called the Maker works there like a craftsman at his bench, and orc captives fill its cells. In its chambers wait nascent fel orcs, new to their red skins and eager for blood, and through the halls goes up the cry that the blood is their power.",
+  "triggers": [
+   [
+    1,
+    3713
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Honor Hold and Thrallmar want vials of fel orc blood. If they knew how the fel orcs are made, they might find a way to stop it, or even to reverse it.",
+    "triggers": [
+     [
+      4,
+      9589
+     ],
+     [
+      4,
+      9590
+     ]
+    ],
+    "sources": [
+     "zones/blood_furnace.txt (map 542: area 3713 only)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "They have a pit lord. The fel orcs are made from its blood, a new breed not aligned with the Legion, and what was done to the orcs of Draenor could be done to any orc at all.",
+    "triggers": [
+     [
+      5,
+      9607
+     ],
+     [
+      5,
+      9608
+     ]
+    ],
+    "sources": [
+     "zones/blood_furnace.txt (map 542: area 3713 only)"
+    ]
+   }
+  ],
+  "related": [
+   90000064,
+   383600,
+   348305
+  ],
+  "sources": [
+   "zones/blood_furnace.txt (map 542: area 3713 only)",
+   "DB spawns map 542: Shadowmoon Warlock 17371, Summoner 17395, Adept 17397, Technician 17414, Channeler 17653; Laughing Skull Enforcer 17370, Rogue 17491, Warden 17624, Legionnaire 17626; Felguard Annihilator 17400, Felguard Brute 18894; Hellfire Imp 17477; Orc Captive 17416 (38); Nascent Fel Orc 17398 (23); bosses 17381, 17380, 17377",
+   "creature_text 17414 group 1 (begins to arm the Proximity Bomb); 17398 group 0 (The blood is our power!)",
+   "boss_kelidan_the_breaker.cpp (Evocation ritual inside the ring of Shadowmoon Channelers)",
+   "quests 9607 and 9608 descriptions (something unnatural is occurring in there)",
+   "warcraft.wiki.gg/wiki/The_Blood_Furnace",
+   "creature_text 17381 groups 0 (My work must not be interrupted; Perhaps I can find a use for you; Anger... hate... These are tools I can use) and 1 (Let's see what I can make of you)",
+   "creature_template 17381 type 3 (demon)",
+   "warcraft.wiki.gg/wiki/The_Maker (male mo'arg)",
+   "creature_text 17380 (Come intruders....)",
+   "creature_template 17380 type 3 (demon)",
+   "boss_broggok.cpp, instance_blood_furnace.cpp, blood_furnace.h (prison cells 181817-181821, lever 181982, rear door 181819)",
+   "warcraft.wiki.gg/wiki/Broggok (an observer that floats; poison bolt, slime spray, poison cloud)",
+   "quests 9589 (Gunny 17479, Alliance) and 9590 (Caza'rez 17558, Horde) descriptions, log text and reward text",
+   "quest_template_addon PrevQuestID 9589 <- 9587, 9590 <- 9588 (after Dark Tidings, told in the Ramparts file)",
+   "creature_loot 23894 Fel Orc Blood Vial from the furnace's fel orcs (loot 17370, 17377, 17381)",
+   "quests 9607 (Gunny to Danath, Alliance) and 9608 (Caza'rez to Nazgrel, Horde) descriptions and reward text",
+   "quest_template RewardNextQuest 9575 -> 9607, 9572 -> 9608 (after Weaken the Ramparts, told in the Ramparts file)",
+   "hellfire.json 348305 notes (the reveal left for this file)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 371303,
+  "kind": 2,
+  "zone": 3713,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Keli'dan the Breaker",
+  "body": "Keli'dan the Breaker, a fel orc sorcerer, holds the deepest chamber of the Blood Furnace. He does not stand guard so much as stand at work: in the middle of a ring of five Shadowmoon channelers he keeps a ritual burning, his whole attention bent on it, and he warns those who interrupt that they will ruin everything.",
+  "triggers": [
+   [
+    3,
+    17377
+   ]
+  ],
+  "related": [
+   371300,
+   90000064
+  ],
+  "sources": [
+   "boss_kelidan_the_breaker.cpp (Evocation while out of combat; the five Shadowmoon Channelers 17653 around him; he joins the fight once they are dead)",
+   "creature_text 17377",
+   "quest 11362 description (a blood orc within Hellfire Citadel known as Keli'dan the Breaker)",
+   "warcraft.wiki.gg/wiki/Keli'dan_the_Breaker (fel orc)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
 ]

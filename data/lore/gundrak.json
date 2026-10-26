@@ -1,0 +1,126 @@
+[
+ {
+  "id": 441600,
+  "kind": 0,
+  "zone": 4416,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Gundrak",
+  "body": "Inside, Gundrak is the heart of the Drakkari's last stand and of their final madness. The high prophets of the animal gods hold its altars, each grown mighty on the mojo of a god his people slew, while lancers, fire weavers, earthshakers and god hunters crowd the halls with golems and war rhinos, serpents coil through the snake prophet's chambers, and pools of living mojo seep across the floors.",
+  "triggers": [
+   [
+    1,
+    4416
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "History is repeating itself, the Zandalari chronicler Bah'Kini says: when trolls turn on their own gods, the end is certain, and she records it so that others might not walk the same path.",
+    "triggers": [
+     [
+      4,
+      13098
+     ]
+    ],
+    "sources": [
+     "Gundrak spawns (map 604); Gundrak quest 13098; creature_text 29304, 29305"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Slad'ran, prophet of the snake god Sseratus, saw at the end that the Scourge had not been the Drakkari's greatest enemy.",
+    "triggers": [
+     [
+      3,
+      29304
+     ]
+    ],
+    "sources": [
+     "Gundrak spawns (map 604); Gundrak quest 13098; creature_text 29304, 29305"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Moorabi, prophet of the mammoth god Mam'toth, boasted that his people had fought back the Scourge. Dying, he drew the lesson: if their gods could die, so could they.",
+    "triggers": [
+     [
+      3,
+      29305
+     ]
+    ],
+    "sources": [
+     "Gundrak spawns (map 604); Gundrak quest 13098; creature_text 29304, 29305"
+    ]
+   }
+  ],
+  "related": [
+   6622,
+   90000081,
+   90000082,
+   441601
+  ],
+  "sources": [
+   "Gundrak spawns (map 604); Gundrak quest 13098; creature_text 29304, 29305"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 441601,
+  "kind": 2,
+  "zone": 4416,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "Gal'darah",
+  "body": "Gal'darah is the high prophet of Akali, the rhino god whose mojo he has drunk almost to the last, and he rules Gundrak's deepest hall. Who needs gods, he crows, when the Drakkari are gods? He takes the rhino's shape and power for his own, and he is poised to break out of the city with his followers.",
+  "triggers": [
+   [
+    3,
+    29306
+   ],
+   [
+    4,
+    13096
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Zandalari observer Tol'mar was sworn only to watch, but having seen great Akali slain before his eyes, he broke his oath to see the prophet pay.",
+    "triggers": [
+     [
+      4,
+      13096
+     ]
+    ],
+    "sources": [
+     "Gundrak quests 13096, 13250; creature_text 29306"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "At the very last even Gal'darah admitted what his people had proven: the mighty can fall, gods and those who drink them alike.",
+    "triggers": [
+     [
+      3,
+      29306
+     ]
+    ],
+    "sources": [
+     "Gundrak quests 13096, 13250; creature_text 29306"
+    ]
+   }
+  ],
+  "related": [
+   441600,
+   6622,
+   90000081
+  ],
+  "sources": [
+   "Gundrak quests 13096, 13250; creature_text 29306"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

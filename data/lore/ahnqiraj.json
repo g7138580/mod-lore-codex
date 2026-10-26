@@ -1,0 +1,164 @@
+[
+ {
+  "id": 342800,
+  "kind": 0,
+  "zone": 3428,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 4,
+  "title": "Temple of Ahn'Qiraj",
+  "body": "The Temple of Ahn'Qiraj is the heart of the qiraji city, a vast temple sunk into the earth where the insect empire keeps its holiest halls and its masters, guarded by battleguards who sentence trespassers in the name of the laws of the Ancients. Dragons of the blue, red and green flights wait at its entrance, and deeper in, the qiraji prepare, as their prophet cries, for the return of the ancient ones.",
+  "triggers": [
+   [
+    1,
+    3428
+   ]
+  ],
+  "related": [
+   90000061,
+   342803,
+   342804
+  ],
+  "sources": [
+   "creature_text 15263; Vethsera gossip 6655"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 342802,
+  "kind": 2,
+  "zone": 3428,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 4,
+  "title": "The Twin Emperors",
+  "body": "The Twin Emperors, Vek'lor and Vek'nilash, rule the qiraji from a hall deep in the temple, one a master of magic, the other of the blade. They welcome intruders as guests at a feast of souls, and each feels the other's pain.",
+  "triggers": [
+   [
+    3,
+    15275
+   ],
+   [
+    3,
+    15276
+   ]
+  ],
+  "related": [
+   342800,
+   90000061,
+   342803
+  ],
+  "sources": [
+   "creature_text 15275, 15276"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 342803,
+  "kind": 2,
+  "zone": 3428,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 4,
+  "title": "C'Thun",
+  "body": "C'Thun is the Old God the qiraji serve, a force of evil older than the world itself, buried in the deepest chamber of Ahn'Qiraj. It shows itself as a great eye on a stalk of flesh, ringed with tentacles that burst from the floor, and its whispers reach the minds of all who come near.",
+  "triggers": [
+   [
+    3,
+    15727
+   ],
+   [
+    3,
+    15589
+   ],
+   [
+    4,
+    8801
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The walls of Ahn'Qiraj trembled as the Old God was destroyed, yet even in death its legacy of evil lingered in the chamber. Its eye went to Anachronos, for his master's collection.",
+    "triggers": [
+     [
+      4,
+      8801
+     ],
+     [
+      5,
+      8802
+     ]
+    ],
+    "sources": [
+     "quests 8801, 8802"
+    ]
+   }
+  ],
+  "related": [
+   90000061,
+   91000033,
+   137712
+  ],
+  "sources": [
+   "quests 8801, 8802"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 342804,
+  "kind": 2,
+  "zone": 3428,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 4,
+  "title": "Merithra, Arygos and Caelestrasz",
+  "body": "A thousand years ago, when the War of the Shifting Sands ended, three dragons held the qiraji inside these halls while Anachronos and Staghelm sealed the city: Merithra of the green flight, Arygos of the blue and Caelestrasz of the red. Their kin vowed to come for them should the Scarab Wall ever fall, and Andorgos, Kandrostrasz and Vethsera now wait at the temple's entrance.",
+  "triggers": [
+   [
+    2,
+    15503
+   ],
+   [
+    2,
+    15502
+   ],
+   [
+    2,
+    15504
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The three were alive, captives for a thousand years in the chamber of the Old God. Freed, they swore they would have given anything to banish C'Thun, and owed the world's thanks to those who did.",
+    "triggers": [
+     [
+      2,
+      15378
+     ],
+     [
+      2,
+      15379
+     ],
+     [
+      2,
+      15380
+     ]
+    ],
+    "sources": [
+     "Kandrostrasz gossip 6645; Vethsera 6655; Arygos, Caelestrasz, Merithra 6793-6795"
+    ]
+   }
+  ],
+  "related": [
+   91000033,
+   90000060,
+   342803
+  ],
+  "sources": [
+   "Kandrostrasz gossip 6645; Vethsera 6655; Arygos, Caelestrasz, Merithra 6793-6795"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

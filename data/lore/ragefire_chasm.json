@@ -6,7 +6,7 @@
   "sort": 0,
   "faction": 0,
   "title": "Ragefire Chasm",
-  "body": "Ragefire Chasm is a network of volcanic caverns beneath Orgrimmar, entered from the Cleft of Shadow in the heart of the city. Lava lights its tunnels, and the rock itself seems to stir: molten elementals walk the burning paths, and earthborers, burrowing worms, gnaw through the stone. In the lower caves the troggs of Ragefire swarm with their shamans, and off the main way their chieftain Oggleflint keeps a cave of his own. Beyond them the halls belong to the Searing Blade. Orc cultists, shield-bearing enforcers and warlocks with voidwalkers at their heels hold the deeper caverns, and in the midst of a lake of lava stands a felguard of great size, Taragaman the Hungerer. Further on, the cult's warlocks hold the deepest halls, and a satyr walks a high walkway overhead. Few come down here unbidden. Neeru Fireblade sends some, the Undercity others, and the tauren of Thunder Bluff have their own reasons.",
+  "body": "Ragefire Chasm is a network of volcanic caverns beneath Orgrimmar, entered from the Cleft of Shadow in the heart of the city. Lava lights its tunnels and molten elementals walk the burning paths. Troggs have come up from deep below and swarm the lower caves under their chieftain Oggleflint, and beyond them the halls belong to the Searing Blade, a cult of orc warlocks and enforcers with a demon among them.",
   "triggers": [
    [
     1,
@@ -16,20 +16,56 @@
   "parts": [
    {
     "part": 1,
-    "body": "Deep in the cult's halls, the Searing Blade keeps an orb brimming with blood, and it is less still than it looks. When one who had come seeking that blood laid hands on the orb, a demon of the doomguard kind came forth from it into the chasm: Zelemar the Wrathful. He never left the caverns. He was slain there, far beneath the city.",
+    "body": "Magatha Grimtotem sought peace with the troggs, but they killed her diplomats. One of her servants, Maur, found something in the chasm and never came out with it.",
     "triggers": [
      [
-      3,
-      17830
+      4,
+      5722
+     ],
+     [
+      4,
+      5723
      ]
     ],
     "sources": [
-     "page_text 2931 (Bloodvalor's Notes, item 24223, StartItem of 9692: the Searing Blade cultists possess an orb filled with the blood; the orb is guarded by Jergosh the Invoker); creature_loot_template 17830 item 24225 Blood of the Wrathful (quest required)",
-     "gameobject 182024 Blood Filled Orb (type 10), single spawn on map 389 at -370,163 z-21 (Jergosh 11518 at -377,209); Data1 9692: usable only on quest 9692 The Path of the Adept (blood elf paladin, AllowableRaces 512)",
-     "smart_scripts 182024 (source 1): on gossip hello summons 17830 at -370,167; creature 17830 Zelemar the Wrathful has no spawn and no other summoner (smart_scripts action 12 searched, core scripts searched); display 1912, DoomGuard model; no AIName or ScriptName, so no spells or words are told",
-     "shadowfang_keep.json 20911 uses ACCEPT and DONE 9692 and does not tell the blood of the wrathful; KILL 17830 is used by no file"
+     "warcraft.wiki.gg/wiki/Ragefire_Chasm_(Classic), official description (a network of volcanic caverns below the orcs' capital of Orgrimmar); entrance in the Cleft of Shadow beside Neeru Fireblade's tent; route: elementals, troggs, more elementals, then the Searing Blade; Taragaman in the middle of a lava lake, Jergosh ahead of him, Bazzalan up a side walkway directly above Jergosh; classic Oggleflint in his own cave off the main path (moved only in 4.0.3a)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Searing Blade keeps two books of spells, gifts of the Legion to its followers, and the Undercity wants them out of the cult's hands and in its own.",
+    "triggers": [
+     [
+      5,
+      5725
+     ],
+     [
+      5,
+      14356
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Ragefire_Chasm_(Classic), official description (a network of volcanic caverns below the orcs' capital of Orgrimmar); entrance in the Cleft of Shadow beside Neeru Fireblade's tent; route: elementals, troggs, more elementals, then the Searing Blade; Taragaman in the middle of a lava lake, Jergosh ahead of him, Bazzalan up a side walkway directly above Jergosh; classic Oggleflint in his own cave off the main path (moved only in 4.0.3a)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The Searing Blade is Neeru Fireblade's own sect of the Shadow Council. Thrall had its leaders, the satyr Bazzalan and the warlock Jergosh, killed without Neeru learning who did it.",
+    "triggers": [
+     [
+      5,
+      5728
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Ragefire_Chasm_(Classic), official description (a network of volcanic caverns below the orcs' capital of Orgrimmar); entrance in the Cleft of Shadow beside Neeru Fireblade's tent; route: elementals, troggs, more elementals, then the Searing Blade; Taragaman in the middle of a lava lake, Jergosh ahead of him, Bazzalan up a side walkway directly above Jergosh; classic Oggleflint in his own cave off the main path (moved only in 4.0.3a)"
     ]
    }
+  ],
+  "related": [
+   243701,
+   90000039,
+   163704
   ],
   "sources": [
    "warcraft.wiki.gg/wiki/Ragefire_Chasm_(Classic), official description (a network of volcanic caverns below the orcs' capital of Orgrimmar); entrance in the Cleft of Shadow beside Neeru Fireblade's tent; route: elementals, troggs, more elementals, then the Searing Blade; Taragaman in the middle of a lava lake, Jergosh ahead of him, Bazzalan up a side walkway directly above Jergosh; classic Oggleflint in his own cave off the main path (moved only in 4.0.3a)",
@@ -38,19 +74,30 @@
    "DB spawns map 389: Molten Elemental 11321 x13 (x -36 to -252) and Earthborer 11320 x11 (display 11010, Worm model at scale 0.5) along the way; Ragefire Trogg 11318 x29 and Ragefire Shaman 11319 x14 in the lower caves (z -39 to -64); Oggleflint 11517 at -148,39 z-39; Searing Blade Cultist 11322 x29, Enforcer 11323 x21 and Warlock 11324 x10 in the northern halls (y 86 to 265, OrcMale displays); Taragaman 11520 at -245,150 z-19 (FelGuard model at scale 1.5); Jergosh 11518 at -377,209 z-22; Bazzalan 11519 at -385,146 z8 (Satyr model)",
    "creature_equip_template 11323 Enforcer (spiked mace 3361, small metal shield 2052), 11322 Cultist (dagger 10619), 11324 Warlock (staff 12937)",
    "smart_scripts base and module (dungeon_ragefire_chasm.sql): Shaman Lightning Bolt 9532 and Healing Wave; Cultist Curse of Agony 18266; Enforcer Shield Slam 8242; Warlock Summon Voidwalker 12746 out of combat (flag 1, not repeatable) and Shadow Bolt",
-   "quests 5761 (Neeru), 5725 and 14356 (the Undercity), 5722 and 5723 (Thunder Bluff), as premises only"
+   "quests 5761 (Neeru), 5725 and 14356 (the Undercity), 5722 and 5723 (Thunder Bluff), as premises only",
+   "creature 11517 Oggleflint, subname Ragefire Chieftain, single spawn on map 389 at -148,39 z-39; display 11611, Troglodyte model at scale 1.0 (Ragefire Trogg 11609 at 0.85, Ragefire Shaman 11610 at 0.7); faction 59 like the troggs",
+   "creature_equip_template 11517 (3350 Monster - Item, Bone)",
+   "warcraft.wiki.gg/wiki/Ragefire_Chasm_(Classic) (classic Oggleflint in his original cave, off the main path)",
+   "quest 5725 description (a sect of the Shadow Council hidden in caverns below Orgrimmar known as the Searing Blade; members have come into possession of two powerful spell books) and log text (Spells of Shadow and Incantations from the Nether); module QuestCompletionLog: Varimathras at the Royal Quarter; AllowableRaces 690, QuestType 2, flags 16392 (8 sharable plus 16384 QUEST_FLAGS_UNAVAILABLE, a client flag the core does not check)",
+   "quest 14356 description (deep in Ragefire Chasm, a sect of the Shadow Council called the Searing Blade; two books in their possession; bring them to me directly) and log text (the same two books); QuestCompletionLog: Bragor Bloodfist at the Royal Quarter; AllowableRaces 690, QuestType 2, flags 8",
+   "creature_loot_template 11322 Searing Blade Cultist and 11324 Searing Blade Warlock: items 14395 and 14396 (quest required); dropped by no other creature",
+   "Ragefire quests 5722, 5723, 5728"
   ],
-  "notes": "Check: opening: Jergosh and Bazzalan are now the cult's own (faction 554 like the cultists) rather than its leaders, since that they are leaders Neeru reveals on 5728 (orgrimmar.json 163713 part 2); Bazzalan is on a walkway overhead, not above Jergosh (spawns 63 yards apart). Part 1: Zelemar verified (no spawn; summoned only by smart_scripts 182024 on gossip hello, single orb spawn on map 389, Data1 9692; no core or module summoner); cut 'close by the orb that had loosed him' (inferred) and 'whatever bound him to it' (unsupported); the orb placed near Jergosh per page_text 2931 and spawns (46 yards). Kept on the overview: the orb stands in the chasm for every visitor and the part tells an event of the place, not of 9692 (shadowfang_keep.json 20911 tells only the ingots); kill credit also reaches the summoner's group. No tag: the blood elf paladin chain is open from character creation and the module does not gate it. Writer: AREA 2437 (the only area on map 389). The opening tells what entering shows: the lava, the elementals and worms, the troggs and their chieftain, the Searing Blade's people, the felguard in the lava lake, and Jergosh and Bazzalan named as cult leaders present, nothing more (Orgrimmar's Hidden Enemies 163713 part 2 tells their end on DONE 5728, so they have no entries and no KILL triggers here, as the Stockade left Thredd to Stormwind). Taragaman is placed but not called the cult's master (Neeru's claim is his entry's part 1 on ACCEPT 5761; orgrimmar.json 163704 says it on TALK 5875). The troggs' rise and Maur Grimtotem are thunder_bluff.json 163816's: the troggs are only seen here, Maur's body is not mentioned. Reasons to go in are phrases (Neeru, the Undercity, Thunder Bluff); Thrall is not named, since his part (5728) is Orgrimmar's. Part 1 on KILL 17830 Zelemar the Wrathful: check_staged warns that he has no fixed spawn; he is summoned only by the Blood Filled Orb 182024 on map 389, usable only on quest 9692, whose ACCEPT and DONE are shadowfang_keep.json 20911's, so his KILL is the only free trigger that shows him; kept, as razorfen_downs.json kept Tuten'kash. The part tells only the summoning and his death (he has no script, so no fight details). The Scourge invasion and holiday content are left out. No requiredState (classic dungeon, state 0). mod-individual-progression: dungeon_ragefire_chasm.sql only replaces the smart scripts of ten creatures (11318-11324, 11517-11520), no spawns, texts or quests; every claim holds in both."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
   "id": 243701,
   "kind": 2,
   "zone": 2437,
-  "sort": 1,
+  "sort": 0,
   "faction": 0,
   "title": "Taragaman the Hungerer",
-  "body": "Taragaman the Hungerer is a felguard, a demon of the Burning Legion, and he towers over the cultists of the Searing Blade in Ragefire Chasm. His place is in the midst of a lake of lava in the cult's halls, where the fire gives him light and the cultists gather on the stone around him. He is armored like a warrior of the Legion and bears a massive two-handed sword. How a demon of his kind came to the caverns beneath the Horde's own capital, nothing in the chasm says.",
+  "body": "Taragaman the Hungerer is a felguard, a demon of the Burning Legion, who stands in the midst of a lake of lava in the Searing Blade's halls. Neeru Fireblade names him the cult's leader. The Warchief charged Neeru with rooting out whatever brings demonic taint into the city, and Neeru sends those he trusts down into the chasm to kill him.",
   "triggers": [
+   [
+    3,
+    11520
+   ],
    [
     4,
     5761
@@ -59,35 +106,7 @@
   "parts": [
    {
     "part": 1,
-    "body": "In the Cleft of Shadow, Neeru Fireblade names the felguard the leader of the Searing Blade. Above all, he says, the Warchief charged him with rooting out whatever brings demonic taint into the city. The Burning Blade is one such threat but not the only one, and the Searing Blade must be stopped as well. For that, its leader must die.",
-    "triggers": [
-     [
-      4,
-      5761
-     ]
-    ],
-    "sources": [
-     "quest 5761 description (the primary task set upon me by our great Warchief: root out the creatures responsible for infesting the city with demonic influence; the Burning Blade is one threat, but there are others; the Searing Blade in Ragefire Chasm, subverting innocent members of the Horde; their leader must be slain, a Felguard named Taragaman the Hungerer; his heart will appease Thrall)",
-     "orgrimmar.json 163704 and 163710 (the cult leading Horde members astray, the heart for Thrall), not retold"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "Taragaman met his attackers with brute strength and fire. His uppercuts flung them back across the stone, and again and again flame burst from him in a ring that seared everyone near. For all his size and fury, the felguard fell in the midst of his burning lake.",
-    "triggers": [
-     [
-      3,
-      11520
-     ]
-    ],
-    "sources": [
-     "smart_scripts 11520 base: Uppercut 18072 on the victim, Fire Nova 11970 on himself; module (dungeon_ragefire_chasm.sql): the same two spells, retimed (Spell.dbc: Uppercut knocks the target back; Fire Nova inflicts Fire damage to nearby enemies)",
-     "creature 11520 single spawn, map 389 only"
-    ]
-   },
-   {
-    "part": 3,
-    "body": "The felguard's heart went up out of the chasm to Neeru Fireblade's hut. Neeru greeted it with a bark of triumph, certain the Warchief would be delighted. He took charge of the heart himself, promising that it would be dealt with as it should be, and sent its bearer off to enjoy the victory while he carried word of it to Thrall.",
+    "body": "Neeru took the felguard's heart into his own keeping, promising it would be dealt with as it should be, and went to carry word of the victory to Thrall himself.",
     "triggers": [
      [
       5,
@@ -95,10 +114,14 @@
      ]
     ],
     "sources": [
-     "quest 5761 reward text (Ha! You've done it! Thrall will be so pleased; I will ensure this heart is taken care of properly; you must celebrate your victory; I will inform Thrall of your success); creature_questender 3216 Neeru Fireblade (map 1, Cleft of Shadow)",
-     "creature_loot_template 11520 item 14540 Taragaman the Hungerer's Heart (100 percent, quest required); dropped by no other creature"
+     "creature 11520, single spawn on map 389 at -245,150 z-19 (Searing Blade spawns around him at z-25, e.g. -264,150; -284,144; -284,153); display 7970, FelGuard model at scale 1.5; faction 554 (the Searing Blade's)"
     ]
    }
+  ],
+  "related": [
+   243700,
+   90000039,
+   90000065
   ],
   "sources": [
    "creature 11520, single spawn on map 389 at -245,150 z-19 (Searing Blade spawns around him at z-25, e.g. -264,150; -284,144; -284,153); display 7970, FelGuard model at scale 1.5; faction 554 (the Searing Blade's)",
@@ -106,111 +129,6 @@
    "warcraft.wiki.gg/wiki/Ragefire_Chasm_(Classic) (Taragaman, a felguard, in the middle of a lava lake)",
    "quest 5761 description (a Felguard named Taragaman the Hungerer)"
   ],
-  "notes": "Check: part 1 lightly reworded (the Burning Blade made plainly a separate threat, as in the quest; the cult in the Chasm is always the Searing Blade, as in orgrimmar.json 163704 and 163710; nothing of Neeru's secret or the heart for Thrall retold). Part 3 reworded away from the near verbatim reward text. Opening, part 2, triggers verified (single spawn, map 389 only; Uppercut and Fire Nova in base and module). Writer: agreed: Ragefire Chasm owns Taragaman (his entry, his KILL and DONE 5761). Opening on AREA 2437 and ACCEPT 5761 (Neeru 3216 in Orgrimmar, AllowableRaces 690, QuestType 2, flags 8, not auto-complete); it tells only what both allow: a felguard in the lava lake among the cultists, his arms. That he leads the Searing Blade is Neeru's claim and goes on ACCEPT 5761 (part 1); orgrimmar.json 163704 (TALK 5875) and 163710 (TALK 3216) already name him the cult's master and the heart for Thrall, so part 1 keeps to what 5761 adds (the Warchief's charge as Neeru tells it) and points to the rest in a phrase. Nothing of Neeru's secret (orgrimmar.json 163710 part 1, ACCEPT 5727): DONE 5761 readers may not have it. Part 2 KILL 11520 (single spawn, map 389 only; no creature_text): Uppercut 18072 and Fire Nova 11970 in base and module. Part 3 DONE 5761 (reward text only). Faction 0 (the AREA trigger; the quest parts are Horde only by their quest)."
- },
- {
-  "id": 243702,
-  "kind": 2,
-  "zone": 2437,
-  "sort": 2,
-  "faction": 0,
-  "title": "Oggleflint",
-  "body": "Oggleflint is the Ragefire Chieftain, lord of the troggs who swarm through the lower caves of Ragefire Chasm. He is bigger than the troggs and shamans around him, a squat brute of stone-grey hide, and he keeps to a cave of his own off the main way through the caverns. A great bone serves him for a club. Whatever the troggs of Ragefire want in the depths beneath Orgrimmar, it is Oggleflint they follow.",
-  "triggers": [
-   [
-    3,
-    11517
-   ]
-  ],
-  "parts": [
-   {
-    "part": 1,
-    "body": "Oggleflint fought like the brute he was. Each sweep of his bone club cleaved through whoever stood before him and into the one beside them as well. It was not enough. The chieftain fell in his own cave, and the troggs of Ragefire were left without him.",
-    "triggers": [
-     [
-      3,
-      11517
-     ]
-    ],
-    "sources": [
-     "smart_scripts 11517 base and module: Cleave 40505 (Spell.dbc: strikes an enemy and its nearest ally)",
-     "creature 11517 single spawn, map 389 only"
-    ]
-   }
-  ],
-  "sources": [
-   "creature 11517 Oggleflint, subname Ragefire Chieftain, single spawn on map 389 at -148,39 z-39; display 11611, Troglodyte model at scale 1.0 (Ragefire Trogg 11609 at 0.85, Ragefire Shaman 11610 at 0.7); faction 59 like the troggs",
-   "creature_equip_template 11517 (3350 Monster - Item, Bone)",
-   "warcraft.wiki.gg/wiki/Ragefire_Chasm_(Classic) (classic Oggleflint in his original cave, off the main path)"
-  ],
-  "notes": "Check: verified (single spawn on map 389 in its own cave at -148,39, troggs z -39 to -64; Cleave in base and module; nothing of Maur or the troggs' origin). Writer: agreed: Oggleflint may have an entry; Maur Grimtotem's story and the troggs' rise stay with thunder_bluff.json 163816 (ACCEPT 5722/5723 and the rest), so the opening says nothing of where the troggs come from or of Maur's body, which lies about 15 yards from the chieftain (creature 11834 at -148,24); the last sentence leaves their aims open. Stone-grey hide is the trogg model's look; 'bigger' from display scale. Part on KILL 11517 (single spawn, map 389 only; no creature_text): Cleave 40505 in base and module. Faction 0."
- },
- {
-  "id": 243703,
-  "kind": 3,
-  "zone": 2437,
-  "sort": 3,
-  "faction": 2,
-  "title": "The Power to Destroy",
-  "body": "In the caverns below Orgrimmar, a sect of the Shadow Council has taken root: the Searing Blade. Its cultists hold two books of spells, Spells of Shadow and Incantations from the Nether, and word of them has reached the Royal Quarter of the Undercity, which wants them out of the sect's hands. Someone must go down into the Searing Blade's halls beneath the Horde's capital, take both books from the cultists who keep them, and carry them back across the sea to the Undercity.",
-  "triggers": [
-   [
-    4,
-    5725
-   ],
-   [
-    5,
-    14356
-   ]
-  ],
-  "parts": [
-   {
-    "part": 1,
-    "body": "Varimathras explains it in the Dark Lady's terms. The Legion's servants are generous with gifts to those who follow them, and the Lady judges that some of those gifts would serve better in her keeping than with followers of narrower sight. The Searing Blade's two books are such gifts. She means to borrow them, the dreadlord says, and the task of fetching them falls to whoever stands before him.",
-    "triggers": [
-     [
-      4,
-      5725
-     ]
-    ],
-    "sources": [
-     "quest 5725 description (many denizens of the Legion bestow gifts on their followers; some of these gifts the Dark Lady feels would be better off in her hands than in the hands of those with lesser vision; the Searing Blade a prime example; she would like to borrow these books; you will get them for her); creature_queststarter 2425 Varimathras; reachable only with mod-individual-progression (Varimathras spawned in phase II, zone_undercity.sql)"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "Varimathras received the books with approval. Serving the Dark Lady so well, he said, showed a persistence and ambition her people could put to good use. He bade the bearer return to him in time, for there might be more work, all of it to help the Lady in her struggle to overthrow the Lich King and set the Scourge wholly free.",
-    "triggers": [
-     [
-      5,
-      5725
-     ]
-    ],
-    "sources": [
-     "quest 5725 reward text (you have done well in serving the Dark Lady; your continued perseverance and ambition will be of great use to the Lady's subjects; return to me again; other tasks that will aid the Dark Lady in her attempts at overtaking the Lich King and completely freeing the Scourge); creature_questender 2425"
-    ]
-   },
-   {
-    "part": 3,
-    "body": "In the Royal Quarter, Bragor Bloodfist wanted the books in his own hands. The trouble was Orgrimmar's, he said, but the Searing Blade is made up mostly of orcs, and he would not trust a matter so delicate to the grunts of that city. Once both books reached him he vowed to keep them well hidden, for a Shadow Council grown strong again was the last thing anyone needed.",
-    "triggers": [
-     [
-      5,
-      14356
-     ]
-    ],
-    "minState": 13,
-    "sources": [
-     "quest 14356 description (Orgrimmar's got a problem; they're mainly orcs, and I can't trust sensitive information in the hands of the grunts there; kept out of the hands of the Searing Blade and the Forsaken alike; bring them to me directly) and reward text (I'll keep these safe from prying eyes; the last thing we need is a strong Shadow Council rising up again); creature_questender 36273 Bragor Bloodfist",
-     "undercity.json 149706 (Bragor, requiredState 13; the books kept from the Forsaken and the Shadow Council), named only"
-    ]
-   }
-  ],
-  "sources": [
-   "quest 5725 description (a sect of the Shadow Council hidden in caverns below Orgrimmar known as the Searing Blade; members have come into possession of two powerful spell books) and log text (Spells of Shadow and Incantations from the Nether); module QuestCompletionLog: Varimathras at the Royal Quarter; AllowableRaces 690, QuestType 2, flags 16392 (8 sharable plus 16384 QUEST_FLAGS_UNAVAILABLE, a client flag the core does not check)",
-   "quest 14356 description (deep in Ragefire Chasm, a sect of the Shadow Council called the Searing Blade; two books in their possession; bring them to me directly) and log text (the same two books); QuestCompletionLog: Bragor Bloodfist at the Royal Quarter; AllowableRaces 690, QuestType 2, flags 8",
-   "creature_loot_template 11322 Searing Blade Cultist and 11324 Searing Blade Warlock: items 14395 and 14396 (quest required); dropped by no other creature"
-  ],
-  "notes": "Check: opening's last line (Only there, in the Royal Quarter...) cut as a hint; the opening now tells only what both quests say. Parts 1-3 reworded away from near verbatim quest text. Module findings verified: zone_undercity.sql adds 2425 and 36273 as enders of 14356 only (starters unchanged), spawns Varimathras 602425 in IPP phase II and moves Bragor 31901 to phase III; IndividualProgression.cpp AREA_UNDERCITY casts phase III once 13267 or 13377 is rewarded, phase II otherwise; base DB has no Varimathras spawn. Readings (a) no module: opening and part 3 on DONE 14356; (b) module before the battle: opening and parts 1-2 on 5725; (c) module after the battle: opening and part 3 on DONE 14356; every part true where shown. Part 3 does not retell undercity.json 149706 (no Forsaken clause). Writer: two versions of one quest, as razorfen_downs.json 72208. Base: 5725 (started and ended by Varimathras 2425) has no disables row, but 2425 has no spawn in the base DB, so it cannot be taken; 14356 is started and ended by Bragor Bloodfist 36273 (guid 31901, Royal Quarter). mod-individual-progression zone_undercity.sql: deletes any disables on 5725, spawns Varimathras (guid 602425, same spot) in IPP phase II and moves Bragor 31901 to phase III; IndividualProgression.cpp AREA_UNDERCITY casts phase III once 13267 (or the Alliance battle) is rewarded and phase II otherwise; it adds both 2425 and 36273 as enders of 14356 (the starters stay 2425 for 5725 and 36273 for 14356) and rewrites the log lines of 5725 and 14356 to Varimathras at the Royal Quarter, leaving 14356's description and reward text in Bragor's voice. Readings: (a) no module (18): opening on DONE 14356, part 3; 5725 unearnable. (b) module, any state before the Battle for the Undercity: opening on ACCEPT 5725, parts 1-2; Bragor is phased out, so 14356 cannot be taken and part 3 is unearnable (minState 13 kept as a guard). (c) module after the battle (13 or later): Varimathras is phased out, so 5725 can be neither taken nor turned in; 14356 from Bragor, opening on DONE 14356, part 3 (reward text unchanged by the module). Parts 1-2 stay untagged: true in any state, reachable only with the module before the battle, and no state marks the battle. ACCEPT 14356 is undercity.json's (149706, 149707) and is not used, so the opening rests on DONE 14356 for Bragor's readers and his description is told on DONE 14356 (as 72208 part 5 tells 14353). The opening tells only what both quests say (the sect, the two books, the Royal Quarter wants them) and leaves the purpose to the parts, which differ. Title is the quest's own (no ellipsis), not a reveal. Bragor's keeping the books from the Forsaken is named in undercity.json 149706's opening; part 3 keeps it to a clause and tells his reasons and reward text. Faction 2 (AllowableRaces 690)."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  }
 ]

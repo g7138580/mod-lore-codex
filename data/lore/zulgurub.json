@@ -1,0 +1,163 @@
+[
+ {
+  "id": 197700,
+  "kind": 0,
+  "zone": 1977,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 3,
+  "title": "Zul'Gurub",
+  "body": "Zul'Gurub was the capital of the Gurubashi Empire, a vast temple city in the jungles of northern Stranglethorn. The blood god Hakkar the Soulflayer has been brought back into the world here, and the Gurubashi serve him once more. His high priests hold the temples of the old animal gods, and the god himself waits at the Altar of the Blood God at the heart of the city.",
+  "triggers": [
+   [
+    1,
+    1977
+   ]
+  ],
+  "related": [
+   91000020,
+   3312,
+   197702
+  ],
+  "sources": [
+   "creature_text 14834; Molthor gossip 6235"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 197701,
+  "kind": 2,
+  "zone": 1977,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 3,
+  "title": "The High Priests of Hakkar",
+  "body": "Hakkar's high priests hold the temples of Zul'Gurub, each bound to one of the old animal gods of the trolls: Jeklik calls on Hir'eek the bat, Mar'li on Shadra the spider, Thekal on Shirvallah the tiger, Arlokk on Bethekk the panther, and Venoxis lets the coils of the serpent unfurl. Each fights with the power of the god they serve.",
+  "triggers": [
+   [
+    3,
+    14517
+   ],
+   [
+    3,
+    14507
+   ],
+   [
+    3,
+    14510
+   ],
+   [
+    3,
+    14509
+   ],
+   [
+    3,
+    14515
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Each priest died glad of it. Hakkar binds me no more, Thekal said; Mar'li blessed her killers for the release; Jeklik cursed the Soulflayer with her last breath. They had served him in thrall.",
+    "triggers": [
+     [
+      3,
+      14517
+     ],
+     [
+      3,
+      14507
+     ],
+     [
+      3,
+      14510
+     ],
+     [
+      3,
+      14509
+     ],
+     [
+      3,
+      14515
+     ]
+    ],
+    "sources": [
+     "creature_text 14507, 14509, 14510, 14515, 14517"
+    ]
+   }
+  ],
+  "related": [
+   197702,
+   197700
+  ],
+  "sources": [
+   "creature_text 14507, 14509, 14510, 14515, 14517"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 197702,
+  "kind": 2,
+  "zone": 1977,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 3,
+  "title": "Hakkar the Soulflayer",
+  "body": "Hakkar the Soulflayer is the faceless blood god, reborn in Zul'Gurub and waiting at the Altar of the Blood God. He offers those who reach him a choice: pledge allegiance and the pain will be minimal. The world, he promises, will suffer immeasurable cruelties under his reign. The Gurubashi serve him, among them the hexxer Jin'do and the Bloodlord Mandokir, who promises to feed his foes' souls to Hakkar himself.",
+  "triggers": [
+   [
+    3,
+    14834
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "His heart still burned with the kernel of his power, and Molthor of the Zandalar hailed its bearer: the Soulflayer was slain, and the world saved.",
+    "triggers": [
+     [
+      5,
+      8183
+     ]
+    ],
+    "sources": [
+     "creature_text 14834, 11380, 11382; quest 8183"
+    ]
+   }
+  ],
+  "related": [
+   91000020,
+   197701,
+   44002
+  ],
+  "sources": [
+   "creature_text 14834, 11380, 11382; quest 8183"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 197703,
+  "kind": 2,
+  "zone": 1977,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 3,
+  "title": "Zanza the Restless",
+  "body": "Zanza is a loa of Zandalar, come to Zul'Gurub in ethereal form to help his people, and Hakkar has no dominion over his soul. Long ago, he says, the high elves stole his magic to enchant their weapons against the Amani trolls, a weak and pale copy they called arcanum, and he would see the world purged of it.",
+  "triggers": [
+   [
+    2,
+    15042
+   ]
+  ],
+  "related": [
+   197700,
+   3312,
+   91000024
+  ],
+  "sources": [
+   "Zanza gossip 21258-21261"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

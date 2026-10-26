@@ -1,0 +1,337 @@
+[
+ {
+  "id": 201700,
+  "kind": 0,
+  "zone": 2017,
+  "sort": 0,
+  "faction": 0,
+  "title": "Stratholme",
+  "body": "Inside its walls Stratholme is still the burned city of that terrible night. The Scourge holds its eastern streets and has raised ziggurats and a slaughterhouse among the ruins, while the Scarlet Crusade has walled itself into the western quarter. Between them the ghosts of the citizens walk the scorched streets, and the dead and the zealots kill anyone who comes in.",
+  "triggers": [
+   [
+    1,
+    2017
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Argent Dawn has found that the plague is growing stronger, not weaker, and the most potent samples come from the freshly infected flesh of Stratholme.",
+    "triggers": [
+     [
+      4,
+      5212
+     ]
+    ],
+    "sources": [
+     "Stratholme quests 5212, 5282, 5463"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Somewhere in the city lies Menethil's Gift, ground blessed by the Lich King and holy to the Scourge. There the lich Ras Frostwhisper was made.",
+    "triggers": [
+     [
+      4,
+      5463
+     ]
+    ],
+    "sources": [
+     "Stratholme quests 5212, 5282, 5463"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "A survivor at Light's Hope made a blaster that frees the tortured ghosts of the city, and he hopes his mother is among those set free.",
+    "triggers": [
+     [
+      4,
+      5282
+     ]
+    ],
+    "sources": [
+     "Stratholme quests 5212, 5282, 5463"
+    ]
+   }
+  ],
+  "related": [
+   13917,
+   90000006,
+   90000007
+  ],
+  "sources": [
+   "Stratholme quests 5212, 5282, 5463"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 201701,
+  "kind": 1,
+  "zone": 2017,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Scarlet Bastion",
+  "body": "The Scarlet Bastion is the walled quarter where the Scarlet Crusade holds out in Stratholme, the seat of its command under the Grand Crusader. Its gallants and guardsmen kill anything that comes near, and its archivist, Galford, keeps the Crusade's most valued documents behind the walls.",
+  "triggers": [
+   [
+    3,
+    10424
+   ],
+   [
+    3,
+    10418
+   ],
+   [
+    4,
+    5251
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Behind a painting of the twin moons hangs a master work painted over and hidden after Tirion Fordring's trial: Of Love and Family. Shown it, Tirion nearly collapsed and wept.",
+    "triggers": [
+     [
+      4,
+      5848
+     ],
+     [
+      5,
+      5848
+     ]
+    ],
+    "sources": [
+     "Stratholme quests 5251, 5848"
+    ]
+   }
+  ],
+  "related": [
+   90000007,
+   201702,
+   92000001
+  ],
+  "sources": [
+   "Stratholme quests 5251, 5848"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 201702,
+  "kind": 2,
+  "zone": 2017,
+  "sort": 0,
+  "faction": 0,
+  "title": "Grand Crusader Dathrohan",
+  "body": "Grand Crusader Dathrohan commands the Scarlet Crusade from the Scarlet Bastion of Stratholme, the leader whose word its captains and highlords obey. Those who break into his quarter of the city find him waiting, and he swears that they have unmade what took him years to create.",
+  "triggers": [
+   [
+    3,
+    10812
+   ],
+   [
+    4,
+    5262
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Pressed, the Grand Crusader showed his true form: the dreadlord Balnazzar, brother to Varimathras of the Undercity. Duke Zverenhoff of the Argent Dawn fears the Crusade has served a demon unknowing.",
+    "triggers": [
+     [
+      3,
+      10812
+     ],
+     [
+      4,
+      5262
+     ],
+     [
+      5,
+      5262
+     ]
+    ],
+    "sources": [
+     "Stratholme quest 5262; creature_text 10812, 10813"
+    ]
+   }
+  ],
+  "related": [
+   90000007,
+   201701,
+   2816
+  ],
+  "sources": [
+   "Stratholme quest 5262; creature_text 10812, 10813"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 201703,
+  "kind": 1,
+  "zone": 2017,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Ziggurats",
+  "body": "Beyond the first gates of the Scourge's half of Stratholme rise three ziggurats, each guarded by a servant of the baron, and Ash'ari crystals bound to them ward the slaughterhouse where he waits. The Argent Dawn believes the Scourge draws great power from these towers.",
+  "triggers": [
+   [
+    3,
+    10399
+   ],
+   [
+    3,
+    10436
+   ],
+   [
+    3,
+    10437
+   ],
+   [
+    3,
+    10438
+   ],
+   [
+    4,
+    5213
+   ]
+  ],
+  "related": [
+   201704,
+   90000006,
+   201700
+  ],
+  "sources": [
+   "Stratholme quest 5213; creature_text 10440"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 201704,
+  "kind": 2,
+  "zone": 2017,
+  "sort": 0,
+  "faction": 0,
+  "title": "Baron Rivendare",
+  "body": "Baron Rivendare rules Stratholme for the Scourge, Kel'Thuzad's errand boy as the Argent Dawn calls him, from the slaughterhouse behind the ziggurats. He keeps a prisoner of the Argent Dawn there, and he warns intruders that she will be executed unless they turn back. He raises his servants from death as he fights.",
+  "triggers": [
+   [
+    3,
+    10440
+   ],
+   [
+    4,
+    5263
+   ],
+   [
+    4,
+    8945
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The prisoner is Ysida Harmon of the Argent Dawn. Her husband Anthion tried to free her and failed, and he begs others to finish what he began.",
+    "triggers": [
+     [
+      4,
+      8945
+     ]
+    ],
+    "sources": [
+     "Stratholme quests 5263, 6163, 8945; creature_text 10440"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Freed, Ysida thanked her rescuers, and then understood what had become of the husband who sent them: Anthion had not survived his attempt.",
+    "triggers": [
+     [
+      5,
+      8945
+     ]
+    ],
+    "sources": [
+     "Stratholme quests 5263, 6163, 8945; creature_text 10440"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The abomination Ramstein, which guards his slaughterhouse, is the beast that slew Nathanos Marris on his own stead. Freed by Sylvanas, Nathanos wants its head.",
+    "triggers": [
+     [
+      4,
+      6163
+     ]
+    ],
+    "sources": [
+     "Stratholme quests 5263, 6163, 8945; creature_text 10440"
+    ]
+   }
+  ],
+  "related": [
+   92000000,
+   90000006,
+   201705
+  ],
+  "sources": [
+   "Stratholme quests 5263, 6163, 8945; creature_text 10440"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 201705,
+  "kind": 2,
+  "zone": 2017,
+  "sort": 0,
+  "faction": 0,
+  "title": "Aurius",
+  "body": "Aurius was once a paladin of the Silver Hand whose faith wavered. The Scourge seduced him and nearly made him a death knight, until he sensed his peril and fled to a chapel in Stratholme, the sacred place where Uther the Lightbringer was ordained into the order. There he waits, wounded, for a chance to redeem himself.",
+  "triggers": [
+   [
+    2,
+    10917
+   ],
+   [
+    5,
+    5122
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "With his medallion of faith restored he could leave the chapel to do his duty: kill Baron Rivendare, who had helped corrupt him and so many of his brothers and sisters.",
+    "triggers": [
+     [
+      5,
+      5122
+     ]
+    ],
+    "sources": [
+     "Aurius gossip 3043; quests 5122, 5125"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Aurius fought beside those who faced the baron. Dying of his wounds, he said his soul was saved, and that he would die in peace.",
+    "triggers": [
+     [
+      5,
+      5125
+     ]
+    ],
+    "sources": [
+     "Aurius gossip 3043; quests 5122, 5125"
+    ]
+   }
+  ],
+  "related": [
+   90000032,
+   201704
+  ],
+  "sources": [
+   "Aurius gossip 3043; quests 5122, 5125"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

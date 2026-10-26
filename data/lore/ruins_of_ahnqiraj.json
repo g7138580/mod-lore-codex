@@ -1,0 +1,119 @@
+[
+ {
+  "id": 342900,
+  "kind": 0,
+  "zone": 3429,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 4,
+  "title": "Ruins of Ahn'Qiraj",
+  "body": "The Ruins of Ahn'Qiraj are the outer city behind the Scarab Wall, opened at last. Silithid swarm its terraces and the Hatchery, and the qiraji army musters on the General's Terrace under its commanders. Soldiers of the Cenarion Circle and the night elves have followed the opening of the gates inside, and fight the insects among the ruins of the city their forebears sealed a thousand years ago.",
+  "triggers": [
+   [
+    1,
+    3429
+   ]
+  ],
+  "related": [
+   90000061,
+   137714,
+   91000033
+  ],
+  "sources": [
+   "creature_text 15341, 15471"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 342901,
+  "kind": 2,
+  "zone": 3429,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 4,
+  "title": "General Rajaxx",
+  "body": "General Rajaxx commands the qiraji army in the ruins, and he has waited a thousand years behind barred doors for his vengeance. Staghelm will whimper and beg for his life, he promises, just as his whelp of a son did. Lieutenant General Andorov's kaldorei have orders from on high to destroy him.",
+  "triggers": [
+   [
+    3,
+    15341
+   ],
+   [
+    2,
+    15471
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Dying, Rajaxx warned his killers that their meddling had a price: the master was nearly whole, and when he rose, their world would cease.",
+    "triggers": [
+     [
+      3,
+      15341
+     ]
+    ],
+    "sources": [
+     "creature_text 15341, 15471; Andorov gossip 7048"
+    ]
+   }
+  ],
+  "related": [
+   137708,
+   165708,
+   90000061
+  ],
+  "sources": [
+   "creature_text 15341, 15471; Andorov gossip 7048"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 342902,
+  "kind": 2,
+  "zone": 3429,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 4,
+  "title": "Ossirian the Unscarred",
+  "body": "Ossirian the Unscarred is the guardian of the ruins, set to protect the city at all costs. He calls the sands of the desert to rise and blot out the sun, and the crystals of the ruins renew his powers whenever they fail. Commander Mar'alith of Cenarion Hold wants his head.",
+  "triggers": [
+   [
+    3,
+    15339
+   ],
+   [
+    4,
+    8791
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Ossirian died admitting that he had failed, and the people of Kalimdor were told that a terrible menace had been laid to rest.",
+    "triggers": [
+     [
+      3,
+      15339
+     ],
+     [
+      5,
+      8791
+     ]
+    ],
+    "sources": [
+     "creature_text 15339; quest 8791"
+    ]
+   }
+  ],
+  "related": [
+   342900,
+   137705,
+   90000061
+  ],
+  "sources": [
+   "creature_text 15339; quest 8791"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]
