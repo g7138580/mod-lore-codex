@@ -8,17 +8,37 @@ LoreCodex = LoreCodex or {}
 local LC = LoreCodex
 
 LC.PREFIX = "LCX"
-LC.PROTOCOL = 4
+LC.PROTOCOL = 5
 
-LC.KIND = { ZONE = 0, PLACE = 1, PERSON = 2, STORY = 3 }
-LC.KIND_NAME = { [0] = "Zone", [1] = "Place", [2] = "Person", [3] = "Story" }
-LC.KIND_SECTION = { [0] = "The Land", [1] = "Places", [2] = "People", [3] = "Stories" }
+LC.KIND = { ZONE = 0, PLACE = 1, PERSON = 2, STORY = 3, PEOPLES = 4, HISTORY = 5 }
+LC.KIND_NAME = { [0] = "Zone", [1] = "Place", [2] = "Person", [3] = "Story", [4] = "Peoples and Factions", [5] = "History" }
 LC.KIND_ICON = {
 	[0] = "Interface\\Icons\\INV_Misc_Map_01",
 	[1] = "Interface\\Icons\\INV_Misc_Spyglass_03",
 	[2] = "Interface\\Icons\\Achievement_Character_Human_Male",
 	[3] = "Interface\\Icons\\INV_Misc_Book_09",
+	[4] = "Interface\\Icons\\Achievement_Reputation_01",
+	[5] = "Interface\\Icons\\INV_Scroll_03",
 }
+
+-- The codex's one way in: four categories, each listing entries of some kinds. Stories are the older
+-- story entries, listed until the last of them is rewritten into the other four.
+LC.CATEGORIES = {
+	{ key = "locations", name = "Locations", kinds = { [0] = true, [1] = true }, icon = 0 },
+	{ key = "people", name = "People", kinds = { [2] = true }, icon = 2 },
+	{ key = "peoples", name = "Peoples and Factions", kinds = { [4] = true }, icon = 4 },
+	{ key = "history", name = "History", kinds = { [5] = true }, icon = 5 },
+	{ key = "stories", name = "Stories", kinds = { [3] = true }, icon = 3 },
+}
+LC.CATEGORY = {}
+for _, c in ipairs(LC.CATEGORIES) do LC.CATEGORY[c.key] = c end
+
+function LC.CategoryOf(kind)
+	for _, c in ipairs(LC.CATEGORIES) do
+		if c.kinds[kind] then return c end
+	end
+	return LC.CATEGORIES[1]
+end
 LC.CONTINENTS = { [0] = "Eastern Kingdoms", [1] = "Kalimdor", [530] = "Outland", [571] = "Northrend" }
 LC.CONTINENT_ORDER = { 0, 1, 530, 571 }
 -- Zones whose map isn't their continent's: the blood elf and draenei lands are on Outland's map,
@@ -258,9 +278,9 @@ end
 -- the index: zones and entries (without their titles)
 
 -- LC.index = { entries = { [id] = entry }, zones = { [zoneId] = zone } }; an entry is
--- { id, kind, zone, sort, faction }, a zone { id, map, name, instance, entries = { entry, ... } }
+-- { id, kind, zone, sort, faction, hint }, a zone { id, map, name, instance, entries = { entry, ... } }
 -- where map is the continent it is listed under and instance is 0 for a zone, 1 for a dungeon and
--- 2 for a raid.
+-- 2 for a raid. Peoples, factions and history have zone 0 and belong to no zone's list.
 local function buildIndex(rows)
 	local index = { entries = {}, zones = {} }
 	local faction = UnitFactionGroup("player")
@@ -272,12 +292,13 @@ local function buildIndex(rows)
 	end
 	for _, r in ipairs(rows) do
 		if r[1] == "E" then
-			local e = { id = r[2], kind = r[3], zone = r[4], sort = r[5], faction = r[6] }
+			local e = { id = r[2], kind = r[3], zone = r[4], sort = r[5], faction = r[6],
+				hint = LC.Unescape(tostring(r[7] or "-")) }
 			local hidden = (e.faction == 1 and faction ~= "Alliance") or (e.faction == 2 and faction ~= "Horde")
 			local zone = index.zones[e.zone]
-			if zone and not hidden then
+			if not hidden and (zone or e.zone == 0) then
 				index.entries[e.id] = e
-				table.insert(zone.entries, e)
+				if zone then table.insert(zone.entries, e) end
 			end
 		end
 	end
@@ -395,12 +416,14 @@ function LC.WasOpened(id)
 	return LoreCodexCharDB.read[id] ~= nil
 end
 
--- Discovered and visible to this character, out of all visible, for a zone (or every zone).
-function LC.Progress(zone)
+-- Discovered and visible to this character, out of all visible, for a zone (or every zone), and
+-- only of one category's kinds when a category is given.
+function LC.Progress(zone, category)
 	local known, total = 0, 0
 	if not LC.index then return 0, 0 end
+	local kinds = category and LC.CATEGORY[category] and LC.CATEGORY[category].kinds
 	for id, e in pairs(LC.index.entries) do
-		if (not zone or e.zone == zone) and LC.IsVisible(id) then
+		if (not zone or e.zone == zone) and (not kinds or kinds[e.kind]) and LC.IsVisible(id) then
 			total = total + 1
 			if LC.known[id] then known = known + 1 end
 		end
@@ -416,9 +439,10 @@ function LC.Title(id)
 	return t and t.title
 end
 
--- done(entry) with entry = { title, body, parts, more, state, shown }, or nil when the server
--- wouldn't say. more is true when the character could still earn another part; shown lists the
--- numbers of the parts in the body, in order (each is a paragraph after the opening).
+-- done(entry) with entry = { title, body, parts, more, state, shown, related }, or nil when the
+-- server wouldn't say. more is true when the character could still earn another part; shown lists
+-- the numbers of the parts in the body, in order (each is a paragraph after the opening); related
+-- lists the ids of the entries it links to (shown only once the character knows them).
 -- Texts on their way: [entry] = the callbacks waiting for it. The codex list asks again for every
 -- missing title each time it redraws, so a text already asked for is not asked for twice.
 local loading = {}
@@ -429,7 +453,7 @@ end
 
 function LC.LoadText(id, done)
 	local t = cache().text[id]
-	if t and t.body and t.shown and t.parts == (LC.parts[id] or 0) and t.state == LC.state then done(t) return end
+	if t and t.body and t.shown and t.related and t.parts == (LC.parts[id] or 0) and t.state == LC.state then done(t) return end
 	if not LC.serverReady then done(nil) return end
 	if loading[id] then table.insert(loading[id], done) return end
 	loading[id] = { done }
@@ -440,8 +464,11 @@ function LC.LoadText(id, done)
 			local meta = result.meta
 			local shown = {}
 			for n in (meta[8] or ""):gmatch("%d+") do table.insert(shown, tonumber(n)) end
+			local related = {}
+			for n in (meta[9] or ""):gmatch("%d+") do table.insert(related, tonumber(n)) end
 			t = { title = LC.Unescape(meta[4] or "-"), body = LC.Unescape(table.concat(result.raw)),
-				parts = tonumber(meta[5]) or 0, more = meta[6] == "1", state = tonumber(meta[7]) or 0, shown = shown }
+				parts = tonumber(meta[5]) or 0, more = meta[6] == "1", state = tonumber(meta[7]) or 0, shown = shown,
+				related = related }
 			cache().text[id] = t
 		else
 			t = nil
@@ -604,11 +631,12 @@ function LC.ContinentProgress(map)
 	return known, total
 end
 
--- Entries discovered but not read yet.
+-- Entries discovered but not read yet. An entry the codex no longer has (rewritten away) is left out.
 function LC.UnreadCount()
 	local n = 0
+	if not LC.index then return 0 end
 	for id in pairs(LC.known) do
-		if not LC.IsRead(id) and LC.IsVisible(id) then n = n + 1 end
+		if LC.index.entries[id] and not LC.IsRead(id) and LC.IsVisible(id) then n = n + 1 end
 	end
 	return n
 end

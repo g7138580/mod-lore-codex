@@ -3,6 +3,10 @@
 #
 # An entry may carry "parts": [{"part": 1, "body": "...", "triggers": [[5, 123]], "minState": 0, "maxState": 255, "sources": []}].
 # A part with triggers is earned on its own; a part without triggers always shows with its entry.
+# An entry may also carry "hint" (what it shows while locked) and "related": [entry ids] (linked once known); both need the
+# categories schema (2026_10_25_161_lore_codex_categories.sql). Peoples, factions and history have "zone": 0 in each entry
+# and their own id ranges: pass 900000 (ids 90000000-90000099) or 910000 (91000000-91000099) as the zone; major figures met
+# in many zones are People with zone 0, ids 92000000-92000099 (pass 920000).
 # Output that has parts or part numbers needs the parts schema (2026_10_17_63_lore_codex_parts.sql), so give it a later
 # sequence number than that file.
 import json, sys
@@ -17,6 +21,8 @@ for e in entries:
     for k in ("title", "body"):
         if not clean(e[k]): bad.append(f"{e['id']} {k} has a dash, pipe or backslash")
     if len(e["title"]) > 80: bad.append(f"{e['id']} title too long")
+    if len(e.get("hint", "")) > 120 or not clean(e.get("hint", "")): bad.append(f"{e['id']} hint too long or has a dash, pipe or backslash")
+    if len(e.get("related", [])) > 6: bad.append(f"{e['id']} has more than 6 related entries")
     parts = e.get("parts", [])
     if [p["part"] for p in parts] != list(range(1, len(parts) + 1)): bad.append(f"{e['id']} parts are not numbered 1, 2, ...")
     for p in parts:
@@ -28,12 +34,13 @@ ordered = sorted(entries, key=lambda e: e["id"])
 lines = [f"-- mod-lore-codex (acore_world): {name}.", "",
          f"DELETE FROM `mod_lore_codex_trigger` WHERE `Entry` BETWEEN {lo} AND {hi};",
          f"DELETE FROM `mod_lore_codex_part` WHERE `Entry` BETWEEN {lo} AND {hi};",
+         f"DELETE FROM `mod_lore_codex_related` WHERE `Entry` BETWEEN {lo} AND {hi};",
          f"DELETE FROM `mod_lore_codex_entry` WHERE `ID` BETWEEN {lo} AND {hi};", "",
-         "INSERT INTO `mod_lore_codex_entry` (`ID`, `Kind`, `Zone`, `SortOrder`, `Faction`, `RequiredState`, `Title`, `Body`, `Sources`) VALUES"]
+         "INSERT INTO `mod_lore_codex_entry` (`ID`, `Kind`, `Zone`, `SortOrder`, `Faction`, `RequiredState`, `Title`, `Body`, `Hint`, `Sources`) VALUES"]
 rows = []
 for e in ordered:
     rows.append(f"({e['id']}, {e['kind']}, {e.get('zone', zone)}, {e.get('sort', 0)}, {e.get('faction', 0)}, {e.get('requiredState', 0)}, "
-                f"{q(e['title'])}, {q(e['body'])}, {q('; '.join(e.get('sources', [])))})")
+                f"{q(e['title'])}, {q(e['body'])}, {q(e.get('hint', ''))}, {q('; '.join(e.get('sources', [])))})")
 lines.append(",\n".join(rows) + ";")
 prows = [f"({e['id']}, {p['part']}, {p.get('minState', 0)}, {p.get('maxState', 255)}, {q(p['body'])}, {q('; '.join(p.get('sources', [])))})"
          for e in ordered for p in e.get("parts", [])]
@@ -43,5 +50,8 @@ if prows:
 trows = list(dict.fromkeys([f"({e['id']}, {t[0]}, {t[1]}, 0)" for e in ordered for t in e.get("triggers", [])]
                            + [f"({e['id']}, {t[0]}, {t[1]}, {p['part']})" for e in ordered for p in e.get("parts", []) for t in p.get("triggers", [])]))
 lines += ["", "INSERT INTO `mod_lore_codex_trigger` (`Entry`, `Type`, `Value`, `Part`) VALUES", ",\n".join(trows) + ";"]
+rrows = [f"({e['id']}, {r}, {i})" for e in ordered for i, r in enumerate(e.get("related", []))]
+if rrows:
+    lines += ["", "INSERT INTO `mod_lore_codex_related` (`Entry`, `Related`, `SortOrder`) VALUES", ",\n".join(rrows) + ";"]
 open(out, "w", encoding="utf8", newline="\n").write("\n".join(lines) + "\n")
 print(f"wrote {len(rows)} entries, {len(prows)} parts, {len(trows)} triggers to {out}")

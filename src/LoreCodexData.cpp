@@ -11,9 +11,11 @@
  * its entry. Either kind can be limited to a range of mod-individual-progression states, which
  * only matters for what is shown, never for what is recorded.
  *
- * Index rows (ID): Z,<zone>,<map>,<zone name> once per zone with entries, then
- * E,<entry>,<kind>,<zone>,<sort>,<faction> per entry. Titles and texts are only sent for
- * entries the character knows (T), so the codex can't be read ahead.
+ * Index rows (ID): Z,<zone>,<map>,<zone name>,<continent>,<instance> once per zone with entries,
+ * then E,<entry>,<kind>,<zone>,<sort>,<faction>,<hint> per entry (zone 0 for peoples, factions
+ * and history; the hint is what a locked entry shows, written to give nothing away). Titles,
+ * texts and related entries are only sent for entries the character knows (T), so the codex
+ * can't be read ahead.
  *
  * Known rows (KD): K,<entry>,<parts earned> for each entry the character knows, H,<entry> for
  * each entry it can never unlock: the other faction's, and those whose every trigger is out of
@@ -61,7 +63,9 @@ namespace LoreCodex::Data
             uint8 requiredState = 0;
             std::string title;
             std::string body;
-            std::vector<Part> parts; // in reading order
+            std::string hint;
+            std::vector<Part> parts;      // in reading order
+            std::vector<uint32> related;  // linked from the entry, in order
         };
 
         using TriggerKey = std::pair<uint8, uint32>; // type, value
@@ -125,7 +129,7 @@ namespace LoreCodex::Data
         std::unordered_map<ObjectGuid::LowType, PlayerState> sPlayers;
         std::mutex sPlayersLock;
 
-        char const* const KIND_NAMES[KIND_MAX] = { "Zone", "Place", "Person", "Story" };
+        char const* const KIND_NAMES[KIND_MAX] = { "Zone", "Place", "Person", "Story", "Peoples and Factions", "History" };
 
         // Areas nest at most a couple of levels below their zone.
         constexpr uint32 MAX_AREA_DEPTH = 4;
@@ -353,7 +357,7 @@ namespace LoreCodex::Data
     {
         auto content = std::make_shared<Content>();
 
-        if (QueryResult result = WorldDatabase.Query("SELECT ID, Kind, Zone, SortOrder, Faction, RequiredState, Title, Body "
+        if (QueryResult result = WorldDatabase.Query("SELECT ID, Kind, Zone, SortOrder, Faction, RequiredState, Title, Body, Hint "
             "FROM mod_lore_codex_entry"))
         {
             do
@@ -368,12 +372,30 @@ namespace LoreCodex::Data
                 e.requiredState = f[5].Get<uint8>();
                 e.title = f[6].Get<std::string>();
                 e.body = f[7].Get<std::string>();
+                e.hint = f[8].Get<std::string>();
                 if (e.kind >= KIND_MAX || e.faction > FACTION_HORDE)
                 {
                     LOG_ERROR("module", "LoreCodex: entry {} has an unknown kind or faction, skipped.", e.id);
                     continue;
                 }
                 content->entries.emplace(e.id, std::move(e));
+            } while (result->NextRow());
+        }
+
+        if (QueryResult result = WorldDatabase.Query("SELECT Entry, Related FROM mod_lore_codex_related ORDER BY Entry, SortOrder, Related"))
+        {
+            do
+            {
+                Field* f = result->Fetch();
+                uint32 entry = f[0].Get<uint32>();
+                uint32 related = f[1].Get<uint32>();
+                auto itr = content->entries.find(entry);
+                if (itr == content->entries.end() || !content->entries.count(related) || related == entry)
+                {
+                    LOG_ERROR("module", "LoreCodex: related entry {} of entry {} is missing, skipped.", related, entry);
+                    continue;
+                }
+                itr->second.related.push_back(related);
             } while (result->NextRow());
         }
 
@@ -505,7 +527,9 @@ namespace LoreCodex::Data
         uint32 h = 2166136261u;
         for (auto const& [id, e] : content->entries)
         {
-            h = Fnv(Fnv(Fnv(Fnv(Fnv(Fnv(Fnv(h, id), e.kind), e.zone), e.sort), e.faction), e.title), e.body);
+            h = Fnv(Fnv(Fnv(Fnv(Fnv(Fnv(Fnv(Fnv(h, id), e.kind), e.zone), e.sort), e.faction), e.title), e.body), e.hint);
+            for (uint32 related : e.related)
+                h = Fnv(h, related);
             for (Part const& p : e.parts)
                 h = Fnv(Fnv(Fnv(Fnv(Fnv(h, p.part), p.minState), p.maxState), uint32(p.earned)), p.body);
         }
@@ -760,7 +784,7 @@ namespace LoreCodex::Data
         std::unordered_set<uint32> zones;
         for (auto const& [id, e] : content->entries)
         {
-            if (!zones.insert(e.zone).second)
+            if (!e.zone || !zones.insert(e.zone).second)
                 continue;
             AreaTableEntry const* area = sAreaTableStore.LookupEntry(e.zone);
             uint32 mapId = area ? area->mapid : 0;
@@ -770,7 +794,7 @@ namespace LoreCodex::Data
         }
         for (auto const& [id, e] : content->entries)
             rows.push_back("E," + std::to_string(id) + "," + std::to_string(e.kind) + "," + std::to_string(e.zone) + ","
-                + std::to_string(e.sort) + "," + std::to_string(e.faction));
+                + std::to_string(e.sort) + "," + std::to_string(e.faction) + "," + Escape(e.hint));
 
         Send(player, "IR:" + req + ":" + std::to_string(content->entries.size()));
         SendRows(player, "ID:" + req, rows);
@@ -839,9 +863,14 @@ namespace LoreCodex::Data
             text = Compose(player, *content, e, st->second, earned, more, shown);
         }
 
+        // Related entries as ids joined by '.'; the addon links only the ones the character knows.
+        std::string related;
+        for (uint32 r : e.related)
+            related += (related.empty() ? "" : ".") + std::to_string(r);
+
         Send(player, "TR:" + req + ":" + std::to_string(id) + ":" + std::to_string(e.kind) + ":" + std::to_string(e.zone)
             + ":" + Escape(e.title) + ":" + std::to_string(earned) + ":" + (more ? "1" : "0") + ":"
-            + std::to_string(ProgressionState(player)) + ":" + (shown.empty() ? "-" : shown));
+            + std::to_string(ProgressionState(player)) + ":" + (shown.empty() ? "-" : shown) + ":" + (related.empty() ? "-" : related));
 
         // The text in pieces, never cutting an escape or a UTF-8 character in two.
         std::string body = Escape(text);

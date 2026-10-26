@@ -31,17 +31,21 @@ namespace LoreCodex
     constexpr char const* PREFIX = "LCX";
 
     // Bumped when a message changes shape. The addon refuses the server on a mismatch.
-    constexpr uint32 PROTOCOL_VERSION = 4;
+    constexpr uint32 PROTOCOL_VERSION = 5;
 
     // Leaves room for the prefix and tab inside the client's 255-byte chat message limit.
     constexpr std::size_t MAX_PAYLOAD = 240;
 
+    // The addon files kinds 0 and 1 under Locations, 2 under People, 4 under Peoples and Factions
+    // and 5 under History; 3 is the older story entries, kept until they are rewritten.
     enum Kind : uint8
     {
-        KIND_ZONE   = 0,
-        KIND_PLACE  = 1,
-        KIND_PERSON = 2,
-        KIND_STORY  = 3,
+        KIND_ZONE    = 0,
+        KIND_PLACE   = 1,
+        KIND_PERSON  = 2,
+        KIND_STORY   = 3,
+        KIND_PEOPLES = 4, // a people or a faction; no zone of its own
+        KIND_HISTORY = 5, // an event, an age, a power or a relic; no zone of its own, SortOrder is its place in time
         KIND_MAX
     };
 
