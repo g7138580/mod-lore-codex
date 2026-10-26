@@ -1,0 +1,7372 @@
+[
+ {
+  "id": 90000001,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Syndicate",
+  "body": "The Syndicate is what remains of Alterac's nobility. When King Aiden Perenolde was found to have let the Horde through his passes in the Second War, his kingdom was broken up and its lords lost their lands and titles. Many took to the hills with their households and hired blades. Now they rob, smuggle and murder across Alterac, Hillsbrad and Arathi, still dreaming of the crown they lost.",
+  "triggers": [
+   [
+    1,
+    280
+   ],
+   [
+    1,
+    284
+   ],
+   [
+    1,
+    1678
+   ],
+   [
+    1,
+    1679
+   ],
+   [
+    1,
+    275
+   ],
+   [
+    3,
+    2240
+   ],
+   [
+    3,
+    2242
+   ],
+   [
+    3,
+    2260
+   ],
+   [
+    3,
+    2261
+   ],
+   [
+    4,
+    505
+   ],
+   [
+    4,
+    498
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Their founder is Aliden Perenolde, the traitor king's son. He served Aedelas Blackmoore at Durnholde before he turned his back on the camps and claimed his father's mountains for himself.",
+    "triggers": [
+     [
+      3,
+      2423
+     ],
+     [
+      4,
+      507
+     ]
+    ],
+    "sources": [
+     "Alterac 3600, 3601, 3607, 3613, 3616, 3617 and Hillsbrad 26727 (quests 505-537), Arathi 4502, 4505, 4518"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "They are not as free as they think. Letters taken from their camps point to a hidden patron, the Argus Wake, guiding them from the shadows on behalf of someone none of them has seen.",
+    "triggers": [
+     [
+      5,
+      525
+     ]
+    ],
+    "sources": [
+     "Alterac 3600, 3601, 3607, 3613, 3616, 3617 and Hillsbrad 26727 (quests 505-537), Arathi 4502, 4505, 4518"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In the Arathi Highlands they hold much of ruined Stromgarde, where Lord Falconcrest commands them from the keep itself, and their camps reach as far as Northfold Manor.",
+    "triggers": [
+     [
+      1,
+      313
+     ],
+     [
+      1,
+      324
+     ],
+     [
+      3,
+      2586
+     ],
+     [
+      3,
+      2589
+     ]
+    ],
+    "sources": [
+     "Alterac 3600, 3601, 3607, 3613, 3616, 3617 and Hillsbrad 26727 (quests 505-537), Arathi 4502, 4505, 4518"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "They have friends even in the Undercity: a merchant beside the Apothecarium was caught keeping a ledger of his sales to the fallen lords of Alterac.",
+    "triggers": [
+     [
+      4,
+      1978
+     ],
+     [
+      4,
+      14418
+     ]
+    ],
+    "sources": [
+     "Alterac 3600, 3601, 3607, 3613, 3616, 3617 and Hillsbrad 26727 (quests 505-537), Arathi 4502, 4505, 4518"
+    ]
+   }
+  ],
+  "hint": "Found among the outlaws of Alterac, Hillsbrad and Arathi.",
+  "related": [
+   90000002,
+   3613,
+   3617,
+   91000001
+  ],
+  "sources": [
+   "Alterac 3600, 3601, 3607, 3613, 3616, 3617 and Hillsbrad 26727 (quests 505-537), Arathi 4502, 4505, 4518",
+   "warcraft.wiki.gg Syndicate (pre-Cataclysm parts only)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000002,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "Ravenholdt",
+  "body": "Ravenholdt is the Assassin's League, the finest thieves and killers in the eastern kingdoms, sworn to no king and no warchief. Its manor hides in the hills above Hillsbrad, and no one finds it uninvited: the League watches its recruits long before it summons them, and tests them with traps at the door. Lord Jorach Ravenholdt hires out its blades and keeps its secrets.",
+  "triggers": [
+   [
+    1,
+    3486
+   ],
+   [
+    2,
+    6766
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Its oldest quarrel is with the Syndicate, the outlaw nobles who claim the same mountains. To the League they are amateurs with titles, short on skill and long on numbers, too many to kill, so Ravenholdt shames them instead: steal a man's emblem, and his own people deal with him.",
+    "triggers": [
+     [
+      5,
+      6701
+     ]
+    ],
+    "sources": [
+     "Alterac 3611, 3618"
+    ]
+   }
+  ],
+  "hint": "Learned in the hidden hills above Hillsbrad.",
+  "related": [
+   90000001,
+   3618,
+   3611
+  ],
+  "sources": [
+   "Alterac 3611, 3618",
+   "quest 6701 Syndicate Emblems (request text)",
+   "warcraft.wiki.gg Ravenholdt (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000003,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Kirin Tor",
+  "body": "The Kirin Tor are the wizards who ruled Dalaran, the city of magi, and watched over the use of magic in the human kingdoms, governed by a Council of Six. The Third War broke their city and killed their leader, Archmage Antonidas, but the survivors never left: they shut themselves away in the ruins and set about rebuilding.",
+  "triggers": [
+   [
+    1,
+    279
+   ],
+   [
+    2,
+    2543
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Long ago the Kirin Tor set an order, the Violet Eye, to watch over Medivh and his tower of Karazhan in case his power got out of hand, as it soon did.",
+    "triggers": [
+     [
+      2,
+      18165
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Alterac 3610, 3619, 3620"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "With their city whole again, the Kirin Tor lifted it into the skies of Northrend to stand against the Lich King.",
+    "triggers": [],
+    "minState": 13
+   },
+   {
+    "part": 3,
+    "body": "In Netherstorm the Kirin Tor of the Alliance expedition founded Kirin'Var, which held twenty years until Kael'thas, once of the Kirin Tor himself, leveled it.",
+    "triggers": [
+     [
+      1,
+      3934
+     ],
+     [
+      1,
+      3733
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Alterac 3610, 3619, 3620"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Mages across Azeroth are being abducted, and from Amber Ledge in the Borean Tundra the Kirin Tor of Dalaran hunt the mage hunters who take them.",
+    "triggers": [
+     [
+      1,
+      4023
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Alterac 3610, 3619, 3620"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "Faced with the blue dragonflight and the Scourge, the Kirin Tor lifted Dalaran from Lordamere Lake and carried it to Northrend, where it floats above Crystalsong Forest under Rhonin.",
+    "triggers": [
+     [
+      1,
+      4395
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Alterac 3610, 3619, 3620"
+    ]
+   }
+  ],
+  "hint": "Learned among the ruins on the shore of Lordamere Lake.",
+  "related": [
+   91000003,
+   3610,
+   3619,
+   3620
+  ],
+  "sources": [
+   "Alterac 3610, 3619, 3620",
+   "Netherstorm 352310, 352311",
+   "Borean 353710",
+   "Dalaran 439500"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000004,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Royal Apothecary Society",
+  "body": "The Royal Apothecary Society is the Forsaken's order of alchemists, and its masters serve the Banshee Queen's hunger for a New Plague, one that will kill humans and the Scourge alike. Its apothecaries work wherever the Forsaken reach, gathering poisons from the wild and testing their brews on whatever they can catch, from frogs to farmers.",
+  "triggers": [
+   [
+    2,
+    2216
+   ],
+   [
+    4,
+    496
+   ],
+   [
+    4,
+    501
+   ],
+   [
+    4,
+    509
+   ],
+   [
+    4,
+    659
+   ],
+   [
+    2,
+    1518
+   ],
+   [
+    4,
+    367
+   ],
+   [
+    2,
+    1937
+   ],
+   [
+    4,
+    447
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In Tarren Mill the work has already gone past animals: a plague brewed there was poured into a stolen keg and left with the captured farmers.",
+    "triggers": [
+     [
+      5,
+      524
+     ]
+    ],
+    "sources": [
+     "Hillsbrad 26715, 26723, 26724 (quests 496-524, 658-661)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Southshore has its first proof. Papers stolen at Go'Shek Farm in the Arathi Highlands show a Forsaken apothecary at work on deadly experiments there, his findings likely bound for Tarren Mill.",
+    "triggers": [
+     [
+      5,
+      661
+     ]
+    ],
+    "sources": [
+     "Hillsbrad 26715, 26723, 26724 (quests 496-524, 658-661)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In Brill the brews have claimed their first victims: a Scarlet zealot twisted into a ghoul by a laced pumpkin, and a captured dwarf who raised a defiant toast to his captors and fell dead.",
+    "triggers": [
+     [
+      5,
+      492
+     ]
+    ],
+    "sources": [
+     "Hillsbrad 26715, 26723, 26724 (quests 496-524, 658-661)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Whatever its apothecaries learn, in Brill, Silverpine or Tarren Mill, flows to Master Apothecary Faranell in the Apothecarium, who delights in every grisly reagent that brings the New Plague closer.",
+    "triggers": [
+     [
+      2,
+      2055
+     ],
+     [
+      2,
+      102055
+     ],
+     [
+      5,
+      447
+     ]
+    ],
+    "sources": [
+     "Hillsbrad 26715, 26723, 26724 (quests 496-524, 658-661)"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "At the Wrathgate in Northrend the New Plague was loosed on Alliance and Horde alike by the Society's own Grand Apothecary, Putress.",
+    "triggers": [
+     [
+      5,
+      13257
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Hillsbrad 26715, 26723, 26724 (quests 496-524, 658-661)"
+    ]
+   },
+   {
+    "part": 6,
+    "body": "Orcs of the Kor'kron, the Warchief's own guard, now stand over the apothecaries in the Apothecarium itself, and nothing is brewed without their leave.",
+    "triggers": [
+     [
+      2,
+      36217
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Hillsbrad 26715, 26723, 26724 (quests 496-524, 658-661)"
+    ]
+   },
+   {
+    "part": 7,
+    "body": "In Northrend the Society works at Vengeance Landing and New Agamand on a plague meant to devour all flesh, living, dead or undead.",
+    "triggers": [
+     [
+      1,
+      4000
+     ],
+     [
+      1,
+      3991
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Hillsbrad 26715, 26723, 26724 (quests 496-524, 658-661)"
+    ]
+   }
+  ],
+  "hint": "Learned where the Forsaken brew their poisons.",
+  "related": [
+   26705,
+   149704,
+   90000005,
+   91000004
+  ],
+  "sources": [
+   "Hillsbrad 26715, 26723, 26724 (quests 496-524, 658-661)",
+   "Tirisfal 8524, 8530",
+   "Silverpine 13019, 13030",
+   "Undercity 149704, 149705, 149707",
+   "Howling Fjord 49505, 49508, 49532"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000005,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Forsaken",
+  "body": "The Forsaken are the undead of Lordaeron who broke free of the Lich King. Led by Lady Sylvanas Windrunner, they claimed the ruins of the old capital, built the Undercity beneath them, and joined the Horde more out of need than love. They fight the Scourge that made them and the living who would destroy them, and they trust almost no one.",
+  "triggers": [
+   [
+    1,
+    1497
+   ],
+   [
+    1,
+    154
+   ],
+   [
+    1,
+    159
+   ],
+   [
+    1,
+    228
+   ],
+   [
+    1,
+    272
+   ],
+   [
+    2,
+    1569
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Dark Lady's eyes and knives are the Deathstalkers, her elite agents, who go wherever a secret must be kept or a traitor found.",
+    "triggers": [
+     [
+      4,
+      1885
+     ],
+     [
+      4,
+      14420
+     ]
+    ],
+    "sources": [
+     "Tirisfal 8500, 8501, 8520"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Kor'kron orcs, the Warchief's own guard, now walk the Undercity's halls and stand over the apothecaries, for the Horde keeps a closer watch on the Forsaken than ever.",
+    "triggers": [
+     [
+      2,
+      36213
+     ],
+     [
+      2,
+      36217
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Tirisfal 8500, 8501, 8520"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Sylvanas was born in Quel'Thalas, and she has sent Forsaken soldiers to fight beside the blood elves against the Scourge in the Ghostlands, an alliance that opened the Horde to them.",
+    "triggers": [
+     [
+      2,
+      16252
+     ]
+    ],
+    "sources": [
+     "Tirisfal 8500, 8501, 8520"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "In Ashenvale they defile night elf ground: their seekers prowl the ruins of Bathran's Haunt, and beside the Dor'Danil Barrow Den they brew diseases in bottles.",
+    "triggers": [
+     [
+      1,
+      411
+     ],
+     [
+      1,
+      432
+     ]
+    ],
+    "sources": [
+     "Tirisfal 8500, 8501, 8520"
+    ]
+   }
+  ],
+  "hint": "Learned in the lands the undead of Lordaeron have claimed.",
+  "related": [
+   149702,
+   91000006,
+   90000004,
+   90000006,
+   91000026
+  ],
+  "sources": [
+   "Tirisfal 8500, 8501, 8520",
+   "Undercity 149700, 149702, 149706, 149707, 149714",
+   "Ghostlands 343301, 343320, 343330",
+   "Ashenvale 33102, 33119"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000006,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Scourge",
+  "body": "The Scourge is the Lich King's army of the dead, raised by a plague spread through Lordaeron's grain. Its mindless soldiers obey his will alone. From the Plaguelands it still presses into Tirisfal and Silverpine, raising the dead, sending gnolls to rob the mass graves for fresh bodies, and turning the fallen heroes of the old kingdom into its commanders.",
+  "triggers": [
+   [
+    3,
+    1501
+   ],
+   [
+    3,
+    1890
+   ],
+   [
+    3,
+    1520
+   ],
+   [
+    3,
+    1525
+   ],
+   [
+    3,
+    1526
+   ],
+   [
+    3,
+    1866
+   ],
+   [
+    3,
+    1674
+   ],
+   [
+    3,
+    1941
+   ],
+   [
+    3,
+    1939
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Not all its servants are mindless. Thule Ravenclaw, once a mage of Dalaran, chose the Scourge of his own will, and in Silverpine he leads gnolls and undead of his own making.",
+    "triggers": [
+     [
+      3,
+      1947
+     ],
+     [
+      4,
+      442
+     ]
+    ],
+    "sources": [
+     "Tirisfal 8500, 8507, 8509, 8532"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Its heart is the Plaguelands. There the lich Kel'Thuzad commands in the Lich King's name, Baron Rivendare holds Stratholme, and the Cult of the Damned keeps living servants at its work.",
+    "triggers": [
+     [
+      1,
+      28
+     ],
+     [
+      1,
+      139
+     ]
+    ],
+    "sources": [
+     "Tirisfal 8500, 8507, 8509, 8532"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In Northrend the Scourge holds the land in force: undead Nerubians tunnel beneath the camps of the living, and the San'layn, the blood princes, command its cities.",
+    "triggers": [
+     [
+      1,
+      4125
+     ],
+     [
+      1,
+      4128
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Tirisfal 8500, 8507, 8509, 8532"
+    ]
+   }
+  ],
+  "hint": "Learned wherever the dead do not stay dead.",
+  "related": [
+   91000005,
+   90000005,
+   13021,
+   92000000,
+   91000021
+  ],
+  "sources": [
+   "Tirisfal 8500, 8507, 8509, 8532",
+   "Silverpine 13021, 13027",
+   "Western Plaguelands 2800",
+   "Eastern Plaguelands 13900, 13917",
+   "Borean 353718"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000007,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Scarlet Crusade",
+  "body": "The Scarlet Crusade is a militant order of the Light that rose from the ruins of Lordaeron, sworn to purge every trace of the plague. Its zealots make no distinction between the Scourge and the free-willed Forsaken, and they trust few of the living either. From their great monastery in Tirisfal they send captains and missionaries across the glades.",
+  "triggers": [
+   [
+    3,
+    1535
+   ],
+   [
+    3,
+    1506
+   ],
+   [
+    3,
+    1507
+   ],
+   [
+    3,
+    1536
+   ],
+   [
+    3,
+    1537
+   ],
+   [
+    3,
+    1538
+   ],
+   [
+    1,
+    160
+   ],
+   [
+    1,
+    161
+   ],
+   [
+    4,
+    381
+   ],
+   [
+    4,
+    427
+   ],
+   [
+    4,
+    374
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Papers taken from a Scarlet messenger show how the Crusade holds the glades: a Tirisfal Regional Command answering to the Highlord through three captains, Perrine, Vachon and Melrache.",
+    "triggers": [
+     [
+      5,
+      382
+     ]
+    ],
+    "sources": [
+     "Tirisfal 8512, 8514, 8515, 8528"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In the Western Plaguelands the Crusade holds Hearthglen, the old seat of those lands, under Highlord Taelan Fordring, and cuts down anyone who will not follow it.",
+    "triggers": [
+     [
+      1,
+      190
+     ],
+     [
+      1,
+      203
+     ]
+    ],
+    "sources": [
+     "Tirisfal 8512, 8514, 8515, 8528"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Its stronghold in the east is Tyr's Hand, and its command sits in the Scarlet Bastion of Stratholme under the Grand Crusader, walled in among the Scourge.",
+    "triggers": [
+     [
+      1,
+      2266
+     ],
+     [
+      1,
+      2267
+     ]
+    ],
+    "sources": [
+     "Tirisfal 8512, 8514, 8515, 8528"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "When death knights sacked its haven in the Scarlet Enclave, High General Abbendis gave the Scarlet lands up for lost and led the faithful to Northrend as the Scarlet Onslaught.",
+    "triggers": [
+     [
+      4,
+      12756
+     ]
+    ],
+    "sources": [
+     "Tirisfal 8512, 8514, 8515, 8528"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "The Crusade reaches even Kalimdor: an emissary at Nijel's Point, drawn by rumors of undead in Desolace, recruits the worthy and sends them back across the sea to the Scarlet Monastery.",
+    "triggers": [
+     [
+      2,
+      1182
+     ]
+    ],
+    "sources": [
+     "Tirisfal 8512, 8514, 8515, 8528"
+    ]
+   },
+   {
+    "part": 6,
+    "body": "Grand Admiral Westwind, who undermined Abbendis and took command of the Onslaught, was the dreadlord Mal'Ganis. Once again the Scarlets had been led by a demon.",
+    "triggers": [
+     [
+      5,
+      12852
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Tirisfal 8512, 8514, 8515, 8528"
+    ]
+   }
+  ],
+  "hint": "Learned from the zealots in red who hunt the undead.",
+  "related": [
+   8514,
+   2812,
+   13908,
+   90000032,
+   429814
+  ],
+  "sources": [
+   "Tirisfal 8512, 8514, 8515, 8528",
+   "Western Plaguelands 2812, 2816",
+   "Eastern Plaguelands 13908, 13917",
+   "Desolace 40526",
+   "Icecrown 21004, 21032"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000008,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "Stromgarde",
+  "body": "Stromgarde is the kingdom that grew from Strom, the first city of humankind, and its Trollbane kings fought the trolls for generations. In the Second War its king, Thoras Trollbane, stood with the Alliance; now he lies dead and his city in ruins, and the last loyal soldiers of Stromgarde hold Refuge Pointe, sworn to see the king's banner fly over the city again.",
+  "triggers": [
+   [
+    1,
+    324
+   ],
+   [
+    1,
+    320
+   ],
+   [
+    2,
+    2700
+   ],
+   [
+    3,
+    2607
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Stromgarde can spare no one. When the dwarves of Dun Modr begged Refuge Pointe for soldiers, Captain Nials could offer only her condolences.",
+    "triggers": [
+     [
+      5,
+      634
+     ]
+    ],
+    "sources": [
+     "Arathi 4500, 4505, 4508, 4516, 4517, 4526"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Beyond the Dark Portal, Danath Trollbane, nephew of the dead king, has learned of Stromgarde's fall and swears that if he ever returns to Azeroth, Stromgarde will rise again.",
+    "triggers": [
+     [
+      2,
+      16819
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Arathi 4500, 4505, 4508, 4516, 4517, 4526"
+    ]
+   }
+  ],
+  "hint": "Learned in the ruins of humanity's first city.",
+  "related": [
+   91000009,
+   4505,
+   4508,
+   91000012
+  ],
+  "sources": [
+   "Arathi 4500, 4505, 4508, 4516, 4517, 4526",
+   "Wetlands 1120, 1129",
+   "Hellfire 348324"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000009,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Twilight's Hammer",
+  "body": "The Twilight's Hammer is a cult that worships the Old Gods and longs for the end of the world. Its members hide among the peoples of Azeroth and gather wherever an ancient, terrible power lies sleeping, working to set it free.",
+  "triggers": [
+   [
+    4,
+    687
+   ],
+   [
+    3,
+    5860
+   ],
+   [
+    3,
+    5861
+   ],
+   [
+    3,
+    5862
+   ],
+   [
+    3,
+    8419
+   ],
+   [
+    1,
+    1442
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In the Arathi Highlands they revere Myzrael, the princess bound beneath the hills, as their Lady, and they mean to see her rise.",
+    "triggers": [
+     [
+      4,
+      687
+     ]
+    ],
+    "sources": [
+     "Arathi 4524, 4530"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Darkshore they camp at the Master's Glaive, a great blade that marks where one of the old lords of the earth fell, and share a cave with naga behind Cliffspring Falls.",
+    "triggers": [
+     [
+      1,
+      449
+     ]
+    ],
+    "sources": [
+     "Arathi 4524, 4530"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In Silithus the cult camps across the desert and calls up elemental nobles through wind stones, taking orders from them.",
+    "triggers": [
+     [
+      1,
+      2739
+     ],
+     [
+      1,
+      3098
+     ],
+     [
+      1,
+      3099
+     ],
+     [
+      1,
+      3446
+     ]
+    ],
+    "sources": [
+     "Arathi 4524, 4530"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Behind it stands a darker master, the Abyssal Council, which rules the Twilight's Hammer through those wind stones, and whose lords meet impostors with fury.",
+    "triggers": [
+     [
+      4,
+      8331
+     ]
+    ],
+    "sources": [
+     "Arathi 4524, 4530"
+    ]
+   }
+  ],
+  "hint": "Learned from those who serve what sleeps beneath the earth.",
+  "related": [
+   4524,
+   137707
+  ],
+  "sources": [
+   "Arathi 4524, 4530",
+   "Darkshore 14804, 14813, 14826",
+   "warcraft.wiki.gg Twilight's Hammer (pre-Cataclysm)",
+   "Silithus 137703, 137706, 137713, 137726"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000010,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Dark Iron Dwarves",
+  "body": "The Dark Iron dwarves broke from their kin in the War of the Three Hammers, lost, and fled south under their sorcerer-thane Thaurissan. His summoning of the Firelord Ragnaros buried their capital beneath Blackrock Mountain, and they have served the Firelord ever since, striking at Ironforge whenever its soldiers are away.",
+  "triggers": [
+   [
+    3,
+    1051
+   ],
+   [
+    3,
+    1052
+   ],
+   [
+    3,
+    1053
+   ],
+   [
+    3,
+    1054
+   ],
+   [
+    3,
+    5844
+   ],
+   [
+    3,
+    5846
+   ],
+   [
+    3,
+    8566
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In the Wetlands their warlock Balgaras the Foul, who counted himself among the Firelord's minions, led the campaign that broke the Thandol Span and took Dun Modr.",
+    "triggers": [
+     [
+      3,
+      1364
+     ],
+     [
+      5,
+      304
+     ]
+    ],
+    "sources": [
+     "Wetlands 1100, 1109, 1110, 1122, 1128"
+    ]
+   }
+  ],
+  "hint": "Learned where the dwarves of the dark fight their kin.",
+  "related": [
+   91000010,
+   1109,
+   1110
+  ],
+  "sources": [
+   "Wetlands 1100, 1109, 1110, 1122, 1128",
+   "Burning Steppes, Searing Gorge (Blackrock Mountain)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000011,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Dragonmaw Clan",
+  "body": "The Dragonmaw are the orc clan that tamed the red dragonflight in the Second War, holding its queen captive in Grim Batol and riding her children into battle. When the dragons broke free they turned on their masters and all but destroyed the clan. The survivors fled into the eastern hills of the Wetlands, and there they have grown strong again.",
+  "triggers": [
+   [
+    3,
+    1034
+   ],
+   [
+    3,
+    1035
+   ],
+   [
+    3,
+    1057
+   ],
+   [
+    3,
+    2102
+   ],
+   [
+    3,
+    2103
+   ],
+   [
+    1,
+    1036
+   ],
+   [
+    1,
+    836
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Their chieftain Nek'rosh, son of the warlock Nekros who held the dragons captive, has sworn revenge on the dragons who killed his father, and has built catapults to besiege Menethil Harbor.",
+    "triggers": [
+     [
+      5,
+      464
+     ]
+    ],
+    "sources": [
+     "Wetlands 1100, 1114, 1118, 1119, 1121, 1127"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Nek'rosh fell in his own encampment with his vow unfulfilled, and Menethil hailed it as a blow from which the clan may never recover.",
+    "triggers": [
+     [
+      3,
+      2091
+     ],
+     [
+      5,
+      474
+     ]
+    ],
+    "sources": [
+     "Wetlands 1100, 1114, 1118, 1119, 1121, 1127"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In Outland the Dragonmaw serve Illidan, and do to the nether drakes of Shadowmoon what they once did to the red dragons of Azeroth; their chieftain Zuluhed once took the Aspect Alexstrasza captive.",
+    "triggers": [
+     [
+      1,
+      3939
+     ],
+     [
+      1,
+      3759
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Wetlands 1100, 1114, 1118, 1119, 1121, 1127"
+    ]
+   }
+  ],
+  "hint": "Learned in the hills where the dragon riders hide.",
+  "related": [
+   91000011,
+   1115,
+   90000073
+  ],
+  "sources": [
+   "Wetlands 1100, 1114, 1118, 1119, 1121, 1127",
+   "Shadowmoon 352021, 352030, 352031"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000012,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Explorers' League",
+  "body": "The Explorers' League is the dwarves' society of archaeologists, founded with King Magni's blessing to dig up the past. Its great ambition is to prove that the dwarves were not born but made, shaped by the titans from the stone-skinned earthen of old, and its digs reach from Khaz Modan to the farthest corners of the world.",
+  "triggers": [
+   [
+    2,
+    5387
+   ],
+   [
+    2,
+    2916
+   ],
+   [
+    2,
+    2918
+   ],
+   [
+    2,
+    1356
+   ],
+   [
+    1,
+    142
+   ],
+   [
+    4,
+    2398
+   ],
+   [
+    4,
+    2279
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Out of Uldaman came a miniature copy of the Discs of Norgannon, a titan record of how the Creators made the earthen, and High Explorer Magellas hailed it as the find of the century.",
+    "triggers": [
+     [
+      5,
+      2279
+     ]
+    ],
+    "sources": [
+     "Ironforge 153700, 153705, 153706, 153707, 153714"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The discs led the league to the sealed gates of Uldum in Tanaris, but they are only part of a set. Without the Plates of Uldum the gates stay closed, and where the plates lie, no one knows.",
+    "triggers": [
+     [
+      5,
+      2946
+     ],
+     [
+      5,
+      2964
+     ]
+    ],
+    "sources": [
+     "Ironforge 153700, 153705, 153706, 153707, 153714"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In Darkshore Prospector Remtravel's dig turned up evidence of a great society, until golems sprang from the ground and overran it. The prospector, oblivious, kept chiseling.",
+    "triggers": [
+     [
+      1,
+      450
+     ],
+     [
+      2,
+      2917
+     ]
+    ],
+    "sources": [
+     "Ironforge 153700, 153705, 153706, 153707, 153714"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "In Silithus Brann Bronzebeard's expedition searches the silithid hives for lost artifacts, and Brann himself has gone missing again somewhere among them.",
+    "triggers": [
+     [
+      1,
+      3427
+     ]
+    ],
+    "sources": [
+     "Ironforge 153700, 153705, 153706, 153707, 153714"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "In the Howling Fjord its digs went badly: most of its people went into Whisper Gulch and came back raving that That Which Must Not Be Named is coming.",
+    "triggers": [
+     [
+      1,
+      4071
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Ironforge 153700, 153705, 153706, 153707, 153714"
+    ]
+   },
+   {
+    "part": 6,
+    "body": "At Thor Modan the torn journal of Brann Bronzebeard pointed to what he believes is a new titan city: Ulduar nestled in the storm.",
+    "triggers": [
+     [
+      5,
+      11993
+     ],
+     [
+      5,
+      12058
+     ]
+    ],
+    "sources": [
+     "Ironforge 153700, 153705, 153706, 153707, 153714"
+    ]
+   }
+  ],
+  "hint": "Learned among the dwarves who dig for their own beginnings.",
+  "related": [
+   3812,
+   1113,
+   153700
+  ],
+  "sources": [
+   "Ironforge 153700, 153705, 153706, 153707, 153714",
+   "Loch Modan 3804, 3812, 3824",
+   "Wetlands 1113",
+   "Darkshore 14814, 14822, 14827",
+   "Silithus 137712",
+   "Howling Fjord 49512, 49513",
+   "Grizzly Hills 39432"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000013,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Troggs",
+  "body": "Troggs are brutish, stone-skinned creatures who come boiling up from caverns deep below whenever the dwarves dig too far. In Dun Morogh they burst out of the Gol'Bolar Quarry and seized the Coldridge tunnel, in Loch Modan they swarm from Stonesplinter Valley, and it was a tide of troggs from below that drove the gnomes to the purge that ruined Gnomeregan.",
+  "triggers": [
+   [
+    3,
+    707
+   ],
+   [
+    3,
+    1115
+   ],
+   [
+    3,
+    1117
+   ],
+   [
+    3,
+    1116
+   ],
+   [
+    3,
+    1161
+   ],
+   [
+    3,
+    1162
+   ],
+   [
+    3,
+    1166
+   ],
+   [
+    1,
+    134
+   ],
+   [
+    1,
+    923
+   ]
+  ],
+  "hint": "Learned where the deep places spill into the light.",
+  "related": [
+   113,
+   3812
+  ],
+  "sources": [
+   "Dun Morogh 100, 103, 113, 115, 131",
+   "Loch Modan 3802, 3812, 3823"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000014,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Gnomes of Gnomeregan",
+  "body": "The gnomes are a small, brilliant people of inventors and engineers, long the allies of Ironforge, whose city of Gnomeregan was the wonder of Khaz Modan until it was lost. Now they live as exiles in Ironforge's Tinker Town, and nearly every one of them carries some piece of the catastrophe, from research left behind to friends turned into mindless lepers.",
+  "triggers": [
+   [
+    2,
+    7937
+   ],
+   [
+    2,
+    7944
+   ],
+   [
+    1,
+    133
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "At last the exiles are preparing to take their city back, readying mechano-tanks and recruits at Steelgrill's Depot for an assault on Gnomeregan.",
+    "triggers": [],
+    "minState": 13
+   }
+  ],
+  "hint": "Learned from the exiles of a poisoned city.",
+  "related": [
+   113,
+   153703,
+   106
+  ],
+  "sources": [
+   "Dun Morogh 106, 113, 125, 127, 134",
+   "Ironforge 153703, 153708, 153713"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000015,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Defias Brotherhood",
+  "body": "The Defias Brotherhood is a gang of thieves in red masks that has taken Westfall from its farmers and spread into Elwynn, Redridge and Duskwood. It is better organized than any gang has a right to be, with camps from Northshire to the Westfall coast and Riverpaw gnolls in its pay. Who leads it, and where it hides, the People's Militia means to find out.",
+  "triggers": [
+   [
+    3,
+    38
+   ],
+   [
+    3,
+    116
+   ],
+   [
+    3,
+    504
+   ],
+   [
+    3,
+    589
+   ],
+   [
+    3,
+    590
+   ],
+   [
+    3,
+    122
+   ],
+   [
+    3,
+    215
+   ],
+   [
+    3,
+    909
+   ],
+   [
+    1,
+    62
+   ],
+   [
+    4,
+    65
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Brotherhood's Collector, who gathered gold from the Elwynn mines twice a week at the Brackwell farm, wore an engraved ring of the old Stonemasons' Guild of Stormwind.",
+    "triggers": [
+     [
+      5,
+      147
+     ]
+    ],
+    "sources": [
+     "Elwynn 1200, 1204, 1206, 1209, 1216, 1217, 1222, 1229 (quests 123, 147)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "A rogue's note named the Stonemasons, and Mathias Shaw of SI:7 made the connection: the masons who rebuilt Stormwind, and the guildmaster who led them, Edwin VanCleef.",
+    "triggers": [
+     [
+      4,
+      141
+     ]
+    ],
+    "sources": [
+     "Elwynn 1200, 1204, 1206, 1209, 1216, 1217, 1222, 1229 (quests 123, 147)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In the Dust Plains the Brotherhood holds a tower that receives shipments from Duskwood, guarded by the dead, raised with a poison the Zanzil trolls learned to brew.",
+    "triggers": [
+     [
+      5,
+      2359
+     ]
+    ],
+    "sources": [
+     "Elwynn 1200, 1204, 1206, 1209, 1216, 1217, 1222, 1229 (quests 123, 147)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "They had a friend at court. Lord Gregor Lescovar met in secret with the assassin Marzon to talk of the Defias, until both were cut down in the keep's garden.",
+    "triggers": [
+     [
+      5,
+      434
+     ]
+    ],
+    "sources": [
+     "Elwynn 1200, 1204, 1206, 1209, 1216, 1217, 1222, 1229 (quests 123, 147)"
+    ]
+   }
+  ],
+  "hint": "Learned from the thieves in red masks.",
+  "related": [
+   4017,
+   91000015,
+   91000016,
+   4010
+  ],
+  "sources": [
+   "Elwynn 1200, 1204, 1206, 1209, 1216, 1217, 1222, 1229 (quests 123, 147)",
+   "Westfall 4000, 4013, 4017, 4024",
+   "Stormwind 151912 (quests 373-434)",
+   "warcraft.wiki.gg Defias Brotherhood (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000016,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Church of the Holy Light",
+  "body": "The Church of the Holy Light is the faith of the human kingdoms, led by its archbishop from the Cathedral of Light in Stormwind. Its clerics came south from Lordaeron long ago to found Northshire Abbey, and after the First War Archbishop Alonsus Faol gathered priests and paladins there into the Brotherhood of Northshire. Faol also raised the money to rebuild Stormwind, and his pupil Benedictus now leads the Church in his place.",
+  "triggers": [
+   [
+    1,
+    9
+   ],
+   [
+    1,
+    24
+   ],
+   [
+    2,
+    1284
+   ]
+  ],
+  "hint": "Learned where the priests of the Light keep their abbey.",
+  "related": [
+   1202,
+   151907,
+   91000013
+  ],
+  "sources": [
+   "Elwynn 1202",
+   "Stormwind 151900, 151907",
+   "warcraft.wiki.gg Northshire Abbey, Alonsus Faol"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000017,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Blackrock Clan",
+  "body": "The Blackrock clan is one of the great clans of the old Horde, the clan of Blackhand, who led the orcs in the First War. After the Second War its survivors held out in Blackrock Mountain rather than go to the internment camps, and they have never joined Thrall's new Horde. From the Burning Steppes they now pour over the mountains into Redridge, and with a warlock's magic to help them they have taken Stonewatch Keep.",
+  "triggers": [
+   [
+    3,
+    485
+   ],
+   [
+    3,
+    437
+   ],
+   [
+    3,
+    435
+   ],
+   [
+    3,
+    440
+   ],
+   [
+    3,
+    4463
+   ],
+   [
+    3,
+    615
+   ],
+   [
+    3,
+    4065
+   ],
+   [
+    3,
+    4064
+   ],
+   [
+    3,
+    436
+   ],
+   [
+    3,
+    4464
+   ],
+   [
+    3,
+    4462
+   ],
+   [
+    3,
+    7025
+   ],
+   [
+    3,
+    7026
+   ],
+   [
+    3,
+    7027
+   ],
+   [
+    3,
+    7028
+   ],
+   [
+    3,
+    7029
+   ]
+  ],
+  "hint": "Learned from the orcs who came over the mountains from the Burning Steppes.",
+  "related": [
+   4410,
+   4417,
+   4407
+  ],
+  "sources": [
+   "Redridge 4400, 4407, 4410, 4417, 4423",
+   "warcraft.wiki.gg Blackrock clan (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000018,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Gnolls",
+  "body": "Gnolls are hyena-like brutes who live and hunt in packs, and the human lands are full of their clans: the Riverpaw of Elwynn and Westfall, the Redridge gnolls of the hills above Lakeshire, the Shadowhide of Galardell Valley and more. Fierce but seldom their own masters, the clans are often found serving stronger ones, from the Defias Brotherhood to the warlock Morganth.",
+  "triggers": [
+   [
+    3,
+    117
+   ],
+   [
+    3,
+    123
+   ],
+   [
+    3,
+    97
+   ],
+   [
+    3,
+    478
+   ],
+   [
+    3,
+    124
+   ],
+   [
+    3,
+    98
+   ],
+   [
+    3,
+    452
+   ],
+   [
+    3,
+    500
+   ],
+   [
+    3,
+    423
+   ],
+   [
+    3,
+    446
+   ],
+   [
+    3,
+    430
+   ],
+   [
+    3,
+    426
+   ],
+   [
+    3,
+    424
+   ],
+   [
+    3,
+    433
+   ],
+   [
+    3,
+    568
+   ],
+   [
+    3,
+    431
+   ],
+   [
+    3,
+    429
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Some Riverpaw even carry the Brotherhood's papers: a schedule for the gold taken from Elwynn's mines turns up among them, in Hogger's pack as well.",
+    "triggers": [
+     [
+      4,
+      123
+     ]
+    ],
+    "sources": [
+     "Elwynn 1211, 1221, 1232"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Kalimdor the Palemane gnolls poach and skin the beasts of Mulgore from their den at Palemane Rock, and scorn every tauren attempt to speak with them.",
+    "triggers": [
+     [
+      1,
+      818
+     ]
+    ],
+    "sources": [
+     "Elwynn 1211, 1221, 1232"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In Feralas the Woodpaw hold the hills south of Camp Mojache and raid the tauren ever more savagely, almost as if they were desperate.",
+    "triggers": [
+     [
+      1,
+      2519
+     ],
+     [
+      1,
+      2520
+     ]
+    ],
+    "sources": [
+     "Elwynn 1211, 1221, 1232"
+    ]
+   }
+  ],
+  "hint": "Learned from the packs that raid the farms and roads.",
+  "related": [
+   1221,
+   90000015,
+   4411
+  ],
+  "sources": [
+   "Elwynn 1211, 1221, 1232",
+   "Westfall 4000, 4007",
+   "Redridge 4405, 4411, 4419, 4425",
+   "warcraft.wiki.gg Gnoll, Riverpaw, Shadowhide clan",
+   "Feralas 35705, 35736"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000019,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Night Watch",
+  "body": "The Night Watch is the militia Darkshire raised from its own people when Stormwind recalled its guards from Duskwood. Under Commander Althea Ebonlocke it has never had enough watchers: she warns every traveler to keep to the roads and move only by day, and sends volunteers against the dead of the cemeteries. Darkshire's anger at the capital runs deep, and Lord Ello Ebonlocke says openly that the Watch alone cannot protect the town forever.",
+  "triggers": [
+   [
+    2,
+    264
+   ],
+   [
+    2,
+    263
+   ],
+   [
+    4,
+    56
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Watch cannot spare anyone. Asked by Lakeshire for men, Lord Ebonlocke wrote back that if it marched, Darkshire would be overrun before its guards reached the forest's edge.",
+    "triggers": [
+     [
+      5,
+      146
+     ]
+    ],
+    "sources": [
+     "Duskwood 1000, 1016, 1017, 1026"
+    ]
+   }
+  ],
+  "hint": "Learned in the town that guards itself through the endless night.",
+  "related": [
+   1012,
+   4414,
+   1025
+  ],
+  "sources": [
+   "Duskwood 1000, 1016, 1017, 1026",
+   "Redridge 4422 (quest 146)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000020,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Worgen",
+  "body": "The worgen are wolf-men of terrible ferocity. In Silverpine they came at the call of the archmage Arugal. In Duskwood they appeared as if from thin air, overrunning Brightwood Grove and the Rotting Orchard, and every time the hunters thin their packs, more spring up to refill them. What draws them to these woods, no one in Darkshire can say.",
+  "triggers": [
+   [
+    3,
+    205
+   ],
+   [
+    3,
+    533
+   ],
+   [
+    3,
+    206
+   ],
+   [
+    3,
+    920
+   ],
+   [
+    3,
+    898
+   ],
+   [
+    1,
+    241
+   ],
+   [
+    1,
+    242
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In the mine called Roland's Doom, where the worgen were first found, the spirit of Velinde Starsong rose: a night elf priestess, granted a scythe by Elune to fight the demons of Felwood. She died there lamenting the worgen running rampant and the Scythe lost.",
+    "triggers": [
+     [
+      5,
+      1043
+     ]
+    ],
+    "sources": [
+     "Duskwood 1010, 1011, 1020, 1021, 1028"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Scythe surfaced again in the same mine, dug from the rubble by a Defias digger called Jitters. Then the worgen came, and half the miners fell in minutes. He fled and lost it, and riders out of Deadwind Pass have hunted it since.",
+    "triggers": [
+     [
+      4,
+      268
+     ]
+    ],
+    "sources": [
+     "Duskwood 1010, 1011, 1020, 1021, 1028"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In Ashenvale worgen fill the Shrine of Mel'Thandris in the Howling Vale, and the Sentinels do not know why they have come.",
+    "triggers": [
+     [
+      1,
+      419
+     ]
+    ],
+    "sources": [
+     "Duskwood 1010, 1011, 1020, 1021, 1028"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "In the Grizzly Hills a wolfcult has turned the trappers of Silverbrook and the people of Solstice Village into worgen, and a shade bearing Arugal's name keeps Shadowfang Tower on Bloodmoon Isle.",
+    "triggers": [
+     [
+      5,
+      12308
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Duskwood 1010, 1011, 1020, 1021, 1028"
+    ]
+   }
+  ],
+  "hint": "Learned from the wolf-men of the darkened forests.",
+  "related": [
+   91000007,
+   1019,
+   4418
+  ],
+  "sources": [
+   "Duskwood 1010, 1011, 1020, 1021, 1028",
+   "creature_text 3946 (Velinde Starsong)",
+   "page_text 185-190 (Jitters' Completed Journal)",
+   "Ashenvale 33114",
+   "Grizzly Hills 39405, 39417, 39418, 39427"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000021,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Broken",
+  "body": "The Broken are draenei of Draenor, twisted in body and mind by the fel magic that ravaged their world. A few crossed the Dark Portal to Azeroth, and the journey drove many of them mad. In the Swamp of Sorrows the sane among them shelter at the Harborage, while their maddened kin, the Lost Ones, hold the Fallow Sanctuary and kill any who wander near.",
+  "triggers": [
+   [
+    1,
+    657
+   ],
+   [
+    1,
+    76
+   ],
+   [
+    2,
+    1776
+   ],
+   [
+    4,
+    1389
+   ],
+   [
+    3,
+    763
+   ],
+   [
+    3,
+    1106
+   ],
+   [
+    3,
+    757
+   ],
+   [
+    3,
+    759
+   ],
+   [
+    3,
+    760
+   ],
+   [
+    3,
+    755
+   ],
+   [
+    3,
+    762
+   ],
+   [
+    3,
+    761
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Anchorite Avuun believes the fel energies consuming the Lost Ones can be cured, and that the same cure would undo the damage done to all the Broken. Those twisted past saving, he asks only to be granted mercy.",
+    "triggers": [
+     [
+      4,
+      9448
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Swamp of Sorrows 803, 805, 814, 815, 816, 824"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The blood elf Cersei Dusksinger of Stonard is testing a curse on them: fel-tainted morsels fed to the Lost Ones' caged livestock, so that the curse passes to whoever eats them.",
+    "triggers": [
+     [
+      4,
+      9440
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Swamp of Sorrows 803, 805, 814, 815, 816, 824"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Among the draenei of the Exodar, Farseer Nobundo, a vindicator twisted into one of the Broken, learned that the elements offer the Broken another path to the Light, and Velen asked him to teach shamanism to all.",
+    "triggers": [
+     [
+      2,
+      17204
+     ]
+    ],
+    "sources": [
+     "Swamp of Sorrows 803, 805, 814, 815, 816, 824"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "In Hellfire Peninsula Illidari taskmasters drive the Dreghood tribe to dig through the ruins of Sha'naar, their elders chained in the depths.",
+    "triggers": [
+     [
+      1,
+      3551
+     ],
+     [
+      1,
+      3795
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Swamp of Sorrows 803, 805, 814, 815, 816, 824"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "Wherever a tribe of Broken is enslaved, a freed Dreghood elder says, there is also a traitor who sold his brothers for promises of power, and he confesses he was one.",
+    "triggers": [
+     [
+      5,
+      10369
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Swamp of Sorrows 803, 805, 814, 815, 816, 824"
+    ]
+   },
+   {
+    "part": 6,
+    "body": "In Zangarmarsh tribes of Lost Ones have taken the naga's side or turned to worship of animal spirits, while the Kurenai, Broken who wish to rejoin their draenei kin, hold the Orebor Harborage.",
+    "triggers": [
+     [
+      1,
+      3641
+     ],
+     [
+      1,
+      3642
+     ],
+     [
+      1,
+      3640
+     ],
+     [
+      1,
+      3766
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Swamp of Sorrows 803, 805, 814, 815, 816, 824"
+    ]
+   },
+   {
+    "part": 7,
+    "body": "In Nagrand the Kurenai have reclaimed Telaar, while the Murkblood, servants of the bog lord Musel'ek of Coilfang, sacked the Mag'har village of Sunspring.",
+    "triggers": [
+     [
+      1,
+      3626
+     ],
+     [
+      1,
+      3622
+     ],
+     [
+      1,
+      3621
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Swamp of Sorrows 803, 805, 814, 815, 816, 824"
+    ]
+   }
+  ],
+  "hint": "Learned among the exiles of a shattered world.",
+  "related": [
+   803,
+   807,
+   355702
+  ],
+  "sources": [
+   "Swamp of Sorrows 803, 805, 814, 815, 816, 824",
+   "Exodar 355707",
+   "warcraft.wiki.gg Broken (pre-Cataclysm)",
+   "Hellfire 348321, 348341",
+   "Zangarmarsh 352103, 352108, 352117, 352120",
+   "Nagrand 351802, 351808, 351832"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000022,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Green Dragonflight",
+  "body": "The green dragonflight is the flight of Ysera, the Dreamer, keeper of the Emerald Dream, a realm of the world as it might have been. Its dragons guard the few gateways into the Dream, each beneath a great tree, and they watch over places where old evils sleep. In the Swamp of Sorrows they drowned the temple of the Atal'ai beneath the Pool of Tears, and they stand guard over it still.",
+  "triggers": [
+   [
+    3,
+    745
+   ],
+   [
+    3,
+    746
+   ],
+   [
+    3,
+    743
+   ],
+   [
+    3,
+    742
+   ],
+   [
+    3,
+    12900
+   ],
+   [
+    3,
+    1063
+   ],
+   [
+    1,
+    1778
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Not all of them have kept faith with the Dream. Dragons of the flight, twisted and driven mad by nightmare, have come out of its gateways to spread their madness.",
+    "triggers": [],
+    "minState": 2
+   },
+   {
+    "part": 2,
+    "body": "One of their own fell to the very evil they guarded against: Eranikus, keeper of the sunken temple, now lies trapped in a nightmare within the Dream.",
+    "triggers": [
+     [
+      4,
+      3374
+     ]
+    ],
+    "sources": [
+     "Swamp of Sorrows 800, 808, 809, 813, 822, 828"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Drawn into the waking world above Lake Elune'ara and redeemed by Tyrande's prayers, Eranikus returned to the Dream to fight beside Malfurion.",
+    "triggers": [
+     [
+      5,
+      8736
+     ]
+    ],
+    "sources": [
+     "Swamp of Sorrows 800, 808, 809, 813, 822, 828"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "In the Dragonblight the Emerald Dragonshrine has lost its balance: asked to help against the Scourge, a Ysera gripped by nightmare told its defenders to treat all but green dragons as enemies.",
+    "triggers": [
+     [
+      4,
+      12454
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Swamp of Sorrows 800, 808, 809, 813, 822, 828"
+    ]
+   }
+  ],
+  "hint": "Learned from the dragons who guard the gateways of the Dream.",
+  "related": [
+   1009,
+   808,
+   813,
+   35715
+  ],
+  "sources": [
+   "Swamp of Sorrows 800, 808, 809, 813, 822, 828",
+   "Duskwood 1009",
+   "warcraft.wiki.gg Green dragonflight",
+   "Moonglade 49302, 49316",
+   "Dragonblight 6512"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000023,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Shadowsworn",
+  "body": "The Shadowsworn are the cult that holds the Blasted Lands for the demons: warlocks and cultists who have given themselves to the dreadlord the wastes call the Defiler. They keep the Altar of Storms on the western edge, one of the few such altars left in Azeroth, and the caves of the Serpent's Coil, and the Dreadmaul ogres fight beside them. Three masters lead them: Archmage Allistarj, Lady Sevine and Grol the Destroyer.",
+  "triggers": [
+   [
+    3,
+    6004
+   ],
+   [
+    3,
+    6005
+   ],
+   [
+    3,
+    6006
+   ],
+   [
+    3,
+    6007
+   ],
+   [
+    3,
+    6008
+   ],
+   [
+    3,
+    6009
+   ],
+   [
+    1,
+    1441
+   ],
+   [
+    3,
+    7666
+   ],
+   [
+    3,
+    7667
+   ],
+   [
+    3,
+    7665
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The servants bound at their stones were men of Thrall's Grasp, whose souls Razelikh tore out and shared among the three.",
+    "triggers": [
+     [
+      5,
+      2801
+     ]
+    ],
+    "sources": [
+     "Blasted Lands 404, 406, 410, 411, 421"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Each of the three wears a third of an amulet of Razelikh's making around the neck, the key needed to summon the demon lord.",
+    "triggers": [
+     [
+      4,
+      2743
+     ]
+    ],
+    "sources": [
+     "Blasted Lands 404, 406, 410, 411, 421"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Razelikh granted them near-limitless power within the wastes, and the amulet keeps them from death there by ordinary means; the price of their immortality is to be bound to the land forever.",
+    "triggers": [
+     [
+      5,
+      2744
+     ]
+    ],
+    "sources": [
+     "Blasted Lands 404, 406, 410, 411, 421"
+    ]
+   }
+  ],
+  "hint": "Learned among the cultists of the red wastes.",
+  "related": [
+   410,
+   406,
+   403
+  ],
+  "sources": [
+   "Blasted Lands 404, 406, 410, 411, 421",
+   "warcraft.wiki.gg Shadowsworn, Altar of Storms (Blasted Lands)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000024,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Black Dragonflight",
+  "body": "The black dragonflight is the flight of Deathwing, the Aspect of the earth who betrayed his kind and was driven from the world. His children still scheme in his absence. Their dragonspawn and drakes swarm the Burning Steppes and the slopes of Blackrock Mountain, their whelps flit through the hills of Redridge, and they hold the upper reaches of Blackrock Spire.",
+  "triggers": [
+   [
+    3,
+    7040
+   ],
+   [
+    3,
+    7047
+   ],
+   [
+    3,
+    7041
+   ],
+   [
+    3,
+    7044
+   ],
+   [
+    3,
+    7049
+   ],
+   [
+    3,
+    7046
+   ],
+   [
+    3,
+    7042
+   ],
+   [
+    3,
+    7043
+   ],
+   [
+    3,
+    8964
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Their leaders are Deathwing's own children: Nefarian, lord of Blackrock Spire, and his twin sister Onyxia, who had been hiding in plain sight at the court of Stormwind as Lady Katrana Prestor.",
+    "triggers": [
+     [
+      5,
+      6403
+     ],
+     [
+      5,
+      7495
+     ],
+     [
+      4,
+      24428
+     ]
+    ],
+    "sources": [
+     "Burning Steppes 4600, 4604, 4610, 4612, 4613, 4620"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Dustwallow Marsh Onyxia broods in her lair in the Wyrmbog, and her brood has spread through the southern fens.",
+    "triggers": [
+     [
+      1,
+      511
+     ],
+     [
+      1,
+      510
+     ]
+    ],
+    "sources": [
+     "Burning Steppes 4600, 4604, 4610, 4612, 4613, 4620"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Deathwing's dragons once nested in Blade's Edge, until the gronn tore them from the sky; their eggs, washed by nether energy, hatched nether drakes, and a Wyrmcult still worships the survivors.",
+    "triggers": [
+     [
+      1,
+      3825
+     ],
+     [
+      1,
+      3780
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Burning Steppes 4600, 4604, 4610, 4612, 4613, 4620"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "In the Dragonblight the Cult of the Damned raised the dead of the black flight at the Obsidian Dragonshrine, and a black dragon came to deal with them, disgusted to stoop to the cult.",
+    "triggers": [
+     [
+      1,
+      4167
+     ],
+     [
+      1,
+      4223
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Burning Steppes 4600, 4604, 4610, 4612, 4613, 4620"
+    ]
+   }
+  ],
+  "hint": "Learned from the dragonkin of the burning lands.",
+  "related": [
+   91000016,
+   90000017,
+   4613
+  ],
+  "sources": [
+   "Burning Steppes 4600, 4604, 4610, 4612, 4613, 4620",
+   "quest 6403 (Prestor is Onyxia, twin of Nefarian)",
+   "warcraft.wiki.gg Black dragonflight (pre-Cataclysm)",
+   "Dustwallow 1519, 1520",
+   "Blade's Edge 352207, 352212, 352218",
+   "Dragonblight 6511"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000025,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Thorium Brotherhood",
+  "body": "The Thorium Brotherhood are Dark Iron smiths who left their clan beneath Blackrock Mountain to explore the world, or to exploit it, as one of them lets slip. From Thorium Point, high above the Cauldron, they keep a close eye on their former kin and trade their mastery of the forge with Alliance and Horde alike. Overseer Oilfist leads them, and he does not forgive desertion.",
+  "triggers": [
+   [
+    1,
+    1446
+   ],
+   [
+    2,
+    14625
+   ],
+   [
+    2,
+    14624
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "One of their own, Overseer Maltorius, went over to the Dark Irons to command the Slag Pit crew, a post the Brotherhood suspects he bought with its secret recipe for fiery flux. A bounty hangs on his head.",
+    "triggers": [
+     [
+      4,
+      7701
+     ],
+     [
+      4,
+      7722
+     ]
+    ],
+    "sources": [
+     "Searing Gorge 5101, 5113, 5114, 5117, 5125"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "With the plans recovered, Master Smith Burninate sends the Brotherhood's trusted friends on to Lokhtos Darkbargainer at the Grim Guzzler in Blackrock Depths.",
+    "triggers": [
+     [
+      5,
+      7722
+     ]
+    ],
+    "sources": [
+     "Searing Gorge 5101, 5113, 5114, 5117, 5125"
+    ]
+   }
+  ],
+  "hint": "Learned from the dwarves who left the dark depths.",
+  "related": [
+   5101,
+   90000010
+  ],
+  "sources": [
+   "Searing Gorge 5101, 5113, 5114, 5117, 5125",
+   "warcraft.wiki.gg Thorium Brotherhood"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000026,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Ogres",
+  "body": "Ogres are hulking, brutish giants, some of them two-headed, and most of the ogre clans of the eastern kingdoms came from Draenor with the Horde; the warlock Gul'dan made the first ogre magi of them. Since the old Horde broke, the clans fight for themselves or for whoever pays: the Crushridge of Alterac, the Boulderfist of Arathi, the Dreadmaul of the Blasted Lands, the Firegut of the Burning Steppes, the Dustbelcher of the Badlands and more.",
+  "triggers": [
+   [
+    3,
+    2252
+   ],
+   [
+    3,
+    2253
+   ],
+   [
+    3,
+    2562
+   ],
+   [
+    3,
+    2566
+   ],
+   [
+    3,
+    5974
+   ],
+   [
+    3,
+    5976
+   ],
+   [
+    3,
+    7033
+   ],
+   [
+    3,
+    7035
+   ],
+   [
+    3,
+    2701
+   ],
+   [
+    3,
+    2717
+   ],
+   [
+    3,
+    2719
+   ],
+   [
+    3,
+    889
+   ],
+   [
+    3,
+    212
+   ]
+  ],
+  "hint": "Learned from the ogre clans of the eastern kingdoms.",
+  "related": [
+   312,
+   403,
+   4603,
+   35710
+  ],
+  "sources": [
+   "Alterac 3605, 3614",
+   "Arathi 4500, 4505",
+   "Blasted Lands 403",
+   "Burning Steppes 4603",
+   "Badlands 309-312",
+   "Duskwood 1008",
+   "warcraft.wiki.gg Ogre (pre-Cataclysm)",
+   "Feralas 35700, 35704, 35708, 35710, 35737",
+   "Dustwallow 1510, 1517",
+   "Tanaris 44013, 44014, 44015",
+   "Zangarmarsh 352118, 352119",
+   "Nagrand 351814, 351815, 351816",
+   "Blade's Edge 352203, 352205, 352214, 352255"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "In Feralas the Gordunni are the strongest power in the forest, and the land withers wherever they settle; the Gordok hold the grounds of Dire Maul.",
+    "triggers": [
+     [
+      1,
+      2522
+     ],
+     [
+      1,
+      1103
+     ],
+     [
+      1,
+      2577
+     ]
+    ],
+    "sources": [
+     "Alterac 3605, 3614"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Dustwallow the Stonemaul, burned out of their southern village by Onyxia's brood, took refuge at Brackenwall and fight for the Horde; their ruined home is held by dragonkin.",
+    "triggers": [
+     [
+      1,
+      496
+     ],
+     [
+      1,
+      508
+     ],
+     [
+      1,
+      509
+     ]
+    ],
+    "sources": [
+     "Alterac 3605, 3614"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In Tanaris the Dunemaul, nomads newly come to the desert, have built a compound south of Gadgetzan and spread into the old troll ruins.",
+    "triggers": [
+     [
+      1,
+      983
+     ],
+     [
+      1,
+      984
+     ],
+     [
+      1,
+      992
+     ]
+    ],
+    "sources": [
+     "Alterac 3605, 3614"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "In Zangarmarsh the Ango'rosh are cutting down the mushroom forests of the north, a path that points straight at the troll town of Zabra'jin.",
+    "triggers": [
+     [
+      1,
+      3650
+     ],
+     [
+      1,
+      3651
+     ],
+     [
+      1,
+      3667
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Alterac 3605, 3614"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "In Nagrand the Warmaul drive the Boulderfist south, and in Blade's Edge the Bloodmaul and Bladespire fight one another for the favor of Gruul.",
+    "triggers": [
+     [
+      1,
+      3617
+     ],
+     [
+      1,
+      3616
+     ],
+     [
+      1,
+      3776
+     ],
+     [
+      1,
+      3773
+     ],
+     [
+      1,
+      3777
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Alterac 3605, 3614"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 90000027,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Steamwheedle Cartel",
+  "body": "The Steamwheedle Cartel is the greatest of the goblin trading companies, and its ports are the neutral ground of the world: Booty Bay in Stranglethorn, and Gadgetzan, Ratchet and Everlook across the sea in Kalimdor. In a Steamwheedle town every race is welcome so long as it brings coin and keeps the peace, and the cartel's bruisers fall hard on anyone who spills blood there.",
+  "triggers": [
+   [
+    1,
+    35
+   ],
+   [
+    2,
+    2496
+   ],
+   [
+    2,
+    2487
+   ],
+   [
+    1,
+    392
+   ]
+  ],
+  "hint": "Learned in the goblin ports where every coin is welcome.",
+  "related": [
+   3317,
+   90000028,
+   1710,
+   44001
+  ],
+  "sources": [
+   "Stranglethorn 3317, 3322",
+   "npc_text 7965 (servant of the Steamwheedle Cartel)",
+   "warcraft.wiki.gg Steamwheedle Cartel (pre-Cataclysm)",
+   "Tanaris 44005, 44033",
+   "Dustwallow 1518"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Cartel pays the Southsea pirates of Lost Rigger Cove in Tanaris to leave its ships alone, and lately the pirates take the money and raid anyway.",
+    "triggers": [
+     [
+      1,
+      1336
+     ]
+    ],
+    "sources": [
+     "Stranglethorn 3317, 3322"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Dustwallow it has founded Mudsprocket, a trading town open to both sides, though the zeppelin that should have stocked it crashed in the swamp.",
+    "triggers": [
+     [
+      1,
+      4010
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Stranglethorn 3317, 3322"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 90000028,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Venture Company",
+  "body": "The Venture Company is a goblin cartel of miners, loggers and prospectors that strips any land it can reach of its timber, ore and crystal, and leaves no room for honest trade. In Stranglethorn its shredders fell the jungle around Lake Nazferiti while its geologists hunt the blue Singing Crystals found only in the Vale, and the goblins of Booty Bay count it among their enemies.",
+  "triggers": [
+   [
+    1,
+    1740
+   ],
+   [
+    1,
+    1760
+   ],
+   [
+    3,
+    921
+   ],
+   [
+    3,
+    4260
+   ],
+   [
+    3,
+    1096
+   ],
+   [
+    3,
+    674
+   ],
+   [
+    3,
+    1094
+   ],
+   [
+    3,
+    1097
+   ],
+   [
+    3,
+    676
+   ],
+   [
+    3,
+    677
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In Mulgore, refused mining rights by the tauren, it dug a mine in the eastern hills anyway and fouled their sacred wells with its poisons.",
+    "triggers": [
+     [
+      1,
+      360
+     ],
+     [
+      1,
+      396
+     ],
+     [
+      1,
+      397
+     ],
+     [
+      1,
+      398
+     ]
+    ],
+    "sources": [
+     "Stranglethorn 3304, 3311"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In the northern Barrens its derricks foul the Sludge Fen, and its Boulder Lode Mine digs into the hills beyond.",
+    "triggers": [
+     [
+      1,
+      382
+     ],
+     [
+      1,
+      381
+     ]
+    ],
+    "sources": [
+     "Stranglethorn 3304, 3311"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In Stonetalon it strips Windshear Crag of its forests with great shredders, and its fires left the Charred Vale a ruin of raging elementals.",
+    "triggers": [
+     [
+      1,
+      461
+     ],
+     [
+      1,
+      465
+     ]
+    ],
+    "sources": [
+     "Stranglethorn 3304, 3311"
+    ]
+   }
+  ],
+  "hint": "Learned from the goblins who strip the land bare.",
+  "related": [
+   90000027,
+   21511,
+   40611
+  ],
+  "sources": [
+   "Stranglethorn 3304, 3311",
+   "Mulgore 21509, 21511",
+   "Barrens 1709, 1741, 1742",
+   "warcraft.wiki.gg Venture Company (pre-Cataclysm)",
+   "Stonetalon 40610, 40611, 40628"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000029,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Wildhammer Clan",
+  "body": "The Wildhammers are the dwarves of the open sky, one of the three clans of old Khaz Modan. After the War of the Three Hammers they held Grim Batol until the Dark Irons' curse drove them out, and rather than live under Ironforge they built Aerie Peak in the Hinterlands, where they bonded with the gryphons of the crags. They fight beside the Alliance as they see fit, but call themselves no part of it.",
+  "triggers": [
+   [
+    1,
+    348
+   ],
+   [
+    2,
+    5635
+   ],
+   [
+    2,
+    5636
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Not all of the clan stayed at Aerie Peak. Kurdran Wildhammer, thought lost with the Alliance Expedition, leads the Wildhammers of Shadowmoon Valley in Outland.",
+    "triggers": [
+     [
+      2,
+      21330
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Hinterlands 4700, 4701, 4702, 4717"
+    ]
+   }
+  ],
+  "hint": "Learned among the gryphon riders of the high crags.",
+  "related": [
+   4701,
+   4717,
+   91000010
+  ],
+  "sources": [
+   "Hinterlands 4700, 4701, 4702, 4717",
+   "page_text 1914-1931 (War of the Three Hammers)",
+   "warcraft.wiki.gg Wildhammer clan (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000030,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Forest Trolls",
+  "body": "The forest trolls are the heirs of the Amani empire, which once ruled the northern forests of Lordaeron from Zul'Aman and fought the high elves and the humans of Arathor in the Troll Wars. The empire is long broken. Its tribes now hold scattered ruins across the north: the Witherbark of the Hinterlands and the Arathi Highlands, the Vilebranch of Jintha'Alor, who have turned to the blood god Hakkar, and the Revantusk, who keep faith with the Horde.",
+  "triggers": [
+   [
+    3,
+    2554
+   ],
+   [
+    3,
+    2556
+   ],
+   [
+    3,
+    2555
+   ],
+   [
+    3,
+    2557
+   ],
+   [
+    3,
+    2649
+   ],
+   [
+    3,
+    2651
+   ],
+   [
+    3,
+    2653
+   ],
+   [
+    3,
+    2650
+   ],
+   [
+    3,
+    4466
+   ],
+   [
+    3,
+    4467
+   ],
+   [
+    3,
+    4465
+   ],
+   [
+    3,
+    2643
+   ],
+   [
+    3,
+    2646
+   ],
+   [
+    3,
+    2645
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Far to the north, in the Eastweald, the small Mossflayer tribe clings to Zul'Mashar, worn down by long wars with Lordaeron and now by the plague as well.",
+    "triggers": [
+     [
+      1,
+      2273
+     ],
+     [
+      3,
+      8560
+     ],
+     [
+      3,
+      8561
+     ],
+     [
+      3,
+      8562
+     ]
+    ],
+    "sources": [
+     "Hinterlands 4700, 4706, 4708, 4711, 4713, 4716"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Quel'Thalas the Amani still raid the elves almost daily from Zeb'Watha and Tor'Watha, on the shores of Lake Elrendar in southeastern Eversong.",
+    "triggers": [
+     [
+      1,
+      3475
+     ],
+     [
+      1,
+      3476
+     ]
+    ],
+    "sources": [
+     "Hinterlands 4700, 4706, 4708, 4711, 4713, 4716"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Along the road to Zul'Aman the Shadowpine hold three camps in the Ghostlands under their chieftain, Kel'gash the Wicked, and their oracles raise the mummified dead of the Amani Catacombs.",
+    "triggers": [
+     [
+      1,
+      3512
+     ],
+     [
+      1,
+      3516
+     ],
+     [
+      1,
+      3517
+     ],
+     [
+      1,
+      3510
+     ]
+    ],
+    "sources": [
+     "Hinterlands 4700, 4706, 4708, 4711, 4713, 4716"
+    ]
+   }
+  ],
+  "hint": "Learned among the tribes of the old Amani empire.",
+  "related": [
+   91000009,
+   4711,
+   4513,
+   13912,
+   343318
+  ],
+  "sources": [
+   "Hinterlands 4700, 4706, 4708, 4711, 4713, 4716",
+   "Arathi 4513",
+   "Eastern Plaguelands 13912",
+   "Eversong 343019, 343027, 343034",
+   "Ghostlands 343308, 343312, 343327, 343332",
+   "warcraft.wiki.gg Amani, Forest troll"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000031,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Argent Dawn",
+  "body": "The Argent Dawn is an order sworn to destroy the Scourge, founded after the Third War by paladins, priests and soldiers who wanted to fight the dead without the blind zeal of the Scarlet Crusade. It takes no side between Horde and Alliance and welcomes both. Lord Maxwell Tyrosus leads it from Light's Hope Chapel, and its officers pay for every scourgestone brought back from the field.",
+  "triggers": [
+   [
+    1,
+    2268
+   ],
+   [
+    2,
+    10839
+   ],
+   [
+    2,
+    10840
+   ],
+   [
+    2,
+    11039
+   ],
+   [
+    2,
+    11034
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In the war against the Lich King the Dawn joined the remnants of the Silver Hand to form the Argent Crusade, which now leads the fight in Northrend.",
+    "triggers": [
+     [
+      1,
+      4501
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Eastern Plaguelands 13909, 13920, 13921"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Zul'Drak the Argent Crusade holds the Argent Stand and Light's Breach against both the Scourge and the Drakkari, who slay their own gods.",
+    "triggers": [
+     [
+      1,
+      4275
+     ],
+     [
+      1,
+      4317
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Eastern Plaguelands 13909, 13920, 13921"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In northeastern Icecrown the Crusade has raised the grounds of a great tournament, so that the strongest of every banner will be ready to face the Lich King.",
+    "triggers": [],
+    "minState": 15
+   }
+  ],
+  "hint": "Learned among those who fight the dead whatever banner they fly.",
+  "related": [
+   13909,
+   90000032,
+   91000023,
+   90000006
+  ],
+  "sources": [
+   "Eastern Plaguelands 13909, 13920, 13921",
+   "Western Plaguelands 2800, 2801",
+   "Tirisfal 8517",
+   "warcraft.wiki.gg Argent Dawn (pre-Cataclysm)",
+   "Zul'Drak 6601, 6608",
+   "Icecrown 21019, 21046"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000032,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Order of the Silver Hand",
+  "body": "The Order of the Silver Hand was the first order of paladins, founded in the Second War by Archbishop Alonsus Faol, who chose Uther the Lightbringer to lead it. Its knights fought in every war that followed, until Prince Arthas, once one of them, killed Uther. The order broke apart: many of its paladins joined the Scarlet Crusade, others the Argent Dawn.",
+  "triggers": [
+   [
+    1,
+    196
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In the Plaguelands an old paladin, Tirion Fordring, has sworn to raise it again: a new Order of the Silver Hand, born over the body of his murdered son.",
+    "triggers": [
+     [
+      5,
+      5944
+     ]
+    ],
+    "sources": [
+     "Western Plaguelands 2803, 2816"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Joined with the Argent Dawn, the reborn order now marches in the Argent Crusade against the Lich King in Northrend.",
+    "triggers": [
+     [
+      1,
+      4501
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Western Plaguelands 2803, 2816"
+    ]
+   }
+  ],
+  "hint": "Learned at the tomb of the first paladin.",
+  "related": [
+   90000016,
+   90000031,
+   90000007,
+   2803,
+   92000001
+  ],
+  "sources": [
+   "Western Plaguelands 2803, 2816",
+   "Eastern Plaguelands 13918, 13920, 13927",
+   "warcraft.wiki.gg Knights of the Silver Hand (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000033,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Blood Elves",
+  "body": "The blood elves, the sin'dorei, are what remains of the high elves of Quel'Thalas. When the Scourge destroyed the Sunwell most of their people died, and the survivors took a new name in memory of the fallen. Without the well they hunger for magic, and they feed that hunger on crystals, sanctums and whatever else they can drain.",
+  "triggers": [
+   [
+    1,
+    3430
+   ],
+   [
+    1,
+    3433
+   ],
+   [
+    1,
+    3487
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Those who cannot master the hunger become the Wretched, shells of themselves who are cast out to raid ruins and roads for any scrap of power.",
+    "triggers": [
+     [
+      1,
+      3533
+     ],
+     [
+      1,
+      3461
+     ]
+    ],
+    "sources": [
+     "Eversong 343000, 343020, 343021"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Outland blood elf pilgrims cross the shattered land in search of Prince Kael'thas, resting at Falcon Watch, many of them starved for magic.",
+    "triggers": [
+     [
+      1,
+      3554
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Eversong 343000, 343020, 343021"
+    ]
+   }
+  ],
+  "hint": "Learned in the golden forests of Quel'Thalas.",
+  "related": [
+   91000024,
+   91000025,
+   91000026,
+   92000002
+  ],
+  "sources": [
+   "Eversong 343000, 343020, 343021",
+   "Silvermoon 348700, 348703",
+   "warcraft.wiki.gg Blood elf (pre-Cataclysm)",
+   "Hellfire 348317"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000034,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Farstriders",
+  "body": "The Farstriders are the rangers of Quel'Thalas, sworn to defend their people against enemies near and far. Their ranger-general once was Sylvanas Windrunner, and Lor'themar Theron rose through their ranks. For thousands of years they have fought the Amani trolls on the eastern borders, and they fight them still from lodges in Eversong and the Ghostlands, now under Ranger-General Halduron Brightwing.",
+  "triggers": [
+   [
+    1,
+    3464
+   ],
+   [
+    1,
+    3496
+   ],
+   [
+    2,
+    16220
+   ]
+  ],
+  "hint": "Learned from the rangers who guard the borders of Quel'Thalas.",
+  "related": [
+   348704,
+   348702,
+   90000030,
+   343015,
+   343307
+  ],
+  "sources": [
+   "Eversong 343015, 343034",
+   "Ghostlands 343307, 343324",
+   "Silvermoon 348702, 348704",
+   "warcraft.wiki.gg Farstriders (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000035,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Blood Knights",
+  "body": "The Blood Knights are the paladins of the sin'dorei, an order conceived by Grand Magister Rommath with Lady Liadrin as its first knight and matriarch. They claim to wield the Light as no other order can, not as a gift but as a power seized, and the other paladins of the world despise them for it. They keep their headquarters in the Hall of Blood in Silvermoon's Farstriders' Square.",
+  "triggers": [
+   [
+    2,
+    17717
+   ],
+   [
+    2,
+    17076
+   ],
+   [
+    2,
+    25223
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Their Light was taken from a naaru that Prince Kael'thas sent home as a gift. The being begrudged them its power, so the magisters found a way to claim it on their own terms.",
+    "triggers": [
+     [
+      5,
+      9681
+     ],
+     [
+      5,
+      109681
+     ]
+    ],
+    "sources": [
+     "Silvermoon 348705, 348706, 348707, 348708, 348709, 348710, 348711"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "That source is lost: when Kael'thas betrayed his people, his felbloods took the naaru, and the order must learn new ways to wield the Light.",
+    "triggers": [
+     [
+      4,
+      9684
+     ]
+    ],
+    "minState": 12,
+    "sources": [
+     "Silvermoon 348705, 348706, 348707, 348708, 348709, 348710, 348711"
+    ]
+   }
+  ],
+  "hint": "Learned in the Hall of Blood.",
+  "related": [
+   92000003,
+   348703,
+   90000032,
+   92000002
+  ],
+  "sources": [
+   "Silvermoon 348705, 348706, 348707, 348708, 348709, 348710, 348711",
+   "warcraft.wiki.gg Blood Knights (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000036,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 12,
+  "title": "The Shattered Sun Offensive",
+  "body": "The Shattered Sun Offensive is the army the Aldor and the Scryers of Shattrath raised together, setting aside their old feud at the naaru's urging when Prince Kael'thas seized the Isle of Quel'Danas for the Burning Legion. Draenei and blood elves serve side by side under its banner, sworn to win back Sun's Reach and stop the Legion at the Sunwell.",
+  "triggers": [
+   [
+    1,
+    4080
+   ],
+   [
+    2,
+    24813
+   ],
+   [
+    2,
+    24967
+   ],
+   [
+    4,
+    11481
+   ],
+   [
+    4,
+    11482
+   ]
+  ],
+  "hint": "Learned among the soldiers of two rival orders who fight as one.",
+  "related": [
+   408000,
+   408001,
+   408002,
+   92000002
+  ],
+  "sources": [
+   "Quel'Danas 408000, 408001, 408010, 408018",
+   "warcraft.wiki.gg Shattered Sun Offensive"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000037,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Knights of the Ebon Blade",
+  "body": "The Knights of the Ebon Blade are the death knights who broke from the Lich King at Light's Hope Chapel. Led by Highlord Darion Mograine, they took the Ebon Hold for their own and swore to destroy their old master. They know themselves for monsters, and seek no atonement but amends paid in his death.",
+  "triggers": [
+   [
+    5,
+    12801
+   ],
+   [
+    4,
+    13165
+   ],
+   [
+    2,
+    31084
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Tirion Fordring's letter won them a place among the living again: Thrall, remembering the paladin who saved Eitrigg, welcomed the knights back into the Horde, and King Varian took back the Alliance's own.",
+    "triggers": [
+     [
+      5,
+      13189
+     ],
+     [
+      5,
+      13188
+     ]
+    ],
+    "sources": [
+     "Scarlet Enclave 429800, 429816, 429832, 429833, 429834"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Zul'Drak the knights keep Ebon Watch and hunt Overlord Drakuru, the troll commander of the Scourge, whom they have followed since the Grizzly Hills.",
+    "triggers": [
+     [
+      1,
+      4312
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Scarlet Enclave 429800, 429816, 429832, 429833, 429834"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In Icecrown the knights hold Death's Rise and the Shadow Vault, taken from the Scourge, and keep watch on the citadel from camps across the glacier.",
+    "triggers": [
+     [
+      1,
+      4477
+     ],
+     [
+      1,
+      4470
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Scarlet Enclave 429800, 429816, 429832, 429833, 429834"
+    ]
+   }
+  ],
+  "hint": "Learned from death knights who serve no master.",
+  "related": [
+   92000004,
+   92000005,
+   91000023,
+   429801
+  ],
+  "sources": [
+   "Scarlet Enclave 429800, 429816, 429832, 429833, 429834",
+   "Stormwind 151916",
+   "warcraft.wiki.gg Knights of the Ebon Blade (pre-Cataclysm)",
+   "Zul'Drak 6606, 6631",
+   "Icecrown 21004, 21005, 21031"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000038,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Darkspear Trolls",
+  "body": "The Darkspear are a tribe of jungle trolls driven from Stranglethorn long ago. Shipwrecked orcs under Thrall freed them from their captors on a storm-swept isle where their chieftain Sen'jin died, and his son Vol'jin pledged the tribe to the Horde. They followed the orcs to Kalimdor and settled the Echo Isles, until their own witch doctor, Zalazane, drove them to the mainland at Sen'jin Village.",
+  "triggers": [
+   [
+    1,
+    367
+   ],
+   [
+    1,
+    368
+   ],
+   [
+    2,
+    3188
+   ],
+   [
+    2,
+    10540
+   ],
+   [
+    2,
+    8404
+   ]
+  ],
+  "hint": "Learned among the trolls of the Echo Isles.",
+  "related": [
+   1404,
+   163708,
+   90000041,
+   91000020
+  ],
+  "sources": [
+   "Durotar 1404, 1405, 1421, 1422",
+   "Orgrimmar 163706, 163708",
+   "warcraft.wiki.gg Darkspear tribe (pre-Cataclysm)",
+   "Zangarmarsh 352116"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "In Zangarmarsh the Darkspear have built the town of Zabra'jin, the Horde's stronghold in the marsh, hemmed in by ogres and Lost One assassins.",
+    "triggers": [
+     [
+      1,
+      3645
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Durotar 1404, 1405, 1421, 1422"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 90000039,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Burning Blade",
+  "body": "Once a clan of the old Horde, maddened by demon blood, the Burning Blade is now a demon cult hiding among the orcs of the new Horde, who have sworn off the demons that once enslaved them. Its cultists burn their flesh with searing collars to bind themselves to demonic power, and they nest in caves across Durotar, from the Valley of Trials to the doorstep of Orgrimmar.",
+  "triggers": [
+   [
+    1,
+    365
+   ],
+   [
+    1,
+    817
+   ],
+   [
+    1,
+    369
+   ],
+   [
+    4,
+    792
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Neeru Fireblade names its heart: an object of demonic power called the Demon Seed, atop Dreadmist Peak in the Barrens.",
+    "triggers": [
+     [
+      5,
+      829
+     ]
+    ],
+    "sources": [
+     "Durotar 1401, 1402, 1414, 1417, 1424, 1425, 1428"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Thrall knows the cult's true leader: Neeru Fireblade himself, the warlock who claims to serve the Warchief. He leaves him in place, to use him against the Horde's enemies.",
+    "triggers": [
+     [
+      4,
+      5727
+     ]
+    ],
+    "sources": [
+     "Durotar 1401, 1402, 1414, 1417, 1424, 1425, 1428"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "To one he takes for a fellow cultist, Neeru sneers that Thrall is a fool, and that the Burning Legion will drain this world and make ash of it.",
+    "triggers": [
+     [
+      5,
+      5727
+     ]
+    ],
+    "sources": [
+     "Durotar 1401, 1402, 1414, 1417, 1424, 1425, 1428"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "In Desolace the cult holds Thunder Axe Fortress, and its summoners have opened portals at Mannoroc Coven through which the Burning Legion pours into the land.",
+    "triggers": [
+     [
+      1,
+      599
+     ],
+     [
+      1,
+      602
+     ]
+    ],
+    "sources": [
+     "Durotar 1401, 1402, 1414, 1417, 1424, 1425, 1428"
+    ]
+   }
+  ],
+  "hint": "Learned in the caves where cultists burn their own flesh.",
+  "related": [
+   1417,
+   163704,
+   1401,
+   90000041,
+   40503
+  ],
+  "sources": [
+   "Durotar 1401, 1402, 1414, 1417, 1424, 1425, 1428",
+   "Orgrimmar 163704, 163710, 163713",
+   "warcraft.wiki.gg Burning Blade clan (pre-Cataclysm)",
+   "Desolace 40503, 40512"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000040,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Shattered Hand",
+  "body": "The Shattered Hand is the Horde's order of spies, assassins and poisoners, whose rogues train in Orgrimmar's Cleft of Shadow. It calls itself the veil over Kalimdor, its police, judges and executioners, and counts the Deathstalkers of the Undercity as allies. Its loyalty is less certain: its masters speak openly of restoring the Horde's old glory without the Warchief's caution.",
+  "triggers": [
+   [
+    2,
+    3401
+   ],
+   [
+    4,
+    1859
+   ],
+   [
+    4,
+    1963
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Hand spent a year planting an agent inside the Venture Company's tower in the Barrens, and when he called, its rogues left the tower in a bloodied heap.",
+    "triggers": [
+     [
+      5,
+      2478
+     ]
+    ],
+    "sources": [
+     "Orgrimmar 163712, 163718"
+    ]
+   }
+  ],
+  "hint": "Learned from the rogues of the Cleft of Shadow.",
+  "related": [
+   163704,
+   90000041
+  ],
+  "sources": [
+   "Orgrimmar 163712, 163718",
+   "Barrens 1742",
+   "warcraft.wiki.gg Shattered Hand (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000041,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Horde",
+  "body": "The old Horde was the orcs' army of conquest, bound to the Burning Legion by demon blood. Thrall remade it as a people of honor: orcs freed from the camps and the Darkspear trolls, joined in Kalimdor by the tauren and later by the Forsaken of Lordaeron. Its Warchief rules from Orgrimmar, and it holds a wary peace with the Alliance.",
+  "triggers": [
+   [
+    1,
+    1637
+   ],
+   [
+    1,
+    14
+   ],
+   [
+    2,
+    4949
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In recent years the blood elves of Quel'Thalas, championed by the Forsaken, have joined the Horde as well, the newest of its peoples.",
+    "triggers": [],
+    "minState": 8
+   }
+  ],
+  "hint": "Learned in the Warchief's city.",
+  "related": [
+   92000006,
+   91000027,
+   91000026,
+   90000005,
+   90000038
+  ],
+  "sources": [
+   "Orgrimmar 163700, 163707",
+   "Durotar 1400",
+   "warcraft.wiki.gg Horde (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000042,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Tauren",
+  "body": "The tauren, who call themselves the Shu'halo, are a people of hunters and shaman who revere the Earthmother. For generations their tribes wandered the plains of Kalimdor, harried by the centaur, until Cairne Bloodhoof and Thrall's orcs won them Mulgore. Most tribes have gathered at Thunder Bluff under Cairne, and the young earn their place through the Rites of the Earthmother.",
+  "triggers": [
+   [
+    1,
+    215
+   ],
+   [
+    1,
+    1638
+   ],
+   [
+    2,
+    3057
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Not every voice on the bluff approves of the pact that brought the Forsaken into the Horde. Some, like Sage Truthseeker, think it was made too hastily, and that the Forsaken's history is thick with deceit.",
+    "triggers": [
+     [
+      2,
+      3978
+     ]
+    ],
+    "sources": [
+     "Mulgore 21500, 21526"
+    ]
+   }
+  ],
+  "hint": "Learned on the plains of Mulgore.",
+  "related": [
+   91000028,
+   163806,
+   90000041,
+   90000043,
+   90000005
+  ],
+  "sources": [
+   "Mulgore 21500, 21526",
+   "Thunder Bluff 163800, 163806, 163811, 163820",
+   "warcraft.wiki.gg Tauren (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000043,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Grimtotem",
+  "body": "The Grimtotem are a tauren tribe who never accepted Cairne Bloodhoof's rule. Led by the Elder Crone, Magatha Grimtotem, they believe the tauren should be theirs to lead, and many of them have no love for the other races of the Horde. Their matriarch lives on Elder Rise, where Cairne can watch her, while far from the bluff, in Stonetalon, Thousand Needles and Feralas, Grimtotem braves attack every outsider.",
+  "triggers": [
+   [
+    2,
+    4046
+   ]
+  ],
+  "hint": "Learned from the tauren who never bowed to the high chieftain.",
+  "related": [
+   163807,
+   90000042,
+   40600,
+   40002
+  ],
+  "sources": [
+   "Thunder Bluff 163800, 163802, 163807",
+   "warcraft.wiki.gg Grimtotem tribe (pre-Cataclysm)",
+   "Stonetalon 40603, 40604, 40634",
+   "Thousand Needles 40002, 40016, 40027",
+   "Feralas 35707, 35728, 35734",
+   "Dustwallow 1508, 1514"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "In Stonetalon they fell on the tauren village of Camp Aparaje and killed nearly everyone, and the raid's leader, Grundig Darkcloud, holds Grimtotem Post a little farther up the path.",
+    "triggers": [
+     [
+      1,
+      2538
+     ],
+     [
+      1,
+      2537
+     ]
+    ],
+    "sources": [
+     "Thunder Bluff 163800, 163802, 163807"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Not all of Aparaje died: Makaba Flathoof's daughter Kaya, whom her father believed lost, was carried off alive and held at the post.",
+    "triggers": [
+     [
+      4,
+      6523
+     ]
+    ],
+    "sources": [
+     "Thunder Bluff 163800, 163802, 163807"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Letters hidden on Darkcloud Pinnacle show the clan in secret league with three who call themselves Harbingers: together, they promise, their forces will be mightier than all the tribes combined, and agents from Lordaeron are to meet the clan's delegates.",
+    "triggers": [
+     [
+      5,
+      5064
+     ]
+    ],
+    "sources": [
+     "Thunder Bluff 163800, 163802, 163807"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Asked to help against the vengeful serpent Arikara, Magatha called the news grave, glanced about her and smiled, and warned that Arikara was stalking Cairne Bloodhoof.",
+    "triggers": [
+     [
+      4,
+      5088
+     ]
+    ],
+    "sources": [
+     "Thunder Bluff 163800, 163802, 163807"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "In Feralas the clan has raised a compound east of Dire Maul and pens captured faerie dragons there, for purposes no one has learned, while Orgrimmar has put a bounty on its horns.",
+    "triggers": [
+     [
+      1,
+      1100
+     ]
+    ],
+    "sources": [
+     "Thunder Bluff 163800, 163802, 163807"
+    ]
+   },
+   {
+    "part": 6,
+    "body": "In Dustwallow the clan has raised Blackhoof Village and Direhorn Post, raids Theramore's road and towers, and its elders are said to take their orders from Thunder Bluff.",
+    "triggers": [
+     [
+      1,
+      512
+     ],
+     [
+      1,
+      4046
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Thunder Bluff 163800, 163802, 163807"
+    ]
+   },
+   {
+    "part": 7,
+    "body": "A letter carried by a Forsaken apothecary at Direhorn Post comes from the new masters of Lordaeron, who sent her to aid the Grimtotem against their mutual enemy in Kalimdor.",
+    "triggers": [
+     [
+      4,
+      11185
+     ],
+     [
+      4,
+      11186
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Thunder Bluff 163800, 163802, 163807"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 90000044,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Quilboar",
+  "body": "The quilboar are a race of boar-men who revere Agamaggan, a boar demigod who fell in the War of the Ancients. Where his blood fell, giant thorns burst from the earth, and the quilboar dig their dens among them; the greatest, the Razorfen, they hold to be his body. Their tribes are bitter rivals, the Razormane and the Bristleback above all, but both make war on the Horde in Durotar, Mulgore and the Barrens.",
+  "triggers": [
+   [
+    1,
+    1699
+   ],
+   [
+    1,
+    1700
+   ],
+   [
+    1,
+    1698
+   ],
+   [
+    1,
+    1701
+   ],
+   [
+    1,
+    816
+   ],
+   [
+    1,
+    358
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The caged Mangletooth, forgotten by his own tribe, gave up who truly led the Razormane raids: Nak, Kuz and Lok Orcbane, come out of Razorfen Kraul.",
+    "triggers": [
+     [
+      4,
+      879
+     ]
+    ],
+    "sources": [
+     "Barrens 1704, 1718, 1720, 1722, 1727, 1740"
+    ]
+   }
+  ],
+  "hint": "Learned among the giant thorns of the plains.",
+  "related": [
+   1722,
+   1717,
+   1410,
+   21503
+  ],
+  "sources": [
+   "Barrens 1704, 1718, 1720, 1722, 1727, 1740",
+   "Durotar 1410",
+   "Mulgore 21503",
+   "warcraft.wiki.gg Quilboar, Agamaggan (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000045,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Centaurs",
+  "body": "The centaurs are the old enemies of the tauren, who harried their tribes across the plains for generations. Their homeland is Desolace, but the Kolkar range widely, camping at the oases of the Barrens and in the crags of Durotar, while the Galak roam the Thousand Needles. Undisciplined and fierce, they cannot focus their rage as the orcs can, but a few among them have the wit to lead.",
+  "triggers": [
+   [
+    1,
+    366
+   ],
+   [
+    1,
+    386
+   ],
+   [
+    1,
+    387
+   ],
+   [
+    1,
+    388
+   ],
+   [
+    2,
+    3389
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Regthar Deathgate has hunted down the leaders who rallied the Kolkar of the Barrens, Barak Kodobane, Verog the Dervish and Hezrul Bloodmark, to break the centaurs apart.",
+    "triggers": [
+     [
+      5,
+      852
+     ]
+    ],
+    "sources": [
+     "Barrens 1707, 1715, 1716, 1738"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Desolace the clans fight one another. The Kolkar hold the east, the Magram respect only strength, and the Gelkis, their brother clan and mortal enemy, trust in Theradras of the earth, whom they call the mother of the centaur.",
+    "triggers": [
+     [
+      1,
+      609
+     ],
+     [
+      1,
+      604
+     ],
+     [
+      1,
+      606
+     ]
+    ],
+    "sources": [
+     "Barrens 1707, 1715, 1716, 1738"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The Maraudine guard Maraudon, the holy ground at the end of the Valley of Spears, where only spirits and the most sacred priests may tread.",
+    "triggers": [
+     [
+      1,
+      607
+     ]
+    ],
+    "sources": [
+     "Barrens 1707, 1715, 1716, 1738"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "An exile called the Pariah, cast out as a heretic, dreams of one great tribe: the clans fight over scraps, he says, when their heritage is as noble as any night elf's or orc's.",
+    "triggers": [
+     [
+      2,
+      13717
+     ]
+    ],
+    "sources": [
+     "Barrens 1707, 1715, 1716, 1738"
+    ]
+   }
+  ],
+  "hint": "Learned from the tauren's oldest enemies.",
+  "related": [
+   90000042,
+   1715,
+   1410,
+   91000028,
+   40500
+  ],
+  "sources": [
+   "Barrens 1707, 1715, 1716, 1738",
+   "Durotar 1406",
+   "Mulgore 21500",
+   "warcraft.wiki.gg Centaur (pre-Cataclysm)",
+   "Desolace 40508, 40514, 40516, 40517, 40519, 40520, 40527, 40529"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000046,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Night Elves",
+  "body": "The night elves, the kaldorei, are among the oldest peoples of Azeroth. Their ancestors' abuse of the Well of Eternity drew the Burning Legion into the world, and after the War of the Ancients they turned from arcane magic to the druidism of Cenarius and the worship of Elune, guarding their forests for ten thousand years. Hyjal cost them their immortality, and they now stand with the Alliance, ruled from Darnassus.",
+  "triggers": [
+   [
+    1,
+    141
+   ],
+   [
+    1,
+    1657
+   ],
+   [
+    1,
+    188
+   ]
+  ],
+  "hint": "Learned beneath the boughs of the World Tree.",
+  "related": [
+   91000029,
+   91000030,
+   90000047,
+   90000048,
+   165707
+  ],
+  "sources": [
+   "Teldrassil 14100, 14115",
+   "Darnassus 165700, 165707",
+   "warcraft.wiki.gg Night elf (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000047,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Sentinels",
+  "body": "The Sentinels are the army of the night elves, its warriors almost all women. Through the long ages while the druids slept, Tyrande Whisperwind and her priestesses led them in guarding the forests of Kalimdor, and they guard them still, riding the nightsabers the army has long relied upon. On Teldrassil they hold the Oracle Glade and the roads against harpies and maddened furbolgs.",
+  "triggers": [
+   [
+    2,
+    8026
+   ],
+   [
+    2,
+    3519
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In Ashenvale the Silverwing Sentinels, under the fierce Duriel Moonfire, hold an outpost close by Splintertree and fight the Warsong over every grove the orcs cut down.",
+    "triggers": [
+     [
+      1,
+      2360
+     ]
+    ],
+    "sources": [
+     "Darnassus 165701, 165703, 165707, 165713"
+    ]
+   }
+  ],
+  "hint": "Learned from the warriors who guard the night elves' forests.",
+  "related": [
+   165707,
+   90000046,
+   14113,
+   35721
+  ],
+  "sources": [
+   "Darnassus 165701, 165703, 165707, 165713",
+   "Teldrassil 14105, 14108, 14124",
+   "Ashenvale 33118, 33141",
+   "warcraft.wiki.gg Sentinel Army (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000048,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Cenarion Circle",
+  "body": "The Cenarion Circle is the order of druids that follows the teachings of the demigod Cenarius, night elves and, of late, tauren as well. Its seat is Moonglade under Keeper Remulos, son of Cenarius, while Arch Druid Fandral Staghelm leads the druids of Darnassus. Some of its druids, the Druids of the Talon and the Claw, sleep in barrow dens with their spirits walking the Emerald Dream.",
+  "triggers": [
+   [
+    1,
+    1658
+   ],
+   [
+    2,
+    5769
+   ],
+   [
+    2,
+    4217
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Mistrust runs thick between Fandral and Remulos, each suspecting the other of trickery, and Fandral calls the druids of Moonglade fools who waste his time.",
+    "triggers": [
+     [
+      5,
+      6761
+     ]
+    ],
+    "sources": [
+     "Darnassus 165701, 165709, 165718"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "At the top of Raynewood, in the heart of Ashenvale, dwells Keeper Ordanus, one of the eldest sons of Cenarius, guarded by dryads and Cenarion protectors.",
+    "triggers": [
+     [
+      1,
+      426
+     ]
+    ],
+    "sources": [
+     "Darnassus 165701, 165709, 165718"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Not everyone in the Circle trusts Fandral. Quintis Jonespyre of Feathermoon asks why the Arch Druid gathers vast amounts of morrowgrain in its name, a grain that can show the qualities of herbs used in primitive curses.",
+    "triggers": [
+     [
+      4,
+      3791
+     ]
+    ],
+    "sources": [
+     "Darnassus 165701, 165709, 165718"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "In Silithus the Circle holds Cenarion Hold, raised on the site of an old night elf settlement, against what lies sealed beyond the Scarab Wall.",
+    "triggers": [
+     [
+      1,
+      3425
+     ]
+    ],
+    "sources": [
+     "Darnassus 165701, 165709, 165718"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "In Felwood its Emerald Circle, a largely independent branch, labors from the Emerald Sanctuary to undo the corruption of the forest.",
+    "triggers": [
+     [
+      1,
+      2479
+     ]
+    ],
+    "sources": [
+     "Darnassus 165701, 165709, 165718"
+    ]
+   },
+   {
+    "part": 6,
+    "body": "Its seat is Nighthaven in Moonglade, where Malfurion gathered the first druids, and where Keeper Remulos now keeps the peace between Horde and Alliance.",
+    "triggers": [
+     [
+      1,
+      2361
+     ]
+    ],
+    "sources": [
+     "Darnassus 165701, 165709, 165718"
+    ]
+   },
+   {
+    "part": 7,
+    "body": "In Outland its Cenarion Expedition, grown large and largely independent, studies the tortured land from the Cenarion Refuge in Zangarmarsh.",
+    "triggers": [
+     [
+      1,
+      3565
+     ],
+     [
+      1,
+      3808
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Darnassus 165701, 165709, 165718"
+    ]
+   }
+  ],
+  "hint": "Learned among the druids who walk the Emerald Dream.",
+  "related": [
+   165701,
+   163808,
+   165708,
+   14109
+  ],
+  "sources": [
+   "Darnassus 165701, 165709, 165718",
+   "Thunder Bluff 163808",
+   "Teldrassil 14109, 14117",
+   "Ashenvale 33113",
+   "warcraft.wiki.gg Cenarion Circle (pre-Cataclysm)",
+   "Feralas 35723",
+   "Silithus 137705",
+   "Felwood 36102",
+   "Moonglade 49300, 49301",
+   "Zangarmarsh 352101, 352124",
+   "Hellfire 348322"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000049,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Furbolgs",
+  "body": "The furbolgs are a bear-like people of Kalimdor's forests, once peaceful and long friends of the night elves. Something has turned them. On Teldrassil the Gnarlpine tribe has deserted its homes and gone savage, overrunning Starbreeze Village and the sacred barrow of the sleeping druids from their hold in the southwest, and the dryad Tarindrella fears the fel moss is to blame.",
+  "triggers": [
+   [
+    1,
+    260
+   ],
+   [
+    1,
+    736
+   ],
+   [
+    1,
+    261
+   ],
+   [
+    2,
+    1992
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The madness has a master: Ursal the Mauler, chieftain of the Gnarlpine, wields the evil power of the fel moss to drive his tribe into frenzy.",
+    "triggers": [
+     [
+      4,
+      476
+     ]
+    ],
+    "sources": [
+     "Teldrassil 14104, 14108, 14110, 14118, 14121, 14127"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "On Azuremyst the Stillpine and Bristlelimb tribes are at war, and the Stillpine, driven from their hold by maddened wildkin, await a hero their prophecies promised.",
+    "triggers": [
+     [
+      1,
+      3572
+     ],
+     [
+      1,
+      3571
+     ],
+     [
+      1,
+      3600
+     ]
+    ],
+    "sources": [
+     "Teldrassil 14104, 14108, 14110, 14118, 14121, 14127"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In Darkshore the Blackwood tribe, long friends of Auberdine, has turned savage, its camps spread along the fouling Cliffspring River and in a den south of the town.",
+    "triggers": [
+     [
+      1,
+      456
+     ],
+     [
+      1,
+      455
+     ]
+    ],
+    "sources": [
+     "Teldrassil 14104, 14108, 14110, 14118, 14121, 14127"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The Blackwood are not wholly to blame: satyrs hold them in thrall through talismans that channel dark magic into the tribe.",
+    "triggers": [
+     [
+      4,
+      4763
+     ]
+    ],
+    "sources": [
+     "Teldrassil 14104, 14108, 14110, 14118, 14121, 14127"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "In Ashenvale the Thistlefur and Foulweald have grown so numerous and bold that Astranaar fears an attack, and the Horde fights them too, for Thistlefur Village blocks its road between its outposts.",
+    "triggers": [
+     [
+      1,
+      2301
+     ],
+     [
+      1,
+      2357
+     ]
+    ],
+    "sources": [
+     "Teldrassil 14104, 14108, 14110, 14118, 14121, 14127"
+    ]
+   },
+   {
+    "part": 6,
+    "body": "Krolg, an old Foulweald outcast whom the fel moss has spared, blames the night elves' pride for his people's ruin, yet holds that the furbolgs must answer for their own evils.",
+    "triggers": [
+     [
+      5,
+      1030
+     ]
+    ],
+    "sources": [
+     "Teldrassil 14104, 14108, 14110, 14118, 14121, 14127"
+    ]
+   },
+   {
+    "part": 7,
+    "body": "In Felwood the Deadwood have fallen to the fel and turn on all others; only the Timbermaw, in their mountain hold, escaped the corruption.",
+    "triggers": [
+     [
+      1,
+      1761
+     ],
+     [
+      1,
+      1762
+     ],
+     [
+      1,
+      1769
+     ]
+    ],
+    "sources": [
+     "Teldrassil 14104, 14108, 14110, 14118, 14121, 14127"
+    ]
+   },
+   {
+    "part": 8,
+    "body": "In Winterspring the Winterfall, once allies of the Timbermaw and never known for aggression, turned savage at the strange demands of their high chief.",
+    "triggers": [
+     [
+      1,
+      2244
+     ],
+     [
+      1,
+      2243
+     ]
+    ],
+    "sources": [
+     "Teldrassil 14104, 14108, 14110, 14118, 14121, 14127"
+    ]
+   },
+   {
+    "part": 9,
+    "body": "In Azshara the Timbermaw of Ursolan and Bear's Head meet outsiders with hostility, and no one knows whether the plague of Felwood has touched them.",
+    "triggers": [
+     [
+      1,
+      1225
+     ],
+     [
+      1,
+      1216
+     ],
+     [
+      1,
+      1224
+     ]
+    ],
+    "sources": [
+     "Teldrassil 14104, 14108, 14110, 14118, 14121, 14127"
+    ]
+   },
+   {
+    "part": 10,
+    "body": "In the Grizzly Hills the Frostpaw and Redfang tribes of Grizzlemaw, at peace for thousands of years, are locked in a deadly war.",
+    "triggers": [
+     [
+      1,
+      395
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Teldrassil 14104, 14108, 14110, 14118, 14121, 14127"
+    ]
+   }
+  ],
+  "hint": "Learned among the bear-folk of the forests.",
+  "related": [
+   14109,
+   90000046,
+   352410,
+   33106
+  ],
+  "sources": [
+   "Teldrassil 14104, 14108, 14110, 14118, 14121, 14127",
+   "Azuremyst 352410, 352413",
+   "Bloodmyst 352503",
+   "Darkshore 14812, 14818, 14828",
+   "Ashenvale 33105, 33127, 33132",
+   "warcraft.wiki.gg Furbolg (pre-Cataclysm)",
+   "Felwood 36103, 36116, 36117",
+   "Winterspring 61802, 61810, 61827",
+   "Azshara 1607, 1608",
+   "Grizzly Hills 39410"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000050,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Satyrs",
+  "body": "Satyrs are an old shame of the night elves. The first were Highborne who followed Queen Azshara's counselor Xavius in the War of the Ancients, and the Burning Legion twisted them into horned, cloven-hoofed demons. Their kind still haunt the forests of Kalimdor; on Teldrassil a satyr lord leads grells from Fel Rock, and another dwells alone at the edge of the Oracle Glade.",
+  "triggers": [
+   [
+    1,
+    258
+   ],
+   [
+    2,
+    2150
+   ],
+   [
+    3,
+    2038
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "On Bloodmyst the Nazzivus satyrs gather the Exodar's corrupted crystals at Nazzivian and Axxarien, feeding on the corruption the crash has spread.",
+    "triggers": [
+     [
+      1,
+      3592
+     ],
+     [
+      1,
+      3593
+     ]
+    ],
+    "sources": [
+     "Teldrassil 14106, 14120, 14122, 14125"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Armor taken from a felguard among them is armor only the Burning Legion uses: the Legion is gathering the island's satyrs against the draenei.",
+    "triggers": [
+     [
+      5,
+      9594
+     ]
+    ],
+    "sources": [
+     "Teldrassil 14106, 14120, 14122, 14125"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In Ashenvale satyr tribes hold the ruins of old night elf temples: the Bleakheart at Satyrnaar, the Felmusk at Night Run, and at Xavian the satyrs who took the Branch of Cenarius from the dryads.",
+    "triggers": [
+     [
+      1,
+      430
+     ],
+     [
+      1,
+      428
+     ],
+     [
+      1,
+      429
+     ]
+    ],
+    "sources": [
+     "Teldrassil 14106, 14120, 14122, 14125"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "In Desolace the Hatefury satyrs infest a night elf city broken since the War of the Ancients, whose true name is forgotten. They call it Sargeron, after their dark master, and stand with the Burning Blade.",
+    "triggers": [
+     [
+      1,
+      603
+     ]
+    ],
+    "sources": [
+     "Teldrassil 14106, 14120, 14122, 14125"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "In Felwood the Jadefire feast on the corruption, bringing forth more of their kind from the fouled moonwell of Constellas.",
+    "triggers": [
+     [
+      1,
+      2481
+     ],
+     [
+      1,
+      2480
+     ],
+     [
+      1,
+      2618
+     ]
+    ],
+    "sources": [
+     "Teldrassil 14106, 14120, 14122, 14125"
+    ]
+   },
+   {
+    "part": 6,
+    "body": "In Azshara the Haldarr camp among old ruins on the western edge, and the Legashi hold the northern heights above the blood elves' camp.",
+    "triggers": [
+     [
+      1,
+      1236
+     ],
+     [
+      1,
+      1219
+     ]
+    ],
+    "sources": [
+     "Teldrassil 14106, 14120, 14122, 14125"
+    ]
+   }
+  ],
+  "hint": "Learned from the horned demons who haunt the forests.",
+  "related": [
+   91000029,
+   14105,
+   14113
+  ],
+  "sources": [
+   "Teldrassil 14106, 14120, 14122, 14125",
+   "Bloodmyst 352511, 352512",
+   "Ashenvale 33115, 33116, 33137",
+   "warcraft.wiki.gg Satyr (pre-Cataclysm)",
+   "Desolace 40502",
+   "Felwood 36104, 36105, 36112",
+   "Azshara 1603, 1617"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000051,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Draenei",
+  "body": "The draenei are the eredar who would not serve the Burning Legion. Led by Prophet Velen, they fled their homeworld of Argus and wandered for ages, guided by the naaru, until they settled on a world they named Draenor, where the orcs, corrupted by the Legion, slaughtered them. The survivors seized the Exodar and fled to Azeroth, and they have joined the Alliance.",
+  "triggers": [
+   [
+    1,
+    3524
+   ],
+   [
+    1,
+    3557
+   ],
+   [
+    1,
+    3525
+   ]
+  ],
+  "hint": "Learned among the exiles who fell from the sky.",
+  "related": [
+   91000031,
+   91000032,
+   90000052,
+   355705,
+   90000021
+  ],
+  "sources": [
+   "Exodar 355700, 355705",
+   "Azuremyst 352400",
+   "Bloodmyst 352519",
+   "warcraft.wiki.gg Draenei (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000052,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Naaru",
+  "body": "The naaru are beings of living Light who oppose the Burning Legion wherever it goes. They guided the draenei in their flight from Argus, and three of them, A'dal, M'uru and O'ros, brought the fortress of Tempest Keep to the Netherstorm of Outland. When Kael'thas Sunstrider seized the keep and captured M'uru, O'ros hid within the vessel that became the Exodar, and it dwells there still.",
+  "triggers": [
+   [
+    2,
+    17538
+   ],
+   [
+    2,
+    17468
+   ]
+  ],
+  "hint": "Learned in the presence of living Light.",
+  "related": [
+   90000051,
+   355700,
+   91000032,
+   370301
+  ],
+  "sources": [
+   "Exodar 355700, 355706",
+   "warcraft.wiki.gg Naaru (pre-Cataclysm)",
+   "Shattrath 370300, 370301, 370306"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "In Outland the naaru called the Sha'tar, led by A'dal, reclaimed the ruined draenei capital of Shattrath and make war on the Legion from it.",
+    "triggers": [
+     [
+      1,
+      3703
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Exodar 355700, 355706"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 90000053,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Hand of Argus",
+  "body": "The Hand of Argus is the military order of the draenei, its vindicators sworn to serve and die without question. On the isles it holds Azure Watch and Blood Watch, where the three vindicators of the Triumvirate command, and its recruits are tested hard, for the draenei learned on Draenor what hesitation costs.",
+  "triggers": [
+   [
+    1,
+    3576
+   ],
+   [
+    1,
+    3584
+   ],
+   [
+    2,
+    17658
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "At the night elves' invitation the Hand helps restore Forest Song in Ashenvale, where Vindicator Vedaar has sworn his people will retreat from the Burning Legion no more.",
+    "triggers": [
+     [
+      2,
+      17303
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Bloodmyst 352501, 352505, 352519, 352520, 352529"
+    ]
+   }
+  ],
+  "hint": "Learned from the vindicators who guard the draenei.",
+  "related": [
+   352505,
+   352407,
+   90000051
+  ],
+  "sources": [
+   "Bloodmyst 352501, 352505, 352519, 352520, 352529",
+   "Azuremyst 352407, 352419",
+   "Ashenvale 33121, 33128"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000054,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Sunhawks",
+  "body": "The Sunhawks are the blood elves who fought the draenei aboard the Exodar and survived its crash. They hold the west of Bloodmyst around the Vector Coil, harvest the fallen crystals for their own devices and send scouts across both isles, and their numbers never seem to shrink.",
+  "triggers": [
+   [
+    1,
+    3586
+   ],
+   [
+    1,
+    3585
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "They are led by a being called Sironas, who means to destroy the draenei, bind the naaru O'ros and take back the Exodar, and who keeps to the summit of the Coil.",
+    "triggers": [
+     [
+      4,
+      9753
+     ]
+    ],
+    "sources": [
+     "Bloodmyst 352500, 352513, 352518, 352522, 352530, 352531"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "A declaration from Kael'thas himself promised them reinforcements from Tempest Keep through a sun portal, the recapture of the Exodar and Velen's punishment.",
+    "triggers": [
+     [
+      4,
+      9698
+     ]
+    ],
+    "sources": [
+     "Bloodmyst 352500, 352513, 352518, 352522, 352530, 352531"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "A captured Sunhawk let slip that Sironas is no elf but an eredar, who lived among the draenei long enough to pass as one of them.",
+    "triggers": [
+     [
+      5,
+      9756
+     ]
+    ],
+    "sources": [
+     "Bloodmyst 352500, 352513, 352518, 352522, 352530, 352531"
+    ]
+   }
+  ],
+  "hint": "Learned from the blood elves who followed the draenei across the stars.",
+  "related": [
+   352518,
+   352400,
+   92000002
+  ],
+  "sources": [
+   "Bloodmyst 352500, 352513, 352518, 352522, 352530, 352531",
+   "Azuremyst 352405, 352429"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000055,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Naga",
+  "body": "The naga are what became of Queen Azshara's Highborne who were dragged beneath the sea when the Sundering destroyed the Well of Eternity. Twisted into serpentine forms, they serve their queen from the sunken city of Nazjatar, and they have risen to claim the shores of the world. On the isles the Wrathscale hold old night elf ruins and keep a shrine to Azshara on Bloodcurse Isle.",
+  "triggers": [
+   [
+    1,
+    3570
+   ],
+   [
+    1,
+    3569
+   ],
+   [
+    1,
+    3590
+   ],
+   [
+    1,
+    3589
+   ],
+   [
+    1,
+    3604
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In Darkshore the Stormscale hold the ruins of Mathystra and a cave behind Cliffspring Falls, where cultists of the Twilight's Hammer keep them company.",
+    "triggers": [
+     [
+      1,
+      443
+     ],
+     [
+      1,
+      445
+     ]
+    ],
+    "sources": [
+     "Azuremyst 352416, 352427"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Ashenvale the Wrathtail have returned to Zoram, a night elf city the Sundering drowned off the Zoram Strand, for reasons no one knows.",
+    "triggers": [
+     [
+      1,
+      414
+     ]
+    ],
+    "sources": [
+     "Azuremyst 352416, 352427"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Off Desolace the Slitherblade dwell among sunken night elf ruins near Ranazjar Isle, gathered about a great serpent statue, and guard secrets kept for centuries.",
+    "triggers": [
+     [
+      1,
+      2406
+     ],
+     [
+      1,
+      2405
+     ]
+    ],
+    "sources": [
+     "Azuremyst 352416, 352427"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "In Feralas the Hatecrest hold the Ruins of Solarsal on Sardor Isle, perilously near Feathermoon Stronghold, and their royals command from a cave on the Isle of Dread.",
+    "triggers": [
+     [
+      1,
+      1117
+     ],
+     [
+      1,
+      1121
+     ]
+    ],
+    "sources": [
+     "Azuremyst 352416, 352427"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "In Azshara the Spitelash hold the Ruins of Eldarath, strip the Bay of Storms of its enchanted coral and keep the shattered Ravencrest Monument as a stronghold.",
+    "triggers": [
+     [
+      1,
+      1221
+     ],
+     [
+      1,
+      1232
+     ]
+    ],
+    "sources": [
+     "Azuremyst 352416, 352427"
+    ]
+   },
+   {
+    "part": 6,
+    "body": "In Zangarmarsh the naga pump water from the great lakes with steam engines worked by enslaved Broken, and keep a stronghold beneath Serpent Lake.",
+    "triggers": [
+     [
+      1,
+      3653
+     ],
+     [
+      1,
+      3655
+     ],
+     [
+      1,
+      3659
+     ],
+     [
+      1,
+      3656
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Azuremyst 352416, 352427"
+    ]
+   },
+   {
+    "part": 7,
+    "body": "In Shadowmoon the Coilskar naga, servants of Illidan, have seized the only clean water left in the valley and foul it for their own ends.",
+    "triggers": [
+     [
+      1,
+      3750
+     ],
+     [
+      1,
+      3749
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Azuremyst 352416, 352427"
+    ]
+   }
+  ],
+  "hint": "Learned on the shores the serpent-folk have claimed.",
+  "related": [
+   91000029,
+   352416,
+   352507
+  ],
+  "sources": [
+   "Azuremyst 352416, 352427",
+   "Bloodmyst 352504, 352507, 352533",
+   "Darkshore 14804, 14807",
+   "Ashenvale 33103",
+   "warcraft.wiki.gg Naga (pre-Cataclysm)",
+   "Desolace 40504, 40505",
+   "Feralas 35719, 35720, 35732",
+   "Azshara 1605, 1611, 1612",
+   "Zangarmarsh 352102, 352110, 352115, 352121",
+   "Shadowmoon 352009"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000056,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Warsong Clan",
+  "body": "The Warsong is the clan of Grom Hellscream, the first orc to drink the demon blood of Mannoroth. When Thrall's Horde came to Kalimdor, the Warsong marched into Ashenvale to cut timber, clashed with the Sentinels and, drinking the blood again, slew the demigod Cenarius. Grom won back his honor in Demon Fall Canyon, killing Mannoroth at the cost of his own life. The clan still logs the forest from Splintertree Post.",
+  "triggers": [
+   [
+    1,
+    431
+   ],
+   [
+    1,
+    437
+   ],
+   [
+    1,
+    3177
+   ],
+   [
+    1,
+    435
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Its outriders fight the Silverwing Sentinels for every grove, and both sides send fighters to the gulch on the Barrens border where their war has a battlefield of its own.",
+    "triggers": [
+     [
+      1,
+      2360
+     ]
+    ],
+    "sources": [
+     "Ashenvale 33100, 33117, 33120, 33122, 33141"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Northrend the Warsong Offensive, the Horde's army against the Lich King, holds Warsong Hold in the Borean Tundra under Overlord Garrosh Hellscream.",
+    "triggers": [
+     [
+      1,
+      4129
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Ashenvale 33100, 33117, 33120, 33122, 33141"
+    ]
+   }
+  ],
+  "hint": "Learned among the orcs who fell the ancient forest.",
+  "related": [
+   33122,
+   33117,
+   90000041,
+   92000006,
+   91000030
+  ],
+  "sources": [
+   "Ashenvale 33100, 33117, 33120, 33122, 33141",
+   "page_text 2077-2078, 2211",
+   "quests 8368, 8372 (Silverwing Sentinels and Warsong Outriders)",
+   "warcraft.wiki.gg Warsong clan (pre-Cataclysm)",
+   "Borean 353706"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000057,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Highborne",
+  "body": "The Highborne were the sorcerer nobility of Queen Azshara's empire, whose reckless use of the Well of Eternity drew the Burning Legion into the world. The Sundering destroyed their towns along with the Well. Of those who survived, some were twisted into satyrs or naga, and others, exiled across the sea for their magic, founded Quel'Thalas. In Darkshore their restless dead still walk the ruins.",
+  "triggers": [
+   [
+    1,
+    447
+   ],
+   [
+    1,
+    446
+   ]
+  ],
+  "hint": "Learned among the ruins of Azshara's sorcerers.",
+  "related": [
+   91000029,
+   91000024,
+   90000055,
+   90000050,
+   14809,
+   14805
+  ],
+  "sources": [
+   "Darkshore 14800, 14805, 14809, 14829",
+   "page_text 364-367 (The Lay and The Fall of Ameth'Aran)",
+   "warcraft.wiki.gg Highborne (pre-Cataclysm)",
+   "Stonetalon 40621, 40629",
+   "Feralas 35703, 35708, 35729",
+   "Winterspring 61803, 61804",
+   "Azshara 1602"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Not all are gone. The mage Braelyn Firehand, who serves a master in Jaedenar, calls Azshara's temple on Stonetalon Peak her own people's, and knew Keeper Ordanus long ago.",
+    "triggers": [
+     [
+      5,
+      1088
+     ]
+    ],
+    "sources": [
+     "Darkshore 14800, 14805, 14809, 14829"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Feralas Azj'Tordin, who fled Eldre'Thalas and traded his immortality for freedom, says the Shen'dralar who linger in the city have been marred by the madness of their Prince Tortheldrin.",
+    "triggers": [
+     [
+      2,
+      14355
+     ]
+    ],
+    "sources": [
+     "Darkshore 14800, 14805, 14809, 14829"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In Winterspring the spirits of Highborne sorcerers, cursed when a stolen relic shattered in their ritual, drift over frozen Lake Kel'Theril.",
+    "triggers": [
+     [
+      1,
+      2251
+     ],
+     [
+      1,
+      2252
+     ]
+    ],
+    "sources": [
+     "Darkshore 14800, 14805, 14809, 14829"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "In Azshara Highborne apparitions haunt the Shadowsong Shrine, their craving for the arcane undimmed by death, and the ghost of Varo'then, captain of the queen's guard, walks among them.",
+    "triggers": [
+     [
+      1,
+      1235
+     ]
+    ],
+    "sources": [
+     "Darkshore 14800, 14805, 14809, 14829"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 90000058,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Cult of the Dark Strand",
+  "body": "The Cult of the Dark Strand is a band of warlocks gathered in the old elven ruins of Darkshore and Ashenvale, at the Tower of Althalaxx and the Ruins of Ordil'Aran, where its excavators dig among the stones, and satyrs serve in its ranks. Its fanatics and voidcallers guard the tower, and the strongest of them keep to its upper room.",
+  "triggers": [
+   [
+    1,
+    444
+   ],
+   [
+    1,
+    412
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The orc warlock Ilkrud Magthrull of the Fire Scar Shrine fights in its name, shouting for the Dark Strand as he attacks.",
+    "triggers": [
+     [
+      5,
+      970
+     ],
+     [
+      3,
+      3664
+     ]
+    ],
+    "sources": [
+     "Darkshore 14806, 14820, 14831"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "An orc warlock's writings betray its secret: its master, Athrikus Narassin, draws his power from soul gems that hold trapped Highborne souls, hidden with the satyrs of Night Run and Satyrnaar.",
+    "triggers": [
+     [
+      5,
+      973
+     ],
+     [
+      4,
+      1140
+     ]
+    ],
+    "sources": [
+     "Darkshore 14806, 14820, 14831"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "A page of Athrikus's journal shows how the cult wins servants: hatred bends people easily, and the orcs and trolls, hating the Alliance, listened most readily of all.",
+    "triggers": [
+     [
+      5,
+      981
+     ]
+    ],
+    "sources": [
+     "Darkshore 14806, 14820, 14831"
+    ]
+   }
+  ],
+  "hint": "Learned among the warlocks who dig in the old elven ruins.",
+  "related": [
+   14806,
+   33101,
+   90000057,
+   90000050
+  ],
+  "sources": [
+   "Darkshore 14806, 14820, 14831",
+   "Ashenvale 33102, 33108, 33116, 33133, 33136",
+   "page_text 361, 443-444",
+   "warcraft.wiki.gg Cult of the Dark Strand (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000059,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Silithid",
+  "body": "The silithid are insects that swarm from hives deep beneath the earth of southern Kalimdor. Some think them a mindless nuisance; those who know them better call them an ancient threat. In Thousand Needles dwarves of the Explorers' League dug into a hive beneath the Rustmaul site, and the swarm that broke out nearly destroyed the Horde war party that had just slain them.",
+  "triggers": [
+   [
+    1,
+    479
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The insects Feralas calls the Zukk'ash are silithid too, the scholar Zilzibin Drumlore warns in Orgrimmar: a threat the Horde keeps choosing to ignore, far worse than anything the Alliance could muster.",
+    "triggers": [
+     [
+      5,
+      7732
+     ]
+    ],
+    "sources": [
+     "Thousand Needles 40013, 40014"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Tanaris the Centipaar and Hazzali hives drain the desert's pools, and the Gadgetzan Water Company counts its missing surveyors among their victims.",
+    "triggers": [
+     [
+      1,
+      982
+     ],
+     [
+      1,
+      981
+     ]
+    ],
+    "sources": [
+     "Thousand Needles 40013, 40014"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Gadgetzan's alchemist found them controlled by a powerful and malignant force and changed into pure ravagers, a threat to all of southern Kalimdor and perhaps the world.",
+    "triggers": [
+     [
+      5,
+      110
+     ]
+    ],
+    "sources": [
+     "Thousand Needles 40013, 40014"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "In Un'Goro the Gorishi have dug the Slithering Scar, a hive wholly alien to the crater, and scholars wonder whether the silithid draw their strength from it.",
+    "triggers": [
+     [
+      1,
+      540
+     ]
+    ],
+    "sources": [
+     "Thousand Needles 40013, 40014"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "In Silithus the hives of Ashi, Zora and Regal swarm once more, each guarding a crystal carved with qiraji glyphs.",
+    "triggers": [
+     [
+      1,
+      2742
+     ],
+     [
+      1,
+      2743
+     ],
+     [
+      1,
+      2744
+     ]
+    ],
+    "sources": [
+     "Thousand Needles 40013, 40014"
+    ]
+   }
+  ],
+  "hint": "Learned where the insect swarms break out of the earth.",
+  "related": [
+   40011,
+   35706,
+   44016,
+   90000061
+  ],
+  "sources": [
+   "Thousand Needles 40013, 40014",
+   "Feralas 35706, 35736",
+   "warcraft.wiki.gg Silithid (pre-Cataclysm)",
+   "Tanaris 44012, 44016, 44030",
+   "Un'Goro 49007",
+   "Silithus 137704, 137710, 137711"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000060,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Bronze Dragonflight",
+  "body": "The bronze dragonflight is the flight of Nozdormu, the Timeless One, the Aspect charged by the titans with guarding the flow of time. From the Caverns of Time in Tanaris his dragons watch over history and bar any who would meddle with it. Nozdormu himself never meddles in mortal affairs; he only corrects what others alter.",
+  "triggers": [
+   [
+    1,
+    2300
+   ],
+   [
+    2,
+    15192
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "When Fandral Staghelm sought the dragons' blessing for Teldrassil, Nozdormu refused it and chided the Arch Druid for his arrogance.",
+    "triggers": [
+     [
+      5,
+      7383
+     ]
+    ],
+    "sources": [
+     "Tanaris 44007, 44028, 44037"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "A thousand years ago a great one of the flight healed the dying night elf Baristolth with the sands of time and bound him as a Watcher; at Cenarion Hold he waits to keep a promise made in that war.",
+    "triggers": [
+     [
+      2,
+      15180
+     ]
+    ],
+    "minState": 3,
+    "sources": [
+     "Tanaris 44007, 44028, 44037"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Xarantaur the Witness, among the first tauren druids, was made immortal by the bronze dragonflight and keeps the true stories of the world with a Lorehammer from Nozdormu.",
+    "triggers": [
+     [
+      2,
+      30381
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Tanaris 44007, 44028, 44037"
+    ]
+   }
+  ],
+  "hint": "Learned from the guardians of time.",
+  "related": [
+   44007,
+   14100,
+   91000033
+  ],
+  "sources": [
+   "Tanaris 44007, 44028, 44037",
+   "Teldrassil 14100",
+   "warcraft.wiki.gg Bronze dragonflight (pre-Cataclysm)",
+   "Silithus 137717, 137728",
+   "Storm Peaks 6737"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000061,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Qiraji",
+  "body": "The qiraji are the masters of the silithid, an empire of insect-folk whose fortress city of Ahn'Qiraj lies in southern Silithus. Nearly a thousand years ago they poured out of it to sweep across Kalimdor, until they were sealed behind the Scarab Wall. Crystals carved with their glyphs stand in every hive of the desert.",
+  "triggers": [
+   [
+    1,
+    2737
+   ],
+   [
+    1,
+    3478
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "They serve an Old God. Natalia Mar'alith, taken by a trance at a hive crystal, came back as the High Priestess of C'Thun, crying that C'Thun would retake this world.",
+    "triggers": [
+     [
+      5,
+      8306
+     ]
+    ],
+    "sources": [
+     "Silithus 137700, 137714, 137715, 137724, 137725"
+    ]
+   }
+  ],
+  "hint": "Learned before the sealed gates of the insect city.",
+  "related": [
+   91000033,
+   90000059,
+   137714
+  ],
+  "sources": [
+   "Silithus 137700, 137714, 137715, 137724, 137725",
+   "warcraft.wiki.gg Qiraji (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000062,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Shadow Council",
+  "body": "The Shadow Council is the secret cabal of warlocks that bound the orcs to the Burning Legion on Draenor, led by Gul'dan, and it claims credit for much of the orcish people's suffering. It outlived the old Horde. Its seat on Azeroth is Jaedenar in Felwood, a ruin named in worship of Kil'jaeden, where it still plots with the Legion.",
+  "triggers": [
+   [
+    1,
+    1763
+   ],
+   [
+    1,
+    1770
+   ],
+   [
+    1,
+    1771
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Its leader below Jaedenar is Shadow Lord Fel'dan, the mortal in power in Shadow Hold, the one making pacts with the Burning Legion.",
+    "triggers": [
+     [
+      4,
+      5242
+     ]
+    ],
+    "sources": [
+     "Felwood 36108, 36109, 36128, 36129"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "At Grangol'var in Terokkar its cultists boast of sacrifices to Murmur, yet whisper among themselves that the council has lost all control of what it called up in Auchindoun.",
+    "triggers": [
+     [
+      5,
+      10040
+     ],
+     [
+      5,
+      10041
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Felwood 36108, 36109, 36128, 36129"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In Nagrand its Kil'sorrow agents hold a walled fortress named for Kil'jaeden, still commune with the Legion and have crept into Oshu'gun.",
+    "triggers": [
+     [
+      1,
+      3637
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Felwood 36108, 36109, 36128, 36129"
+    ]
+   }
+  ],
+  "hint": "Learned in the ruin named for the Deceiver.",
+  "related": [
+   36108,
+   90000039,
+   90000041
+  ],
+  "sources": [
+   "Felwood 36108, 36109, 36128, 36129",
+   "warcraft.wiki.gg Shadow Council (pre-Cataclysm)",
+   "Terokkar 351909, 351937",
+   "Nagrand 351813"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000063,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Blue Dragonflight",
+  "body": "The blue dragonflight is the flight of Malygos, the Spell-Weaver, the Aspect charged by the titans with guarding magic. Its dragons are said to watch over the arcane wherever it gathers; in Kalimdor they lair in the ice of Mazthoril in Winterspring, and Azuregos roams the ruins of Azshara.",
+  "triggers": [
+   [
+    1,
+    2245
+   ],
+   [
+    2,
+    10929
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Haleh, a consort of Malygos, will not stand idle while Nefarian of the black flight schemes behind Blackrock Mountain, and offers her power to mortals against him.",
+    "triggers": [
+     [
+      2,
+      10929
+     ]
+    ],
+    "sources": [
+     "Winterspring 61808, 61817"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Malygos charged Azuregos with guarding a shard of an old scepter, and after five hundred years of trouble Azuregos hid it inside a very special creature of his own making.",
+    "triggers": [
+     [
+      4,
+      8575
+     ]
+    ],
+    "sources": [
+     "Winterspring 61808, 61817"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Malygos has declared war on mortal magic, drawing the world's arcane energies to the Nexus on Coldarra while his servants hunt mages; the red dragons and the Kirin Tor fight him in what they call the Nexus War.",
+    "triggers": [
+     [
+      1,
+      4024
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Winterspring 61808, 61817"
+    ]
+   }
+  ],
+  "hint": "Learned from the dragons of the frozen caverns.",
+  "related": [
+   61808,
+   90000024,
+   1609
+  ],
+  "sources": [
+   "Winterspring 61808, 61817",
+   "warcraft.wiki.gg Blue dragonflight (pre-Cataclysm)",
+   "Azshara 1609, 1619",
+   "Borean 353712, 353723"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000064,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Fel Horde",
+  "body": "A new Fel Horde of red-skinned orcs pours out of Hellfire Citadel under Kargath Bladefist, its self-styled warchief: the old clans of the Shattered Hand, the Bleeding Hollow and the Bonechewer, larger, meaner and more cunning than the orcs the Sons of Lothar remember, and bound to the demons by their blood. How so many have come to be is a secret the citadel still keeps.",
+  "triggers": [
+   [
+    1,
+    3545
+   ],
+   [
+    1,
+    3582
+   ],
+   [
+    1,
+    3809
+   ],
+   [
+    1,
+    3810
+   ],
+   [
+    1,
+    3811
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "At Zeth'Gor in the southern hills the Bleeding Hollow carry talismans made from the insignias of fallen Honor Hold soldiers, cursed to work against the living.",
+    "triggers": [
+     [
+      5,
+      10485
+     ]
+    ],
+    "sources": [
+     "Hellfire 348305, 348306, 348308, 348335"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Royal Apothecary Society studies their blood, to learn how the orcs of Hellfire became fel orcs and keep that tragedy from ever befalling the orcs of the Horde.",
+    "triggers": [
+     [
+      5,
+      10835
+     ]
+    ],
+    "sources": [
+     "Hellfire 348305, 348306, 348308, 348335"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Bonechewer fel orcs rebuilding ruins in Terokkar take their orders from the blood elves of Firewing Point, sent to keep the garrisons busy.",
+    "triggers": [
+     [
+      5,
+      10012
+     ],
+     [
+      5,
+      10013
+     ]
+    ],
+    "sources": [
+     "Hellfire 348305, 348306, 348308, 348335"
+    ]
+   }
+  ],
+  "hint": "Learned from the red-skinned orcs of the citadel.",
+  "related": [
+   348305,
+   90000066,
+   90000004,
+   90000041
+  ],
+  "sources": [
+   "Hellfire 348305, 348306, 348308, 348335",
+   "warcraft.wiki.gg Fel Horde (pre-Cataclysm)",
+   "Terokkar 351908, 351936"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000065,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Burning Legion",
+  "body": "The Burning Legion is the demon army of the fallen titan Sargeras, led by the eredar lords Kil'jaeden and Archimonde. Twice it has invaded Azeroth: in the War of the Ancients, when the Highborne drew it through the Well of Eternity, and in the Third War, when Archimonde fell at Mount Hyjal. Its remnants still haunt the forests and wastes of Kalimdor, and it means to return.",
+  "triggers": [
+   [
+    1,
+    435
+   ],
+   [
+    1,
+    602
+   ],
+   [
+    1,
+    2256
+   ],
+   [
+    1,
+    3547
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Through the reopened Dark Portal it marches on Outland under Doom Lord Kazzak, raising forge camps to build fel reavers on the ridges of Hellfire Peninsula.",
+    "triggers": [
+     [
+      1,
+      3547
+     ],
+     [
+      1,
+      3804
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Hellfire 348300, 348312-348314, 348326"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Its forge camps stand in Nagrand and on the terraces of Blade's Edge, and at Death's Door it holds open a portal onto the world where it breeds its hounds.",
+    "triggers": [
+     [
+      1,
+      3831
+     ],
+     [
+      1,
+      3625
+     ],
+     [
+      1,
+      3785
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Hellfire 348300, 348312-348314, 348326"
+    ]
+   }
+  ],
+  "hint": "Learned where the demons still linger.",
+  "related": [
+   91000029,
+   91000030,
+   90000062,
+   348314
+  ],
+  "sources": [
+   "Hellfire 348300, 348312-348314, 348326",
+   "Ashenvale 33122",
+   "Desolace 40512",
+   "Winterspring 61815",
+   "warcraft.wiki.gg Burning Legion (pre-Cataclysm)",
+   "Nagrand 351817",
+   "Blade's Edge 352210, 352217, 352223"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000066,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Mag'har",
+  "body": "The Mag'har, the uncorrupted, are orcs of Draenor who never drank the demon's blood and kept their brown skin and their old ways. They survived the ruin of their world in hiding, and their camp in Hellfire Peninsula stays hidden from the fel orcs who would destroy it.",
+  "triggers": [
+   [
+    1,
+    3555
+   ],
+   [
+    1,
+    3801
+   ]
+  ],
+  "hint": "Learned among the orcs who never drank the blood.",
+  "related": [
+   348318,
+   92000006,
+   90000064,
+   351801,
+   92000008
+  ],
+  "sources": [
+   "Hellfire 348318, 348329, 348337",
+   "warcraft.wiki.gg Mag'har (pre-Cataclysm)",
+   "Nagrand 351801, 351822"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Their home is Garadar in Nagrand, where Greatmother Geyah raised nearly every orc, most of them orphans kept apart from the healthy when the red pox struck.",
+    "triggers": [
+     [
+      1,
+      3613
+     ]
+    ],
+    "sources": [
+     "Hellfire 348318, 348329, 348337"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 90000067,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Arakkoa",
+  "body": "The arakkoa are a bird-like people of Outland, as clever as any gnome and quick to dark magic. In Terokkar their veils answer to Skettis, the hidden city of their ancient king Terokk, whose talonpriests watch the colonies through enchanted orbs; their warriors raid the roads and escape through summoning circles. In Hellfire the Haal'eshi raid Alliance caravans with lightning magic.",
+  "triggers": [
+   [
+    1,
+    3689
+   ],
+   [
+    1,
+    3676
+   ],
+   [
+    1,
+    3677
+   ],
+   [
+    1,
+    3686
+   ],
+   [
+    1,
+    3678
+   ],
+   [
+    1,
+    3556
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Not all revere Terokk. Exiles led out of Skettis by Kirrik the Awakened learned of the Light from A'dal and live in Shattrath's Lower City, where Rilak the Redeemed leads them.",
+    "triggers": [
+     [
+      2,
+      22292
+     ],
+     [
+      4,
+      10849
+     ]
+    ],
+    "sources": [
+     "Terokkar 351903, 351904, 351914, 351915, 351921, 351928, 351934"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "When an altar of Skettis exploded rather than be purified by A'dal's touch, Kirrik concluded that arakkoa who will not turn to the Light cannot be saved.",
+    "triggers": [
+     [
+      5,
+      10839
+     ]
+    ],
+    "sources": [
+     "Terokkar 351903, 351904, 351914, 351915, 351921, 351928, 351934"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In Blade's Edge the arakkoa, long a quiet people, have been stirred into a frenzy by a cult that whispers of a coming raven.",
+    "triggers": [
+     [
+      1,
+      3781
+     ],
+     [
+      1,
+      3782
+     ],
+     [
+      1,
+      3783
+     ]
+    ],
+    "sources": [
+     "Terokkar 351903, 351904, 351914, 351915, 351921, 351928, 351934"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "At the cult's shrines the faithful hear the Word of the Raven: the raven will rise again from the darkest night, and the old blood will flow once more.",
+    "triggers": [
+     [
+      5,
+      10607
+     ]
+    ],
+    "sources": [
+     "Terokkar 351903, 351904, 351914, 351915, 351921, 351928, 351934"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "The Sketh'lon of Shadowmoon planned to strike at Gul'dan first, and the warlock answered with a spell that destroyed their camps and twisted their spirits into the Dark Conclave.",
+    "triggers": [
+     [
+      4,
+      10777
+     ]
+    ],
+    "sources": [
+     "Terokkar 351903, 351904, 351914, 351915, 351921, 351928, 351934"
+    ]
+   }
+  ],
+  "hint": "Learned among the veils of the bird-folk.",
+  "related": [
+   351923,
+   351900
+  ],
+  "sources": [
+   "Terokkar 351903, 351904, 351914, 351915, 351921, 351928, 351934",
+   "Hellfire 348320",
+   "Shattrath 370313",
+   "warcraft.wiki.gg Arakkoa (pre-Cataclysm)",
+   "Blade's Edge 352202, 352208, 352219, 352220, 352257",
+   "Shadowmoon 352006, 352041"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000068,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Aldor",
+  "body": "The Aldor are the draenei priesthood that kept its rites among the ruins of Shattrath until the naaru came, and it was they who named the naaru Sha'tar, born from light. From Aldor Rise, the highest tier of the city, and its Shrine of Unending Light, High Priestess Ishanah leads them, while Adyen the Lightwarden protects the priesthood and hunts the enemies of the Light. Many of their priests died at the hands of the magisters who became the Scryers.",
+  "triggers": [
+   [
+    1,
+    3896
+   ],
+   [
+    2,
+    18538
+   ],
+   [
+    2,
+    18537
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In the Shrine of Unending Light a fel-forged weapon does not last: its foul materials disintegrate until only the pure residue of the Light remains.",
+    "triggers": [
+     [
+      5,
+      10420
+     ]
+    ],
+    "sources": [
+     "Shattrath 370300, 370304, 370308, 370310, 370317"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Shadowmoon the Aldor carry their war to Illidan's doorstep from the Altar of Sha'tar, northwest of the Black Temple.",
+    "triggers": [
+     [
+      1,
+      3754
+     ]
+    ],
+    "sources": [
+     "Shattrath 370300, 370304, 370308, 370310, 370317"
+    ]
+   }
+  ],
+  "hint": "Learned on the heights of the draenei priests.",
+  "related": [
+   90000069,
+   90000052,
+   90000051
+  ],
+  "sources": [
+   "Shattrath 370300, 370304, 370308, 370310, 370317",
+   "Shadowmoon 352013"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000069,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Scryers",
+  "body": "The Scryers are blood elves who abandoned Kael'thas for the naaru. Their leader, Voren'thal the Seer, once a close advisor of the prince, led the regiment sent to destroy Shattrath; on the bridge before the Terrace of Light his soldiers laid down their arms, and he knelt before A'dal, saying he had seen the naaru in a vision. From Scryer's Tier and its Seer's Library they war with Kael's armies on sight.",
+  "triggers": [
+   [
+    1,
+    3898
+   ],
+   [
+    2,
+    18530
+   ],
+   [
+    2,
+    18531
+   ]
+  ],
+  "hint": "Learned among the blood elves who knelt to the naaru.",
+  "related": [
+   90000068,
+   92000002,
+   90000033,
+   90000052
+  ],
+  "sources": [
+   "Shattrath 370300, 370305, 370309, 370311, 370318",
+   "Shadowmoon 352018"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "In Shadowmoon the Scryers fight Illidan and the Sunfury alike from the Sanctum of the Stars, whose ranks keep swelling with pilgrims from Quel'Thalas.",
+    "triggers": [
+     [
+      1,
+      3938
+     ]
+    ],
+    "sources": [
+     "Shattrath 370300, 370305, 370309, 370311, 370318"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 90000070,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Earthen Ring",
+  "body": "The Earthen Ring is an order of shaman sworn to keep the balance of the elements and to heed the spirits of earth, air, fire and water. Its shaman go wherever the elements are in turmoil, and at Zoram'gar in Ashenvale one of them reads the waves and watches the depths of Blackfathom, fearing what the Twilight's Hammer means to do there.",
+  "triggers": [
+   [
+    2,
+    12736
+   ],
+   [
+    1,
+    3615
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In Nagrand the Ring keeps the Throne of the Elements, where the four furies dwell in person, and Broken elementalists serve among its shaman.",
+    "triggers": [
+     [
+      1,
+      3615
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Ashenvale 33131"
+    ]
+   }
+  ],
+  "hint": "Learned from the shaman who keep the balance of the elements.",
+  "related": [
+   33103,
+   351805,
+   90000009
+  ],
+  "sources": [
+   "Ashenvale 33131",
+   "Nagrand 351805, 351835, 351836",
+   "warcraft.wiki.gg Earthen Ring (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000071,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Ethereals",
+  "body": "The ethereals are wanderers from another world, beings of energy who wrap themselves in bandages to keep their shape. On Outland most of them trade: the Consortium buys, sells and smuggles anything of value under its nexus-princes, and covets even the diamond mountain of Nagrand. Others are rivals or worse, such as the rogue Razaani and the Ethereum, who keep great prisons in the mountains of Blade's Edge.",
+  "triggers": [
+   [
+    1,
+    3623
+   ],
+   [
+    1,
+    3942
+   ],
+   [
+    1,
+    3864
+   ],
+   [
+    1,
+    3956
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The pink orbs drifting over Razaan's Landing are no ornaments: they are nether energy bound together with captured souls, gnome and Mok'Nathal among them.",
+    "triggers": [
+     [
+      4,
+      10675
+     ],
+     [
+      4,
+      10865
+     ]
+    ],
+    "sources": [
+     "Nagrand 351812"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Ethereum's stasis chambers at Bash'ir Landing hold savage beasts and creatures of many worlds, which they hope one day to bend to their bidding.",
+    "triggers": [
+     [
+      5,
+      10974
+     ]
+    ],
+    "sources": [
+     "Nagrand 351812"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "They fled their homeworld, K'aresh, shortly before the void lord Dimensius ravaged it, and the Ethereum, its old rulers, have hunted him ever since.",
+    "triggers": [
+     [
+      2,
+      20448
+     ]
+    ],
+    "sources": [
+     "Nagrand 351812"
+    ]
+   }
+  ],
+  "hint": "Learned from the bandaged traders of the nether.",
+  "related": [
+   351810,
+   352209
+  ],
+  "sources": [
+   "Nagrand 351812",
+   "Blade's Edge 352211, 352224, 352254, 352259",
+   "Terokkar 351917",
+   "warcraft.wiki.gg Ethereal (pre-Cataclysm)",
+   "Netherstorm 352329, 352332"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000072,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Gronn",
+  "body": "The gronn are giants of Draenor, the ancient masters of its ogres, worshipped as gods by the clans of Blade's Edge. The greatest is Gruul the Dragonkiller, who led gronn and ogres against Deathwing's black dragons and impaled them on the spires, and whose seven sons enforce his will across the mountains and as far as Nagrand, where Durn the Hungerer hunts the fields around Oshu'gun.",
+  "triggers": [
+   [
+    1,
+    3825
+   ],
+   [
+    1,
+    3904
+   ],
+   [
+    1,
+    3631
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "A son of Gruul, Gorgrom the Dragon-Eater, stands behind the Bloodmaul and drives them against their neighbors, while the Bladespire, Gruul's favorites, answer to Goc.",
+    "triggers": [
+     [
+      4,
+      10798
+     ],
+     [
+      5,
+      10714
+     ]
+    ],
+    "sources": [
+     "Blade's Edge 352212, 352233, 352234, 352251"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "In Nagrand the Warmaul ogres served gronn until their king, Cho'war, drove the gronn out of their cave and named himself king.",
+    "triggers": [
+     [
+      1,
+      3617
+     ]
+    ],
+    "sources": [
+     "Blade's Edge 352212, 352233, 352234, 352251"
+    ]
+   }
+  ],
+  "hint": "Learned in the valleys where the dragons were slain.",
+  "related": [
+   352212,
+   90000026,
+   352230
+  ],
+  "sources": [
+   "Blade's Edge 352212, 352233, 352234, 352251",
+   "Nagrand 351816, 351830, 351831",
+   "warcraft.wiki.gg Gronn (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000073,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Netherwing",
+  "body": "The Netherwing are a young dragonflight born of black dragon eggs that were steeped in raw nether energy when Draenor was torn apart: they have the black flight's ferocity, yet are something entirely new. Their patron, Neltharaku, flies high above Shadowmoon, while the Dragonmaw orcs capture and torture his children into carrying riders, and his mate lies chained atop their fortress.",
+  "triggers": [
+   [
+    1,
+    3758
+   ],
+   [
+    1,
+    3759
+   ],
+   [
+    2,
+    21657
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Their keeper Mordenai is one of them: when the flight's mother was freed from Dragonmaw Fortress, he rejoiced that his mother was free and his brothers and sisters saved.",
+    "triggers": [
+     [
+      5,
+      10870
+     ]
+    ],
+    "sources": [
+     "Shadowmoon 352017, 352021, 352022, 352030, 352039"
+    ]
+   }
+  ],
+  "hint": "Learned beneath the wheeling nether drakes.",
+  "related": [
+   352017,
+   90000011,
+   90000024,
+   352207
+  ],
+  "sources": [
+   "Shadowmoon 352017, 352021, 352022, 352030, 352039",
+   "Blade's Edge 352207",
+   "Netherstorm 352324",
+   "warcraft.wiki.gg Netherwing (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000074,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Tuskarr",
+  "body": "The tuskarr are a walrus-like people of Northrend's coasts, peaceful fishers and whalers who live mostly from the sea and honor spirits such as Tayutka and Issliruk, the silver eagle of war. Their villages line the shores from the Borean Tundra to the Isle of Spears, and now the Kvaldir, giant raiders out of the mist, and pirate slavers fall upon them.",
+  "triggers": [
+   [
+    1,
+    3988
+   ],
+   [
+    1,
+    4041
+   ],
+   [
+    1,
+    4040
+   ]
+  ],
+  "hint": "Learned in the fishing villages of the frozen coasts.",
+  "related": [
+   49520,
+   353704,
+   90000076
+  ],
+  "sources": [
+   "Borean 353704, 353705, 353721",
+   "Howling Fjord 49520, 49528, 49534",
+   "warcraft.wiki.gg Tuskarr"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000075,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Taunka",
+  "body": "The taunka are a people of winter, kin to the tauren but sturdier and shaggier, and among them trust is earned, not given. Their villages of Taunka'le in the Borean Tundra and Camp Winterhoof in the Howling Fjord are being abandoned as the Scourge and the vrykul close in, their people going north to Icemist, their capital in the Dragonblight, and they have struck up relations with the Horde.",
+  "triggers": [
+   [
+    1,
+    4037
+   ],
+   [
+    1,
+    4018
+   ]
+  ],
+  "hint": "Learned among the winter kin of the tauren.",
+  "related": [
+   353716,
+   90000042,
+   90000041
+  ],
+  "sources": [
+   "Borean 353716, 353727",
+   "Howling Fjord 49517, 49526",
+   "warcraft.wiki.gg Taunka",
+   "Dragonblight 6501, 6508, 6529",
+   "Grizzly Hills 39413"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "Icemist, their capital, has fallen to the Anub'ar, and what shelters at Westwind is all that remains of the taunka of the tundra and the Dragonblight.",
+    "triggers": [
+     [
+      5,
+      11977
+     ],
+     [
+      5,
+      11979
+     ]
+    ],
+    "sources": [
+     "Borean 353716, 353727"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Freed from the Anub'ar, their High Chief Roanauk Icemist swore the blood oath at Agmar's Hammer and brought the taunka into the Horde.",
+    "triggers": [
+     [
+      5,
+      12140
+     ]
+    ],
+    "sources": [
+     "Borean 353716, 353727"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In the Grizzly Hills the taunka of Camp Oneqwah, beyond Grizzlemaw, are allies of the Horde and watch the iron dwarves of the coast warily.",
+    "triggers": [
+     [
+      1,
+      4211
+     ]
+    ],
+    "sources": [
+     "Borean 353716, 353727"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 90000076,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Vrykul",
+  "body": "The vrykul are giants of Northrend, of whom there had been no sign for centuries, now woken in great numbers: fearless warriors who yearn for death in battle and ride proto-drakes. The Dragonflayer make war from Utgarde Keep, the Winterskorn hold Skorn and Baleheim, and the Kvaldir, raiders of the mist, prey on the coasts. The Scourge walks among them, and some have cast their lot with the Lich King.",
+  "triggers": [
+   [
+    1,
+    3983
+   ],
+   [
+    1,
+    4002
+   ],
+   [
+    1,
+    4001
+   ],
+   [
+    1,
+    4006
+   ],
+   [
+    1,
+    4028
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Some of them rise from the dead, a different undeath from the Scourge's, and a scroll from Skorn shows a thane rising into the heavens among angelic figures: the worthy among them may transcend death.",
+    "triggers": [
+     [
+      5,
+      11249
+     ],
+     [
+      5,
+      11260
+     ]
+    ],
+    "sources": [
+     "Howling Fjord 49500, 49503, 49507, 49515, 49516"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The vargul of the Scourge are vrykul the Lich King did not find worthy, a dying crusader said: imagine how strong the worthy must be.",
+    "triggers": [
+     [
+      5,
+      12904
+     ]
+    ],
+    "sources": [
+     "Howling Fjord 49500, 49503, 49507, 49515, 49516"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In the Storm Peaks the Hyldnir, frost vrykul women, serve Thorim from Brunnhildar, while their sisters at Valkyrion have taken the Lich King's gift and fly as val'kyr.",
+    "triggers": [
+     [
+      1,
+      4422
+     ],
+     [
+      1,
+      4424
+     ]
+    ],
+    "sources": [
+     "Howling Fjord 49500, 49503, 49507, 49515, 49516"
+    ]
+   }
+  ],
+  "hint": "Learned from the giants who woke in the fjords.",
+  "related": [
+   49503,
+   49516,
+   91000034
+  ],
+  "sources": [
+   "Howling Fjord 49500, 49503, 49507, 49515, 49516",
+   "Borean 353703, 353707",
+   "warcraft.wiki.gg Vrykul",
+   "Zul'Drak 6605",
+   "Storm Peaks 6703, 6704"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000077,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Iron Dwarves",
+  "body": "Dwarves of living iron have appeared in Northrend. In the Howling Fjord they rune stone giants into weapons at Giants' Run and have driven the Explorers' League from its digs on the eastern bluffs, burying the relics there rather than digging them up, as though no one must ever find what lies below.",
+  "triggers": [
+   [
+    1,
+    4061
+   ],
+   [
+    1,
+    4005
+   ],
+   [
+    1,
+    3996
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Their mightiest runed giant died urging his brethren to let nothing keep them from the Stoneforge, a name that sounded like something of the titans.",
+    "triggers": [
+     [
+      5,
+      11359
+     ],
+     [
+      5,
+      11367
+     ]
+    ],
+    "sources": [
+     "Howling Fjord 49535"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "A false construct sent among them brought back word that the iron dwarves are at work in the Storm Peaks, and a name no one knew: Loken.",
+    "triggers": [
+     [
+      5,
+      11495
+     ]
+    ],
+    "sources": [
+     "Howling Fjord 49535"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "At Dun Argol their thane receives Loken's orders: to set the titans' creations against one another, the sons of stone against the sons of iron, in a war for the titan city of Ulduar.",
+    "triggers": [
+     [
+      5,
+      12185
+     ],
+     [
+      5,
+      12203
+     ]
+    ],
+    "sources": [
+     "Howling Fjord 49535"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Along the Eastwind Shore their runes of compulsion bind stone giants summoned from the earth and send them marching north to the battlefields.",
+    "triggers": [
+     [
+      1,
+      4212
+     ],
+     [
+      1,
+      4250
+     ],
+     [
+      1,
+      4249
+     ]
+    ],
+    "sources": [
+     "Howling Fjord 49535"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "In the Storm Peaks the stormforged iron dwarves march in Loken's name from Nidavelir against the exiled earthen and the frost giants.",
+    "triggers": [
+     [
+      1,
+      4434
+     ]
+    ],
+    "sources": [
+     "Howling Fjord 49535"
+    ]
+   }
+  ],
+  "hint": "Learned where the iron dwarves bury what was dug up.",
+  "related": [
+   90000012,
+   49510
+  ],
+  "sources": [
+   "Howling Fjord 49535",
+   "warcraft.wiki.gg Iron dwarf",
+   "Grizzly Hills 39415, 39416, 39431",
+   "Storm Peaks 6709, 6710, 6744"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000078,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Wyrmrest Accord",
+  "body": "The Wyrmrest Accord is the council of the dragonflights at Wyrmrest Temple in the Dragonblight, led by Alexstrasza the Life-Binder. Red, green, bronze and even black dragons meet there in peace among the bones of their ancestors, though Malygos's blue flight has turned on the temple, and each flight's sacred shrine in the valley is now beset.",
+  "triggers": [
+   [
+    1,
+    4161
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Nozdormu, Lord of Time, who disappeared to deal with very important matters, is alive: the bronze flight's shrine showed him fighting the Infinite Dragonflight himself.",
+    "triggers": [
+     [
+      5,
+      12470
+     ]
+    ],
+    "sources": [
+     "Dragonblight 6509, 6510-6513, 6523"
+    ]
+   }
+  ],
+  "hint": "Learned at the temple where the dragons meet.",
+  "related": [
+   6509,
+   6523,
+   90000079,
+   90000060,
+   90000022
+  ],
+  "sources": [
+   "Dragonblight 6509, 6510-6513, 6523",
+   "warcraft.wiki.gg Wyrmrest Accord"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000079,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Red Dragonflight",
+  "body": "The red dragonflight is the flight of Alexstrasza the Life-Binder, the Aspect charged by the titans with guarding all living things. For years the Dragonmaw held her captive in Grim Batol and enslaved her young, until she was freed; her consort Korialstrasz walked among the mages of Dalaran as Krasus. In the Dragonblight the Scourge has overrun its Ruby Dragonshrine.",
+  "triggers": [
+   [
+    1,
+    4168
+   ],
+   [
+    2,
+    27990
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The shrine's keeper fell at the feet of a death knight and was turned into the source of its corruption. The Lich King, her spirit warned, now treads on the most sacred lands of every flight to force the dragons to act.",
+    "triggers": [
+     [
+      5,
+      12418
+     ],
+     [
+      5,
+      12450
+     ]
+    ],
+    "sources": [
+     "Dragonblight 6509, 6510, 6523, 6524"
+    ]
+   }
+  ],
+  "hint": "Learned among the dragons who guard all life.",
+  "related": [
+   6523,
+   91000011,
+   90000011,
+   90000078
+  ],
+  "sources": [
+   "Dragonblight 6509, 6510, 6523, 6524",
+   "warcraft.wiki.gg Red dragonflight"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000080,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Nerubians",
+  "body": "The Nerubians are a spider-like people whose kingdom of Azjol-Nerub lies beneath the ice of Northrend. They fought the Lich King when he came, and lost; their dead rose as the Anub'ar, the undead Nerubians who now tunnel beneath the camps of the living and razed the taunka capital of Icemist. In the depths a remnant still fights on against total annihilation.",
+  "triggers": [
+   [
+    1,
+    4163
+   ],
+   [
+    1,
+    4164
+   ],
+   [
+    2,
+    26653
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "A free Nerubian of the Pit of Narjun offered the Horde a common enemy in Arthas, and a scroll of the Anub'ar's strengths and weaknesses.",
+    "triggers": [
+     [
+      5,
+      12041
+     ]
+    ],
+    "sources": [
+     "Dragonblight 6507, 6526"
+    ]
+   }
+  ],
+  "hint": "Learned in the tunnels of the spider kingdom.",
+  "related": [
+   90000006,
+   90000075,
+   6508
+  ],
+  "sources": [
+   "Dragonblight 6507, 6526",
+   "Borean 353715",
+   "warcraft.wiki.gg Nerubian"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000081,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Drakkari",
+  "body": "The Drakkari are the ice trolls of Northrend, whose empire once ruled from Zul'Drak. Now they are dying: in the Grizzly Hills the Scourge spreads disease through their ziggurats and raises their dead, bounty hunters sell them alive to the armies, and even the spirits of their ancestors find no rest.",
+  "triggers": [
+   [
+    1,
+    4209
+   ],
+   [
+    1,
+    4475
+   ],
+   [
+    1,
+    4216
+   ]
+  ],
+  "hint": "Learned among the dying ice trolls.",
+  "related": [
+   39406,
+   39414,
+   90000030,
+   6615
+  ],
+  "sources": [
+   "Grizzly Hills 39406, 39407, 39414, 39429, 39430",
+   "warcraft.wiki.gg Drakkari",
+   "Zul'Drak 6600, 6609, 6617, 6630"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first.",
+  "parts": [
+   {
+    "part": 1,
+    "body": "In Zul'Drak, their heartland, the Drakkari slay their own animal gods at their altars so that their prophets may drink the gods' power against the Scourge.",
+    "triggers": [
+     [
+      1,
+      4276
+     ],
+     [
+      1,
+      4322
+     ],
+     [
+      1,
+      4375
+     ]
+    ],
+    "sources": [
+     "Grizzly Hills 39406, 39407, 39414, 39429, 39430"
+    ]
+   }
+  ]
+ },
+ {
+  "id": 90000082,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Zandalari",
+  "body": "The Zandalari are an ancient tribe of troll priests and scholars from the isle of Zandalar, honored by the other troll nations. In Zul'Drak they have come to defend the gods the Drakkari are slaying, holding a refuge at Zim'Torga, and they warn that the power the Drakkari win by killing their gods is fleeting and will be lost to them for all eternity.",
+  "triggers": [
+   [
+    1,
+    4323
+   ],
+   [
+    2,
+    28479
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Their chronicler records the end of the empire: the Drakkari were exiled from the other troll nations for their extreme violence, and Northrend was once the far north of Kalimdor before the Sundering.",
+    "triggers": [
+     [
+      5,
+      12650
+     ]
+    ],
+    "sources": [
+     "Zul'Drak 6615, 6625, 6629"
+    ]
+   }
+  ],
+  "hint": "Learned among the troll priests who came to save the gods.",
+  "related": [
+   6615,
+   90000081,
+   91000020
+  ],
+  "sources": [
+   "Zul'Drak 6615, 6625, 6629",
+   "warcraft.wiki.gg Zandalari (Wrath)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000083,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Wolvar",
+  "body": "The wolvar are wolf-like hunters of Northrend who live in tribes. The Rageclaw of Zul'Drak lived beside the Drakkari as allies for thousands of years until the trolls turned on them; the Snowfall Glade tribe raids the tuskarr of the Dragonblight; and the Frenzyheart, newcomers to Sholazar Basin, mean to take it from the gorlocs.",
+  "triggers": [
+   [
+    1,
+    4292
+   ],
+   [
+    1,
+    4316
+   ]
+  ],
+  "hint": "Learned among the wolf-folk of the north.",
+  "related": [
+   371106,
+   90000084,
+   6601
+  ],
+  "sources": [
+   "Sholazar 371106, 371121, 371122",
+   "Zul'Drak 6601, 6602",
+   "Dragonblight 6502",
+   "warcraft.wiki.gg Wolvar"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000084,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Oracles",
+  "body": "The Oracles are the gorlocs of Sholazar Basin, a gentle, chattering people who call outsiders dryskins and believe the Great Ones made them. They tend the stone shrines they think the Great Ones left behind, rain, mist, lightning and moss, feeding them with shinies dug from the earth, and the wolvar of the Frenzyheart war on them for the land.",
+  "triggers": [
+   [
+    1,
+    4291
+   ],
+   [
+    1,
+    4306
+   ]
+  ],
+  "hint": "Learned among the gorlocs who tend the great stones.",
+  "related": [
+   371107,
+   90000083,
+   371111
+  ],
+  "sources": [
+   "Sholazar 371107, 371108, 371109, 371113, 371123-371125",
+   "warcraft.wiki.gg Oracles"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000085,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Sons of Hodir",
+  "body": "The Sons of Hodir are the frost giants of Dun Niffelem in the Storm Peaks, who look to the keeper Hodir for protection and guidance and treasure everfrost, ice that never melts, as the symbol of their people's heart. Once allies of Thorim, they have nursed a hatred of the Stormlord since a dark day at Thunderfall, and they war with the Hyldnir of Brunnhildar. Outsiders earn their regard slowly, by deeds.",
+  "triggers": [
+   [
+    1,
+    4438
+   ]
+  ],
+  "hint": "Learned among the frost giants of the peaks.",
+  "related": [
+   6713,
+   6730,
+   90000076
+  ],
+  "sources": [
+   "Storm Peaks 6713, 6733, 6743",
+   "warcraft.wiki.gg Sons of Hodir"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000086,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Earthen",
+  "body": "The earthen are dwarves of living stone, shaped by the titans to build and tend their works. Loken expelled those of Ulduar, and since then the weakest have died and the strongest craftsmen have been reborn as warriors, holding out at Bouldercrag's Refuge and on the Terrace of the Makers against the iron dwarves. In the Grizzly Hills earthen and stone giants besiege the iron dwarves at Thor Modan.",
+  "triggers": [
+   [
+    1,
+    4484
+   ],
+   [
+    1,
+    4446
+   ],
+   [
+    1,
+    4221
+   ]
+  ],
+  "hint": "Learned among the stone-born exiles of Ulduar.",
+  "related": [
+   6709,
+   90000077,
+   91000036,
+   90000012
+  ],
+  "sources": [
+   "Storm Peaks 6709, 6717, 6734",
+   "Grizzly Hills 39412",
+   "warcraft.wiki.gg Earthen"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000087,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 1,
+  "requiredState": 13,
+  "title": "The Silver Covenant",
+  "body": "The Silver Covenant is the order of high elves who rejected the admission of blood elves into the Kirin Tor, gathered by Ranger General Vereesa Windrunner and joined to the Alliance in Northrend. In Dalaran they keep the Silver Enclave, whose guardian mages teleport out any member of the Horde who tries to enter, and in Crystalsong Forest they hold Windrunner's Overlook, facing the Sunreavers across the ruins.",
+  "triggers": [
+   [
+    1,
+    4740
+   ],
+   [
+    1,
+    4559
+   ]
+  ],
+  "hint": "Learned among the high elves who stood apart.",
+  "related": [
+   439521,
+   90000088,
+   90000003
+  ],
+  "sources": [
+   "Dalaran 439507, 439521",
+   "Crystalsong 281707",
+   "warcraft.wiki.gg Silver Covenant"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 90000088,
+  "kind": 4,
+  "zone": 0,
+  "sort": 0,
+  "faction": 2,
+  "requiredState": 13,
+  "title": "The Sunreavers",
+  "body": "The Sunreavers are the blood elves who follow Archmage Aethas Sunreaver, through whose efforts the Horde was accepted into Dalaran at all. They keep Sunreaver's Sanctuary, whose guardian mages teleport away any member of the Alliance who strays inside, and in Crystalsong Forest they hold Sunreaver's Command, facing the Silver Covenant across the ruins.",
+  "triggers": [
+   [
+    1,
+    4616
+   ],
+   [
+    1,
+    4558
+   ]
+  ],
+  "hint": "Learned among the blood elves of the Kirin Tor.",
+  "related": [
+   439522,
+   90000087,
+   90000033
+  ],
+  "sources": [
+   "Dalaran 439508, 439522",
+   "Crystalsong 281708",
+   "warcraft.wiki.gg Sunreavers"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

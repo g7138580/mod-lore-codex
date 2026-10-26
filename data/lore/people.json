@@ -1,0 +1,798 @@
+[
+ {
+  "id": 92000000,
+  "kind": 2,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "Kel'Thuzad",
+  "body": "Kel'Thuzad was an archmage of Dalaran and sat on the Council of Six, until his hunger for forbidden knowledge drew him into necromancy. Censured by the Kirin Tor, he left the city, heeded the call of the Lich King in Northrend and came back to found the Cult of the Damned, through which he spread the plague that made Lordaeron the Scourge's own.",
+  "triggers": [
+   [
+    1,
+    193
+   ],
+   [
+    1,
+    2298
+   ],
+   [
+    1,
+    2297
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "House Barov gave him Caer Darrow in exchange for his help, and in the vaults beneath the keep he founded Scholomance, where the cult trained its necromancers.",
+    "triggers": []
+   },
+   {
+    "part": 2,
+    "body": "When his work was done he fell to Prince Arthas at Andorhal, as the Lich King intended. Arthas carried his remains to the Sunwell and raised him as a lich, and at Dalaran he called down the demon lord Archimonde.",
+    "triggers": []
+   },
+   {
+    "part": 3,
+    "body": "Now he rules the Plaguelands in the Lich King's name from Naxxramas, the great necropolis that floats above the Plaguewood.",
+    "triggers": [],
+    "maxState": 12
+   },
+   {
+    "part": 4,
+    "body": "The necropolis is gone from the Plaguewood. Naxxramas now hangs over Dragonblight in Northrend, and Kel'Thuzad with it, once more the Lich King's general in the war.",
+    "triggers": [
+     [
+      1,
+      4234
+     ],
+     [
+      4,
+      12235
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Western Plaguelands 2800, 2804, 2805, 2824"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "On the Plains of Nasam in the Borean Tundra a Scourge host massed under Kel'Thuzad himself, and the Warsong knew then that Naxxramas had returned.",
+    "triggers": [
+     [
+      5,
+      11652
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "Western Plaguelands 2800, 2804, 2805, 2824"
+    ]
+   }
+  ],
+  "hint": "Learned where the Cult of the Damned first spread its plague.",
+  "related": [
+   91000021,
+   90000003,
+   91000003,
+   90000006,
+   2804,
+   2805
+  ],
+  "sources": [
+   "Western Plaguelands 2800, 2804, 2805, 2824",
+   "Eastern Plaguelands 13900, 13915",
+   "Dragonblight 6531",
+   "Quel'Danas 408000, Eversong 343012 (raised at the Sunwell)",
+   "Alterac 3619 (Archimonde at Dalaran)",
+   "warcraft.wiki.gg Kel'Thuzad (pre-Cataclysm)",
+   "Borean 353725"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 92000001,
+  "kind": 2,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "Tirion Fordring",
+  "body": "Tirion Fordring has spent long years as a hermit in a small hut by the Thondroril River, with only his old horse Mirador for company. He holds to one credo and asks every guest to respect it: race does not dictate honor. He has known orcs as honorable as the noblest knights and humans as vile as the Scourge.",
+  "triggers": [
+   [
+    2,
+    1855
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "He was a paladin of the Silver Hand and Lord of Mardenholde until he was found guilty of treason for standing by an honorable orc against his own people, and banished. He stayed near to watch over his son, Taelan, now Highlord of the Scarlet Crusade.",
+    "triggers": [
+     [
+      5,
+      5742
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Tirion_Fordring (Silver Hand, Lord of Mardenholde, Eitrigg, trial and exile, hermit by the Thondroril with Mirador, Argent Crusade)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "His son's murder ended his long idleness. Tirion fought down the Grand Inquisitor who killed Taelan and, kneeling over him, swore that a new Order of the Silver Hand was born that day.",
+    "triggers": [
+     [
+      5,
+      5944
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Tirion_Fordring (Silver Hand, Lord of Mardenholde, Eitrigg, trial and exile, hermit by the Thondroril with Mirador, Argent Crusade)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "In the war against the Lich King he has taken up the Ashbringer, and he leads the Argent Crusade, born of the Argent Dawn and the Silver Hand, against Icecrown.",
+    "triggers": [
+     [
+      2,
+      31044
+     ],
+     [
+      2,
+      32239
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "warcraft.wiki.gg/wiki/Tirion_Fordring (Silver Hand, Lord of Mardenholde, Eitrigg, trial and exile, hermit by the Thondroril with Mirador, Argent Crusade)"
+    ]
+   }
+  ],
+  "hint": "Learned from an old hermit who keeps a hut by the river.",
+  "related": [
+   90000032,
+   90000031,
+   2816,
+   91000023
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Tirion_Fordring (Silver Hand, Lord of Mardenholde, Eitrigg, trial and exile, hermit by the Thondroril with Mirador, Argent Crusade)",
+   "npc_text 4494 (banished, chose to remain to watch over Taelan; Taelan their Highlord)",
+   "quest 5781 description (his mother told him I had died)",
+   "npc_text 4254 (race does not dictate honor; orcs as honorable as knights)",
+   "creature_text 12126 groups 6, 7 (malaise; a new Order is born)",
+   "creature_text 29175 (Tirion at Light's Hope Chapel)",
+   "quests 5542, 5543, 5544 descriptions and reward texts",
+   "quest 5742 and gossip menus 3681-3683 (npc_text 4493-4495)",
+   "quests 5781, 5845, 5846, 5848 descriptions and reward texts",
+   "quest 5861 description",
+   "quest 5848 description (search for a painting of our twin moons, chip away at the paint)",
+   "quest 5862 log and reward text (Scarlet Illusion, Mardenholde Keep)",
+   "quest 5944 description and reward text",
+   "creature_text 1842, 1840 (Isillien: forest's edge, Grand Crusader charged me), 12126 (murdered my boy; too long have I sat idle; a new Order is born)",
+   "warcraft.wiki.gg/wiki/Tirion_Fordring (Isillien killed Taelan in Hearthglen; Tirion avenged his son)",
+   "creature_text 1840 group 0 (you will not make it to the forest's edge)",
+   "Icecrown 21003 (Crusaders' Pinnacle)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 92000003,
+  "kind": 2,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "Lady Liadrin",
+  "body": "Orphaned by Amani trolls and raised in the faith, Liadrin became a high priestess of Quel'Thalas and lost her faith when the Scourge laid her homeland waste. Grand Magister Rommath offered her a new path, and she became the first Blood Knight and matriarch of the order, which keeps its headquarters in the Hall of Blood in Farstriders' Square.",
+  "triggers": [
+   [
+    2,
+    17076
+   ],
+   [
+    4,
+    9721
+   ],
+   [
+    2,
+    25223
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "When Kael'thas betrayed his people his felbloods took the naaru that gave the order its power, and Liadrin set out to find a new source.",
+    "triggers": [
+     [
+      4,
+      9684
+     ]
+    ],
+    "minState": 12,
+    "sources": [
+     "warcraft.wiki.gg/wiki/Liadrin (Vandellor, lost faith, Rommath's offer, first Blood Knight, A'dal in Shattrath, Shattered Sun Offensive, faith restored after the Sunwell)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Her road led to Shattrath, where she stands beside the naaru A'dal. She has renounced the house of Sunstrider, and her knights fight beside the Shattered Sun Offensive.",
+    "triggers": [
+     [
+      2,
+      17076
+     ]
+    ],
+    "minState": 12,
+    "sources": [
+     "warcraft.wiki.gg/wiki/Liadrin (Vandellor, lost faith, Rommath's offer, first Blood Knight, A'dal in Shattrath, Shattered Sun Offensive, faith restored after the Sunwell)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The Sunwell burns again, and in its light Liadrin has found her faith once more. She now teaches her knights to embrace the Light rather than bend it.",
+    "triggers": [],
+    "minState": 13
+   }
+  ],
+  "hint": "Learned from the knights who serve the matriarch of their order.",
+  "related": [
+   90000035,
+   90000036,
+   348703
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Liadrin (Vandellor, lost faith, Rommath's offer, first Blood Knight, A'dal in Shattrath, Shattered Sun Offensive, faith restored after the Sunwell)",
+   "warcraft.wiki.gg/wiki/Blood_Knight (M'uru held beneath the Hall of Blood, stolen by Kael's felblood elves)",
+   "quest 9721 description (Solanar, Lady Liadrin's right hand)",
+   "quest 9684 description and npc_text 12370 (Liadrin seeks a new source of power)",
+   "DB: Lady Liadrin 17076 (faction 35, quest giver) spawned only in Shattrath City",
+   "warcraft.wiki.gg/wiki/Solanar_Bloodwrath (Liadrin went to Shattrath for a new power source after Kael's betrayal)",
+   "creature_questender 17076 ends 10960 (Children's Week, AllowableRaces 0); npcflag 2 so right-click passes through the gossip hello hook",
+   "quest 9721 description (Liadrin's right hand, hero in his own right, leaves the rank-and-file to Bloodvalor)",
+   "quest 9722 description (inner circle, thalassian chargers)",
+   "quests 9735, 9737 descriptions and completion text (false paladins)",
+   "warcraft.wiki.gg/wiki/Solanar_Bloodwrath (one of the first Blood Knights, took over Liadrin's post while she was away)",
+   "creature_template 25223 faction 1604"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 92000002,
+  "kind": 2,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "Prince Kael'thas Sunstrider",
+  "body": "Kael'thas Sunstrider is the prince of Quel'Thalas, son of King Anasterian, and sat on the Council of Six in Dalaran. When the Scourge destroyed his homeland he gathered the survivors and named them blood elves, then fought for the Alliance in Lordaeron until its commander condemned him for accepting naga help. He escaped to Outland, joined Illidan, and promised his people a cure for their hunger.",
+  "triggers": [
+   [
+    1,
+    3487
+   ],
+   [
+    1,
+    3704
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "He has betrayed his people. Kael'thas has given himself to the Burning Legion, his felbloods have robbed Silvermoon, and his forces now hold Quel'Danas to bring Kil'jaeden through the Sunwell.",
+    "triggers": [
+     [
+      2,
+      16802
+     ],
+     [
+      2,
+      17718
+     ],
+     [
+      4,
+      9681
+     ]
+    ],
+    "minState": 12,
+    "sources": [
+     "Silvermoon 348700, 348701, 348703"
+    ]
+   }
+  ],
+  "hint": "Learned in the city that still awaits its prince.",
+  "related": [
+   90000033,
+   91000025,
+   90000003,
+   348703,
+   408000,
+   352315
+  ],
+  "sources": [
+   "Silvermoon 348700, 348701, 348703",
+   "Quel'Danas 408000",
+   "warcraft.wiki.gg Kael'thas Sunstrider (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 92000004,
+  "kind": 2,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "Highlord Darion Mograine",
+  "body": "Darion Mograine is the son of Alexandros Mograine, the paladin called the Ashbringer, and a death knight raised in the Lich King's service. As Highlord of Acherus he commands the death knights from the Hall of Command, carrying his master's will to them, for he hears the Lich King's voice in his thoughts.",
+  "triggers": [
+   [
+    2,
+    28444
+   ],
+   [
+    2,
+    31084
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Something of the old Darion lingers. Reading of the Scarlet fleet's destruction, he marveled that he had not seen such power since his father wielded... and let the thought go.",
+    "triggers": [
+     [
+      5,
+      12706
+     ]
+    ],
+    "sources": [
+     "quest 13165 description (plunged the Ashbringer into my own heart to free my father's soul, last memory as a free man)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Before the march on Light's Hope he looked toward the chapel and said it was where he had once sacrificed everything to free his father. Now he came to destroy it.",
+    "triggers": [
+     [
+      2,
+      29173
+     ]
+    ],
+    "sources": [
+     "quest 13165 description (plunged the Ashbringer into my own heart to free my father's soul, last memory as a free man)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "At Light's Hope he broke free. He remembered driving the Ashbringer into his own heart to free his father's cursed soul, his last act as a free man, and he founded the Knights of the Ebon Blade, sworn to destroy the Lich King.",
+    "triggers": [
+     [
+      5,
+      12801
+     ]
+    ],
+    "sources": [
+     "quest 13165 description (plunged the Ashbringer into my own heart to free my father's soul, last memory as a free man)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The Ebon Watcher who advised the Argent Crusade outside the Breach was Mograine himself, paying a debt to Tirion; once the Crusade had its foothold, the Ebon Blade would go its own way.",
+    "triggers": [
+     [
+      5,
+      13105
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "quest 13165 description (plunged the Ashbringer into my own heart to free my father's soul, last memory as a free man)"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "He came in person to see Orbaz Bloodbane, self-proclaimed hand of the Lich King, die at the lip of the pit beneath the citadel. Good riddance, he said.",
+    "triggers": [
+     [
+      5,
+      13164
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "quest 13165 description (plunged the Ashbringer into my own heart to free my father's soul, last memory as a free man)"
+    ]
+   },
+   {
+    "part": 6,
+    "body": "When Tirion was struck down in the Cathedral of Darkness, Mograine came with Thassarian, Koltira and his knights and saw the survivors out: for once, it was Tirion who stood in their debt.",
+    "triggers": [
+     [
+      5,
+      13364
+     ],
+     [
+      5,
+      13403
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "quest 13165 description (plunged the Ashbringer into my own heart to free my father's soul, last memory as a free man)"
+    ]
+   }
+  ],
+  "hint": "Learned from the knights of the Ebon Hold.",
+  "related": [
+   90000037,
+   91000023,
+   92000005,
+   92000001,
+   21005
+  ],
+  "sources": [
+   "quest 13165 description (plunged the Ashbringer into my own heart to free my father's soul, last memory as a free man)",
+   "npc_text 13482",
+   "creature_text 28444 (the scarlet apocalypse has begun)",
+   "quest 12657 description (Hall of Command)",
+   "quest 12706 reward text (since my father wielded...)",
+   "quest 12801 reward text (join me as a Knight of the Ebon Blade, destroy the Lich King)",
+   "warcraft.wiki.gg/wiki/Darion_Mograine (son of Alexandros, raised by Kel'Thuzad, Highlord, founded the Ebon Blade)",
+   "quest 12714 description (our existence is tied to his consciousness, Mograine answers an unseen host)",
+   "creature_text 28444 (tear this land asunder)",
+   "quests 13165, 13166 descriptions and reward texts",
+   "quests 13188 and 13189 (Tirion's letter)",
+   "warcraft.wiki.gg/wiki/Acherus:_The_Ebon_Hold (Patchwerk, Scourge banners replaced with Ebon Blade banners)",
+   "Icecrown 21031, 21042, 21045"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 92000005,
+  "kind": 2,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Lich King",
+  "body": "The Lich King was made by the Burning Legion: the spirit of the orc shaman Ner'zhul, bound in armor and sealed in ice atop Icecrown to raise the Scourge. Prince Arthas Menethil took up the runeblade Frostmourne in his service, and after the Third War he climbed to the Frozen Throne and put on the Helm of Domination, becoming one with his master. He rules the Scourge from Icecrown still.",
+  "triggers": [
+   [
+    2,
+    25462
+   ],
+   [
+    2,
+    29110
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Through the eye of Acherus he studied New Avalon and sensed an old enemy there, one he had thought destroyed long ago, and sent the full might of the Scourge before the Crusade could prepare.",
+    "triggers": [
+     [
+      5,
+      12641
+     ]
+    ],
+    "sources": [
+     "quest 12593 description (immortality, force of retribution)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "He sent his knights to Light's Hope to die, knowing what lay beneath the chapel. Struck by the Ashbringer in Tirion Fordring's hands, he withdrew, swearing their next meeting would not be on holy ground.",
+    "triggers": [
+     [
+      5,
+      12801
+     ]
+    ],
+    "sources": [
+     "quest 12593 description (immortality, force of retribution)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "At the Crusaders' Pinnacle his voice rang over the field, calling on the crusaders to surrender their souls. They did not, and the pinnacle was lost to him.",
+    "triggers": [
+     [
+      5,
+      13141
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "quest 12593 description (immortality, force of retribution)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "When he became king, Arthas cast his heart down the pit beneath the citadel: he had understood, after a duel with Illidan that nearly killed him, that what held him back was that he could still feel.",
+    "triggers": [
+     [
+      5,
+      13361
+     ],
+     [
+      5,
+      13400
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "quest 12593 description (immortality, force of retribution)"
+    ]
+   },
+   {
+    "part": 5,
+    "body": "In the Cathedral of Darkness Tirion struck at his heart with the Ashbringer, and the Lich King fell to his knees. There is no Arthas Menethil anymore, Tirion said, only the Lich King.",
+    "triggers": [
+     [
+      5,
+      13364
+     ],
+     [
+      5,
+      13403
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "quest 12593 description (immortality, force of retribution)"
+    ]
+   }
+  ],
+  "hint": "Learned in the presence of the master of the Scourge.",
+  "related": [
+   90000006,
+   91000005,
+   92000000,
+   92000004,
+   91000023,
+   21018
+  ],
+  "sources": [
+   "quest 12593 description (immortality, force of retribution)",
+   "quest 12641 reward text (I sense an old enemy, destroyed long ago)",
+   "quest 12657 description (Death. To. All.)",
+   "creature_text 29110 (The Light has abandoned you)",
+   "quest 12779 reward text (helm, Light's Hope Chapel)",
+   "creature_text 29183 group 47 and 29175 group 28 (he sent them in to die, knew what lies beneath the chapel)",
+   "creature_text 28391 (Arthas... my king)",
+   "quest 13165 reward text",
+   "quest 12593 description (all that I am: anger, cruelty, vengeance, I bestow upon you)",
+   "quests 12593, 12619, 12842, 12848, 12636, 12641, 12657 descriptions and reward texts",
+   "creature_text 28357 (retains emotion and memory)",
+   "creature_text 29520 (unworthy initiate: I was a soldier of the Light once)",
+   "warcraft.wiki.gg/wiki/Acherus:_The_Ebon_Hold (necromancers raised bodies Razuvious selected)",
+   "warcraft.wiki.gg Lich King, Ner'zhul, Arthas Menethil (pre-Cataclysm)",
+   "Icecrown 21030, 21036, 21045"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 92000006,
+  "kind": 2,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "Thrall",
+  "body": "Thrall, son of Durotan, is Warchief of the Horde. Born a Frostwolf and raised a gladiator slave at Durnholde, he broke free, learned the ways of the shaman, freed the orcs from the internment camps and took up the Doomhammer from the dying Orgrim. Heeding a prophet's warning he led them across the sea to Kalimdor, stood with the humans against Archimonde at Mount Hyjal and founded Durotar, where he works to keep a fragile peace with the Alliance.",
+  "triggers": [
+   [
+    2,
+    4949
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "News from Outland shook even the Warchief: his father's mother, Greatmother Geyah, still lives in Garadar in Nagrand, and Thrall resolved to set his affairs in order and go to her.",
+    "triggers": [
+     [
+      5,
+      10175
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "warcraft.wiki.gg/wiki/Thrall (Durotan and Draka, Frostwolf, Durnholde gladiator, internment camps, Doomhammer's warhammer and Warchief title, Kalimdor)"
+    ]
+   }
+  ],
+  "hint": "Learned in the Warchief's own hall.",
+  "related": [
+   90000041,
+   91000002,
+   91000027,
+   163708,
+   163709
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Thrall (Durotan and Draka, Frostwolf, Durnholde gladiator, internment camps, Doomhammer's warhammer and Warchief title, Kalimdor)",
+   "npc_text 4477 (Thrall gossip: wisdom and honor, quarter and compassion, the new Horde)",
+   "npc_text 5736 (peace with the Alliance; too young to remember the wars and bloodshed of ages past)",
+   "quest 10175 reward text (I have a grandmother? She lives?)",
+   "quest 13266 description (Justice must be served)",
+   "warcraft.wiki.gg Thrall (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 92000007,
+  "kind": 2,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "title": "Lady Jaina Proudmoore",
+  "body": "Jaina Proudmoore, ruler of Theramore, is the daughter of Admiral Daelin Proudmoore of Kul Tiras and was apprentice to Archmage Antonidas of Dalaran. When the plague struck Lordaeron, a prophet urged her to lead what survivors she could west across the sea, and at Mount Hyjal she stood with Thrall and the night elves against Archimonde. After the battle she founded Theramore, and she has worked for peace with the Horde ever since.",
+  "triggers": [
+   [
+    2,
+    4968
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "When her father brought the fleet of Kul Tiras against the Horde, she would not fight beside him, and he died at her city. Her city, she says, must come first.",
+    "triggers": [
+     [
+      2,
+      4968
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Jaina_Proudmoore (Kul Tiras, Antonidas, prophet, Hyjal, founded Theramore, Daelin's assault)"
+    ]
+   }
+  ],
+  "hint": "Learned in the island city she founded.",
+  "related": [
+   1501,
+   92000006,
+   91000030,
+   91000027,
+   90000003
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Jaina_Proudmoore (Kul Tiras, Antonidas, prophet, Hyjal, founded Theramore, Daelin's assault)",
+   "durotar.json 1408 (the admiral died at Theramore)",
+   "quest 1285 reward text (deserters loyal to Admiral Daelin)",
+   "npc_text 3157 (no time for pleasantries; my city must come first)",
+   "warcraft.wiki.gg Jaina Proudmoore (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 92000008,
+  "kind": 2,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Garrosh Hellscream",
+  "body": "Garrosh, son of Grommash Hellscream, is the young war chief of the Mag'har, heir to lead them when the Greatmother passes, and he carries that duty like a curse. He has grown up in the shadow of his father's name, for the blood lust that consumed Grom is said to have cursed their people, and he fears the same rage waits in his own veins.",
+  "triggers": [
+   [
+    2,
+    18063
+   ],
+   [
+    4,
+    10044
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Thrall told him the truth of how his father died, and Garrosh, who had hated Grom for the burden he left, found redemption in it and proclaimed himself Garrosh Hellscream, chieftain of the Mag'har.",
+    "triggers": [
+     [
+      5,
+      10212
+     ]
+    ],
+    "sources": [
+     "creature_template 18063 subname Son of Hellscream"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "When the Horde went to war against the Lich King, Garrosh Hellscream was named Overlord of the Warsong Offensive, its army in Northrend.",
+    "triggers": [
+     [
+      5,
+      10212
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "creature_template 18063 subname Son of Hellscream"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "At Warsong Hold the Overlord of the Warsong Offensive sniffs the air for newcomers' fear and quarrels openly with Saurfang, sure the Horde needs nothing but its warrior spirit.",
+    "triggers": [
+     [
+      2,
+      25237
+     ]
+    ],
+    "minState": 13,
+    "sources": [
+     "creature_template 18063 subname Son of Hellscream"
+    ]
+   }
+  ],
+  "hint": "Learned by the fire in Garadar.",
+  "related": [
+   90000066,
+   351801,
+   90000056,
+   92000006,
+   353706
+  ],
+  "sources": [
+   "creature_template 18063 subname Son of Hellscream",
+   "warcraft.wiki.gg/wiki/Mag'har (military chief, to succeed Geyah)",
+   "quests 9868, 9872, 9934 reward texts (depressed, dismissive)",
+   "quest 9891 reward text (Jorin: impotent whelp)",
+   "npc_text 9509, 9510 (Geyah: the blood lust that consumed his father and cursed our people; he fears his rage will consume him)",
+   "npc_text 9271 (Kurkush: not his father's boy)",
+   "warcraft.wiki.gg Garrosh Hellscream (pre-Cataclysm)",
+   "Borean 353706"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 92000009,
+  "kind": 2,
+  "zone": 0,
+  "sort": 0,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "Illidan Stormrage",
+  "body": "Illidan Stormrage, twin brother of Malfurion, is called the Betrayer. In the War of the Ancients he made a new well of power on Mount Hyjal, and for it he was imprisoned for ten thousand years under the watch of the Warden Maiev Shadowsong. Freed by Tyrande in the Third War, he consumed the Skull of Gul'dan and destroyed the dreadlord Tichondrius, then fled to Outland, where he took the Black Temple and now rules as its lord.",
+  "triggers": [
+   [
+    1,
+    3756
+   ],
+   [
+    1,
+    3752
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Champions from Shattrath fought their way to the summit of the Black Temple, and Illidan Stormrage was struck down in the seat he had taken from Magtheridon.",
+    "triggers": [],
+    "minState": 12
+   }
+  ],
+  "hint": "Learned before the walls of the temple he took.",
+  "related": [
+   352016,
+   91000029,
+   165707,
+   352028,
+   92000002
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Shadowmoon_Valley (clan named after the valley, ancestor worship, Temple of Karabor as spiritual capital, Hand of Gul'dan raised to sever the link to the elements, Black Temple as Shadow Council base, Illidan's headquarters, settlements)",
+   "quest 10642 description (ancestral grounds of the Shadowmoon orcs)",
+   "quest 10635 description (Gul'dan's Horde defeated the draenei of Karabor)",
+   "npc_text 10250 (Torlok: Gul'dan severed the tie between orcs and spirits)",
+   "quest 10568 description (Gul'dan raised the volcano)",
+   "creature_template subnames 'Servant of Illidan' on Ashtongue, Coilskar, Shadowmoon fel orcs; Eclipsion blood elves",
+   "quests 10562, 10595 (infernals from Legion Hold)",
+   "warcraft.wiki.gg/wiki/Black_Temple (sacred draenei site; no coastal setting in BC)",
+   "warcraft.wiki.gg Illidan Stormrage (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

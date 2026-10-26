@@ -6,12 +6,19 @@
   "sort": 0,
   "faction": 0,
   "title": "Western Plaguelands",
-  "body": "The Western Plaguelands were once the heart of northern Lordaeron, a country of forest and farmland governed from Hearthglen, with the city of Andorhal serving as the granary of the northern provinces. That bounty became the kingdom's undoing. The Cult of the Damned tainted Andorhal's grain and set great cauldrons in the fields of the largest farmsteads, and the plague that followed killed the people and raised them again as Scourge. Now the trees swell with tumorous growths, diseased beasts roam the hills, and the lich Araj the Summoner rules Andorhal while Scholomance festers beneath the island of Caer Darrow. The Scarlet Crusade holds Hearthglen and the lumber mill below it, and cuts down any who will not follow it, innocents included. Against them stand two small footholds: the Alliance at Chillwind Camp in the south and the Forsaken at the Bulwark on the Tirisfal border, each joined by the Argent Dawn, whose officers call both Horde and Alliance their friends in the war on the dead.",
+  "body": "The Western Plaguelands were the heart of northern Lordaeron, a country of farms and forests governed from Hearthglen, with Andorhal as the granary of the north. That bounty undid it. The Cult of the Damned tainted the grain, the plague killed the people and raised them as Scourge, and great cauldrons still poison the fields. Now a lich rules Andorhal, Scholomance festers beneath Caer Darrow and the Scarlet Crusade holds Hearthglen, while the Alliance at Chillwind Camp and the Forsaken at the Bulwark hold on at the edges.",
   "triggers": [
    [
     1,
     28
    ]
+  ],
+  "related": [
+   91000021,
+   90000006,
+   90000007,
+   90000031,
+   92000000
   ],
   "sources": [
    "warcraft.wiki.gg/wiki/Western_Plaguelands (pre-Cataclysm: Hearthglen seat, Andorhal grain hub, cult tainted grain, four cauldrons on largest farmsteads, tumor-like growths, Scarlet Crusade in Mardenholde)",
@@ -21,21 +28,30 @@
    "npc_text 4134, 4135 (Argent Dawn calls Horde and Alliance friends)",
    "quests 5066, 5093 (Chillwind Camp and the Bulwark)"
   ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; the Argent Dawn officers keep that name in the Wrath era in this database, so nothing needs an era tag. Earlier: verified"
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
   "id": 2801,
   "kind": 1,
   "zone": 28,
-  "sort": 1,
+  "sort": 0,
   "faction": 0,
   "title": "Chillwind Camp",
-  "body": "Chillwind Camp lies at the southern edge of the Western Plaguelands, just north of the Alterac Mountains, and it is the last safe ground for Alliance travelers entering the plague lands. Commander Ashlam Valorfist holds it for the Kingdom of Stormwind and its allies, planning the push on Andorhal. His second, High Priestess MacDonnell, directs the war on the plague cauldrons, while Alchemist Arbington studies the poisons they brew. Officers of the Argent Dawn offer their commission to any who will fight the dead, and Flint Shadowmore of SI:7 keeps watch on the Plaguelands for Stormwind. The camp also shelters Weldon Barov, a nobleman locked in a bitter feud with his own brother.",
+  "body": "Chillwind Camp, on the southern edge of the plague lands below the Alterac Mountains, is the Alliance's foothold in the west. Commander Ashlam Valorfist holds it for Stormwind and plans the push on Andorhal, High Priestess MacDonnell leads the war on the plague cauldrons, and officers of the Argent Dawn sign up anyone willing to fight the dead. The camp also shelters Weldon Barov, a nobleman feuding with his own brother.",
   "triggers": [
    [
     1,
     3197
+   ],
+   [
+    2,
+    10838
    ]
+  ],
+  "related": [
+   90000031,
+   2805,
+   2804
   ],
   "sources": [
    "quest 5066 description (base camp north of the Alterac Mountains)",
@@ -45,23 +61,50 @@
    "quest 5401 reward text (Argent Dawn commission)",
    "quest 6184 (Flint Shadowmore stationed at Chillwind)",
    "quest 5342 (Weldon under Alliance protection at Chillwind Camp)",
-   "zone_areas: all these NPCs stand in area 3197"
+   "zone_areas: all these NPCs stand in area 3197",
+   "npc_text 3754 (Valorfist gossip)",
+   "quests 5092, 5097, 211",
+   "quests 5215, 5533",
+   "quests 8414, 8416, 8418 (Holy Mightstone, righteous fire)",
+   "quest 5237 reward text",
+   "creature_template 10838 faction 123 (Stormwind)",
+   "creature_queststarter: 8418 Forging the Mightstone starts at Valorfist 10838"
   ],
-  "notes": "Unchanged in the parts conversion: nothing to hide and nothing later than classic (Anchorite Truuen, who also stands here, is not mentioned). Earlier: verified Check: 'whose own brother wants him dead' made 'locked in a bitter feud with his own brother': the bounty on Weldon's head is told only at QUEST_ACCEPT 5342 (2819 part 1)."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
   "id": 2802,
   "kind": 1,
   "zone": 28,
-  "sort": 2,
+  "sort": 0,
   "faction": 0,
   "title": "Sorrow Hill",
-  "body": "Sorrow Hill is the great cemetery south of Andorhal, where the city and the country around it buried their dead long before the plague. Those dead do not rest. Skeletal flayers and slavering ghouls rise from the graves to guard the road toward the city's weaker eastern side, skeletal sorcerers stir among the crypts, and a dread figure called Lord Maldazzar is sometimes seen among them. Here stands the monument of Captain Joseph Redpath of Darrowshire. Nearby, the spirit of Marlene Redpath lingers at her old house on the hill, and the banished illusionist Myranda lives within sight of Uther's Tomb.",
+  "body": "Sorrow Hill is the great cemetery south of Andorhal, where the city buried its dead long before the plague. They do not rest: skeletons and ghouls rise from the graves to guard the road to the city. Atop the hill stands the tomb of Uther the Lightbringer, and among the graves the monument of Captain Joseph Redpath of Darrowshire.",
   "triggers": [
    [
     1,
     197
    ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The ghost of Marlene Redpath haunts her old house on the hill. When the battle of Darrowshire began she hid her young niece, Pamela, and she has never learned what became of the girl.",
+    "triggers": [
+     [
+      2,
+      10927
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Sorrow_Hill (large cemetery south of Andorhal used for burials from Andorhal and around it; Redpath monument)"
+    ]
+   }
+  ],
+  "related": [
+   2803,
+   13924,
+   91000022
   ],
   "sources": [
    "warcraft.wiki.gg/wiki/Sorrow_Hill (large cemetery south of Andorhal used for burials from Andorhal and around it; Redpath monument)",
@@ -70,18 +113,23 @@
    "quest 5153 description (body trampled and destroyed years ago)",
    "quest 5152 (Marlene lives in a house on a hill south of Andorhal)",
    "quest 5861 (Myranda resides at Uther's tomb), 5861 reward text (banished)",
-   "page_text 2372 (Captain Joseph Redpath of Darrowshire)"
+   "page_text 2372 (Captain Joseph Redpath of Darrowshire)",
+   "quest 5142 description (so many died, and worse; hid her niece Pamela; Darrowshire to the east beyond Gahrron's Withering)",
+   "quest 5152 (house on a hill south of Andorhal)",
+   "gameobject 176145 Joseph Redpath's Monument; page_text 2372 (Captain Joseph Redpath of Darrowshire)",
+   "posarea: Marlene 10927 in area 197",
+   "quest 5153 description"
   ],
-  "notes": "Converted: Dropped 'whose body was trampled and destroyed long ago' (quest 5153, a step of the Darrowshire chain the Eastern Plaguelands owns) and 'his sister Marlene' (the sibling link is told at 5152, EPL's Little Pamela part 3). No parts. Earlier: Redpath named as captain of Darrowshire (page_text 2372) instead of the vaguer 'hero'."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
   "id": 2803,
   "kind": 1,
   "zone": 28,
-  "sort": 3,
+  "sort": 0,
   "faction": 0,
   "title": "Uther's Tomb",
-  "body": "Atop Sorrow Hill stands the tomb of Uther the Lightbringer, first paladin and founder of the Order of the Silver Hand, raised by survivors after he fell to his own student, Prince Arthas. Its epitaph declares that Uther lived and died to defend Lordaeron, and that his light is the light of all humanity. High Priest Thel'danis guards the tomb and purges the evil from scourgestones brought to him.",
+  "body": "Uther the Lightbringer, first paladin of the Order of the Silver Hand, fell to his own student, Prince Arthas, and the survivors raised his tomb atop Sorrow Hill. Its epitaph says that he lived and died to defend Lordaeron. High Priest Thel'danis keeps watch over it and purges the evil from the scourgestones brought to him.",
   "triggers": [
    [
     1,
@@ -91,14 +139,71 @@
   "parts": [
    {
     "part": 1,
-    "minState": 8,
-    "body": "New pilgrims have come with a new age. A draenei anchorite at Chillwind Camp, who in his short time on Azeroth has come to hold Uther above all its heroes, seeks to return a holy symbol the Lightbringer lost to his tomb. Not every visitor comes in reverence. A blood knight at the Bulwark, once Uther's pupil, blames him for the fall of Quel'Thalas.",
+    "body": "Within sight of the tomb lives Myranda the Hag, a master illusionist banished from Mardenholde Keep for speaking against a verdict of the Silver Hand. She still weaves guises for those she trusts, and not all of them are Alliance.",
+    "triggers": [
+     [
+      2,
+      11872
+     ]
+    ],
     "sources": [
-     "quest 9474 description (in the short time I have been on Azeroth; return what he lost to his tomb)",
-     "quest 9443 description (pupil of Uther, blames him for Quel'Thalas)",
-     "creature_template 17238 faction 1638 (Exodar), 17099 faction 1604 (Silvermoon)"
+     "page_text 292 (gameobject 2082, Uther's epitaph)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The verdict she spoke against was the one that banished Tirion Fordring. She had been his most trusted advisor when he was Lord of Mardenholde, and she always knew he would call on her again.",
+    "triggers": [
+     [
+      4,
+      5862
+     ]
+    ],
+    "sources": [
+     "page_text 292 (gameobject 2082, Uther's epitaph)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Uther's holy mark was lost when he died, and the Scarlet Crusade keeps it in Hearthglen. A draenei anchorite at Chillwind Camp wants it returned to the tomb; a blood knight at the Bulwark, once Uther's student, wants it for revenge for Quel'Thalas.",
+    "triggers": [
+     [
+      4,
+      9474
+     ],
+     [
+      4,
+      9443
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "page_text 292 (gameobject 2082, Uther's epitaph)"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "Brought to the tomb, the mark called up Uther's own ghost. He blessed those who came to honor him, and to the student who meant to defile his tomb he sent only forgiveness.",
+    "triggers": [
+     [
+      5,
+      9446
+     ],
+     [
+      5,
+      9444
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "page_text 292 (gameobject 2082, Uther's epitaph)"
     ]
    }
+  ],
+  "related": [
+   90000032,
+   2802,
+   92000001
   ],
   "sources": [
    "page_text 292 (gameobject 2082, Uther's epitaph)",
@@ -107,18 +212,28 @@
    "quest 8414 description (Thel'danis guarding Uther's Tomb), 8416 description (evil purged from the stones)",
    "quests 9474, 9446 and creature_text 17233 (Ghost of Uther)",
    "quests 9443, 9444 (Mehlar Dawnblade)",
-   "posarea: Thel'danis 1854 in area 196"
+   "posarea: Thel'danis 1854 in area 196",
+   "quest 5861 reward text (advisor, dissent, banished)",
+   "quest 6568 description and reward text (master illusionist of Lordaeron, Rexxar, owes the Warchief)",
+   "quest 5862 description (illusion limits)",
+   "npc_text 4633, 4773",
+   "posarea: Myranda 11872 in area 197",
+   "warcraft.wiki.gg/wiki/Myranda_the_Hag",
+   "quests 9474, 9446 (descriptions and reward texts)",
+   "quests 9443, 9444 (descriptions and reward texts)",
+   "creature_text 17233 (Ghost of Uther), 17238, 17099",
+   "creature_template 17238 Anchorite Truuen (draenei per quest 9474: in the short time I have been on Azeroth)"
   ],
-  "notes": "Converted: The draenei anchorite and the blood knight (Burning Crusade: quests 9474 and 9443 came with the expansion) moved to part 1, minState 8, no triggers. The line that Uther's ghost answers is now told only in The Mark of the Lightbringer (2827) parts, where it is earned. Earlier: verified Check: Part 1 minState 8 confirmed (Truuen and Mehlar added in 2.0.1, unphased). Thel'danis's scourgestone quests 8414, 8416, 8418 were added in patch 1.8.0 (warcraft.wiki.gg Dispelling_Evil, Forging_the_Mightstone): classic, untagged."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
   "id": 2804,
   "kind": 1,
   "zone": 28,
-  "sort": 4,
+  "sort": 0,
   "faction": 0,
   "title": "Caer Darrow",
-  "body": "Caer Darrow stands on an island in still, lifeless Darrowmere Lake, an old fortress that became the seat of House Barov. To keep their lands beyond their own lifetimes, the Barovs struck a bargain with Kel'Thuzad, and beneath the keep grew Scholomance, a school of necromancy. A sickness born there swept the town just as it prepared to welcome Uther the Lightbringer, and no one survived. The townsfolk linger as ghosts, guardsmen, bakers and racing children reliving their last ordinary day. A few remember everything, among them the artist Renfray, who haunts the ruins near the shore, and Magistrate Marduke, who seeks the end of the lich Ras Frostwhisper.",
+  "body": "Caer Darrow, an old fortress on an island in Darrowmere Lake, was the seat of House Barov. To keep their lands beyond their own lifetimes the Barovs struck a bargain with Kel'Thuzad, and beneath the keep grew Scholomance, a school of necromancy. A sickness born there killed the whole town on the eve of a visit from Uther, and its people linger as ghosts, reliving their last ordinary day.",
   "triggers": [
    [
     1,
@@ -129,6 +244,38 @@
     2297
    ]
   ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The last Barov heirs are brothers and bitter rivals. Alexi stayed with the family and is now undead, lounging under Horde guard at the Bulwark; Weldon fled and lives under Alliance guard at Chillwind Camp. The deeds to the family fortune lie in Scholomance.",
+    "triggers": [
+     [
+      2,
+      11023
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Caer_Darrow (Barov seat, deal with Kel'Thuzad, Scholomance, plague before Uther's visit, no survivors, ghosts reliving last memory, lake lifeless and still)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The spirits of Eva and Lucien Sarkhoff, servants of the Barovs, linger on the island. When the family turned, its servants became subjects for the Butcher, Doctor Theolen Krastinov, and the Sarkhoffs died in his hands.",
+    "triggers": [
+     [
+      2,
+      11216
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Caer_Darrow (Barov seat, deal with Kel'Thuzad, Scholomance, plague before Uther's visit, no survivors, ghosts reliving last memory, lake lifeless and still)"
+    ]
+   }
+  ],
+  "related": [
+   92000000,
+   91000021
+  ],
   "sources": [
    "warcraft.wiki.gg/wiki/Caer_Darrow (Barov seat, deal with Kel'Thuzad, Scholomance, plague before Uther's visit, no survivors, ghosts reliving last memory, lake lifeless and still)",
    "npc_text 4118 (citizens preparing for Uther's visit)",
@@ -137,280 +284,38 @@
    "quest 5846 description and reward text (Renfray: few that remember all)",
    "quests 5461, 5466 (Marduke and Ras Frostwhisper)",
    "AreaTable: 2297 Darrowmere Lake, 2298 Caer Darrow",
-   "posarea: Renfray 11936, Eva 11216, Marduke 11286 in area 2298"
+   "posarea: Renfray 11936, Eva 11216, Marduke 11286 in area 2298",
+   "quests 5341, 5343 descriptions (deeds to Caer Darrow, Brill, Tarren Mill, Southshore; Weldon fled the war and remains human; Weldon regrets sparing Alexi)",
+   "quests 5342, 5344 descriptions (each sheltered by a faction; each wants the other's head)",
+   "creature_template 11022 faction 83 (Undercity), 11023 faction 123 (Stormwind)",
+   "warcraft.wiki.gg/wiki/Caer_Darrow (Barov deal with Kel'Thuzad)",
+   "npc_text 4041 (Eva gossip)",
+   "quests 5382, 5515, 5384 descriptions and reward texts (Krastinov, burn our remains, Kirtonos, piece of our essence)",
+   "item 13544 Spectral Essence (communication with the deceased of Caer Darrow)",
+   "warcraft.wiki.gg/wiki/Eva_Sarkhoff (head maid and butler of the Barovs, experimented on by Krastinov)",
+   "warcraft.wiki.gg/wiki/Caer_Darrow (servants used as experiments)"
   ],
-  "notes": "Unchanged in the parts conversion: nothing to hide (Renfray and Marduke are pointed to only; their chains are not told). Earlier: Removed the Fordring portrait detail (it belongs to Tirion's chain, owned by the Eastern Plaguelands). Scholomance itself is left to the instance entry; most ghosts need the Spectral Essence, so AREA triggers only."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
   "id": 2805,
   "kind": 1,
   "zone": 28,
-  "sort": 5,
+  "sort": 0,
   "faction": 0,
   "title": "Ruins of Andorhal",
-  "body": "Andorhal was the grain distribution center of northern Lordaeron, and that made it the perfect tool for the Cult of the Damned. Plague-tainted grain went out from its granaries to the villages of the north, and the city itself fell soon after. Its broken walls now shelter a Scourge garrison of skeletal acolytes and executioners, ghouls and flesh golems, ruled from the city's heart by the lich Araj the Summoner. Four watchtowers are thought to direct the movements of his troops. In a ruined inn at the northwest corner, the bronze dragon Chromie labors to mend a timeline the Scourge has torn, and the Annals of Darrowshire still lie in the old city hall.",
+  "body": "Andorhal was the grain distribution center of northern Lordaeron, which made it the perfect tool for the Cult of the Damned: tainted grain went out from its granaries to the villages of the north, and the city soon fell. Here Prince Arthas cut down Kel'Thuzad. Now a Scourge garrison fills the streets under the lich Araj the Summoner, once master of Scholomance, and in a ruined inn the bronze dragon Chromie works to mend a torn timeline.",
   "triggers": [
    [
     1,
     193
    ]
   ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Andorhal (grain distribution point, cult infected grain sent to northern villages, Araj headquarters)",
-   "zone_areas area 193: Skeletal Acolyte, Skeletal Executioner, Searing and Soulless Ghouls, Flesh Golem, Araj 1852, Chromie 10667, Andorhal Tower One to Four",
-   "quests 5097, 5098 (watchtowers control troop movements)",
-   "quest 5803 (Araj lords over Andorhal from the city's heart)",
-   "quest 5153 (Chromie in the ruined inn at the northwest corner)",
-   "quest 5154 (Annals of Darrowshire in the city hall)",
-   "quests 4971, 4972"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; Chromie's timeline work and the Annals are premises, not outcomes. Earlier: verified"
- },
- {
-  "id": 2806,
-  "kind": 1,
-  "zone": 28,
-  "sort": 6,
-  "faction": 0,
-  "title": "Felstone Field",
-  "body": "Felstone Field lies northwest of Andorhal, a farm where the Scourge raised one of the four great plague cauldrons of the west. Cauldron Lord Bilemaw guards it with skeletons and ghouls, counted among the greenest troops the Scourge has, though no one wise underestimates them. Upstairs in the farmhouse the ghost of Janice Felstone cowers in a corner, still frantic to send off a parcel she packed before the plague came. Between Felstone Field and Dalson's Tears the Scarlet Crusade has pitched a camp with a command tent, and its crusaders strike at the Scourge and at anyone else who comes near.",
-  "triggers": [
-   [
-    1,
-    199
-   ]
-  ],
-  "sources": [
-   "quests 5216, 5229 descriptions (northwest of Andorhal, greener troops, should not be underestimated)",
-   "quest 5216 reward text (Cauldron Lord Bilemaw)",
-   "quest 5021 description and reward text (ghost upstairs, package in the barn)",
-   "quest 5096 description (Scarlet camp between Felstone Field and Dalson's Tears)",
-   "zone_areas area 199: Command Tent 176210, Scourge Cauldron 176361, Janice Felstone 10778, Janice's Parcel, Scarlet Hunter/Medic/Invoker",
-   "warcraft.wiki.gg/wiki/Felstone_Field (Scarlet party attacked players and Scourge)"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide. The parcel's contents (deed, half-charm) were never in this entry; they were in Janice Felstone 2822, which is converted. Earlier: verified Check: Dropped 'while it gathers dust in the barn': where the parcel lies is what QUEST_DONE 5021 reveals (2822 part 1)."
- },
- {
-  "id": 2807,
-  "kind": 1,
-  "zone": 28,
-  "sort": 7,
-  "faction": 0,
-  "title": "Dalson's Tears",
-  "body": "Almost due north of Andorhal lies the farm once called Dalson's Orchard, known now as Dalson's Tears. The Scourge raised a plague cauldron in its field under Cauldron Lord Malvinious, and rotting cadavers, blighted zombies and skeletal terrors crowd the rows. The farm keeps smaller horrors of its own. A diary lies open in the house, a lone skeleton wanders the grounds, and the outhouse, locked fast from outside, has its door splintered at the frame by something within that moans and batters to get out. A sturdy cabinet stands locked as well, its front deeply scratched by violent attempts to force it.",
-  "triggers": [
-   [
-    1,
-    200
-   ]
-  ],
   "parts": [
    {
     "part": 1,
+    "body": "Araj was brought down at last, though a lich is not so easily ended: from the phylactery left where he fell, a shard was carried home as proof that the lord of Andorhal was overthrown.",
     "triggers": [
-     [
-      5,
-      5058
-     ]
-    ],
-    "body": "The diary's last entry tells the family's end. When Harold Dalson turned, his wife dragged him into the only place she could find that would hold him, locked him in and hid the key on herself. She hoped to flee, but for that she needed money, and their valuables were in the cabinet, whose key she believed Harold kept on him. Worn out, she wrote that she would rest on it.",
-    "sources": [
-     "quest 5058 reward text (Mrs. Dalson's Diary)"
-    ]
-   },
-   {
-    "part": 2,
-    "triggers": [
-     [
-      5,
-      5059
-     ]
-    ],
-    "body": "She never left. The wandering skeleton is what remains of Mrs. Dalson, and the outhouse key was still on her bones. Behind the splintered door waited the ghoul that had been Farmer Dalson, trapped for who knows how long and long past saving, the man she had guessed still carried the key to the family's cabinet.",
-    "sources": [
-     "quest 5059 request and reward texts (key on the skeleton of the former Mrs. Dalson; Farmer Dalson beyond saving)",
-     "quest 5060 reward text (key on Farmer Dalson's remains)"
-    ]
-   }
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Dalson%27s_Tears (formerly Dalson's Orchard; Cauldron Lord Malvinious; Mrs. Dalson roams as a Wandering Skeleton)",
-   "quests 5219, 5231 (almost due north of Andorhal)",
-   "quest 5058 reward text (Mrs. Dalson's Diary)",
-   "quests 5059, 5060 request and reward texts (splintered outhouse door, key on her skeleton, scratched cabinet, key on the ghoul)",
-   "zone_areas area 200: Rotting Cadaver, Blighted Zombie, Skeletal Terror, Wandering Skeleton 10816, Outhouse, Locked Cabinet, Mrs. Dalson's Diary",
-   "wiki cites Arthas: Rise of the Lich King p. 215 for the old name Dalson's Orchard (2009, pre-Cataclysm)"
-  ],
-  "notes": "Converted: The opening keeps the farm as found (the diary, the wandering skeleton, the battered outhouse, the scratched cabinet). The diary's story moved to part 1 (QUEST_DONE 5058, auto-complete, the diary's text); who the skeleton and the ghoul were to part 2 (QUEST_DONE 5059, auto-complete, the outhouse). Earlier: verified; the old farm name comes from the Arthas novel via the wiki."
- },
- {
-  "id": 2808,
-  "kind": 1,
-  "zone": 28,
-  "sort": 8,
-  "faction": 0,
-  "title": "The Writhing Haunt",
-  "body": "Almost due east of Andorhal, close beneath the ruined city walls, a farm has become the Writhing Haunt. Its plague cauldron is guarded by Cauldron Lord Razarch, and rotting and freezing ghouls shamble among fetid zombies in the fields around it. Hidden inside one of the cottages lies Mulgris Deepriver, a tauren druid who came to the Plaguelands to heal what the Scourge had poisoned. He could not save the land alone, and the plague has taken him in turn. Blind and dying, he spends his last breaths asking strangers to grant the diseased wolves and grizzlies of the region a swift and merciful death.",
-  "triggers": [
-   [
-    1,
-    202
-   ]
-  ],
-  "sources": [
-   "quests 5222, 5233 descriptions (almost due east of Andorhal, close to the ruined city walls)",
-   "warcraft.wiki.gg/wiki/The_Writhing_Haunt (Cauldron Lord Razarch; Mulgris hidden inside a house)",
-   "zone_areas area 202: Rotting Ghoul, Freezing Ghoul, Fetid Zombie, Mulgris Deepriver 10739, Scourge Cauldron 176393",
-   "npc_text 3634",
-   "quests 4984, 4985"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; Mulgris is met dying, and his death is told in 2823. Earlier: verified"
- },
- {
-  "id": 2809,
-  "kind": 1,
-  "zone": 28,
-  "sort": 9,
-  "faction": 0,
-  "title": "Gahrron's Withering",
-  "body": "Gahrron's Withering, once Gahrron's Quickening, was the farm of Del Gahrron, out toward the eastern border where the Eastern Plaguelands begin. Its plague cauldron is the last and hardest of the four in the west, for the Scourge has set some of its tougher servants to guard it. No ghouls shamble here. Hungering wraiths, wailing deaths and haunting visions drift through the fields around Cauldron Lord Soulwrath. Beside the barn lies a forgotten shield, once carried by Joseph Redpath of Darrowshire.",
-  "triggers": [
-   [
-    1,
-    201
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Gahrron%27s_Withering (formerly Gahrron's Quickening, owned by Del Gahrron, Soulwrath, Joseph Redpath killed here, his shield)",
-   "quests 5225, 5235 descriptions (last cauldron, tougher minions, wraiths and ghosts, close to where the Eastern Plaguelands begin)",
-   "quest 5225 reward text (Cauldron Lord Soulwrath)",
-   "zone_areas area 201: Hungering Wraith, Wailing Death, Haunting Vision, Redpath's Shield 176207",
-   "page_text 2386 (The Fate of Joseph Redpath, Extended Annals of Darrowshire: defeated at Gahrron's Withering, shield near the barn)",
-   "wiki cites Arthas: Rise of the Lich King p. 215 for the old name Gahrron's Quickening (2009, pre-Cataclysm)"
-  ],
-  "notes": "Converted: Removed the Extended Annals line that the corrupted Joseph Redpath was defeated here and that the dead are drawn to the memory of his evil: Redpath's corruption is the Eastern Plaguelands' reveal (13904 part 1 and 13929 part 1, QUEST_DONE 5154) and the Extended Annals belong to its Darrowshire chain (5210). The shield stays, named as Redpath's as its object is. No parts. Earlier: Redpath's defeat here is now sourced to the in-game Extended Annals of Darrowshire (page_text 2386), so stated as record rather than hearsay. The Darrowshire storyline itself stays with the Eastern Plaguelands."
- },
- {
-  "id": 2810,
-  "kind": 1,
-  "zone": 28,
-  "sort": 10,
-  "faction": 0,
-  "title": "The Weeping Cave",
-  "body": "The Weeping Cave opens in the hills of the northeast, just west of the Thondroril River that runs along the border of the Eastern Plaguelands. Nothing in it is wholesome. Vile slimes and devouring oozes slither through its tunnels, one of them grown far larger than the rest, rotting behemoths lurk in the damp, and plague lurkers and diseased grizzlies prowl the slopes about its mouth. No record that survived the plague tells how it came by its name.",
-  "triggers": [
-   [
-    1,
-    198
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/The_Weeping_Cave (bog beasts and oozes; northeastern Western Plaguelands, just west of the Thondroril River)",
-   "zone_areas area 198: Vile Slime, Large Vile Slime 12387, Devouring Ooze, Rotting Behemoth, Plague Lurker, Diseased Grizzly"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; no Cataclysm-era text (the Thondroril is the border river in 3.3.5 as well). Earlier: Thin source material; the last sentence only says that no account of its name is known."
- },
- {
-  "id": 2811,
-  "kind": 1,
-  "zone": 28,
-  "sort": 11,
-  "faction": 0,
-  "title": "Northridge Lumber Camp",
-  "body": "South of Hearthglen, west of the road that climbs up to the town, stands the Northridge Lumber Mill. Before the last great war it was run by the Dumah family and worked by families such as the Levines, but when war came the Dumahs fled to Stormwind, and the Scarlet Crusade has since taken the mill for itself. Scarlet lumberjacks now cut timber for the Crusade's work in Hearthglen, while diseased wolves and carrion lurkers prowl the edges of the clearing. The mill's old owners have not forgotten it. Nathaniel Dumah has come back as far as Chillwind Camp, and Mickey Levine, whose family once worked here, plots its ruin from the Bulwark.",
-  "triggers": [
-   [
-    1,
-    192
-   ]
-  ],
-  "sources": [
-   "quests 5902, 5904 descriptions (south of Hearthglen, west of the road)",
-   "npc_text 4357 (Nathaniel Dumah: father ran the mill, fled to Stormwind)",
-   "npc_text 4356 (Mickey Levine: family worked the mill)",
-   "quest 5901 description (defending and rebuilding the town)",
-   "zone_areas area 192: Scarlet Lumberjack x25, Diseased Wolf, Carrion Lurker, Foreman Marcrid"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; the termite plot's outcome is not in it. Earlier: verified"
- },
- {
-  "id": 2812,
-  "kind": 1,
-  "zone": 28,
-  "sort": 12,
-  "faction": 0,
-  "title": "Hearthglen",
-  "body": "Hearthglen was once the seat of government for these lands, and when the plague first struck it held out against the Scourge. Today it is the Scarlet Crusade's stronghold in the west. Scarlet workers labor to rebuild the town while paladins, sentinels, magi and priests keep its streets, and Huntsman Radley and Cavalier Durgen lead the forces along Hearthglen Pass below. Atop the guard tower by the gates the Crusade keeps the Mark of the Lightbringer, a holy relic of Uther. Some in the Alliance believe the town holds more than historical importance, and Stormwind's scouts have come to count the Crusade's strength.",
-  "triggers": [
-   [
-    1,
-    190
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Hearthglen (regional seat; held off a Scourge siege until Uther arrived; Scarlet Crusade took control)",
-   "zone_areas area 190: Scarlet Worker x56, Scarlet Paladin, Sentinel, Magus, Priest, High Protector Lorik, Taelan",
-   "quest 6023 description (Radley and Durgen the backbone of the forces outside the town, along Hearthglen Pass)",
-   "quest 9474 description (relic atop their guard tower near the gates)",
-   "quest 6004 description (Alliance feel the town has more than historical importance)",
-   "quest 6025 reward text (Kirsta reports to Stormwind)"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; Kirsta's scouting is told as a premise only. Earlier: verified"
- },
- {
-  "id": 2813,
-  "kind": 1,
-  "zone": 28,
-  "sort": 13,
-  "faction": 0,
-  "title": "Mardenholde Keep",
-  "body": "Mardenholde Keep rises over Hearthglen, the old seat from which the lords of Mardenholde governed these lands. In better days it was a center of trade and commerce, and diplomats of the Alliance often passed through its halls. When Lordaeron fell, the Scarlet Crusade claimed the keep as its headquarters in the region, and its zealots now keep watch over the town below while its workers rebuild it. Today the keep's halls belong to Highlord Taelan Fordring, who waits within for reinforcements from Tyr's Hand.",
-  "triggers": [
-   [
-    1,
-    203
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Hearthglen (region governed from Mardenholde Keep; center of commerce and trade; Alliance diplomats; Tirion Lord of Mardenholde)",
-   "warcraft.wiki.gg/wiki/Western_Plaguelands (Scarlet Crusade took Mardenholde Keep as regional headquarters)",
-   "quest 5861 reward text (Myranda, advisor when Tirion was Lord of Mardenholde, dissented from the Silver Hand's verdict, banished)",
-   "quest 5862 log and request text (Taelan inside Mardenholde Keep; reinforcements from Tyr's Hand)",
-   "warcraft.wiki.gg/wiki/Mardenholde_Keep",
-   "zone_areas area 190 (Scarlet workers, paladins, sentinels); quest 5901 description (defending and rebuilding the town)"
-  ],
-  "notes": "Converted: Removed Tirion's lordship, trial and exile, Myranda's banishment for dissent and Taelan being Tirion's son: these are what the hermit reveals at QUEST_DONE 5742 in the Eastern Plaguelands (13901, 13918, 13926 part 1), and Myranda's part is told from 5861 (EPL's chain). The keep's old lords are kept without names. No parts: the keep has no trigger of its own that reveals them. Earlier: Reframed to the keep itself; Taelan's backstory moved out to avoid repeating his person entry. Area 203 is in reachable_areas (indoor WMO area; Taelan's map-grid area reads 190). Tirion's redemption chain belongs to the Eastern Plaguelands. Check: Opening rechecked: lords of Mardenholde (wiki: region governed from the keep, Tirion its lord), zealots watching the town while workers rebuild it (quest 5901: defending and rebuilding the town; zone_areas 190 Scarlet workers, paladins, sentinels); no claim beyond the original, and nothing contradicts eastern_plaguelands.json 13901, 13918, 13926."
- },
- {
-  "id": 2814,
-  "kind": 2,
-  "zone": 28,
-  "sort": 1,
-  "faction": 0,
-  "title": "Araj the Summoner",
-  "body": "Araj the Summoner is the lich who rules Andorhal for the Scourge. Once master of Scholomance, he left the school on Caer Darrow to claim the ruined city as his own, and from its heart he oversees the plague cauldrons poisoning the farms around it. A formidable retinue of guardians attends him, and the garrison filling the old streets stands between him and his foes, so both Commander Valorfist and High Executor Derrington know it will take many allies to reach him. Both demand the same proof of his end: a shard of his phylactery.",
-  "triggers": [
-   [
-    3,
-    1852
-   ],
-   [
-    4,
-    105
-   ],
-   [
-    4,
-    211
-   ]
-  ],
-  "parts": [
-   {
-    "part": 1,
-    "triggers": [
-     [
-      3,
-      1852
-     ],
      [
       5,
       105
@@ -420,403 +325,71 @@
       211
      ]
     ],
-    "body": "Araj can be brought down, though a lich is not so easily ended. When his guardians are broken and his body destroyed, his phylactery remains where he fell, and from it the shard his enemies demand can be taken as proof that the lord of Andorhal was overthrown.",
     "sources": [
-     "quests 105, 211 descriptions and reward texts (destroy Araj, phylactery shard as proof, the lich finally defeated)",
-     "warcraft.wiki.gg/wiki/Araj_the_Summoner (phylactery appears in place of his corpse)"
+     "warcraft.wiki.gg/wiki/Andorhal (grain distribution point, cult infected grain sent to northern villages, Araj headquarters)"
     ]
    }
   ],
+  "related": [
+   91000021,
+   92000000,
+   2817
+  ],
   "sources": [
+   "warcraft.wiki.gg/wiki/Andorhal (grain distribution point, cult infected grain sent to northern villages, Araj headquarters)",
+   "zone_areas area 193: Skeletal Acolyte, Skeletal Executioner, Searing and Soulless Ghouls, Flesh Golem, Araj 1852, Chromie 10667, Andorhal Tower One to Four",
+   "quests 5097, 5098 (watchtowers control troop movements)",
+   "quest 5803 (Araj lords over Andorhal from the city's heart)",
+   "quest 5153 (Chromie in the ruined inn at the northwest corner)",
+   "quest 5154 (Annals of Darrowshire in the city hall)",
+   "quests 4971, 4972",
    "quests 105, 211 descriptions and reward texts",
    "quests 5803, 5804 descriptions (former leader of Scholomance, scarab seized from his fallen phylactery)",
    "warcraft.wiki.gg/wiki/Araj_the_Summoner (headmaster of Scholomance, Andorhal headquarters, oversaw the cauldrons; phylactery appears in place of his corpse)",
-   "creature 1852 faction 21 (Scourge), area 193"
+   "creature 1852 faction 21 (Scourge), area 193",
+   "quests 5092, 5096, 5097, 5098, 105, 211 (descriptions, request and reward texts)"
   ],
-  "notes": "Converted: The scarab as a prize moved out of the opening (it is first told at QUEST_ACCEPT 5803/5804, 2826 part 2). His fall added as part 1 (KILL 1852, QUEST_DONE 105, QUEST_DONE 211). Earlier: verified"
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
-  "id": 2815,
-  "kind": 2,
+  "id": 2806,
+  "kind": 1,
   "zone": 28,
-  "sort": 2,
-  "faction": 1,
-  "title": "Commander Ashlam Valorfist",
-  "body": "Commander Ashlam Valorfist leads Chillwind Camp, posted there by Stormwind and its allies to hold back the rising tide of the Scourge. He is a methodical soldier. Finding Andorhal's western and northern roads too strongly held, he plans to strike through Sorrow Hill and the weaker eastern road, to mark the city's watchtowers with beacon torches, and at last to bring down Araj the Summoner. He trusts the cauldron campaign to High Priestess MacDonnell and the Scholomance key to Alchemist Arbington, and he means to turn the scourgestones that High Priest Thel'danis cleanses into Holy Mightstones, to bathe the Scourge in righteous fire. Success he rewards loudly, in Stormwind's name.",
-  "triggers": [
-   [
-    2,
-    10838
-   ]
-  ],
-  "sources": [
-   "npc_text 3754 (Valorfist gossip)",
-   "quests 5092, 5097, 211",
-   "quests 5215, 5533",
-   "quests 8414, 8416, 8418 (Holy Mightstone, righteous fire)",
-   "quest 5237 reward text",
-   "creature_template 10838 faction 123 (Stormwind)",
-   "creature_queststarter: 8418 Forging the Mightstone starts at Valorfist 10838"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; his plans are premises. Earlier: Reworded the opening (too close to npc_text 3754) and the Mightstone line (Thel'danis cleanses, Valorfist's plan makes the Mightstones). Faction 1: Valorfist uses an Alliance faction template and is hostile to the Horde."
- },
- {
-  "id": 2816,
-  "kind": 2,
-  "zone": 28,
-  "sort": 3,
+  "sort": 0,
   "faction": 0,
-  "title": "Highlord Taelan Fordring",
-  "body": "Taelan Fordring is Highlord of the Scarlet Crusade in Hearthglen and master of Mardenholde Keep, the town's old seat of government. He rules the Crusade's stronghold in the west, where Scarlet workers rebuild the town under the eyes of paladins, sentinels, magi and priests. His crusaders attack outsiders on sight, and his officers Huntsman Radley and Cavalier Durgen hold the pass below the town, while the Highlord himself waits in the keep for reinforcements from Tyr's Hand.",
+  "title": "Felstone Field",
+  "body": "Felstone Field, northwest of Andorhal, is one of four farms where the Scourge raised a great plague cauldron, guarded here by Cauldron Lord Bilemaw. Upstairs in the farmhouse the ghost of Janice Felstone cowers in a corner, frantic to send off a parcel she packed before the plague came. Nearby the Scarlet Crusade has pitched a camp of its own.",
   "triggers": [
    [
-    3,
-    1842
-   ],
-   [
-    2,
-    1842
+    1,
+    199
    ]
   ],
   "parts": [
    {
     "part": 1,
-    "triggers": [
-     [
-      2,
-      1842
-     ]
-    ],
-    "body": "The Highlord carries a name heavier than his rank. He is the son of Tirion Fordring, though after Tirion's exile his mother told the boy that his father had died, and he grew up believing it. Taelan became a paladin of the Silver Hand and fought the Scourge until the order was shattered, then found a place in the Scarlet Crusade and rose to become its Highlord.",
-    "sources": [
-     "quest 5781 description (his mother told him Tirion had died)",
-     "quest 5845 description (fought on until the Silver Hand was destroyed)",
-     "quest 5862 (Taelan is spoken to under Myranda's Scarlet illusion; creature_template 1842 gossip_menu_id 0, questgiver for 5944, ender of 5862)"
-    ]
-   }
-  ],
-  "sources": [
-   "quest 5781 description (his mother told him Tirion had died)",
-   "quest 5845 description (fought on until the Silver Hand was destroyed)",
-   "creature_template 1842 subname Highlord of the Scarlet Crusade, faction 67 (Scarlet Crusade, hostile to both factions), npcflag questgiver",
-   "quest 5861 description (Taelan and his Scarlet Crusaders attack on sight)",
-   "quest 6023 description (Radley and Durgen hold Hearthglen Pass)",
-   "quest 5862 log and request text (inside Mardenholde Keep; reinforcements from Tyr's Hand)",
-   "warcraft.wiki.gg/wiki/Taelan_Fordring",
-   "warcraft.wiki.gg/wiki/Hearthglen (Taelan took control of the town)",
-   "zone_areas area 190 (Scarlet Worker, Paladin, Sentinel, Magus, Priest)"
-  ],
-  "notes": "Converted: Opening is the Highlord as met; his parentage, his mother's lie and his Silver Hand past moved to part 1 (TALK 1842): he can be spoken to only under Myranda's illusion in 5862, after 5742 (EPL tells he is Tirion's son), 5781 (the false grave) and 5845 (his last stand) have been earned, so the part repeats only what the Eastern Plaguelands has already revealed. His fate stays with EPL (5944). KILL 1842 still unlocks the opening alone. Earlier: Quest 5944 trigger and the chain's ending removed (Tirion's redemption chain belongs to the Eastern Plaguelands). 5862 was dropped as a trigger: it is part of Tirion's chain (follows 5861 from Tirion). Triggers are now KILL 1842 and TALK 1842 (he is only talkable under Myranda's illusion). Faction 0: Scarlet faction 67 is hostile to both sides. Check: Part 1 kept on TALK 1842: Taelan (faction 67, hostile to both sides; npcflag questgiver, no gossip menu) can only be spoken to under Myranda's Scarlet Illusion (spell 17961: force reaction friendly to the Scarlet Crusade, plus transform), whose gossip option (menu 3801 option 0) shows only while 5862 is complete in the log or rewarded and 5944 is not done; so TALK fires only after EPL's 5742, 5781 and 5845 are earned, and KILL 1842 still unlocks the opening alone. The part gates against KILL, so it is not merged; DONE 5862 not used (EPL's chain)."
- },
- {
-  "id": 2817,
-  "kind": 2,
-  "zone": 28,
-  "sort": 4,
-  "faction": 0,
-  "title": "Chromie",
-  "body": "Chromie is the name the bronze dragon Chronormu takes among mortals, and she wears the form of a small, cheerful gnome, choosing not to drown in the sorrow of the places she is charged to watch. She has made her home in the ruined inn of Andorhal, in a room unlike the rest of the city, for she works from another timeline so as not to contaminate this one. Someone, most likely the Scourge, has tampered with Andorhal's past: temporal parasites infest the silos, and watches lie with their hands frozen at the moment the plague struck. Andorhal is not the only sorrow she watches, for the old tragedy of Darrowshire has caught her eye as well.",
-  "triggers": [
-   [
-    2,
-    10667
-   ],
-   [
-    4,
-    4971
-   ]
-  ],
-  "sources": [
-   "npc_text 3584, 3585 (Chronormu, bronze dragonflight, choice of visual demeanor, sentry of sorrowful places)",
-   "quests 4971, 4972 descriptions and texts",
-   "quest 5153 (strange gnome, ruined inn of Andorhal)",
-   "quests 5154, 5941, 5721 (saving Joseph Redpath)"
-  ],
-  "notes": "Converted: The doomed hero of Darrowshire who might be saved (EPL's 13929 opening at QUEST_ACCEPT 5154, after Marlene's 5153) is now only a pointer to Darrowshire. No parts. Earlier: verified"
- },
- {
-  "id": 2818,
-  "kind": 2,
-  "zone": 28,
-  "sort": 5,
-  "faction": 0,
-  "title": "Myranda the Hag",
-  "body": "Myranda the Hag was once a master illusionist of Lordaeron. In better days she was a trusted advisor at Mardenholde Keep, until she openly dissented from a verdict of the Order of the Silver Hand and was banished for her insolence. Now she lives near Uther's Tomb on Sorrow Hill and warns passers-by to walk lightly. Her old loyalties endure, and she still weaves illusions and guises for those she trusts, though her craft fades with time and distance. Her friends are not all of one side, and she has aided the Horde before.",
-  "triggers": [
-   [
-    2,
-    11872
-   ]
-  ],
-  "parts": [
-   {
-    "part": 1,
-    "body": "To one who came bearing Tirion's gifts, Myranda told the rest. It was Tirion Fordring she had served, his most trusted advisor in his days as Lord of Mardenholde, and his was the verdict she had spoken against. She had known this day would come, and she agreed to weave the illusion that would carry his gifts into Hearthglen.",
-    "triggers": [
-     [
-      4,
-      5862
-     ]
-    ],
-    "sources": [
-     "quest 5861 completion text (I knew this day would come) and reward text (Tirion's most trusted advisor when he held rank as Lord of Mardenholde; dissented the verdict; banished)",
-     "quest 5862 description (an illusion to allow entry into Hearthglen); RewardNextQuest of 5861, QuestType 2, Flags 0, started by Myranda 11872"
-    ]
-   },
-   {
-    "part": 2,
-    "triggers": [
-     [
-      5,
-      6568
-     ]
-    ],
-    "body": "To the Horde she is an old friend. Handed a letter left blank on purpose, she read in it the intentions of its maker and smiled, asking how Rexxar fared. She owes the Warchief a favor or two, she said, and so she agreed to weave an illusion that could fool the black dragonflight.",
-    "sources": [
-     "quest 6568 description and reward text (master illusionist, helped us before; the blank letter, Rexxar, owes the Warchief)",
-     "quest 6569 description (the illusion for the black dragonflight)"
-    ]
-   }
-  ],
-  "sources": [
-   "quest 5861 reward text (advisor, dissent, banished)",
-   "quest 6568 description and reward text (master illusionist of Lordaeron, Rexxar, owes the Warchief)",
-   "quest 5862 description (illusion limits)",
-   "npc_text 4633, 4773",
-   "posarea: Myranda 11872 in area 197",
-   "warcraft.wiki.gg/wiki/Myranda_the_Hag"
-  ],
-  "notes": "Converted: Tirion's name and his trial removed from the opening (that the hermit is Tirion, Lord of Mardenholde, is EPL's 5742 reveal; Myranda's own account is 5861's reward text, a quest of EPL's chain): she is now a trusted advisor at Mardenholde Keep banished for dissenting from a verdict of the Silver Hand. Rexxar and the Warchief's favor moved to part 1 (QUEST_DONE 6568, Horde, turned in to her; filed under Desolace and used by no zone file). Earlier: Softened the Scarlet guise line (a Tirion chain detail) to her illusions in general; 'helped Rexxar' changed to aiding the Horde, as quest 6568 states. Check: Added part 1 (QUEST_ACCEPT 5862, offered by Myranda at the 5861 turn-in; EPL uses ACCEPT 5861 but neither ACCEPT nor DONE 5862): Tirion named as the lord she advised and whose verdict she opposed, restoring what the conversion generalised away; it comes after EPL's 5742 reveal and agrees with EPL 13926 part 4 (an old and trusted confidant). The Rexxar part is now part 2."
- },
- {
-  "id": 2819,
-  "kind": 2,
-  "zone": 28,
-  "sort": 6,
-  "faction": 0,
-  "title": "Alexi and Weldon Barov",
-  "body": "Alexi and Weldon Barov are the last heirs of House Barov, whose holdings once took in Caer Darrow, Brill, Tarren Mill and Southshore. Alexi stayed when the family gave itself to the Scourge and is now undead. Weldon fled during the war and remains human, a cowardice his brother despises, while Weldon curses himself for once sparing Alexi's life. The deeds to the family fortune lie somewhere in Scholomance, and each brother wants them found before the other can claim them. Alexi lounges under Horde protection at the Bulwark, Weldon under Alliance guard at Chillwind Camp.",
-  "triggers": [
-   [
-    2,
-    11022
-   ],
-   [
-    2,
-    11023
-   ]
-  ],
-  "parts": [
-   {
-    "part": 1,
-    "triggers": [
-     [
-      4,
-      5342
-     ],
-     [
-      4,
-      5344
-     ]
-    ],
-    "body": "With the deeds recovered, the brother who holds them sees one obstacle left: the other. No rival heir may live to contest the fortune, so he pays for his brother's head, to be taken from under the guard of the opposing camp by whatever means the hired blade sees fit.",
-    "sources": [
-     "quests 5342, 5344 descriptions (slay him, return his head; under Alliance protection at Chillwind Camp, under Horde protection at the Bulwark)"
-    ]
-   },
-   {
-    "part": 2,
-    "triggers": [
-     [
-      5,
-      5342
-     ],
-     [
-      5,
-      5344
-     ]
-    ],
-    "body": "The head was brought back, and the surviving brother crowed over it. House Barov had one heir now, he gloated, and its fortune was secure and his alone, and he sent the hired killer away with a purse and a parting insult.",
-    "sources": [
-     "quests 5342, 5344 reward texts (only I hold the power and fortune; my fortune secure; keep the change, leave my sight)"
-    ]
-   }
-  ],
-  "sources": [
-   "quests 5341, 5343 descriptions (deeds to Caer Darrow, Brill, Tarren Mill, Southshore; Weldon fled the war and remains human; Weldon regrets sparing Alexi)",
-   "quests 5342, 5344 descriptions (each sheltered by a faction; each wants the other's head)",
-   "creature_template 11022 faction 83 (Undercity), 11023 faction 123 (Stormwind)",
-   "warcraft.wiki.gg/wiki/Caer_Darrow (Barov deal with Kel'Thuzad)"
-  ],
-  "notes": "Converted: The bounty on each brother's head moved to part 1 (QUEST_ACCEPT 5342 Horde, 5344 Alliance, both filed here); the surviving brother's gloating to part 2 (QUEST_DONE 5342, 5344). The deeds quests 5341/5343 (filed under Scholomance) are not used. Earlier: Faction 0: Alexi is reachable by the Horde and Weldon by the Alliance. Alexi stands in Tirisfal's Bulwark (area 152) but his quests concern this zone. Check: Part 1 reworded from 'each brother pays' to the brother who holds the deeds: ACCEPT 5342 (Horde) tells only Alexi's bounty and 5344 (Alliance) only Weldon's. Part 2: 'power' dropped (only Alexi's 5342 reward says it)."
- },
- {
-  "id": 2820,
-  "kind": 2,
-  "zone": 28,
-  "sort": 7,
-  "faction": 0,
-  "title": "Eva Sarkhoff",
-  "body": "Eva Sarkhoff and her husband Lucien served House Barov at Caer Darrow, she as head maid. When the Barovs gave themselves to the Scourge, their servants became subjects for the experiments of Doctor Theolen Krastinov, the Butcher, and the Sarkhoffs died in his hands. Their spirits linger on the island. Eva greets strangers with the courtesy of an old household, then asks that the Butcher be found within Scholomance and destroyed, and that their remains be burned to ash, for he is responsible for the deaths of thousands.",
-  "triggers": [
-   [
-    2,
-    11216
-   ]
-  ],
-  "parts": [
-   {
-    "part": 1,
-    "triggers": [
-     [
-      5,
-      5382
-     ]
-    ],
-    "body": "With the Butcher destroyed and their remains burned, Eva felt her spirit begin to heal, but the work was not done. Krastinov served a dark master, Kirtonos the Herald, who still lives, and it is said that Jandice Barov stewards the blood of innocents from the Butcher to him.",
-    "sources": [
-     "quest 5382 reward text (my spirit healing; more to be done)",
-     "quest 5515 description (Krastinov's master Kirtonos still lives; Jandice Barov stewards the blood of innocents)"
-    ]
-   },
-   {
-    "part": 2,
-    "triggers": [
-     [
-      5,
-      5384
-     ]
-    ],
-    "body": "Summoned by the blood of innocents, Kirtonos came and was destroyed, and with his death, Eva said, a chapter of the horrible tale of Scholomance came to a close. In thanks the Sarkhoffs gave a piece of their own essence, which lets its bearer speak with the other lost souls of Caer Darrow.",
-    "sources": [
-     "quest 5384 description and reward text",
-     "item 13544 Spectral Essence (communication with the deceased of Caer Darrow)"
-    ]
-   }
-  ],
-  "sources": [
-   "npc_text 4041 (Eva gossip)",
-   "quests 5382, 5515, 5384 descriptions and reward texts (Krastinov, burn our remains, Kirtonos, piece of our essence)",
-   "item 13544 Spectral Essence (communication with the deceased of Caer Darrow)",
-   "warcraft.wiki.gg/wiki/Eva_Sarkhoff (head maid and butler of the Barovs, experimented on by Krastinov)",
-   "warcraft.wiki.gg/wiki/Caer_Darrow (servants used as experiments)"
-  ],
-  "notes": "Converted: Kirtonos and the Spectral Essence moved out of the opening. Part 1 (QUEST_DONE 5382): the Butcher destroyed, his master Kirtonos and Jandice's role; part 2 (QUEST_DONE 5384): Kirtonos destroyed and the essence given. Both quests are filed under Scholomance but given and turned in by Eva on Caer Darrow; no zone file uses them (a future Scholomance file must not). Earlier: verified"
- },
- {
-  "id": 2821,
-  "kind": 2,
-  "zone": 28,
-  "sort": 8,
-  "faction": 0,
-  "title": "Marlene Redpath",
-  "body": "Marlene Redpath is a wandering spirit who haunts her old house on the hill south of Andorhal. So many died at the battle of Darrowshire, she says, and worse befell others. When the battle began she hid her young niece, Pamela, and she has never learned what became of the girl, though her heart still longs to know. Darrowshire lies to the east, beyond Gahrron's Withering. Among the graves of Sorrow Hill below stands the monument of Captain Joseph Redpath of Darrowshire, who bore her family's name.",
-  "triggers": [
-   [
-    2,
-    10927
-   ]
-  ],
-  "sources": [
-   "quest 5142 description (so many died, and worse; hid her niece Pamela; Darrowshire to the east beyond Gahrron's Withering)",
-   "quest 5152 (house on a hill south of Andorhal)",
-   "gameobject 176145 Joseph Redpath's Monument; page_text 2372 (Captain Joseph Redpath of Darrowshire)",
-   "posarea: Marlene 10927 in area 197",
-   "quest 5153 description"
-  ],
-  "notes": "Converted: Removed Joseph's twisted soul, his trampled body, the wedding ring under his monument and Marlene's hope in the gnome (all quest 5153, given by her after 5152: the Darrowshire chain and Redpath's corruption are the Eastern Plaguelands' to tell, 13904, 13928, 13929). Also dropped that Pamela is Joseph's daughter (EPL's 13928 part 3, QUEST_DONE 5152). The opening is now what her own quest 5142 tells. No parts: her quests are EPL's. Earlier: The Darrowshire battle and Pamela are left to the Eastern Plaguelands; quest triggers 5142 and 5152 are avoided for that reason. Check: Added part 1 (QUEST_ACCEPT 5153, A Strange Historian, Marlene's own quest: it starts with her and ends with Chromie, both in this zone, is unused by any zone file, and follows EPL's DONE 5152): Joseph twisted into a monster, his trampled body, the wedding ring under his monument and her hope in Chromie, all lost in the conversion. It is where the quest flow tells them, before EPL's Annals (DONE 5154) tell how he was corrupted.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "Marlene wishes her brother Joseph could be with his daughter again, but she knows it cannot be. The Scourge twisted his soul and made him a monster, and his body was trampled and destroyed years ago. Yet his wedding ring still lies beneath his monument on Sorrow Hill, and she hopes that Chromie, a strange gnome of very strange powers in the ruined inn of Andorhal, might somehow change his fate.",
-    "triggers": [
-     [
-      4,
-      5153
-     ]
-    ],
-    "sources": [
-     "quest 5153 description (soul twisted, became a monster; body trampled and destroyed years ago; wedding ring under the monument; Chromie, strange gnome with very strange powers, ruined inn at the northwest corner of Andorhal)",
-     "quest 5153: QuestType 2, Flags 8, PrevQuestID 5152, starter Marlene 10927, ender Chromie 10667 (both in Western Plaguelands); no zone file uses it"
-    ]
-   }
-  ]
- },
- {
-  "id": 2822,
-  "kind": 2,
-  "zone": 28,
-  "sort": 9,
-  "faction": 0,
-  "title": "Janice Felstone",
-  "body": "Janice Felstone did not escape the plague. Her ghost cowers in an upstairs corner of the Felstone farmhouse, only half aware of the living, murmuring that time is running out for her and for everyone. She is frantic to send off a parcel before it is too late. She meant to ride out with it, she says, and it should still be by her horse, though where that is, and where the parcel was bound, she cannot make clear.",
-  "triggers": [
-   [
-    2,
-    10778
-   ],
-   [
-    4,
-    5021
-   ]
-  ],
-  "parts": [
-   {
-    "part": 1,
-    "triggers": [
-     [
-      5,
-      5021
-     ]
-    ],
-    "body": "The parcel waits in the barn, dusty and overlooked among the ruin. It is addressed in a hurried hand to her family, and its delivery was due more than four years ago. Whether the one it was meant for outlived the plague the farm cannot say, but the census keepers of the cities may know.",
-    "sources": [
-     "quest 5021 reward text (package in the barn)",
-     "quests 5022, 5023 descriptions (hurried hand; over four years late; the Stormwind and Undercity censuses)"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "The name on the parcel, read closely, is Emma Felstone of Stormwind. Whether she is even alive no one at the farm can say, but Stormwind's City Hall keeps records of the people of the city, and the Royal Factors of its census may know where she can be found.",
-    "triggers": [
-     [
-      4,
-      5022
-     ]
-    ],
-    "sources": [
-     "quest 5022 description (addressed to an Emma Felstone of Stormwind; Stormwind City Hall records, Royal Factors of the Stormwind Census); Alliance only (AllowableRaces 1101), started from the parcel 175894 in this zone, unused by any zone file"
-    ]
-   },
-   {
-    "part": 3,
-    "triggers": [
-     [
-      5,
-      5050
-     ]
-    ],
-    "body": "The parcel reached her family at last. It held her personal effects, among them the deed to the farm, which her kin chose not to reclaim, and half of a good luck charm; her husband had held the other half. The half-charm was sent back in the hope it would let her rest, but the ghost only looked up and asked her John where he had put his half, for they cannot be together without both.",
-    "sources": [
-     "quest 5050 description (personal effects, deed, half charm, husband had the other half)",
-     "quest 5050 reward text and 5051 description"
-    ]
-   },
-   {
-    "part": 4,
+    "body": "The parcel reached her kin at last. It held half of a luck charm, and only when her husband John's half was found on the farm and the charm made whole did Janice's ghost find peace.",
     "triggers": [
      [
       5,
       5051
      ]
     ],
-    "body": "John's half was found on the farm and the charm made whole. The moment she grasped it her shimmering form changed, and she looked out with clear, sad eyes. She was free, she said, and needed the charm no more, and she pressed it on the one who had freed her, in the hope it would bring them the solace it had brought her.",
     "sources": [
-     "quest 5051 reward text"
+     "quests 5216, 5229 descriptions (northwest of Andorhal, greener troops, should not be underestimated)"
     ]
    }
   ],
+  "related": [
+   91000021
+  ],
   "sources": [
+   "quests 5216, 5229 descriptions (northwest of Andorhal, greener troops, should not be underestimated)",
+   "quest 5216 reward text (Cauldron Lord Bilemaw)",
+   "quest 5021 description and reward text (ghost upstairs, package in the barn)",
+   "quest 5096 description (Scarlet camp between Felstone Field and Dalson's Tears)",
+   "zone_areas area 199: Command Tent 176210, Scourge Cauldron 176361, Janice Felstone 10778, Janice's Parcel, Scarlet Hunter/Medic/Invoker",
+   "warcraft.wiki.gg/wiki/Felstone_Field (Scarlet party attacked players and Scourge)",
    "quest 5021 description and reward text",
    "quests 5022, 5023 descriptions (addressed to Emma Felstone of Stormwind or Jeremiah Felstone of Lordaeron)",
    "quest 5048 reward text (Emma: my sister)",
@@ -825,43 +398,81 @@
    "npc_text 3668 (Janice gossip: time is running out)",
    "quest 5050 reward text (half-charm returned; where did you put your half)"
   ],
-  "notes": "Converted: The parcel's deed and half-charm (Undercity's 149716 part 3, QUEST_ACCEPT 5050) moved out of the opening. Part 1 (QUEST_DONE 5021, the parcel found): its addressees; part 2 (QUEST_DONE 5050, the half-charm returned to her, both factions): the contents and her plea for John's half; part 3 (QUEST_DONE 5051): the charm made whole and her release, from 5051's reward text. 5022, 5048 (Alliance census) are left unused; Undercity holds 5023, 5049 and ACCEPT 5050. Earlier: Reworded one phrase that was verbatim quest text. The Undercity entry The Jeremiah Blues tells Jeremiah's side; this entry stays with Janice and the farm. Check: Part 1 no longer names both addressees (DONE 5021 shows each faction only its own: 5022 Emma for the Alliance, 5023 Jeremiah for the Horde); Emma moved to a new Alliance part 2 (QUEST_ACCEPT 5022); Jeremiah stays with Undercity 149716 (ACCEPT 5023). Old parts 2 and 3 are now 3 and 4; they agree with 149716 part 3 (deed not reclaimed, the husband's half)."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
-  "id": 2823,
-  "kind": 2,
+  "id": 2807,
+  "kind": 1,
   "zone": 28,
-  "sort": 10,
+  "sort": 0,
   "faction": 0,
-  "title": "Mulgris Deepriver",
-  "body": "Mulgris Deepriver is a tauren druid who came alone to the Plaguelands, hoping to heal the damage the Scourge had done to nature. There was little one druid could do. He tried to cure the suffering animals until the plague took him as well, and he now lies blind and dying in a cottage at the Writhing Haunt. He asks any who will listen, whatever their race, to put aside their differences and grant the diseased wolves and grizzlies a swift and merciful death.",
+  "title": "Dalson's Tears",
+  "body": "North of Andorhal lies the farm once called Dalson's Orchard. The Scourge raised a plague cauldron in its field under Cauldron Lord Malvinious, and the farm keeps smaller horrors of its own: a diary open in the house, a lone skeleton wandering the grounds, and an outhouse locked from outside, its door splintered by something within that batters to get out.",
   "triggers": [
    [
-    2,
-    10739
-   ],
-   [
-    4,
-    4984
+    1,
+    200
    ]
   ],
   "parts": [
    {
     "part": 1,
+    "body": "The diary told the family's end. When Harold Dalson turned, his wife locked him in the outhouse and meant to flee, but she never left: the wandering skeleton was hers, the key still on her bones.",
+    "triggers": [
+     [
+      5,
+      5059
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Dalson%27s_Tears (formerly Dalson's Orchard; Cauldron Lord Malvinious; Mrs. Dalson roams as a Wandering Skeleton)"
+    ]
+   }
+  ],
+  "related": [
+   91000021
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Dalson%27s_Tears (formerly Dalson's Orchard; Cauldron Lord Malvinious; Mrs. Dalson roams as a Wandering Skeleton)",
+   "quests 5219, 5231 (almost due north of Andorhal)",
+   "quest 5058 reward text (Mrs. Dalson's Diary)",
+   "quests 5059, 5060 request and reward texts (splintered outhouse door, key on her skeleton, scratched cabinet, key on the ghoul)",
+   "zone_areas area 200: Rotting Cadaver, Blighted Zombie, Skeletal Terror, Wandering Skeleton 10816, Outhouse, Locked Cabinet, Mrs. Dalson's Diary",
+   "wiki cites Arthas: Rise of the Lich King p. 215 for the old name Dalson's Orchard (2009, pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 2808,
+  "kind": 1,
+  "zone": 28,
+  "sort": 0,
+  "faction": 0,
+  "title": "The Writhing Haunt",
+  "body": "East of Andorhal, under the city walls, a farm has become the Writhing Haunt, its plague cauldron guarded by Cauldron Lord Razarch. In one of its cottages lies Mulgris Deepriver, a tauren druid who came alone to heal what the Scourge had poisoned. The plague took him too, and blind and dying he asks strangers to give the diseased wolves and grizzlies a merciful death.",
+  "triggers": [
+   [
+    1,
+    202
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Sensing his end, Mulgris wrote what he had learned of the plague into a glyphed oaken branch meant for the Cenarion Circle. Then, with the suffering beasts at rest, he lay still on the cottage floor.",
     "triggers": [
      [
       5,
       4985
      ]
     ],
-    "body": "When the grizzlies had been put down, Mulgris had one thing more to give. Sensing his end, he had written what he had learned of the plague into a glyphed oaken branch, meant for his friends in the Cenarion Circle. The creatures of this land could rest now, he said, and so would he, and with a last sigh he lay still on the cottage floor.",
     "sources": [
-     "quest 4985 request and reward texts (vision faded; the branch; his death)",
-     "quests 4986, 4987 descriptions (Cenarion Circle)"
+     "quests 5222, 5233 descriptions (almost due east of Andorhal, close to the ruined city walls)"
     ]
    },
    {
     "part": 2,
+    "body": "The branch reached the Cenarion Circle, and in its glyphs the druids found a great store of lore about the Scourge's plague. They promised that his work would not be wasted.",
     "triggers": [
      [
       5,
@@ -872,339 +483,198 @@
       4987
      ]
     ],
-    "body": "The branch, warm to the touch, carried within it the place it was meant to go, and it reached the Cenarion Circle. In its glyphs the druids found a great store of lore about the plague the Scourge spreads across the land, and they promised that his work would not be wasted.",
     "sources": [
-     "quests 4986, 4987 descriptions and reward texts (Darnassus and Thunder Bluff; lore on the plague; we will make good use of it, we will study it)"
+     "quests 5222, 5233 descriptions (almost due east of Andorhal, close to the ruined city walls)"
     ]
    }
   ],
+  "related": [
+   91000021
+  ],
   "sources": [
+   "quests 5222, 5233 descriptions (almost due east of Andorhal, close to the ruined city walls)",
+   "warcraft.wiki.gg/wiki/The_Writhing_Haunt (Cauldron Lord Razarch; Mulgris hidden inside a house)",
+   "zone_areas area 202: Rotting Ghoul, Freezing Ghoul, Fetid Zombie, Mulgris Deepriver 10739, Scourge Cauldron 176393",
+   "npc_text 3634",
+   "quests 4984, 4985",
    "npc_text 3634 (put aside your differences, dying plea)",
    "quests 4984, 4985 descriptions, request and reward texts (succumbed to the plague, vision faded, his death)",
    "quests 4986, 4987 (Glyphed Oaken Branch to the Cenarion Circle; Nara Wildmane: a good friend, lore about the plague)"
   ],
-  "notes": "Converted: His death and the oaken branch moved to part 1 (QUEST_DONE 4985, where he dies); the branch reaching the Cenarion Circle added as part 2 (QUEST_DONE 4986 Alliance, 4987 Horde, filed here). Earlier: verified Check: Part 2: 'freely given' (only the Darnassus reward text says it) and 'study it well' (only Thunder Bluff's) made 'his work would not be wasted' (4986: we will make good use of this; 4987: his efforts have not gone in vain)."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
-  "id": 2824,
-  "kind": 3,
+  "id": 2809,
+  "kind": 1,
   "zone": 28,
-  "sort": 1,
+  "sort": 0,
   "faction": 0,
-  "title": "The Scourge Cauldrons",
-  "body": "Eight great cauldrons stand in the lands of old Lordaeron, four in the west and four in the east, pouring the Scourge's plague into the air. The necromantic might of Kel'Thuzad is too strong for anyone to simply shut them down, so the defenders of Chillwind Camp and the Bulwark mean to subvert them instead, changing the plague they brew into something that harms the Scourge. Under High Priestess MacDonnell and Shadow Priestess Vandis, champions are to strike at the western cauldrons one by one: Felstone Field with its greener troops first, then Dalson's Tears, the Writhing Haunt, and at last Gahrron's Withering and its wraiths. Each cauldron lord is thought to carry a key, and from each vessel a sample must be drawn for Alchemist Arbington and Apothecary Dithers to study.",
+  "title": "Gahrron's Withering",
+  "body": "Gahrron's Withering, once Gahrron's Quickening, was the farm of Del Gahrron near the border of the Eastern Plaguelands. Its plague cauldron is the hardest of the four in the west: no ghouls shamble here, only wraiths and wailing spirits around Cauldron Lord Soulwrath. Beside the barn lies a forgotten shield once carried by Joseph Redpath of Darrowshire.",
   "triggers": [
    [
-    4,
-    5215
-   ],
-   [
-    4,
-    5228
+    1,
+    201
    ]
   ],
-  "parts": [
-   {
-    "part": 1,
-    "triggers": [
-     [
-      5,
-      5217
-     ],
-     [
-      5,
-      5230
-     ]
-    ],
-    "body": "The first cauldron gave way. Bilemaw's key opened the access panel at Felstone Field, and a sample of the poisons swirling inside was drawn off. From it a counter agent can be brewed and pumped back into the air to weaken the Scourge. It will be an ongoing ordeal, for the cauldrons must be struck again and again, but kept up, it could give the living a great advantage when battle comes.",
-    "sources": [
-     "quests 5216, 5229 reward texts (Bilemaw's key, access panel, spigot)",
-     "quests 5217, 5230 reward texts (counter agent, ongoing ordeal, advantage in battle)"
-    ]
-   },
-   {
-    "part": 2,
-    "triggers": [
-     [
-      5,
-      5226
-     ],
-     [
-      5,
-      5236
-     ]
-    ],
-    "body": "In time the last cauldron, at Gahrron's Withering, was opened too. With samples from all four, the counter agents can be poured in through four separate vessels, and the Scourge will be hard pressed to keep its enemies out of all of them, even with Kel'Thuzad behind it. The work will never truly end, but the plague can now be turned against its makers.",
-    "sources": [
-     "quests 5226, 5236 request and reward texts (last cauldron, four separate vessels)",
-     "npc_text 4039, 4040"
-    ]
-   }
+  "related": [
+   91000022,
+   91000021
   ],
   "sources": [
-   "quests 5215, 5228 descriptions",
-   "quests 5216 to 5226 and 5229 to 5236 (descriptions, request and reward texts)",
-   "quests 5237, 5238 reward texts",
-   "npc_text 4039, 4040"
+   "warcraft.wiki.gg/wiki/Gahrron%27s_Withering (formerly Gahrron's Quickening, owned by Del Gahrron, Soulwrath, Joseph Redpath killed here, his shield)",
+   "quests 5225, 5235 descriptions (last cauldron, tougher minions, wraiths and ghosts, close to where the Eastern Plaguelands begin)",
+   "quest 5225 reward text (Cauldron Lord Soulwrath)",
+   "zone_areas area 201: Hungering Wraith, Wailing Death, Haunting Vision, Redpath's Shield 176207",
+   "page_text 2386 (The Fate of Joseph Redpath, Extended Annals of Darrowshire: defeated at Gahrron's Withering, shield near the barn)",
+   "wiki cites Arthas: Rise of the Lich King p. 215 for the old name Gahrron's Quickening (2009, pre-Cataclysm)"
   ],
-  "notes": "Converted: The opening keeps the plan (5215, 5228 and the first target 5216, 5229). The first cauldron opened and the counter agent moved to part 1 (QUEST_DONE 5217 Alliance, 5230 Horde); the last cauldron and the four vessels to part 2 (QUEST_DONE 5226, 5236). Earlier: Faction 0: 5215 is Alliance only and 5228 Horde only. Tirisfal's Derrington entry mentions Vandis's scheme in one line. Check: Part 1: 'at a spigot' dropped (only the Alliance 5216 reward text has it)."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
-  "id": 2825,
-  "kind": 3,
+  "id": 2812,
+  "kind": 1,
   "zone": 28,
-  "sort": 2,
+  "sort": 0,
   "faction": 0,
-  "title": "The Road to Andorhal",
-  "body": "Both Chillwind Camp and the Bulwark have their eyes on Andorhal. Commander Valorfist finds the city's western and northern roads too well fortified and means to come at it from the east, sending his first recruits to thin the undead buffer on Sorrow Hill. High Executor Derrington faces a second enemy first: a Scarlet Crusade camp between Felstone Field and Dalson's Tears, which he means to answer by burning its command tent and planting a Scourge banner, so the Crusade will take its vengeance on the dead. Beyond lies the city itself, its four watchtowers thought to direct the Scourge's movements, and at its heart the lich Araj the Summoner.",
+  "title": "Hearthglen",
+  "body": "Hearthglen was the seat of government for these lands, ruled from Mardenholde Keep above the town, and when the plague first struck it held out against the Scourge. Now it is the Scarlet Crusade's stronghold in the west. Workers rebuild the town under the eyes of paladins and priests, lumberjacks cut timber at the Northridge mill below, taken from the family who ran it before the war, and Highlord Taelan Fordring holds the keep.",
   "triggers": [
    [
-    4,
-    5092
+    1,
+    190
    ],
    [
-    4,
-    5096
+    1,
+    203
+   ],
+   [
+    1,
+    192
    ]
   ],
-  "parts": [
-   {
-    "part": 1,
-    "triggers": [
-     [
-      5,
-      5097
-     ],
-     [
-      5,
-      5098
-     ]
-    ],
-    "body": "With the first blows struck, both commanders sent agents into the ruins with beacon torches, magical devices that mark targets for their troops. Planted in the doorway of each watchtower, the beacons now send back strong signals from all four. The towers are marked as the first targets of the attack, and the preparations for an open fight for the city are in place.",
-    "sources": [
-     "quests 5097, 5098 descriptions, request and reward texts"
-    ]
-   },
-   {
-    "part": 2,
-    "triggers": [
-     [
-      5,
-      211
-     ],
-     [
-      5,
-      105
-     ]
-    ],
-    "body": "The final target was the lich at the city's heart. Reaching him through his retinue of guardians took many allies, but Araj the Summoner was defeated at last, and the shard of his phylactery carried home was hailed as the proof of a victory for the ages.",
-    "sources": [
-     "quests 105, 211 descriptions and reward texts"
-    ]
-   }
+  "related": [
+   90000007,
+   2816
   ],
   "sources": [
-   "quests 5092, 5096, 5097, 5098, 105, 211 (descriptions, request and reward texts)"
+   "warcraft.wiki.gg/wiki/Hearthglen (regional seat; held off a Scourge siege until Uther arrived; Scarlet Crusade took control)",
+   "zone_areas area 190: Scarlet Worker x56, Scarlet Paladin, Sentinel, Magus, Priest, High Protector Lorik, Taelan",
+   "quest 6023 description (Radley and Durgen the backbone of the forces outside the town, along Hearthglen Pass)",
+   "quest 9474 description (relic atop their guard tower near the gates)",
+   "quest 6004 description (Alliance feel the town has more than historical importance)",
+   "quest 6025 reward text (Kirsta reports to Stormwind)",
+   "warcraft.wiki.gg/wiki/Hearthglen (region governed from Mardenholde Keep; center of commerce and trade; Alliance diplomats; Tirion Lord of Mardenholde)",
+   "warcraft.wiki.gg/wiki/Western_Plaguelands (Scarlet Crusade took Mardenholde Keep as regional headquarters)",
+   "quest 5861 reward text (Myranda, advisor when Tirion was Lord of Mardenholde, dissented from the Silver Hand's verdict, banished)",
+   "quest 5862 log and request text (Taelan inside Mardenholde Keep; reinforcements from Tyr's Hand)",
+   "warcraft.wiki.gg/wiki/Mardenholde_Keep",
+   "zone_areas area 190 (Scarlet workers, paladins, sentinels); quest 5901 description (defending and rebuilding the town)",
+   "quests 5902, 5904 descriptions (south of Hearthglen, west of the road)",
+   "npc_text 4357 (Nathaniel Dumah: father ran the mill, fled to Stormwind)",
+   "npc_text 4356 (Mickey Levine: family worked the mill)",
+   "quest 5901 description (defending and rebuilding the town)",
+   "zone_areas area 192: Scarlet Lumberjack x25, Diseased Wolf, Carrion Lurker, Foreman Marcrid"
   ],
-  "notes": "Converted: The opening keeps both commanders' plans and the targets. The marked towers moved to part 1 (QUEST_DONE 5097 Alliance, 5098 Horde); Araj's defeat to part 2 (QUEST_DONE 211, 105). Earlier: Dropped QUEST_ACCEPT 5097 and 5098: they follow 5092 and 5096 and are not entry points. Faction 0: 5092 is Alliance only, 5096 Horde only."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
-  "id": 2826,
-  "kind": 3,
+  "id": 2816,
+  "kind": 2,
   "zone": 28,
-  "sort": 3,
+  "sort": 0,
   "faction": 0,
-  "title": "The Key to Scholomance",
-  "body": "Scholomance on Caer Darrow is barred by a door no one can pass without a key. Alchemist Arbington at Chillwind Camp and Apothecary Dithers at the Bulwark have each studied the school and reached the same answer: a Skeleton Key. Its outer layer must be built from the fragments of many skeletons, gathered in and around Andorhal, and hardened with the strongest metal within a suitable mold. Last, the key needs a signet of power from one who can naturally open the way into the school.",
+  "title": "Highlord Taelan Fordring",
+  "body": "Taelan Fordring is Highlord of the Scarlet Crusade in Hearthglen and master of Mardenholde Keep. His crusaders attack outsiders on sight, his officers hold the pass below the town, and the Highlord himself waits in the keep for reinforcements from Tyr's Hand.",
   "triggers": [
    [
-    4,
-    5533
+    1,
+    203
    ],
    [
-    4,
-    838
+    3,
+    1842
    ]
   ],
   "parts": [
    {
     "part": 1,
-    "triggers": [
-     [
-      5,
-      5537
-     ],
-     [
-      5,
-      964
-     ]
-    ],
-    "body": "Once the fragments are tempered for the forge, only a mold remains, and it can come only from Krinkle Goodsteel, a goblin smith in Gadgetzan who has made molds for such macabre things before. He works for the highest bidder and charges in advance, and it is the champion, not the key's maker, who must pay his fee.",
-    "sources": [
-     "quests 5537, 964 reward texts (temper; goblin blacksmith in Tanaris, highest bidder)",
-     "quests 5538, 5514 descriptions and texts (Krinkle Goodsteel, fee up front)"
-    ]
-   },
-   {
-    "part": 2,
+    "body": "He is the son of Tirion Fordring. After Tirion's exile his mother told him his father was dead. He became a paladin of the Silver Hand, threw down its standard at Northdale when the order broke, and rose in the Crusade.",
     "triggers": [
      [
       4,
-      5803
-     ],
-     [
-      4,
-      5804
+      5845
      ]
     ],
-    "body": "Once the stem was forged in the lava atop Fire Plume Ridge, only the signet remained, and it could belong to one being alone: Araj the Summoner, the school's former master, who rules Andorhal. His scarab, seized from his fallen phylactery, must be mounted as the head of the key.",
     "sources": [
-     "quests 5801, 5802 descriptions and reward texts (Fire Plume Ridge; Araj)",
-     "quests 5803, 5804 descriptions (former leader of Scholomance, scarab from his fallen phylactery)"
-    ]
-   },
-   {
-    "part": 3,
-    "triggers": [
-     [
-      5,
-      5505
-     ],
-     [
-      5,
-      5511
-     ]
-    ],
-    "body": "With a special solvent the scarab was fused on as the head of the key, infusing it with the power to breach the locked door, and the Skeleton Key was finished at last. Whether it truly opens Scholomance, its maker admits, there is only one way to be absolutely sure.",
-    "sources": [
-     "quests 5803, 5804 reward texts (solvent, scarab as the head of the key)",
-     "quests 5505, 5511 reward texts (the completed Skeleton Key)"
-    ]
-   }
-  ],
-  "sources": [
-   "quests 5533, 838 descriptions",
-   "quests 5537, 964 (skeletal fragments, signet of power)",
-   "quests 5538, 5514 (Krinkle Goodsteel)",
-   "quests 5803, 5804 (Araj's scarab)",
-   "quests 5505, 5511"
-  ],
-  "notes": "Converted: The opening keeps the plan (5533, 838 and the key's recipe from 5537, 964). Krinkle's mold moved to part 1 (QUEST_DONE 5537 Alliance, 964 Horde); Araj's scarab to part 2 (QUEST_ACCEPT 5803, 5804); the finished key to part 3 (QUEST_DONE 5505, 5511, auto-complete, which follow the scarab's turn-in). 5538, 5514 and 5801, 5802 (Tanaris, Gadgetzan and Un'Goro steps) are not used. Earlier: Faction 0: 5533 Alliance only, 838 Horde only. The instance itself is left to its own entry. Check: Part 1: 'the alchemist' made neutral (the Horde's Dithers is an apothecary)."
- },
- {
-  "id": 2827,
-  "kind": 3,
-  "zone": 28,
-  "sort": 4,
-  "faction": 0,
-  "requiredState": 8,
-  "title": "The Mark of the Lightbringer",
-  "body": "When Uther the Lightbringer died, a holy symbol of his faith was lost, and the Scarlet Crusade is said to keep it atop their guard tower by the gates of Hearthglen. Two very different visitors want it. Anchorite Truuen, a draenei at Chillwind Camp who has studied Azeroth's heroes in his short time on the world and holds Uther above them all, wishes to return it to his tomb in tribute. Mehlar Dawnblade, a blood knight at the Bulwark who once studied under Uther, blames his old teacher's handling of Prince Arthas for the ruin of Quel'Thalas, and wants the relic for his revenge.",
-  "triggers": [
-   [
-    4,
-    9474
-   ],
-   [
-    4,
-    9443
-   ]
-  ],
-  "parts": [
-   {
-    "part": 1,
-    "triggers": [
-     [
-      5,
-      9446
-     ]
-    ],
-    "body": "With the mark recovered, the anchorite set out for the tomb, and the Scourge, drawn by the relic's purity, fell on them along the way. At the tomb the ghost of Uther himself appeared, touched that anyone would go to such lengths in his memory. He bade the anchorite's companion rise and granted a blessing, a sign that heroes long gone might rise again in each of the living.",
-    "sources": [
-     "quest 9446 description and reward text",
-     "creature_text 17238 groups 3 to 7, 17233 groups 0 to 2"
+     "quest 5781 description (his mother told him Tirion had died)"
     ]
    },
    {
     "part": 2,
+    "body": "For years, he confessed, he had been the Grand Crusader's puppet. Shown the truth, he left Hearthglen to find his father, and Grand Inquisitor Isillien cut him down on the road.",
     "triggers": [
      [
       5,
-      9444
+      5944
      ]
     ],
-    "body": "Mehlar laced the mark with fel magic, to be used before Uther's statue to defile the tomb. The Lightbringer's ghost answered instead. He saw his former student's hand in it, grieved that his heart had turned so dark, and sent back word that he forgave him and hoped he would turn to restoring Quel'Thalas. Mehlar raged at the forgiveness and drove his agent from his sight.",
     "sources": [
-     "quest 9444 description and reward text",
-     "creature_text 17233 groups 4 to 7"
+     "quest 5781 description (his mother told him Tirion had died)"
     ]
    }
   ],
-  "sources": [
-   "quests 9474, 9446 (descriptions and reward texts)",
-   "quests 9443, 9444 (descriptions and reward texts)",
-   "creature_text 17233 (Ghost of Uther), 17238, 17099",
-   "creature_template 17238 Anchorite Truuen (draenei per quest 9474: in the short time I have been on Azeroth)"
+  "related": [
+   90000007,
+   92000001,
+   2812
   ],
-  "notes": "Converted: Entry given requiredState 8: the anchorite and the blood knight, and quests 9474, 9446, 9443, 9444, arrived with The Burning Crusade, and mod-individual-progression does not phase Truuen 17238 or Mehlar 17099 (no ipp script or phaseMask on either), so they stand at the camps in every state (same pattern as alterac.json 3620). Uther's ghost and the blessing moved to part 1 (QUEST_DONE 9446, Alliance); the fel taint, the forgiveness and Mehlar's rage to part 2 (QUEST_DONE 9444, Horde). Earlier: Faction 0: 9474 is Alliance only, 9443 Horde only. Check: requiredState 8 confirmed: mod-individual-progression only adjusts DamageModifier for 17238 and 17099 (tbc_creatures.sql), with no phasing or quest gating of 9474/9443, same as alterac.json 3620 and swamp_of_sorrows.json 815/816. Mehlar is a blood elf paladin (unit_class 2, faction 1604 Silvermoon) who joined the Blood Knights (warcraft.wiki.gg/wiki/Mehlar_Dawnblade, added patch 2.0.1)."
+  "sources": [
+   "quest 5781 description (his mother told him Tirion had died)",
+   "quest 5845 description (fought on until the Silver Hand was destroyed)",
+   "creature_template 1842 subname Highlord of the Scarlet Crusade, faction 67 (Scarlet Crusade, hostile to both factions), npcflag questgiver",
+   "quest 5861 description (Taelan and his Scarlet Crusaders attack on sight)",
+   "quest 6023 description (Radley and Durgen hold Hearthglen Pass)",
+   "quest 5862 log and request text (inside Mardenholde Keep; reinforcements from Tyr's Hand)",
+   "warcraft.wiki.gg/wiki/Taelan_Fordring",
+   "warcraft.wiki.gg/wiki/Hearthglen (Taelan took control of the town)",
+   "zone_areas area 190 (Scarlet Worker, Paladin, Sentinel, Magus, Priest)",
+   "quest 5862 log and reward text (Scarlet Illusion, Mardenholde Keep)",
+   "quest 5944 description and reward text",
+   "creature_text 1842, 1840 (Isillien: forest's edge, Grand Crusader charged me), 12126 (murdered my boy; too long have I sat idle; a new Order is born)",
+   "warcraft.wiki.gg/wiki/Tirion_Fordring (Isillien killed Taelan in Hearthglen; Tirion avenged his son)",
+   "creature_text 1840 group 0 (you will not make it to the forest's edge)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
-  "id": 2828,
-  "kind": 3,
+  "id": 2817,
+  "kind": 2,
   "zone": 28,
-  "sort": 5,
+  "sort": 0,
   "faction": 0,
-  "title": "A Plague Upon Thee",
-  "body": "The Scarlet Crusade holds the Northridge Lumber Mill, and two people who remember it before the war want it taken away from them. At Chillwind Camp, Nathaniel Dumah, whose father ran the mill until the family fled to Stormwind, has tried and failed to rout the Crusade by force. At the Bulwark, Mickey Levine, whose family worked the mill and lost their livelihoods and their lives, has sworn never to rest until the zealots are gone. Both settle on the same weapon: termites from the mounds of Plaguewood near Stratholme, a breed that survived the plague and the Scourge alike, gathered by the hundred.",
+  "title": "Chromie",
+  "body": "Chromie is the name the bronze dragon Chronormu takes among mortals, in the form of a small, cheerful gnome. She has made her home in a ruined inn in Andorhal, working from another timeline so as not to disturb this one, for someone, most likely the Scourge, has tampered with the city's past. The old tragedy of Darrowshire has caught her eye as well.",
   "triggers": [
    [
-    4,
-    5903
+    2,
+    10667
    ],
    [
     4,
-    5901
+    4971
    ]
   ],
-  "parts": [
-   {
-    "part": 1,
-    "triggers": [
-     [
-      5,
-      6389
-     ],
-     [
-      5,
-      6390
-     ]
-    ],
-    "body": "The termites were packed into a steel reinforced barrel and carried to the mill, where it was set high atop a crate at the heart of the timbers, the insects already restless inside. A crowbar found nearby pried it open, and the swarm was loosed to make the mill useless to the Crusade, while the one who freed them prayed to get out before the termites found them too.",
-    "sources": [
-     "quests 5902, 5904 descriptions and reward texts (steel reinforced barrel, atop a crate, restless)",
-     "quests 6389, 6390 descriptions and reward texts (crowbar, release)"
-    ]
-   },
-   {
-    "part": 2,
-    "triggers": [
-     [
-      5,
-      6389
-     ]
-    ],
-    "body": "For Nathaniel Dumah it was more than sabotage. With the mill lost to the Crusade, he laughed, his father's spirit could rest at last, and he himself could live in peace, for the zealots never had any right to the mill.",
-    "sources": [
-     "quest 6389 reward text",
-     "quest 5903 reward text (it was never their mill to take)"
-    ]
-   }
+  "related": [
+   2805,
+   91000022
   ],
   "sources": [
-   "quests 5903, 5904, 6389 (descriptions and reward texts)",
-   "quests 5901, 5902, 6390 (descriptions and texts)",
-   "npc_text 4356, 4357"
+   "npc_text 3584, 3585 (Chronormu, bronze dragonflight, choice of visual demeanor, sentry of sorrowful places)",
+   "quests 4971, 4972 descriptions and texts",
+   "quest 5153 (strange gnome, ruined inn of Andorhal)",
+   "quests 5154, 5941, 5721 (saving Joseph Redpath)"
   ],
-  "notes": "Converted: The opening keeps both grievances and the termite plan (5903, 5901). The barrel loosed in the mill moved to part 1 (QUEST_DONE 6389 Alliance, 6390 Horde); Nathaniel's peace to part 2 (QUEST_DONE 6389, Alliance only). Earlier: Faction 0: 5903 Alliance only, 5901 Horde only."
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  }
 ]

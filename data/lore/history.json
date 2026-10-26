@@ -1,0 +1,1594 @@
+[
+ {
+  "id": 91000001,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30006,
+  "faction": 0,
+  "title": "The Fall of Alterac",
+  "body": "Alterac was one of the human kingdoms that answered Lordaeron's call against the Horde in the Second War. Its king, Aiden Perenolde, secretly struck a bargain with Orgrim Doomhammer and let the Horde march through his mountain passes. When the treason came to light, King Terenas marched into Alterac, declared martial law and deposed him. The kingdom never recovered, and its nobles took to the hills.",
+  "triggers": [
+   [
+    1,
+    36
+   ],
+   [
+    1,
+    281
+   ]
+  ],
+  "hint": "Learned in the mountains of Alterac.",
+  "related": [
+   90000001,
+   3600,
+   3613
+  ],
+  "sources": [
+   "Alterac 3600 (old opening)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000002,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30017,
+  "faction": 0,
+  "title": "Thrall's Escape from Durnholde",
+  "body": "Thrall, Warchief of the Horde, was raised a slave at Durnholde Keep. Lieutenant General Aedelas Blackmoore found him as an infant and trained him as a gladiator, meaning to make a weapon of him. Only a girl of the keep, Taretha Foxton, treated him as a friend, and in time she helped him escape. He came back at the head of the freed orcs and brought Durnholde down.",
+  "triggers": [
+   [
+    1,
+    275
+   ],
+   [
+    4,
+    498
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Taretha once gave Thrall a necklace, a crescent moon on a silver chain. When the Syndicate's lord gave it to his mistress, the Warchief sent his warriors into Hillsbrad to win it back.",
+    "triggers": [
+     [
+      5,
+      507
+     ]
+    ],
+    "sources": [
+     "Hillsbrad 26700, 26710, 26725 (quests 498-508)"
+    ]
+   }
+  ],
+  "hint": "Learned in the ruins of an old fortress in the foothills.",
+  "related": [
+   26710,
+   3613
+  ],
+  "sources": [
+   "Hillsbrad 26700, 26710, 26725 (quests 498-508)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000003,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30021,
+  "faction": 0,
+  "title": "The Destruction of Dalaran",
+  "body": "In the Third War the Scourge marched on Dalaran. Kel'Thuzad, once a mage of the city, used the Book of Medivh to summon the demon lord Archimonde before its walls, and Archmage Antonidas fell defending it. Archimonde laid the city waste, and the surviving wizards withdrew into its ruins.",
+  "triggers": [
+   [
+    1,
+    279
+   ],
+   [
+    2,
+    2543
+   ]
+  ],
+  "hint": "Learned among the ruins on the shore of Lordamere Lake.",
+  "related": [
+   90000003,
+   3610,
+   3619
+  ],
+  "sources": [
+   "Alterac 3610, 3619"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000004,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30025,
+  "faction": 0,
+  "title": "The Hillsbrad Front",
+  "body": "Since the Forsaken took Tarren Mill, the foothills have been a front line. The Banshee Queen's orders, passed down through her dreadlord Varimathras, were to keep the humans of Hillsbrad down until her apothecaries finished their New Plague, and Southshore has held on ever since. Neither side can drive the other out, and the farms between them burn.",
+  "triggers": [
+   [
+    1,
+    271
+   ],
+   [
+    1,
+    272
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Under High Executor Darthalia the Forsaken struck at Hillsbrad in stages: its farms, its smith, its council and its mine, and at last the dwarven barracks at Dun Garok.",
+    "triggers": [
+     [
+      5,
+      541
+     ]
+    ],
+    "sources": [
+     "Hillsbrad 26700, 26714, 26722 (quests 494-541)"
+    ]
+   }
+  ],
+  "hint": "Learned where Southshore and Tarren Mill face each other.",
+  "related": [
+   26705,
+   26706,
+   90000004
+  ],
+  "sources": [
+   "Hillsbrad 26700, 26714, 26722 (quests 494-541)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000005,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30020,
+  "faction": 0,
+  "title": "The Fall of Lordaeron",
+  "body": "In the Third War a plague spread through Lordaeron's grain, and those who ate it died and rose again in the service of the Lich King. Prince Arthas Menethil chased the demon behind it to Northrend and took up the runeblade Frostmourne there. He came home a death knight, slew his father, King Terenas, in his own throne room, and the kingdom fell to the Scourge.",
+  "triggers": [
+   [
+    1,
+    153
+   ],
+   [
+    1,
+    85
+   ]
+  ],
+  "hint": "Learned in the heart of the fallen kingdom.",
+  "related": [
+   8516,
+   90000006,
+   91000006
+  ],
+  "sources": [
+   "Tirisfal 8500, 8516",
+   "warcraft.wiki.gg Third War (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000006,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30022,
+  "faction": 0,
+  "title": "The Forsaken Break Free",
+  "body": "When the Lich King's power faltered after the Third War, Sylvanas Windrunner and many of the undead she commanded found their minds their own again. They turned on the three dreadlords who ruled Lordaeron for the Burning Legion. Varimathras, taken captive, begged for his life and swore himself to her, and with his help she broke his brothers. She named her people the Forsaken.",
+  "triggers": [
+   [
+    1,
+    1497
+   ],
+   [
+    1,
+    154
+   ],
+   [
+    2,
+    1569
+   ]
+  ],
+  "hint": "Learned among the undead who call themselves free.",
+  "related": [
+   90000005,
+   149702,
+   149703
+  ],
+  "sources": [
+   "Undercity 149700, 149702, 149703, 149708"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000007,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30021,
+  "faction": 0,
+  "title": "Arugal's Curse",
+  "body": "When the Scourge overran Lordaeron, the archmage Arugal of the Kirin Tor summoned worgen from another realm to fight them. The beasts fought the undead, and then turned on the living. Arugal, driven mad by what he had done, took Shadowfang Keep for his own, called the worgen his children and set his curse on the folk of Pyrewood below.",
+  "triggers": [
+   [
+    1,
+    130
+   ],
+   [
+    1,
+    204
+   ],
+   [
+    1,
+    227
+   ],
+   [
+    3,
+    1769
+   ],
+   [
+    3,
+    1779
+   ],
+   [
+    4,
+    421
+   ]
+  ],
+  "hint": "Learned in the pine forests where wolves walk as men.",
+  "related": [
+   13013,
+   13006
+  ],
+  "sources": [
+   "Silverpine 13000, 13006, 13013, 13018, 13025"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000008,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30027,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Battle for the Undercity",
+  "body": "At the Wrathgate in Northrend, Grand Apothecary Putress turned his blight on Alliance, Horde and Scourge alike, and Highlord Bolvar Fordragon fell with many soldiers of both sides. The treachery did not end there: traitors rose within the Forsaken and seized the Undercity, and Thrall swore that those behind it would be brought to justice.",
+  "triggers": [
+   [
+    4,
+    13266
+   ],
+   [
+    4,
+    13267
+   ],
+   [
+    4,
+    13371
+   ],
+   [
+    4,
+    13377
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The traitors were Putress and the dreadlord Varimathras. Those who would not side with them were executed or banished, and Sylvanas, nearly killed, fled to Orgrimmar.",
+    "triggers": [
+     [
+      5,
+      13257
+     ]
+    ],
+    "sources": [
+     "Undercity 149711"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "The Horde struck from the ruins with Thrall and Sylvanas at its head, dropped into the city on cyclones the Warchief called, and cut down Varimathras in the throne room.",
+    "triggers": [
+     [
+      3,
+      31565
+     ]
+    ],
+    "sources": [
+     "Undercity 149711"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The Alliance came through the sewers under King Varian and Jaina Proudmoore, and slew Putress among his blight generators in the Apothecarium.",
+    "triggers": [
+     [
+      3,
+      31530
+     ]
+    ],
+    "sources": [
+     "Undercity 149711"
+    ]
+   },
+   {
+    "part": 4,
+    "body": "The day ended in the throne room. Varian declared that the time had come to end the Horde and turned his blades on Thrall, until Jaina froze them both and carried the Alliance away. The fellowship of the Wrathgate did not survive.",
+    "triggers": [
+     [
+      3,
+      31565
+     ],
+     [
+      3,
+      31530
+     ]
+    ],
+    "sources": [
+     "Undercity 149711"
+    ]
+   }
+  ],
+  "hint": "Learned after the battle at the Wrathgate.",
+  "related": [
+   149703,
+   149704,
+   149702
+  ],
+  "sources": [
+   "Undercity 149711"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000009,
+  "kind": 5,
+  "zone": 0,
+  "sort": 27200,
+  "faction": 0,
+  "title": "The Rise of Arathor",
+  "body": "Long before the kingdoms of the Alliance, the human tribes of the north were scattered and at war with one another. Thoradin, chieftain of the Arathi, united them into one nation, the Empire of Arathor, and raised Strom as its capital, with a great wall to hold back the Amani trolls. Allied with the high elves of Quel'Thalas, Arathor broke the Amani in the Troll Wars, and in return the elves taught a hundred humans the ways of magic.",
+  "triggers": [
+   [
+    1,
+    45
+   ],
+   [
+    1,
+    324
+   ],
+   [
+    1,
+    1057
+   ]
+  ],
+  "hint": "Learned in the highlands where the first human nation was born.",
+  "related": [
+   90000008,
+   4505,
+   26713
+  ],
+  "sources": [
+   "Arathi 4500, 4505",
+   "Hillsbrad 26713",
+   "warcraft.wiki.gg Arathor, Troll Wars"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000012,
+  "kind": 5,
+  "zone": 0,
+  "sort": 27210,
+  "faction": 0,
+  "title": "Trol'kalar",
+  "body": "Trol'kalar, whose name means troll slayer, was the sword of Lord Ignaeus of Strom, called Trollbane, who rode against the trolls with it in the days of Arathor. For generations the kings of Stromgarde carried it, and when King Thoras died it was laid with him in his tomb, sealed behind wards that only certain sigils can break.",
+  "triggers": [
+   [
+    4,
+    638
+   ],
+   [
+    4,
+    639
+   ],
+   [
+    3,
+    2607
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "In the end the Horde broke the tomb's wards and carried Trol'kalar away, so that the Darkspear might turn the troll slayer on the trolls of Zul'Gurub.",
+    "triggers": [
+     [
+      5,
+      646
+     ]
+    ],
+    "sources": [
+     "Arathi 4505, 4517, 4529"
+    ]
+   }
+  ],
+  "hint": "Learned where the Trollbane kings lie.",
+  "related": [
+   4517,
+   90000008,
+   91000009
+  ],
+  "sources": [
+   "Arathi 4505, 4517, 4529"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000010,
+  "kind": 5,
+  "zone": 0,
+  "sort": 29770,
+  "faction": 0,
+  "title": "The War of the Three Hammers",
+  "body": "Long ago the dwarves of Khaz Modan were one kingdom of three clans: the Bronzebeards, the Wildhammers and the Dark Irons. When the old king died, the clans went to war over his throne. The Bronzebeards held Ironforge, the Wildhammers held Grim Batol, and the Dark Irons under the sorcerer-thane Thaurissan struck at both and lost. In their assault Thaurissan's wife Modgud laid a curse on Grim Batol, and the Wildhammers abandoned it.",
+  "triggers": [
+   [
+    1,
+    1038
+   ],
+   [
+    1,
+    1037
+   ],
+   [
+    1,
+    881
+   ]
+  ],
+  "hint": "Learned among the broken holds of the dwarves.",
+  "related": [
+   90000010,
+   1115,
+   1110
+  ],
+  "sources": [
+   "Wetlands 1110, 1115",
+   "warcraft.wiki.gg War of the Three Hammers"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000011,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30010,
+  "faction": 0,
+  "title": "The Day of the Dragon",
+  "body": "In the Second War the Dragonmaw clan held Alexstrasza, Queen of the red dragonflight, captive in Grim Batol by the power of the Demon Soul, and rode her children against the Alliance. Some years after the war the young mage Rhonin and his companions broke into the fortress and destroyed the artifact. The freed dragons tore Grim Batol apart and turned their fury on the clan that had enslaved them.",
+  "triggers": [
+   [
+    1,
+    1038
+   ],
+   [
+    1,
+    1037
+   ],
+   [
+    1,
+    1039
+   ]
+  ],
+  "hint": "Learned where the red dragons were held in chains.",
+  "related": [
+   90000011,
+   1115,
+   1105
+  ],
+  "sources": [
+   "Wetlands 1105, 1115, 1121, 1127",
+   "warcraft.wiki.gg Grim Batol, Day of the Dragon"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000013,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30003,
+  "faction": 0,
+  "title": "The Fall of Stormwind",
+  "body": "When the Horde first came through the Dark Portal, Stormwind bore the whole weight of the First War. Orcs burned Elwynn, destroyed Northshire Abbey and twice besieged the capital. In the end the assassin Garona murdered King Llane in his own keep, and the city fell and was razed. Anduin Lothar led the survivors north across the sea to Lordaeron, where his warnings gave birth to the Alliance.",
+  "triggers": [
+   [
+    1,
+    12
+   ],
+   [
+    1,
+    1519
+   ],
+   [
+    1,
+    56
+   ]
+  ],
+  "hint": "Learned in the lands the Horde burned first.",
+  "related": [
+   151900,
+   1216,
+   151903
+  ],
+  "sources": [
+   "Elwynn 1200, 1202, 1216",
+   "Stormwind 151900, 151903",
+   "warcraft.wiki.gg First War, Timeline (year 3)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000014,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30008,
+  "faction": 0,
+  "title": "The Alliance Expedition",
+  "body": "After the Second War the orc shaman Ner'zhul reopened the Dark Portal from Draenor, and the Alliance sent an expedition through it to end the threat for good, led by General Turalyon and the archmage Khadgar. They destroyed the Portal from the far side to save Azeroth, knowing it would trap them there, and none came home. Their statues in the Valley of Heroes call them presumed dead.",
+  "triggers": [
+   [
+    1,
+    1617
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Not all of them died. Danath Trollbane is alive beyond the Portal, holding Honor Hold in Hellfire Peninsula with the last soldiers of the expedition.",
+    "triggers": [
+     [
+      2,
+      16819
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Stormwind 151901"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Khadgar is alive too. The archmage who led the expedition with Turalyon stands in Shattrath City, long presumed dead by the world he saved.",
+    "triggers": [
+     [
+      2,
+      18166
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Stormwind 151901"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "Kurdran Wildhammer survived as well. The gryphon rider whose statue stands in the Valley of Heroes now leads the Wildhammer dwarves of Shadowmoon Valley.",
+    "triggers": [
+     [
+      2,
+      21330
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Stormwind 151901"
+    ]
+   }
+  ],
+  "hint": "Learned among the statues of heroes who never came home.",
+  "related": [
+   151901
+  ],
+  "sources": [
+   "Stormwind 151901",
+   "warcraft.wiki.gg Alliance Expedition, Timeline (year 8)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000015,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30015,
+  "faction": 0,
+  "title": "The Stonemasons' Riot",
+  "body": "After the Second War the Stonemasons' Guild rebuilt Stormwind from its ashes under its guildmaster, Edwin VanCleef. When the work was done, the House of Nobles refused to pay what the guild was owed and ordered it disbanded. The masons rioted, and in the chaos Queen Tiffin, who had stood for paying them, was killed. VanCleef and his men fled the city for the farmlands of Westfall.",
+  "triggers": [
+   [
+    4,
+    141
+   ],
+   [
+    4,
+    389
+   ],
+   [
+    5,
+    373
+   ]
+  ],
+  "hint": "Learned from those who remember who rebuilt Stormwind.",
+  "related": [
+   90000015,
+   4017,
+   151908
+  ],
+  "sources": [
+   "Westfall 4017, 4024",
+   "Stormwind 151908",
+   "warcraft.wiki.gg Tiffin (year 15), Edwin VanCleef"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000016,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30025,
+  "faction": 0,
+  "title": "The Lost King",
+  "body": "Some years after the Third War, King Varian Wrynn sailed in secret for Theramore to meet Lady Jaina Proudmoore, and never arrived. The Defias, helped by someone greater than they, had slipped their man Hendel aboard the royal ship and taken him. To keep order, the royal council crowned his young son Anduin, at the urging of the noblewoman Lady Katrana Prestor, and Highlord Bolvar Fordragon was named regent to rule in the boy's name.",
+  "triggers": [
+   [
+    4,
+    1250
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The councilor who pressed for Anduin's crowning was the black dragon Onyxia, daughter of Deathwing, and a medallion she gave the regent held his mind captive. Unmasked in the keep, she fled to her lair in Dustwallow Marsh.",
+    "triggers": [
+     [
+      5,
+      6403
+     ],
+     [
+      5,
+      7495
+     ],
+     [
+      4,
+      24428
+     ]
+    ],
+    "sources": [
+     "Stormwind 151900, 151903, 151911, 151914"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Varian came back at last, his memory lost and won again in years as a gladiator called Lo'Gosh, and took his throne once more.",
+    "triggers": [],
+    "minState": 13
+   }
+  ],
+  "hint": "Learned by following the trail of a missing diplomat.",
+  "related": [
+   151903,
+   151904,
+   151905,
+   90000015
+  ],
+  "sources": [
+   "Stormwind 151900, 151903, 151911, 151914",
+   "warcraft.wiki.gg Varian Wrynn, Timeline (year 25)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000017,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30002,
+  "faction": 0,
+  "title": "The Last Guardian",
+  "body": "Medivh, son of the Guardian Aegwynn, was the Last Guardian of Tirisfal and master of Karazhan. From before his birth the spirit of the demon lord Sargeras lay hidden within him, and it twisted his mind until he struck a pact with the warlock Gul'dan and helped open the Dark Portal. His boyhood friend Anduin Lothar and his apprentice Khadgar stormed the tower and struck him down, and his death cast the curse that still lies over Karazhan.",
+  "triggers": [
+   [
+    1,
+    2562
+   ],
+   [
+    1,
+    41
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Yet the Violet Eye speak carefully of what they believe was his death, for tales tell of a prophet who walked Azeroth years later.",
+    "triggers": [
+     [
+      2,
+      18253
+     ]
+    ],
+    "minState": 8,
+    "sources": [
+     "Deadwind Pass 4100, 4107, 4110"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "He did walk again. As a prophet he called Thrall and Jaina Proudmoore to the caverns of Stonetalon Peak, and there, as the Oracle, bade orc and human stand together against the Legion.",
+    "triggers": [
+     [
+      1,
+      467
+     ]
+    ],
+    "sources": [
+     "Deadwind Pass 4100, 4107, 4110"
+    ]
+   }
+  ],
+  "hint": "Learned in the shadow of a cursed tower.",
+  "related": [
+   4107,
+   91000013,
+   90000003,
+   40616
+  ],
+  "sources": [
+   "Deadwind Pass 4100, 4107, 4110",
+   "npc_text 10546 (Leryda)",
+   "warcraft.wiki.gg Medivh",
+   "Stonetalon 40600, 40616"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000018,
+  "kind": 5,
+  "zone": 0,
+  "sort": 29771,
+  "faction": 0,
+  "title": "The Summoning of Ragnaros",
+  "body": "Beaten in the War of the Three Hammers, Sorcerer-Thane Thaurissan of the Dark Irons sought a power to avenge his defeat, and with his sorcerers he called up Ragnaros the Firelord, imprisoned deep beneath the earth since ancient times. The Firelord's coming destroyed the city of Thaurissan, melted the mountains into Blackrock Mountain and burned the land around it into the Burning Steppes and the Searing Gorge, and the surviving Dark Irons became his slaves.",
+  "triggers": [
+   [
+    1,
+    250
+   ],
+   [
+    1,
+    46
+   ],
+   [
+    1,
+    254
+   ]
+  ],
+  "hint": "Learned in the ashes of the Dark Iron capital.",
+  "related": [
+   4607,
+   90000010,
+   91000010
+  ],
+  "sources": [
+   "Burning Steppes 4600, 4607, 4610",
+   "warcraft.wiki.gg Burning Steppes (Classic), Ragnaros, Dark Iron dwarf"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000019,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30026,
+  "faction": 0,
+  "requiredState": 8,
+  "title": "The Dark Portal Reopened",
+  "body": "For twenty years the Dark Portal stood silent. Then the Burning Legion's Lord Kazzak forced it open again, and demons poured through. Nethergarde and the Argent Dawn held the line at its foot until the armies of the Alliance and the Horde arrived and drove them back, and through the gate the kingdoms of Azeroth found the shattered remnant of Draenor, now called Outland, with a war already raging there.",
+  "triggers": [
+   [
+    4,
+    10119
+   ],
+   [
+    4,
+    9407
+   ],
+   [
+    1,
+    72
+   ]
+  ],
+  "hint": "Learned at the foot of the gate that woke again.",
+  "related": [
+   408,
+   409,
+   91000014
+  ],
+  "sources": [
+   "Blasted Lands 400, 408, 419, 420 (quests 10119, 9407)",
+   "warcraft.wiki.gg Dark Portal (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000020,
+  "kind": 5,
+  "zone": 0,
+  "sort": 28500,
+  "faction": 0,
+  "title": "The Gurubashi Empire",
+  "body": "Long ago the jungle trolls of the Gurubashi Empire ruled Stranglethorn from their capital, Zul'Gurub. When their power began to fade they turned to Hakkar the Soulflayer, a blood god whose Atal'ai priests called him into the world, and his thirst for sacrifice turned on the trolls. With the help of the Zandalar, the Gurubashi rose against him, destroyed his avatar and drove the Atal'ai into the swamps. The empire never recovered, and splintered into warring tribes.",
+  "triggers": [
+   [
+    1,
+    102
+   ],
+   [
+    1,
+    103
+   ],
+   [
+    1,
+    33
+   ]
+  ],
+  "hint": "Learned among the ruins of the jungle trolls' fallen empire.",
+  "related": [
+   3312,
+   808,
+   3306
+  ],
+  "sources": [
+   "Stranglethorn 3300, 3306, 3312",
+   "Swamp of Sorrows 800, 808",
+   "warcraft.wiki.gg Gurubashi Empire, Hakkar"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000021,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30019,
+  "faction": 0,
+  "title": "The Cult of the Damned",
+  "body": "The Cult of the Damned was Kel'Thuzad's work. Among the poor and the discontented of Lordaeron he preached a world without nobles and a life beyond death, and thousands followed him. When the Lich King was ready, the cult spread his plague through grain shipped from Andorhal's granaries, and the villages of the north died and rose again as Scourge.",
+  "triggers": [
+   [
+    1,
+    193
+   ],
+   [
+    3,
+    8546
+   ],
+   [
+    3,
+    8548
+   ],
+   [
+    3,
+    8551
+   ],
+   [
+    3,
+    8550
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The plague still pours from eight great cauldrons in the farms of old Lordaeron, four in the west and four in the east, guarded by cauldron lords. Too strong to shut down, they may yet be turned against the Scourge.",
+    "triggers": [
+     [
+      4,
+      5215
+     ],
+     [
+      4,
+      5228
+     ]
+    ],
+    "sources": [
+     "Western Plaguelands 2800, 2805, 2824"
+    ]
+   }
+  ],
+  "hint": "Learned among the dark casters who serve the plague.",
+  "related": [
+   92000000,
+   91000005,
+   90000006,
+   2805
+  ],
+  "sources": [
+   "Western Plaguelands 2800, 2805, 2824",
+   "Eastern Plaguelands 13905",
+   "warcraft.wiki.gg Cult of the Damned (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000022,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30020,
+  "faction": 0,
+  "title": "The Battle of Darrowshire",
+  "body": "When the Scourge came to Darrowshire, Captain Joseph Redpath led its militia, with a company of troops and paladins of the Silver Hand, against the ghoul lord Horgus and the death knight Marduk the Black. The battle was hard fought, and by its end the village and nearly all its defenders were dead; many of them still walk as Scourge.",
+  "triggers": [
+   [
+    1,
+    2262
+   ],
+   [
+    2,
+    11063
+   ],
+   [
+    2,
+    10927
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The Annals of Darrowshire tell how it was lost. Marduk corrupted Captain Redpath in the thick of battle, and his taint turned the defenders on their own allies.",
+    "triggers": [
+     [
+      5,
+      5154
+     ]
+    ],
+    "sources": [
+     "quests 5154, 5210 descriptions and reward texts"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "One defender lived. Days later the Argent Dawn found Joseph's brother Carlin wandering near Corin's Crossing, wounded and feverish, and he joined the Dawn to fight a war of revenge.",
+    "triggers": [
+     [
+      5,
+      5210
+     ]
+    ],
+    "sources": [
+     "quests 5154, 5210 descriptions and reward texts"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "With Chromie's magic the battle was fought again. This time Redpath was struck down after his corruption, and his spirit was saved and went home to his daughter.",
+    "triggers": [
+     [
+      5,
+      5721
+     ]
+    ],
+    "sources": [
+     "quests 5154, 5210 descriptions and reward texts"
+    ]
+   }
+  ],
+  "hint": "Learned among the ghosts of a village that fell in a single night.",
+  "related": [
+   13904,
+   13924,
+   90000032,
+   2817
+  ],
+  "sources": [
+   "quests 5154, 5210 descriptions and reward texts",
+   "quests 5168, 5181 descriptions",
+   "quest 5211 description",
+   "page_text 2371-2391 (Annals and Extended Annals)",
+   "quests 5206, 5941, 5721, 5942 descriptions and reward texts",
+   "creature_text 10936 (Pamela? ... I'm finally home), 10944, 10937, 10938, 10948 (battle lines)",
+   "page_text 2372, 2375, 2376 (Annals: militia, Marduk tore loose his spirit, defenders betrayed and slaughtered the town, tore into Lordaeron)",
+   "quest 5168 description (shield cracked and discarded)",
+   "quest 5721 description (Redpath must survive to be corrupted, then defeated; his spirit saved)",
+   "creature 10936 Joseph Redpath (gossip, spirit after the battle), 10938 Redpath the Corrupted (hostile)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000023,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30026,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Light of Dawn",
+  "body": "In the war against the Lich King, Highlord Darion Mograine led the death knights of Acherus and an army of the dead against Light's Hope Chapel. Its defenders held until Tirion Fordring came. Then the Lich King himself appeared. Darion turned on his master and threw his corrupted blade, the Ashbringer, to Tirion, in whose hands it was cleansed, and the Lich King withdrew. There the Argent Dawn and the Silver Hand joined as the Argent Crusade.",
+  "triggers": [
+   [
+    1,
+    2268
+   ],
+   [
+    2,
+    16112
+   ],
+   [
+    2,
+    16115
+   ],
+   [
+    5,
+    12801
+   ]
+  ],
+  "hint": "Learned on the holy ground of an old chapel in the Eastweald.",
+  "related": [
+   90000031,
+   90000032,
+   92000001,
+   13909,
+   92000004,
+   90000037
+  ],
+  "sources": [
+   "zone_the_scarlet_enclave.cpp (npc_highlord_darion_mograine Light of Dawn event: defenders Korfax 29176, Eligor 29177, Tyrosus 29178, Leonid 29179, Zverenhoff 29180, Rayne 29181, Rimblat 29182)",
+   "creature_text 29173 groups 68-85 (army marches, over a hundred Defenders fall before Tirion arrives, Ashbringer thrown and cleansed, Alexandros arrives)",
+   "creature_text 29175 groups 28-29, 53-66 (what lies beneath the chapel; union; The Argent Crusade comes for you)",
+   "creature_text 29183 groups 47-58 (Lich King: draw Tirion out; not on holy ground)",
+   "warcraft.wiki.gg/wiki/Light%27s_Hope_Chapel (Second Battle)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000024,
+  "kind": 5,
+  "zone": 0,
+  "sort": 23200,
+  "faction": 0,
+  "title": "The Founding of Quel'Thalas",
+  "body": "After the War of the Ancients the Highborne who would not give up their magic were exiled from Kalimdor. Led by Dath'Remar Sunstrider they sailed east and, after long wandering, settled in the forests of the north, taking the land from the Amani trolls. On the Isle of Quel'Danas they poured a vial of water from the Well of Eternity into a spring, and the Sunwell was born. Around it grew Quel'Thalas and its capital, Silvermoon.",
+  "triggers": [
+   [
+    1,
+    3432
+   ],
+   [
+    1,
+    3431
+   ],
+   [
+    1,
+    4080
+   ]
+  ],
+  "hint": "Learned at the shrine of the first king of the high elves.",
+  "related": [
+   90000033,
+   91000012,
+   343001,
+   408000
+  ],
+  "sources": [
+   "Eversong 343003",
+   "Silvermoon 348700",
+   "Quel'Danas 408000",
+   "warcraft.wiki.gg Quel'Thalas, Sunwell, Dath'Remar Sunstrider"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000025,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30020,
+  "faction": 0,
+  "title": "The Fall of Quel'Thalas",
+  "body": "In the Third War Prince Arthas marched the Scourge north to Quel'Thalas. The magister Dar'Khan Drathir betrayed his people and helped the undead past the runestones, and Ranger-General Sylvanas Windrunner fought them all the way to Silvermoon, where she fell and was raised as a banshee. The capital was sacked, King Anasterian slain, and at the Sunwell Arthas raised Kel'Thuzad as a lich, defiling the well.",
+  "triggers": [
+   [
+    1,
+    3482
+   ],
+   [
+    1,
+    3514
+   ],
+   [
+    1,
+    4092
+   ]
+  ],
+  "hint": "Learned along the black road the Scourge carved through the forest.",
+  "related": [
+   91000005,
+   92000000,
+   90000033,
+   343012,
+   343319
+  ],
+  "sources": [
+   "Eversong 343000, 343012",
+   "Ghostlands 343300, 343319",
+   "Silvermoon 348700",
+   "Quel'Danas 408000",
+   "warcraft.wiki.gg Fall of Quel'Thalas"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000026,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30025,
+  "faction": 0,
+  "title": "The Sin'dorei Join the Horde",
+  "body": "Few in the Horde trusted the blood elves, but Lady Sylvanas had sent her Forsaken to fight beside them in the Ghostlands. When the traitor Dar'Khan fell, Regent Lord Lor'themar Theron wrote to the Warchief asking that his people join the Horde as equals, and sent the letter by way of the Undercity, trusting the Dark Lady to carry it on.",
+  "triggers": [
+   [
+    4,
+    9621
+   ],
+   [
+    4,
+    9812
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Sylvanas, who had fought hard for Silvermoon's place in the Horde, added her own seal to the letter as a personal endorsement and sent it on to Orgrimmar.",
+    "triggers": [
+     [
+      5,
+      9621
+     ],
+     [
+      5,
+      9812
+     ]
+    ],
+    "sources": [
+     "quests 9328, 9811 (head of Dar'Khan to Lor'themar)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Thrall found no more cause for doubt. The Horde, he admitted, needs the elves as much as they need the Horde, and Quel'Thalas was welcomed among his allies.",
+    "triggers": [
+     [
+      5,
+      9626
+     ],
+     [
+      5,
+      9813
+     ]
+    ],
+    "sources": [
+     "quests 9328, 9811 (head of Dar'Khan to Lor'themar)"
+    ]
+   },
+   {
+    "part": 3,
+    "body": "The Warchief also hopes the elves' ties to Outland will help him reach his own people there, a belief, the regent admits, that is not exactly the truth, though not a lie either.",
+    "triggers": [
+     [
+      5,
+      9627
+     ]
+    ],
+    "sources": [
+     "quests 9328, 9811 (head of Dar'Khan to Lor'themar)"
+    ]
+   }
+  ],
+  "hint": "Learned on the road between Silvermoon and Orgrimmar.",
+  "related": [
+   348702,
+   90000005,
+   90000033,
+   343319
+  ],
+  "sources": [
+   "quests 9328, 9811 (head of Dar'Khan to Lor'themar)",
+   "quests 9621, 9812 (Envoy to the Horde descriptions and Sylvanas's reward texts)",
+   "quest 9627 description and reward text (Thrall crushes the letter; link with Outland, not exactly the truth)",
+   "creature_queststarter: 16802 starts 9621 and 9812; 4949 Thrall starts 9627"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000027,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30022,
+  "faction": 0,
+  "title": "The Founding of Durotar",
+  "body": "After the battle at Mount Hyjal, Thrall led the orcs to the eastern shore of Kalimdor, named the land Durotar for his father and raised Orgrimmar. The peace he had made with Jaina Proudmoore did not hold: her father, Admiral Daelin Proudmoore, brought the fleet of Kul Tiras against the new homeland. The Horde broke his offensive, and the admiral fell at Theramore while his daughter stood aside.",
+  "triggers": [
+   [
+    1,
+    14
+   ],
+   [
+    1,
+    1637
+   ],
+   [
+    1,
+    372
+   ]
+  ],
+  "hint": "Learned in the red land the orcs made their own.",
+  "related": [
+   92000006,
+   90000041,
+   1408,
+   1407,
+   92000007
+  ],
+  "sources": [
+   "Durotar 1400, 1407, 1408, 1430",
+   "Orgrimmar 163700",
+   "warcraft.wiki.gg Durotar, Daelin Proudmoore"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000028,
+  "kind": 5,
+  "zone": 0,
+  "sort": 1000,
+  "faction": 0,
+  "title": "The Earthmother",
+  "body": "The tauren say the Earthmother breathed the plains into being and loved the creatures that walked them. When grief overtook her she tore out her eyes, and they became An'she, the sun, and Mu'sha, the moon. The demigod Cenarius taught the first tauren to speak with the trees, and when that teaching was forgotten, the centaur fell upon the tribes.",
+  "triggers": [
+   [
+    1,
+    1639
+   ],
+   [
+    2,
+    5769
+   ]
+  ],
+  "hint": "Learned from the oldest legends of the Shu'halo.",
+  "related": [
+   90000042,
+   163802,
+   163808
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Elder_Rise (east of the central bluff, home of the Cenarion Circle and Council of Elders, Magatha's hut between the two bridges, Hall of Elders)",
+   "page_text 2295, 2298, 2305, 2308 (gameobjects 177207 Mists of Dawn, 177204 Sorrow of the Earthmother, 177205 Forestlord and the first Druids, 177209 Hatred of the Centaur, spawned beside Hamuul's lodge)",
+   "quest 3761 description (piles of dirt, Ghede)",
+   "DB spawns: Hamuul 5769, Magatha 4046, Gorm 4309 and Cor 4310 Grimtotem on Elder Rise",
+   "warcraft.wiki.gg Earth Mother"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000029,
+  "kind": 5,
+  "zone": 0,
+  "sort": 20000,
+  "faction": 0,
+  "title": "The War of the Ancients",
+  "body": "Ten thousand years ago Queen Azshara and her Highborne drew so deeply on the Well of Eternity that they called the Burning Legion into the world. Malfurion Stormrage, Tyrande Whisperwind and the demigod Cenarius led the resistance. In the end the Well collapsed in the Sundering, which tore the land apart. Illidan made a new well on Mount Hyjal, and there the dragons blessed the World Tree Nordrassil, granting the night elves immortality.",
+  "triggers": [
+   [
+    2,
+    3514
+   ],
+   [
+    2,
+    7999
+   ],
+   [
+    1,
+    1659
+   ]
+  ],
+  "hint": "Learned from the histories the night elves keep.",
+  "related": [
+   90000046,
+   90000050,
+   165707,
+   91000030
+  ],
+  "sources": [
+   "Teldrassil 14115",
+   "Darnassus 165702, 165707",
+   "warcraft.wiki.gg War of the Ancients, Sundering (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000030,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30021,
+  "faction": 0,
+  "title": "The Battle of Mount Hyjal",
+  "body": "At the end of the Third War the Burning Legion's lord Archimonde marched on the World Tree Nordrassil to drain its power. Night elves, humans and orcs held him back on the slopes of Mount Hyjal, and when he reached the tree, Malfurion Stormrage turned its power against him and destroyed him. The victory cost the night elves dearly: Nordrassil was left scarred, and with it their immortality was gone.",
+  "triggers": [
+   [
+    2,
+    3514
+   ],
+   [
+    5,
+    929
+   ],
+   [
+    2,
+    7999
+   ]
+  ],
+  "hint": "Learned from those who remember the great battle on the mountain.",
+  "related": [
+   90000046,
+   14100,
+   92000006,
+   91000027
+  ],
+  "sources": [
+   "Teldrassil 14100, 14115, 14126",
+   "Darnassus 165707",
+   "warcraft.wiki.gg Battle of Mount Hyjal (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000031,
+  "kind": 5,
+  "zone": 0,
+  "sort": 5000,
+  "faction": 0,
+  "title": "The Flight from Argus",
+  "body": "Long ago the eredar of Argus were ruled by three: Velen, Kil'jaeden and Archimonde. When the titan Sargeras offered them power, Kil'jaeden and Archimonde accepted and became lords of his Burning Legion. Velen, warned by a vision, fled with those who would follow him, aided by the naaru, and called his people the draenei, the exiled ones. The Legion has hunted them across the stars ever since.",
+  "triggers": [
+   [
+    2,
+    17468
+   ],
+   [
+    2,
+    16756
+   ]
+  ],
+  "hint": "Learned from the exiles who remember their lost world.",
+  "related": [
+   90000051,
+   355705,
+   90000052
+  ],
+  "sources": [
+   "Exodar 355703, 355705",
+   "Bloodmyst 352519",
+   "warcraft.wiki.gg Draenei, Argus (pre-Cataclysm)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000032,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30025,
+  "faction": 0,
+  "title": "The Fall of the Exodar",
+  "body": "When Kael'thas Sunstrider's blood elves seized Tempest Keep, the naaru O'ros hid in one of its dimensional ships, and Velen led the draenei who took it and fled for Azeroth in search of allies. The voyage ended in disaster: the ship came down crippled on Azuremyst Isle, scattering its crystals across both isles, and its survivors, who cannot say why it fell, made the wreck their new home.",
+  "triggers": [
+   [
+    1,
+    3526
+   ],
+   [
+    1,
+    3557
+   ],
+   [
+    1,
+    3524
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "Blood elves had stolen aboard, and fought the draenei on the ship. They survived the crash as well, and hold the west of Bloodmyst.",
+    "triggers": [
+     [
+      1,
+      3584
+     ],
+     [
+      1,
+      3585
+     ]
+    ],
+    "sources": [
+     "Exodar 355700"
+    ]
+   }
+  ],
+  "hint": "Learned in the wreckage that fell from the sky.",
+  "related": [
+   355700,
+   90000051,
+   90000054,
+   90000052
+  ],
+  "sources": [
+   "Exodar 355700",
+   "Azuremyst 352400, 352401",
+   "Bloodmyst 352500, 352530"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000033,
+  "kind": 5,
+  "zone": 0,
+  "sort": 29025,
+  "faction": 0,
+  "title": "The War of the Shifting Sands",
+  "body": "Nearly a thousand years ago the qiraji and their silithid poured out of Ahn'Qiraj and swept across Silithus. The night elves under Fandral Staghelm fought them across the desert, lost Southwind Village and were driven back into Tanaris. At last the insects were sealed behind the Scarab Wall, a barrier of roots and runes that made their city its own prison, and it has held ever since.",
+  "triggers": [
+   [
+    1,
+    1377
+   ],
+   [
+    1,
+    2737
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The bronze dragon Anachronos refused to join the war until the qiraji attacked the Caverns of Time. Then he called on dragons of the red, green and blue, and with the night elves they raised the barrier.",
+    "triggers": [
+     [
+      4,
+      8303
+     ],
+     [
+      5,
+      8303
+     ]
+    ],
+    "sources": [
+     "Silithus 137700, 137715, 137728"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "At the sealing Anachronos offered Staghelm the Scepter of the Shifting Sands, the key that could one day open the barrier. Grieving his son, Staghelm refused the burden and shattered it against the wall.",
+    "triggers": [
+     [
+      4,
+      8519
+     ]
+    ],
+    "sources": [
+     "Silithus 137700, 137715, 137728"
+    ]
+   }
+  ],
+  "hint": "Learned where the desert war was fought.",
+  "related": [
+   90000061,
+   137708,
+   90000060,
+   165708
+  ],
+  "sources": [
+   "Silithus 137700, 137715, 137728",
+   "warcraft.wiki.gg War of the Shifting Sands"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000034,
+  "kind": 5,
+  "zone": 0,
+  "sort": 15000,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Decree of King Ymiron",
+  "body": "Fifteen thousand years ago, visions of the spirit world tell, the vrykul began to bear children small and weak. King Ymiron blamed the titans for cursing his people, renounced the old gods and decreed that every such infant die at birth, though some parents hid their children far away instead. Those children were human: the vrykul are the progenitors of humanity.",
+  "triggers": [
+   [
+    5,
+    11344
+   ]
+  ],
+  "hint": "Learned from visions of an ancient king's decree.",
+  "related": [
+   90000076,
+   91000009,
+   49501
+  ],
+  "sources": [
+   "Howling Fjord 49525",
+   "warcraft.wiki.gg Vrykul, Ymiron (Wrath)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000035,
+  "kind": 5,
+  "zone": 0,
+  "sort": 30026,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Wrathgate",
+  "body": "Before Angrathar the Wrathgate, Highlord Bolvar Fordragon and Saurfang the Younger led the Alliance and the Horde against the Lich King's door. The Lich King came out, Frostmourne in hand, and slew Saurfang in a single stroke. Then Grand Apothecary Putress loosed the Forsaken's plague from the heights on Scourge and living alike; the Lich King withdrew, the red dragons burned the plague away, and Bolvar fell in the fire.",
+  "triggers": [
+   [
+    5,
+    12499
+   ],
+   [
+    5,
+    12500
+   ]
+  ],
+  "hint": "Learned before the gate where both armies fell.",
+  "related": [
+   6518,
+   91000008,
+   90000004,
+   92000005
+  ],
+  "sources": [
+   "Dragonblight 6516, 6517, 6518, 6535",
+   "warcraft.wiki.gg Battle of Angrathar the Wrathgate"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 91000036,
+  "kind": 5,
+  "zone": 0,
+  "sort": 100,
+  "faction": 0,
+  "requiredState": 13,
+  "title": "The Titans",
+  "body": "Long before any mortal people, the titans came to Azeroth and ordered it, raising mountains and seas and shaping its peoples: the earthen of stone, the mechagnomes and the giants. They left keepers behind to watch over their works, Thorim, Hodir, Freya, Mimir and Loken among them, from the city of Ulduar in the Storm Peaks, and they set great works around the world, from the pillars of Sholazar to the Engine of the Makers.",
+  "triggers": [
+   [
+    1,
+    4446
+   ],
+   [
+    1,
+    4432
+   ]
+  ],
+  "hint": "Learned among the works of the makers.",
+  "related": [
+   6717,
+   6718,
+   90000086,
+   371111
+  ],
+  "sources": [
+   "Storm Peaks 6700, 6708, 6717, 6730",
+   "Sholazar 371111, 371120",
+   "warcraft.wiki.gg Titan, Keeper (Wrath)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ }
+]

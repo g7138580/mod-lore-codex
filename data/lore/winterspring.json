@@ -6,12 +6,27 @@
   "sort": 0,
   "faction": 0,
   "title": "Winterspring",
-  "body": "Winterspring is a high valley of snow and ice in the mountains of northern Kalimdor, east of Felwood, north of Azshara and northeast of Mount Hyjal. Most travelers reach it through the tunnels of Timbermaw Hold. Long ago the night elves raised the city of Kel'Theril here, and beside its ruins the cursed spirits of Highborne still drift over a frozen lake. In the Third War Tyrande Whisperwind and Malfurion Stormrage fought across these snows and woke the Druids of the Talon from their barrow dens. Today the goblins of the Steamwheedle Cartel keep the trading post of Everlook at the crossroads of the valley, and night elves hold Starfall Village to its northwest. Frostsabers prowl the northern heights, maddened wildkin guard old sacred places, and the Winterfall furbolgs have turned savage. Blue dragons lair in the caverns of Mazthoril, frost giants hold a canyon in the south, and beyond it, in Darkwhisper Gorge, demons stand between the valley and the heights of Hyjal.",
+  "body": "Winterspring is a high valley of snow and ice in the mountains of northern Kalimdor, reached through the tunnels of Timbermaw Hold. Long ago the Highborne raised the city of Kel'Theril here, and their cursed spirits still drift over a frozen lake. The goblins of the Steamwheedle Cartel keep the trading post of Everlook at the valley's crossroads, frostsabers prowl the northern heights, maddened wildkin guard old sacred places, and blue dragons lair in the caverns of Mazthoril, while in the far south demons stand between the valley and Mount Hyjal.",
   "triggers": [
    [
     1,
     618
    ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "For a time necropolises of the Scourge hang in the sky above the snows, and its armies spread across the valley beneath them.",
+    "triggers": [],
+    "minState": 6,
+    "maxState": 6
+   }
+  ],
+  "related": [
+   61807,
+   90000063,
+   90000057,
+   90000049
   ],
   "sources": [
    "warcraft.wiki.gg/wiki/Winterspring (geography: east of Felwood, north of Azshara, northeast of Hyjal, access through Timbermaw Hold; Kel'Theril and the Sundering; Third War: Tyrande and Malfurion awakened the Druids of the Talon in the Barrow Dens; Darkwhisper demons guarding an entrance to Mount Hyjal)",
@@ -25,108 +40,93 @@
    "warcraft.wiki.gg/wiki/Ruins_of_Kel'Theril (a great night elven city)",
    "warcraft.wiki.gg/wiki/Darkwhisper_Gorge (nonfunctional Hyjal entrance pre-Cataclysm)"
   ],
-  "notes": "Converted: opening unchanged (nothing to hide; Kel'Theril, the Third War and the Druids of the Talon are backstory). Era: mod-individual-progression gives 618, 2241, 2243, 2245 and 2247 its Scourge Invasion phase at state 6 only, with three necropolises (posarea: over Frostsaber Rock, near Timbermaw Post, south of Everlook) and their shards and Scourge; told as part 1 (minState 6, maxState 6, no triggers), following blasted_lands.json 400. The places with spawns carry no separate era part, as in Blasted Lands. No Ahn'Qiraj war spawns in the zone (aq_war.sql has none in the rectangle). No Burning Crusade or Wrath text. Earlier: Fact-check: Kel'Theril made a night elf city (wiki), with Highborne spirits; Darkwhisper Gorge kept as a Winterspring subzone (pre 4.0.3a); Hyjal never described as open. Rest verified. Check: si_gameobjects.sql necropolises 181223 at 7755,-4030 (posarea 2241) and 6646,-3442 (618, near Timbermaw Post), 181373 at 6184,-4913 (618, south of Everlook); si_creatures.sql shards, shocktroopers, ghoul berserkers, spectral soldiers and cultist engineers stand in 2241, 2243, 2245, 2247 and 618, all IPP_PHASE at state 6 only (checkIPPhasing: AQ passed, before Naxx40), so part 1 covers them; none in Everlook. aq_war.sql and aq_war_effort.sql have no spawns in the zone. No Burning Crusade, Wrath or Cataclysm text in any entry.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "A new shadow has fallen over the snows. Necropolises of the Scourge hang in the sky above Frostsaber Rock, above the valley near Timbermaw Post and south of Everlook, and around the necrotic shards beneath them skeletal shocktroopers, ghoul berserkers and spectral soldiers spread across the land while the cultists who serve them labor in their shadow.",
-    "minState": 6,
-    "maxState": 6,
-    "sources": [
-     "mod-individual-progression si_gameobjects.sql (necropolis 181223 at 7755,-4030 in 2241 and 6646,-3442 in 618; 181373 at 6184,-4913 in 618, by posarea)",
-     "mod-individual-progression si_creatures.sql (necrotic shards, cultist engineers, ghoul berserkers, skeletal shocktroopers, spectral soldiers in 618, 2241, 2243, 2245, 2247)",
-     "mod-individual-progression IndividualProgression.cpp checkIPPhasing (AREA_WINTERSPRING, TIMBERMAW_POST, FROSTSABER_ROCK, ICE_THISTLE_HILLS, MAZTHORIL: IPP_PHASE from PROGRESSION_AQ until NAXX40, state 6 only)"
-    ]
-   }
-  ]
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
-  "id": 61801,
+  "id": 61807,
   "kind": 1,
   "zone": 618,
-  "sort": 1,
+  "sort": 0,
   "faction": 0,
-  "title": "Frostfire Hot Springs",
-  "body": "At the far western end of Winterspring, close to the mouth of Timbermaw Hold, steaming pools break through the snow. No volcano lies anywhere near them, and that riddle has drawn the dwarf Donova Snowden, who keeps watch beside one of the springs and has found that their water has strange qualities. She suspects something far more threatening than fire beneath the earth, and believes its source lies at the southern end of the valley, where the air turns thick and muggy and the sky grows dark. The Winterfall furbolgs are drawn to the springs as well. Their pathfinders and den watchers guard the two larger pools fiercely and drive off anyone who comes near.",
+  "title": "Everlook",
+  "body": "Everlook is a trading post of the Steamwheedle Cartel, built where the trade routes of Winterspring meet, and like the Cartel's other towns it is neutral ground: its goblin bruisers have no patience for anyone who spills blood within its walls. An inn, a market and the only bank in the valley serve travelers of every race, and the Argent Dawn and the Thorium Brotherhood both keep envoys here.",
   "triggers": [
    [
     1,
-    2246
+    2255
    ]
   ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Frostfire_Hot_Springs (far western end, Donova suspects Darkwhisper demons)",
-   "warcraft.wiki.gg/wiki/Donova_Snowden (dwarf)",
-   "quest 980 description (no volcanoes anywhere near)",
-   "quest 4842 description and reward text",
-   "quest 5082 description (Winterfall protective of the two larger springs)",
-   "DB spawns in area 2246: Winterfall Den Watcher, Winterfall Pathfinder; Donova 9298 at 6395,-2536 just outside the subzone"
+  "related": [
+   90000027,
+   90000031,
+   90000025
   ],
-  "notes": "Converted: Donova's belief that the Darkwhisper demons heat the springs is told only in the 4842 reward text, so it moved to part 1 (QUEST_DONE 4842, races 0); the opening keeps her suspicion and the 4842 premise (a source in the far south where the air turns muggy). Earlier: verified",
-  "parts": [
-   {
-    "part": 1,
-    "body": "The source Donova sought lies in Darkwhisper Gorge, in the far south of Winterspring. It is the presence of the demons there, she believes, that is affecting the land and warming these springs so far to the north, and she means to keep watching the water until she learns more.",
-    "triggers": [
-     [
-      5,
-      4842
-     ]
-    ],
-    "sources": [
-     "quest 4842 reward text"
-    ]
-   }
-  ]
+  "sources": [
+   "warcraft.wiki.gg/wiki/Everlook (Steamwheedle trading post, crossroads of trade routes, only bank, last settlement before Hyjal Summit, neutral, Thorium Brotherhood)",
+   "creature_text 11190 (Everlook Bruiser: You dare spill blood on neutral ground?)",
+   "quest 6028 description (Gregor represents the Argent Dawn to the local governance of Everlook)",
+   "npc_text 3673 (Malyfous)",
+   "DB spawns in area 2255: Witch Doctor Mau'ari, Storm Shadowhoof, Innkeeper Vizzie, Izzy Coppergrab, Auctioneer Grizzlin",
+   "creature_template 10637 subname The Thorium Brotherhood"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
-  "id": 61802,
+  "id": 61805,
   "kind": 1,
   "zone": 618,
-  "sort": 2,
+  "sort": 0,
   "faction": 0,
-  "title": "Timbermaw Post",
-  "body": "Southeast of the road that runs from the hot springs toward the heart of Winterspring lies Timbermaw Post, a small furbolg camp. Its name suggests that the Timbermaw of the nearby hold once kept it, but the camp now belongs wholly to the Winterfall tribe, whose den watchers and pathfinders stand guard there while owlbeasts and shardtooth bears roam the slopes around it. Salfa, who guards the Winterspring gate of the hold, remembers that the Winterfall were once allies of the Timbermaw, until the strange demands of a high chief turned them against everyone they met.",
+  "title": "Starfall Village",
+  "body": "Starfall Village is a small night elf settlement on the road between Everlook and Frostsaber Rock, the only Alliance outpost in Winterspring, keeping the old Ban'Thallow Barrow Den. Wynd Nightchaser knows a great deal about the valley and its secrets, and a dwarf of the Explorers' League rests here after wildkin chased him from his dig, smashing his camp for an amulet he had unearthed.",
   "triggers": [
    [
     1,
-    2243
+    2253
    ]
   ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Timbermaw_Post (southeast of the road from the hot springs, west of Lake Kel'Theril, held by the Winterfall)",
-   "npc_text 4396 (Salfa: the Winterfall were once our allies, driven by the strange demands of their high chief)",
-   "DB spawns in area 2243: Winterfall Den Watcher x9, Winterfall Pathfinder x9, Shardtooth Bear, Ragged Owlbeast"
+  "related": [
+   90000012,
+   61803
   ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; Salfa's memory of the Winterfall is her greeting (npc_text 4396, reread: classic). Earlier: Fact-check: removed unsupported 'bitter sight' line; the former alliance is now Salfa's memory (npc_text 4396). Rest verified."
+  "sources": [
+   "warcraft.wiki.gg/wiki/Starfall_Village (main road between Everlook and Frostsaber Rock, only Alliance settlement, Ban'Thallow Barrow Den, lodge, residents)",
+   "quest 5249 description (Wynd spends most of his time in Starfall and knows a lot about the area)",
+   "npc_text 4573 (Jaron: Explorers' League hunting artifacts, most highly guarded)",
+   "quest 6604 description (a survivor of the attack is resting at Starfall Village)",
+   "quest 4864 (Jaron at the lodge)",
+   "DB spawns in area 2253: Wynd Nightchaser, Jaron Stoneshaper, Grum Redbeard, Lyranne Feathersong, Natheril Raincaller, Syurana",
+   "subnames: Lyranne Feathersong Food & Drink, Natheril Raincaller General Goods, Syurana Trade Supplies",
+   "warcraft.wiki.gg/wiki/Dun_Mandarr (small camp near an icy cavern in the southeast, set up by Jaron, overrun by moonkin)",
+   "quest 4861 description (chased from camp by wildkin, a buddy not as lucky, amulet unearthed at the dig site)",
+   "quest 4863 description (crate smashed open, abandoned wagon)",
+   "quest 4864 description and reward text (supplies half-buried in snow; why the wildkin defended it)",
+   "DB objects in area 2248: Jaron's Wagon, Damaged Crate, Jaron's Supplies; spawns Winterspring Screecher x12, Crazed and Moontouched Owlbeast"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  },
  {
   "id": 61803,
   "kind": 1,
   "zone": 618,
-  "sort": 3,
+  "sort": 0,
   "faction": 0,
   "title": "Lake Kel'Theril",
-  "body": "In the center of Winterspring lies Lake Kel'Theril, frozen hard beneath the mountain wind. Long ago Highborne sorcerers stole a sacred relic, hoping to siphon its power and become greater still. Their ritual failed. The relic shattered in a tremendous explosion, and its pieces were driven deep beneath the ice of the lake. The thieves were cursed to remain where they had worked their folly, and their suffering, anguished spirits still drift over the frozen water, searching for fragments of the very thing that doomed them. Chimaerae, bears and owlbeasts hunt along the shore.",
+  "body": "In the center of Winterspring lies frozen Lake Kel'Theril, and on its shore the ruins of a Highborne city broken in the Sundering. Its sorcerers once stole a sacred relic, hoping to siphon its power, but the ritual failed: the relic shattered in a tremendous explosion and its pieces were driven deep beneath the ice. The thieves were cursed to remain, and their anguished spirits still drift over the water, searching for the fragments of what doomed them.",
   "triggers": [
    [
     1,
     2251
+   ],
+   [
+    1,
+    2252
    ]
   ],
-  "sources": [
-   "quest 5244 description (cursed race bound to the place of the ritual, relic shattered and driven below the ice)",
-   "quest 5245 description (spirits still search for pieces of the relic)",
-   "quest 5246 (Crystal of Zin-Malor)",
-   "warcraft.wiki.gg/wiki/Winterspring (Highborne stole the Crystal of Zin-Malor from a temple in Eldarath)",
-   "warcraft.wiki.gg/wiki/Lake_Kel'Theril (small frozen lake in central Winterspring)",
-   "DB spawns in area 2251: Suffering Highborne, Anguished Highborne, Highborne Relic Fragment objects, Chillwind Chimaera, Shardtooth Bear, Ragged Owlbeast"
-  ],
-  "notes": "Converted: the relic's name and origin (Aurora's identification, 5246 description, offered on the 5245 turn-in) moved to part 1 (QUEST_DONE 5245, QUEST_ACCEPT 5246; Alliance only, races 1101); the opening tells the theft and curse as Wynd's 5244 premise does, without naming the crystal. The story entry 61828 tells the chain; this part repeats only the name. Earlier: verified. Princess Tempestria and the Watery Invaders here are an Elemental Invasion event spawn and left out. Archaeology is Cataclysm and left out. Check: 'from a temple in Eldarath' restored in part 1 (it was in the original, wiki-sourced, and had been dropped). The name is not visible to a newcomer: no gameobject, creature or area carries it (item 13347 exists only after 5247; the Remorseful Highborne's yell naming it is scripted on the 5248 turn-in; the Temple of Zin-Malor is an Azshara area that does not tie it to the lake), so it stays in the Alliance part.",
   "parts": [
    {
     "part": 1,
-    "body": "The fragments dug from the ice tell what the relic was. The priestess Aurora Skycaller knows them for pieces of the Crystal of Zin-Malor, an artifact able to contain and control strong arcane forces, taken from a temple in Eldarath, in Azshara. It might have served good ends, she says, had the evil intent of those who stole it not made it shatter.",
+    "body": "The relic was the Crystal of Zin-Malor, an artifact able to contain and control strong arcane forces, taken from a temple in Eldarath, in Azshara.",
     "triggers": [
      [
       5,
@@ -138,988 +138,45 @@
      ]
     ],
     "sources": [
-     "quest 5246 description (Aurora names the Crystal of Zin-Malor)",
-     "warcraft.wiki.gg/wiki/Winterspring (stolen from a temple in Eldarath)",
-     "warcraft.wiki.gg/wiki/Winterspring (stolen from a temple in Eldarath; kept from the original)"
+     "quest 5244 description (cursed race bound to the place of the ritual, relic shattered and driven below the ice)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "Mended and shown to the one remorseful spirit among them, the crystal releases the cursed Highborne to let go of the past and rest.",
+    "triggers": [
+     [
+      5,
+      5248
+     ],
+     [
+      4,
+      5252
+     ]
+    ],
+    "sources": [
+     "quest 5244 description (cursed race bound to the place of the ritual, relic shattered and driven below the ice)"
     ]
    }
-  ]
- },
- {
-  "id": 61804,
-  "kind": 1,
-  "zone": 618,
-  "sort": 4,
-  "faction": 0,
-  "title": "The Ruins of Kel'Theril",
-  "body": "On the shore of Lake Kel'Theril lie the remains of a great Highborne city, broken in the Great Sundering ten thousand years ago. Among its fallen stones walk the spirits of the Highborne who died here, suffering and anguished, still bound by the curse of the relic their people stole. Nearly all of them are lost in their own misery and cannot be reached. One alone, a remorseful spirit, speaks of its sorrow and of a past that cannot be undone. The night elf Ranshalla has studied the carvings on these stones and believes they hold the incantations of an ancient altar of Elune.",
-  "triggers": [
-   [
-    1,
-    2252
-   ]
+  ],
+  "related": [
+   90000057,
+   61805
   ],
   "sources": [
+   "quest 5244 description (cursed race bound to the place of the ritual, relic shattered and driven below the ice)",
+   "quest 5245 description (spirits still search for pieces of the relic)",
+   "quest 5246 (Crystal of Zin-Malor)",
+   "warcraft.wiki.gg/wiki/Winterspring (Highborne stole the Crystal of Zin-Malor from a temple in Eldarath)",
+   "warcraft.wiki.gg/wiki/Lake_Kel'Theril (small frozen lake in central Winterspring)",
+   "DB spawns in area 2251: Suffering Highborne, Anguished Highborne, Highborne Relic Fragment objects, Chillwind Chimaera, Shardtooth Bear, Ragged Owlbeast",
    "warcraft.wiki.gg/wiki/Ruins_of_Kel'Theril (night elven city destroyed in the Great Sundering, haunted by Highborne)",
    "npc_text 4635 (Remorseful Highborne: the past cannot be undone)",
    "quest 5252 description (the highborne here are clouded by their own misery; I realize the error)",
    "quest 4901 description (incantations carved into the stone in the ruins)",
    "npc_text 3866 (Ranshalla explored the ruins)",
    "DB spawns in area 2252: Suffering and Anguished Highborne, Remorseful Highborne 10684",
-   "warcraft.wiki.gg/wiki/Ruins_of_Kel'Theril (pre-Cataclysm: Highborne spirits; high elf ghosts and wretched are Cataclysm additions)"
-  ],
-  "notes": "Converted (no parts): 'the crystal their people stole' made 'the relic', since the relic is named a crystal only by Aurora (5246, Lake Kel'Theril part 1); the remorseful spirit's understanding of the old error (5252 description, after the 5248 turn-in) cut back to its gossip (npc_text 4635: the past cannot be undone). npc_text 4635 and 3866 reread: classic. Earlier: verified. Cataclysm high elf ghosts (Archmage Maenius), blood elf wretched and Elder Brightspear (Lunar Festival) left out. Check: Ranshalla's study of the carvings kept. It is a premise (her belief, 4901 description and npc_text 3866), not an outcome, and the same night elf scholar stands in plain sight below Owl Wing Thicket for both factions; nothing a Horde reader learns here is later overturned."
- },
- {
-  "id": 61805,
-  "kind": 1,
-  "zone": 618,
-  "sort": 5,
-  "faction": 0,
-  "title": "Starfall Village",
-  "body": "Starfall Village is a small night elf settlement on the main road between Everlook and Frostsaber Rock, and the only Alliance outpost in Winterspring. A lodge and a smaller house shelter sellers of food, goods and trade supplies, and the village keeps the old Ban'Thallow Barrow Den. Wynd Nightchaser spends most of his days here and knows a great deal about the valley and its secrets. A dwarf has come as well, Jaron Stoneshaper of the Explorers' League, who hunts the magical artifacts said to lie in Winterspring, most of them fiercely guarded. He rests here now, after the wildkin chased him from his camp.",
-  "triggers": [
-   [
-    1,
-    2253
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Starfall_Village (main road between Everlook and Frostsaber Rock, only Alliance settlement, Ban'Thallow Barrow Den, lodge, residents)",
-   "quest 5249 description (Wynd spends most of his time in Starfall and knows a lot about the area)",
-   "npc_text 4573 (Jaron: Explorers' League hunting artifacts, most highly guarded)",
-   "quest 6604 description (a survivor of the attack is resting at Starfall Village)",
-   "quest 4864 (Jaron at the lodge)",
-   "DB spawns in area 2253: Wynd Nightchaser, Jaron Stoneshaper, Grum Redbeard, Lyranne Feathersong, Natheril Raincaller, Syurana",
-   "subnames: Lyranne Feathersong Food & Drink, Natheril Raincaller General Goods, Syurana Trade Supplies"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; Jaron resting at Starfall is the 4861 and 6604 premise. Wynd's npc_text 17586 still not used. Earlier: Fact-check: 'a few houses' made 'a smaller house' (wiki); Wynd's lore narrowed to the valley (5249 says he knows a lot about the area); one dwarf named rather than several. Wynd's npc_text 17586 is not used and nothing from it remains."
- },
- {
-  "id": 61806,
-  "kind": 1,
-  "zone": 618,
-  "sort": 6,
-  "faction": 0,
-  "title": "Frostsaber Rock",
-  "body": "In the far north of Winterspring a great tor juts above the snow, and around it gather the frostsabers, the most feral and hardest to tame of all the great cats. Their matriarch is Shy-Rotam, whose stone stands among the pride. About four thousand years ago Tyrande Whisperwind saved the frostsaber queen from rampaging giants, and since that day the cats have been allies of the night elves. Huntresses, stalkers and pride watchers roam among the cubs, and a great cat called Rak'shiri hunts among them. At the top of the rock the night elf Rivern Frostwind and his companion Glacier patiently train frostsabers to carry riders.",
-  "triggers": [
-   [
-    1,
-    2241
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Frostsaber_Rock (large jutting tor in the north; Rivern at the apex)",
-   "quest 5981 description (Tyrande saved the frostsaber queen about 4,000 years ago)",
-   "quest 5056 description (Shy-Rotam leads the cats; her stone)",
-   "npc_text 3854 (most feral and difficult to subdue of all the sabers)",
-   "DB spawns in area 2241: Frostsaber, Frostsaber Cub, Huntress, Stalker, Pride Watcher, Rak'shiri 10200, Rivern 10618, Glacier 10619; gameobject Stone of Shy-Rotam 177684 resolves to 2241"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; Tyrande and the frostsaber queen are the 5981 premise. mod-individual-progression only rescripts the cats (Shy-Rotam summons Sian-Rotam), nothing told here changes. npc_text 3854 reread: classic. The Scourge necropolis over the rock at state 6 is told in the zone entry. Earlier: verified"
- },
- {
-  "id": 61807,
-  "kind": 1,
-  "zone": 618,
-  "sort": 7,
-  "faction": 0,
-  "title": "Everlook",
-  "body": "Everlook is a trading post of the Steamwheedle Cartel, built where the main trade routes of Winterspring meet. Like the Cartel's other towns it is neutral ground, and its goblin bruisers have no patience for anyone who spills blood within its walls. An inn, a market and the only bank in the valley serve travelers of every race. The town draws curious company: Gregor Greystone speaks for the Argent Dawn before the local governance, Malyfous Darkhammer represents the Thorium Brotherhood, a troll witch doctor makes lucky charms, and a stern tauren sets trials for the bold.",
-  "triggers": [
-   [
-    1,
-    2255
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Everlook (Steamwheedle trading post, crossroads of trade routes, only bank, last settlement before Hyjal Summit, neutral, Thorium Brotherhood)",
-   "creature_text 11190 (Everlook Bruiser: You dare spill blood on neutral ground?)",
-   "quest 6028 description (Gregor represents the Argent Dawn to the local governance of Everlook)",
-   "npc_text 3673 (Malyfous)",
-   "DB spawns in area 2255: Witch Doctor Mau'ari, Storm Shadowhoof, Innkeeper Vizzie, Izzy Coppergrab, Auctioneer Grizzlin",
-   "creature_template 10637 subname The Thorium Brotherhood"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide. creature_text 11190 and npc_text 3673 reread: classic. No Scourge or Ahn'Qiraj war spawns in 2255. Earlier: Fact-check: removed 'last settlement on the road toward Hyjal Summit' (wiki marks it as Warcraft RPG, non-canon, and it hints at a Hyjal road); Malyfous 'represents' the Brotherhood (subname) rather than trades. Holiday spawns, Felnok (Burning Steppes) and Jessica Redpath (Eastern Plaguelands) left out."
- },
- {
-  "id": 61808,
-  "kind": 1,
-  "zone": 618,
-  "sort": 8,
-  "faction": 0,
-  "title": "Mazthoril",
-  "body": "Mazthoril is a deep cavern of ice in central Winterspring, near Lake Kel'Theril and Everlook, and the home of the blue dragonflight in these lands. Cobalt wyrmkin, scalebanes and mageweavers guard its frozen halls among whelps, broodlings and spell eaters, while the drakes Spellmaw, Manaclaw and Scryer keep watch and the blue General Colbatann stalks its passages. At the heart of it all dwells Haleh, the matron protectorate of the flight. Her chamber at the cavern's peak is reached only by magic: cobalt runes set into the icy floor carry those who hold one of the flight's scales up to her.",
-  "triggers": [
-   [
-    1,
-    2245
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Mazthoril (deep icy cavern near Lake Kel'Theril and Everlook, home of the blue dragonflight, Haleh at the peak reached by a portal rune, drakes Spellmaw, Manaclaw, Scryer, General Colbatann)",
-   "quest 5160 description (cobalt runes on the icy floors; hold a scale and stand on a rune to be transported to Haleh)",
-   "DB spawns in area 2245: Cobalt Wyrmkin, Scalebane, Mageweaver, Whelp, Broodling, Spell Eater, Spellmaw, General Colbatann, Haleh; gameobject Rune of Mazthoril"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; the runes and the scale are the 5160 premise. The state 6 Scourge spawns in 2245 are told in the zone entry. Earlier: Fact-check: 'not reached by any path' made 'reached only by magic' (wiki portal rune, quest 5160). Malygos-placed-them claim not used; Cataclysm Umbranse takeover left out."
- },
- {
-  "id": 61809,
-  "kind": 1,
-  "zone": 618,
-  "sort": 9,
-  "faction": 0,
-  "title": "Ice Thistle Hills",
-  "body": "Southeast of Everlook rise the Ice Thistle Hills, the country of the Ice Thistle yeti. They make their home in a cave high in the hills and roam the snowy slopes around it, and their great patriarchs and matriarchs carry the largest horns of their kind. Chillwind chimaerae and shardtooth bears hunt the same ground. The yeti know little peace, for their thick fur and pristine horns are prized in Everlook, where Umi Rumplesnicker wants both for a mechanical yeti of her own. A blue dragon named Azurous roams the hills as well.",
-  "triggers": [
-   [
-    1,
-    2247
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Ice_Thistle_Hills (southeast of Everlook, yeti cave high in the hill)",
-   "quest 3783 description (thick yeti fur, to the southeast)",
-   "quest 977 description (patriarchs and matriarchs have the largest horns; cave to the southeast)",
-   "warcraft.wiki.gg/wiki/Mazthoril (Azurous watches for threats)",
-   "DB spawns in area 2247: Ice Thistle Yeti, Matriarch, Patriarch, Chillwind Chimaera, Shardtooth Mauler, Azurous 10202"
-  ],
-  "notes": "Converted (no parts): 'once needed both to build' made present tense ('wants both for'), so the line does not imply the yeti was finished (Umi 61821 part 1). Earlier: Fact-check: 'high above the hills, lonely watch' for Azurous made plain (he stands within the subzone, DB spawn 10202). Rest verified."
- },
- {
-  "id": 61810,
-  "kind": 1,
-  "zone": 618,
-  "sort": 10,
-  "faction": 0,
-  "title": "Winterfall Village",
-  "body": "Far to the east lies Winterfall Village, the home of the Winterfall furbolgs. The tribe was never known for aggression, yet its ursa, shamans and den watchers now fall upon nearly anything that comes near. The Timbermaw say the change began with the strange demands of High Chief Winterfall, who keeps to the mouth of a cave at the edge of the village. His people carry flasks that hold a strange green liquid, one that almost glows. The fierce Grizzle Snowpaw prowls the camp, and yeti and shardtooth bears roam nearby.",
-  "triggers": [
-   [
-    1,
-    2244
-   ]
-  ],
-  "sources": [
-   "quest 5121 description (not a normally aggressive tribe, under orders from their chief; head east to Winterfall Village)",
-   "npc_text 4396 (strange demands of their high chief)",
-   "quest 5123 description (crude log)",
-   "quest 5083 and 5087 (glowing green liquid; toxic substance purified in spring water)",
-   "felwood.json Gorn One Eye entry (Xandivious, lured out at the cave mouth), mentioned only",
-   "DB spawns in area 2244: Winterfall Ursa, Shaman, Den Watcher, High Chief Winterfall 10738 at 6725,-5277, cave mouth spell focus object 180673, Grizzle Snowpaw 10199, Ice Thistle yeti, Shardtooth Mauler",
-   "quest 5083 description (flask of strange green liquid that almost glows)",
-   "creature_loot_template 12771 (Empty Firewater Flask from Winterfall furbolgs)"
-  ],
-  "notes": "Converted: (no parts) dropped 'the Timbermaw came to learn that a demon named Xandivious lurked behind their madness': it is Felwood's reveal (Gorn One Eye 36125, ACCEPT 8481 and DONE 8481), which Winterspring may not use. The firewater's origin in corrupted ooze moved out (told in 61826 parts 1 to 3); the opening says only that the furbolgs carry flasks of a glowing green liquid (5083 description, item 12771 drops from Winterfall). The chief's crude log (looted on his death, 5123) is left to 61826 part 6. Earlier: verified. Xandivious is Felwood's (Gorn, 8481); mentioned in one clause only. Crown Sprinkler and Chemical Wagon are Love is in the Air spawns and ignored."
- },
- {
-  "id": 61811,
-  "kind": 1,
-  "zone": 618,
-  "sort": 11,
-  "faction": 0,
-  "title": "The Hidden Grove",
-  "body": "In the northeast of Winterspring a forested crater lies hidden behind high cliffs on every side. The only ordinary way in is a cave in the southeastern face of the ridge, though a bold climber might risk the drop from the cliffs above. Within lies a haunt of moontouched owlbeasts, the hostile wildkin of the northern valley, which are fiercer than their kin elsewhere in Winterspring. A few crazed and berserk owlbeasts live among them, and more of their moontouched kind roam the snowy ground beyond the cliffs.",
-  "triggers": [
-   [
-    1,
-    2242
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/The_Hidden_Grove (forested crater in the northeast, surrounded by cliffs, single cave entrance on the southeastern face, hostile moonkin)",
-   "quest 4741 description (in the northern areas the wildkin grow even more ferocious; hunt the moontouched owlbeasts and explore their area)",
-   "quest 4521 description (wildkin guard secrets of the night elves)",
-   "DB spawns in area 2242: Moontouched Owlbeast x3, Crazed Owlbeast, Berserk Owlbeast",
-   "DB: northern Moontouched Owlbeast spawns (x 7350 to 7800) resolve to 2242 and the surrounding area 618; southern ones to Owl Wing Thicket and Dun Mandarr",
-   "warcraft.wiki.gg/wiki/The_Hidden_Grove (dropping down from the top possible but dangerous)"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; the moontouched owlbeasts' ferocity is the 4741 premise. Earlier: Fact-check: removed the Trull Failbane sentence (the grove's link to quest 4741 was only an inference, and it repeated Felwood's Bloodvenom Post line and the Wild Guardians story) and the unsupported 'seldom choose to use it'. Ferocity of the northern wildkin kept from 4741 since the grove holds the north's moontouched population."
- },
- {
-  "id": 61812,
-  "kind": 1,
-  "zone": 618,
-  "sort": 12,
-  "faction": 0,
-  "title": "Owl Wing Thicket",
-  "body": "Owl Wing Thicket is a series of caves along a ridge in southern Winterspring, overrun by crazed, berserk and moontouched owlbeasts. Horde runners report that these wildkin seem to have gone mad from exposure to the very thing they guard. At the foot of the ridge waits the night elf Ranshalla, a colleague of the scholar Erelas Ambersky, fresh from studying the Ruins of Kel'Theril and determined to learn why the wildkin defend this place so fiercely. At the top of the ridge lies what she believes to be an ancient altar of the goddess Elune, which she hopes to open by lighting the torches in the caves while old incantations are spoken over it.",
-  "triggers": [
-   [
-    1,
-    2250
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Owl_Wing_Thicket (series of caves in southern Winterspring, berserk, moontouched and crazed owlbeasts)",
-   "quest 4721 description (series of small caves in the south; creatures gone mad from exposure to what they protect)",
-   "quest 4901 description (altar of Elune at the top of the ridge, five torches)",
-   "npc_text 3866 (Ranshalla back from Kel'Theril, investigating the wildkin up the ridge)",
-   "quest 979 description",
-   "DB spawns in area 2250: Ranshalla 10300, Altar of Elune 177404, Fire of Elune objects, Moontouched/Crazed/Berserk Owlbeast"
-  ],
-  "notes": "Converted (no parts): the altar and the way to open it are now Ranshalla's belief (4901 description: what I believe to be an altar), since that it works is told on the 4901 turn-in (61829 part 3). The Horde runners' report is the 4721 premise. Earlier: verified Check: sentences reordered so Ranshalla is introduced before her belief; no content change. The altar itself is visible (gameobject 177404 Altar of Elune at the summit)."
- },
- {
-  "id": 61813,
-  "kind": 1,
-  "zone": 618,
-  "sort": 13,
-  "faction": 0,
-  "title": "Dun Mandarr",
-  "body": "Dun Mandarr is a small camp beside an icy cavern in southeastern Winterspring, set up by the dwarf Jaron Stoneshaper of the Explorers' League. It did not last. Soon after Jaron unearthed an amulet at his dig site, bloodthirsty wildkin fell upon the camp, smashing his crates and wagon and chasing him away, and he fears a friend of his was not so lucky. Owlbeasts and screeching owls now haunt the wreckage, and what remains of his tools lies half buried in the snow. One crate has been smashed open, almost as if it were exactly what the beasts were after.",
-  "triggers": [
-   [
-    1,
-    2248
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Dun_Mandarr (small camp near an icy cavern in the southeast, set up by Jaron, overrun by moonkin)",
-   "quest 4861 description (chased from camp by wildkin, a buddy not as lucky, amulet unearthed at the dig site)",
-   "quest 4863 description (crate smashed open, abandoned wagon)",
-   "quest 4864 description and reward text (supplies half-buried in snow; why the wildkin defended it)",
-   "DB objects in area 2248: Jaron's Wagon, Damaged Crate, Jaron's Supplies; spawns Winterspring Screecher x12, Crazed and Moontouched Owlbeast"
-  ],
-  "notes": "Converted: the amulet's recovery and Jaron's wonder at why the wildkin defended it (4864 reward text) moved to part 1 (QUEST_DONE 4864, Alliance only, races 1101); the opening keeps the 4861 and 4863 premises (the attack, the smashed crate as if the beasts were after it). Earlier: verified",
-  "parts": [
-   {
-    "part": 1,
-    "body": "The amulet is won back from the wildkin who carried it off, a thing of blue feathers, and brought to Jaron at Starfall Village with his tools. He had expected to hear that the crazed beasts destroyed everything he owned, and he still wonders why they defended the amulet so fiercely. He means to think twice before heading their way again.",
-    "triggers": [
-     [
-      5,
-      4864
-     ]
-    ],
-    "sources": [
-     "quest 4864 log description (Blue-feathered Amulet) and reward text"
-    ]
-   }
-  ]
- },
- {
-  "id": 61814,
-  "kind": 1,
-  "zone": 618,
-  "sort": 14,
-  "faction": 0,
-  "title": "Frostwhisper Gorge",
-  "body": "Frostwhisper Gorge is a deep canyon in the south of Winterspring, held by the frostmaul giants, great beings of solid ice. Shards of ice litter its floor, reflective enough to catch the light like mirrors and prized by those who make charms. These are the same giants from whom Tyrande Whisperwind once saved the frostsaber queen, and Rivern Frostwind still asks friends of the frostsabers to strike them down in Shy-Rotam's name. A brute called Kashoch the Reaver walks among them. Night elf ruins lie along the ridges, where a satyr named Lorax paces in an old temple, and a great bridge spans the chasm toward Darkwhisper Gorge.",
-  "triggers": [
-   [
-    1,
-    2249
-   ]
-  ],
-  "sources": [
-   "quest 969 description (canyon to the south, giants made of solid ice, shards with a powerful reflective quality)",
-   "quest 5981 description (these same giants, the frostmaul, have taken the large valley to the south)",
-   "warcraft.wiki.gg/wiki/Frostwhisper_Gorge (canyon in southern Winterspring, night elven ruins, bridge to Darkwhisper Gorge pre-Shattering)",
-   "warcraft.wiki.gg/wiki/Lorax (ruins of a night elven temple on the gorge's southeastern ridge)",
-   "DB spawns in area 2249: Frostmaul Giant, Frostmaul Preserver, Kashoch the Reaver 10198, Lorax 10918; gameobject Frostmaul Shards"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; the giants and Rivern's charge are the 969 and 5981 premises. Earlier: Verified. Archaeology dig site and Frostilicus (later) left out."
- },
- {
-  "id": 61815,
-  "kind": 1,
-  "zone": 618,
-  "sort": 15,
-  "faction": 0,
-  "title": "Darkwhisper Gorge",
-  "body": "In the far south of Winterspring the air turns thick and muggy and the sky grows dark. This is Darkwhisper Gorge, a maze of tunnels and chasms where demons have made their home, led by Lady Hederine and her manastalkers, slayers and initiates. The demons are not the gorge's only odd residents. An imp named Vi'el keeps a shop of exotic reagents in a cave, and seems startled when a customer slips past the minion at his door, and at the bottom of the gorge the high elf Earthcaller Franzahl studies the elements. Deeper still, a runed gateway faces toward Mount Hyjal, sealed and silent.",
-  "triggers": [
-   [
-    1,
-    2256
-   ]
-  ],
-  "sources": [
-   "quest 4842 description and reward text (thick and muggy air, dark sky, demons of Darkwhisper Gorge affect the springs)",
-   "warcraft.wiki.gg/wiki/Darkwhisper_Gorge (tunnels and chasms in the far south, Hederine demons led by Lady Hederine, Vi'el the imp in a cave, Franzahl a high elf at the bottom, unused entrance to Mount Hyjal)",
-   "npc_text 8292 (Vi'el: how did you sneak past my jail, er, minion)",
-   "npc_text 6985 (Franzahl studies the elements)",
-   "DB spawns in area 2256: Hederine Initiate, Manastalker, Slayer, Lady Hederine 10201, Vi'el 16015, Earthcaller Franzahl 14348",
-   "creature_template 16015 subname Exotic Reagent Merchant"
-  ],
-  "notes": "Converted: Donova's belief that these demons heat her springs (4842 reward text) moved to part 1 (QUEST_DONE 4842, races 0). npc_text 8292 (Vi'el) and 6985 (Franzahl) reread: classic. mod-individual-progression only adds vendor items to Vi'el by state; the NPC is unchanged. Earlier: Fact-check: Vi'el sells exotic reagents (subname, wiki); 'whenever' startled softened to one greeting (npc_text 8292); Hyjal line made a sealed runed gateway (wiki: nonfunctional portal pre-Cataclysm). Twilight's Hammer (Cataclysm) left out. Tears of the Hederine left to Blasted Lands (Daio).",
-  "parts": [
-   {
-    "part": 1,
-    "body": "Donova Snowden of the Frostfire Hot Springs has followed a riddle to this place. Her springs steam far to the north with no volcano anywhere near them, and she believes it is the presence of the demons in this gorge that is affecting the land and warming their water.",
-    "triggers": [
-     [
-      5,
-      4842
-     ]
-    ],
-    "sources": [
-     "quest 4842 reward text"
-    ]
-   }
-  ]
- },
- {
-  "id": 61816,
-  "kind": 2,
-  "zone": 618,
-  "sort": 1,
-  "faction": 0,
-  "title": "Donova Snowden",
-  "body": "Donova Snowden is a dwarf who came to Winterspring to study the Frostfire Hot Springs and has camped beside them a long while since. Cold, vast and dismal as the valley may seem, she calls it a place of many secrets. Her friend Krakle of Un'Goro sends curious travelers her way, for these springs steam with no volcano anywhere near, and Meggi Peppinrocker of Everlook sends those who would help with trouble. Donova has found that the water has strange qualities, and she suspects a far more threatening cause than any fire beneath the earth. The Winterfall furbolgs who guard the larger springs make her studies hard.",
-  "triggers": [
-   [
-    2,
-    9298
-   ]
-  ],
-  "sources": [
-   "npc_text 4634 (cold and vast lands, a place of many secrets)",
-   "quest 5082 description (came to investigate the springs)",
-   "quest 5083 description (camped by the hot springs for some time)",
-   "quest 980 description (Krakle's friend, no volcanoes)",
-   "quest 4842 reward text",
-   "warcraft.wiki.gg/wiki/Donova_Snowden (dwarf)",
-   "quest 6603 description",
-   "quest 5082 description"
-  ],
-  "notes": "Converted: the Darkwhisper demons as the cause (4842 reward text) moved to part 1 (QUEST_DONE 4842); the opening keeps her suspicion (4842 description). Dropped the forgetful gnome's sword and her nervous bad feeling: both rest on creature_text 9298, which no script says in this core (no smart_scripts, event, spell or waypoint script uses it, no ScriptName), and the sword is Un'Goro's Linken story (3908, 3909). Added Meggi (6603) and the Winterfall at the springs (5082) to keep the length. npc_text 4634 reread: classic. Earlier: Verified. Linken's sword is Un'Goro's story (3908, 3909); only alluded to. Faction 0: template 35. Check: creature_text 9298 confirmed unscripted: no smart_scripts, no event_scripts, waypoint_scripts or spell_scripts row uses 9298 or broadcast 6153-6158, 6231-6233, no ScriptName or AIName, nothing in the core scripts or mod-individual-progression.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "Once the far south of the valley has been seen, she names the cause: the demons of Darkwhisper Gorge. Their presence, she believes, is what affects the land and heats her springs. She means to keep observing the water, and warns her visitors to grow stronger before they venture deeper into the gorge.",
-    "triggers": [
-     [
-      5,
-      4842
-     ]
-    ],
-    "sources": [
-     "quest 4842 reward text"
-    ]
-   }
-  ]
- },
- {
-  "id": 61817,
-  "kind": 2,
-  "zone": 618,
-  "sort": 2,
-  "faction": 0,
-  "title": "Haleh",
-  "body": "Haleh is the matron protectorate of the blue dragonflight, a consort of Malygos who dwells at the peak of Mazthoril and receives visitors in the guise of a high elf. The Aspects insist that dragons stay out of mortal affairs, yet Haleh will not stand idle while one of their own kind scorns that law. Nefarian, of the cursed brood of Deathwing, schemes behind the protection of Blackrock Mountain toward ends the blue flight cannot allow. Because the mountain makes it ever harder for the flight to intercede, Haleh offers her power to mortals instead, warning that the path before them is full of peril and the choice theirs to ponder.",
-  "triggers": [
-   [
-    2,
-    10929
-   ],
-   [
-    5,
-    5160
-   ]
-  ],
-  "sources": [
-   "warcraft.wiki.gg/wiki/Haleh (matron protectorate of Mazthoril, consort of Malygos, high elven form)",
-   "quest 5160 description and reward text (the Aspects insist we stay out of mortal affairs; one of our own disregards such edicts)",
-   "quest 5161 description (cursed brood of Deathwing; protection Blackrock mountain affords Nefarian; we can empower you)",
-   "quest 5162 description (the arcane sends you to Jeziba in Andorhal)",
-   "npc_text 6534"
-  ],
-  "notes": "Converted: the opening keeps her 5160 reward and 5161 offer (what a visitor who reaches her hears at once); the journey to Jeziba (5162, offered when 5161 is turned in) moved to part 1 (QUEST_DONE 5161, QUEST_ACCEPT 5162, races 0). npc_text 6534 reread: classic. Malygos and the Aspects' law are her own words; no Wrath text. Earlier: Verified. Her chamber is reached only with Awbee's scale (5160, from Blackrock Spire), so the turn-in is added. Drakefire Amulet quests 6501/6502 have no quest giver in this DB; left out. Faction 0: template 35, 5160-5162 races 0. Haleh is talkable by both (template 35) once reached; the rune needs Awbee's scale, so 5160 turn-in is the sure trigger. Check: her gossip (menu 5482, npc_text 6534) is only 'What is it you ask of the Blue Flight?'; the opening's lines are her 5160 reward and the 5161 offer made on that turn-in, so they are what a first visitor hears. Every visitor comes with Awbee's scale from Blackrock Spire (Awbee 10740, map 229). Nefarian is named only as scheming behind Blackrock Mountain; nothing about his command of the Blackrock orcs (burning_steppes.json 4613 part 4) or his fate.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "To those who accept, she answers only: so it shall be. The arcane is hers to command, and with it she sends them on to the Plaguelands, to Jeziba in Andorhal, a mortal she calls as wise as the ancients and as patient as the immovable earth.",
-    "triggers": [
-     [
-      5,
-      5161
-     ],
-     [
-      4,
-      5162
-     ]
-    ],
-    "sources": [
-     "quest 5161 reward text",
-     "quest 5162 description"
-    ]
-   }
-  ]
- },
- {
-  "id": 61818,
-  "kind": 2,
-  "zone": 618,
-  "sort": 3,
-  "faction": 1,
-  "title": "Rivern Frostwind",
-  "body": "Rivern Frostwind is a night elf who lives atop Frostsaber Rock with his companion Glacier, training the wild frostsabers of Winterspring to bear riders. He calls them the most feral and difficult to subdue of all the sabers, and he will sell one only to the most trusted, who must earn acceptance from him and from the cats alike. Those who would prove themselves begin humbly, gathering meat to feed the sabers in training, then drive the crazed Winterfall furbolgs from the rock and strike at the frostmaul giants in the name of Shy-Rotam. Discipline and determination, he says, are what he asks above all.",
-  "triggers": [
-   [
-    2,
-    10618
-   ]
-  ],
-  "sources": [
-   "npc_text 3854 (Rivern's greeting)",
-   "quest 4970 description and request text (discipline and determination)",
-   "quest 5201 description",
-   "quest 5981 description",
-   "warcraft.wiki.gg/wiki/Rivern_Frostwind (night elf, Wintersaber Trainers, pet Glacier)"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; his three quests (4970, 5201, 5981) are all offered at once with no prerequisite, so the opening tells only their premises. npc_text 3854 reread: classic. mod-individual-progression only changes his subname to 'Wintersaber Trainers' and his stats. Earlier: Verified. Faction 1: template 874 (friend group Alliance, enemy group Horde); his quests are all AllowableRaces 1101."
- },
- {
-  "id": 61819,
-  "kind": 2,
-  "zone": 618,
-  "sort": 4,
-  "faction": 0,
-  "title": "Witch Doctor Mau'ari",
-  "body": "Witch Doctor Mau'ari is a jungle troll who has made a home among the goblins of Everlook and claims she always knows what a visitor has come for. From the reflective shards of the frostmaul giants she makes a lucky charm, the Cache of Mau'ari. Carried on the hunt, it lets its bearer capture e'ko, the spiritual power every creature holds, from the frostsabers, wildkin, yeti and other beasts of the valley. Mau'ari knows an incantation that turns e'ko into juju, and the charm's shining surface reflects that power onto whoever holds it: the speed of the frostsaber, or the keen mind of the wildkin.",
-  "triggers": [
-   [
-    2,
-    10307
-   ]
-  ],
-  "sources": [
-   "quest 969 description (Mau'ari always knows; frostmaul shards reflective)",
-   "quest 975 description (the charm, E'ko)",
-   "npc_text 3382 and 3383 (e'ko is the power each creature possesses; incantation turns it into juju; the shiny surface reflects power)",
-   "quest 4801 request text (speed of the frostsaber)",
-   "quest 4807 request text (wildkin, intellect)",
-   "warcraft.wiki.gg/wiki/Witch_Doctor_Mau'ari (female jungle troll)"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; the charm and e'ko are the 969 and 975 premises and her gossip. npc_text 3382, 3383 reread: classic. Earlier: Verified. Faction 0: template 855, friendly to all; her quests races 0."
- },
- {
-  "id": 61820,
-  "kind": 2,
-  "zone": 618,
-  "sort": 5,
-  "faction": 0,
-  "title": "Storm Shadowhoof",
-  "body": "Storm Shadowhoof is a tauren who stands in Everlook and sets trials for those who wish to prove their worth. He measures each challenger against the wild beasts of Winterspring, and his first quarry is Ursius of the shardtooth bears, an agile and clever hunter who roams the sloping hills northwest of Everlook. All who have gone up against Ursius, Storm warns, have quickly found themselves the prey and Ursius the hunter, so a challenger must stay on guard and strike before the bear discovers their intent.",
-  "triggers": [
-   [
-    2,
-    10303
-   ]
-  ],
-  "sources": [
-   "quest 5054 description (Ursius, hills northwest of Everlook, hunters become the prey)",
-   "quest 5055 description (Brumeran of the chillwind, southern Winterspring)",
-   "quest 5056 description (sacred meat, stone of Shy-Rotam)",
-   "quest 5057 description (marker to Melor Stonehoof)",
-   "warcraft.wiki.gg/wiki/Storm_Shadowhoof (tauren, Everlook, neutral)"
-  ],
-  "notes": "Converted: the opening is the 5054 premise; Brumeran moved to part 1 (QUEST_DONE 5054, QUEST_ACCEPT 5055), Shy-Rotam to part 2 (QUEST_DONE 5055, QUEST_ACCEPT 5056), the marker for Melor to part 3 (QUEST_DONE 5056, QUEST_DONE 5057; 5057 is auto-complete, QuestType 0, so no accept). All races 0. Earlier: Verified. Faction 0: template 35, quests races 0. Melor belongs to Thunder Bluff; only named. Check: three parts kept: each turn-in reveals new lore not available before it (Brumeran, 5055 description; Shy-Rotam's summoning, 5056 description; Storm's recognition and Melor, 5057).",
-  "parts": [
-   {
-    "part": 1,
-    "body": "Ursius falls, yet Storm warns against thinking him impressed. His next quarry is Brumeran of the chillwind, a swift and clever chimaera who glides silently across the snows of southern Winterspring. Her graceful look deceives: all who cross her pay dearly, often with their lives.",
-    "triggers": [
-     [
-      5,
-      5054
-     ],
-     [
-      4,
-      5055
-     ]
-    ],
-    "sources": [
-     "quest 5054 reward text",
-     "quest 5055 description"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "With Brumeran slain, Storm judges the challenger true to their calling and sets the final trial. At Frostsaber Rock the great cats gather around their matriarch, Shy-Rotam. Sacred meat taken from her kin and laid at her stone will call her out in fury, and to defeat her would win great respect.",
-    "triggers": [
-     [
-      5,
-      5055
-     ],
-     [
-      4,
-      5056
-     ]
-    ],
-    "sources": [
-     "quest 5055 reward text",
-     "quest 5056 description"
-    ]
-   },
-   {
-    "part": 3,
-    "body": "Shy-Rotam is defeated, and Storm has shown all he is able to. He had heard of the challenger's endeavors before they ever spoke and now knows them true. He gives his marker, meant for his friend Melor Stonehoof in Thunder Bluff, and asks that the deeds of this day never be forgotten.",
-    "triggers": [
-     [
-      5,
-      5056
-     ],
-     [
-      5,
-      5057
-     ]
-    ],
-    "sources": [
-     "quest 5056 reward text",
-     "quest 5057 description"
-    ]
-   }
-  ]
- },
- {
-  "id": 61821,
-  "kind": 2,
-  "zone": 618,
-  "sort": 6,
-  "faction": 0,
-  "title": "Umi Rumplesnicker",
-  "body": "Umi Rumplesnicker of Everlook has always felt that she could never match the great ideas her friends come up with, until today. Her plan is a secret: a mechanical yeti, its moving parts covered in thick fur from the Ice Thistle yeti to the southeast and crowned with a pair of pristine horns from their patriarchs and matriarchs, only the best looking ones, with nothing beat up or broken. Her friends, she is sure, will be thoroughly frightened when they first see it, and impressed once they get over the fright.",
-  "triggers": [
-   [
-    2,
-    10305
-   ]
-  ],
-  "sources": [
-   "quest 3783 description (friends always coming up with great ideas; mechanical yeti)",
-   "quest 977 description",
-   "quest 5163 description and reward text (they'll think twice before making fun of my ideas)",
-   "creature_text 10978 (Legacki: It was Umi, wasn't it? She's always playing jokes on me)",
-   "npc_text 8143"
-  ],
-  "notes": "Converted: the opening is the 3783 and 977 premises; the finished yeti and the three friends moved to part 1 (QUEST_DONE 977, QUEST_ACCEPT 5163), the scare and Umi's delight to part 2 (QUEST_DONE 5163). Legacki's lines are scripted (smart_scripts 10978 on spellhit 17166). npc_text 8143 reread: classic. All races 0. Earlier: Verified. Umi's race is not stated (wiki only guesses she may lead Everlook); left unstated. Faction 0: template 855.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "The yeti is finished, and Umi has already mailed her friends to say a surprise is on its way. It is to be switched on and sent toward each of them in turn, Legacki here in Everlook, Sprinkle in Gadgetzan and Quixxil at Marshal's Refuge in Un'Goro Crater, and then brought home to her.",
-    "triggers": [
-     [
-      5,
-      977
-     ],
-     [
-      4,
-      5163
-     ]
-    ],
-    "sources": [
-     "quest 977 reward text",
-     "quest 5163 description"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "The surprise works. Legacki jumps in fright and shrieks, calls the culprit a big meanie, then guesses at once who put them up to it, for Umi is forever playing jokes on Legacki. Umi is delighted with the whole affair. Her friends, she says, will think twice before making fun of her ideas again.",
-    "triggers": [
-     [
-      5,
-      5163
-     ]
-    ],
-    "sources": [
-     "creature_text 10978 (said by smart_scripts 1097800 and 1097801 when the yeti is released at Legacki)",
-     "quest 5163 reward text"
-    ]
-   }
-  ]
- },
- {
-  "id": 61822,
-  "kind": 2,
-  "zone": 618,
-  "sort": 7,
-  "faction": 0,
-  "title": "Umbranse the Spiritspeaker",
-  "body": "Umbranse the Spiritspeaker is an aged human medium, a recluse who lives in a small house in the snowy hills northeast of Everlook and shares a camp with the Wintersaber Trainers. He speaks for the dead, and his name is known beyond the valley. He has given the Argent Dawn a book of his own, Studies in Spirit Speaking, which Gregor Greystone, the Dawn's envoy in Everlook, calls quite possibly the largest collection of jibber-jabber he has ever seen, and wants it carried to the Dawn's finest linguist.",
-  "triggers": [
-   [
-    2,
-    8588
-   ],
-   [
-    5,
-    3512
-   ]
-  ],
-  "sources": [
-   "quest 3512 description and reward text (mortal ally, human medium who speaks for the dead; frailties of old age; augury device taken against my will)",
-   "quest 6030 description (Umbranse provided the Argent Dawn with a book, jibber-jabber)",
-   "warcraft.wiki.gg/wiki/Umbranse_the_Spiritspeaker (small building northeast of Everlook, camp with Chal Fairwind)",
-   "DB: Umbranse 8588 and Chal Fairwind 11696 together at 7235,-5131",
-   "quest 6030 description (a recluse medium found in these parts) and reward text (Zverenhoff at Light's Hope has heard of Umbranse)"
-  ],
-  "notes": "Converted: his tie to the green dragonflight, Itharius and Eranikus moved out of the opening: Itharius's identity is Swamp of Sorrows' reveal (804, 813 parts on 3374) and the errand is its 828 part 3 (ACCEPT 3512). Umbranse's own answer is part 1 on QUEST_DONE 3512 (races 1791, both factions), which follows 828 part 3 without repeating it. The opening keeps what any visitor learns (Gregor's 6030 description, the camp with Chal Fairwind). Earlier: Fact-check: he gave the Argent Dawn the book (6030, wiki); authorship not claimed. His chain ends with 3512 in this build. No gossip menu, but as a quest ender he opens quest dialog, so TALK works; 3512 turn-in kept. Swamp of Sorrows owns 3373/3374. Cataclysm villainy left out. Faction 0: template 35; 3512 races 1791 (all). Check: opening confirmed against swamp_of_sorrows.json 828: it keeps only what is visible or told by Gregor (aged human, recluse, the book, his name known as far as Light's Hope per the 6030 reward); Itharius, Eranikus and the green flight appear only in part 1 (DONE 3512), which follows 828 part 3 (ACCEPT 3512) without repeating it. 'would have carried' made 'wants it carried'.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "To those Itharius sends, Umbranse shows himself a mortal ally of the green dragonflight. Eranikus, he says, is not dead as mortals understand death, and will soon give counsel in his own words. Umbranse will lend his gift for death-speaking, but the frailties of old age hold him back, and his most potent augury device has been taken from him against his will. Without it, he cannot help Eranikus.",
-    "triggers": [
-     [
-      5,
-      3512
-     ]
-    ],
-    "sources": [
-     "quest 3512 reward text"
-    ]
-   }
-  ]
- },
- {
-  "id": 61823,
-  "kind": 2,
-  "zone": 618,
-  "sort": 8,
-  "faction": 0,
-  "title": "Earthcaller Franzahl",
-  "body": "At the bottom of Darkwhisper Gorge, among the demons, waits Earthcaller Franzahl, a high elf who studies the known and unknown elements of the world. No mortal has spoken the word elementium to him in decades. His former student Krixix, a goblin, spent a lifetime trying to reach the chained gods of the underworld and what would form only where the elements clash. Nearly a decade ago Krixix opened a fissure in this very gorge, and an agent of Therazane sprang out of it. The two spoke, then the fissure closed and Krixix was gone, swallowed whole. Franzahl warns that what one wishes for may become what one does not want.",
-  "triggers": [
-   [
-    2,
-    14348
-   ]
-  ],
-  "sources": [
-   "npc_text 6985, 6986, 6987, 6988, 6989 (Franzahl's gossip)",
-   "warcraft.wiki.gg/wiki/Darkwhisper_Gorge (high elf at the bottom of the gorge)",
-   "DB: 14348 resolves to area 2256"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; the whole tale of Krixix is his open gossip (npc_text 6985 to 6989, reread: classic 1.x text, nothing of Cataclysm). Earlier: Verified. Faction 0: template 35, gossip menu 5812 open to all."
- },
- {
-  "id": 61824,
-  "kind": 2,
-  "zone": 618,
-  "sort": 9,
-  "faction": 0,
-  "title": "Lorax",
-  "body": "Lorax is a satyr who paces the ruins of a night elf temple above Frostwhisper Gorge, talking to himself. Mock him as mad and he threatens to rip out your tongue; ask what he does and he answers that he broods, laments, hates and plots, then broods again. He dreams of catching Goraluk Anvilcrack. Lorax agreed to teach that Blackrock orc the secret of demon forging in exchange for his soul, a poor price, though in such times any soul is better than none. Goraluk ran off with the unforged, rune-covered breastplate without paying, and Lorax suspects he cowers in Blackrock Spire, trying to finish it without the knowledge only Lorax holds.",
-  "triggers": [
-   [
-    2,
-    10918
-   ]
-  ],
-  "sources": [
-   "npc_text 3759, 3760, 3761, 3762, 3763 (Lorax's gossip tree)",
-   "quest 5126 description (paces about and talks to himself)",
-   "quest 5127 description",
-   "warcraft.wiki.gg/wiki/Lorax (ruins of a night elven temple on the southeastern ridge)"
-  ],
-  "notes": "Unchanged in the parts conversion: nothing to hide; his whole tale is his open gossip tree (npc_text 3759 to 3763, reread: classic). The Demon Forge is played out in Blackrock Spire and not told. Earlier: Verified. The Demon Forge itself is played out in Blackrock Spire and is not told. Faction 0: template 35."
- },
- {
-  "id": 61825,
-  "kind": 2,
-  "zone": 618,
-  "sort": 10,
-  "faction": 0,
-  "title": "Artorius the Amiable",
-  "body": "A tauren who calls himself Artorius the Amiable wanders the high north of Winterspring, along a path that runs from the top of the valley toward Everlook. He greets travelers warmly, delighted to see another soul in so remote a region of the world, and invites them to walk with him so that they may keep each other warm in the cold. Few stop to wonder what a lone and friendly tauren is doing so far out in the frozen wilds, or why he seems so eager for company.",
-  "triggers": [
-   [
-    2,
-    14531
-   ]
-  ],
-  "sources": [
-   "npc_text 7045 (How wonderful to see another person in this remote region; walk with me; keep each other warm)",
-   "gossip_menu_option 5871 (I know you as Artorius the Doombringer. Show yourself, demon!)",
-   "quest 7636 description (agents of the Burning Legion; engage alone or they flee; turning their arrogance into misery)",
-   "warcraft.wiki.gg/wiki/Artorius_the_Amiable (doomguard disguised as a tauren, path from the top of Winterspring toward Everlook)",
-   "npc_stave_of_ancients.cpp npc_artorius OnGossipHello (challenge option only while 7636 is incomplete)"
-  ],
-  "notes": "Converted: his true identity moved out of the opening. Check: part 1 now KILL 14535 only, told as a bystander sees it, like burning_steppes.json 4612 (Klinfran) and the Un'Goro draft's Simone: a hunter challenges him by another name, he answers 'Your soul is mine, weakling' (broadcast 9787) and becomes a doomguard; 'of the Burning Legion' dropped from it (the kill does not tell it). In this core the reveal happens only after the challenge: npc_artorius adds the option only for a character with Stave of the Ancients (7636) incomplete, PrepareForEncounter then lets RevealForm swap him to 14535; attacking the tauren otherwise does not reveal him. Unfair attackers get Fool's Plight and an unfair fight despawns him. Part 2 (QUEST_ACCEPT 7636 only) keeps the original's Legion and Vartrus lore as Vartrus's charge; it names Artorius the Doombringer as Vartrus and the bark do (page_text 2674) and adds the bark's disguise warning, so it reads straight after the opening for a hunter who has not fought him. The original's 'flees from groups' is replaced by what the core does (Fool's Plight on those who join, then the demon despawns), at the coordinator's request, matching Un'Goro and Burning Steppes. 7636 is hunter only (AllowableClasses 4, races 0), QuestType 2 flags 0, so a class-limited part on a faction 0 entry; Vartrus is present for such hunters in every state (zone_felwood.sql IPP phase). felwood.json, burning_steppes.json and Un'Goro use 7636 only as context, so no clash (check_dupes clean). npc_text 7045 reread: classic. Earlier: Fact-check: 'the ancients of Felwood' made Vartrus alone (7636 is his quest); flee from groups, try to destroy a lone foe per 7636. Faction 0: template 25, neutral to both; gossip menu 5871 text has no conditions.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "The kindly tauren is a mask. Hunters come into the high north who know him by another name, Artorius the Doombringer, and dare him to show himself. His answer is a promise to take their soul. The tauren is gone, and a doomguard, a towering demon, stands in his place, fighting to destroy the one who challenged it, while those who join the fight uninvited are made to regret it.",
-    "triggers": [
-     [
-      3,
-      14535
-     ]
-    ],
-    "sources": [
-     "src/server/scripts/World/npc_stave_of_ancients.cpp npc_artorius (challenge option only while 7636 is in the log; Say 9787 'Your soul is mine, weakling'; UpdateEntry to 14535 on reveal; Fool's Plight on unfair attackers, despawn on an unfair fight)",
-     "creature_template 14535 (Artorius the Doombringer)",
-     "gossip_menu_option 5871"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "To the ancient Vartrus of Felwood, Artorius the Doombringer is one of four demonic corrupters, agents of the Legion still active in the world, who bring corruption and doom to all they touch and before whom nature wilts and weeps. They hide in disguise, Vartrus warns, and must be faced alone. Against a lone foe their arrogance makes them stand and fight, but an unfair fight they punish, striking at all who join it, and then they vanish.",
-    "triggers": [
-     [
-      4,
-      7636
-     ]
-    ],
-    "sources": [
-     "quest 7636 description (agents of the Burning Legion, nature wilts and weeps, engage them by yourself, their arrogance)",
-     "item 18708 Petrified Bark, page_text 2671-2675 (disguises and true forms; Artorius brings corruption and doom to all he touches in Winterspring; go alone)",
-     "src/server/scripts/World/npc_stave_of_ancients.cpp (Fool's Plight cast on unfair attackers; an unfair threat list makes the demon unattackable and despawns it)"
-    ]
-   }
-  ]
- },
- {
-  "id": 61826,
-  "kind": 3,
-  "zone": 618,
-  "sort": 1,
-  "faction": 0,
-  "title": "The Winterfall Firewater",
-  "body": "Meggi Peppinrocker of Everlook boasts of her golden hours in the wild, then remembers to send the willing on to Donova Snowden at the Frostfire Hot Springs, where there is trouble. Donova came to study the springs and their strange water, but the Winterfall furbolgs are drawn to them too and have grown fiercely protective of the two larger pools, keeping her away. Some of the Winterfall carry flasks that hold a few drops of a strange green liquid that almost glows, and no one yet knows what it is, or why a tribe never known for aggression has turned so savage.",
-  "triggers": [
-   [
-    4,
-    6603
-   ],
-   [
-    4,
-    5082
-   ],
-   [
-    4,
-    5083
-   ]
-  ],
-  "sources": [
-   "quest 6603 description",
-   "quest 5082 description",
-   "quest 5083 description",
-   "quest 5084 description",
-   "quest 5085 description",
-   "quest 5086 description",
-   "quest 5087 description and reward text",
-   "quest 5121 description",
-   "quest 5123 description",
-   "quest 5128 description and reward text"
-  ],
-  "notes": "Converted: the opening is the 6603, 5082 and 5083 premises; parts follow the chain: 1 Felwood sludge and the runners (QUEST_DONE 5083, QUEST_ACCEPT 5084), 2 the cauldron and the toxic horrors (QUEST_DONE 5085, QUEST_ACCEPT 5086; DONE 5084 is the cauldron gameobject and is not used, Felpaw Village tells the cauldron), 3 the purified firewater (QUEST_DONE 5086, QUEST_ACCEPT 5087), 4 the crate and the chief's orders (QUEST_DONE 5087, QUEST_ACCEPT 5121), 5 the chief slain (QUEST_DONE 5121 only; no KILL trigger), 6 the log sent to Kelek (QUEST_DONE 5123, QUEST_ACCEPT 5128; ACCEPT 5123, the looted log, is not used since it does not reveal Donova's reading), 7 Kelek's promise (QUEST_DONE 5128). All races 0. Xandivious (Felwood, 8481) still not told. Earlier: Fact-check: Donova is reminded of Felwood sludge (5084), not certain; the purified firewater 'temporarily affects' drinkers (5087). Entry points: 6603 (Meggi), 5082 (standalone), 5083 (Empty Firewater Flask item). Felwood leaves the chain and Kelek to Winterspring. Xandivious (Gorn, 8481) not retold. Faction 0: all races 0. Check: part 4's chief line made conditional (5121 description: if their leader is slain), since he dies only in part 5. Parts confirmed against the chain (PrevQuestID/RewardNextQuest 5083 to 5121, 5123 after 5087, 5128 after 5123); no part repeats 61801, 61810, 61815 or 61816, which share only the opening premises (the Winterfall at the pools, the glowing flasks).",
-  "parts": [
-   {
-    "part": 1,
-    "body": "Donova knows the look of it. The green liquid reminds her of the sludge she saw in Felwood, and she has seen Winterfall runners passing into Timbermaw Hold. Beyond the hold lies a camp of the Deadwood, furbolgs corrupted and driven mad by the fel, where some sign of dealings between the two tribes may be found.",
-    "triggers": [
-     [
-      5,
-      5083
-     ],
-     [
-      4,
-      5084
-     ]
-    ],
-    "sources": [
-     "quest 5083 reward text",
-     "quest 5084 description"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "In the Deadwood camp a cauldron bubbles with the same foul goo, and a sample goes back to Donova. She finds traces of toxic elements in it, and suspects the Deadwood draw them from other corrupted creatures of Felwood, above all the toxic horrors of Irontree Woods.",
-    "triggers": [
-     [
-      5,
-      5085
-     ],
-     [
-      4,
-      5086
-     ]
-    ],
-    "sources": [
-     "quest 5085 description and reward text",
-     "quest 5086 description"
-    ]
-   },
-   {
-    "part": 3,
-    "body": "Compared with droplets from the toxic horrors, the riddle comes clear. Mixed with water from the hot springs, the poison loses its toxicity yet keeps the power to affect whoever drinks it for a time. The Winterfall need the springs to purify their firewater, so Donova means to cut them off from the Deadwood by stopping the runners who carry their shipments.",
-    "triggers": [
-     [
-      5,
-      5086
-     ],
-     [
-      4,
-      5087
-     ]
-    ],
-    "sources": [
-     "quest 5087 description"
-    ]
-   },
-   {
-    "part": 4,
-    "body": "A seized crate gives Donova more to wonder at: perhaps the stuff makes the furbolgs more aggressive, for they do seem much larger. The Winterfall were never a warlike tribe, and she believes they must be acting on their chief's orders. Nothing can undo the harm already done, but if High Chief Winterfall is slain, she hopes they will grow no worse.",
-    "triggers": [
-     [
-      5,
-      5087
-     ],
-     [
-      4,
-      5121
-     ]
-    ],
-    "sources": [
-     "quest 5087 reward text",
-     "quest 5121 description"
-    ]
-   },
-   {
-    "part": 5,
-    "body": "High Chief Winterfall is slain at the edge of his village. Donova gives thanks and hopes to return to her studies without fear of ambush, though she admits that little is yet known of why the furbolgs brewed and drank the strange firewater at all.",
-    "triggers": [
-     [
-      5,
-      5121
-     ]
-    ],
-    "sources": [
-     "quest 5121 reward text",
-     "quest 5128 description (why the furbolg were driven to create and consume the firewater)"
-    ]
-   },
-   {
-    "part": 6,
-    "body": "The high chief carried a long log, its markings so crude and poorly formed that Donova can make nothing of them. She sends it on to Kelek Skykeeper of the Emerald Circle, druids who labor to heal Felwood, for Kelek has much experience with the furbolgs there and may be able to read it.",
-    "triggers": [
-     [
-      5,
-      5123
-     ],
-     [
-      4,
-      5128
-     ]
-    ],
-    "sources": [
-     "quest 5123 description and reward text",
-     "quest 5128 description"
-    ]
-   },
-   {
-    "part": 7,
-    "body": "Kelek takes the log gladly, for very little is known about the Winterfall furbolgs. He leafs through its pages and asks to keep it a while to translate it. Once he has looked it over fully, he promises, he will send word.",
-    "triggers": [
-     [
-      5,
-      5128
-     ]
-    ],
-    "sources": [
-     "quest 5128 reward text"
-    ]
-   }
-  ]
- },
- {
-  "id": 61827,
-  "kind": 3,
-  "zone": 618,
-  "sort": 2,
-  "faction": 0,
-  "title": "Salfa's Watch",
-  "body": "Salfa stands at the Winterspring gate of Timbermaw Hold, both speaker for the Timbermaw in this land and defender of the tribe. Nafien, who keeps the Felwood gate, sends the tribe's friends through the hold to Salfa, warning them to hurry and never to strike a Timbermaw, even in self defense. Salfa tells them that the Winterfall of this frozen land were once allies of the Timbermaw, until the strange demands of their high chief turned them on everything they met. Now they have fallen under the same corrupting sway as the Deadwood of Felwood, consumed by fear and hatred of all they do not understand, and Salfa asks that their numbers be thinned.",
-  "triggers": [
-   [
-    4,
-    8465
-   ],
-   [
-    4,
-    8464
-   ],
-   [
-    5,
-    8469
-   ]
-  ],
-  "sources": [
-   "quest 8465 description and reward text",
-   "quest 8464 description and reward text",
-   "quest 8469 request text (spirit beads ward against foul spirits, clearly failed)",
-   "quest 8471 description and reward text",
-   "npc_text 4396 (Salfa's greeting)"
-  ],
-  "notes": "Converted: the opening is the 8465 and 8464 premises and Salfa's greeting; Salfa's thanks moved to part 1 (QUEST_DONE 8464), the spirit beads to part 2 (QUEST_DONE 8469, auto-complete, already an entry trigger), Kernda's reading of the Winterfall totem to part 3 (QUEST_DONE 8471, item-started, QuestSortID 618, ends with Kernda in Timbermaw Hold; no other zone uses it, Felwood uses only 8470 for the Deadwood totem). npc_text 4396 reread: classic. All races 0. Earlier: Verified. Entry points: 8465 (Nafien in Felwood, no prerequisite), 8464 (Salfa, standalone). 8469 is auto-complete (QuestType 0), so QUEST_DONE. 8471 ends with Kernda inside Timbermaw Hold (Felwood's place) and is told without a trigger. Faction 0: races 0. Check: felwood.json tells only the Deadwood totem (Timbermaw Ally part 5, DONE 8470) and Kernda's role (Timbermaw Hold); 8471 and the Winterfall totem are not told there.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "Salfa gives thanks for the deed, saddening as it is. The Timbermaw have very few allies to call upon, and without such help, she says, the threats against the tribe would surely be too much for it to bear alone.",
-    "triggers": [
-     [
-      5,
-      8464
-     ]
-    ],
-    "sources": [
-     "quest 8464 reward text"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "Trust among so wary a tribe must be earned again and again. The Winterfall carry spirit beads to ward off foul spirits, charms that have plainly failed, since the Winterfall themselves have become agents of corruption, and every set brought to Salfa is spoken of among the Timbermaw.",
-    "triggers": [
-     [
-      5,
-      8469
-     ]
-    ],
-    "sources": [
-     "quest 8469 request text and reward text"
-    ]
-   },
-   {
-    "part": 3,
-    "body": "A ritual totem taken from the Winterfall, heavy with dread and despair, reaches Kernda inside the hold. It has the shape of a Winterfall totem, yet it has been twisted by forces she cannot begin to comprehend, and whatever taint set the Winterfall against her tribe is surely in it. The Timbermaw will study it, hoping that one day the Winterfall will rage against them no more.",
-    "triggers": [
-     [
-      5,
-      8471
-     ]
-    ],
-    "sources": [
-     "quest 8471 description and reward text"
-    ]
-   }
-  ]
- },
- {
-  "id": 61828,
-  "kind": 3,
-  "zone": 618,
-  "sort": 3,
-  "faction": 1,
-  "title": "The Crystal of Zin-Malor",
-  "body": "Ivy Leafrunner in Felwood and Daryn Lightwind of Rut'theran Village send the curious to Winterspring, a harsh land full of ancient elven ruins, and to Wynd Nightchaser of Starfall Village, who knows the area well. Wynd tells the tale of Kel'Theril, a cursed race bound to the place of an unfortunate ritual. Highborne there once stole a sacred relic, believing they could siphon its power for themselves, but it shattered in a great explosion and its pieces were driven beneath the ice of the lake. For more, Wynd sends visitors to the dwarf Jaron Stoneshaper, who has lately seen the place himself.",
-  "triggers": [
-   [
-    4,
-    5249
-   ],
-   [
-    4,
-    5250
-   ],
-   [
-    4,
-    5244
-   ]
-  ],
-  "sources": [
+   "warcraft.wiki.gg/wiki/Ruins_of_Kel'Theril (pre-Cataclysm: Highborne spirits; high elf ghosts and wretched are Cataclysm additions)",
    "quest 5249 description",
    "quest 5250 description and reward text (student of Daryn Lightwind)",
    "quest 5244 description",
@@ -1132,304 +189,320 @@
    "quest 5253 description and reward text",
    "teldrassil.json (Daryn Lightwind, lore keeper in Rut'theran)"
   ],
-  "notes": "Converted: the opening is the 5249, 5250 and 5244 premises; parts follow the chain: 1 Jaron and the fragments (QUEST_DONE 5244, QUEST_ACCEPT 5245), 2 Aurora names the crystal (QUEST_DONE 5245, QUEST_ACCEPT 5246), 3 the mending (QUEST_DONE 5247, QUEST_ACCEPT 5248; DONE 5246 not used, it reveals only the ingredients), 4 the remorseful spirit (QUEST_DONE 5248, QUEST_ACCEPT 5252), 5 Wynd sends it to Fandral (QUEST_DONE 5252, QUEST_ACCEPT 5253), 6 Fandral's word (QUEST_DONE 5253). All AllowableRaces 1101. 5246 to 5248 are filed under the Eastern Plaguelands (QuestSortID 139) and 5253 ends in Darnassus, but no other zone file uses them (check_dupes). Aurora's own place line stays Eastern Plaguelands' (13913). Earlier: Verified. Entry points: 5249 (Ivy, Felwood leaves it to Winterspring), 5250 (Daryn), 5244 (Wynd, no prerequisite). Aurora's mending is only a line in eastern_plaguelands.json (Quel'Lithien Lodge, area trigger); no trigger shared. Faction 1: every quest AllowableRaces 1101. Entry quests begin outside the zone (5249 Felwood, 5250 Rut'theran) and 5253 ends with Fandral in Darnassus, but neither felwood.json, teldrassil.json nor darnassus.json uses these quests or tells the chain.",
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 61806,
+  "kind": 1,
+  "zone": 618,
+  "sort": 0,
+  "faction": 0,
+  "title": "Frostsaber Rock",
+  "body": "In the far north of Winterspring a great tor juts above the snow, and around it gather the frostsabers, the most feral of all the great cats, under their matriarch Shy-Rotam. About four thousand years ago Tyrande Whisperwind saved the frostsaber queen from rampaging giants, the frostmaul of Frostwhisper Gorge to the south, and since that day the cats have been allies of the night elves. At the top of the rock a night elf trains frostsabers to carry riders.",
+  "triggers": [
+   [
+    1,
+    2241
+   ],
+   [
+    1,
+    2249
+   ]
+  ],
+  "related": [
+   90000046,
+   165707
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Frostsaber_Rock (large jutting tor in the north; Rivern at the apex)",
+   "quest 5981 description (Tyrande saved the frostsaber queen about 4,000 years ago)",
+   "quest 5056 description (Shy-Rotam leads the cats; her stone)",
+   "npc_text 3854 (most feral and difficult to subdue of all the sabers)",
+   "DB spawns in area 2241: Frostsaber, Frostsaber Cub, Huntress, Stalker, Pride Watcher, Rak'shiri 10200, Rivern 10618, Glacier 10619; gameobject Stone of Shy-Rotam 177684 resolves to 2241",
+   "quest 969 description (canyon to the south, giants made of solid ice, shards with a powerful reflective quality)",
+   "quest 5981 description (these same giants, the frostmaul, have taken the large valley to the south)",
+   "warcraft.wiki.gg/wiki/Frostwhisper_Gorge (canyon in southern Winterspring, night elven ruins, bridge to Darkwhisper Gorge pre-Shattering)",
+   "warcraft.wiki.gg/wiki/Lorax (ruins of a night elven temple on the gorge's southeastern ridge)",
+   "DB spawns in area 2249: Frostmaul Giant, Frostmaul Preserver, Kashoch the Reaver 10198, Lorax 10918; gameobject Frostmaul Shards",
+   "npc_text 3854 (Rivern's greeting)",
+   "quest 4970 description and request text (discipline and determination)",
+   "quest 5201 description",
+   "quest 5981 description",
+   "warcraft.wiki.gg/wiki/Rivern_Frostwind (night elf, Wintersaber Trainers, pet Glacier)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 61808,
+  "kind": 1,
+  "zone": 618,
+  "sort": 0,
+  "faction": 0,
+  "title": "Mazthoril",
+  "body": "Mazthoril is a deep cavern of ice in central Winterspring, home of the blue dragonflight in these lands, its halls guarded by wyrmkin and drakes. At its peak, reached only by cobalt runes that carry those who hold a scale of the flight, dwells Haleh, the matron protectorate, a consort of Malygos who receives visitors in the guise of a high elf.",
+  "triggers": [
+   [
+    1,
+    2245
+   ],
+   [
+    2,
+    10929
+   ]
+  ],
   "parts": [
    {
     "part": 1,
-    "body": "Jaron is no historian, but he has seen the spirits of Kel'Theril, miserable creatures still searching for pieces of the relic that cursed them. He lends his pick to dig the fragments out of the ice, and though he cannot say what they are, he knows someone who might: Aurora Skycaller, who lives near the Northpass Tower in the Eastern Plaguelands.",
+    "body": "The Aspects insist that dragons stay out of mortal affairs, yet Haleh will not stand idle while Nefarian schemes behind Blackrock Mountain, and she offers her power to mortals instead.",
     "triggers": [
      [
-      5,
-      5244
-     ],
-     [
-      4,
-      5245
+      2,
+      10929
      ]
     ],
     "sources": [
-     "quest 5244 reward text",
-     "quest 5245 description"
+     "warcraft.wiki.gg/wiki/Mazthoril (deep icy cavern near Lake Kel'Theril and Everlook, home of the blue dragonflight, Haleh at the peak reached by a portal rune, drakes Spellmaw, Manaclaw, Scryer, General Colbatann)"
+    ]
+   }
+  ],
+  "related": [
+   90000063,
+   90000024
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Mazthoril (deep icy cavern near Lake Kel'Theril and Everlook, home of the blue dragonflight, Haleh at the peak reached by a portal rune, drakes Spellmaw, Manaclaw, Scryer, General Colbatann)",
+   "quest 5160 description (cobalt runes on the icy floors; hold a scale and stand on a rune to be transported to Haleh)",
+   "DB spawns in area 2245: Cobalt Wyrmkin, Scalebane, Mageweaver, Whelp, Broodling, Spell Eater, Spellmaw, General Colbatann, Haleh; gameobject Rune of Mazthoril",
+   "warcraft.wiki.gg/wiki/Haleh (matron protectorate of Mazthoril, consort of Malygos, high elven form)",
+   "quest 5160 description and reward text (the Aspects insist we stay out of mortal affairs; one of our own disregards such edicts)",
+   "quest 5161 description (cursed brood of Deathwing; protection Blackrock mountain affords Nefarian; we can empower you)",
+   "quest 5162 description (the arcane sends you to Jeziba in Andorhal)",
+   "npc_text 6534"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 61810,
+  "kind": 1,
+  "zone": 618,
+  "sort": 0,
+  "faction": 0,
+  "title": "Winterfall Village",
+  "body": "Far to the east lies Winterfall Village, home of the Winterfall furbolgs. The tribe, once allies of the Timbermaw, was never known for aggression, yet its warriors now fall upon nearly anything that comes near, and they guard the Frostfire Hot Springs in the west fiercely. The Timbermaw say the change began with the strange demands of High Chief Winterfall, and his people carry flasks of a strange green liquid that almost glows.",
+  "triggers": [
+   [
+    1,
+    2244
+   ],
+   [
+    1,
+    2243
+   ],
+   [
+    1,
+    2246
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The firewater is Deadwood sludge from Felwood, toxic until mixed with the water of the hot springs, which keeps its power over those who drink it.",
+    "triggers": [
+     [
+      5,
+      5086
+     ],
+     [
+      4,
+      5087
+     ]
+    ],
+    "sources": [
+     "quest 5121 description (not a normally aggressive tribe, under orders from their chief; head east to Winterfall Village)"
     ]
    },
    {
     "part": 2,
-    "body": "Aurora would rather not speak of the high elves' past, for it pains her that there is no way to make things right. Yet she names the shards: the Crystal of Zin-Malor, which can contain and control strong arcane forces and might have served good ends, had the evil intent of its thieves not shattered it. To mend it she needs sacred writings from the Temple of Zin-Malor in Azshara.",
+    "body": "Behind the chief stood a demon, Xandivious, dominating the tribe. With its essence the Winterfall's long healing can at last begin, slow as it will be.",
     "triggers": [
      [
       5,
-      5245
-     ],
-     [
-      4,
-      5246
+      8481
      ]
     ],
     "sources": [
-     "quest 5245 reward text",
-     "quest 5246 description"
-    ]
-   },
-   {
-    "part": 3,
-    "body": "With the writings, an enchanted thorium bar, crystal restoratives and water from the dire pool of Dire Maul, Aurora fuses the fragments whole. She weeps that the elves too have been shattered as a race, and asks that the crystal be carried back to Lake Kel'Theril and shown to a spirit who understands the error of what was done long ago.",
-    "triggers": [
-     [
-      5,
-      5247
-     ],
-     [
-      4,
-      5248
-     ]
-    ],
-    "sources": [
-     "quest 5247 description and reward text",
-     "quest 5248 description"
-    ]
-   },
-   {
-    "part": 4,
-    "body": "Most of the spirits are lost in their misery, but one remorseful soul knows the error of the past. At the sight of the crystal it calls out to its brethren that the Crystal of Zin-Malor is whole once again, and that they may let go of the past and rest. The crystal, it insists, must be returned.",
-    "triggers": [
-     [
-      5,
-      5248
-     ],
-     [
-      4,
-      5252
-     ]
-    ],
-    "sources": [
-     "creature_text 10684 (said by smart_scripts 10684 on the 5248 turn-in)",
-     "quest 5252 description"
-    ]
-   },
-   {
-    "part": 5,
-    "body": "Wynd can hardly believe it. The crystal can never go back to its temple, which lies in ruin, and only a handful of the strongest magic users could ever control its power, so he sends it to Arch Druid Fandral Staghelm in Darnassus, to be kept by those who will not abuse it.",
-    "triggers": [
-     [
-      5,
-      5252
-     ],
-     [
-      4,
-      5253
-     ]
-    ],
-    "sources": [
-     "quest 5252 reward text",
-     "quest 5253 description"
-    ]
-   },
-   {
-    "part": 6,
-    "body": "Fandral has heard of the Crystal of Zin-Malor: its user gains incredible arcane power, but only if truly worthy. He is impressed that its bearer knew their own limits and never tried to wield it. The druids will keep it safe, and he hopes the cursed spirits that once guarded the shattered crystal may finally be at peace.",
-    "triggers": [
-     [
-      5,
-      5253
-     ]
-    ],
-    "sources": [
-     "quest 5253 reward text"
+     "quest 5121 description (not a normally aggressive tribe, under orders from their chief; head east to Winterfall Village)"
     ]
    }
-  ]
- },
- {
-  "id": 61829,
-  "kind": 3,
-  "zone": 618,
-  "sort": 4,
-  "faction": 1,
-  "title": "The Altar of Elune",
-  "body": "Erelas Ambersky of Rut'theran Village has found that wildkin feathers from the Hinterlands carry traces of magic, not wielded by the creatures but inherent in them, part of their very essence. He has heard that a large population of wildkin lives in the snows of Winterspring, and he wonders whether they share the same power. So he asks for moontouched feathers fallen to the ground in that valley, hoping to learn where such powers could have come from. He believes he is on the right track.",
-  "triggers": [
-   [
-    4,
-    978
-   ],
-   [
-    4,
-    979
-   ]
+  ],
+  "related": [
+   90000049,
+   36117
   ],
   "sources": [
+   "quest 5121 description (not a normally aggressive tribe, under orders from their chief; head east to Winterfall Village)",
+   "npc_text 4396 (strange demands of their high chief)",
+   "quest 5123 description (crude log)",
+   "quest 5083 and 5087 (glowing green liquid; toxic substance purified in spring water)",
+   "felwood.json Gorn One Eye entry (Xandivious, lured out at the cave mouth), mentioned only",
+   "DB spawns in area 2244: Winterfall Ursa, Shaman, Den Watcher, High Chief Winterfall 10738 at 6725,-5277, cave mouth spell focus object 180673, Grizzle Snowpaw 10199, Ice Thistle yeti, Shardtooth Mauler",
+   "quest 5083 description (flask of strange green liquid that almost glows)",
+   "creature_loot_template 12771 (Empty Firewater Flask from Winterfall furbolgs)",
+   "warcraft.wiki.gg/wiki/Timbermaw_Post (southeast of the road from the hot springs, west of Lake Kel'Theril, held by the Winterfall)",
+   "npc_text 4396 (Salfa: the Winterfall were once our allies, driven by the strange demands of their high chief)",
+   "DB spawns in area 2243: Winterfall Den Watcher x9, Winterfall Pathfinder x9, Shardtooth Bear, Ragged Owlbeast",
+   "warcraft.wiki.gg/wiki/Frostfire_Hot_Springs (far western end, Donova suspects Darkwhisper demons)",
+   "warcraft.wiki.gg/wiki/Donova_Snowden (dwarf)",
+   "quest 980 description (no volcanoes anywhere near)",
+   "quest 4842 description and reward text",
+   "quest 5082 description (Winterfall protective of the two larger springs)",
+   "DB spawns in area 2246: Winterfall Den Watcher, Winterfall Pathfinder; Donova 9298 at 6395,-2536 just outside the subzone",
+   "quest 6603 description",
+   "quest 5082 description",
+   "quest 5083 description",
+   "quest 5084 description",
+   "quest 5085 description",
+   "quest 5086 description",
+   "quest 5087 description and reward text",
+   "quest 5121 description",
+   "quest 5123 description",
+   "quest 5128 description and reward text",
+   "npc_text 4399 (Gorn gossip)",
+   "quest 8481 description and reward (summon the demon at High Chief Winterfall's cave, Essence of Xandivious, chance at survival)",
+   "quests 8484, 8485 (offering of peace to Magni and Thrall, who had tried to make contact)",
+   "warcraft.wiki.gg/wiki/Gorn_One_Eye (general goods vendor)"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 61815,
+  "kind": 1,
+  "zone": 618,
+  "sort": 0,
+  "faction": 0,
+  "title": "Darkwhisper Gorge",
+  "body": "In the far south of Winterspring the air turns thick and muggy and the sky grows dark: this is Darkwhisper Gorge, a maze of tunnels and chasms where demons have made their home. Deeper still, a runed gateway faces toward Mount Hyjal, sealed and silent. At the bottom of the gorge a high elf earthcaller studies the elements; nearly a decade ago his goblin student opened a fissure here, spoke with an agent of Therazane, and was swallowed whole.",
+  "triggers": [
+   [
+    1,
+    2256
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The demons' presence, a dwarf scholar believes, warms the Frostfire Hot Springs far to the north, though no volcano lies anywhere near them.",
+    "triggers": [
+     [
+      5,
+      4842
+     ]
+    ],
+    "sources": [
+     "quest 4842 description and reward text (thick and muggy air, dark sky, demons of Darkwhisper Gorge affect the springs)"
+    ]
+   }
+  ],
+  "related": [
+   61800,
+   91000030
+  ],
+  "sources": [
+   "quest 4842 description and reward text (thick and muggy air, dark sky, demons of Darkwhisper Gorge affect the springs)",
+   "warcraft.wiki.gg/wiki/Darkwhisper_Gorge (tunnels and chasms in the far south, Hederine demons led by Lady Hederine, Vi'el the imp in a cave, Franzahl a high elf at the bottom, unused entrance to Mount Hyjal)",
+   "npc_text 8292 (Vi'el: how did you sneak past my jail, er, minion)",
+   "npc_text 6985 (Franzahl studies the elements)",
+   "DB spawns in area 2256: Hederine Initiate, Manastalker, Slayer, Lady Hederine 10201, Vi'el 16015, Earthcaller Franzahl 14348",
+   "creature_template 16015 subname Exotic Reagent Merchant",
+   "npc_text 4634 (cold and vast lands, a place of many secrets)",
+   "quest 5082 description (came to investigate the springs)",
+   "quest 5083 description (camped by the hot springs for some time)",
+   "quest 980 description (Krakle's friend, no volcanoes)",
+   "quest 4842 reward text",
+   "warcraft.wiki.gg/wiki/Donova_Snowden (dwarf)",
+   "quest 6603 description",
+   "quest 5082 description",
+   "npc_text 6985, 6986, 6987, 6988, 6989 (Franzahl's gossip)",
+   "warcraft.wiki.gg/wiki/Darkwhisper_Gorge (high elf at the bottom of the gorge)",
+   "DB: 14348 resolves to area 2256"
+  ],
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
+ },
+ {
+  "id": 61812,
+  "kind": 1,
+  "zone": 618,
+  "sort": 0,
+  "faction": 0,
+  "title": "Owl Wing Thicket",
+  "body": "Owl Wing Thicket is a series of caves along a ridge in southern Winterspring, overrun by crazed and moontouched owlbeasts, which seem to have gone mad from exposure to the very thing they guard. At the top of the ridge, the night elf scholar Ranshalla believes, lies an ancient altar of Elune, which incantations carved in the ruins of Kel'Theril may open.",
+  "triggers": [
+   [
+    1,
+    2250
+   ],
+   [
+    1,
+    2242
+   ]
+  ],
+  "parts": [
+   {
+    "part": 1,
+    "body": "The altar once held a gem through which Elune's priestesses spoke with the goddess, and to guard it she gave them the wildkin. Without her guidance the wildkin have grown feral, yet they still guard her sacred places.",
+    "triggers": [
+     [
+      5,
+      4901
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Owl_Wing_Thicket (series of caves in southern Winterspring, berserk, moontouched and crazed owlbeasts)"
+    ]
+   },
+   {
+    "part": 2,
+    "body": "A glowing necklace taken from one carries a single source of power: the wildkin were made by Elune to guard her most sacred places.",
+    "triggers": [
+     [
+      5,
+      4883
+     ]
+    ],
+    "sources": [
+     "warcraft.wiki.gg/wiki/Owl_Wing_Thicket (series of caves in southern Winterspring, berserk, moontouched and crazed owlbeasts)"
+    ]
+   }
+  ],
+  "related": [
+   61803,
+   90000046
+  ],
+  "sources": [
+   "warcraft.wiki.gg/wiki/Owl_Wing_Thicket (series of caves in southern Winterspring, berserk, moontouched and crazed owlbeasts)",
+   "quest 4721 description (series of small caves in the south; creatures gone mad from exposure to what they protect)",
+   "quest 4901 description (altar of Elune at the top of the ridge, five torches)",
+   "npc_text 3866 (Ranshalla back from Kel'Theril, investigating the wildkin up the ridge)",
+   "quest 979 description",
+   "DB spawns in area 2250: Ranshalla 10300, Altar of Elune 177404, Fire of Elune objects, Moontouched/Crazed/Berserk Owlbeast",
+   "warcraft.wiki.gg/wiki/The_Hidden_Grove (forested crater in the northeast, surrounded by cliffs, single cave entrance on the southeastern face, hostile moonkin)",
+   "quest 4741 description (in the northern areas the wildkin grow even more ferocious; hunt the moontouched owlbeasts and explore their area)",
+   "quest 4521 description (wildkin guard secrets of the night elves)",
+   "DB spawns in area 2242: Moontouched Owlbeast x3, Crazed Owlbeast, Berserk Owlbeast",
+   "DB: northern Moontouched Owlbeast spawns (x 7350 to 7800) resolve to 2242 and the surrounding area 618; southern ones to Owl Wing Thicket and Dun Mandarr",
+   "warcraft.wiki.gg/wiki/The_Hidden_Grove (dropping down from the top possible but dangerous)",
    "quest 978 description",
    "quest 979 description and reward text",
    "quest 4901 description",
    "creature_text 10300 (Ranshalla's escort lines)",
    "creature_text 12116 (Priestess of Elune: the gem, the wildkin given to protect her sacred places, grown feral and confused)",
-   "quest 4902 reward text (the druids have known of the wildkin for some time)"
-  ],
-  "notes": "Converted: the opening is the 978 premise; the matching feathers moved to part 1 (QUEST_DONE 978, QUEST_ACCEPT 979), Ranshalla's plan to part 2 (QUEST_DONE 979, QUEST_ACCEPT 4901), the altar and the priestesses' tale to part 3 (QUEST_DONE 4901, the escort's turn-in to Erelas, and QUEST_ACCEPT 4902), Fandral's reply to part 4 (QUEST_DONE 4902). All races 1101. creature_text 10300 and 12116 reread: classic; they are said by npc_ranshalla. Earlier: Verified. Entry points: 978 (Erelas, Rut'theran) and 979 (follows 978). 4901 needs 979, so it is not a separate entry. No other zone uses 978/979; Fandral's own entry (Darnassus) uses TALK 3516 only. Faction 1: races 1101; Ranshalla template 80 is Alliance. 978 requires 3661 (Erelas, Hinterlands feathers), which is told in one clause only and not used as a trigger; hinterlands.json and teldrassil.json do not use 3661, 978 or 979. Check: part 3 stays on DONE 4901/ACCEPT 4902: the priestesses' tale is played at the altar (creature_text 12116, during the escort) but no trigger fires there (the priestesses have no gossip, an area trigger would fire before the scene), so the turn-in to Erelas is the first point after it; 4902 is offered at once and its description shows Erelas has heard it.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "The Winterspring feathers hold the same enchantment. Erelas, still unsure what may be found, sends their gatherer after a colleague of his, Ranshalla, who has gone into eastern Winterspring to watch the wildkin in their own home.",
-    "triggers": [
-     [
-      5,
-      978
-     ],
-     [
-      4,
-      979
-     ]
-    ],
-    "sources": [
-     "quest 979 description"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "Ranshalla waits below Owl Wing Thicket, fresh from the Ruins of Kel'Theril, where she copied incantations carved in the stone. She believes an altar of Elune lies at the top of the ridge, and that lighting the torches in each cave while she recites the spell will open it. She sets out up through the owlbeast caves with company at her side.",
-    "triggers": [
-     [
-      5,
-      979
-     ],
-     [
-      4,
-      4901
-     ]
-    ],
-    "sources": [
-     "quest 979 reward text",
-     "quest 4901 description",
-     "npc_text 3866"
-    ]
-   },
-   {
-    "part": 3,
-    "body": "Torch by torch, the altar at the summit begins to glow, and priestesses of Elune appear to ask who has disturbed it. They show what it once held: a gem through which they spoke with the goddess herself. To guard it Elune gave them the wildkin, fierce protectors of all her sacred places. Without her guidance the wildkin have grown feral and confused, yet wherever they are found they still guard something of importance.",
-    "triggers": [
-     [
-      5,
-      4901
-     ],
-     [
-      4,
-      4902
-     ]
-    ],
-    "sources": [
-     "creature_text 10300 and 12116 (said by zone_winterspring.cpp npc_ranshalla during the escort)",
-     "quest 4902 description"
-    ]
-   },
-   {
-    "part": 4,
-    "body": "Erelas sends word straight to Arch Druid Fandral Staghelm in Darnassus. Fandral is unmoved: the druids of the Cenarion Circle, he says, have long known that the wildkin are pets of Elune, chosen to guard the most sacred of places. It is not news, though he compliments the effort.",
-    "triggers": [
-     [
-      5,
-      4902
-     ]
-    ],
-    "sources": [
-     "quest 4902 reward text"
-    ]
-   }
-  ]
- },
- {
-  "id": 61830,
-  "kind": 3,
-  "zone": 618,
-  "sort": 5,
-  "faction": 2,
-  "title": "Wild Guardians",
-  "body": "Trull Failbane of Bloodvenom Post has heard that Winterspring, beyond Timbermaw northeast of Felwood, is laden with wildkin, beasts known to guard secrets of the night elves, and he means to learn what is hidden there. His knowledge of the owlbeasts themselves is said to be extensive. First the way must be opened. His hunters are sent against the ragged owlbeasts that range just south of the road and the raging owlbeasts of the valley's center, to clear them out and gain access to the land.",
-  "triggers": [
-   [
-    4,
-    4521
-   ],
-   [
-    4,
-    4882
-   ]
-  ],
-  "sources": [
+   "quest 4902 reward text (the druids have known of the wildkin for some time)",
    "quest 4521 description",
    "quest 4741 description",
    "quest 4721 description",
    "quest 4882 description (necklace glows brightly, slowly fading in and out)",
    "quest 4883 description and reward text (Nara: Elune created them to guard her most sacred areas)"
   ],
-  "notes": "Converted: the opening is the 4521 premise (plus Trull's knowledge from 4882); parts: 1 the north (QUEST_DONE 4521, QUEST_ACCEPT 4741), 2 the southern caves (QUEST_DONE 4741, QUEST_ACCEPT 4721), 3 the necklace sent to Nara (QUEST_DONE 4882 at Trull, QUEST_ACCEPT 4883), 4 Nara's reading, wildkin made by Elune (QUEST_DONE 4883, as STATUS asked: Thunder Bluff's Nara entry no longer tells it). ACCEPT 4882 (item-started from the necklace, which any Crazed, Moontouched or Berserk Owlbeast drops) stays an entry trigger and unlocks the opening only. All races 690. Earlier: Verified. Felwood leaves the chain (4521, 4741, 4721, 4883) to Winterspring and only names Trull's interest at Bloodvenom Post, which is not retold. 4521 is used: it is the chain's only accept and the Winterspring hunt starts there. 4882 is a separate entry point from the Blue-feathered Necklace drop. Nara's own entry (Thunder Bluff, TALK 5770) is not reused. Faction 2: all races 690; Trull template 125 is Horde. Nara's own entry mentions the Elune origin from 4883 in one clause; this story is the chain itself and shares no trigger. Check: 4882 is QuestType 2, flags 0, started from item 12558, so ACCEPT 4882 fires; the opening (Trull's interest and the first hunt) fits a necklace finder, who is sent to Trull.",
-  "parts": [
-   {
-    "part": 1,
-    "body": "With those beasts out of the way, the venture goes deeper. In the northern reaches of Winterspring the wildkin grow even more ferocious, and Trull sends his hunters after the moontouched owlbeasts there, to slay them and explore the ground they inhabit.",
-    "triggers": [
-     [
-      5,
-      4521
-     ],
-     [
-      4,
-      4741
-     ]
-    ],
-    "sources": [
-     "quest 4521 reward text",
-     "quest 4741 description"
-    ]
-   },
-   {
-    "part": 2,
-    "body": "Trull senses they are onto something. Runners back from Winterspring report a series of small caves in the south of the valley, ringed by wildkin. If the beasts guard anything of value, he believes it lies there, and the berserk owlbeasts of those caves seem to have gone mad from exposure to the very thing they protect.",
-    "triggers": [
-     [
-      5,
-      4741
-     ],
-     [
-      4,
-      4721
-     ]
-    ],
-    "sources": [
-     "quest 4741 reward text",
-     "quest 4721 description"
-    ]
-   },
-   {
-    "part": 3,
-    "body": "From the neck of a slain wildkin falls a necklace of blue feathers that glows brightly, slowly fading in and out. Trull knows a great deal about the owlbeasts but little of the magic they wield, so he sends the necklace on to one who can read it: Nara Wildmane in Thunder Bluff.",
-    "triggers": [
-     [
-      5,
-      4882
-     ],
-     [
-      4,
-      4883
-     ]
-    ],
-    "sources": [
-     "quest 4882 description",
-     "quest 4883 description"
-    ]
-   },
-   {
-    "part": 4,
-    "body": "Nara closes her eyes and senses only one source in the necklace's energy. The wildkin, misguided and confused as they are now, were not always so: the night elf goddess Elune created them to guard her most sacred places. It may seem a small thing, but she urges the bearer to look deeper. In time, she says, they will learn.",
-    "triggers": [
-     [
-      5,
-      4883
-     ]
-    ],
-    "sources": [
-     "quest 4883 reward text"
-    ]
-   }
-  ]
+  "notes": "Rewritten 2026-10-25 for the reorganization pilot: shorter, context first."
  }
 ]
