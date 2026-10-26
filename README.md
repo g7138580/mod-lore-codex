@@ -2,11 +2,11 @@
 
 An AzerothCore (WotLK 3.3.5a) module that adds a codex of Azeroth's lore which fills in as you play. Walking into a zone or a notable place, talking to someone, defeating someone, or taking and finishing quests unlocks entries. The included `LoreCodex` addon shows a toast for each discovery and a codex window to read them.
 
-> **Work in progress.** All four continents are covered: the Eastern Kingdoms, Kalimdor, Outland and Northrend (74 zones, about 2,200 entries). Dungeons and raids are being added a few at a time, each listed under its continent in the codex window.
+Covers all four continents, the Eastern Kingdoms, Kalimdor, Outland and Northrend, and every dungeon and raid: 970 entries.
 
 ## Features
 
-- **Zones, places, people and stories.** Each zone has an overview entry, its notable places, the people who matter there and the storylines that run through it.
+- **Four ways in.** Locations (zones, their notable places, dungeons and raids, folded by continent), People, Peoples and Factions, and History, from the titans to the Lich King. Entries give the context the game does not show rather than retelling its quests.
 - **Discovery like exploration.** Places unlock the way the game's own exploration does: on foot or on your own mount, never from a flight path or while dead.
 - **No spoilers.** An entry tells only what you have earned. It opens with the situation as you find it, and later parts are added as you get there, usually when you finish the quest that reveals them or defeat a foe. A banner says the entry was updated, and an entry that can still grow says so.
 - **Locked entries.** Undiscovered entries show as locked placeholders with a hint, and each zone shows how much of it you have found.
@@ -55,7 +55,7 @@ Everything can be changed under **Interface > AddOns > Lore Codex** (also from t
 
 ## Adding lore
 
-`mod_lore_codex_entry` holds the entries: `Kind` is 0 zone, 1 place, 2 person, 3 story, and `Zone` is the AreaTable zone it is filed under. `mod_lore_codex_trigger` says what unlocks each one:
+`mod_lore_codex_entry` holds the entries: `Kind` is 0 zone, 1 place, 2 person, 4 people or faction, 5 history, and `Zone` is the AreaTable zone it is filed under (0 for entries with no home zone, where a history entry's `SortOrder` is its place in time). `Hint` is shown while an entry is locked, and `mod_lore_codex_related` links entries once both are known. `mod_lore_codex_trigger` says what unlocks each one:
 
 | Type | Value |
 |---|---|
