@@ -38,11 +38,11 @@ The server module and the addon must be the same version: after updating one, up
 
 The voiceover is AI-generated speech, one clip per entry and per part. It is not stored in this repository because of its size (about 300 MB), so download it separately:
 
-1. Download the audio from [Google Drive](https://drive.google.com/file/d/1GcnrnIdrrw06QH-dHX75W13cGPPhGcVE/view?usp=sharing).
+1. Download the zip file frome [here](https://drive.google.com/file/d/1GcnrnIdrrw06QH-dHX75W13cGPPhGcVE/view?usp=sharing).
 2. Extract the contents of the zip into the addon's `audio` folder (`LoreCodex/audio`, which comes with the addon and starts out empty). The zip holds only the audio files (and `silence.wav`, which the addon uses to stop a clip), with no folder of its own, so the files should end up directly in `Interface/AddOns/LoreCodex/audio`, not in a subfolder.
 3. Log in, or type `/reload` if you are already in the game.
 
-Entries that have a clip now show a **Play all** button, and each section a speaker button. Clips play on the game's music channel, so the addon briefly turns music on and up while one plays and puts your setting back afterwards. If you don't see the buttons, check that the files are not inside an extra folder and that `silence.wav` is among them.
+Entries that have a clip now show a **Play all** button, and each section a speaker button. Clips play on the game's music channel, so the addon briefly turns music off while the voiceover is playing and back on afterwards. If you don't see the buttons, check that the audio files are not inside an extra folder and that `silence.wav` is among them.
 
 ## Usage
 
