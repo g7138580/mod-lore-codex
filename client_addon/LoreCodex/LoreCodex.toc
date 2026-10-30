@@ -6,7 +6,9 @@
 ## SavedVariables: LoreCodexDB
 ## SavedVariablesPerCharacter: LoreCodexCharDB
 
+AudioManifest.lua
 Core.lua
+Audio.lua
 Toast.lua
 Codex.lua
 Minimap.lua
