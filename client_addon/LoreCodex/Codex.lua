@@ -667,8 +667,42 @@ readIcon:SetPoint("TOPLEFT", readPane, "TOPLEFT", 12, -12)
 
 local readTitle = readPane:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge")
 readTitle:SetPoint("TOPLEFT", readIcon, "TOPRIGHT", 10, -2)
-readTitle:SetPoint("RIGHT", readPane, "RIGHT", -12, 0)
 readTitle:SetJustifyH("LEFT")
+
+-- Voiceover. "Play all" reads the whole entry; each section (the opening and every part) has a
+-- speaker button that reads only that section, so what a character has just earned can be heard
+-- on its own. Only sections that have a clip get a button.
+local SPEAKER = "Interface\\Common\\VoiceChat-Speaker"
+local SPEAKER_ON = "Interface\\Common\\VoiceChat-On"
+local play = CreateFrame("Button", nil, readPane, "UIPanelButtonTemplate")
+play:SetSize(64, 22)
+play:SetPoint("TOPRIGHT", readPane, "TOPRIGHT", -12, -14)
+play:SetText("Play all")
+play:Hide()
+readTitle:SetPoint("RIGHT", play, "LEFT", -8, 0)
+local voiced = { clips = {} } -- the entry on the page and the clips of its sections, once its text has loaded
+local sections = {} -- the blocks of text on the page, each with its speaker button
+local shownSections = 0
+
+play:SetScript("OnClick", function ()
+	if LC.Audio.Entry() == voiced.id then LC.Audio.Stop() else LC.Audio.Play(voiced.id, voiced.clips) end
+end)
+
+local function playSection(clip)
+	if LC.Audio.Current() == clip then LC.Audio.Stop() else LC.Audio.Play(voiced.id, { clip }) end
+end
+
+local function refreshPlay()
+	local has = voiced.id ~= nil and view.entry == voiced.id and #voiced.clips > 0
+	setShown(play, has)
+	play:SetText(has and LC.Audio.Entry() == voiced.id and "Stop" or "Play all")
+	local current = LC.Audio.Entry() == voiced.id and LC.Audio.Current()
+	for i = 1, shownSections do
+		local btn = sections[i].btn
+		if btn.clip then btn:GetNormalTexture():SetTexture(btn.clip == current and SPEAKER_ON or SPEAKER) end
+	end
+end
+LC.On("AUDIO", refreshPlay)
 
 local readSub = readPane:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
 readSub:SetPoint("TOPLEFT", readTitle, "BOTTOMLEFT", 0, -4)
@@ -680,12 +714,31 @@ rule:SetPoint("TOPRIGHT", readPane, "TOPRIGHT", -12, -62)
 
 local bodyFont = CreateFont("LoreCodexBodyFont")
 bodyFont:SetFontObject(GameFontHighlight)
-local readBody = readScroll.content:CreateFontString(nil, "OVERLAY")
-readBody:SetFontObject(bodyFont)
-readBody:SetPoint("TOPLEFT", readScroll.content, "TOPLEFT", 0, -4)
-readBody:SetJustifyH("LEFT")
-readBody:SetJustifyV("TOP")
-readBody:SetSpacing(3)
+
+-- A block of text with its speaker button, made when first needed.
+local function section(i)
+	local s = sections[i]
+	if not s then
+		local text = readScroll.content:CreateFontString(nil, "OVERLAY")
+		text:SetFontObject(bodyFont)
+		text:SetJustifyH("LEFT")
+		text:SetJustifyV("TOP")
+		text:SetSpacing(3)
+		local btn = CreateFrame("Button", nil, readScroll.content)
+		btn:SetSize(18, 18)
+		btn:SetNormalTexture(SPEAKER)
+		btn:SetHighlightTexture("Interface\\Buttons\\ButtonHilight-Square", "ADD")
+		btn:SetScript("OnClick", function (self) playSection(self.clip) end)
+		btn:SetScript("OnEnter", function (self)
+			GameTooltip:SetOwner(self, "ANCHOR_RIGHT")
+			GameTooltip:SetText(LC.Audio.Current() == self.clip and "Stop" or "Read this section aloud")
+		end)
+		btn:SetScript("OnLeave", function () GameTooltip:Hide() end)
+		s = { text = text, btn = btn }
+		sections[i] = s
+	end
+	return s
+end
 
 -- The entries a page relates to, under its text.
 local relatedLabel = readScroll.content:CreateFontString(nil, "OVERLAY", "GameFontNormal")
@@ -736,20 +789,55 @@ end
 -- Under an entry the character could still add to.
 local MORE = "There is more to learn."
 
-local function setBody(text, color)
-	readBody:SetWidth(readScroll:GetWidth() - 4)
-	readBody:SetText(text)
-	readBody:SetTextColor(color[1], color[2], color[3])
+local SPEAKER_INDENT, SECTION_GAP = 26, 10
+local textBottom = 0 -- where the text on the page ends
+
+-- Shows blocks of text one under the other: { text, clip, color } each, the clip being what its
+-- speaker button reads (none: no button, and the text is not indented).
+local function setSections(list, color)
+	local width = readScroll:GetWidth() - 4
+	local y = 4
+	for i, item in ipairs(list) do
+		local s = section(i)
+		local indent = item.clip and SPEAKER_INDENT or 0
+		local c = item.color or color
+		s.text:ClearAllPoints()
+		s.text:SetPoint("TOPLEFT", readScroll.content, "TOPLEFT", indent, -y)
+		s.text:SetWidth(width - indent)
+		s.text:SetText(item.text)
+		s.text:SetTextColor(c[1], c[2], c[3])
+		s.text:Show()
+		s.btn.clip = item.clip
+		if item.clip then
+			s.btn:ClearAllPoints()
+			s.btn:SetPoint("TOPLEFT", readScroll.content, "TOPLEFT", 0, -y)
+			s.btn:Show()
+		else
+			s.btn:Hide()
+		end
+		y = y + s.text:GetStringHeight() + SECTION_GAP
+	end
+	for i = #list + 1, #sections do
+		sections[i].text:Hide()
+		sections[i].btn:Hide()
+	end
+	shownSections = #list
+	textBottom = y - SECTION_GAP
 	relatedLabel:Hide()
 	relatedRows:Reset()
-	readScroll.content:SetHeight(readBody:GetStringHeight() + 12)
+	readScroll.content:SetHeight(textBottom + 12)
 	readScroll:SetVerticalScroll(0)
+	refreshPlay()
+end
+
+local function setBody(text, color)
+	setSections({ { text = text } }, color)
 end
 
 -- Links to the related entries this character knows, under the text.
 local function showRelated(ids)
 	local width = readScroll:GetWidth() - 4
-	local y = readBody:GetStringHeight() + 18
+	local y = textBottom + 14
 	local any = false
 	for _, id in ipairs(ids or {}) do
 		local e = LC.index.entries[id]
@@ -780,32 +868,34 @@ local function showRelated(ids)
 	if any then readScroll.content:SetHeight(y + 6) end
 end
 
--- The text with the parts this character hasn't read yet marked. The body is the opening and then
--- one paragraph per shown part; an entry never opened before is new as a whole, so nothing in it
--- is marked.
-local function markNew(id, t)
-	local paragraphs = {}
-	for p in (t.body .. "\n\n"):gmatch("(.-)\n\n") do table.insert(paragraphs, p) end
+-- The sections of an entry: the body is the opening and then one paragraph per shown part, each
+-- with the clip that reads it (none when there is no recording). Parts this character hasn't read
+-- yet are marked; an entry never opened before is new as a whole, so nothing in it is marked.
+local function sectionsOf(id, t)
 	local readParts = LC.ReadParts(id)
 	local marking = LC.WasOpened(id) and readParts ~= nil
-	local out, labelled = {}, false
-	for i, p in ipairs(paragraphs) do
+	local list, labelled, i = {}, false, 0
+	for p in (t.body .. "\n\n"):gmatch("(.-)\n\n") do
+		i = i + 1
 		local part = t.shown[i - 1]
+		local clip = LC.Audio.Clip(id, part)
+		local item = { text = p, clip = LC.Audio.Has(clip) and clip or nil }
 		if marking and part and not readParts[part] then
+			item.text = style.new .. p .. "|r"
 			if not labelled then
-				table.insert(out, style.newLabel .. "New since you last read:|r")
+				item.text = style.newLabel .. "New since you last read:|r\n" .. item.text
 				labelled = true
 			end
-			table.insert(out, style.new .. p .. "|r")
-		else
-			table.insert(out, p)
 		end
+		table.insert(list, item)
 	end
-	return table.concat(out, "\n\n")
+	return list
 end
 
 local function refreshReader()
 	local e = view.entry and LC.index.entries[view.entry]
+	voiced.id, voiced.clips = nil, {}
+	refreshPlay()
 	if not e then
 		local c = view.mode == "category" and LC.CATEGORY[view.cat]
 		readIcon:SetTexture(LC.KIND_ICON[c and c.icon or 0])
@@ -836,10 +926,13 @@ local function refreshReader()
 			return
 		end
 		readTitle:SetText(t.title)
-		local text = markNew(id, t)
-		local faint = string.format("|cff%02x%02x%02x", math.floor(style.faint[1] * 255),
-			math.floor(style.faint[2] * 255), math.floor(style.faint[3] * 255))
-		setBody(t.more and (text .. "\n\n" .. faint .. MORE .. "|r") or text, style.text)
+		local list = sectionsOf(id, t)
+		voiced.id, voiced.clips = id, {}
+		for _, item in ipairs(list) do
+			if item.clip then table.insert(voiced.clips, item.clip) end
+		end
+		if t.more then table.insert(list, { text = MORE, color = style.faint }) end
+		setSections(list, style.text)
 		showRelated(t.related)
 		LC.MarkPartsRead(id, t.shown)
 		if not LC.IsRead(id) then
